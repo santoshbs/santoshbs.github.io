@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Santosh Srinivas"
+title: #"Santosh Srinivas"
 excerpt: "About me"
 author_profile: true
 redirect_from: 
