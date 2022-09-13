@@ -13,16 +13,6 @@ redirect_from:
 Hello! I am an Assistant Professor in the Management & Human Resources at [HEC Paris](https://www.hec.edu/en). I received my PhD in Management from the [University of Texas at Austin's](https://www.utexas.edu/) [McCombs School of Business](https://www.mccombs.utexas.edu/). My research focuses on social evaluations in organizational and entrepreneurial contexts. Towards this end, I take a cultural perspective and utilize quantitative methodological approaches. In much of my current research, I examine language use through computational linguistic analyses.
 
 ## Brief CV
-* Education:
-  * Ph.D., Management. McCombs School of Business, University of Texas at Austin (2014-19)
-  * Postgraduate Program in Business. Indian School of Business (ISB), Hyderabad, India (2006-07)
-  * B.E. (Hons.) Computer Science. Birla Institute of Technology & Science (BITS), Pilani, India (1997-2001)
-* Professional Experience:
-  * HEC Paris (2019-)
-  * Indian School of Business (2010-14)
-  * Institute of Leadership and Institutional Development (2008-10)
-  * Hole-In-The-Wall Education Ltd (2007-08)
-  * Intel Technologies India Private Limited (2001-06)
 
 ## Publications
 Rindova, V. P., **Srinivas, S. B.**, & Martins, L. L. (2022). How to Break Free: An Orders-of-Worth Perspective on Emancipatory Entrepreneurship. In R. N. Eberhart, M. Lounsbury, & H. E. Aldrich (Eds.), _Research in the Sociology of Organizations_ (Vol. 81, pp. 101–127). Emerald Publishing Limited. [https://doi.org/10.1108/S0733-558X20220000081006](https://doi.org/10.1108/S0733-558X20220000081006).
