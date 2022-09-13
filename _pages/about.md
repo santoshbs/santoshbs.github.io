@@ -12,8 +12,8 @@ Hello! I am an Assistant Professor in the Management & Human Resources at HEC Pa
 
 Publications
 ======
-{% include base_path %}
-{% for post in site.publications reversed %}
-{% include archive-single.html %}
-{% endfor %}
+Rindova, V. P., Srinivas, S. B., & Martins, L. L. (2022). How to Break Free: An Orders-of-Worth Perspective on Emancipatory Entrepreneurship. In R. N. Eberhart, M. Lounsbury, & H. E. Aldrich (Eds.), Entrepreneurialism and Society: New Theoretical Perspectives (Vol. 81, pp. 101–127). Emerald Publishing Limited. https://doi.org/10.1108/S0733-558X20220000081006
+Sinha, R., Chiu, C.Y. (Chad), & Srinivas, S. B. (2021). Shared leadership and relationship conflict in teams: The moderating role of team power base diversity. Journal of Organizational Behavior, 42(5), 649–667. https://doi.org/10.1002/job.2515
+Rindova, V. P., Martins, L. L., Srinivas, S. B., & Chandler, D. (2018). The Good, the Bad, and the Ugly of Organizational Rankings: A Multidisciplinary Review of the Literature and Directions for Future Research. Journal of Management, 44(6), 2175–2208. https://doi.org/10.1177/0149206317741962
+Rindova, V., & Srinivas, S. (2017). Managing Meaning—Culture. In A. Wilkinson, S. J. Armstrong, & M. Lounsbury (Eds.), The Oxford Handbook of Management (pp. 256–275). Oxford University Press. https://doi.org/10.1093/oxfordhb/9780198708612.013.14
 
