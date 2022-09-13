@@ -1,5 +1,5 @@
 ---
-title: "How to Break Free: An Orders-of-Worth Perspective on Emancipatory Entrepreneurship"
+title: "How to break free: An orders-of-worth perspective on emancipatory entrepreneurship"
 collection: publications
 permalink: /publication/2022-09-22-emancipatory-entrepreneurship
 excerpt: 'Keywords: entrepreneurship; emancipation; economies of worth; values-based perspectives; pluralism; social change' 
