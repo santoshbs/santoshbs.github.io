@@ -8,11 +8,11 @@ redirect_from:
   - /about/
   - /about.html
 ---
+(Nationality: India; Pronouns: he, his, him)
+
 Hello! I am an Assistant Professor in the Management & Human Resources at [HEC Paris](https://www.hec.edu/en). I received my PhD in Management from the [University of Texas at Austin's](https://www.utexas.edu/) [McCombs School of Business](https://www.mccombs.utexas.edu/). My research focuses on social evaluations in organizational and entrepreneurial contexts. Towards this end, I take a cultural perspective and utilize quantitative methodological approaches. In much of my current research, I examine language use through computational linguistic analyses.
 
 ## Brief CV
-* Nationality: India
-* Pronouns: he, his, him
 * Education:
   * Ph.D., Management. McCombs School of Business, University of Texas at Austin (2014-19)
   * Postgraduate Program in Business. Indian School of Business (ISB), Hyderabad, India (2006-07)
