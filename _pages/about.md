@@ -13,7 +13,6 @@ Hello! I am an Assistant Professor in the Management & Human Resources at HEC Pa
 Publications
 ======
 {% include base_path %}
-
 {% for post in site.publications reversed %}
 {% include archive-single.html %}
 {% endfor %}
