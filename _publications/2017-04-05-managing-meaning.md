@@ -1,5 +1,5 @@
 ---
-title: "Managing Meaning—Culture"
+title: "Managing meaning—culture"
 collection: publications
 permalink: /publication/2017-04-05-managing-meaning
 excerpt: 'Management of meaning, an activity central to mobilizing action both inside and outside organizations, has been studied in the analyses of organizational culture, identity, change, innovation, stakeholder management, and environmental enactment. This review of the conceptual and empirical work in these areas suggests that although meaning-making involves managing symbols, it is not concerned only with symbolic actions and their consequences. Meaning-making is central to the generation of substantive actions that affect organizations and their strategies in fundamental ways. Greater research attention to the importance of meaning management as a managerial and organizational capability, and the links between organizational cultures as systems of beliefs, and the societal culture as a toolkit, is recommended.'
