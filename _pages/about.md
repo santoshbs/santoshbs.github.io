@@ -1,6 +1,5 @@
 ---
 layout: archive
-entries_layout: grid
 permalink: /
 title: #"Santosh Srinivas"
 excerpt: "About Santosh Srinivas"
