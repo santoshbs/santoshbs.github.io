@@ -12,8 +12,6 @@ redirect_from:
 
 Hello! I am an Assistant Professor in the Management & Human Resources at [HEC Paris](https://www.hec.edu/en). I received my PhD in Management from the [University of Texas at Austin's](https://www.utexas.edu/) [McCombs School of Business](https://www.mccombs.utexas.edu/). My research focuses on social evaluations in organizational and entrepreneurial contexts. Towards this end, I take a cultural perspective and utilize quantitative methodological approaches. In much of my current research, I examine language use through computational linguistic analyses.
 
-## Brief CV
-
 ## Publications
 Rindova, V. P., **Srinivas, S. B.**, & Martins, L. L. (2022). How to Break Free: An Orders-of-Worth Perspective on Emancipatory Entrepreneurship. In R. N. Eberhart, M. Lounsbury, & H. E. Aldrich (Eds.), _Research in the Sociology of Organizations_ (Vol. 81, pp. 101–127). Emerald Publishing Limited. [https://doi.org/10.1108/S0733-558X20220000081006](https://doi.org/10.1108/S0733-558X20220000081006).
 
@@ -23,6 +21,3 @@ Rindova, V. P., Martins, L. L., **Srinivas, S. B.**, & Chandler, D. (2018). The 
 
 Rindova, V. P., & **Srinivas, S.B.** (2017). Managing Meaning—Culture. In A. Wilkinson, S. J. Armstrong, & M. Lounsbury (Eds.), _The Oxford Handbook of Management_ (pp. 256–275). Oxford University Press. [https://doi.org/10.1093/oxfordhb/9780198708612.013.14](https://doi.org/10.1093/oxfordhb/9780198708612.013.14).
 
-## Teaching
-* Ph.D. Seminar in Organizational Behavior.
-* Grande Ecole: Leading Organizations
