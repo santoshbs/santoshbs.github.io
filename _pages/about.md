@@ -1,7 +1,7 @@
 ---
 layout: archive
 permalink: /
-title: "Santosh B. Srinivas"
+title: "Srinivas, S.B."
 excerpt: "About Santosh Srinivas"
 author_profile: true
 redirect_from: 
