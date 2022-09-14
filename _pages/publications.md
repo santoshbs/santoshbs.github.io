@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "Publications"
+title: "<i class='fa fa fa-circle' aria-hidden='true'></i> Publications"
 permalink: /publications/
 author_profile: true
 ---
