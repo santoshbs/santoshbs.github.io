@@ -10,8 +10,8 @@ redirect_from:
 {% include base_path %}
 
 ## Education
-  * Doctor of Philosophy (Ph.D.) in Management. University of Texas at Austin, Texas, United States (2014-19)
-  * Postgraduate Program (PGP) in Business. Indian School of Business (ISB), Hyderabad, India (2006-07)
+  * Doctor of Philosophy (Ph.D.) in Management. University of Texas at Austin, United States (2014-19)
+  * Postgraduate Program (PGP) in Business. Indian School of Business (ISB), India (2006-07)
   * B.E. (Hons.) in Computer Science. Birla Institute of Technology & Science (BITS), Pilani, India (1997-2001)
 
 ## Professional Experience
