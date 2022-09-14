@@ -12,7 +12,8 @@ Shared leadership in teams is believed to be beneficial for team effectiveness. 
 Keywords: 
 teams; shared leadership; relationship conflict; power base diversity; team performance
 
-[Download paper here](https://onlinelibrary.wiley.com/doi/abs/10.1002/job.2515)
-
 Citation:
 Sinha, R., Chiu, C.Y. (Chad), & Srinivas, S. B. (2021). Shared leadership and relationship conflict in teams: The moderating role of team power base diversity. Journal of Organizational Behavior, 42(5), 649–667. https://doi.org/10.1002/job.2515.
+
+[Download paper here](https://onlinelibrary.wiley.com/doi/abs/10.1002/job.2515)
+

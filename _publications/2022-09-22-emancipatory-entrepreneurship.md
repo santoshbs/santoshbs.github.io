@@ -12,7 +12,8 @@ The assumption of wealth creation as the dominant motive underlying entrepreneur
 Keywords: 
 entrepreneurship; emancipation; economies of worth; values-based perspectives; pluralism; social change
 
-[Download paper here](https://www.emerald.com/insight/content/doi/10.1108/S0733-558X20220000081006/full/html)
-
 Citation:
 Rindova, V. P., Srinivas, S. B., & Martins, L. L. (2022). How to Break Free: An Orders-of-Worth Perspective on Emancipatory Entrepreneurship. In R. N. Eberhart, M. Lounsbury, & H. E. Aldrich (Eds.), Entrepreneurialism and Society: New Theoretical Perspectives (Vol. 81, pp. 101–127). Emerald Publishing Limited. https://doi.org/10.1108/S0733-558X20220000081006.
+
+[Download paper here](https://www.emerald.com/insight/content/doi/10.1108/S0733-558X20220000081006/full/html)
+
