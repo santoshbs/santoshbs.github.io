@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "<i class='fa fa fa-circle' aria-hidden='true'></i> Brief CV"
+title: "Brief CV"
 permalink: /cv/
 author_profile: true
 redirect_from:
