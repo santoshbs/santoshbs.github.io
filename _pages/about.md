@@ -8,7 +8,7 @@ redirect_from:
   - /about/
   - /about.html
 ---
-(<i class="fa fa-mars" aria-hidden="true"></i>Personal pronouns: he, his, him, himself)
+<i class="fa fa-code" aria-hidden="true"></i> Personal pronouns: he, his, him, himself <i class="fa fa-code" aria-hidden="true"></i>
 
 Hello! I am an Assistant Professor in the Management & Human Resources Department at [HEC Paris](https://www.hec.edu/en). I received my PhD in Management from the [University of Texas at Austin's](https://www.utexas.edu/) [McCombs School of Business](https://www.mccombs.utexas.edu/). I study social evaluations in organizational and entrepreneurial contexts. Towards this end, I take a cultural perspective and utilize quantitative methodological approaches. In much of my current research, I examine language use through computational linguistic analyses.
 
