@@ -4,7 +4,7 @@ collection: teaching
 type: "Doctoral course"
 permalink: /teaching/2019-spring-OB
 venue: "HEC, Paris"
-#date: 2020-01-
+date: 2019-09-01
 location: "France"
 ---
 
