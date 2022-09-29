@@ -12,5 +12,5 @@ The assumption of wealth creation as the dominant motive underlying entrepreneur
 Keywords: 
 entrepreneurship; emancipation; economies of worth; values-based perspectives; pluralism; social change
 
-[Download paper here](https://www.emerald.com/insight/content/doi/10.1108/S0733-558X20220000081006/full/html)
+[Download paper here](http://academicpages.github.io/files/RindovaSrinivasMartins_2022_HowToBreakFree_vAAM_Watermarked.pdf)
 
