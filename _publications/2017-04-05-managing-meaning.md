@@ -12,5 +12,5 @@ Management of meaning, an activity central to mobilizing action both inside and 
 Keywords:
 meaning; organizational culture; management;
 
-[Download paper here](https://academic.oup.com/edited-volume/28075/chapter-abstract/212090229?redirectedFrom=fulltext)
+[Download paper here](http://santoshbs.github.io/files/RindovaSrinivas_2017_ManagingMeaning_PreprintVersion.pdf)
 
