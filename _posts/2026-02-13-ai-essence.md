@@ -1,7 +1,7 @@
 ---
 title: "AI essence"
 date: 2026-02-13
-permalink: /blog/ai-agents-telos/
+permalink: /blog/ai-agents-essence/
 tags: [ai, philosophy]
 ---
 
