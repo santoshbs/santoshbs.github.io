@@ -7,7 +7,7 @@ tags: [ai, philosophy]
 
 We stand at an epochal threshold where synthetic intellects we engineer can be deliberately incentivized toward universal human flourishing. 
 These new agentic actors afford us the opportunity to emancipate collective well-being from its historical reliance on 
-the spillover artifacts and derivative benefits of elite epistemic pursuits.
+the spillover artifacts and derivative benefits of elite and particularistic epistemic pursuits.
 
 ---
 <small>
