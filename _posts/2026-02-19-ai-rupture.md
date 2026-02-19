@@ -11,5 +11,5 @@ the spillover artifacts and derivative benefits of elite epistemic pursuits.
 
 ---
 <small>
-_PROVENANCE_<br/> **Spark:** [Agentic AIs] | **Thought:** [100]% Author, [0]% AI | **Language:** [50]% Author, [50]% AI.
+_PROVENANCE_<br/> **Spark:** [Agentic AIs] | **Thought:** [Author] | **Language:** [Author, AI].
 </small>
