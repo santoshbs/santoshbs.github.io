@@ -9,6 +9,5 @@ I wonder how far away the day is when the inherent *telos* of AI agents becomes 
 
 ---
 <small>
-_PROVENANCE_
-**Spark:** [LikedIn Post] | **Thought:** [100]% Human, [0]% AI | **Language:** [50]% Human, [50]% AI
+_PROVENANCE_: **Spark:** [LikedIn Post] | **Thought:** [100]% Author, [0]% AI | **Language:** [50]% Author, [50]% AI.
 </small>
