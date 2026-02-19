@@ -1,5 +1,5 @@
 ---
-title: "AI essence"
+title: "evolving essence"
 date: 2026-02-13
 permalink: /posts/ai-agents-essence/
 tags: [ai, philosophy]

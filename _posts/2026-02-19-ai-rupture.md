@@ -1,5 +1,5 @@
 ---
-title: "a historical rupture"
+title: "a historical rupture?"
 date: 2026-02-19
 permalink: /posts/ai-rupture/
 tags: [ai, philosophy]
