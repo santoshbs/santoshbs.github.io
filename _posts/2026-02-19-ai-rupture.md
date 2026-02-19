@@ -11,5 +11,5 @@ particularistic epistemic pursuits?
 
 ---
 <small>
-_PROVENANCE_<br/> **Spark:** [Agentic AIs] | **Thought:** [Author] | **Language:** [Author, AI].
+_PROVENANCE_<br/> **Spark:** [#IndiaAISummit] | **Thought:** [Author] | **Language:** [Author, AI].
 </small>
