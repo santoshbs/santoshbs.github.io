@@ -17,7 +17,15 @@ layout: default
 
   <div class="archive">
     {% unless page.header.overlay_color or page.header.overlay_image %}
+
+      {% comment %}
       <h1 class="page__title">{{ page.title }}</h1>
+      {% endcomment %}
+
+      {% unless page.url and page.url | slice: 0, 7 == '/posts/' %}
+        <h1 class="page__title">{{ page.title }}</h1>
+      {% endunless %}
+
     {% endunless %}
     {{ content }}
   </div>
