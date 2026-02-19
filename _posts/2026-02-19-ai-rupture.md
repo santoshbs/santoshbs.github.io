@@ -5,9 +5,9 @@ permalink: /posts/ai-rupture/
 tags: [ai, philosophy]
 ---
 
-We stand at an epochal threshold where synthetic intellects we engineer can be deliberately incentivized toward universal human flourishing. 
-These new agentic actors afford us the opportunity to emancipate collective well-being from its historical reliance on 
-the spillover artifacts and derivative benefits of elite and particularistic epistemic pursuits.
+Standing at an epochal threshold, could the synthetic intellects we engineer be deliberately incentivized toward universal human flourishing, 
+potentially emancipating collective well-being from its historical reliance on the spillover artifacts and derivative benefits of elite and 
+particularistic epistemic pursuits?
 
 ---
 <small>
