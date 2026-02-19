@@ -11,5 +11,5 @@ particularistic epistemic pursuits?
 
 ---
 <small>
-_PROVENANCE_<br/> **Spark:** [#IndiaAISummit] | **Thought:** [Author] | **Language:** [Gemini-Pro, Author].
+_PROVENANCE_<br/> **Spark:** [India AI Impact Summit 2026] | **Thought:** [Author] | **Language:** [Gemini-Pro, Author].
 </small>
