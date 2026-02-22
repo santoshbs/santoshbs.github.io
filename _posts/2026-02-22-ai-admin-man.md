@@ -6,8 +6,8 @@ tags: [ai, philosophy]
 ---
 
 On the rapidly approaching horizon where synthetic agents assume the mantle of organizational action, will we witness the obsolescence of Simon’s 
-cognitively bounded, satisficing administrative actor, and the triumphant resurrection of Taylor’s 
-perfectly informed, relentlessly optimizing economic actor?
+cognitively bounded, satisficing _administrative_ actor, and the triumphant resurrection of Taylor’s 
+perfectly informed, relentlessly optimizing _economic_ actor?
 
 
 ---
