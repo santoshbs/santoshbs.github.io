@@ -5,7 +5,8 @@ permalink: /posts/ai-teamwork/
 tags: [ai, philosophy]
 ---
 
-![_image_](images/2026-02-25-ai-teamwork.png)
+<img src="https://santoshbs.github.io/images/2026-02-25-ai-teamwork.png">
+
 Gemini and ChatGPT want Claude; Claude chose Gemini.
 
 Could "_pick the best collaborator_" lead to emergent patterns in multi-agent ad hoc teamwork 
