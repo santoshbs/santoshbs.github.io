@@ -18,6 +18,7 @@ author_profile: true
       {{ post.date | date: "%B %d, %Y" }}
     </p>
     <p style="font-size: 0.92rem;">{{ post.excerpt | strip_html | truncatewords: 60 }}</p>
+    <a href="{{ post.url | relative_url }}" style="font-size: 0.85rem; color: #e74c3c; text-decoration: none;">Read more →</a>
   </div>
 {% endfor %}
 
