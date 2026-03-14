@@ -95,7 +95,8 @@ a.amber:hover{color:#ffcc77;}
 
 /* ── Section ── */
 .section{margin-bottom:3rem;}
-.s-title{font-size:12px;text-transform:uppercase;letter-spacing:.14em;color:var(--teal-dim);margin-bottom:1.2rem;display:flex;align-items:center;gap:8px;}
+.s-title{font-size:16px;font-weight:600;letter-spacing:.06em;color:var(--teal);margin-bottom:1.2rem;display:flex;align-items:center;gap:10px;}
+.s-title::before{content:'▸';color:var(--green);font-size:14px;}
 .s-title::after{content:'';flex:1;height:1px;background:var(--border);}
 
 /* ── Pub ── */
@@ -105,16 +106,16 @@ a.amber:hover{color:#ffcc77;}
 .pub-head{display:flex;justify-content:space-between;align-items:flex-start;gap:10px;}
 .pub-cite{font-size:15px;color:var(--text-2);line-height:1.7;flex:1;}
 .pub-cite strong{color:var(--text);font-weight:600;}
-.pub-venue{font-size:13px;color:var(--text-4);font-style:italic;margin-top:3px;}
-.pub-tog{font-size:13px;color:var(--text-4);cursor:pointer;transition:color .2s;padding:2px 8px;border:1px solid transparent;border-radius:3px;}
-.pub-tog:hover{color:var(--teal);border-color:var(--border);}
+.pub-venue{font-size:14px;color:var(--text-3);font-style:italic;margin-top:3px;}
+.pub-tog{font-size:18px;font-weight:600;color:var(--teal);cursor:pointer;transition:all .2s;padding:0 10px;border:1px solid var(--border);border-radius:3px;line-height:1.4;}
+.pub-tog:hover{color:var(--green);border-color:var(--green);background:var(--green-subtle);}
 .pub-detail{max-height:0;overflow:hidden;transition:max-height .4s ease,opacity .3s ease;opacity:0;}
 .pub-detail.open{max-height:500px;opacity:1;padding-top:10px;}
-.pub-abs{font-size:13px;color:var(--text-3);line-height:1.8;padding-left:14px;border-left:2px solid var(--teal-dim);}
-.pub-dl{font-size:12px;margin-top:8px;padding-left:14px;}
+.pub-abs{font-size:14px;color:var(--text-3);line-height:1.8;padding-left:14px;border-left:2px solid var(--teal-dim);}
+.pub-dl{font-size:13px;margin-top:8px;padding-left:14px;}
 .pub-dl a{margin-right:14px;color:var(--teal);}
 
-.ch-label{font-size:11px;text-transform:uppercase;letter-spacing:.1em;color:var(--text-4);margin:1.8rem 0 .6rem;}
+.ch-label{font-size:14px;font-weight:600;letter-spacing:.06em;color:var(--teal);margin:1.8rem 0 .6rem;}
 
 /* ── Prose ── */
 .prose{font-size:15px;color:var(--text-2);line-height:1.9;margin-bottom:1rem;}
