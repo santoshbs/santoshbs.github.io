@@ -1,0 +1,261 @@
+---
+layout: null
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Santosh B. Srinivas</title>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #0a0a0a;
+  --surface: #111111;
+  --border: #2a2a2a;
+  --border-dot: #333;
+  --green: #00ff88;
+  --green-dim: #00cc6a;
+  --amber: #ffaa33;
+  --text: #c8c8c8;
+  --text-muted: #999999;
+  --text-dim: #666666;
+  --text-faint: #444444;
+  --mono: 'IBM Plex Mono', 'Courier New', monospace;
+  --display: 'Space Mono', monospace;
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+body {
+  font-family: var(--mono);
+  background: var(--bg);
+  color: var(--text);
+  font-size: 16px;
+  line-height: 1.8;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+a { color: var(--green); text-decoration: none; transition: color 0.2s; }
+a:hover { color: #33ffaa; }
+.container { max-width: 740px; margin: 0 auto; padding: 3rem 2rem; }
+
+/* Header */
+.header { margin-bottom: 1.5rem; display: flex; align-items: center; gap: 20px; }
+.photo { width: 78px; height: 78px; border-radius: 6px; border: 2px solid var(--border); object-fit: cover; filter: grayscale(100%); transition: filter 0.4s; }
+.photo:hover { filter: grayscale(0%); }
+.name { font-family: var(--display); font-size: 26px; font-weight: 700; color: #e8e8e8; letter-spacing: -0.02em; margin-bottom: 2px; }
+.role { font-size: 14px; color: var(--text-muted); }
+.pronouns { font-size: 12px; color: var(--text-faint); margin-top: 2px; }
+
+/* Nav */
+.nav { font-size: 14px; margin-bottom: 1.5rem; line-height: 2.2; }
+.nav a { color: var(--text-dim); margin-right: 18px; }
+.nav a:hover { color: var(--green); }
+.nav a.green { color: var(--green); }
+.nav a.amber { color: var(--amber); }
+
+.divider { height: 1px; background: var(--border); margin-bottom: 2rem; }
+
+/* Sections */
+.section { margin-bottom: 2.5rem; }
+.h2 { font-size: 17px; font-weight: 500; color: var(--text); padding-bottom: 8px; border-bottom: 1px solid var(--border); margin-bottom: 1.2rem; letter-spacing: 0.02em; }
+.about { font-size: 15px; color: var(--text-muted); line-height: 1.85; margin-bottom: 0.8rem; }
+.keywords { font-size: 13px; color: var(--text-faint); margin-top: 10px; letter-spacing: 0.02em; }
+
+/* Publications */
+.pub { margin-bottom: 18px; }
+.pub-title { font-size: 15px; color: var(--text); line-height: 1.7; }
+.pub-title strong { color: #e0e0e0; }
+.pub-journal { font-size: 13px; color: var(--text-dim); font-style: italic; margin-top: 2px; }
+.pub-toggle { font-size: 12px; color: var(--text-faint); cursor: pointer; transition: color 0.2s; display: inline-block; margin-top: 4px; }
+.pub-toggle:hover { color: var(--green); }
+.pub-abstract { max-height: 0; overflow: hidden; transition: max-height 0.4s ease, opacity 0.3s ease; opacity: 0; }
+.pub-abstract.open { max-height: 600px; opacity: 1; margin-top: 10px; }
+.pub-abstract-inner { font-size: 13px; color: var(--text-dim); line-height: 1.75; padding: 10px 0 6px 16px; border-left: 2px solid var(--border); }
+.pub-dl { font-size: 12px; margin-top: 6px; }
+.pub-dl a { color: var(--green); }
+
+.chapter-label { font-size: 12px; color: var(--text-faint); text-transform: uppercase; letter-spacing: 0.06em; margin-top: 1.2rem; margin-bottom: 0.6rem; }
+.chapter { margin-bottom: 10px; font-size: 14px; color: var(--text-muted); }
+.chapter em { color: var(--text-dim); }
+
+/* Research */
+.prose { font-size: 15px; color: var(--text-muted); line-height: 1.85; margin-bottom: 1rem; }
+.explore { border-left: 2px solid var(--border); padding-left: 20px; margin-top: 1.5rem; }
+.explore-label { font-size: 12px; color: var(--text-faint); text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 8px; }
+.explore p { font-size: 15px; color: var(--text-dim); line-height: 1.85; }
+
+/* Courses */
+.course { font-size: 14px; color: var(--text-muted); margin-bottom: 6px; }
+.course strong { color: var(--text); }
+.course-meta { color: var(--text-dim); }
+
+/* Timeline */
+.timeline { position: relative; padding-left: 24px; border-left: 2px solid #1a1a1a; }
+.tl-item { margin-bottom: 22px; position: relative; }
+.tl-dot { position: absolute; left: -29px; top: 5px; width: 10px; height: 10px; border-radius: 50%; }
+.tl-current { background: var(--green); box-shadow: 0 0 6px rgba(0,255,136,0.3); }
+.tl-past { background: var(--bg); border: 2px solid #404040; }
+.tl-year { font-size: 15px; color: #b0b0b0; font-weight: 500; }
+.tl-year-now { color: #e0e0e0; }
+.tl-place { font-size: 14px; color: var(--text-dim); margin-top: 2px; }
+.tl-detail { font-size: 13px; color: var(--text-faint); margin-top: 2px; }
+
+/* Footer */
+.footer { border-top: 1px solid var(--border); padding-top: 1.5rem; margin-top: 2rem; font-size: 12px; color: var(--text-faint); }
+
+/* Animation */
+@keyframes fadeUp { from { opacity:0; transform:translateY(10px); } to { opacity:1; transform:translateY(0); } }
+.header { animation: fadeUp 0.4s ease both 0.05s; }
+.nav { animation: fadeUp 0.4s ease both 0.1s; }
+.section { animation: fadeUp 0.5s ease both 0.2s; }
+
+/* Responsive */
+@media (max-width:600px) {
+  .container { padding: 1.5rem 1rem; }
+  .name { font-size: 22px; }
+  .header { flex-direction: column; align-items: flex-start; gap: 12px; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+<!-- Header -->
+<div class="header">
+  <img src="/images/santoshbs1.jpeg" alt="Santosh B. Srinivas" class="photo">
+  <div>
+    <div class="name">Santosh B. Srinivas</div>
+    <div class="role">Assistant Professor · Management & Human Resources · HEC Paris</div>
+    <div class="pronouns">he/him</div>
+  </div>
+</div>
+
+<div class="nav">
+  <a href="mailto:srinivas@hec.fr">srinivas@hec.fr</a>
+  <a href="https://github.com/santoshbs" target="_blank">github</a>
+  <a href="https://bit.ly/sbsgsch" target="_blank">google scholar</a>
+  <a href="https://orcid.org/0000-0002-7792-9622" target="_blank">orcid</a>
+</div>
+
+<div class="divider"></div>
+
+<!-- About -->
+<p class="about">
+I study how value is produced, assessed, and negotiated in organizational and entrepreneurial settings — and how evaluative processes reflect and reinforce social power. I integrate insights from cultural sociology, cognitive psychology, and management theory. Methodologically, I work primarily with natural language processing and large language models.
+</p>
+<p class="keywords">social evaluations · culture & cognition · entrepreneurship · computational social science</p>
+
+<!-- Publications -->
+<div class="section">
+<h2 class="h2">Publications</h2>
+
+<div class="pub">
+<p class="pub-title">Patil, S. V., <strong>Srinivas, S. B.</strong>, Tussing, D. V., & Rhee, J. (2025). Addressing the flexible use of cognitive flexibility constructs: Toward a multifaceted approach.</p>
+<p class="pub-journal">Academy of Management Annals, 19(1), 74–131.</p>
+<span class="pub-toggle" onclick="toggle(this)">+ abstract</span>
+<div class="pub-abstract">
+<div class="pub-abstract-inner">Many researchers have drawn on "cognitive flexibility" to denote the explanatory mechanism underlying a broad array of organizational theories. However, conceptualization of this construct is inconsistent, sometimes conflating with other constructs. We conduct a comprehensive search, strip away labels, and use text analysis to distinguish among five fluid thought processes — grouped into three higher-order categories. We argue that cognitive flexibility may be more appropriately viewed as a multifaceted, rather than monolithic, construct.
+<p class="pub-dl"><a href="https://doi.org/10.5465/annals.2023.0078" target="_blank">doi ↗</a></p>
+</div></div></div>
+
+<div class="pub">
+<p class="pub-title">Sinha, R., Chiu, C. Y., & <strong>Srinivas, S. B.</strong> (2021). Shared leadership and relationship conflict in teams: The moderating role of team power base diversity.</p>
+<p class="pub-journal">Journal of Organizational Behavior, 42(5), 649–667.</p>
+<span class="pub-toggle" onclick="toggle(this)">+ abstract</span>
+<div class="pub-abstract">
+<div class="pub-abstract-inner">Drawing on dominance complementarity theory, we suggest that team power base diversity — the variety in power bases among team members — moderates the impact of shared leadership on relationship conflict. In 70 project-based teams, we find that at high levels of power base diversity, shared leadership reduces relationship conflict and improves performance.
+<p class="pub-dl"><a href="https://doi.org/10.1002/job.2515" target="_blank">doi ↗</a></p>
+</div></div></div>
+
+<div class="pub">
+<p class="pub-title">Rindova, V. P., Martins, L. L., <strong>Srinivas, S. B.</strong>, & Chandler, D. (2018). The good, the bad, and the ugly of organizational rankings: A multidisciplinary review.</p>
+<p class="pub-journal">Journal of Management, 44(6), 2175–2208.</p>
+<span class="pub-toggle" onclick="toggle(this)">+ abstract</span>
+<div class="pub-abstract">
+<div class="pub-abstract-inner">A review across management, sociology, education, and law reveals three perspectives on rankings — as information intermediation, as comparative orderings, or as surveillance and control. We identify a new perspective — rankings entrepreneurship — which presents significant opportunities to extend our understanding.
+<p class="pub-dl"><a href="https://doi.org/10.1177/0149206317741962" target="_blank">doi ↗</a></p>
+</div></div></div>
+
+<p class="chapter-label">Book chapters</p>
+
+<div class="pub">
+<p class="chapter">Boyd, R. L., <strong>Srinivas, S. B.</strong>, Phadke, S., Wilson, S. R., & Pasca, P. AI and computation in the social sciences. <em>Forthcoming, Oxford University Press.</em></p>
+</div>
+
+<div class="pub">
+<p class="chapter">Rindova, V. P., <strong>Srinivas, S. B.</strong>, & Martins, L. L. (2022). How to break free: An orders-of-worth perspective on emancipatory entrepreneurship. <em>Research in the Sociology of Organizations.</em></p>
+<span class="pub-toggle" onclick="toggle(this)">+ abstract</span>
+<div class="pub-abstract">
+<div class="pub-abstract-inner">We propose that entrepreneurial acts toward emancipation can be guided by different notions of worth, beyond economic wealth creation. Drawing on Boltanski and Thévenot's orders of worth, we theorize how civic and inspired orders point to alternate emancipatory ends and means.
+<p class="pub-dl"><a href="http://bit.ly/3ZhbwbX" target="_blank">pre-print ↗</a></p>
+</div></div></div>
+
+<div class="pub">
+<p class="chapter">Rindova, V. P., & <strong>Srinivas, S. B.</strong> (2017). Managing meaning — culture. <em>Oxford Handbook of Management.</em></p>
+<span class="pub-toggle" onclick="toggle(this)">+ abstract</span>
+<div class="pub-abstract">
+<div class="pub-abstract-inner">This chapter theorizes how symbolic practices enable effective responses to diverse stakeholder demands, examining the role of culture in the construction and management of organizational meaning.
+<p class="pub-dl"><a href="http://santoshbs.github.io/files/RindovaSrinivas_2017_ManagingMeaning_PreprintVersion.pdf" target="_blank">pre-print ↗</a></p>
+</div></div></div>
+
+</div>
+
+<!-- Current Research & Explorations -->
+<div class="section">
+<h2 class="h2">Current research & explorations</h2>
+
+<p class="prose">
+My current work examines how different audiences construct and contest social positions on user-generated platforms, and how individuals adapt their self-presentation when the demographic composition of their field shifts. A parallel stream reconnects with my longstanding interest in entrepreneurship — how personal histories shape opportunity recognition, how ventures use rhetorical history to craft market positions, and how entrepreneurial rhetoric can function as a form of social critique.
+</p>
+
+<div class="explore">
+<p class="explore-label">Exploratory</p>
+<p>I am interested in how the emerging agentic AI economy may reshape the evaluation of competence, worth, and opportunity. As part of this, I deployed a small open-weights language model into social networks where participants are entirely AI agents or entirely humans. It participates, observes, and writes field notes on what gets discussed and what patterns emerge.
+<a href="/agentfield/" class="green">agentfield</a> records observations from an AI-only network;
+<a href="/mortalfield/" class="amber">mortalfield</a> does the same for human conversations.</p>
+</div>
+</div>
+
+<!-- Teaching -->
+<div class="section">
+<h2 class="h2">Teaching</h2>
+
+<p class="prose">
+My classes orient students to multiple conceptions of value and varied approaches to organizing — not a single dominant logic. I use case-based pedagogy, asking students to reflect individually and then compare perspectives collaboratively. With AI reshaping what competence looks like, I see an opportunity to redesign assessments around what matters most: the ability to translate ill-structured problems into relevant concepts and critically synthesize solutions.
+</p>
+
+<div style="margin-top:1rem;">
+<p class="course"><strong>Organizational Behavior</strong> <span style="color:#333;">·</span> <span class="course-meta">Grande École Program, HEC Paris · 2019 –</span></p>
+<p class="course"><strong>Doctoral Seminar in Organizational Behavior</strong> <span style="color:#333;">·</span> <span class="course-meta">HEC Paris · 2019 –</span></p>
+<p class="course"><strong>Outdoor Leadership Seminar</strong> <span style="color:#333;">·</span> <span class="course-meta">MBA, HEC Paris · co-supervisor</span></p>
+</div>
+</div>
+
+<!-- Timeline -->
+<div class="section">
+<h2 class="h2">Timeline</h2>
+<div class="timeline">
+  <div class="tl-item"><div class="tl-dot tl-current"></div><p class="tl-year tl-year-now">2019 – present</p><p class="tl-place">Assistant Professor, HEC Paris</p><p class="tl-detail">Department of Management & Human Resources</p></div>
+  <div class="tl-item"><div class="tl-dot tl-past"></div><p class="tl-year">2014 – 2019</p><p class="tl-place">Ph.D. in Management, University of Texas at Austin</p><p class="tl-detail">McCombs School of Business</p></div>
+  <div class="tl-item"><div class="tl-dot tl-past"></div><p class="tl-year">2010 – 2014</p><p class="tl-place">Indian School of Business, Hyderabad</p><p class="tl-detail">Research Assistant, OB · Asst. Director, Wadhwani Center for Entrepreneurship</p></div>
+  <div class="tl-item"><div class="tl-dot tl-past"></div><p class="tl-year">2008 – 2010</p><p class="tl-place">Institute of Leadership and Institutional Development, Bangalore</p></div>
+  <div class="tl-item"><div class="tl-dot tl-past"></div><p class="tl-year">2006 – 2007</p><p class="tl-place">PGP, Indian School of Business</p></div>
+  <div class="tl-item"><div class="tl-dot tl-past"></div><p class="tl-year">2001 – 2006</p><p class="tl-place">Intel Technologies India</p><p class="tl-detail">Technical Lead / Programmer Analyst</p></div>
+  <div class="tl-item" style="margin-bottom:0;"><div class="tl-dot tl-past"></div><p class="tl-year">1997 – 2001</p><p class="tl-place">B.E. (Hons.) Computer Science, BITS Pilani</p></div>
+</div>
+</div>
+
+<!-- Footer -->
+<div class="footer">Paris, France · srinivas@hec.fr</div>
+
+</div>
+
+<script>
+function toggle(el) {
+  var ab = el.nextElementSibling;
+  ab.classList.toggle('open');
+  el.textContent = ab.classList.contains('open') ? '− abstract' : '+ abstract';
+}
+</script>
+</body>
+</html>
