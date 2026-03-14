@@ -1,0 +1,345 @@
+/* ============================================================
+   DARK TERMINAL RESTYLE for AcademicPages / Minimal Mistakes
+   Drop this into assets/css/custom.css and import in _layouts
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Space+Mono:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap');
+
+:root {
+  --bg: #0a0a0a;
+  --surface: #111111;
+  --surface-raised: #1a1a1a;
+  --border: #2a2a2a;
+  --accent: #00ff88;
+  --accent-amber: #ffaa33;
+  --text: #c8c8c8;
+  --text-muted: #999999;
+  --text-dim: #666666;
+  --text-faint: #444444;
+  --link: #00ff88;
+  --link-hover: #33ffaa;
+  --mono: 'IBM Plex Mono', 'Courier New', monospace;
+  --sans: 'IBM Plex Sans', -apple-system, sans-serif;
+  --display: 'Space Mono', monospace;
+}
+
+/* ── Base ── */
+
+body {
+  background: var(--bg) !important;
+  color: var(--text) !important;
+  font-family: var(--sans) !important;
+  font-size: 16px !important;
+  line-height: 1.8 !important;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ── Links ── */
+
+a, a:visited {
+  color: var(--link) !important;
+  text-decoration: none !important;
+}
+
+a:hover {
+  color: var(--link-hover) !important;
+  text-decoration: underline !important;
+}
+
+/* ── Masthead / Navigation ── */
+
+.masthead {
+  background: var(--bg) !important;
+  border-bottom: 1px solid var(--border) !important;
+}
+
+.masthead__inner-wrap {
+  max-width: 780px !important;
+}
+
+.site-title {
+  font-family: var(--display) !important;
+  color: var(--accent) !important;
+  font-size: 20px !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.02em !important;
+}
+
+.greedy-nav {
+  background: var(--bg) !important;
+}
+
+.greedy-nav a {
+  color: var(--text-dim) !important;
+  font-family: var(--mono) !important;
+  font-size: 14px !important;
+}
+
+.greedy-nav a:hover {
+  color: var(--accent) !important;
+}
+
+.greedy-nav .visible-links a:before {
+  background: var(--accent) !important;
+}
+
+.masthead__menu-item a {
+  font-family: var(--mono) !important;
+}
+
+/* ── Page content area ── */
+
+.page {
+  max-width: 780px !important;
+}
+
+.page__content {
+  color: var(--text) !important;
+  font-size: 16px !important;
+  line-height: 1.8 !important;
+}
+
+.page__content p {
+  color: var(--text) !important;
+}
+
+.page__title {
+  font-family: var(--display) !important;
+  color: var(--accent) !important;
+  font-size: 28px !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.02em !important;
+}
+
+/* ── Sidebar / Author profile ── */
+
+.sidebar {
+  background: transparent !important;
+}
+
+.author__avatar img {
+  border-radius: 4px !important;
+  border: 1px solid var(--border) !important;
+}
+
+.author__name {
+  font-family: var(--mono) !important;
+  color: var(--text) !important;
+  font-size: 15px !important;
+}
+
+.author__bio {
+  color: var(--text-muted) !important;
+  font-size: 14px !important;
+}
+
+.author__urls-wrapper {
+  font-family: var(--mono) !important;
+}
+
+.author__urls li a {
+  color: var(--text-dim) !important;
+  font-size: 13px !important;
+}
+
+.author__urls li a:hover {
+  color: var(--accent) !important;
+}
+
+.author__urls .social-icons .svg-inline--fa {
+  color: var(--text-dim) !important;
+}
+
+.author__urls .social-icons a:hover .svg-inline--fa {
+  color: var(--accent) !important;
+}
+
+.btn--inverse {
+  background: var(--surface-raised) !important;
+  color: var(--text-dim) !important;
+  border: 1px solid var(--border) !important;
+  font-family: var(--mono) !important;
+  font-size: 13px !important;
+}
+
+.btn--inverse:hover {
+  background: var(--surface) !important;
+  color: var(--accent) !important;
+  border-color: var(--accent) !important;
+}
+
+/* ── Tables ── */
+
+table {
+  background: transparent !important;
+  color: var(--text) !important;
+  border: none !important;
+  font-size: 14px !important;
+}
+
+table th {
+  background: var(--surface) !important;
+  color: var(--text-muted) !important;
+  border-bottom: 1px solid var(--border) !important;
+  font-family: var(--mono) !important;
+  font-size: 13px !important;
+}
+
+table td {
+  border-bottom: 1px solid var(--border) !important;
+  color: var(--text) !important;
+}
+
+table tr:hover td {
+  background: var(--surface) !important;
+}
+
+/* ── Headings ── */
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text) !important;
+  font-family: var(--sans) !important;
+  font-weight: 500 !important;
+}
+
+h1 { font-size: 24px !important; }
+h2 { font-size: 20px !important; border-bottom: 1px solid var(--border) !important; padding-bottom: 8px !important; }
+h3 { font-size: 17px !important; }
+
+/* ── Footer ── */
+
+.page__footer {
+  background: var(--bg) !important;
+  border-top: 1px solid var(--border) !important;
+  color: var(--text-faint) !important;
+}
+
+.page__footer a {
+  color: var(--text-dim) !important;
+}
+
+.page__footer-follow li a {
+  color: var(--text-dim) !important;
+}
+
+/* ── Archive pages (publications, teaching, posts) ── */
+
+.archive__item-title a {
+  color: var(--accent) !important;
+  font-family: var(--sans) !important;
+}
+
+.archive__item-excerpt {
+  color: var(--text-muted) !important;
+}
+
+.archive__item {
+  border-bottom: 1px dotted var(--border) !important;
+  padding-bottom: 1.5rem !important;
+  margin-bottom: 1.5rem !important;
+}
+
+/* ── Taxonomy / tags ── */
+
+.taxonomy__section .archive__item-title a {
+  font-size: 16px !important;
+}
+
+/* ── Breadcrumbs ── */
+
+.breadcrumbs {
+  color: var(--text-dim) !important;
+  font-family: var(--mono) !important;
+  font-size: 12px !important;
+}
+
+.breadcrumbs a {
+  color: var(--text-dim) !important;
+}
+
+/* ── Code blocks ── */
+
+code {
+  background: var(--surface) !important;
+  color: var(--accent) !important;
+  font-family: var(--mono) !important;
+  font-size: 14px !important;
+  border: 1px solid var(--border) !important;
+  border-radius: 3px !important;
+  padding: 2px 6px !important;
+}
+
+pre {
+  background: var(--surface) !important;
+  border: 1px solid var(--border) !important;
+  border-radius: 4px !important;
+  color: var(--text) !important;
+}
+
+/* ── Blockquotes ── */
+
+blockquote {
+  border-left: 3px solid var(--accent) !important;
+  color: var(--text-muted) !important;
+  background: transparent !important;
+  font-style: italic !important;
+}
+
+/* ── Horizontal rules ── */
+
+hr {
+  border: none !important;
+  border-top: 1px solid var(--border) !important;
+}
+
+/* ── Selection ── */
+
+::selection {
+  background: var(--accent) !important;
+  color: var(--bg) !important;
+}
+
+/* ── Scrollbar (webkit) ── */
+
+::-webkit-scrollbar {
+  width: 8px;
+  background: var(--bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-faint);
+}
+
+/* ── Material icons in publications ── */
+
+.material-icons-outlined, .material-icons {
+  color: var(--text-dim) !important;
+}
+
+/* ── Misc overrides ── */
+
+.page__content strong {
+  color: var(--text) !important;
+}
+
+.page__content em {
+  color: var(--text-muted) !important;
+}
+
+.notice, .notice--info, .notice--warning, .notice--success, .notice--danger {
+  background: var(--surface) !important;
+  border: 1px solid var(--border) !important;
+  color: var(--text) !important;
+}
+
+/* ── Responsive ── */
+
+@media (max-width: 600px) {
+  .page__title { font-size: 22px !important; }
+  .site-title { font-size: 18px !important; }
+}
