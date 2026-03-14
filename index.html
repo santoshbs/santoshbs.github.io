@@ -95,9 +95,10 @@ a.amber:hover{color:#ffcc77;}
 
 /* ── Section ── */
 .section{margin-bottom:3rem;}
-.s-title{font-size:16px;font-weight:600;letter-spacing:.06em;color:var(--teal);margin-bottom:1.2rem;display:flex;align-items:center;gap:10px;}
-.s-title::before{content:'▸';color:var(--green);font-size:14px;}
-.s-title::after{content:'';flex:1;height:1px;background:var(--border);}
+.s-title{font-size:15px;font-weight:500;color:var(--text-3);margin-bottom:1.2rem;border-bottom:1px solid var(--border);padding-bottom:8px;}
+.s-title .prompt{color:var(--green);}
+.s-title .path{color:var(--teal);}
+.s-title .cmd{color:var(--text);}
 
 /* ── Pub ── */
 .pub{padding:14px 0;border-bottom:1px solid var(--border);transition:background .15s;}
@@ -107,15 +108,17 @@ a.amber:hover{color:#ffcc77;}
 .pub-cite{font-size:15px;color:var(--text-2);line-height:1.7;flex:1;}
 .pub-cite strong{color:var(--text);font-weight:600;}
 .pub-venue{font-size:14px;color:var(--text-3);font-style:italic;margin-top:3px;}
-.pub-tog{font-size:18px;font-weight:600;color:var(--teal);cursor:pointer;transition:all .2s;padding:0 10px;border:1px solid var(--border);border-radius:3px;line-height:1.4;}
-.pub-tog:hover{color:var(--green);border-color:var(--green);background:var(--green-subtle);}
+.pub-tog{font-size:14px;font-weight:600;color:var(--bg);cursor:pointer;transition:all .2s;padding:2px 12px;border:none;border-radius:3px;line-height:1.4;background:var(--teal);}
+.pub-tog:hover{background:var(--green);}
 .pub-detail{max-height:0;overflow:hidden;transition:max-height .4s ease,opacity .3s ease;opacity:0;}
 .pub-detail.open{max-height:500px;opacity:1;padding-top:10px;}
 .pub-abs{font-size:14px;color:var(--text-3);line-height:1.8;padding-left:14px;border-left:2px solid var(--teal-dim);}
 .pub-dl{font-size:13px;margin-top:8px;padding-left:14px;}
 .pub-dl a{margin-right:14px;color:var(--teal);}
 
-.ch-label{font-size:14px;font-weight:600;letter-spacing:.06em;color:var(--teal);margin:1.8rem 0 .6rem;}
+.pub-sublabel{font-size:13px;color:var(--text-4);margin-bottom:4px;}
+
+.ch-label{font-size:13px;color:var(--text-4);margin:1.8rem 0 .6rem;}
 
 /* ── Prose ── */
 .prose{font-size:15px;color:var(--text-2);line-height:1.9;margin-bottom:1rem;}
@@ -197,7 +200,8 @@ body::after{content:'';position:fixed;top:0;left:0;width:100%;height:100%;pointe
     <div class="neo-line"><span class="neo-key">role</span><span style="color:var(--text-4);">:</span> <span class="neo-val">assistant professor</span></div>
     <div class="neo-line"><span class="neo-key-t">dept</span><span style="color:var(--text-4);">:</span> <span class="neo-val">management & human resources</span></div>
     <div class="neo-line"><span class="neo-key-a">school</span><span style="color:var(--text-4);">:</span> <span class="neo-val">hec paris</span></div>
-    <div class="neo-line"><span class="neo-key-t">loc</span><span style="color:var(--text-4);">:</span> <span class="neo-val-dim">paris, france</span></div>    <div class="neo-colors">
+    <div class="neo-line"><span class="neo-key-t">loc</span><span style="color:var(--text-4);">:</span> <span class="neo-val-dim">paris, france</span></div>
+    <div class="neo-colors">
       <div class="neo-color" style="background:var(--red);"></div>
       <div class="neo-color" style="background:var(--yellow);"></div>
       <div class="neo-color" style="background:#28c840;"></div>
@@ -226,7 +230,9 @@ body::after{content:'';position:fixed;top:0;left:0;width:100%;height:100%;pointe
 
 <!-- Publications -->
 <div class="section">
-<p class="s-title">publications</p>
+<p class="s-title"><span class="prompt">santosh@hec</span><span style="color:var(--text-4);">:</span><span class="path">~/research</span><span style="color:var(--text-4);">$</span> <span class="cmd">cat publications</span></p>
+
+<p class="pub-sublabel">Peer-Reviewed Journal Articles</p>
 
 <div class="pub">
 <div class="pub-head">
@@ -267,7 +273,7 @@ body::after{content:'';position:fixed;top:0;left:0;width:100%;height:100%;pointe
 <p class="pub-dl"><a href="https://doi.org/10.1177/0149206317741962" target="_blank">doi ↗</a></p>
 </div></div>
 
-<p class="ch-label">chapters</p>
+<p class="ch-label">Book Chapters</p>
 
 <div class="pub" style="border-top:1px solid var(--border);">
 <div class="pub-head">
@@ -307,7 +313,7 @@ body::after{content:'';position:fixed;top:0;left:0;width:100%;height:100%;pointe
 
 <!-- Current Research -->
 <div class="section">
-<p class="s-title">current research & explorations</p>
+<p class="s-title"><span class="prompt">santosh@hec</span><span style="color:var(--text-4);">:</span><span class="path">~/research</span><span style="color:var(--text-4);">$</span> <span class="cmd">cat current_work</span></p>
 
 <p class="prose">My current work examines how different audiences construct and contest social positions on user-generated platforms, and how individuals adapt their self-presentation when the demographic composition of their field shifts. A parallel stream reconnects with entrepreneurship — how personal histories shape opportunity recognition, how ventures use rhetorical history to craft market positions, and how entrepreneurial rhetoric can function as social critique.</p>
 
@@ -321,7 +327,7 @@ body::after{content:'';position:fixed;top:0;left:0;width:100%;height:100%;pointe
 
 <!-- Teaching -->
 <div class="section">
-<p class="s-title">teaching</p>
+<p class="s-title"><span class="prompt">santosh@hec</span><span style="color:var(--text-4);">:</span><span class="path">~/teaching</span><span style="color:var(--text-4);">$</span> <span class="cmd">cat courses</span></p>
 
 <p class="prose">My classes orient students to multiple conceptions of value and varied approaches to organizing. I use case-based pedagogy, asking students to reflect individually and then compare perspectives collaboratively. With AI reshaping what competence looks like, I see an opportunity to redesign assessments around what matters most: the ability to translate ill-structured problems into relevant concepts and critically synthesize solutions.</p>
 
@@ -332,7 +338,7 @@ body::after{content:'';position:fixed;top:0;left:0;width:100%;height:100%;pointe
 
 <!-- Timeline -->
 <div class="section">
-<p class="s-title">timeline</p>
+<p class="s-title"><span class="prompt">santosh@hec</span><span style="color:var(--text-4);">:</span><span class="path">~</span><span style="color:var(--text-4);">$</span> <span class="cmd">history</span></p>
 <div class="tl">
   <div class="tl-i"><div class="tl-d now"></div><span class="tl-y">2019 –</span> <span class="tl-r">Assistant Professor, HEC Paris</span><br><span class="tl-m">Management & Human Resources</span></div>
   <div class="tl-i"><div class="tl-d"></div><span class="tl-y">2014 – 19</span> <span class="tl-r">Ph.D. Management, UT Austin</span><br><span class="tl-m">McCombs School of Business</span></div>
