@@ -25,9 +25,9 @@ layout: null
   --red: #ff5f57;
   --yellow: #ffbd2e;
   --text: #d0d0d0;
-  --text-2: #aaa;
-  --text-3: #888;
-  --text-4: #555;
+  --text-2: #b8b8b8;
+  --text-3: #999;
+  --text-4: #777;
   --font: 'Source Code Pro', 'Courier New', monospace;
 }
 *{margin:0;padding:0;box-sizing:border-box;}
@@ -64,10 +64,8 @@ a.amber:hover{color:#ffcc77;}
 .neo-corner-bl{bottom:-6px;left:-6px;border-bottom:2px solid var(--teal);border-left:2px solid var(--teal);}
 .neo-corner-br{bottom:-6px;right:-6px;border-bottom:2px solid var(--teal);border-right:2px solid var(--teal);}
 
-.neo-info{flex:1;font-size:14px;line-height:1.7;}
-.neo-name{font-size:20px;font-weight:600;color:#fff;margin-bottom:2px;}
-.neo-name .cursor{display:inline-block;width:9px;height:16px;background:var(--green);margin-left:4px;vertical-align:middle;animation:blink .9s step-end infinite;}
-@keyframes blink{0%,100%{opacity:1;}50%{opacity:0;}}
+.neo-info{flex:1;font-size:15px;line-height:1.7;}
+.neo-name{font-size:22px;font-weight:600;color:#fff;margin-bottom:2px;}
 .neo-sep{color:var(--text-4);margin:4px 0;}
 .neo-line{margin:2px 0;}
 .neo-key{color:var(--green);font-weight:500;}
@@ -80,7 +78,7 @@ a.amber:hover{color:#ffcc77;}
 
 /* ── Bio ── */
 .bio{font-size:15px;color:var(--text-2);line-height:1.9;margin-bottom:.6rem;}
-.bio-tags{font-size:13px;color:var(--text-4);margin-top:8px;margin-bottom:2rem;}
+.bio-tags{font-size:13px;color:var(--text-3);margin-top:8px;margin-bottom:2rem;}
 
 /* ── Links ── */
 .links{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:3rem;}
@@ -116,9 +114,9 @@ a.amber:hover{color:#ffcc77;}
 .pub-dl{font-size:13px;margin-top:8px;padding-left:14px;}
 .pub-dl a{margin-right:14px;color:var(--teal);}
 
-.pub-sublabel{font-size:13px;color:var(--text-4);margin-bottom:4px;}
+.pub-sublabel{font-size:13px;color:var(--text-3);margin-bottom:4px;}
 
-.ch-label{font-size:13px;color:var(--text-4);margin:1.8rem 0 .6rem;}
+.ch-label{font-size:13px;color:var(--text-3);margin:1.8rem 0 .6rem;}
 
 /* ── Prose ── */
 .prose{font-size:15px;color:var(--text-2);line-height:1.9;margin-bottom:1rem;}
@@ -126,13 +124,13 @@ a.amber:hover{color:#ffcc77;}
 /* ── Explore card ── */
 .ex-card{background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:18px 20px;margin-top:1.5rem;transition:border-color .3s;}
 .ex-card:hover{border-color:var(--teal-dim);}
-.ex-label{font-size:11px;text-transform:uppercase;letter-spacing:.1em;color:var(--text-4);margin-bottom:8px;}
+.ex-label{font-size:12px;text-transform:uppercase;letter-spacing:.1em;color:var(--text-3);margin-bottom:8px;}
 .ex-card p{font-size:14px;color:var(--text-3);line-height:1.85;}
 
 /* ── Course ── */
-.course{font-size:14px;color:var(--text-2);padding:5px 0;}
+.course{font-size:15px;color:var(--text-2);padding:5px 0;}
 .course strong{font-weight:500;color:var(--text);}
-.course span{color:var(--text-4);}
+.course span{color:var(--text-3);}
 
 /* ── Timeline ── */
 .tl{position:relative;padding-left:22px;}
@@ -141,9 +139,9 @@ a.amber:hover{color:#ffcc77;}
 .tl-d{position:absolute;left:-22px;top:12px;width:9px;height:9px;border-radius:50%;border:2px solid var(--text-4);background:var(--bg);transition:all .3s;}
 .tl-i:hover .tl-d{border-color:var(--teal);}
 .tl-d.now{border-color:var(--green);background:var(--green);box-shadow:0 0 8px rgba(0,255,136,.35);}
-.tl-y{font-size:13px;color:var(--text-3);font-weight:500;}
-.tl-r{font-size:14px;color:var(--text-2);}
-.tl-m{font-size:12px;color:var(--text-4);}
+.tl-y{font-size:15px;color:var(--text-3);font-weight:500;}
+.tl-r{font-size:15px;color:var(--text-2);}
+.tl-m{font-size:14px;color:var(--text-3);}
 
 /* ── Footer ── */
 .footer{margin-top:3rem;padding-top:1.5rem;border-top:1px solid var(--border);font-size:12px;color:var(--text-4);display:flex;justify-content:space-between;}
@@ -342,7 +340,7 @@ body::after{content:'';position:fixed;top:0;left:0;width:100%;height:100%;pointe
 <div class="tl">
   <div class="tl-i"><div class="tl-d now"></div><span class="tl-y">2019 –</span> <span class="tl-r">Assistant Professor, HEC Paris</span><br><span class="tl-m">Management & Human Resources</span></div>
   <div class="tl-i"><div class="tl-d"></div><span class="tl-y">2014 – 19</span> <span class="tl-r">Ph.D. Management, UT Austin</span><br><span class="tl-m">McCombs School of Business</span></div>
-  <div class="tl-i"><div class="tl-d"></div><span class="tl-y">2010 – 14</span> <span class="tl-r">Indian School of Business</span><br><span class="tl-m"> Assist. Director, WCED + Research Assistant +</span></div>
+  <div class="tl-i"><div class="tl-d"></div><span class="tl-y">2010 – 14</span> <span class="tl-r">Indian School of Business</span><br><span class="tl-m">Assist. Director, WCED + Research Assistant</span></div>
   <div class="tl-i"><div class="tl-d"></div><span class="tl-y">2008 – 10</span> <span class="tl-r">ILID, Bangalore</span><br><span class="tl-m">Program Manager</span></div>
   <div class="tl-i"><div class="tl-d"></div><span class="tl-y">2006 – 07</span> <span class="tl-r">PGP, Indian School of Business</span><br><span class="tl-m">MBA equivalent</span></div>
   <div class="tl-i"><div class="tl-d"></div><span class="tl-y">2001 – 06</span> <span class="tl-r">Intel Technologies India</span><br><span class="tl-m">Software Engineer + Technical Lead</span></div>
