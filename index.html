@@ -17,8 +17,13 @@ layout: null
   --green: #00ff88;
   --green-dim: #00cc6a;
   --green-subtle: rgba(0,255,136,.08);
+  --teal: #00ccaa;
+  --teal-dim: #009988;
+  --teal-subtle: rgba(0,204,170,.08);
   --amber: #ffaa33;
   --amber-subtle: rgba(255,170,51,.08);
+  --red: #ff5f57;
+  --yellow: #ffbd2e;
   --text: #d0d0d0;
   --text-2: #aaa;
   --text-3: #888;
@@ -30,27 +35,48 @@ html{scroll-behavior:smooth;}
 body{font-family:var(--font);background:var(--bg);color:var(--text);font-size:15px;line-height:1.8;-webkit-font-smoothing:antialiased;}
 a{color:var(--green);text-decoration:none;transition:all .2s;}
 a:hover{color:#66ffbb;}
+a.teal{color:var(--teal);}
+a.teal:hover{color:#33eedd;}
+a.amber{color:var(--amber);}
+a.amber:hover{color:#ffcc77;}
 ::selection{background:var(--green);color:var(--bg);}
 
 .page{max-width:720px;margin:0 auto;padding:3.5rem 2rem 3rem;}
 
-/* ── Terminal top bar ── */
-.terminal-bar{display:flex;align-items:center;gap:6px;margin-bottom:2rem;padding-bottom:1.5rem;border-bottom:1px solid var(--border);}
+/* ── Terminal bar ── */
+.terminal-bar{display:flex;align-items:center;gap:6px;margin-bottom:1.5rem;padding-bottom:1rem;border-bottom:1px solid var(--border);}
 .terminal-dot{width:10px;height:10px;border-radius:50%;}
-.dot-red{background:#ff5f57;}
-.dot-yellow{background:#ffbd2e;}
-.dot-green{background:#28c840;}
+.dot-r{background:var(--red);}
+.dot-y{background:var(--yellow);}
+.dot-g{background:#28c840;}
 .terminal-title{font-size:13px;color:var(--text-4);margin-left:12px;letter-spacing:.05em;}
 
-/* ── Hero ── */
-.hero{margin-bottom:2.5rem;display:flex;align-items:flex-start;gap:24px;}
-.hero-photo{width:72px;height:72px;border-radius:4px;border:2px solid var(--border);object-fit:cover;filter:grayscale(100%) brightness(.9);transition:all .4s;}
-.hero-photo:hover{filter:grayscale(0%) brightness(1);border-color:var(--green);}
-.hero-name{font-size:24px;font-weight:600;color:#fff;letter-spacing:-.01em;margin-bottom:3px;}
-.hero-cursor{display:inline-block;width:10px;height:18px;background:var(--green);margin-left:4px;vertical-align:middle;animation:blink .9s step-end infinite;}
+/* ── Neofetch hero ── */
+.neofetch{display:flex;align-items:flex-start;gap:28px;margin-bottom:2.5rem;padding:20px 0;}
+.neo-photo-frame{flex-shrink:0;position:relative;}
+.neo-photo{width:88px;height:88px;border-radius:4px;object-fit:cover;filter:grayscale(100%) brightness(.85);transition:all .5s;display:block;}
+.neo-photo:hover{filter:grayscale(0%) brightness(1);}
+.neo-frame{position:absolute;inset:-6px;border:1px solid var(--teal);border-radius:6px;pointer-events:none;opacity:.5;transition:opacity .4s;}
+.neo-photo-frame:hover .neo-frame{opacity:1;}
+.neo-corner{position:absolute;width:6px;height:6px;border-color:var(--teal);pointer-events:none;}
+.neo-corner-tl{top:-6px;left:-6px;border-top:2px solid var(--teal);border-left:2px solid var(--teal);}
+.neo-corner-tr{top:-6px;right:-6px;border-top:2px solid var(--teal);border-right:2px solid var(--teal);}
+.neo-corner-bl{bottom:-6px;left:-6px;border-bottom:2px solid var(--teal);border-left:2px solid var(--teal);}
+.neo-corner-br{bottom:-6px;right:-6px;border-bottom:2px solid var(--teal);border-right:2px solid var(--teal);}
+
+.neo-info{flex:1;font-size:14px;line-height:1.7;}
+.neo-name{font-size:20px;font-weight:600;color:#fff;margin-bottom:2px;}
+.neo-name .cursor{display:inline-block;width:9px;height:16px;background:var(--green);margin-left:4px;vertical-align:middle;animation:blink .9s step-end infinite;}
 @keyframes blink{0%,100%{opacity:1;}50%{opacity:0;}}
-.hero-sub{font-size:14px;color:var(--text-3);margin-bottom:2px;}
-.hero-pronouns{font-size:12px;color:var(--text-4);}
+.neo-sep{color:var(--text-4);margin:4px 0;}
+.neo-line{margin:2px 0;}
+.neo-key{color:var(--green);font-weight:500;}
+.neo-key-t{color:var(--teal);font-weight:500;}
+.neo-key-a{color:var(--amber);font-weight:500;}
+.neo-val{color:var(--text-2);}
+.neo-val-dim{color:var(--text-3);}
+.neo-colors{margin-top:8px;display:flex;gap:4px;}
+.neo-color{width:14px;height:14px;border-radius:2px;}
 
 /* ── Bio ── */
 .bio{font-size:15px;color:var(--text-2);line-height:1.9;margin-bottom:.6rem;}
@@ -62,15 +88,17 @@ a:hover{color:#66ffbb;}
 .links a:hover{color:var(--green);border-color:var(--green);background:var(--green-subtle);opacity:1;}
 .links a.g{color:var(--green);border-color:rgba(0,255,136,.3);}
 .links a.g:hover{background:var(--green-subtle);border-color:var(--green);}
+.links a.t{color:var(--teal);border-color:rgba(0,204,170,.3);}
+.links a.t:hover{background:var(--teal-subtle);border-color:var(--teal);}
 .links a.a{color:var(--amber);border-color:rgba(255,170,51,.3);}
 .links a.a:hover{background:var(--amber-subtle);border-color:var(--amber);}
 
 /* ── Section ── */
 .section{margin-bottom:3rem;}
-.s-title{font-size:12px;text-transform:uppercase;letter-spacing:.14em;color:var(--green-dim);margin-bottom:1.2rem;display:flex;align-items:center;gap:8px;}
+.s-title{font-size:12px;text-transform:uppercase;letter-spacing:.14em;color:var(--teal-dim);margin-bottom:1.2rem;display:flex;align-items:center;gap:8px;}
 .s-title::after{content:'';flex:1;height:1px;background:var(--border);}
 
-/* ── Pub (shared for articles AND chapters) ── */
+/* ── Pub ── */
 .pub{padding:14px 0;border-bottom:1px solid var(--border);transition:background .15s;}
 .pub:hover{background:var(--surface-hover);}
 .pub:first-child{border-top:1px solid var(--border);}
@@ -79,12 +107,12 @@ a:hover{color:#66ffbb;}
 .pub-cite strong{color:var(--text);font-weight:600;}
 .pub-venue{font-size:13px;color:var(--text-4);font-style:italic;margin-top:3px;}
 .pub-tog{font-size:13px;color:var(--text-4);cursor:pointer;transition:color .2s;padding:2px 8px;border:1px solid transparent;border-radius:3px;}
-.pub-tog:hover{color:var(--green);border-color:var(--border);}
+.pub-tog:hover{color:var(--teal);border-color:var(--border);}
 .pub-detail{max-height:0;overflow:hidden;transition:max-height .4s ease,opacity .3s ease;opacity:0;}
 .pub-detail.open{max-height:500px;opacity:1;padding-top:10px;}
-.pub-abs{font-size:13px;color:var(--text-3);line-height:1.8;padding-left:14px;border-left:2px solid var(--green-dim);}
+.pub-abs{font-size:13px;color:var(--text-3);line-height:1.8;padding-left:14px;border-left:2px solid var(--teal-dim);}
 .pub-dl{font-size:12px;margin-top:8px;padding-left:14px;}
-.pub-dl a{margin-right:14px;color:var(--green);}
+.pub-dl a{margin-right:14px;color:var(--teal);}
 
 .ch-label{font-size:11px;text-transform:uppercase;letter-spacing:.1em;color:var(--text-4);margin:1.8rem 0 .6rem;}
 
@@ -93,7 +121,7 @@ a:hover{color:#66ffbb;}
 
 /* ── Explore card ── */
 .ex-card{background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:18px 20px;margin-top:1.5rem;transition:border-color .3s;}
-.ex-card:hover{border-color:var(--green-dim);}
+.ex-card:hover{border-color:var(--teal-dim);}
 .ex-label{font-size:11px;text-transform:uppercase;letter-spacing:.1em;color:var(--text-4);margin-bottom:8px;}
 .ex-card p{font-size:14px;color:var(--text-3);line-height:1.85;}
 
@@ -107,7 +135,7 @@ a:hover{color:#66ffbb;}
 .tl::before{content:'';position:absolute;left:4px;top:10px;bottom:10px;width:1px;background:var(--border);}
 .tl-i{position:relative;padding:6px 0;}
 .tl-d{position:absolute;left:-22px;top:12px;width:9px;height:9px;border-radius:50%;border:2px solid var(--text-4);background:var(--bg);transition:all .3s;}
-.tl-i:hover .tl-d{border-color:var(--green);}
+.tl-i:hover .tl-d{border-color:var(--teal);}
 .tl-d.now{border-color:var(--green);background:var(--green);box-shadow:0 0 8px rgba(0,255,136,.35);}
 .tl-y{font-size:13px;color:var(--text-3);font-weight:500;}
 .tl-r{font-size:14px;color:var(--text-2);}
@@ -119,22 +147,24 @@ a:hover{color:#66ffbb;}
 /* ── Scanline ── */
 body::after{content:'';position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;background:repeating-linear-gradient(0deg,transparent,transparent 2px,rgba(0,0,0,.03) 2px,rgba(0,0,0,.03) 4px);z-index:9999;}
 
-/* ── Entrance ── */
+/* ── Animations ── */
 @keyframes rise{from{opacity:0;transform:translateY(14px);}to{opacity:1;transform:translateY(0);}}
 @keyframes typeIn{from{opacity:0;transform:translateX(-8px);}to{opacity:1;transform:translateX(0);}}
+@keyframes fadeIn{from{opacity:0;}to{opacity:1;}}
 .terminal-bar{animation:typeIn .4s ease both .05s;}
-.hero{animation:rise .5s ease both .15s;}
-.links{animation:rise .5s ease both .25s;}
+.neofetch{animation:rise .5s ease both .2s;}
+.bio{animation:fadeIn .5s ease both .35s;}
+.links{animation:rise .5s ease both .4s;}
 .section{opacity:0;animation:rise .5s ease both;}
-.section:nth-of-type(1){animation-delay:.35s;}
-.section:nth-of-type(2){animation-delay:.42s;}
-.section:nth-of-type(3){animation-delay:.49s;}
-.section:nth-of-type(4){animation-delay:.56s;}
+.section:nth-of-type(1){animation-delay:.5s;}
+.section:nth-of-type(2){animation-delay:.57s;}
+.section:nth-of-type(3){animation-delay:.64s;}
+.section:nth-of-type(4){animation-delay:.71s;}
 
 @media(max-width:600px){
   .page{padding:2rem 1.2rem;}
-  .hero-name{font-size:20px;}
-  .hero{flex-direction:column;gap:14px;}
+  .neofetch{flex-direction:column;gap:16px;}
+  .neo-name{font-size:18px;}
   .footer{flex-direction:column;gap:4px;}
 }
 </style>
@@ -144,19 +174,41 @@ body::after{content:'';position:fixed;top:0;left:0;width:100%;height:100%;pointe
 
 <!-- Terminal bar -->
 <div class="terminal-bar">
-  <span class="terminal-dot dot-red"></span>
-  <span class="terminal-dot dot-yellow"></span>
-  <span class="terminal-dot dot-green"></span>
-  <span class="terminal-title">santosh@hec ~ %</span>
+  <span class="terminal-dot dot-r"></span>
+  <span class="terminal-dot dot-y"></span>
+  <span class="terminal-dot dot-g"></span>
+  <span class="terminal-title">santosh@hec ~ % neofetch</span>
 </div>
 
-<!-- Hero -->
-<div class="hero">
-  <img src="/images/santoshbs1.jpeg" alt="Santosh B. Srinivas" class="hero-photo">
-  <div>
-    <h1 class="hero-name">Santosh B. Srinivas<span class="hero-cursor"></span></h1>
-    <p class="hero-sub">Assistant Professor · Management & Human Resources · HEC Paris</p>
-    <p class="hero-pronouns">he/him</p>
+<!-- Neofetch Hero -->
+<div class="neofetch">
+  <div class="neo-photo-frame">
+    <img src="/images/santoshbs1.jpeg" alt="Santosh B. Srinivas" class="neo-photo">
+    <div class="neo-frame"></div>
+    <div class="neo-corner neo-corner-tl"></div>
+    <div class="neo-corner neo-corner-tr"></div>
+    <div class="neo-corner neo-corner-bl"></div>
+    <div class="neo-corner neo-corner-br"></div>
+  </div>
+  <div class="neo-info">
+    <div class="neo-name">Santosh B. Srinivas<span class="cursor"></span></div>
+    <div class="neo-sep">━━━━━━━━━━━━━━━━━━━━━━━━━</div>
+    <div class="neo-line"><span class="neo-key">role</span><span style="color:var(--text-4);">:</span> <span class="neo-val">assistant professor, hec paris</span></div>
+    <div class="neo-line"><span class="neo-key-t">dept</span><span style="color:var(--text-4);">:</span> <span class="neo-val">management & human resources</span></div>
+    <div class="neo-line"><span class="neo-key-a">method</span><span style="color:var(--text-4);">:</span> <span class="neo-val">nlp, large language models</span></div>
+    <div class="neo-line"><span class="neo-key">focus</span><span style="color:var(--text-4);">:</span> <span class="neo-val-dim">social evaluations, entrepreneurship</span></div>
+    <div class="neo-line"><span class="neo-key-t">loc</span><span style="color:var(--text-4);">:</span> <span class="neo-val-dim">paris, france</span></div>
+    <div class="neo-line"><span style="color:var(--text-4);">pronouns</span><span style="color:var(--text-4);">:</span> <span class="neo-val-dim">he/him</span></div>
+    <div class="neo-colors">
+      <div class="neo-color" style="background:var(--red);"></div>
+      <div class="neo-color" style="background:var(--yellow);"></div>
+      <div class="neo-color" style="background:#28c840;"></div>
+      <div class="neo-color" style="background:var(--teal);"></div>
+      <div class="neo-color" style="background:var(--green);"></div>
+      <div class="neo-color" style="background:var(--amber);"></div>
+      <div class="neo-color" style="background:var(--text-3);"></div>
+      <div class="neo-color" style="background:var(--text-4);"></div>
+    </div>
   </div>
 </div>
 
