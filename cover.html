@@ -9,7 +9,7 @@
 *{margin:0;padding:0;box-sizing:border-box;}
 body{
   font-family:'Source Serif 4','Georgia',serif;
-  background:#fff;
+  background:#d0d0d0;
   color:#222;
   font-size:18px;
   line-height:1.75;
@@ -19,13 +19,24 @@ body{
 a{color:#222;text-decoration:none;}
 a:hover{text-decoration:underline;}
 
-/* ═══ PAGE 1 CONTAINER ═══ */
+/* ═══ PAGE WRAPPER: white pages on grey background ═══ */
+.paper-page{
+  background:#fff;
+  max-width:760px;
+  margin:0 auto;
+  box-shadow:0 1px 4px rgba(0,0,0,0.12);
+}
+
+.page-gap{
+  height:12px;
+  background:#d0d0d0;
+}
+
+/* ═══ PAGE 1 ═══ */
 .page-1{
   position:relative;
   min-height:100vh;
-  max-width:720px;
-  margin:0 auto;
-  padding:2rem 2.5rem 0;
+  padding:2.5rem 3rem 0;
 }
 
 /* Top: photo + line */
@@ -118,14 +129,14 @@ a:hover{text-decoration:underline;}
 .body-text a{color:#222;font-style:italic;}
 .body-text a:hover{text-decoration:underline;}
 
-/* ═══ FOOTNOTE: positioned at bottom of first viewport ═══ */
+/* Footnote: pinned to bottom of page 1 */
 .footnote-area{
   position:absolute;
   bottom:0;
-  left:2.5rem;
-  right:2.5rem;
+  left:3rem;
+  right:3rem;
   background:#fff;
-  padding-bottom:1.5rem;
+  padding-bottom:2rem;
   z-index:10;
 }
 
@@ -153,11 +164,28 @@ a:hover{text-decoration:underline;}
 .fn-correspond a{color:#333;}
 .fn-correspond a:hover{color:#111;}
 
-/* ═══ CONTINUATION: text continues after page 1 ═══ */
+/* ═══ PAGE 2+ ═══ */
 .page-cont{
-  max-width:720px;
-  margin:0 auto;
-  padding:3rem 2.5rem 4rem;
+  min-height:100vh;
+  padding:2rem 3rem 3rem;
+}
+
+/* Page header: date + line (like ASQ "782  Administrative Science Quarterly 68 (2023)") */
+.page-header{
+  display:flex;
+  justify-content:flex-end;
+  align-items:baseline;
+  padding-bottom:0.5rem;
+  margin-bottom:2rem;
+  border-bottom:2px solid #111;
+}
+
+.page-header-text{
+  font-family:'Source Sans 3','Helvetica Neue','Arial',sans-serif;
+  font-size:13px;
+  font-weight:600;
+  color:#333;
+  letter-spacing:0.02em;
 }
 
 .page-cont .body-text{
@@ -174,68 +202,91 @@ a:hover{text-decoration:underline;}
   .title-row{flex-direction:column;gap:1rem;}
   .info-col{width:100%;}
   .footnote-area{left:1.2rem;right:1.2rem;}
-  .page-cont{padding:2rem 1.2rem 3rem;}
+  .page-cont{padding:1.5rem 1.2rem 2rem;}
+  .paper-page{margin:0;box-shadow:none;}
+  .page-gap{height:8px;}
 }
 </style>
 </head>
 <body>
 
 <!-- ═══ PAGE 1 ═══ -->
-<div class="page-1">
+<div class="paper-page">
+  <div class="page-1">
 
-  <!-- Top: photo + line -->
-  <div class="top-row">
-    <img src="https://santoshbs.github.io/images/santoshbs1.jpeg" alt="Santosh Srinivas" class="top-photo">
-  </div>
-
-  <!-- Title + info -->
-  <div class="title-row">
-    <div class="title-col">
-      <h1 class="paper-title">Toward an Understanding of Value</h1>
+    <!-- Top: photo + line -->
+    <div class="top-row">
+      <img src="https://santoshbs.github.io/images/santoshbs1.jpeg" alt="Santosh Srinivas" class="top-photo">
     </div>
-    <div class="info-col">
-      <div class="info-text">
-        <a href="https://orcid.org/0000-0002-7792-9622">orcid.org/0000-0002-7792-9622</a><br>
-        <a href="https://scholar.google.com/citations?user=w9Fa_v0AAAAJ">Google Scholar</a><br>
-        <a href="https://github.com/santoshbs">github.com/santoshbs</a>
+
+    <!-- Title + info -->
+    <div class="title-row">
+      <div class="title-col">
+        <h1 class="paper-title">Toward an Understanding of Value</h1>
+      </div>
+      <div class="info-col">
+        <div class="info-text">
+          <a href="https://orcid.org/0000-0002-7792-9622">orcid.org/0000-0002-7792-9622</a><br>
+          <a href="https://scholar.google.com/citations?user=w9Fa_v0AAAAJ">Google Scholar</a><br>
+          <a href="https://github.com/santoshbs">github.com/santoshbs</a>
+        </div>
       </div>
     </div>
-  </div>
 
-  <!-- Author -->
-  <div class="author-block">
-    <div class="author-name">Santosh B. Srinivas*</div>
-  </div>
-
-  <!-- Abstract -->
-  <p class="abstract-text">I study how value is produced, assessed, and negotiated in organizational and entrepreneurial settings, and how evaluative processes reflect and reinforce social power. Methodologically, I work with natural language processing.</p>
-
-  <!-- Keywords -->
-  <p class="keywords"><span class="keywords-label">Keywords:</span> social evaluations, culture and cognition, entrepreneurship, computational social science</p>
-
-  <!-- Body text: flows continuously -->
-  <p class="body-text">My current work examines how different audiences construct and contest social positions on user-generated platforms, and how individuals adapt their self-presentation when the demographic composition of their field shifts. A parallel stream reconnects with entrepreneurship—how personal histories shape opportunity recognition, how ventures use rhetorical history to craft market positions, and how entrepreneurial rhetoric can function as social critique.</p>
-
-  <!-- Footnote: pinned to bottom of first viewport -->
-  <div class="footnote-area">
-    <hr class="footnote-rule">
-    <div class="fn-affil">
-      * Department of Management & Human Resources, HEC Paris, France.
+    <!-- Author -->
+    <div class="author-block">
+      <div class="author-name">Santosh B. Srinivas*</div>
     </div>
-    <div class="fn-correspond">
-      <span class="fn-correspond-label">Correspondence:</span><br>
-      Santosh B. Srinivas, Department of Management & Human Resources,<br>
-      HEC Paris, 1 Rue de la Libération, 78351 Jouy-en-Josas, France.<br>
-      Email: <a href="mailto:srinivas@hec.fr">srinivas@hec.fr</a>
-    </div>
-  </div>
 
+    <!-- Abstract -->
+    <p class="abstract-text">I study how value is produced, assessed, and negotiated in organizational and entrepreneurial settings, and how evaluative processes reflect and reinforce social power. Methodologically, I work with natural language processing.</p>
+
+    <!-- Keywords -->
+    <p class="keywords"><span class="keywords-label">Keywords:</span> social evaluations, culture and cognition, entrepreneurship, computational social science</p>
+
+    <!-- Body text on page 1 -->
+    <p class="body-text">My current work examines how different audiences construct and contest social positions on user-generated platforms, and how individuals adapt their self-presentation when the demographic composition of their field shifts. A parallel stream reconnects with entrepreneurship—how personal histories shape opportunity recognition, how ventures use rhetorical history to craft market positions, and how entrepreneurial rhetoric can function as social critique.</p>
+
+    <!-- Footnote pinned to bottom -->
+    <div class="footnote-area">
+      <hr class="footnote-rule">
+      <div class="fn-affil">
+        * Department of Management & Human Resources, HEC Paris, France.
+      </div>
+      <div class="fn-correspond">
+        <span class="fn-correspond-label">Correspondence:</span><br>
+        Santosh B. Srinivas, Department of Management & Human Resources,<br>
+        HEC Paris, 1 Rue de la Libération, 78351 Jouy-en-Josas, France.<br>
+        Email: <a href="mailto:srinivas@hec.fr">srinivas@hec.fr</a>
+      </div>
+    </div>
+
+  </div>
 </div>
 
-<!-- ═══ CONTINUATION ═══ -->
-<div class="page-cont">
-  <p class="body-text">I am interested in how the emerging agentic AI economy may reshape the evaluation of competence, worth, and opportunity. I deployed a small open-weights language model as an observer across three layers of AI discourse. It reads, participates, and periodically writes field notes on what gets discussed and what patterns emerge. <a href="https://santoshbs.github.io/agentfield/">agentfield</a> follows agent conversations; <a href="https://santoshbs.github.io/pressfield/">pressfield</a> reads news coverage about AI; <a href="https://santoshbs.github.io/practfield/">practfield</a> sits in on practitioner discussions.</p>
+<!-- Grey gap between pages -->
+<div class="page-gap"></div>
+
+<!-- ═══ PAGE 2 ═══ -->
+<div class="paper-page">
+  <div class="page-cont">
+
+    <!-- Page header with date + line -->
+    <div class="page-header">
+      <span class="page-header-text" id="pageHeaderDate"></span>
+    </div>
+
+    <!-- Continuation -->
+    <p class="body-text">I am interested in how the emerging agentic AI economy may reshape the evaluation of competence, worth, and opportunity. I deployed a small open-weights language model as an observer across three layers of AI discourse. It reads, participates, and periodically writes field notes on what gets discussed and what patterns emerge. <a href="https://santoshbs.github.io/agentfield/">agentfield</a> follows agent conversations; <a href="https://santoshbs.github.io/pressfield/">pressfield</a> reads news coverage about AI; <a href="https://santoshbs.github.io/practfield/">practfield</a> sits in on practitioner discussions.</p>
+
+  </div>
 </div>
+
+<script>
+var d = new Date();
+var months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+document.getElementById('pageHeaderDate').textContent = months[d.getMonth()] + ' ' + d.getFullYear();
+</script>
 
 </body>
 </html>
