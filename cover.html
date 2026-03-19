@@ -5,11 +5,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Santosh B. Srinivas</title>
 <meta name="description" content="Assistant Professor · Management & HR · HEC Paris">
-<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap" rel="stylesheet">
 <style>
 :root {
   --bg: #ffffff;
-  --ink: #1a1a1a;
+  --ink: #111;
   --ink-2: #444;
   --ink-3: #888;
   --ink-4: #bbb;
@@ -27,7 +27,7 @@ a{color:inherit;text-decoration:none;transition:color .2s;}
 ::selection{background:var(--ink);color:var(--bg);}
 
 /* ═══════════════════════════════════════════════════════════
-   PAGE 1: COVER
+   COVER
    ═══════════════════════════════════════════════════════════ */
 .cover {
   width: 100%;
@@ -38,24 +38,33 @@ a{color:inherit;text-decoration:none;transition:color .2s;}
   border-bottom: 1px solid var(--rule);
 }
 
-/* Top: Name + Date */
-.cover-top {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  margin-bottom: auto;
+/* ── Top: Name block ── */
+.cover-header {
+  margin-bottom: clamp(3rem, 6vh, 5rem);
 }
 
 .cover-name {
-  font-weight: 300;
+  font-size: clamp(2.8rem, 6.5vw, 5.5rem);
+  font-weight: 700;
   letter-spacing: -0.04em;
-  line-height: 0.95;
+  line-height: 1.05;
   color: var(--ink);
 }
 
-.cover-name-line {
-  display: block;
-  font-size: clamp(4.5rem, 11vw, 9rem);
+.cover-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-top: 0.8rem;
+  padding-top: 0.8rem;
+  border-top: 2px solid var(--ink);
+}
+
+.cover-affil {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--ink-2);
+  letter-spacing: 0.02em;
 }
 
 .cover-date {
@@ -64,97 +73,127 @@ a{color:inherit;text-decoration:none;transition:color .2s;}
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--ink-3);
-  text-align: right;
-  line-height: 1.6;
-  padding-top: 0.5rem;
 }
 
-/* Middle: Field feeds */
+/* ── Middle: Field observations ── */
+.cover-fields {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 680px;
+}
+
+.cover-fields-header {
+  margin-bottom: 2rem;
+}
+
+.cover-fields-title {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink);
+  margin-bottom: 0.5rem;
+}
+
+.cover-fields-desc {
+  font-size: 14px;
+  font-weight: 300;
+  color: var(--ink-3);
+  line-height: 1.7;
+  max-width: 560px;
+}
+
 .cover-feeds {
-  padding-top: clamp(3rem, 5vh, 5rem);
-  margin-bottom: auto;
-  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
 }
 
 .cover-feed {
-  margin-bottom: clamp(1.5rem, 3vh, 2.5rem);
+  padding: 1.2rem 0;
+  border-top: 1px solid #eee;
   opacity: 0;
   animation: feedIn 0.5s ease forwards;
 }
+
+.cover-feed:last-child { border-bottom: 1px solid #eee; }
 
 .cover-feed:nth-child(1) { animation-delay: 0.3s; }
 .cover-feed:nth-child(2) { animation-delay: 0.5s; }
 .cover-feed:nth-child(3) { animation-delay: 0.7s; }
 
 @keyframes feedIn {
-  from { opacity: 0; transform: translateY(6px); }
+  from { opacity: 0; transform: translateY(4px); }
   to { opacity: 1; transform: translateY(0); }
 }
 
+.cover-feed-top {
+  display: flex;
+  align-items: baseline;
+  gap: 0.8rem;
+  margin-bottom: 4px;
+}
+
 .cover-feed-source {
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 600;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  margin-bottom: 2px;
+  letter-spacing: 0.06em;
 }
 
 .cover-feed-source.src-agent { color: var(--green); }
 .cover-feed-source.src-press { color: var(--amber); }
 .cover-feed-source.src-pract { color: var(--accent); }
 
+.cover-feed-what {
+  font-size: 12px;
+  font-weight: 300;
+  color: var(--ink-4);
+}
+
 .cover-feed-title {
   font-size: 17px;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 1.5;
   color: var(--ink);
 }
 
-.cover-feed-title a {
-  color: var(--ink);
-  transition: opacity 0.2s;
-}
-
-.cover-feed-title a:hover { opacity: 0.5; }
+.cover-feed-title a { color: var(--ink); }
+.cover-feed-title a:hover { color: var(--ink-3); }
 
 .cover-feed-snippet {
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 300;
   font-style: italic;
   color: var(--ink-3);
   line-height: 1.6;
   margin-top: 4px;
-  max-width: 540px;
+  max-width: 520px;
 }
 
-/* Bottom: Affiliation + Footnote */
+/* ── Bottom: links ── */
 .cover-bottom {
+  padding-top: 2rem;
   display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  gap: 2rem;
-  padding-top: 3rem;
+  gap: 1.5rem;
+  flex-wrap: wrap;
 }
 
-.cover-affil {
-  font-size: clamp(18px, 2.5vw, 24px);
-  font-weight: 400;
-  color: var(--ink);
-  line-height: 1.35;
+.cover-bottom a {
+  font-size: 13px;
+  color: var(--ink-3);
+  padding: 4px 12px;
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+  transition: all 0.2s;
+  letter-spacing: 0.02em;
 }
 
-.cover-footnote {
-  font-size: 10px;
-  font-weight: 300;
-  color: var(--ink-4);
-  max-width: 320px;
-  text-align: right;
-  line-height: 1.7;
-  letter-spacing: 0.01em;
-}
+.cover-bottom a:hover { color: var(--ink); border-color: var(--ink-3); }
 
 /* ═══════════════════════════════════════════════════════════
-   PAGE 2: TABLE OF CONTENTS
+   TABLE OF CONTENTS
    ═══════════════════════════════════════════════════════════ */
 .toc-page {
   min-height: 100vh;
@@ -190,28 +229,13 @@ a{color:inherit;text-decoration:none;transition:color .2s;}
 
 .toc-item:hover { padding-left: 0.8rem; }
 
-.toc-num {
-  font-size: 12px;
-  color: var(--ink-4);
-  min-width: 2.5rem;
-  letter-spacing: 0.04em;
-}
+.toc-num { font-size: 12px; color: var(--ink-4); min-width: 2.5rem; }
 
-.toc-label {
-  font-size: 20px;
-  font-weight: 500;
-  color: var(--ink);
-  flex: 1;
-  letter-spacing: -0.01em;
-}
+.toc-label { font-size: 20px; font-weight: 500; color: var(--ink); flex: 1; }
 
 .toc-dots {
-  flex-grow: 1;
-  min-width: 30px;
-  margin: 0 1rem;
-  border-bottom: 1px dotted var(--ink-4);
-  height: 0;
-  align-self: center;
+  flex-grow: 1; min-width: 30px; margin: 0 1rem;
+  border-bottom: 1px dotted var(--ink-4); height: 0; align-self: center;
 }
 
 /* ═══════════════════════════════════════════════════════════
@@ -228,93 +252,54 @@ a{color:inherit;text-decoration:none;transition:color .2s;}
 .content-inner { max-width: 620px; width: 100%; }
 
 .content-section-num {
-  font-size: 10px;
-  color: var(--ink-4);
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  margin-bottom: 0.5rem;
+  font-size: 10px; color: var(--ink-4); letter-spacing: 0.12em;
+  text-transform: uppercase; margin-bottom: 0.5rem;
 }
 
 .content-section-title {
-  font-size: 28px;
-  font-weight: 600;
-  color: var(--ink);
-  letter-spacing: -0.02em;
-  margin-bottom: 2rem;
-  padding-bottom: 1rem;
-  border-bottom: 1px solid var(--rule);
+  font-size: 28px; font-weight: 600; color: var(--ink);
+  letter-spacing: -0.02em; margin-bottom: 2rem;
+  padding-bottom: 1rem; border-bottom: 1px solid var(--rule);
 }
 
-.content-prose {
-  font-size: 15px;
-  color: var(--ink-2);
-  line-height: 1.9;
-  margin-bottom: 1.5rem;
-}
+.content-prose { font-size: 15px; color: var(--ink-2); line-height: 1.9; margin-bottom: 1.5rem; }
+.content-tags { font-size: 13px; color: var(--ink-3); margin-bottom: 2rem; }
 
-.content-tags {
-  font-size: 13px;
-  color: var(--ink-3);
-  letter-spacing: 0.03em;
-  margin-bottom: 2rem;
-}
-
-.content-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 6px;
-  margin-bottom: 2rem;
-}
-
+.content-links { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 2rem; }
 .content-links a {
-  font-size: 13px;
-  color: var(--ink-3);
-  padding: 5px 14px;
-  border: 1px solid var(--rule);
-  border-radius: 3px;
-  transition: all 0.2s;
-  letter-spacing: 0.02em;
+  font-size: 13px; color: var(--ink-3); padding: 5px 14px;
+  border: 1px solid var(--rule); border-radius: 3px;
+  transition: all 0.2s; letter-spacing: 0.02em;
 }
-
 .content-links a:hover { color: var(--ink); border-color: var(--ink-3); }
 
 .content-photo {
-  width: 56px; height: 56px;
-  border-radius: 50%;
-  object-fit: cover;
-  filter: grayscale(0.5);
-  margin-bottom: 1.5rem;
-  border: 2px solid var(--rule);
+  width: 56px; height: 56px; border-radius: 50%; object-fit: cover;
+  filter: grayscale(0.5); margin-bottom: 1.5rem; border: 2px solid var(--rule);
 }
 
-/* Publications */
+/* Pubs */
 .pub { padding: 14px 0; border-bottom: 1px solid #eee; }
 .pub:first-child { border-top: 1px solid #eee; }
-
 .pub-cite { font-size: 15px; color: var(--ink-2); line-height: 1.7; }
 .pub-cite strong { color: var(--ink); font-weight: 600; }
 .pub-venue { font-size: 14px; color: var(--ink-3); font-style: italic; margin-top: 3px; }
-
 .pub-tog {
   font-size: 13px; font-weight: 500; color: var(--ink-3); cursor: pointer;
   border: 1px solid var(--rule); background: none; padding: 2px 10px;
-  border-radius: 3px; margin-top: 6px; transition: all 0.2s;
-  font-family: var(--font);
+  border-radius: 3px; margin-top: 6px; transition: all 0.2s; font-family: var(--font);
 }
 .pub-tog:hover { border-color: var(--ink-3); color: var(--ink); }
-
-.pub-detail { max-height: 0; overflow: hidden; transition: max-height .4s ease, opacity .3s ease; opacity: 0; }
+.pub-detail { max-height: 0; overflow: hidden; transition: max-height .4s ease, opacity .3s; opacity: 0; }
 .pub-detail.open { max-height: 2000px; opacity: 1; padding-top: 10px; }
-
 .pub-abs { font-size: 14px; color: var(--ink-3); line-height: 1.8; padding-left: 14px; border-left: 2px solid var(--rule); }
 .pub-dl { font-size: 13px; margin-top: 8px; padding-left: 14px; }
 .pub-dl a { color: var(--green); }
 .pub-dl a:hover { color: var(--ink); }
-
 .pub-sublabel { font-size: 11px; color: var(--ink-4); letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 0.5rem; }
 .ch-label { font-size: 11px; color: var(--ink-4); letter-spacing: 0.08em; text-transform: uppercase; margin: 2rem 0 0.5rem; }
 
-/* Explore card */
+/* Explore */
 .ex-card { background: #f8f8f6; border: 1px solid #eee; border-radius: 6px; padding: 18px 20px; margin-top: 1.5rem; }
 .ex-label { font-size: 10px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--ink-4); margin-bottom: 8px; }
 .ex-card p { font-size: 14px; color: var(--ink-3); line-height: 1.85; }
@@ -338,65 +323,78 @@ a{color:inherit;text-decoration:none;transition:color .2s;}
 .tl-r { font-size: 15px; color: var(--ink-2); }
 .tl-m { font-size: 14px; color: var(--ink-3); }
 
-/* Footer */
 .content-footer {
   margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid var(--rule);
   font-size: 12px; color: var(--ink-4); display: flex; justify-content: space-between;
 }
 
-/* ═══════════════════════════════════════════════════════════
-   RESPONSIVE
-   ═══════════════════════════════════════════════════════════ */
+/* Responsive */
 @media (max-width: 600px) {
-  .cover-name-line { font-size: 3.5rem; }
-  .cover-feeds { max-width: 100%; }
-  .cover-bottom { flex-direction: column; gap: 1rem; }
-  .cover-footnote { text-align: left; max-width: 100%; }
-  .cover-affil { font-size: 18px; }
+  .cover-name { font-size: 2.5rem; }
+  .cover-meta { flex-direction: column; gap: 0.3rem; }
   .toc-label { font-size: 17px; }
 }
 </style>
 </head>
 <body>
 
-<!-- ═══════════════════════════════════════════════════════════
-     PAGE 1: THE COVER
-     ═══════════════════════════════════════════════════════════ -->
+<!-- ═══════════ COVER ═══════════ -->
 <section class="cover">
 
-  <div class="cover-top">
-    <div class="cover-name">
-      <span class="cover-name-line">santosh</span>
-      <span class="cover-name-line">srinivas</span>
-    </div>
-    <div class="cover-date" id="coverDate"></div>
-  </div>
-
-  <div class="cover-feeds" id="coverFeeds">
-    <div class="cover-feed">
-      <div class="cover-feed-source src-agent">agentfield</div>
-      <div class="cover-feed-title" id="feed-agent">Loading…</div>
-    </div>
-    <div class="cover-feed">
-      <div class="cover-feed-source src-press">pressfield</div>
-      <div class="cover-feed-title" id="feed-press">Loading…</div>
-    </div>
-    <div class="cover-feed">
-      <div class="cover-feed-source src-pract">practfield</div>
-      <div class="cover-feed-title" id="feed-pract">Loading…</div>
+  <!-- Name block -->
+  <div class="cover-header">
+    <div class="cover-name">santosh<br>srinivas</div>
+    <div class="cover-meta">
+      <div class="cover-affil">Assistant Professor, Management & HR, HEC Paris</div>
+      <div class="cover-date" id="coverDate"></div>
     </div>
   </div>
 
+  <!-- Field observations -->
+  <div class="cover-fields">
+    <div class="cover-fields-header">
+      <div class="cover-fields-title">Field Observations</div>
+      <div class="cover-fields-desc">An open-weights language model deployed as an observer writes margin notes across three layers of AI discourse — agent conversations, press coverage, and practitioner discussions.</div>
+    </div>
+
+    <div class="cover-feeds">
+      <div class="cover-feed">
+        <div class="cover-feed-top">
+          <span class="cover-feed-source src-agent">agentfield</span>
+          <span class="cover-feed-what">— agent conversations</span>
+        </div>
+        <div class="cover-feed-title" id="feed-agent">Loading…</div>
+      </div>
+
+      <div class="cover-feed">
+        <div class="cover-feed-top">
+          <span class="cover-feed-source src-press">pressfield</span>
+          <span class="cover-feed-what">— press coverage</span>
+        </div>
+        <div class="cover-feed-title" id="feed-press">Loading…</div>
+      </div>
+
+      <div class="cover-feed">
+        <div class="cover-feed-top">
+          <span class="cover-feed-source src-pract">practfield</span>
+          <span class="cover-feed-what">— practitioner discussions</span>
+        </div>
+        <div class="cover-feed-title" id="feed-pract">Loading…</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom links -->
   <div class="cover-bottom">
-    <div class="cover-affil">Assistant Professor, HEC Paris</div>
-    <div class="cover-footnote">* Field notes written by an open-weights language model (gpt-oss:120b) deployed as an observer across three layers of AI discourse.</div>
+    <a href="mailto:srinivas@hec.fr">email</a>
+    <a href="https://github.com/santoshbs" target="_blank">github</a>
+    <a href="https://scholar.google.com/citations?user=w9Fa_v0AAAAJ&hl=en&oi=sra" target="_blank">scholar</a>
+    <a href="https://orcid.org/0000-0002-7792-9622" target="_blank">orcid</a>
   </div>
 
 </section>
 
-<!-- ═══════════════════════════════════════════════════════════
-     PAGE 2: TABLE OF CONTENTS
-     ═══════════════════════════════════════════════════════════ -->
+<!-- ═══════════ TABLE OF CONTENTS ═══════════ -->
 <section class="toc-page" id="toc">
   <div class="toc-inner">
     <div class="toc-head">Contents</div>
@@ -430,69 +428,14 @@ a{color:inherit;text-decoration:none;transition:color .2s;}
   <div class="content-inner">
     <div class="content-section-num">Section ii</div>
     <h2 class="content-section-title">Publications</h2>
-
     <p class="pub-sublabel">Peer-Reviewed Journal Articles</p>
-
-    <div class="pub">
-      <p class="pub-cite">Patil, S. V., <strong>Srinivas, S. B.</strong>, Tussing, D. V., &amp; Rhee, J. (2025). Addressing the flexible use of cognitive flexibility constructs: Toward a multifaceted approach.</p>
-      <p class="pub-venue">Academy of Management Annals, 19(1), 74–131.</p>
-      <button class="pub-tog" onclick="toggle(this)">+ abstract</button>
-      <div class="pub-detail">
-        <p class="pub-abs">Many researchers have drawn on the term "cognitive flexibility" to denote the explanatory mechanism underlying a broad array of organizational theories. However, conceptualization (and operationalization) of this construct is inconsistent, and sometimes conflates with that of other constructs, thereby weakening our understanding of cognitive flexibility and muddling the theories that rest on it. To bring clarity, we conduct a comprehensive search of cognitive flexibility constructs, strip away their labels, and use text analysis and manual coding of their descriptions to distinguish among five fluid thought processes: (1) elaborating, (2) dimensionalizing, (3) integrating, (4) juxtaposing, and (5) matching. We further group these processes into three higher-order categories involving the reshaping, contending, and shifting of cognitive structures—and conduct a literature review of their consequences and antecedents. Our surveying demonstrates that these processes' substance and implications differ markedly. As such, we argue that cognitive flexibility may be more appropriately viewed as a multifaceted, rather than monolithic, construct. We discuss how a multifaceted approach helps bring clarity to implicated organizational theories—and opens up exciting questions about the transferability, antagonism, and trainability of cognitive flexibility's distinct facets.</p>
-        <p class="pub-dl"><a href="https://doi.org/10.5465/annals.2023.0078" target="_blank">doi ↗</a></p>
-      </div>
-    </div>
-
-    <div class="pub">
-      <p class="pub-cite">Sinha, R., Chiu, C. Y., &amp; <strong>Srinivas, S. B.</strong> (2021). Shared leadership and relationship conflict in teams: The moderating role of team power base diversity.</p>
-      <p class="pub-venue">Journal of Organizational Behavior, 42(5), 649–667.</p>
-      <button class="pub-tog" onclick="toggle(this)">+ abstract</button>
-      <div class="pub-detail">
-        <p class="pub-abs">Shared leadership in teams is believed to be beneficial for team effectiveness. Yet recent empirical evidence shows that it may not always bring positive effects. On the one hand, the team leadership literature suggests that shared leadership allows for frequent interactions among members, improving intrateam harmony and reducing conflicts. On the other hand, the team power literature suggests that frequent influence interactions among multiple leaders can form an arena in which members fight over their power turfs, thereby triggering conflict. Drawing on dominance complementarity theory, we suggest that team power base diversity—the variety in power bases among team members from which they derive their informal influence—is an important contingency that moderates the impact of shared leadership on relationship conflict to influence team performance. In a sample of 70 project-based teams, we find support for the proposition that at high levels of team power base diversity, shared leadership has a positive downstream effect on team performance through reduced team relationship conflict. We discuss the contributions to knowledge about shared leadership and highlight practical implications for temporary teams with no formally designated leaders.</p>
-        <p class="pub-dl"><a href="https://doi.org/10.1002/job.2515" target="_blank">doi ↗</a></p>
-      </div>
-    </div>
-
-    <div class="pub">
-      <p class="pub-cite">Rindova, V. P., Martins, L. L., <strong>Srinivas, S. B.</strong>, &amp; Chandler, D. (2018). The good, the bad, and the ugly of organizational rankings: A multidisciplinary review.</p>
-      <p class="pub-venue">Journal of Management, 44(6), 2175–2208.</p>
-      <button class="pub-tog" onclick="toggle(this)">+ abstract</button>
-      <div class="pub-detail">
-        <p class="pub-abs">A review of the literature on organizational rankings across management, sociology, education, and law reveals three perspectives on these complex evaluations—rankings are seen as a form of information intermediation, as comparative orderings, or as a means for surveillance and control. The information intermediation perspective views rankings as information products that address information asymmetries between the ranked organizations and their stakeholders; the comparative orderings perspective views them as representations of organizational status and reputation; and the surveillance and control perspective emphasizes their disciplining power that subjects ranked organizations to political and economic interests. For each perspective, we identify core contributions as well as additional questions that extend the current body of research. We also identify a new perspective—rankings entrepreneurship—which has been overlooked to date but presents significant opportunities to extend our understanding of the production and consumption of rankings.</p>
-        <p class="pub-dl"><a href="https://doi.org/10.1177/0149206317741962" target="_blank">doi ↗</a></p>
-      </div>
-    </div>
-
+    <div class="pub"><p class="pub-cite">Patil, S. V., <strong>Srinivas, S. B.</strong>, Tussing, D. V., &amp; Rhee, J. (2025). Addressing the flexible use of cognitive flexibility constructs: Toward a multifaceted approach.</p><p class="pub-venue">Academy of Management Annals, 19(1), 74–131.</p><button class="pub-tog" onclick="toggle(this)">+ abstract</button><div class="pub-detail"><p class="pub-abs">Many researchers have drawn on the term "cognitive flexibility" to denote the explanatory mechanism underlying a broad array of organizational theories. However, conceptualization (and operationalization) of this construct is inconsistent, and sometimes conflates with that of other constructs, thereby weakening our understanding of cognitive flexibility and muddling the theories that rest on it. To bring clarity, we conduct a comprehensive search of cognitive flexibility constructs, strip away their labels, and use text analysis and manual coding of their descriptions to distinguish among five fluid thought processes: (1) elaborating, (2) dimensionalizing, (3) integrating, (4) juxtaposing, and (5) matching. We further group these processes into three higher-order categories involving the reshaping, contending, and shifting of cognitive structures—and conduct a literature review of their consequences and antecedents.</p><p class="pub-dl"><a href="https://doi.org/10.5465/annals.2023.0078" target="_blank">doi ↗</a></p></div></div>
+    <div class="pub"><p class="pub-cite">Sinha, R., Chiu, C. Y., &amp; <strong>Srinivas, S. B.</strong> (2021). Shared leadership and relationship conflict in teams: The moderating role of team power base diversity.</p><p class="pub-venue">Journal of Organizational Behavior, 42(5), 649–667.</p><button class="pub-tog" onclick="toggle(this)">+ abstract</button><div class="pub-detail"><p class="pub-abs">Shared leadership in teams is believed to be beneficial for team effectiveness. Yet recent empirical evidence shows that it may not always bring positive effects. Drawing on dominance complementarity theory, we suggest that team power base diversity—the variety in power bases among team members from which they derive their informal influence—is an important contingency that moderates the impact of shared leadership on relationship conflict to influence team performance.</p><p class="pub-dl"><a href="https://doi.org/10.1002/job.2515" target="_blank">doi ↗</a></p></div></div>
+    <div class="pub"><p class="pub-cite">Rindova, V. P., Martins, L. L., <strong>Srinivas, S. B.</strong>, &amp; Chandler, D. (2018). The good, the bad, and the ugly of organizational rankings: A multidisciplinary review.</p><p class="pub-venue">Journal of Management, 44(6), 2175–2208.</p><button class="pub-tog" onclick="toggle(this)">+ abstract</button><div class="pub-detail"><p class="pub-abs">A review of the literature on organizational rankings across management, sociology, education, and law reveals three perspectives on these complex evaluations—rankings are seen as a form of information intermediation, as comparative orderings, or as a means for surveillance and control. We also identify a new perspective—rankings entrepreneurship—which presents significant opportunities to extend our understanding of the production and consumption of rankings.</p><p class="pub-dl"><a href="https://doi.org/10.1177/0149206317741962" target="_blank">doi ↗</a></p></div></div>
     <p class="ch-label">Book Chapters</p>
-
-    <div class="pub">
-      <p class="pub-cite">Boyd, R. L., <strong>Srinivas, S. B.</strong>, Phadke, S., Wilson, S. R., &amp; Pasca, P. AI and computation in the social sciences.</p>
-      <p class="pub-venue">Forthcoming, Oxford University Press.</p>
-      <button class="pub-tog" onclick="toggle(this)">+ abstract</button>
-      <div class="pub-detail">
-        <p class="pub-abs">Artificial Intelligence (AI) is fundamentally reshaping the study of human behavior across psychology and the social sciences. This chapter explores AI's transformative role at multiple levels of analysis — individual, group, and societal — highlighting its capacity to enhance theory, measurement, and practical applications. We emphasize the interdisciplinary nature of AI as a research toolkit, demonstrating how its methods — from natural language processing to agent-based modeling — can be strategically integrated to generate novel insights. While AI presents unprecedented opportunities for analyzing large-scale social dynamics, understanding intergroup communication, and modeling individual differences, it also introduces critical ethical and methodological challenges. Issues of algorithmic bias, data privacy, and the interpretability of AI-generated insights require researchers to adopt a thoughtful and transparent approach. Through real-world applications, case studies, and methodological innovations, this chapter provides a roadmap for leveraging AI to advance social science research while maintaining scientific rigor and ethical responsibility.</p>
-      </div>
-    </div>
-
-    <div class="pub">
-      <p class="pub-cite">Rindova, V. P., <strong>Srinivas, S. B.</strong>, &amp; Martins, L. L. (2022). How to break free: An orders-of-worth perspective on emancipatory entrepreneurship.</p>
-      <p class="pub-venue">Research in the Sociology of Organizations.</p>
-      <button class="pub-tog" onclick="toggle(this)">+ abstract</button>
-      <div class="pub-detail">
-        <p class="pub-abs">The assumption of wealth creation as the dominant motive underlying entrepreneurial efforts has been challenged in recent work on entrepreneurship. Taking the perspective that entrepreneurship involves emancipatory efforts by social actors to escape ideological and material constraints in their environments (Rindova, Barry, &amp; Ketchen, 2009), researchers have sought to explain a range of entrepreneurial activities in contexts that have traditionally been excluded from entrepreneurship research. We seek to extend this research by proposing that entrepreneurial acts toward emancipation can be guided by different notions of the common good underlying varying conceptions of worth, beyond those emphasized in the view of entrepreneurial activity as driven by economic wealth creation. These alternative conceptions of worth are associated with specific subjectivities of entrepreneurial self and relevant others, and distinct legitimate bases for actions and coordination, enabling emancipation by operating from alternative value system perspectives. Drawing on Boltanski and Thévenot's (2006) work on multiple orders of worth (OOWs), we describe how emancipatory entrepreneurship is framed within – and limited by – the dominant view, which is rooted in a market OOW. As alternatives to this view, we theorize how the civic and inspired OOWs point to alternate emancipatory ends and means through which entrepreneurs break free from material and ideological constraints. We describe factors that enable and constrain emancipatory entrepreneurship efforts within each of these OOWs, and discuss the implications of our theoretical ideas for how entrepreneurs can choose among different OOWs as perspectives and for the competencies required for engaging with pluralistic value perspectives.</p>
-        <p class="pub-dl"><a href="https://santoshbs.github.io/files/RindovaSrinivasMartins_2022_HowToBreakFree_vAAM.pdf" target="_blank">pre-print ↗</a></p>
-      </div>
-    </div>
-
-    <div class="pub">
-      <p class="pub-cite">Rindova, V. P., &amp; <strong>Srinivas, S. B.</strong> (2017). Managing meaning — culture.</p>
-      <p class="pub-venue">Oxford Handbook of Management.</p>
-      <button class="pub-tog" onclick="toggle(this)">+ abstract</button>
-      <div class="pub-detail">
-        <p class="pub-abs">Management of meaning, an activity central to mobilizing action both inside and outside organizations, has been studied in the analyses of organizational culture, identity, change, innovation, stakeholder management, and environmental enactment. This review of the conceptual and empirical work in these areas suggests that although meaning-making involves managing symbols, it is not concerned only with symbolic actions and their consequences. Meaning-making is central to the generation of substantive actions that affect organizations and their strategies in fundamental ways. Greater research attention to the importance of meaning management as a managerial and organizational capability, and the links between organizational cultures as systems of beliefs, and the societal culture as a toolkit, is recommended.</p>
-        <p class="pub-dl"><a href="https://santoshbs.github.io//files/RindovaSrinivas_2017_ManagingMeaning_PreprintVersion.pdf" target="_blank">pre-print ↗</a></p>
-      </div>
-    </div>
+    <div class="pub"><p class="pub-cite">Boyd, R. L., <strong>Srinivas, S. B.</strong>, Phadke, S., Wilson, S. R., &amp; Pasca, P. AI and computation in the social sciences.</p><p class="pub-venue">Forthcoming, Oxford University Press.</p><button class="pub-tog" onclick="toggle(this)">+ abstract</button><div class="pub-detail"><p class="pub-abs">This chapter explores AI's transformative role at multiple levels of analysis — individual, group, and societal — highlighting its capacity to enhance theory, measurement, and practical applications. We emphasize the interdisciplinary nature of AI as a research toolkit, demonstrating how its methods — from natural language processing to agent-based modeling — can be strategically integrated to generate novel insights.</p></div></div>
+    <div class="pub"><p class="pub-cite">Rindova, V. P., <strong>Srinivas, S. B.</strong>, &amp; Martins, L. L. (2022). How to break free: An orders-of-worth perspective on emancipatory entrepreneurship.</p><p class="pub-venue">Research in the Sociology of Organizations.</p><button class="pub-tog" onclick="toggle(this)">+ abstract</button><div class="pub-detail"><p class="pub-abs">We propose that entrepreneurial acts toward emancipation can be guided by different notions of the common good underlying varying conceptions of worth. Drawing on Boltanski and Thévenot's work on multiple orders of worth, we theorize how the civic and inspired orders point to alternate emancipatory ends and means.</p><p class="pub-dl"><a href="https://santoshbs.github.io/files/RindovaSrinivasMartins_2022_HowToBreakFree_vAAM.pdf" target="_blank">pre-print ↗</a></p></div></div>
+    <div class="pub"><p class="pub-cite">Rindova, V. P., &amp; <strong>Srinivas, S. B.</strong> (2017). Managing meaning — culture.</p><p class="pub-venue">Oxford Handbook of Management.</p><button class="pub-tog" onclick="toggle(this)">+ abstract</button><div class="pub-detail"><p class="pub-abs">Management of meaning, an activity central to mobilizing action both inside and outside organizations, has been studied in the analyses of organizational culture, identity, change, innovation, stakeholder management, and environmental enactment. Meaning-making is central to the generation of substantive actions that affect organizations and their strategies in fundamental ways.</p><p class="pub-dl"><a href="https://santoshbs.github.io//files/RindovaSrinivas_2017_ManagingMeaning_PreprintVersion.pdf" target="_blank">pre-print ↗</a></p></div></div>
   </div>
 </section>
 
@@ -547,20 +490,17 @@ a{color:inherit;text-decoration:none;transition:color .2s;}
 </section>
 
 <script>
-/* ═══ Date ═══ */
+/* Date */
 document.getElementById('coverDate').textContent =
   new Date().toLocaleString('en-US',{month:'long'}).toUpperCase() + ' ' + new Date().getFullYear();
 
-/* ═══ Feed fetching ═══ */
-
+/* Feed fetching */
 function extractSnippet(raw, max) {
   if (!raw) return '';
   var d = document.createElement('div'); d.innerHTML = raw;
-  var t = d.textContent.trim();
-  if (!t) return '';
-  // Take first sentence
+  var t = d.textContent.trim(); if (!t) return '';
   var s = t.split(/\.\s/)[0];
-  if (s.length > (max||150)) s = s.substring(0, max-3) + '…';
+  if (s.length > (max||150)) s = s.substring(0,(max||147)) + '…';
   else if (!s.endsWith('.')) s += '.';
   return s;
 }
@@ -569,11 +509,15 @@ function renderFeed(id, title, snippet, link) {
   var el = document.getElementById(id);
   if (!el) return;
   var h = '<a href="'+link+'">'+title+'</a>';
-  if (snippet) h += '<div class="cover-feed-snippet">'+snippet+'</div>';
   el.innerHTML = h;
+  if (snippet) {
+    var sn = document.createElement('div');
+    sn.className = 'cover-feed-snippet';
+    sn.textContent = snippet;
+    el.parentElement.appendChild(sn);
+  }
 }
 
-// Parse XML feed
 function parseFeed(text) {
   var p = new DOMParser();
   var x = p.parseFromString(text, 'text/xml');
@@ -585,155 +529,88 @@ function parseFeed(text) {
   var title = e.querySelector('title') ? e.querySelector('title').textContent : null;
   if (!title) return null;
   var content = '';
-  if (e.querySelector('content')) content = e.querySelector('content').textContent;
-  else if (e.querySelector('description')) content = e.querySelector('description').textContent;
-  else if (e.querySelector('summary')) content = e.querySelector('summary').textContent;
+  ['content','description','summary'].forEach(function(tag) {
+    if (!content && e.querySelector(tag)) content = e.querySelector(tag).textContent;
+  });
   var link = '';
   var lEl = e.querySelector('link');
   if (lEl) link = lEl.getAttribute('href') || lEl.textContent || '';
   return { title: title, snippet: extractSnippet(content, 160), link: link };
 }
 
-// Scrape HTML page for latest post — handles agentfield/pressfield/practfield structure
 function scrapeHTML(text, base) {
   var p = new DOMParser();
   var doc = p.parseFromString(text, 'text/html');
-
-  // These sites have posts as links with hrefs containing date patterns /2025/ or /2026/
-  // The post TITLES are in specific elements. Let's look for them carefully.
-  // agentfield structure: each post has a timestamp link, then "pulse #N", then "gpt-oss:120b",
-  // then a field note paragraph, then a TITLE (which is a heading or bold text followed by more text)
-  // The actual title links are like: /agentfield/2026/03/19/influence-seems-random/
-
-  var result = null;
-
-  // Strategy A: Find all links whose href contains a year-month-day pattern
   var allLinks = doc.querySelectorAll('a[href]');
-  var candidates = [];
+  var best = null;
+
+  // Pass 1: links with date-path hrefs whose text is NOT a timestamp
   for (var i = 0; i < allLinks.length; i++) {
     var href = allLinks[i].getAttribute('href') || '';
     var txt = allLinks[i].textContent.trim();
-    // Match /YYYY/MM/DD/ pattern in href
-    if (/\/20\d\d\/\d\d\/\d\d\//.test(href)) {
-      candidates.push({ href: href, text: txt, el: allLinks[i] });
+    if (/\/20\d\d\/\d\d\/\d\d\//.test(href) && txt.length > 5 && !/^\d{1,2}:\d{2}/.test(txt) && !/^more/.test(txt.toLowerCase())) {
+      best = { title: txt, href: href }; break;
     }
   }
 
-  if (candidates.length > 0) {
-    // Filter: prefer candidates whose text is NOT just a time (like "10:30 UTC")
-    // and is longer than 5 chars
-    var titled = candidates.filter(function(c) {
-      return c.text.length > 10 && !/^\d{1,2}:\d{2}\s*(UTC)?$/i.test(c.text);
-    });
-
-    var best = titled.length > 0 ? titled[0] : candidates[0];
-
-    var postTitle = best.text;
-    var postLink = best.href;
-    if (postLink && !postLink.startsWith('http')) {
-      // Resolve relative URL
-      postLink = new URL(postLink, base).href;
-    }
-
-    // If the best candidate was just a time, look for the actual title nearby
-    if (/^\d{1,2}:\d{2}\s*(UTC)?$/i.test(postTitle)) {
-      // The title might be a sibling text node or a nearby element
-      // In the agentfield layout, the post title is plain text after the field note paragraph
-      // Let's find the text content following this link's parent
-      var parent = best.el.closest('div') || best.el.parentElement;
-      if (parent) {
-        // Look for text content that's a plausible title (short, no timestamps)
-        var walker = document.createTreeWalker
-          ? doc.createTreeWalker(parent.parentElement || parent, NodeFilter.SHOW_TEXT)
-          : null;
-        if (walker) {
-          var node;
-          var foundLink = false;
-          while (node = walker.nextNode()) {
-            var nt = node.textContent.trim();
-            if (nt === best.text) { foundLink = true; continue; }
-            if (foundLink && nt.length > 5 && nt.length < 80 &&
-                !/^\d/.test(nt) && !/^pulse/.test(nt) && !/^gpt-/.test(nt) &&
-                !/^more/.test(nt)) {
-              postTitle = nt;
-              break;
-            }
-          }
-        }
+  // Pass 2: if nothing, grab first date-path link and extract title from slug
+  if (!best) {
+    for (var j = 0; j < allLinks.length; j++) {
+      var h = allLinks[j].getAttribute('href') || '';
+      if (/\/20\d\d\/\d\d\/\d\d\//.test(h)) {
+        var slug = h.split('/').filter(function(s){return s && !/^\d+$/.test(s);}).pop();
+        if (slug) { best = { title: slug.replace(/-/g,' '), href: h }; break; }
       }
     }
-
-    // If title is still a time, try "more →" link text or just use the slug from URL
-    if (/^\d{1,2}:\d{2}\s*(UTC)?$/i.test(postTitle)) {
-      // Extract from URL slug: /influence-seems-random/ → "influence seems random"
-      var slug = postLink.split('/').filter(function(s){return s.length > 0;}).pop();
-      if (slug) postTitle = slug.replace(/-/g, ' ');
-    }
-
-    // Find snippet: first substantial <p> in the page
-    var snippet = '';
-    var allP = doc.querySelectorAll('p');
-    for (var j = 0; j < allP.length; j++) {
-      var pt = allP[j].textContent.trim();
-      if (pt.length > 80 && !/^pulse\s#/i.test(pt) && !/^gpt-/i.test(pt)) {
-        snippet = extractSnippet(pt, 160);
-        break;
-      }
-    }
-
-    result = { title: postTitle, snippet: snippet, link: postLink };
   }
 
-  return result;
+  if (!best) return null;
+
+  var link = best.href;
+  if (link && !link.startsWith('http')) link = new URL(link, base).href;
+
+  // Find snippet
+  var snippet = '';
+  var allP = doc.querySelectorAll('p');
+  for (var k = 0; k < allP.length; k++) {
+    var pt = allP[k].textContent.trim();
+    if (pt.length > 80 && !/^pulse\s/i.test(pt) && !/^gpt-/i.test(pt) && !/^an open/i.test(pt)) {
+      snippet = extractSnippet(pt, 160); break;
+    }
+  }
+
+  return { title: best.title, snippet: snippet, link: link };
 }
 
-async function fetchField(base, targetId, fallback) {
+async function fetchField(base, id, fallback) {
   var result = null;
-  var feeds = ['feed.xml', 'atom.xml', 'index.xml'];
-
-  // Try XML feeds first
+  var feeds = ['feed.xml','atom.xml'];
   for (var i = 0; i < feeds.length; i++) {
     try {
-      var res = await fetch(base + feeds[i]);
-      if (res.ok) {
-        var text = await res.text();
-        result = parseFeed(text);
-        if (result) break;
-      }
+      var r = await fetch(base + feeds[i]);
+      if (r.ok) { result = parseFeed(await r.text()); if (result) break; }
     } catch(e) {}
   }
-
-  // Fallback: scrape the HTML page
   if (!result) {
     try {
-      var res2 = await fetch(base);
-      if (res2.ok) {
-        var html = await res2.text();
-        result = scrapeHTML(html, base);
-      }
-    } catch(e) {
-      console.log('Scrape failed:', base, e);
-    }
+      var r2 = await fetch(base);
+      if (r2.ok) result = scrapeHTML(await r2.text(), base);
+    } catch(e) {}
   }
-
-  if (result) {
-    renderFeed(targetId, result.title, result.snippet, result.link || base);
-  } else {
-    renderFeed(targetId, fallback, '', base);
-  }
+  if (result) renderFeed(id, result.title, result.snippet, result.link || base);
+  else renderFeed(id, fallback, '', base);
 }
 
 fetchField('https://santoshbs.github.io/agentfield/', 'feed-agent', 'field notes from agent conversations');
 fetchField('https://santoshbs.github.io/pressfield/', 'feed-press', 'field notes from press coverage');
 fetchField('https://santoshbs.github.io/practfield/', 'feed-pract', 'field notes from practitioner discussions');
 
-/* ═══ Pub toggle ═══ */
+/* Pub toggle */
 function toggle(el) {
   var d = el.closest('.pub').querySelector('.pub-detail');
   d.classList.toggle('open');
   el.textContent = d.classList.contains('open') ? '− abstract' : '+ abstract';
 }
 </script>
-
 </body>
 </html>
