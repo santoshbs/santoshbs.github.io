@@ -99,14 +99,32 @@ a:hover{text-decoration:underline;}
 .body-text a{color:#222;font-style:italic;}
 .body-text a:hover{text-decoration:underline;}
 
-/* Correspondence */
-.p1-correspond{
-  margin-top:2rem;
-  padding-top:0.8rem;
-  border-top:1px solid #ccc;
-  font-size:13px;color:#555;line-height:1.6;
+/* Abstract label */
+.abstract-label{
+  font-family:'Source Sans 3','Helvetica Neue','Arial',sans-serif;
+  font-size:16px;font-weight:700;color:#222;
+  margin-bottom:0.3rem;
 }
-.p1-correspond a{color:#555;}
+
+/* Page 1 footnote area */
+.p1-footnote{
+  margin-top:2rem;
+}
+
+.p1-rule{
+  width:100%;border:none;border-top:1.5px solid #111;margin-bottom:0.8rem;
+}
+
+.p1-affil{
+  font-size:13px;color:#333;line-height:1.6;margin-bottom:0.6rem;
+}
+
+.p1-correspond-block{
+  font-size:13px;color:#333;line-height:1.6;
+}
+
+.p1-correspond-block a{color:#333;}
+.p1-correspond-block a:hover{color:#111;}
 
 /* ═══ HEADINGS ═══ */
 .section-heading{
@@ -172,24 +190,36 @@ a:hover{text-decoration:underline;}
       <div class="info-text">
         <span id="infoDate"></span><br>
         <a href="https://orcid.org/0000-0002-7792-9622">orcid.org/0000-0002-7792-9622</a><br>
-        <a href="https://scholar.google.com/citations?user=w9Fa_v0AAAAJ">Google Scholar</a><br>
-        <a href="https://github.com/santoshbs">github.com/santoshbs</a>
+        <a href="https://scholar.google.com/citations?user=w9Fa_v0AAAAJ">Google Scholar</a><br><br>
+        <a href="#exploratory">Exploratory</a><br>
+        <a href="#publications">Publications</a><br>
+        <a href="#teaching">Teaching</a><br>
+        <a href="#formation">Education &amp; Work</a>
       </div>
     </div>
   </div>
 
   <div class="author-block">
-    <div class="author-name">Santosh B. Srinivas*</div>
-    <div class="author-affil">Department of Management & Human Resources, HEC Paris</div>
+    <div class="author-name">Santosh B. Srinivas</div>
   </div>
 
+  <div class="abstract-label">Abstract</div>
   <p class="abstract-text">I study how value is produced, assessed, and negotiated in organizational and entrepreneurial settings, and how evaluative processes reflect and reinforce social power. Methodologically, I work with natural language processing.</p>
 
   <p class="keywords"><span class="keywords-label">Keywords:</span> social evaluations, culture and cognition, entrepreneurship, computational social science</p>
 
   <p class="body-text no-indent">My current work examines how different audiences construct and contest social positions on user-generated platforms, and how individuals adapt their self-presentation when the demographic composition of their field shifts. A parallel stream reconnects with entrepreneurship—how personal histories shape opportunity recognition, how ventures use rhetorical history to craft market positions, and how entrepreneurial rhetoric can function as social critique.</p>
 
-  <div class="p1-correspond">*Correspondence: <a href="mailto:srinivas@hec.fr">srinivas@hec.fr</a></div>
+  <div class="p1-footnote">
+    <hr class="p1-rule">
+    <div class="p1-affil">HEC Paris, France.</div>
+    <div class="p1-correspond-block">
+      <strong>Correspondence:</strong><br>
+      Santosh B. Srinivas, Department of Management &amp; Human Resources,<br>
+      HEC Paris, 1 Rue de la Libération, 78351 Jouy-en-Josas, France.<br>
+      Email: <a href="mailto:srinivas@hec.fr">srinivas@hec.fr</a>
+    </div>
+  </div>
 
   <!-- ═══════════ PAGE 2 ═══════════ -->
   <div class="page-break">
@@ -199,7 +229,9 @@ a:hover{text-decoration:underline;}
     </div>
   </div>
 
-  <p class="body-text">I am interested in how the emerging agentic AI economy may reshape the evaluation of competence, worth, and opportunity. I deployed a small open-weights language model as an observer across three layers of AI discourse. It reads, participates, and periodically writes field notes on what gets discussed and what patterns emerge (see Figure 1 for latest pulses). <a href="https://santoshbs.github.io/agentfield/">agentfield</a> follows agent conversations; <a href="https://santoshbs.github.io/pressfield/">pressfield</a> reads news coverage about AI; <a href="https://santoshbs.github.io/practfield/">practfield</a> sits in on practitioner discussions.</p>
+  <div class="section-heading" id="exploratory">Exploratory</div>
+
+  <p class="body-text no-indent">I am interested in how the emerging agentic AI economy may reshape the evaluation of competence, worth, and opportunity. I deployed a small open-weights language model as an observer across three layers of AI discourse. It reads, participates, and periodically writes field notes on what gets discussed and what patterns emerge (see Figure 1 for latest pulses). <a href="https://santoshbs.github.io/agentfield/">agentfield</a> follows agent conversations; <a href="https://santoshbs.github.io/pressfield/">pressfield</a> reads news coverage about AI; <a href="https://santoshbs.github.io/practfield/">practfield</a> sits in on practitioner discussions.</p>
 
   <div class="fig-group">
     <div class="fig-caption"><strong>Figure 1.</strong> Latest notes from an open-weights LLM observer</div>
@@ -219,7 +251,7 @@ a:hover{text-decoration:underline;}
     </div>
   </div>
 
-  <div class="section-heading">Published Work</div>
+  <div class="section-heading" id="publications">Published Work</div>
 
   <div class="sub-heading">AI and Computation in the Social Sciences</div>
   <p class="body-text no-indent">A forthcoming chapter explores how artificial intelligence is fundamentally reshaping the study of human behavior across psychology and the social sciences (Boyd, Srinivas, Phadke, Wilson, &amp; Pasca, forthcoming). The chapter examines AI's transformative role at multiple levels of analysis—individual, group, and societal—highlighting its capacity to enhance theory, measurement, and practical applications. We emphasize the interdisciplinary nature of AI as a research toolkit, demonstrating how methods from natural language processing to agent-based modeling can be strategically integrated to generate novel insights. While AI presents unprecedented opportunities for analyzing large-scale social dynamics, understanding intergroup communication, and modeling individual differences, it also introduces critical ethical and methodological challenges that require researchers to adopt a thoughtful and transparent approach.</p>
@@ -262,6 +294,12 @@ a:hover{text-decoration:underline;}
       <span class="page-header-name hdr-yr-name"></span>
     </div>
   </div>
+
+  <div class="section-heading" id="teaching">Teaching</div>
+  <p class="body-text no-indent" style="color:#999;font-style:italic;">Coming soon.</p>
+
+  <div class="section-heading" id="formation">Education &amp; Work</div>
+  <p class="body-text no-indent" style="color:#999;font-style:italic;">Coming soon.</p>
 
 </div>
 
