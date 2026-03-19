@@ -93,6 +93,16 @@ a:hover{text-decoration:underline;}
   overflow:hidden;
 }
 
+.pg-body-bottom{
+  display:flex;
+  flex-direction:column;
+}
+
+/* Hide header line on page 1 (empty header) */
+.page-view:first-child .pg-header{
+  border-bottom:none;
+}
+
 /* ═══ TYPOGRAPHY ═══ */
 
 /* Top: photo + line (page 1 only) */
@@ -224,10 +234,10 @@ a:hover{text-decoration:underline;}
 <!-- ═══ PAGE 1 ═══ -->
 <div class="page-view">
   <div class="pg-header">
-    <span class="pg-header-name">S. Srinivas</span>
-    <span class="pg-header-year" id="hdrYear1"></span>
+    <span class="pg-header-name"></span>
+    <span class="pg-header-year"></span>
   </div>
-  <div class="pg-body">
+  <div class="pg-body pg-body-bottom">
 
     <!-- Photo + line -->
     <div class="top-row">
@@ -250,7 +260,7 @@ a:hover{text-decoration:underline;}
 
     <!-- Author + affiliation -->
     <div class="author-block">
-      <div class="author-name">Santosh B. Srinivas</div>
+      <div class="author-name">Santosh B. Srinivas*</div>
       <div class="author-affil">Department of Management & Human Resources, HEC Paris</div>
     </div>
 
@@ -260,12 +270,15 @@ a:hover{text-decoration:underline;}
     <!-- Keywords -->
     <p class="keywords"><span class="keywords-label">Keywords:</span> social evaluations, culture and cognition, entrepreneurship, computational social science</p>
 
-    <!-- Body text: first paragraph -->
+    <!-- Spacer to push body text to bottom -->
+    <div style="flex:1;"></div>
+
+    <!-- Body text: first paragraph, bottom aligned -->
     <p class="body-text no-indent">My current work examines how different audiences construct and contest social positions on user-generated platforms, and how individuals adapt their self-presentation when the demographic composition of their field shifts. A parallel stream reconnects with entrepreneurship—how personal histories shape opportunity recognition, how ventures use rhetorical history to craft market positions, and how entrepreneurial rhetoric can function as social critique.</p>
 
   </div>
   <div class="pg-footer">
-    <span class="pg-footer-email"><a href="mailto:srinivas@hec.fr">srinivas@hec.fr</a></span>
+    <span class="pg-footer-email">*Correspondence: <a href="mailto:srinivas@hec.fr">srinivas@hec.fr</a></span>
     <span class="pg-footer-num">1</span>
   </div>
 </div>
@@ -280,16 +293,6 @@ a:hover{text-decoration:underline;}
 
     <p class="body-text">I am interested in how the emerging agentic AI economy may reshape the evaluation of competence, worth, and opportunity. I deployed a small open-weights language model as an observer across three layers of AI discourse. It reads, participates, and periodically writes field notes on what gets discussed and what patterns emerge. <a href="https://santoshbs.github.io/agentfield/">agentfield</a> follows agent conversations; <a href="https://santoshbs.github.io/pressfield/">pressfield</a> reads news coverage about AI; <a href="https://santoshbs.github.io/practfield/">practfield</a> sits in on practitioner discussions.</p>
 
-    <!-- Correspondence -->
-    <div class="correspond">
-      <div class="fn-correspond">
-        <span class="fn-correspond-label">Correspondence:</span><br>
-        Santosh B. Srinivas, Department of Management & Human Resources,<br>
-        HEC Paris, 1 Rue de la Libération, 78351 Jouy-en-Josas, France.<br>
-        Email: <a href="mailto:srinivas@hec.fr">srinivas@hec.fr</a>
-      </div>
-    </div>
-
   </div>
   <div class="pg-footer">
     <span class="pg-footer-email"><a href="mailto:srinivas@hec.fr">srinivas@hec.fr</a></span>
@@ -299,7 +302,6 @@ a:hover{text-decoration:underline;}
 
 <script>
 var yr = new Date().getFullYear();
-document.getElementById('hdrYear1').textContent = yr;
 document.getElementById('hdrYear2').textContent = yr;
 </script>
 
