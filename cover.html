@@ -22,18 +22,22 @@ a:hover{text-decoration:underline;}
 .layout{
   height:100vh;
   display:flex;
+  justify-content:center;
+  position:relative;
 }
 
-/* ── Left sidebar: ORCID vertical + date ── */
+/* ── Left sidebar: ORCID vertical + date, hugging the content ── */
 .sidebar{
-  width:40px;
-  flex-shrink:0;
+  position:absolute;
+  left:calc(50% - 370px);
+  top:0;
+  bottom:0;
+  width:30px;
   display:flex;
   flex-direction:column;
   align-items:center;
   justify-content:center;
   gap:0.5rem;
-  border-right:1px solid #eee;
 }
 
 .side-text{
@@ -90,7 +94,7 @@ a:hover{text-decoration:underline;}
 
 /* ── Abstract (no label) ── */
 .abstract-text{
-  font-size:12.5px;
+  font-size:15px;
   font-weight:400;
   line-height:1.85;
   color:#222;
@@ -102,35 +106,25 @@ a:hover{text-decoration:underline;}
 
 /* ── Keywords ── */
 .keywords{
-  font-size:11.5px;
+  font-size:13px;
   line-height:1.7;
   color:#222;
-  margin-bottom:0.8rem;
+  margin-bottom:1rem;
 }
 
 .keywords em{
   font-style:italic;
 }
 
-/* ── Divider ── */
-.section-divider{
-  text-align:center;
-  margin:0.6rem 0;
-  color:#999;
-  font-size:11px;
-  letter-spacing:1em;
-}
-
 /* ── Two-column body ── */
 .two-col{
   column-count:2;
-  column-gap:1.8rem;
-  column-rule:1px solid #eee;
+  column-gap:2rem;
   margin-bottom:0.8rem;
 }
 
 .body-text{
-  font-size:12px;
+  font-size:14px;
   font-weight:400;
   line-height:1.8;
   color:#222;
@@ -183,19 +177,13 @@ a:hover{text-decoration:underline;}
 .footnote-text a{color:#666;text-decoration:none;}
 .footnote-text a:hover{color:#111;}
 
-@media(max-width:600px){
-  .layout{flex-direction:column;}
-  .sidebar{
-    width:100%;height:auto;flex-direction:row;
-    border-right:none;border-bottom:1px solid #eee;
-    padding:0.5rem 1rem;justify-content:flex-start;gap:1rem;
-  }
-  .side-text{writing-mode:horizontal-tb;transform:none;font-size:10px;}
-  .page{padding:1.2rem 1.2rem 1rem;}
-  .paper-title{font-size:21px;}
+@media(max-width:800px){
+  .sidebar{display:none;}
+  .page{padding:1.5rem 1.2rem 1rem;}
+  .paper-title{font-size:22px;}
   .two-col{column-count:1;}
-  .abstract-text{font-size:12px;}
-  .body-text{font-size:11.5px;}
+  .abstract-text{font-size:14px;}
+  .body-text{font-size:13px;}
 }
 </style>
 </head>
@@ -227,9 +215,6 @@ a:hover{text-decoration:underline;}
 
     <!-- Keywords -->
     <p class="keywords"><em>Keywords:</em> Social Evaluations; Culture & Cognition; Entrepreneurship; Computational Social Science</p>
-
-    <!-- Divider -->
-    <div class="section-divider">———— ✦ ————</div>
 
     <!-- Two-column body -->
     <div class="two-col">
