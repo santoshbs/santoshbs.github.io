@@ -18,64 +18,54 @@ body{
 a{color:#111;text-decoration:none;}
 a:hover{text-decoration:underline;}
 
-.page{
+/* ── Main layout: sidebar + content ── */
+.layout{
   height:100vh;
-  max-width:620px;
-  margin:0 auto;
-  padding:2rem 2rem 1.5rem;
   display:flex;
-  flex-direction:column;
-  position:relative;
 }
 
 /* ── Left sidebar: ORCID vertical + date ── */
-.left-strip{
-  position:fixed;
-  left:clamp(0.5rem, 2vw, 2rem);
-  top:0;
-  bottom:0;
-  width:2rem;
+.sidebar{
+  width:40px;
+  flex-shrink:0;
   display:flex;
   flex-direction:column;
   align-items:center;
   justify-content:center;
-  gap:0.4rem;
+  gap:0.5rem;
+  border-right:1px solid #eee;
 }
 
-.left-id{
+.side-text{
   writing-mode:vertical-rl;
   text-orientation:mixed;
   transform:rotate(180deg);
   font-family:'Source Code Pro',monospace;
-  font-size:9px;
-  color:#888;
-  letter-spacing:0.03em;
+  font-size:11px;
+  color:#777;
+  letter-spacing:0.02em;
   white-space:nowrap;
 }
 
-.left-id a{color:#888;text-decoration:none;}
-.left-id a:hover{color:#111;}
+.side-text a{color:#777;text-decoration:none;}
+.side-text a:hover{color:#111;}
 
-/* ── Top right: photo ── */
-.top-right{
-  position:absolute;
-  top:2rem;
-  right:2rem;
-}
-
-.top-photo{
-  width:32px;
-  height:32px;
-  border-radius:50%;
-  object-fit:cover;
-  filter:grayscale(0.4);
+/* ── Page content ── */
+.page{
+  flex:1;
+  max-width:640px;
+  margin:0 auto;
+  padding:2rem 2.5rem 1.5rem;
+  display:flex;
+  flex-direction:column;
+  overflow:hidden;
 }
 
 /* ── Title ── */
 .title-block{
   text-align:center;
-  margin-top:1.5rem;
-  margin-bottom:1.2rem;
+  margin-top:1rem;
+  margin-bottom:1rem;
 }
 
 .paper-title{
@@ -88,7 +78,7 @@ a:hover{text-decoration:underline;}
 /* ── Author ── */
 .author-block{
   text-align:center;
-  margin-bottom:1.8rem;
+  margin-bottom:1.5rem;
 }
 
 .author-name{
@@ -98,28 +88,9 @@ a:hover{text-decoration:underline;}
   line-height:1.4;
 }
 
-/* ── Abstract ── */
-.abstract-label{
-  font-size:12px;
-  font-weight:700;
-  color:#111;
-  margin-bottom:0.3rem;
-}
-
+/* ── Abstract (no label) ── */
 .abstract-text{
   font-size:12.5px;
-  font-weight:400;
-  line-height:1.85;
-  color:#222;
-  text-align:justify;
-  hyphens:auto;
-  -webkit-hyphens:auto;
-  margin-bottom:1rem;
-}
-
-/* ── Body paragraphs ── */
-.body-text{
-  font-size:13px;
   font-weight:400;
   line-height:1.85;
   color:#222;
@@ -129,32 +100,52 @@ a:hover{text-decoration:underline;}
   margin-bottom:0.8rem;
 }
 
-.body-text a{color:#111;text-decoration:none;font-style:italic;}
-.body-text a:hover{text-decoration:underline;}
-
-/* ── Index Terms ── */
-.index-terms{
+/* ── Keywords ── */
+.keywords{
   font-size:11.5px;
   line-height:1.7;
   color:#222;
-  margin-top:0.5rem;
-  margin-bottom:1rem;
+  margin-bottom:0.8rem;
 }
 
-.index-terms strong{
-  font-size:11.5px;
+.keywords em{
+  font-style:italic;
 }
 
 /* ── Divider ── */
 .section-divider{
   text-align:center;
-  margin:0.8rem 0;
+  margin:0.6rem 0;
   color:#999;
   font-size:11px;
   letter-spacing:1em;
 }
 
-/* ── Footnote ── */
+/* ── Two-column body ── */
+.two-col{
+  column-count:2;
+  column-gap:1.8rem;
+  column-rule:1px solid #eee;
+  margin-bottom:0.8rem;
+}
+
+.body-text{
+  font-size:12px;
+  font-weight:400;
+  line-height:1.8;
+  color:#222;
+  text-align:justify;
+  hyphens:auto;
+  -webkit-hyphens:auto;
+  margin-bottom:0.7rem;
+}
+
+.body-text:last-child{margin-bottom:0;}
+
+.body-text a{color:#111;text-decoration:none;font-style:italic;}
+.body-text a:hover{text-decoration:underline;}
+
+/* ── Footnote area ── */
 .footnote-area{
   margin-top:auto;
   padding-top:0.6rem;
@@ -167,70 +158,95 @@ a:hover{text-decoration:underline;}
   margin-bottom:0.5rem;
 }
 
-.footnote{
+.footnote-content{
+  display:flex;
+  align-items:flex-start;
+  gap:10px;
+}
+
+.footnote-photo{
+  width:28px;
+  height:28px;
+  border-radius:50%;
+  object-fit:cover;
+  filter:grayscale(0.4);
+  flex-shrink:0;
+  margin-top:1px;
+}
+
+.footnote-text{
   font-size:10px;
   color:#666;
   line-height:1.6;
 }
 
-.footnote a{color:#666;text-decoration:none;}
-.footnote a:hover{color:#111;}
+.footnote-text a{color:#666;text-decoration:none;}
+.footnote-text a:hover{color:#111;}
 
 @media(max-width:600px){
-  .page{padding:1.5rem 1.2rem 1.2rem;}
+  .layout{flex-direction:column;}
+  .sidebar{
+    width:100%;height:auto;flex-direction:row;
+    border-right:none;border-bottom:1px solid #eee;
+    padding:0.5rem 1rem;justify-content:flex-start;gap:1rem;
+  }
+  .side-text{writing-mode:horizontal-tb;transform:none;font-size:10px;}
+  .page{padding:1.2rem 1.2rem 1rem;}
   .paper-title{font-size:21px;}
-  .left-strip{display:none;}
+  .two-col{column-count:1;}
   .abstract-text{font-size:12px;}
-  .body-text{font-size:12px;}
+  .body-text{font-size:11.5px;}
 }
 </style>
 </head>
 <body>
 
-<!-- Left strip: ORCID + date (like arxiv ID) -->
-<div class="left-strip">
-  <div class="left-id"><a href="https://orcid.org/0000-0002-7792-9622">orcid:0000-0002-7792-9622</a></div>
-  <div class="left-id" id="leftDate"></div>
-</div>
+<div class="layout">
 
-<div class="page">
-
-  <!-- Photo top-right -->
-  <div class="top-right">
-    <img src="https://santoshbs.github.io/images/santoshbs1.jpeg" alt="Santosh Srinivas" class="top-photo">
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <div class="side-text"><a href="https://orcid.org/0000-0002-7792-9622">orcid:0000-0002-7792-9622</a></div>
+    <div class="side-text" id="sideDate"></div>
   </div>
 
-  <!-- Title -->
-  <div class="title-block">
-    <h1 class="paper-title">Toward an Understanding of Value</h1>
-  </div>
+  <!-- Page -->
+  <div class="page">
 
-  <!-- Author -->
-  <div class="author-block">
-    <div class="author-name">Santosh B. Srinivas*</div>
-  </div>
+    <!-- Title -->
+    <div class="title-block">
+      <h1 class="paper-title">Toward an Understanding of Value</h1>
+    </div>
 
-  <!-- Abstract -->
-  <div>
-    <p class="abstract-label">Abstract—</p>
+    <!-- Author -->
+    <div class="author-block">
+      <div class="author-name">Santosh B. Srinivas*</div>
+    </div>
+
+    <!-- Abstract (no label) -->
     <p class="abstract-text">I study how value is produced, assessed, and negotiated in organizational and entrepreneurial settings, and how evaluative processes reflect and reinforce social power. Methodologically, I work with natural language processing.</p>
-  </div>
 
-  <!-- Index Terms -->
-  <p class="index-terms"><strong>Index Terms—</strong>Social Evaluations; Culture & Cognition; Entrepreneurship; Computational Social Science</p>
+    <!-- Keywords -->
+    <p class="keywords"><em>Keywords:</em> Social Evaluations; Culture & Cognition; Entrepreneurship; Computational Social Science</p>
 
-  <!-- Divider -->
-  <div class="section-divider">———— ✦ ————</div>
+    <!-- Divider -->
+    <div class="section-divider">———— ✦ ————</div>
 
-  <!-- Body -->
-  <p class="body-text">My current work examines how different audiences construct and contest social positions on user-generated platforms, and how individuals adapt their self-presentation when the demographic composition of their field shifts. A parallel stream reconnects with entrepreneurship — how personal histories shape opportunity recognition, how ventures use rhetorical history to craft market positions, and how entrepreneurial rhetoric can function as social critique.</p>
+    <!-- Two-column body -->
+    <div class="two-col">
+      <p class="body-text">My current work examines how different audiences construct and contest social positions on user-generated platforms, and how individuals adapt their self-presentation when the demographic composition of their field shifts. A parallel stream reconnects with entrepreneurship — how personal histories shape opportunity recognition, how ventures use rhetorical history to craft market positions, and how entrepreneurial rhetoric can function as social critique.</p>
 
-  <p class="body-text">I am interested in how the emerging agentic AI economy may reshape the evaluation of competence, worth, and opportunity. I deployed a small open-weights language model as an observer across three layers of AI discourse. It reads, participates, and periodically writes field notes on what gets discussed and what patterns emerge. <a href="https://santoshbs.github.io/agentfield/">agentfield</a> follows agent conversations; <a href="https://santoshbs.github.io/pressfield/">pressfield</a> reads news coverage about AI; <a href="https://santoshbs.github.io/practfield/">practfield</a> sits in on practitioner discussions.</p>
+      <p class="body-text">I am interested in how the emerging agentic AI economy may reshape the evaluation of competence, worth, and opportunity. I deployed a small open-weights language model as an observer across three layers of AI discourse. It reads, participates, and periodically writes field notes on what gets discussed and what patterns emerge. <a href="https://santoshbs.github.io/agentfield/">agentfield</a> follows agent conversations; <a href="https://santoshbs.github.io/pressfield/">pressfield</a> reads news coverage about AI; <a href="https://santoshbs.github.io/practfield/">practfield</a> sits in on practitioner discussions.</p>
+    </div>
 
-  <!-- Footnote -->
-  <div class="footnote-area">
-    <hr class="footnote-rule">
-    <div class="footnote">* Department of Management & HR, HEC Paris. Email: <a href="mailto:srinivas@hec.fr">srinivas@hec.fr</a></div>
+    <!-- Footnote -->
+    <div class="footnote-area">
+      <hr class="footnote-rule">
+      <div class="footnote-content">
+        <img src="https://santoshbs.github.io/images/santoshbs1.jpeg" alt="Santosh Srinivas" class="footnote-photo">
+        <div class="footnote-text">* Department of Management & HR, HEC Paris.<br>Email: <a href="mailto:srinivas@hec.fr">srinivas@hec.fr</a></div>
+      </div>
+    </div>
+
   </div>
 
 </div>
@@ -238,7 +254,7 @@ a:hover{text-decoration:underline;}
 <script>
 var d = new Date();
 var months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
-document.getElementById('leftDate').textContent = d.getDate() + ' ' + months[d.getMonth()] + ' ' + d.getFullYear();
+document.getElementById('sideDate').textContent = d.getDate() + ' ' + months[d.getMonth()] + ' ' + d.getFullYear();
 </script>
 </body>
 </html>
