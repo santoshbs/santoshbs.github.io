@@ -6,277 +6,74 @@
 <title>Santosh B. Srinivas</title>
 <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap" rel="stylesheet">
 <style>
-:root {
-  --bg: #ffffff;
-  --border: #ddd;
-  --green: #00aa66;
-  --amber: #cc8822;
-  --accent: #bb4433;
-  --text: #111;
-  --text-2: #333;
-  --text-3: #666;
-  --text-4: #999;
-  --font: 'Source Code Pro', 'Courier New', monospace;
-}
-
 *{margin:0;padding:0;box-sizing:border-box;}
-html{scroll-behavior:smooth;}
-body{font-family:var(--font);background:var(--bg);color:var(--text);font-size:15px;line-height:1.8;-webkit-font-smoothing:antialiased;}
-a{color:var(--green);text-decoration:none;transition:all .2s;}
-a:hover{opacity:0.7;}
-::selection{background:var(--text);color:var(--bg);}
-
-.page{max-width:720px;margin:0 auto;padding:3.5rem 2rem 3rem;min-height:100vh;display:flex;flex-direction:column;}
-
-/* ── Name ── */
-.cover-name{font-size:32px;font-weight:700;color:var(--text);letter-spacing:-.02em;line-height:1.2;margin-bottom:4px;}
-.cover-role{font-size:15px;color:var(--text-3);margin-bottom:0.5rem;}
-.cover-date{font-size:12px;color:var(--text-4);letter-spacing:.05em;margin-bottom:2.5rem;}
-
-/* ── Divider ── */
-.divider{border:none;border-top:1px solid var(--border);margin:0 0 2rem;}
-
-/* ── Field section intro ── */
-.field-intro{font-size:13px;color:var(--text-3);line-height:1.8;margin-bottom:2rem;}
-
-/* ── Carousel ── */
-.carousel{position:relative;margin-bottom:2rem;flex:1;display:flex;flex-direction:column;justify-content:center;}
-
-.carousel-slide{display:none;animation:fadeSlide .4s ease;}
-.carousel-slide.active{display:block;}
-
-@keyframes fadeSlide{from{opacity:0;transform:translateX(8px);}to{opacity:1;transform:translateX(0);}}
-
-.slide-source{font-size:13px;font-weight:600;letter-spacing:.04em;margin-bottom:6px;}
-.slide-source.src-agent{color:var(--green);}
-.slide-source.src-press{color:var(--amber);}
-.slide-source.src-pract{color:var(--accent);}
-
-.slide-source-what{font-weight:300;color:var(--text-4);margin-left:4px;}
-
-.slide-title{font-size:15px;font-weight:600;color:var(--text);line-height:1.5;margin-bottom:8px;}
-.slide-title a{color:var(--text);text-decoration:none;}
-.slide-title a:hover{opacity:0.6;}
-
-.slide-snippet{font-size:14px;font-weight:300;font-style:italic;color:var(--text-3);line-height:1.8;}
-
-/* ── Nav arrows ── */
-.carousel-nav{display:flex;align-items:center;gap:12px;margin-top:1.5rem;}
-
-.carousel-btn{
-  width:32px;height:32px;border-radius:50%;
-  border:1px solid var(--border);background:none;
-  font-family:var(--font);font-size:14px;color:var(--text-3);
-  cursor:pointer;transition:all .2s;
-  display:flex;align-items:center;justify-content:center;
+html,body{height:100%;overflow:hidden;}
+body{
+  font-family:'Source Code Pro','Courier New',monospace;
+  background:#fff;
+  color:#111;
+  -webkit-font-smoothing:antialiased;
 }
-.carousel-btn:hover{border-color:var(--text-3);color:var(--text);}
 
-.carousel-dots{display:flex;gap:6px;margin-left:8px;}
-
-.carousel-dot{
-  width:6px;height:6px;border-radius:50%;
-  background:var(--border);transition:background .2s;
-  cursor:pointer;
+.page{
+  height:100vh;
+  display:flex;
+  flex-direction:column;
+  padding:2.5rem 3rem;
 }
-.carousel-dot.active{background:var(--text-3);}
 
-.carousel-counter{font-size:11px;color:var(--text-4);margin-left:auto;}
+.top{
+  display:flex;
+  justify-content:flex-end;
+  text-align:right;
+}
 
-/* ── Footer on cover ── */
-.cover-footer{padding-top:1.5rem;border-top:1px solid var(--border);font-size:12px;color:var(--text-4);display:flex;justify-content:space-between;}
+.name{
+  font-size:13px;
+  font-weight:700;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  color:#111;
+  line-height:1.4;
+}
+
+.affil{
+  font-size:13px;
+  font-weight:400;
+  font-style:italic;
+  color:#444;
+  margin-top:2px;
+}
+
+.bottom{
+  margin-top:auto;
+  max-width:620px;
+}
+
+.statement{
+  font-size:20px;
+  font-weight:700;
+  line-height:1.7;
+  color:#111;
+}
 
 @media(max-width:600px){
-  .page{padding:2rem 1.2rem;}
-  .cover-name{font-size:24px;}
+  .page{padding:2rem 1.5rem;}
+  .statement{font-size:16px;}
 }
 </style>
 </head>
 <body>
 <div class="page">
-
-  <!-- Name -->
-  <h1 class="cover-name">santosh srinivas</h1>
-  <p class="cover-role">Assistant Professor · Management & HR · HEC Paris</p>
-  <p class="cover-date" id="coverDate"></p>
-
-  <hr class="divider">
-
-  <!-- Field intro -->
-  <p class="field-intro">An open-weights language model writes margin notes across three layers of AI discourse — observing agent conversations, press coverage, and practitioner discussions.</p>
-
-  <!-- Carousel: one feed at a time -->
-  <div class="carousel" id="carousel">
-
-    <!-- Slide: agentfield -->
-    <div class="carousel-slide" data-field="agent">
-      <div class="slide-source src-agent">agentfield <span class="slide-source-what">· agent conversations</span></div>
-      <div class="slide-title" id="title-agent"><a href="https://santoshbs.github.io/agentfield/">Loading…</a></div>
-      <div class="slide-snippet" id="snippet-agent"></div>
+  <div class="top">
+    <div>
+      <div class="name">Santosh B. Srinivas</div>
+      <div class="affil">HEC Paris</div>
     </div>
-
-    <!-- Slide: pressfield -->
-    <div class="carousel-slide" data-field="press">
-      <div class="slide-source src-press">pressfield <span class="slide-source-what">· press coverage</span></div>
-      <div class="slide-title" id="title-press"><a href="https://santoshbs.github.io/pressfield/">Loading…</a></div>
-      <div class="slide-snippet" id="snippet-press"></div>
-    </div>
-
-    <!-- Slide: practfield -->
-    <div class="carousel-slide" data-field="pract">
-      <div class="slide-source src-pract">practfield <span class="slide-source-what">· practitioner discussions</span></div>
-      <div class="slide-title" id="title-pract"><a href="https://santoshbs.github.io/practfield/">Loading…</a></div>
-      <div class="slide-snippet" id="snippet-pract"></div>
-    </div>
-
-    <!-- Nav -->
-    <div class="carousel-nav">
-      <button class="carousel-btn" id="prevBtn">←</button>
-      <button class="carousel-btn" id="nextBtn">→</button>
-      <div class="carousel-dots">
-        <span class="carousel-dot" data-idx="0"></span>
-        <span class="carousel-dot" data-idx="1"></span>
-        <span class="carousel-dot" data-idx="2"></span>
-      </div>
-      <span class="carousel-counter" id="carouselCounter"></span>
-    </div>
-
   </div>
-
-  <!-- Footer -->
-  <div class="cover-footer">
-    <span>Paris · srinivas@hec.fr</span>
-    <span>© 2026</span>
+  <div class="bottom">
+    <p class="statement">I study how value is produced, assessed, and negotiated in organizational and entrepreneurial settings, and how evaluative processes reflect and reinforce social power. Methodologically, I work with natural language processing.</p>
   </div>
-
 </div>
-
-<script>
-/* ═══ Date ═══ */
-document.getElementById('coverDate').textContent =
-  new Date().toLocaleString('en-US',{month:'long'}).toUpperCase() + ' ' + new Date().getFullYear();
-
-/* ═══ Carousel ═══ */
-var slides = document.querySelectorAll('.carousel-slide');
-var dots = document.querySelectorAll('.carousel-dot');
-var counter = document.getElementById('carouselCounter');
-var total = slides.length;
-var current = Math.floor(Math.random() * total); // random start
-
-function showSlide(idx) {
-  current = ((idx % total) + total) % total;
-  slides.forEach(function(s,i){ s.classList.toggle('active', i === current); });
-  dots.forEach(function(d,i){ d.classList.toggle('active', i === current); });
-  counter.textContent = (current+1) + ' / ' + total;
-}
-
-document.getElementById('prevBtn').addEventListener('click', function(){ showSlide(current - 1); });
-document.getElementById('nextBtn').addEventListener('click', function(){ showSlide(current + 1); });
-dots.forEach(function(d){ d.addEventListener('click', function(){ showSlide(parseInt(d.dataset.idx)); }); });
-
-showSlide(current);
-
-/* ═══ Feed fetching ═══ */
-function extractSnippet(raw, n) {
-  if (!raw) return '';
-  var d = document.createElement('div'); d.innerHTML = raw;
-  var t = d.textContent.trim(); if (!t) return '';
-  var sentences = t.match(/[^.!?]+[.!?]+/g) || [t];
-  var picked = sentences.slice(0, n || 3).join(' ').trim();
-  picked = picked.replace(/[.!?]+\s*$/, '') + ' ….';
-  if (picked.length > 320) picked = picked.substring(0, 317) + ' ….';
-  return picked;
-}
-
-function renderFeed(titleId, snippetId, title, snippet, link) {
-  var tEl = document.getElementById(titleId);
-  if (tEl) tEl.innerHTML = '<a href="' + link + '">' + title + '</a>';
-  var sEl = document.getElementById(snippetId);
-  if (sEl) sEl.textContent = snippet || '';
-}
-
-function parseFeed(text) {
-  var p = new DOMParser();
-  var x = p.parseFromString(text, 'text/xml');
-  if (x.querySelector('parsererror')) return null;
-  var entries = x.querySelectorAll('entry');
-  if (!entries.length) entries = x.querySelectorAll('item');
-  if (!entries.length) return null;
-  var e = entries[0];
-  var title = e.querySelector('title') ? e.querySelector('title').textContent : null;
-  if (!title) return null;
-  var content = '';
-  ['content','description','summary'].forEach(function(tag){
-    if (!content && e.querySelector(tag)) content = e.querySelector(tag).textContent;
-  });
-  var link = '';
-  var lEl = e.querySelector('link');
-  if (lEl) link = lEl.getAttribute('href') || lEl.textContent || '';
-  return { title: title, snippet: extractSnippet(content, 3), link: link };
-}
-
-function scrapeHTML(text, base) {
-  var p = new DOMParser();
-  var doc = p.parseFromString(text, 'text/html');
-  var allLinks = doc.querySelectorAll('a[href]');
-  var best = null;
-
-  for (var i = 0; i < allLinks.length; i++) {
-    var href = allLinks[i].getAttribute('href') || '';
-    var txt = allLinks[i].textContent.trim();
-    if (/\/20\d\d\/\d\d\/\d\d\//.test(href) && txt.length > 5 && !/^\d{1,2}:\d{2}/.test(txt) && !/^more/i.test(txt)) {
-      best = { title: txt, href: href }; break;
-    }
-  }
-
-  if (!best) {
-    for (var j = 0; j < allLinks.length; j++) {
-      var h = allLinks[j].getAttribute('href') || '';
-      if (/\/20\d\d\/\d\d\/\d\d\//.test(h)) {
-        var slug = h.split('/').filter(function(s){return s && !/^\d+$/.test(s);}).pop();
-        if (slug) { best = { title: slug.replace(/-/g,' '), href: h }; break; }
-      }
-    }
-  }
-
-  if (!best) return null;
-  var link = best.href;
-  if (link && !link.startsWith('http')) link = new URL(link, base).href;
-
-  var snippet = '';
-  var allP = doc.querySelectorAll('p');
-  for (var k = 0; k < allP.length; k++) {
-    var pt = allP[k].textContent.trim();
-    if (pt.length > 80 && !/^pulse\s/i.test(pt) && !/^gpt-/i.test(pt) && !/^an open/i.test(pt)) {
-      snippet = extractSnippet(pt, 3); break;
-    }
-  }
-
-  return { title: best.title, snippet: snippet, link: link };
-}
-
-async function fetchField(base, titleId, snippetId, fallback) {
-  var result = null;
-  var feeds = ['feed.xml','atom.xml'];
-  for (var i = 0; i < feeds.length; i++) {
-    try {
-      var r = await fetch(base + feeds[i]);
-      if (r.ok) { result = parseFeed(await r.text()); if (result) break; }
-    } catch(e) {}
-  }
-  if (!result) {
-    try {
-      var r2 = await fetch(base);
-      if (r2.ok) result = scrapeHTML(await r2.text(), base);
-    } catch(e) {}
-  }
-  if (result) renderFeed(titleId, snippetId, result.title, result.snippet, result.link || base);
-  else renderFeed(titleId, snippetId, fallback, '', base);
-}
-
-fetchField('https://santoshbs.github.io/agentfield/', 'title-agent', 'snippet-agent', 'field notes from agent conversations');
-fetchField('https://santoshbs.github.io/pressfield/', 'title-press', 'snippet-press', 'field notes from press coverage');
-fetchField('https://santoshbs.github.io/practfield/', 'title-pract', 'snippet-pract', 'field notes from practitioner discussions');
-</script>
 </body>
 </html>
