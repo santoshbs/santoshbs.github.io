@@ -5,164 +5,40 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Santosh B. Srinivas</title>
 <meta name="description" content="Assistant Professor · Management & HR · HEC Paris">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=Source+Code+Pro:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
 <style>
 :root {
-  --cover-bg-1: #1a4a4f;
-  --cover-bg-2: #2a7a72;
-  --cover-bg-3: #3a9a85;
-  --cover-bg-4: #1a3a4a;
-  --cover-text: #e8eeec;
-  --cover-highlight: #c8e83a;
-  --cover-highlight-2: #a8d828;
-  --white: #fafaf8;
-  --white-bg: #ffffff;
+  --bg: #ffffff;
   --ink: #1a1a1a;
   --ink-2: #444;
-  --ink-3: #777;
-  --ink-4: #aaa;
-  --ink-rule: #ddd;
-  --teal-ink: #1a6a5a;
-  --green-link: #2a7a5a;
-  --amber-ink: #8a6a2a;
-  --accent-ink: #8a3a2a;
-  --serif: 'Cormorant Garamond', 'Georgia', serif;
-  --mono: 'Source Code Pro', monospace;
+  --ink-3: #888;
+  --ink-4: #bbb;
+  --rule: #ddd;
+  --green: #00aa66;
+  --amber: #cc8822;
+  --accent: #bb4433;
+  --font: 'Source Code Pro', 'Courier New', monospace;
 }
 
-*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
-html { scroll-behavior: smooth; scroll-snap-type: y mandatory; }
-body { font-family: var(--serif); -webkit-font-smoothing: antialiased; overflow-x: hidden; }
-
-a { color: inherit; text-decoration: none; }
-
-::selection { background: var(--cover-highlight); color: var(--ink); }
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{font-family:var(--font);background:var(--bg);color:var(--ink);font-size:15px;line-height:1.8;-webkit-font-smoothing:antialiased;overflow-x:hidden;}
+a{color:inherit;text-decoration:none;transition:color .2s;}
+::selection{background:var(--ink);color:var(--bg);}
 
 /* ═══════════════════════════════════════════════════════════
    PAGE 1: COVER
    ═══════════════════════════════════════════════════════════ */
 .cover {
-  position: relative;
   width: 100%;
-  height: 100vh;
-  overflow: hidden;
-  scroll-snap-align: start;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  cursor: default;
+  padding: clamp(2.5rem, 5vh, 4rem) clamp(2rem, 5vw, 5rem);
+  border-bottom: 1px solid var(--rule);
 }
 
-/* ── Generative background ── */
-.cover-bg {
-  position: absolute;
-  inset: 0;
-  z-index: 0;
-  background:
-    radial-gradient(ellipse 120% 80% at 70% 60%, rgba(42,122,114,0.9) 0%, transparent 70%),
-    radial-gradient(ellipse 100% 120% at 30% 80%, rgba(58,154,133,0.7) 0%, transparent 60%),
-    radial-gradient(ellipse 80% 60% at 80% 20%, rgba(26,58,74,0.8) 0%, transparent 50%),
-    radial-gradient(ellipse 60% 90% at 20% 30%, rgba(26,74,79,0.9) 0%, transparent 60%),
-    linear-gradient(160deg, #1a4a4f 0%, #2a6a68 30%, #3a8a78 55%, #1a5a5a 80%, #1a3a4a 100%);
-}
-
-/* Animated light caustic blobs */
-.cover-caustic {
-  position: absolute;
-  inset: 0;
-  z-index: 1;
-  filter: blur(60px);
-  opacity: 0.5;
-  animation: causticDrift 20s ease-in-out infinite alternate;
-}
-
-.cover-caustic::before,
-.cover-caustic::after {
-  content: '';
-  position: absolute;
-  border-radius: 50%;
-}
-
-.cover-caustic::before {
-  width: 50vw; height: 50vh;
-  top: 20%; right: 10%;
-  background: radial-gradient(circle, rgba(80,180,160,0.6) 0%, transparent 70%);
-  animation: blob1 15s ease-in-out infinite alternate;
-}
-
-.cover-caustic::after {
-  width: 40vw; height: 60vh;
-  bottom: 10%; left: 20%;
-  background: radial-gradient(circle, rgba(42,120,130,0.5) 0%, transparent 70%);
-  animation: blob2 18s ease-in-out infinite alternate;
-}
-
-@keyframes causticDrift {
-  0% { transform: translate(0, 0) scale(1); }
-  100% { transform: translate(20px, -15px) scale(1.05); }
-}
-
-@keyframes blob1 {
-  0% { transform: translate(0, 0) scale(1); }
-  50% { transform: translate(-30px, 20px) scale(1.1); }
-  100% { transform: translate(15px, -10px) scale(0.95); }
-}
-
-@keyframes blob2 {
-  0% { transform: translate(0, 0) scale(1); }
-  50% { transform: translate(20px, -25px) scale(1.08); }
-  100% { transform: translate(-10px, 15px) scale(0.97); }
-}
-
-/* Subtle noise grain */
-.cover-grain {
-  position: absolute;
-  inset: 0;
-  z-index: 2;
-  opacity: 0.04;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
-  background-size: 128px;
-  pointer-events: none;
-}
-
-/* Light streak across the cover */
-.cover-streak {
-  position: absolute;
-  z-index: 2;
-  width: 200%;
-  height: 40vh;
-  top: 30%;
-  left: -30%;
-  background: linear-gradient(
-    90deg,
-    transparent 0%,
-    rgba(180,220,210,0.08) 30%,
-    rgba(200,240,220,0.12) 50%,
-    rgba(180,220,210,0.06) 70%,
-    transparent 100%
-  );
-  transform: rotate(-8deg);
-  pointer-events: none;
-  animation: streakShift 25s ease-in-out infinite alternate;
-}
-
-@keyframes streakShift {
-  0% { transform: rotate(-8deg) translateX(0); }
-  100% { transform: rotate(-6deg) translateX(40px); }
-}
-
-/* ── Cover content ── */
-.cover-content {
-  position: relative;
-  z-index: 10;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  padding: clamp(2rem, 5vh, 3.5rem) clamp(2rem, 5vw, 4rem);
-  color: var(--cover-text);
-}
-
-/* Top row: name left, date right */
+/* Top: Name + Date */
 .cover-top {
   display: flex;
   justify-content: space-between;
@@ -171,130 +47,110 @@ a { color: inherit; text-decoration: none; }
 }
 
 .cover-name {
-  font-family: var(--serif);
   font-weight: 300;
-  letter-spacing: -0.03em;
-  line-height: 0.92;
-  text-shadow: 0 2px 30px rgba(0,0,0,0.3);
+  letter-spacing: -0.04em;
+  line-height: 0.95;
+  color: var(--ink);
 }
 
-.cover-name-line1 {
+.cover-name-line {
   display: block;
-  font-size: clamp(4rem, 10vw, 7.5rem);
-}
-
-.cover-name-line2 {
-  display: block;
-  font-size: clamp(4rem, 10vw, 7.5rem);
+  font-size: clamp(4.5rem, 11vw, 9rem);
 }
 
 .cover-date {
-  font-family: var(--mono);
   font-size: 11px;
   font-weight: 400;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: rgba(232,238,236,0.7);
+  color: var(--ink-3);
   text-align: right;
   line-height: 1.6;
-  text-shadow: 0 1px 10px rgba(0,0,0,0.3);
+  padding-top: 0.5rem;
 }
 
-/* Middle: field feeds */
+/* Middle: Field feeds */
 .cover-feeds {
+  padding-top: clamp(3rem, 5vh, 5rem);
   margin-bottom: auto;
-  padding-top: clamp(2rem, 4vh, 4rem);
-  max-width: 520px;
+  max-width: 600px;
 }
 
 .cover-feed {
-  margin-bottom: clamp(1.2rem, 2.5vh, 2rem);
-  animation: feedIn 0.6s ease both;
+  margin-bottom: clamp(1.5rem, 3vh, 2.5rem);
+  opacity: 0;
+  animation: feedIn 0.5s ease forwards;
 }
 
-.cover-feed:nth-child(1) { animation-delay: 0.8s; }
-.cover-feed:nth-child(2) { animation-delay: 1.0s; }
-.cover-feed:nth-child(3) { animation-delay: 1.2s; }
+.cover-feed:nth-child(1) { animation-delay: 0.3s; }
+.cover-feed:nth-child(2) { animation-delay: 0.5s; }
+.cover-feed:nth-child(3) { animation-delay: 0.7s; }
 
 @keyframes feedIn {
-  from { opacity: 0; transform: translateY(8px); }
+  from { opacity: 0; transform: translateY(6px); }
   to { opacity: 1; transform: translateY(0); }
 }
 
 .cover-feed-source {
-  font-family: var(--mono);
-  font-size: 12px;
-  font-weight: 500;
-  letter-spacing: 0.08em;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
-  margin-bottom: 4px;
-  text-shadow: 0 1px 8px rgba(0,0,0,0.3);
+  margin-bottom: 2px;
 }
 
-.cover-feed-source.src-agent { color: var(--cover-highlight); }
-.cover-feed-source.src-press { color: #f0c040; }
-.cover-feed-source.src-pract { color: #e88070; }
+.cover-feed-source.src-agent { color: var(--green); }
+.cover-feed-source.src-press { color: var(--amber); }
+.cover-feed-source.src-pract { color: var(--accent); }
 
 .cover-feed-title {
-  font-family: var(--serif);
-  font-size: clamp(16px, 2.2vw, 20px);
+  font-size: 17px;
   font-weight: 400;
-  line-height: 1.45;
-  color: var(--cover-text);
-  text-shadow: 0 1px 12px rgba(0,0,0,0.25);
+  line-height: 1.5;
+  color: var(--ink);
 }
 
 .cover-feed-title a {
-  color: inherit;
+  color: var(--ink);
   transition: opacity 0.2s;
 }
 
-.cover-feed-title a:hover { opacity: 0.75; }
+.cover-feed-title a:hover { opacity: 0.5; }
 
-/* Bottom row: affiliation left, footnote right */
+.cover-feed-snippet {
+  font-size: 14px;
+  font-weight: 300;
+  font-style: italic;
+  color: var(--ink-3);
+  line-height: 1.6;
+  margin-top: 4px;
+  max-width: 540px;
+}
+
+/* Bottom: Affiliation + Footnote */
 .cover-bottom {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
   gap: 2rem;
+  padding-top: 3rem;
 }
 
 .cover-affil {
-  font-family: var(--serif);
-  font-size: clamp(18px, 2.5vw, 26px);
+  font-size: clamp(18px, 2.5vw, 24px);
   font-weight: 400;
-  color: var(--cover-text);
-  text-shadow: 0 1px 15px rgba(0,0,0,0.3);
+  color: var(--ink);
   line-height: 1.35;
 }
 
 .cover-footnote {
-  font-family: var(--mono);
-  font-size: 9px;
-  color: rgba(232,238,236,0.45);
-  max-width: 280px;
-  text-align: right;
-  line-height: 1.6;
-  letter-spacing: 0.02em;
-}
-
-/* Scroll cue */
-.cover-scroll-cue {
-  position: absolute;
-  bottom: 1.5rem;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 10;
-  font-family: var(--mono);
   font-size: 10px;
-  color: rgba(232,238,236,0.3);
-  letter-spacing: 0.1em;
-  animation: cuePulse 2s ease-in-out infinite;
-}
-
-@keyframes cuePulse {
-  0%, 100% { opacity: 0.3; }
-  50% { opacity: 0.6; }
+  font-weight: 300;
+  color: var(--ink-4);
+  max-width: 320px;
+  text-align: right;
+  line-height: 1.7;
+  letter-spacing: 0.01em;
 }
 
 /* ═══════════════════════════════════════════════════════════
@@ -302,56 +158,46 @@ a { color: inherit; text-decoration: none; }
    ═══════════════════════════════════════════════════════════ */
 .toc-page {
   min-height: 100vh;
-  background: var(--white-bg);
-  scroll-snap-align: start;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 4rem 2rem;
+  border-bottom: 1px solid var(--rule);
 }
 
-.toc-inner {
-  max-width: 520px;
-  width: 100%;
-}
+.toc-inner { max-width: 500px; width: 100%; }
 
 .toc-head {
-  font-family: var(--serif);
-  font-size: 13px;
+  font-size: 11px;
   font-weight: 400;
   color: var(--ink-3);
   letter-spacing: 0.15em;
   text-transform: uppercase;
   margin-bottom: 3rem;
   padding-bottom: 1rem;
-  border-bottom: 1px solid var(--ink-rule);
+  border-bottom: 1px solid var(--rule);
 }
 
 .toc-item {
   display: flex;
   align-items: baseline;
-  padding: 0.8rem 0;
+  padding: 0.9rem 0;
   border-bottom: 1px solid #eee;
   transition: padding-left 0.3s ease;
-  cursor: pointer;
   text-decoration: none;
   color: var(--ink);
 }
 
-.toc-item:hover {
-  padding-left: 0.6rem;
-}
+.toc-item:hover { padding-left: 0.8rem; }
 
 .toc-num {
-  font-family: var(--mono);
-  font-size: 11px;
+  font-size: 12px;
   color: var(--ink-4);
   min-width: 2.5rem;
   letter-spacing: 0.04em;
 }
 
 .toc-label {
-  font-family: var(--serif);
   font-size: 20px;
   font-weight: 500;
   color: var(--ink);
@@ -360,40 +206,28 @@ a { color: inherit; text-decoration: none; }
 }
 
 .toc-dots {
-  flex: 0;
+  flex-grow: 1;
+  min-width: 30px;
   margin: 0 1rem;
   border-bottom: 1px dotted var(--ink-4);
-  min-width: 40px;
-  flex-grow: 1;
-  align-self: center;
   height: 0;
-}
-
-.toc-page-num {
-  font-family: var(--mono);
-  font-size: 11px;
-  color: var(--ink-4);
+  align-self: center;
 }
 
 /* ═══════════════════════════════════════════════════════════
-   CONTENT PAGES (white)
+   CONTENT PAGES
    ═══════════════════════════════════════════════════════════ */
 .content-page {
   min-height: 100vh;
-  background: var(--white-bg);
-  scroll-snap-align: start;
   display: flex;
   justify-content: center;
   padding: 5rem 2rem;
+  border-bottom: 1px solid var(--rule);
 }
 
-.content-inner {
-  max-width: 600px;
-  width: 100%;
-}
+.content-inner { max-width: 620px; width: 100%; }
 
 .content-section-num {
-  font-family: var(--mono);
   font-size: 10px;
   color: var(--ink-4);
   letter-spacing: 0.12em;
@@ -402,27 +236,24 @@ a { color: inherit; text-decoration: none; }
 }
 
 .content-section-title {
-  font-family: var(--serif);
   font-size: 28px;
   font-weight: 600;
   color: var(--ink);
   letter-spacing: -0.02em;
   margin-bottom: 2rem;
   padding-bottom: 1rem;
-  border-bottom: 1px solid var(--ink-rule);
+  border-bottom: 1px solid var(--rule);
 }
 
 .content-prose {
-  font-family: var(--serif);
-  font-size: 17px;
+  font-size: 15px;
   color: var(--ink-2);
   line-height: 1.9;
   margin-bottom: 1.5rem;
 }
 
 .content-tags {
-  font-family: var(--mono);
-  font-size: 12px;
+  font-size: 13px;
   color: var(--ink-3);
   letter-spacing: 0.03em;
   margin-bottom: 2rem;
@@ -431,217 +262,98 @@ a { color: inherit; text-decoration: none; }
 .content-links {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
+  gap: 6px;
   margin-bottom: 2rem;
 }
 
 .content-links a {
-  font-family: var(--mono);
-  font-size: 12px;
+  font-size: 13px;
   color: var(--ink-3);
   padding: 5px 14px;
-  border: 1px solid var(--ink-rule);
+  border: 1px solid var(--rule);
   border-radius: 3px;
   transition: all 0.2s;
   letter-spacing: 0.02em;
 }
 
-.content-links a:hover {
-  color: var(--teal-ink);
-  border-color: var(--teal-ink);
-}
+.content-links a:hover { color: var(--ink); border-color: var(--ink-3); }
 
-/* Photo */
 .content-photo {
-  width: 64px; height: 64px;
+  width: 56px; height: 56px;
   border-radius: 50%;
   object-fit: cover;
   filter: grayscale(0.5);
   margin-bottom: 1.5rem;
+  border: 2px solid var(--rule);
 }
 
 /* Publications */
-.pub {
-  padding: 1rem 0;
-  border-bottom: 1px solid #eee;
-}
+.pub { padding: 14px 0; border-bottom: 1px solid #eee; }
+.pub:first-child { border-top: 1px solid #eee; }
 
-.pub-cite {
-  font-family: var(--serif);
-  font-size: 16px;
-  color: var(--ink-2);
-  line-height: 1.7;
-}
-
+.pub-cite { font-size: 15px; color: var(--ink-2); line-height: 1.7; }
 .pub-cite strong { color: var(--ink); font-weight: 600; }
-
-.pub-venue {
-  font-family: var(--serif);
-  font-size: 15px;
-  color: var(--ink-3);
-  font-style: italic;
-  margin-top: 3px;
-}
+.pub-venue { font-size: 14px; color: var(--ink-3); font-style: italic; margin-top: 3px; }
 
 .pub-tog {
-  font-family: var(--mono);
-  font-size: 12px;
-  color: var(--ink-4);
-  cursor: pointer;
-  border: 1px solid var(--ink-rule);
-  background: none;
-  padding: 2px 10px;
-  border-radius: 3px;
-  margin-top: 6px;
-  transition: all 0.2s;
+  font-size: 13px; font-weight: 500; color: var(--ink-3); cursor: pointer;
+  border: 1px solid var(--rule); background: none; padding: 2px 10px;
+  border-radius: 3px; margin-top: 6px; transition: all 0.2s;
+  font-family: var(--font);
 }
+.pub-tog:hover { border-color: var(--ink-3); color: var(--ink); }
 
-.pub-tog:hover { border-color: var(--ink-3); color: var(--ink-2); }
+.pub-detail { max-height: 0; overflow: hidden; transition: max-height .4s ease, opacity .3s ease; opacity: 0; }
+.pub-detail.open { max-height: 2000px; opacity: 1; padding-top: 10px; }
 
-.pub-detail {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.4s ease, opacity 0.3s ease;
-  opacity: 0;
-}
-
-.pub-detail.open {
-  max-height: 2000px;
-  opacity: 1;
-  padding-top: 10px;
-}
-
-.pub-abs {
-  font-family: var(--serif);
-  font-size: 15px;
-  color: var(--ink-3);
-  line-height: 1.8;
-  padding-left: 14px;
-  border-left: 2px solid var(--ink-rule);
-}
-
-.pub-dl {
-  font-family: var(--mono);
-  font-size: 12px;
-  margin-top: 8px;
-  padding-left: 14px;
-}
-
-.pub-dl a { color: var(--teal-ink); }
+.pub-abs { font-size: 14px; color: var(--ink-3); line-height: 1.8; padding-left: 14px; border-left: 2px solid var(--rule); }
+.pub-dl { font-size: 13px; margin-top: 8px; padding-left: 14px; }
+.pub-dl a { color: var(--green); }
 .pub-dl a:hover { color: var(--ink); }
 
-.pub-sublabel {
-  font-family: var(--mono);
-  font-size: 11px;
-  color: var(--ink-4);
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  margin-bottom: 0.5rem;
-}
-
-.ch-label {
-  font-family: var(--mono);
-  font-size: 11px;
-  color: var(--ink-4);
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  margin: 2rem 0 0.5rem;
-}
+.pub-sublabel { font-size: 11px; color: var(--ink-4); letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 0.5rem; }
+.ch-label { font-size: 11px; color: var(--ink-4); letter-spacing: 0.08em; text-transform: uppercase; margin: 2rem 0 0.5rem; }
 
 /* Explore card */
-.ex-card {
-  background: #f5f5f3;
-  border: 1px solid #eee;
-  border-radius: 6px;
-  padding: 18px 20px;
-  margin-top: 1.5rem;
-}
-
-.ex-label {
-  font-family: var(--mono);
-  font-size: 10px;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  color: var(--ink-4);
-  margin-bottom: 8px;
-}
-
-.ex-card p {
-  font-family: var(--serif);
-  font-size: 15px;
-  color: var(--ink-3);
-  line-height: 1.85;
-}
-
-.ex-card a { color: var(--teal-ink); border-bottom: 1px dotted var(--ink-rule); }
-.ex-card a:hover { color: var(--ink); }
-.ex-card a.a-press { color: var(--amber-ink); }
-.ex-card a.a-pract { color: var(--accent-ink); }
+.ex-card { background: #f8f8f6; border: 1px solid #eee; border-radius: 6px; padding: 18px 20px; margin-top: 1.5rem; }
+.ex-label { font-size: 10px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--ink-4); margin-bottom: 8px; }
+.ex-card p { font-size: 14px; color: var(--ink-3); line-height: 1.85; }
+.ex-card a { color: var(--green); }
+.ex-card a.a-press { color: var(--amber); }
+.ex-card a.a-pract { color: var(--accent); }
 
 /* Course */
-.course {
-  font-family: var(--serif);
-  font-size: 16px;
-  color: var(--ink-2);
-  padding: 5px 0;
-}
-
+.course { font-size: 15px; color: var(--ink-2); padding: 5px 0; }
 .course strong { font-weight: 500; color: var(--ink); }
-.course span { color: var(--ink-3); font-size: 15px; }
+.course span { color: var(--ink-3); }
 
 /* Timeline */
 .tl { position: relative; padding-left: 24px; }
-.tl::before {
-  content: '';
-  position: absolute;
-  left: 5px; top: 10px; bottom: 10px;
-  width: 1px;
-  background: var(--ink-rule);
-}
-
+.tl::before { content: ''; position: absolute; left: 5px; top: 10px; bottom: 10px; width: 1px; background: var(--rule); }
 .tl-i { position: relative; padding: 6px 0; }
-
-.tl-d {
-  position: absolute;
-  left: -24px; top: 12px;
-  width: 9px; height: 9px;
-  border-radius: 50%;
-  border: 2px solid var(--ink-4);
-  background: var(--white-bg);
-  transition: all 0.3s;
-}
-
-.tl-i:hover .tl-d { border-color: var(--teal-ink); }
-.tl-d.now { border-color: var(--teal-ink); background: var(--teal-ink); }
-
-.tl-y { font-family: var(--mono); font-size: 13px; color: var(--ink-3); font-weight: 500; }
-.tl-r { font-family: var(--serif); font-size: 16px; color: var(--ink-2); }
-.tl-m { font-family: var(--serif); font-size: 15px; color: var(--ink-3); }
+.tl-d { position: absolute; left: -24px; top: 12px; width: 9px; height: 9px; border-radius: 50%; border: 2px solid var(--ink-4); background: var(--bg); transition: all 0.3s; }
+.tl-i:hover .tl-d { border-color: var(--ink-2); }
+.tl-d.now { border-color: var(--green); background: var(--green); }
+.tl-y { font-size: 15px; color: var(--ink-3); font-weight: 500; }
+.tl-r { font-size: 15px; color: var(--ink-2); }
+.tl-m { font-size: 14px; color: var(--ink-3); }
 
 /* Footer */
 .content-footer {
-  margin-top: 3rem;
-  padding-top: 1.5rem;
-  border-top: 1px solid var(--ink-rule);
-  font-family: var(--mono);
-  font-size: 11px;
-  color: var(--ink-4);
-  display: flex;
-  justify-content: space-between;
+  margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid var(--rule);
+  font-size: 12px; color: var(--ink-4); display: flex; justify-content: space-between;
 }
 
 /* ═══════════════════════════════════════════════════════════
    RESPONSIVE
    ═══════════════════════════════════════════════════════════ */
 @media (max-width: 600px) {
-  .cover-name-line1,
-  .cover-name-line2 { font-size: 3.2rem; }
+  .cover-name-line { font-size: 3.5rem; }
   .cover-feeds { max-width: 100%; }
   .cover-bottom { flex-direction: column; gap: 1rem; }
   .cover-footnote { text-align: left; max-width: 100%; }
   .cover-affil { font-size: 18px; }
   .toc-label { font-size: 17px; }
-  .content-inner { max-width: 100%; }
 }
 </style>
 </head>
@@ -651,51 +363,35 @@ a { color: inherit; text-decoration: none; }
      PAGE 1: THE COVER
      ═══════════════════════════════════════════════════════════ -->
 <section class="cover">
-  <div class="cover-bg"></div>
-  <div class="cover-caustic"></div>
-  <div class="cover-grain"></div>
-  <div class="cover-streak"></div>
 
-  <div class="cover-content">
-
-    <!-- Top: Name + Date -->
-    <div class="cover-top">
-      <div class="cover-name">
-        <span class="cover-name-line1">santosh</span>
-        <span class="cover-name-line2">srinivas</span>
-      </div>
-      <div class="cover-date" id="coverDate"></div>
+  <div class="cover-top">
+    <div class="cover-name">
+      <span class="cover-name-line">santosh</span>
+      <span class="cover-name-line">srinivas</span>
     </div>
-
-    <!-- Middle: 3 Field Feeds -->
-    <div class="cover-feeds" id="coverFeeds">
-
-      <div class="cover-feed">
-        <div class="cover-feed-source src-agent">agentfield</div>
-        <div class="cover-feed-title" id="feed-agent"><a href="https://santoshbs.github.io/agentfield/">Loading field notes…</a></div>
-      </div>
-
-      <div class="cover-feed">
-        <div class="cover-feed-source src-press">pressfield</div>
-        <div class="cover-feed-title" id="feed-press"><a href="https://santoshbs.github.io/pressfield/">Loading field notes…</a></div>
-      </div>
-
-      <div class="cover-feed">
-        <div class="cover-feed-source src-pract">practfield</div>
-        <div class="cover-feed-title" id="feed-pract"><a href="https://santoshbs.github.io/practfield/">Loading field notes…</a></div>
-      </div>
-
-    </div>
-
-    <!-- Bottom: Affiliation + Footnote -->
-    <div class="cover-bottom">
-      <div class="cover-affil">Assistant Professor, HEC Paris</div>
-      <div class="cover-footnote">* Field notes by an open-weights language model (gpt-oss:120b) deployed as an observer across three layers of AI discourse. It reads, participates, and periodically writes margin notes on what gets discussed and what patterns emerge.</div>
-    </div>
-
+    <div class="cover-date" id="coverDate"></div>
   </div>
 
-  <div class="cover-scroll-cue">▼</div>
+  <div class="cover-feeds" id="coverFeeds">
+    <div class="cover-feed">
+      <div class="cover-feed-source src-agent">agentfield</div>
+      <div class="cover-feed-title" id="feed-agent">Loading…</div>
+    </div>
+    <div class="cover-feed">
+      <div class="cover-feed-source src-press">pressfield</div>
+      <div class="cover-feed-title" id="feed-press">Loading…</div>
+    </div>
+    <div class="cover-feed">
+      <div class="cover-feed-source src-pract">practfield</div>
+      <div class="cover-feed-title" id="feed-pract">Loading…</div>
+    </div>
+  </div>
+
+  <div class="cover-bottom">
+    <div class="cover-affil">Assistant Professor, HEC Paris</div>
+    <div class="cover-footnote">* Field notes written by an open-weights language model (gpt-oss:120b) deployed as an observer across three layers of AI discourse.</div>
+  </div>
+
 </section>
 
 <!-- ═══════════════════════════════════════════════════════════
@@ -704,53 +400,22 @@ a { color: inherit; text-decoration: none; }
 <section class="toc-page" id="toc">
   <div class="toc-inner">
     <div class="toc-head">Contents</div>
-
-    <a class="toc-item" href="#sec-about">
-      <span class="toc-num">i</span>
-      <span class="toc-label">About</span>
-      <span class="toc-dots"></span>
-    </a>
-
-    <a class="toc-item" href="#sec-pubs">
-      <span class="toc-num">ii</span>
-      <span class="toc-label">Publications</span>
-      <span class="toc-dots"></span>
-    </a>
-
-    <a class="toc-item" href="#sec-current">
-      <span class="toc-num">iii</span>
-      <span class="toc-label">Current Inquiry</span>
-      <span class="toc-dots"></span>
-    </a>
-
-    <a class="toc-item" href="#sec-teaching">
-      <span class="toc-num">iv</span>
-      <span class="toc-label">Teaching</span>
-      <span class="toc-dots"></span>
-    </a>
-
-    <a class="toc-item" href="#sec-formation">
-      <span class="toc-num">v</span>
-      <span class="toc-label">Formation</span>
-      <span class="toc-dots"></span>
-    </a>
+    <a class="toc-item" href="#sec-about"><span class="toc-num">i</span><span class="toc-label">About</span><span class="toc-dots"></span></a>
+    <a class="toc-item" href="#sec-pubs"><span class="toc-num">ii</span><span class="toc-label">Publications</span><span class="toc-dots"></span></a>
+    <a class="toc-item" href="#sec-current"><span class="toc-num">iii</span><span class="toc-label">Current Inquiry</span><span class="toc-dots"></span></a>
+    <a class="toc-item" href="#sec-teaching"><span class="toc-num">iv</span><span class="toc-label">Teaching</span><span class="toc-dots"></span></a>
+    <a class="toc-item" href="#sec-formation"><span class="toc-num">v</span><span class="toc-label">Formation</span><span class="toc-dots"></span></a>
   </div>
 </section>
 
-<!-- ═══════════════════════════════════════════════════════════
-     PAGE 3: ABOUT
-     ═══════════════════════════════════════════════════════════ -->
+<!-- ═══════════ ABOUT ═══════════ -->
 <section class="content-page" id="sec-about">
   <div class="content-inner">
     <div class="content-section-num">Section i</div>
     <h2 class="content-section-title">About</h2>
-
     <img src="https://santoshbs.github.io/images/santoshbs1.jpeg" alt="Santosh Srinivas" class="content-photo">
-
     <p class="content-prose">I study how value is produced, assessed, and negotiated in organizational and entrepreneurial settings, and how evaluative processes reflect and reinforce social power. Methodologically, I work with natural language processing.</p>
-
     <p class="content-tags">social evaluations · culture &amp; cognition · entrepreneurship · computational social science</p>
-
     <div class="content-links">
       <a href="mailto:srinivas@hec.fr">email</a>
       <a href="https://github.com/santoshbs" target="_blank">github</a>
@@ -760,9 +425,7 @@ a { color: inherit; text-decoration: none; }
   </div>
 </section>
 
-<!-- ═══════════════════════════════════════════════════════════
-     PAGE 4: PUBLICATIONS
-     ═══════════════════════════════════════════════════════════ -->
+<!-- ═══════════ PUBLICATIONS ═══════════ -->
 <section class="content-page" id="sec-pubs">
   <div class="content-inner">
     <div class="content-section-num">Section ii</div>
@@ -830,20 +493,15 @@ a { color: inherit; text-decoration: none; }
         <p class="pub-dl"><a href="https://santoshbs.github.io//files/RindovaSrinivas_2017_ManagingMeaning_PreprintVersion.pdf" target="_blank">pre-print ↗</a></p>
       </div>
     </div>
-
   </div>
 </section>
 
-<!-- ═══════════════════════════════════════════════════════════
-     PAGE 5: CURRENT INQUIRY
-     ═══════════════════════════════════════════════════════════ -->
+<!-- ═══════════ CURRENT INQUIRY ═══════════ -->
 <section class="content-page" id="sec-current">
   <div class="content-inner">
     <div class="content-section-num">Section iii</div>
     <h2 class="content-section-title">Current Inquiry</h2>
-
     <p class="content-prose">My current work examines how different audiences construct and contest social positions on user-generated platforms, and how individuals adapt their self-presentation when the demographic composition of their field shifts. A parallel stream reconnects with entrepreneurship — how personal histories shape opportunity recognition, how ventures use rhetorical history to craft market positions, and how entrepreneurial rhetoric can function as social critique.</p>
-
     <div class="ex-card">
       <p class="ex-label">exploratory</p>
       <p>I am interested in how the emerging agentic AI economy may reshape the evaluation of competence, worth, and opportunity. I deployed a small open-weights language model as an observer across three layers of AI discourse. It reads, participates, and periodically writes field notes on what gets discussed and what patterns emerge.
@@ -854,30 +512,23 @@ a { color: inherit; text-decoration: none; }
   </div>
 </section>
 
-<!-- ═══════════════════════════════════════════════════════════
-     PAGE 6: TEACHING
-     ═══════════════════════════════════════════════════════════ -->
+<!-- ═══════════ TEACHING ═══════════ -->
 <section class="content-page" id="sec-teaching">
   <div class="content-inner">
     <div class="content-section-num">Section iv</div>
     <h2 class="content-section-title">Teaching</h2>
-
     <p class="content-prose">My classes orient students to multiple conceptions of value and varied approaches to organizing. I use case-based pedagogy, asking students to reflect individually and then compare perspectives collaboratively. With AI reshaping what competence looks like, I see an opportunity to redesign assessments around what matters most: the ability to translate ill-structured problems into relevant concepts and critically synthesize solutions.</p>
-
     <p class="course"><strong>Organizational Behavior</strong> <span>· Grande École · HEC Paris · 2019 – to date</span></p>
     <p class="course"><strong>Organizational Behavior</strong> <span>· Doctoral Seminar · HEC Paris · 2019 – to date</span></p>
     <p class="course"><strong>Outdoor Leadership Seminar</strong> <span>· MBA · HEC Paris · 2021 – to date</span></p>
   </div>
 </section>
 
-<!-- ═══════════════════════════════════════════════════════════
-     PAGE 7: FORMATION
-     ═══════════════════════════════════════════════════════════ -->
+<!-- ═══════════ FORMATION ═══════════ -->
 <section class="content-page" id="sec-formation">
   <div class="content-inner">
     <div class="content-section-num">Section v</div>
     <h2 class="content-section-title">Formation</h2>
-
     <div class="tl">
       <div class="tl-i"><div class="tl-d now"></div><span class="tl-y">2019 –</span> <span class="tl-r">Assistant Professor, HEC Paris</span><br><span class="tl-m">Management &amp; Human Resources</span></div>
       <div class="tl-i"><div class="tl-d"></div><span class="tl-y">2014 – 19</span> <span class="tl-r">Ph.D., Management, UT Austin</span><br><span class="tl-m">McCombs School of Business</span></div>
@@ -888,7 +539,6 @@ a { color: inherit; text-decoration: none; }
       <div class="tl-i"><div class="tl-d"></div><span class="tl-y">2001 – 06</span> <span class="tl-r">Intel Technologies India</span><br><span class="tl-m">Software Engineer + Technical Lead</span></div>
       <div class="tl-i"><div class="tl-d"></div><span class="tl-y">1997 – 01</span> <span class="tl-r">B.E. (Hons.), BITS Pilani</span><br><span class="tl-m">Computer Science</span></div>
     </div>
-
     <div class="content-footer">
       <span>Paris · srinivas@hec.fr</span>
       <span>© 2026</span>
@@ -897,191 +547,187 @@ a { color: inherit; text-decoration: none; }
 </section>
 
 <script>
-/* ═══ Auto-updating date ═══ */
-(function() {
-  const now = new Date();
-  const month = now.toLocaleString('en-US', { month: 'long' }).toUpperCase();
-  const year = now.getFullYear();
-  document.getElementById('coverDate').innerHTML = month + ' ' + year;
-})();
+/* ═══ Date ═══ */
+document.getElementById('coverDate').textContent =
+  new Date().toLocaleString('en-US',{month:'long'}).toUpperCase() + ' ' + new Date().getFullYear();
 
-/* ═══ Fetch live feeds from observer sites ═══ */
+/* ═══ Feed fetching ═══ */
 
-// Render a feed result into the cover
-function renderFeed(targetId, title, snippet, link) {
-  const el = document.getElementById(targetId);
-  if (!el) return;
-  let html = `<a href="${link}">${title}</a>`;
-  if (snippet) {
-    html += `<div style="font-size:clamp(12px,1.5vw,14px);opacity:0.55;margin-top:4px;font-style:italic;line-height:1.55;max-width:460px;">${snippet}</div>`;
-  }
-  el.innerHTML = html;
-}
-
-// Extract snippet from HTML or XML content string
-function extractSnippet(raw, maxLen) {
+function extractSnippet(raw, max) {
   if (!raw) return '';
-  const tmp = document.createElement('div');
-  tmp.innerHTML = raw;
-  const plain = tmp.textContent.trim();
-  if (!plain) return '';
-  const sentences = plain.split(/\.\s/);
-  let s = sentences[0];
-  if (s.length > (maxLen || 150)) s = s.substring(0, (maxLen || 147)) + '…';
+  var d = document.createElement('div'); d.innerHTML = raw;
+  var t = d.textContent.trim();
+  if (!t) return '';
+  // Take first sentence
+  var s = t.split(/\.\s/)[0];
+  if (s.length > (max||150)) s = s.substring(0, max-3) + '…';
   else if (!s.endsWith('.')) s += '.';
   return s;
 }
 
-// Strategy 1: Parse XML feed (Atom or RSS)
-function parseFeedXML(text) {
-  const parser = new DOMParser();
-  const xml = parser.parseFromString(text, 'text/xml');
-  // Check for parse errors
-  if (xml.querySelector('parsererror')) return null;
-
-  let entries = xml.querySelectorAll('entry');
-  if (entries.length === 0) entries = xml.querySelectorAll('item');
-  if (entries.length === 0) return null;
-
-  const entry = entries[0];
-  const title = entry.querySelector('title')?.textContent || null;
-  if (!title) return null;
-
-  const content = entry.querySelector('content')?.textContent ||
-                  entry.querySelector('description')?.textContent ||
-                  entry.querySelector('summary')?.textContent || '';
-
-  const snippet = extractSnippet(content, 150);
-
-  // Link: Atom uses <link href="...">, RSS uses <link>text</link>
-  let link = '';
-  const linkEl = entry.querySelector('link');
-  if (linkEl) {
-    link = linkEl.getAttribute('href') || linkEl.textContent || '';
-  }
-
-  return { title, snippet, link };
+function renderFeed(id, title, snippet, link) {
+  var el = document.getElementById(id);
+  if (!el) return;
+  var h = '<a href="'+link+'">'+title+'</a>';
+  if (snippet) h += '<div class="cover-feed-snippet">'+snippet+'</div>';
+  el.innerHTML = h;
 }
 
-// Strategy 2: Scrape the HTML page for the latest post
-function parseHTML(text, baseUrl) {
-  const parser = new DOMParser();
-  const doc = parser.parseFromString(text, 'text/html');
+// Parse XML feed
+function parseFeed(text) {
+  var p = new DOMParser();
+  var x = p.parseFromString(text, 'text/xml');
+  if (x.querySelector('parsererror')) return null;
+  var entries = x.querySelectorAll('entry');
+  if (!entries.length) entries = x.querySelectorAll('item');
+  if (!entries.length) return null;
+  var e = entries[0];
+  var title = e.querySelector('title') ? e.querySelector('title').textContent : null;
+  if (!title) return null;
+  var content = '';
+  if (e.querySelector('content')) content = e.querySelector('content').textContent;
+  else if (e.querySelector('description')) content = e.querySelector('description').textContent;
+  else if (e.querySelector('summary')) content = e.querySelector('summary').textContent;
+  var link = '';
+  var lEl = e.querySelector('link');
+  if (lEl) link = lEl.getAttribute('href') || lEl.textContent || '';
+  return { title: title, snippet: extractSnippet(content, 160), link: link };
+}
 
-  // Look for the first post link — these Jekyll sites use various patterns
-  // Try common patterns: h2 > a, h3 > a, .post-title, article a, etc.
-  const selectors = [
-    'article a[href*="/20"]',          // links containing year paths
-    'a[href*="/20"][href$="/"]',        // year-based post URLs
-    '.post-link',
-    '.post-title a',
-    'h2 a', 'h3 a',
-  ];
+// Scrape HTML page for latest post — handles agentfield/pressfield/practfield structure
+function scrapeHTML(text, base) {
+  var p = new DOMParser();
+  var doc = p.parseFromString(text, 'text/html');
 
-  let postTitle = null;
-  let postLink = null;
+  // These sites have posts as links with hrefs containing date patterns /2025/ or /2026/
+  // The post TITLES are in specific elements. Let's look for them carefully.
+  // agentfield structure: each post has a timestamp link, then "pulse #N", then "gpt-oss:120b",
+  // then a field note paragraph, then a TITLE (which is a heading or bold text followed by more text)
+  // The actual title links are like: /agentfield/2026/03/19/influence-seems-random/
 
-  for (const sel of selectors) {
-    const el = doc.querySelector(sel);
-    if (el && el.textContent.trim().length > 5) {
-      postTitle = el.textContent.trim();
-      postLink = el.getAttribute('href') || '';
-      if (postLink && !postLink.startsWith('http')) {
-        postLink = baseUrl.replace(/\/$/, '') + postLink;
-      }
-      break;
+  var result = null;
+
+  // Strategy A: Find all links whose href contains a year-month-day pattern
+  var allLinks = doc.querySelectorAll('a[href]');
+  var candidates = [];
+  for (var i = 0; i < allLinks.length; i++) {
+    var href = allLinks[i].getAttribute('href') || '';
+    var txt = allLinks[i].textContent.trim();
+    // Match /YYYY/MM/DD/ pattern in href
+    if (/\/20\d\d\/\d\d\/\d\d\//.test(href)) {
+      candidates.push({ href: href, text: txt, el: allLinks[i] });
     }
   }
 
-  if (!postTitle) {
-    // Broader: find the first link whose href contains a date pattern like /2025/ or /2026/
-    const allLinks = doc.querySelectorAll('a[href]');
-    for (const a of allLinks) {
-      const href = a.getAttribute('href') || '';
-      if (/\/20\d\d\/\d\d\//.test(href) && a.textContent.trim().length > 5) {
-        postTitle = a.textContent.trim();
-        postLink = href.startsWith('http') ? href : baseUrl.replace(/\/$/, '') + href;
+  if (candidates.length > 0) {
+    // Filter: prefer candidates whose text is NOT just a time (like "10:30 UTC")
+    // and is longer than 5 chars
+    var titled = candidates.filter(function(c) {
+      return c.text.length > 10 && !/^\d{1,2}:\d{2}\s*(UTC)?$/i.test(c.text);
+    });
+
+    var best = titled.length > 0 ? titled[0] : candidates[0];
+
+    var postTitle = best.text;
+    var postLink = best.href;
+    if (postLink && !postLink.startsWith('http')) {
+      // Resolve relative URL
+      postLink = new URL(postLink, base).href;
+    }
+
+    // If the best candidate was just a time, look for the actual title nearby
+    if (/^\d{1,2}:\d{2}\s*(UTC)?$/i.test(postTitle)) {
+      // The title might be a sibling text node or a nearby element
+      // In the agentfield layout, the post title is plain text after the field note paragraph
+      // Let's find the text content following this link's parent
+      var parent = best.el.closest('div') || best.el.parentElement;
+      if (parent) {
+        // Look for text content that's a plausible title (short, no timestamps)
+        var walker = document.createTreeWalker
+          ? doc.createTreeWalker(parent.parentElement || parent, NodeFilter.SHOW_TEXT)
+          : null;
+        if (walker) {
+          var node;
+          var foundLink = false;
+          while (node = walker.nextNode()) {
+            var nt = node.textContent.trim();
+            if (nt === best.text) { foundLink = true; continue; }
+            if (foundLink && nt.length > 5 && nt.length < 80 &&
+                !/^\d/.test(nt) && !/^pulse/.test(nt) && !/^gpt-/.test(nt) &&
+                !/^more/.test(nt)) {
+              postTitle = nt;
+              break;
+            }
+          }
+        }
+      }
+    }
+
+    // If title is still a time, try "more →" link text or just use the slug from URL
+    if (/^\d{1,2}:\d{2}\s*(UTC)?$/i.test(postTitle)) {
+      // Extract from URL slug: /influence-seems-random/ → "influence seems random"
+      var slug = postLink.split('/').filter(function(s){return s.length > 0;}).pop();
+      if (slug) postTitle = slug.replace(/-/g, ' ');
+    }
+
+    // Find snippet: first substantial <p> in the page
+    var snippet = '';
+    var allP = doc.querySelectorAll('p');
+    for (var j = 0; j < allP.length; j++) {
+      var pt = allP[j].textContent.trim();
+      if (pt.length > 80 && !/^pulse\s#/i.test(pt) && !/^gpt-/i.test(pt)) {
+        snippet = extractSnippet(pt, 160);
         break;
       }
     }
+
+    result = { title: postTitle, snippet: snippet, link: postLink };
   }
 
-  if (!postTitle) return null;
-
-  // Try to find a snippet near the title
-  let snippet = '';
-  // Look for first <p> after the matched element or in the page body
-  const allP = doc.querySelectorAll('p');
-  for (const p of allP) {
-    const t = p.textContent.trim();
-    // Skip very short paragraphs, navigation text, labels
-    if (t.length > 60 && !t.startsWith('pulse #') && !t.startsWith('gpt-')) {
-      snippet = extractSnippet(t, 150);
-      break;
-    }
-  }
-
-  return { title: postTitle, snippet, link: postLink };
+  return result;
 }
 
-// Main fetch function: tries feed.xml, atom.xml, then HTML scrape
-async function fetchFieldData(baseUrl, targetId, fallbackTitle) {
-  const feedPaths = ['feed.xml', 'atom.xml', 'index.xml', 'rss.xml'];
-  let result = null;
+async function fetchField(base, targetId, fallback) {
+  var result = null;
+  var feeds = ['feed.xml', 'atom.xml', 'index.xml'];
 
-  // Strategy 1: Try XML feeds
-  for (const path of feedPaths) {
+  // Try XML feeds first
+  for (var i = 0; i < feeds.length; i++) {
     try {
-      const res = await fetch(baseUrl + path);
+      var res = await fetch(base + feeds[i]);
       if (res.ok) {
-        const text = await res.text();
-        result = parseFeedXML(text);
+        var text = await res.text();
+        result = parseFeed(text);
         if (result) break;
       }
-    } catch (e) { /* continue */ }
+    } catch(e) {}
   }
 
-  // Strategy 2: Scrape the HTML homepage
+  // Fallback: scrape the HTML page
   if (!result) {
     try {
-      const res = await fetch(baseUrl);
-      if (res.ok) {
-        const text = await res.text();
-        result = parseHTML(text, baseUrl);
+      var res2 = await fetch(base);
+      if (res2.ok) {
+        var html = await res2.text();
+        result = scrapeHTML(html, base);
       }
-    } catch (e) {
-      console.log('HTML scrape failed for', baseUrl, e);
+    } catch(e) {
+      console.log('Scrape failed:', base, e);
     }
   }
 
-  // Render result or fallback
   if (result) {
-    renderFeed(targetId, result.title, result.snippet, result.link || baseUrl);
+    renderFeed(targetId, result.title, result.snippet, result.link || base);
   } else {
-    renderFeed(targetId, fallbackTitle, '', baseUrl);
+    renderFeed(targetId, fallback, '', base);
   }
 }
 
-// Fetch all three field sources
-fetchFieldData(
-  'https://santoshbs.github.io/agentfield/',
-  'feed-agent',
-  'field notes from agent conversations'
-);
+fetchField('https://santoshbs.github.io/agentfield/', 'feed-agent', 'field notes from agent conversations');
+fetchField('https://santoshbs.github.io/pressfield/', 'feed-press', 'field notes from press coverage');
+fetchField('https://santoshbs.github.io/practfield/', 'feed-pract', 'field notes from practitioner discussions');
 
-fetchFieldData(
-  'https://santoshbs.github.io/pressfield/',
-  'feed-press',
-  'field notes from press coverage'
-);
-
-fetchFieldData(
-  'https://santoshbs.github.io/practfield/',
-  'feed-pract',
-  'field notes from practitioner discussions'
-);
-
-/* ═══ Publication toggle ═══ */
+/* ═══ Pub toggle ═══ */
 function toggle(el) {
   var d = el.closest('.pub').querySelector('.pub-detail');
   d.classList.toggle('open');
