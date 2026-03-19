@@ -7,7 +7,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Source+Code+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box;}
-html,body{height:100%;overflow:hidden;}
+html,body{height:100%;}
 body{
   font-family:'Libre Baskerville','Georgia',serif;
   background:#fff;
@@ -20,10 +20,11 @@ a:hover{text-decoration:underline;}
 
 /* ── Main layout: sidebar + content ── */
 .layout{
-  height:100vh;
+  min-height:100vh;
   display:flex;
   justify-content:center;
   position:relative;
+  overflow:hidden;
 }
 
 /* ── Left sidebar: ORCID vertical + date, hugging the content ── */
@@ -95,7 +96,7 @@ a:hover{text-decoration:underline;}
 /* ── Abstract (no label) ── */
 .abstract-text{
   font-size:15px;
-  font-weight:400;
+  font-weight:700;
   line-height:1.85;
   color:#222;
   text-align:justify;
@@ -178,8 +179,23 @@ a:hover{text-decoration:underline;}
 .footnote-text a:hover{color:#111;}
 
 @media(max-width:800px){
-  .sidebar{display:none;}
-  .page{padding:1.5rem 1.2rem 1rem;}
+  .layout{overflow:visible;flex-direction:column;}
+  .sidebar{
+    position:relative;
+    left:auto;top:auto;bottom:auto;
+    width:100%;height:auto;
+    flex-direction:row;
+    justify-content:flex-start;
+    gap:1rem;
+    padding:0.6rem 1.2rem;
+    border-bottom:1px solid #eee;
+  }
+  .side-text{
+    writing-mode:horizontal-tb;
+    transform:none;
+    font-size:10px;
+  }
+  .page{padding:1.5rem 1.2rem 1rem;overflow:visible;}
   .paper-title{font-size:22px;}
   .two-col{column-count:1;}
   .abstract-text{font-size:14px;}
