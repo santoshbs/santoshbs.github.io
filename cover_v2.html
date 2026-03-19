@@ -20,43 +20,99 @@ body{
 a{color:#222;text-decoration:none;}
 a:hover{text-decoration:underline;}
 
-.content{
+/* ═══ PAGE 1: full viewport ═══ */
+.page-1{
+  height:100vh;
   max-width:720px;
   margin:0 auto;
-  padding:2rem 2.5rem 4rem;
+  padding:0 2.5rem;
+  display:flex;
+  flex-direction:column;
+  overflow:hidden;
+  position:relative;
 }
 
-/* ═══ PAGE BREAK: spacing + header ═══ */
-.page-break{
-  margin-top:5rem;
-  padding-top:1.5rem;
+/* Page 1 empty header (no line) */
+.p1-header{
+  padding:1.2rem 0 0.4rem;
+  flex-shrink:0;
 }
 
-.page-header{
+/* Page 1 footer */
+.p1-footer{
   display:flex;
   justify-content:space-between;
   align-items:baseline;
-  padding-bottom:0.4rem;
+  padding:0.4rem 0 1.2rem;
+  border-top:1px solid #ccc;
+  margin-top:2.5rem;
+  flex-shrink:0;
+}
+
+.p1-footer-email,.pg-footer-email{
+  font-family:'Source Sans 3','Helvetica Neue','Arial',sans-serif;
+  font-size:11px;color:#888;
+}
+.p1-footer-email a,.pg-footer-email a{color:#888;}
+.p1-footer-email a:hover,.pg-footer-email a:hover{color:#222;}
+
+.p1-footer-num,.pg-footer-num{
+  font-family:'Source Sans 3','Helvetica Neue','Arial',sans-serif;
+  font-size:11px;color:#888;
+}
+
+.pg-body{flex:1;overflow:hidden;}
+.pg-body-bottom{display:flex;flex-direction:column;}
+
+/* ═══ STICKY HEADER/FOOTER (visible after page 1) ═══ */
+.sticky-header{
+  position:sticky;
+  top:0;
+  z-index:100;
+  background:#fff;
+  max-width:720px;
+  margin:0 auto;
+  padding:0.8rem 2.5rem 0.3rem;
+  display:flex;
+  justify-content:space-between;
+  align-items:baseline;
   border-bottom:1.5px solid #111;
-  margin-bottom:2rem;
 }
 
-.page-header-num{
+.sticky-header-name{
   font-family:'Source Sans 3','Helvetica Neue','Arial',sans-serif;
-  font-size:13px;
-  font-weight:400;
-  color:#555;
+  font-size:13px;font-weight:600;color:#333;letter-spacing:0.02em;
 }
 
-.page-header-name{
+.sticky-header-year{
   font-family:'Source Sans 3','Helvetica Neue','Arial',sans-serif;
-  font-size:13px;
-  font-weight:700;
-  color:#333;
-  letter-spacing:0.02em;
+  font-size:13px;font-weight:400;color:#555;
 }
 
-/* ═══ PAGE 1 ELEMENTS ═══ */
+.sticky-footer{
+  position:sticky;
+  bottom:0;
+  z-index:100;
+  background:#fff;
+  max-width:720px;
+  margin:0 auto;
+  padding:0.3rem 2.5rem 0.6rem;
+  display:flex;
+  justify-content:space-between;
+  align-items:baseline;
+  border-top:1px solid #ccc;
+}
+
+/* ═══ FLOWING CONTENT ═══ */
+.flow-wrap{
+  max-width:720px;
+  margin:0 auto;
+  padding:1.5rem 2.5rem 4rem;
+  min-height:100vh;
+  padding-bottom:3rem;
+}
+
+/* ═══ TYPOGRAPHY ═══ */
 .top-row{
   display:flex;justify-content:flex-end;
   padding-bottom:0.8rem;margin-bottom:1.2rem;border-bottom:2px solid #111;
@@ -78,7 +134,6 @@ a:hover{text-decoration:underline;}
   font-size:12px;color:#555;line-height:1.6;
 }
 .info-text a{color:#555;}.info-text a:hover{color:#222;}
-.info-dotted{border:none;border-top:1px dotted #bbb;margin:0.4rem 0;}
 
 .author-block{margin-bottom:2rem;}
 .author-name{
@@ -91,43 +146,14 @@ a:hover{text-decoration:underline;}
 }
 
 .abstract-text{font-size:17px;line-height:1.75;color:#222;text-align:left;margin-bottom:0.8rem;}
-.keywords{font-size:16px;line-height:1.6;color:#222;margin-bottom:1.5rem;}
+.keywords{font-size:16px;line-height:1.6;color:#222;margin-bottom:1.2rem;}
 .keywords-label{font-weight:700;}
 
 .body-text{font-size:17px;line-height:1.75;color:#222;text-align:left;text-indent:1.5em;margin-bottom:0;}
 .body-text.no-indent{text-indent:0;}
-.body-text + .body-text{margin-top:0;}
 .body-text a{color:#222;font-style:italic;}
 .body-text a:hover{text-decoration:underline;}
 
-/* Abstract label */
-.abstract-label{
-  font-family:'Source Sans 3','Helvetica Neue','Arial',sans-serif;
-  font-size:16px;font-weight:700;color:#222;
-  margin-bottom:0;
-}
-
-/* Page 1 footnote area */
-.p1-footnote{
-  margin-top:2rem;
-}
-
-.p1-rule{
-  width:100%;border:none;border-top:1.5px solid #111;margin-bottom:0.8rem;
-}
-
-.p1-affil{
-  font-size:13px;color:#333;line-height:1.6;margin-bottom:0.6rem;
-}
-
-.p1-correspond-block{
-  font-size:13px;color:#333;line-height:1.6;
-}
-
-.p1-correspond-block a{color:#333;}
-.p1-correspond-block a:hover{color:#111;}
-
-/* ═══ HEADINGS ═══ */
 .section-heading{
   font-family:'Source Sans 3','Helvetica Neue','Arial',sans-serif;
   font-size:20px;font-weight:700;color:#111;
@@ -142,149 +168,94 @@ a:hover{text-decoration:underline;}
 }
 
 /* ═══ FIGURE ═══ */
-.fig-group{margin-top:1.5rem;margin-left:2rem;margin-right:2rem;}
+.fig-group{margin-top:1.5rem;}
 .fig-caption{
   font-family:'Source Sans 3','Helvetica Neue','Arial',sans-serif;
   font-size:17px;color:#222;line-height:1.5;margin-bottom:0.8rem;
 }
 .fig-box{
-  background:#fff;color:#222;padding:1rem 0;
+  background:#111;color:#d0d0d0;padding:1.2rem 1.4rem;border-radius:4px;
   font-family:'Source Code Pro','Courier New',monospace;
-  border-top:1px solid #ccc;border-bottom:1px solid #ccc;
 }
-.fig-entry{margin-bottom:1rem;font-size:15px;line-height:1.7;color:#333;}
+.fig-entry{margin-bottom:1rem;font-size:15px;line-height:1.7;color:#d0d0d0;}
 .fig-entry:last-child{margin-bottom:0;}
-.fig-title{font-weight:600;color:#111;text-decoration:none;font-size:15px;}
-.fig-title:hover{text-decoration:underline;}
-.fig-meta{font-size:12px;color:#777;font-weight:400;display:inline;}
-.fig-meta a{color:#555;}.fig-meta a:hover{color:#111;}
-.fig-snippet{font-size:14px;font-style:italic;color:#444;line-height:1.65;margin-top:3px;}
+.fig-title{font-weight:600;color:#fff;text-decoration:none;font-size:15px;}
+.fig-title:hover{text-decoration:underline;color:#66ffbb;}
+.fig-meta{font-size:12px;color:#888;font-weight:400;display:inline;}
+.fig-meta a{color:#00cc6a;}.fig-meta a:hover{color:#66ffbb;}
+.fig-snippet{font-size:14px;font-style:italic;color:#aaa;line-height:1.65;margin-top:3px;}
 .fig-note{
   font-family:'Source Sans 3','Helvetica Neue','Arial',sans-serif;
   font-size:13px;color:#666;line-height:1.5;margin-top:0.6rem;
 }
 
-/* ═══ ASQ-STYLE TABLE ═══ */
-.table-wrap{
-  margin:1.5rem 2rem 1.5rem;
-}
-
-.table-caption{
-  font-family:'Source Sans 3','Helvetica Neue','Arial',sans-serif;
-  font-size:17px;color:#222;line-height:1.5;margin-bottom:0.8rem;
-}
-
-.asq-table{
-  width:100%;
-  border-collapse:collapse;
-  font-family:'Source Serif 4','Georgia',serif;
-  font-size:15px;
-  line-height:1.6;
-}
-
-.asq-table thead tr{
-  border-top:2px solid #111;
-  border-bottom:2px solid #111;
-}
-
-.asq-table th{
-  font-family:'Source Sans 3','Helvetica Neue','Arial',sans-serif;
-  font-size:13px;
-  font-weight:400;
-  color:#222;
-  text-align:left;
-  padding:0.5rem 0.8rem 0.5rem 0;
-  vertical-align:bottom;
-}
-
-.asq-table tbody tr{
-  border-bottom:none;
-}
-
-.asq-table tbody tr:last-child{
-  border-bottom:2px solid #111;
-}
-
-.asq-table td{
-  padding:0.4rem 0.8rem 0.4rem 0;
-  vertical-align:top;
-  color:#222;
-}
-
-.col-course{width:50%;}
-.col-prog{width:30%;}
-.col-years{width:20%;}
-
 @media(max-width:640px){
-  .content{padding:1.5rem 1.2rem 3rem;}
+  .page-1{padding:0 1.2rem;}
   .paper-title{font-size:28px;}
   .title-row{flex-direction:column;gap:1rem;}
   .info-col{width:100%;}
-  .page-break{margin-top:3.5rem;}
-  .table-wrap{margin-left:0;margin-right:0;}
-  .fig-group{margin-left:0;margin-right:0;}
+  .sticky-header,.sticky-footer{padding-left:1.2rem;padding-right:1.2rem;}
+  .flow-wrap{padding:1.5rem 1.2rem 3rem;}
 }
 </style>
 </head>
 <body>
 
-<div class="content">
+<!-- ═══ PAGE 1 ═══ -->
+<div class="page-1">
+  <div class="p1-header"></div>
+  <div class="pg-body pg-body-bottom">
 
-  <!-- ═══════════ PAGE 1 ═══════════ -->
-
-  <div class="top-row">
-    <img src="https://santoshbs.github.io/images/santoshbs1.jpeg" alt="Santosh Srinivas" class="top-photo">
-  </div>
-
-  <div class="title-row">
-    <div class="title-col">
-      <h1 class="paper-title">Toward an Understanding of Value</h1>
+    <div class="top-row">
+      <img src="https://santoshbs.github.io/images/santoshbs1.jpeg" alt="Santosh Srinivas" class="top-photo">
     </div>
-    <div class="info-col">
-      <div class="info-text">
-        <span id="infoDate"></span><br>
-        <a href="https://orcid.org/0000-0002-7792-9622">ORCiD 0000-0002-7792-9622</a><br>
-        <a href="https://scholar.google.com/citations?user=w9Fa_v0AAAAJ">Google Scholar</a><br>
-        <hr class="info-dotted">
-        <a href="#exploratory">Exploratory Work</a><br>
-        <a href="#publications">Publications</a><br>
-        <a href="#teaching">Teaching</a><br>
-        <a href="#formation">Education &amp; Work</a>
+
+    <div class="title-row">
+      <div class="title-col">
+        <h1 class="paper-title">Toward an Understanding of Value</h1>
+      </div>
+      <div class="info-col">
+        <div class="info-text">
+          <span id="infoDate"></span><br>
+          <a href="https://orcid.org/0000-0002-7792-9622">orcid.org/0000-0002-7792-9622</a><br>
+          <a href="https://scholar.google.com/citations?user=w9Fa_v0AAAAJ">Google Scholar</a><br>
+          <a href="https://github.com/santoshbs">github.com/santoshbs</a>
+        </div>
       </div>
     </div>
-  </div>
 
-  <div class="author-block">
-    <div class="author-name">Santosh B. Srinivas*</div>
-  </div>
-
-  <div class="abstract-label">Abstract</div>
-  <p class="abstract-text" style="margin-top:0;">I study how value is produced, assessed, and negotiated in organizational and entrepreneurial settings, and how evaluative processes reflect and reinforce social power. Methodologically, I work with natural language processing.</p>
-
-  <p class="keywords"><span class="keywords-label">Keywords:</span> social evaluations, culture and cognition, entrepreneurship, computational social science</p>
-
-  <p class="body-text no-indent">My current work examines how different audiences construct and contest social positions on user-generated platforms, and how individuals adapt their self-presentation when the demographic composition of their field shifts. A parallel stream reconnects with entrepreneurship—how personal histories shape opportunity recognition, how ventures use rhetorical history to craft market positions, and how entrepreneurial rhetoric can function as social critique.</p>
-
-  <div class="p1-footnote">
-    <hr class="p1-rule">
-    <div class="p1-affil">* Department of Management &amp; Human Resources, HEC Paris, France.</div>
-    <div class="p1-correspond-block">
-      <strong>Correspondence:</strong> <a href="mailto:srinivas@hec.fr">srinivas@hec.fr</a>
+    <div class="author-block">
+      <div class="author-name">Santosh B. Srinivas*</div>
+      <div class="author-affil">Department of Management & Human Resources, HEC Paris</div>
     </div>
+
+    <p class="abstract-text">I study how value is produced, assessed, and negotiated in organizational and entrepreneurial settings, and how evaluative processes reflect and reinforce social power. Methodologically, I work with natural language processing.</p>
+
+    <p class="keywords"><span class="keywords-label">Keywords:</span> social evaluations, culture and cognition, entrepreneurship, computational social science</p>
+
+    <div style="flex:1;"></div>
+
+    <p class="body-text no-indent">My current work examines how different audiences construct and contest social positions on user-generated platforms, and how individuals adapt their self-presentation when the demographic composition of their field shifts. A parallel stream reconnects with entrepreneurship—how personal histories shape opportunity recognition, how ventures use rhetorical history to craft market positions, and how entrepreneurial rhetoric can function as social critique.</p>
+
   </div>
-
-  <!-- ═══════════ PAGE 2 ═══════════ -->
-  <div class="page-break">
-    <div class="page-header">
-      <span class="page-header-num">2</span>
-      <span class="page-header-name" id="hdr2"></span>
-    </div>
+  <div class="p1-footer">
+    <span class="p1-footer-email">*Correspondence: <a href="mailto:srinivas@hec.fr">srinivas@hec.fr</a></span>
+    <span class="p1-footer-num" style="font-family:'Source Sans 3',sans-serif;font-size:11px;color:#888;">1</span>
   </div>
+</div>
 
-  <div class="section-heading" id="exploratory">Exploratory Work</div>
+<!-- ═══ EVERYTHING AFTER PAGE 1: sticky header/footer + flowing content ═══ -->
+<div class="sticky-header">
+  <span class="sticky-header-name">S. Srinivas</span>
+  <span class="sticky-header-year" id="stickyYear"></span>
+</div>
 
-  <p class="body-text no-indent">I am interested in how the emerging agentic AI economy may reshape the evaluation of competence, worth, and opportunity. I deployed a small open-weights language model as an observer across three layers of AI discourse. It reads, participates, and periodically writes field notes on what gets discussed and what patterns emerge (see Figure 1 for latest pulses). <a href="https://santoshbs.github.io/agentfield/">agentfield</a> follows agent conversations; <a href="https://santoshbs.github.io/pressfield/">pressfield</a> reads news coverage about AI; <a href="https://santoshbs.github.io/practfield/">practfield</a> sits in on practitioner discussions.</p>
+<div class="flow-wrap">
 
+  <!-- Exploratory -->
+  <p class="body-text">I am interested in how the emerging agentic AI economy may reshape the evaluation of competence, worth, and opportunity. I deployed a small open-weights language model as an observer across three layers of AI discourse. It reads, participates, and periodically writes field notes on what gets discussed and what patterns emerge (see Figure 1 for latest pulses). <a href="https://santoshbs.github.io/agentfield/">agentfield</a> follows agent conversations; <a href="https://santoshbs.github.io/pressfield/">pressfield</a> reads news coverage about AI; <a href="https://santoshbs.github.io/practfield/">practfield</a> sits in on practitioner discussions.</p>
+
+  <!-- Figure 1 -->
   <div class="fig-group">
     <div class="fig-caption"><strong>Figure 1.</strong> Latest notes from an open-weights LLM observer</div>
     <div class="fig-box">
@@ -295,15 +266,8 @@ a:hover{text-decoration:underline;}
     <div class="fig-note"><em>Note.</em> These margin notes are the observer agent's own reflections, not the author's.</div>
   </div>
 
-  <!-- ═══════════ PAGE 3 ═══════════ -->
-  <div class="page-break">
-    <div class="page-header">
-      <span class="page-header-num">3</span>
-      <span class="page-header-name hdr-yr-name"></span>
-    </div>
-  </div>
-
-  <div class="section-heading" id="publications">Published Work</div>
+  <!-- Published Work -->
+  <div class="section-heading">Published Work</div>
 
   <div class="sub-heading">AI and Computation in the Social Sciences</div>
   <p class="body-text no-indent">A forthcoming chapter explores how artificial intelligence is fundamentally reshaping the study of human behavior across psychology and the social sciences (Boyd, Srinivas, Phadke, Wilson, &amp; Pasca, forthcoming). The chapter examines AI's transformative role at multiple levels of analysis—individual, group, and societal—highlighting its capacity to enhance theory, measurement, and practical applications. We emphasize the interdisciplinary nature of AI as a research toolkit, demonstrating how methods from natural language processing to agent-based modeling can be strategically integrated to generate novel insights. While AI presents unprecedented opportunities for analyzing large-scale social dynamics, understanding intergroup communication, and modeling individual differences, it also introduces critical ethical and methodological challenges that require researchers to adopt a thoughtful and transparent approach.</p>
@@ -311,27 +275,11 @@ a:hover{text-decoration:underline;}
   <div class="sub-heading">Cognitive Flexibility as a Multifaceted Construct</div>
   <p class="body-text no-indent">The term "cognitive flexibility" has been drawn on by many researchers to denote the explanatory mechanism underlying a broad array of organizational theories, yet its conceptualization remains inconsistent (Patil, Srinivas, Tussing, &amp; Rhee, 2025). To bring clarity, we conduct a comprehensive search of cognitive flexibility constructs, strip away their labels, and use text analysis and manual coding of their descriptions to distinguish among five fluid thought processes: elaborating, dimensionalizing, integrating, juxtaposing, and matching. We further group these processes into three higher-order categories involving the reshaping, contending, and shifting of cognitive structures. Our surveying demonstrates that these processes' substance and implications differ markedly, and we argue that cognitive flexibility may be more appropriately viewed as a multifaceted, rather than monolithic, construct.</p>
 
-  <!-- ═══════════ PAGE 4 ═══════════ -->
-  <div class="page-break">
-    <div class="page-header">
-      <span class="page-header-num">4</span>
-      <span class="page-header-name hdr-yr-name"></span>
-    </div>
-  </div>
-
   <div class="sub-heading">Emancipatory Entrepreneurship and Orders of Worth</div>
   <p class="body-text no-indent">Drawing on Boltanski and Thévenot's (2006) work on multiple orders of worth, we propose that entrepreneurial acts toward emancipation can be guided by different notions of the common good underlying varying conceptions of worth (Rindova, Srinivas, &amp; Martins, 2022). The assumption of wealth creation as the dominant motive underlying entrepreneurial efforts has been challenged in recent work, and researchers have sought to explain a range of entrepreneurial activities in contexts traditionally excluded from entrepreneurship research. We describe how emancipatory entrepreneurship is framed within—and limited by—the dominant market order of worth, and as alternatives, we theorize how the civic and inspired orders point to alternate emancipatory ends and means through which entrepreneurs break free from material and ideological constraints.</p>
 
   <div class="sub-heading">Shared Leadership, Power, and Team Conflict</div>
   <p class="body-text no-indent">Shared leadership is believed to be beneficial for team effectiveness, yet recent empirical evidence shows that it may not always bring positive effects (Sinha, Chiu, &amp; Srinivas, 2021). Drawing on dominance complementarity theory, we suggest that team power base diversity—the variety in power bases among team members from which they derive their informal influence—is an important contingency that moderates the impact of shared leadership on relationship conflict. Studying 70 project-based teams, we find that at high levels of team power base diversity, shared leadership has a positive downstream effect on team performance through reduced relationship conflict.</p>
-
-  <!-- ═══════════ PAGE 5 ═══════════ -->
-  <div class="page-break">
-    <div class="page-header">
-      <span class="page-header-num">5</span>
-      <span class="page-header-name hdr-yr-name"></span>
-    </div>
-  </div>
 
   <div class="sub-heading">Organizational Rankings: A Multidisciplinary Review</div>
   <p class="body-text no-indent">A review of the literature on organizational rankings across management, sociology, education, and law reveals three perspectives on these complex evaluations (Rindova, Martins, Srinivas, &amp; Chandler, 2018). Rankings are seen as a form of information intermediation, as comparative orderings, or as a means for surveillance and control. The information intermediation perspective views rankings as information products that address asymmetries between ranked organizations and their stakeholders; the comparative orderings perspective views them as representations of status and reputation; and the surveillance perspective emphasizes their disciplining power. We also identify a new perspective—rankings entrepreneurship—which presents significant opportunities to extend our understanding of how rankings are produced and consumed.</p>
@@ -339,62 +287,19 @@ a:hover{text-decoration:underline;}
   <div class="sub-heading">Managing Meaning and Culture in Organizations</div>
   <p class="body-text no-indent">Management of meaning, an activity central to mobilizing action both inside and outside organizations, has been studied across analyses of organizational culture, identity, change, innovation, and stakeholder management (Rindova &amp; Srinivas, 2017). Our review suggests that although meaning-making involves managing symbols, it is not concerned only with symbolic actions and their consequences—meaning-making is central to the generation of substantive actions that affect organizations and their strategies in fundamental ways. We recommend greater research attention to meaning management as a managerial and organizational capability, and the links between organizational cultures as systems of beliefs and the societal culture as a toolkit.</p>
 
-  <!-- ═══════════ PAGE 6 (for future: teaching, timeline, references) ═══════════ -->
-  <div class="page-break">
-    <div class="page-header">
-      <span class="page-header-num">6</span>
-      <span class="page-header-name hdr-yr-name"></span>
-    </div>
-  </div>
+</div>
 
-  <div class="section-heading" id="teaching">Teaching</div>
-
-  <p class="body-text no-indent">My classes orient students to multiple conceptions of value and varied approaches to organizing. I use case-based pedagogy, asking students to reflect individually and then compare perspectives collaboratively. With AI reshaping what competence looks like, I see an opportunity to redesign assessments around what matters most: the ability to translate ill-structured problems into relevant concepts and critically synthesize solutions.</p>
-
-  <!-- Table 1: Courses -->
-  <div class="table-wrap">
-    <div class="table-caption"><strong>Table 1.</strong> Courses Taught at HEC Paris</div>
-    <table class="asq-table">
-      <thead>
-        <tr>
-          <th class="col-course">Course</th>
-          <th class="col-prog">Program</th>
-          <th class="col-years">Years</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Organizational Behavior</td>
-          <td>Grande École</td>
-          <td>2019–present</td>
-        </tr>
-        <tr>
-          <td>Organizational Behavior</td>
-          <td>Doctoral Seminar</td>
-          <td>2019–present</td>
-        </tr>
-        <tr>
-          <td>Outdoor Leadership Seminar</td>
-          <td>MBA</td>
-          <td>2021–present</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-
-  <div class="section-heading" id="formation">Education &amp; Work</div>
-  <p class="body-text no-indent" style="color:#999;font-style:italic;">Coming soon.</p>
-
+<div class="sticky-footer">
+  <span class="pg-footer-email"><a href="mailto:srinivas@hec.fr">srinivas@hec.fr</a></span>
+  <span class="pg-footer-num"></span>
 </div>
 
 <script>
-var yr = new Date().getFullYear();
+var d = new Date();
+var yr = d.getFullYear();
 var ms = ['January','February','March','April','May','June','July','August','September','October','November','December'];
-document.getElementById('infoDate').textContent = ms[new Date().getMonth()] + ' ' + yr;
-
-var label = 'Srinivas (' + yr + ')';
-document.getElementById('hdr2').textContent = label;
-document.querySelectorAll('.hdr-yr-name').forEach(function(el){ el.textContent = label; });
+document.getElementById('infoDate').textContent = ms[d.getMonth()] + ' ' + yr;
+document.getElementById('stickyYear').textContent = yr;
 
 /* ═══ Feed fetching ═══ */
 function extractSnippet(raw, n) {
@@ -402,9 +307,9 @@ function extractSnippet(raw, n) {
   var el = document.createElement('div'); el.innerHTML = raw;
   var t = el.textContent.trim(); if (!t) return '';
   var sentences = t.match(/[^.!?]+[.!?]+/g) || [t];
-  var picked = sentences.slice(0, n || 2).join(' ').trim();
+  var picked = sentences.slice(0, n || 1).join(' ').trim();
   picked = picked.replace(/[.!?]+\s*$/, '') + ' ….';
-  if (picked.length > 200) picked = picked.substring(0, 197) + ' ….';
+  if (picked.length > 120) picked = picked.substring(0, 117) + ' ….';
   return picked;
 }
 
