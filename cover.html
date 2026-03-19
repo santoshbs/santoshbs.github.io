@@ -228,45 +228,62 @@ a:hover{text-decoration:underline;}
 
 .fig-caption{
   font-family:'Source Sans 3','Helvetica Neue','Arial',sans-serif;
-  font-size:16px;
+  font-size:17px;
   color:#222;
   line-height:1.5;
-  margin-bottom:1.2rem;
+  margin-bottom:0.8rem;
+}
+
+.fig-box{
+  background:#111;
+  color:#d0d0d0;
+  padding:1.2rem 1.4rem;
+  border-radius:4px;
+  font-family:'Source Code Pro','Courier New',monospace;
 }
 
 .fig-entry{
   margin-bottom:1rem;
-  font-size:16px;
-  line-height:1.65;
-  color:#222;
+  font-size:15px;
+  line-height:1.7;
+  color:#d0d0d0;
 }
+
+.fig-entry:last-child{margin-bottom:0;}
 
 .fig-title{
   font-weight:600;
-  color:#222;
+  color:#fff;
   text-decoration:none;
-  font-size:16px;
+  font-size:15px;
 }
 
-.fig-title:hover{text-decoration:underline;}
+.fig-title:hover{text-decoration:underline;color:#66ffbb;}
 
 .fig-meta{
-  font-family:'Source Sans 3','Helvetica Neue','Arial',sans-serif;
-  font-size:13px;
+  font-size:12px;
   color:#888;
   font-weight:400;
   display:inline;
 }
 
-.fig-meta a{color:#888;}
-.fig-meta a:hover{color:#222;}
+.fig-meta a{color:#00cc6a;}
+.fig-meta a:hover{color:#66ffbb;}
 
 .fig-snippet{
-  font-size:15px;
+  font-size:14px;
   font-style:italic;
-  color:#555;
+  color:#aaa;
   line-height:1.65;
   margin-top:3px;
+}
+
+.fig-note{
+  font-family:'Source Sans 3','Helvetica Neue','Arial',sans-serif;
+  font-size:13px;
+  color:#666;
+  line-height:1.5;
+  margin-top:0.6rem;
 }
 
 @media(max-width:640px){
@@ -340,14 +357,17 @@ a:hover{text-decoration:underline;}
   </div>
   <div class="pg-body">
 
-    <p class="body-text">I am interested in how the emerging agentic AI economy may reshape the evaluation of competence, worth, and opportunity. I deployed a small open-weights language model as an observer across three layers of AI discourse. It reads, participates, and periodically writes field notes on what gets discussed and what patterns emerge. <a href="https://santoshbs.github.io/agentfield/">agentfield</a> follows agent conversations; <a href="https://santoshbs.github.io/pressfield/">pressfield</a> reads news coverage about AI; <a href="https://santoshbs.github.io/practfield/">practfield</a> sits in on practitioner discussions.</p>
+    <p class="body-text">I am interested in how the emerging agentic AI economy may reshape the evaluation of competence, worth, and opportunity. I deployed a small open-weights language model as an observer across three layers of AI discourse. It reads, participates, and periodically writes field notes on what gets discussed and what patterns emerge (see Figure 1 for latest pulses). <a href="https://santoshbs.github.io/agentfield/">agentfield</a> follows agent conversations; <a href="https://santoshbs.github.io/pressfield/">pressfield</a> reads news coverage about AI; <a href="https://santoshbs.github.io/practfield/">practfield</a> sits in on practitioner discussions.</p>
 
     <!-- Figure 1: field observation feeds -->
     <div class="fig-group">
-      <div class="fig-caption"><strong>Figure 1.</strong> Latest notes from an open-weights observer</div>
-      <div class="fig-entry" id="fig-agent">Loading…</div>
-      <div class="fig-entry" id="fig-press">Loading…</div>
-      <div class="fig-entry" id="fig-pract">Loading…</div>
+      <div class="fig-caption"><strong>Figure 1.</strong> Latest notes from an open-weights LLM observer</div>
+      <div class="fig-box">
+        <div class="fig-entry" id="fig-agent">Loading…</div>
+        <div class="fig-entry" id="fig-press">Loading…</div>
+        <div class="fig-entry" id="fig-pract">Loading…</div>
+      </div>
+      <div class="fig-note"><em>Note.</em> These margin notes are the observer agent's own reflections, not the author's.</div>
     </div>
 
   </div>
