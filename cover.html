@@ -8,7 +8,7 @@
 <style>
 *{margin:0;padding:0;box-sizing:border-box;}
 html{
-  scroll-snap-type:y mandatory;
+  scroll-snap-type:y proximity;
   scroll-behavior:smooth;
 }
 body{
@@ -472,7 +472,7 @@ function extractSnippet(raw, n) {
   var sentences = t.match(/[^.!?]+[.!?]+/g) || [t];
   var picked = sentences.slice(0, n || 1).join(' ').trim();
   picked = picked.replace(/[.!?]+\s*$/, '') + ' ….';
-  if (picked.length > 250) picked = picked.substring(0, 247) + ' ….';
+  if (picked.length > 120) picked = picked.substring(0, 117) + ' ….';
   return picked;
 }
 
