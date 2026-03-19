@@ -906,74 +906,179 @@ a { color: inherit; text-decoration: none; }
 })();
 
 /* ═══ Fetch live feeds from observer sites ═══ */
-async function fetchFeed(url, targetId, fallbackTitle, fallbackUrl) {
-  try {
-    const res = await fetch(url);
-    const text = await res.text();
-    const parser = new DOMParser();
-    const xml = parser.parseFromString(text, 'text/xml');
 
-    // Try Atom format first, then RSS
-    let entries = xml.querySelectorAll('entry');
-    if (entries.length === 0) entries = xml.querySelectorAll('item');
+// Render a feed result into the cover
+function renderFeed(targetId, title, snippet, link) {
+  const el = document.getElementById(targetId);
+  if (!el) return;
+  let html = `<a href="${link}">${title}</a>`;
+  if (snippet) {
+    html += `<div style="font-size:clamp(12px,1.5vw,14px);opacity:0.55;margin-top:4px;font-style:italic;line-height:1.55;max-width:460px;">${snippet}</div>`;
+  }
+  el.innerHTML = html;
+}
 
-    if (entries.length > 0) {
-      const entry = entries[0];
-      const title = entry.querySelector('title')?.textContent || fallbackTitle;
+// Extract snippet from HTML or XML content string
+function extractSnippet(raw, maxLen) {
+  if (!raw) return '';
+  const tmp = document.createElement('div');
+  tmp.innerHTML = raw;
+  const plain = tmp.textContent.trim();
+  if (!plain) return '';
+  const sentences = plain.split(/\.\s/);
+  let s = sentences[0];
+  if (s.length > (maxLen || 150)) s = s.substring(0, (maxLen || 147)) + '…';
+  else if (!s.endsWith('.')) s += '.';
+  return s;
+}
 
-      // Get the margin note (content snippet)
-      let snippet = '';
-      const content = entry.querySelector('content')?.textContent ||
-                      entry.querySelector('description')?.textContent ||
-                      entry.querySelector('summary')?.textContent || '';
+// Strategy 1: Parse XML feed (Atom or RSS)
+function parseFeedXML(text) {
+  const parser = new DOMParser();
+  const xml = parser.parseFromString(text, 'text/xml');
+  // Check for parse errors
+  if (xml.querySelector('parsererror')) return null;
 
-      // Extract first meaningful sentence from content
-      const tmp = document.createElement('div');
-      tmp.innerHTML = content;
-      const plainText = tmp.textContent.trim();
-      if (plainText.length > 0) {
-        // Get first ~120 chars
-        const sentences = plainText.split(/\.\s/);
-        snippet = sentences[0];
-        if (snippet.length > 140) snippet = snippet.substring(0, 137) + '…';
-        else if (!snippet.endsWith('.')) snippet += '.';
+  let entries = xml.querySelectorAll('entry');
+  if (entries.length === 0) entries = xml.querySelectorAll('item');
+  if (entries.length === 0) return null;
+
+  const entry = entries[0];
+  const title = entry.querySelector('title')?.textContent || null;
+  if (!title) return null;
+
+  const content = entry.querySelector('content')?.textContent ||
+                  entry.querySelector('description')?.textContent ||
+                  entry.querySelector('summary')?.textContent || '';
+
+  const snippet = extractSnippet(content, 150);
+
+  // Link: Atom uses <link href="...">, RSS uses <link>text</link>
+  let link = '';
+  const linkEl = entry.querySelector('link');
+  if (linkEl) {
+    link = linkEl.getAttribute('href') || linkEl.textContent || '';
+  }
+
+  return { title, snippet, link };
+}
+
+// Strategy 2: Scrape the HTML page for the latest post
+function parseHTML(text, baseUrl) {
+  const parser = new DOMParser();
+  const doc = parser.parseFromString(text, 'text/html');
+
+  // Look for the first post link — these Jekyll sites use various patterns
+  // Try common patterns: h2 > a, h3 > a, .post-title, article a, etc.
+  const selectors = [
+    'article a[href*="/20"]',          // links containing year paths
+    'a[href*="/20"][href$="/"]',        // year-based post URLs
+    '.post-link',
+    '.post-title a',
+    'h2 a', 'h3 a',
+  ];
+
+  let postTitle = null;
+  let postLink = null;
+
+  for (const sel of selectors) {
+    const el = doc.querySelector(sel);
+    if (el && el.textContent.trim().length > 5) {
+      postTitle = el.textContent.trim();
+      postLink = el.getAttribute('href') || '';
+      if (postLink && !postLink.startsWith('http')) {
+        postLink = baseUrl.replace(/\/$/, '') + postLink;
       }
+      break;
+    }
+  }
 
-      const link = entry.querySelector('link')?.getAttribute('href') ||
-                   entry.querySelector('link')?.textContent || fallbackUrl;
-
-      const el = document.getElementById(targetId);
-      el.innerHTML = `<a href="${link}">${title}</a>`;
-      if (snippet) {
-        el.innerHTML += `<div style="font-size:13px;opacity:0.6;margin-top:3px;font-style:italic;line-height:1.5;">${snippet}</div>`;
+  if (!postTitle) {
+    // Broader: find the first link whose href contains a date pattern like /2025/ or /2026/
+    const allLinks = doc.querySelectorAll('a[href]');
+    for (const a of allLinks) {
+      const href = a.getAttribute('href') || '';
+      if (/\/20\d\d\/\d\d\//.test(href) && a.textContent.trim().length > 5) {
+        postTitle = a.textContent.trim();
+        postLink = href.startsWith('http') ? href : baseUrl.replace(/\/$/, '') + href;
+        break;
       }
     }
-  } catch (e) {
-    // Silently fall back — the placeholder stays
-    console.log('Feed fetch failed for', url, e);
+  }
+
+  if (!postTitle) return null;
+
+  // Try to find a snippet near the title
+  let snippet = '';
+  // Look for first <p> after the matched element or in the page body
+  const allP = doc.querySelectorAll('p');
+  for (const p of allP) {
+    const t = p.textContent.trim();
+    // Skip very short paragraphs, navigation text, labels
+    if (t.length > 60 && !t.startsWith('pulse #') && !t.startsWith('gpt-')) {
+      snippet = extractSnippet(t, 150);
+      break;
+    }
+  }
+
+  return { title: postTitle, snippet, link: postLink };
+}
+
+// Main fetch function: tries feed.xml, atom.xml, then HTML scrape
+async function fetchFieldData(baseUrl, targetId, fallbackTitle) {
+  const feedPaths = ['feed.xml', 'atom.xml', 'index.xml', 'rss.xml'];
+  let result = null;
+
+  // Strategy 1: Try XML feeds
+  for (const path of feedPaths) {
+    try {
+      const res = await fetch(baseUrl + path);
+      if (res.ok) {
+        const text = await res.text();
+        result = parseFeedXML(text);
+        if (result) break;
+      }
+    } catch (e) { /* continue */ }
+  }
+
+  // Strategy 2: Scrape the HTML homepage
+  if (!result) {
+    try {
+      const res = await fetch(baseUrl);
+      if (res.ok) {
+        const text = await res.text();
+        result = parseHTML(text, baseUrl);
+      }
+    } catch (e) {
+      console.log('HTML scrape failed for', baseUrl, e);
+    }
+  }
+
+  // Render result or fallback
+  if (result) {
+    renderFeed(targetId, result.title, result.snippet, result.link || baseUrl);
+  } else {
+    renderFeed(targetId, fallbackTitle, '', baseUrl);
   }
 }
 
-// Fetch all three feeds
-fetchFeed(
-  'https://santoshbs.github.io/agentfield/feed.xml',
+// Fetch all three field sources
+fetchFieldData(
+  'https://santoshbs.github.io/agentfield/',
   'feed-agent',
-  'field notes from agent conversations',
-  'https://santoshbs.github.io/agentfield/'
+  'field notes from agent conversations'
 );
 
-fetchFeed(
-  'https://santoshbs.github.io/pressfield/feed.xml',
+fetchFieldData(
+  'https://santoshbs.github.io/pressfield/',
   'feed-press',
-  'field notes from press coverage',
-  'https://santoshbs.github.io/pressfield/'
+  'field notes from press coverage'
 );
 
-fetchFeed(
-  'https://santoshbs.github.io/practfield/feed.xml',
+fetchFieldData(
+  'https://santoshbs.github.io/practfield/',
   'feed-pract',
-  'field notes from practitioner discussions',
-  'https://santoshbs.github.io/practfield/'
+  'field notes from practitioner discussions'
 );
 
 /* ═══ Publication toggle ═══ */
