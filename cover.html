@@ -221,6 +221,51 @@ a:hover{text-decoration:underline;}
 .fn-correspond a{color:#333;}
 .fn-correspond a:hover{color:#111;}
 
+/* ═══ FIGURES: field observation feeds ═══ */
+.fig-group{
+  margin-top:1.5rem;
+}
+
+.fig{
+  border-top:1.5px solid #111;
+  padding:0.6rem 0 0.8rem;
+}
+
+.fig:last-child{
+  border-bottom:1.5px solid #111;
+}
+
+.fig-caption{
+  font-family:'Source Sans 3','Helvetica Neue','Arial',sans-serif;
+  font-size:13px;
+  color:#222;
+  line-height:1.5;
+  margin-bottom:0.4rem;
+}
+
+.fig-content{
+  font-size:14px;
+  line-height:1.65;
+  color:#333;
+}
+
+.fig-title{
+  font-weight:600;
+  color:#222;
+  text-decoration:none;
+  font-size:14px;
+}
+
+.fig-title:hover{text-decoration:underline;}
+
+.fig-snippet{
+  font-size:13px;
+  font-style:italic;
+  color:#555;
+  line-height:1.6;
+  margin-top:3px;
+}
+
 @media(max-width:640px){
   .page-view{padding:0 1.2rem;}
   .paper-title{font-size:28px;}
@@ -294,6 +339,26 @@ a:hover{text-decoration:underline;}
 
     <p class="body-text">I am interested in how the emerging agentic AI economy may reshape the evaluation of competence, worth, and opportunity. I deployed a small open-weights language model as an observer across three layers of AI discourse. It reads, participates, and periodically writes field notes on what gets discussed and what patterns emerge. <a href="https://santoshbs.github.io/agentfield/">agentfield</a> follows agent conversations; <a href="https://santoshbs.github.io/pressfield/">pressfield</a> reads news coverage about AI; <a href="https://santoshbs.github.io/practfield/">practfield</a> sits in on practitioner discussions.</p>
 
+    <!-- Figures: field observation feeds -->
+    <div class="fig-group">
+
+      <div class="fig">
+        <div class="fig-caption"><strong>Figure 1a.</strong> Latest field note from <em>agentfield</em> (agent conversations)</div>
+        <div class="fig-content" id="fig-agent">Loading…</div>
+      </div>
+
+      <div class="fig">
+        <div class="fig-caption"><strong>Figure 1b.</strong> Latest field note from <em>pressfield</em> (press coverage)</div>
+        <div class="fig-content" id="fig-press">Loading…</div>
+      </div>
+
+      <div class="fig">
+        <div class="fig-caption"><strong>Figure 1c.</strong> Latest field note from <em>practfield</em> (practitioner discussions)</div>
+        <div class="fig-content" id="fig-pract">Loading…</div>
+      </div>
+
+    </div>
+
   </div>
   <div class="pg-footer">
     <span class="pg-footer-email"><a href="mailto:srinivas@hec.fr">srinivas@hec.fr</a></span>
@@ -307,6 +372,104 @@ var yr = d.getFullYear();
 var months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
 document.getElementById('infoDate').textContent = months[d.getMonth()] + ' ' + yr;
 document.getElementById('hdrYear2').textContent = yr;
+
+/* ═══ Feed fetching ═══ */
+function extractSnippet(raw, n) {
+  if (!raw) return '';
+  var el = document.createElement('div'); el.innerHTML = raw;
+  var t = el.textContent.trim(); if (!t) return '';
+  var sentences = t.match(/[^.!?]+[.!?]+/g) || [t];
+  var picked = sentences.slice(0, n || 2).join(' ').trim();
+  picked = picked.replace(/[.!?]+\s*$/, '') + ' ….';
+  if (picked.length > 250) picked = picked.substring(0, 247) + ' ….';
+  return picked;
+}
+
+function renderFig(id, title, snippet, link) {
+  var el = document.getElementById(id);
+  if (!el) return;
+  var h = '<a href="' + link + '" class="fig-title">' + title + '</a>';
+  if (snippet) h += '<div class="fig-snippet">' + snippet + '</div>';
+  el.innerHTML = h;
+}
+
+function parseFeed(text) {
+  var p = new DOMParser();
+  var x = p.parseFromString(text, 'text/xml');
+  if (x.querySelector('parsererror')) return null;
+  var entries = x.querySelectorAll('entry');
+  if (!entries.length) entries = x.querySelectorAll('item');
+  if (!entries.length) return null;
+  var e = entries[0];
+  var title = e.querySelector('title') ? e.querySelector('title').textContent : null;
+  if (!title) return null;
+  var content = '';
+  ['content','description','summary'].forEach(function(tag){
+    if (!content && e.querySelector(tag)) content = e.querySelector(tag).textContent;
+  });
+  var link = '';
+  var lEl = e.querySelector('link');
+  if (lEl) link = lEl.getAttribute('href') || lEl.textContent || '';
+  return { title: title, snippet: extractSnippet(content, 2), link: link };
+}
+
+function scrapeHTML(text, base) {
+  var p = new DOMParser();
+  var doc = p.parseFromString(text, 'text/html');
+  var allLinks = doc.querySelectorAll('a[href]');
+  var best = null;
+  for (var i = 0; i < allLinks.length; i++) {
+    var href = allLinks[i].getAttribute('href') || '';
+    var txt = allLinks[i].textContent.trim();
+    if (/\/20\d\d\/\d\d\/\d\d\//.test(href) && txt.length > 5 && !/^\d{1,2}:\d{2}/.test(txt) && !/^more/i.test(txt)) {
+      best = { title: txt, href: href }; break;
+    }
+  }
+  if (!best) {
+    for (var j = 0; j < allLinks.length; j++) {
+      var h = allLinks[j].getAttribute('href') || '';
+      if (/\/20\d\d\/\d\d\/\d\d\//.test(h)) {
+        var slug = h.split('/').filter(function(s){return s && !/^\d+$/.test(s);}).pop();
+        if (slug) { best = { title: slug.replace(/-/g,' '), href: h }; break; }
+      }
+    }
+  }
+  if (!best) return null;
+  var link = best.href;
+  if (link && !link.startsWith('http')) link = new URL(link, base).href;
+  var snippet = '';
+  var allP = doc.querySelectorAll('p');
+  for (var k = 0; k < allP.length; k++) {
+    var pt = allP[k].textContent.trim();
+    if (pt.length > 80 && !/^pulse\s/i.test(pt) && !/^gpt-/i.test(pt) && !/^an open/i.test(pt)) {
+      snippet = extractSnippet(pt, 2); break;
+    }
+  }
+  return { title: best.title, snippet: snippet, link: link };
+}
+
+async function fetchField(base, figId, fallback) {
+  var result = null;
+  var feeds = ['feed.xml','atom.xml'];
+  for (var i = 0; i < feeds.length; i++) {
+    try {
+      var r = await fetch(base + feeds[i]);
+      if (r.ok) { result = parseFeed(await r.text()); if (result) break; }
+    } catch(e) {}
+  }
+  if (!result) {
+    try {
+      var r2 = await fetch(base);
+      if (r2.ok) result = scrapeHTML(await r2.text(), base);
+    } catch(e) {}
+  }
+  if (result) renderFig(figId, result.title, result.snippet, result.link || base);
+  else renderFig(figId, fallback, '', base);
+}
+
+fetchField('https://santoshbs.github.io/agentfield/', 'fig-agent', 'field notes from agent conversations');
+fetchField('https://santoshbs.github.io/pressfield/', 'fig-press', 'field notes from press coverage');
+fetchField('https://santoshbs.github.io/practfield/', 'fig-pract', 'field notes from practitioner discussions');
 </script>
 
 </body>
