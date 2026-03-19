@@ -3,137 +3,183 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Font Pairings — Compare</title>
-<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,700;1,400&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=EB+Garamond:ital,wght@0,400;0,700;1,400&family=Lora:ital,wght@0,400;0,700;1,400&family=Sora:wght@400;600;700&display=swap" rel="stylesheet">
+<title>Santosh B. Srinivas</title>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Source+Code+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box;}
-body{font-family:'Source Code Pro',monospace;background:#fff;color:#111;-webkit-font-smoothing:antialiased;}
-
-.grid{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  min-height:100vh;
+html,body{height:100%;overflow:hidden;}
+body{
+  font-family:'Libre Baskerville','Georgia',serif;
+  background:#fff;
+  color:#111;
+  -webkit-font-smoothing:antialiased;
 }
 
-.cell{
-  padding:2.5rem 2.5rem;
+.page{
+  height:100vh;
+  max-width:620px;
+  margin:0 auto;
+  padding:2.5rem 2rem 2rem;
   display:flex;
   flex-direction:column;
-  min-height:50vh;
-  position:relative;
 }
 
-.cell:nth-child(1){border-right:1px solid #ddd;border-bottom:1px solid #ddd;}
-.cell:nth-child(2){border-bottom:1px solid #ddd;}
-.cell:nth-child(3){border-right:1px solid #ddd;}
-
-.cell-label{
-  position:absolute;
-  top:1.2rem;left:1.5rem;
-  font-family:'Source Code Pro',monospace;
-  font-size:10px;
-  font-weight:400;
-  letter-spacing:.1em;
-  text-transform:uppercase;
-  color:#bbb;
-}
-
-.top{
+/* ── Top bar: date left, photo right ── */
+.topbar{
   display:flex;
-  justify-content:flex-end;
-  text-align:right;
+  justify-content:space-between;
+  align-items:flex-start;
+  margin-bottom:3rem;
 }
 
-.name{
+.top-date{
   font-family:'Source Code Pro',monospace;
-  font-size:13px;
+  font-size:11px;
+  font-style:italic;
+  color:#666;
+  line-height:1.5;
+}
+
+.top-photo{
+  width:36px;
+  height:36px;
+  border-radius:50%;
+  object-fit:cover;
+  filter:grayscale(0.4);
+}
+
+/* ── Title block: centered ── */
+.title-block{
+  text-align:center;
+  margin-bottom:2.5rem;
+}
+
+.paper-title{
+  font-size:28px;
+  font-weight:400;
+  color:#111;
+  line-height:1.35;
+  letter-spacing:-0.01em;
+  margin-bottom:0.15rem;
+}
+
+.paper-subtitle{
+  font-size:19px;
+  font-weight:400;
+  font-style:italic;
+  color:#333;
+  line-height:1.4;
+}
+
+/* ── Author block: centered ── */
+.author-block{
+  text-align:center;
+  margin-bottom:3rem;
+}
+
+.author-name{
+  font-size:14px;
   font-weight:700;
-  letter-spacing:.12em;
+  letter-spacing:0.08em;
   text-transform:uppercase;
   color:#111;
   line-height:1.4;
 }
 
-.affil{
-  font-family:'Source Code Pro',monospace;
+.author-affil{
   font-size:13px;
   font-weight:400;
   font-style:italic;
-  color:#444;
-  margin-top:2px;
+  color:#555;
+  margin-top:3px;
 }
 
-.bottom{margin-top:auto;max-width:480px;}
+/* ── Abstract: justified ── */
+.abstract{
+  font-size:15px;
+  font-weight:400;
+  line-height:1.85;
+  color:#222;
+  text-align:justify;
+  hyphens:auto;
+  -webkit-hyphens:auto;
+  flex:1;
+}
 
-.stmt{
-  font-size:22px;
-  font-weight:700;
-  line-height:1.7;
+/* ── Footnote: bottom ── */
+.footnote-area{
+  margin-top:auto;
+  padding-top:1rem;
+}
+
+.footnote-rule{
+  width:120px;
+  border:none;
+  border-top:1px solid #999;
+  margin-bottom:0.7rem;
+}
+
+.footnote{
+  font-size:11px;
+  color:#666;
+  line-height:1.6;
+}
+
+.footnote a{
+  color:#666;
+  text-decoration:none;
+}
+
+.footnote a:hover{
   color:#111;
 }
 
-/* Font variants */
-.stmt-baskerville{font-family:'Libre Baskerville',serif;}
-.stmt-garamond{font-family:'EB Garamond',serif;font-size:25px;}
-.stmt-lora{font-family:'Lora',serif;}
-.stmt-sora{font-family:'Sora',sans-serif;font-weight:600;font-size:21px;line-height:1.65;}
-
-@media(max-width:700px){
-  .grid{grid-template-columns:1fr;}
-  .cell{min-height:50vh;border-right:none!important;border-bottom:1px solid #ddd;}
-  .stmt{font-size:18px;}
-  .stmt-garamond{font-size:21px;}
-  .stmt-sora{font-size:17px;}
+@media(max-width:600px){
+  .page{padding:1.5rem 1.2rem 1.5rem;}
+  .paper-title{font-size:22px;}
+  .paper-subtitle{font-size:16px;}
+  .abstract{font-size:14px;}
+  .topbar{margin-bottom:2rem;}
+  .title-block{margin-bottom:1.5rem;}
+  .author-block{margin-bottom:2rem;}
 }
 </style>
 </head>
 <body>
-<div class="grid">
+<div class="page">
 
-  <!-- Option A: Libre Baskerville -->
-  <div class="cell">
-    <span class="cell-label">A · Libre Baskerville</span>
-    <div class="top">
-      <div><div class="name">Santosh B. Srinivas</div><div class="affil">HEC Paris</div></div>
-    </div>
-    <div class="bottom">
-      <p class="stmt stmt-baskerville">I study how value is produced, assessed, and negotiated in organizational and entrepreneurial settings, and how evaluative processes reflect and reinforce social power. Methodologically, I work with natural language processing.</p>
-    </div>
+  <!-- Top bar -->
+  <div class="topbar">
+    <div class="top-date" id="topDate"></div>
+    <img src="https://santoshbs.github.io/images/santoshbs1.jpeg" alt="Santosh Srinivas" class="top-photo">
   </div>
 
-  <!-- Option B: EB Garamond -->
-  <div class="cell">
-    <span class="cell-label">B · EB Garamond</span>
-    <div class="top">
-      <div><div class="name">Santosh B. Srinivas</div><div class="affil">HEC Paris</div></div>
-    </div>
-    <div class="bottom">
-      <p class="stmt stmt-garamond">I study how value is produced, assessed, and negotiated in organizational and entrepreneurial settings, and how evaluative processes reflect and reinforce social power. Methodologically, I work with natural language processing.</p>
-    </div>
+  <!-- Title -->
+  <div class="title-block">
+    <h1 class="paper-title">Toward an Understanding of Value</h1>
   </div>
 
-  <!-- Option C: Lora -->
-  <div class="cell">
-    <span class="cell-label">C · Lora</span>
-    <div class="top">
-      <div><div class="name">Santosh B. Srinivas</div><div class="affil">HEC Paris</div></div>
-    </div>
-    <div class="bottom">
-      <p class="stmt stmt-lora">I study how value is produced, assessed, and negotiated in organizational and entrepreneurial settings, and how evaluative processes reflect and reinforce social power. Methodologically, I work with natural language processing.</p>
-    </div>
+  <!-- Author -->
+  <div class="author-block">
+    <div class="author-name">Santosh B. Srinivas*</div>
+    <div class="author-affil">Department of Management & Human Resources, HEC Paris</div>
   </div>
 
-  <!-- Option D: Sora -->
-  <div class="cell">
-    <span class="cell-label">D · Sora</span>
-    <div class="top">
-      <div><div class="name">Santosh B. Srinivas</div><div class="affil">HEC Paris</div></div>
-    </div>
-    <div class="bottom">
-      <p class="stmt stmt-sora">I study how value is produced, assessed, and negotiated in organizational and entrepreneurial settings, and how evaluative processes reflect and reinforce social power. Methodologically, I work with natural language processing.</p>
-    </div>
+  <!-- Abstract -->
+  <p class="abstract">I study how value is produced, assessed, and negotiated in organizational and entrepreneurial settings, and how evaluative processes reflect and reinforce social power. Methodologically, I work with natural language processing.</p>
+
+  <!-- Footnote -->
+  <div class="footnote-area">
+    <hr class="footnote-rule">
+    <div class="footnote">* Department of Management & HR, HEC Paris. Email: <a href="mailto:srinivas@hec.fr">srinivas@hec.fr</a></div>
   </div>
 
 </div>
+
+<script>
+var d = new Date();
+var months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+document.getElementById('topDate').textContent = months[d.getMonth()] + ' ' + d.getFullYear();
+</script>
 </body>
 </html>
