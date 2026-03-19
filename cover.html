@@ -251,6 +251,7 @@ a:hover{text-decoration:underline;}
       </div>
       <div class="info-col">
         <div class="info-text">
+          <span id="infoDate"></span><br>
           <a href="https://orcid.org/0000-0002-7792-9622">orcid.org/0000-0002-7792-9622</a><br>
           <a href="https://scholar.google.com/citations?user=w9Fa_v0AAAAJ">Google Scholar</a><br>
           <a href="https://github.com/santoshbs">github.com/santoshbs</a>
@@ -301,7 +302,10 @@ a:hover{text-decoration:underline;}
 </div>
 
 <script>
-var yr = new Date().getFullYear();
+var d = new Date();
+var yr = d.getFullYear();
+var months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+document.getElementById('infoDate').textContent = months[d.getMonth()] + ' ' + yr;
 document.getElementById('hdrYear2').textContent = yr;
 </script>
 
