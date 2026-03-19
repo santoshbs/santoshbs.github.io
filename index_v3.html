@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Santosh B. Srinivas</title>
+  <meta
+    name="description"
+    content="I study how value is produced, assessed, and negotiated in organizational and entrepreneurial settings, and how evaluative processes reflect and reinforce social power. Methodologically, I work with natural language processing."
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="styles_v3.css" />
+</head>
+<body>
+  <canvas id="field-canvas" aria-hidden="true"></canvas>
+  <div class="noise" aria-hidden="true"></div>
+
+  <div class="site-shell">
+    <header class="topbar">
+      <div class="prompt">ssrinivas@work ~ %</div>
+      <nav class="topnav" aria-label="Primary">
+        <a href="#publications">publications</a>
+        <a href="#current_work">current_work</a>
+        <a href="#courses">courses</a>
+        <a href="#timeline">timeline</a>
+        <a href="/agentfield/" target="_blank" rel="noreferrer">agentfield</a>
+        <a href="/pressfield/" target="_blank" rel="noreferrer">pressfield</a>
+        <a href="/practfield/" target="_blank" rel="noreferrer">practfield</a>
+      </nav>
+      <button class="palette-button" id="palette-toggle" type="button" aria-label="Open navigation">/</button>
+    </header>
+
+    <main>
+      <section class="panel hero-panel" id="home">
+        <div class="hero-grid">
+          <article class="glass portrait-card tilt-card">
+            <div class="portrait-frame">
+              <img src="images/santoshbs1.jpeg" alt="Santosh Srinivas" />
+              <div class="portrait-glow" aria-hidden="true"></div>
+            </div>
+            <div class="identity-stack">
+              <h1>Santosh B. Srinivas</h1>
+              <p class="role">Assistant Professor · Management &amp; HR · HEC Paris · France</p>
+              <div class="contact-row">
+                <a href="mailto:srinivas@hec.fr">email</a>
+                <a href="https://github.com/santoshbs" target="_blank" rel="noreferrer">github</a>
+                <a href="https://scholar.google.com/citations?hl=en&amp;oi=sra&amp;user=w9Fa_v0AAAAJ" target="_blank" rel="noreferrer">scholar</a>
+                <a href="https://orcid.org/0000-0002-7792-9622" target="_blank" rel="noreferrer">orcid</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="glass intro-card tilt-card">
+            <p class="intro-text">
+              I study how value is produced, assessed, and negotiated in organizational and entrepreneurial settings, and how evaluative processes reflect and reinforce social power. Methodologically, I work with natural language processing.
+            </p>
+
+            <div class="keyword-cloud" id="keyword-cloud" aria-label="Keywords"></div>
+
+            <div class="field-link-grid">
+              <a class="field-link" href="/agentfield/" target="_blank" rel="noreferrer">agentfield</a>
+              <a class="field-link" href="/pressfield/" target="_blank" rel="noreferrer">pressfield</a>
+              <a class="field-link" href="/practfield/" target="_blank" rel="noreferrer">practfield</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="panel" id="publications">
+        <div class="section-shell">
+          <div class="section-prompt">ssrinivas@work:~/research$ publications</div>
+
+          <div class="pub-layout">
+            <article class="glass constellation-card">
+              <div class="pub-legend">
+                <span>Peer-Reviewed Journal Articles</span>
+                <span>Book Chapters</span>
+              </div>
+              <div class="constellation-stage" id="constellation-stage">
+                <svg class="constellation-lines" id="constellation-lines" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"></svg>
+                <div class="pub-core">
+                  <span>social evaluations</span>
+                  <span>culture &amp; cognition</span>
+                  <span>entrepreneurship</span>
+                  <span>computational social science</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="glass detail-card" id="pub-detail" tabindex="-1"></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel" id="current_work">
+        <div class="section-shell">
+          <div class="section-prompt">ssrinivas@work:~/research$ current_work</div>
+
+          <div class="statement-grid">
+            <article class="glass statement-card tilt-card">
+              <p>
+                My current work examines how different audiences construct and contest social positions on user-generated platforms, and how individuals adapt their self-presentation when the demographic composition of their field shifts. A parallel stream reconnects with entrepreneurship — how personal histories shape opportunity recognition, how ventures use rhetorical history to craft market positions, and how entrepreneurial rhetoric can function as social critique.
+              </p>
+            </article>
+
+            <article class="glass statement-card exploratory-card tilt-card">
+              <h2>exploratory</h2>
+              <p>
+                I am interested in how the emerging agentic AI economy may reshape the evaluation of competence, worth, and opportunity. I deployed a small open-weights language model as an observer across three layers of AI discourse. It reads, participates, and periodically writes field notes on what gets discussed and what patterns emerge. <a href="/agentfield/" target="_blank" rel="noreferrer">agentfield</a> follows agent conversations; <a href="/pressfield/" target="_blank" rel="noreferrer">pressfield</a> reads news coverage about AI; <a href="/practfield/" target="_blank" rel="noreferrer">practfield</a> sits in on practitioner discussions.
+              </p>
+
+              <div class="orbit-orbits" aria-hidden="true">
+                <span class="orbit orbit-a"></span>
+                <span class="orbit orbit-b"></span>
+              </div>
+
+              <div class="orbit-links">
+                <a href="/agentfield/" target="_blank" rel="noreferrer">agentfield</a>
+                <a href="/pressfield/" target="_blank" rel="noreferrer">pressfield</a>
+                <a href="/practfield/" target="_blank" rel="noreferrer">practfield</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel" id="courses">
+        <div class="section-shell">
+          <div class="section-prompt">ssrinivas@work:~/teaching$ courses</div>
+
+          <div class="teaching-grid">
+            <article class="glass teaching-text tilt-card">
+              <p>
+                My classes orient students to multiple conceptions of value and varied approaches to organizing. I use case-based pedagogy, asking students to reflect individually and then compare perspectives collaboratively. With AI reshaping what competence looks like, I see an opportunity to redesign assessments around what matters most: the ability to translate ill-structured problems into relevant concepts and critically synthesize solutions.
+              </p>
+            </article>
+
+            <div class="course-stack">
+              <article class="glass course-card tilt-card">Organizational Behavior · Grande École · HEC Paris · 2019 – to date</article>
+              <article class="glass course-card tilt-card">Organizational Behavior · Doctoral Seminar · HEC Paris · 2019 – to date</article>
+              <article class="glass course-card tilt-card">Outdoor Leadership Seminar · MBA · HEC Paris · 2021 – to date</article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel" id="timeline">
+        <div class="section-shell">
+          <div class="section-prompt">ssrinivas@work:~/education_and_work$ timeline</div>
+          <div class="timeline-track" id="timeline-track"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">Paris · srinivas@hec.fr © 2026</footer>
+  </div>
+
+  <div class="palette-overlay" id="palette-overlay" hidden>
+    <div class="palette-panel glass">
+      <div class="palette-query" id="palette-query" aria-live="polite"></div>
+      <div class="palette-list" id="palette-list" role="listbox" aria-label="Navigation"></div>
+    </div>
+  </div>
+
+  <script src="script_v3.js"></script>
+</body>
+</html>
