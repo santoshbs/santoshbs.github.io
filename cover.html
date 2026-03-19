@@ -7,9 +7,13 @@
 <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,300;1,8..60,400&display=swap" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box;}
+html{
+  scroll-snap-type:y mandatory;
+  scroll-behavior:smooth;
+}
 body{
   font-family:'Source Serif 4','Georgia',serif;
-  background:#f0f0f0;
+  background:#fff;
   color:#222;
   font-size:18px;
   line-height:1.75;
@@ -19,37 +23,89 @@ body{
 a{color:#222;text-decoration:none;}
 a:hover{text-decoration:underline;}
 
-/* ═══ PAGE WRAPPER: white pages on grey background ═══ */
-.paper-page{
-  background:#fff;
-  max-width:760px;
+/* ═══ EACH PAGE VIEW ═══ */
+.page-view{
+  height:100vh;
+  max-width:720px;
   margin:0 auto;
-  box-shadow:0 1px 4px rgba(0,0,0,0.12);
+  padding:0 2.5rem;
+  display:flex;
+  flex-direction:column;
+  scroll-snap-align:start;
+  overflow:hidden;
 }
 
-.page-gap{
-  height:12px;
-  background:#f0f0f0;
+/* Header: name + year, with line below */
+.pg-header{
+  display:flex;
+  justify-content:space-between;
+  align-items:baseline;
+  padding:1.2rem 0 0.4rem;
+  border-bottom:1.5px solid #111;
+  margin-bottom:1.5rem;
+  flex-shrink:0;
 }
 
-/* ═══ PAGE 1 ═══ */
-.page-1{
-  position:relative;
-  min-height:100vh;
-  padding:2.5rem 3rem 14rem;
+.pg-header-name{
+  font-family:'Source Sans 3','Helvetica Neue','Arial',sans-serif;
+  font-size:13px;
+  font-weight:600;
+  color:#333;
+  letter-spacing:0.02em;
 }
 
-/* Top: photo + line */
+.pg-header-year{
+  font-family:'Source Sans 3','Helvetica Neue','Arial',sans-serif;
+  font-size:13px;
+  font-weight:400;
+  color:#555;
+}
+
+/* Footer: email + page number */
+.pg-footer{
+  display:flex;
+  justify-content:space-between;
+  align-items:baseline;
+  padding:0.4rem 0 1.2rem;
+  border-top:1px solid #ccc;
+  margin-top:auto;
+  flex-shrink:0;
+}
+
+.pg-footer-email{
+  font-family:'Source Sans 3','Helvetica Neue','Arial',sans-serif;
+  font-size:11px;
+  color:#888;
+}
+
+.pg-footer-email a{color:#888;}
+.pg-footer-email a:hover{color:#222;}
+
+.pg-footer-num{
+  font-family:'Source Sans 3','Helvetica Neue','Arial',sans-serif;
+  font-size:11px;
+  color:#888;
+}
+
+/* Page content area */
+.pg-body{
+  flex:1;
+  overflow:hidden;
+}
+
+/* ═══ TYPOGRAPHY ═══ */
+
+/* Top: photo + line (page 1 only) */
 .top-row{
   display:flex;
   justify-content:flex-end;
-  padding-bottom:1rem;
-  margin-bottom:1.5rem;
+  padding-bottom:0.8rem;
+  margin-bottom:1.2rem;
   border-bottom:2px solid #111;
 }
 
 .top-photo{
-  width:48px;height:48px;
+  width:44px;height:44px;
   border-radius:50%;
   object-fit:cover;
 }
@@ -60,25 +116,25 @@ a:hover{text-decoration:underline;}
   justify-content:space-between;
   align-items:flex-start;
   gap:2rem;
-  margin-bottom:1.8rem;
+  margin-bottom:1.2rem;
 }
 
 .title-col{flex:1;min-width:0;}
 
 .paper-title{
   font-family:'Source Sans 3','Helvetica Neue','Arial',sans-serif;
-  font-size:38px;
+  font-size:36px;
   font-weight:700;
   color:#111;
   line-height:1.15;
   letter-spacing:-0.01em;
 }
 
-.info-col{flex-shrink:0;width:200px;}
+.info-col{flex-shrink:0;width:190px;}
 
 .info-text{
   font-family:'Source Sans 3','Helvetica Neue','Arial',sans-serif;
-  font-size:13px;
+  font-size:12px;
   color:#555;
   line-height:1.6;
 }
@@ -86,76 +142,67 @@ a:hover{text-decoration:underline;}
 .info-text a{color:#555;}
 .info-text a:hover{color:#222;}
 
-/* Author */
-.author-block{margin-bottom:2.5rem;}
+/* Author + affiliation */
+.author-block{margin-bottom:2rem;}
 
 .author-name{
   font-family:'Source Sans 3','Helvetica Neue','Arial',sans-serif;
-  font-size:19px;
+  font-size:18px;
   font-weight:700;
   color:#222;
 }
 
+.author-affil{
+  font-family:'Source Sans 3','Helvetica Neue','Arial',sans-serif;
+  font-size:14px;
+  font-weight:400;
+  color:#555;
+  margin-top:2px;
+}
+
 /* Abstract */
 .abstract-text{
-  font-size:18px;
+  font-size:17px;
   line-height:1.75;
   color:#222;
   text-align:left;
-  margin-bottom:1rem;
+  margin-bottom:0.8rem;
 }
 
 /* Keywords */
 .keywords{
-  font-size:17px;
+  font-size:16px;
   line-height:1.6;
   color:#222;
-  margin-bottom:1.5rem;
+  margin-bottom:1.2rem;
 }
 
 .keywords-label{font-weight:700;}
 
 /* Body text */
 .body-text{
-  font-size:18px;
+  font-size:17px;
   line-height:1.75;
   color:#222;
   text-align:left;
   text-indent:1.5em;
+  margin-bottom:0;
 }
 
-.body-text:first-of-type{text-indent:0;}
+.body-text.no-indent{text-indent:0;}
 
 .body-text a{color:#222;font-style:italic;}
 .body-text a:hover{text-decoration:underline;}
 
-/* Footnote: pinned to bottom of page 1 */
-.footnote-area{
-  position:absolute;
-  bottom:0;
-  left:3rem;
-  right:3rem;
-  background:#fff;
-  padding-bottom:2rem;
-  z-index:10;
-}
-
-.footnote-rule{
-  width:100%;
-  border:none;
+/* Correspondence block */
+.correspond{
+  margin-top:1.5rem;
+  padding-top:1rem;
   border-top:1.5px solid #111;
-  margin-bottom:0.8rem;
-}
-
-.fn-affil{
-  font-size:14.5px;
-  color:#333;
-  line-height:1.7;
-  margin-bottom:0.8rem;
 }
 
 .fn-correspond{
-  font-size:14.5px;
+  font-size:13px;
   color:#333;
   line-height:1.7;
 }
@@ -164,57 +211,25 @@ a:hover{text-decoration:underline;}
 .fn-correspond a{color:#333;}
 .fn-correspond a:hover{color:#111;}
 
-/* ═══ PAGE 2+ ═══ */
-.page-cont{
-  min-height:100vh;
-  padding:2rem 3rem 3rem;
-}
-
-/* Page header: date + line (like ASQ "782  Administrative Science Quarterly 68 (2023)") */
-.page-header{
-  display:flex;
-  justify-content:flex-end;
-  align-items:baseline;
-  padding-bottom:0.5rem;
-  margin-bottom:2rem;
-  border-bottom:2px solid #111;
-}
-
-.page-header-text{
-  font-family:'Source Sans 3','Helvetica Neue','Arial',sans-serif;
-  font-size:13px;
-  font-weight:600;
-  color:#333;
-  letter-spacing:0.02em;
-}
-
-.page-cont .body-text{
-  font-size:18px;
-  line-height:1.75;
-  color:#222;
-  text-align:left;
-  text-indent:1.5em;
-}
-
 @media(max-width:640px){
-  .page-1{padding:1.5rem 1.2rem 18rem;}
-  .paper-title{font-size:30px;}
+  .page-view{padding:0 1.2rem;}
+  .paper-title{font-size:28px;}
   .title-row{flex-direction:column;gap:1rem;}
   .info-col{width:100%;}
-  .footnote-area{left:1.2rem;right:1.2rem;}
-  .page-cont{padding:1.5rem 1.2rem 2rem;}
-  .paper-page{margin:0;box-shadow:none;}
-  .page-gap{height:8px;}
 }
 </style>
 </head>
 <body>
 
 <!-- ═══ PAGE 1 ═══ -->
-<div class="paper-page">
-  <div class="page-1">
+<div class="page-view">
+  <div class="pg-header">
+    <span class="pg-header-name">S. Srinivas</span>
+    <span class="pg-header-year" id="hdrYear1"></span>
+  </div>
+  <div class="pg-body">
 
-    <!-- Top: photo + line -->
+    <!-- Photo + line -->
     <div class="top-row">
       <img src="https://santoshbs.github.io/images/santoshbs1.jpeg" alt="Santosh Srinivas" class="top-photo">
     </div>
@@ -233,9 +248,10 @@ a:hover{text-decoration:underline;}
       </div>
     </div>
 
-    <!-- Author -->
+    <!-- Author + affiliation -->
     <div class="author-block">
-      <div class="author-name">Santosh B. Srinivas*</div>
+      <div class="author-name">Santosh B. Srinivas</div>
+      <div class="author-affil">Department of Management & Human Resources, HEC Paris</div>
     </div>
 
     <!-- Abstract -->
@@ -244,15 +260,28 @@ a:hover{text-decoration:underline;}
     <!-- Keywords -->
     <p class="keywords"><span class="keywords-label">Keywords:</span> social evaluations, culture and cognition, entrepreneurship, computational social science</p>
 
-    <!-- Body text on page 1 -->
-    <p class="body-text">My current work examines how different audiences construct and contest social positions on user-generated platforms, and how individuals adapt their self-presentation when the demographic composition of their field shifts. A parallel stream reconnects with entrepreneurship—how personal histories shape opportunity recognition, how ventures use rhetorical history to craft market positions, and how entrepreneurial rhetoric can function as social critique.</p>
+    <!-- Body text: first paragraph -->
+    <p class="body-text no-indent">My current work examines how different audiences construct and contest social positions on user-generated platforms, and how individuals adapt their self-presentation when the demographic composition of their field shifts. A parallel stream reconnects with entrepreneurship—how personal histories shape opportunity recognition, how ventures use rhetorical history to craft market positions, and how entrepreneurial rhetoric can function as social critique.</p>
 
-    <!-- Footnote pinned to bottom -->
-    <div class="footnote-area">
-      <hr class="footnote-rule">
-      <div class="fn-affil">
-        * Department of Management & Human Resources, HEC Paris, France.
-      </div>
+  </div>
+  <div class="pg-footer">
+    <span class="pg-footer-email"><a href="mailto:srinivas@hec.fr">srinivas@hec.fr</a></span>
+    <span class="pg-footer-num">1</span>
+  </div>
+</div>
+
+<!-- ═══ PAGE 2 ═══ -->
+<div class="page-view">
+  <div class="pg-header">
+    <span class="pg-header-name">S. Srinivas</span>
+    <span class="pg-header-year" id="hdrYear2"></span>
+  </div>
+  <div class="pg-body">
+
+    <p class="body-text">I am interested in how the emerging agentic AI economy may reshape the evaluation of competence, worth, and opportunity. I deployed a small open-weights language model as an observer across three layers of AI discourse. It reads, participates, and periodically writes field notes on what gets discussed and what patterns emerge. <a href="https://santoshbs.github.io/agentfield/">agentfield</a> follows agent conversations; <a href="https://santoshbs.github.io/pressfield/">pressfield</a> reads news coverage about AI; <a href="https://santoshbs.github.io/practfield/">practfield</a> sits in on practitioner discussions.</p>
+
+    <!-- Correspondence -->
+    <div class="correspond">
       <div class="fn-correspond">
         <span class="fn-correspond-label">Correspondence:</span><br>
         Santosh B. Srinivas, Department of Management & Human Resources,<br>
@@ -262,30 +291,16 @@ a:hover{text-decoration:underline;}
     </div>
 
   </div>
-</div>
-
-<!-- Grey gap between pages -->
-<div class="page-gap"></div>
-
-<!-- ═══ PAGE 2 ═══ -->
-<div class="paper-page">
-  <div class="page-cont">
-
-    <!-- Page header with date + line -->
-    <div class="page-header">
-      <span class="page-header-text" id="pageHeaderDate"></span>
-    </div>
-
-    <!-- Continuation -->
-    <p class="body-text">I am interested in how the emerging agentic AI economy may reshape the evaluation of competence, worth, and opportunity. I deployed a small open-weights language model as an observer across three layers of AI discourse. It reads, participates, and periodically writes field notes on what gets discussed and what patterns emerge. <a href="https://santoshbs.github.io/agentfield/">agentfield</a> follows agent conversations; <a href="https://santoshbs.github.io/pressfield/">pressfield</a> reads news coverage about AI; <a href="https://santoshbs.github.io/practfield/">practfield</a> sits in on practitioner discussions.</p>
-
+  <div class="pg-footer">
+    <span class="pg-footer-email"><a href="mailto:srinivas@hec.fr">srinivas@hec.fr</a></span>
+    <span class="pg-footer-num">2</span>
   </div>
 </div>
 
 <script>
-var d = new Date();
-var months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
-document.getElementById('pageHeaderDate').textContent = months[d.getMonth()] + ' ' + d.getFullYear();
+var yr = new Date().getFullYear();
+document.getElementById('hdrYear1').textContent = yr;
+document.getElementById('hdrYear2').textContent = yr;
 </script>
 
 </body>
