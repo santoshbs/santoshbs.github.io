@@ -3,25 +3,39 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Santosh B. Srinivas</title>
-<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap" rel="stylesheet">
+<title>Font Pairings — Compare</title>
+<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,700;1,400&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=EB+Garamond:ital,wght@0,400;0,700;1,400&family=Lora:ital,wght@0,400;0,700;1,400&family=Sora:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box;}
-html,body{height:100%;overflow:hidden;}
-body{
-  font-family:'Source Code Pro','Courier New',monospace;
-  background:#fff;
-  color:#111;
-  -webkit-font-smoothing:antialiased;
+body{font-family:'Source Code Pro',monospace;background:#fff;color:#111;-webkit-font-smoothing:antialiased;}
+
+.grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  min-height:100vh;
 }
 
-.page{
-  height:100vh;
-  max-width:720px;
-  margin:0 auto;
+.cell{
+  padding:2.5rem 2.5rem;
   display:flex;
   flex-direction:column;
-  padding:3.5rem 2rem 3rem;
+  min-height:50vh;
+  position:relative;
+}
+
+.cell:nth-child(1){border-right:1px solid #ddd;border-bottom:1px solid #ddd;}
+.cell:nth-child(2){border-bottom:1px solid #ddd;}
+.cell:nth-child(3){border-right:1px solid #ddd;}
+
+.cell-label{
+  position:absolute;
+  top:1.2rem;left:1.5rem;
+  font-family:'Source Code Pro',monospace;
+  font-size:10px;
+  font-weight:400;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+  color:#bbb;
 }
 
 .top{
@@ -31,7 +45,8 @@ body{
 }
 
 .name{
-  font-size:15px;
+  font-family:'Source Code Pro',monospace;
+  font-size:13px;
   font-weight:700;
   letter-spacing:.12em;
   text-transform:uppercase;
@@ -40,42 +55,85 @@ body{
 }
 
 .affil{
-  font-size:15px;
+  font-family:'Source Code Pro',monospace;
+  font-size:13px;
   font-weight:400;
   font-style:italic;
   color:#444;
-  margin-top:3px;
+  margin-top:2px;
 }
 
-.bottom{
-  margin-top:auto;
-}
+.bottom{margin-top:auto;max-width:480px;}
 
-.statement{
-  font-size:32px;
+.stmt{
+  font-size:22px;
   font-weight:700;
   line-height:1.7;
   color:#111;
 }
 
-@media(max-width:600px){
-  .page{padding:2rem 1.2rem;}
-  .statement{font-size:22px;}
-  .name,.affil{font-size:13px;}
+/* Font variants */
+.stmt-baskerville{font-family:'Libre Baskerville',serif;}
+.stmt-garamond{font-family:'EB Garamond',serif;font-size:25px;}
+.stmt-lora{font-family:'Lora',serif;}
+.stmt-sora{font-family:'Sora',sans-serif;font-weight:600;font-size:21px;line-height:1.65;}
+
+@media(max-width:700px){
+  .grid{grid-template-columns:1fr;}
+  .cell{min-height:50vh;border-right:none!important;border-bottom:1px solid #ddd;}
+  .stmt{font-size:18px;}
+  .stmt-garamond{font-size:21px;}
+  .stmt-sora{font-size:17px;}
 }
 </style>
 </head>
 <body>
-<div class="page">
-  <div class="top">
-    <div>
-      <div class="name">Santosh B. Srinivas</div>
-      <div class="affil">HEC Paris</div>
+<div class="grid">
+
+  <!-- Option A: Libre Baskerville -->
+  <div class="cell">
+    <span class="cell-label">A · Libre Baskerville</span>
+    <div class="top">
+      <div><div class="name">Santosh B. Srinivas</div><div class="affil">HEC Paris</div></div>
+    </div>
+    <div class="bottom">
+      <p class="stmt stmt-baskerville">I study how value is produced, assessed, and negotiated in organizational and entrepreneurial settings, and how evaluative processes reflect and reinforce social power. Methodologically, I work with natural language processing.</p>
     </div>
   </div>
-  <div class="bottom">
-    <p class="statement">I study how value is produced, assessed, and negotiated in organizational and entrepreneurial settings, and how evaluative processes reflect and reinforce social power. Methodologically, I work with natural language processing.</p>
+
+  <!-- Option B: EB Garamond -->
+  <div class="cell">
+    <span class="cell-label">B · EB Garamond</span>
+    <div class="top">
+      <div><div class="name">Santosh B. Srinivas</div><div class="affil">HEC Paris</div></div>
+    </div>
+    <div class="bottom">
+      <p class="stmt stmt-garamond">I study how value is produced, assessed, and negotiated in organizational and entrepreneurial settings, and how evaluative processes reflect and reinforce social power. Methodologically, I work with natural language processing.</p>
+    </div>
   </div>
+
+  <!-- Option C: Lora -->
+  <div class="cell">
+    <span class="cell-label">C · Lora</span>
+    <div class="top">
+      <div><div class="name">Santosh B. Srinivas</div><div class="affil">HEC Paris</div></div>
+    </div>
+    <div class="bottom">
+      <p class="stmt stmt-lora">I study how value is produced, assessed, and negotiated in organizational and entrepreneurial settings, and how evaluative processes reflect and reinforce social power. Methodologically, I work with natural language processing.</p>
+    </div>
+  </div>
+
+  <!-- Option D: Sora -->
+  <div class="cell">
+    <span class="cell-label">D · Sora</span>
+    <div class="top">
+      <div><div class="name">Santosh B. Srinivas</div><div class="affil">HEC Paris</div></div>
+    </div>
+    <div class="bottom">
+      <p class="stmt stmt-sora">I study how value is produced, assessed, and negotiated in organizational and entrepreneurial settings, and how evaluative processes reflect and reinforce social power. Methodologically, I work with natural language processing.</p>
+    </div>
+  </div>
+
 </div>
 </body>
 </html>
