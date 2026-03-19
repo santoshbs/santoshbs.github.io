@@ -78,6 +78,7 @@ a:hover{text-decoration:underline;}
   font-size:12px;color:#555;line-height:1.6;
 }
 .info-text a{color:#555;}.info-text a:hover{color:#222;}
+.info-dotted{border:none;border-top:1px dotted #bbb;margin:0.4rem 0;}
 
 .author-block{margin-bottom:2rem;}
 .author-name{
@@ -103,7 +104,7 @@ a:hover{text-decoration:underline;}
 .abstract-label{
   font-family:'Source Sans 3','Helvetica Neue','Arial',sans-serif;
   font-size:16px;font-weight:700;color:#222;
-  margin-bottom:0.3rem;
+  margin-bottom:0;
 }
 
 /* Page 1 footnote area */
@@ -189,9 +190,10 @@ a:hover{text-decoration:underline;}
     <div class="info-col">
       <div class="info-text">
         <span id="infoDate"></span><br>
-        <a href="https://orcid.org/0000-0002-7792-9622">orcid.org/0000-0002-7792-9622</a><br>
-        <a href="https://scholar.google.com/citations?user=w9Fa_v0AAAAJ">Google Scholar</a><br><br>
-        <a href="#exploratory">Exploratory</a><br>
+        <a href="https://orcid.org/0000-0002-7792-9622">ORCiD 0000-0002-7792-9622</a><br>
+        <a href="https://scholar.google.com/citations?user=w9Fa_v0AAAAJ">Google Scholar</a><br>
+        <hr class="info-dotted">
+        <a href="#exploratory">Exploratory Work</a><br>
         <a href="#publications">Publications</a><br>
         <a href="#teaching">Teaching</a><br>
         <a href="#formation">Education &amp; Work</a>
@@ -200,11 +202,11 @@ a:hover{text-decoration:underline;}
   </div>
 
   <div class="author-block">
-    <div class="author-name">Santosh B. Srinivas</div>
+    <div class="author-name">Santosh B. Srinivas*</div>
   </div>
 
   <div class="abstract-label">Abstract</div>
-  <p class="abstract-text">I study how value is produced, assessed, and negotiated in organizational and entrepreneurial settings, and how evaluative processes reflect and reinforce social power. Methodologically, I work with natural language processing.</p>
+  <p class="abstract-text" style="margin-top:0;">I study how value is produced, assessed, and negotiated in organizational and entrepreneurial settings, and how evaluative processes reflect and reinforce social power. Methodologically, I work with natural language processing.</p>
 
   <p class="keywords"><span class="keywords-label">Keywords:</span> social evaluations, culture and cognition, entrepreneurship, computational social science</p>
 
@@ -212,12 +214,9 @@ a:hover{text-decoration:underline;}
 
   <div class="p1-footnote">
     <hr class="p1-rule">
-    <div class="p1-affil">HEC Paris, France.</div>
+    <div class="p1-affil">* Department of Management &amp; Human Resources, HEC Paris, France.</div>
     <div class="p1-correspond-block">
-      <strong>Correspondence:</strong><br>
-      Santosh B. Srinivas, Department of Management &amp; Human Resources,<br>
-      HEC Paris, 1 Rue de la Libération, 78351 Jouy-en-Josas, France.<br>
-      Email: <a href="mailto:srinivas@hec.fr">srinivas@hec.fr</a>
+      <strong>Correspondence:</strong> <a href="mailto:srinivas@hec.fr">srinivas@hec.fr</a>
     </div>
   </div>
 
@@ -229,7 +228,7 @@ a:hover{text-decoration:underline;}
     </div>
   </div>
 
-  <div class="section-heading" id="exploratory">Exploratory</div>
+  <div class="section-heading" id="exploratory">Exploratory Work</div>
 
   <p class="body-text no-indent">I am interested in how the emerging agentic AI economy may reshape the evaluation of competence, worth, and opportunity. I deployed a small open-weights language model as an observer across three layers of AI discourse. It reads, participates, and periodically writes field notes on what gets discussed and what patterns emerge (see Figure 1 for latest pulses). <a href="https://santoshbs.github.io/agentfield/">agentfield</a> follows agent conversations; <a href="https://santoshbs.github.io/pressfield/">pressfield</a> reads news coverage about AI; <a href="https://santoshbs.github.io/practfield/">practfield</a> sits in on practitioner discussions.</p>
 
