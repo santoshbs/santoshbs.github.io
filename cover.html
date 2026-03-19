@@ -15,142 +15,188 @@ body{
   -webkit-font-smoothing:antialiased;
 }
 
+a{color:#111;text-decoration:none;}
+a:hover{text-decoration:underline;}
+
 .page{
   height:100vh;
   max-width:620px;
   margin:0 auto;
-  padding:2.5rem 2rem 2rem;
+  padding:2rem 2rem 1.5rem;
   display:flex;
   flex-direction:column;
+  position:relative;
 }
 
-/* ── Top bar: date left, photo right ── */
-.topbar{
+/* ── Left sidebar: ORCID vertical + date ── */
+.left-strip{
+  position:fixed;
+  left:clamp(0.5rem, 2vw, 2rem);
+  top:0;
+  bottom:0;
+  width:2rem;
   display:flex;
-  justify-content:space-between;
-  align-items:flex-start;
-  margin-bottom:3rem;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:0.4rem;
 }
 
-.top-date{
+.left-id{
+  writing-mode:vertical-rl;
+  text-orientation:mixed;
+  transform:rotate(180deg);
   font-family:'Source Code Pro',monospace;
-  font-size:11px;
-  font-style:italic;
-  color:#666;
-  line-height:1.5;
+  font-size:9px;
+  color:#888;
+  letter-spacing:0.03em;
+  white-space:nowrap;
+}
+
+.left-id a{color:#888;text-decoration:none;}
+.left-id a:hover{color:#111;}
+
+/* ── Top right: photo ── */
+.top-right{
+  position:absolute;
+  top:2rem;
+  right:2rem;
 }
 
 .top-photo{
-  width:36px;
-  height:36px;
+  width:32px;
+  height:32px;
   border-radius:50%;
   object-fit:cover;
   filter:grayscale(0.4);
 }
 
-/* ── Title block: centered ── */
+/* ── Title ── */
 .title-block{
   text-align:center;
-  margin-bottom:2.5rem;
+  margin-top:1.5rem;
+  margin-bottom:1.2rem;
 }
 
 .paper-title{
-  font-size:28px;
+  font-size:26px;
   font-weight:400;
   color:#111;
   line-height:1.35;
-  letter-spacing:-0.01em;
-  margin-bottom:0.15rem;
 }
 
-.paper-subtitle{
-  font-size:19px;
+/* ── Author ── */
+.author-block{
+  text-align:center;
+  margin-bottom:1.8rem;
+}
+
+.author-name{
+  font-size:13px;
   font-weight:400;
-  font-style:italic;
   color:#333;
   line-height:1.4;
 }
 
-/* ── Author block: centered ── */
-.author-block{
-  text-align:center;
-  margin-bottom:3rem;
-}
-
-.author-name{
-  font-size:14px;
+/* ── Abstract ── */
+.abstract-label{
+  font-size:12px;
   font-weight:700;
-  letter-spacing:0.08em;
-  text-transform:uppercase;
   color:#111;
-  line-height:1.4;
+  margin-bottom:0.3rem;
 }
 
-.author-affil{
-  font-size:13px;
-  font-weight:400;
-  font-style:italic;
-  color:#555;
-  margin-top:3px;
-}
-
-/* ── Abstract: justified ── */
-.abstract{
-  font-size:15px;
+.abstract-text{
+  font-size:12.5px;
   font-weight:400;
   line-height:1.85;
   color:#222;
   text-align:justify;
   hyphens:auto;
   -webkit-hyphens:auto;
-  flex:1;
+  margin-bottom:1rem;
 }
 
-/* ── Footnote: bottom ── */
+/* ── Body paragraphs ── */
+.body-text{
+  font-size:13px;
+  font-weight:400;
+  line-height:1.85;
+  color:#222;
+  text-align:justify;
+  hyphens:auto;
+  -webkit-hyphens:auto;
+  margin-bottom:0.8rem;
+}
+
+.body-text a{color:#111;text-decoration:none;font-style:italic;}
+.body-text a:hover{text-decoration:underline;}
+
+/* ── Index Terms ── */
+.index-terms{
+  font-size:11.5px;
+  line-height:1.7;
+  color:#222;
+  margin-top:0.5rem;
+  margin-bottom:1rem;
+}
+
+.index-terms strong{
+  font-size:11.5px;
+}
+
+/* ── Divider ── */
+.section-divider{
+  text-align:center;
+  margin:0.8rem 0;
+  color:#999;
+  font-size:11px;
+  letter-spacing:1em;
+}
+
+/* ── Footnote ── */
 .footnote-area{
   margin-top:auto;
-  padding-top:1rem;
+  padding-top:0.6rem;
 }
 
 .footnote-rule{
-  width:120px;
+  width:100px;
   border:none;
   border-top:1px solid #999;
-  margin-bottom:0.7rem;
+  margin-bottom:0.5rem;
 }
 
 .footnote{
-  font-size:11px;
+  font-size:10px;
   color:#666;
   line-height:1.6;
 }
 
-.footnote a{
-  color:#666;
-  text-decoration:none;
-}
-
-.footnote a:hover{
-  color:#111;
-}
+.footnote a{color:#666;text-decoration:none;}
+.footnote a:hover{color:#111;}
 
 @media(max-width:600px){
-  .page{padding:1.5rem 1.2rem 1.5rem;}
-  .paper-title{font-size:22px;}
-  .paper-subtitle{font-size:16px;}
-  .abstract{font-size:14px;}
-  .topbar{margin-bottom:2rem;}
-  .title-block{margin-bottom:1.5rem;}
-  .author-block{margin-bottom:2rem;}
+  .page{padding:1.5rem 1.2rem 1.2rem;}
+  .paper-title{font-size:21px;}
+  .left-strip{display:none;}
+  .abstract-text{font-size:12px;}
+  .body-text{font-size:12px;}
 }
 </style>
 </head>
 <body>
+
+<!-- Left strip: ORCID + date (like arxiv ID) -->
+<div class="left-strip">
+  <div class="left-id"><a href="https://orcid.org/0000-0002-7792-9622">orcid:0000-0002-7792-9622</a></div>
+  <div class="left-id" id="leftDate"></div>
+</div>
+
 <div class="page">
 
-  <!-- Top bar -->
-  <div class="topbar">
-    <div class="top-date" id="topDate"></div>
+  <!-- Photo top-right -->
+  <div class="top-right">
     <img src="https://santoshbs.github.io/images/santoshbs1.jpeg" alt="Santosh Srinivas" class="top-photo">
   </div>
 
@@ -162,11 +208,24 @@ body{
   <!-- Author -->
   <div class="author-block">
     <div class="author-name">Santosh B. Srinivas*</div>
-    <div class="author-affil">Department of Management & Human Resources, HEC Paris</div>
   </div>
 
   <!-- Abstract -->
-  <p class="abstract">I study how value is produced, assessed, and negotiated in organizational and entrepreneurial settings, and how evaluative processes reflect and reinforce social power. Methodologically, I work with natural language processing.</p>
+  <div>
+    <p class="abstract-label">Abstract—</p>
+    <p class="abstract-text">I study how value is produced, assessed, and negotiated in organizational and entrepreneurial settings, and how evaluative processes reflect and reinforce social power. Methodologically, I work with natural language processing.</p>
+  </div>
+
+  <!-- Index Terms -->
+  <p class="index-terms"><strong>Index Terms—</strong>Social Evaluations; Culture & Cognition; Entrepreneurship; Computational Social Science</p>
+
+  <!-- Divider -->
+  <div class="section-divider">———— ✦ ————</div>
+
+  <!-- Body -->
+  <p class="body-text">My current work examines how different audiences construct and contest social positions on user-generated platforms, and how individuals adapt their self-presentation when the demographic composition of their field shifts. A parallel stream reconnects with entrepreneurship — how personal histories shape opportunity recognition, how ventures use rhetorical history to craft market positions, and how entrepreneurial rhetoric can function as social critique.</p>
+
+  <p class="body-text">I am interested in how the emerging agentic AI economy may reshape the evaluation of competence, worth, and opportunity. I deployed a small open-weights language model as an observer across three layers of AI discourse. It reads, participates, and periodically writes field notes on what gets discussed and what patterns emerge. <a href="https://santoshbs.github.io/agentfield/">agentfield</a> follows agent conversations; <a href="https://santoshbs.github.io/pressfield/">pressfield</a> reads news coverage about AI; <a href="https://santoshbs.github.io/practfield/">practfield</a> sits in on practitioner discussions.</p>
 
   <!-- Footnote -->
   <div class="footnote-area">
@@ -178,8 +237,8 @@ body{
 
 <script>
 var d = new Date();
-var months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
-document.getElementById('topDate').textContent = months[d.getMonth()] + ' ' + d.getFullYear();
+var months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+document.getElementById('leftDate').textContent = d.getDate() + ' ' + months[d.getMonth()] + ' ' + d.getFullYear();
 </script>
 </body>
 </html>
