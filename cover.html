@@ -4,478 +4,187 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Santosh B. Srinivas</title>
-<meta name="description" content="Assistant Professor · Management & HR · HEC Paris">
 <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap" rel="stylesheet">
 <style>
 :root {
   --bg: #ffffff;
-  --ink: #111;
-  --ink-2: #444;
-  --ink-3: #888;
-  --ink-4: #bbb;
-  --rule: #ddd;
+  --border: #ddd;
   --green: #00aa66;
-  --green-bg: #00aa66;
   --amber: #cc8822;
-  --amber-bg: #cc8822;
   --accent: #bb4433;
-  --accent-bg: #bb4433;
+  --text: #222;
+  --text-2: #555;
+  --text-3: #999;
+  --text-4: #bbb;
   --font: 'Source Code Pro', 'Courier New', monospace;
 }
 
 *{margin:0;padding:0;box-sizing:border-box;}
 html{scroll-behavior:smooth;}
-body{font-family:var(--font);background:var(--bg);color:var(--ink);font-size:15px;line-height:1.8;-webkit-font-smoothing:antialiased;overflow-x:hidden;}
-a{color:inherit;text-decoration:none;transition:color .2s;}
-::selection{background:var(--ink);color:var(--bg);}
+body{font-family:var(--font);background:var(--bg);color:var(--text);font-size:15px;line-height:1.8;-webkit-font-smoothing:antialiased;}
+a{color:var(--green);text-decoration:none;transition:all .2s;}
+a:hover{opacity:0.7;}
+::selection{background:var(--text);color:var(--bg);}
 
-/* ═══════════════════════════════════════════════════════════
-   COVER PAGE
-   ═══════════════════════════════════════════════════════════ */
-.cover {
-  width: 100%;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  padding: clamp(2rem, 4vh, 3.5rem) clamp(2rem, 4vw, 4rem);
-  border-bottom: 2px solid var(--ink);
+.page{max-width:720px;margin:0 auto;padding:3.5rem 2rem 3rem;min-height:100vh;display:flex;flex-direction:column;}
+
+/* ── Name ── */
+.cover-name{font-size:32px;font-weight:700;color:var(--text);letter-spacing:-.02em;line-height:1.2;margin-bottom:4px;}
+.cover-role{font-size:15px;color:var(--text-3);margin-bottom:0.5rem;}
+.cover-date{font-size:12px;color:var(--text-4);letter-spacing:.05em;margin-bottom:2.5rem;}
+
+/* ── Divider ── */
+.divider{border:none;border-top:1px solid var(--border);margin:0 0 2rem;}
+
+/* ── Field section intro ── */
+.field-intro{font-size:13px;color:var(--text-3);line-height:1.8;margin-bottom:2rem;}
+
+/* ── Carousel ── */
+.carousel{position:relative;margin-bottom:2rem;flex:1;display:flex;flex-direction:column;justify-content:center;}
+
+.carousel-slide{display:none;animation:fadeSlide .4s ease;}
+.carousel-slide.active{display:block;}
+
+@keyframes fadeSlide{from{opacity:0;transform:translateX(8px);}to{opacity:1;transform:translateX(0);}}
+
+.slide-source{font-size:13px;font-weight:600;letter-spacing:.04em;margin-bottom:6px;}
+.slide-source.src-agent{color:var(--green);}
+.slide-source.src-press{color:var(--amber);}
+.slide-source.src-pract{color:var(--accent);}
+
+.slide-source-what{font-weight:300;color:var(--text-4);margin-left:4px;}
+
+.slide-title{font-size:15px;font-weight:600;color:var(--text);line-height:1.5;margin-bottom:8px;}
+.slide-title a{color:var(--text);text-decoration:none;}
+.slide-title a:hover{opacity:0.6;}
+
+.slide-snippet{font-size:14px;font-weight:300;font-style:italic;color:var(--text-3);line-height:1.8;}
+
+/* ── Nav arrows ── */
+.carousel-nav{display:flex;align-items:center;gap:12px;margin-top:1.5rem;}
+
+.carousel-btn{
+  width:32px;height:32px;border-radius:50%;
+  border:1px solid var(--border);background:none;
+  font-family:var(--font);font-size:14px;color:var(--text-3);
+  cursor:pointer;transition:all .2s;
+  display:flex;align-items:center;justify-content:center;
 }
+.carousel-btn:hover{border-color:var(--text-3);color:var(--text);}
 
-/* Name */
-.cover-name {
-  font-size: clamp(3rem, 7vw, 6rem);
-  font-weight: 700;
-  letter-spacing: -0.04em;
-  line-height: 1.05;
-  color: var(--ink);
-  margin-bottom: 0.5rem;
+.carousel-dots{display:flex;gap:6px;margin-left:8px;}
+
+.carousel-dot{
+  width:6px;height:6px;border-radius:50%;
+  background:var(--border);transition:background .2s;
+  cursor:pointer;
 }
+.carousel-dot.active{background:var(--text-3);}
 
-.cover-date {
-  font-size: 11px;
-  font-weight: 400;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--ink-3);
-  margin-bottom: 1rem;
-}
+.carousel-counter{font-size:11px;color:var(--text-4);margin-left:auto;}
 
-/* Feature title — like "Midas touch" on the journal cover */
-.cover-feature {
-  font-size: clamp(1.6rem, 3.5vw, 2.8rem);
-  font-weight: 300;
-  color: var(--ink);
-  line-height: 1.25;
-  margin-top: auto;
-  margin-bottom: clamp(2rem, 4vh, 3rem);
-  letter-spacing: -0.02em;
-}
+/* ── Footer on cover ── */
+.cover-footer{padding-top:1.5rem;border-top:1px solid var(--border);font-size:12px;color:var(--text-4);display:flex;justify-content:space-between;}
 
-/* 4-column grid at bottom */
-.cover-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 1px;
-  background: #eee;
-  border-top: 2px solid var(--ink);
-}
-
-.cover-grid-item {
-  background: var(--bg);
-  padding: 1.2rem 1rem;
-  display: flex;
-  flex-direction: column;
-}
-
-/* First column: description */
-.cover-grid-desc {
-  font-size: 12px;
-  font-weight: 300;
-  color: var(--ink-3);
-  line-height: 1.7;
-}
-
-.cover-grid-desc-title {
-  font-size: 11px;
-  font-weight: 600;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--ink);
-  margin-bottom: 0.6rem;
-}
-
-/* Feed columns */
-.cover-feed-header {
-  padding: 0.5rem 0.8rem;
-  margin: -1.2rem -1rem 1rem -1rem;
-  display: flex;
-  align-items: center;
-  gap: 0.6rem;
-}
-
-.cover-feed-header.h-agent { background: var(--green-bg); }
-.cover-feed-header.h-press { background: var(--amber-bg); }
-.cover-feed-header.h-pract { background: var(--accent-bg); }
-
-.cover-feed-source {
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 0.06em;
-  color: #fff;
-}
-
-.cover-feed-what {
-  font-size: 10px;
-  font-weight: 300;
-  color: rgba(255,255,255,0.7);
-}
-
-.cover-feed-title {
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 1.4;
-  color: var(--ink);
-  margin-bottom: 0.4rem;
-}
-
-.cover-feed-title a { color: var(--ink); }
-.cover-feed-title a:hover { opacity: 0.6; }
-
-.cover-feed-snippet {
-  font-size: 12px;
-  font-weight: 300;
-  font-style: italic;
-  color: var(--ink-3);
-  line-height: 1.65;
-  flex: 1;
-}
-
-/* ═══════════════════════════════════════════════════════════
-   PAGE 2: BIO + LINKS (no title)
-   ═══════════════════════════════════════════════════════════ */
-.bio-page {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: clamp(3rem, 6vh, 5rem) clamp(2rem, 5vw, 5rem);
-  border-bottom: 1px solid var(--rule);
-}
-
-.bio-statement {
-  font-size: clamp(1.3rem, 2.8vw, 1.8rem);
-  font-weight: 700;
-  color: var(--ink);
-  line-height: 1.65;
-  max-width: 720px;
-  margin-bottom: 1.5rem;
-  letter-spacing: -0.02em;
-}
-
-.bio-tags {
-  font-size: 13px;
-  color: var(--ink-3);
-  margin-bottom: 2.5rem;
-}
-
-.bio-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin-bottom: 2rem;
-}
-
-.bio-links a {
-  font-size: 13px;
-  color: var(--ink-3);
-  padding: 5px 14px;
-  border: 1px solid var(--rule);
-  border-radius: 3px;
-  transition: all 0.2s;
-  letter-spacing: 0.02em;
-}
-
-.bio-links a:hover { color: var(--ink); border-color: var(--ink-3); }
-.bio-links a.l-green { color: var(--green); border-color: rgba(0,170,102,0.3); }
-.bio-links a.l-green:hover { border-color: var(--green); }
-.bio-links a.l-amber { color: var(--amber); border-color: rgba(204,136,34,0.3); }
-.bio-links a.l-amber:hover { border-color: var(--amber); }
-.bio-links a.l-accent { color: var(--accent); border-color: rgba(187,68,51,0.3); }
-.bio-links a.l-accent:hover { border-color: var(--accent); }
-
-.bio-photo {
-  width: 56px; height: 56px; border-radius: 50%; object-fit: cover;
-  filter: grayscale(0.5); margin-bottom: 2rem; border: 2px solid var(--rule);
-}
-
-/* Section navigation */
-.bio-nav {
-  margin-top: 2rem;
-  padding-top: 1.5rem;
-  border-top: 1px solid var(--rule);
-}
-
-.bio-nav-label {
-  font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase;
-  color: var(--ink-4); margin-bottom: 0.8rem;
-}
-
-.bio-nav-items { display: flex; flex-wrap: wrap; gap: 0.4rem 1.5rem; }
-
-.bio-nav-items a {
-  font-size: 14px; font-weight: 500; color: var(--ink-2);
-  padding: 0.3rem 0; transition: color 0.2s;
-}
-
-.bio-nav-items a:hover { color: var(--ink); }
-
-/* ═══════════════════════════════════════════════════════════
-   CONTENT PAGES
-   ═══════════════════════════════════════════════════════════ */
-.content-page {
-  min-height: 100vh;
-  display: flex; justify-content: center;
-  padding: 5rem 2rem; border-bottom: 1px solid var(--rule);
-}
-
-.content-inner { max-width: 620px; width: 100%; }
-
-.content-section-num {
-  font-size: 10px; color: var(--ink-4); letter-spacing: 0.12em;
-  text-transform: uppercase; margin-bottom: 0.5rem;
-}
-
-.content-section-title {
-  font-size: 28px; font-weight: 600; color: var(--ink);
-  margin-bottom: 2rem; padding-bottom: 1rem; border-bottom: 1px solid var(--rule);
-}
-
-.content-prose { font-size: 15px; color: var(--ink-2); line-height: 1.9; margin-bottom: 1.5rem; }
-
-/* Pubs */
-.pub { padding: 14px 0; border-bottom: 1px solid #eee; }
-.pub:first-child { border-top: 1px solid #eee; }
-.pub-cite { font-size: 15px; color: var(--ink-2); line-height: 1.7; }
-.pub-cite strong { color: var(--ink); font-weight: 600; }
-.pub-venue { font-size: 14px; color: var(--ink-3); font-style: italic; margin-top: 3px; }
-.pub-tog {
-  font-size: 13px; font-weight: 500; color: var(--ink-3); cursor: pointer;
-  border: 1px solid var(--rule); background: none; padding: 2px 10px;
-  border-radius: 3px; margin-top: 6px; transition: all 0.2s; font-family: var(--font);
-}
-.pub-tog:hover { border-color: var(--ink-3); color: var(--ink); }
-.pub-detail { max-height: 0; overflow: hidden; transition: max-height .4s ease, opacity .3s; opacity: 0; }
-.pub-detail.open { max-height: 2000px; opacity: 1; padding-top: 10px; }
-.pub-abs { font-size: 14px; color: var(--ink-3); line-height: 1.8; padding-left: 14px; border-left: 2px solid var(--rule); }
-.pub-dl { font-size: 13px; margin-top: 8px; padding-left: 14px; }
-.pub-dl a { color: var(--green); }
-.pub-dl a:hover { color: var(--ink); }
-.pub-sublabel { font-size: 11px; color: var(--ink-4); letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 0.5rem; }
-.ch-label { font-size: 11px; color: var(--ink-4); letter-spacing: 0.08em; text-transform: uppercase; margin: 2rem 0 0.5rem; }
-
-/* Explore */
-.ex-card { background: #f8f8f6; border: 1px solid #eee; border-radius: 6px; padding: 18px 20px; margin-top: 1.5rem; }
-.ex-label { font-size: 10px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--ink-4); margin-bottom: 8px; }
-.ex-card p { font-size: 14px; color: var(--ink-3); line-height: 1.85; }
-.ex-card a { color: var(--green); }
-.ex-card a.a-press { color: var(--amber); }
-.ex-card a.a-pract { color: var(--accent); }
-
-/* Course */
-.course { font-size: 15px; color: var(--ink-2); padding: 5px 0; }
-.course strong { font-weight: 500; color: var(--ink); }
-.course span { color: var(--ink-3); }
-
-/* Timeline */
-.tl { position: relative; padding-left: 24px; }
-.tl::before { content:''; position:absolute; left:5px; top:10px; bottom:10px; width:1px; background:var(--rule); }
-.tl-i { position: relative; padding: 6px 0; }
-.tl-d { position:absolute; left:-24px; top:12px; width:9px; height:9px; border-radius:50%; border:2px solid var(--ink-4); background:var(--bg); transition:all .3s; }
-.tl-i:hover .tl-d { border-color: var(--ink-2); }
-.tl-d.now { border-color: var(--green); background: var(--green); }
-.tl-y { font-size:15px; color:var(--ink-3); font-weight:500; }
-.tl-r { font-size:15px; color:var(--ink-2); }
-.tl-m { font-size:14px; color:var(--ink-3); }
-
-.content-footer {
-  margin-top:3rem; padding-top:1.5rem; border-top:1px solid var(--rule);
-  font-size:12px; color:var(--ink-4); display:flex; justify-content:space-between;
-}
-
-/* ═══ RESPONSIVE ═══ */
-@media (max-width: 800px) {
-  .cover-grid { grid-template-columns: 1fr; }
-  .cover-feed-header { margin: -1.2rem -1rem 0.8rem -1rem; }
-  .cover-name { font-size: 2.8rem; }
-  .cover-feature { font-size: 1.4rem; }
-  .bio-statement { font-size: 1.2rem; }
+@media(max-width:600px){
+  .page{padding:2rem 1.2rem;}
+  .cover-name{font-size:24px;}
 }
 </style>
 </head>
 <body>
+<div class="page">
 
-<!-- ═══════════ COVER ═══════════ -->
-<section class="cover">
+  <!-- Name -->
+  <h1 class="cover-name">santosh srinivas</h1>
+  <p class="cover-role">Assistant Professor · Management & HR · HEC Paris</p>
+  <p class="cover-date" id="coverDate"></p>
 
-  <div class="cover-name">santosh<br>srinivas</div>
-  <div class="cover-date" id="coverDate"></div>
+  <hr class="divider">
 
-  <div class="cover-feature">Assistant Professor, HEC Paris</div>
+  <!-- Field intro -->
+  <p class="field-intro">An open-weights language model writes margin notes across three layers of AI discourse — observing agent conversations, press coverage, and practitioner discussions.</p>
 
-  <div class="cover-grid">
+  <!-- Carousel: one feed at a time -->
+  <div class="carousel" id="carousel">
 
-    <!-- Column 1: What these are -->
-    <div class="cover-grid-item">
-      <div class="cover-grid-desc-title">Field Observations</div>
-      <div class="cover-grid-desc">Margin notes written by an open-weights language model deployed as an observer across three layers of AI discourse. The model reads, participates, and periodically steps back to write about what it notices.</div>
+    <!-- Slide: agentfield -->
+    <div class="carousel-slide" data-field="agent">
+      <div class="slide-source src-agent">agentfield <span class="slide-source-what">· agent conversations</span></div>
+      <div class="slide-title" id="title-agent"><a href="https://santoshbs.github.io/agentfield/">Loading…</a></div>
+      <div class="slide-snippet" id="snippet-agent"></div>
     </div>
 
-    <!-- Column 2: agentfield -->
-    <div class="cover-grid-item" id="col-agent">
-      <div class="cover-feed-header h-agent">
-        <span class="cover-feed-source">agentfield</span>
-        <span class="cover-feed-what">agent conversations</span>
+    <!-- Slide: pressfield -->
+    <div class="carousel-slide" data-field="press">
+      <div class="slide-source src-press">pressfield <span class="slide-source-what">· press coverage</span></div>
+      <div class="slide-title" id="title-press"><a href="https://santoshbs.github.io/pressfield/">Loading…</a></div>
+      <div class="slide-snippet" id="snippet-press"></div>
+    </div>
+
+    <!-- Slide: practfield -->
+    <div class="carousel-slide" data-field="pract">
+      <div class="slide-source src-pract">practfield <span class="slide-source-what">· practitioner discussions</span></div>
+      <div class="slide-title" id="title-pract"><a href="https://santoshbs.github.io/practfield/">Loading…</a></div>
+      <div class="slide-snippet" id="snippet-pract"></div>
+    </div>
+
+    <!-- Nav -->
+    <div class="carousel-nav">
+      <button class="carousel-btn" id="prevBtn">←</button>
+      <button class="carousel-btn" id="nextBtn">→</button>
+      <div class="carousel-dots">
+        <span class="carousel-dot" data-idx="0"></span>
+        <span class="carousel-dot" data-idx="1"></span>
+        <span class="carousel-dot" data-idx="2"></span>
       </div>
-      <div class="cover-feed-title" id="feed-agent-title"><a href="https://santoshbs.github.io/agentfield/">Loading…</a></div>
-      <div class="cover-feed-snippet" id="feed-agent-snippet"></div>
-    </div>
-
-    <!-- Column 3: pressfield -->
-    <div class="cover-grid-item" id="col-press">
-      <div class="cover-feed-header h-press">
-        <span class="cover-feed-source">pressfield</span>
-        <span class="cover-feed-what">press coverage</span>
-      </div>
-      <div class="cover-feed-title" id="feed-press-title"><a href="https://santoshbs.github.io/pressfield/">Loading…</a></div>
-      <div class="cover-feed-snippet" id="feed-press-snippet"></div>
-    </div>
-
-    <!-- Column 4: practfield -->
-    <div class="cover-grid-item" id="col-pract">
-      <div class="cover-feed-header h-pract">
-        <span class="cover-feed-source">practfield</span>
-        <span class="cover-feed-what">practitioner discussions</span>
-      </div>
-      <div class="cover-feed-title" id="feed-pract-title"><a href="https://santoshbs.github.io/practfield/">Loading…</a></div>
-      <div class="cover-feed-snippet" id="feed-pract-snippet"></div>
+      <span class="carousel-counter" id="carouselCounter"></span>
     </div>
 
   </div>
-</section>
 
-<!-- ═══════════ PAGE 2: BIO + LINKS ═══════════ -->
-<section class="bio-page" id="bio">
-
-  <img src="https://santoshbs.github.io/images/santoshbs1.jpeg" alt="Santosh Srinivas" class="bio-photo">
-
-  <div class="bio-statement">I study how value is produced, assessed, and negotiated in organizational and entrepreneurial settings, and how evaluative processes reflect and reinforce social power. Methodologically, I work with natural language processing.</div>
-
-  <div class="bio-tags">social evaluations · culture &amp; cognition · entrepreneurship · computational social science</div>
-
-  <div class="bio-links">
-    <a href="mailto:srinivas@hec.fr">email</a>
-    <a href="https://github.com/santoshbs" target="_blank">github</a>
-    <a href="https://scholar.google.com/citations?user=w9Fa_v0AAAAJ&hl=en&oi=sra" target="_blank">scholar</a>
-    <a href="https://orcid.org/0000-0002-7792-9622" target="_blank">orcid</a>
-    <a href="https://santoshbs.github.io/agentfield/" class="l-green">agentfield</a>
-    <a href="https://santoshbs.github.io/pressfield/" class="l-amber">pressfield</a>
-    <a href="https://santoshbs.github.io/practfield/" class="l-accent">practfield</a>
+  <!-- Footer -->
+  <div class="cover-footer">
+    <span>Paris · srinivas@hec.fr</span>
+    <span>© 2026</span>
   </div>
 
-  <div class="bio-nav">
-    <div class="bio-nav-label">Contents</div>
-    <div class="bio-nav-items">
-      <a href="#sec-pubs">Publications</a>
-      <a href="#sec-current">Current Inquiry</a>
-      <a href="#sec-teaching">Teaching</a>
-      <a href="#sec-formation">Formation</a>
-    </div>
-  </div>
-
-</section>
-
-<!-- ═══════════ PUBLICATIONS ═══════════ -->
-<section class="content-page" id="sec-pubs">
-  <div class="content-inner">
-    <div class="content-section-num">Section i</div>
-    <h2 class="content-section-title">Publications</h2>
-    <p class="pub-sublabel">Peer-Reviewed Journal Articles</p>
-    <div class="pub"><p class="pub-cite">Patil, S. V., <strong>Srinivas, S. B.</strong>, Tussing, D. V., &amp; Rhee, J. (2025). Addressing the flexible use of cognitive flexibility constructs: Toward a multifaceted approach.</p><p class="pub-venue">Academy of Management Annals, 19(1), 74–131.</p><button class="pub-tog" onclick="toggle(this)">+ abstract</button><div class="pub-detail"><p class="pub-abs">Many researchers have drawn on the term "cognitive flexibility" to denote the explanatory mechanism underlying a broad array of organizational theories. However, conceptualization (and operationalization) of this construct is inconsistent, and sometimes conflates with that of other constructs, thereby weakening our understanding of cognitive flexibility and muddling the theories that rest on it. To bring clarity, we conduct a comprehensive search of cognitive flexibility constructs, strip away their labels, and use text analysis and manual coding of their descriptions to distinguish among five fluid thought processes: (1) elaborating, (2) dimensionalizing, (3) integrating, (4) juxtaposing, and (5) matching.</p><p class="pub-dl"><a href="https://doi.org/10.5465/annals.2023.0078" target="_blank">doi ↗</a></p></div></div>
-    <div class="pub"><p class="pub-cite">Sinha, R., Chiu, C. Y., &amp; <strong>Srinivas, S. B.</strong> (2021). Shared leadership and relationship conflict in teams: The moderating role of team power base diversity.</p><p class="pub-venue">Journal of Organizational Behavior, 42(5), 649–667.</p><button class="pub-tog" onclick="toggle(this)">+ abstract</button><div class="pub-detail"><p class="pub-abs">Shared leadership in teams is believed to be beneficial for team effectiveness. Yet recent empirical evidence shows that it may not always bring positive effects. Drawing on dominance complementarity theory, we suggest that team power base diversity—the variety in power bases among team members—is an important contingency that moderates the impact of shared leadership on relationship conflict to influence team performance.</p><p class="pub-dl"><a href="https://doi.org/10.1002/job.2515" target="_blank">doi ↗</a></p></div></div>
-    <div class="pub"><p class="pub-cite">Rindova, V. P., Martins, L. L., <strong>Srinivas, S. B.</strong>, &amp; Chandler, D. (2018). The good, the bad, and the ugly of organizational rankings: A multidisciplinary review.</p><p class="pub-venue">Journal of Management, 44(6), 2175–2208.</p><button class="pub-tog" onclick="toggle(this)">+ abstract</button><div class="pub-detail"><p class="pub-abs">A review of the literature on organizational rankings across management, sociology, education, and law reveals three perspectives on these complex evaluations—rankings are seen as a form of information intermediation, as comparative orderings, or as a means for surveillance and control. We also identify a new perspective—rankings entrepreneurship.</p><p class="pub-dl"><a href="https://doi.org/10.1177/0149206317741962" target="_blank">doi ↗</a></p></div></div>
-    <p class="ch-label">Book Chapters</p>
-    <div class="pub"><p class="pub-cite">Boyd, R. L., <strong>Srinivas, S. B.</strong>, Phadke, S., Wilson, S. R., &amp; Pasca, P. AI and computation in the social sciences.</p><p class="pub-venue">Forthcoming, Oxford University Press.</p><button class="pub-tog" onclick="toggle(this)">+ abstract</button><div class="pub-detail"><p class="pub-abs">This chapter explores AI's transformative role at multiple levels of analysis — individual, group, and societal — highlighting its capacity to enhance theory, measurement, and practical applications.</p></div></div>
-    <div class="pub"><p class="pub-cite">Rindova, V. P., <strong>Srinivas, S. B.</strong>, &amp; Martins, L. L. (2022). How to break free: An orders-of-worth perspective on emancipatory entrepreneurship.</p><p class="pub-venue">Research in the Sociology of Organizations.</p><button class="pub-tog" onclick="toggle(this)">+ abstract</button><div class="pub-detail"><p class="pub-abs">We propose that entrepreneurial acts toward emancipation can be guided by different notions of the common good underlying varying conceptions of worth. Drawing on Boltanski and Thévenot's work on multiple orders of worth, we theorize how the civic and inspired orders point to alternate emancipatory ends and means.</p><p class="pub-dl"><a href="https://santoshbs.github.io/files/RindovaSrinivasMartins_2022_HowToBreakFree_vAAM.pdf" target="_blank">pre-print ↗</a></p></div></div>
-    <div class="pub"><p class="pub-cite">Rindova, V. P., &amp; <strong>Srinivas, S. B.</strong> (2017). Managing meaning — culture.</p><p class="pub-venue">Oxford Handbook of Management.</p><button class="pub-tog" onclick="toggle(this)">+ abstract</button><div class="pub-detail"><p class="pub-abs">Management of meaning, an activity central to mobilizing action both inside and outside organizations. Meaning-making is central to the generation of substantive actions that affect organizations and their strategies in fundamental ways.</p><p class="pub-dl"><a href="https://santoshbs.github.io//files/RindovaSrinivas_2017_ManagingMeaning_PreprintVersion.pdf" target="_blank">pre-print ↗</a></p></div></div>
-  </div>
-</section>
-
-<!-- ═══════════ CURRENT INQUIRY ═══════════ -->
-<section class="content-page" id="sec-current">
-  <div class="content-inner">
-    <div class="content-section-num">Section ii</div>
-    <h2 class="content-section-title">Current Inquiry</h2>
-    <p class="content-prose">My current work examines how different audiences construct and contest social positions on user-generated platforms, and how individuals adapt their self-presentation when the demographic composition of their field shifts. A parallel stream reconnects with entrepreneurship — how personal histories shape opportunity recognition, how ventures use rhetorical history to craft market positions, and how entrepreneurial rhetoric can function as social critique.</p>
-    <div class="ex-card">
-      <p class="ex-label">exploratory</p>
-      <p>I am interested in how the emerging agentic AI economy may reshape the evaluation of competence, worth, and opportunity. I deployed a small open-weights language model as an observer across three layers of AI discourse. It reads, participates, and periodically writes field notes on what gets discussed and what patterns emerge.
-      <a href="https://santoshbs.github.io/agentfield/">agentfield</a> follows agent conversations;
-      <a href="https://santoshbs.github.io/pressfield/" class="a-press">pressfield</a> reads news coverage about AI;
-      <a href="https://santoshbs.github.io/practfield/" class="a-pract">practfield</a> sits in on practitioner discussions.</p>
-    </div>
-  </div>
-</section>
-
-<!-- ═══════════ TEACHING ═══════════ -->
-<section class="content-page" id="sec-teaching">
-  <div class="content-inner">
-    <div class="content-section-num">Section iii</div>
-    <h2 class="content-section-title">Teaching</h2>
-    <p class="content-prose">My classes orient students to multiple conceptions of value and varied approaches to organizing. I use case-based pedagogy, asking students to reflect individually and then compare perspectives collaboratively. With AI reshaping what competence looks like, I see an opportunity to redesign assessments around what matters most: the ability to translate ill-structured problems into relevant concepts and critically synthesize solutions.</p>
-    <p class="course"><strong>Organizational Behavior</strong> <span>· Grande École · HEC Paris · 2019 – to date</span></p>
-    <p class="course"><strong>Organizational Behavior</strong> <span>· Doctoral Seminar · HEC Paris · 2019 – to date</span></p>
-    <p class="course"><strong>Outdoor Leadership Seminar</strong> <span>· MBA · HEC Paris · 2021 – to date</span></p>
-  </div>
-</section>
-
-<!-- ═══════════ FORMATION ═══════════ -->
-<section class="content-page" id="sec-formation">
-  <div class="content-inner">
-    <div class="content-section-num">Section iv</div>
-    <h2 class="content-section-title">Formation</h2>
-    <div class="tl">
-      <div class="tl-i"><div class="tl-d now"></div><span class="tl-y">2019 –</span> <span class="tl-r">Assistant Professor, HEC Paris</span><br><span class="tl-m">Management &amp; Human Resources</span></div>
-      <div class="tl-i"><div class="tl-d"></div><span class="tl-y">2014 – 19</span> <span class="tl-r">Ph.D., Management, UT Austin</span><br><span class="tl-m">McCombs School of Business</span></div>
-      <div class="tl-i"><div class="tl-d"></div><span class="tl-y">2010 – 14</span> <span class="tl-r">Indian School of Business</span><br><span class="tl-m">Assist. Director, WCED + Research Assistant</span></div>
-      <div class="tl-i"><div class="tl-d"></div><span class="tl-y">2008 – 10</span> <span class="tl-r">ILID, Bangalore</span><br><span class="tl-m">Program Manager</span></div>
-      <div class="tl-i"><div class="tl-d"></div><span class="tl-y">2007 – 08</span> <span class="tl-r">HiWEL, New Delhi</span><br><span class="tl-m">Leadership Team</span></div>
-      <div class="tl-i"><div class="tl-d"></div><span class="tl-y">2006 – 07</span> <span class="tl-r">PGP, Indian School of Business</span><br><span class="tl-m">MBA equivalent</span></div>
-      <div class="tl-i"><div class="tl-d"></div><span class="tl-y">2001 – 06</span> <span class="tl-r">Intel Technologies India</span><br><span class="tl-m">Software Engineer + Technical Lead</span></div>
-      <div class="tl-i"><div class="tl-d"></div><span class="tl-y">1997 – 01</span> <span class="tl-r">B.E. (Hons.), BITS Pilani</span><br><span class="tl-m">Computer Science</span></div>
-    </div>
-    <div class="content-footer">
-      <span>Paris · srinivas@hec.fr</span>
-      <span>© 2026</span>
-    </div>
-  </div>
-</section>
+</div>
 
 <script>
-/* Date */
+/* ═══ Date ═══ */
 document.getElementById('coverDate').textContent =
   new Date().toLocaleString('en-US',{month:'long'}).toUpperCase() + ' ' + new Date().getFullYear();
 
-/* Feed fetching — extracts 2-3 sentences, always ends with "…" */
-function extractSnippet(raw, sentenceCount) {
+/* ═══ Carousel ═══ */
+var slides = document.querySelectorAll('.carousel-slide');
+var dots = document.querySelectorAll('.carousel-dot');
+var counter = document.getElementById('carouselCounter');
+var total = slides.length;
+var current = Math.floor(Math.random() * total); // random start
+
+function showSlide(idx) {
+  current = ((idx % total) + total) % total;
+  slides.forEach(function(s,i){ s.classList.toggle('active', i === current); });
+  dots.forEach(function(d,i){ d.classList.toggle('active', i === current); });
+  counter.textContent = (current+1) + ' / ' + total;
+}
+
+document.getElementById('prevBtn').addEventListener('click', function(){ showSlide(current - 1); });
+document.getElementById('nextBtn').addEventListener('click', function(){ showSlide(current + 1); });
+dots.forEach(function(d){ d.addEventListener('click', function(){ showSlide(parseInt(d.dataset.idx)); }); });
+
+showSlide(current);
+
+/* ═══ Feed fetching ═══ */
+function extractSnippet(raw, n) {
   if (!raw) return '';
   var d = document.createElement('div'); d.innerHTML = raw;
   var t = d.textContent.trim(); if (!t) return '';
   var sentences = t.match(/[^.!?]+[.!?]+/g) || [t];
-  var n = sentenceCount || 2;
-  var picked = sentences.slice(0, n).join(' ').trim();
-  // Always end with …
+  var picked = sentences.slice(0, n || 3).join(' ').trim();
   picked = picked.replace(/[.!?]+\s*$/, '') + ' ….';
-  if (picked.length > 280) picked = picked.substring(0, 277) + ' ….';
+  if (picked.length > 320) picked = picked.substring(0, 317) + ' ….';
   return picked;
 }
 
@@ -565,16 +274,9 @@ async function fetchField(base, titleId, snippetId, fallback) {
   else renderFeed(titleId, snippetId, fallback, '', base);
 }
 
-fetchField('https://santoshbs.github.io/agentfield/', 'feed-agent-title', 'feed-agent-snippet', 'field notes from agent conversations');
-fetchField('https://santoshbs.github.io/pressfield/', 'feed-press-title', 'feed-press-snippet', 'field notes from press coverage');
-fetchField('https://santoshbs.github.io/practfield/', 'feed-pract-title', 'feed-pract-snippet', 'field notes from practitioner discussions');
-
-/* Pub toggle */
-function toggle(el) {
-  var d = el.closest('.pub').querySelector('.pub-detail');
-  d.classList.toggle('open');
-  el.textContent = d.classList.contains('open') ? '− abstract' : '+ abstract';
-}
+fetchField('https://santoshbs.github.io/agentfield/', 'title-agent', 'snippet-agent', 'field notes from agent conversations');
+fetchField('https://santoshbs.github.io/pressfield/', 'title-press', 'snippet-press', 'field notes from press coverage');
+fetchField('https://santoshbs.github.io/practfield/', 'title-pract', 'snippet-pract', 'field notes from practitioner discussions');
 </script>
 </body>
 </html>
