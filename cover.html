@@ -226,52 +226,47 @@ a:hover{text-decoration:underline;}
   margin-top:1.5rem;
 }
 
-.fig{
-  border-top:1.5px solid #111;
-  padding:0.6rem 0 0.8rem;
-}
-
-.fig:last-child{
-  border-bottom:1.5px solid #111;
-}
-
 .fig-caption{
   font-family:'Source Sans 3','Helvetica Neue','Arial',sans-serif;
-  font-size:13px;
+  font-size:16px;
   color:#222;
   line-height:1.5;
-  margin-bottom:0.4rem;
+  margin-bottom:1.2rem;
 }
 
-.fig-content{
-  font-size:14px;
+.fig-entry{
+  margin-bottom:1rem;
+  font-size:16px;
   line-height:1.65;
-  color:#333;
+  color:#222;
 }
 
 .fig-title{
   font-weight:600;
   color:#222;
   text-decoration:none;
-  font-size:14px;
+  font-size:16px;
 }
 
 .fig-title:hover{text-decoration:underline;}
 
-.fig-snippet{
+.fig-meta{
+  font-family:'Source Sans 3','Helvetica Neue','Arial',sans-serif;
   font-size:13px;
-  font-style:italic;
-  color:#555;
-  line-height:1.6;
-  margin-top:3px;
+  color:#888;
+  font-weight:400;
+  display:inline;
 }
 
-.fig-date{
-  font-family:'Source Sans 3','Helvetica Neue','Arial',sans-serif;
-  font-size:11px;
-  color:#888;
-  display:block;
-  margin-bottom:2px;
+.fig-meta a{color:#888;}
+.fig-meta a:hover{color:#222;}
+
+.fig-snippet{
+  font-size:15px;
+  font-style:italic;
+  color:#555;
+  line-height:1.65;
+  margin-top:3px;
 }
 
 @media(max-width:640px){
@@ -347,24 +342,12 @@ a:hover{text-decoration:underline;}
 
     <p class="body-text">I am interested in how the emerging agentic AI economy may reshape the evaluation of competence, worth, and opportunity. I deployed a small open-weights language model as an observer across three layers of AI discourse. It reads, participates, and periodically writes field notes on what gets discussed and what patterns emerge. <a href="https://santoshbs.github.io/agentfield/">agentfield</a> follows agent conversations; <a href="https://santoshbs.github.io/pressfield/">pressfield</a> reads news coverage about AI; <a href="https://santoshbs.github.io/practfield/">practfield</a> sits in on practitioner discussions.</p>
 
-    <!-- Figures: field observation feeds -->
+    <!-- Figure 1: field observation feeds -->
     <div class="fig-group">
-
-      <div class="fig">
-        <div class="fig-caption"><strong>Figure 1a.</strong> Latest field note from <a href="https://santoshbs.github.io/agentfield/"><em>agentfield</em></a> (agent conversations)</div>
-        <div class="fig-content" id="fig-agent">Loading…</div>
-      </div>
-
-      <div class="fig">
-        <div class="fig-caption"><strong>Figure 1b.</strong> Latest field note from <a href="https://santoshbs.github.io/pressfield/"><em>pressfield</em></a> (press coverage)</div>
-        <div class="fig-content" id="fig-press">Loading…</div>
-      </div>
-
-      <div class="fig">
-        <div class="fig-caption"><strong>Figure 1c.</strong> Latest field note from <a href="https://santoshbs.github.io/practfield/"><em>practfield</em></a> (practitioner discussions)</div>
-        <div class="fig-content" id="fig-pract">Loading…</div>
-      </div>
-
+      <div class="fig-caption"><strong>Figure 1.</strong> Latest notes from an open-weights observer</div>
+      <div class="fig-entry" id="fig-agent">Loading…</div>
+      <div class="fig-entry" id="fig-press">Loading…</div>
+      <div class="fig-entry" id="fig-pract">Loading…</div>
     </div>
 
   </div>
@@ -387,18 +370,19 @@ function extractSnippet(raw, n) {
   var el = document.createElement('div'); el.innerHTML = raw;
   var t = el.textContent.trim(); if (!t) return '';
   var sentences = t.match(/[^.!?]+[.!?]+/g) || [t];
-  var picked = sentences.slice(0, n || 2).join(' ').trim();
+  var picked = sentences.slice(0, n || 1).join(' ').trim();
   picked = picked.replace(/[.!?]+\s*$/, '') + ' ….';
   if (picked.length > 250) picked = picked.substring(0, 247) + ' ….';
   return picked;
 }
 
-function renderFig(id, title, snippet, link, dateStr) {
+function renderFig(id, title, snippet, link, dateStr, sourceName, sourceUrl) {
   var el = document.getElementById(id);
   if (!el) return;
-  var h = '';
-  if (dateStr) h += '<span class="fig-date">' + dateStr + '</span> ';
-  h += '<a href="' + link + '" class="fig-title">' + title + '</a>';
+  var h = '<a href="' + link + '" class="fig-title">' + title + '</a>';
+  h += ' <span class="fig-meta">· <a href="' + sourceUrl + '">' + sourceName + '</a>';
+  if (dateStr) h += ' · ' + dateStr;
+  h += '</span>';
   if (snippet) h += '<div class="fig-snippet">' + snippet + '</div>';
   el.innerHTML = h;
 }
@@ -409,8 +393,7 @@ function formatDate(str) {
     var dt = new Date(str);
     if (isNaN(dt)) return '';
     var ms = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
-    return dt.getDate() + ' ' + ms[dt.getMonth()] + ' ' + dt.getFullYear() + ', ' +
-      String(dt.getHours()).padStart(2,'0') + ':' + String(dt.getMinutes()).padStart(2,'0') + ' UTC';
+    return dt.getDate() + ' ' + ms[dt.getMonth()] + ' ' + dt.getFullYear();
   } catch(e) { return ''; }
 }
 
@@ -480,7 +463,7 @@ function scrapeHTML(text, base) {
   return { title: best.title, snippet: snippet, link: link, date: dateStr };
 }
 
-async function fetchField(base, figId, fallback) {
+async function fetchField(base, figId, fallback, sourceName) {
   var result = null;
   var feeds = ['feed.xml','atom.xml'];
   for (var i = 0; i < feeds.length; i++) {
@@ -495,13 +478,13 @@ async function fetchField(base, figId, fallback) {
       if (r2.ok) result = scrapeHTML(await r2.text(), base);
     } catch(e) {}
   }
-  if (result) renderFig(figId, result.title, result.snippet, result.link || base, result.date);
-  else renderFig(figId, fallback, '', base, '');
+  if (result) renderFig(figId, result.title, result.snippet, result.link || base, result.date, sourceName, base);
+  else renderFig(figId, fallback, '', base, '', sourceName, base);
 }
 
-fetchField('https://santoshbs.github.io/agentfield/', 'fig-agent', 'field notes from agent conversations');
-fetchField('https://santoshbs.github.io/pressfield/', 'fig-press', 'field notes from press coverage');
-fetchField('https://santoshbs.github.io/practfield/', 'fig-pract', 'field notes from practitioner discussions');
+fetchField('https://santoshbs.github.io/agentfield/', 'fig-agent', 'field notes from agent conversations', 'agentfield');
+fetchField('https://santoshbs.github.io/pressfield/', 'fig-press', 'field notes from press coverage', 'pressfield');
+fetchField('https://santoshbs.github.io/practfield/', 'fig-pract', 'field notes from practitioner discussions', 'practfield');
 </script>
 
 </body>
