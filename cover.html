@@ -348,6 +348,34 @@ function toggle(el) {
   }
 }
 
+// Expand a collapse section programmatically
+function expandSection(collapseBody) {
+  if (collapseBody && !collapseBody.classList.contains('open')) {
+    collapseBody.classList.add('open');
+    var head = collapseBody.previousElementSibling;
+    if (head) { var t = head.querySelector('.tog'); if (t) t.textContent = '−'; }
+  }
+}
+
+// Handle cite-link clicks: expand References, then scroll
+document.addEventListener('click', function(e) {
+  var link = e.target.closest('.cite-link');
+  if (!link) return;
+  e.preventDefault();
+  var targetId = link.getAttribute('href').substring(1);
+  // Find and expand the References collapse-body
+  var refBodies = document.querySelectorAll('.collapse-body');
+  refBodies.forEach(function(cb) {
+    var el = document.getElementById(targetId);
+    if (el && cb.contains(el)) { expandSection(cb); }
+  });
+  // Small delay to let DOM update, then scroll
+  setTimeout(function() {
+    var target = document.getElementById(targetId);
+    if (target) target.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  }, 100);
+});
+
 var yr = new Date().getFullYear();
 var ms = ['January','February','March','April','May','June','July','August','September','October','November','December'];
 var d = new Date();
