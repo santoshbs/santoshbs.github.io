@@ -29,7 +29,13 @@ a:hover{text-decoration:underline;}
 
 /* ═══ PAGE 1 ═══ */
 .top-row{display:flex;justify-content:flex-end;padding-bottom:0.8rem;margin-bottom:1.2rem;border-bottom:2px solid #111;}
+.top-identity{display:flex;align-items:center;gap:0;}
 .top-photo{width:44px;height:44px;border-radius:50%;object-fit:cover;}
+.top-divider{width:1px;height:36px;background:#ccc;margin:0 10px;}
+.top-nameblock{display:flex;flex-direction:column;justify-content:center;}
+.top-name{font-family:'Source Sans 3',sans-serif;font-size:16px;font-weight:600;color:#222;line-height:1.2;}
+.top-email{font-family:'Source Sans 3',sans-serif;font-size:11px;color:#888;line-height:1.3;}
+.top-email a{color:#888;}.top-email a:hover{color:#222;}
 .title-row{display:flex;justify-content:space-between;align-items:flex-start;gap:2rem;margin-bottom:0.8rem;}
 .title-col{flex:1;min-width:0;}
 .paper-title{font-family:'Source Sans 3',sans-serif;font-size:36px;font-weight:700;color:#111;line-height:1.15;letter-spacing:-0.01em;}
@@ -142,7 +148,14 @@ a:hover{text-decoration:underline;}
 
   <!-- ═══════════ PAGE 1 ═══════════ -->
   <div class="top-row">
-    <img src="https://santoshbs.github.io/images/santoshbs1.jpeg" alt="Santosh Srinivas" class="top-photo">
+    <div class="top-identity">
+      <img src="https://santoshbs.github.io/images/santoshbs1.jpeg" alt="Santosh Srinivas" class="top-photo">
+      <div class="top-divider"></div>
+      <div class="top-nameblock">
+        <div class="top-name">Santosh</div>
+        <div class="top-email"><a href="mailto:srinivas@hec.fr">srinivas@hec.fr</a></div>
+      </div>
+    </div>
   </div>
 
   <div class="title-row">
@@ -313,13 +326,10 @@ a:hover{text-decoration:underline;}
     <div class="ref-block"><div class="ref-authors">Sinha, R., Chiu, C. Y., &amp; Srinivas, S. B.</div><div class="ref-detail">2021. Shared leadership and relationship conflict in teams: The moderating role of team power base diversity. Journal of Organizational Behavior, 42(5), 649–667.</div></div>
   </div>
 
-  <!-- Correspondence footer at very end -->
+  <!-- Footnote at very end -->
   <div class="p1-footnote" style="margin-top:3rem;">
     <hr class="p1-rule">
     <div class="p1-affil">* Department of Management &amp; Human Resources, HEC Paris, France.</div>
-    <div class="p1-correspond-block">
-      <strong>Correspondence:</strong> <a href="mailto:srinivas@hec.fr">srinivas@hec.fr</a>
-    </div>
   </div>
 
 </div>
