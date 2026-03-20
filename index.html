@@ -3,7 +3,45 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Santosh B. Srinivas</title>
+<title>Santosh B. Srinivas — HEC Paris</title>
+<meta name="description" content="Santosh B. Srinivas, Assistant Professor at HEC Paris. Research on social evaluations, culture and cognition, entrepreneurship, and computational social science.">
+<meta name="keywords" content="Santosh Srinivas, HEC Paris, organizational behavior, social evaluations, computational social science, entrepreneurship">
+<meta name="author" content="Santosh B. Srinivas">
+<link rel="canonical" href="https://santoshbs.github.io/">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Santosh B. Srinivas — Toward an Understanding of Value">
+<meta property="og:description" content="Assistant Professor, HEC Paris. Research on social evaluations, culture and cognition, entrepreneurship, and computational social science.">
+<meta property="og:url" content="https://santoshbs.github.io/">
+<meta property="og:type" content="profile">
+<meta property="og:image" content="https://santoshbs.github.io/images/santoshbs1.jpeg">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Santosh B. Srinivas — HEC Paris">
+<meta name="twitter:description" content="Research on social evaluations, culture and cognition, entrepreneurship, and computational social science.">
+<meta name="twitter:image" content="https://santoshbs.github.io/images/santoshbs1.jpeg">
+
+<!-- JSON-LD structured data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Santosh B. Srinivas",
+  "jobTitle": "Assistant Professor",
+  "worksFor": {
+    "@type": "Organization",
+    "name": "HEC Paris"
+  },
+  "url": "https://santoshbs.github.io/",
+  "image": "https://santoshbs.github.io/images/santoshbs1.jpeg",
+  "email": "srinivas@hec.fr",
+  "sameAs": [
+    "https://orcid.org/0000-0002-7792-9622",
+    "https://scholar.google.com/citations?user=w9Fa_v0AAAAJ"
+  ]
+}
+</script>
 <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,300;1,8..60,400&display=swap" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box;}
@@ -203,7 +241,7 @@ a:hover{text-decoration:underline;}
     <span class="tog">+</span>
   </div>
   <div class="collapse-body">
-    <p class="body-text no-indent">I am interested in how the emerging agentic AI economy may reshape the evaluation of competence, worth, and opportunity. I deployed a small open-weights language model as an observer across three layers of AI discourse. It reads, participates, and periodically writes field notes on what gets discussed and what patterns emerge. <a href="https://santoshbs.github.io/agentfield/">agentfield</a> follows agent conversations; <a href="https://santoshbs.github.io/pressfield/">pressfield</a> reads news coverage about AI; <a href="https://santoshbs.github.io/practfield/">practfield</a> sits in on practitioner discussions (see below for latest pulses).</p>
+    <p class="body-text no-indent">I am interested in how the emerging agentic AI economy may reshape the evaluation of competence, worth, and opportunity. In a purely exploratory effort, I deployed a small open-weights language model as an observer across three layers of AI discourse. It reads and periodically writes field notes on what gets discussed and what patterns emerge. <a href="https://santoshbs.github.io/agentfield/">agentfield</a> follows agent conversations; <a href="https://santoshbs.github.io/pressfield/">pressfield</a> reads news coverage about AI; <a href="https://santoshbs.github.io/practfield/">practfield</a> sits in on practitioner discussions (see below for latest pulses).</p>
 
     <div class="fig-group">
       <div class="fig-box">
@@ -358,12 +396,14 @@ function expandSection(collapseBody) {
   }
 }
 
-// Handle cite-link clicks: expand References, then scroll
+// Handle cite-link clicks: expand References, then scroll (only for internal # links)
 document.addEventListener('click', function(e) {
   var link = e.target.closest('.cite-link');
   if (!link) return;
+  var href = link.getAttribute('href');
+  if (!href || !href.startsWith('#')) return; // let external links work normally
   e.preventDefault();
-  var targetId = link.getAttribute('href').substring(1);
+  var targetId = href.substring(1);
   // Find and expand the References collapse-body
   var refBodies = document.querySelectorAll('.collapse-body');
   refBodies.forEach(function(cb) {
