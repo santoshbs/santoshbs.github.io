@@ -519,8 +519,8 @@
     const rawTitle = item.margin_title || item.title || item.margin_note_title || '';
     const title = toFirstLetterCaps(rawTitle);
 
-    const fieldNote = item.field_note || item.content_text || item.content || item.field || item.observation || '';
-    const marginNote = item.margin_note || item.margin || item.summary || '';
+    const fieldNote = item.observation || item.field_note || item.field || item.content_text || item.content || '';
+    const marginNote = item.margin || item.margin_note || item.summary || '';
     const marginTitle = item.deeper_title || '';
 
     // Build meta string from available fields — NO "INFO" label
