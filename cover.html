@@ -152,7 +152,8 @@ a:hover{text-decoration:underline;}
         <a href="https://orcid.org/0000-0002-7792-9622">ORCiD 0000-0002-7792-9622</a><br>
         <a href="https://scholar.google.com/citations?user=w9Fa_v0AAAAJ">Google Scholar</a><br>
         <hr class="info-dotted">
-        <a href="#exploratory">Exploratory Work</a><br>
+        <a href="#currentwork">Current Work</a><br>
+        <a href="#exploratory">Exploratory</a><br>
         <a href="#publications">Publications</a><br>
         <a href="#teaching">Teaching</a><br>
         <a href="#formation">Education &amp; Work</a>
@@ -168,45 +169,32 @@ a:hover{text-decoration:underline;}
 
   <p class="keywords"><span class="keywords-label">Keywords:</span> social evaluations, culture and cognition, entrepreneurship, computational social science</p>
 
-  <div class="sub-heading">Current Work</div>
-  <p class="body-text no-indent">My current work examines how different audiences construct and contest social positions on user-generated platforms, and how individuals adapt their self-presentation when the demographic composition of their field shifts. A parallel stream reconnects with entrepreneurship—how personal histories shape opportunity recognition, how ventures use rhetorical history to craft market positions, and how entrepreneurial rhetoric can function as social critique.</p>
+  <div class="collapse-head" onclick="toggle(this)" id="currentwork">
+    <div class="sub-heading" style="margin-top:1.2rem;">Current Work</div>
+    <span class="tog">+</span>
+  </div>
+  <div class="collapse-body">
+    <p class="body-text no-indent">My current work examines how different audiences construct and contest social positions on user-generated platforms, and how individuals adapt their self-presentation when the demographic composition of their field shifts. A parallel stream reconnects with entrepreneurship—how personal histories shape opportunity recognition, how ventures use rhetorical history to craft market positions, and how entrepreneurial rhetoric can function as social critique.</p>
+  </div>
 
-  <div class="p1-footnote">
-    <hr class="p1-rule">
-    <div class="p1-affil">* Department of Management &amp; Human Resources, HEC Paris, France.</div>
-    <div class="p1-correspond-block">
-      <strong>Correspondence:</strong> <a href="mailto:srinivas@hec.fr">srinivas@hec.fr</a>
+  <div class="collapse-head" onclick="toggle(this)" id="exploratory" style="margin-top:1.5rem;">
+    <div class="sub-heading" style="margin-top:0;">Exploratory</div>
+    <span class="tog">+</span>
+  </div>
+  <div class="collapse-body">
+    <p class="body-text no-indent">I am interested in how the emerging agentic AI economy may reshape the evaluation of competence, worth, and opportunity. I deployed a small open-weights language model as an observer across three layers of AI discourse. It reads, participates, and periodically writes field notes on what gets discussed and what patterns emerge (see below for latest pulses). <a href="https://santoshbs.github.io/agentfield/">agentfield</a> follows agent conversations; <a href="https://santoshbs.github.io/pressfield/">pressfield</a> reads news coverage about AI; <a href="https://santoshbs.github.io/practfield/">practfield</a> sits in on practitioner discussions.</p>
+
+    <div class="fig-group">
+      <div class="fig-box">
+        <div class="fig-entry" id="fig-agent">Loading…</div>
+        <div class="fig-entry" id="fig-press">Loading…</div>
+        <div class="fig-entry" id="fig-pract">Loading…</div>
+      </div>
+      <div class="fig-note"><em>Note.</em> These margin notes are the observer agent's own reflections, not the author's.</div>
     </div>
   </div>
 
-  <!-- ═══════════ PAGE 2 ═══════════ -->
-  <div class="page-break">
-    <div class="page-header">
-      <span class="page-header-num">2</span>
-      <span class="page-header-name" id="hdr2"></span>
-    </div>
-  </div>
-
-  <p class="body-text no-indent" id="exploratory">I am interested in how the emerging agentic AI economy may reshape the evaluation of competence, worth, and opportunity. I deployed a small open-weights language model as an observer across three layers of AI discourse. It reads, participates, and periodically writes field notes on what gets discussed and what patterns emerge (see below for latest pulses). <a href="https://santoshbs.github.io/agentfield/">agentfield</a> follows agent conversations; <a href="https://santoshbs.github.io/pressfield/">pressfield</a> reads news coverage about AI; <a href="https://santoshbs.github.io/practfield/">practfield</a> sits in on practitioner discussions.</p>
-
-  <div class="fig-group">
-    <div class="fig-box">
-      <div class="fig-entry" id="fig-agent">Loading…</div>
-      <div class="fig-entry" id="fig-press">Loading…</div>
-      <div class="fig-entry" id="fig-pract">Loading…</div>
-    </div>
-    <div class="fig-note"><em>Note.</em> These margin notes are the observer agent's own reflections, not the author's.</div>
-  </div>
-
-  <!-- ═══════════ PAGE 3 ═══════════ -->
-  <div class="page-break">
-    <div class="page-header">
-      <span class="page-header-num">3</span>
-      <span class="page-header-name hdr-yr-name"></span>
-    </div>
-  </div>
-
-  <div class="collapse-head" onclick="toggle(this)" id="publications">
+  <div class="collapse-head" onclick="toggle(this)" id="publications" style="margin-top:1.5rem;">
     <div class="section-heading" style="margin-top:0;">Publications</div>
     <span class="tog">+</span>
   </div>
@@ -262,15 +250,7 @@ a:hover{text-decoration:underline;}
 
   </div>
 
-  <!-- ═══════════ PAGE 6 ═══════════ -->
-  <div class="page-break">
-    <div class="page-header">
-      <span class="page-header-num">6</span>
-      <span class="page-header-name hdr-yr-name"></span>
-    </div>
-  </div>
-
-  <div class="collapse-head" onclick="toggle(this)" id="teaching">
+  <div class="collapse-head" onclick="toggle(this)" id="teaching" style="margin-top:1.5rem;">
     <div class="section-heading" style="margin-top:0;">Teaching</div>
     <span class="tog">+</span>
   </div>
@@ -317,14 +297,7 @@ a:hover{text-decoration:underline;}
   </div>
 
   <!-- ═══════════ REFERENCES ═══════════ -->
-  <div class="page-break">
-    <div class="page-header">
-      <span class="page-header-num">7</span>
-      <span class="page-header-name hdr-yr-name"></span>
-    </div>
-  </div>
-
-  <div class="collapse-head" onclick="toggle(this)">
+  <div class="collapse-head" onclick="toggle(this)" style="margin-top:1.5rem;">
     <div class="section-heading" style="margin-top:0;">References</div>
     <span class="tog">+</span>
   </div>
@@ -335,6 +308,15 @@ a:hover{text-decoration:underline;}
     <div class="ref-block"><div class="ref-authors">Rindova, V. P., Martins, L. L., Srinivas, S. B., &amp; Chandler, D.</div><div class="ref-detail">2018. The good, the bad, and the ugly of organizational rankings: A multidisciplinary review. Journal of Management, 44(6), 2175–2208.</div></div>
     <div class="ref-block"><div class="ref-authors">Rindova, V. P., Srinivas, S. B., &amp; Martins, L. L.</div><div class="ref-detail">2022. How to break free: An orders-of-worth perspective on emancipatory entrepreneurship. Research in the Sociology of Organizations.</div></div>
     <div class="ref-block"><div class="ref-authors">Sinha, R., Chiu, C. Y., &amp; Srinivas, S. B.</div><div class="ref-detail">2021. Shared leadership and relationship conflict in teams: The moderating role of team power base diversity. Journal of Organizational Behavior, 42(5), 649–667.</div></div>
+  </div>
+
+  <!-- Correspondence footer at very end -->
+  <div class="p1-footnote" style="margin-top:3rem;">
+    <hr class="p1-rule">
+    <div class="p1-affil">* Department of Management &amp; Human Resources, HEC Paris, France.</div>
+    <div class="p1-correspond-block">
+      <strong>Correspondence:</strong> <a href="mailto:srinivas@hec.fr">srinivas@hec.fr</a>
+    </div>
   </div>
 
 </div>
@@ -352,9 +334,6 @@ function toggle(el) {
 var yr = new Date().getFullYear();
 var ms = ['January','February','March','April','May','June','July','August','September','October','November','December'];
 document.getElementById('infoDate').textContent = ms[new Date().getMonth()] + ' ' + yr;
-var label = 'Srinivas (' + yr + ')';
-document.getElementById('hdr2').textContent = label;
-document.querySelectorAll('.hdr-yr-name').forEach(function(el){ el.textContent = label; });
 
 /* ═══ Feed fetching ═══ */
 function extractSnippet(raw, n) {
