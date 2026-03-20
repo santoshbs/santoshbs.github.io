@@ -30,17 +30,17 @@ a:hover{text-decoration:underline;}
 /* ═══ PAGE 1 ═══ */
 .top-row{display:flex;justify-content:flex-end;padding-bottom:0.8rem;margin-bottom:1.2rem;border-bottom:2px solid #111;}
 .top-photo{width:44px;height:44px;border-radius:50%;object-fit:cover;}
-.title-row{display:flex;justify-content:space-between;align-items:flex-start;gap:2rem;margin-bottom:1.2rem;}
+.title-row{display:flex;justify-content:space-between;align-items:flex-start;gap:2rem;margin-bottom:0.8rem;}
 .title-col{flex:1;min-width:0;}
 .paper-title{font-family:'Source Sans 3',sans-serif;font-size:36px;font-weight:700;color:#111;line-height:1.15;letter-spacing:-0.01em;}
 .info-col{flex-shrink:0;width:190px;}
 .info-text{font-family:'Source Sans 3',sans-serif;font-size:12px;color:#555;line-height:1.6;}
 .info-text a{color:#555;}.info-text a:hover{color:#222;}
 .info-dotted{border:none;border-top:1px dotted #bbb;margin:0.4rem 0;}
-.author-block{margin-bottom:2rem;}
+.author-block{margin-bottom:1.5rem;}
 .author-name{font-family:'Source Sans 3',sans-serif;font-size:18px;font-weight:700;color:#222;}
-.abstract-text{font-size:17px;line-height:1.75;color:#222;text-align:left;margin-bottom:0.8rem;}
-.keywords{font-size:16px;line-height:1.6;color:#222;margin-bottom:1.2rem;}
+.abstract-text{font-size:17px;line-height:1.75;color:#222;text-align:left;margin-bottom:0.5rem;}
+.keywords{font-size:16px;line-height:1.6;color:#222;margin-bottom:0.5rem;}
 .keywords-label{font-weight:700;}
 .body-text{font-size:17px;line-height:1.75;color:#222;text-align:left;text-indent:1.5em;margin-bottom:0;}
 .body-text.no-indent{text-indent:0;}
@@ -51,6 +51,7 @@ a:hover{text-decoration:underline;}
 .collapse-head{
   display:flex;justify-content:space-between;align-items:center;
   cursor:pointer;user-select:none;
+  margin-top:0.8rem;
 }
 .collapse-head:hover .tog{border-color:#111;}
 .tog{
@@ -68,8 +69,8 @@ a:hover{text-decoration:underline;}
 
 /* ═══ HEADINGS ═══ */
 .section-heading{
-  font-family:'Source Sans 3',sans-serif;font-size:20px;font-weight:700;color:#111;
-  margin-bottom:0;margin-top:2rem;text-transform:uppercase;letter-spacing:0.02em;
+  font-family:'Source Sans 3',sans-serif;font-size:20px;font-weight:400;color:#111;
+  margin-bottom:0;margin-top:0;text-transform:uppercase;letter-spacing:0.02em;
 }
 .section-heading:first-child{margin-top:0;}
 
@@ -170,15 +171,15 @@ a:hover{text-decoration:underline;}
   <p class="keywords"><span class="keywords-label">Keywords:</span> social evaluations, culture and cognition, entrepreneurship, computational social science</p>
 
   <div class="collapse-head" onclick="toggle(this)" id="currentwork">
-    <div class="sub-heading" style="margin-top:1.2rem;">Current Work</div>
+    <div class="section-heading">Current Work</div>
     <span class="tog">+</span>
   </div>
   <div class="collapse-body">
     <p class="body-text no-indent">My current work examines how different audiences construct and contest social positions on user-generated platforms, and how individuals adapt their self-presentation when the demographic composition of their field shifts. A parallel stream reconnects with entrepreneurship—how personal histories shape opportunity recognition, how ventures use rhetorical history to craft market positions, and how entrepreneurial rhetoric can function as social critique.</p>
   </div>
 
-  <div class="collapse-head" onclick="toggle(this)" id="exploratory" style="margin-top:1.5rem;">
-    <div class="sub-heading" style="margin-top:0;">Exploratory</div>
+  <div class="collapse-head" onclick="toggle(this)" id="exploratory" >
+    <div class="section-heading">Exploratory</div>
     <span class="tog">+</span>
   </div>
   <div class="collapse-body">
@@ -194,54 +195,54 @@ a:hover{text-decoration:underline;}
     </div>
   </div>
 
-  <div class="collapse-head" onclick="toggle(this)" id="publications" style="margin-top:1.5rem;">
-    <div class="section-heading" style="margin-top:0;">Publications</div>
+  <div class="collapse-head" onclick="toggle(this)" id="publications" >
+    <div class="section-heading" >Publications</div>
     <span class="tog">+</span>
   </div>
   <div class="collapse-body">
 
-    <div class="collapse-head" onclick="toggle(this)" style="margin-top:1.5rem;">
-      <div class="sub-heading" style="margin-top:0;">AI and Computation in the Social Sciences</div>
+    <div class="collapse-head" onclick="toggle(this)" >
+      <div class="sub-heading" >AI and Computation in the Social Sciences</div>
       <span class="tog">+</span>
     </div>
     <div class="collapse-body">
       <p class="body-text no-indent">A forthcoming chapter explores how artificial intelligence is fundamentally reshaping the study of human behavior across psychology and the social sciences (Boyd, Srinivas, Phadke, Wilson, &amp; Pasca, forthcoming). The chapter examines AI's transformative role at multiple levels of analysis—individual, group, and societal—highlighting its capacity to enhance theory, measurement, and practical applications. We emphasize the interdisciplinary nature of AI as a research toolkit, demonstrating how methods from natural language processing to agent-based modeling can be strategically integrated to generate novel insights. While AI presents unprecedented opportunities for analyzing large-scale social dynamics, understanding intergroup communication, and modeling individual differences, it also introduces critical ethical and methodological challenges that require researchers to adopt a thoughtful and transparent approach.</p>
     </div>
 
-    <div class="collapse-head" onclick="toggle(this)" style="margin-top:1.5rem;">
-      <div class="sub-heading" style="margin-top:0;">Cognitive Flexibility as a Multifaceted Construct</div>
+    <div class="collapse-head" onclick="toggle(this)" >
+      <div class="sub-heading" >Cognitive Flexibility as a Multifaceted Construct</div>
       <span class="tog">+</span>
     </div>
     <div class="collapse-body">
       <p class="body-text no-indent">This article addresses the inconsistent use of "cognitive flexibility" across organizational theories: the term has been drawn on by many researchers to denote the explanatory mechanism underlying a broad array of theories, yet its conceptualization remains inconsistent (Patil, Srinivas, Tussing, &amp; Rhee, 2025). To bring clarity, we conduct a comprehensive search of cognitive flexibility constructs, strip away their labels, and use text analysis and manual coding of their descriptions to distinguish among five fluid thought processes: elaborating, dimensionalizing, integrating, juxtaposing, and matching. We further group these processes into three higher-order categories involving the reshaping, contending, and shifting of cognitive structures. Our surveying demonstrates that these processes' substance and implications differ markedly, and we argue that cognitive flexibility may be more appropriately viewed as a multifaceted, rather than monolithic, construct.</p>
     </div>
 
-    <div class="collapse-head" onclick="toggle(this)" style="margin-top:1.5rem;">
-      <div class="sub-heading" style="margin-top:0;">Emancipatory Entrepreneurship and Orders of Worth</div>
+    <div class="collapse-head" onclick="toggle(this)" >
+      <div class="sub-heading" >Emancipatory Entrepreneurship and Orders of Worth</div>
       <span class="tog">+</span>
     </div>
     <div class="collapse-body">
       <p class="body-text no-indent">This book chapter draws on Boltanski and Thévenot's (2006) work on multiple orders of worth to propose that entrepreneurial acts toward emancipation can be guided by different notions of the common good underlying varying conceptions of worth (Rindova, Srinivas, &amp; Martins, 2022). The assumption of wealth creation as the dominant motive underlying entrepreneurial efforts has been challenged in recent work, and researchers have sought to explain a range of entrepreneurial activities in contexts traditionally excluded from entrepreneurship research. We describe how emancipatory entrepreneurship is framed within—and limited by—the dominant market order of worth, and as alternatives, we theorize how the civic and inspired orders point to alternate emancipatory ends and means through which entrepreneurs break free from material and ideological constraints.</p>
     </div>
 
-    <div class="collapse-head" onclick="toggle(this)" style="margin-top:1.5rem;">
-      <div class="sub-heading" style="margin-top:0;">Shared Leadership, Power, and Team Conflict</div>
+    <div class="collapse-head" onclick="toggle(this)" >
+      <div class="sub-heading" >Shared Leadership, Power, and Team Conflict</div>
       <span class="tog">+</span>
     </div>
     <div class="collapse-body">
       <p class="body-text no-indent">This article examines shared leadership, which is believed to be beneficial for team effectiveness, yet recent empirical evidence shows that it may not always bring positive effects (Sinha, Chiu, &amp; Srinivas, 2021). Drawing on dominance complementarity theory, we suggest that team power base diversity—the variety in power bases among team members from which they derive their informal influence—is an important contingency that moderates the impact of shared leadership on relationship conflict. Studying 70 project-based teams, we find that at high levels of team power base diversity, shared leadership has a positive downstream effect on team performance through reduced relationship conflict.</p>
     </div>
 
-    <div class="collapse-head" onclick="toggle(this)" style="margin-top:1.5rem;">
-      <div class="sub-heading" style="margin-top:0;">Organizational Rankings: A Multidisciplinary Review</div>
+    <div class="collapse-head" onclick="toggle(this)" >
+      <div class="sub-heading" >Organizational Rankings: A Multidisciplinary Review</div>
       <span class="tog">+</span>
     </div>
     <div class="collapse-body">
       <p class="body-text no-indent">This article reviews the literature on organizational rankings across management, sociology, education, and law, revealing three perspectives on these complex evaluations (Rindova, Martins, Srinivas, &amp; Chandler, 2018). Rankings are seen as a form of information intermediation, as comparative orderings, or as a means for surveillance and control. The information intermediation perspective views rankings as information products that address asymmetries between ranked organizations and their stakeholders; the comparative orderings perspective views them as representations of status and reputation; and the surveillance perspective emphasizes their disciplining power. We also identify a new perspective—rankings entrepreneurship—which presents significant opportunities to extend our understanding of how rankings are produced and consumed.</p>
     </div>
 
-    <div class="collapse-head" onclick="toggle(this)" style="margin-top:1.5rem;">
-      <div class="sub-heading" style="margin-top:0;">Managing Meaning and Culture in Organizations</div>
+    <div class="collapse-head" onclick="toggle(this)" >
+      <div class="sub-heading" >Managing Meaning and Culture in Organizations</div>
       <span class="tog">+</span>
     </div>
     <div class="collapse-body">
@@ -250,8 +251,8 @@ a:hover{text-decoration:underline;}
 
   </div>
 
-  <div class="collapse-head" onclick="toggle(this)" id="teaching" style="margin-top:1.5rem;">
-    <div class="section-heading" style="margin-top:0;">Teaching</div>
+  <div class="collapse-head" onclick="toggle(this)" id="teaching" >
+    <div class="section-heading" >Teaching</div>
     <span class="tog">+</span>
   </div>
   <div class="collapse-body">
@@ -276,7 +277,7 @@ a:hover{text-decoration:underline;}
   </div>
 
   <div class="collapse-head" onclick="toggle(this)" id="formation">
-    <div class="section-heading" style="margin-top:2rem;">Education &amp; Work</div>
+    <div class="section-heading" >Education &amp; Work</div>
     <span class="tog">+</span>
   </div>
   <div class="collapse-body">
@@ -297,8 +298,8 @@ a:hover{text-decoration:underline;}
   </div>
 
   <!-- ═══════════ REFERENCES ═══════════ -->
-  <div class="collapse-head" onclick="toggle(this)" style="margin-top:1.5rem;">
-    <div class="section-heading" style="margin-top:0;">References</div>
+  <div class="collapse-head" onclick="toggle(this)" >
+    <div class="section-heading" >References</div>
     <span class="tog">+</span>
   </div>
   <div class="collapse-body">
