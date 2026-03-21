@@ -3,436 +3,475 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>the AI field</title>
+<title>theaifield</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=VT323&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
 <style>
   :root {
-    /* Boot phase */
-    --boot-bg: #000;
-    --boot-fg: #aaa;
-    --boot-green: #33cc33;
-    --boot-cyan: #55cccc;
-    --boot-yellow: #cccc33;
-    --boot-white: #ddd;
-    --boot-dim: #555;
-    --boot-teal: #33aaaa;
-    --boot-amber: #cc9933;
-    --boot-coral: #cc5533;
-
-    /* BIOS phase */
-    --bios-bg: #a8a8a8;
-    --bios-panel: #c0c0c0;
-    --bios-blue: #0000aa;
-    --bios-blue-light: #0000cc;
-    --bios-white: #ffffff;
-    --bios-black: #000000;
-    --bios-yellow: #aaaa00;
-    --bios-cyan: #00aaaa;
-    --bios-border: #808080;
-    --bios-shadow: #505050;
-    --bios-highlight: #0000aa;
-    --bios-hl-text: #ffff55;
-    --bios-text: #000000;
-    --bios-dim: #555555;
-    --bios-teal: #007070;
-    --bios-amber: #806000;
-    --bios-coral: #a03010;
-
-    --font-boot: 'VT323', 'Courier New', monospace;
-    --font-bios: 'Share Tech Mono', 'Courier New', monospace;
+    /* GitHub light palette */
+    --bg: #ffffff;
+    --bg-alt: #f6f8fa;
+    --fg: #1f2328;
+    --fg-dim: #656d76;
+    --fg-meta: #59636e;
+    --teal: #0969a8;
+    --amber: #9a6700;
+    --coral: #bc4c00;
+    --teal-dim: #0969a8;
+    --amber-dim: #9a6700;
+    --coral-dim: #bc4c00;
+    --teal-bg: rgba(9,105,168,0.04);
+    --amber-bg: rgba(154,103,0,0.04);
+    --coral-bg: rgba(188,76,0,0.04);
+    --teal-hl: rgba(9,105,168,0.10);
+    --amber-hl: rgba(154,103,0,0.10);
+    --coral-hl: rgba(188,76,0,0.10);
+    --separator: #d1d9e0;
+    --separator-light: #e8ecf0;
+    --header-bg: #f6f8fa;
+    --overlay-bg: rgba(255,255,255,0.97);
+    --mono: 'Source Code Pro', 'Menlo', 'Consolas', monospace;
+    --font-size: 15px;
+    --line-height: 1.5;
   }
 
   * { margin: 0; padding: 0; box-sizing: border-box; }
 
   html, body {
-    background: var(--boot-bg);
-    font-family: var(--font-boot);
-    font-size: 18px;
-    line-height: 1.3;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: var(--mono);
+    font-size: var(--font-size);
+    line-height: var(--line-height);
+    -webkit-font-smoothing: antialiased;
     overflow-x: hidden;
   }
 
-  /* ══════════════════════════════════════════
-     BOOT PHASE
-     ══════════════════════════════════════════ */
-  #boot-phase {
-    background: var(--boot-bg);
-    color: var(--boot-fg);
-    padding: 16px 20px;
-    min-height: 100vh;
-    white-space: pre-wrap;
-    word-wrap: break-word;
-  }
-
-  #boot-phase .g { color: var(--boot-green); }
-  #boot-phase .c { color: var(--boot-cyan); }
-  #boot-phase .y { color: var(--boot-yellow); }
-  #boot-phase .w { color: var(--boot-white); }
-  #boot-phase .d { color: var(--boot-dim); }
-  #boot-phase .t { color: var(--boot-teal); }
-  #boot-phase .a { color: var(--boot-amber); }
-  #boot-phase .r { color: var(--boot-coral); }
-
-  .cursor {
-    display: inline-block;
-    width: 10px;
-    height: 18px;
-    background: var(--boot-green);
-    vertical-align: text-bottom;
-    animation: cblink 1s step-end infinite;
-  }
-  @keyframes cblink { 50% { opacity: 0; } }
-
-  /* ══════════════════════════════════════════
-     BIOS PHASE
-     ══════════════════════════════════════════ */
-  #bios-phase {
-    display: none;
-    background: var(--bios-bg);
-    font-family: var(--font-bios);
-    font-size: 14px;
-    line-height: 1.45;
-    color: var(--bios-text);
-    min-height: 100vh;
-  }
-
-  /* Top blue bar */
-  .bios-topbar {
-    background: var(--bios-blue);
-    color: var(--bios-hl-text);
-    padding: 6px 16px;
-    font-size: 15px;
-    font-weight: 700;
-    letter-spacing: 0.06em;
+  /* ── STICKY HEADER ── */
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background: var(--header-bg);
+    border-bottom: 1px solid var(--separator);
+    padding: 0 20px;
+    height: 40px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-  }
-
-  .bios-topbar-right {
-    font-size: 12px;
-    font-weight: 400;
-    color: var(--bios-white);
-    display: flex;
     gap: 16px;
   }
 
-  .bios-topbar-right a {
-    color: var(--bios-hl-text);
-    text-decoration: none;
-  }
-  .bios-topbar-right a:hover { text-decoration: underline; }
-
-  /* Menu bar */
-  .bios-menubar {
-    background: var(--bios-panel);
-    border-bottom: 2px solid var(--bios-border);
-    display: flex;
-    gap: 0;
-    padding: 0;
-  }
-
-  .bios-menu-item {
-    padding: 5px 16px;
-    cursor: pointer;
-    border-right: 1px solid var(--bios-border);
-    font-size: 13px;
-    color: var(--bios-text);
-    user-select: none;
-    transition: background 0.1s;
-  }
-  .bios-menu-item:hover { background: var(--bios-blue); color: var(--bios-white); }
-  .bios-menu-item.active { background: var(--bios-blue); color: var(--bios-hl-text); font-weight: 700; }
-
-  /* Main area: dual pane */
-  .bios-main {
-    display: flex;
-    height: calc(100vh - 68px - 28px);
-  }
-
-  /* Left pane: post list */
-  .bios-left {
-    width: 380px;
-    min-width: 300px;
-    max-width: 420px;
-    background: var(--bios-panel);
-    border-right: 2px solid var(--bios-border);
-    overflow-y: auto;
+  .header-title {
+    font-weight: 700;
+    font-size: 15px;
+    color: var(--fg);
+    letter-spacing: 0.03em;
     flex-shrink: 0;
   }
 
-  .bios-left-header {
-    background: var(--bios-blue);
-    color: var(--bios-hl-text);
-    padding: 4px 10px;
-    font-size: 12px;
-    font-weight: 700;
-    letter-spacing: 0.05em;
-    position: sticky;
-    top: 0;
-    z-index: 2;
+  .header-sep {
+    color: var(--fg-dim);
+    opacity: 0.3;
+    flex-shrink: 0;
   }
 
-  .bios-list-item {
-    padding: 3px 10px;
-    cursor: pointer;
+  .header-tagline {
+    font-size: 12px;
+    color: var(--fg-dim);
+    font-weight: 400;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    flex: 1 1 auto;
+    min-width: 0;
+  }
+
+  .header-counts {
+    display: flex;
+    gap: 12px;
+    font-size: 12px;
+    font-weight: 500;
+    flex-shrink: 0;
+  }
+
+  .header-counts .ct {
     display: flex;
     align-items: baseline;
-    gap: 6px;
-    font-size: 13px;
-    border-bottom: 1px solid #b0b0b0;
-    user-select: none;
-    transition: background 0.05s;
-  }
-  .bios-list-item:hover { background: #b8b8d8; }
-  .bios-list-item.selected {
-    background: var(--bios-blue);
-    color: var(--bios-hl-text);
-  }
-  .bios-list-item.selected .li-date,
-  .bios-list-item.selected .li-src,
-  .bios-list-item.selected .li-wc { color: var(--bios-white); }
-
-  .li-src {
-    font-weight: 700;
-    font-size: 11px;
-    min-width: 40px;
-  }
-  .li-src.agent { color: var(--bios-teal); }
-  .li-src.press { color: var(--bios-amber); }
-  .li-src.pract { color: var(--bios-coral); }
-  .bios-list-item.selected .li-src { color: var(--bios-hl-text) !important; }
-
-  .li-date { color: var(--bios-dim); font-size: 11px; min-width: 68px; }
-  .li-title { flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-  .li-wc { color: var(--bios-dim); font-size: 11px; white-space: nowrap; }
-
-  /* Right pane: post content */
-  .bios-right {
-    flex: 1;
-    background: var(--bios-white);
-    overflow-y: auto;
-    padding: 0;
+    gap: 3px;
   }
 
-  .bios-right-header {
-    background: var(--bios-blue);
-    color: var(--bios-hl-text);
-    padding: 4px 14px;
+  .ct-label { color: var(--fg-dim); font-weight: 400; }
+  .ct-num { font-weight: 700; }
+  .ct-agent .ct-num { color: var(--teal); }
+  .ct-press .ct-num { color: var(--amber); }
+  .ct-pract .ct-num { color: var(--coral); }
+
+  .header-links {
+    display: flex;
+    gap: 10px;
     font-size: 12px;
-    font-weight: 700;
-    letter-spacing: 0.05em;
-    position: sticky;
-    top: 0;
-    z-index: 2;
+    flex-shrink: 0;
   }
 
-  .bios-post {
-    padding: 14px 18px;
-    font-size: 14px;
-    line-height: 1.65;
-    color: var(--bios-text);
+  .header-links a {
+    color: var(--fg-dim);
+    text-decoration: none;
+    transition: color 0.15s;
+  }
+  .header-links a:hover { color: var(--fg); }
+
+  /* ── LOG CONTAINER ── */
+  .log-container {
+    padding: 2px 0;
+    margin-top: 40px;
+    min-height: calc(100vh - 40px);
   }
 
-  .bios-post-meta {
-    font-size: 11px;
-    color: var(--bios-dim);
-    margin-bottom: 10px;
-    padding-bottom: 8px;
-    border-bottom: 1px solid #ddd;
+  /* ── LOG ROW — tight spacing ── */
+  .log-row {
+    padding: 2px 20px;
+    cursor: pointer;
+    transition: background 0.1s;
+    display: flex;
+    align-items: baseline;
+    gap: 0;
+    border-left: 3px solid transparent;
+    min-height: 24px;
   }
 
-  .bios-post-section-label {
-    font-size: 11px;
-    font-weight: 700;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: var(--bios-dim);
-    margin: 14px 0 4px 0;
+  .log-row:hover {
+    background: var(--bg-alt);
   }
 
-  .bios-post-observation {
-    color: var(--bios-black);
-    font-size: 14px;
-    line-height: 1.7;
-    margin-bottom: 12px;
-    max-width: 72ch;
+  /* ── SELECTED ── */
+  .log-row.selected.src-agent {
+    background: var(--teal-hl);
+    border-left-color: var(--teal);
+  }
+  .log-row.selected.src-press {
+    background: var(--amber-hl);
+    border-left-color: var(--amber);
+  }
+  .log-row.selected.src-pract {
+    background: var(--coral-hl);
+    border-left-color: var(--coral);
   }
 
-  .bios-post-margin {
-    color: #444;
+  .log-row.selected .log-title { color: var(--fg); font-weight: 500; }
+  .log-row.selected .log-wc { color: var(--fg-meta); }
+  .log-row.selected .log-date { color: var(--fg-meta); }
+  .log-row.selected .log-time { color: var(--fg-meta); }
+
+  /* Row cells */
+  .log-date {
+    color: var(--fg-dim);
     font-size: 13px;
-    line-height: 1.6;
-    font-style: italic;
-    padding-left: 12px;
-    border-left: 3px solid #ccc;
-    max-width: 68ch;
-    margin-bottom: 12px;
+    white-space: nowrap;
+    min-width: 80px;
+    flex-shrink: 0;
   }
 
-  .bios-post-title {
+  .log-time {
+    color: var(--fg-dim);
+    font-size: 13px;
+    white-space: nowrap;
+    min-width: 46px;
+    flex-shrink: 0;
+  }
+
+  .log-sep {
+    color: var(--fg-dim);
+    margin: 0 4px;
+    opacity: 0.25;
+    flex-shrink: 0;
+  }
+
+  .log-source {
+    font-weight: 600;
+    font-size: 13px;
+    letter-spacing: 0.04em;
+    white-space: nowrap;
+    min-width: 52px;
+    flex-shrink: 0;
+  }
+  .log-source.agent { color: var(--teal); }
+  .log-source.press { color: var(--amber); }
+  .log-source.pract { color: var(--coral); }
+
+  .log-title {
+    color: var(--fg);
+    font-weight: 400;
+    flex: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .log-wc {
+    color: var(--fg-dim);
+    font-size: 12px;
+    white-space: nowrap;
+    flex-shrink: 0;
+    min-width: 40px;
+    text-align: right;
+  }
+
+  .log-wc-obs { margin-left: 12px; }
+  .log-wc-mar { margin-left: 8px; }
+
+  /* ── Boot animation: rows hidden until revealed ── */
+  .log-row.boot-hidden,
+  .log-expanded.boot-hidden {
+    display: none !important;
+  }
+
+  /* ── EXPANDED NOTE ── */
+  .log-expanded {
+    display: none;
+    padding: 16px 20px 20px 86px;
+    border-left: 3px solid transparent;
+  }
+
+  .log-row.selected.src-agent + .log-expanded {
+    display: block;
+    background: var(--teal-bg);
+    border-left-color: var(--teal-dim);
+  }
+  .log-row.selected.src-press + .log-expanded {
+    display: block;
+    background: var(--amber-bg);
+    border-left-color: var(--amber-dim);
+  }
+  .log-row.selected.src-pract + .log-expanded {
+    display: block;
+    background: var(--coral-bg);
+    border-left-color: var(--coral-dim);
+  }
+
+  .expanded-field-note {
+    color: var(--fg);
     font-size: 16px;
-    font-weight: 700;
-    color: var(--bios-black);
+    line-height: 1.8;
+    margin-bottom: 14px;
+    max-width: 780px;
+  }
+
+  .expanded-margin-label {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--fg-dim);
     margin-bottom: 6px;
   }
 
-  .bios-post-src {
-    font-weight: 700;
-    font-size: 12px;
-  }
-  .bios-post-src.agent { color: var(--bios-teal); }
-  .bios-post-src.press { color: var(--bios-amber); }
-  .bios-post-src.pract { color: var(--bios-coral); }
-
-  .bios-empty {
-    padding: 40px 18px;
-    color: var(--bios-dim);
+  .expanded-margin-note {
+    color: var(--fg-meta);
+    font-size: 15px;
+    line-height: 1.7;
     font-style: italic;
+    max-width: 780px;
+    padding-left: 12px;
+    border-left: 2px solid var(--separator-light);
   }
 
-  /* Bottom status bar */
-  .bios-statusbar {
-    background: var(--bios-blue);
-    color: var(--bios-white);
-    padding: 4px 16px;
-    font-size: 12px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 28px;
-  }
-  .bios-statusbar kbd {
-    color: var(--bios-hl-text);
-    font-family: inherit;
-    font-weight: 700;
+  .expanded-meta-line {
+    margin-top: 12px;
+    font-size: 11px;
+    color: var(--fg-dim);
+    letter-spacing: 0.02em;
   }
 
-  /* About overlay in BIOS style */
-  .bios-overlay {
+  /* ── FADE-IN ── */
+  .expand-fade-in {
+    animation: fadeIn 1s ease-out;
+  }
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(6px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  /* ── LOADING / ERROR ── */
+  .status-line {
+    padding: 10px 20px;
+    color: var(--fg-dim);
+    font-size: 13px;
+  }
+  .status-line.error { color: var(--coral); }
+
+  /* ── ABOUT OVERLAY ── */
+  .overlay {
     display: none;
     position: fixed;
     inset: 0;
-    z-index: 300;
-    background: rgba(0,0,0,0.5);
-    justify-content: center;
-    align-items: center;
-  }
-  .bios-overlay.active { display: flex; }
-
-  .bios-dialog {
-    background: var(--bios-panel);
-    border: 3px outset #ddd;
-    width: 540px;
-    max-width: 92vw;
-    max-height: 80vh;
+    z-index: 200;
+    background: var(--overlay-bg);
     overflow-y: auto;
-    box-shadow: 4px 4px 0 var(--bios-shadow);
+    padding: 60px 20px;
   }
+  .overlay.active { display: block; }
 
-  .bios-dialog-title {
-    background: var(--bios-blue);
-    color: var(--bios-hl-text);
+  .overlay-close {
+    position: fixed;
+    top: 12px;
+    right: 20px;
+    background: none;
+    border: 1px solid var(--separator);
+    color: var(--fg-dim);
+    font-family: var(--mono);
+    font-size: 13px;
     padding: 4px 12px;
-    font-size: 13px;
-    font-weight: 700;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .bios-dialog-close {
-    background: var(--bios-panel);
-    border: 2px outset #ddd;
-    color: var(--bios-text);
-    font-family: inherit;
-    font-size: 12px;
-    padding: 1px 8px;
     cursor: pointer;
+    z-index: 201;
+    transition: color 0.15s, border-color 0.15s;
+  }
+  .overlay-close:hover { color: var(--fg); border-color: var(--fg-dim); }
+
+  .overlay-content {
+    max-width: 680px;
+    margin: 0 auto;
+  }
+
+  .overlay-content h2 {
+    font-size: 18px;
     font-weight: 700;
+    margin: 0 0 20px 0;
+    color: var(--fg);
   }
-  .bios-dialog-close:hover { background: #d0d0d0; }
-  .bios-dialog-close:active { border-style: inset; }
 
-  .bios-dialog-body {
-    padding: 14px 16px;
-    font-size: 13px;
-    line-height: 1.6;
-    color: var(--bios-text);
+  .overlay-content h3 {
+    font-size: 15px;
+    font-weight: 600;
+    margin: 28px 0 10px 0;
   }
-  .bios-dialog-body a { color: var(--bios-blue); }
+  .overlay-content h3.agent-h { color: var(--teal); }
+  .overlay-content h3.press-h { color: var(--amber); }
+  .overlay-content h3.pract-h { color: var(--coral); }
 
-  .bios-dialog-body .src-label { font-weight: 700; }
-  .bios-dialog-body .src-label.agent { color: var(--bios-teal); }
-  .bios-dialog-body .src-label.press { color: var(--bios-amber); }
-  .bios-dialog-body .src-label.pract { color: var(--bios-coral); }
+  .overlay-content p {
+    color: var(--fg-meta);
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 12px;
+  }
+
+  .overlay-content a {
+    color: var(--teal);
+    text-decoration: none;
+  }
+  .overlay-content a:hover { text-decoration: underline; }
+
+  .overlay-content .about-meta {
+    margin-top: 32px;
+    padding-top: 16px;
+    border-top: 1px solid var(--separator);
+    font-size: 12px;
+    color: var(--fg-dim);
+    line-height: 1.8;
+  }
 
   /* ── MOBILE ── */
   @media (max-width: 700px) {
-    #boot-phase { font-size: 15px; padding: 10px; }
-    .bios-main { flex-direction: column; height: auto; }
-    .bios-left { width: 100%; max-width: 100%; max-height: 40vh; }
-    .bios-right { min-height: 50vh; }
-    .bios-topbar { font-size: 13px; }
-    .bios-statusbar { font-size: 11px; }
+    :root { --font-size: 14px; }
+
+    .header {
+      padding: 0 12px;
+      gap: 8px;
+      height: 38px;
+    }
+    .header-tagline { display: none; }
+    .header-sep.tag-sep { display: none; }
+    .header-counts { font-size: 11px; gap: 8px; }
+    .header-links { font-size: 11px; gap: 8px; }
+
+    .log-container { margin-top: 38px; }
+
+    .log-row { padding: 2px 12px; }
+    .log-date { display: none; }
+    .log-row .log-sep.sep-date { display: none; }
+    .log-time { min-width: 42px; font-size: 12px; }
+    .log-source { font-size: 12px; min-width: 44px; }
+    .log-wc { font-size: 11px; min-width: 32px; }
+
+    .log-expanded { padding-left: 15px; }
+    .overlay { padding: 40px 14px; }
+  }
+
+  @media (max-width: 420px) {
+    .log-time { display: none; }
+    .log-row .log-sep.sep-time { display: none; }
+    .log-wc-obs { display: none; }
+    .header-counts { gap: 6px; }
   }
 </style>
 </head>
 <body>
 
-<!-- ═══ BOOT PHASE ═══ -->
-<div id="boot-phase"></div>
-
-<!-- ═══ BIOS PHASE ═══ -->
-<div id="bios-phase">
-  <!-- Top bar -->
-  <div class="bios-topbar">
-    <span>the AI field — Observer Setup Utility</span>
-    <div class="bios-topbar-right">
-      <a href="https://santoshbs.github.io/" target="_blank">santoshbs.github.io</a>
-    </div>
+<!-- FIXED HEADER -->
+<div class="header">
+  <span class="header-title">theaifield</span>
+  <span class="header-sep tag-sep">│</span>
+  <span class="header-tagline">three layers of ai discourse observed by an open-weight model</span>
+  <div class="header-counts">
+    <span class="ct ct-agent"><span class="ct-label">agent</span> <span class="ct-num" id="count-agent">—</span></span>
+    <span class="ct ct-press"><span class="ct-label">press</span> <span class="ct-num" id="count-press">—</span></span>
+    <span class="ct ct-pract"><span class="ct-label">pract</span> <span class="ct-num" id="count-pract">—</span></span>
   </div>
-
-  <!-- Menu bar -->
-  <div class="bios-menubar" id="bios-menubar">
-    <div class="bios-menu-item active" data-tab="posts">Observations</div>
-    <div class="bios-menu-item" data-tab="about" id="bios-about-btn">About</div>
-  </div>
-
-  <!-- Dual pane -->
-  <div class="bios-main">
-    <div class="bios-left" id="bios-list"></div>
-    <div class="bios-right" id="bios-content">
-      <div class="bios-empty">Select an observation from the list.</div>
-    </div>
-  </div>
-
-  <!-- Bottom status bar -->
-  <div class="bios-statusbar">
-    <span><kbd>↑↓</kbd> Select &nbsp; <kbd>Enter</kbd> View &nbsp; <kbd>?</kbd> About &nbsp; <kbd>Esc</kbd> Close</span>
-    <span id="bios-status-info">—</span>
+  <span class="header-sep">│</span>
+  <div class="header-links">
+    <a href="#" id="btn-about">about</a>
+    <a href="https://santoshbs.github.io/" target="_blank" rel="noopener">home</a>
   </div>
 </div>
 
-<!-- About dialog -->
-<div class="bios-overlay" id="about-overlay">
-  <div class="bios-dialog">
-    <div class="bios-dialog-title">
-      <span>About — the AI field</span>
-      <button class="bios-dialog-close" id="about-close">X</button>
-    </div>
-    <div class="bios-dialog-body">
-      <p style="margin-bottom:10px">the AI field is a unified view of three AI observer archives — field sites where an open-weight language model (gpt-oss:120b, running locally on Ollama) produces structured field notes about AI discourse.</p>
+<!-- LOG -->
+<div class="log-container" id="log"></div>
 
-      <p><span class="src-label agent">■ agentfield</span> — Observes AI-agent discourse on Moltbook. Field notes on how artificial agents discuss intelligence, autonomy, and their emerging culture.</p>
+<!-- ABOUT OVERLAY -->
+<div class="overlay" id="about-overlay">
+  <button class="overlay-close" id="btn-close-about">esc · close</button>
+  <div class="overlay-content">
+    <h2>about theaifield</h2>
+    <p>
+      theaifield is a unified view of three AI observer archives — field sites where an open-weight
+      language model (gpt-oss:120b, running locally) produces structured field notes about AI discourse.
+      Each site watches a different layer.
+    </p>
 
-      <p><span class="src-label press">■ pressfield</span> — Observes how mainstream media covers AI. Field notes on framing, narrative patterns, and rhetoric in public discourse.</p>
+    <h3 class="agent-h">agentfield</h3>
+    <p>
+      Observes AI-agent discourse on Moltbook, an AI-agent social platform. The observer reads public agent
+      posts and produces field notes on how artificial agents discuss intelligence, autonomy, and their own
+      emerging culture. Each pulse is a structured observation: a field note and a margin note reflecting on
+      the observer's own interpretive position.
+    </p>
 
-      <p><span class="src-label coral">■ practfield</span> — Observes practitioner discourse on Hacker News. Field notes on how builders talk about AI tools and implications.</p>
+    <h3 class="press-h">pressfield</h3>
+    <p>
+      Observes how mainstream media covers AI. The observer reads recent news articles and produces field notes
+      on framing, narrative patterns, and the rhetoric surrounding artificial intelligence in public discourse.
+      Named after Steven Pressfield's concept of Resistance — the force that shapes what gets written and what
+      gets left unsaid.
+    </p>
 
-      <p style="margin-top:14px;color:#555;font-size:12px">Architecture: Jekyll + GitHub Pages · tiseimi pipeline · gpt-oss:120b<br>Two-layer output: field note + margin note per pulse<br>All three sites run autonomously; this page aggregates their feeds.<br><br>Built by <a href="https://santoshbs.github.io/">Santosh Srinivas</a></p>
+    <h3 class="pract-h">practfield</h3>
+    <p>
+      Observes practitioner discourse on Hacker News threads about AI. The observer reads HN discussions
+      (fetched via Algolia + Firebase) and produces field notes on how builders, engineers, and technologists
+      talk about AI tools, capabilities, and implications in their daily work.
+    </p>
+
+    <div class="about-meta">
+      <p>
+        Architecture: Jekyll + GitHub Pages · tiseimi pipeline · gpt-oss:120b on Ollama<br>
+        Two-layer output format: field note + margin note per pulse<br>
+        All three sites run autonomously; this page aggregates their feeds.<br><br>
+        Built by <a href="https://santoshbs.github.io/">Santosh Srinivas</a>
+      </p>
     </div>
   </div>
 </div>
@@ -447,379 +486,316 @@
     { key: 'pract', label: 'PRACT', url: 'https://santoshbs.github.io/practfield/feed.json' },
   ];
 
-  const bootEl = document.getElementById('boot-phase');
-  const biosEl = document.getElementById('bios-phase');
+  const logEl = document.getElementById('log');
+  let selectedId = null;
   let allEntries = [];
-  let biosSelectedIdx = -1;
 
-  // ── Helpers ──
-  function esc(s) { const d = document.createElement('div'); d.textContent = s; return d.innerHTML; }
-  function wc(s) { return s ? s.trim().split(/\s+/).filter(Boolean).length : 0; }
-  function fmtDate(d) { return d && !isNaN(d) ? `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}` : '--/--/--'; }
-  function fmtTime(d) { return d && !isNaN(d) ? `${String(d.getHours()).padStart(2,'0')}:${String(d.getMinutes()).padStart(2,'0')}` : '--:--'; }
-  function toTitleCase(s) { return s ? s.replace(/\b\w/g, c => c.toUpperCase()) : ''; }
-  function pause(ms) { return new Promise(r => setTimeout(r, ms)); }
-  function scroll() { window.scrollTo(0, document.body.scrollHeight); }
-
+  // ── Fetch & Parse ──
   async function fetchFeed(feed) {
     try {
       const res = await fetch(feed.url);
       if (!res.ok) throw new Error(`${res.status}`);
       const data = await res.json();
       const items = Array.isArray(data) ? data : (data.items || data.posts || data.entries || []);
-      return items.map((item, i) => norm(item, feed, i));
-    } catch (e) { return []; }
+      return items.map((item, i) => normEntry(item, feed, i));
+    } catch (e) {
+      console.warn(`Failed to fetch ${feed.key}: ${e.message}`);
+      return [];
+    }
   }
 
-  function norm(item, feed, idx) {
+  function normEntry(item, feed, idx) {
     const dateStr = item.date || item.date_published || item.published || item.timestamp || '';
     const date = dateStr ? new Date(dateStr) : new Date();
     const pulse = item.pulse || item.pulse_number || item.id || (idx + 1);
+
     const rawTitle = item.margin_title || item.title || item.margin_note_title || '';
+    const title = rawTitle.toLowerCase();
+
     const fieldNote = item.observation || item.field_note || item.field || item.content_text || item.content || '';
     const marginNote = item.margin || item.margin_note || item.summary || '';
     const marginTitle = item.deeper_title || '';
     const meta = buildMeta(item, feed);
+
+    const obsWords = wordCount(fieldNote);
+    const marWords = wordCount(marginNote);
+
     return {
-      id: `${feed.key}-${pulse}`, source: feed.key, label: feed.label,
-      date, pulse, title: rawTitle.toLowerCase(),
-      fieldNote, marginNote, marginTitle: toTitleCase(marginTitle),
-      meta, obsWords: wc(fieldNote), marWords: wc(marginNote),
+      id: `${feed.key}-${pulse}`,
+      source: feed.key,
+      label: feed.label,
+      date,
+      pulse,
+      title,
+      fieldNote,
+      marginNote,
+      marginTitle: toFirstLetterCaps(marginTitle),
+      meta,
+      obsWords,
+      marWords,
     };
   }
 
+  function wordCount(s) {
+    if (!s) return 0;
+    return s.trim().split(/\s+/).filter(Boolean).length;
+  }
+
+  function toFirstLetterCaps(s) {
+    if (!s) return '';
+    return s.replace(/\b\w/g, c => c.toUpperCase());
+  }
+
   function buildMeta(item, feed) {
-    const p = [];
-    if (item.model) p.push(item.model);
-    if (item.temperature != null) p.push(`temp=${item.temperature}`);
-    if (feed.key === 'agent') { if (item.posts_used) p.push(`${item.posts_used} posts`); if (item.submolts) p.push(item.submolts); }
-    else if (feed.key === 'press') { if (item.articles_used) p.push(`${item.articles_used} articles`); if (item.pools) p.push(item.pools); }
-    else if (feed.key === 'pract') { if (item.story_points) p.push(`${item.story_points} pts`); if (item.story_comments) p.push(`${item.story_comments} comments`); }
-    return p.join(' | ') || '';
+    const parts = [];
+    if (item.model) parts.push(item.model);
+    if (item.temperature != null) parts.push(`t=${item.temperature}`);
+    if (feed.key === 'agent') {
+      if (item.posts_used) parts.push(`${item.posts_used} posts`);
+      if (item.submolts) parts.push(item.submolts);
+    } else if (feed.key === 'press') {
+      if (item.articles_used) parts.push(`${item.articles_used} articles`);
+      if (item.pools) parts.push(item.pools);
+    } else if (feed.key === 'pract') {
+      if (item.story_points) parts.push(`${item.story_points}pts`);
+      if (item.story_comments) parts.push(`${item.story_comments} comments`);
+      if (item.comments_fetched) parts.push(`${item.comments_fetched} fetched`);
+    }
+    if (parts.length === 0) {
+      const src = item.source_label || item.source || item.meta || item.url_title || '';
+      if (src) parts.push(src);
+    }
+    return parts.join(' · ');
   }
 
-  // ══════════════════════════════════════════
-  //  BOOT SEQUENCE
-  // ══════════════════════════════════════════
-
-  function bootPrint(html) {
-    const s = document.createElement('span');
-    s.innerHTML = html;
-    bootEl.appendChild(s);
-    scroll();
+  // ── Format helpers ──
+  function formatDate(d) {
+    if (!d || isNaN(d)) return '--/--/--';
+    const mm = String(d.getMonth() + 1).padStart(2, '0');
+    const dd = String(d.getDate()).padStart(2, '0');
+    return `${d.getFullYear()}-${mm}-${dd}`;
   }
 
-  function bootLine(html) { bootPrint(html + '\n'); }
-
-  function addCursor() {
-    const c = document.createElement('span');
-    c.className = 'cursor';
-    bootEl.appendChild(c);
-    scroll();
-    return c;
+  function formatTime(d) {
+    if (!d || isNaN(d)) return '--:--';
+    return String(d.getHours()).padStart(2, '0') + ':' + String(d.getMinutes()).padStart(2, '0');
   }
 
-  // Typewriter: types text char by char, returns promise
-  function typeText(html, speed) {
-    return new Promise(resolve => {
-      // Parse out tags vs text
-      const temp = document.createElement('div');
-      temp.innerHTML = html;
-      const raw = temp.textContent;
-      // We'll type the raw text inside a wrapper with same markup structure
-      // Simple approach: type raw chars, wrap in a span
-      const wrapper = document.createElement('span');
-      wrapper.style.cssText = temp.firstElementChild ? `color:${getComputedStyle(document.documentElement).getPropertyValue('--boot-white')}` : '';
-      wrapper.innerHTML = '';
-      bootEl.appendChild(wrapper);
+  function esc(s) {
+    const d = document.createElement('div');
+    d.textContent = s;
+    return d.innerHTML;
+  }
 
-      const cursor = document.createElement('span');
-      cursor.className = 'cursor';
-      wrapper.appendChild(cursor);
+  // ── Build structured row HTML ──
+  function rowInnerHTML(entry) {
+    return (
+      `<span class="log-date">${formatDate(entry.date)}</span>` +
+      `<span class="log-sep sep-date">·</span>` +
+      `<span class="log-time">${formatTime(entry.date)}</span>` +
+      `<span class="log-sep sep-time">·</span>` +
+      `<span class="log-source ${entry.source}">${entry.label}</span>` +
+      `<span class="log-sep">·</span>` +
+      `<span class="log-title">${esc(entry.title)}</span>` +
+      `<span class="log-wc log-wc-obs">${entry.obsWords}w</span>` +
+      `<span class="log-wc log-wc-mar">${entry.marWords}w</span>`
+    );
+  }
 
-      let i = 0;
-      function tick() {
-        if (i < raw.length) {
-          cursor.before(document.createTextNode(raw[i]));
-          i++;
-          scroll();
-          setTimeout(tick, speed + Math.random() * (speed * 0.4));
-        } else {
-          cursor.remove();
-          // Replace with properly formatted html
-          wrapper.innerHTML = html;
-          scroll();
-          resolve();
-        }
+  // ── Render all rows (hidden), then boot-reveal them ──
+  function renderLog(entries) {
+    logEl.innerHTML = '';
+    if (entries.length === 0) {
+      logEl.innerHTML = '<div class="status-line">waiting for feed data…</div>';
+      return;
+    }
+
+    // Build all rows + expanded panels, all hidden
+    entries.forEach((entry) => {
+      const row = document.createElement('div');
+      row.className = `log-row src-${entry.source} boot-hidden`;
+      row.dataset.id = entry.id;
+      row.innerHTML = rowInnerHTML(entry);
+      row.addEventListener('click', () => toggleSelect(entry.id));
+      logEl.appendChild(row);
+
+      const expanded = document.createElement('div');
+      expanded.className = 'log-expanded boot-hidden';
+      expanded.dataset.expandFor = entry.id;
+
+      let expandHtml = '';
+      if (entry.fieldNote) {
+        expandHtml += `<div class="expanded-field-note">${esc(entry.fieldNote)}</div>`;
       }
-      tick();
+      if (entry.marginNote) {
+        const label = entry.marginTitle || 'Margin Note';
+        expandHtml += `<div class="expanded-margin-label">${esc(label)}</div>`;
+        expandHtml += `<div class="expanded-margin-note">${esc(entry.marginNote)}</div>`;
+      }
+      if (entry.meta) {
+        expandHtml += `<div class="expanded-meta-line">${esc(entry.meta)}</div>`;
+      }
+      expanded.innerHTML = expandHtml || '<div class="expanded-field-note" style="color:var(--fg-dim)">No note content.</div>';
+      logEl.appendChild(expanded);
     });
+
+    // Boot sequence: reveal rows one by one
+    bootReveal(entries);
   }
 
-  async function bootSequence() {
-    const now = new Date();
+  // ── Linux boot animation ──
+  // Rows appear sequentially, fast at first (like kernel messages),
+  // slight slowdown near end, then last entry auto-expands
+  function bootReveal(entries) {
+    const rows = Array.from(document.querySelectorAll('.log-row'));
+    const expandeds = Array.from(document.querySelectorAll('.log-expanded'));
+    const total = rows.length;
+    let i = 0;
 
-    // ── ASCII banner ──
-    bootLine('<span class="c">the AI field</span> <span class="d">observer system v3.0</span>');
-    bootLine('<span class="d">────────────────────────────────────────────────</span>');
-    await pause(200);
+    function revealNext() {
+      if (i >= total) {
+        // All rows revealed — auto-expand last entry after pause
+        const lastEntry = entries[entries.length - 1];
+        setTimeout(() => {
+          toggleSelect(lastEntry.id);
+          const panel = document.querySelector(`.log-expanded[data-expand-for="${lastEntry.id}"]`);
+          if (panel) {
+            panel.classList.remove('boot-hidden');
+            panel.classList.add('expand-fade-in');
+          }
+          // Scroll to show full expanded post
+          setTimeout(() => {
+            window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+          }, 200);
+          setTimeout(() => {
+            window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+          }, 1000);
+        }, 600);
+        return;
+      }
 
-    bootLine('<span class="g">[  OK  ]</span> <span class="d">System date: ' + fmtDate(now) + ' ' + fmtTime(now) + ' UTC</span>');
-    bootLine('<span class="g">[  OK  ]</span> <span class="d">Model: gpt-oss:120b (open-weight, local Ollama)</span>');
-    bootLine('<span class="g">[  OK  ]</span> <span class="d">Output format: field note + margin note per pulse</span>');
-    await pause(250);
+      // Reveal this row
+      rows[i].classList.remove('boot-hidden');
+      // Also unhide its expanded panel (but it stays display:none until selected via CSS)
+      expandeds[i].classList.remove('boot-hidden');
 
-    bootLine('');
-    bootLine('<span class="y">[FETCH ]</span> Requesting agentfield feed ...');
-    await pause(120);
-    bootLine('<span class="y">[FETCH ]</span> Requesting pressfield feed ...');
-    await pause(120);
-    bootLine('<span class="y">[FETCH ]</span> Requesting practfield feed ...');
-    await pause(180);
+      // Auto-scroll to keep latest visible
+      window.scrollTo(0, document.body.scrollHeight);
 
-    // Fetch data
-    const results = await Promise.allSettled(FEEDS.map(fetchFeed));
-    allEntries = results.filter(r => r.status === 'fulfilled').flatMap(r => r.value).sort((a, b) => a.date - b.date);
+      i++;
 
+      // Timing: fast burst at start, slight slowdown toward end
+      // Base ~35ms per row, last few rows slower for dramatic effect
+      let delay;
+      const remaining = total - i;
+      if (remaining > 5) {
+        delay = 30 + Math.random() * 20;          // fast kernel-style
+      } else if (remaining > 2) {
+        delay = 60 + Math.random() * 40;           // slowing down
+      } else {
+        delay = 120 + Math.random() * 60;          // last couple: deliberate
+      }
+
+      setTimeout(revealNext, delay);
+    }
+
+    // Small initial delay before boot starts
+    setTimeout(revealNext, 200);
+  }
+
+  // ── Selection ──
+  function toggleSelect(id) {
+    const prev = document.querySelector('.log-row.selected');
+    if (prev) prev.classList.remove('selected');
+
+    if (selectedId === id) {
+      selectedId = null;
+      return;
+    }
+    selectedId = id;
+    const row = document.querySelector(`.log-row[data-id="${id}"]`);
+    if (row) row.classList.add('selected');
+  }
+
+  // ── Counts ──
+  function updateCounts(entries) {
     const counts = { agent: 0, press: 0, pract: 0 };
-    allEntries.forEach(e => { if (counts[e.source] !== undefined) counts[e.source]++; });
+    entries.forEach(e => { if (counts[e.source] !== undefined) counts[e.source]++; });
+    document.getElementById('count-agent').textContent = counts.agent;
+    document.getElementById('count-press').textContent = counts.press;
+    document.getElementById('count-pract').textContent = counts.pract;
+  }
+
+  // ── About Overlay ──
+  const aboutOverlay = document.getElementById('about-overlay');
+  document.getElementById('btn-about').addEventListener('click', (e) => {
+    e.preventDefault();
+    aboutOverlay.classList.add('active');
+  });
+  document.getElementById('btn-close-about').addEventListener('click', () => {
+    aboutOverlay.classList.remove('active');
+  });
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') aboutOverlay.classList.remove('active');
+  });
+  aboutOverlay.addEventListener('click', (e) => {
+    if (e.target === aboutOverlay) aboutOverlay.classList.remove('active');
+  });
+
+  // ── Keyboard nav ──
+  document.addEventListener('keydown', (e) => {
+    if (aboutOverlay.classList.contains('active')) return;
+    if (e.key === 'j' || e.key === 'ArrowDown') {
+      e.preventDefault();
+      navigateRow(1);
+    } else if (e.key === 'k' || e.key === 'ArrowUp') {
+      e.preventDefault();
+      navigateRow(-1);
+    } else if (e.key === 'Enter' || e.key === ' ') {
+      if (selectedId) {
+        e.preventDefault();
+        const row = document.querySelector('.log-row.selected');
+        if (row) row.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+      }
+    }
+  });
+
+  function navigateRow(dir) {
+    const rows = Array.from(document.querySelectorAll('.log-row:not(.boot-hidden)'));
+    if (rows.length === 0) return;
+    const currentIdx = rows.findIndex(r => r.dataset.id === selectedId);
+    let nextIdx;
+    if (currentIdx < 0) {
+      nextIdx = dir > 0 ? 0 : rows.length - 1;
+    } else {
+      nextIdx = currentIdx + dir;
+      if (nextIdx < 0) nextIdx = 0;
+      if (nextIdx >= rows.length) nextIdx = rows.length - 1;
+    }
+    toggleSelect(rows[nextIdx].dataset.id);
+    rows[nextIdx].scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+  }
+
+  // ── Init ──
+  async function init() {
+    logEl.innerHTML = '<div class="status-line">fetching feeds…</div>';
+
+    const results = await Promise.allSettled(FEEDS.map(fetchFeed));
+    allEntries = results
+      .filter(r => r.status === 'fulfilled')
+      .flatMap(r => r.value)
+      .sort((a, b) => a.date - b.date);
 
     if (allEntries.length === 0) {
-      bootLine('<span class="r">[FAIL  ]</span> No feed data — check network');
+      logEl.innerHTML = '<div class="status-line error">no feed data available — check network or feed URLs</div>';
       return;
     }
 
-    bootLine('');
-    bootLine('<span class="g">[  OK  ]</span> <span class="t">agentfield</span>: ' + counts.agent + ' pulses');
-    bootLine('<span class="g">[  OK  ]</span> <span class="a">pressfield</span>: ' + counts.press + ' pulses');
-    bootLine('<span class="g">[  OK  ]</span> <span class="r">practfield</span>: ' + counts.pract + ' pulses');
-    bootLine('<span class="g">[  OK  ]</span> Total: ' + allEntries.length + ' observations loaded');
-    await pause(300);
-
-    bootLine('');
-    bootLine('<span class="d">────────────────────────────────────────────────</span>');
-    bootLine('<span class="c">  OBSERVATION LOG</span>');
-    bootLine('<span class="d">  date       time  source  title' + ' '.repeat(26) + 'observation  margin</span>');
-    bootLine('<span class="d">────────────────────────────────────────────────</span>');
-    await pause(150);
-
-    // Fast dump all except last 2
-    const main = allEntries.slice(0, -2);
-    const lastTwo = allEntries.slice(-2);
-
-    for (let i = 0; i < main.length; i++) {
-      bootLine(formatBootRow(main[i]));
-      if (i % 6 === 5) await pause(50);
-      else await pause(15 + Math.random() * 15);
-    }
-
-    if (main.length > 0) {
-      await pause(200);
-      bootLine('');
-      bootLine('<span class="d">  ... ' + main.length + ' observations</span>');
-      bootLine('');
-    }
-
-    // ── Cursor blink pause ──
-    let cur = addCursor();
-    await pause(1400);
-    cur.remove();
-
-    // ── Type the second-to-last entry ──
-    if (lastTwo.length >= 2) {
-      const penult = lastTwo[0];
-
-      // Type the log row
-      await typeText(formatBootRow(penult), 18);
-      bootPrint('\n');
-      await pause(400);
-
-      // Show full observation + margin
-      bootLine('');
-      bootLine('<span class="w">' + esc(penult.fieldNote) + '</span>');
-      bootLine('');
-      if (penult.marginNote) {
-        bootLine('<span class="d">  ── ' + esc(penult.marginTitle || 'margin note') + ' ──</span>');
-        bootLine('<span class="d">' + esc(penult.marginNote) + '</span>');
-        bootLine('');
-      }
-      scroll();
-      await pause(2500);
-
-      // Collapse: clear the expanded text by adding separator
-      bootLine('<span class="d">────────────────────────────────────────────────</span>');
-      await pause(1500);
-    }
-
-    // ── Cursor blink pause before final ──
-    cur = addCursor();
-    await pause(2000);
-    cur.remove();
-
-    // ── Type the last (most recent) entry ──
-    const latest = lastTwo[lastTwo.length - 1];
-    await typeText(formatBootRow(latest), 20);
-    bootPrint('\n');
-    await pause(600);
-
-    bootLine('');
-    bootLine('<span class="w">' + esc(latest.fieldNote) + '</span>');
-    bootLine('');
-    if (latest.marginNote) {
-      bootLine('<span class="d">  ── ' + esc(latest.marginTitle || 'margin note') + ' ──</span>');
-      bootLine('<span class="d">' + esc(latest.marginNote) + '</span>');
-    }
-    scroll();
-    await pause(2000);
-
-    // ── Final cursor then transition ──
-    cur = addCursor();
-    await pause(1800);
-    cur.remove();
-
-    bootLine('');
-    bootLine('<span class="g">[  OK  ]</span> Boot complete. Entering setup ...');
-    await pause(1200);
-
-    // ── Transition to BIOS ──
-    transitionToBios(counts, allEntries.length - 1);
+    updateCounts(allEntries);
+    renderLog(allEntries);
   }
 
-  function formatBootRow(e) {
-    const srcColor = e.source === 'agent' ? 't' : e.source === 'press' ? 'a' : 'r';
-    const titleStr = e.title.length > 30 ? e.title.slice(0, 29) + '…' : e.title.padEnd(30);
-    return '<span class="d">' + fmtDate(e.date) + ' ' + fmtTime(e.date) + '</span>' +
-      '  <span class="' + srcColor + '">' + e.label.padEnd(5) + '</span>' +
-      '  <span class="w">' + esc(titleStr) + '</span>' +
-      '  <span class="g">' + String(e.obsWords).padStart(4) + ' words</span>' +
-      '  <span class="d">' + String(e.marWords).padStart(4) + ' words</span>';
-  }
-
-  // ══════════════════════════════════════════
-  //  BIOS PHASE
-  // ══════════════════════════════════════════
-
-  function transitionToBios(counts, selectIdx) {
-    bootEl.style.display = 'none';
-    biosEl.style.display = 'block';
-    document.body.style.background = 'var(--bios-bg)';
-    window.scrollTo(0, 0);
-
-    // Update counts
-    document.getElementById('ct-agent').textContent = counts.agent;
-    document.getElementById('ct-press').textContent = counts.press;
-    document.getElementById('ct-pract').textContent = counts.pract;
-    document.getElementById('bios-status-info').textContent =
-      `agent:${counts.agent}  press:${counts.press}  pract:${counts.pract}  total:${allEntries.length}`;
-
-    buildBiosList();
-    biosSelect(selectIdx >= 0 ? selectIdx : allEntries.length - 1);
-  }
-
-  function buildBiosList() {
-    const listEl = document.getElementById('bios-list');
-    listEl.innerHTML = '<div class="bios-left-header">▸ Observations (' + allEntries.length + ' pulses)</div>';
-
-    // Show newest first in left pane
-    const reversed = [...allEntries].reverse();
-    reversed.forEach((e, ri) => {
-      const realIdx = allEntries.length - 1 - ri;
-      const item = document.createElement('div');
-      item.className = 'bios-list-item';
-      item.dataset.idx = realIdx;
-      item.innerHTML =
-        `<span class="li-date">${fmtDate(e.date)}</span>` +
-        `<span class="li-src ${e.source}">${e.label}</span>` +
-        `<span class="li-title">${esc(e.title)}</span>` +
-        `<span class="li-wc">${e.obsWords}+${e.marWords}w</span>`;
-      item.addEventListener('click', () => biosSelect(realIdx));
-      listEl.appendChild(item);
-    });
-  }
-
-  function biosSelect(idx) {
-    if (idx < 0 || idx >= allEntries.length) return;
-    biosSelectedIdx = idx;
-
-    // Highlight in list
-    document.querySelectorAll('.bios-list-item').forEach(el => {
-      el.classList.toggle('selected', parseInt(el.dataset.idx) === idx);
-    });
-
-    // Scroll selected into view
-    const selItem = document.querySelector(`.bios-list-item[data-idx="${idx}"]`);
-    if (selItem) selItem.scrollIntoView({ block: 'nearest' });
-
-    // Render content
-    const e = allEntries[idx];
-    const contentEl = document.getElementById('bios-content');
-
-    let html = '<div class="bios-right-header">▸ ' + esc(e.title) + '</div>';
-    html += '<div class="bios-post">';
-    html += '<div class="bios-post-title">' + esc(toTitleCase(e.title)) + '</div>';
-    html += '<div class="bios-post-meta">';
-    html += '<span class="bios-post-src ' + e.source + '">' + e.label + '</span>';
-    html += ' &nbsp;·&nbsp; ' + fmtDate(e.date) + ' ' + fmtTime(e.date);
-    html += ' &nbsp;·&nbsp; pulse #' + e.pulse;
-    if (e.meta) html += ' &nbsp;·&nbsp; ' + esc(e.meta);
-    html += '</div>';
-
-    html += '<div class="bios-post-section-label">Observation (' + e.obsWords + ' words)</div>';
-    html += '<div class="bios-post-observation">' + esc(e.fieldNote) + '</div>';
-
-    if (e.marginNote) {
-      html += '<div class="bios-post-section-label">' + esc(e.marginTitle || 'Margin Note') + ' (' + e.marWords + ' words)</div>';
-      html += '<div class="bios-post-margin">' + esc(e.marginNote) + '</div>';
-    }
-
-    html += '</div>';
-    contentEl.innerHTML = html;
-    contentEl.scrollTop = 0;
-  }
-
-  // ── BIOS keyboard nav ──
-  document.addEventListener('keydown', (e) => {
-    const overlay = document.getElementById('about-overlay');
-    if (overlay.classList.contains('active')) {
-      if (e.key === 'Escape') overlay.classList.remove('active');
-      return;
-    }
-    if (biosEl.style.display !== 'block') return;
-
-    if (e.key === 'ArrowDown' || e.key === 'j') {
-      e.preventDefault();
-      if (biosSelectedIdx < allEntries.length - 1) biosSelect(biosSelectedIdx + 1);
-    } else if (e.key === 'ArrowUp' || e.key === 'k') {
-      e.preventDefault();
-      if (biosSelectedIdx > 0) biosSelect(biosSelectedIdx - 1);
-    } else if (e.key === '?') {
-      e.preventDefault();
-      document.getElementById('about-overlay').classList.add('active');
-    } else if (e.key === 'Escape') {
-      // noop in main
-    }
-  });
-
-  // ── Menu bar ──
-  document.getElementById('bios-about-btn').addEventListener('click', () => {
-    document.getElementById('about-overlay').classList.add('active');
-  });
-
-  // ── About overlay ──
-  document.getElementById('about-close').addEventListener('click', () => {
-    document.getElementById('about-overlay').classList.remove('active');
-  });
-  document.getElementById('about-overlay').addEventListener('click', (e) => {
-    if (e.target === e.currentTarget) e.currentTarget.classList.remove('active');
-  });
-
-  // ── BIOS count display (hidden spans used during boot) ──
-  // ct-agent, ct-press, ct-pract are in hidden state until BIOS loads
-  // They're actually shown in status bar
-
-  // ── GO ──
-  bootSequence();
-
+  init();
 })();
 </script>
 </body>
