@@ -107,22 +107,26 @@
   #latest-view {
     max-width: var(--content-width);
     margin: 36px auto 32px auto;
-    padding: 20px 20px;
+    padding: 32px 20px;
     min-height: calc(100vh - 68px);
     display: none;
   }
   #latest-view.active { display: block; }
 
-  .latest-header { font-size: 13px; color: var(--fg-dim); margin-bottom: 16px; display: flex; align-items: baseline; gap: 8px; }
+  .latest-header { font-size: 13px; color: var(--fg-dim); margin-bottom: 24px; padding-bottom: 16px; border-bottom: 1px solid var(--separator-light); display: flex; align-items: baseline; gap: 8px; }
   .latest-header .lh-src { font-weight: 600; }
   .latest-header .lh-src.agent { color: var(--teal); }
   .latest-header .lh-src.press { color: var(--amber); }
   .latest-header .lh-src.pract { color: var(--coral); }
-  .latest-title { font-size: 16px; font-weight: 600; color: var(--fg); margin-bottom: 16px; }
-  .latest-field-note { color: var(--fg); font-size: 13px; line-height: 1.7; margin-bottom: 16px; }
-  .latest-margin-label { font-size: 11px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--fg-dim); margin-bottom: 6px; }
-  .latest-margin-note { color: var(--fg-meta); font-size: 13px; line-height: 1.7; font-style: italic; padding-left: 12px; border-left: 2px solid var(--separator-light); margin-bottom: 12px; }
-  .latest-meta { font-size: 11px; color: var(--fg-dim); }
+  .latest-title { font-size: 22px; font-weight: 700; margin-bottom: 28px; }
+  .latest-title.agent { color: var(--teal); }
+  .latest-title.press { color: var(--amber); }
+  .latest-title.pract { color: var(--coral); }
+  .latest-section-label { font-size: 11px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--fg-dim); margin-bottom: 8px; }
+  .latest-field-note { color: #000; font-size: 15px; line-height: 1.85; margin-bottom: 32px; }
+  .latest-margin-label { font-size: 11px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--fg-dim); margin-bottom: 8px; }
+  .latest-margin-note { color: var(--fg-meta); font-size: 15px; line-height: 1.85; font-style: italic; padding-left: 16px; border-left: 2px solid var(--separator-light); margin-bottom: 32px; }
+  .latest-meta { font-size: 11px; color: var(--fg-dim); padding-top: 16px; border-top: 1px solid var(--separator-light); }
 
   /* ══ LOG LIST VIEW ══ */
   #log-view {
@@ -420,8 +424,11 @@
     h += `<span>${entry.obsWords + entry.marWords} tokens</span>`;
     h += `<span class="lh-src ${srcClass}">${entry.label}</span>`;
     h += `</div>`;
-    h += `<div class="latest-title">${esc(entry.title)}</div>`;
-    if (entry.fieldNote) h += `<div class="latest-field-note">${esc(entry.fieldNote)}</div>`;
+    h += `<div class="latest-title ${srcClass}">${esc(entry.title)}</div>`;
+    if (entry.fieldNote) {
+      h += `<div class="latest-section-label">Observation</div>`;
+      h += `<div class="latest-field-note">${esc(entry.fieldNote)}</div>`;
+    }
     if (entry.marginNote) {
       h += `<div class="latest-margin-label">${esc(entry.marginTitle || 'Margin Note')}</div>`;
       h += `<div class="latest-margin-note">${esc(entry.marginNote)}</div>`;
