@@ -145,16 +145,16 @@
     display: flex;
     align-items: baseline;
     gap: 0;
-    border-left: 3px solid transparent;
+    border-left: none;
     min-height: 24px;
     font-size: 13px;
   }
   .log-row:hover { background: var(--bg-alt); }
   .log-row.filtered-out { display: none !important; }
 
-  .log-row.selected.src-agent { background: var(--teal-hl); border-left-color: var(--teal); }
-  .log-row.selected.src-press { background: var(--amber-hl); border-left-color: var(--amber); }
-  .log-row.selected.src-pract { background: var(--coral-hl); border-left-color: var(--coral); }
+  .log-row.selected.src-agent { background: var(--teal-hl); }
+  .log-row.selected.src-press { background: var(--amber-hl); }
+  .log-row.selected.src-pract { background: var(--coral-hl); }
   .log-row.selected .log-title { color: var(--fg); font-weight: 500; }
 
   .log-seq { color: var(--fg-dim); white-space: nowrap; min-width: 40px; flex-shrink: 0; padding-left: 4px; }
