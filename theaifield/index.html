@@ -157,7 +157,7 @@
   /* ══ LOG CONTAINER ══ */
   .log-container {
     max-width: var(--content-width);
-    margin: 60px auto 32px auto;
+    margin: 72px auto 32px auto;
     padding: 2px 20px;
     min-height: calc(100vh - 68px);
   }
@@ -531,7 +531,7 @@
 
       // Add a clickable hint at the top to reveal all logs
       const hint = document.createElement('div');
-      hint.style.cssText = 'padding:6px 4px;font-size:11px;color:var(--fg-dim);cursor:pointer;text-align:center;border-bottom:1px solid var(--separator-light);';
+      hint.style.cssText = 'padding:10px 4px;font-size:11px;color:var(--fg-dim);cursor:pointer;text-align:center;border-bottom:1px solid var(--separator);';
       hint.textContent = `▲ show all ${total} entries`;
       hint.addEventListener('click', restoreAll);
       logEl.insertBefore(hint, logEl.firstChild);
