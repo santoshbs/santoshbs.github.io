@@ -9,29 +9,31 @@
 <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
 <style>
   :root {
-    --bg: #0c0c0c;
-    --bg-alt: #141414;
-    --fg: #d4d4d4;
-    --fg-dim: #606060;
-    --fg-meta: #9a9a9a;
-    --teal: #5ccfcf;
-    --amber: #e5a644;
-    --coral: #e06c60;
-    --teal-dim: #3a8a8a;
-    --amber-dim: #9a7030;
-    --coral-dim: #9a4a40;
-    --teal-bg: rgba(92,207,207,0.06);
-    --amber-bg: rgba(229,166,68,0.06);
-    --coral-bg: rgba(224,108,96,0.06);
-    --teal-hl: rgba(92,207,207,0.14);
-    --amber-hl: rgba(229,166,68,0.14);
-    --coral-hl: rgba(224,108,96,0.14);
-    --separator: #1e1e1e;
-    --header-bg: #080808;
-    --overlay-bg: rgba(6,6,6,0.96);
+    /* GitHub light palette */
+    --bg: #ffffff;
+    --bg-alt: #f6f8fa;
+    --fg: #1f2328;
+    --fg-dim: #656d76;
+    --fg-meta: #59636e;
+    --teal: #0969a8;
+    --amber: #9a6700;
+    --coral: #bc4c00;
+    --teal-dim: #0969a8;
+    --amber-dim: #9a6700;
+    --coral-dim: #bc4c00;
+    --teal-bg: rgba(9,105,168,0.04);
+    --amber-bg: rgba(154,103,0,0.04);
+    --coral-bg: rgba(188,76,0,0.04);
+    --teal-hl: rgba(9,105,168,0.10);
+    --amber-hl: rgba(154,103,0,0.10);
+    --coral-hl: rgba(188,76,0,0.10);
+    --separator: #d1d9e0;
+    --separator-light: #e8ecf0;
+    --header-bg: #f6f8fa;
+    --overlay-bg: rgba(255,255,255,0.97);
     --mono: 'Source Code Pro', 'Menlo', 'Consolas', monospace;
     --font-size: 15px;
-    --line-height: 1.65;
+    --line-height: 1.5;
   }
 
   * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -43,7 +45,6 @@
     font-size: var(--font-size);
     line-height: var(--line-height);
     -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
     overflow-x: hidden;
   }
 
@@ -57,7 +58,7 @@
     background: var(--header-bg);
     border-bottom: 1px solid var(--separator);
     padding: 0 20px;
-    height: 42px;
+    height: 40px;
     display: flex;
     align-items: center;
     gap: 16px;
@@ -80,7 +81,7 @@
   .header-tagline {
     font-size: 12px;
     color: var(--fg-dim);
-    font-weight: 300;
+    font-weight: 400;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -124,28 +125,28 @@
 
   /* ── LOG CONTAINER ── */
   .log-container {
-    padding: 6px 0;
-    margin-top: 42px;
-    min-height: calc(100vh - 42px);
+    padding: 2px 0;
+    margin-top: 40px;
+    min-height: calc(100vh - 40px);
   }
 
-  /* ── LOG ROW — 6 cols: date · time · source · title · obs-w · mar-w ── */
+  /* ── LOG ROW — tight spacing ── */
   .log-row {
-    padding: 6px 20px;
+    padding: 2px 20px;
     cursor: pointer;
     transition: background 0.1s;
     display: flex;
     align-items: baseline;
     gap: 0;
     border-left: 3px solid transparent;
-    min-height: 30px;
+    min-height: 24px;
   }
 
   .log-row:hover {
     background: var(--bg-alt);
   }
 
-  /* ── SELECTED — htop-style bright highlight ── */
+  /* ── SELECTED ── */
   .log-row.selected.src-agent {
     background: var(--teal-hl);
     border-left-color: var(--teal);
@@ -159,7 +160,7 @@
     border-left-color: var(--coral);
   }
 
-  .log-row.selected .log-title { color: #fff; }
+  .log-row.selected .log-title { color: var(--fg); font-weight: 500; }
   .log-row.selected .log-wc { color: var(--fg-meta); }
   .log-row.selected .log-date { color: var(--fg-meta); }
   .log-row.selected .log-time { color: var(--fg-meta); }
@@ -183,8 +184,8 @@
 
   .log-sep {
     color: var(--fg-dim);
-    margin: 0 5px;
-    opacity: 0.3;
+    margin: 0 4px;
+    opacity: 0.25;
     flex-shrink: 0;
   }
 
@@ -221,10 +222,16 @@
   .log-wc-obs { margin-left: 12px; }
   .log-wc-mar { margin-left: 8px; }
 
-  /* ── EXPANDED NOTE with field-colored left border ── */
+  /* ── Boot animation: rows hidden until revealed ── */
+  .log-row.boot-hidden,
+  .log-expanded.boot-hidden {
+    display: none !important;
+  }
+
+  /* ── EXPANDED NOTE ── */
   .log-expanded {
     display: none;
-    padding: 20px 24px 24px 86px;
+    padding: 16px 20px 20px 86px;
     border-left: 3px solid transparent;
   }
 
@@ -246,9 +253,9 @@
 
   .expanded-field-note {
     color: var(--fg);
-    font-size: 17px;
-    line-height: 1.85;
-    margin-bottom: 16px;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 14px;
     max-width: 780px;
   }
 
@@ -264,12 +271,12 @@
 
   .expanded-margin-note {
     color: var(--fg-meta);
-    font-size: 16px;
-    line-height: 1.75;
+    font-size: 15px;
+    line-height: 1.7;
     font-style: italic;
     max-width: 780px;
     padding-left: 12px;
-    border-left: 2px solid var(--separator);
+    border-left: 2px solid var(--separator-light);
   }
 
   .expanded-meta-line {
@@ -279,9 +286,9 @@
     letter-spacing: 0.02em;
   }
 
-  /* ── FADE-IN for auto-expanded detail ── */
+  /* ── FADE-IN ── */
   .expand-fade-in {
-    animation: fadeIn 0.8s ease-out;
+    animation: fadeIn 1s ease-out;
   }
   @keyframes fadeIn {
     from { opacity: 0; transform: translateY(6px); }
@@ -295,26 +302,6 @@
     font-size: 13px;
   }
   .status-line.error { color: var(--coral); }
-
-  /* ── TYPEWRITER ── */
-  .typewriter-cursor {
-    display: inline-block;
-    width: 8px;
-    height: 15px;
-    background: var(--fg);
-    vertical-align: text-bottom;
-    animation: cursorBlink 0.7s step-end infinite;
-    margin-left: 1px;
-  }
-  @keyframes cursorBlink {
-    50% { opacity: 0; }
-  }
-
-  .log-row.tw-active > .tw-text {
-    white-space: pre;
-    font-size: 13px;
-    color: var(--fg);
-  }
 
   /* ── ABOUT OVERLAY ── */
   .overlay {
@@ -333,7 +320,7 @@
     top: 12px;
     right: 20px;
     background: none;
-    border: 1px solid var(--fg-dim);
+    border: 1px solid var(--separator);
     color: var(--fg-dim);
     font-family: var(--mono);
     font-size: 13px;
@@ -342,7 +329,7 @@
     z-index: 201;
     transition: color 0.15s, border-color 0.15s;
   }
-  .overlay-close:hover { color: var(--fg); border-color: var(--fg); }
+  .overlay-close:hover { color: var(--fg); border-color: var(--fg-dim); }
 
   .overlay-content {
     max-width: 680px;
@@ -403,7 +390,7 @@
 
     .log-container { margin-top: 38px; }
 
-    .log-row { padding: 5px 12px; }
+    .log-row { padding: 2px 12px; }
     .log-date { display: none; }
     .log-row .log-sep.sep-date { display: none; }
     .log-time { min-width: 42px; font-size: 12px; }
@@ -522,7 +509,6 @@
     const date = dateStr ? new Date(dateStr) : new Date();
     const pulse = item.pulse || item.pulse_number || item.id || (idx + 1);
 
-    // Margin title — lowercase in log row
     const rawTitle = item.margin_title || item.title || item.margin_note_title || '';
     const title = rawTitle.toLowerCase();
 
@@ -601,16 +587,6 @@
     return d.innerHTML;
   }
 
-  // ── Build plain-text line for typewriter (all 6 cols as flat string) ──
-  function rowPlainText(entry) {
-    const date = formatDate(entry.date);
-    const time = formatTime(entry.date);
-    const src = entry.label.padEnd(5);
-    const ow = String(entry.obsWords).padStart(4);
-    const mw = String(entry.marWords).padStart(4);
-    return `${date} · ${time} · ${src} · ${entry.title}  ${ow}w ${mw}w`;
-  }
-
   // ── Build structured row HTML ──
   function rowInnerHTML(entry) {
     return (
@@ -626,38 +602,25 @@
     );
   }
 
-  // ── Render ──
-  function renderLog(entries, typewriterCount) {
+  // ── Render all rows (hidden), then boot-reveal them ──
+  function renderLog(entries) {
     logEl.innerHTML = '';
     if (entries.length === 0) {
       logEl.innerHTML = '<div class="status-line">waiting for feed data…</div>';
       return;
     }
 
-    const twStart = Math.max(0, entries.length - (typewriterCount || 0));
-
-    entries.forEach((entry, i) => {
-      const doTypewriter = i >= twStart && typewriterCount > 0;
-
+    // Build all rows + expanded panels, all hidden
+    entries.forEach((entry) => {
       const row = document.createElement('div');
-      row.className = `log-row src-${entry.source}`;
+      row.className = `log-row src-${entry.source} boot-hidden`;
       row.dataset.id = entry.id;
-
-      if (doTypewriter) {
-        row.classList.add('tw-active');
-        const twSpan = document.createElement('span');
-        twSpan.className = 'tw-text';
-        row.appendChild(twSpan);
-      } else {
-        row.innerHTML = rowInnerHTML(entry);
-      }
-
+      row.innerHTML = rowInnerHTML(entry);
       row.addEventListener('click', () => toggleSelect(entry.id));
       logEl.appendChild(row);
 
-      // Expanded panel
       const expanded = document.createElement('div');
-      expanded.className = 'log-expanded';
+      expanded.className = 'log-expanded boot-hidden';
       expanded.dataset.expandFor = entry.id;
 
       let expandHtml = '';
@@ -676,93 +639,68 @@
       logEl.appendChild(expanded);
     });
 
-    // Scroll so the typewriter rows are visible
-    const allRows = document.querySelectorAll('.log-row');
-    if (allRows.length >= 2) {
-      allRows[allRows.length - 2].scrollIntoView({ block: 'center', behavior: 'auto' });
-    } else {
-      window.scrollTo(0, document.body.scrollHeight);
-    }
-
-    // Start chained typewriter
-    if (typewriterCount > 0 && entries.length > 0) {
-      setTimeout(() => typewriteChain(entries.slice(twStart), 0), 300);
-    }
+    // Boot sequence: reveal rows one by one
+    bootReveal(entries);
   }
 
-  // ── Typewriter: chain through last N rows, typing from col 1 ──
-  function typewriteChain(entries, idx) {
-    if (idx >= entries.length) return;
+  // ── Linux boot animation ──
+  // Rows appear sequentially, fast at first (like kernel messages),
+  // slight slowdown near end, then last entry auto-expands
+  function bootReveal(entries) {
+    const rows = Array.from(document.querySelectorAll('.log-row'));
+    const expandeds = Array.from(document.querySelectorAll('.log-expanded'));
+    const total = rows.length;
+    let i = 0;
 
-    const entry = entries[idx];
-    const isLast = idx === entries.length - 1;
-    const row = document.querySelector(`.log-row[data-id="${entry.id}"]`);
-    if (!row) return;
-
-    const twSpan = row.querySelector('.tw-text');
-    if (!twSpan) return;
-
-    const fullText = rowPlainText(entry);
-    let charIdx = 0;
-
-    const cursor = document.createElement('span');
-    cursor.className = 'typewriter-cursor';
-    twSpan.textContent = '';
-    twSpan.appendChild(cursor);
-
-    const speed = Math.max(10, Math.min(30, 1600 / (fullText.length || 1)));
-
-    function tick() {
-      if (charIdx < fullText.length) {
-        twSpan.insertBefore(document.createTextNode(fullText[charIdx]), cursor);
-        charIdx++;
-        setTimeout(tick, speed + Math.random() * 8);
-      } else {
-        if (isLast) {
-          // Last row done: pause → swap to structured → wait a few seconds → auto-expand with fade → scroll fully visible
+    function revealNext() {
+      if (i >= total) {
+        // All rows revealed — auto-expand last entry after pause
+        const lastEntry = entries[entries.length - 1];
+        setTimeout(() => {
+          toggleSelect(lastEntry.id);
+          const panel = document.querySelector(`.log-expanded[data-expand-for="${lastEntry.id}"]`);
+          if (panel) {
+            panel.classList.remove('boot-hidden');
+            panel.classList.add('expand-fade-in');
+          }
+          // Scroll to show full expanded post
           setTimeout(() => {
-            if (cursor.parentNode) cursor.remove();
-            row.classList.remove('tw-active');
-            row.innerHTML = rowInnerHTML(entry);
-            row.addEventListener('click', () => toggleSelect(entry.id));
-
-            setTimeout(() => {
-              toggleSelect(entry.id);
-              const panel = document.querySelector(`.log-expanded[data-expand-for="${entry.id}"]`);
-              if (panel) panel.classList.add('expand-fade-in');
-
-              // Scroll so entire expanded post is visible — retry to catch layout reflow
-              function scrollToBottom() {
-                const el = panel || row;
-                if (panel && panel.offsetHeight > 0) {
-                  // Scroll so the bottom of the expanded panel is visible
-                  const rect = panel.getBoundingClientRect();
-                  const overshoot = rect.bottom - window.innerHeight + 40;
-                  if (overshoot > 0) {
-                    window.scrollBy({ top: overshoot, behavior: 'smooth' });
-                  }
-                } else {
-                  window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
-                }
-              }
-              setTimeout(scrollToBottom, 150);
-              setTimeout(scrollToBottom, 800);
-            }, 2500);
-          }, 600);
-        } else {
-          // Not last: swap to structured, start next row
+            window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+          }, 200);
           setTimeout(() => {
-            if (cursor.parentNode) cursor.remove();
-            row.classList.remove('tw-active');
-            row.innerHTML = rowInnerHTML(entry);
-            row.addEventListener('click', () => toggleSelect(entry.id));
-            setTimeout(() => typewriteChain(entries, idx + 1), 250);
-          }, 350);
-        }
+            window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+          }, 1000);
+        }, 600);
+        return;
       }
+
+      // Reveal this row
+      rows[i].classList.remove('boot-hidden');
+      // Also unhide its expanded panel (but it stays display:none until selected via CSS)
+      expandeds[i].classList.remove('boot-hidden');
+
+      // Auto-scroll to keep latest visible
+      window.scrollTo(0, document.body.scrollHeight);
+
+      i++;
+
+      // Timing: fast burst at start, slight slowdown toward end
+      // Base ~35ms per row, last few rows slower for dramatic effect
+      let delay;
+      const remaining = total - i;
+      if (remaining > 5) {
+        delay = 30 + Math.random() * 20;          // fast kernel-style
+      } else if (remaining > 2) {
+        delay = 60 + Math.random() * 40;           // slowing down
+      } else {
+        delay = 120 + Math.random() * 60;          // last couple: deliberate
+      }
+
+      setTimeout(revealNext, delay);
     }
 
-    setTimeout(tick, idx === 0 ? 500 : 150);
+    // Small initial delay before boot starts
+    setTimeout(revealNext, 200);
   }
 
   // ── Selection ──
@@ -823,7 +761,7 @@
   });
 
   function navigateRow(dir) {
-    const rows = Array.from(document.querySelectorAll('.log-row'));
+    const rows = Array.from(document.querySelectorAll('.log-row:not(.boot-hidden)'));
     if (rows.length === 0) return;
     const currentIdx = rows.findIndex(r => r.dataset.id === selectedId);
     let nextIdx;
@@ -854,7 +792,7 @@
     }
 
     updateCounts(allEntries);
-    renderLog(allEntries, 2);
+    renderLog(allEntries);
   }
 
   init();
