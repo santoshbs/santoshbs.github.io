@@ -165,7 +165,7 @@
   .log-row.selected .log-title { color: var(--fg); font-weight: 500; }
 
   /* Cells — all 13px, color: --fg-dim */
-  .log-seq { color: var(--fg-dim); white-space: nowrap; min-width: 64px; flex-shrink: 0; padding-left: 4px; }
+  .log-seq { color: var(--fg-dim); white-space: nowrap; min-width: 44px; flex-shrink: 0; padding-left: 4px; }
   .log-date { color: var(--fg-dim); white-space: nowrap; min-width: 78px; flex-shrink: 0; }
   .log-time { color: var(--fg-dim); white-space: nowrap; min-width: 44px; flex-shrink: 0; }
   .log-sep { color: var(--fg-dim); margin: 0 3px; opacity: 0.25; flex-shrink: 0; }
@@ -196,14 +196,14 @@
   /* ══ EXPANDED NOTE ══ */
   .log-expanded {
     display: none;
-    padding: 16px 0 20px 68px;
+    padding: 14px 0 18px 8px;
     border-left: 3px solid transparent;
   }
   .log-row.selected.src-agent + .log-expanded { display: block; background: var(--teal-bg); border-left-color: var(--teal-dim); }
   .log-row.selected.src-press + .log-expanded { display: block; background: var(--amber-bg); border-left-color: var(--amber-dim); }
   .log-row.selected.src-pract + .log-expanded { display: block; background: var(--coral-bg); border-left-color: var(--coral-dim); }
 
-  .expanded-field-note { color: var(--fg); font-size: 16px; line-height: 1.8; margin-bottom: 14px; max-width: 700px; }
+  .expanded-field-note { color: var(--fg); font-size: 15px; line-height: 1.7; margin-bottom: 14px; max-width: 700px; }
   .expanded-margin-label { display: inline-block; font-size: 12px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--fg-dim); margin-bottom: 6px; }
   .expanded-margin-note { color: var(--fg-meta); font-size: 15px; line-height: 1.7; font-style: italic; max-width: 700px; padding-left: 12px; border-left: 2px solid var(--separator-light); }
   .expanded-meta-line { margin-top: 12px; font-size: 11px; color: var(--fg-dim); letter-spacing: 0.02em; }
@@ -257,7 +257,7 @@
     .log-row { font-size: 12px; }
     .log-date { display: none; }
     .log-row .log-sep.sep-date { display: none; }
-    .log-seq { min-width: 52px; }
+    .log-seq { min-width: 40px; }
     .log-expanded { padding-left: 12px; }
     .overlay { padding: 40px 14px; }
   }
@@ -399,9 +399,9 @@
   }
 
   // Row HTML — seq · date · time · title · observation [N words] · margin [N words] · [badge]
-  function rowInnerHTML(entry, seqNum, total) {
+  function rowInnerHTML(entry, seqNum) {
     return (
-      `<span class="log-seq">[${pad3(seqNum)}/${pad3(total)}]</span>` +
+      `<span class="log-seq">[${pad3(seqNum)}]</span>` +
       `<span class="log-sep">·</span>` +
       `<span class="log-date">${fmtDate(entry.date)}</span>` +
       `<span class="log-sep sep-date">·</span>` +
@@ -413,8 +413,8 @@
     );
   }
 
-  function rowPlainText(entry, seqNum, total) {
-    return `[${pad3(seqNum)}/${pad3(total)}] · ${fmtDate(entry.date)} · ${fmtTime(entry.date)} · ${entry.title}  ${entry.obsWords + entry.marWords} words  ${entry.label}`;
+  function rowPlainText(entry, seqNum) {
+    return `[${pad3(seqNum)}] · ${fmtDate(entry.date)} · ${fmtTime(entry.date)} · ${entry.title}  ${entry.obsWords + entry.marWords} words  ${entry.label}`;
   }
 
   // ══ BUILD + BOOT ══
@@ -427,7 +427,7 @@
       row.className = `log-row src-${entry.source} boot-hidden`;
       row.dataset.id = entry.id;
       row.dataset.seq = seqNum;
-      row.innerHTML = rowInnerHTML(entry, seqNum, total);
+      row.innerHTML = rowInnerHTML(entry, seqNum);
       row.addEventListener('click', () => toggleSelect(entry.id));
       logEl.appendChild(row);
 
@@ -495,7 +495,7 @@
       twSpan.className = 'tw-text';
       lastRow.appendChild(twSpan);
 
-      const fullText = rowPlainText(lastEntry, lastIdx + 1, total);
+      const fullText = rowPlainText(lastEntry, lastIdx + 1);
       const cursor = document.createElement('span');
       cursor.className = 'tw-cursor';
       twSpan.appendChild(cursor);
@@ -509,7 +509,7 @@
       await pause(400);
       cursor.remove();
       lastRow.classList.remove('tw-active');
-      lastRow.innerHTML = rowInnerHTML(lastEntry, lastIdx + 1, total);
+      lastRow.innerHTML = rowInnerHTML(lastEntry, lastIdx + 1);
       lastRow.addEventListener('click', () => toggleSelect(lastEntry.id));
 
       // Expand
