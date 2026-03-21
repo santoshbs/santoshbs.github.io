@@ -498,6 +498,23 @@
       // Smooth scroll to top so the kept rows + expanded post are easy to read
       await pause(200);
       window.scrollTo({ top: 0, behavior: 'smooth' });
+
+      // Restore all rows on first scroll or click so user can browse full list
+      function restoreAllRows() {
+        for (let i = 0; i < total; i++) {
+          rows[i].style.display = '';
+          exps[i].style.display = '';
+        }
+        window.removeEventListener('scroll', onScrollRestore);
+        logEl.removeEventListener('click', restoreAllRows);
+      }
+      function onScrollRestore() {
+        // Only restore if user scrolls up (towards top where hidden rows would be)
+        if (window.scrollY > 50) return;
+        restoreAllRows();
+      }
+      window.addEventListener('scroll', onScrollRestore);
+      logEl.addEventListener('click', restoreAllRows);
     }
   }
 
