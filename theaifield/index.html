@@ -488,10 +488,12 @@
 
       // Hide all rows except last 5 (4 previous + the last one) to push post up
       const keepCount = 5;
+      const hiddenRows = [];
       for (let i = 0; i < total; i++) {
         if (i < total - keepCount) {
           rows[i].style.display = 'none';
           exps[i].style.display = 'none';
+          hiddenRows.push(i);
         }
       }
 
@@ -499,22 +501,33 @@
       await pause(200);
       window.scrollTo({ top: 0, behavior: 'smooth' });
 
-      // Restore all rows on first scroll or click so user can browse full list
-      function restoreAllRows() {
-        for (let i = 0; i < total; i++) {
-          rows[i].style.display = '';
-          exps[i].style.display = '';
+      // Add a clickable hint at the top to reveal all logs
+      const hint = document.createElement('div');
+      hint.style.cssText = 'padding:6px 4px;font-size:11px;color:var(--fg-dim);cursor:pointer;text-align:center;border-bottom:1px solid var(--separator-light);';
+      hint.textContent = `▲ show all ${total} entries`;
+      hint.addEventListener('click', restoreAll);
+      logEl.insertBefore(hint, logEl.firstChild);
+
+      let restored = false;
+      function restoreAll() {
+        if (restored) return;
+        restored = true;
+        if (hint.parentNode) hint.remove();
+        for (const idx of hiddenRows) {
+          rows[idx].style.display = '';
+          exps[idx].style.display = '';
         }
-        window.removeEventListener('scroll', onScrollRestore);
-        logEl.removeEventListener('click', restoreAllRows);
       }
-      function onScrollRestore() {
-        // Only restore if user scrolls up (towards top where hidden rows would be)
-        if (window.scrollY > 50) return;
-        restoreAllRows();
+
+      // Also restore if user scrolls at all (means they want to browse)
+      function onScroll() {
+        restoreAll();
+        window.removeEventListener('scroll', onScroll);
       }
-      window.addEventListener('scroll', onScrollRestore);
-      logEl.addEventListener('click', restoreAllRows);
+      // Delay attaching scroll listener so the auto-scroll-to-top doesn't trigger it
+      setTimeout(() => {
+        if (!restored) window.addEventListener('scroll', onScroll, { passive: true });
+      }, 1500);
     }
   }
 
