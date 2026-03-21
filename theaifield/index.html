@@ -31,7 +31,7 @@
     --mono: 'IBM Plex Mono', 'Menlo', 'Consolas', monospace;
     --font-size: 15px;
     --line-height: 1.5;
-    --content-width: 820px;
+    --content-width: 680px;
   }
 
   * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -74,19 +74,16 @@
 
   /* ══ BOOT BOX — centered animation viewport ══ */
   #boot-box {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: min(680px, calc(100vw - 40px));
-    height: min(320px, calc(100vh - 120px));
-    overflow: hidden;
+    max-width: var(--content-width);
+    margin: 36px auto 32px auto;
+    padding: 2px 20px;
+    min-height: calc(100vh - 68px);
     font-size: 12px;
     line-height: 1.35;
     color: var(--fg-dim);
     white-space: nowrap;
-    z-index: 50;
     display: none;
+    overflow-x: hidden;
   }
   #boot-box.active { display: block; }
   #boot-box .boot-line {
@@ -118,14 +115,14 @@
   .latest-header .lh-src.agent { color: var(--teal); }
   .latest-header .lh-src.press { color: var(--amber); }
   .latest-header .lh-src.pract { color: var(--coral); }
-  .latest-title { font-size: 22px; font-weight: 700; margin-bottom: 28px; }
+  .latest-title { font-size: 16px; font-weight: 700; margin-bottom: 24px; }
   .latest-title.agent { color: var(--teal); }
   .latest-title.press { color: var(--amber); }
   .latest-title.pract { color: var(--coral); }
   .latest-section-label { font-size: 11px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--fg-dim); margin-bottom: 8px; }
-  .latest-field-note { color: #000; font-size: 15px; line-height: 1.85; margin-bottom: 32px; }
+  .latest-field-note { color: #000; font-size: 14px; line-height: 1.8; margin-bottom: 28px; }
   .latest-margin-label { font-size: 11px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--fg-dim); margin-bottom: 8px; }
-  .latest-margin-note { color: var(--fg-meta); font-size: 15px; line-height: 1.85; font-style: italic; padding-left: 16px; border-left: 2px solid var(--separator-light); margin-bottom: 32px; }
+  .latest-margin-note { color: var(--fg-meta); font-size: 14px; line-height: 1.8; font-style: italic; padding-left: 16px; border-left: 2px solid var(--separator-light); margin-bottom: 28px; }
   .latest-meta { font-size: 11px; color: var(--fg-dim); padding-top: 16px; border-top: 1px solid var(--separator-light); }
 
   /* ══ LOG LIST VIEW ══ */
@@ -199,7 +196,7 @@
     .header-tagline { display: none; }
     .header-sep.tag-sep { display: none; }
     .header-crumb { font-size: 10px; gap: 6px; }
-    #boot-box { font-size: 10px; width: calc(100vw - 24px); height: min(280px, calc(100vh - 100px)); }
+    #boot-box { font-size: 10px; padding: 2px 12px; }
     .log-row { font-size: 12px; flex-wrap: wrap; }
     .log-title { white-space: normal; overflow: visible; text-overflow: unset; flex-basis: 100%; padding-left: 4px; margin-top: 1px; }
     .log-date { display: none; }
@@ -339,11 +336,7 @@
     line.className = 'boot-line';
     line.innerHTML = text;
     bootBox.appendChild(line);
-    // Keep only last N lines visible (scroll effect within fixed box)
-    const maxLines = Math.floor(bootBox.clientHeight / 18) || 16;
-    while (bootBox.children.length > maxLines) {
-      bootBox.removeChild(bootBox.firstChild);
-    }
+    window.scrollTo(0, document.body.scrollHeight);
   }
 
   async function runBootAnimation(entries) {
