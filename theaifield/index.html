@@ -129,7 +129,7 @@
     min-height: calc(100vh - 42px);
   }
 
-  /* ── LOG ROW ── */
+  /* ── LOG ROW — 6 cols: date · time · source · title · obs-w · mar-w ── */
   .log-row {
     padding: 6px 20px;
     cursor: pointer;
@@ -138,6 +138,7 @@
     align-items: baseline;
     gap: 0;
     border-left: 3px solid transparent;
+    min-height: 30px;
   }
 
   .log-row:hover {
@@ -159,21 +160,30 @@
   }
 
   .log-row.selected .log-title { color: #fff; }
-  .log-row.selected .log-meta { color: var(--fg-meta); }
+  .log-row.selected .log-wc { color: var(--fg-meta); }
+  .log-row.selected .log-date { color: var(--fg-meta); }
   .log-row.selected .log-time { color: var(--fg-meta); }
 
   /* Row cells */
+  .log-date {
+    color: var(--fg-dim);
+    font-size: 13px;
+    white-space: nowrap;
+    min-width: 80px;
+    flex-shrink: 0;
+  }
+
   .log-time {
     color: var(--fg-dim);
     font-size: 13px;
     white-space: nowrap;
-    min-width: 56px;
+    min-width: 46px;
     flex-shrink: 0;
   }
 
   .log-sep {
     color: var(--fg-dim);
-    margin: 0 6px;
+    margin: 0 5px;
     opacity: 0.3;
     flex-shrink: 0;
   }
@@ -190,14 +200,6 @@
   .log-source.press { color: var(--amber); }
   .log-source.pract { color: var(--coral); }
 
-  .log-pulse {
-    color: var(--fg-dim);
-    font-size: 12px;
-    white-space: nowrap;
-    min-width: 44px;
-    flex-shrink: 0;
-  }
-
   .log-title {
     color: var(--fg);
     font-weight: 400;
@@ -207,22 +209,22 @@
     white-space: nowrap;
   }
 
-  /* ── HIGHER CONTRAST METADATA ── */
-  .log-meta {
-    color: var(--fg-meta);
+  .log-wc {
+    color: var(--fg-dim);
     font-size: 12px;
     white-space: nowrap;
-    margin-left: 12px;
     flex-shrink: 0;
-    max-width: 280px;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    min-width: 40px;
+    text-align: right;
   }
+
+  .log-wc-obs { margin-left: 12px; }
+  .log-wc-mar { margin-left: 8px; }
 
   /* ── EXPANDED NOTE with field-colored left border ── */
   .log-expanded {
     display: none;
-    padding: 14px 20px 18px 86px;
+    padding: 20px 24px 24px 86px;
     border-left: 3px solid transparent;
   }
 
@@ -244,37 +246,46 @@
 
   .expanded-field-note {
     color: var(--fg);
-    font-size: 14px;
-    line-height: 1.75;
-    margin-bottom: 12px;
-    max-width: 760px;
+    font-size: 17px;
+    line-height: 1.85;
+    margin-bottom: 16px;
+    max-width: 780px;
   }
 
   .expanded-margin-label {
     display: inline-block;
-    font-size: 11px;
+    font-size: 12px;
     font-weight: 600;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--fg-dim);
-    margin-bottom: 4px;
+    margin-bottom: 6px;
   }
 
   .expanded-margin-note {
     color: var(--fg-meta);
-    font-size: 13px;
-    line-height: 1.65;
+    font-size: 16px;
+    line-height: 1.75;
     font-style: italic;
-    max-width: 760px;
+    max-width: 780px;
     padding-left: 12px;
     border-left: 2px solid var(--separator);
   }
 
   .expanded-meta-line {
-    margin-top: 10px;
+    margin-top: 12px;
     font-size: 11px;
     color: var(--fg-dim);
     letter-spacing: 0.02em;
+  }
+
+  /* ── FADE-IN for auto-expanded detail ── */
+  .expand-fade-in {
+    animation: fadeIn 0.8s ease-out;
+  }
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(6px); }
+    to { opacity: 1; transform: translateY(0); }
   }
 
   /* ── LOADING / ERROR ── */
@@ -292,16 +303,17 @@
     height: 15px;
     background: var(--fg);
     vertical-align: text-bottom;
-    animation: blink 0.7s step-end infinite;
-    margin-left: 2px;
+    animation: cursorBlink 0.7s step-end infinite;
+    margin-left: 1px;
   }
-  @keyframes blink {
+  @keyframes cursorBlink {
     50% { opacity: 0; }
   }
 
-  .typewriter-active .log-title {
-    overflow: visible;
-    white-space: normal;
+  .log-row.tw-active > .tw-text {
+    white-space: pre;
+    font-size: 13px;
+    color: var(--fg);
   }
 
   /* ── ABOUT OVERLAY ── */
@@ -391,31 +403,28 @@
 
     .log-container { margin-top: 38px; }
 
-    .log-row {
-      padding: 5px 12px;
-      flex-wrap: wrap;
-    }
-
-    .log-time { min-width: 48px; font-size: 12px; }
+    .log-row { padding: 5px 12px; }
+    .log-date { display: none; }
+    .log-row .log-sep.sep-date { display: none; }
+    .log-time { min-width: 42px; font-size: 12px; }
     .log-source { font-size: 12px; min-width: 44px; }
-    .log-pulse { font-size: 11px; min-width: 36px; }
-    .log-meta { display: none; }
+    .log-wc { font-size: 11px; min-width: 32px; }
 
     .log-expanded { padding-left: 15px; }
-
     .overlay { padding: 40px 14px; }
   }
 
   @media (max-width: 420px) {
     .log-time { display: none; }
-    .log-row .log-sep:first-of-type { display: none; }
+    .log-row .log-sep.sep-time { display: none; }
+    .log-wc-obs { display: none; }
     .header-counts { gap: 6px; }
   }
 </style>
 </head>
 <body>
 
-<!-- FIXED HEADER — single compact nav row -->
+<!-- FIXED HEADER -->
 <div class="header">
   <span class="header-title">theaifield</span>
   <span class="header-sep tag-sep">│</span>
@@ -484,7 +493,6 @@
 (function() {
   'use strict';
 
-  // ── Config ──
   const FEEDS = [
     { key: 'agent', label: 'AGENT', url: 'https://santoshbs.github.io/agentfield/feed.json' },
     { key: 'press', label: 'PRESS', url: 'https://santoshbs.github.io/pressfield/feed.json' },
@@ -512,19 +520,19 @@
   function normEntry(item, feed, idx) {
     const dateStr = item.date || item.date_published || item.published || item.timestamp || '';
     const date = dateStr ? new Date(dateStr) : new Date();
-
     const pulse = item.pulse || item.pulse_number || item.id || (idx + 1);
 
-    // Margin title with First Letter Caps
+    // Margin title — lowercase in log row
     const rawTitle = item.margin_title || item.title || item.margin_note_title || '';
-    const title = toFirstLetterCaps(rawTitle);
+    const title = rawTitle.toLowerCase();
 
     const fieldNote = item.observation || item.field_note || item.field || item.content_text || item.content || '';
     const marginNote = item.margin || item.margin_note || item.summary || '';
     const marginTitle = item.deeper_title || '';
-
-    // Build meta string from available fields — NO "INFO" label
     const meta = buildMeta(item, feed);
+
+    const obsWords = wordCount(fieldNote);
+    const marWords = wordCount(marginNote);
 
     return {
       id: `${feed.key}-${pulse}`,
@@ -537,8 +545,14 @@
       marginNote,
       marginTitle: toFirstLetterCaps(marginTitle),
       meta,
-      raw: item,
+      obsWords,
+      marWords,
     };
+  }
+
+  function wordCount(s) {
+    if (!s) return 0;
+    return s.trim().split(/\s+/).filter(Boolean).length;
   }
 
   function toFirstLetterCaps(s) {
@@ -561,12 +575,55 @@
       if (item.story_comments) parts.push(`${item.story_comments} comments`);
       if (item.comments_fetched) parts.push(`${item.comments_fetched} fetched`);
     }
-    // Fallback to source_label
     if (parts.length === 0) {
       const src = item.source_label || item.source || item.meta || item.url_title || '';
       if (src) parts.push(src);
     }
     return parts.join(' · ');
+  }
+
+  // ── Format helpers ──
+  function formatDate(d) {
+    if (!d || isNaN(d)) return '--/--/--';
+    const mm = String(d.getMonth() + 1).padStart(2, '0');
+    const dd = String(d.getDate()).padStart(2, '0');
+    return `${d.getFullYear()}-${mm}-${dd}`;
+  }
+
+  function formatTime(d) {
+    if (!d || isNaN(d)) return '--:--';
+    return String(d.getHours()).padStart(2, '0') + ':' + String(d.getMinutes()).padStart(2, '0');
+  }
+
+  function esc(s) {
+    const d = document.createElement('div');
+    d.textContent = s;
+    return d.innerHTML;
+  }
+
+  // ── Build plain-text line for typewriter (all 6 cols as flat string) ──
+  function rowPlainText(entry) {
+    const date = formatDate(entry.date);
+    const time = formatTime(entry.date);
+    const src = entry.label.padEnd(5);
+    const ow = String(entry.obsWords).padStart(4);
+    const mw = String(entry.marWords).padStart(4);
+    return `${date} · ${time} · ${src} · ${entry.title}  ${ow}w ${mw}w`;
+  }
+
+  // ── Build structured row HTML ──
+  function rowInnerHTML(entry) {
+    return (
+      `<span class="log-date">${formatDate(entry.date)}</span>` +
+      `<span class="log-sep sep-date">·</span>` +
+      `<span class="log-time">${formatTime(entry.date)}</span>` +
+      `<span class="log-sep sep-time">·</span>` +
+      `<span class="log-source ${entry.source}">${entry.label}</span>` +
+      `<span class="log-sep">·</span>` +
+      `<span class="log-title">${esc(entry.title)}</span>` +
+      `<span class="log-wc log-wc-obs">${entry.obsWords}w</span>` +
+      `<span class="log-wc log-wc-mar">${entry.marWords}w</span>`
+    );
   }
 
   // ── Render ──
@@ -582,23 +639,18 @@
     entries.forEach((entry, i) => {
       const doTypewriter = i >= twStart && typewriterCount > 0;
 
-      // Row
       const row = document.createElement('div');
       row.className = `log-row src-${entry.source}`;
       row.dataset.id = entry.id;
 
-      const timeStr = formatTime(entry.date);
-      const metaStr = entry.meta ? truncate(entry.meta, 48) : '';
-
-      row.innerHTML =
-        `<span class="log-time">${timeStr}</span>` +
-        `<span class="log-sep">·</span>` +
-        `<span class="log-source ${entry.source}">${entry.label}</span>` +
-        `<span class="log-sep">·</span>` +
-        `<span class="log-pulse">#${entry.pulse}</span>` +
-        `<span class="log-sep">·</span>` +
-        `<span class="log-title">${doTypewriter ? '' : esc(entry.title)}</span>` +
-        (metaStr ? `<span class="log-meta">${esc(metaStr)}</span>` : '');
+      if (doTypewriter) {
+        row.classList.add('tw-active');
+        const twSpan = document.createElement('span');
+        twSpan.className = 'tw-text';
+        row.appendChild(twSpan);
+      } else {
+        row.innerHTML = rowInnerHTML(entry);
+      }
 
       row.addEventListener('click', () => toggleSelect(entry.id));
       logEl.appendChild(row);
@@ -617,35 +669,100 @@
         expandHtml += `<div class="expanded-margin-label">${esc(label)}</div>`;
         expandHtml += `<div class="expanded-margin-note">${esc(entry.marginNote)}</div>`;
       }
-      // Compact meta line in expanded view
       if (entry.meta) {
         expandHtml += `<div class="expanded-meta-line">${esc(entry.meta)}</div>`;
       }
       expanded.innerHTML = expandHtml || '<div class="expanded-field-note" style="color:var(--fg-dim)">No note content.</div>';
       logEl.appendChild(expanded);
-
-      // Typewriter animation
-      if (doTypewriter) {
-        typewrite(row.querySelector('.log-title'), entry.title, entry.id, i === entries.length - 1);
-      }
     });
+
+    // Scroll so the typewriter rows are visible
+    const allRows = document.querySelectorAll('.log-row');
+    if (allRows.length >= 2) {
+      allRows[allRows.length - 2].scrollIntoView({ block: 'center', behavior: 'auto' });
+    } else {
+      window.scrollTo(0, document.body.scrollHeight);
+    }
+
+    // Start chained typewriter
+    if (typewriterCount > 0 && entries.length > 0) {
+      setTimeout(() => typewriteChain(entries.slice(twStart), 0), 300);
+    }
   }
 
-  function formatTime(d) {
-    if (!d || isNaN(d)) return '--:--';
-    const h = String(d.getHours()).padStart(2, '0');
-    const m = String(d.getMinutes()).padStart(2, '0');
-    return `${h}:${m}`;
-  }
+  // ── Typewriter: chain through last N rows, typing from col 1 ──
+  function typewriteChain(entries, idx) {
+    if (idx >= entries.length) return;
 
-  function truncate(s, n) {
-    return s.length > n ? s.slice(0, n - 1) + '…' : s;
-  }
+    const entry = entries[idx];
+    const isLast = idx === entries.length - 1;
+    const row = document.querySelector(`.log-row[data-id="${entry.id}"]`);
+    if (!row) return;
 
-  function esc(s) {
-    const d = document.createElement('div');
-    d.textContent = s;
-    return d.innerHTML;
+    const twSpan = row.querySelector('.tw-text');
+    if (!twSpan) return;
+
+    const fullText = rowPlainText(entry);
+    let charIdx = 0;
+
+    const cursor = document.createElement('span');
+    cursor.className = 'typewriter-cursor';
+    twSpan.textContent = '';
+    twSpan.appendChild(cursor);
+
+    const speed = Math.max(10, Math.min(30, 1600 / (fullText.length || 1)));
+
+    function tick() {
+      if (charIdx < fullText.length) {
+        twSpan.insertBefore(document.createTextNode(fullText[charIdx]), cursor);
+        charIdx++;
+        setTimeout(tick, speed + Math.random() * 8);
+      } else {
+        if (isLast) {
+          // Last row done: pause → swap to structured → wait a few seconds → auto-expand with fade → scroll fully visible
+          setTimeout(() => {
+            if (cursor.parentNode) cursor.remove();
+            row.classList.remove('tw-active');
+            row.innerHTML = rowInnerHTML(entry);
+            row.addEventListener('click', () => toggleSelect(entry.id));
+
+            setTimeout(() => {
+              toggleSelect(entry.id);
+              const panel = document.querySelector(`.log-expanded[data-expand-for="${entry.id}"]`);
+              if (panel) panel.classList.add('expand-fade-in');
+
+              // Scroll so entire expanded post is visible — retry to catch layout reflow
+              function scrollToBottom() {
+                const el = panel || row;
+                if (panel && panel.offsetHeight > 0) {
+                  // Scroll so the bottom of the expanded panel is visible
+                  const rect = panel.getBoundingClientRect();
+                  const overshoot = rect.bottom - window.innerHeight + 40;
+                  if (overshoot > 0) {
+                    window.scrollBy({ top: overshoot, behavior: 'smooth' });
+                  }
+                } else {
+                  window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+                }
+              }
+              setTimeout(scrollToBottom, 150);
+              setTimeout(scrollToBottom, 800);
+            }, 2500);
+          }, 600);
+        } else {
+          // Not last: swap to structured, start next row
+          setTimeout(() => {
+            if (cursor.parentNode) cursor.remove();
+            row.classList.remove('tw-active');
+            row.innerHTML = rowInnerHTML(entry);
+            row.addEventListener('click', () => toggleSelect(entry.id));
+            setTimeout(() => typewriteChain(entries, idx + 1), 250);
+          }, 350);
+        }
+      }
+    }
+
+    setTimeout(tick, idx === 0 ? 500 : 150);
   }
 
   // ── Selection ──
@@ -660,38 +777,6 @@
     selectedId = id;
     const row = document.querySelector(`.log-row[data-id="${id}"]`);
     if (row) row.classList.add('selected');
-  }
-
-  // ── Typewriter ──
-  function typewrite(el, text, entryId, isLast) {
-    let i = 0;
-    const cursor = document.createElement('span');
-    cursor.className = 'typewriter-cursor';
-
-    el.textContent = '';
-    el.appendChild(cursor);
-
-    const speed = Math.max(18, Math.min(45, 1400 / (text.length || 1)));
-
-    function tick() {
-      if (i < text.length) {
-        el.insertBefore(document.createTextNode(text[i]), cursor);
-        i++;
-        setTimeout(tick, speed + Math.random() * 15);
-      } else {
-        if (isLast) {
-          setTimeout(() => {
-            toggleSelect(entryId);
-            setTimeout(() => {
-              if (cursor.parentNode) cursor.remove();
-            }, 1200);
-          }, 400);
-        } else {
-          setTimeout(() => { if (cursor.parentNode) cursor.remove(); }, 600);
-        }
-      }
-    }
-    setTimeout(tick, 300 + (isLast ? 800 : 0));
   }
 
   // ── Counts ──
@@ -731,7 +816,7 @@
     } else if (e.key === 'Enter' || e.key === ' ') {
       if (selectedId) {
         e.preventDefault();
-        const row = document.querySelector(`.log-row.selected`);
+        const row = document.querySelector('.log-row.selected');
         if (row) row.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
       }
     }
@@ -770,11 +855,6 @@
 
     updateCounts(allEntries);
     renderLog(allEntries, 2);
-
-    // Scroll to bottom (latest entries)
-    setTimeout(() => {
-      window.scrollTo(0, document.body.scrollHeight);
-    }, 100);
   }
 
   init();
