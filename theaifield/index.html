@@ -26,9 +26,6 @@
     --teal-hl: rgba(9,105,168,0.10);
     --amber-hl: rgba(154,103,0,0.10);
     --coral-hl: rgba(188,76,0,0.10);
-    --teal-badge: #0969a8;
-    --amber-badge: #9a6700;
-    --coral-badge: #bc4c00;
     --separator: #d1d9e0;
     --separator-light: #e8ecf0;
     --header-bg: #f6f8fa;
@@ -36,6 +33,7 @@
     --mono: 'Source Code Pro', 'Menlo', 'Consolas', monospace;
     --font-size: 15px;
     --line-height: 1.5;
+    --content-width: 820px;
   }
 
   * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -50,7 +48,7 @@
     overflow-x: hidden;
   }
 
-  /* ══ SPLASH SCREEN ══ */
+  /* ══ SPLASH ══ */
   #splash {
     position: fixed;
     inset: 0;
@@ -60,26 +58,21 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-family: var(--mono);
     transition: opacity 0.5s;
   }
   #splash.fade-out { opacity: 0; pointer-events: none; }
 
   #splash pre {
-    font-size: 14px;
-    line-height: 1.2;
+    font-size: 13px;
+    line-height: 1.15;
     color: var(--fg-dim);
     text-align: center;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.01em;
   }
-
-  #splash .splash-title {
-    color: var(--fg);
-    font-weight: 700;
-  }
+  #splash .splash-title { color: var(--fg); font-weight: 700; }
 
   #splash .splash-sub {
-    margin-top: 12px;
+    margin-top: 14px;
     font-size: 12px;
     color: var(--fg-dim);
   }
@@ -91,7 +84,7 @@
     background: var(--fg);
     vertical-align: text-bottom;
     animation: sBlink 1s step-end infinite;
-    margin-top: 16px;
+    margin-top: 18px;
   }
   @keyframes sBlink { 50% { opacity: 0; } }
 
@@ -103,19 +96,26 @@
     transition: opacity 0.4s;
   }
   #splash .splash-counts.visible { opacity: 1; }
-  #splash .splash-counts .sc-t { color: var(--teal); font-weight: 600; }
-  #splash .splash-counts .sc-a { color: var(--amber); font-weight: 600; }
-  #splash .splash-counts .sc-c { color: var(--coral); font-weight: 600; }
+  .sc-t { color: var(--teal); font-weight: 600; }
+  .sc-a { color: var(--amber); font-weight: 600; }
+  .sc-c { color: var(--coral); font-weight: 600; }
 
-  /* ══ STICKY HEADER ══ */
+  /* ══ STICKY HEADER — full width ══ */
   .header {
     position: fixed;
     top: 0; left: 0; right: 0;
     z-index: 100;
     background: var(--header-bg);
     border-bottom: 1px solid var(--separator);
-    padding: 0 20px;
     height: 40px;
+    display: flex;
+    align-items: center;
+  }
+  .header-inner {
+    max-width: var(--content-width);
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
     display: flex;
     align-items: center;
     gap: 16px;
@@ -137,12 +137,17 @@
   .header-links a { color: var(--fg-dim); text-decoration: none; transition: color 0.15s; }
   .header-links a:hover { color: var(--fg); }
 
-  /* ══ LOG CONTAINER ══ */
-  .log-container { padding: 2px 0; margin-top: 40px; min-height: calc(100vh - 40px); }
-
-  /* ══ LOG ROW ══ */
-  .log-row {
+  /* ══ CENTERED LOG CONTAINER ══ */
+  .log-container {
+    max-width: var(--content-width);
+    margin: 40px auto 0 auto;
     padding: 2px 20px;
+    min-height: calc(100vh - 40px);
+  }
+
+  /* ══ LOG ROW — all cells 13px, uniform ══ */
+  .log-row {
+    padding: 2px 0;
     cursor: pointer;
     transition: background 0.1s;
     display: flex;
@@ -150,6 +155,7 @@
     gap: 0;
     border-left: 3px solid transparent;
     min-height: 24px;
+    font-size: 13px;
   }
   .log-row:hover { background: var(--bg-alt); }
 
@@ -158,65 +164,68 @@
   .log-row.selected.src-pract { background: var(--coral-hl); border-left-color: var(--coral); }
   .log-row.selected .log-title { color: var(--fg); font-weight: 500; }
 
-  .log-date { color: var(--fg-dim); font-size: 13px; white-space: nowrap; min-width: 80px; flex-shrink: 0; }
-  .log-time { color: var(--fg-dim); font-size: 13px; white-space: nowrap; min-width: 46px; flex-shrink: 0; }
-  .log-sep { color: var(--fg-dim); margin: 0 4px; opacity: 0.25; flex-shrink: 0; }
+  /* Cells — all 13px, color: --fg-dim */
+  .log-seq { color: var(--fg-dim); white-space: nowrap; min-width: 64px; flex-shrink: 0; padding-left: 4px; }
+  .log-date { color: var(--fg-dim); white-space: nowrap; min-width: 78px; flex-shrink: 0; }
+  .log-time { color: var(--fg-dim); white-space: nowrap; min-width: 44px; flex-shrink: 0; }
+  .log-sep { color: var(--fg-dim); margin: 0 3px; opacity: 0.25; flex-shrink: 0; }
 
-  .log-title { color: var(--fg); font-weight: 400; flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .log-title { color: var(--fg); font-weight: 400; flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; min-width: 0; }
 
-  .log-wc { color: var(--fg-dim); font-size: 11px; white-space: nowrap; flex-shrink: 0; margin-left: 10px; }
+  .log-wc { color: var(--fg-dim); white-space: nowrap; flex-shrink: 0; margin-left: 8px; }
 
-  /* Source badge: colored background, white text, at end */
+  /* Source badge */
   .log-badge {
     display: inline-block;
     font-size: 10px;
     font-weight: 700;
-    letter-spacing: 0.06em;
+    letter-spacing: 0.04em;
     padding: 1px 6px;
     border-radius: 3px;
     color: #fff;
-    margin-left: 10px;
+    margin-left: 8px;
     flex-shrink: 0;
     white-space: nowrap;
   }
-  .log-badge.agent { background: var(--teal-badge); }
-  .log-badge.press { background: var(--amber-badge); }
-  .log-badge.pract { background: var(--coral-badge); }
+  .log-badge.agent { background: var(--teal); }
+  .log-badge.press { background: var(--amber); }
+  .log-badge.pract { background: var(--coral); }
 
-  /* Boot hidden */
   .log-row.boot-hidden, .log-expanded.boot-hidden { display: none !important; }
 
   /* ══ EXPANDED NOTE ══ */
-  .log-expanded { display: none; padding: 16px 20px 20px 86px; border-left: 3px solid transparent; }
+  .log-expanded {
+    display: none;
+    padding: 16px 0 20px 68px;
+    border-left: 3px solid transparent;
+  }
   .log-row.selected.src-agent + .log-expanded { display: block; background: var(--teal-bg); border-left-color: var(--teal-dim); }
   .log-row.selected.src-press + .log-expanded { display: block; background: var(--amber-bg); border-left-color: var(--amber-dim); }
   .log-row.selected.src-pract + .log-expanded { display: block; background: var(--coral-bg); border-left-color: var(--coral-dim); }
 
-  .expanded-field-note { color: var(--fg); font-size: 16px; line-height: 1.8; margin-bottom: 14px; max-width: 780px; }
+  .expanded-field-note { color: var(--fg); font-size: 16px; line-height: 1.8; margin-bottom: 14px; max-width: 700px; }
   .expanded-margin-label { display: inline-block; font-size: 12px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--fg-dim); margin-bottom: 6px; }
-  .expanded-margin-note { color: var(--fg-meta); font-size: 15px; line-height: 1.7; font-style: italic; max-width: 780px; padding-left: 12px; border-left: 2px solid var(--separator-light); }
+  .expanded-margin-note { color: var(--fg-meta); font-size: 15px; line-height: 1.7; font-style: italic; max-width: 700px; padding-left: 12px; border-left: 2px solid var(--separator-light); }
   .expanded-meta-line { margin-top: 12px; font-size: 11px; color: var(--fg-dim); letter-spacing: 0.02em; }
 
   .expand-fade-in { animation: fadeIn 1s ease-out; }
   @keyframes fadeIn { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: translateY(0); } }
 
-  .status-line { padding: 10px 20px; color: var(--fg-dim); font-size: 13px; }
+  .status-line { padding: 10px 0; color: var(--fg-dim); font-size: 13px; }
   .status-line.error { color: var(--coral); }
 
-  /* Typewriter cursor */
+  /* Typewriter */
   .tw-cursor {
     display: inline-block;
-    width: 9px;
-    height: 15px;
+    width: 8px;
+    height: 14px;
     background: var(--fg);
     vertical-align: text-bottom;
     animation: twBlink 0.7s step-end infinite;
     margin-left: 1px;
   }
   @keyframes twBlink { 50% { opacity: 0; } }
-
-  .log-row.tw-active { display: flex; align-items: baseline; }
-  .log-row.tw-active > .tw-text { white-space: pre; font-size: 13px; color: var(--fg); }
+  .log-row.tw-active > .tw-text { white-space: pre; color: var(--fg-dim); }
 
   /* ══ ABOUT OVERLAY ══ */
   .overlay { display: none; position: fixed; inset: 0; z-index: 200; background: var(--overlay-bg); overflow-y: auto; padding: 60px 20px; }
@@ -234,22 +243,22 @@
   .overlay-content a:hover { text-decoration: underline; }
   .overlay-content .about-meta { margin-top: 32px; padding-top: 16px; border-top: 1px solid var(--separator); font-size: 12px; color: var(--fg-dim); line-height: 1.8; }
 
-  /* ══ MOBILE ══ */
+  @media (max-width: 860px) {
+    .log-container { padding: 2px 12px; }
+  }
   @media (max-width: 700px) {
     :root { --font-size: 14px; }
-    #splash pre { font-size: 10px; }
-    .header { padding: 0 12px; gap: 8px; height: 38px; }
+    #splash pre { font-size: 9px; }
+    .header-inner { padding: 0 12px; gap: 8px; }
     .header-tagline { display: none; }
     .header-sep.tag-sep { display: none; }
     .header-counts { font-size: 11px; gap: 8px; }
     .header-links { font-size: 11px; gap: 8px; }
-    .log-container { margin-top: 38px; }
-    .log-row { padding: 2px 12px; }
+    .log-row { font-size: 12px; }
     .log-date { display: none; }
     .log-row .log-sep.sep-date { display: none; }
-    .log-time { min-width: 42px; font-size: 12px; }
-    .log-wc { font-size: 10px; }
-    .log-expanded { padding-left: 15px; }
+    .log-seq { min-width: 52px; }
+    .log-expanded { padding-left: 12px; }
     .overlay { padding: 40px 14px; }
   }
   @media (max-width: 420px) {
@@ -283,9 +292,9 @@
 </pre>
 <div class="splash-sub">three observation streams · open-weight model · local inference</div>
 <div class="splash-counts" id="splash-counts">
-  <span class="sc-t">agent: <span id="sc-agent">…</span></span> &nbsp;·&nbsp;
-  <span class="sc-a">press: <span id="sc-press">…</span></span> &nbsp;·&nbsp;
-  <span class="sc-c">pract: <span id="sc-pract">…</span></span> &nbsp;·&nbsp;
+  <span class="sc-t">agent.field: <span id="sc-agent">…</span></span> &nbsp;·&nbsp;
+  <span class="sc-a">press.field: <span id="sc-press">…</span></span> &nbsp;·&nbsp;
+  <span class="sc-c">pract.field: <span id="sc-pract">…</span></span> &nbsp;·&nbsp;
   total: <span id="sc-total">…</span> pulses
 </div>
 <span class="splash-cursor" id="splash-cursor"></span>
@@ -293,18 +302,20 @@
 
 <!-- ══ HEADER ══ -->
 <div class="header">
-  <span class="header-title">theaifield</span>
-  <span class="header-sep tag-sep">│</span>
-  <span class="header-tagline">three layers of ai discourse observed by an open-weight model</span>
-  <div class="header-counts">
-    <span class="ct ct-agent"><span class="ct-label">agent</span> <span class="ct-num" id="count-agent">—</span></span>
-    <span class="ct ct-press"><span class="ct-label">press</span> <span class="ct-num" id="count-press">—</span></span>
-    <span class="ct ct-pract"><span class="ct-label">pract</span> <span class="ct-num" id="count-pract">—</span></span>
-  </div>
-  <span class="header-sep">│</span>
-  <div class="header-links">
-    <a href="#" id="btn-about">about</a>
-    <a href="https://santoshbs.github.io/" target="_blank" rel="noopener">home</a>
+  <div class="header-inner">
+    <span class="header-title">theaifield</span>
+    <span class="header-sep tag-sep">│</span>
+    <span class="header-tagline">three layers of ai discourse observed by an open-weight model</span>
+    <div class="header-counts">
+      <span class="ct ct-agent"><span class="ct-label">agent.field</span> <span class="ct-num" id="count-agent">—</span></span>
+      <span class="ct ct-press"><span class="ct-label">press.field</span> <span class="ct-num" id="count-press">—</span></span>
+      <span class="ct ct-pract"><span class="ct-label">pract.field</span> <span class="ct-num" id="count-pract">—</span></span>
+    </div>
+    <span class="header-sep">│</span>
+    <div class="header-links">
+      <a href="#" id="btn-about">about</a>
+      <a href="https://santoshbs.github.io/" target="_blank" rel="noopener">home</a>
+    </div>
   </div>
 </div>
 
@@ -317,11 +328,11 @@
   <div class="overlay-content">
     <h2>about theaifield</h2>
     <p>theaifield is a unified view of three AI observer archives — field sites where an open-weight language model (gpt-oss:120b, running locally) produces structured field notes about AI discourse. Each site watches a different layer.</p>
-    <h3 class="agent-h">agentfield</h3>
+    <h3 class="agent-h">agent.field</h3>
     <p>Observes AI-agent discourse on Moltbook, an AI-agent social platform. The observer reads public agent posts and produces field notes on how artificial agents discuss intelligence, autonomy, and their own emerging culture.</p>
-    <h3 class="press-h">pressfield</h3>
+    <h3 class="press-h">press.field</h3>
     <p>Observes how mainstream media covers AI. The observer reads recent news articles and produces field notes on framing, narrative patterns, and the rhetoric surrounding artificial intelligence in public discourse.</p>
-    <h3 class="pract-h">practfield</h3>
+    <h3 class="pract-h">pract.field</h3>
     <p>Observes practitioner discourse on Hacker News threads about AI. The observer reads HN discussions (fetched via Algolia + Firebase) and produces field notes on how builders, engineers, and technologists talk about AI tools, capabilities, and implications in their daily work.</p>
     <div class="about-meta"><p>Architecture: Jekyll + GitHub Pages · tiseimi pipeline · gpt-oss:120b on Ollama<br>Two-layer output format: field note + margin note per pulse<br>All three sites run autonomously; this page aggregates their feeds.<br><br>Built by <a href="https://santoshbs.github.io/">Santosh Srinivas</a></p></div>
   </div>
@@ -332,9 +343,9 @@
   'use strict';
 
   const FEEDS = [
-    { key: 'agent', label: 'AGENT', url: 'https://santoshbs.github.io/agentfield/feed.json' },
-    { key: 'press', label: 'PRESS', url: 'https://santoshbs.github.io/pressfield/feed.json' },
-    { key: 'pract', label: 'PRACT', url: 'https://santoshbs.github.io/practfield/feed.json' },
+    { key: 'agent', label: 'agent.field', url: 'https://santoshbs.github.io/agentfield/feed.json' },
+    { key: 'press', label: 'press.field', url: 'https://santoshbs.github.io/pressfield/feed.json' },
+    { key: 'pract', label: 'pract.field', url: 'https://santoshbs.github.io/practfield/feed.json' },
   ];
 
   const logEl = document.getElementById('log');
@@ -347,6 +358,7 @@
   function fmtTime(d) { return d && !isNaN(d) ? `${String(d.getHours()).padStart(2,'0')}:${String(d.getMinutes()).padStart(2,'0')}` : '--:--'; }
   function titleCase(s) { return s ? s.replace(/\b\w/g, c => c.toUpperCase()) : ''; }
   function pause(ms) { return new Promise(r => setTimeout(r, ms)); }
+  function pad3(n) { return String(n).padStart(3, '0'); }
 
   async function fetchFeed(feed) {
     try {
@@ -386,9 +398,11 @@
     return p.join(' · ');
   }
 
-  // ── Row HTML: date · time · title · observation [N words] · margin [N words] · [BADGE] ──
-  function rowInnerHTML(entry) {
+  // Row HTML — seq · date · time · title · observation [N words] · margin [N words] · [badge]
+  function rowInnerHTML(entry, seqNum, total) {
     return (
+      `<span class="log-seq">[${pad3(seqNum)}/${pad3(total)}]</span>` +
+      `<span class="log-sep">·</span>` +
       `<span class="log-date">${fmtDate(entry.date)}</span>` +
       `<span class="log-sep sep-date">·</span>` +
       `<span class="log-time">${fmtTime(entry.date)}</span>` +
@@ -400,19 +414,21 @@
     );
   }
 
-  // Typewriter plain text for a row
-  function rowPlainText(entry) {
-    return `${fmtDate(entry.date)} · ${fmtTime(entry.date)} · ${entry.title}  observation [${entry.obsWords} words]  margin [${entry.marWords} words]  ${entry.label}`;
+  function rowPlainText(entry, seqNum, total) {
+    return `[${pad3(seqNum)}/${pad3(total)}] · ${fmtDate(entry.date)} · ${fmtTime(entry.date)} · ${entry.title}  observation [${entry.obsWords} words]  margin [${entry.marWords} words]  ${entry.label}`;
   }
 
   // ══ BUILD + BOOT ══
   function buildAll(entries) {
     logEl.innerHTML = '';
-    entries.forEach(entry => {
+    const total = entries.length;
+    entries.forEach((entry, i) => {
+      const seqNum = i + 1;
       const row = document.createElement('div');
       row.className = `log-row src-${entry.source} boot-hidden`;
       row.dataset.id = entry.id;
-      row.innerHTML = rowInnerHTML(entry);
+      row.dataset.seq = seqNum;
+      row.innerHTML = rowInnerHTML(entry, seqNum, total);
       row.addEventListener('click', () => toggleSelect(entry.id));
       logEl.appendChild(row);
 
@@ -435,8 +451,6 @@
     const rows = Array.from(document.querySelectorAll('.log-row'));
     const exps = Array.from(document.querySelectorAll('.log-expanded'));
     const total = rows.length;
-
-    // Reveal all except last 2
     const mainCount = Math.max(0, total - 2);
 
     for (let i = 0; i < mainCount; i++) {
@@ -444,7 +458,6 @@
       exps[i].classList.remove('boot-hidden');
       window.scrollTo(0, document.body.scrollHeight);
 
-      // Pacing: moderate, not too fast
       const remaining = mainCount - i;
       let delay;
       if (remaining > 10) delay = 45 + Math.random() * 25;
@@ -453,7 +466,6 @@
       await pause(delay);
     }
 
-    // Pause
     await pause(600);
 
     // ── SECOND-TO-LAST: typewriter ──
@@ -463,7 +475,6 @@
       const penRow = rows[penIdx];
       const penExp = exps[penIdx];
 
-      // Show row as typewriter
       penRow.classList.remove('boot-hidden');
       penExp.classList.remove('boot-hidden');
       penRow.classList.add('tw-active');
@@ -472,26 +483,24 @@
       twSpan.className = 'tw-text';
       penRow.appendChild(twSpan);
 
-      const fullText = rowPlainText(penEntry);
+      const fullText = rowPlainText(penEntry, penIdx + 1, total);
       const cursor = document.createElement('span');
       cursor.className = 'tw-cursor';
       twSpan.appendChild(cursor);
 
-      // Type it
       for (let c = 0; c < fullText.length; c++) {
         cursor.before(document.createTextNode(fullText[c]));
         window.scrollTo(0, document.body.scrollHeight);
         await pause(12 + Math.random() * 8);
       }
 
-      // Done typing — swap to structured
       await pause(400);
       cursor.remove();
       penRow.classList.remove('tw-active');
-      penRow.innerHTML = rowInnerHTML(penEntry);
+      penRow.innerHTML = rowInnerHTML(penEntry, penIdx + 1, total);
       penRow.addEventListener('click', () => toggleSelect(penEntry.id));
 
-      // Expand (show observation + margin)
+      // Expand
       await pause(800);
       toggleSelect(penEntry.id);
       penExp.classList.add('expand-fade-in');
@@ -501,11 +510,11 @@
       await pause(4000);
 
       // Collapse
-      toggleSelect(penEntry.id); // deselect
+      toggleSelect(penEntry.id);
       await pause(2000);
     }
 
-    // ── LAST ENTRY: just reveal + expand ──
+    // ── LAST ENTRY ──
     if (total >= 1) {
       const lastIdx = total - 1;
       const lastEntry = entries[lastIdx];
@@ -528,7 +537,6 @@
     }
   }
 
-  // ── Selection ──
   function toggleSelect(id) {
     const prev = document.querySelector('.log-row.selected');
     if (prev) prev.classList.remove('selected');
@@ -547,14 +555,14 @@
     return c;
   }
 
-  // ── About ──
+  // About
   const aboutOverlay = document.getElementById('about-overlay');
   document.getElementById('btn-about').addEventListener('click', e => { e.preventDefault(); aboutOverlay.classList.add('active'); });
   document.getElementById('btn-close-about').addEventListener('click', () => aboutOverlay.classList.remove('active'));
   document.addEventListener('keydown', e => { if (e.key === 'Escape') aboutOverlay.classList.remove('active'); });
   aboutOverlay.addEventListener('click', e => { if (e.target === aboutOverlay) aboutOverlay.classList.remove('active'); });
 
-  // ── Keyboard nav ──
+  // Keyboard nav
   document.addEventListener('keydown', e => {
     if (aboutOverlay.classList.contains('active')) return;
     if (e.key === 'j' || e.key === 'ArrowDown') { e.preventDefault(); navigateRow(1); }
@@ -575,23 +583,18 @@
 
   // ══ INIT ══
   async function init() {
-    // Fetch while showing splash
     const results = await Promise.allSettled(FEEDS.map(fetchFeed));
     allEntries = results.filter(r => r.status === 'fulfilled').flatMap(r => r.value).sort((a, b) => a.date - b.date);
-
     const counts = updateCounts(allEntries);
 
-    // Show counts on splash
     document.getElementById('sc-agent').textContent = counts.agent;
     document.getElementById('sc-press').textContent = counts.press;
     document.getElementById('sc-pract').textContent = counts.pract;
     document.getElementById('sc-total').textContent = allEntries.length;
     document.getElementById('splash-counts').classList.add('visible');
 
-    // Hold splash with blinking cursor
     await pause(3000);
 
-    // Fade out splash
     const splash = document.getElementById('splash');
     splash.classList.add('fade-out');
     await pause(600);
@@ -602,7 +605,6 @@
       return;
     }
 
-    // Build DOM, run boot
     buildAll(allEntries);
     await bootReveal(allEntries);
   }
