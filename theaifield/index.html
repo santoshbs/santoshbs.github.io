@@ -401,12 +401,19 @@
     const total = rows.length;
     const mainCount = Math.max(0, total - 1);
 
+    // Pick 4 random pause points between 4 and mainCount-4
+    const pauseSet = new Set();
+    if (mainCount > 10) {
+      while (pauseSet.size < 4) pauseSet.add(4 + Math.floor(Math.random() * (mainCount - 8)));
+    }
+
     for (let i = 0; i < mainCount; i++) {
       rows[i].classList.remove('boot-hidden');
       exps[i].classList.remove('boot-hidden');
       window.scrollTo(0, document.body.scrollHeight);
 
-      if ((i + 1) % 9 === 0 && i < mainCount - 1) {
+      // Random pause with blinking cursor
+      if (pauseSet.has(i)) {
         await pause(200);
         const bCur = document.createElement('div');
         bCur.style.padding = '2px 0 2px 4px';
@@ -415,7 +422,7 @@
         bCur.appendChild(bSpan);
         logEl.appendChild(bCur);
         window.scrollTo(0, document.body.scrollHeight);
-        await pause(1200);
+        await pause(1000 + Math.random() * 600);
         bCur.remove();
         continue;
       }
@@ -428,6 +435,7 @@
       await pause(delay);
     }
 
+    // Blinking cursor pause before last entry
     await pause(400);
     const cursorLine = document.createElement('div');
     cursorLine.style.padding = '2px 0 2px 4px';
@@ -448,6 +456,7 @@
       lastRow.classList.remove('boot-hidden');
       lastExp.classList.remove('boot-hidden');
 
+      // Typewriter
       lastRow.classList.add('tw-active');
       lastRow.innerHTML = '';
       const twSpan = document.createElement('span');
@@ -470,13 +479,25 @@
       lastRow.classList.remove('tw-active');
       lastRow.innerHTML = rowInnerHTML(lastEntry, lastIdx + 1);
 
+      // Expand last post
       await pause(800);
       toggleSelect(lastEntry.id);
       lastExp.classList.add('expand-fade-in');
+
+      await pause(600);
+
+      // Hide all rows except last 5 (4 previous + the last one) to push post up
+      const keepCount = 5;
+      for (let i = 0; i < total; i++) {
+        if (i < total - keepCount) {
+          rows[i].style.display = 'none';
+          exps[i].style.display = 'none';
+        }
+      }
+
+      // Smooth scroll to top so the kept rows + expanded post are easy to read
       await pause(200);
-      window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
-      await pause(800);
-      window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     }
   }
 
@@ -499,19 +520,23 @@
     selectedId = null;
     document.querySelectorAll('.log-row.selected').forEach(r => r.classList.remove('selected'));
 
+    // Restore any rows hidden after boot animation
     document.querySelectorAll('.log-row').forEach(row => {
+      row.style.display = '';
       const src = row.dataset.source;
       row.classList.toggle('filtered-out', filter !== 'all' && src !== filter);
     });
     document.querySelectorAll('.log-expanded').forEach(exp => {
+      exp.style.display = '';
       const src = exp.dataset.source;
       exp.classList.toggle('filtered-out', filter !== 'all' && src !== filter);
     });
 
-    // Update active button
     document.querySelectorAll('.ft-btn').forEach(btn => {
       btn.classList.toggle('active', btn.dataset.filter === filter);
     });
+
+    window.scrollTo(0, document.body.scrollHeight);
   }
 
   function updateCounts(entries) {
