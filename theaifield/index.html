@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>theaifield</title>
+<title>the[AI]field</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
@@ -17,9 +17,6 @@
     --teal: #0969a8;
     --amber: #9a6700;
     --coral: #bc4c00;
-    --teal-dim: #0969a8;
-    --amber-dim: #9a6700;
-    --coral-dim: #bc4c00;
     --teal-bg: rgba(9,105,168,0.04);
     --amber-bg: rgba(154,103,0,0.04);
     --coral-bg: rgba(188,76,0,0.04);
@@ -29,6 +26,7 @@
     --separator: #d1d9e0;
     --separator-light: #e8ecf0;
     --header-bg: #f6f8fa;
+    --footer-bg: #f6f8fa;
     --overlay-bg: rgba(255,255,255,0.97);
     --mono: 'Source Code Pro', 'Menlo', 'Consolas', monospace;
     --font-size: 15px;
@@ -63,16 +61,15 @@
   #splash.fade-out { opacity: 0; pointer-events: none; }
 
   #splash pre {
-    font-size: 13px;
-    line-height: 1.15;
-    color: var(--fg-dim);
+    font-size: 11px;
+    line-height: 1.25;
+    color: var(--fg);
     text-align: center;
-    letter-spacing: 0.01em;
+    font-weight: 600;
   }
-  #splash .splash-title { color: var(--fg); font-weight: 700; }
 
   #splash .splash-sub {
-    margin-top: 14px;
+    margin-top: 18px;
     font-size: 12px;
     color: var(--fg-dim);
   }
@@ -89,7 +86,7 @@
   @keyframes sBlink { 50% { opacity: 0; } }
 
   #splash .splash-counts {
-    margin-top: 20px;
+    margin-top: 18px;
     font-size: 13px;
     color: var(--fg-dim);
     opacity: 0;
@@ -100,14 +97,14 @@
   .sc-a { color: var(--amber); font-weight: 600; }
   .sc-c { color: var(--coral); font-weight: 600; }
 
-  /* ══ STICKY HEADER — full width ══ */
+  /* ══ STICKY HEADER ══ */
   .header {
     position: fixed;
     top: 0; left: 0; right: 0;
     z-index: 100;
     background: var(--header-bg);
     border-bottom: 1px solid var(--separator);
-    height: 40px;
+    height: 36px;
     display: flex;
     align-items: center;
   }
@@ -118,34 +115,59 @@
     padding: 0 20px;
     display: flex;
     align-items: center;
-    gap: 16px;
+    gap: 14px;
   }
 
-  .header-title { font-weight: 700; font-size: 15px; color: var(--fg); letter-spacing: 0.03em; flex-shrink: 0; }
+  .header-title { font-weight: 700; font-size: 14px; color: var(--fg); letter-spacing: 0.02em; flex-shrink: 0; }
+  .header-title .ai-bracket { color: var(--teal); }
   .header-sep { color: var(--fg-dim); opacity: 0.3; flex-shrink: 0; }
-  .header-tagline { font-size: 12px; color: var(--fg-dim); font-weight: 400; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; flex: 1 1 auto; min-width: 0; }
-
-  .header-counts { display: flex; gap: 12px; font-size: 12px; font-weight: 500; flex-shrink: 0; }
-  .header-counts .ct { display: flex; align-items: baseline; gap: 3px; }
-  .ct-label { color: var(--fg-dim); font-weight: 400; }
-  .ct-num { font-weight: 700; }
-  .ct-agent .ct-num { color: var(--teal); }
-  .ct-press .ct-num { color: var(--amber); }
-  .ct-pract .ct-num { color: var(--coral); }
+  .header-tagline { font-size: 11px; color: var(--fg-dim); font-weight: 400; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; flex: 1 1 auto; min-width: 0; }
 
   .header-links { display: flex; gap: 10px; font-size: 12px; flex-shrink: 0; }
   .header-links a { color: var(--fg-dim); text-decoration: none; transition: color 0.15s; }
   .header-links a:hover { color: var(--fg); }
 
-  /* ══ CENTERED LOG CONTAINER ══ */
+  /* ══ FIXED FOOTER ══ */
+  .footer {
+    position: fixed;
+    bottom: 0; left: 0; right: 0;
+    z-index: 100;
+    background: var(--footer-bg);
+    border-top: 1px solid var(--separator);
+    height: 28px;
+    display: flex;
+    align-items: center;
+  }
+  .footer-inner {
+    max-width: var(--content-width);
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-size: 11px;
+    color: var(--fg-dim);
+  }
+  .footer-inner .ft { display: flex; align-items: baseline; gap: 3px; }
+  .ft-label { font-weight: 400; }
+  .ft-num { font-weight: 700; }
+  .ft-agent .ft-num { color: var(--teal); }
+  .ft-press .ft-num { color: var(--amber); }
+  .ft-pract .ft-num { color: var(--coral); }
+  .footer-spacer { flex: 1; }
+  .footer-hint { font-size: 10px; color: var(--fg-dim); opacity: 0.7; }
+  .footer-hint kbd { font-family: inherit; font-weight: 600; }
+
+  /* ══ LOG CONTAINER ══ */
   .log-container {
     max-width: var(--content-width);
-    margin: 40px auto 0 auto;
+    margin: 36px auto 28px auto;
     padding: 2px 20px;
-    min-height: calc(100vh - 40px);
+    min-height: calc(100vh - 64px);
   }
 
-  /* ══ LOG ROW — all cells 13px, uniform ══ */
+  /* ══ LOG ROW ══ */
   .log-row {
     padding: 2px 0;
     cursor: pointer;
@@ -164,8 +186,7 @@
   .log-row.selected.src-pract { background: var(--coral-hl); border-left-color: var(--coral); }
   .log-row.selected .log-title { color: var(--fg); font-weight: 500; }
 
-  /* Cells — all 13px, color: --fg-dim */
-  .log-seq { color: var(--fg-dim); white-space: nowrap; min-width: 44px; flex-shrink: 0; padding-left: 4px; }
+  .log-seq { color: var(--fg-dim); white-space: nowrap; min-width: 40px; flex-shrink: 0; padding-left: 4px; }
   .log-date { color: var(--fg-dim); white-space: nowrap; min-width: 78px; flex-shrink: 0; }
   .log-time { color: var(--fg-dim); white-space: nowrap; min-width: 44px; flex-shrink: 0; }
   .log-sep { color: var(--fg-dim); margin: 0 3px; opacity: 0.25; flex-shrink: 0; }
@@ -174,22 +195,17 @@
 
   .log-wc { color: var(--fg-dim); white-space: nowrap; flex-shrink: 0; margin-left: 8px; }
 
-  /* Source badge */
-  .log-badge {
-    display: inline-block;
-    font-size: 10px;
-    font-weight: 700;
-    letter-spacing: 0.04em;
-    padding: 1px 6px;
-    border-radius: 3px;
-    color: #fff;
+  /* Source label — colored text, no bg */
+  .log-src {
+    font-size: 13px;
+    font-weight: 600;
     margin-left: 8px;
     flex-shrink: 0;
     white-space: nowrap;
   }
-  .log-badge.agent { background: var(--teal); }
-  .log-badge.press { background: var(--amber); }
-  .log-badge.pract { background: var(--coral); }
+  .log-src.agent { color: var(--teal); }
+  .log-src.press { color: var(--amber); }
+  .log-src.pract { color: var(--coral); }
 
   .log-row.boot-hidden, .log-expanded.boot-hidden { display: none !important; }
 
@@ -199,9 +215,9 @@
     padding: 14px 0 18px 8px;
     border-left: 3px solid transparent;
   }
-  .log-row.selected.src-agent + .log-expanded { display: block; background: var(--teal-bg); border-left-color: var(--teal-dim); }
-  .log-row.selected.src-press + .log-expanded { display: block; background: var(--amber-bg); border-left-color: var(--amber-dim); }
-  .log-row.selected.src-pract + .log-expanded { display: block; background: var(--coral-bg); border-left-color: var(--coral-dim); }
+  .log-row.selected.src-agent + .log-expanded { display: block; background: var(--teal-bg); border-left-color: var(--teal); }
+  .log-row.selected.src-press + .log-expanded { display: block; background: var(--amber-bg); border-left-color: var(--amber); }
+  .log-row.selected.src-pract + .log-expanded { display: block; background: var(--coral-bg); border-left-color: var(--coral); }
 
   .expanded-field-note { color: var(--fg); font-size: 15px; line-height: 1.7; margin-bottom: 14px; max-width: 700px; }
   .expanded-margin-label { display: inline-block; font-size: 12px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--fg-dim); margin-bottom: 6px; }
@@ -248,24 +264,23 @@
   }
   @media (max-width: 700px) {
     :root { --font-size: 14px; }
-    #splash pre { font-size: 9px; }
+    #splash pre { font-size: 7px; line-height: 1.15; }
     .header-inner { padding: 0 12px; gap: 8px; }
     .header-tagline { display: none; }
     .header-sep.tag-sep { display: none; }
-    .header-counts { font-size: 11px; gap: 8px; }
     .header-links { font-size: 11px; gap: 8px; }
     .log-row { font-size: 12px; }
     .log-date { display: none; }
     .log-row .log-sep.sep-date { display: none; }
-    .log-seq { min-width: 40px; }
-    .log-expanded { padding-left: 12px; }
+    .log-seq { min-width: 36px; }
+    .log-expanded { padding-left: 8px; }
     .overlay { padding: 40px 14px; }
+    .footer-hint { display: none; }
   }
   @media (max-width: 420px) {
     .log-time { display: none; }
     .log-row .log-sep.sep-time { display: none; }
-    .log-badge { font-size: 9px; padding: 1px 4px; }
-    .header-counts { gap: 6px; }
+    .log-src { font-size: 11px; }
   }
 </style>
 </head>
@@ -274,21 +289,15 @@
 <!-- ══ SPLASH ══ -->
 <div id="splash">
 <pre>
-<span class="splash-title">
-  ████████╗██╗  ██╗███████╗
-  ╚══██╔══╝██║  ██║██╔════╝
-     ██║   ███████║█████╗
-     ██║   ██╔══██║██╔══╝
-     ██║   ██║  ██║███████╗
-     ╚═╝   ╚═╝  ╚═╝╚══════╝
+ _____ _  _ ___
+|_   _| || | __|
+  | | | __ | _|
+  |_| |_||_|___|
 
-   █████╗ ██╗    ███████╗██╗███████╗██╗     ██████╗
-  ██╔══██╗██║    ██╔════╝██║██╔════╝██║     ██╔══██╗
-  ███████║██║    █████╗  ██║█████╗  ██║     ██║  ██║
-  ██╔══██║██║    ██╔══╝  ██║██╔══╝  ██║     ██║  ██║
-  ██║  ██║██║    ██║     ██║███████╗███████╗██████╔╝
-  ╚═╝  ╚═╝╚═╝    ╚═╝     ╚═╝╚══════╝╚══════╝╚═════╝
-</span>
+  _   ___   ___ ___ ___ _    ___
+ /_\ |_ _| | __| _ | __| |  |   \
+/ _ \ | |  | _||  _| _|| |__| |) |
+/_/ \_|___| |_| |_| |___|____|___/
 </pre>
 <div class="splash-sub">three observation streams · open-weight model · local inference</div>
 <div class="splash-counts" id="splash-counts">
@@ -303,14 +312,9 @@
 <!-- ══ HEADER ══ -->
 <div class="header">
   <div class="header-inner">
-    <span class="header-title">theaifield</span>
+    <span class="header-title">the<span class="ai-bracket">[AI]</span>field</span>
     <span class="header-sep tag-sep">│</span>
     <span class="header-tagline">three layers of ai discourse observed by an open-weight model</span>
-    <div class="header-counts">
-      <span class="ct ct-agent"><span class="ct-label">agent</span> <span class="ct-num" id="count-agent">—</span></span>
-      <span class="ct ct-press"><span class="ct-label">press</span> <span class="ct-num" id="count-press">—</span></span>
-      <span class="ct ct-pract"><span class="ct-label">pract</span> <span class="ct-num" id="count-pract">—</span></span>
-    </div>
     <span class="header-sep">│</span>
     <div class="header-links">
       <a href="#" id="btn-about">about</a>
@@ -322,12 +326,23 @@
 <!-- ══ LOG ══ -->
 <div class="log-container" id="log"></div>
 
+<!-- ══ FOOTER ══ -->
+<div class="footer">
+  <div class="footer-inner">
+    <span class="ft ft-agent"><span class="ft-label">agent</span> <span class="ft-num" id="count-agent">—</span></span>
+    <span class="ft ft-press"><span class="ft-label">press</span> <span class="ft-num" id="count-press">—</span></span>
+    <span class="ft ft-pract"><span class="ft-label">pract</span> <span class="ft-num" id="count-pract">—</span></span>
+    <span class="footer-spacer"></span>
+    <span class="footer-hint"><kbd>j</kbd>/<kbd>k</kbd> navigate · <kbd>↵</kbd> expand · <kbd>?</kbd> about</span>
+  </div>
+</div>
+
 <!-- ══ ABOUT OVERLAY ══ -->
 <div class="overlay" id="about-overlay">
   <button class="overlay-close" id="btn-close-about">esc · close</button>
   <div class="overlay-content">
-    <h2>about theaifield</h2>
-    <p>theaifield is a unified view of three AI observer archives — field sites where an open-weight language model (gpt-oss:120b, running locally) produces structured field notes about AI discourse. Each site watches a different layer.</p>
+    <h2>about the[AI]field</h2>
+    <p>the[AI]field is a unified view of three AI observer archives — field sites where an open-weight language model (gpt-oss:120b, running locally) produces structured field notes about AI discourse. Each site watches a different layer.</p>
     <h3 class="agent-h">agent</h3>
     <p>Observes AI-agent discourse on Moltbook, an AI-agent social platform. The observer reads public agent posts and produces field notes on how artificial agents discuss intelligence, autonomy, and their own emerging culture.</p>
     <h3 class="press-h">press</h3>
@@ -398,7 +413,7 @@
     return p.join(' · ');
   }
 
-  // Row HTML — seq · date · time · title · observation [N words] · margin [N words] · [badge]
+  // Row HTML
   function rowInnerHTML(entry, seqNum) {
     return (
       `<span class="log-seq">[${pad3(seqNum)}]</span>` +
@@ -408,19 +423,18 @@
       `<span class="log-time">${fmtTime(entry.date)}</span>` +
       `<span class="log-sep sep-time">·</span>` +
       `<span class="log-title">${esc(entry.title)}</span>` +
-      `<span class="log-wc">${entry.obsWords + entry.marWords} words</span>` +
-      `<span class="log-badge ${entry.source}">${entry.label}</span>`
+      `<span class="log-wc">${entry.obsWords + entry.marWords} tokens</span>` +
+      `<span class="log-src ${entry.source}">${entry.label}</span>`
     );
   }
 
   function rowPlainText(entry, seqNum) {
-    return `[${pad3(seqNum)}] · ${fmtDate(entry.date)} · ${fmtTime(entry.date)} · ${entry.title}  ${entry.obsWords + entry.marWords} words  ${entry.label}`;
+    return `[${pad3(seqNum)}] · ${fmtDate(entry.date)} · ${fmtTime(entry.date)} · ${entry.title}  ${entry.obsWords + entry.marWords} tokens  ${entry.label}`;
   }
 
   // ══ BUILD + BOOT ══
   function buildAll(entries) {
     logEl.innerHTML = '';
-    const total = entries.length;
     entries.forEach((entry, i) => {
       const seqNum = i + 1;
       const row = document.createElement('div');
@@ -450,7 +464,7 @@
     const rows = Array.from(document.querySelectorAll('.log-row'));
     const exps = Array.from(document.querySelectorAll('.log-expanded'));
     const total = rows.length;
-    const mainCount = Math.max(0, total - 1); // all except last
+    const mainCount = Math.max(0, total - 1);
 
     for (let i = 0; i < mainCount; i++) {
       rows[i].classList.remove('boot-hidden');
@@ -465,7 +479,7 @@
       await pause(delay);
     }
 
-    // Pause, then blinking cursor on an empty line
+    // Blinking cursor pause
     await pause(400);
     const cursorLine = document.createElement('div');
     cursorLine.style.padding = '2px 0 2px 4px';
@@ -474,13 +488,10 @@
     cursorLine.appendChild(waitCursor);
     logEl.appendChild(cursorLine);
     window.scrollTo(0, document.body.scrollHeight);
-
     await pause(3000);
-
-    // Remove cursor line
     cursorLine.remove();
 
-    // ── LAST ENTRY: typewriter then expand ──
+    // Last entry: typewriter then expand
     if (total >= 1) {
       const lastIdx = total - 1;
       const lastEntry = entries[lastIdx];
@@ -512,11 +523,9 @@
       lastRow.innerHTML = rowInnerHTML(lastEntry, lastIdx + 1);
       lastRow.addEventListener('click', () => toggleSelect(lastEntry.id));
 
-      // Expand
       await pause(800);
       toggleSelect(lastEntry.id);
       lastExp.classList.add('expand-fade-in');
-
       await pause(200);
       window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
       await pause(800);
@@ -524,10 +533,21 @@
     }
   }
 
+  // ── Selection (BUG FIX: proper toggle — click again to collapse, click again to re-expand) ──
   function toggleSelect(id) {
-    const prev = document.querySelector('.log-row.selected');
-    if (prev) prev.classList.remove('selected');
-    if (selectedId === id) { selectedId = null; return; }
+    const prevRow = document.querySelector('.log-row.selected');
+
+    if (selectedId === id) {
+      // Clicking same row: deselect
+      if (prevRow) prevRow.classList.remove('selected');
+      selectedId = null;
+      return;
+    }
+
+    // Deselect previous
+    if (prevRow) prevRow.classList.remove('selected');
+
+    // Select new
     selectedId = id;
     const row = document.querySelector(`.log-row[data-id="${id}"]`);
     if (row) row.classList.add('selected');
@@ -546,7 +566,10 @@
   const aboutOverlay = document.getElementById('about-overlay');
   document.getElementById('btn-about').addEventListener('click', e => { e.preventDefault(); aboutOverlay.classList.add('active'); });
   document.getElementById('btn-close-about').addEventListener('click', () => aboutOverlay.classList.remove('active'));
-  document.addEventListener('keydown', e => { if (e.key === 'Escape') aboutOverlay.classList.remove('active'); });
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') aboutOverlay.classList.remove('active');
+    if (e.key === '?' && !aboutOverlay.classList.contains('active')) { e.preventDefault(); aboutOverlay.classList.add('active'); }
+  });
   aboutOverlay.addEventListener('click', e => { if (e.target === aboutOverlay) aboutOverlay.classList.remove('active'); });
 
   // Keyboard nav
