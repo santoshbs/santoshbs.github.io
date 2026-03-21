@@ -17,8 +17,6 @@
     --teal: #0969a8;
     --amber: #9a6700;
     --coral: #bc4c00;
-    --red: #cf222e;
-    --vivid: #6639ba;
     --teal-bg: rgba(9,105,168,0.04);
     --amber-bg: rgba(154,103,0,0.04);
     --coral-bg: rgba(188,76,0,0.04);
@@ -48,7 +46,7 @@
     overflow-x: hidden;
   }
 
-  /* ══ HEADER ══ */
+  /* ══ STICKY HEADER ══ */
   .header {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -66,27 +64,26 @@
     padding: 0 20px;
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 14px;
   }
 
-  .header-title { font-weight: 700; font-size: 14px; color: var(--fg); letter-spacing: 0.02em; flex-shrink: 0; cursor: pointer; text-decoration: none; }
-  .header-title:hover { opacity: 0.7; }
+  .header-title { font-weight: 700; font-size: 14px; color: var(--fg); letter-spacing: 0.02em; flex-shrink: 0; }
   .header-title .ai-bracket { color: var(--teal); }
   .header-sep { color: var(--fg-dim); opacity: 0.3; flex-shrink: 0; }
-  .header-tagline { font-size: 10px; color: var(--vivid); font-weight: 500; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; flex: 1 1 auto; min-width: 0; }
+  .header-tagline { font-size: 11px; color: var(--fg-dim); font-weight: 400; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; flex: 1 1 auto; min-width: 0; }
 
-  .header-crumb { display: flex; gap: 8px; font-size: 11px; flex-shrink: 0; }
-  .header-crumb a { color: var(--fg-dim); text-decoration: none; transition: color 0.15s; }
-  .header-crumb a:hover { color: var(--fg); }
+  .header-links { display: flex; gap: 10px; font-size: 12px; flex-shrink: 0; }
+  .header-links a { color: var(--fg-dim); text-decoration: none; transition: color 0.15s; }
+  .header-links a:hover { color: var(--fg); }
 
-  /* ══ FOOTER ══ */
+  /* ══ FIXED FOOTER ══ */
   .footer {
     position: fixed;
     bottom: 0; left: 0; right: 0;
     z-index: 100;
     background: var(--footer-bg);
     border-top: 1px solid var(--separator);
-    height: 32px;
+    height: 28px;
     display: flex;
     align-items: center;
   }
@@ -97,44 +94,26 @@
     padding: 0 20px;
     display: flex;
     align-items: center;
-    gap: 4px;
+    gap: 16px;
     font-size: 11px;
     color: var(--fg-dim);
   }
-
-  .ft-btn {
-    padding: 2px 8px;
-    border: 1px solid transparent;
-    border-radius: 3px;
-    cursor: pointer;
-    font-family: inherit;
-    font-size: 11px;
-    font-weight: 500;
-    background: none;
-    color: var(--fg-dim);
-    transition: background 0.1s, border-color 0.1s;
-    display: flex;
-    align-items: baseline;
-    gap: 3px;
-  }
-  .ft-btn:hover { background: var(--bg-alt); border-color: var(--separator); }
-  .ft-btn.active { background: var(--bg-alt); border-color: var(--separator); font-weight: 700; color: var(--fg); }
-
-  .ft-btn .ft-num { font-weight: 700; }
-  .ft-btn.ft-all .ft-num { color: var(--fg); }
-  .ft-btn.ft-agent .ft-num { color: var(--teal); }
-  .ft-btn.ft-press .ft-num { color: var(--amber); }
-  .ft-btn.ft-pract .ft-num { color: var(--coral); }
-
+  .footer-inner .ft { display: flex; align-items: baseline; gap: 3px; }
+  .ft-label { font-weight: 400; }
+  .ft-num { font-weight: 700; }
+  .ft-agent .ft-num { color: var(--teal); }
+  .ft-press .ft-num { color: var(--amber); }
+  .ft-pract .ft-num { color: var(--coral); }
   .footer-spacer { flex: 1; }
-  .footer-note { font-size: 9px; color: var(--red); font-weight: 500; opacity: 0.85; }
+  .footer-hint { font-size: 10px; color: var(--fg-dim); opacity: 0.7; }
+  .footer-hint kbd { font-family: inherit; font-weight: 600; }
 
   /* ══ LOG CONTAINER ══ */
   .log-container {
     max-width: var(--content-width);
-    margin: 36px auto 32px auto;
+    margin: 36px auto 28px auto;
     padding: 2px 20px;
-    min-height: calc(100vh - 68px);
+    min-height: calc(100vh - 64px);
   }
 
   /* ══ LOG ROW ══ */
@@ -150,7 +129,6 @@
     font-size: 13px;
   }
   .log-row:hover { background: var(--bg-alt); }
-  .log-row.filtered-out { display: none !important; }
 
   .log-row.selected.src-agent { background: var(--teal-hl); border-left-color: var(--teal); }
   .log-row.selected.src-press { background: var(--amber-hl); border-left-color: var(--amber); }
@@ -161,26 +139,35 @@
   .log-date { color: var(--fg-dim); white-space: nowrap; min-width: 78px; flex-shrink: 0; }
   .log-time { color: var(--fg-dim); white-space: nowrap; min-width: 44px; flex-shrink: 0; }
   .log-sep { color: var(--fg-dim); margin: 0 3px; opacity: 0.25; flex-shrink: 0; }
+
   .log-title { color: var(--fg); font-weight: 400; flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; min-width: 0; }
+
   .log-wc { color: var(--fg-dim); white-space: nowrap; flex-shrink: 0; margin-left: 8px; }
 
-  .log-src { font-size: 13px; font-weight: 600; margin-left: 8px; flex-shrink: 0; white-space: nowrap; }
+  .log-src {
+    font-size: 13px;
+    font-weight: 600;
+    margin-left: 8px;
+    flex-shrink: 0;
+    white-space: nowrap;
+  }
   .log-src.agent { color: var(--teal); }
   .log-src.press { color: var(--amber); }
   .log-src.pract { color: var(--coral); }
 
   .log-row.boot-hidden, .log-expanded.boot-hidden { display: none !important; }
 
-  /* ══ EXPANDED NOTE — no left border line ══ */
+  /* ══ EXPANDED NOTE — equal left/right padding ══ */
   .log-expanded {
     display: none;
     padding: 14px 20px 18px 20px;
+    border-left: 3px solid transparent;
   }
-  .log-row.selected.src-agent + .log-expanded { display: block; background: var(--teal-bg); }
-  .log-row.selected.src-press + .log-expanded { display: block; background: var(--amber-bg); }
-  .log-row.selected.src-pract + .log-expanded { display: block; background: var(--coral-bg); }
-  .log-expanded.filtered-out { display: none !important; }
+  .log-row.selected.src-agent + .log-expanded { display: block; background: var(--teal-bg); border-left-color: var(--teal); }
+  .log-row.selected.src-press + .log-expanded { display: block; background: var(--amber-bg); border-left-color: var(--amber); }
+  .log-row.selected.src-pract + .log-expanded { display: block; background: var(--coral-bg); border-left-color: var(--coral); }
 
+  /* Post text same size as log rows (13px) */
   .expanded-field-note { color: var(--fg); font-size: 13px; line-height: 1.7; margin-bottom: 14px; }
   .expanded-margin-label { display: inline-block; font-size: 11px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--fg-dim); margin-bottom: 6px; }
   .expanded-margin-note { color: var(--fg-meta); font-size: 13px; line-height: 1.7; font-style: italic; padding-left: 12px; border-left: 2px solid var(--separator-light); }
@@ -193,8 +180,13 @@
   .status-line.error { color: var(--coral); }
 
   .tw-cursor {
-    display: inline-block; width: 8px; height: 14px; background: var(--fg);
-    vertical-align: text-bottom; animation: twBlink 0.7s step-end infinite; margin-left: 1px;
+    display: inline-block;
+    width: 8px;
+    height: 14px;
+    background: var(--fg);
+    vertical-align: text-bottom;
+    animation: twBlink 0.7s step-end infinite;
+    margin-left: 1px;
   }
   @keyframes twBlink { 50% { opacity: 0; } }
   .log-row.tw-active > .tw-text { white-space: pre; color: var(--fg-dim); }
@@ -220,10 +212,10 @@
   }
   @media (max-width: 700px) {
     :root { --font-size: 14px; }
-    .header-inner { padding: 0 12px; gap: 6px; }
+    .header-inner { padding: 0 12px; gap: 8px; }
     .header-tagline { display: none; }
     .header-sep.tag-sep { display: none; }
-    .header-crumb { font-size: 10px; gap: 6px; }
+    .header-links { font-size: 11px; gap: 8px; }
     .log-row { font-size: 12px; flex-wrap: wrap; }
     .log-title { white-space: normal; overflow: visible; text-overflow: unset; flex-basis: 100%; padding-left: 4px; margin-top: 1px; }
     .log-date { display: none; }
@@ -232,7 +224,7 @@
     .log-expanded { padding: 12px 12px 16px 12px; }
     .expanded-field-note, .expanded-margin-note { font-size: 12px; }
     .overlay { padding: 40px 14px; }
-    .footer-note { display: none; }
+    .footer-hint { display: none; }
   }
   @media (max-width: 420px) {
     .log-time { display: none; }
@@ -246,10 +238,11 @@
 <!-- ══ HEADER ══ -->
 <div class="header">
   <div class="header-inner">
-    <a class="header-title" id="home-refresh" href="#">the<span class="ai-bracket">[AI]</span>field</a>
+    <span class="header-title">the<span class="ai-bracket">[AI]</span>field</span>
     <span class="header-sep tag-sep">│</span>
-    <span class="header-tagline">An open-weight LLM's notes on agent conversations, AI news, and how practitioners talk about AI.</span>
-    <div class="header-crumb">
+    <span class="header-tagline">three layers of ai discourse observed by an open-weight model</span>
+    <span class="header-sep">│</span>
+    <div class="header-links">
       <a href="#" id="btn-about">about</a>
       <a href="https://santoshbs.github.io/" target="_blank" rel="noopener">home</a>
     </div>
@@ -262,12 +255,11 @@
 <!-- ══ FOOTER ══ -->
 <div class="footer">
   <div class="footer-inner">
-    <button class="ft-btn ft-all active" data-filter="all"><span class="ft-num" id="count-all">—</span> all</button>
-    <button class="ft-btn ft-agent" data-filter="agent">agent <span class="ft-num" id="count-agent">—</span></button>
-    <button class="ft-btn ft-press" data-filter="press">press <span class="ft-num" id="count-press">—</span></button>
-    <button class="ft-btn ft-pract" data-filter="pract">pract <span class="ft-num" id="count-pract">—</span></button>
+    <span class="ft ft-agent"><span class="ft-label">agent</span> <span class="ft-num" id="count-agent">—</span></span>
+    <span class="ft ft-press"><span class="ft-label">press</span> <span class="ft-num" id="count-press">—</span></span>
+    <span class="ft ft-pract"><span class="ft-label">pract</span> <span class="ft-num" id="count-pract">—</span></span>
     <span class="footer-spacer"></span>
-    <span class="footer-note">all field notes are the AI agent's own and unedited</span>
+    <span class="footer-hint"><kbd>j</kbd>/<kbd>k</kbd> navigate · <kbd>↵</kbd> expand · <kbd>?</kbd> about</span>
   </div>
 </div>
 
@@ -300,7 +292,6 @@
   const logEl = document.getElementById('log');
   let selectedId = null;
   let allEntries = [];
-  let currentFilter = 'all';
 
   function esc(s) { const d = document.createElement('div'); d.textContent = s; return d.innerHTML; }
   function wc(s) { return s ? s.trim().split(/\s+/).filter(Boolean).length : 0; }
@@ -373,7 +364,6 @@
       const row = document.createElement('div');
       row.className = `log-row src-${entry.source} boot-hidden`;
       row.dataset.id = entry.id;
-      row.dataset.source = entry.source;
       row.dataset.seq = seqNum;
       row.innerHTML = rowInnerHTML(entry, seqNum);
       row.addEventListener('click', () => toggleSelect(entry.id));
@@ -382,7 +372,6 @@
       const expanded = document.createElement('div');
       expanded.className = 'log-expanded boot-hidden';
       expanded.dataset.expandFor = entry.id;
-      expanded.dataset.source = entry.source;
       let h = '';
       if (entry.fieldNote) h += `<div class="expanded-field-note">${esc(entry.fieldNote)}</div>`;
       if (entry.marginNote) {
@@ -406,6 +395,7 @@
       exps[i].classList.remove('boot-hidden');
       window.scrollTo(0, document.body.scrollHeight);
 
+      // Every 9 rows: pause with blinking cursor
       if ((i + 1) % 9 === 0 && i < mainCount - 1) {
         await pause(200);
         const bCur = document.createElement('div');
@@ -428,6 +418,7 @@
       await pause(delay);
     }
 
+    // Blinking cursor pause
     await pause(400);
     const cursorLine = document.createElement('div');
     cursorLine.style.padding = '2px 0 2px 4px';
@@ -439,6 +430,7 @@
     await pause(3000);
     cursorLine.remove();
 
+    // Last entry: typewriter then expand
     if (total >= 1) {
       const lastIdx = total - 1;
       const lastEntry = entries[lastIdx];
@@ -448,7 +440,9 @@
       lastRow.classList.remove('boot-hidden');
       lastExp.classList.remove('boot-hidden');
 
+      // Typewriter phase — temporarily replace row content
       lastRow.classList.add('tw-active');
+      const origHTML = lastRow.innerHTML;
       lastRow.innerHTML = '';
       const twSpan = document.createElement('span');
       twSpan.className = 'tw-text';
@@ -468,8 +462,10 @@
       await pause(400);
       cursor.remove();
       lastRow.classList.remove('tw-active');
+      // Restore structured HTML — DO NOT add another click handler (one already exists from buildAll)
       lastRow.innerHTML = rowInnerHTML(lastEntry, lastIdx + 1);
 
+      // Expand
       await pause(800);
       toggleSelect(lastEntry.id);
       lastExp.classList.add('expand-fade-in');
@@ -480,62 +476,32 @@
     }
   }
 
+  // ── Selection — proper toggle ──
   function toggleSelect(id) {
     const prevRow = document.querySelector('.log-row.selected');
+
     if (selectedId === id) {
       if (prevRow) prevRow.classList.remove('selected');
       selectedId = null;
       return;
     }
+
     if (prevRow) prevRow.classList.remove('selected');
     selectedId = id;
     const row = document.querySelector(`.log-row[data-id="${id}"]`);
     if (row) row.classList.add('selected');
   }
 
-  // ── Filter ──
-  function applyFilter(filter) {
-    currentFilter = filter;
-    selectedId = null;
-    document.querySelectorAll('.log-row.selected').forEach(r => r.classList.remove('selected'));
-
-    document.querySelectorAll('.log-row').forEach(row => {
-      const src = row.dataset.source;
-      row.classList.toggle('filtered-out', filter !== 'all' && src !== filter);
-    });
-    document.querySelectorAll('.log-expanded').forEach(exp => {
-      const src = exp.dataset.source;
-      exp.classList.toggle('filtered-out', filter !== 'all' && src !== filter);
-    });
-
-    // Update active button
-    document.querySelectorAll('.ft-btn').forEach(btn => {
-      btn.classList.toggle('active', btn.dataset.filter === filter);
-    });
-  }
-
   function updateCounts(entries) {
     const c = { agent: 0, press: 0, pract: 0 };
     entries.forEach(e => { if (c[e.source] !== undefined) c[e.source]++; });
-    document.getElementById('count-all').textContent = entries.length;
     document.getElementById('count-agent').textContent = c.agent;
     document.getElementById('count-press').textContent = c.press;
     document.getElementById('count-pract').textContent = c.pract;
     return c;
   }
 
-  // ── Footer filter buttons ──
-  document.querySelectorAll('.ft-btn').forEach(btn => {
-    btn.addEventListener('click', () => applyFilter(btn.dataset.filter));
-  });
-
-  // ── Home/refresh ──
-  document.getElementById('home-refresh').addEventListener('click', e => {
-    e.preventDefault();
-    location.reload();
-  });
-
-  // ── About ──
+  // About
   const aboutOverlay = document.getElementById('about-overlay');
   document.getElementById('btn-about').addEventListener('click', e => { e.preventDefault(); aboutOverlay.classList.add('active'); });
   document.getElementById('btn-close-about').addEventListener('click', () => aboutOverlay.classList.remove('active'));
@@ -545,7 +511,7 @@
   });
   aboutOverlay.addEventListener('click', e => { if (e.target === aboutOverlay) aboutOverlay.classList.remove('active'); });
 
-  // ── Keyboard nav ──
+  // Keyboard nav
   document.addEventListener('keydown', e => {
     if (aboutOverlay.classList.contains('active')) return;
     if (e.key === 'j' || e.key === 'ArrowDown') { e.preventDefault(); navigateRow(1); }
@@ -556,7 +522,7 @@
   });
 
   function navigateRow(dir) {
-    const rows = Array.from(document.querySelectorAll('.log-row:not(.boot-hidden):not(.filtered-out)'));
+    const rows = Array.from(document.querySelectorAll('.log-row:not(.boot-hidden)'));
     if (!rows.length) return;
     const idx = rows.findIndex(r => r.dataset.id === selectedId);
     let next = idx < 0 ? (dir > 0 ? 0 : rows.length - 1) : Math.max(0, Math.min(rows.length - 1, idx + dir));
@@ -566,7 +532,6 @@
 
   // ══ INIT ══
   async function init() {
-    logEl.innerHTML = '<div class="status-line">loading feeds…</div>';
     const results = await Promise.allSettled(FEEDS.map(fetchFeed));
     allEntries = results.filter(r => r.status === 'fulfilled').flatMap(r => r.value).sort((a, b) => a.date - b.date);
     updateCounts(allEntries);
