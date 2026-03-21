@@ -46,6 +46,62 @@
     overflow-x: hidden;
   }
 
+  /* ══ SPLASH ══ */
+  #splash {
+    position: fixed;
+    inset: 0;
+    z-index: 500;
+    background: var(--bg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    transition: opacity 0.5s;
+  }
+  #splash.fade-out { opacity: 0; pointer-events: none; }
+
+  #splash pre {
+    font-size: 14px;
+    line-height: 1.1;
+    color: var(--fg);
+    text-align: center;
+    font-weight: 700;
+    max-width: 100%;
+    overflow: hidden;
+  }
+
+  #splash .splash-sub {
+    margin-top: 18px;
+    font-size: 12px;
+    color: var(--fg-dim);
+    text-align: center;
+  }
+
+  #splash .splash-cursor {
+    display: inline-block;
+    width: 9px;
+    height: 16px;
+    background: var(--fg);
+    vertical-align: text-bottom;
+    animation: sBlink 1s step-end infinite;
+    margin-top: 18px;
+  }
+  @keyframes sBlink { 50% { opacity: 0; } }
+
+  #splash .splash-counts {
+    margin-top: 18px;
+    font-size: 13px;
+    color: var(--fg-dim);
+    opacity: 0;
+    transition: opacity 0.4s;
+    text-align: center;
+  }
+  #splash .splash-counts.visible { opacity: 1; }
+  .sc-t { color: var(--teal); font-weight: 600; }
+  .sc-a { color: var(--amber); font-weight: 600; }
+  .sc-c { color: var(--coral); font-weight: 600; }
+
   /* ══ STICKY HEADER ══ */
   .header {
     position: fixed;
@@ -212,12 +268,12 @@
   }
   @media (max-width: 700px) {
     :root { --font-size: 14px; }
+    #splash pre { font-size: 8px; line-height: 1.05; }
     .header-inner { padding: 0 12px; gap: 8px; }
     .header-tagline { display: none; }
     .header-sep.tag-sep { display: none; }
     .header-links { font-size: 11px; gap: 8px; }
-    .log-row { font-size: 12px; flex-wrap: wrap; }
-    .log-title { white-space: normal; overflow: visible; text-overflow: unset; flex-basis: 100%; padding-left: 4px; margin-top: 1px; }
+    .log-row { font-size: 12px; }
     .log-date { display: none; }
     .log-row .log-sep.sep-date { display: none; }
     .log-seq { min-width: 36px; }
@@ -234,6 +290,27 @@
 </style>
 </head>
 <body>
+
+<!-- ══ SPLASH ══ -->
+<div id="splash">
+<pre>
+▄▄▄▄▄ ▄  ▄ ▄▄▄▄
+  █   █▄▄█ █▄▄
+  █   █  █ █▄▄▄
+
+▐▌ ▄▄▄ ▐▌  ▄▄▄▄ ▄ ▄▄▄▄ ▄  ▄▄▄
+▐▌ █▄█ ▐▌  █▄▄  █ █▄▄  █  █  █
+▐▌ █ █ ▐▌  █    █ █▄▄▄ █▄ █▄▄▀
+</pre>
+<div class="splash-sub">three observation streams · open-weight model · local inference</div>
+<div class="splash-counts" id="splash-counts">
+  <span class="sc-t">agent: <span id="sc-agent">…</span></span> &nbsp;·&nbsp;
+  <span class="sc-a">press: <span id="sc-press">…</span></span> &nbsp;·&nbsp;
+  <span class="sc-c">pract: <span id="sc-pract">…</span></span> &nbsp;·&nbsp;
+  total: <span id="sc-total">…</span> pulses
+</div>
+<span class="splash-cursor" id="splash-cursor"></span>
+</div>
 
 <!-- ══ HEADER ══ -->
 <div class="header">
@@ -395,21 +472,6 @@
       exps[i].classList.remove('boot-hidden');
       window.scrollTo(0, document.body.scrollHeight);
 
-      // Every 9 rows: pause with blinking cursor
-      if ((i + 1) % 9 === 0 && i < mainCount - 1) {
-        await pause(200);
-        const bCur = document.createElement('div');
-        bCur.style.padding = '2px 0 2px 4px';
-        const bSpan = document.createElement('span');
-        bSpan.className = 'tw-cursor';
-        bCur.appendChild(bSpan);
-        logEl.appendChild(bCur);
-        window.scrollTo(0, document.body.scrollHeight);
-        await pause(1200);
-        bCur.remove();
-        continue;
-      }
-
       const remaining = mainCount - i;
       let delay;
       if (remaining > 10) delay = 45 + Math.random() * 25;
@@ -534,7 +596,20 @@
   async function init() {
     const results = await Promise.allSettled(FEEDS.map(fetchFeed));
     allEntries = results.filter(r => r.status === 'fulfilled').flatMap(r => r.value).sort((a, b) => a.date - b.date);
-    updateCounts(allEntries);
+    const counts = updateCounts(allEntries);
+
+    document.getElementById('sc-agent').textContent = counts.agent;
+    document.getElementById('sc-press').textContent = counts.press;
+    document.getElementById('sc-pract').textContent = counts.pract;
+    document.getElementById('sc-total').textContent = allEntries.length;
+    document.getElementById('splash-counts').classList.add('visible');
+
+    await pause(3000);
+
+    const splash = document.getElementById('splash');
+    splash.classList.add('fade-out');
+    await pause(600);
+    splash.style.display = 'none';
 
     if (allEntries.length === 0) {
       logEl.innerHTML = '<div class="status-line error">no feed data available</div>';
