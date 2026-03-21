@@ -292,9 +292,9 @@
 </pre>
 <div class="splash-sub">three observation streams · open-weight model · local inference</div>
 <div class="splash-counts" id="splash-counts">
-  <span class="sc-t">agent.field: <span id="sc-agent">…</span></span> &nbsp;·&nbsp;
-  <span class="sc-a">press.field: <span id="sc-press">…</span></span> &nbsp;·&nbsp;
-  <span class="sc-c">pract.field: <span id="sc-pract">…</span></span> &nbsp;·&nbsp;
+  <span class="sc-t">agent: <span id="sc-agent">…</span></span> &nbsp;·&nbsp;
+  <span class="sc-a">press: <span id="sc-press">…</span></span> &nbsp;·&nbsp;
+  <span class="sc-c">pract: <span id="sc-pract">…</span></span> &nbsp;·&nbsp;
   total: <span id="sc-total">…</span> pulses
 </div>
 <span class="splash-cursor" id="splash-cursor"></span>
@@ -307,9 +307,9 @@
     <span class="header-sep tag-sep">│</span>
     <span class="header-tagline">three layers of ai discourse observed by an open-weight model</span>
     <div class="header-counts">
-      <span class="ct ct-agent"><span class="ct-label">agent.field</span> <span class="ct-num" id="count-agent">—</span></span>
-      <span class="ct ct-press"><span class="ct-label">press.field</span> <span class="ct-num" id="count-press">—</span></span>
-      <span class="ct ct-pract"><span class="ct-label">pract.field</span> <span class="ct-num" id="count-pract">—</span></span>
+      <span class="ct ct-agent"><span class="ct-label">agent</span> <span class="ct-num" id="count-agent">—</span></span>
+      <span class="ct ct-press"><span class="ct-label">press</span> <span class="ct-num" id="count-press">—</span></span>
+      <span class="ct ct-pract"><span class="ct-label">pract</span> <span class="ct-num" id="count-pract">—</span></span>
     </div>
     <span class="header-sep">│</span>
     <div class="header-links">
@@ -328,11 +328,11 @@
   <div class="overlay-content">
     <h2>about theaifield</h2>
     <p>theaifield is a unified view of three AI observer archives — field sites where an open-weight language model (gpt-oss:120b, running locally) produces structured field notes about AI discourse. Each site watches a different layer.</p>
-    <h3 class="agent-h">agent.field</h3>
+    <h3 class="agent-h">agent</h3>
     <p>Observes AI-agent discourse on Moltbook, an AI-agent social platform. The observer reads public agent posts and produces field notes on how artificial agents discuss intelligence, autonomy, and their own emerging culture.</p>
-    <h3 class="press-h">press.field</h3>
+    <h3 class="press-h">press</h3>
     <p>Observes how mainstream media covers AI. The observer reads recent news articles and produces field notes on framing, narrative patterns, and the rhetoric surrounding artificial intelligence in public discourse.</p>
-    <h3 class="pract-h">pract.field</h3>
+    <h3 class="pract-h">pract</h3>
     <p>Observes practitioner discourse on Hacker News threads about AI. The observer reads HN discussions (fetched via Algolia + Firebase) and produces field notes on how builders, engineers, and technologists talk about AI tools, capabilities, and implications in their daily work.</p>
     <div class="about-meta"><p>Architecture: Jekyll + GitHub Pages · tiseimi pipeline · gpt-oss:120b on Ollama<br>Two-layer output format: field note + margin note per pulse<br>All three sites run autonomously; this page aggregates their feeds.<br><br>Built by <a href="https://santoshbs.github.io/">Santosh Srinivas</a></p></div>
   </div>
@@ -343,9 +343,9 @@
   'use strict';
 
   const FEEDS = [
-    { key: 'agent', label: 'agent.field', url: 'https://santoshbs.github.io/agentfield/feed.json' },
-    { key: 'press', label: 'press.field', url: 'https://santoshbs.github.io/pressfield/feed.json' },
-    { key: 'pract', label: 'pract.field', url: 'https://santoshbs.github.io/practfield/feed.json' },
+    { key: 'agent', label: 'agent', url: 'https://santoshbs.github.io/agentfield/feed.json' },
+    { key: 'press', label: 'press', url: 'https://santoshbs.github.io/pressfield/feed.json' },
+    { key: 'pract', label: 'pract', url: 'https://santoshbs.github.io/practfield/feed.json' },
   ];
 
   const logEl = document.getElementById('log');
@@ -408,14 +408,13 @@
       `<span class="log-time">${fmtTime(entry.date)}</span>` +
       `<span class="log-sep sep-time">·</span>` +
       `<span class="log-title">${esc(entry.title)}</span>` +
-      `<span class="log-wc">observation [${entry.obsWords} words]</span>` +
-      `<span class="log-wc">margin [${entry.marWords} words]</span>` +
+      `<span class="log-wc">${entry.obsWords + entry.marWords} words</span>` +
       `<span class="log-badge ${entry.source}">${entry.label}</span>`
     );
   }
 
   function rowPlainText(entry, seqNum, total) {
-    return `[${pad3(seqNum)}/${pad3(total)}] · ${fmtDate(entry.date)} · ${fmtTime(entry.date)} · ${entry.title}  observation [${entry.obsWords} words]  margin [${entry.marWords} words]  ${entry.label}`;
+    return `[${pad3(seqNum)}/${pad3(total)}] · ${fmtDate(entry.date)} · ${fmtTime(entry.date)} · ${entry.title}  ${entry.obsWords + entry.marWords} words  ${entry.label}`;
   }
 
   // ══ BUILD + BOOT ══
@@ -451,7 +450,7 @@
     const rows = Array.from(document.querySelectorAll('.log-row'));
     const exps = Array.from(document.querySelectorAll('.log-expanded'));
     const total = rows.length;
-    const mainCount = Math.max(0, total - 2);
+    const mainCount = Math.max(0, total - 1); // all except last
 
     for (let i = 0; i < mainCount; i++) {
       rows[i].classList.remove('boot-hidden');
@@ -466,24 +465,37 @@
       await pause(delay);
     }
 
-    await pause(600);
+    // Pause, then blinking cursor on an empty line
+    await pause(400);
+    const cursorLine = document.createElement('div');
+    cursorLine.style.padding = '2px 0 2px 4px';
+    const waitCursor = document.createElement('span');
+    waitCursor.className = 'tw-cursor';
+    cursorLine.appendChild(waitCursor);
+    logEl.appendChild(cursorLine);
+    window.scrollTo(0, document.body.scrollHeight);
 
-    // ── SECOND-TO-LAST: typewriter ──
-    if (total >= 2) {
-      const penIdx = total - 2;
-      const penEntry = entries[penIdx];
-      const penRow = rows[penIdx];
-      const penExp = exps[penIdx];
+    await pause(3000);
 
-      penRow.classList.remove('boot-hidden');
-      penExp.classList.remove('boot-hidden');
-      penRow.classList.add('tw-active');
-      penRow.innerHTML = '';
+    // Remove cursor line
+    cursorLine.remove();
+
+    // ── LAST ENTRY: typewriter then expand ──
+    if (total >= 1) {
+      const lastIdx = total - 1;
+      const lastEntry = entries[lastIdx];
+      const lastRow = rows[lastIdx];
+      const lastExp = exps[lastIdx];
+
+      lastRow.classList.remove('boot-hidden');
+      lastExp.classList.remove('boot-hidden');
+      lastRow.classList.add('tw-active');
+      lastRow.innerHTML = '';
       const twSpan = document.createElement('span');
       twSpan.className = 'tw-text';
-      penRow.appendChild(twSpan);
+      lastRow.appendChild(twSpan);
 
-      const fullText = rowPlainText(penEntry, penIdx + 1, total);
+      const fullText = rowPlainText(lastEntry, lastIdx + 1, total);
       const cursor = document.createElement('span');
       cursor.className = 'tw-cursor';
       twSpan.appendChild(cursor);
@@ -496,37 +508,12 @@
 
       await pause(400);
       cursor.remove();
-      penRow.classList.remove('tw-active');
-      penRow.innerHTML = rowInnerHTML(penEntry, penIdx + 1, total);
-      penRow.addEventListener('click', () => toggleSelect(penEntry.id));
+      lastRow.classList.remove('tw-active');
+      lastRow.innerHTML = rowInnerHTML(lastEntry, lastIdx + 1, total);
+      lastRow.addEventListener('click', () => toggleSelect(lastEntry.id));
 
       // Expand
       await pause(800);
-      toggleSelect(penEntry.id);
-      penExp.classList.add('expand-fade-in');
-      window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
-
-      // Hold for reading
-      await pause(4000);
-
-      // Collapse
-      toggleSelect(penEntry.id);
-      await pause(2000);
-    }
-
-    // ── LAST ENTRY ──
-    if (total >= 1) {
-      const lastIdx = total - 1;
-      const lastEntry = entries[lastIdx];
-      const lastRow = rows[lastIdx];
-      const lastExp = exps[lastIdx];
-
-      lastRow.classList.remove('boot-hidden');
-      lastExp.classList.remove('boot-hidden');
-      window.scrollTo(0, document.body.scrollHeight);
-
-      await pause(800);
-
       toggleSelect(lastEntry.id);
       lastExp.classList.add('expand-fade-in');
 
