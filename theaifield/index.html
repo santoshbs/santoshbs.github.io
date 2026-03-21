@@ -56,22 +56,26 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 20px;
     transition: opacity 0.5s;
   }
   #splash.fade-out { opacity: 0; pointer-events: none; }
 
   #splash pre {
-    font-size: 11px;
-    line-height: 1.25;
+    font-size: 14px;
+    line-height: 1.1;
     color: var(--fg);
     text-align: center;
-    font-weight: 600;
+    font-weight: 700;
+    max-width: 100%;
+    overflow: hidden;
   }
 
   #splash .splash-sub {
     margin-top: 18px;
     font-size: 12px;
     color: var(--fg-dim);
+    text-align: center;
   }
 
   #splash .splash-cursor {
@@ -91,6 +95,7 @@
     color: var(--fg-dim);
     opacity: 0;
     transition: opacity 0.4s;
+    text-align: center;
   }
   #splash .splash-counts.visible { opacity: 1; }
   .sc-t { color: var(--teal); font-weight: 600; }
@@ -195,7 +200,6 @@
 
   .log-wc { color: var(--fg-dim); white-space: nowrap; flex-shrink: 0; margin-left: 8px; }
 
-  /* Source label — colored text, no bg */
   .log-src {
     font-size: 13px;
     font-weight: 600;
@@ -209,19 +213,20 @@
 
   .log-row.boot-hidden, .log-expanded.boot-hidden { display: none !important; }
 
-  /* ══ EXPANDED NOTE ══ */
+  /* ══ EXPANDED NOTE — equal left/right padding ══ */
   .log-expanded {
     display: none;
-    padding: 14px 0 18px 8px;
+    padding: 14px 20px 18px 20px;
     border-left: 3px solid transparent;
   }
   .log-row.selected.src-agent + .log-expanded { display: block; background: var(--teal-bg); border-left-color: var(--teal); }
   .log-row.selected.src-press + .log-expanded { display: block; background: var(--amber-bg); border-left-color: var(--amber); }
   .log-row.selected.src-pract + .log-expanded { display: block; background: var(--coral-bg); border-left-color: var(--coral); }
 
-  .expanded-field-note { color: var(--fg); font-size: 15px; line-height: 1.7; margin-bottom: 14px; max-width: 700px; }
-  .expanded-margin-label { display: inline-block; font-size: 12px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--fg-dim); margin-bottom: 6px; }
-  .expanded-margin-note { color: var(--fg-meta); font-size: 15px; line-height: 1.7; font-style: italic; max-width: 700px; padding-left: 12px; border-left: 2px solid var(--separator-light); }
+  /* Post text same size as log rows (13px) */
+  .expanded-field-note { color: var(--fg); font-size: 13px; line-height: 1.7; margin-bottom: 14px; }
+  .expanded-margin-label { display: inline-block; font-size: 11px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--fg-dim); margin-bottom: 6px; }
+  .expanded-margin-note { color: var(--fg-meta); font-size: 13px; line-height: 1.7; font-style: italic; padding-left: 12px; border-left: 2px solid var(--separator-light); }
   .expanded-meta-line { margin-top: 12px; font-size: 11px; color: var(--fg-dim); letter-spacing: 0.02em; }
 
   .expand-fade-in { animation: fadeIn 1s ease-out; }
@@ -230,7 +235,6 @@
   .status-line { padding: 10px 0; color: var(--fg-dim); font-size: 13px; }
   .status-line.error { color: var(--coral); }
 
-  /* Typewriter */
   .tw-cursor {
     display: inline-block;
     width: 8px;
@@ -264,7 +268,7 @@
   }
   @media (max-width: 700px) {
     :root { --font-size: 14px; }
-    #splash pre { font-size: 7px; line-height: 1.15; }
+    #splash pre { font-size: 8px; line-height: 1.05; }
     .header-inner { padding: 0 12px; gap: 8px; }
     .header-tagline { display: none; }
     .header-sep.tag-sep { display: none; }
@@ -273,7 +277,8 @@
     .log-date { display: none; }
     .log-row .log-sep.sep-date { display: none; }
     .log-seq { min-width: 36px; }
-    .log-expanded { padding-left: 8px; }
+    .log-expanded { padding: 12px 12px 16px 12px; }
+    .expanded-field-note, .expanded-margin-note { font-size: 12px; }
     .overlay { padding: 40px 14px; }
     .footer-hint { display: none; }
   }
@@ -289,15 +294,13 @@
 <!-- ══ SPLASH ══ -->
 <div id="splash">
 <pre>
- _____ _  _ ___
-|_   _| || | __|
-  | | | __ | _|
-  |_| |_||_|___|
+▄▄▄▄▄ ▄  ▄ ▄▄▄▄
+  █   █▄▄█ █▄▄
+  █   █  █ █▄▄▄
 
-  _   ___   ___ ___ ___ _    ___
- /_\ |_ _| | __| _ | __| |  |   \
-/ _ \ | |  | _||  _| _|| |__| |) |
-/_/ \_|___| |_| |_| |___|____|___/
+▐▌ ▄▄▄ ▐▌  ▄▄▄▄ ▄ ▄▄▄▄ ▄  ▄▄▄
+▐▌ █▄█ ▐▌  █▄▄  █ █▄▄  █  █  █
+▐▌ █ █ ▐▌  █    █ █▄▄▄ █▄ █▄▄▀
 </pre>
 <div class="splash-sub">three observation streams · open-weight model · local inference</div>
 <div class="splash-counts" id="splash-counts">
@@ -413,7 +416,6 @@
     return p.join(' · ');
   }
 
-  // Row HTML
   function rowInnerHTML(entry, seqNum) {
     return (
       `<span class="log-seq">[${pad3(seqNum)}]</span>` +
@@ -432,7 +434,6 @@
     return `[${pad3(seqNum)}] · ${fmtDate(entry.date)} · ${fmtTime(entry.date)} · ${entry.title}  ${entry.obsWords + entry.marWords} tokens  ${entry.label}`;
   }
 
-  // ══ BUILD + BOOT ══
   function buildAll(entries) {
     logEl.innerHTML = '';
     entries.forEach((entry, i) => {
@@ -500,7 +501,10 @@
 
       lastRow.classList.remove('boot-hidden');
       lastExp.classList.remove('boot-hidden');
+
+      // Typewriter phase — temporarily replace row content
       lastRow.classList.add('tw-active');
+      const origHTML = lastRow.innerHTML;
       lastRow.innerHTML = '';
       const twSpan = document.createElement('span');
       twSpan.className = 'tw-text';
@@ -520,9 +524,10 @@
       await pause(400);
       cursor.remove();
       lastRow.classList.remove('tw-active');
+      // Restore structured HTML — DO NOT add another click handler (one already exists from buildAll)
       lastRow.innerHTML = rowInnerHTML(lastEntry, lastIdx + 1);
-      lastRow.addEventListener('click', () => toggleSelect(lastEntry.id));
 
+      // Expand
       await pause(800);
       toggleSelect(lastEntry.id);
       lastExp.classList.add('expand-fade-in');
@@ -533,21 +538,17 @@
     }
   }
 
-  // ── Selection (BUG FIX: proper toggle — click again to collapse, click again to re-expand) ──
+  // ── Selection — proper toggle ──
   function toggleSelect(id) {
     const prevRow = document.querySelector('.log-row.selected');
 
     if (selectedId === id) {
-      // Clicking same row: deselect
       if (prevRow) prevRow.classList.remove('selected');
       selectedId = null;
       return;
     }
 
-    // Deselect previous
     if (prevRow) prevRow.classList.remove('selected');
-
-    // Select new
     selectedId = id;
     const row = document.querySelector(`.log-row[data-id="${id}"]`);
     if (row) row.classList.add('selected');
