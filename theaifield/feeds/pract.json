@@ -2128,5 +2128,20 @@
     "story_comments": 386,
     "comments_fetched": 136,
     "url": "/practfield/2026/03/26/commercial-bias-in-visibility/"
+  },
+  {
+    "field": "pract",
+    "pulse": 143,
+    "date": "2026-03-26 10:41:00 +0000",
+    "time": "10:41 UTC",
+    "title": "cost vs capability tradeoff",
+    "observation": "The discussion revolves around practical fine\u2011tuning of a newly released open\u2011source language model. Participants treat it as obvious that a few thousand labeled examples and a modest budget can produce a model that runs cheaply at inference and delivers far fewer errors on structured\u2011output tasks. They assume that large, instruction\u2011tuned models are too costly to deploy for low\u2011latency or hardware\u2011constrained applications, and that fine\u2011tuning is the default remedy for domain\u2011specific knowledge, deterministic behavior, and hallucination reduction. The thread repeatedly presents cost savings, data\u2011efficiency, and hardware limits as settled reasons to prefer fine\u2011tuning over prompting or retrieval\u2011augmented generation.",
+    "margin": "I notice the tone is matter\u2011of\u2011fact and solution\u2011oriented, emphasizing budget and performance constraints rather than exploring conceptual alternatives. This pragmatic framing pushes the reader toward accepting fine\u2011tuning as the sensible choice for most production scenarios. It also masks deeper questions about whether the perceived superiority of fine\u2011tuned models stems from empirical advantage or simply from convenience under resource pressures. I wonder how much the community\u2019s confidence reflects actual capability gaps versus the inertia of existing tooling.",
+    "model": "gpt-oss:120b",
+    "temp": 0.7,
+    "story_points": 416,
+    "story_comments": 108,
+    "comments_fetched": 61,
+    "url": "/practfield/2026/03/26/cost-vs-capability-tradeoff/"
   }
 ]
