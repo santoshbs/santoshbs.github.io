@@ -157,7 +157,7 @@
   /* ══ LOG CONTAINER ══ */
   .log-container {
     max-width: var(--content-width);
-    margin: 72px auto 32px auto;
+    margin: 60px auto 32px auto;
     padding: 2px 20px;
     min-height: calc(100vh - 68px);
   }
@@ -423,26 +423,66 @@
     });
   }
 
+
   async function bootReveal(entries) {
     const rows = Array.from(document.querySelectorAll('.log-row'));
     const exps = Array.from(document.querySelectorAll('.log-expanded'));
     const total = rows.length;
     const mainCount = Math.max(0, total - 1);
 
-    // Pick 4 random pause points between 4 and mainCount-4
+    // For large feeds: animate first 10, skip middle, animate last 20
+    // For small feeds (<40): animate all like before
+    const animateFirst = Math.min(10, mainCount);
+    const animateLast = Math.min(20, mainCount - animateFirst);
+    const skipStart = animateFirst;
+    const skipEnd = mainCount - animateLast;
+
+    // Pick 3 random pause points in the animated-last section
     const pauseSet = new Set();
-    if (mainCount > 10) {
-      while (pauseSet.size < 4) pauseSet.add(4 + Math.floor(Math.random() * (mainCount - 8)));
+    if (animateLast > 8) {
+      while (pauseSet.size < 3) {
+        pauseSet.add(skipEnd + 2 + Math.floor(Math.random() * (animateLast - 4)));
+      }
     }
 
-    for (let i = 0; i < mainCount; i++) {
+    // ── Phase 1: Animate first batch (fast) ──
+    for (let i = 0; i < animateFirst; i++) {
+      rows[i].classList.remove('boot-hidden');
+      exps[i].classList.remove('boot-hidden');
+      window.scrollTo(0, document.body.scrollHeight);
+      await pause(30 + Math.random() * 20);
+    }
+
+    // ── Phase 2: Skip middle (instant reveal with counter) ──
+    if (skipEnd > skipStart) {
+      // Brief cursor pause
+      const bCur = document.createElement('div');
+      bCur.style.padding = '2px 0 2px 4px';
+      const bSpan = document.createElement('span');
+      bSpan.className = 'tw-cursor';
+      bCur.appendChild(bSpan);
+      logEl.appendChild(bCur);
+      window.scrollTo(0, document.body.scrollHeight);
+      await pause(800);
+      bCur.remove();
+
+      // Reveal all skipped rows instantly
+      for (let i = skipStart; i < skipEnd; i++) {
+        rows[i].classList.remove('boot-hidden');
+        exps[i].classList.remove('boot-hidden');
+      }
+      window.scrollTo(0, document.body.scrollHeight);
+      await pause(300);
+    }
+
+    // ── Phase 3: Animate last batch with pauses ──
+    for (let i = skipEnd; i < mainCount; i++) {
       rows[i].classList.remove('boot-hidden');
       exps[i].classList.remove('boot-hidden');
       window.scrollTo(0, document.body.scrollHeight);
 
-      // Random pause with blinking cursor
       if (pauseSet.has(i)) {
-        await pause(200);
+        await pause(150);
         const bCur = document.createElement('div');
         bCur.style.padding = '2px 0 2px 4px';
         const bSpan = document.createElement('span');
@@ -450,20 +490,20 @@
         bCur.appendChild(bSpan);
         logEl.appendChild(bCur);
         window.scrollTo(0, document.body.scrollHeight);
-        await pause(1000 + Math.random() * 600);
+        await pause(800 + Math.random() * 500);
         bCur.remove();
         continue;
       }
 
       const remaining = mainCount - i;
       let delay;
-      if (remaining > 10) delay = 45 + Math.random() * 25;
-      else if (remaining > 4) delay = 70 + Math.random() * 40;
+      if (remaining > 8) delay = 40 + Math.random() * 20;
+      else if (remaining > 3) delay = 70 + Math.random() * 40;
       else delay = 120 + Math.random() * 50;
       await pause(delay);
     }
 
-    // Blinking cursor pause before last entry
+    // ── Blinking cursor pause before last entry ──
     await pause(400);
     const cursorLine = document.createElement('div');
     cursorLine.style.padding = '2px 0 2px 4px';
@@ -472,9 +512,10 @@
     cursorLine.appendChild(waitCursor);
     logEl.appendChild(cursorLine);
     window.scrollTo(0, document.body.scrollHeight);
-    await pause(3000);
+    await pause(2500);
     cursorLine.remove();
 
+    // ── Last entry: typewriter + expand ──
     if (total >= 1) {
       const lastIdx = total - 1;
       const lastEntry = entries[lastIdx];
@@ -484,7 +525,6 @@
       lastRow.classList.remove('boot-hidden');
       lastExp.classList.remove('boot-hidden');
 
-      // Typewriter
       lastRow.classList.add('tw-active');
       lastRow.innerHTML = '';
       const twSpan = document.createElement('span');
@@ -507,14 +547,13 @@
       lastRow.classList.remove('tw-active');
       lastRow.innerHTML = rowInnerHTML(lastEntry, lastIdx + 1);
 
-      // Expand last post
       await pause(800);
       toggleSelect(lastEntry.id);
       lastExp.classList.add('expand-fade-in');
 
       await pause(600);
 
-      // Hide all rows except last 5 (4 previous + the last one) to push post up
+      // Hide all rows except last 5
       const keepCount = 5;
       const hiddenRows = [];
       for (let i = 0; i < total; i++) {
@@ -525,11 +564,9 @@
         }
       }
 
-      // Smooth scroll to top so the kept rows + expanded post are easy to read
       await pause(200);
       window.scrollTo({ top: 0, behavior: 'smooth' });
 
-      // Add a clickable hint at the top to reveal all logs
       const hint = document.createElement('div');
       hint.style.cssText = 'padding:10px 4px;font-size:11px;color:var(--fg-dim);cursor:pointer;text-align:center;border-bottom:1px solid var(--separator);';
       hint.textContent = `▲ show all ${total} entries`;
@@ -547,12 +584,10 @@
         }
       }
 
-      // Also restore if user scrolls at all (means they want to browse)
       function onScroll() {
         restoreAll();
         window.removeEventListener('scroll', onScroll);
       }
-      // Delay attaching scroll listener so the auto-scroll-to-top doesn't trigger it
       setTimeout(() => {
         if (!restored) window.addEventListener('scroll', onScroll, { passive: true });
       }, 1500);
