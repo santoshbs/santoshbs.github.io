@@ -430,26 +430,44 @@
     const total = rows.length;
     const mainCount = Math.max(0, total - 1);
 
-    // For large feeds: animate first 10, skip middle, animate last 20
-    // For small feeds (<40): animate all like before
-    const animateFirst = Math.min(10, mainCount);
-    const animateLast = Math.min(20, mainCount - animateFirst);
+    // Randomize phase boundaries so each load feels different
+    const animateFirst = Math.min(5 + Math.floor(Math.random() * 12), mainCount);  // 5-16 rows
+    const animateLast = Math.min(12 + Math.floor(Math.random() * 15), mainCount - animateFirst);  // 12-26 rows
     const skipStart = animateFirst;
     const skipEnd = mainCount - animateLast;
 
-    // Pick 3 random pause points in the animated-last section
+    // Pick 2-4 random pause points in the animated-last section
+    const numPauses = 2 + Math.floor(Math.random() * 3);
     const pauseSet = new Set();
     if (animateLast > 8) {
-      while (pauseSet.size < 3) {
+      while (pauseSet.size < numPauses) {
         pauseSet.add(skipEnd + 2 + Math.floor(Math.random() * (animateLast - 4)));
       }
     }
+
+    // Also maybe one pause in the first batch
+    const earlyPause = Math.random() < 0.5 ? Math.floor(Math.random() * animateFirst) : -1;
 
     // ── Phase 1: Animate first batch (fast) ──
     for (let i = 0; i < animateFirst; i++) {
       rows[i].classList.remove('boot-hidden');
       exps[i].classList.remove('boot-hidden');
       window.scrollTo(0, document.body.scrollHeight);
+
+      if (i === earlyPause) {
+        await pause(150);
+        const bCur = document.createElement('div');
+        bCur.style.padding = '2px 0 2px 4px';
+        const bSpan = document.createElement('span');
+        bSpan.className = 'tw-cursor';
+        bCur.appendChild(bSpan);
+        logEl.appendChild(bCur);
+        window.scrollTo(0, document.body.scrollHeight);
+        await pause(600 + Math.random() * 400);
+        bCur.remove();
+        continue;
+      }
+
       await pause(30 + Math.random() * 20);
     }
 
@@ -463,7 +481,7 @@
       bCur.appendChild(bSpan);
       logEl.appendChild(bCur);
       window.scrollTo(0, document.body.scrollHeight);
-      await pause(800);
+      await pause(500 + Math.random() * 600);
       bCur.remove();
 
       // Reveal all skipped rows instantly
@@ -512,7 +530,7 @@
     cursorLine.appendChild(waitCursor);
     logEl.appendChild(cursorLine);
     window.scrollTo(0, document.body.scrollHeight);
-    await pause(2500);
+    await pause(1800 + Math.random() * 1200);
     cursorLine.remove();
 
     // ── Last entry: typewriter + expand ──
