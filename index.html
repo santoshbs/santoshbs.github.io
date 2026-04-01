@@ -513,7 +513,7 @@ function renderWorkdrift(id, title, hypothesis, link, dateStr) {
 async function fetchWorkdrift() {
   var entries = [];
   var base = 'https://santoshbs.github.io/workdrift/';
-  var feedUrls = [base + 'feed.xml', base + 'atom.xml', base + 'feed.json'];
+  var feedUrls = [base + 'occupations/feed.json'];
 
   // Try XML/Atom feeds
   for (var f = 0; f < feedUrls.length && !entries.length; f++) {
@@ -521,18 +521,29 @@ async function fetchWorkdrift() {
       var r = await fetch(feedUrls[f]);
       if (!r.ok) continue;
       var text = await r.text();
-      // Try JSON first
+      // Try JSON
       if (feedUrls[f].endsWith('.json')) {
         try {
           var json = JSON.parse(text);
-          var arr = Array.isArray(json) ? json : (json.items || []);
+          var arr = Array.isArray(json) ? json : [];
+          // Sort by revised date descending to get latest 3
+          arr.sort(function(a,b){
+            var da = a.revised || a.created || '';
+            var db = b.revised || b.created || '';
+            return db.localeCompare(da);
+          });
           for (var ji = 0; ji < Math.min(arr.length, 3); ji++) {
             var jitem = arr[ji];
+            var jtitle = jitem.title || 'untitled';
+            var jcontent = jitem.content || '';
+            // Extract a random hypothesis from near/mid/far horizon sections
+            var hyp = extractHypothesisFromContent(jcontent);
+            var jlink = base; // workdrift is single-page, link to main page
             entries.push({
-              title: jitem.title || jitem.occupation || 'untitled',
-              hypothesis: extractHypothesis(jitem.content_html || jitem.content || jitem.summary || ''),
-              link: jitem.url || jitem.link || base,
-              date: formatDate(jitem.date_published || jitem.date || '')
+              title: jtitle,
+              hypothesis: hyp,
+              link: jlink,
+              date: jitem.revised || jitem.created || ''
             });
           }
         } catch(e) {}
@@ -608,27 +619,38 @@ async function fetchWorkdrift() {
   }
 }
 
-function extractHypothesis(content) {
+function extractHypothesisFromContent(content) {
   if (!content) return '';
-  var el = document.createElement('div'); el.innerHTML = content;
-  var text = el.textContent || '';
-  // Look for near-horizon, mid-horizon, or far-horizon hypothesis text
-  var horizons = ['near-horizon','mid-horizon','far-horizon','near horizon','mid horizon','far horizon'];
-  var picked = horizons[Math.floor(Math.random() * horizons.length)];
-  var idx = text.toLowerCase().indexOf(picked);
-  if (idx > -1) {
-    var after = text.substring(idx + picked.length);
-    // Get the first sentence after the horizon marker
-    var sentences = after.match(/[^.!?]+[.!?]+/g);
-    if (sentences && sentences.length > 0) {
-      var hyp = sentences[0].trim();
+  // Split by ## headers to find horizon sections
+  var sections = content.split(/^## /m).filter(Boolean);
+  var horizonSections = sections.filter(function(s) {
+    return /^(near|mid|far)/i.test(s.trim());
+  });
+  if (!horizonSections.length) return extractSnippet(content, 1);
+  // Pick a random horizon section
+  var picked = horizonSections[Math.floor(Math.random() * horizonSections.length)];
+  // Find hypothesis lines (start with * or _ or "Hypothesis")
+  var paras = picked.split(/\n\n+/).filter(Boolean);
+  for (var i = 0; i < paras.length; i++) {
+    var p = paras[i].trim();
+    if (p.charAt(0) === '*' || p.charAt(0) === '_' || /^Hypothesis/i.test(p.replace(/^\*+/, ''))) {
+      var hyp = p.replace(/^\*+|\*+$/g, '').replace(/^_+|_+$/g, '').replace(/^Hypothesis[^:]*:\s*/i, '').trim();
       if (hyp.length > 200) hyp = hyp.substring(0, 197) + ' ….';
       return hyp;
     }
   }
-  // Fallback: just get first meaningful sentence
-  var snippet = extractSnippet(content, 1);
-  return snippet;
+  // Fallback: first meaningful paragraph after header
+  for (var j = 0; j < paras.length; j++) {
+    var q = paras[j].trim();
+    if (q.length > 30 && !/^Working manuscript|^Created:|^Last revised:|^---$/i.test(q)) {
+      return extractSnippet(q, 1);
+    }
+  }
+  return '';
+}
+
+function extractHypothesis(content) {
+  return extractHypothesisFromContent(content);
 }
 
 fetchWorkdrift();
