@@ -40,26 +40,27 @@
   [data-theme="dark"] {
     --bg: #0a0a0a;
     --bg-alt: #141414;
-    --fg: #33ff33;
-    --fg-dim: #1a9a1a;
-    --fg-meta: #22aa22;
-    --teal: #33dddd;
-    --amber: #ddaa33;
-    --coral: #dd6644;
+    --fg: #ffcc33;
+    --fg-dim: #aa7a1a;
+    --fg-meta: #cc9922;
+    /* All three .src-* tints point to this field's hue in dark mode */
+    --teal: #ffcc33;
+    --amber: #ffcc33;
+    --coral: #ffcc33;
     --red: #ff4444;
-    --vivid: #88ff88;
-    --teal-bg: rgba(51,221,221,0.06);
-    --amber-bg: rgba(221,170,51,0.06);
-    --coral-bg: rgba(221,102,68,0.06);
-    --teal-hl: rgba(51,221,221,0.12);
-    --amber-hl: rgba(221,170,51,0.12);
-    --coral-hl: rgba(221,102,68,0.12);
-    --separator: #1a3a1a;
-    --separator-light: #1a2a1a;
+    --vivid: #ffe088;
+    --teal-bg: rgba(255,204,51,0.06);
+    --amber-bg: rgba(255,204,51,0.06);
+    --coral-bg: rgba(255,204,51,0.06);
+    --teal-hl: rgba(255,204,51,0.12);
+    --amber-hl: rgba(255,204,51,0.12);
+    --coral-hl: rgba(255,204,51,0.12);
+    --separator: #3a2e1a;
+    --separator-light: #2a211a;
     --header-bg: #0a0a0a;
     --footer-bg: #0a0a0a;
     --overlay-bg: rgba(5,5,5,0.97);
-    --margin-note-color: #1a9a1a;
+    --margin-note-color: #aa7a1a;
   }
 
   * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -94,7 +95,8 @@
   .header-line1 { margin-bottom: 2px; }
   .header-title { font-weight: 700; font-size: 14px; color: var(--fg); letter-spacing: 0.02em; cursor: pointer; text-decoration: none; }
   .header-title:hover { opacity: 0.7; }
-  .header-title .ai-bracket { color: var(--amber); }
+  .header-title .ai-bracket { color: #9a6700; }
+  [data-theme="dark"] .header-title .ai-bracket { color: var(--fg); }
 
   .header-line2 { margin-bottom: 4px; }
   .header-tagline { font-size: 11px; color: var(--fg-dim); font-weight: 400; }
@@ -232,9 +234,9 @@
   .overlay-content { max-width: 680px; margin: 0 auto; }
   .overlay-content h2 { font-size: 18px; font-weight: 700; margin: 0 0 20px 0; color: var(--fg); }
   .overlay-content h3 { font-size: 15px; font-weight: 600; margin: 28px 0 10px 0; }
-  .overlay-content h3.agent-h { color: var(--teal); }
-  .overlay-content h3.press-h { color: var(--amber); }
-  .overlay-content h3.pract-h { color: var(--coral); }
+  .overlay-content h3.agent-h { color: #2f7d32; }
+  .overlay-content h3.press-h { color: #9a6700; }
+  .overlay-content h3.pract-h { color: #0969a8; }
   .overlay-content p { color: var(--fg-meta); font-size: 14px; line-height: 1.7; margin-bottom: 12px; }
   .overlay-content a { color: var(--teal); text-decoration: none; }
   .overlay-content a:hover { text-decoration: underline; }
@@ -263,14 +265,21 @@
     .log-src { font-size: 11px; }
   }
 
-  /* ── Subpath-specific: dark-theme title color ── */
-  [data-theme="dark"] .log-row .log-title { color: var(--amber); }
-  [data-theme="dark"] .log-row.selected .log-title { color: var(--amber); }
+  /* ── Subpath-specific: light-theme title color ── */
+  [data-theme="light"] .log-row .log-title { color: #9a6700; }
+  [data-theme="light"] .log-row.selected .log-title { color: #9a6700; }
+  :root .log-row .log-title { color: #9a6700; }
+  :root .log-row.selected .log-title { color: #9a6700; }
 
   /* ── Footer single-field count line ── */
   .ft-count { font-weight: 500; font-size: 11px; color: var(--fg-dim); letter-spacing: 0.02em; }
-  .ft-count .ft-count-label { color: var(--amber); font-weight: 700; }
+  .ft-count .ft-count-label { color: #9a6700; font-weight: 700; }
+  [data-theme="dark"] .ft-count .ft-count-label { color: var(--fg); }
   .ft-count .ft-count-num { color: var(--fg); font-weight: 700; margin: 0 2px; }
+
+  /* ── Wider nav spacing, breadcrumb sits in its own group ── */
+  .header-line3 { gap: 18px; }
+  .header-line3 .header-breadcrumb { margin-right: 6px; }
 </style>
 </head>
 <body>
@@ -285,9 +294,9 @@
       <span class="header-tagline">Field notes on the framing and rhetoric of AI in mainstream media coverage.</span>
     </div>
     <div class="header-line3">
-      <a href="/theaifield/">← theaifield</a>
+      <a class="header-breadcrumb" href="/theaifield/">← theaifield</a>
       <a href="#" id="btn-about">about</a>
-      <a href="https://santoshbs.github.io/" target="_blank" rel="noopener">home</a>
+      <a href="https://santoshbs.github.io/" target="_blank" rel="noopener">santoshbs</a>
       <span class="header-spacer"></span>
       <a href="#" id="btn-theme" title="Toggle theme">◐ theme</a>
     </div>
