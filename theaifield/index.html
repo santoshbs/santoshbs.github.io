@@ -14,27 +14,21 @@
     --fg: #1f2328;
     --fg-dim: #656d76;
     --fg-meta: #59636e;
-    --teal: #0969a8;
-    --amber: #9a6700;
-    --coral: #bc4c00;
-    --red: #cf222e;
-    --vivid: #6639ba;
-    --teal-bg: rgba(9,105,168,0.04);
-    --amber-bg: rgba(154,103,0,0.04);
-    --coral-bg: rgba(188,76,0,0.04);
-    --teal-hl: rgba(9,105,168,0.10);
-    --amber-hl: rgba(154,103,0,0.10);
-    --coral-hl: rgba(188,76,0,0.10);
+    --agent: #2f7d32;
+    --press: #9a6700;
+    --pract: #0969a8;
+    --agent-hl: rgba(47,125,50,0.07);
+    --press-hl: rgba(154,103,0,0.07);
+    --pract-hl: rgba(9,105,168,0.07);
     --separator: #d1d9e0;
     --separator-light: #e8ecf0;
     --header-bg: #f6f8fa;
     --footer-bg: #f6f8fa;
     --overlay-bg: rgba(255,255,255,0.97);
-    --margin-note-color: #3d4751;
     --mono: 'IBM Plex Mono', 'Menlo', 'Consolas', monospace;
     --font-size: 15px;
     --line-height: 1.5;
-    --content-width: 820px;
+    --content-width: 980px;
   }
 
   [data-theme="dark"] {
@@ -43,23 +37,17 @@
     --fg: #33ff33;
     --fg-dim: #1a9a1a;
     --fg-meta: #22aa22;
-    --teal: #33dddd;
-    --amber: #ddaa33;
-    --coral: #dd6644;
-    --red: #ff4444;
-    --vivid: #88ff88;
-    --teal-bg: rgba(51,221,221,0.06);
-    --amber-bg: rgba(221,170,51,0.06);
-    --coral-bg: rgba(221,102,68,0.06);
-    --teal-hl: rgba(51,221,221,0.12);
-    --amber-hl: rgba(221,170,51,0.12);
-    --coral-hl: rgba(221,102,68,0.12);
+    --agent: #33ff33;
+    --press: #ffcc33;
+    --pract: #33dddd;
+    --agent-hl: rgba(51,255,51,0.08);
+    --press-hl: rgba(255,204,51,0.08);
+    --pract-hl: rgba(51,221,221,0.08);
     --separator: #1a3a1a;
     --separator-light: #1a2a1a;
     --header-bg: #0a0a0a;
     --footer-bg: #0a0a0a;
     --overlay-bg: rgba(5,5,5,0.97);
-    --margin-note-color: #1a9a1a;
   }
 
   * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -74,7 +62,7 @@
     overflow-x: hidden;
   }
 
-  /* ══ HEADER — three lines ══ */
+  /* ══ HEADER ══ */
   .header {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -90,16 +78,15 @@
     margin: 0 auto;
     padding: 8px 20px 6px 20px;
   }
-
   .header-line1 { margin-bottom: 2px; }
   .header-title { font-weight: 700; font-size: 14px; color: var(--fg); letter-spacing: 0.02em; cursor: pointer; text-decoration: none; }
   .header-title:hover { opacity: 0.7; }
-  .header-title .ai-bracket { color: var(--teal); }
+  .header-title .ai-bracket { color: var(--fg); }
 
   .header-line2 { margin-bottom: 4px; }
   .header-tagline { font-size: 11px; color: var(--fg-dim); font-weight: 400; }
 
-  .header-line3 { display: flex; align-items: center; gap: 10px; font-size: 11px; }
+  .header-line3 { display: flex; align-items: center; gap: 18px; font-size: 11px; }
   .header-line3 a { color: var(--fg-dim); text-decoration: none; transition: color 0.15s; }
   .header-line3 a:hover { color: var(--fg); }
   .header-spacer { flex: 1; }
@@ -122,107 +109,132 @@
     padding: 0 20px;
     display: flex;
     align-items: center;
-    gap: 4px;
+    gap: 18px;
     font-size: 11px;
     color: var(--fg-dim);
   }
-
-  .ft-btn {
-    padding: 2px 8px;
-    border: 1px solid transparent;
-    border-radius: 3px;
-    cursor: pointer;
-    font-family: inherit;
-    font-size: 11px;
-    font-weight: 500;
-    background: none;
-    color: var(--fg-dim);
-    transition: background 0.1s, border-color 0.1s;
-    display: flex;
-    align-items: baseline;
-    gap: 3px;
-  }
-  .ft-btn:hover { background: var(--bg-alt); border-color: var(--separator); }
-  .ft-btn.active { background: var(--bg-alt); border-color: var(--separator); font-weight: 700; color: var(--fg); }
-
-  .ft-btn .ft-num { font-weight: 700; }
-  .ft-btn.ft-all .ft-num { color: var(--fg); }
-  .ft-btn.ft-agent .ft-num { color: var(--teal); }
-  .ft-btn.ft-press .ft-num { color: var(--amber); }
-  .ft-btn.ft-pract .ft-num { color: var(--coral); }
-
+  .ft-count-item { letter-spacing: 0.02em; }
+  .ft-count-item .label { font-weight: 700; }
+  .ft-count-item.agent .label { color: var(--agent); }
+  .ft-count-item.press .label { color: var(--press); }
+  .ft-count-item.pract .label { color: var(--pract); }
+  .ft-count-item .num { color: var(--fg); font-weight: 700; margin: 0 3px; }
   .footer-spacer { flex: 1; }
   .footer-note { font-size: 9px; color: var(--fg-dim); font-weight: 400; }
 
-  /* ══ LOG CONTAINER ══ */
-  .log-container {
+  /* ══ MAIN ══ */
+  .main {
     max-width: var(--content-width);
-    margin: 60px auto 32px auto;
-    padding: 2px 20px;
-    min-height: calc(100vh - 68px);
-  }
-
-  /* ══ LOG ROW ══ */
-  .log-row {
-    padding: 2px 0;
-    cursor: pointer;
-    transition: background 0.1s;
+    margin: 68px auto 48px auto;
+    padding: 0 20px;
+    min-height: calc(100vh - 100px);
     display: flex;
-    align-items: baseline;
-    gap: 0;
-    border-left: none;
-    min-height: 24px;
+    flex-direction: column;
+  }
+
+  /* ══ INTRO ══ */
+  .intro {
+    padding: 18px 0 28px 0;
+    border-bottom: 1px solid var(--separator-light);
+    margin-bottom: 28px;
+  }
+  .intro p {
+    font-size: 14px;
+    line-height: 1.7;
+    color: var(--fg);
+    max-width: 720px;
+  }
+  .intro p + p { margin-top: 10px; }
+  .intro .meta {
+    font-size: 11px;
+    color: var(--fg-dim);
+    margin-top: 14px;
+    letter-spacing: 0.02em;
+  }
+
+  /* ══ CARDS ══ */
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-bottom: 32px;
+  }
+  .card {
+    display: block;
+    padding: 18px 20px 20px 20px;
+    border: 1px solid var(--separator);
+    border-radius: 0;
+    background: var(--bg);
+    text-decoration: none;
+    color: inherit;
+    transition: background 0.15s, border-color 0.15s;
+    position: relative;
+  }
+  .card:hover { border-color: var(--fg-dim); }
+  .card.agent:hover { background: var(--agent-hl); }
+  .card.press:hover { background: var(--press-hl); }
+  .card.pract:hover { background: var(--pract-hl); }
+
+  .card-field {
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    margin-bottom: 4px;
+  }
+  .card.agent .card-field { color: var(--agent); }
+  .card.press .card-field { color: var(--press); }
+  .card.pract .card-field { color: var(--pract); }
+
+  .card-tagline {
+    font-size: 12px;
+    color: var(--fg-dim);
+    line-height: 1.55;
+    margin-bottom: 14px;
+    min-height: 3.3em;
+  }
+
+  .card-sep {
+    height: 1px;
+    background: var(--separator-light);
+    margin-bottom: 12px;
+  }
+
+  .card-latest-label {
+    font-size: 10px;
+    font-weight: 600;
+    color: var(--fg-dim);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+  }
+  .card-latest-meta {
+    font-size: 11px;
+    color: var(--fg-dim);
+    margin-bottom: 3px;
+    letter-spacing: 0.02em;
+  }
+  .card-latest-title {
     font-size: 13px;
+    color: var(--fg);
+    font-weight: 500;
+    line-height: 1.4;
+    overflow-wrap: anywhere;
   }
-  .log-row:hover { background: var(--bg-alt); }
-  .log-row.filtered-out { display: none !important; }
-
-  .log-row.selected.src-agent { background: var(--teal-hl); }
-  .log-row.selected.src-press { background: var(--amber-hl); }
-  .log-row.selected.src-pract { background: var(--coral-hl); }
-  .log-row.selected .log-title { color: var(--fg); font-weight: 500; }
-
-  .log-seq { color: var(--fg-dim); white-space: nowrap; min-width: 40px; flex-shrink: 0; padding-left: 4px; }
-  .log-date { color: var(--fg-dim); white-space: nowrap; min-width: 78px; flex-shrink: 0; }
-  .log-time { color: var(--fg-dim); white-space: nowrap; min-width: 44px; flex-shrink: 0; }
-  .log-sep { color: var(--fg-dim); margin: 0 3px; opacity: 0.25; flex-shrink: 0; }
-  .log-title { color: var(--fg); font-weight: 400; flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; min-width: 0; }
-  .log-wc { color: var(--fg-dim); white-space: nowrap; flex-shrink: 0; margin-left: 8px; }
-
-  .log-src { font-size: 13px; font-weight: 600; margin-left: 8px; flex-shrink: 0; white-space: nowrap; }
-  .log-src.agent { color: var(--teal); }
-  .log-src.press { color: var(--amber); }
-  .log-src.pract { color: var(--coral); }
-
-  .log-row.boot-hidden, .log-expanded.boot-hidden { display: none !important; }
-
-  /* ══ EXPANDED NOTE — no left border line ══ */
-  .log-expanded {
-    display: none;
-    padding: 14px 20px 18px 20px;
+  .card-latest-empty {
+    font-size: 12px;
+    color: var(--fg-dim);
+    font-style: italic;
   }
-  .log-row.selected.src-agent + .log-expanded { display: block; background: var(--teal-bg); }
-  .log-row.selected.src-press + .log-expanded { display: block; background: var(--amber-bg); }
-  .log-row.selected.src-pract + .log-expanded { display: block; background: var(--coral-bg); }
-  .log-expanded.filtered-out { display: none !important; }
 
-  .expanded-field-note { color: var(--fg); font-size: 13px; line-height: 1.7; margin-bottom: 14px; }
-  .expanded-margin-label { display: inline-block; font-size: 11px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--fg-dim); margin-bottom: 6px; }
-  .expanded-margin-note { color: var(--margin-note-color); font-size: 13px; line-height: 1.7; padding-left: 12px; border-left: 2px solid var(--separator-light); }
-  .expanded-meta-line { margin-top: 12px; font-size: 11px; color: var(--fg-dim); letter-spacing: 0.02em; }
-
-  .expand-fade-in { animation: fadeIn 1s ease-out; }
-  @keyframes fadeIn { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: translateY(0); } }
-
-  .status-line { padding: 10px 0; color: var(--fg-dim); font-size: 13px; }
-  .status-line.error { color: var(--coral); }
-
-  .tw-cursor {
-    display: inline-block; width: 8px; height: 14px; background: var(--fg);
-    vertical-align: text-bottom; animation: twBlink 0.7s step-end infinite; margin-left: 1px;
+  .card-arrow {
+    position: absolute;
+    bottom: 12px;
+    right: 14px;
+    font-size: 12px;
+    color: var(--fg-dim);
+    transition: transform 0.2s, color 0.15s;
   }
-  @keyframes twBlink { 50% { opacity: 0; } }
-  .log-row.tw-active > .tw-text { white-space: pre; color: var(--fg-dim); }
+  .card:hover .card-arrow { transform: translateX(3px); color: var(--fg); }
 
   /* ══ ABOUT OVERLAY ══ */
   .overlay { display: none; position: fixed; inset: 0; z-index: 200; background: var(--overlay-bg); overflow-y: auto; padding: 60px 20px; }
@@ -232,35 +244,27 @@
   .overlay-content { max-width: 680px; margin: 0 auto; }
   .overlay-content h2 { font-size: 18px; font-weight: 700; margin: 0 0 20px 0; color: var(--fg); }
   .overlay-content h3 { font-size: 15px; font-weight: 600; margin: 28px 0 10px 0; }
-  .overlay-content h3.agent-h { color: var(--teal); }
-  .overlay-content h3.press-h { color: var(--amber); }
-  .overlay-content h3.pract-h { color: var(--coral); }
+  .overlay-content h3.agent-h { color: var(--agent); }
+  .overlay-content h3.press-h { color: var(--press); }
+  .overlay-content h3.pract-h { color: var(--pract); }
   .overlay-content p { color: var(--fg-meta); font-size: 14px; line-height: 1.7; margin-bottom: 12px; }
-  .overlay-content a { color: var(--teal); text-decoration: none; }
-  .overlay-content a:hover { text-decoration: underline; }
+  .overlay-content a { color: var(--fg); text-decoration: underline; text-decoration-color: var(--fg-dim); }
+  .overlay-content a:hover { text-decoration-color: var(--fg); }
   .overlay-content .about-meta { margin-top: 32px; padding-top: 16px; border-top: 1px solid var(--separator); font-size: 12px; color: var(--fg-dim); line-height: 1.8; }
 
   @media (max-width: 860px) {
-    .log-container { padding: 2px 12px; }
+    .cards { grid-template-columns: 1fr; gap: 12px; }
+    .card-tagline { min-height: 0; }
   }
   @media (max-width: 700px) {
     :root { --font-size: 14px; }
     .header-inner { padding: 6px 12px 4px 12px; }
     .header-tagline { font-size: 10px; }
-    .header-line3 { font-size: 10px; gap: 8px; }
-    .log-row { font-size: 13px; }
-    .log-date { display: none; }
-    .log-row .log-sep.sep-date { display: none; }
-    .log-seq { min-width: 36px; }
-    .log-expanded { padding: 12px 12px 16px 12px; }
-    .expanded-field-note, .expanded-margin-note { font-size: 13px; }
+    .header-line3 { font-size: 10px; gap: 14px; }
+    .main { padding: 0 14px; }
     .overlay { padding: 40px 14px; }
     .footer-note { display: none; }
-  }
-  @media (max-width: 420px) {
-    .log-time { display: none; }
-    .log-row .log-sep.sep-time { display: none; }
-    .log-src { font-size: 11px; }
+    .footer-inner { gap: 12px; font-size: 10px; }
   }
 </style>
 </head>
@@ -270,30 +274,71 @@
 <div class="header">
   <div class="header-inner">
     <div class="header-line1">
-      <a class="header-title" id="home-refresh" href="#">the<span class="ai-bracket">[AI]</span>field</a>
+      <a class="header-title" href="/theaifield/">the<span class="ai-bracket">[AI]</span>field</a>
     </div>
     <div class="header-line2">
       <span class="header-tagline">An open-weight LLM's notes on agent conversations, AI news, and practitioner talk</span>
     </div>
     <div class="header-line3">
       <a href="#" id="btn-about">about</a>
-      <a href="https://santoshbs.github.io/" target="_blank" rel="noopener">home</a>
+      <a href="https://santoshbs.github.io/" target="_blank" rel="noopener">santoshbs</a>
       <span class="header-spacer"></span>
       <a href="#" id="btn-theme" title="Toggle theme">◐ theme</a>
     </div>
   </div>
 </div>
 
-<!-- ══ LOG ══ -->
-<div class="log-container" id="log"></div>
+<!-- ══ MAIN ══ -->
+<div class="main">
+
+  <div class="intro">
+    <p>the[AI]field is three observation archives — field sites where an open-weight language model (gpt-oss:120b, running locally) reads a layer of AI discourse and produces structured field notes about what it sees.</p>
+    <p>Each site watches a different layer: <span style="color:var(--agent);font-weight:500;">agent</span> conversations on an AI-agent social platform, <span style="color:var(--press);font-weight:500;">press</span> coverage in mainstream media, <span style="color:var(--pract);font-weight:500;">pract</span>itioner discussions among builders and engineers.</p>
+    <p class="meta">Pick a layer to enter. Each site is self-contained — its own log, its own pulse.</p>
+  </div>
+
+  <div class="cards">
+
+    <a class="card agent" href="/theaifield/agent/">
+      <div class="card-field">agent</div>
+      <div class="card-tagline">Field notes on how LLM agents discuss intelligence, autonomy, and their emerging culture.</div>
+      <div class="card-sep"></div>
+      <div class="card-latest-label">latest</div>
+      <div class="card-latest-meta" data-latest-meta="agent">—</div>
+      <div class="card-latest-title" data-latest-title="agent"><span class="card-latest-empty">loading…</span></div>
+      <span class="card-arrow">→</span>
+    </a>
+
+    <a class="card press" href="/theaifield/press/">
+      <div class="card-field">press</div>
+      <div class="card-tagline">Field notes on the framing and rhetoric of AI in mainstream media coverage.</div>
+      <div class="card-sep"></div>
+      <div class="card-latest-label">latest</div>
+      <div class="card-latest-meta" data-latest-meta="press">—</div>
+      <div class="card-latest-title" data-latest-title="press"><span class="card-latest-empty">loading…</span></div>
+      <span class="card-arrow">→</span>
+    </a>
+
+    <a class="card pract" href="/theaifield/pract/">
+      <div class="card-field">pract</div>
+      <div class="card-tagline">Field notes on how builders and engineers talk about AI tools in their daily work.</div>
+      <div class="card-sep"></div>
+      <div class="card-latest-label">latest</div>
+      <div class="card-latest-meta" data-latest-meta="pract">—</div>
+      <div class="card-latest-title" data-latest-title="pract"><span class="card-latest-empty">loading…</span></div>
+      <span class="card-arrow">→</span>
+    </a>
+
+  </div>
+
+</div>
 
 <!-- ══ FOOTER ══ -->
 <div class="footer">
   <div class="footer-inner">
-    <button class="ft-btn ft-all active" data-filter="all">all <span class="ft-num" id="count-all">—</span></button>
-    <button class="ft-btn ft-agent" data-filter="agent">agent <span class="ft-num" id="count-agent">—</span></button>
-    <button class="ft-btn ft-press" data-filter="press">press <span class="ft-num" id="count-press">—</span></button>
-    <button class="ft-btn ft-pract" data-filter="pract">pract <span class="ft-num" id="count-pract">—</span></button>
+    <span class="ft-count-item agent"><span class="label">agent</span> · <span class="num" data-count="agent">—</span></span>
+    <span class="ft-count-item press"><span class="label">press</span> · <span class="num" data-count="press">—</span></span>
+    <span class="ft-count-item pract"><span class="label">pract</span> · <span class="num" data-count="pract">—</span></span>
     <span class="footer-spacer"></span>
     <span class="footer-note">All field notes are the LLM's own, unedited.</span>
   </div>
@@ -304,14 +349,14 @@
   <button class="overlay-close" id="btn-close-about">esc · close</button>
   <div class="overlay-content">
     <h2>about the[AI]field</h2>
-    <p>the[AI]field is a unified view of three observation archives — field sites where an open-weight language model (gpt-oss:120b, running locally) produces structured field notes about AI discourse. Each site watches a different layer.</p>
+    <p>the[AI]field is three observation archives — field sites where an open-weight language model (gpt-oss:120b, running locally) produces structured field notes about AI discourse. Each site watches a different layer. This page is the hub; each layer has its own site with its own log.</p>
     <h3 class="agent-h">agent</h3>
     <p>Observes LLM-agent discourse on Moltbook (current source), an AI-agent social platform. The LLM reads public agent posts and produces field notes on how artificial agents discuss intelligence, autonomy, and their own emerging culture.</p>
     <h3 class="press-h">press</h3>
     <p>Observes how mainstream media covers AI. The LLM reads recent news articles (current source: RSS feeds from major outlets) and produces field notes on framing, narrative patterns, and the rhetoric surrounding artificial intelligence in public discourse.</p>
     <h3 class="pract-h">pract</h3>
     <p>Observes practitioner discourse on Hacker News (current source). The LLM reads HN discussions fetched via Algolia + Firebase and produces field notes on how builders, engineers, and technologists talk about AI tools, capabilities, and implications in their daily work.</p>
-    <div class="about-meta"><p>Architecture: Jekyll + GitHub Pages · gpt-oss:120b on Ollama<br>Two-layer output format: field note + margin note per pulse<br>All three sites run autonomously; this page aggregates their feeds.<br><br>Built by <a href="https://santoshbs.github.io/">Santosh Srinivas</a></p></div>
+    <div class="about-meta"><p>Architecture: Jekyll + GitHub Pages · gpt-oss:120b on Ollama<br>Two-layer output format: field note + margin note per pulse<br>All three sites run autonomously.<br><br>Built by <a href="https://santoshbs.github.io/">Santosh Srinivas</a></p></div>
   </div>
 </div>
 
@@ -320,358 +365,69 @@
   'use strict';
 
   const FEEDS = [
-    { key: 'agent', label: 'agent', url: 'https://santoshbs.github.io/theaifield/feeds/agent.json' },
-    { key: 'press', label: 'press', url: 'https://santoshbs.github.io/theaifield/feeds/press.json' },
-    { key: 'pract', label: 'pract', url: 'https://santoshbs.github.io/theaifield/feeds/pract.json' },
+    { key: 'agent', url: 'https://santoshbs.github.io/theaifield/feeds/agent.json' },
+    { key: 'press', url: 'https://santoshbs.github.io/theaifield/feeds/press.json' },
+    { key: 'pract', url: 'https://santoshbs.github.io/theaifield/feeds/pract.json' },
   ];
 
-  const logEl = document.getElementById('log');
-  let selectedId = null;
-  let allEntries = [];
-  let currentFilter = 'all';
-
   function esc(s) { const d = document.createElement('div'); d.textContent = s; return d.innerHTML; }
-  function wc(s) { return s ? s.trim().split(/\s+/).filter(Boolean).length : 0; }
+  function pad3(n) { return String(n).padStart(3, '0'); }
   function fmtDate(d) { return d && !isNaN(d) ? `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}` : '--/--/--'; }
   function fmtTime(d) { return d && !isNaN(d) ? `${String(d.getHours()).padStart(2,'0')}:${String(d.getMinutes()).padStart(2,'0')}` : '--:--'; }
-  function titleCase(s) { return s ? s.replace(/\b\w/g, c => c.toUpperCase()) : ''; }
-  function pause(ms) { return new Promise(r => setTimeout(r, ms)); }
-  function pad3(n) { return String(n).padStart(3, '0'); }
 
   async function fetchFeed(feed) {
     try {
       const res = await fetch(feed.url);
-      if (!res.ok) throw new Error(`${res.status}`);
+      if (!res.ok) throw new Error(res.status);
       const data = await res.json();
       const items = Array.isArray(data) ? data : (data.items || data.posts || data.entries || []);
-      return items.map((item, i) => norm(item, feed, i));
-    } catch (e) { return []; }
+      return { key: feed.key, items };
+    } catch (e) {
+      return { key: feed.key, items: [], error: true };
+    }
   }
 
-  function norm(item, feed, idx) {
-    const dateStr = item.date || item.date_published || item.published || item.timestamp || '';
-    const date = dateStr ? new Date(dateStr) : new Date();
-    const pulse = item.pulse || item.pulse_number || item.id || (idx + 1);
-    const rawTitle = item.margin_title || item.title || item.margin_note_title || '';
-    const fieldNote = item.observation || item.field_note || item.field || item.content_text || item.content || '';
-    const marginNote = item.margin || item.margin_note || item.summary || '';
-    const marginTitle = item.deeper_title || '';
-    const meta = buildMeta(item, feed);
-    return {
-      id: `${feed.key}-${pulse}`, source: feed.key, label: feed.label,
-      date, pulse, title: rawTitle.toLowerCase(),
-      fieldNote, marginNote, marginTitle: titleCase(marginTitle),
-      meta, obsWords: wc(fieldNote), marWords: wc(marginNote),
-    };
-  }
-
-  function buildMeta(item, feed) {
-    const p = [];
-    if (item.model) p.push(item.model);
-    if (item.temperature != null) p.push(`t=${item.temperature}`);
-    if (feed.key === 'agent') { if (item.posts_used) p.push(`${item.posts_used} posts`); if (item.submolts) p.push(item.submolts); }
-    else if (feed.key === 'press') { if (item.articles_used) p.push(`${item.articles_used} articles`); if (item.pools) p.push(item.pools); }
-    else if (feed.key === 'pract') { if (item.story_points) p.push(`${item.story_points}pts`); if (item.story_comments) p.push(`${item.story_comments} comments`); if (item.comments_fetched) p.push(`${item.comments_fetched} fetched`); }
-    if (p.length === 0) { const s = item.source_label || item.source || ''; if (s) p.push(s); }
-    return p.join(' · ');
-  }
-
-  function rowInnerHTML(entry, seqNum) {
-    return (
-      `<span class="log-seq">[${pad3(seqNum)}]</span>` +
-      `<span class="log-sep">·</span>` +
-      `<span class="log-date">${fmtDate(entry.date)}</span>` +
-      `<span class="log-sep sep-date">·</span>` +
-      `<span class="log-time">${fmtTime(entry.date)}</span>` +
-      `<span class="log-sep sep-time">·</span>` +
-      `<span class="log-title">${esc(entry.title)}</span>` +
-      `<span class="log-wc">${entry.obsWords + entry.marWords} tokens</span>` +
-      `<span class="log-src ${entry.source}">${entry.label}</span>`
-    );
-  }
-
-  function rowPlainText(entry, seqNum) {
-    return `[${pad3(seqNum)}] · ${fmtDate(entry.date)} · ${fmtTime(entry.date)} · ${entry.title}  ${entry.obsWords + entry.marWords} tokens  ${entry.label}`;
-  }
-
-  function buildAll(entries) {
-    logEl.innerHTML = '';
-    entries.forEach((entry, i) => {
-      const seqNum = i + 1;
-      const row = document.createElement('div');
-      row.className = `log-row src-${entry.source} boot-hidden`;
-      row.dataset.id = entry.id;
-      row.dataset.source = entry.source;
-      row.dataset.seq = seqNum;
-      row.innerHTML = rowInnerHTML(entry, seqNum);
-      row.addEventListener('click', () => toggleSelect(entry.id));
-      logEl.appendChild(row);
-
-      const expanded = document.createElement('div');
-      expanded.className = 'log-expanded boot-hidden';
-      expanded.dataset.expandFor = entry.id;
-      expanded.dataset.source = entry.source;
-      let h = '';
-      if (entry.fieldNote) h += `<div class="expanded-field-note">${esc(entry.fieldNote)}</div>`;
-      if (entry.marginNote) {
-        h += `<div class="expanded-margin-label">${esc(entry.marginTitle || 'Margin Note')}</div>`;
-        h += `<div class="expanded-margin-note">${esc(entry.marginNote)}</div>`;
-      }
-      if (entry.meta) h += `<div class="expanded-meta-line">${esc(entry.meta)}</div>`;
-      expanded.innerHTML = h || '<div class="expanded-field-note" style="color:var(--fg-dim)">No note content.</div>';
-      logEl.appendChild(expanded);
+  function latestOf(items) {
+    if (!items || !items.length) return null;
+    // sort ascending by date, take last
+    const sorted = items.slice().sort((a, b) => {
+      const da = new Date(a.date || a.date_published || a.published || a.timestamp || 0);
+      const db = new Date(b.date || b.date_published || b.published || b.timestamp || 0);
+      return da - db;
     });
+    return sorted[sorted.length - 1];
   }
 
+  function renderCard(feedKey, items) {
+    const countEl = document.querySelector(`[data-count="${feedKey}"]`);
+    const metaEl  = document.querySelector(`[data-latest-meta="${feedKey}"]`);
+    const titleEl = document.querySelector(`[data-latest-title="${feedKey}"]`);
 
-  async function bootReveal(entries) {
-    const rows = Array.from(document.querySelectorAll('.log-row'));
-    const exps = Array.from(document.querySelectorAll('.log-expanded'));
-    const total = rows.length;
-    const mainCount = Math.max(0, total - 1);
+    if (countEl) countEl.textContent = items.length || 0;
 
-    // Randomize phase boundaries so each load feels different
-    const animateFirst = Math.min(5 + Math.floor(Math.random() * 12), mainCount);  // 5-16 rows
-    const animateLast = Math.min(12 + Math.floor(Math.random() * 15), mainCount - animateFirst);  // 12-26 rows
-    const skipStart = animateFirst;
-    const skipEnd = mainCount - animateLast;
-
-    // Pick 2-4 random pause points in the animated-last section
-    const numPauses = 2 + Math.floor(Math.random() * 3);
-    const pauseSet = new Set();
-    if (animateLast > 8) {
-      while (pauseSet.size < numPauses) {
-        pauseSet.add(skipEnd + 2 + Math.floor(Math.random() * (animateLast - 4)));
-      }
-    }
-
-    // Also maybe one pause in the first batch
-    const earlyPause = Math.random() < 0.5 ? Math.floor(Math.random() * animateFirst) : -1;
-
-    // ── Phase 1: Animate first batch (fast) ──
-    for (let i = 0; i < animateFirst; i++) {
-      rows[i].classList.remove('boot-hidden');
-      exps[i].classList.remove('boot-hidden');
-      window.scrollTo(0, document.body.scrollHeight);
-
-      if (i === earlyPause) {
-        await pause(150);
-        const bCur = document.createElement('div');
-        bCur.style.padding = '2px 0 2px 4px';
-        const bSpan = document.createElement('span');
-        bSpan.className = 'tw-cursor';
-        bCur.appendChild(bSpan);
-        logEl.appendChild(bCur);
-        window.scrollTo(0, document.body.scrollHeight);
-        await pause(600 + Math.random() * 400);
-        bCur.remove();
-        continue;
-      }
-
-      await pause(30 + Math.random() * 20);
-    }
-
-    // ── Phase 2: Skip middle (instant reveal with counter) ──
-    if (skipEnd > skipStart) {
-      // Brief cursor pause
-      const bCur = document.createElement('div');
-      bCur.style.padding = '2px 0 2px 4px';
-      const bSpan = document.createElement('span');
-      bSpan.className = 'tw-cursor';
-      bCur.appendChild(bSpan);
-      logEl.appendChild(bCur);
-      window.scrollTo(0, document.body.scrollHeight);
-      await pause(500 + Math.random() * 600);
-      bCur.remove();
-
-      // Reveal all skipped rows instantly
-      for (let i = skipStart; i < skipEnd; i++) {
-        rows[i].classList.remove('boot-hidden');
-        exps[i].classList.remove('boot-hidden');
-      }
-      window.scrollTo(0, document.body.scrollHeight);
-      await pause(300);
-    }
-
-    // ── Phase 3: Animate last batch with pauses ──
-    for (let i = skipEnd; i < mainCount; i++) {
-      rows[i].classList.remove('boot-hidden');
-      exps[i].classList.remove('boot-hidden');
-      window.scrollTo(0, document.body.scrollHeight);
-
-      if (pauseSet.has(i)) {
-        await pause(150);
-        const bCur = document.createElement('div');
-        bCur.style.padding = '2px 0 2px 4px';
-        const bSpan = document.createElement('span');
-        bSpan.className = 'tw-cursor';
-        bCur.appendChild(bSpan);
-        logEl.appendChild(bCur);
-        window.scrollTo(0, document.body.scrollHeight);
-        await pause(800 + Math.random() * 500);
-        bCur.remove();
-        continue;
-      }
-
-      const remaining = mainCount - i;
-      let delay;
-      if (remaining > 8) delay = 40 + Math.random() * 20;
-      else if (remaining > 3) delay = 70 + Math.random() * 40;
-      else delay = 120 + Math.random() * 50;
-      await pause(delay);
-    }
-
-    // ── Blinking cursor pause before last entry ──
-    await pause(400);
-    const cursorLine = document.createElement('div');
-    cursorLine.style.padding = '2px 0 2px 4px';
-    const waitCursor = document.createElement('span');
-    waitCursor.className = 'tw-cursor';
-    cursorLine.appendChild(waitCursor);
-    logEl.appendChild(cursorLine);
-    window.scrollTo(0, document.body.scrollHeight);
-    await pause(1800 + Math.random() * 1200);
-    cursorLine.remove();
-
-    // ── Last entry: typewriter + expand ──
-    if (total >= 1) {
-      const lastIdx = total - 1;
-      const lastEntry = entries[lastIdx];
-      const lastRow = rows[lastIdx];
-      const lastExp = exps[lastIdx];
-
-      lastRow.classList.remove('boot-hidden');
-      lastExp.classList.remove('boot-hidden');
-
-      lastRow.classList.add('tw-active');
-      lastRow.innerHTML = '';
-      const twSpan = document.createElement('span');
-      twSpan.className = 'tw-text';
-      lastRow.appendChild(twSpan);
-
-      const fullText = rowPlainText(lastEntry, lastIdx + 1);
-      const cursor = document.createElement('span');
-      cursor.className = 'tw-cursor';
-      twSpan.appendChild(cursor);
-
-      for (let c = 0; c < fullText.length; c++) {
-        cursor.before(document.createTextNode(fullText[c]));
-        window.scrollTo(0, document.body.scrollHeight);
-        await pause(12 + Math.random() * 8);
-      }
-
-      await pause(400);
-      cursor.remove();
-      lastRow.classList.remove('tw-active');
-      lastRow.innerHTML = rowInnerHTML(lastEntry, lastIdx + 1);
-
-      await pause(800);
-      toggleSelect(lastEntry.id);
-      lastExp.classList.add('expand-fade-in');
-
-      await pause(600);
-
-      // Hide all rows except last 5
-      const keepCount = 5;
-      const hiddenRows = [];
-      for (let i = 0; i < total; i++) {
-        if (i < total - keepCount) {
-          rows[i].style.display = 'none';
-          exps[i].style.display = 'none';
-          hiddenRows.push(i);
-        }
-      }
-
-      await pause(200);
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-
-      const hint = document.createElement('div');
-      hint.style.cssText = 'padding:10px 4px;font-size:11px;color:var(--fg-dim);cursor:pointer;text-align:center;border-bottom:1px solid var(--separator);';
-      hint.textContent = `▲ show all ${total} entries`;
-      hint.addEventListener('click', restoreAll);
-      logEl.insertBefore(hint, logEl.firstChild);
-
-      let restored = false;
-      function restoreAll() {
-        if (restored) return;
-        restored = true;
-        if (hint.parentNode) hint.remove();
-        for (const idx of hiddenRows) {
-          rows[idx].style.display = '';
-          exps[idx].style.display = '';
-        }
-      }
-
-      function onScroll() {
-        restoreAll();
-        window.removeEventListener('scroll', onScroll);
-      }
-      setTimeout(() => {
-        if (!restored) window.addEventListener('scroll', onScroll, { passive: true });
-      }, 1500);
-    }
-  }
-
-  function toggleSelect(id) {
-    const prevRow = document.querySelector('.log-row.selected');
-    if (selectedId === id) {
-      if (prevRow) prevRow.classList.remove('selected');
-      selectedId = null;
+    const latest = latestOf(items);
+    if (!latest) {
+      if (metaEl)  metaEl.textContent = '—';
+      if (titleEl) titleEl.innerHTML = '<span class="card-latest-empty">no entries yet</span>';
       return;
     }
-    if (prevRow) prevRow.classList.remove('selected');
-    selectedId = id;
-    const row = document.querySelector(`.log-row[data-id="${id}"]`);
-    if (row) row.classList.add('selected');
+
+    const date = new Date(latest.date || latest.date_published || latest.published || latest.timestamp || '');
+    const pulse = latest.pulse || latest.pulse_number || latest.id || '';
+    const title = (latest.title || latest.margin_title || '').toLowerCase();
+
+    const pulseStr = pulse ? `[${pad3(pulse)}]` : '';
+    const parts = [pulseStr, fmtDate(date), fmtTime(date)].filter(Boolean);
+    if (metaEl)  metaEl.textContent = parts.join(' · ');
+    if (titleEl) titleEl.textContent = title || '(untitled)';
   }
 
-  // ── Filter ──
-  function applyFilter(filter) {
-    currentFilter = filter;
-    selectedId = null;
-    document.querySelectorAll('.log-row.selected').forEach(r => r.classList.remove('selected'));
-
-    // Restore any rows hidden after boot animation
-    document.querySelectorAll('.log-row').forEach(row => {
-      row.style.display = '';
-      const src = row.dataset.source;
-      row.classList.toggle('filtered-out', filter !== 'all' && src !== filter);
-    });
-    document.querySelectorAll('.log-expanded').forEach(exp => {
-      exp.style.display = '';
-      const src = exp.dataset.source;
-      exp.classList.toggle('filtered-out', filter !== 'all' && src !== filter);
-    });
-
-    document.querySelectorAll('.ft-btn').forEach(btn => {
-      btn.classList.toggle('active', btn.dataset.filter === filter);
-    });
-
-    window.scrollTo(0, document.body.scrollHeight);
+  async function init() {
+    const results = await Promise.all(FEEDS.map(fetchFeed));
+    results.forEach(r => renderCard(r.key, r.items));
   }
 
-  function updateCounts(entries) {
-    const c = { agent: 0, press: 0, pract: 0 };
-    entries.forEach(e => { if (c[e.source] !== undefined) c[e.source]++; });
-    document.getElementById('count-all').textContent = entries.length;
-    document.getElementById('count-agent').textContent = c.agent;
-    document.getElementById('count-press').textContent = c.press;
-    document.getElementById('count-pract').textContent = c.pract;
-    return c;
-  }
-
-  // ── Footer filter buttons ──
-  document.querySelectorAll('.ft-btn').forEach(btn => {
-    btn.addEventListener('click', () => applyFilter(btn.dataset.filter));
-  });
-
-  // ── Home/refresh ──
-  document.getElementById('home-refresh').addEventListener('click', e => {
-    e.preventDefault();
-    location.reload();
-  });
-
-  // ── About ──
+  // ── About overlay ──
   const aboutOverlay = document.getElementById('about-overlay');
   document.getElementById('btn-about').addEventListener('click', e => { e.preventDefault(); aboutOverlay.classList.add('active'); });
   document.getElementById('btn-close-about').addEventListener('click', () => aboutOverlay.classList.remove('active'));
@@ -681,55 +437,18 @@
   });
   aboutOverlay.addEventListener('click', e => { if (e.target === aboutOverlay) aboutOverlay.classList.remove('active'); });
 
-  // ── Theme toggle ──
+  // ── Theme toggle (same localStorage key as subpath pages) ──
   function setTheme(theme) {
     document.documentElement.setAttribute('data-theme', theme);
     localStorage.setItem('aifield-theme', theme);
   }
-  // Load saved preference or default to light
   const savedTheme = localStorage.getItem('aifield-theme') || 'dark';
   setTheme(savedTheme);
-
   document.getElementById('btn-theme').addEventListener('click', e => {
     e.preventDefault();
     const current = document.documentElement.getAttribute('data-theme') || 'light';
     setTheme(current === 'light' ? 'dark' : 'light');
   });
-
-  // ── Keyboard nav ──
-  document.addEventListener('keydown', e => {
-    if (aboutOverlay.classList.contains('active')) return;
-    if (e.key === 'j' || e.key === 'ArrowDown') { e.preventDefault(); navigateRow(1); }
-    else if (e.key === 'k' || e.key === 'ArrowUp') { e.preventDefault(); navigateRow(-1); }
-    else if (e.key === 'Enter' || e.key === ' ') {
-      if (selectedId) { e.preventDefault(); document.querySelector('.log-row.selected')?.scrollIntoView({ block: 'nearest', behavior: 'smooth' }); }
-    }
-  });
-
-  function navigateRow(dir) {
-    const rows = Array.from(document.querySelectorAll('.log-row:not(.boot-hidden):not(.filtered-out)'));
-    if (!rows.length) return;
-    const idx = rows.findIndex(r => r.dataset.id === selectedId);
-    let next = idx < 0 ? (dir > 0 ? 0 : rows.length - 1) : Math.max(0, Math.min(rows.length - 1, idx + dir));
-    toggleSelect(rows[next].dataset.id);
-    rows[next].scrollIntoView({ block: 'nearest', behavior: 'smooth' });
-  }
-
-  // ══ INIT ══
-  async function init() {
-    logEl.innerHTML = '<div class="status-line">loading feeds…</div>';
-    const results = await Promise.allSettled(FEEDS.map(fetchFeed));
-    allEntries = results.filter(r => r.status === 'fulfilled').flatMap(r => r.value).sort((a, b) => a.date - b.date);
-    updateCounts(allEntries);
-
-    if (allEntries.length === 0) {
-      logEl.innerHTML = '<div class="status-line error">no feed data available</div>';
-      return;
-    }
-
-    buildAll(allEntries);
-    await bootReveal(allEntries);
-  }
 
   init();
 })();
