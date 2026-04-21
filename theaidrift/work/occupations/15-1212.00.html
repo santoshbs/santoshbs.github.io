@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Information Security Analysts</title>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Source+Code+Pro:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+:root, [data-theme="light"] {
+  --bg: #fafaf8;
+  --surface: #f0efe9;
+  --text: #7a7870;
+  --text-dim: #9a9890;
+  --text-bright: #1a1a18;
+  --text-hyp: #111;
+  --border: #d8d6ce;
+  --accent: #5a7a20;
+  --cite-color: #2563eb;
+  --link: #5a7a20;
+  --font: 'IBM Plex Mono', monospace; #Source Code Pro, monospace; #
+}
+[data-theme="dark"] {
+  --bg: #0e0e0c;
+  --surface: #1a1a18;
+  --text: #8a8680;
+  --text-dim: #686560;
+  --text-bright: #d4d0c8;
+  --text-hyp: #e8e4dc;
+  --border: #2e2e28;
+  --accent: #8fa830;
+  --cite-color: #60a5fa;
+  --link: #8fa830;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: var(--bg); color: var(--text); font-family: var(--font); font-size: 13px; line-height: 1.7; }
+a { color: var(--link); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* Header */
+.site-header {
+  max-width: 700px; margin: 0 auto; padding: 14px 20px;
+  display: flex; justify-content: space-between; align-items: baseline;
+  border-bottom: 1px solid var(--border);
+}
+.site-name { font-size: 13px; font-weight: 500; color: var(--accent); letter-spacing: 1px; }
+.site-name a { color: var(--accent); }
+.site-tagline { font-size: 11px; color: var(--text-dim); }
+.site-nav { font-size: 12px; display: flex; align-items: baseline; gap: 14px; }
+.site-nav a { color: var(--text-dim); }
+.site-nav a:hover { color: var(--accent); }
+.theme-toggle { cursor: pointer; color: var(--text-dim); font-size: 12px; border: none; background: none; font-family: var(--font); }
+.theme-toggle:hover { color: var(--accent); }
+
+/* Content */
+.content { max-width: 700px; margin: 0 auto; padding: 28px 20px 40px; }
+.content h1 { font-size: 20px; font-weight: 500; color: var(--text-bright); line-height: 1.4; margin-bottom: 2px; }
+.content h1 + p { font-size: 12px; color: var(--text-dim); margin-bottom: 2px; }
+
+/* Manuscript metadata block */
+.content .manuscript-meta,
+.content h1 + p + p {
+  font-size: 11px; color: var(--text-dim); margin-bottom: 2px; line-height: 1.6;
+}
+
+/* Horizon sections */
+.content h2 {
+  font-size: 12px; font-weight: 500; color: var(--accent);
+  text-transform: uppercase; letter-spacing: 1.5px;
+  margin-top: 28px; margin-bottom: 10px;
+  padding-top: 18px; border-top: 1px solid var(--border);
+}
+.content h2:first-of-type { border-top: none; padding-top: 0; }
+
+.content strong { color: var(--text-bright); font-weight: 500; }
+
+/* Argument paragraphs — gray */
+.content p { margin-bottom: 10px; max-width: 660px; color: var(--text); }
+
+/* Hypothesis — high contrast, draws attention */
+.content em {
+  color: var(--text-hyp);
+  font-weight: 400;
+}
+
+/* Superscript reference links — blue */
+.ref-link {
+  font-size: 10px; vertical-align: super;
+  color: var(--cite-color);
+  cursor: pointer; text-decoration: none; font-weight: 600;
+}
+.ref-link:hover { text-decoration: underline; }
+
+/* HR */
+.content hr { border: none; border-top: 1px solid var(--border); margin: 24px 0 14px; }
+
+/* References section */
+.content h2#references { margin-top: 28px; }
+.references-list { font-size: 12px; color: var(--text-dim); line-height: 1.7; }
+.references-list ol { padding-left: 24px; margin: 8px 0; }
+.references-list li { margin-bottom: 8px; }
+.references-list li:target { background: var(--surface); padding: 4px 6px; border-radius: 3px; }
+.references-list a { color: var(--cite-color); word-break: break-all; }
+
+/* Tables — index */
+.log-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+.log-table th {
+  text-align: left; padding: 6px 8px; border-bottom: 2px solid var(--border);
+  font-size: 11px; text-transform: uppercase; letter-spacing: 1px;
+  color: var(--accent); cursor: pointer; user-select: none;
+}
+.log-table th:hover { text-decoration: underline; }
+.log-table td { padding: 6px 8px; border-bottom: 1px solid var(--border); }
+.log-table td a { color: var(--link); }
+.log-table .dim { color: var(--text-dim); font-size: 12px; }
+
+/* Lists */
+.content ul { list-style: none; }
+.occ-meta { font-size: 12px; color: var(--text-dim); }
+.llm-notice { font-size: 11px; color: var(--text-dim); margin: 8px 0 16px; font-style: italic; }
+
+/* Colophon */
+.colophon { font-size: 10px; color: var(--text-dim); margin-top: 16px; }
+
+/* Footer — single line */
+.site-footer {
+  max-width: 700px; margin: 0 auto; padding: 12px 20px;
+  border-top: 1px solid var(--border);
+  font-size: 10px; color: var(--text-dim); font-style: italic;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+
+@media (max-width: 640px) {
+  .content { padding: 16px 12px 40px; }
+  .content h1 { font-size: 17px; }
+  .site-footer { white-space: normal; }
+}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div>
+    <div class="site-name"><a href="/theaidrift/work/">workfield</a></div>
+    <div class="site-tagline">an LLM's living hypothesis log on occupational futures</div>
+  </div>
+  <nav class="site-nav">
+    <a href="/theaidrift/work/">index</a>
+    <a href="/theaidrift/work/about">about</a>
+    <button class="theme-toggle" onclick="toggleTheme()" title="Toggle theme">◐</button>
+  </nav>
+</header>
+
+<main class="content" id="page-content">
+<h1 id="information-security-analysts">Information Security Analysts</h1>
+<p>15-1212.00</p>
+
+<p>Created: 2026-04-01 (Model: qwen3.5:27b)
+Last revised: 2026-04-20 (Model: gemma4:31b-it-q8_0)</p>
+
+<hr />
+
+<h2 id="near-20262031-for-information-security-analysts-broadly-because-residential-proxy-networks-enable-attack-traffic-to-bypass-ip-reputation-filters-3-the-mechanism-for-regulating-access-to-safeguard-information-shifts-toward-behavioral-analysis-and-identity-based-telemetry-because-ai-assisted-supply-chain-attacks-increasingly-target-open-source-repositories-9-and-malicious-packages-are-distributed-across-npm-pypi-and-go-33-the-task-of-monitoring-current-reports-of-computer-viruses-shifts-toward-continuous-provenance-auditing-of-third-party-dependencies-933-for-a-subset-of-workers-in-organizations-deploying-autonomous-agents-the-process-of-regulating-access-to-safeguard-information-now-includes-managing-non-human-identities-and-mitigating-agentic-memory-attacks-that-persist-across-sessions-2664-for-analysts-in-regions-where-critical-infrastructure-is-targeted-monitoring-security-measures-focuses-on-detecting-disruptive-attacks-targeting-industrial-process-controllers-and-plc-devices-2428-training-users-and-promoting-security-awareness-is-unlikely-to-change-yet-because-industrialized-social-engineering-continues-to-exploit-fundamental-human-cognitive-biases-regardless-of-technical-controls-1016">Near (2026–2031): For information security analysts broadly, because residential proxy networks enable attack traffic to bypass IP-reputation filters [3], the mechanism for regulating access to safeguard information shifts toward behavioral analysis and identity-based telemetry. Because AI-assisted supply chain attacks increasingly target open-source repositories [9] and malicious packages are distributed across npm, PyPI, and Go [33], the task of monitoring current reports of computer viruses shifts toward continuous provenance auditing of third-party dependencies [9][33]. For a subset of workers in organizations deploying autonomous agents, the process of regulating access to safeguard information now includes managing non-human identities and mitigating agentic memory attacks that persist across sessions [26][64]. For analysts in regions where critical infrastructure is targeted, monitoring security measures focuses on detecting disruptive attacks targeting industrial process controllers and PLC devices [24][28]. Training users and promoting security awareness is unlikely to change yet because industrialized social engineering continues to exploit fundamental human cognitive biases regardless of technical controls [10][16].</h2>
+
+<p><em>Hypothesis: In the near term, analysts broadly may transition toward behavioral detection and provenance auditing, while specific subsegments integrate specialized risk intelligence for agentic AI, non-human identities, or industrial control systems.</em></p>
+
+<h2 id="mid-20362041-for-information-security-analysts-broadly-if-the-collapse-of-the-zero-day-timeline-30-and-the-rise-of-agentic-attack-speeds-22-persist-the-task-of-performing-risk-assessments-may-pivot-from-monitoring-mean-time-to-detection-toward-closing-the-post-alert-gap-via-automated-remediation-60-for-a-subset-of-workers-in-regulated-environments-the-task-of-documenting-computer-security-policies-may-transition-from-reviewing-probabilistic-test-results-to-using-automated-reasoning-and-formal-verification-to-produce-mathematically-proven-compliance-results-79-for-workers-in-agentic-settings-the-integration-of-ai-native-threat-intelligence-platforms-44-and-agent-governance-toolkits-3137-may-shift-the-process-of-modifying-computer-security-files-to-focus-on-the-real-time-governance-of-autonomous-agent-permissions-and-intent-136-extrapolating-from-quantum-computing-warnings-the-mechanism-of-encrypting-data-transmissions-may-shift-toward-the-deployment-of-post-quantum-cryptographic-standards-to-maintain-confidentiality-43-reviewing-violations-of-computer-security-procedures-and-discussing-procedures-with-violators-persists-as-a-human-centric-task-because-correcting-human-behavioral-errors-requires-qualitative-social-judgment-and-interpersonal-negotiation-10">Mid (2036–2041): For information security analysts broadly, if the collapse of the zero-day timeline [30] and the rise of agentic attack speeds [22] persist, the task of performing risk assessments may pivot from monitoring mean time to detection toward closing the “post-alert gap” via automated remediation [60]. For a subset of workers in regulated environments, the task of documenting computer security policies may transition from reviewing probabilistic test results to using automated reasoning and formal verification to produce mathematically proven compliance results [79]. For workers in agentic settings, the integration of AI-native threat intelligence platforms [44] and agent governance toolkits [31][37] may shift the process of modifying computer security files to focus on the real-time governance of autonomous agent permissions and intent [1][36]. Extrapolating from quantum computing warnings, the mechanism of encrypting data transmissions may shift toward the deployment of post-quantum cryptographic standards to maintain confidentiality [43]. Reviewing violations of computer security procedures and discussing procedures with violators persists as a human-centric task because correcting human behavioral errors requires qualitative social judgment and interpersonal negotiation [10].</h2>
+
+<p><em>Hypothesis: In the mid term, analysts broadly may move toward auditing automated agent interactions and remediation speed, while the core of policy enforcement remains anchored in human social judgment.</em></p>
+
+<h2 id="far-20462051-for-information-security-analysts-broadly-the-scope-of-the-occupation-remains-bounded-by-the-persistence-of-an-environment-where-ai-native-models-can-discover-vulnerabilities-faster-than-human-managed-systems-can-patch-them-62-the-primary-unknown-is-whether-the-defensive-mechanism-settles-on-full-ai-orchestrated-autonomy-or-a-structural-retreat-to-hardware-based-constraints-to-limit-attack-surfaces-because-the-cost-of-software-based-error-remains-high-in-critical-systems-certain-components-of-the-task-to-encrypt-data-transmissions-may-resist-change-by-reverting-to-air-gapped-or-physical-isolation-protocols-one-rival-outcome-involves-the-standardization-of-recursive-ai-driven-patching-where-the-analysts-role-shifts-entirely-to-the-high-level-orchestration-of-these-competing-automated-systems-a-competing-outcome-involves-the-failure-of-software-based-trust-leading-to-a-requirement-for-physical-human-verified-identity-and-access-controls-for-all-sensitive-data-movements">Far (2046–2051): For information security analysts broadly, the scope of the occupation remains bounded by the persistence of an environment where AI-native models can discover vulnerabilities faster than human-managed systems can patch them [62]. The primary unknown is whether the defensive mechanism settles on full AI-orchestrated autonomy or a structural retreat to hardware-based constraints to limit attack surfaces. Because the cost of software-based error remains high in critical systems, certain components of the task to encrypt data transmissions may resist change by reverting to air-gapped or physical isolation protocols. One rival outcome involves the standardization of recursive AI-driven patching where the analyst’s role shifts entirely to the high-level orchestration of these competing automated systems. A competing outcome involves the failure of software-based trust, leading to a requirement for physical, human-verified identity and access controls for all sensitive data movements.</h2>
+
+<p><em>Hypothesis A: In the far term, analysts broadly may function as orchestrators of autonomous recursive defense systems that patch vulnerabilities in real-time.</em></p>
+
+<p><em>Hypothesis B (competing): In the far term, analysts broadly may shift toward managing physical isolation and hardware-based security boundaries as software-based defenses become computationally untenable.</em></p>
+
+<hr />
+
+<h2 id="references">References</h2>
+
+<ol>
+  <li>AWS Machine Learning (2026). “Can your governance keep pace with your AI ambitions? AI risk intelligence in the agentic era.” https://aws.amazon.com/blogs/machine-learning/can-your-governance-keep-pace-with-your-ai-ambitions-ai-risk-intelligence-in-the-agentic-era/</li>
+  <li>Helpnet Security (2026). “Week in review: Axios npm supply chain compromise, critical FortiClient EMS bugs exploited.” https://www.helpnetsecurity.com/2026/04/05/week-in-review-axios-npm-supply-chain-compromise-critical-forticlient-ems-bug-exploited/</li>
+  <li>Helpnet Security (2026). “Residential proxies make a mockery of IP-based defenses.” https://www.helpnetsecurity.com/2026/04/06/residential-proxy-attack-traffic-ip-reputation-enterprise-security/</li>
+  <li>Cso Online (2026). “6 ways attackers abuse AI services to hack your business.” https://www.csoonline.com/article/4154222/6-ways-attackers-abuse-ai-services-to-hack-your-business.html</li>
+  <li>Hackread (2026). “Why Security Researchers and Red Teams Are Turning to Workflow Automation.” https://hackread.com/security-researchers-red-teams-workflow-automation/</li>
+  <li>Hackread (2026). “North Korean Hackers Pose as Trading Firm to Steal $285M from Drift.” https://hackread.com/north-korean-hackers-trading-firm-drift-protocol/</li>
+  <li>The Hacker News (2026). “How LiteLLM Turned Developer Machines Into Credential Vaults for Attackers.” https://thehackernews.com/2026/04/how-litellm-turned-developer-machines.html</li>
+  <li>The Hacker News (2026). “Qilin and Warlock Ransomware Use Vulnerable Drivers to Disable 300+ EDR Tools.” https://thehackernews.com/2026/04/qilin-and-warlock-ransomware-use.html</li>
+  <li>Dark Reading (2026). “AI-Assisted Supply Chain Attack Targets GitHub.” https://www.darkreading.com/application-security/ai-assisted-supply-chain-attack-targets-github</li>
+  <li>Dark Reading (2026). “Axios Attack Shows Social Complex Engineering Is Industrialized.” https://www.darkreading.com/threat-intelligence/axios-attack-complex-social-engineering-industrialized</li>
+  <li>Security Week (2026). “Google DeepMind Researchers Map Web Attacks Against AI Agents.” https://www.securityweek.com/google-deepmind-researchers-map-web-attacks-against-ai-agents/</li>
+  <li>Helpnet Security (2026). “Comp AI: The open-source way to get compliant with SOC 2, ISO 27001, HIPAA and GDPR.” https://www.helpnetsecurity.com/2026/04/07/comp-ai-open-source-compliance-platform/</li>
+  <li>Cso Online (2026). “The rise of proactive cyber: Why defense is no longer enough.” https://www.csoonline.com/article/4154228/the-rise-of-proactive-cyber-why-defense-is-no-longer-enough.html</li>
+  <li>Wired (2026). “Anthropic Teams Up With Its Rivals to Keep AI From Hacking Everything.” https://www.wired.com/story/anthropic-mythos-preview-project-glasswing/</li>
+  <li>TechCrunch (2026). “Anthropic debuts preview of powerful new AI model Mythos in new cybersecurity initiative.” https://techcrunch.com/2026/04/07/anthropic-mythos-ai-model-preview-security/</li>
+  <li>The Register (2026). “US cybercrime losses pass $20B for first time as AI boosts online fraud.” https://go.theregister.com/feed/www.theregister.com/2026/04/07/cybercrime_losses_reach_alltime_high/</li>
+  <li>Fast Company (2026). “Anthropic will use its biggest, baddest AI model to protect against cyberattacks.” https://www.fastcompany.com/91523254/anthropic-will-use-its-biggest-baddest-ai-model-to-protect-against-cyberattacks</li>
+  <li>Economic Times (2026). “Anthropic touts AI cybersecurity project with Big Tech partners.” https://economictimes.indiatimes.com/tech/technology/anthropic-touts-ai-cybersecurity-project-with-big-tech-partners/articleshow/130095433.cms</li>
+  <li>Hacker News (2026). “Project Glasswing: Securing critical software for the AI era.” https://www.anthropic.com/glasswing</li>
+  <li>Dark Reading (2026). “Human vs AI: Debates Shape RSAC 2026 Cybersecurity Trends.” https://www.darkreading.com/cybersecurity-operations/human-vs-ai-debates-shape-rsac-2026-cybersecurity-trends</li>
+  <li>Security Week (2026). “Anthropic Unveils ‘Claude Mythos’ – A Cybersecurity Breakthrough That Could Also Supercharge Attacks.” https://www.securityweek.com/anthropic-unveils-claude-mythos-a-cybersecurity-breakthrough-that-could-also-supercharge-attacks/</li>
+  <li>Security Week (2026). “The New Rules of Engagement: Matching Agentic Attack Speed.” https://www.securityweek.com/the-new-rules-of-engagement-matching-agentic-attack-speed/</li>
+  <li>Cyberscoop (2026). “Tech giants launch AI-powered ‘Project Glasswing’ to identify critical software vulnerabilities.” https://cyberscoop.com/project-glasswing-anthropic-ai-open-source-software-vulnerabilities/</li>
+  <li>Cyberscoop (2026). “Iranian hackers launching disruptive attacks at U.S. energy, water targets, feds warn.” https://cyberscoop.com/iranian-hackers-cyberattacks-us-energy-water-infrastructure-plc-scada-warning/</li>
+  <li>Hackread (2026). “GrafanaGhost Vulnerability Allows Data Theft via AI Injection.” https://hackread.com/grafanaghost-vulnerability-data-theft-via-ai-injection/</li>
+  <li>Hackread (2026). “AI Agents and Non-Human Identities Creating Critical Security Gaps, Report.” https://hackread.com/ai-agents-non-human-identities-security-gaps/</li>
+  <li>Engadget (2026). “Anthropic launches Project Glasswing, an effort to prevent AI cyberattacks with AI.” https://www.engadget.com/ai/anthropic-launches-project-glasswing-an-effort-to-prevent-ai-cyberattacks-with-ai-214939773.html?src=rss</li>
+  <li>Helpnet Security (2026). “Iranian cyber activity hits US energy, water, and government networks.” https://www.helpnetsecurity.com/2026/04/08/iran-targets-us-critical-infrastructure/</li>
+  <li>Cso Online (2026). “Forest Blizzard leverages router compromises to launch AiTM attacks, target Outlook sessions.” https://www.csoonline.com/article/4155632/forest-blizzard-leverages-router-compromises-to-launch-aitm-attacks-target-outlook-sessions.html</li>
+  <li>Cso Online (2026). “The zero-day timeline just collapsed. Here’s what security leaders do next.” https://www.csoonline.com/article/4155155/the-zero-day-timeline-just-collapsed-heres-what-security-leaders-do-next.html</li>
+  <li>Cso Online (2026). “Microsoft’s new Agent Governance Toolkit targets top OWASP risks for AI agents.” https://www.csoonline.com/article/4155594/microsofts-new-agent-governance-toolkit-targets-top-owasp-risks-for-ai-agents-2.html</li>
+  <li>The Register Security (2026). “Anthropic: All your zero-days are belong to Mythos.” https://go.theregister.com/feed/www.theregister.com/2026/04/07/anthropic_all_your_zerodays_are_belong_to_us/</li>
+  <li>The Hacker News (2026). “N. Korean Hackers Spread 1,700 Malicious Packages Across npm, PyPI, Go, Rust.” https://thehackernews.com/2026/04/08/n-korean-hackers-spread-1700-malicious.html</li>
+  <li>Ars Technica (2026). “Anthropic limits access to Mythos, its new cybersecurity AI model.” https://arstechnica.com/ai/2026/04/08/anthropic-limits-access-to-mythos-its-new-cybersecurity-ai-model/</li>
+  <li>Lawfare (2026). “The AI Revolution in Cyber Conflict.” https://www.lawfaremedia.org/article/the-ai-revolution-in-cyber-conflict</li>
+  <li>Helpnet Security (2026). “AI agent intent is a starting point, not a security strategy.” https://www.helpnetsecurity.com/2026/04/09/itamar-apelblat-token-security-ai-agents-security-risks/</li>
+  <li>Helpnet Security (2026). “Asqav: Open-source SDK for AI agent governance.” https://www.helpnetsecurity.com/2026/04/09/asqav-ai-agent-audit-trail/</li>
+  <li>Helpnet Security (2026). “Phishers sneak through using GitHub and Jira’s own mail delivery infrastructure.” https://www.helpnetsecurity.com/2026/04/09/saas-platforms-notification-systems-phishing/</li>
+  <li>Defense One (2026). “Spy agencies eye new Anthropic AI model that spots cyber flaws.” https://www.defenseone.com/policy/2026/04/spy-agencies-ai-anthropic-cybersecurity/412724/</li>
+  <li>Digiday (2026). “Media Briefing: Another AI threat emerges for publishers: the third-party scraper.” https://digiday.com/media/media-briefing-another-ai-threat-emerges-for-publishers-the-third-party-scraper/?utm_campaign=digidaydis&amp;utm_medium=rss&amp;utm_source=general-rss</li>
+  <li>Power Magazine (2026). “When the Levee Breaks: Managing Cybersecurity Threats During Natural Disasters.” https://www.powermag.com/when-the-levee-breaks-managing-cybersecurity-threats-during-natural-disasters/</li>
+  <li>The Guardian (2026). “Anthropic keeps latest AI tool out of public’s hands for fear of enabling widespread hacking.” https://www.theguardian.com/technology/2026/apr/08/anthropic-ai-cybersecurity-software</li>
+  <li>Cso Online (2026). “Cloudflare ‘actively adjusting’ quantum priorities in wake of Google warning.” https://www.csoonline.com/article/4156822/cloudflare-actively-adjusting-quantum-priorities-in-wake-of-google-warning.html</li>
+  <li>Hackread (2026). “Mallory Launches AI-Native Threat Intelligence Platform, Turning Global Threat Data Into Prioritized Action.” https://hackread.com/mallory-launches-ai-native-threat-intelligence-platform-turning-global-threat-data-into-prioritized-action/</li>
+  <li>The Register Security (2026). “‘Several dozen’ high-value corporations hit by new extortion crew in helpdesk phishing spree.” https://go.theregister.com/feed/www.theregister.com/2026/04/09/several_dozen_highvalue_corporations_targeted/</li>
+  <li>Wired (2026). “Anthropic’s Mythos Will Force a Cybersecurity Reckoning—Just Not the One You Think.” https://www.wired.com/story/anthropics-mythos-will-force-a-cybersecurity-reckoning-just-not-the-one-you-think/</li>
+  <li>The Register (2026). “Snowflake manager explains the “Spider-Man” theory of AI agent data access.” https://go.theregister.com/feed/www.theregister.com/2026/04/10/ai_agents_spider_man_snowflake/</li>
+  <li>The Guardian (2026). “US summons bank bosses over cyber risks from Anthropic’s latest AI model.” https://www.theguardian.com/technology/2026/apr/10/us-summoned-bank-bosses-to-discuss-cyber-risks-posed-by-anthropic-latest-ai-model</li>
+  <li>Helpnet Security (2026). “Poisoned “Office 365” search results lead to stolen paychecks.” https://www.helpnetsecurity.com/2026/04/10/poisoned-office-365-search-results-lead-to-stolen-paychecks/</li>
+  <li>Cso Online (2026). “Old Docker authorization bypass pops up despite previous patch.” https://www.csoonline.com/article/4157405/old-docker-authorization-bypass-pops-up-despite-previous-patch.html</li>
+  <li>Hackread (2026). “Android Banking Trojan Linked to Cambodia Scam Compounds Hits 21 Countries.” https://hackread.com/android-banking-trojan-cambodia-scam-compounds/</li>
+  <li>Hackread (2026). “GraphAlgo Scam: Lazarus Hackers Register Real US LLCs to Spread Malware.” https://hackread.com/graphalgo-scam-lazarus-hackers-us-llcs-malware/</li>
+  <li>Hackread (2026). “UNC6783 Hackers Use Fake Okta Pages in Corporate Breach Campaign.” https://hackread.com/unc6783-hackers-fake-okta-pages-corporate-breach/</li>
+  <li>The Register Security (2026). “Project Glasswing and open source software: The good, the bad, and the ugly.” https://go.theregister.com/feed/www.theregister.com/2026/04/10/project_glasswing/</li>
+  <li>The Hacker News (2026). “GlassWorm Campaign Uses Zig Dropper to Infect Multiple Developer IDEs.” https://thehackernews.com/2026/04/10/glassworm-campaign-uses-zig-dropper-to.html</li>
+  <li>The Hacker News (2026). “Browser Extensions Are the New AI Consumption Channel That No One Is Talking About.” https://thehackernews.com/2026/04/10/browser-extensions-are-new-ai.html</li>
+  <li>Cso Online (2026). “Google adds end-to-end Gmail encryption to Android, iOS devices for enterprises.” https://www.csoonline.com/article/4157458/google-adds-end-to-end-gmail-encryption-to-android-ios-devices-for-enterprises-3.html</li>
+  <li>Power Magazine (2026). “Project Glasswing: What Power Companies and Grid Operators Need to Know.” https://www.powermag.com/project-glasswing-what-power-companies-and-grid-operators-need-to-know/</li>
+  <li>Finextra (2026). “Regulators scramble to brief banks on Anthropic cyber risk.” https://www.finextra.com/newsarticle/47566/regulators-scramble-to-brief-banks-on-anthropic-cyber-risk?utm_medium=rssfinextra&amp;utm_source=finextrafeed</li>
+  <li>The Hacker News (2026). “Your MTTD Looks Great. Your Post-Alert Gap Doesn’t.” https://thehackernews.com/2026/04/13/your-mttd-looks-great-your-post-alert.html</li>
+  <li>The Guardian (2026). “Goldman Sachs chief ‘hyper-aware’ of risks from Anthropic’s Mythos AI.” https://www.theguardian.com/business/2026/apr/13/goldman-sachs-chief-hyper-aware-risks-anthropics-mythos-ai-david-solomon</li>
+  <li>Dark Reading (2026). “CSA: CISOs Should Prepare for Post-Mythos Exploit Storm.” https://www.darkreading.com/cloud-security/csa-cisos-prepare-post-mythos-exploit-storm</li>
+  <li>Cyberscoop (2026). “Here’s how cyber heavyweights in the US and UK are dealing with Claude Mythos.” https://cyberscoop.com/claude-mythos-ai-cybersecurity-threat-report/</li>
+  <li>Helpnet Security (2026). “Agentic AI memory attacks spread across sessions and users, and most organizations aren’t ready.” https://www.helpnetsecurity.com/2026/04/14/idan-habler-cisco-agentic-ai-memory-attacks/</li>
+  <li>Cso Online (2026). “How AI is transforming threat detection.” https://www.csoonline.com/article/4154239/how-ai-is-transforming-threat-detection.html</li>
+  <li>The Hacker News (2026). “Analysis of 216M Security Findings Shows a 4x Increase In Critical Risk (2026 Report).” https://thehackernews.com/2026/04/14/analysis-of-216m-security-findings.html</li>
+  <li>Wired (2026). “In the Wake of Anthropic’s Mythos, OpenAI Has a New Cybersecurity Model—and Strategy.” https://www.wired.com/story/in-the-wake-of-anthropics-mythos-openai-has-a-new-cybersecurity-model-and-strategy/</li>
+  <li>The Register (2026). “Commvault has a Ctrl+Z for rogue AI agents.” https://go.theregister.com/feed/www.theregister.com/2026/04/14/commvault_has_a_ctrlz_for/</li>
+  <li>OpenAI (2026). “Trusted access for the next era of cyber defense.” https://openai.com/index/scaling-trusted-access-for-cyber-defense</li>
+  <li>Dark Reading (2026). “EDR-Killer Ecosystem Expansion Requires Stronger BYOVD Defenses.” https://www.darkreading.com/vulnerabilities-threats/edr-killer-ecosystem-expansion-requires-stronger-byovd-defenses</li>
+  <li>Security Week (2026). “‘Mythos-Ready’ Security: CSA Urges CISOs to Prepare for Accelerated AI Threats.” https://www.securityweek.com/mythos-ready-security-csa-urges-cisos-to-prepare-for-accelerated-ai-threats/</li>
+  <li>Cyberscoop (2026). “Space Force official touts AI’s impact on cyber compliance.” https://cyberscoop.com/space-force-ciso-touts-ai-impact-cyber-compliance/</li>
+  <li>Helpnet Security (2026). “Testing reveals Claude Mythos’s offensive capabilities and limits.” https://www.helpnetsecurity.com/2026/04/14/claude-mythos-test-attack-capabilities-limits/</li>
+  <li>Cso Online (2026). “5 trends defining the future of AI-powered cybersecurity.” https://www.csoonline.com/article/4158679/5-trends-defining-the-future-of-ai-powered-cybersecurity.html</li>
+  <li>The Hacker News (2026). “AI-Driven Pushpaganda Scam Exploits Google Discover to Spread Scareware and Ad Fraud.” https://thehackernews.com/2026/04/14/ai-driven-pushpaganda-scam-exploits.html</li>
+  <li>MIT Technology Review (2026). “Making AI operational in constrained public sector environments.” https://www.technologyreview.com/2026/04/16/1135216/making-ai-operational-in-constrained-public-sector-environments/</li>
+  <li>MIT Technology Review (2026). “The Download: cyberscammers’ banking bypasses, and carbon removal troubles.” https://www.technologyreview.com/2026/04/16/1136034/the-download-cyberscammers-banking-bypasses-microsoft-carbon-removal-troubles/</li>
+  <li>The Register (2026). “North Korea targets macOS users in latest heist.” https://go.theregister.com/feed/www.theregister.com/2026/04/16/north_korea_social_engineering_macos/</li>
+  <li>AWS Machine Learning (2026). “How Automated Reasoning checks in Amazon Bedrock transform generative AI compliance.” https://aws.amazon.com/blogs/machine-learning/how-automated-reasoning-checks-in-amazon-bedrock-transform-generative-ai-compliance/</li>
+  <li>Forbes (2026). “CrowdStrike’s Next Act: Securing The Era Of Enterprise Agentic AI.” https://www.forbes.com/sites/stevemcdowell/2026/04/16/crowdstrikes-next-act-securing-the-era-of-enterprise-agentic-ai/</li>
+  <li>Forbes (2026). “Why GPT-5.4-Cyber Marks A Move Toward The Security Of Tomorrow.” https://www.forbes.com/sites/timkeary/2026/04/16/why-gpt-54-cyber-marks-a-move-toward-the-security-of-tomorrow/</li>
+  <li>O*NET OnLine (2024). Task Statements for 15-1212.00. U.S. Department of Labor. https://www.onetonline.org/link/summary/15-1212.00</li>
+</ol>
+
+</main>
+
+<footer class="site-footer">
+All content generated by a local open-weight LLM · not manually edited · version history on <a href="https://github.com/santoshbs/workfield" style="color:var(--text-dim)">GitHub</a>
+</footer>
+
+<script>
+function toggleTheme() {
+  const h = document.documentElement;
+  const n = h.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+  h.setAttribute('data-theme', n);
+  localStorage.setItem('workfield-theme', n);
+}
+(function(){ const s = localStorage.getItem('workfield-theme'); if(s) document.documentElement.setAttribute('data-theme', s); })();
+
+// Convert [N] to superscript blue links
+(function(){
+  const el = document.getElementById('page-content');
+  if (!el) return;
+
+  const paragraphs = el.querySelectorAll('p');
+  paragraphs.forEach(p => {
+    if (p.closest && p.closest('.references-list')) return;
+    p.innerHTML = p.innerHTML.replace(/\[(\d+)\]/g, '<a class="ref-link" href="#ref-$1" id="cite-$1">$1</a>');
+  });
+
+  // Format References — make URLs clickable, add anchors
+  const allH2 = el.querySelectorAll('h2');
+  let refHeader = null;
+  allH2.forEach(h => {
+    if (h.textContent.trim().toLowerCase() === 'references') {
+      refHeader = h; h.id = 'references';
+    }
+  });
+
+  if (refHeader) {
+    let next = refHeader.nextElementSibling;
+    const wrapper = document.createElement('div');
+    wrapper.className = 'references-list';
+
+    while (next) {
+      const current = next;
+      next = next.nextElementSibling;
+      if (current.tagName === 'H2' || current.tagName === 'HR') break;
+      wrapper.appendChild(current);
+    }
+
+    // Add anchors to list items
+    const items = wrapper.querySelectorAll('li');
+    items.forEach((li, i) => {
+      li.id = 'ref-' + (i + 1);
+      // Make bare URLs clickable
+      li.innerHTML = li.innerHTML.replace(
+        /(https?:\/\/[^\s<]+)/g,
+        '<a href="$1" target="_blank" rel="noopener">$1</a>'
+      );
+    });
+
+    // If no ol/li, try to build from numbered lines
+    if (items.length === 0) {
+      const text = wrapper.innerHTML;
+      const lines = text.split(/<br\s*\/?>|\n/).filter(l => /^\s*\d+\./.test(l));
+      if (lines.length > 0) {
+        const ol = document.createElement('ol');
+        lines.forEach((line, i) => {
+          const li = document.createElement('li');
+          li.id = 'ref-' + (i + 1);
+          li.innerHTML = line.replace(/^\s*\d+\.\s*/, '').replace(
+            /(https?:\/\/[^\s<]+)/g,
+            '<a href="$1" target="_blank" rel="noopener">$1</a>'
+          );
+          ol.appendChild(li);
+        });
+        wrapper.innerHTML = '';
+        wrapper.appendChild(ol);
+      }
+    }
+
+    refHeader.after(wrapper);
+  }
+
+  // Strip RETIRE sections
+  let html = el.innerHTML;
+  const retireIdx = html.indexOf('RETIRE:');
+  if (retireIdx !== -1) {
+    const before = html.substring(0, retireIdx);
+    const lastTag = before.lastIndexOf('<');
+    if (lastTag !== -1) el.innerHTML = html.substring(0, lastTag);
+  }
+})();
+
+// Sortable table
+function sortTable(col) {
+  const table = document.getElementById('log-table');
+  if (!table) return;
+  const tbody = table.querySelector('tbody');
+  const rows = Array.from(tbody.querySelectorAll('tr'));
+  const dir = table.dataset.sortDir === 'asc' ? 'desc' : 'asc';
+  table.dataset.sortDir = dir;
+  rows.sort((a, b) => {
+    let va = a.children[col].dataset.val || a.children[col].textContent;
+    let vb = b.children[col].dataset.val || b.children[col].textContent;
+    if (!isNaN(va) && !isNaN(vb)) { va = Number(va); vb = Number(vb); }
+    if (va < vb) return dir === 'asc' ? -1 : 1;
+    if (va > vb) return dir === 'asc' ? 1 : -1;
+    return 0;
+  });
+  rows.forEach(r => tbody.appendChild(r));
+}
+</script>
+
+</body>
+</html>

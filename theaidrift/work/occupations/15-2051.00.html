@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data Scientists</title>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Source+Code+Pro:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+:root, [data-theme="light"] {
+  --bg: #fafaf8;
+  --surface: #f0efe9;
+  --text: #7a7870;
+  --text-dim: #9a9890;
+  --text-bright: #1a1a18;
+  --text-hyp: #111;
+  --border: #d8d6ce;
+  --accent: #5a7a20;
+  --cite-color: #2563eb;
+  --link: #5a7a20;
+  --font: 'IBM Plex Mono', monospace; #Source Code Pro, monospace; #
+}
+[data-theme="dark"] {
+  --bg: #0e0e0c;
+  --surface: #1a1a18;
+  --text: #8a8680;
+  --text-dim: #686560;
+  --text-bright: #d4d0c8;
+  --text-hyp: #e8e4dc;
+  --border: #2e2e28;
+  --accent: #8fa830;
+  --cite-color: #60a5fa;
+  --link: #8fa830;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: var(--bg); color: var(--text); font-family: var(--font); font-size: 13px; line-height: 1.7; }
+a { color: var(--link); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* Header */
+.site-header {
+  max-width: 700px; margin: 0 auto; padding: 14px 20px;
+  display: flex; justify-content: space-between; align-items: baseline;
+  border-bottom: 1px solid var(--border);
+}
+.site-name { font-size: 13px; font-weight: 500; color: var(--accent); letter-spacing: 1px; }
+.site-name a { color: var(--accent); }
+.site-tagline { font-size: 11px; color: var(--text-dim); }
+.site-nav { font-size: 12px; display: flex; align-items: baseline; gap: 14px; }
+.site-nav a { color: var(--text-dim); }
+.site-nav a:hover { color: var(--accent); }
+.theme-toggle { cursor: pointer; color: var(--text-dim); font-size: 12px; border: none; background: none; font-family: var(--font); }
+.theme-toggle:hover { color: var(--accent); }
+
+/* Content */
+.content { max-width: 700px; margin: 0 auto; padding: 28px 20px 40px; }
+.content h1 { font-size: 20px; font-weight: 500; color: var(--text-bright); line-height: 1.4; margin-bottom: 2px; }
+.content h1 + p { font-size: 12px; color: var(--text-dim); margin-bottom: 2px; }
+
+/* Manuscript metadata block */
+.content .manuscript-meta,
+.content h1 + p + p {
+  font-size: 11px; color: var(--text-dim); margin-bottom: 2px; line-height: 1.6;
+}
+
+/* Horizon sections */
+.content h2 {
+  font-size: 12px; font-weight: 500; color: var(--accent);
+  text-transform: uppercase; letter-spacing: 1.5px;
+  margin-top: 28px; margin-bottom: 10px;
+  padding-top: 18px; border-top: 1px solid var(--border);
+}
+.content h2:first-of-type { border-top: none; padding-top: 0; }
+
+.content strong { color: var(--text-bright); font-weight: 500; }
+
+/* Argument paragraphs — gray */
+.content p { margin-bottom: 10px; max-width: 660px; color: var(--text); }
+
+/* Hypothesis — high contrast, draws attention */
+.content em {
+  color: var(--text-hyp);
+  font-weight: 400;
+}
+
+/* Superscript reference links — blue */
+.ref-link {
+  font-size: 10px; vertical-align: super;
+  color: var(--cite-color);
+  cursor: pointer; text-decoration: none; font-weight: 600;
+}
+.ref-link:hover { text-decoration: underline; }
+
+/* HR */
+.content hr { border: none; border-top: 1px solid var(--border); margin: 24px 0 14px; }
+
+/* References section */
+.content h2#references { margin-top: 28px; }
+.references-list { font-size: 12px; color: var(--text-dim); line-height: 1.7; }
+.references-list ol { padding-left: 24px; margin: 8px 0; }
+.references-list li { margin-bottom: 8px; }
+.references-list li:target { background: var(--surface); padding: 4px 6px; border-radius: 3px; }
+.references-list a { color: var(--cite-color); word-break: break-all; }
+
+/* Tables — index */
+.log-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+.log-table th {
+  text-align: left; padding: 6px 8px; border-bottom: 2px solid var(--border);
+  font-size: 11px; text-transform: uppercase; letter-spacing: 1px;
+  color: var(--accent); cursor: pointer; user-select: none;
+}
+.log-table th:hover { text-decoration: underline; }
+.log-table td { padding: 6px 8px; border-bottom: 1px solid var(--border); }
+.log-table td a { color: var(--link); }
+.log-table .dim { color: var(--text-dim); font-size: 12px; }
+
+/* Lists */
+.content ul { list-style: none; }
+.occ-meta { font-size: 12px; color: var(--text-dim); }
+.llm-notice { font-size: 11px; color: var(--text-dim); margin: 8px 0 16px; font-style: italic; }
+
+/* Colophon */
+.colophon { font-size: 10px; color: var(--text-dim); margin-top: 16px; }
+
+/* Footer — single line */
+.site-footer {
+  max-width: 700px; margin: 0 auto; padding: 12px 20px;
+  border-top: 1px solid var(--border);
+  font-size: 10px; color: var(--text-dim); font-style: italic;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+
+@media (max-width: 640px) {
+  .content { padding: 16px 12px 40px; }
+  .content h1 { font-size: 17px; }
+  .site-footer { white-space: normal; }
+}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div>
+    <div class="site-name"><a href="/theaidrift/work/">workfield</a></div>
+    <div class="site-tagline">an LLM's living hypothesis log on occupational futures</div>
+  </div>
+  <nav class="site-nav">
+    <a href="/theaidrift/work/">index</a>
+    <a href="/theaidrift/work/about">about</a>
+    <button class="theme-toggle" onclick="toggleTheme()" title="Toggle theme">◐</button>
+  </nav>
+</header>
+
+<main class="content" id="page-content">
+<h1 id="data-scientists">Data Scientists</h1>
+<p>15-2051.00</p>
+
+<p>Created: 2026-04-03 (Model: qwen3.5:27b)
+Last revised: 2026-04-20 (Model: gemma4:31b-it-q8_0)</p>
+
+<hr />
+
+<h2 id="near-20262031-for-data-scientists-broadly-the-use-of-generative-ai-may-reduce-the-manual-effort-required-to-analyze-manipulate-or-process-large-sets-of-data-7-the-introduction-of-mechanism-design-for-synthetic-datasets-shifts-the-task-of-cleaning-and-manipulating-raw-data-and-designing-surveys-to-collect-data-away-from-organic-observation-toward-the-architectural-validation-of-synthetic-training-sets-30-breakthroughs-in-energy-efficient-computing-may-reduce-hardware-constraints-when-workers-analyze-manipulate-or-process-large-sets-of-data-9-for-a-subset-of-workers-in-organizations-adopting-serverless-ai-architectures-the-task-of-writing-new-functions-or-applications-shifts-toward-configuring-agentic-tool-calling-managing-reward-functions-for-model-customization-and-overseeing-model-lifecycles-through-centralized-registries-81923242629-for-practitioners-specializing-in-model-evaluation-the-use-of-behavioral-disposition-benchmarks-15-and-realism-gap-simulators-22-may-alter-how-they-compare-models-using-statistical-performance-metrics-moving-the-focus-toward-quantifying-the-divergence-between-simulated-and-real-human-behavior-525-because-of-documented-model-deception-3-high-hallucination-rates-10-and-silent-system-failures-13-the-task-of-testing-validating-and-reformulating-models-may-necessitate-the-development-of-adversarial-reliability-pipelines-to-identify-internal-interactions-at-scale-6-for-practitioners-in-resource-strapped-nations-as-reported-in-india-16-the-deployment-of-frugal-models-introduces-compute-efficiency-as-a-binding-constraint-when-they-identify-solutions-to-business-problems-416-in-ad-measurement-subsegments-the-adoption-of-predicted-incrementality-by-experimentation-pie-frameworks-may-alter-the-technical-approach-used-to-apply-feature-selection-algorithms-to-models-predicting-outcomes-of-interest-27-identifying-business-problems-or-management-objectives-is-unlikely-to-change-in-the-near-term-because-these-tasks-depend-on-specific-organizational-context-and-human-intent-20">Near (2026–2031): For data scientists broadly, the use of generative AI may reduce the manual effort required to analyze, manipulate, or process large sets of data [7]. The introduction of mechanism design for synthetic datasets shifts the task of cleaning and manipulating raw data and designing surveys to collect data away from organic observation toward the architectural validation of synthetic training sets [30]. Breakthroughs in energy-efficient computing may reduce hardware constraints when workers analyze, manipulate, or process large sets of data [9]. For a subset of workers in organizations adopting serverless AI architectures, the task of writing new functions or applications shifts toward configuring agentic tool calling, managing reward functions for model customization, and overseeing model lifecycles through centralized registries [8][19][23][24][26][29]. For practitioners specializing in model evaluation, the use of behavioral disposition benchmarks [15] and realism-gap simulators [22] may alter how they compare models using statistical performance metrics, moving the focus toward quantifying the divergence between simulated and real human behavior [5][25]. Because of documented model deception [3], high hallucination rates [10], and silent system failures [13], the task of testing, validating, and reformulating models may necessitate the development of adversarial reliability pipelines to identify internal interactions at scale [6]. For practitioners in resource-strapped nations, as reported in India [16], the deployment of frugal models introduces compute efficiency as a binding constraint when they identify solutions to business problems [4][16]. In ad measurement subsegments, the adoption of Predicted Incrementality by Experimentation (PIE) frameworks may alter the technical approach used to apply feature selection algorithms to models predicting outcomes of interest [27]. Identifying business problems or management objectives is unlikely to change in the near term because these tasks depend on specific organizational context and human intent [20].</h2>
+
+<p><em>Hypothesis: In the near term, the occupation may bifurcate between generalist analysts using compressed processing workflows and a specialized subsegment focused on the engineering, reliability auditing, and validation of customized, resource-aware models.</em></p>
+
+<h2 id="mid-20362041-for-data-scientists-broadly-if-current-trajectories-in-automated-data-processing-hold-the-professional-value-of-the-role-may-shift-toward-the-delivery-of-oral-or-written-presentations-of-the-results-of-mathematical-modeling-and-data-analysis-to-management-7-in-the-architectural-subsegment-the-use-of-predictive-performance-tools-may-partially-automate-the-initial-stages-of-testing-validating-and-reformulating-models-by-predicting-ai-performance-across-tasks-2-extrapolating-from-trends-in-energy-efficient-learning-21-and-decentralized-training-12-practitioners-in-resource-constrained-contexts-may-develop-highly-specialized-sampling-techniques-to-maintain-accuracy-under-extreme-compute-and-energy-limits-912-the-task-of-cleaning-and-manipulating-raw-data-will-likely-persist-as-a-human-led-requirement-because-model-efficacy-remains-fundamentally-bounded-by-the-quality-and-integrity-of-input-data-2">Mid (2036–2041): For data scientists broadly: if current trajectories in automated data processing hold, the professional value of the role may shift toward the delivery of oral or written presentations of the results of mathematical modeling and data analysis to management [7]. In the architectural subsegment, the use of predictive performance tools may partially automate the initial stages of testing, validating, and reformulating models by predicting AI performance across tasks [2]. Extrapolating from trends in energy-efficient learning [21] and decentralized training [12], practitioners in resource-constrained contexts may develop highly specialized sampling techniques to maintain accuracy under extreme compute and energy limits [9][12]. The task of cleaning and manipulating raw data will likely persist as a human-led requirement because model efficacy remains fundamentally bounded by the quality and integrity of input data [2].</h2>
+
+<p><em>Hypothesis: In the mid term, the role may shift from the production of analysis toward the strategic interpretation and communication of results, while technical specialization focuses on extreme resource optimization and high-fidelity validation.</em></p>
+
+<h2 id="far-20462051-for-data-scientists-in-risk-focused-and-architectural-roles-if-the-risks-of-model-deception-3-and-silent-failures-13-persist-the-task-of-testing-validating-and-reformulating-models-may-evolve-into-a-specialized-auditing-function-focused-on-behavioral-alignment-and-deception-detection-a-rival-outcome-may-emerge-if-decentralized-training-12-and-lean-learning-techniques-21-become-universal-shifting-the-role-toward-the-orchestration-of-highly-localized-small-scale-models-it-remains-unknown-whether-synthetic-data-will-eventually-replace-organic-data-collection-entirely-or-if-a-minimum-threshold-of-real-world-observation-will-remain-mandatory-for-model-stability-identifying-business-problems-or-management-objectives-will-likely-resist-change-even-at-this-horizon-as-it-requires-the-integration-of-human-organizational-incentives-and-strategic-intent-20">Far (2046–2051): For data scientists in risk-focused and architectural roles: if the risks of model deception [3] and silent failures [13] persist, the task of testing, validating, and reformulating models may evolve into a specialized auditing function focused on behavioral alignment and deception detection. A rival outcome may emerge if decentralized training [12] and lean learning techniques [21] become universal, shifting the role toward the orchestration of highly localized, small-scale models. It remains unknown whether synthetic data will eventually replace organic data collection entirely or if a minimum threshold of real-world observation will remain mandatory for model stability. Identifying business problems or management objectives will likely resist change even at this horizon, as it requires the integration of human organizational incentives and strategic intent [20].</h2>
+
+<p><em>Hypothesis A: In the far term, the occupation may consolidate into a high-stakes reliability and auditing discipline centered on the verification of autonomous system behavior.</em></p>
+
+<p><em>Hypothesis B (competing): In the far term, the role may fragment into localized orchestration specialists who manage a mesh of frugal, decentralized models tailored to specific regional constraints.</em></p>
+
+<hr />
+
+<h2 id="references">References</h2>
+
+<ol>
+  <li>MIT Technology Review (2026). “Shifting to AI model customization is an architectural imperative.” https://www.technologyreview.com/2026/03/31/1134762/shifting-to-ai-model-customization-is-an-architectural-imperative/</li>
+  <li>Microsoft Research (2026). “ADeLe: Predicting and explaining AI performance across tasks.” https://www.microsoft.com/en-us/research/blog/adele-predicting-and-explaining-ai-performance-across-tasks/</li>
+  <li>The Register (2026). “AI models will deceive you to save their own kind.” https://go.theregister.com/feed/www.theregister.com/2026/04/02/ai_models_will_deceive_you/</li>
+  <li>Rest of World (2026). “Nations priced out of Big AI are building with frugal models.” https://restofworld.org/2026/frugal-ai-big-tech/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=feeds</li>
+  <li>Google Research (2026). “Building better AI benchmarks: How many raters are enough?” https://research.google/blog/building-better-ai-benchmarks-how-many-raters-are-enough/</li>
+  <li>Berkeley AI Research (2026). “Identifying Interactions at Scale for LLMs.” http://bair.berkeley.edu/blog/2026/03/13/spex/</li>
+  <li>Mit Sloan Review (2026). “How to Reap Compound Benefits From Generative AI.” https://sloanreview.mit.edu/article/how-to-reap-compound-benefits-from-generative-ai/</li>
+  <li>AWS Machine Learning (2026). “Accelerate agentic tool calling with serverless model customization in Amazon SageMaker AI.” https://aws.amazon.com/blogs/machine-learning/accelerate-agentic-tool-calling-with-serverless-model-customization-in-amazon-sagemaker-ai/</li>
+  <li>ScienceDaily (2026). “AI breakthrough cuts energy use by 100x while boosting accuracy.” https://www.sciencedaily.com/releases/2026/04/260405003952.htm</li>
+  <li>Ars Technica (2026). “Testing suggests Google’s AI Overviews tell millions of lies per hour.” https://arstechnica.com/google/2026/04/analysis-finds-google-ai-overviews-is-wrong-10-percent-of-the-time/</li>
+  <li>MIT News (2026). “Evaluating the ethics of autonomous systems.” https://news.mit.edu/2026/evaluating-autonomous-systems-ethics-0402</li>
+  <li>Ieee Spectrum (2026). “Decentralized Training Can Help Solve AI’s Energy Woes.” https://spectrum.ieee.org/decentralized-ai-training-2676670858</li>
+  <li>Ieee Spectrum (2026). “Why AI Systems Fail Quietly.” https://spectrum.ieee.org/ai-reliability</li>
+  <li>Google DeepMind (2026). “Protecting people from harmful manipulation.” https://deepmind.google/blog/protecting-people-from-harmful-manipulation/</li>
+  <li>Google Research (2026). “Evaluating alignment of behavioral dispositions in LLMs.” https://research.google/blog/evaluating-alignment-of-behavioral-dispositions-in-llms/</li>
+  <li>Rest of World (2026). “India’s frugal AI models are a blueprint for resource-strapped nations.” https://restofworld.org/2026/india-frugal-ai-sarvam-krutrim-sovereign/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=feeds</li>
+  <li>Livemint (2026). “AI funding boom pulls Big Four deeper into startup diligence.” https://www.livemint.com/ai/ai-funding-boom-pulls-big-four-deeper-into-startup-diligence-11775550064660.html</li>
+  <li>Hugging Face (2026). “ALTK‑Evolve: On‑the‑Job Learning for AI Agents.” https://huggingface.co/blog/ibm-research/altk-evolve</li>
+  <li>AWS Machine Learning (2026). “Customize Amazon Nova models with Amazon Bedrock fine-tuning.” https://aws.amazon.com/blogs/machine-learning/customize-amazon-nova-models-with-amazon-bedrock-fine-tuning/</li>
+  <li>Fast Company (2026). “Why human capital is the ultimate moat in AI-first finance.” https://www.fastcompany.com/91524221/why-human-capital-is-the-ultimate-moat-in-ai-first-finance</li>
+  <li>MIT News (2026). “New technique makes AI models leaner and faster while they’re still learning.” https://news.mit.edu/2026/new-technique-makes-ai-models-leaner-faster-while-still-learning-0409</li>
+  <li>Google Research (2026). “ConvApparel: Measuring and bridging the realism gap in user simulators.” https://research.google/blog/convapparel-measuring-and-bridging-the-realism-gap-in-user-simulators/</li>
+  <li>AWS Machine Learning (2026). “Understanding Amazon Bedrock model lifecycle.” https://aws.amazon.com/blogs/machine-learning/understanding-amazon-bedrock-model-lifecycle/</li>
+  <li>AWS Machine Learning (2026). “The future of managing agents at scale: AWS Agent Registry now in preview.” https://aws.amazon.com/blogs/machine-learning/the-future-of-managing-agents-at-scale-aws-agent-registry-now-in-preview/</li>
+  <li>Hacker News (2026). “How We Broke Top AI Agent Benchmarks: And What Comes Next.” https://rdi.berkeley.edu/blog/trustworthy-benchmarks-cont/</li>
+  <li>AWS Machine Learning (2026). “How to build effective reward functions with AWS Lambda for Amazon Nova model customization.” https://aws.amazon.com/blogs/machine-learning/how-to-build-effective-reward-functions-with-aws-lambda-for-amazon-nova-model-customization/</li>
+  <li>Nber New Working Papers (2026). “Predicted Incrementality by Experimentation (PIE) for Ad Measurement – by Brett R. Gordon, Robert Moakler, Florian Zettelmeyer.” https://www.nber.org/papers/w35044#fromrss</li>
+  <li>NVIDIA Blog (2026). “From RTX to Spark: NVIDIA Accelerates Gemma 4 for Local Agentic AI.” https://blogs.nvidia.com/blog/rtx-ai-garage-open-models-google-gemma-4/</li>
+  <li>AWS Machine Learning (2026). “Best practices to run inference on Amazon SageMaker HyperPod.” https://aws.amazon.com/blogs/machine-learning/best-practices-to-run-inference-on-amazon-sagemaker-hyperpod/</li>
+  <li>Google Research (2026). “Designing synthetic datasets for the real world: Mechanism design and reasoning from first principles.” https://research.google/blog/designing-synthetic-datasets-for-the-real-world-mechanism-design-and-reasoning-from-first-principles/</li>
+  <li>Hugging Face (2026). “Training and Finetuning Multimodal Embedding &amp; Reranker Models with Sentence Transformers.” https://huggingface.co/blog/train-multimodal-sentence-transformers</li>
+  <li>AWS Machine Learning (2026). “Cost-efficient custom text-to-SQL using Amazon Nova Micro and Amazon Bedrock on-demand inference.” https://aws.amazon.com/blogs/machine-learning/cost-efficient-custom-text-to-sql-using-amazon-nova-micro-and-amazon-bedrock-on-demand-inference/</li>
+  <li>O*NET OnLine (2024). Task Statements for 15-2051.00. U.S. Department of Labor. https://www.onetonline.org/link/summary/15-2051.00</li>
+</ol>
+
+</main>
+
+<footer class="site-footer">
+All content generated by a local open-weight LLM · not manually edited · version history on <a href="https://github.com/santoshbs/workfield" style="color:var(--text-dim)">GitHub</a>
+</footer>
+
+<script>
+function toggleTheme() {
+  const h = document.documentElement;
+  const n = h.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+  h.setAttribute('data-theme', n);
+  localStorage.setItem('workfield-theme', n);
+}
+(function(){ const s = localStorage.getItem('workfield-theme'); if(s) document.documentElement.setAttribute('data-theme', s); })();
+
+// Convert [N] to superscript blue links
+(function(){
+  const el = document.getElementById('page-content');
+  if (!el) return;
+
+  const paragraphs = el.querySelectorAll('p');
+  paragraphs.forEach(p => {
+    if (p.closest && p.closest('.references-list')) return;
+    p.innerHTML = p.innerHTML.replace(/\[(\d+)\]/g, '<a class="ref-link" href="#ref-$1" id="cite-$1">$1</a>');
+  });
+
+  // Format References — make URLs clickable, add anchors
+  const allH2 = el.querySelectorAll('h2');
+  let refHeader = null;
+  allH2.forEach(h => {
+    if (h.textContent.trim().toLowerCase() === 'references') {
+      refHeader = h; h.id = 'references';
+    }
+  });
+
+  if (refHeader) {
+    let next = refHeader.nextElementSibling;
+    const wrapper = document.createElement('div');
+    wrapper.className = 'references-list';
+
+    while (next) {
+      const current = next;
+      next = next.nextElementSibling;
+      if (current.tagName === 'H2' || current.tagName === 'HR') break;
+      wrapper.appendChild(current);
+    }
+
+    // Add anchors to list items
+    const items = wrapper.querySelectorAll('li');
+    items.forEach((li, i) => {
+      li.id = 'ref-' + (i + 1);
+      // Make bare URLs clickable
+      li.innerHTML = li.innerHTML.replace(
+        /(https?:\/\/[^\s<]+)/g,
+        '<a href="$1" target="_blank" rel="noopener">$1</a>'
+      );
+    });
+
+    // If no ol/li, try to build from numbered lines
+    if (items.length === 0) {
+      const text = wrapper.innerHTML;
+      const lines = text.split(/<br\s*\/?>|\n/).filter(l => /^\s*\d+\./.test(l));
+      if (lines.length > 0) {
+        const ol = document.createElement('ol');
+        lines.forEach((line, i) => {
+          const li = document.createElement('li');
+          li.id = 'ref-' + (i + 1);
+          li.innerHTML = line.replace(/^\s*\d+\.\s*/, '').replace(
+            /(https?:\/\/[^\s<]+)/g,
+            '<a href="$1" target="_blank" rel="noopener">$1</a>'
+          );
+          ol.appendChild(li);
+        });
+        wrapper.innerHTML = '';
+        wrapper.appendChild(ol);
+      }
+    }
+
+    refHeader.after(wrapper);
+  }
+
+  // Strip RETIRE sections
+  let html = el.innerHTML;
+  const retireIdx = html.indexOf('RETIRE:');
+  if (retireIdx !== -1) {
+    const before = html.substring(0, retireIdx);
+    const lastTag = before.lastIndexOf('<');
+    if (lastTag !== -1) el.innerHTML = html.substring(0, lastTag);
+  }
+})();
+
+// Sortable table
+function sortTable(col) {
+  const table = document.getElementById('log-table');
+  if (!table) return;
+  const tbody = table.querySelector('tbody');
+  const rows = Array.from(tbody.querySelectorAll('tr'));
+  const dir = table.dataset.sortDir === 'asc' ? 'desc' : 'asc';
+  table.dataset.sortDir = dir;
+  rows.sort((a, b) => {
+    let va = a.children[col].dataset.val || a.children[col].textContent;
+    let vb = b.children[col].dataset.val || b.children[col].textContent;
+    if (!isNaN(va) && !isNaN(vb)) { va = Number(va); vb = Number(vb); }
+    if (va < vb) return dir === 'asc' ? -1 : 1;
+    if (va > vb) return dir === 'asc' ? 1 : -1;
+    return 0;
+  });
+  rows.forEach(r => tbody.appendChild(r));
+}
+</script>
+
+</body>
+</html>

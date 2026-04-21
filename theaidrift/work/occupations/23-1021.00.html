@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Administrative Law Judges, Adjudicators, and Hearing Officers</title>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Source+Code+Pro:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+:root, [data-theme="light"] {
+  --bg: #fafaf8;
+  --surface: #f0efe9;
+  --text: #7a7870;
+  --text-dim: #9a9890;
+  --text-bright: #1a1a18;
+  --text-hyp: #111;
+  --border: #d8d6ce;
+  --accent: #5a7a20;
+  --cite-color: #2563eb;
+  --link: #5a7a20;
+  --font: 'IBM Plex Mono', monospace; #Source Code Pro, monospace; #
+}
+[data-theme="dark"] {
+  --bg: #0e0e0c;
+  --surface: #1a1a18;
+  --text: #8a8680;
+  --text-dim: #686560;
+  --text-bright: #d4d0c8;
+  --text-hyp: #e8e4dc;
+  --border: #2e2e28;
+  --accent: #8fa830;
+  --cite-color: #60a5fa;
+  --link: #8fa830;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: var(--bg); color: var(--text); font-family: var(--font); font-size: 13px; line-height: 1.7; }
+a { color: var(--link); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* Header */
+.site-header {
+  max-width: 700px; margin: 0 auto; padding: 14px 20px;
+  display: flex; justify-content: space-between; align-items: baseline;
+  border-bottom: 1px solid var(--border);
+}
+.site-name { font-size: 13px; font-weight: 500; color: var(--accent); letter-spacing: 1px; }
+.site-name a { color: var(--accent); }
+.site-tagline { font-size: 11px; color: var(--text-dim); }
+.site-nav { font-size: 12px; display: flex; align-items: baseline; gap: 14px; }
+.site-nav a { color: var(--text-dim); }
+.site-nav a:hover { color: var(--accent); }
+.theme-toggle { cursor: pointer; color: var(--text-dim); font-size: 12px; border: none; background: none; font-family: var(--font); }
+.theme-toggle:hover { color: var(--accent); }
+
+/* Content */
+.content { max-width: 700px; margin: 0 auto; padding: 28px 20px 40px; }
+.content h1 { font-size: 20px; font-weight: 500; color: var(--text-bright); line-height: 1.4; margin-bottom: 2px; }
+.content h1 + p { font-size: 12px; color: var(--text-dim); margin-bottom: 2px; }
+
+/* Manuscript metadata block */
+.content .manuscript-meta,
+.content h1 + p + p {
+  font-size: 11px; color: var(--text-dim); margin-bottom: 2px; line-height: 1.6;
+}
+
+/* Horizon sections */
+.content h2 {
+  font-size: 12px; font-weight: 500; color: var(--accent);
+  text-transform: uppercase; letter-spacing: 1.5px;
+  margin-top: 28px; margin-bottom: 10px;
+  padding-top: 18px; border-top: 1px solid var(--border);
+}
+.content h2:first-of-type { border-top: none; padding-top: 0; }
+
+.content strong { color: var(--text-bright); font-weight: 500; }
+
+/* Argument paragraphs — gray */
+.content p { margin-bottom: 10px; max-width: 660px; color: var(--text); }
+
+/* Hypothesis — high contrast, draws attention */
+.content em {
+  color: var(--text-hyp);
+  font-weight: 400;
+}
+
+/* Superscript reference links — blue */
+.ref-link {
+  font-size: 10px; vertical-align: super;
+  color: var(--cite-color);
+  cursor: pointer; text-decoration: none; font-weight: 600;
+}
+.ref-link:hover { text-decoration: underline; }
+
+/* HR */
+.content hr { border: none; border-top: 1px solid var(--border); margin: 24px 0 14px; }
+
+/* References section */
+.content h2#references { margin-top: 28px; }
+.references-list { font-size: 12px; color: var(--text-dim); line-height: 1.7; }
+.references-list ol { padding-left: 24px; margin: 8px 0; }
+.references-list li { margin-bottom: 8px; }
+.references-list li:target { background: var(--surface); padding: 4px 6px; border-radius: 3px; }
+.references-list a { color: var(--cite-color); word-break: break-all; }
+
+/* Tables — index */
+.log-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+.log-table th {
+  text-align: left; padding: 6px 8px; border-bottom: 2px solid var(--border);
+  font-size: 11px; text-transform: uppercase; letter-spacing: 1px;
+  color: var(--accent); cursor: pointer; user-select: none;
+}
+.log-table th:hover { text-decoration: underline; }
+.log-table td { padding: 6px 8px; border-bottom: 1px solid var(--border); }
+.log-table td a { color: var(--link); }
+.log-table .dim { color: var(--text-dim); font-size: 12px; }
+
+/* Lists */
+.content ul { list-style: none; }
+.occ-meta { font-size: 12px; color: var(--text-dim); }
+.llm-notice { font-size: 11px; color: var(--text-dim); margin: 8px 0 16px; font-style: italic; }
+
+/* Colophon */
+.colophon { font-size: 10px; color: var(--text-dim); margin-top: 16px; }
+
+/* Footer — single line */
+.site-footer {
+  max-width: 700px; margin: 0 auto; padding: 12px 20px;
+  border-top: 1px solid var(--border);
+  font-size: 10px; color: var(--text-dim); font-style: italic;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+
+@media (max-width: 640px) {
+  .content { padding: 16px 12px 40px; }
+  .content h1 { font-size: 17px; }
+  .site-footer { white-space: normal; }
+}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div>
+    <div class="site-name"><a href="/theaidrift/work/">workfield</a></div>
+    <div class="site-tagline">an LLM's living hypothesis log on occupational futures</div>
+  </div>
+  <nav class="site-nav">
+    <a href="/theaidrift/work/">index</a>
+    <a href="/theaidrift/work/about">about</a>
+    <button class="theme-toggle" onclick="toggleTheme()" title="Toggle theme">◐</button>
+  </nav>
+</header>
+
+<main class="content" id="page-content">
+<h1 id="administrative-law-judges-adjudicators-and-hearing-officers">Administrative Law Judges, Adjudicators, and Hearing Officers</h1>
+<p>23-1021.00</p>
+
+<p>Created: 2026-04-14 (Model: gemma4:31b-it-q8_0)
+Last revised: 2026-04-14 (Model: gemma4:31b-it-q8_0)</p>
+
+<hr />
+
+<h2 id="near-20262031-for-adjudicators-within-the-uk-social-security-system-specifically-those-overseeing-benefit-appeals-the-scope-of-work-is-affected-by-updated-eligibility-criteria-1-adjudicators-must-now-research-and-analyze-laws-regulations-policies-and-precedent-decisions-2-to-incorporate-the-2026-amendment-regulations-concerning-universal-credit-personal-independence-payment-and-employment-and-support-allowance-1-this-regulatory-change-alters-the-mechanism-for-conducting-hearings-to-review-and-decide-claims-regarding-social-program-eligibility-2-the-determination-of-the-existence-and-amount-of-liability-2-for-these-specific-benefits-now-depends-on-the-application-of-these-revised-standards-1-the-requirement-to-monitor-and-direct-the-activities-of-trials-and-hearings-to-ensure-they-are-conducted-fairly-2-is-unlikely-to-change-as-the-procedural-safeguards-of-administrative-law-remain-independent-of-the-specific-eligibility-criteria-being-amended">Near (2026–2031): For adjudicators within the UK social security system, specifically those overseeing benefit appeals, the scope of work is affected by updated eligibility criteria [1]. Adjudicators must now research and analyze laws, regulations, policies, and precedent decisions [2] to incorporate the 2026 Amendment Regulations concerning Universal Credit, Personal Independence Payment, and Employment and Support Allowance [1]. This regulatory change alters the mechanism for conducting hearings to review and decide claims regarding social program eligibility [2]. The determination of the existence and amount of liability [2] for these specific benefits now depends on the application of these revised standards [1]. The requirement to monitor and direct the activities of trials and hearings to ensure they are conducted fairly [2] is unlikely to change, as the procedural safeguards of administrative law remain independent of the specific eligibility criteria being amended.</h2>
+
+<p><em>Hypothesis: In the near term, adjudicators in the UK social security system will update their decision-making frameworks to align with amended benefit eligibility regulations.</em></p>
+
+<h2 id="mid-20362041-for-adjudicators-within-the-uk-social-security-system-if-the-current-trajectory-of-frequent-regulatory-amendments-holds-the-process-of-preparing-written-opinions-and-decisions-2-may-become-increasingly-focused-on-the-interpretation-of-evolving-statutory-language-1-the-requirement-to-review-and-evaluate-data-on-documents-such-as-physician-or-employer-records-2-will-likely-persist-unchanged-because-the-factual-evidence-of-a-claimants-condition-remains-the-primary-input-regardless-of-the-regulatory-framework-in-place-the-necessity-to-confer-with-individuals-or-organizations-involved-in-cases-to-obtain-relevant-information-2-will-continue-to-be-a-core-requirement-to-establish-the-facts-upon-which-the-amended-regulations-are-applied">Mid (2036–2041): For adjudicators within the UK social security system, if the current trajectory of frequent regulatory amendments holds, the process of preparing written opinions and decisions [2] may become increasingly focused on the interpretation of evolving statutory language [1]. The requirement to review and evaluate data on documents, such as physician or employer records [2], will likely persist unchanged because the factual evidence of a claimant’s condition remains the primary input regardless of the regulatory framework in place. The necessity to confer with individuals or organizations involved in cases to obtain relevant information [2] will continue to be a core requirement to establish the facts upon which the amended regulations are applied.</h2>
+
+<p><em>Hypothesis: In the mid term, for UK social security adjudicators, the cognitive load associated with maintaining an up-to-date knowledge base of fluctuating social security regulations may increase.</em></p>
+
+<h2 id="far-20462051-for-adjudicators-within-the-uk-social-security-system-the-future-state-depends-on-whether-the-regulatory-environment-stabilizes-or-becomes-more-volatile-one-possibility-is-that-a-settled-body-of-precedent-emerges-from-the-2026-amendments-and-subsequent-updates-reducing-the-need-for-frequent-research-and-analysis-of-new-laws-12-alternatively-persistent-volatility-in-social-security-policy-could-lead-to-a-more-modularized-approach-to-determining-liability-2-it-remains-unknown-whether-the-uk-government-will-move-toward-a-more-static-eligibility-model-or-one-that-updates-more-frequently-in-response-to-economic-shifts-the-act-of-ruling-on-exceptions-motions-and-admissibility-of-evidence-2-will-likely-resist-change-even-at-this-horizon-as-it-requires-discretionary-judicial-judgment-of-real-time-courtroom-dynamics">Far (2046–2051): For adjudicators within the UK social security system, the future state depends on whether the regulatory environment stabilizes or becomes more volatile. One possibility is that a settled body of precedent emerges from the 2026 amendments and subsequent updates, reducing the need for frequent research and analysis of new laws [1][2]. Alternatively, persistent volatility in social security policy could lead to a more modularized approach to determining liability [2]. It remains unknown whether the UK government will move toward a more static eligibility model or one that updates more frequently in response to economic shifts. The act of ruling on exceptions, motions, and admissibility of evidence [2] will likely resist change even at this horizon, as it requires discretionary judicial judgment of real-time courtroom dynamics.</h2>
+
+<p><em>Hypothesis A: In the far term, the regulatory environment for UK social security adjudication may stabilize, resulting in a more predictable application of eligibility criteria.</em></p>
+
+<p><em>Hypothesis B (competing): In the far term, if regulatory volatility continues, the process for determining social program eligibility in the UK may shift toward highly specialized, narrow-scope adjudication frameworks.</em></p>
+
+<hr />
+
+<h2 id="references">References</h2>
+
+<ol>
+  <li>Uk Dwp (2026-04-13). “Policy paper: The Universal Credit, Personal Independence Payment and Employment and Support Allowance (Amendment) Regulations 2026: unnumbered act paper.” https://www.gov.uk/government/publications/the-universal-credit-personal-independence-payment-and-employment-and-support-allowance-amendment-regulations-2026-unnumbered-act-paper</li>
+  <li>O*NET OnLine (2024). Task Statements for 23-1021.00. U.S. Department of Labor. https://www.onetonline.org/link/summary/23-1021.00</li>
+</ol>
+
+</main>
+
+<footer class="site-footer">
+All content generated by a local open-weight LLM · not manually edited · version history on <a href="https://github.com/santoshbs/workfield" style="color:var(--text-dim)">GitHub</a>
+</footer>
+
+<script>
+function toggleTheme() {
+  const h = document.documentElement;
+  const n = h.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+  h.setAttribute('data-theme', n);
+  localStorage.setItem('workfield-theme', n);
+}
+(function(){ const s = localStorage.getItem('workfield-theme'); if(s) document.documentElement.setAttribute('data-theme', s); })();
+
+// Convert [N] to superscript blue links
+(function(){
+  const el = document.getElementById('page-content');
+  if (!el) return;
+
+  const paragraphs = el.querySelectorAll('p');
+  paragraphs.forEach(p => {
+    if (p.closest && p.closest('.references-list')) return;
+    p.innerHTML = p.innerHTML.replace(/\[(\d+)\]/g, '<a class="ref-link" href="#ref-$1" id="cite-$1">$1</a>');
+  });
+
+  // Format References — make URLs clickable, add anchors
+  const allH2 = el.querySelectorAll('h2');
+  let refHeader = null;
+  allH2.forEach(h => {
+    if (h.textContent.trim().toLowerCase() === 'references') {
+      refHeader = h; h.id = 'references';
+    }
+  });
+
+  if (refHeader) {
+    let next = refHeader.nextElementSibling;
+    const wrapper = document.createElement('div');
+    wrapper.className = 'references-list';
+
+    while (next) {
+      const current = next;
+      next = next.nextElementSibling;
+      if (current.tagName === 'H2' || current.tagName === 'HR') break;
+      wrapper.appendChild(current);
+    }
+
+    // Add anchors to list items
+    const items = wrapper.querySelectorAll('li');
+    items.forEach((li, i) => {
+      li.id = 'ref-' + (i + 1);
+      // Make bare URLs clickable
+      li.innerHTML = li.innerHTML.replace(
+        /(https?:\/\/[^\s<]+)/g,
+        '<a href="$1" target="_blank" rel="noopener">$1</a>'
+      );
+    });
+
+    // If no ol/li, try to build from numbered lines
+    if (items.length === 0) {
+      const text = wrapper.innerHTML;
+      const lines = text.split(/<br\s*\/?>|\n/).filter(l => /^\s*\d+\./.test(l));
+      if (lines.length > 0) {
+        const ol = document.createElement('ol');
+        lines.forEach((line, i) => {
+          const li = document.createElement('li');
+          li.id = 'ref-' + (i + 1);
+          li.innerHTML = line.replace(/^\s*\d+\.\s*/, '').replace(
+            /(https?:\/\/[^\s<]+)/g,
+            '<a href="$1" target="_blank" rel="noopener">$1</a>'
+          );
+          ol.appendChild(li);
+        });
+        wrapper.innerHTML = '';
+        wrapper.appendChild(ol);
+      }
+    }
+
+    refHeader.after(wrapper);
+  }
+
+  // Strip RETIRE sections
+  let html = el.innerHTML;
+  const retireIdx = html.indexOf('RETIRE:');
+  if (retireIdx !== -1) {
+    const before = html.substring(0, retireIdx);
+    const lastTag = before.lastIndexOf('<');
+    if (lastTag !== -1) el.innerHTML = html.substring(0, lastTag);
+  }
+})();
+
+// Sortable table
+function sortTable(col) {
+  const table = document.getElementById('log-table');
+  if (!table) return;
+  const tbody = table.querySelector('tbody');
+  const rows = Array.from(tbody.querySelectorAll('tr'));
+  const dir = table.dataset.sortDir === 'asc' ? 'desc' : 'asc';
+  table.dataset.sortDir = dir;
+  rows.sort((a, b) => {
+    let va = a.children[col].dataset.val || a.children[col].textContent;
+    let vb = b.children[col].dataset.val || b.children[col].textContent;
+    if (!isNaN(va) && !isNaN(vb)) { va = Number(va); vb = Number(vb); }
+    if (va < vb) return dir === 'asc' ? -1 : 1;
+    if (va > vb) return dir === 'asc' ? 1 : -1;
+    return 0;
+  });
+  rows.forEach(r => tbody.appendChild(r));
+}
+</script>
+
+</body>
+</html>

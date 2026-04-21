@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Network and Computer Systems Administrators</title>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Source+Code+Pro:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+:root, [data-theme="light"] {
+  --bg: #fafaf8;
+  --surface: #f0efe9;
+  --text: #7a7870;
+  --text-dim: #9a9890;
+  --text-bright: #1a1a18;
+  --text-hyp: #111;
+  --border: #d8d6ce;
+  --accent: #5a7a20;
+  --cite-color: #2563eb;
+  --link: #5a7a20;
+  --font: 'IBM Plex Mono', monospace; #Source Code Pro, monospace; #
+}
+[data-theme="dark"] {
+  --bg: #0e0e0c;
+  --surface: #1a1a18;
+  --text: #8a8680;
+  --text-dim: #686560;
+  --text-bright: #d4d0c8;
+  --text-hyp: #e8e4dc;
+  --border: #2e2e28;
+  --accent: #8fa830;
+  --cite-color: #60a5fa;
+  --link: #8fa830;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: var(--bg); color: var(--text); font-family: var(--font); font-size: 13px; line-height: 1.7; }
+a { color: var(--link); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* Header */
+.site-header {
+  max-width: 700px; margin: 0 auto; padding: 14px 20px;
+  display: flex; justify-content: space-between; align-items: baseline;
+  border-bottom: 1px solid var(--border);
+}
+.site-name { font-size: 13px; font-weight: 500; color: var(--accent); letter-spacing: 1px; }
+.site-name a { color: var(--accent); }
+.site-tagline { font-size: 11px; color: var(--text-dim); }
+.site-nav { font-size: 12px; display: flex; align-items: baseline; gap: 14px; }
+.site-nav a { color: var(--text-dim); }
+.site-nav a:hover { color: var(--accent); }
+.theme-toggle { cursor: pointer; color: var(--text-dim); font-size: 12px; border: none; background: none; font-family: var(--font); }
+.theme-toggle:hover { color: var(--accent); }
+
+/* Content */
+.content { max-width: 700px; margin: 0 auto; padding: 28px 20px 40px; }
+.content h1 { font-size: 20px; font-weight: 500; color: var(--text-bright); line-height: 1.4; margin-bottom: 2px; }
+.content h1 + p { font-size: 12px; color: var(--text-dim); margin-bottom: 2px; }
+
+/* Manuscript metadata block */
+.content .manuscript-meta,
+.content h1 + p + p {
+  font-size: 11px; color: var(--text-dim); margin-bottom: 2px; line-height: 1.6;
+}
+
+/* Horizon sections */
+.content h2 {
+  font-size: 12px; font-weight: 500; color: var(--accent);
+  text-transform: uppercase; letter-spacing: 1.5px;
+  margin-top: 28px; margin-bottom: 10px;
+  padding-top: 18px; border-top: 1px solid var(--border);
+}
+.content h2:first-of-type { border-top: none; padding-top: 0; }
+
+.content strong { color: var(--text-bright); font-weight: 500; }
+
+/* Argument paragraphs — gray */
+.content p { margin-bottom: 10px; max-width: 660px; color: var(--text); }
+
+/* Hypothesis — high contrast, draws attention */
+.content em {
+  color: var(--text-hyp);
+  font-weight: 400;
+}
+
+/* Superscript reference links — blue */
+.ref-link {
+  font-size: 10px; vertical-align: super;
+  color: var(--cite-color);
+  cursor: pointer; text-decoration: none; font-weight: 600;
+}
+.ref-link:hover { text-decoration: underline; }
+
+/* HR */
+.content hr { border: none; border-top: 1px solid var(--border); margin: 24px 0 14px; }
+
+/* References section */
+.content h2#references { margin-top: 28px; }
+.references-list { font-size: 12px; color: var(--text-dim); line-height: 1.7; }
+.references-list ol { padding-left: 24px; margin: 8px 0; }
+.references-list li { margin-bottom: 8px; }
+.references-list li:target { background: var(--surface); padding: 4px 6px; border-radius: 3px; }
+.references-list a { color: var(--cite-color); word-break: break-all; }
+
+/* Tables — index */
+.log-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+.log-table th {
+  text-align: left; padding: 6px 8px; border-bottom: 2px solid var(--border);
+  font-size: 11px; text-transform: uppercase; letter-spacing: 1px;
+  color: var(--accent); cursor: pointer; user-select: none;
+}
+.log-table th:hover { text-decoration: underline; }
+.log-table td { padding: 6px 8px; border-bottom: 1px solid var(--border); }
+.log-table td a { color: var(--link); }
+.log-table .dim { color: var(--text-dim); font-size: 12px; }
+
+/* Lists */
+.content ul { list-style: none; }
+.occ-meta { font-size: 12px; color: var(--text-dim); }
+.llm-notice { font-size: 11px; color: var(--text-dim); margin: 8px 0 16px; font-style: italic; }
+
+/* Colophon */
+.colophon { font-size: 10px; color: var(--text-dim); margin-top: 16px; }
+
+/* Footer — single line */
+.site-footer {
+  max-width: 700px; margin: 0 auto; padding: 12px 20px;
+  border-top: 1px solid var(--border);
+  font-size: 10px; color: var(--text-dim); font-style: italic;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+
+@media (max-width: 640px) {
+  .content { padding: 16px 12px 40px; }
+  .content h1 { font-size: 17px; }
+  .site-footer { white-space: normal; }
+}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div>
+    <div class="site-name"><a href="/theaidrift/work/">workfield</a></div>
+    <div class="site-tagline">an LLM's living hypothesis log on occupational futures</div>
+  </div>
+  <nav class="site-nav">
+    <a href="/theaidrift/work/">index</a>
+    <a href="/theaidrift/work/about">about</a>
+    <button class="theme-toggle" onclick="toggleTheme()" title="Toggle theme">◐</button>
+  </nav>
+</header>
+
+<main class="content" id="page-content">
+<h1 id="network-and-computer-systems-administrators">Network and Computer Systems Administrators</h1>
+<p>O*NET Code: 15-1244.00</p>
+
+<p>Created: 2026-03-31 (Model: qwen3.5:27b)
+Last revised: 2026-04-15 (Model: gemma4:31b-it-q8_0)</p>
+
+<hr />
+
+<h2 id="near-20262031-for-network-and-computer-systems-administrators-broadly-the-integration-of-ai-driven-storage-analytics-may-reduce-data-over-provisioning-as-it-alters-how-they-analyze-network-and-server-resource-consumption-5-for-administrators-managing-ai-integrated-environments-the-task-to-perform-data-backups-and-disaster-recovery-operations-now-extends-to-monitoring-ai-agent-states-and-executing-rollbacks-of-rogue-agent-actions-9-for-a-subset-of-workers-in-organizations-using-cloud-native-environments-or-enterprise-linux-the-deployment-of-frontier-agents-may-automate-routine-security-testing-and-cloud-operations-within-the-task-to-maintain-and-administer-computer-networks-12-in-organizations-using-specific-cloud-project-management-tools-the-task-to-analyze-network-and-server-resource-consumption-now-includes-the-granular-attribution-of-ai-inference-costs-4-for-administrators-in-enterprise-mobile-settings-the-task-to-configure-monitor-and-maintain-email-applications-involves-the-technical-implementation-of-end-to-end-encryption-for-mobile-devices-7-in-high-performance-data-center-settings-the-adoption-of-hardware-optimizations-to-increase-performance-with-fewer-assets-shifts-the-task-to-monitor-network-performance-toward-the-oversight-of-denser-resource-concentrations-3-in-containerized-or-unpatched-server-environments-the-task-to-diagnose-troubleshoot-and-resolve-hardware-software-or-other-network-and-system-problems-includes-remediating-authorization-bypasses-in-docker-6-and-remote-code-execution-flaws-in-server-fleets-8-the-task-to-replace-defective-components-remains-unchanged-because-software-agents-lack-the-physical-embodiment-required-for-hardware-swaps-235">Near (2026–2031): For network and computer systems administrators broadly, the integration of AI-driven storage analytics may reduce data over-provisioning as it alters how they analyze network and server resource consumption [5]. For administrators managing AI-integrated environments, the task to perform data backups and disaster recovery operations now extends to monitoring AI agent states and executing rollbacks of rogue agent actions [9]. For a subset of workers in organizations using cloud-native environments or enterprise Linux, the deployment of frontier agents may automate routine security testing and cloud operations within the task to maintain and administer computer networks [1][2]. In organizations using specific cloud project management tools, the task to analyze network and server resource consumption now includes the granular attribution of AI inference costs [4]. For administrators in enterprise mobile settings, the task to configure, monitor, and maintain email applications involves the technical implementation of end-to-end encryption for mobile devices [7]. In high-performance data center settings, the adoption of hardware optimizations to increase performance with fewer assets shifts the task to monitor network performance toward the oversight of denser resource concentrations [3]. In containerized or unpatched server environments, the task to diagnose, troubleshoot, and resolve hardware, software, or other network and system problems includes remediating authorization bypasses in Docker [6] and remote code execution flaws in server fleets [8]. The task to replace defective components remains unchanged because software agents lack the physical embodiment required for hardware swaps [2][3][5].</h2>
+
+<p><em>Hypothesis: In the near term, administrators broadly may adopt predictive storage and agent-recovery tools, while those in cloud, Linux, and enterprise mobile subsegments integrate autonomous agents for routine maintenance and the deployment of enhanced encryption.</em></p>
+
+<h2 id="mid-20362041-for-administrators-in-these-broad-and-subsegment-contexts-if-current-trajectories-hold-the-task-to-diagnose-troubleshoot-and-resolve-network-problems-may-shift-toward-the-auditing-of-agent-generated-diagnostics-and-the-management-of-agent-state-recovery-29-extrapolating-from-predictive-storage-trends-the-task-to-analyze-network-and-server-resource-consumption-could-move-toward-a-model-of-continuous-autonomous-capacity-rightsizing-5-the-task-to-confer-with-network-users-about-solutions-to-existing-system-problems-is-likely-to-persist-unchanged-because-these-interactions-require-organizational-and-social-context-not-present-in-technical-logs-25-high-level-security-policy-definition-within-the-task-to-plan-coordinate-and-implement-network-security-measures-remains-a-human-led-function-due-to-the-liability-associated-with-infrastructure-wide-access-controls-2">Mid (2036–2041): For administrators in these broad and subsegment contexts, if current trajectories hold, the task to diagnose, troubleshoot, and resolve network problems may shift toward the auditing of agent-generated diagnostics and the management of agent-state recovery [2][9]. Extrapolating from predictive storage trends, the task to analyze network and server resource consumption could move toward a model of continuous, autonomous capacity rightsizing [5]. The task to confer with network users about solutions to existing system problems is likely to persist unchanged because these interactions require organizational and social context not present in technical logs [2][5]. High-level security policy definition within the task to plan, coordinate, and implement network security measures remains a human-led function due to the liability associated with infrastructure-wide access controls [2].</h2>
+
+<p><em>Hypothesis: In the mid term, workflow integration for these subsegments could deepen, shifting the administrator’s role toward auditing AI-generated diagnostics and capacity optimizations.</em></p>
+
+<h2 id="far-20462051-within-these-technology-driven-environments-the-evolution-of-the-role-depends-on-whether-regulatory-regimes-grant-autonomous-agents-the-authority-to-execute-structural-changes-in-critical-infrastructure-a-primary-unknown-is-the-legal-threshold-for-liability-when-an-agent-led-modification-causes-a-catastrophic-network-outage-the-task-to-design-configure-and-test-computer-hardware-and-networking-software-resists-full-automation-due-to-the-high-error-cost-of-structural-architectural-failures-29-rival-outcomes-depend-on-whether-the-need-for-rollback-capabilities-for-autonomous-agents-9-suggests-an-inherent-instability-that-mandates-permanent-human-oversight">Far (2046–2051): Within these technology-driven environments, the evolution of the role depends on whether regulatory regimes grant autonomous agents the authority to execute structural changes in critical infrastructure. A primary unknown is the legal threshold for liability when an agent-led modification causes a catastrophic network outage. The task to design, configure, and test computer hardware and networking software resists full automation due to the high error cost of structural architectural failures [2][9]. Rival outcomes depend on whether the need for “rollback” capabilities for autonomous agents [9] suggests an inherent instability that mandates permanent human oversight.</h2>
+
+<p><em>Hypothesis A: In the far term, the occupation may transition into a supervisory role focused on liability management and the validation of agent-driven architectural shifts.</em></p>
+
+<p><em>Hypothesis B (competing): In the far term, persistent risks in autonomous infrastructure management may restrict agent authority to non-critical tasks, preserving the administrator’s role as the primary executor of all structural network changes.</em></p>
+
+<hr />
+
+<h2 id="references">References</h2>
+
+<ol>
+  <li>The Register (2026). “Leaked memo suggests Red Hat’s chugging the AI Kool-Aid.” https://go.theregister.com/feed/www.theregister.com/2026/03/31/red_hat_ai_dev/</li>
+  <li>AWS Machine Learning (2026). “AWS launches frontier agents for security testing and cloud operations.” https://aws.amazon.com/blogs/machine-learning/aws-launches-frontier-agents-for-security-testing-and-cloud-operations/</li>
+  <li>MIT News (2026). “Helping data centers deliver higher performance with less hardware.” https://news.mit.edu/2026/helping-data-centers-deliver-higher-performance-less-hardware-0407</li>
+  <li>AWS Machine Learning (2026). “Manage AI costs with Amazon Bedrock Projects.” https://aws.amazon.com/blogs/machine-learning/manage-ai-costs-with-amazon-bedrock-projects/</li>
+  <li>Entrepreneur (2026). “Your Business Is Probably Overspending on Data Storage. Here’s How AI Fixes That.” https://www.entrepreneur.com/science-technology/how-ai-is-fixing-a-costly-problem-most-businesses-ignore/503443</li>
+  <li>Cso Online (2026). “Old Docker authorization bypass pops up despite previous patch.” https://www.csoonline.com/article/4157405/old-docker-authorization-bypass-pops-up-despite-previous-patch.html</li>
+  <li>Cso Online (2026). “Google adds end-to-end Gmail encryption to Android, iOS devices for enterprises.” https://www.csoonline.com/article/4157458/google-adds-end-to-end-gmail-encryption-to-android-ios-devices-for-enterprises-3.html</li>
+  <li>The Hacker News (2026). “ShowDoc RCE Flaw CVE-2025-0520 Actively Exploited on Unpatched Servers.” https://thehackernews.com/2026/04/showdoc-rce-flaw-cve-2025-0520-actively.html</li>
+  <li>The Register (2026). “Commvault has a Ctrl+Z for rogue AI agents.” https://go.theregister.com/feed/www.theregister.com/2026/04/14/commvault_has_a_ctrlz_for/</li>
+  <li>O*NET OnLine (2024). Task Statements for 15-1244.00. U.S. Department of Labor. https://www.onetonline.org/link/summary/15-1244.00</li>
+</ol>
+
+</main>
+
+<footer class="site-footer">
+All content generated by a local open-weight LLM · not manually edited · version history on <a href="https://github.com/santoshbs/workfield" style="color:var(--text-dim)">GitHub</a>
+</footer>
+
+<script>
+function toggleTheme() {
+  const h = document.documentElement;
+  const n = h.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+  h.setAttribute('data-theme', n);
+  localStorage.setItem('workfield-theme', n);
+}
+(function(){ const s = localStorage.getItem('workfield-theme'); if(s) document.documentElement.setAttribute('data-theme', s); })();
+
+// Convert [N] to superscript blue links
+(function(){
+  const el = document.getElementById('page-content');
+  if (!el) return;
+
+  const paragraphs = el.querySelectorAll('p');
+  paragraphs.forEach(p => {
+    if (p.closest && p.closest('.references-list')) return;
+    p.innerHTML = p.innerHTML.replace(/\[(\d+)\]/g, '<a class="ref-link" href="#ref-$1" id="cite-$1">$1</a>');
+  });
+
+  // Format References — make URLs clickable, add anchors
+  const allH2 = el.querySelectorAll('h2');
+  let refHeader = null;
+  allH2.forEach(h => {
+    if (h.textContent.trim().toLowerCase() === 'references') {
+      refHeader = h; h.id = 'references';
+    }
+  });
+
+  if (refHeader) {
+    let next = refHeader.nextElementSibling;
+    const wrapper = document.createElement('div');
+    wrapper.className = 'references-list';
+
+    while (next) {
+      const current = next;
+      next = next.nextElementSibling;
+      if (current.tagName === 'H2' || current.tagName === 'HR') break;
+      wrapper.appendChild(current);
+    }
+
+    // Add anchors to list items
+    const items = wrapper.querySelectorAll('li');
+    items.forEach((li, i) => {
+      li.id = 'ref-' + (i + 1);
+      // Make bare URLs clickable
+      li.innerHTML = li.innerHTML.replace(
+        /(https?:\/\/[^\s<]+)/g,
+        '<a href="$1" target="_blank" rel="noopener">$1</a>'
+      );
+    });
+
+    // If no ol/li, try to build from numbered lines
+    if (items.length === 0) {
+      const text = wrapper.innerHTML;
+      const lines = text.split(/<br\s*\/?>|\n/).filter(l => /^\s*\d+\./.test(l));
+      if (lines.length > 0) {
+        const ol = document.createElement('ol');
+        lines.forEach((line, i) => {
+          const li = document.createElement('li');
+          li.id = 'ref-' + (i + 1);
+          li.innerHTML = line.replace(/^\s*\d+\.\s*/, '').replace(
+            /(https?:\/\/[^\s<]+)/g,
+            '<a href="$1" target="_blank" rel="noopener">$1</a>'
+          );
+          ol.appendChild(li);
+        });
+        wrapper.innerHTML = '';
+        wrapper.appendChild(ol);
+      }
+    }
+
+    refHeader.after(wrapper);
+  }
+
+  // Strip RETIRE sections
+  let html = el.innerHTML;
+  const retireIdx = html.indexOf('RETIRE:');
+  if (retireIdx !== -1) {
+    const before = html.substring(0, retireIdx);
+    const lastTag = before.lastIndexOf('<');
+    if (lastTag !== -1) el.innerHTML = html.substring(0, lastTag);
+  }
+})();
+
+// Sortable table
+function sortTable(col) {
+  const table = document.getElementById('log-table');
+  if (!table) return;
+  const tbody = table.querySelector('tbody');
+  const rows = Array.from(tbody.querySelectorAll('tr'));
+  const dir = table.dataset.sortDir === 'asc' ? 'desc' : 'asc';
+  table.dataset.sortDir = dir;
+  rows.sort((a, b) => {
+    let va = a.children[col].dataset.val || a.children[col].textContent;
+    let vb = b.children[col].dataset.val || b.children[col].textContent;
+    if (!isNaN(va) && !isNaN(vb)) { va = Number(va); vb = Number(vb); }
+    if (va < vb) return dir === 'asc' ? -1 : 1;
+    if (va > vb) return dir === 'asc' ? 1 : -1;
+    return 0;
+  });
+  rows.forEach(r => tbody.appendChild(r));
+}
+</script>
+
+</body>
+</html>

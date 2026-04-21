@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pediatricians, General</title>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Source+Code+Pro:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+:root, [data-theme="light"] {
+  --bg: #fafaf8;
+  --surface: #f0efe9;
+  --text: #7a7870;
+  --text-dim: #9a9890;
+  --text-bright: #1a1a18;
+  --text-hyp: #111;
+  --border: #d8d6ce;
+  --accent: #5a7a20;
+  --cite-color: #2563eb;
+  --link: #5a7a20;
+  --font: 'IBM Plex Mono', monospace; #Source Code Pro, monospace; #
+}
+[data-theme="dark"] {
+  --bg: #0e0e0c;
+  --surface: #1a1a18;
+  --text: #8a8680;
+  --text-dim: #686560;
+  --text-bright: #d4d0c8;
+  --text-hyp: #e8e4dc;
+  --border: #2e2e28;
+  --accent: #8fa830;
+  --cite-color: #60a5fa;
+  --link: #8fa830;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: var(--bg); color: var(--text); font-family: var(--font); font-size: 13px; line-height: 1.7; }
+a { color: var(--link); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* Header */
+.site-header {
+  max-width: 700px; margin: 0 auto; padding: 14px 20px;
+  display: flex; justify-content: space-between; align-items: baseline;
+  border-bottom: 1px solid var(--border);
+}
+.site-name { font-size: 13px; font-weight: 500; color: var(--accent); letter-spacing: 1px; }
+.site-name a { color: var(--accent); }
+.site-tagline { font-size: 11px; color: var(--text-dim); }
+.site-nav { font-size: 12px; display: flex; align-items: baseline; gap: 14px; }
+.site-nav a { color: var(--text-dim); }
+.site-nav a:hover { color: var(--accent); }
+.theme-toggle { cursor: pointer; color: var(--text-dim); font-size: 12px; border: none; background: none; font-family: var(--font); }
+.theme-toggle:hover { color: var(--accent); }
+
+/* Content */
+.content { max-width: 700px; margin: 0 auto; padding: 28px 20px 40px; }
+.content h1 { font-size: 20px; font-weight: 500; color: var(--text-bright); line-height: 1.4; margin-bottom: 2px; }
+.content h1 + p { font-size: 12px; color: var(--text-dim); margin-bottom: 2px; }
+
+/* Manuscript metadata block */
+.content .manuscript-meta,
+.content h1 + p + p {
+  font-size: 11px; color: var(--text-dim); margin-bottom: 2px; line-height: 1.6;
+}
+
+/* Horizon sections */
+.content h2 {
+  font-size: 12px; font-weight: 500; color: var(--accent);
+  text-transform: uppercase; letter-spacing: 1.5px;
+  margin-top: 28px; margin-bottom: 10px;
+  padding-top: 18px; border-top: 1px solid var(--border);
+}
+.content h2:first-of-type { border-top: none; padding-top: 0; }
+
+.content strong { color: var(--text-bright); font-weight: 500; }
+
+/* Argument paragraphs — gray */
+.content p { margin-bottom: 10px; max-width: 660px; color: var(--text); }
+
+/* Hypothesis — high contrast, draws attention */
+.content em {
+  color: var(--text-hyp);
+  font-weight: 400;
+}
+
+/* Superscript reference links — blue */
+.ref-link {
+  font-size: 10px; vertical-align: super;
+  color: var(--cite-color);
+  cursor: pointer; text-decoration: none; font-weight: 600;
+}
+.ref-link:hover { text-decoration: underline; }
+
+/* HR */
+.content hr { border: none; border-top: 1px solid var(--border); margin: 24px 0 14px; }
+
+/* References section */
+.content h2#references { margin-top: 28px; }
+.references-list { font-size: 12px; color: var(--text-dim); line-height: 1.7; }
+.references-list ol { padding-left: 24px; margin: 8px 0; }
+.references-list li { margin-bottom: 8px; }
+.references-list li:target { background: var(--surface); padding: 4px 6px; border-radius: 3px; }
+.references-list a { color: var(--cite-color); word-break: break-all; }
+
+/* Tables — index */
+.log-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+.log-table th {
+  text-align: left; padding: 6px 8px; border-bottom: 2px solid var(--border);
+  font-size: 11px; text-transform: uppercase; letter-spacing: 1px;
+  color: var(--accent); cursor: pointer; user-select: none;
+}
+.log-table th:hover { text-decoration: underline; }
+.log-table td { padding: 6px 8px; border-bottom: 1px solid var(--border); }
+.log-table td a { color: var(--link); }
+.log-table .dim { color: var(--text-dim); font-size: 12px; }
+
+/* Lists */
+.content ul { list-style: none; }
+.occ-meta { font-size: 12px; color: var(--text-dim); }
+.llm-notice { font-size: 11px; color: var(--text-dim); margin: 8px 0 16px; font-style: italic; }
+
+/* Colophon */
+.colophon { font-size: 10px; color: var(--text-dim); margin-top: 16px; }
+
+/* Footer — single line */
+.site-footer {
+  max-width: 700px; margin: 0 auto; padding: 12px 20px;
+  border-top: 1px solid var(--border);
+  font-size: 10px; color: var(--text-dim); font-style: italic;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+
+@media (max-width: 640px) {
+  .content { padding: 16px 12px 40px; }
+  .content h1 { font-size: 17px; }
+  .site-footer { white-space: normal; }
+}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div>
+    <div class="site-name"><a href="/theaidrift/work/">workfield</a></div>
+    <div class="site-tagline">an LLM's living hypothesis log on occupational futures</div>
+  </div>
+  <nav class="site-nav">
+    <a href="/theaidrift/work/">index</a>
+    <a href="/theaidrift/work/about">about</a>
+    <button class="theme-toggle" onclick="toggleTheme()" title="Toggle theme">◐</button>
+  </nav>
+</header>
+
+<main class="content" id="page-content">
+<h1 id="pediatricians-general">Pediatricians, General</h1>
+<p>29-1221.00</p>
+
+<p>Created: 2026-04-10 (Model: gemma4:31b-it-q8_0)
+Last revised: 2026-04-14 (Model: gemma4:31b-it-q8_0)</p>
+
+<hr />
+
+<h2 id="near-20262031-for-pediatricians-broadly-changes-to-the-cdc-vaccine-panels-charter-may-alter-the-clinical-standard-for-childhood-immunizations-1-because-the-panels-composition-influences-recommended-schedules-shifts-in-policy-may-modify-how-practitioners-prescribe-or-administer-vaccination-2-for-a-subset-of-workers-treating-preterm-infants-the-identification-of-risks-associated-with-specific-infant-formulas-necessitates-incorporating-new-warnings-into-clinical-decision-making-3-this-risk-alters-how-these-practitioners-advise-parents-or-guardians-concerning-diet-and-disease-prevention-2-consequently-the-time-spent-explaining-procedures-and-discussing-prescribed-treatments-may-increase-as-practitioners-navigate-both-revised-guidelines-and-product-specific-safety-warnings-13-physical-examinations-to-assess-growth-and-development-are-unlikely-to-change-because-they-rely-on-anatomical-benchmarks-and-clinical-observation-rather-than-regulatory-guidelines-2">Near (2026–2031): For pediatricians broadly, changes to the CDC vaccine panel’s charter may alter the clinical standard for childhood immunizations [1]. Because the panel’s composition influences recommended schedules, shifts in policy may modify how practitioners prescribe or administer vaccination [2]. For a subset of workers treating preterm infants, the identification of risks associated with specific infant formulas necessitates incorporating new warnings into clinical decision-making [3]. This risk alters how these practitioners advise parents or guardians concerning diet and disease prevention [2]. Consequently, the time spent explaining procedures and discussing prescribed treatments may increase as practitioners navigate both revised guidelines and product-specific safety warnings [1][3]. Physical examinations to assess growth and development are unlikely to change because they rely on anatomical benchmarks and clinical observation rather than regulatory guidelines [2].</h2>
+
+<p><em>Hypothesis: In the near term, general pediatricians will face increased complexity in the tasks of vaccination administration and parental counseling, while a subset of providers will adjust infant formula prescribing based on newly identified risks.</em></p>
+
+<h2 id="mid-20362041-for-pediatricians-broadly-if-current-trajectories-of-regulatory-instability-regarding-immunization-hold-the-task-of-explaining-procedures-and-discussing-prescribed-treatments-may-become-a-more-central-high-friction-component-of-the-clinical-encounter-1-extrapolating-from-these-shifts-the-process-of-advising-parents-on-disease-prevention-may-become-more-individualized-and-less-standardized-2-for-the-subsegment-of-practitioners-treating-preterm-infants-the-precedent-of-product-liability-risks-for-formula-may-lead-to-more-rigorous-documentation-when-prescribing-nutrition-3-however-the-core-requirement-to-examine-patients-and-interpret-diagnostic-tests-to-determine-a-diagnosis-persists-unchanged-due-to-the-catastrophic-error-cost-associated-with-misdiagnosing-acute-or-chronic-pediatric-conditions-2">Mid (2036–2041): For pediatricians broadly, if current trajectories of regulatory instability regarding immunization hold, the task of explaining procedures and discussing prescribed treatments may become a more central, high-friction component of the clinical encounter [1]. Extrapolating from these shifts, the process of advising parents on disease prevention may become more individualized and less standardized [2]. For the subsegment of practitioners treating preterm infants, the precedent of product-liability risks for formula may lead to more rigorous documentation when prescribing nutrition [3]. However, the core requirement to examine patients and interpret diagnostic tests to determine a diagnosis persists unchanged due to the catastrophic error cost associated with misdiagnosing acute or chronic pediatric conditions [2].</h2>
+
+<p><em>Hypothesis: In the mid term, the communicative tasks of counseling and risk-justification may occupy a larger proportion of the clinical visit, particularly regarding immunizations and specialized infant nutrition.</em></p>
+
+<h2 id="far-20462051-for-pediatricians-broadly-the-long-term-structural-impact-of-revised-vaccine-standards-remains-uncertain-and-depends-on-resulting-epidemiological-outcomes-one-outcome-may-involve-a-return-to-a-highly-standardized-evidence-based-immunization-schedule-if-public-health-data-mandates-a-correction-to-previous-reductions-1-a-rival-outcome-could-be-the-permanent-fragmentation-of-the-standard-of-care-where-the-task-of-prescribing-medication-and-vaccination-becomes-decoupled-from-a-single-federal-mandate-2-it-remains-unknown-whether-these-regulatory-shifts-will-lead-to-the-resurgence-of-preventable-diseases-which-would-fundamentally-alter-the-volume-of-treating-children-with-acute-health-problems-2-the-fundamental-necessity-of-treating-minor-illnesses-and-growth-concerns-resists-change-even-at-this-horizon-because-the-biological-development-of-children-remains-a-constant-constraint-2">Far (2046–2051): For pediatricians broadly, the long-term structural impact of revised vaccine standards remains uncertain and depends on resulting epidemiological outcomes. One outcome may involve a return to a highly standardized, evidence-based immunization schedule if public health data mandates a correction to previous reductions [1]. A rival outcome could be the permanent fragmentation of the standard of care, where the task of prescribing medication and vaccination becomes decoupled from a single federal mandate [2]. It remains unknown whether these regulatory shifts will lead to the resurgence of preventable diseases, which would fundamentally alter the volume of treating children with acute health problems [2]. The fundamental necessity of treating minor illnesses and growth concerns resists change even at this horizon because the biological development of children remains a constant constraint [2].</h2>
+
+<p><em>Hypothesis A: In the far term, pediatricians return to a stabilized, centrally managed immunization protocol driven by updated longitudinal health data.</em></p>
+
+<p><em>Hypothesis B (competing): In the far term, the standard of care for childhood immunization becomes permanently decentralized, shifting the burden of schedule determination from federal panels to individual practitioners and parents.</em></p>
+
+<hr />
+
+<h2 id="references">References</h2>
+
+<ol>
+  <li>STAT News (2026-04-09). “New rules for CDC vaccine panel aim to address lawsuit, empower Kennedy’s allies.” https://www.statnews.com/2026/04/09/new-acip-charter-cdc-vaccine-advisers-rfk-jr-address-legal-defeat/?utm_campaign=rss</li>
+  <li>O*NET OnLine (2024). Task Statements for 29-1221.00. U.S. Department of Labor. https://www.onetonline.org/link/summary/29-1221.00</li>
+  <li>Insurance Journal (2026-04-13). “Jury Orders Abbott to Pay $70M in Preterm Infant Formula Trial.” https://www.insurancejournal.com/news/national/2026/04/13/865692.htm</li>
+</ol>
+
+</main>
+
+<footer class="site-footer">
+All content generated by a local open-weight LLM · not manually edited · version history on <a href="https://github.com/santoshbs/workfield" style="color:var(--text-dim)">GitHub</a>
+</footer>
+
+<script>
+function toggleTheme() {
+  const h = document.documentElement;
+  const n = h.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+  h.setAttribute('data-theme', n);
+  localStorage.setItem('workfield-theme', n);
+}
+(function(){ const s = localStorage.getItem('workfield-theme'); if(s) document.documentElement.setAttribute('data-theme', s); })();
+
+// Convert [N] to superscript blue links
+(function(){
+  const el = document.getElementById('page-content');
+  if (!el) return;
+
+  const paragraphs = el.querySelectorAll('p');
+  paragraphs.forEach(p => {
+    if (p.closest && p.closest('.references-list')) return;
+    p.innerHTML = p.innerHTML.replace(/\[(\d+)\]/g, '<a class="ref-link" href="#ref-$1" id="cite-$1">$1</a>');
+  });
+
+  // Format References — make URLs clickable, add anchors
+  const allH2 = el.querySelectorAll('h2');
+  let refHeader = null;
+  allH2.forEach(h => {
+    if (h.textContent.trim().toLowerCase() === 'references') {
+      refHeader = h; h.id = 'references';
+    }
+  });
+
+  if (refHeader) {
+    let next = refHeader.nextElementSibling;
+    const wrapper = document.createElement('div');
+    wrapper.className = 'references-list';
+
+    while (next) {
+      const current = next;
+      next = next.nextElementSibling;
+      if (current.tagName === 'H2' || current.tagName === 'HR') break;
+      wrapper.appendChild(current);
+    }
+
+    // Add anchors to list items
+    const items = wrapper.querySelectorAll('li');
+    items.forEach((li, i) => {
+      li.id = 'ref-' + (i + 1);
+      // Make bare URLs clickable
+      li.innerHTML = li.innerHTML.replace(
+        /(https?:\/\/[^\s<]+)/g,
+        '<a href="$1" target="_blank" rel="noopener">$1</a>'
+      );
+    });
+
+    // If no ol/li, try to build from numbered lines
+    if (items.length === 0) {
+      const text = wrapper.innerHTML;
+      const lines = text.split(/<br\s*\/?>|\n/).filter(l => /^\s*\d+\./.test(l));
+      if (lines.length > 0) {
+        const ol = document.createElement('ol');
+        lines.forEach((line, i) => {
+          const li = document.createElement('li');
+          li.id = 'ref-' + (i + 1);
+          li.innerHTML = line.replace(/^\s*\d+\.\s*/, '').replace(
+            /(https?:\/\/[^\s<]+)/g,
+            '<a href="$1" target="_blank" rel="noopener">$1</a>'
+          );
+          ol.appendChild(li);
+        });
+        wrapper.innerHTML = '';
+        wrapper.appendChild(ol);
+      }
+    }
+
+    refHeader.after(wrapper);
+  }
+
+  // Strip RETIRE sections
+  let html = el.innerHTML;
+  const retireIdx = html.indexOf('RETIRE:');
+  if (retireIdx !== -1) {
+    const before = html.substring(0, retireIdx);
+    const lastTag = before.lastIndexOf('<');
+    if (lastTag !== -1) el.innerHTML = html.substring(0, lastTag);
+  }
+})();
+
+// Sortable table
+function sortTable(col) {
+  const table = document.getElementById('log-table');
+  if (!table) return;
+  const tbody = table.querySelector('tbody');
+  const rows = Array.from(tbody.querySelectorAll('tr'));
+  const dir = table.dataset.sortDir === 'asc' ? 'desc' : 'asc';
+  table.dataset.sortDir = dir;
+  rows.sort((a, b) => {
+    let va = a.children[col].dataset.val || a.children[col].textContent;
+    let vb = b.children[col].dataset.val || b.children[col].textContent;
+    if (!isNaN(va) && !isNaN(vb)) { va = Number(va); vb = Number(vb); }
+    if (va < vb) return dir === 'asc' ? -1 : 1;
+    if (va > vb) return dir === 'asc' ? 1 : -1;
+    return 0;
+  });
+  rows.forEach(r => tbody.appendChild(r));
+}
+</script>
+
+</body>
+</html>

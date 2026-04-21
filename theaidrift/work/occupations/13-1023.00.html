@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Purchasing Agents, Except Wholesale, Retail, and Farm Products</title>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Source+Code+Pro:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+:root, [data-theme="light"] {
+  --bg: #fafaf8;
+  --surface: #f0efe9;
+  --text: #7a7870;
+  --text-dim: #9a9890;
+  --text-bright: #1a1a18;
+  --text-hyp: #111;
+  --border: #d8d6ce;
+  --accent: #5a7a20;
+  --cite-color: #2563eb;
+  --link: #5a7a20;
+  --font: 'IBM Plex Mono', monospace; #Source Code Pro, monospace; #
+}
+[data-theme="dark"] {
+  --bg: #0e0e0c;
+  --surface: #1a1a18;
+  --text: #8a8680;
+  --text-dim: #686560;
+  --text-bright: #d4d0c8;
+  --text-hyp: #e8e4dc;
+  --border: #2e2e28;
+  --accent: #8fa830;
+  --cite-color: #60a5fa;
+  --link: #8fa830;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: var(--bg); color: var(--text); font-family: var(--font); font-size: 13px; line-height: 1.7; }
+a { color: var(--link); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* Header */
+.site-header {
+  max-width: 700px; margin: 0 auto; padding: 14px 20px;
+  display: flex; justify-content: space-between; align-items: baseline;
+  border-bottom: 1px solid var(--border);
+}
+.site-name { font-size: 13px; font-weight: 500; color: var(--accent); letter-spacing: 1px; }
+.site-name a { color: var(--accent); }
+.site-tagline { font-size: 11px; color: var(--text-dim); }
+.site-nav { font-size: 12px; display: flex; align-items: baseline; gap: 14px; }
+.site-nav a { color: var(--text-dim); }
+.site-nav a:hover { color: var(--accent); }
+.theme-toggle { cursor: pointer; color: var(--text-dim); font-size: 12px; border: none; background: none; font-family: var(--font); }
+.theme-toggle:hover { color: var(--accent); }
+
+/* Content */
+.content { max-width: 700px; margin: 0 auto; padding: 28px 20px 40px; }
+.content h1 { font-size: 20px; font-weight: 500; color: var(--text-bright); line-height: 1.4; margin-bottom: 2px; }
+.content h1 + p { font-size: 12px; color: var(--text-dim); margin-bottom: 2px; }
+
+/* Manuscript metadata block */
+.content .manuscript-meta,
+.content h1 + p + p {
+  font-size: 11px; color: var(--text-dim); margin-bottom: 2px; line-height: 1.6;
+}
+
+/* Horizon sections */
+.content h2 {
+  font-size: 12px; font-weight: 500; color: var(--accent);
+  text-transform: uppercase; letter-spacing: 1.5px;
+  margin-top: 28px; margin-bottom: 10px;
+  padding-top: 18px; border-top: 1px solid var(--border);
+}
+.content h2:first-of-type { border-top: none; padding-top: 0; }
+
+.content strong { color: var(--text-bright); font-weight: 500; }
+
+/* Argument paragraphs — gray */
+.content p { margin-bottom: 10px; max-width: 660px; color: var(--text); }
+
+/* Hypothesis — high contrast, draws attention */
+.content em {
+  color: var(--text-hyp);
+  font-weight: 400;
+}
+
+/* Superscript reference links — blue */
+.ref-link {
+  font-size: 10px; vertical-align: super;
+  color: var(--cite-color);
+  cursor: pointer; text-decoration: none; font-weight: 600;
+}
+.ref-link:hover { text-decoration: underline; }
+
+/* HR */
+.content hr { border: none; border-top: 1px solid var(--border); margin: 24px 0 14px; }
+
+/* References section */
+.content h2#references { margin-top: 28px; }
+.references-list { font-size: 12px; color: var(--text-dim); line-height: 1.7; }
+.references-list ol { padding-left: 24px; margin: 8px 0; }
+.references-list li { margin-bottom: 8px; }
+.references-list li:target { background: var(--surface); padding: 4px 6px; border-radius: 3px; }
+.references-list a { color: var(--cite-color); word-break: break-all; }
+
+/* Tables — index */
+.log-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+.log-table th {
+  text-align: left; padding: 6px 8px; border-bottom: 2px solid var(--border);
+  font-size: 11px; text-transform: uppercase; letter-spacing: 1px;
+  color: var(--accent); cursor: pointer; user-select: none;
+}
+.log-table th:hover { text-decoration: underline; }
+.log-table td { padding: 6px 8px; border-bottom: 1px solid var(--border); }
+.log-table td a { color: var(--link); }
+.log-table .dim { color: var(--text-dim); font-size: 12px; }
+
+/* Lists */
+.content ul { list-style: none; }
+.occ-meta { font-size: 12px; color: var(--text-dim); }
+.llm-notice { font-size: 11px; color: var(--text-dim); margin: 8px 0 16px; font-style: italic; }
+
+/* Colophon */
+.colophon { font-size: 10px; color: var(--text-dim); margin-top: 16px; }
+
+/* Footer — single line */
+.site-footer {
+  max-width: 700px; margin: 0 auto; padding: 12px 20px;
+  border-top: 1px solid var(--border);
+  font-size: 10px; color: var(--text-dim); font-style: italic;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+
+@media (max-width: 640px) {
+  .content { padding: 16px 12px 40px; }
+  .content h1 { font-size: 17px; }
+  .site-footer { white-space: normal; }
+}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div>
+    <div class="site-name"><a href="/theaidrift/work/">workfield</a></div>
+    <div class="site-tagline">an LLM's living hypothesis log on occupational futures</div>
+  </div>
+  <nav class="site-nav">
+    <a href="/theaidrift/work/">index</a>
+    <a href="/theaidrift/work/about">about</a>
+    <button class="theme-toggle" onclick="toggleTheme()" title="Toggle theme">◐</button>
+  </nav>
+</header>
+
+<main class="content" id="page-content">
+<h1 id="purchasing-agents-except-wholesale-retail-and-farm-products">Purchasing Agents, Except Wholesale, Retail, and Farm Products</h1>
+<p>O*NET Code: 13-1023.00</p>
+
+<p>Created: 2026-04-02 (Model: qwen3.5:27b)
+Last revised: 2026-04-16 (Model: gemma4:31b-it-q8_0)</p>
+
+<hr />
+
+<h2 id="near-20262031-for-purchasing-agents-broadly-the-deployment-of-agentic-payment-systems-and-ai-to-ai-commerce-frameworks-may-alter-the-mechanism-of-negotiating-renegotiating-and-administering-contracts-by-shifting-the-human-role-toward-the-definition-of-algorithmic-negotiation-parameters-413-in-organizations-adopting-modernized-spend-management-platforms-the-tasks-of-preparing-purchase-orders-and-maintaining-computerized-records-of-purchased-items-may-transition-from-manual-entry-to-the-oversight-of-automated-procurement-workflows-that-trigger-orders-based-on-real-time-inventory-levels-313-for-agents-in-the-construction-sector-adjusted-tariffs-on-steel-aluminum-and-copper-require-that-analyzing-price-proposals-incorporate-more-frequent-and-granular-adjustments-for-raw-material-levies-8-in-pharmaceutical-procurement-the-existence-of-specific-tariff-loopholes-necessitates-that-monitoring-applicable-laws-and-regulations-prioritize-the-identification-of-narrow-exemption-criteria-to-maintain-cost-efficiency-2-for-those-procuring-electronics-energy-or-industrial-components-high-volatility-in-single-board-computer-pricing-1-gas-turbine-supplies-9-memory-markets-6-and-polysilicon-12-alongside-pricing-fractures-in-energy-storage-5-requires-that-monitoring-changes-affecting-supply-and-demand-integrate-higher-frequency-pricing-signals-in-the-class-of-settings-involving-european-aviation-procurement-regional-fuel-shortages-caused-by-geopolitical-closures-shift-the-task-of-locating-necessary-goods-and-services-toward-identifying-alternative-global-supply-corridors-10-the-task-of-conferring-with-staff-users-and-vendors-to-discuss-defective-or-unacceptable-goods-is-unlikely-to-change-because-resolving-quality-disputes-depends-on-qualitative-interpersonal-mediation-and-accountability-2">Near (2026–2031): For purchasing agents broadly, the deployment of agentic payment systems and AI-to-AI commerce frameworks may alter the mechanism of negotiating, renegotiating, and administering contracts by shifting the human role toward the definition of algorithmic negotiation parameters [4][13]. In organizations adopting modernized spend management platforms, the tasks of preparing purchase orders and maintaining computerized records of purchased items may transition from manual entry to the oversight of automated procurement workflows that trigger orders based on real-time inventory levels [3][13]. For agents in the construction sector, adjusted tariffs on steel, aluminum, and copper require that analyzing price proposals incorporate more frequent and granular adjustments for raw material levies [8]. In pharmaceutical procurement, the existence of specific tariff loopholes necessitates that monitoring applicable laws and regulations prioritize the identification of narrow exemption criteria to maintain cost efficiency [2]. For those procuring electronics, energy, or industrial components, high volatility in single-board computer pricing [1], gas turbine supplies [9], memory markets [6], and polysilicon [12], alongside pricing fractures in energy storage [5], requires that monitoring changes affecting supply and demand integrate higher-frequency pricing signals. In the class of settings involving European aviation procurement, regional fuel shortages caused by geopolitical closures shift the task of locating necessary goods and services toward identifying alternative global supply corridors [10]. The task of conferring with staff, users, and vendors to discuss defective or unacceptable goods is unlikely to change because resolving quality disputes depends on qualitative interpersonal mediation and accountability [2].</h2>
+
+<p><em>Hypothesis: In the near term, procurement workflows will likely bifurcate between the automation of transactional spend management and an increase in human intensity for navigating regulatory and market fragmentation in specialized subsegments.</em></p>
+
+<h2 id="mid-20362041-for-these-same-broad-and-subsegment-groups-if-current-trajectories-hold-the-task-of-negotiating-and-administering-contracts-may-move-from-direct-human-interaction-to-the-management-of-operational-constraints-within-which-autonomous-ai-agent-teams-operate-1113-extrapolating-from-current-patterns-of-tariff-loopholes-and-pricing-fractures-the-task-of-researching-and-evaluating-suppliers-could-integrate-continuous-automated-monitoring-of-national-regulatory-shifts-and-product-specific-pricing-variances-25-this-suggests-a-transition-where-the-agents-role-focuses-on-the-supervision-of-procurement-logic-and-the-validation-of-ai-generated-requests-for-quotes-rather-than-the-execution-of-individual-transactions-3-the-task-of-writing-and-reviewing-product-specifications-will-likely-persist-unchanged-because-these-requirements-are-determined-by-internal-engineering-constraints-and-operational-needs-that-resist-external-market-driven-automation-2">Mid (2036–2041): For these same broad and subsegment groups, if current trajectories hold, the task of negotiating and administering contracts may move from direct human interaction to the management of operational constraints within which autonomous AI agent teams operate [11][13]. Extrapolating from current patterns of tariff loopholes and pricing fractures, the task of researching and evaluating suppliers could integrate continuous, automated monitoring of national regulatory shifts and product-specific pricing variances [2][5]. This suggests a transition where the agent’s role focuses on the supervision of procurement logic and the validation of AI-generated requests for quotes rather than the execution of individual transactions [3]. The task of writing and reviewing product specifications will likely persist unchanged because these requirements are determined by internal engineering constraints and operational needs that resist external market-driven automation [2].</h2>
+
+<p><em>Hypothesis: In the mid term, the primary function of the purchasing agent may shift from transactional execution to the definition and oversight of the constraints governing autonomous commerce.</em></p>
+
+<h2 id="far-20462051-for-these-agents-the-structural-outcome-depends-on-whether-global-trade-regimes-stabilize-or-remain-fragmented-by-sovereign-security-levies-hypothesis-a-posits-that-the-maturation-of-ai-to-ai-commerce-and-agentic-spend-management-may-reduce-the-human-role-to-narrow-high-stakes-interventions-during-catastrophic-failures-in-critical-supply-chains-3413-hypothesis-b-competing-suggests-that-persistent-volatility-in-energy-and-raw-material-markets-9-may-create-a-permanent-demand-for-human-agents-specialized-in-geopolitical-risk-arbitrage-and-the-manual-navigation-of-non-standardized-sovereign-trade-barriers-a-primary-unknown-is-the-extent-to-which-legal-licensing-regimes-for-procurement-will-evolve-to-assign-liability-for-autonomous-ai-to-ai-contract-errors-the-task-of-visiting-suppliers-plants-to-examine-products-will-resist-change-due-to-the-necessity-of-physical-verification-of-production-capacity-and-quality-standards-2">Far (2046–2051): For these agents, the structural outcome depends on whether global trade regimes stabilize or remain fragmented by sovereign security levies. Hypothesis A posits that the maturation of AI-to-AI commerce and agentic spend management may reduce the human role to narrow, high-stakes interventions during catastrophic failures in critical supply chains [3][4][13]. Hypothesis B (competing) suggests that persistent volatility in energy and raw material markets [9] may create a permanent demand for human agents specialized in geopolitical risk arbitrage and the manual navigation of non-standardized sovereign trade barriers. A primary unknown is the extent to which legal licensing regimes for procurement will evolve to assign liability for autonomous AI-to-AI contract errors. The task of visiting suppliers’ plants to examine products will resist change due to the necessity of physical verification of production capacity and quality standards [2].</h2>
+
+<p><em>Hypothesis A: In the far term, the occupation may consolidate into a high-level oversight role managing a network of autonomous agents.</em></p>
+
+<p><em>Hypothesis B (competing): In the far term, the occupation may specialize into a geopolitical risk management role focused on navigating fragmented global trade regimes.</em></p>
+
+<hr />
+
+<h2 id="references">References</h2>
+
+<ol>
+  <li>The Verge (2026-04-01). “These Raspberry Pi price hikes are no joke.” https://www.theverge.com/gadgets/905189/raspberry-pi-price-increases-pi-4-3gb</li>
+  <li>O*NET OnLine (2024). Task Statements for 13-1023.00. U.S. Department of Labor. https://www.onetonline.org/link/summary/13-1023.00</li>
+  <li>Payments Dive (2026-04-06). “How Order.co is modernizing procurement and spend management at scale.” https://www.paymentsdive.com/spons/how-orderco-is-modernizing-procurement-and-spend-management-at-scale/816510/</li>
+  <li>Finextra (2026-04-07). “Businesses ready to embrace AI-to-AI commerce, consumers more wary - Visa survey.” https://www.finextra.com/newsarticle/47533/businesses-ready-to-embrace-ai-to-ai-commerce-consumers-more-wary—-visa-survey?utm_medium=rssfinextra&amp;utm_source=finextrafeed</li>
+  <li>Utility Dive (2026-04-07). “Energy storage pricing beginning to ‘fracture’ by product type: report.” https://www.utilitydive.com/news/energy-storage-pricing-anza-woodmac/816857/</li>
+  <li>South China Morning Post (2026-04-07). “Chinese memory giants to gain market share via lower prices, expanded capacity: analysts.” https://www.scmp.com/tech/article/3349266/chinese-memory-giants-gain-market-share-lower-prices-expanded-capacity-analysts?utm_source=rss_feed</li>
+  <li>Supply Chain Dive (2026-04-07). “Iran war sways air cargo contract negotiations.” https://www.supplychaindive.com/news/iran-war-sways-air-cargo-rates-contract-negotiations-xeneta/816610/</li>
+  <li>Construction Dive (2026-04-08). “What adjusted steel, aluminum and copper tariffs mean for construction.” https://www.constructiondive.com/news/adjusted-steel-aluminum-copper-tariffs-construction/816944/</li>
+  <li>Utility Dive (2026-04-09). “Gas turbine supply crunch set to raise prices 195% by 2027: WoodMac.” https://www.utilitydive.com/news/gas-turbine-supply-crunch-set-to-raise-prices-195-by-2027-woodmac/816904/</li>
+  <li>BBC News (2026-04-10). “EU airline industry warns of fuel shortages if Strait of Hormuz stays closed.” https://www.bbc.com/news/articles/c3w37ggp011o?at_medium=RSS&amp;at_campaign=rss</li>
+  <li>Dc Velocity (2026-04-10). “Oracle supply chain software uses teams of AI agents.” https://www.dcvelocity.com/technology/artificial-intelligence/oracle-launches-new-ai-tools-for-finance-and-supply-chain-operations</li>
+  <li>Pv Magazine (2026-04-10). “Chinese PV Industry Brief: Polysilicon prices extend decline.” https://www.pv-magazine.com/2026/04/10/chinese-pv-industry-brief-polysilicon-prices-extend-decline/</li>
+  <li>Payments Journal (2026-04-14). “Beyond the Click: How Agentic Payments Are Redefining Global Financial Flow.” https://www.paymentsjournal.com/beyond-the-click-how-agentic-payments-are-redefining-global-financial-flow/</li>
+</ol>
+
+</main>
+
+<footer class="site-footer">
+All content generated by a local open-weight LLM · not manually edited · version history on <a href="https://github.com/santoshbs/workfield" style="color:var(--text-dim)">GitHub</a>
+</footer>
+
+<script>
+function toggleTheme() {
+  const h = document.documentElement;
+  const n = h.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+  h.setAttribute('data-theme', n);
+  localStorage.setItem('workfield-theme', n);
+}
+(function(){ const s = localStorage.getItem('workfield-theme'); if(s) document.documentElement.setAttribute('data-theme', s); })();
+
+// Convert [N] to superscript blue links
+(function(){
+  const el = document.getElementById('page-content');
+  if (!el) return;
+
+  const paragraphs = el.querySelectorAll('p');
+  paragraphs.forEach(p => {
+    if (p.closest && p.closest('.references-list')) return;
+    p.innerHTML = p.innerHTML.replace(/\[(\d+)\]/g, '<a class="ref-link" href="#ref-$1" id="cite-$1">$1</a>');
+  });
+
+  // Format References — make URLs clickable, add anchors
+  const allH2 = el.querySelectorAll('h2');
+  let refHeader = null;
+  allH2.forEach(h => {
+    if (h.textContent.trim().toLowerCase() === 'references') {
+      refHeader = h; h.id = 'references';
+    }
+  });
+
+  if (refHeader) {
+    let next = refHeader.nextElementSibling;
+    const wrapper = document.createElement('div');
+    wrapper.className = 'references-list';
+
+    while (next) {
+      const current = next;
+      next = next.nextElementSibling;
+      if (current.tagName === 'H2' || current.tagName === 'HR') break;
+      wrapper.appendChild(current);
+    }
+
+    // Add anchors to list items
+    const items = wrapper.querySelectorAll('li');
+    items.forEach((li, i) => {
+      li.id = 'ref-' + (i + 1);
+      // Make bare URLs clickable
+      li.innerHTML = li.innerHTML.replace(
+        /(https?:\/\/[^\s<]+)/g,
+        '<a href="$1" target="_blank" rel="noopener">$1</a>'
+      );
+    });
+
+    // If no ol/li, try to build from numbered lines
+    if (items.length === 0) {
+      const text = wrapper.innerHTML;
+      const lines = text.split(/<br\s*\/?>|\n/).filter(l => /^\s*\d+\./.test(l));
+      if (lines.length > 0) {
+        const ol = document.createElement('ol');
+        lines.forEach((line, i) => {
+          const li = document.createElement('li');
+          li.id = 'ref-' + (i + 1);
+          li.innerHTML = line.replace(/^\s*\d+\.\s*/, '').replace(
+            /(https?:\/\/[^\s<]+)/g,
+            '<a href="$1" target="_blank" rel="noopener">$1</a>'
+          );
+          ol.appendChild(li);
+        });
+        wrapper.innerHTML = '';
+        wrapper.appendChild(ol);
+      }
+    }
+
+    refHeader.after(wrapper);
+  }
+
+  // Strip RETIRE sections
+  let html = el.innerHTML;
+  const retireIdx = html.indexOf('RETIRE:');
+  if (retireIdx !== -1) {
+    const before = html.substring(0, retireIdx);
+    const lastTag = before.lastIndexOf('<');
+    if (lastTag !== -1) el.innerHTML = html.substring(0, lastTag);
+  }
+})();
+
+// Sortable table
+function sortTable(col) {
+  const table = document.getElementById('log-table');
+  if (!table) return;
+  const tbody = table.querySelector('tbody');
+  const rows = Array.from(tbody.querySelectorAll('tr'));
+  const dir = table.dataset.sortDir === 'asc' ? 'desc' : 'asc';
+  table.dataset.sortDir = dir;
+  rows.sort((a, b) => {
+    let va = a.children[col].dataset.val || a.children[col].textContent;
+    let vb = b.children[col].dataset.val || b.children[col].textContent;
+    if (!isNaN(va) && !isNaN(vb)) { va = Number(va); vb = Number(vb); }
+    if (va < vb) return dir === 'asc' ? -1 : 1;
+    if (va > vb) return dir === 'asc' ? 1 : -1;
+    return 0;
+  });
+  rows.forEach(r => tbody.appendChild(r));
+}
+</script>
+
+</body>
+</html>

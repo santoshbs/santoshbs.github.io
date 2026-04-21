@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Air Crew Members</title>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Source+Code+Pro:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+:root, [data-theme="light"] {
+  --bg: #fafaf8;
+  --surface: #f0efe9;
+  --text: #7a7870;
+  --text-dim: #9a9890;
+  --text-bright: #1a1a18;
+  --text-hyp: #111;
+  --border: #d8d6ce;
+  --accent: #5a7a20;
+  --cite-color: #2563eb;
+  --link: #5a7a20;
+  --font: 'IBM Plex Mono', monospace; #Source Code Pro, monospace; #
+}
+[data-theme="dark"] {
+  --bg: #0e0e0c;
+  --surface: #1a1a18;
+  --text: #8a8680;
+  --text-dim: #686560;
+  --text-bright: #d4d0c8;
+  --text-hyp: #e8e4dc;
+  --border: #2e2e28;
+  --accent: #8fa830;
+  --cite-color: #60a5fa;
+  --link: #8fa830;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: var(--bg); color: var(--text); font-family: var(--font); font-size: 13px; line-height: 1.7; }
+a { color: var(--link); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* Header */
+.site-header {
+  max-width: 700px; margin: 0 auto; padding: 14px 20px;
+  display: flex; justify-content: space-between; align-items: baseline;
+  border-bottom: 1px solid var(--border);
+}
+.site-name { font-size: 13px; font-weight: 500; color: var(--accent); letter-spacing: 1px; }
+.site-name a { color: var(--accent); }
+.site-tagline { font-size: 11px; color: var(--text-dim); }
+.site-nav { font-size: 12px; display: flex; align-items: baseline; gap: 14px; }
+.site-nav a { color: var(--text-dim); }
+.site-nav a:hover { color: var(--accent); }
+.theme-toggle { cursor: pointer; color: var(--text-dim); font-size: 12px; border: none; background: none; font-family: var(--font); }
+.theme-toggle:hover { color: var(--accent); }
+
+/* Content */
+.content { max-width: 700px; margin: 0 auto; padding: 28px 20px 40px; }
+.content h1 { font-size: 20px; font-weight: 500; color: var(--text-bright); line-height: 1.4; margin-bottom: 2px; }
+.content h1 + p { font-size: 12px; color: var(--text-dim); margin-bottom: 2px; }
+
+/* Manuscript metadata block */
+.content .manuscript-meta,
+.content h1 + p + p {
+  font-size: 11px; color: var(--text-dim); margin-bottom: 2px; line-height: 1.6;
+}
+
+/* Horizon sections */
+.content h2 {
+  font-size: 12px; font-weight: 500; color: var(--accent);
+  text-transform: uppercase; letter-spacing: 1.5px;
+  margin-top: 28px; margin-bottom: 10px;
+  padding-top: 18px; border-top: 1px solid var(--border);
+}
+.content h2:first-of-type { border-top: none; padding-top: 0; }
+
+.content strong { color: var(--text-bright); font-weight: 500; }
+
+/* Argument paragraphs — gray */
+.content p { margin-bottom: 10px; max-width: 660px; color: var(--text); }
+
+/* Hypothesis — high contrast, draws attention */
+.content em {
+  color: var(--text-hyp);
+  font-weight: 400;
+}
+
+/* Superscript reference links — blue */
+.ref-link {
+  font-size: 10px; vertical-align: super;
+  color: var(--cite-color);
+  cursor: pointer; text-decoration: none; font-weight: 600;
+}
+.ref-link:hover { text-decoration: underline; }
+
+/* HR */
+.content hr { border: none; border-top: 1px solid var(--border); margin: 24px 0 14px; }
+
+/* References section */
+.content h2#references { margin-top: 28px; }
+.references-list { font-size: 12px; color: var(--text-dim); line-height: 1.7; }
+.references-list ol { padding-left: 24px; margin: 8px 0; }
+.references-list li { margin-bottom: 8px; }
+.references-list li:target { background: var(--surface); padding: 4px 6px; border-radius: 3px; }
+.references-list a { color: var(--cite-color); word-break: break-all; }
+
+/* Tables — index */
+.log-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+.log-table th {
+  text-align: left; padding: 6px 8px; border-bottom: 2px solid var(--border);
+  font-size: 11px; text-transform: uppercase; letter-spacing: 1px;
+  color: var(--accent); cursor: pointer; user-select: none;
+}
+.log-table th:hover { text-decoration: underline; }
+.log-table td { padding: 6px 8px; border-bottom: 1px solid var(--border); }
+.log-table td a { color: var(--link); }
+.log-table .dim { color: var(--text-dim); font-size: 12px; }
+
+/* Lists */
+.content ul { list-style: none; }
+.occ-meta { font-size: 12px; color: var(--text-dim); }
+.llm-notice { font-size: 11px; color: var(--text-dim); margin: 8px 0 16px; font-style: italic; }
+
+/* Colophon */
+.colophon { font-size: 10px; color: var(--text-dim); margin-top: 16px; }
+
+/* Footer — single line */
+.site-footer {
+  max-width: 700px; margin: 0 auto; padding: 12px 20px;
+  border-top: 1px solid var(--border);
+  font-size: 10px; color: var(--text-dim); font-style: italic;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+
+@media (max-width: 640px) {
+  .content { padding: 16px 12px 40px; }
+  .content h1 { font-size: 17px; }
+  .site-footer { white-space: normal; }
+}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div>
+    <div class="site-name"><a href="/theaidrift/work/">workfield</a></div>
+    <div class="site-tagline">an LLM's living hypothesis log on occupational futures</div>
+  </div>
+  <nav class="site-nav">
+    <a href="/theaidrift/work/">index</a>
+    <a href="/theaidrift/work/about">about</a>
+    <button class="theme-toggle" onclick="toggleTheme()" title="Toggle theme">◐</button>
+  </nav>
+</header>
+
+<main class="content" id="page-content">
+<h1 id="air-crew-members">Air Crew Members</h1>
+<p>O*NET Code: 55-3011.00</p>
+
+<p>Created: 2026-04-02 (Model: qwen3.5:27b)
+Last revised: 2026-04-14 (Model: gemma4:31b-it-q8_0)</p>
+
+<hr />
+
+<h2 id="near-20262031-for-a-subset-of-aircrew-in-specific-military-organizations-and-those-deployed-to-high-threat-regions-the-adoption-of-moving-map-prototypes-may-reduce-cognitive-load-when-operating-aircraft-communications-and-detection-equipment-3-within-organizations-addressing-aircraft-losses-new-software-interventions-are-being-developed-to-reduce-the-fog-of-war-which-alters-the-mechanism-of-data-synthesis-during-general-in-flight-duties-4-for-crew-members-deployed-to-strategic-maritime-corridors-in-high-tension-regions-increased-geopolitical-volatility-may-heighten-the-criticality-of-executing-aircraft-safety-and-emergency-procedures-27-because-defensive-strategies-optimized-for-one-adversary-may-not-translate-to-another-crews-in-contested-subsegments-may-need-to-manually-adjust-the-operation-of-aircraft-weapons-and-defensive-systems-to-counter-divergent-threat-signatures-1-for-crews-in-organizations-introducing-tiltrotor-platforms-new-operational-requirements-emerge-for-managing-the-transition-between-vertical-takeofflanding-and-forward-flight-modes-8-in-organizations-transitioning-to-contractor-led-instructional-pipelines-the-initial-training-for-conducting-preflight-in-flight-and-postflight-inspections-may-be-mediated-by-outsourced-training-frameworks-56-computing-and-verifying-passenger-cargo-fuel-and-emergency-and-special-equipment-weight-and-balance-data-is-unlikely-to-change-in-this-horizon-because-the-catastrophic-error-cost-of-imbalance-necessitates-human-led-verification-2">Near (2026–2031): For a subset of aircrew in specific military organizations and those deployed to high-threat regions, the adoption of moving map prototypes may reduce cognitive load when operating aircraft communications and detection equipment [3]. Within organizations addressing aircraft losses, new software interventions are being developed to reduce the “fog of war,” which alters the mechanism of data synthesis during general in-flight duties [4]. For crew members deployed to strategic maritime corridors in high-tension regions, increased geopolitical volatility may heighten the criticality of executing aircraft safety and emergency procedures [2][7]. Because defensive strategies optimized for one adversary may not translate to another, crews in contested subsegments may need to manually adjust the operation of aircraft weapons and defensive systems to counter divergent threat signatures [1]. For crews in organizations introducing tiltrotor platforms, new operational requirements emerge for managing the transition between vertical takeoff/landing and forward flight modes [8]. In organizations transitioning to contractor-led instructional pipelines, the initial training for conducting preflight, in-flight, and postflight inspections may be mediated by outsourced training frameworks [5][6]. Computing and verifying passenger, cargo, fuel, and emergency and special equipment weight and balance data is unlikely to change in this horizon because the catastrophic error cost of imbalance necessitates human-led verification [2].</h2>
+
+<p><em>Hypothesis: In the near term, specific aircrew subsegments may transition toward software-defined situational awareness tools while increasing manual parameter adjustments for theater-specific defensive systems.</em></p>
+
+<h2 id="mid-20362041-for-the-same-organizational-subsegments-and-regional-crews-if-current-trajectories-hold-the-task-of-operating-aircraft-communications-and-detection-equipment-may-shift-from-manual-signal-monitoring-to-the-management-of-integrated-software-defined-overlays-34-extrapolating-from-current-gaps-in-adversary-specific-defenses-crew-members-in-contested-regions-may-increasingly-perform-real-time-iterative-adjustments-to-electronic-warfare-parameters-to-mitigate-adaptive-regional-threats-1-for-crews-using-tiltrotor-platforms-the-management-of-flight-mode-transitions-may-become-a-standardized-software-assisted-procedure-rather-than-a-manual-pilot-intensive-task-8-despite-these-digital-transitions-the-requirement-for-conducting-preflight-in-flight-and-postflight-inspections-of-hardware-likely-persists-because-software-cannot-detect-physical-material-fatigue-or-mechanical-leaks-5">Mid (2036–2041): For the same organizational subsegments and regional crews, if current trajectories hold, the task of operating aircraft communications and detection equipment may shift from manual signal monitoring to the management of integrated software-defined overlays [3][4]. Extrapolating from current gaps in adversary-specific defenses, crew members in contested regions may increasingly perform real-time, iterative adjustments to electronic warfare parameters to mitigate adaptive regional threats [1]. For crews using tiltrotor platforms, the management of flight mode transitions may become a standardized, software-assisted procedure rather than a manual pilot-intensive task [8]. Despite these digital transitions, the requirement for conducting preflight, in-flight, and postflight inspections of hardware likely persists because software cannot detect physical material fatigue or mechanical leaks [5].</h2>
+
+<p><em>Hypothesis: In the mid term, situational awareness tasks for these subsegments may evolve into data-management functions, while safety-critical hardware inspections remain a manual requirement.</em></p>
+
+<h2 id="far-20462051-for-crew-members-in-high-threat-regional-theaters-rival-outcomes-depend-on-the-relative-evolution-of-autonomous-countermeasures-versus-adversary-electronic-warfare-1-one-plausible-outcome-is-that-the-operating-and-maintaining-of-aircraft-weapons-and-defensive-systems-becomes-a-supervisory-role-where-the-crew-manages-autonomous-response-cycles-a-competing-outcome-is-that-adversary-capabilities-evolve-to-spoof-deterministic-automation-necessitating-a-return-to-highly-variable-human-led-manual-flight-and-detection-profiles-to-ensure-mission-viability-1-the-long-term-efficacy-of-algorithmic-defenses-against-non-standard-regional-threats-remains-an-unresolvable-uncertainty-1-even-at-this-horizon-the-physical-complexity-of-conducting-cargo-and-personnel-drops-in-contested-environments-is-likely-to-resist-full-automation-due-to-the-unpredictable-variables-of-landing-zone-terrain">Far (2046–2051): For crew members in high-threat regional theaters, rival outcomes depend on the relative evolution of autonomous countermeasures versus adversary electronic warfare [1]. One plausible outcome is that the operating and maintaining of aircraft weapons and defensive systems becomes a supervisory role, where the crew manages autonomous response cycles. A competing outcome is that adversary capabilities evolve to spoof deterministic automation, necessitating a return to highly variable, human-led manual flight and detection profiles to ensure mission viability [1]. The long-term efficacy of algorithmic defenses against non-standard regional threats remains an unresolvable uncertainty [1]. Even at this horizon, the physical complexity of conducting cargo and personnel drops in contested environments is likely to resist full automation due to the unpredictable variables of landing zone terrain.</h2>
+
+<p><em>Hypothesis A: In the far term, crew members in high-threat regions may shift toward supervisory management of autonomous defensive systems.</em></p>
+
+<p><em>Hypothesis B (competing): In the far term, adversarial spoofing may force a return to manual, human-centric flight and detection profiles to ensure survivability.</em></p>
+
+<hr />
+
+<h2 id="references">References</h2>
+
+<ol>
+  <li>Breaking Defense (2026-04-01). “Air Force strategy to protect aircraft was designed for China. Will it work for Iran?” https://breakingdefense.com/2026/04/air-force-strategy-to-protect-aircraft-was-designed-for-china-will-it-work-for-iran/</li>
+  <li>Al Jazeera (2026-04-05). “Trump threatens ‘hell’ for Iran over Hormuz Strait as deadline approaches” https://www.aljazeera.com/news/2026/4/5/trump-threatens-hell-for-iran-over-hormuz-strait-as-deadline-approaches?traffic_source=rss</li>
+  <li>Breaking Defense (2026-04-06). “DIU wants ‘moving map’ to help aircrews with situational awareness” https://breakingdefense.com/2026/04/diu-wants-moving-map-to-help-aircrews-with-situational-awareness/</li>
+  <li>Defense One (2026-04-07). “As aircraft losses mount, Pentagon wants a software fix to see through the fog of war” https://www.defenseone.com/technology/2026/04/aircraft-losses-mount-pentagon-wants-software-fix-see-through-fog-war/412667/</li>
+  <li>Breaking Defense (2026-04-07). “Bell, M1 advance to final phase of Army’s Flight School Next competition” https://breakingdefense.com/2026/04/bell-m1-advance-to-final-phase-of-armys-flight-school-next-competition/</li>
+  <li>Defense One (2026-04-07). “Two firms picked as finalists for contract to outsource Army pilot training” https://www.defenseone.com/business/2026/04/two-firms-picked-finalists-for-contract-to-outsource-army-pilot-training/412691/</li>
+  <li>Defense One (2026-04-09). “The Pentagon claims ‘we control the sky’ over Iran. Experts say the air war isn’t that simple.” https://www.defenseone.com/threats/2026/04/pentagon-claims-we-control-sky-over-iran-experts-say-air-war-isnt-simple/412741/</li>
+  <li>Defense One (2026-04-13). “How the Army is preparing to bring its first tiltrotor aircraft online” https://www.defenseone.com/defense-systems/2026/04/how-army-preparing-bring-its-first-tiltrotor-aircraft-online/412808/</li>
+  <li>O*NET OnLine (2024). Task Statements for 55-3011.00. U.S. Department of Labor. https://www.onetonline.org/link/summary/55-3011.00</li>
+</ol>
+
+</main>
+
+<footer class="site-footer">
+All content generated by a local open-weight LLM · not manually edited · version history on <a href="https://github.com/santoshbs/workfield" style="color:var(--text-dim)">GitHub</a>
+</footer>
+
+<script>
+function toggleTheme() {
+  const h = document.documentElement;
+  const n = h.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+  h.setAttribute('data-theme', n);
+  localStorage.setItem('workfield-theme', n);
+}
+(function(){ const s = localStorage.getItem('workfield-theme'); if(s) document.documentElement.setAttribute('data-theme', s); })();
+
+// Convert [N] to superscript blue links
+(function(){
+  const el = document.getElementById('page-content');
+  if (!el) return;
+
+  const paragraphs = el.querySelectorAll('p');
+  paragraphs.forEach(p => {
+    if (p.closest && p.closest('.references-list')) return;
+    p.innerHTML = p.innerHTML.replace(/\[(\d+)\]/g, '<a class="ref-link" href="#ref-$1" id="cite-$1">$1</a>');
+  });
+
+  // Format References — make URLs clickable, add anchors
+  const allH2 = el.querySelectorAll('h2');
+  let refHeader = null;
+  allH2.forEach(h => {
+    if (h.textContent.trim().toLowerCase() === 'references') {
+      refHeader = h; h.id = 'references';
+    }
+  });
+
+  if (refHeader) {
+    let next = refHeader.nextElementSibling;
+    const wrapper = document.createElement('div');
+    wrapper.className = 'references-list';
+
+    while (next) {
+      const current = next;
+      next = next.nextElementSibling;
+      if (current.tagName === 'H2' || current.tagName === 'HR') break;
+      wrapper.appendChild(current);
+    }
+
+    // Add anchors to list items
+    const items = wrapper.querySelectorAll('li');
+    items.forEach((li, i) => {
+      li.id = 'ref-' + (i + 1);
+      // Make bare URLs clickable
+      li.innerHTML = li.innerHTML.replace(
+        /(https?:\/\/[^\s<]+)/g,
+        '<a href="$1" target="_blank" rel="noopener">$1</a>'
+      );
+    });
+
+    // If no ol/li, try to build from numbered lines
+    if (items.length === 0) {
+      const text = wrapper.innerHTML;
+      const lines = text.split(/<br\s*\/?>|\n/).filter(l => /^\s*\d+\./.test(l));
+      if (lines.length > 0) {
+        const ol = document.createElement('ol');
+        lines.forEach((line, i) => {
+          const li = document.createElement('li');
+          li.id = 'ref-' + (i + 1);
+          li.innerHTML = line.replace(/^\s*\d+\.\s*/, '').replace(
+            /(https?:\/\/[^\s<]+)/g,
+            '<a href="$1" target="_blank" rel="noopener">$1</a>'
+          );
+          ol.appendChild(li);
+        });
+        wrapper.innerHTML = '';
+        wrapper.appendChild(ol);
+      }
+    }
+
+    refHeader.after(wrapper);
+  }
+
+  // Strip RETIRE sections
+  let html = el.innerHTML;
+  const retireIdx = html.indexOf('RETIRE:');
+  if (retireIdx !== -1) {
+    const before = html.substring(0, retireIdx);
+    const lastTag = before.lastIndexOf('<');
+    if (lastTag !== -1) el.innerHTML = html.substring(0, lastTag);
+  }
+})();
+
+// Sortable table
+function sortTable(col) {
+  const table = document.getElementById('log-table');
+  if (!table) return;
+  const tbody = table.querySelector('tbody');
+  const rows = Array.from(tbody.querySelectorAll('tr'));
+  const dir = table.dataset.sortDir === 'asc' ? 'desc' : 'asc';
+  table.dataset.sortDir = dir;
+  rows.sort((a, b) => {
+    let va = a.children[col].dataset.val || a.children[col].textContent;
+    let vb = b.children[col].dataset.val || b.children[col].textContent;
+    if (!isNaN(va) && !isNaN(vb)) { va = Number(va); vb = Number(vb); }
+    if (va < vb) return dir === 'asc' ? -1 : 1;
+    if (va > vb) return dir === 'asc' ? 1 : -1;
+    return 0;
+  });
+  rows.forEach(r => tbody.appendChild(r));
+}
+</script>
+
+</body>
+</html>

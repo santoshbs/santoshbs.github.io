@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>the[AI]drift</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  :root, [data-theme="light"] {
+    --bg: #ffffff;
+    --bg-alt: #f6f8fa;
+    --fg: #1f2328;
+    --fg-dim: #656d76;
+    --fg-meta: #59636e;
+    --work: #0969a8;
+    --edu: #2563a8;
+    --work-hl: rgba(9,105,168,0.07);
+    --edu-hl: rgba(37,99,168,0.07);
+    --separator: #d1d9e0;
+    --separator-light: #e8ecf0;
+    --header-bg: #f6f8fa;
+    --footer-bg: #f6f8fa;
+    --overlay-bg: rgba(255,255,255,0.97);
+    --mono: 'IBM Plex Mono', 'Menlo', 'Consolas', monospace;
+    --font-size: 15px;
+    --line-height: 1.5;
+    --content-width: 820px;
+  }
+
+  [data-theme="dark"] {
+    --bg: #0a0a0a;
+    --bg-alt: #141414;
+    --fg: #33ff33;
+    --fg-dim: #1a9a1a;
+    --fg-meta: #22aa22;
+    --work: #33dddd;
+    --edu: #5ba4cf;
+    --work-hl: rgba(51,221,221,0.08);
+    --edu-hl: rgba(91,164,207,0.08);
+    --separator: #1a3a1a;
+    --separator-light: #1a2a1a;
+    --header-bg: #0a0a0a;
+    --footer-bg: #0a0a0a;
+    --overlay-bg: rgba(5,5,5,0.97);
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html, body {
+    background: var(--bg);
+    color: var(--fg);
+    font-family: var(--mono);
+    font-size: var(--font-size);
+    line-height: var(--line-height);
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+
+  /* ══ HEADER ══ */
+  .header {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 100;
+    background: var(--header-bg);
+    border-bottom: 1px solid var(--separator);
+    display: flex;
+    align-items: center;
+  }
+  .header-inner {
+    max-width: var(--content-width);
+    width: 100%;
+    margin: 0 auto;
+    padding: 8px 20px 6px 20px;
+  }
+  .header-line1 { margin-bottom: 2px; }
+  .header-title { font-weight: 700; font-size: 14px; color: var(--fg); letter-spacing: 0.02em; cursor: pointer; text-decoration: none; }
+  .header-title:hover { opacity: 0.7; }
+  .header-title .ai-bracket { color: var(--fg); }
+
+  .header-line2 { margin-bottom: 4px; }
+  .header-tagline { font-size: 11px; color: var(--fg-dim); font-weight: 400; }
+
+  .header-line3 { display: flex; align-items: center; gap: 18px; font-size: 11px; }
+  .header-line3 a { color: var(--fg-dim); text-decoration: none; transition: color 0.15s; }
+  .header-line3 a:hover { color: var(--fg); }
+  .header-spacer { flex: 1; }
+
+  /* ══ FOOTER ══ */
+  .footer {
+    position: fixed;
+    bottom: 0; left: 0; right: 0;
+    z-index: 100;
+    background: var(--footer-bg);
+    border-top: 1px solid var(--separator);
+    height: 32px;
+    display: flex;
+    align-items: center;
+  }
+  .footer-inner {
+    max-width: var(--content-width);
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    font-size: 11px;
+    color: var(--fg-dim);
+  }
+  .ft-count-item { letter-spacing: 0.02em; }
+  .ft-count-item .label { font-weight: 700; }
+  .ft-count-item.work .label { color: var(--work); }
+  .ft-count-item.edu .label { color: var(--edu); }
+  .ft-count-item .num { color: var(--fg); font-weight: 700; margin: 0 3px; }
+  .footer-spacer { flex: 1; }
+  .footer-note { font-size: 9px; color: var(--fg-dim); font-weight: 400; }
+
+  /* ══ MAIN ══ */
+  .main {
+    max-width: var(--content-width);
+    margin: 68px auto 48px auto;
+    padding: 0 20px;
+    min-height: calc(100vh - 100px);
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* ══ INTRO ══ */
+  .intro {
+    padding: 18px 0 28px 0;
+    border-bottom: 1px solid var(--separator-light);
+    margin-bottom: 28px;
+  }
+  .intro p {
+    font-size: 14px;
+    line-height: 1.7;
+    color: var(--fg);
+    max-width: 720px;
+  }
+  .intro p + p { margin-top: 10px; }
+  .intro .meta {
+    font-size: 11px;
+    color: var(--fg-dim);
+    margin-top: 14px;
+    letter-spacing: 0.02em;
+  }
+
+  /* ══ CARDS ══ */
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    margin-bottom: 32px;
+  }
+  .card {
+    display: block;
+    padding: 18px 20px 20px 20px;
+    border: 1px solid var(--separator);
+    border-radius: 0;
+    background: var(--bg);
+    text-decoration: none;
+    color: inherit;
+    transition: background 0.15s, border-color 0.15s;
+    position: relative;
+  }
+  .card:hover { border-color: var(--fg-dim); }
+  .card.work:hover { background: var(--work-hl); }
+  .card.edu:hover { background: var(--edu-hl); }
+
+  .card-field {
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    margin-bottom: 4px;
+  }
+  .card.work .card-field { color: var(--work); }
+  .card.edu .card-field { color: var(--edu); }
+
+  .card-tagline {
+    font-size: 12px;
+    color: var(--fg-dim);
+    line-height: 1.55;
+    margin-bottom: 14px;
+    min-height: 3.3em;
+  }
+
+  .card-sep {
+    height: 1px;
+    background: var(--separator-light);
+    margin-bottom: 12px;
+  }
+
+  .card-latest-label {
+    font-size: 10px;
+    font-weight: 600;
+    color: var(--fg-dim);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+  }
+  .card-latest-meta {
+    font-size: 11px;
+    color: var(--fg-dim);
+    margin-bottom: 3px;
+    letter-spacing: 0.02em;
+  }
+  .card-latest-title {
+    font-size: 13px;
+    color: var(--fg);
+    font-weight: 500;
+    line-height: 1.4;
+    overflow-wrap: anywhere;
+  }
+  .card-latest-empty {
+    font-size: 12px;
+    color: var(--fg-dim);
+    font-style: italic;
+  }
+
+  .card-arrow {
+    position: absolute;
+    bottom: 12px;
+    right: 14px;
+    font-size: 12px;
+    color: var(--fg-dim);
+    transition: transform 0.2s, color 0.15s;
+  }
+  .card:hover .card-arrow { transform: translateX(3px); color: var(--fg); }
+
+  /* ══ ABOUT OVERLAY ══ */
+  .overlay { display: none; position: fixed; inset: 0; z-index: 200; background: var(--overlay-bg); overflow-y: auto; padding: 60px 20px; }
+  .overlay.active { display: block; }
+  .overlay-close { position: fixed; top: 12px; right: 20px; background: none; border: 1px solid var(--separator); color: var(--fg-dim); font-family: var(--mono); font-size: 13px; padding: 4px 12px; cursor: pointer; z-index: 201; }
+  .overlay-close:hover { color: var(--fg); border-color: var(--fg-dim); }
+  .overlay-content { max-width: 680px; margin: 0 auto; }
+  .overlay-content h2 { font-size: 18px; font-weight: 700; margin: 0 0 20px 0; color: var(--fg); }
+  .overlay-content h3 { font-size: 15px; font-weight: 600; margin: 28px 0 10px 0; }
+  .overlay-content h3.work-h { color: var(--work); }
+  .overlay-content h3.edu-h { color: var(--edu); }
+  .overlay-content p { color: var(--fg-meta); font-size: 14px; line-height: 1.7; margin-bottom: 12px; }
+  .overlay-content a { color: var(--fg); text-decoration: underline; text-decoration-color: var(--fg-dim); }
+  .overlay-content a:hover { text-decoration-color: var(--fg); }
+  .overlay-content .about-meta { margin-top: 32px; padding-top: 16px; border-top: 1px solid var(--separator); font-size: 12px; color: var(--fg-dim); line-height: 1.8; }
+
+  @media (max-width: 860px) {
+    .cards { grid-template-columns: 1fr; gap: 12px; }
+    .card-tagline { min-height: 0; }
+  }
+  @media (max-width: 700px) {
+    :root { --font-size: 14px; }
+    .header-inner { padding: 6px 12px 4px 12px; }
+    .header-tagline { font-size: 10px; }
+    .header-line3 { font-size: 10px; gap: 14px; }
+    .main { padding: 0 14px; }
+    .overlay { padding: 40px 14px; }
+    .footer-note { display: none; }
+    .footer-inner { gap: 12px; font-size: 10px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ══ HEADER ══ -->
+<div class="header">
+  <div class="header-inner">
+    <div class="header-line1">
+      <a class="header-title" href="/theaidrift/">the<span class="ai-bracket">[AI]</span>drift</a>
+    </div>
+    <div class="header-line2">
+      <span class="header-tagline">An open-weight LLM's hypotheses on occupational and educational futures</span>
+    </div>
+    <div class="header-line3">
+      <a href="#" id="btn-about">about</a>
+      <a href="https://santoshbs.github.io/" target="_blank" rel="noopener">santoshbs</a>
+      <span class="header-spacer"></span>
+      <a href="#" id="btn-theme" title="Toggle theme">◐ theme</a>
+    </div>
+  </div>
+</div>
+
+<!-- ══ MAIN ══ -->
+<div class="main">
+
+  <div class="intro">
+    <p>the[AI]drift is two observation archives — living hypothesis logs where an open-weight language model (running locally) processes news signals and writes revisable hypotheses about how AI may be reshaping specific domains.</p>
+    <p>Each site watches a different institutional layer: <span style="color:var(--work);font-weight:500;">work</span>drift tracks occupations grounded in O*NET task data, and <span style="color:var(--edu);font-weight:500;">edu</span>drift tracks higher-education capabilities grounded in HERM.</p>
+    <p class="meta">Pick a layer to enter. Each site is self-contained — its own log, its own D3 graph, its own evolving hypotheses.</p>
+  </div>
+
+  <div class="cards">
+
+    <a class="card work" href="/theaidrift/work/">
+      <div class="card-field">work</div>
+      <div class="card-tagline">Living hypotheses on how AI may reshape specific occupations, grounded in O*NET task data and triggered by RSS signals.</div>
+      <div class="card-sep"></div>
+      <div class="card-latest-label">latest</div>
+      <div class="card-latest-meta" data-latest-meta="work">—</div>
+      <div class="card-latest-title" data-latest-title="work"><span class="card-latest-empty">loading…</span></div>
+      <span class="card-arrow">→</span>
+    </a>
+
+    <a class="card edu" href="/theaidrift/edu/">
+      <div class="card-field">edu</div>
+      <div class="card-tagline">Living hypotheses on how AI may reshape higher-education capabilities, grounded in HERM and triggered by sector signals.</div>
+      <div class="card-sep"></div>
+      <div class="card-latest-label">latest</div>
+      <div class="card-latest-meta" data-latest-meta="edu">—</div>
+      <div class="card-latest-title" data-latest-title="edu"><span class="card-latest-empty">loading…</span></div>
+      <span class="card-arrow">→</span>
+    </a>
+
+  </div>
+
+</div>
+
+<!-- ══ FOOTER ══ -->
+<div class="footer">
+  <div class="footer-inner">
+    <span class="ft-count-item work"><span class="label">work</span> · <span class="num" data-count="work">—</span></span>
+    <span class="ft-count-item edu"><span class="label">edu</span> · <span class="num" data-count="edu">—</span></span>
+    <span class="footer-spacer"></span>
+    <span class="footer-note">All hypotheses are the LLM's own, revisable as evidence accumulates.</span>
+  </div>
+</div>
+
+<!-- ══ ABOUT OVERLAY ══ -->
+<div class="overlay" id="about-overlay">
+  <button class="overlay-close" id="btn-close-about">esc · close</button>
+  <div class="overlay-content">
+    <h2>about the[AI]drift</h2>
+    <p>the[AI]drift is two observation archives — field sites where an open-weight language model processes public news signals and maintains revisable hypotheses about specific domains. The model is not a prediction engine; it is a hypothesis engine. Every page is a working memo grounded in dated, cited evidence, not a forecast.</p>
+    <h3 class="work-h">work</h3>
+    <p>Observes occupational futures grounded in the O*NET task catalogue. For each occupation, the LLM reads triggering RSS signals and produces a near/mid/far horizon analysis with named mechanisms, scope constraints, and competing hypotheses. Task references are paraphrased to the class of similar occupations, never to specific employers or countries.</p>
+    <h3 class="edu-h">edu</h3>
+    <p>Observes higher-education capabilities grounded in the Higher Education Reference Model (HERM). For each capability, the LLM reads triggering signals about AI in higher education and produces the same near/mid/far analysis structure, framed for the class of similar institutions.</p>
+    <div class="about-meta"><p>Architecture: Jekyll + GitHub Pages · open-weight LLMs on Ollama<br>Each page is a revisable hypothesis memo — every revision is a commit.<br>Both sites run autonomously.<br><br>Built by <a href="https://santoshbs.github.io/">Santosh Srinivas</a></p></div>
+  </div>
+</div>
+
+<script>
+(function() {
+  'use strict';
+
+  const FEEDS = [
+    { key: 'work', url: '/theaidrift/work/occupations/feed.json' },
+    { key: 'edu',  url: '/theaidrift/edu/capabilities/feed.json' },
+  ];
+
+  function esc(s) { const d = document.createElement('div'); d.textContent = s; return d.innerHTML; }
+  function fmtDate(d) { return d && !isNaN(d) ? `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}` : '--/--/--'; }
+
+  async function fetchFeed(feed) {
+    try {
+      const res = await fetch(feed.url);
+      if (!res.ok) throw new Error(res.status);
+      const data = await res.json();
+      const items = Array.isArray(data) ? data : (data.items || data.posts || data.entries || []);
+      return { key: feed.key, items };
+    } catch (e) {
+      return { key: feed.key, items: [], error: true };
+    }
+  }
+
+  function latestOf(items) {
+    if (!items || !items.length) return null;
+    // Drift feed items have 'revised' (most recent) or 'created' as date-like strings.
+    const keyOf = (it) => it.revised || it.created || it.date || '';
+    const sorted = items.slice().sort((a, b) => {
+      const da = new Date(keyOf(a));
+      const db = new Date(keyOf(b));
+      return da - db;
+    });
+    return sorted[sorted.length - 1];
+  }
+
+  function renderCard(feedKey, items) {
+    const countEl = document.querySelector(`[data-count="${feedKey}"]`);
+    const metaEl  = document.querySelector(`[data-latest-meta="${feedKey}"]`);
+    const titleEl = document.querySelector(`[data-latest-title="${feedKey}"]`);
+
+    if (countEl) countEl.textContent = items.length || 0;
+
+    const latest = latestOf(items);
+    if (!latest) {
+      if (metaEl)  metaEl.textContent = '—';
+      if (titleEl) titleEl.innerHTML = '<span class="card-latest-empty">no entries yet</span>';
+      return;
+    }
+
+    const dateStr = latest.revised || latest.created || '';
+    const date = dateStr ? new Date(dateStr) : null;
+    const code  = latest.code || '';
+    const title = latest.title || '(untitled)';
+
+    const parts = [];
+    if (code) parts.push(code);
+    if (date) parts.push(`revised ${fmtDate(date)}`);
+    if (metaEl)  metaEl.textContent = parts.join(' · ') || '—';
+    if (titleEl) titleEl.textContent = title;
+  }
+
+  async function init() {
+    const results = await Promise.all(FEEDS.map(fetchFeed));
+    results.forEach(r => renderCard(r.key, r.items));
+  }
+
+  // ── About overlay ──
+  const aboutOverlay = document.getElementById('about-overlay');
+  document.getElementById('btn-about').addEventListener('click', e => { e.preventDefault(); aboutOverlay.classList.add('active'); });
+  document.getElementById('btn-close-about').addEventListener('click', () => aboutOverlay.classList.remove('active'));
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') aboutOverlay.classList.remove('active');
+    if (e.key === '?' && !aboutOverlay.classList.contains('active')) { e.preventDefault(); aboutOverlay.classList.add('active'); }
+  });
+  aboutOverlay.addEventListener('click', e => { if (e.target === aboutOverlay) aboutOverlay.classList.remove('active'); });
+
+  // ── Theme toggle (distinct key from theaifield so the two hubs don't fight) ──
+  function setTheme(theme) {
+    document.documentElement.setAttribute('data-theme', theme);
+    localStorage.setItem('aidrift-theme', theme);
+  }
+  const savedTheme = localStorage.getItem('aidrift-theme') || 'dark';
+  setTheme(savedTheme);
+  document.getElementById('btn-theme').addEventListener('click', e => {
+    e.preventDefault();
+    const current = document.documentElement.getAttribute('data-theme') || 'light';
+    setTheme(current === 'light' ? 'dark' : 'light');
+  });
+
+  init();
+})();
+</script>
+</body>
+</html>

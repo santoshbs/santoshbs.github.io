@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Materials Scientists</title>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Source+Code+Pro:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+:root, [data-theme="light"] {
+  --bg: #fafaf8;
+  --surface: #f0efe9;
+  --text: #7a7870;
+  --text-dim: #9a9890;
+  --text-bright: #1a1a18;
+  --text-hyp: #111;
+  --border: #d8d6ce;
+  --accent: #5a7a20;
+  --cite-color: #2563eb;
+  --link: #5a7a20;
+  --font: 'IBM Plex Mono', monospace; #Source Code Pro, monospace; #
+}
+[data-theme="dark"] {
+  --bg: #0e0e0c;
+  --surface: #1a1a18;
+  --text: #8a8680;
+  --text-dim: #686560;
+  --text-bright: #d4d0c8;
+  --text-hyp: #e8e4dc;
+  --border: #2e2e28;
+  --accent: #8fa830;
+  --cite-color: #60a5fa;
+  --link: #8fa830;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: var(--bg); color: var(--text); font-family: var(--font); font-size: 13px; line-height: 1.7; }
+a { color: var(--link); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* Header */
+.site-header {
+  max-width: 700px; margin: 0 auto; padding: 14px 20px;
+  display: flex; justify-content: space-between; align-items: baseline;
+  border-bottom: 1px solid var(--border);
+}
+.site-name { font-size: 13px; font-weight: 500; color: var(--accent); letter-spacing: 1px; }
+.site-name a { color: var(--accent); }
+.site-tagline { font-size: 11px; color: var(--text-dim); }
+.site-nav { font-size: 12px; display: flex; align-items: baseline; gap: 14px; }
+.site-nav a { color: var(--text-dim); }
+.site-nav a:hover { color: var(--accent); }
+.theme-toggle { cursor: pointer; color: var(--text-dim); font-size: 12px; border: none; background: none; font-family: var(--font); }
+.theme-toggle:hover { color: var(--accent); }
+
+/* Content */
+.content { max-width: 700px; margin: 0 auto; padding: 28px 20px 40px; }
+.content h1 { font-size: 20px; font-weight: 500; color: var(--text-bright); line-height: 1.4; margin-bottom: 2px; }
+.content h1 + p { font-size: 12px; color: var(--text-dim); margin-bottom: 2px; }
+
+/* Manuscript metadata block */
+.content .manuscript-meta,
+.content h1 + p + p {
+  font-size: 11px; color: var(--text-dim); margin-bottom: 2px; line-height: 1.6;
+}
+
+/* Horizon sections */
+.content h2 {
+  font-size: 12px; font-weight: 500; color: var(--accent);
+  text-transform: uppercase; letter-spacing: 1.5px;
+  margin-top: 28px; margin-bottom: 10px;
+  padding-top: 18px; border-top: 1px solid var(--border);
+}
+.content h2:first-of-type { border-top: none; padding-top: 0; }
+
+.content strong { color: var(--text-bright); font-weight: 500; }
+
+/* Argument paragraphs — gray */
+.content p { margin-bottom: 10px; max-width: 660px; color: var(--text); }
+
+/* Hypothesis — high contrast, draws attention */
+.content em {
+  color: var(--text-hyp);
+  font-weight: 400;
+}
+
+/* Superscript reference links — blue */
+.ref-link {
+  font-size: 10px; vertical-align: super;
+  color: var(--cite-color);
+  cursor: pointer; text-decoration: none; font-weight: 600;
+}
+.ref-link:hover { text-decoration: underline; }
+
+/* HR */
+.content hr { border: none; border-top: 1px solid var(--border); margin: 24px 0 14px; }
+
+/* References section */
+.content h2#references { margin-top: 28px; }
+.references-list { font-size: 12px; color: var(--text-dim); line-height: 1.7; }
+.references-list ol { padding-left: 24px; margin: 8px 0; }
+.references-list li { margin-bottom: 8px; }
+.references-list li:target { background: var(--surface); padding: 4px 6px; border-radius: 3px; }
+.references-list a { color: var(--cite-color); word-break: break-all; }
+
+/* Tables — index */
+.log-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+.log-table th {
+  text-align: left; padding: 6px 8px; border-bottom: 2px solid var(--border);
+  font-size: 11px; text-transform: uppercase; letter-spacing: 1px;
+  color: var(--accent); cursor: pointer; user-select: none;
+}
+.log-table th:hover { text-decoration: underline; }
+.log-table td { padding: 6px 8px; border-bottom: 1px solid var(--border); }
+.log-table td a { color: var(--link); }
+.log-table .dim { color: var(--text-dim); font-size: 12px; }
+
+/* Lists */
+.content ul { list-style: none; }
+.occ-meta { font-size: 12px; color: var(--text-dim); }
+.llm-notice { font-size: 11px; color: var(--text-dim); margin: 8px 0 16px; font-style: italic; }
+
+/* Colophon */
+.colophon { font-size: 10px; color: var(--text-dim); margin-top: 16px; }
+
+/* Footer — single line */
+.site-footer {
+  max-width: 700px; margin: 0 auto; padding: 12px 20px;
+  border-top: 1px solid var(--border);
+  font-size: 10px; color: var(--text-dim); font-style: italic;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+
+@media (max-width: 640px) {
+  .content { padding: 16px 12px 40px; }
+  .content h1 { font-size: 17px; }
+  .site-footer { white-space: normal; }
+}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div>
+    <div class="site-name"><a href="/theaidrift/work/">workfield</a></div>
+    <div class="site-tagline">an LLM's living hypothesis log on occupational futures</div>
+  </div>
+  <nav class="site-nav">
+    <a href="/theaidrift/work/">index</a>
+    <a href="/theaidrift/work/about">about</a>
+    <button class="theme-toggle" onclick="toggleTheme()" title="Toggle theme">◐</button>
+  </nav>
+</header>
+
+<main class="content" id="page-content">
+<h1 id="materials-scientists">Materials Scientists</h1>
+<p>O*NET Code: 19-2032.00</p>
+
+<p>Created: 2026-04-03 (Model: qwen3.5:27b)
+Last revised: 2026-04-11 (Model: gemma4:31b-it-q8_0)</p>
+
+<hr />
+
+<h2 id="near-20262031-for-materials-scientists-in-research-and-industrial-settings-broadly-initial-evidence-suggests-ai-may-automate-the-identification-of-atomic-defects-while-conducting-research-on-the-structures-and-properties-of-materials-1-this-mechanism-involves-using-machine-learning-to-detect-structural-anomalies-which-shifts-the-task-of-performing-computer-modeling-toward-the-validation-of-ai-generated-defect-maps-1-in-these-same-broad-settings-the-development-of-fire-resistant-panels-from-sawdust-indicates-that-determining-ways-to-strengthen-or-combine-materials-is-shifting-toward-the-use-of-waste-derived-sustainable-feedstocks-2-this-impacts-the-task-of-researching-methods-of-processing-forming-and-firing-materials-to-meet-safety-specifications-2-furthermore-the-creation-of-memory-devices-capable-of-operating-at-700c-suggests-a-shift-in-how-scientists-recommend-materials-for-reliable-performance-in-various-environments-specifically-through-the-design-of-ultra-durable-material-stacks-for-extreme-temperature-electronics-5-for-a-subset-of-workers-in-the-energy-storage-sector-the-push-toward-solid-state-batteries-involves-researching-and-developing-solid-electrolytes-to-replace-liquid-electrolytes-4-additionally-for-a-subset-of-workers-focusing-on-biomolecular-materials-the-application-of-robotics-principles-to-dna-folding-techniques-enables-the-development-of-new-materials-with-specific-properties-such-as-programmable-molecular-scale-devices-3-testing-individual-parts-to-ensure-that-manufacturer-and-governmental-quality-and-safety-standards-are-met-is-unlikely-to-change-yet-because-regulatory-certification-continues-to-mandate-empirical-physical-verification-2">Near (2026–2031): For materials scientists in research and industrial settings broadly, initial evidence suggests AI may automate the identification of atomic defects while conducting research on the structures and properties of materials [1]. This mechanism involves using machine learning to detect structural anomalies, which shifts the task of performing computer modeling toward the validation of AI-generated defect maps [1]. In these same broad settings, the development of fire-resistant panels from sawdust indicates that determining ways to strengthen or combine materials is shifting toward the use of waste-derived, sustainable feedstocks [2]. This impacts the task of researching methods of processing, forming, and firing materials to meet safety specifications [2]. Furthermore, the creation of memory devices capable of operating at 700°C suggests a shift in how scientists recommend materials for reliable performance in various environments, specifically through the design of ultra-durable material stacks for extreme-temperature electronics [5]. For a subset of workers in the energy storage sector, the push toward solid-state batteries involves researching and developing solid electrolytes to replace liquid electrolytes [4]. Additionally, for a subset of workers focusing on biomolecular materials, the application of robotics principles to DNA folding techniques enables the development of new materials with specific properties, such as programmable molecular-scale devices [3]. Testing individual parts to ensure that manufacturer and governmental quality and safety standards are met is unlikely to change yet because regulatory certification continues to mandate empirical, physical verification [2].</h2>
+
+<p><em>Hypothesis: In the near term, materials scientists may use AI for structural defect analysis and explore waste-based composites and ultra-durable electronics, while subsegments specializing in energy storage and biomaterials develop solid-state electrolytes and programmable DNA-based structures.</em></p>
+
+<h2 id="mid-20362041-for-materials-scientists-in-research-and-industrial-settings-if-current-trajectories-in-computational-modeling-and-sustainable-material-development-hold-the-task-of-planning-laboratory-experiments-may-shift-toward-a-virtual-first-workflow-12-computational-screening-for-atomic-defects-and-sustainable-composite-compatibility-could-reduce-the-volume-of-physical-prototypes-required-to-develop-new-materials-with-specific-properties-12-for-those-in-the-energy-storage-subsegment-the-transition-to-solid-state-electrolytes-may-alter-the-established-methods-of-processing-and-firing-materials-as-liquid-handling-infrastructure-becomes-obsolete-4-however-conferring-with-customers-to-determine-how-to-tailor-materials-to-their-needs-will-likely-persist-as-a-human-led-activity-because-translating-qualitative-user-needs-into-technical-specifications-requires-contextual-judgment-2">Mid (2036–2041): For materials scientists in research and industrial settings, if current trajectories in computational modeling and sustainable material development hold, the task of planning laboratory experiments may shift toward a virtual-first workflow [1][2]. Computational screening for atomic defects and sustainable composite compatibility could reduce the volume of physical prototypes required to develop new materials with specific properties [1][2]. For those in the energy storage subsegment, the transition to solid-state electrolytes may alter the established methods of processing and firing materials as liquid-handling infrastructure becomes obsolete [4]. However, conferring with customers to determine how to tailor materials to their needs will likely persist as a human-led activity because translating qualitative user needs into technical specifications requires contextual judgment [2].</h2>
+
+<p><em>Hypothesis: In the mid term, computational analysis may serve as a standard preliminary filter for material discovery across the occupation, while subsegment-specific transitions in energy storage may phase out liquid-electrolyte processing.</em></p>
+
+<h2 id="far-20462051-for-the-same-research-and-industrial-settings-the-occupational-structure-may-diverge-based-on-the-evolution-of-safety-regulations-one-plausible-outcome-is-that-ai-driven-discovery-cycles-become-the-primary-mechanism-for-developing-new-materials-shifting-the-scientists-role-toward-managing-the-constraints-of-autonomous-discovery-loops-1-a-competing-outcome-is-that-stringent-safety-mandates-for-critical-infrastructure-such-as-fire-resistant-building-materials-or-high-capacity-batteries-may-restrict-the-adoption-of-ai-designed-materials-necessitating-a-permanent-reliance-on-traditional-slow-cycle-empirical-testing-24-a-significant-uncertainty-remains-whether-computational-models-can-accurately-predict-the-long-term-environmental-degradation-of-synthetic-materials-over-several-decades-the-fundamental-study-of-chemical-properties-and-atomic-structures-resists-complete-automation-because-physical-anomalies-in-synthesis-often-require-human-led-intervention-to-resolve-1">Far (2046–2051): For the same research and industrial settings, the occupational structure may diverge based on the evolution of safety regulations. One plausible outcome is that AI-driven discovery cycles become the primary mechanism for developing new materials, shifting the scientist’s role toward managing the constraints of autonomous discovery loops [1]. A competing outcome is that stringent safety mandates for critical infrastructure, such as fire-resistant building materials or high-capacity batteries, may restrict the adoption of AI-designed materials, necessitating a permanent reliance on traditional, slow-cycle empirical testing [2][4]. A significant uncertainty remains whether computational models can accurately predict the long-term environmental degradation of synthetic materials over several decades. The fundamental study of chemical properties and atomic structures resists complete automation because physical anomalies in synthesis often require human-led intervention to resolve [1].</h2>
+
+<p><em>Hypothesis A: In the far term, the role of the materials scientist may transition primarily toward the orchestration and constraint-management of autonomous AI discovery systems.</em></p>
+
+<p><em>Hypothesis B (competing): In the far term, a permanent reliance on empirical, slow-cycle testing may persist for critical-safety materials due to regulatory resistance to AI-generated specifications.</em></p>
+
+<hr />
+
+<h2 id="references">References</h2>
+
+<ol>
+  <li>MIT News (2026). “MIT researchers use AI to uncover atomic defects in materials.” https://news.mit.edu/2026/mit-researchers-use-ai-uncover-atomic-defects-materials-0330</li>
+  <li>Construction Dive (2026). “Researchers turn sawdust into fire-resistant building panels.” https://www.constructiondive.com/news/research-sawdust-fire-resistant-building-material/816589/</li>
+  <li>ScienceDaily (2026). “DNA robots could deliver drugs and hunt viruses inside your body.” https://www.sciencedaily.com/releases/2026/03/260331001104.htm</li>
+  <li>Scmp China Business (2026). “Safer, longer-range EVs in sight as China accelerates solid-state battery push.” https://www.scmp.com/business/china-business/article/3349348/safer-longer-range-evs-sight-china-accelerates-solid-state-battery-push?utm_source=rss_feed</li>
+  <li>ScienceDaily (2026). “This new chip survives 1300°F (700°C) and could change AI forever.” https://www.sciencedaily.com/releases/2026/04/260406192904.htm</li>
+  <li>O*NET OnLine (2024). Task Statements for 19-2032.00. U.S. Department of Labor. https://www.onetonline.org/link/summary/19-2032.00</li>
+</ol>
+
+</main>
+
+<footer class="site-footer">
+All content generated by a local open-weight LLM · not manually edited · version history on <a href="https://github.com/santoshbs/workfield" style="color:var(--text-dim)">GitHub</a>
+</footer>
+
+<script>
+function toggleTheme() {
+  const h = document.documentElement;
+  const n = h.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+  h.setAttribute('data-theme', n);
+  localStorage.setItem('workfield-theme', n);
+}
+(function(){ const s = localStorage.getItem('workfield-theme'); if(s) document.documentElement.setAttribute('data-theme', s); })();
+
+// Convert [N] to superscript blue links
+(function(){
+  const el = document.getElementById('page-content');
+  if (!el) return;
+
+  const paragraphs = el.querySelectorAll('p');
+  paragraphs.forEach(p => {
+    if (p.closest && p.closest('.references-list')) return;
+    p.innerHTML = p.innerHTML.replace(/\[(\d+)\]/g, '<a class="ref-link" href="#ref-$1" id="cite-$1">$1</a>');
+  });
+
+  // Format References — make URLs clickable, add anchors
+  const allH2 = el.querySelectorAll('h2');
+  let refHeader = null;
+  allH2.forEach(h => {
+    if (h.textContent.trim().toLowerCase() === 'references') {
+      refHeader = h; h.id = 'references';
+    }
+  });
+
+  if (refHeader) {
+    let next = refHeader.nextElementSibling;
+    const wrapper = document.createElement('div');
+    wrapper.className = 'references-list';
+
+    while (next) {
+      const current = next;
+      next = next.nextElementSibling;
+      if (current.tagName === 'H2' || current.tagName === 'HR') break;
+      wrapper.appendChild(current);
+    }
+
+    // Add anchors to list items
+    const items = wrapper.querySelectorAll('li');
+    items.forEach((li, i) => {
+      li.id = 'ref-' + (i + 1);
+      // Make bare URLs clickable
+      li.innerHTML = li.innerHTML.replace(
+        /(https?:\/\/[^\s<]+)/g,
+        '<a href="$1" target="_blank" rel="noopener">$1</a>'
+      );
+    });
+
+    // If no ol/li, try to build from numbered lines
+    if (items.length === 0) {
+      const text = wrapper.innerHTML;
+      const lines = text.split(/<br\s*\/?>|\n/).filter(l => /^\s*\d+\./.test(l));
+      if (lines.length > 0) {
+        const ol = document.createElement('ol');
+        lines.forEach((line, i) => {
+          const li = document.createElement('li');
+          li.id = 'ref-' + (i + 1);
+          li.innerHTML = line.replace(/^\s*\d+\.\s*/, '').replace(
+            /(https?:\/\/[^\s<]+)/g,
+            '<a href="$1" target="_blank" rel="noopener">$1</a>'
+          );
+          ol.appendChild(li);
+        });
+        wrapper.innerHTML = '';
+        wrapper.appendChild(ol);
+      }
+    }
+
+    refHeader.after(wrapper);
+  }
+
+  // Strip RETIRE sections
+  let html = el.innerHTML;
+  const retireIdx = html.indexOf('RETIRE:');
+  if (retireIdx !== -1) {
+    const before = html.substring(0, retireIdx);
+    const lastTag = before.lastIndexOf('<');
+    if (lastTag !== -1) el.innerHTML = html.substring(0, lastTag);
+  }
+})();
+
+// Sortable table
+function sortTable(col) {
+  const table = document.getElementById('log-table');
+  if (!table) return;
+  const tbody = table.querySelector('tbody');
+  const rows = Array.from(tbody.querySelectorAll('tr'));
+  const dir = table.dataset.sortDir === 'asc' ? 'desc' : 'asc';
+  table.dataset.sortDir = dir;
+  rows.sort((a, b) => {
+    let va = a.children[col].dataset.val || a.children[col].textContent;
+    let vb = b.children[col].dataset.val || b.children[col].textContent;
+    if (!isNaN(va) && !isNaN(vb)) { va = Number(va); vb = Number(vb); }
+    if (va < vb) return dir === 'asc' ? -1 : 1;
+    if (va > vb) return dir === 'asc' ? 1 : -1;
+    return 0;
+  });
+  rows.forEach(r => tbody.appendChild(r));
+}
+</script>
+
+</body>
+</html>
