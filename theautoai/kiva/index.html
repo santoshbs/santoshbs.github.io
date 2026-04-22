@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>theAuto[Kiva]</title>
+<script>
+  (function () {
+    try {
+      var pref = localStorage.getItem("autokiva-theme");
+      if (pref === "light") document.documentElement.classList.add("theme-light");
+      else if (pref === "dark") document.documentElement.classList.add("theme-dark");
+    } catch (e) {}
+  })();
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --bg:#ffffff;--bg-code:#f6f5f3;--code-tab:#ecebe7;--rule:#ececea;--rule-soft:#f3f2ef;
+    --fg:#18181b;--fg-2:#3f3f46;--fg-dim:#71717a;--fg-dimer:#a1a1aa;
+    --c-faster:#16a34a;--c-slower:#dc2626;--c-women:#9333ea;--c-men:#2563eb;--c-interaction:#ea580c;
+    --sans:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif;
+    --mono:"JetBrains Mono","SF Mono",Menlo,Consolas,monospace;
+  }
+  .theme-dark{--bg:#0f0f0f;--bg-code:#1a1a1a;--code-tab:#232323;--rule:#232323;--rule-soft:#1c1c1c;--fg:#ededed;--fg-2:#c8c8c8;--fg-dim:#8a8a8a;--fg-dimer:#5a5a5a}
+  @media(prefers-color-scheme:dark){:root:not(.theme-light):not(.theme-dark){--bg:#0f0f0f;--bg-code:#1a1a1a;--code-tab:#232323;--rule:#232323;--rule-soft:#1c1c1c;--fg:#ededed;--fg-2:#c8c8c8;--fg-dim:#8a8a8a;--fg-dimer:#5a5a5a}}
+  .acronym{letter-spacing:0}*{box-sizing:border-box}html{-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+  body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--sans);font-size:16px;line-height:1.6;font-feature-settings:"ss01","cv11"}
+  a{color:var(--fg);text-decoration:none}a:hover{text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px}
+  .page{max-width:640px;margin:0 auto;padding:64px 24px 120px}
+  .nav{display:flex;align-items:baseline;gap:20px;margin-bottom:80px;font-size:14px}
+  .nav .brand{font-weight:600;color:var(--fg);letter-spacing:-0.005em}
+  .nav .tagline{color:var(--fg-dim);font-size:13px;flex:1;text-align:center;font-weight:400}
+  .nav a{color:var(--fg-dim)}.nav a:hover{color:var(--fg);text-decoration:none}
+  .nav .theme-toggle{background:none;border:none;color:var(--fg-dim);font:inherit;font-size:14px;padding:0;cursor:pointer;line-height:1}
+  .nav .theme-toggle:hover{color:var(--fg)}
+  .about{font-size:16px;line-height:1.65;color:var(--fg-2);margin:0 0 48px;max-width:56ch}
+  .about-link{color:var(--fg-dim);text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px;cursor:pointer}
+  .about-link:hover{color:var(--fg)}
+  .stats{display:flex;gap:32px;flex-wrap:wrap;margin-bottom:48px;font-family:var(--mono);font-size:13px}
+  .stat-val{font-size:28px;font-weight:600;color:var(--fg);letter-spacing:-0.02em}
+  .stat-lbl{color:var(--fg-dim);margin-top:2px}
+  .section-label{font-size:14px;color:var(--fg-dim);margin:0 0 16px;font-weight:400}
+  .claim{margin-bottom:20px;padding-left:20px;border-left:3px solid var(--rule)}
+  .claim.faster{border-left-color:var(--c-faster)}.claim.slower{border-left-color:var(--c-slower)}
+  .claim.gendered_women{border-left-color:var(--c-women)}.claim.gendered_men{border-left-color:var(--c-men)}
+  .claim.interaction{border-left-color:var(--c-interaction)}
+  .claim-title{font-size:16px;font-weight:600;color:var(--fg);line-height:1.4;margin:0 0 4px;letter-spacing:-0.005em}
+  .claim-body{font-size:15px;color:var(--fg-2);line-height:1.55;margin:0 0 4px}
+  .claim-meta{font-family:var(--mono);font-size:12px;color:var(--fg-dimer)}
+  .conf{display:inline-block;font-family:var(--mono);font-size:11px;font-weight:500;padding:1px 6px;border-radius:3px;background:var(--bg-code);color:var(--fg-dim)}
+  .bucket-label{font-size:13px;font-weight:500;color:var(--fg-dim);text-transform:uppercase;letter-spacing:0.04em;margin:28px 0 12px}
+  .bucket-label.faster{color:var(--c-faster)}.bucket-label.slower{color:var(--c-slower)}
+  .bucket-label.gendered_women{color:var(--c-women)}.bucket-label.gendered_men{color:var(--c-men)}
+  .bucket-label.interaction{color:var(--c-interaction)}
+  .puzzle{font-size:15px;color:var(--fg-2);line-height:1.55;margin-bottom:12px;padding-left:20px;border-left:2px solid var(--rule-soft)}
+  .puzzle-batch{font-family:var(--mono);font-size:11px;color:var(--fg-dimer)}
+  .retired{margin-bottom:10px}.retired-title{font-size:14px;font-weight:500;color:var(--fg-dim)}
+  .retired-meta{font-family:var(--mono);font-size:11px;color:var(--fg-dimer)}
+  .code-window{background:var(--bg-code);border-radius:6px;margin:0 0 12px;overflow:hidden;border:1px solid var(--rule)}
+  .code-window .tab{background:var(--code-tab);padding:6px 14px;font-family:var(--mono);font-size:11px;color:var(--fg-dim);letter-spacing:0.02em;border-bottom:1px solid var(--rule);display:flex;justify-content:space-between;align-items:center}
+  .code-window .tab-label{color:var(--fg-2);font-weight:500}.code-window .tab-meta{color:var(--fg-dim)}
+  .empty{color:var(--fg-dim);font-style:italic;padding:24px 0}
+  .footer{margin-top:96px;padding-top:20px;font-size:13px;color:var(--fg-dim);display:flex;justify-content:space-between}
+  .overlay{display:none;position:fixed;top:0;left:0;right:0;bottom:0;z-index:100;background:var(--bg);overflow-y:auto}
+  .overlay.open{display:block}
+  .overlay-inner{max-width:640px;margin:0 auto;padding:64px 24px 120px}
+  .overlay-close{font-family:var(--sans);font-size:14px;color:var(--fg-dim);background:none;border:none;cursor:pointer;padding:0;margin-bottom:32px;display:inline-block}
+  .overlay-close:hover{color:var(--fg)}
+  .overlay-title{font-size:28px;font-weight:700;line-height:1.2;color:var(--fg);margin:0 0 24px;letter-spacing:-0.025em}
+  .overlay-body{font-size:15.5px;line-height:1.7;color:var(--fg-2)}
+  .overlay-body p{margin:0 0 20px}
+  .overlay-body h2{font-size:20px;font-weight:700;color:var(--fg);margin:40px 0 16px;letter-spacing:-0.015em}
+  .overlay-body .cite{font-size:13px;color:var(--fg-dimer);font-style:italic}
+  @media(max-width:640px){body{font-size:15px}.page{padding:40px 18px 80px}.nav{margin-bottom:56px;gap:16px;flex-wrap:wrap}.stats{gap:20px}.stat-val{font-size:22px}.claim-title{font-size:15px}.claim-body{font-size:14px}.overlay-inner{padding:40px 18px 80px}.overlay-title{font-size:22px}}
+</style>
+</head>
+<body>
+<div class="page">
+  <nav class="nav">
+    <a href="#" class="brand">the<span class="acronym">Auto[Kiva]</span></a>
+    <span class="tagline">An autonomous reader of Kiva pitch text.</span>
+    <button type="button" class="theme-toggle" id="themeToggle" aria-label="Toggle theme">◐</button>
+    <a href="https://santoshbs.github.io" target="_blank" rel="noopener">santoshbs</a>
+  </nav>
+  <main>
+    <p class="about">A local language model reads sector-matched pairs of <a href="https://www.kiva.org" target="_blank">Kiva</a> microloan pitches — one fast-funded, one slow-funded, matched on sector and loan size but not on gender — and builds a theory of what textual features predict faster or slower funding, and how gender interacts with those features. No human curation between reading and posting. <span class="about-link" onclick="document.getElementById('about-overlay').classList.add('open')">Read more.</span></p>
+    <div class="stats" id="stats"></div>
+    <div id="theory"><div class="empty">loading…</div></div>
+  </main>
+  <footer class="footer">
+    <span>© 2026 Santosh B. Srinivas</span>
+    <span>autokiva v3</span>
+  </footer>
+</div>
+
+<div class="overlay" id="about-overlay">
+  <div class="overlay-inner">
+    <button class="overlay-close" onclick="document.getElementById('about-overlay').classList.remove('open')">← Back</button>
+    <h1 class="overlay-title">About the<span class="acronym">Auto[Kiva]</span></h1>
+    <div class="overlay-body">
+      <h2>What this is</h2>
+      <p>the<span class="acronym">Auto[Kiva]</span> is a streaming system for abductive theory generation. A local language model reads matched pairs of <a href="https://www.kiva.org" target="_blank">Kiva</a> microloan pitches and builds a public, evolving theory of what textual features predict faster or slower funding, and how gender interacts with those features. No human curates or edits the theory between reading and posting.</p>
+      <h2>The design</h2>
+      <p>Each batch draws 8 matched pairs of loans. Both loans in a pair are in the same sector with similar loan amounts, but may differ in gender and country. One funded fast (top speed quartile), one funded slow (bottom speed quartile). A pair might be two women, two men, or one of each. The model sees the gender of both loans and reasons about whether text or gender is driving the speed difference.</p>
+      <p>Women fund faster than men roughly 75% of the time on Kiva. This is the known baseline, not a discovery. The model's job is to find what in the text predicts speed beyond that baseline, and how textual features interact with gender.</p>
+      <h2>What counts as a textual feature</h2>
+      <p>Anything in the pitch text that a lender could read. This includes how the pitch is written (length, framing, word choice, narrative structure) and what it chooses to mention (prior repayment, children's ages, institutional affiliations, specific products, future goals). Metadata not in the pitch — loan amount, photo quality — is excluded. Sector is controlled by the matching; country and gender are visible to the model as covariates.</p>
+      <h2>The proposition buckets</h2>
+      <p>Propositions are filed in five buckets: faster (helps regardless of gender), slower (hurts regardless of gender), women-specific, men-specific, and interaction (works differently by gender). Gender-general propositions need evidence from multiple pair types. Interaction propositions have the highest evidence bar.</p>
+      <h2>The confidence system</h2>
+      <p>New propositions start at 0.55–0.65. Confidence above 0.70 is earned through multiple batches of supporting evidence. Propositions below 0.35 are auto-retired. Every 10 batches, a consolidation round fires where the model reviews its own theory. These confidence scores are heuristic triage signals, not posterior probabilities or p-values.</p>
+      <h2>Methodological positioning</h2>
+      <p>the<span class="acronym">Auto[Kiva]</span> implements a streaming form of analytic induction over matched textual contrasts. The model generates testable propositions from paired cases, then revises a public rule set as new cases arrive. The closest parallels are analytic induction, the constant comparative method from grounded theory, and the logic of online rule learning. The graveyard is a built-in pruning mechanism, not a failure mode.</p>
+      <p>Surviving propositions should be interpreted as disciplined exploratory hypotheses, not formal tests of causal mechanisms. The distinctive contribution is methodological: theory revision itself becomes observable, serialized, and auditable.</p>
+      <h2>Limitations</h2>
+      <p>The same model both proposes and evaluates propositions. New matched pairs provide a partially adversarial evidence stream, but the tribunal of judgment is not independent. Confidence scores are uncalibrated and there is no formal error control.</p>
+      <h2>Infrastructure</h2>
+      <p>A collector polls the Kiva GraphQL API hourly. A runner draws matched pairs every hour. Model: gemma4:31b-it-q8_0 via Ollama. Matching, sampling, and confidence bookkeeping are computed by locked Python code that the model cannot modify. Site published via GitHub Pages.</p>
+      <p class="cite">Santosh B. Srinivas · 2026</p>
+    </div>
+  </div>
+</div>
+
+<script>
+(function(){var b=document.getElementById("themeToggle");if(!b)return;var r=document.documentElement;function e(){if(r.classList.contains("theme-light"))return"light";if(r.classList.contains("theme-dark"))return"dark";return window.matchMedia("(prefers-color-scheme:dark)").matches?"dark":"light"}function g(){var t=e();b.textContent=t==="dark"?"☀":"☾";b.title=t==="dark"?"Switch to light":"Switch to dark"}b.addEventListener("click",function(){var t=e();r.classList.remove("theme-light","theme-dark");var n=t==="dark"?"light":"dark";r.classList.add("theme-"+n);try{localStorage.setItem("autokiva-theme",n)}catch(x){}g()});g()})();
+
+function esc(s){if(s==null)return"";return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;")}
+
+async function loadFP(){try{var r=await fetch('fingerprint.json?t='+Date.now());if(!r.ok)return null;return await r.json()}catch(e){return null}}
+async function loadTraj(){try{var r=await fetch('trajectory.json?t='+Date.now());if(!r.ok)return null;return await r.json()}catch(e){return null}}
+
+function renderStats(fp){
+  var el=document.getElementById('stats');
+  if(!fp){el.innerHTML='';return}
+  var items=[[fp.batches_seen||0,'batches'],[fp.loans_seen||0,'loans read'],[Object.keys(fp.claims||{}).length,'propositions'],[Object.keys(fp.retired||{}).length,'retired']];
+  el.innerHTML=items.map(function(x){return'<div><div class="stat-val">'+x[0]+'</div><div class="stat-lbl">'+x[1]+'</div></div>'}).join('');
+}
+
+function renderTheory(fp,traj){
+  var el=document.getElementById('theory');
+  if(!fp){el.innerHTML='<div class="empty">No data yet.</div>';return}
+  var claims=Object.values(fp.claims||{});
+  var puzzles=Object.values(fp.puzzles||{});
+  var retired=Object.values(fp.retired||{});
+  var h='';
+
+  h+='<p class="section-label">Current propositions</p>';
+  if(!claims.length){h+='<div class="empty">No propositions yet.</div>'}
+  else{
+    var buckets=['faster','slower','gendered_women','gendered_men','interaction'];
+    var labels={faster:'Faster funding (gender-general)',slower:'Slower funding (gender-general)',gendered_women:'Women-specific',gendered_men:'Men-specific',interaction:'Gender interaction'};
+    for(var bi=0;bi<buckets.length;bi++){var b=buckets[bi];
+      var inB=claims.filter(function(c){return c.bucket===b}).sort(function(a,c){return c.confidence-a.confidence});
+      if(!inB.length)continue;
+      h+='<p class="bucket-label '+b+'">'+labels[b]+'</p>';
+      for(var ci=0;ci<inB.length;ci++){var c=inB[ci];
+        h+='<div class="claim '+b+'"><div class="claim-title">'+esc(c.title)+'</div><div class="claim-body">'+esc(c.body||'')+'</div><div class="claim-meta"><span class="conf">'+(c.confidence*100).toFixed(0)+'%</span> batch '+(c.first_seen_batch||'?')+'→'+(c.last_updated_batch||'?')+'</div></div>'}}}
+
+  if(traj&&traj.length>1){h+='<p class="section-label" style="margin-top:48px">Proposition trajectory</p>';h+=renderTraj(traj)}
+
+  h+='<p class="section-label" style="margin-top:48px">Puzzles</p>';
+  if(!puzzles.length){h+='<div class="empty">No puzzles yet.</div>'}
+  else{var puzzlesId='puzzles-'+Date.now();for(var pi=0;pi<puzzles.length;pi++){var p=puzzles[pi];var hidden=pi>=10?' style="display:none" data-puzzles="'+puzzlesId+'"':'';h+='<div class="puzzle"'+hidden+'>'+esc(p.text||p.body||'')+' <span class="puzzle-batch">batch '+(p.first_seen_batch||'?')+'</span></div>'}if(puzzles.length>10)h+='<div class="empty" id="'+puzzlesId+'-toggle" style="cursor:pointer" onclick="document.querySelectorAll(\'[data-puzzles='+puzzlesId+']\').forEach(function(e){e.style.display=\'block\'});document.getElementById(\''+puzzlesId+'-toggle\').style.display=\'none\'">Show all '+puzzles.length+' puzzles</div>'}
+
+  h+='<p class="section-label" style="margin-top:48px">Graveyard</p>';
+  if(!retired.length){h+='<div class="empty">Nothing retired yet.</div>'}
+  else{retired.sort(function(a,b){return(b.retired_batch||0)-(a.retired_batch||0)});var graveyardId='graveyard-'+Date.now();for(var ri=0;ri<retired.length;ri++){var r=retired[ri];var hidden=ri>=10?' style="display:none" data-graveyard="'+graveyardId+'"':'';h+='<div class="retired"'+hidden+'><span class="retired-title">'+esc(r.title)+'</span> <span class="retired-meta">· retired batch '+(r.retired_batch||'?')+', held '+(r.was_believed_batches||'?')+' batches</span></div>'}if(retired.length>10)h+='<div class="empty" id="'+graveyardId+'-toggle" style="cursor:pointer" onclick="document.querySelectorAll(\'[data-graveyard='+graveyardId+']\').forEach(function(e){e.style.display=\'block\'});document.getElementById(\''+graveyardId+'-toggle\').style.display=\'none\'">Show all '+retired.length+' retired propositions</div>'}
+
+  if(fp.watching_for){h+='<p class="section-label" style="margin-top:48px">Watching for next</p>';h+='<p style="font-size:15px;color:var(--fg-2);font-style:italic">'+esc(fp.watching_for)+'</p>'}
+  el.innerHTML=h;
+}
+
+function renderTraj(traj){
+  var maxB=0,minB=99999;for(var i=0;i<traj.length;i++){var t=traj[i];var db=t.death_batch||t.last_batch||0;var bb=t.birth_batch||0;if(db>maxB)maxB=db;if(bb<minB)minB=bb}
+  if(maxB<=minB)return'';
+  var W=Math.min(600,Math.max(400,(maxB-minB)*14+60));var rowH=20;var padT=24;var H=padT+traj.length*rowH+16;
+  function x(b){return 8+((b-minB)/(maxB-minB))*(W-24)}
+  var colors={faster:'#16a34a',slower:'#dc2626',gendered_women:'#9333ea',gendered_men:'#2563eb',interaction:'#ea580c'};
+  var svg='<svg width="100%" viewBox="0 0 '+W+' '+H+'" style="font-family:var(--mono);max-width:'+W+'px">';
+  for(var b=minB;b<=maxB;b+=Math.max(1,Math.floor((maxB-minB)/8))){svg+='<text x="'+x(b)+'" y="14" font-size="9" fill="var(--fg-dimer)" text-anchor="middle">'+b+'</text>';svg+='<line x1="'+x(b)+'" y1="18" x2="'+x(b)+'" y2="'+(H-8)+'" stroke="var(--rule)" stroke-width="0.5"/>'}
+  for(var i=0;i<traj.length;i++){var c=traj[i];var y=padT+i*rowH;var x0=x(c.birth_batch);var x1=x(c.death_batch||c.last_batch||maxB);var col=colors[c.bucket]||'var(--fg-dim)';var op=c.alive?1.0:0.35;
+    svg+='<rect x="'+x0+'" y="'+y+'" width="'+Math.max(3,x1-x0)+'" height="'+(rowH-4)+'" rx="2" fill="'+col+'" opacity="'+op+'"/>';
+    if(x1-x0>28){var conf=c.peak_confidence||c.confidence||0;svg+='<text x="'+(x0+4)+'" y="'+(y+rowH-7)+'" font-size="8" fill="white" opacity="0.85">'+(conf*100).toFixed(0)+'%</text>'}}
+  svg+='</svg>';
+  return'<div class="code-window"><div class="tab"><span class="tab-label">proposition lifespans</span><span class="tab-meta">batch '+minB+'–'+maxB+'</span></div><div style="padding:8px;overflow-x:auto">'+svg+'</div></div>';
+}
+
+async function init(){var fp=await loadFP();var traj=await loadTraj();renderStats(fp);renderTheory(fp,traj)}
+init();setInterval(init,300000);
+</script>
+</body>
+</html>
