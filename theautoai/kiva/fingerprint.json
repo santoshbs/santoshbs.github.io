@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
-  "batches_seen": 23,
-  "loans_seen": 368,
-  "last_updated": "2026-04-22T22:54:19.615800+00:00",
-  "watching_for": "I am watching for more sanitation loans to see if the 'general store' penalty persists and for more high-tech environmental pitches to see if the 'environmental penalty' extends beyond the sanitation sector.",
+  "batches_seen": 24,
+  "loans_seen": 384,
+  "last_updated": "2026-04-22T23:54:58.990045+00:00",
+  "watching_for": "I am watching for more sanitation loans to see if the 'fish-related business' penalty is a consistent signal and to resolve the contradictory evidence regarding 'pig fattening' in that sector.",
   "claims": {
     "pitches-that-mention-owning-a-home-or-land-fund-faster-regar": {
       "id": "pitches-that-mention-owning-a-home-or-land-fund-faster-regar",
@@ -16,7 +16,7 @@
       ],
       "confidence": 0.95,
       "first_seen_batch": 2,
-      "last_updated_batch": 22,
+      "last_updated_batch": 23,
       "confidence_history": [
         [
           2,
@@ -105,6 +105,10 @@
         [
           22,
           0.95
+        ],
+        [
+          23,
+          0.95
         ]
       ]
     },
@@ -122,7 +126,7 @@
       ],
       "confidence": 0.98,
       "first_seen_batch": 2,
-      "last_updated_batch": 22,
+      "last_updated_batch": 23,
       "confidence_history": [
         [
           2,
@@ -207,6 +211,10 @@
         [
           22,
           0.98
+        ],
+        [
+          23,
+          0.98
         ]
       ]
     },
@@ -223,7 +231,7 @@
       ],
       "confidence": 1.0,
       "first_seen_batch": 3,
-      "last_updated_batch": 22,
+      "last_updated_batch": 23,
       "confidence_history": [
         [
           3,
@@ -316,6 +324,10 @@
         [
           22,
           1.0
+        ],
+        [
+          23,
+          1.0
         ]
       ]
     },
@@ -333,7 +345,7 @@
       ],
       "confidence": 1.0,
       "first_seen_batch": 9,
-      "last_updated_batch": 22,
+      "last_updated_batch": 23,
       "confidence_history": [
         [
           9,
@@ -398,6 +410,10 @@
         [
           22,
           1.0
+        ],
+        [
+          23,
+          1.0
         ]
       ]
     },
@@ -409,9 +425,9 @@
       "supporting_loans": [
         3162022
       ],
-      "confidence": 0.88,
+      "confidence": 0.9,
       "first_seen_batch": 13,
-      "last_updated_batch": 22,
+      "last_updated_batch": 23,
       "confidence_history": [
         [
           13,
@@ -448,51 +464,10 @@
         [
           22,
           0.88
-        ]
-      ]
-    },
-    "pitches-for-sanitation-loans-that-mention-environmental-prot": {
-      "id": "pitches-for-sanitation-loans-that-mention-environmental-prot",
-      "bucket": "slower",
-      "title": "Pitches for sanitation loans that mention environmental protection or community benefits fund slower than those focusing solely on family health risks.",
-      "body": "In multiple pairs, pitches that expanded the benefit of a sanitary toilet to include neighbors or the environment funded significantly slower than those that kept the focus on immediate family health hazards. This suggests lenders may perceive broader social framing as less urgent or less authentic in the sanitation sector.",
-      "supporting_loans": [
-        3157148,
-        3157150,
-        3157152,
-        3157154
-      ],
-      "confidence": 0.6,
-      "first_seen_batch": 16,
-      "last_updated_batch": 22,
-      "confidence_history": [
-        [
-          16,
-          0.65
         ],
         [
-          17,
-          0.75
-        ],
-        [
-          18,
-          0.85
-        ],
-        [
-          19,
-          0.85
-        ],
-        [
-          20,
-          0.85
-        ],
-        [
-          21,
-          0.5
-        ],
-        [
-          22,
-          0.6
+          23,
+          0.9
         ]
       ]
     },
@@ -502,9 +477,9 @@
       "title": "Pitches follow a funding speed hierarchy based on textual register, where unique personal narratives fund fastest, followed by emotive templates, with purely factual or generic pitches funding slowest, regardless of gender.",
       "body": "Lenders respond most strongly to high-specificity unique narratives. When those are absent, 'emotive templates' (e.g., 'working tirelessly') outperform bare-bones factual or generic pitches, suggesting a tiered preference for perceived effort and personality.",
       "supporting_loans": [],
-      "confidence": 0.65,
+      "confidence": 0.7,
       "first_seen_batch": 19,
-      "last_updated_batch": 22,
+      "last_updated_batch": 23,
       "confidence_history": [
         [
           19,
@@ -521,26 +496,29 @@
         [
           22,
           0.65
+        ],
+        [
+          23,
+          0.7
         ]
       ]
     },
-    "pitches-for-sanitation-loans-that-identify-the-borrower-s-bu": {
-      "id": "pitches-for-sanitation-loans-that-identify-the-borrower-s-bu",
+    "pitches-for-sanitation-loans-that-identify-the-borrower-s-bu-2": {
+      "id": "pitches-for-sanitation-loans-that-identify-the-borrower-s-bu-2",
       "bucket": "slower",
-      "title": "Pitches for sanitation loans that identify the borrower's business as a 'general store' fund slower than those identifying other business types, regardless of gender.",
-      "body": "In multiple Philippines-based sanitation loans, 'general store' owners fund slower than 'pig fattening' or 'dried fish' sellers, even when the sanitation-specific text is identical. This suggests a sector-specific preference or a perceived lack of urgency associated with general store owners in this context.",
+      "title": "Pitches for sanitation loans that identify the borrower's business as fish-related fund slower than other business types, regardless of gender.",
+      "body": "In multiple sanitation pairs, borrowers with fishing or fish-vending businesses funded significantly slower than those with vegetable or food vending, even when other template text was identical.",
       "supporting_loans": [
-        3161974,
-        3157158,
-        3157141,
-        3157349
+        3157378,
+        3157383,
+        3157487
       ],
       "confidence": 0.6,
-      "first_seen_batch": 22,
-      "last_updated_batch": 22,
+      "first_seen_batch": 23,
+      "last_updated_batch": 23,
       "confidence_history": [
         [
-          22,
+          23,
           0.6
         ]
       ]
@@ -681,6 +659,11 @@
       "id": "in-pair-8-the-slow-pitch-l3161336-is-an-environ",
       "body": "In Pair 8, the slow pitch (L3161336) is an environmental project (biodigester) and funds slower than a simple manure request. This suggests the 'environmental penalty' observed in sanitation loans might be a general trend for high-tech or abstract environmental framing across sectors.",
       "first_seen_batch": 22
+    },
+    "in-sanitation-loans-pig-fattening-was-previousl": {
+      "id": "in-sanitation-loans-pig-fattening-was-previousl",
+      "body": "In sanitation loans, 'pig fattening' was previously seen as a booster, but in Pairs 5 and 8 it was the slower loan. Is the business-type effect in sanitation loans highly volatile or dependent on the partner?",
+      "first_seen_batch": 23
     }
   },
   "retired": {
@@ -767,6 +750,20 @@
       "retrospective": "Retired to make room for the 'General Store' sanitation penalty, which showed stronger consistency in this batch. The social repayment claim remained orthogonal for several batches.",
       "retired_batch": 22,
       "was_believed_batches": 2
+    },
+    "pitches-for-sanitation-loans-that-mention-environmental-prot": {
+      "id": "pitches-for-sanitation-loans-that-mention-environmental-prot",
+      "title": "Pitches for sanitation loans that mention environmental protection or community benefits fund slower than those focusing solely on family health risks.",
+      "retrospective": "I believed environmental framing was a penalty in sanitation. This batch showed it present in the majority of fast sanitation loans, suggesting it is neutral or a booster.",
+      "retired_batch": 23,
+      "was_believed_batches": 7
+    },
+    "pitches-for-sanitation-loans-that-identify-the-borrower-s-bu": {
+      "id": "pitches-for-sanitation-loans-that-identify-the-borrower-s-bu",
+      "title": "Pitches for sanitation loans that identify the borrower's business as a 'general store' fund slower than those identifying other business types, regardless of gender.",
+      "retrospective": "I believed 'general store' was a slow signal in sanitation. Pair 8 proves this wrong with a 0.6h funding time for a general store.",
+      "retired_batch": 23,
+      "was_believed_batches": 1
     }
   }
 }
