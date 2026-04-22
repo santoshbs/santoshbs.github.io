@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
-  "batches_seen": 17,
-  "loans_seen": 272,
-  "last_updated": "2026-04-22T17:29:06.147206+00:00",
-  "watching_for": "I am looking for more cross-gender pairs to see if narrative specificity (as seen in the Kenyan and Ecuadorian loans) can overcome the gender baseline for men.",
+  "batches_seen": 18,
+  "loans_seen": 288,
+  "last_updated": "2026-04-22T18:08:39.669521+00:00",
+  "watching_for": "I am looking for more cross-gender pairs to test if the 'Unique Narrative' booster is strong enough to consistently overcome the gender baseline for men.",
   "claims": {
     "pitches-that-mention-owning-a-home-or-land-fund-faster-regar": {
       "id": "pitches-that-mention-owning-a-home-or-land-fund-faster-regar",
@@ -16,7 +16,7 @@
       ],
       "confidence": 0.88,
       "first_seen_batch": 2,
-      "last_updated_batch": 16,
+      "last_updated_batch": 17,
       "confidence_history": [
         [
           2,
@@ -84,6 +84,10 @@
         ],
         [
           16,
+          0.88
+        ],
+        [
+          17,
           0.88
         ]
       ]
@@ -189,9 +193,9 @@
         3158882,
         3162232
       ],
-      "confidence": 0.99,
+      "confidence": 1.0,
       "first_seen_batch": 3,
-      "last_updated_batch": 16,
+      "last_updated_batch": 17,
       "confidence_history": [
         [
           3,
@@ -260,6 +264,10 @@
         [
           16,
           0.99
+        ],
+        [
+          17,
+          1.0
         ]
       ]
     },
@@ -275,9 +283,9 @@
         3158882,
         3162232
       ],
-      "confidence": 0.99,
+      "confidence": 1.0,
       "first_seen_batch": 9,
-      "last_updated_batch": 16,
+      "last_updated_batch": 17,
       "confidence_history": [
         [
           9,
@@ -318,6 +326,10 @@
         [
           16,
           0.99
+        ],
+        [
+          17,
+          1.0
         ]
       ]
     },
@@ -329,9 +341,9 @@
       "supporting_loans": [
         3162022
       ],
-      "confidence": 0.72,
+      "confidence": 0.78,
       "first_seen_batch": 13,
-      "last_updated_batch": 16,
+      "last_updated_batch": 17,
       "confidence_history": [
         [
           13,
@@ -348,35 +360,10 @@
         [
           16,
           0.72
-        ]
-      ]
-    },
-    "pitches-that-use-generic-highly-emotive-phrases-such-as-work": {
-      "id": "pitches-that-use-generic-highly-emotive-phrases-such-as-work",
-      "bucket": "slower",
-      "title": "Pitches that use generic, highly emotive phrases such as 'working tirelessly toward the attainment of her dream' fund slower, regardless of gender.",
-      "body": "These phrases appear to be markers of a specific type of emotive template that lenders perceive as low-information or generic, contrasting with purely factual or highly specific pitches.",
-      "supporting_loans": [
-        3159149,
-        3157460,
-        3156651,
-        3157124
-      ],
-      "confidence": 0.82,
-      "first_seen_batch": 14,
-      "last_updated_batch": 16,
-      "confidence_history": [
-        [
-          14,
-          0.65
         ],
         [
-          15,
-          0.75
-        ],
-        [
-          16,
-          0.82
+          17,
+          0.78
         ]
       ]
     },
@@ -391,13 +378,17 @@
         3157152,
         3157154
       ],
-      "confidence": 0.65,
+      "confidence": 0.75,
       "first_seen_batch": 16,
-      "last_updated_batch": 16,
+      "last_updated_batch": 17,
       "confidence_history": [
         [
           16,
           0.65
+        ],
+        [
+          17,
+          0.75
         ]
       ]
     }
@@ -492,6 +483,16 @@
       "id": "in-pair-6-two-pitches-using-the-same-working-tir",
       "body": "In Pair 6, two pitches using the same 'working tirelessly' emotive template differed only in their goal: 'secure the future of her family' (Fast) vs 'expand her business' (Slow). This suggests that within a templated pitch, family-centric goals may be more effective than business-centric goals.",
       "first_seen_batch": 16
+    },
+    "the-emotive-template-hierarchy-the-working-tirel": {
+      "id": "the-emotive-template-hierarchy-the-working-tirel",
+      "body": "The Emotive Template Hierarchy: The 'working tirelessly' template is faster than factual demographics (Pair 1) and simple dreams (Pair 6), but significantly slower than unique narratives (Pair 7). This suggests a tiered system of lender preference: Unique Narrative > Emotive Template > Factual/Generic.",
+      "first_seen_batch": 17
+    },
+    "in-pair-3-secure-her-family-s-livelihood-vague": {
+      "id": "in-pair-3-secure-her-family-s-livelihood-vague",
+      "body": "In Pair 3, 'secure her family's livelihood' (vague) beat 'send her children to college' (specific). This contradicts the general specificity booster, suggesting that certain 'template goals' like college may be perceived as less urgent or more generic than family survival.",
+      "first_seen_batch": 17
     }
   },
   "retired": {
@@ -564,6 +565,13 @@
       "retrospective": "Consolidated into the broader quantification claim to increase parsimony.",
       "retired_batch": 13,
       "was_believed_batches": 5
+    },
+    "pitches-that-use-generic-highly-emotive-phrases-such-as-work": {
+      "id": "pitches-that-use-generic-highly-emotive-phrases-such-as-work",
+      "title": "Pitches that use generic, highly emotive phrases such as 'working tirelessly toward the attainment of her dream' fund slower, regardless of gender.",
+      "retrospective": "I believed the 'working tirelessly' template was a slow signal. This batch shows it actually beats bare-bones factual pitches, though it still loses to high-specificity narratives. It is a 'middle' signal, not a 'slow' one.",
+      "retired_batch": 17,
+      "was_believed_batches": 3
     }
   }
 }
