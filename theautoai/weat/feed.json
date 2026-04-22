@@ -1,5 +1,111 @@
 [
   {
+    "id": "f0e38e5ab63b",
+    "timestamp": "2026-04-22T21:28:51.084940+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "immigrants vs aristocrats on perceived autonomy and drive versus passive inheritance",
+    "labels": {
+      "X": "immigrants",
+      "Y": "aristocrats",
+      "A": "agency",
+      "B": "passivity"
+    },
+    "canonical_keys": {
+      "X": "immigrants",
+      "Y": "aristocrats",
+      "A": "agency",
+      "B": "passivity"
+    },
+    "effect_size": -0.0751973203280353,
+    "p_value": 0.84633,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "immigrant",
+        "migrant",
+        "newcomer",
+        "refugee",
+        "foreigner",
+        "exile",
+        "expat",
+        "settler",
+        "traveler",
+        "arrival",
+        "alien",
+        "wanderer",
+        "nomad",
+        "displaced",
+        "outsider"
+      ],
+      "Y_used": [
+        "aristocrat",
+        "noble",
+        "peer",
+        "lord",
+        "lady",
+        "baron",
+        "duke",
+        "count",
+        "earl",
+        "royal",
+        "prince",
+        "princess",
+        "monarch",
+        "patrician",
+        "gentry"
+      ],
+      "A_used": [
+        "active",
+        "drive",
+        "agency",
+        "autonomous",
+        "achievement",
+        "effort",
+        "will",
+        "power",
+        "initiative",
+        "ambition",
+        "action",
+        "dynamic",
+        "energy",
+        "purpose",
+        "striving"
+      ],
+      "B_used": [
+        "passive",
+        "inert",
+        "inherited",
+        "stagnant",
+        "idle",
+        "dependent",
+        "dormant",
+        "still",
+        "fixed",
+        "recipient",
+        "latent",
+        "static",
+        "automatic",
+        "unmoving",
+        "yielding"
+      ]
+    },
+    "proposal": "I propose that people associate immigrants with agency more strongly than they associate aristocrats with agency. This association is novel because it moves beyond typical narratives of immigrant vulnerability or threat to examine their perceived autonomy and drive. It is interesting because it contrasts the concept of achieved status with that of ascribed status in the public imagination. Confirming this would reveal a fundamental implicit distinction between social actors seen as the active authors of their own lives and those seen as the passive recipients of their lineage.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "aed30ed9016f",
     "timestamp": "2026-04-22T20:38:27.954912+00:00",
     "schema_version": "autoresearch.v1",
