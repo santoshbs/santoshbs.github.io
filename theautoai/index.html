@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>theAuto[AI]</title>
+<script>
+  (function () {
+    try {
+      var pref = localStorage.getItem("theautoai-theme");
+      if (pref === "light") document.documentElement.classList.add("theme-light");
+      else if (pref === "dark") document.documentElement.classList.add("theme-dark");
+    } catch (e) {}
+  })();
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --bg:#ffffff;--bg-card:#fafaf8;--rule:#ececea;--rule-soft:#f3f2ef;
+    --fg:#18181b;--fg-2:#3f3f46;--fg-dim:#71717a;--fg-dimer:#a1a1aa;
+    --accent-kiva:#9333ea;
+    --accent-weat:#2563eb;
+    --sans:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif;
+    --mono:"JetBrains Mono","SF Mono",Menlo,Consolas,monospace;
+  }
+  .theme-dark{--bg:#0f0f0f;--bg-card:#1a1a1a;--rule:#232323;--rule-soft:#1c1c1c;--fg:#ededed;--fg-2:#c8c8c8;--fg-dim:#8a8a8a;--fg-dimer:#5a5a5a}
+  @media(prefers-color-scheme:dark){:root:not(.theme-light):not(.theme-dark){--bg:#0f0f0f;--bg-card:#1a1a1a;--rule:#232323;--rule-soft:#1c1c1c;--fg:#ededed;--fg-2:#c8c8c8;--fg-dim:#8a8a8a;--fg-dimer:#5a5a5a}}
+  .acronym{letter-spacing:0}
+  *{box-sizing:border-box}
+  html{-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+  body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--sans);font-size:16px;line-height:1.6;font-feature-settings:"ss01","cv11"}
+  a{color:inherit}
+  .page{max-width:760px;margin:0 auto;padding:32px 24px 80px}
+  .nav{display:flex;align-items:center;gap:16px;padding:0 0 32px;border-bottom:1px solid var(--rule);margin-bottom:40px}
+  .brand{font-weight:700;font-size:18px;text-decoration:none;color:var(--fg)}
+  .brand:hover{opacity:.7}
+  .tagline{color:var(--fg-dim);font-size:14px;flex:1}
+  .nav a:not(.brand){color:var(--fg-dim);font-size:13px;text-decoration:none}
+  .nav a:not(.brand):hover{color:var(--fg)}
+  .theme-toggle{background:none;border:none;color:var(--fg-dim);cursor:pointer;font-size:16px;padding:4px;line-height:1}
+  .theme-toggle:hover{color:var(--fg)}
+  h1{display:none}
+  p.about{font-size:16px;color:var(--fg-2);line-height:1.7;margin:0 0 48px;max-width:620px}
+  .cards{display:flex;flex-direction:column;gap:20px;margin-bottom:64px}
+  .card{display:block;text-decoration:none;color:inherit;padding:24px 28px;background:var(--bg-card);border:1px solid var(--rule);border-left:3px solid var(--accent);border-radius:6px;transition:border-color 120ms,transform 120ms}
+  .card:hover{border-color:var(--fg-dim);transform:translateY(-1px)}
+  .card:hover .card-title{color:var(--accent)}
+  .card-kiva{--accent:var(--accent-kiva)}
+  .card-weat{--accent:var(--accent-weat)}
+  .card-title{font-size:20px;font-weight:600;margin:0 0 4px;color:var(--fg);transition:color 120ms}
+  .card-subtitle{font-family:var(--mono);font-size:12px;color:var(--fg-dim);margin:0 0 12px;letter-spacing:.02em}
+  .card-desc{font-size:14px;color:var(--fg-2);line-height:1.6;margin:0}
+  footer{padding-top:32px;border-top:1px solid var(--rule);display:flex;justify-content:space-between;align-items:baseline;gap:24px;flex-wrap:wrap;font-size:12px;color:var(--fg-dim)}
+  footer .see-also{font-family:var(--mono);letter-spacing:.02em}
+  footer .see-also a{color:var(--fg-dim);text-decoration:none;border-bottom:1px solid var(--rule)}
+  footer .see-also a:hover{color:var(--fg);border-color:var(--fg-dim)}
+</style>
+</head>
+<body>
+<div class="page">
+  <nav class="nav">
+    <a href="#" class="brand">the<span class="acronym">Auto[AI]</span></a>
+    <span class="tagline">Autonomous observatories.</span>
+    <button type="button" class="theme-toggle" id="themeToggle" aria-label="Toggle theme">◐</button>
+    <a href="https://santoshbs.github.io" target="_blank" rel="noopener">santoshbs</a>
+  </nav>
+
+  <main>
+    <p class="about">
+      A set of live autonomous research loops. A local language model proposes, a locked Python
+      script measures, and the output publishes without human curation between reading and posting.
+      Each observatory runs continuously on local hardware.
+    </p>
+
+    <div class="cards">
+      <a class="card card-kiva" href="./kiva/">
+        <h2 class="card-title">the<span class="acronym">Auto[Kiva]</span></h2>
+        <div class="card-subtitle">streaming analytic induction · Kiva microloan pitches</div>
+        <p class="card-desc">A local model reads sector-matched pairs of Kiva microloan pitches and builds a public, evolving theory of what textual features predict faster or slower funding, and how gender interacts with those features.</p>
+      </a>
+
+      <a class="card card-weat" href="./weat/">
+        <h2 class="card-title">the<span class="acronym">Auto[WEAT]</span></h2>
+        <div class="card-subtitle">word embedding association tests · reverse chronological</div>
+        <p class="card-desc">A local model proposes WEAT-style hypotheses (Caliskan, Bryson &amp; Narayanan, 2017); a locked Python script computes them against Dolma 2024 vectors. Every tick publishes a new differential association with effect size and p-value.</p>
+      </a>
+    </div>
+
+    <footer>
+      <span>© 2026 Santosh B. Srinivas</span>
+      <span class="see-also">
+        see also ·
+        <a href="https://santoshbs.github.io/theaidrift/work/">the[work]drift</a>
+        ·
+        <a href="https://santoshbs.github.io/theaidrift/edu/">the[edu]drift</a>
+        ·
+        <a href="https://santoshbs.github.io/theaifield/">theAIField</a>
+      </span>
+    </footer>
+  </main>
+</div>
+<script>
+(function(){
+  var btn = document.getElementById("themeToggle");
+  if(!btn) return;
+  var root = document.documentElement;
+  function effective(){
+    if(root.classList.contains("theme-light")) return "light";
+    if(root.classList.contains("theme-dark")) return "dark";
+    return window.matchMedia("(prefers-color-scheme:dark)").matches ? "dark" : "light";
+  }
+  function render(){
+    var t = effective();
+    btn.textContent = t === "dark" ? "☀" : "☾";
+    btn.title = t === "dark" ? "Switch to light" : "Switch to dark";
+  }
+  btn.addEventListener("click", function(){
+    var cur = effective();
+    root.classList.remove("theme-light","theme-dark");
+    var next = cur === "dark" ? "light" : "dark";
+    root.classList.add("theme-" + next);
+    try { localStorage.setItem("theautoai-theme", next); } catch(e){}
+    render();
+  });
+  render();
+})();
+</script>
+</body>
+</html>
