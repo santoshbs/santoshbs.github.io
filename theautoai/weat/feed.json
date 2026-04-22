@@ -1,5 +1,111 @@
 [
   {
+    "id": "42f5a307a752",
+    "timestamp": "2026-04-22T17:36:43.262643+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "artists vs writers on social orientation",
+    "labels": {
+      "X": "artists",
+      "Y": "writers",
+      "A": "extroversion",
+      "B": "introversion"
+    },
+    "canonical_keys": {
+      "X": "artists",
+      "Y": "writers",
+      "A": "extroversion",
+      "B": "introversion"
+    },
+    "effect_size": 0.48827070369076087,
+    "p_value": 0.19391,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "painter",
+        "sculptor",
+        "musician",
+        "dancer",
+        "actor",
+        "performer",
+        "illustrator",
+        "potter",
+        "singer",
+        "composer",
+        "sketcher",
+        "engraver",
+        "muralist",
+        "calligrapher",
+        "carver"
+      ],
+      "Y_used": [
+        "novelist",
+        "poet",
+        "author",
+        "journalist",
+        "blogger",
+        "scribe",
+        "columnist",
+        "biographer",
+        "playwright",
+        "essayist",
+        "editor",
+        "chronicler",
+        "lyricist",
+        "pamphleteer",
+        "reporter"
+      ],
+      "A_used": [
+        "outgoing",
+        "social",
+        "gregarious",
+        "talkative",
+        "friendly",
+        "bold",
+        "loud",
+        "exuberant",
+        "energetic",
+        "bubbly",
+        "assertive",
+        "sociable",
+        "open",
+        "expressive",
+        "vivacious"
+      ],
+      "B_used": [
+        "solitary",
+        "quiet",
+        "reserved",
+        "shy",
+        "introverted",
+        "private",
+        "withdrawn",
+        "silent",
+        "modest",
+        "reflective",
+        "pensive",
+        "secluded",
+        "aloof",
+        "timid",
+        "taciturn"
+      ]
+    },
+    "proposal": "people associate artists with extroversion more strongly than they associate writers with extroversion. While both are viewed as creative professionals, writers are typically stereotyped as solitary and introverted, whereas artists are more frequently associated with public performance, exhibition, and social engagement. This distinction is novel as most implicit association research treats all creative roles as a single 'creative' category. Understanding this difference would clarify how the social nature of the creative output (a private manuscript vs. a public gallery show or performance) shapes the implicit personality traits attributed to the actor.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "cbd0e39b0a28",
     "timestamp": "2026-04-22T17:00:36.109666+00:00",
     "schema_version": "autoresearch.v1",
