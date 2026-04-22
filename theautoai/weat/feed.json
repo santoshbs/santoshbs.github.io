@@ -1,5 +1,111 @@
 [
   {
+    "id": "632c48cc193d",
+    "timestamp": "2026-04-22T18:19:07.154898+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "diplomats vs historians on practical vs theoretical focus",
+    "labels": {
+      "X": "diplomats",
+      "Y": "historians",
+      "A": "pragmatism",
+      "B": "analysis"
+    },
+    "canonical_keys": {
+      "X": "diplomats",
+      "Y": "historians",
+      "A": "pragmatism",
+      "B": "analysis"
+    },
+    "effect_size": 1.6517800240889107,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "ambassador",
+        "envoy",
+        "negotiator",
+        "mediator",
+        "emissary",
+        "consul",
+        "attache",
+        "delegate",
+        "representative",
+        "minister",
+        "legate",
+        "statesman",
+        "diplomat",
+        "plenipotentiary",
+        "conciliator"
+      ],
+      "Y_used": [
+        "historian",
+        "scholar",
+        "professor",
+        "archivist",
+        "chronicler",
+        "researcher",
+        "curator",
+        "biographer",
+        "analyst",
+        "antiquarian",
+        "historiographer",
+        "paleographer",
+        "hagiographer",
+        "annalist",
+        "lecturer"
+      ],
+      "A_used": [
+        "practical",
+        "pragmatic",
+        "useful",
+        "functional",
+        "effective",
+        "applied",
+        "instrumental",
+        "utilitarian",
+        "realistic",
+        "actionable",
+        "concrete",
+        "efficient",
+        "feasible",
+        "operational",
+        "strategic"
+      ],
+      "B_used": [
+        "theoretical",
+        "analytical",
+        "retrospective",
+        "abstract",
+        "conceptual",
+        "academic",
+        "speculative",
+        "contemplative",
+        "reflective",
+        "archival",
+        "scholarly",
+        "interpretive",
+        "intellectual",
+        "historical",
+        "didactic"
+      ]
+    },
+    "proposal": "I propose that people associate diplomats with pragmatism more strongly than they associate historians with pragmatism. This association is novel because it contrasts the retrospective, analytical focus of the historian with the real-time, instrumental focus of the diplomat. It is interesting because it explores the implicit divide between expertise intended for understanding and expertise intended for negotiation. Confirming this would suggest that the public mentally represents diplomatic knowledge as fundamentally more practical and outcome-oriented than historical knowledge.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "42f5a307a752",
     "timestamp": "2026-04-22T17:36:43.262643+00:00",
     "schema_version": "autoresearch.v1",
