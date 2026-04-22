@@ -1,5 +1,111 @@
 [
   {
+    "id": "7fcb74c5e937",
+    "timestamp": "2026-04-22T11:41:11.198989+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "protesters vs soldiers on spontaneity versus institutional precision",
+    "labels": {
+      "X": "protesters",
+      "Y": "soldiers",
+      "A": "spontaneity",
+      "B": "precision"
+    },
+    "canonical_keys": {
+      "X": "protesters",
+      "Y": "soldiers",
+      "A": "spontaneity",
+      "B": "precision"
+    },
+    "effect_size": 1.0849268987363148,
+    "p_value": 0.00143,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "activist",
+        "demonstrator",
+        "protester",
+        "rioter",
+        "rebel",
+        "insurgent",
+        "marcher",
+        "picketer",
+        "agitator",
+        "dissident",
+        "striker",
+        "militant",
+        "partisan",
+        "anarchist",
+        "objector"
+      ],
+      "Y_used": [
+        "soldier",
+        "troop",
+        "infantryman",
+        "marine",
+        "sailor",
+        "airman",
+        "sergeant",
+        "corporal",
+        "lieutenant",
+        "captain",
+        "general",
+        "warrior",
+        "combatant",
+        "guard",
+        "sentinel"
+      ],
+      "A_used": [
+        "spontaneous",
+        "unplanned",
+        "sudden",
+        "erratic",
+        "impulsive",
+        "volatile",
+        "random",
+        "improvised",
+        "instinctive",
+        "abrupt",
+        "natural",
+        "raw",
+        "accidental",
+        "casual",
+        "haphazard"
+      ],
+      "B_used": [
+        "planned",
+        "precise",
+        "disciplined",
+        "ordered",
+        "structured",
+        "rigid",
+        "methodical",
+        "calculated",
+        "formal",
+        "systematic",
+        "organized",
+        "routine",
+        "scheduled",
+        "deliberate",
+        "strict"
+      ]
+    },
+    "proposal": "People associate protesters with spontaneity more strongly than they associate soldiers with spontaneity. This association is novel because it moves beyond the simple 'chaos vs. order' dichotomy to examine the implicit perception of agency and timing in social actions. It is interesting because it reflects the cultural contrast between grassroots volatility and institutional military precision. Confirming this would provide insight into how structural discipline is mentally contrasted with collective, unplanned expression.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "03b6151938bc",
     "timestamp": "2026-04-22T10:14:05.051607+00:00",
     "schema_version": "autoresearch.v1",
