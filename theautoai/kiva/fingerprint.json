@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
-  "batches_seen": 16,
-  "loans_seen": 256,
-  "last_updated": "2026-04-22T16:51:32.967811+00:00",
-  "watching_for": "I am looking for cross-gender contrary pairs to see if the 'unique narrative' and 'gratitude' boosts are strong enough to overcome the gender baseline for men.",
+  "batches_seen": 17,
+  "loans_seen": 272,
+  "last_updated": "2026-04-22T17:29:06.147206+00:00",
+  "watching_for": "I am looking for more cross-gender pairs to see if narrative specificity (as seen in the Kenyan and Ecuadorian loans) can overcome the gender baseline for men.",
   "claims": {
     "pitches-that-mention-owning-a-home-or-land-fund-faster-regar": {
       "id": "pitches-that-mention-owning-a-home-or-land-fund-faster-regar",
@@ -16,7 +16,7 @@
       ],
       "confidence": 0.88,
       "first_seen_batch": 2,
-      "last_updated_batch": 15,
+      "last_updated_batch": 16,
       "confidence_history": [
         [
           2,
@@ -80,6 +80,10 @@
         ],
         [
           15,
+          0.88
+        ],
+        [
+          16,
           0.88
         ]
       ]
@@ -187,7 +191,7 @@
       ],
       "confidence": 0.99,
       "first_seen_batch": 3,
-      "last_updated_batch": 15,
+      "last_updated_batch": 16,
       "confidence_history": [
         [
           3,
@@ -252,6 +256,10 @@
         [
           15,
           0.99
+        ],
+        [
+          16,
+          0.99
         ]
       ]
     },
@@ -269,7 +277,7 @@
       ],
       "confidence": 0.99,
       "first_seen_batch": 9,
-      "last_updated_batch": 15,
+      "last_updated_batch": 16,
       "confidence_history": [
         [
           9,
@@ -306,6 +314,10 @@
         [
           15,
           0.99
+        ],
+        [
+          16,
+          0.99
         ]
       ]
     },
@@ -319,7 +331,7 @@
       ],
       "confidence": 0.72,
       "first_seen_batch": 13,
-      "last_updated_batch": 15,
+      "last_updated_batch": 16,
       "confidence_history": [
         [
           13,
@@ -331,6 +343,10 @@
         ],
         [
           15,
+          0.72
+        ],
+        [
+          16,
           0.72
         ]
       ]
@@ -346,9 +362,9 @@
         3156651,
         3157124
       ],
-      "confidence": 0.75,
+      "confidence": 0.82,
       "first_seen_batch": 14,
-      "last_updated_batch": 15,
+      "last_updated_batch": 16,
       "confidence_history": [
         [
           14,
@@ -357,6 +373,31 @@
         [
           15,
           0.75
+        ],
+        [
+          16,
+          0.82
+        ]
+      ]
+    },
+    "pitches-for-sanitation-loans-that-mention-environmental-prot": {
+      "id": "pitches-for-sanitation-loans-that-mention-environmental-prot",
+      "bucket": "slower",
+      "title": "Pitches for sanitation loans that mention environmental protection or community benefits fund slower than those focusing solely on family health risks.",
+      "body": "In multiple pairs, pitches that expanded the benefit of a sanitary toilet to include neighbors or the environment funded significantly slower than those that kept the focus on immediate family health hazards. This suggests lenders may perceive broader social framing as less urgent or less authentic in the sanitation sector.",
+      "supporting_loans": [
+        3157148,
+        3157150,
+        3157152,
+        3157154
+      ],
+      "confidence": 0.65,
+      "first_seen_batch": 16,
+      "last_updated_batch": 16,
+      "confidence_history": [
+        [
+          16,
+          0.65
         ]
       ]
     }
@@ -447,10 +488,10 @@
       "body": "The Specificity Paradox: In Pair 4, Loan L3161431 is exceptionally specific (38 years experience, 5 employees, specific crops) yet funded significantly slower than the generic template in L3161059. Because these loans are from different countries (Rwanda vs Philippines), I suspect country-level baseline speed or partner-specific lender bias is overriding the textual benefit of specificity.",
       "first_seen_batch": 15
     },
-    "the-sanitation-framing-penalty-in-pairs-1-and-3": {
-      "id": "the-sanitation-framing-penalty-in-pairs-1-and-3",
-      "body": "The Sanitation Framing Penalty: In Pairs 1 and 3, the slow pitches both included framing about 'helping the environment' and 'saving money' in the context of building a toilet. This suggests that for sanitation loans, purely health-based risks are more effective than broader environmental or financial justifications.",
-      "first_seen_batch": 15
+    "in-pair-6-two-pitches-using-the-same-working-tir": {
+      "id": "in-pair-6-two-pitches-using-the-same-working-tir",
+      "body": "In Pair 6, two pitches using the same 'working tirelessly' emotive template differed only in their goal: 'secure the future of her family' (Fast) vs 'expand her business' (Slow). This suggests that within a templated pitch, family-centric goals may be more effective than business-centric goals.",
+      "first_seen_batch": 16
     }
   },
   "retired": {
