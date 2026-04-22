@@ -258,6 +258,23 @@
     .footer-note { display: none; }
     .footer-inner { gap: 12px; font-size: 10px; }
   }
+
+  /* Added: match header "All hypotheses..." text to footer-note styling */
+  .header-note {
+    color: var(--fg-meta);
+    font-size: calc(var(--font-size) * 0.85);
+    font-style: italic;
+  }
+  /* Added: footer links (santoshbs, theme) match footer-item muted styling */
+  .footer-link {
+    color: var(--fg-meta);
+    text-decoration: none;
+    font-size: calc(var(--font-size) * 0.85);
+  }
+  .footer-link:hover {
+    color: var(--fg);
+    text-decoration: underline;
+  }
 </style>
 </head>
 <body>
@@ -272,9 +289,9 @@
       <span class="header-tagline">An open-weight LLM's hypotheses on occupational and educational futures</span>
     </div>
     <div class="header-line3">
-      <a href="#" id="btn-about">read more</a>
-      <span class="header-spacer"></span>
       <span class="header-note">All hypotheses are the LLM's own, revisable as evidence accumulates.</span>
+      <span class="header-spacer"></span>
+      <a href="#" id="btn-about">read more</a>
     </div>
   </div>
 </div>
