@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
-  "batches_seen": 20,
-  "loans_seen": 320,
-  "last_updated": "2026-04-22T20:17:54+00:00",
-  "watching_for": "I am looking for more cross-gender pairs to see if 'aesthetic' or 'aspirational' narratives (like the one in Pair 8) consistently fail to overcome the gender baseline, whereas 'labor/hardship' narratives succeed.",
+  "batches_seen": 21,
+  "loans_seen": 336,
+  "last_updated": "2026-04-22T21:18:39.740990+00:00",
+  "watching_for": "I am looking for more cross-gender pairs to see if the 'social repayment' booster (CAMFED) helps men overcome the gender baseline, and whether the 'emotive template' is truly neutral or just highly volatile.",
   "claims": {
     "pitches-that-mention-owning-a-home-or-land-fund-faster-regar": {
       "id": "pitches-that-mention-owning-a-home-or-land-fund-faster-regar",
@@ -14,9 +14,9 @@
         3160255,
         3160710
       ],
-      "confidence": 0.88,
+      "confidence": 0.92,
       "first_seen_batch": 2,
-      "last_updated_batch": 19,
+      "last_updated_batch": 20,
       "confidence_history": [
         [
           2,
@@ -97,6 +97,10 @@
         [
           19,
           0.88
+        ],
+        [
+          20,
+          0.92
         ]
       ]
     },
@@ -211,7 +215,7 @@
       ],
       "confidence": 1.0,
       "first_seen_batch": 3,
-      "last_updated_batch": 19,
+      "last_updated_batch": 20,
       "confidence_history": [
         [
           3,
@@ -292,6 +296,10 @@
         [
           19,
           1.0
+        ],
+        [
+          20,
+          1.0
         ]
       ]
     },
@@ -309,7 +317,7 @@
       ],
       "confidence": 1.0,
       "first_seen_batch": 9,
-      "last_updated_batch": 19,
+      "last_updated_batch": 20,
       "confidence_history": [
         [
           9,
@@ -362,6 +370,10 @@
         [
           19,
           1.0
+        ],
+        [
+          20,
+          1.0
         ]
       ]
     },
@@ -373,9 +385,9 @@
       "supporting_loans": [
         3162022
       ],
-      "confidence": 0.82,
+      "confidence": 0.85,
       "first_seen_batch": 13,
-      "last_updated_batch": 19,
+      "last_updated_batch": 20,
       "confidence_history": [
         [
           13,
@@ -404,6 +416,10 @@
         [
           19,
           0.82
+        ],
+        [
+          20,
+          0.85
         ]
       ]
     },
@@ -420,7 +436,7 @@
       ],
       "confidence": 0.85,
       "first_seen_batch": 16,
-      "last_updated_batch": 19,
+      "last_updated_batch": 20,
       "confidence_history": [
         [
           16,
@@ -437,6 +453,10 @@
         [
           19,
           0.85
+        ],
+        [
+          20,
+          0.85
         ]
       ]
     },
@@ -446,12 +466,34 @@
       "title": "Pitches follow a funding speed hierarchy based on textual register, where unique personal narratives fund fastest, followed by emotive templates, with purely factual or generic pitches funding slowest, regardless of gender.",
       "body": "Lenders respond most strongly to high-specificity unique narratives. When those are absent, 'emotive templates' (e.g., 'working tirelessly') outperform bare-bones factual or generic pitches, suggesting a tiered preference for perceived effort and personality.",
       "supporting_loans": [],
-      "confidence": 0.65,
+      "confidence": 0.45,
       "first_seen_batch": 19,
-      "last_updated_batch": 19,
+      "last_updated_batch": 20,
       "confidence_history": [
         [
           19,
+          0.65
+        ],
+        [
+          20,
+          0.45
+        ]
+      ]
+    },
+    "pitches-that-describe-a-specific-non-financial-social-repaym": {
+      "id": "pitches-that-describe-a-specific-non-financial-social-repaym",
+      "bucket": "faster",
+      "title": "Pitches that describe a specific, non-financial social repayment commitment fund faster, regardless of gender.",
+      "body": "Commitments to specific community roles (e.g., CAMFED Learner Guide) provide a strong signal of reliability and social capital that exceeds the benefit of business experience.",
+      "supporting_loans": [
+        3162081
+      ],
+      "confidence": 0.65,
+      "first_seen_batch": 20,
+      "last_updated_batch": 20,
+      "confidence_history": [
+        [
+          20,
           0.65
         ]
       ]
@@ -567,6 +609,16 @@
       "id": "in-pair-8-a-descriptive-narrative-by-a-man-l3159",
       "body": "In Pair 8, a descriptive narrative by a man (L3159740) about 'color, detail, and meaning' in his art lost to a generic female template (L3159441). This suggests that not all unique narratives are equal; 'artistic' or 'aesthetic' narratives may not provide the same urgency or trust signal as 'hardship' or 'labor-intensive' narratives (like those in Pairs 6 and 7).",
       "first_seen_batch": 19
+    },
+    "the-working-tirelessly-template-paradox-in-pair": {
+      "id": "the-working-tirelessly-template-paradox-in-pair",
+      "body": "The 'Working Tirelessly' template paradox: In Pair 3, this template funds significantly faster than a factual pitch. In Pair 7, it funds significantly slower than a simple factual pitch. In Pair 1, it funds slower than a concrete goal. Is the template a neutral baseline that allows other small features to dominate, or is its effect sector-dependent?",
+      "first_seen_batch": 20
+    },
+    "in-sanitation-loans-pairs-2-and-5-the-text-is-v": {
+      "id": "in-sanitation-loans-pairs-2-and-5-the-text-is-v",
+      "body": "In sanitation loans (Pairs 2 and 5), the text is virtually identical, yet speed varies by 55+ hours. This suggests that the specific business type mentioned (cosmetics vs food-vending, pig fattening vs clothing) may be a hidden speed driver.",
+      "first_seen_batch": 20
     }
   },
   "retired": {
