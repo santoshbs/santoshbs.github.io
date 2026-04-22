@@ -1,5 +1,111 @@
 [
   {
+    "id": "cbd0e39b0a28",
+    "timestamp": "2026-04-22T17:00:36.109666+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "paupers vs elites on practical competence",
+    "labels": {
+      "X": "paupers",
+      "Y": "elites",
+      "A": "resourcefulness",
+      "B": "helplessness"
+    },
+    "canonical_keys": {
+      "X": "paupers",
+      "Y": "elites",
+      "A": "resourcefulness",
+      "B": "helplessness"
+    },
+    "effect_size": -1.2931429235257843,
+    "p_value": 0.00016,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "pauper",
+        "beggar",
+        "homeless",
+        "poor",
+        "needy",
+        "indigent",
+        "destitute",
+        "impoverished",
+        "broke",
+        "bankrupt",
+        "insolvent",
+        "vagrant",
+        "mendicant",
+        "proletarian",
+        "peasant"
+      ],
+      "Y_used": [
+        "elite",
+        "wealthy",
+        "rich",
+        "affluent",
+        "privileged",
+        "opulent",
+        "prosperous",
+        "moneyed",
+        "aristocrat",
+        "tycoon",
+        "millionaire",
+        "billionaire",
+        "plutocrat",
+        "nobility",
+        "mogul"
+      ],
+      "A_used": [
+        "resourceful",
+        "inventive",
+        "adaptable",
+        "clever",
+        "ingenious",
+        "scrappy",
+        "resilient",
+        "versatile",
+        "shrewd",
+        "creative",
+        "cunning",
+        "nimble",
+        "practical",
+        "flexible",
+        "hardy"
+      ],
+      "B_used": [
+        "helpless",
+        "inept",
+        "clumsy",
+        "useless",
+        "dependent",
+        "passive",
+        "fragile",
+        "incapable",
+        "weak",
+        "rigid",
+        "stiff",
+        "naive",
+        "oblivious",
+        "sheltered",
+        "incompetent"
+      ]
+    },
+    "proposal": "people associate paupers with resourcefulness more strongly than they associate elites with resourcefulness. This association likely arises from the 'street-smarts' stereotype, where those in extreme poverty are perceived as having to be more inventive and adaptable to survive. While prior academic literature typically focuses on negative implicit associations with poverty, such as incompetence or laziness, this proposal examines a positive implicit attribute. Confirming this association would suggest that the public mentally represents poverty not just as a lack of resources, but as a catalyst for a specific type of practical competence that is not attributed to those with systemic privilege.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "a9ad0f9b3512",
     "timestamp": "2026-04-22T13:05:58.091002+00:00",
     "schema_version": "autoresearch.v1",
