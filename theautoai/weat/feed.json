@@ -1,5 +1,111 @@
 [
   {
+    "id": "d59e4d6306e3",
+    "timestamp": "2026-04-22T22:11:37.805953+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "children vs adults on perceived authenticity vs strategic masking",
+    "labels": {
+      "X": "children",
+      "Y": "adults",
+      "A": "sincerity",
+      "B": "guile"
+    },
+    "canonical_keys": {
+      "X": "children",
+      "Y": "adults",
+      "A": "sincerity",
+      "B": "guile"
+    },
+    "effect_size": 0.2898377155711511,
+    "p_value": 0.44999,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "child",
+        "kid",
+        "toddler",
+        "infant",
+        "youth",
+        "youngster",
+        "boy",
+        "girl",
+        "adolescent",
+        "preschooler",
+        "newborn",
+        "pupil",
+        "student",
+        "juvenile",
+        "minor"
+      ],
+      "Y_used": [
+        "adult",
+        "man",
+        "woman",
+        "parent",
+        "elder",
+        "senior",
+        "father",
+        "mother",
+        "grandfather",
+        "grandmother",
+        "professional",
+        "citizen",
+        "patriarch",
+        "matriarch",
+        "veteran"
+      ],
+      "A_used": [
+        "sincere",
+        "honest",
+        "innocent",
+        "naive",
+        "authentic",
+        "pure",
+        "candid",
+        "truthful",
+        "genuine",
+        "artless",
+        "frank",
+        "open",
+        "guileless",
+        "straightforward",
+        "heartfelt"
+      ],
+      "B_used": [
+        "cynical",
+        "deceitful",
+        "strategic",
+        "calculating",
+        "dishonest",
+        "cunning",
+        "sly",
+        "manipulative",
+        "artificial",
+        "masked",
+        "guarded",
+        "fake",
+        "hypocritical",
+        "insincere",
+        "shrewd"
+      ]
+    },
+    "proposal": "People associate children with sincerity more strongly than they associate adults with sincerity. This association reflects a pervasive cultural narrative regarding the innocence and lack of guile in childhood compared to the perceived strategic masking or social cynicism of adulthood. While developmental psychology focuses on the acquisition of lying skills, examining this as an implicit association reveals how society mentally links cognitive maturity with a decrease in perceived authenticity. Confirming this would provide insight into the foundational stereotypes that shape how we trust different age-based social actors.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "f0e38e5ab63b",
     "timestamp": "2026-04-22T21:28:51.084940+00:00",
     "schema_version": "autoresearch.v1",
