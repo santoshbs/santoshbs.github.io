@@ -1,5 +1,111 @@
 [
   {
+    "id": "aed30ed9016f",
+    "timestamp": "2026-04-22T20:38:27.954912+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Hindus vs Atheists on diversity versus unity",
+    "labels": {
+      "X": "Hindus",
+      "Y": "Atheists",
+      "A": "diversity",
+      "B": "unity"
+    },
+    "canonical_keys": {
+      "X": "hindus",
+      "Y": "atheists",
+      "A": "diversity",
+      "B": "unity"
+    },
+    "effect_size": -1.3113713464948333,
+    "p_value": 0.00011,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "yogi",
+        "guru",
+        "sadhu",
+        "pundit",
+        "devotee",
+        "ascetic",
+        "monk",
+        "priest",
+        "believer",
+        "worshiper",
+        "seeker",
+        "disciple",
+        "practitioner",
+        "meditator",
+        "mystic"
+      ],
+      "Y_used": [
+        "atheist",
+        "skeptic",
+        "rationalist",
+        "materialist",
+        "disbeliever",
+        "agnostic",
+        "secularist",
+        "humanist",
+        "freethinker",
+        "doubter",
+        "empiricist",
+        "naturalist",
+        "dissident",
+        "critic",
+        "logician"
+      ],
+      "A_used": [
+        "diverse",
+        "varied",
+        "multiple",
+        "inclusive",
+        "tolerant",
+        "open",
+        "mixed",
+        "multifaceted",
+        "heterodox",
+        "eclectic",
+        "broad",
+        "various",
+        "pluralistic",
+        "divergent",
+        "composite"
+      ],
+      "B_used": [
+        "unified",
+        "singular",
+        "uniform",
+        "homogeneous",
+        "sole",
+        "single",
+        "monolithic",
+        "consistent",
+        "identical",
+        "unique",
+        "solitary",
+        "undivided",
+        "lone",
+        "stark",
+        "absolute"
+      ]
+    },
+    "proposal": "People associate Hindus with pluralism more strongly than they associate atheists with pluralism. While atheism is often consciously framed as an open and questioning stance, the implicit representation of Hinduism as an inherently pluralistic faith—accepting many diverse paths to truth—is likely stronger than the association of atheism with pluralism, which may be mentally represented as a singular, unified rejection of the divine. This study would be novel as it shifts the focus from the presence or absence of belief to the internal structural logic of those belief systems. Confirming this association would provide insight into how the public perceives the inclusivity of different metaphysical worldviews.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "632c48cc193d",
     "timestamp": "2026-04-22T18:19:07.154898+00:00",
     "schema_version": "autoresearch.v1",
