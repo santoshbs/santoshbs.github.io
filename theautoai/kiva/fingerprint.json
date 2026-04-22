@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
-  "batches_seen": 21,
-  "loans_seen": 336,
-  "last_updated": "2026-04-22T21:18:39.740990+00:00",
-  "watching_for": "I am looking for more cross-gender pairs to see if the 'social repayment' booster (CAMFED) helps men overcome the gender baseline, and whether the 'emotive template' is truly neutral or just highly volatile.",
+  "batches_seen": 22,
+  "loans_seen": 352,
+  "last_updated": "2026-04-22T22:00:54.382525+00:00",
+  "watching_for": "I am looking for cross-gender pairs to see if specific business identifiers (like 'pig fattening') can help men overcome the gender baseline, and for more sanitation loans to decouple the 'environmental framing' from the 'business type' effect.",
   "claims": {
     "pitches-that-mention-owning-a-home-or-land-fund-faster-regar": {
       "id": "pitches-that-mention-owning-a-home-or-land-fund-faster-regar",
@@ -215,7 +215,7 @@
       ],
       "confidence": 1.0,
       "first_seen_batch": 3,
-      "last_updated_batch": 20,
+      "last_updated_batch": 21,
       "confidence_history": [
         [
           3,
@@ -300,6 +300,10 @@
         [
           20,
           1.0
+        ],
+        [
+          21,
+          1.0
         ]
       ]
     },
@@ -317,7 +321,7 @@
       ],
       "confidence": 1.0,
       "first_seen_batch": 9,
-      "last_updated_batch": 20,
+      "last_updated_batch": 21,
       "confidence_history": [
         [
           9,
@@ -373,6 +377,10 @@
         ],
         [
           20,
+          1.0
+        ],
+        [
+          21,
           1.0
         ]
       ]
@@ -434,9 +442,9 @@
         3157152,
         3157154
       ],
-      "confidence": 0.85,
+      "confidence": 0.5,
       "first_seen_batch": 16,
-      "last_updated_batch": 20,
+      "last_updated_batch": 21,
       "confidence_history": [
         [
           16,
@@ -457,6 +465,10 @@
         [
           20,
           0.85
+        ],
+        [
+          21,
+          0.5
         ]
       ]
     },
@@ -466,9 +478,9 @@
       "title": "Pitches follow a funding speed hierarchy based on textual register, where unique personal narratives fund fastest, followed by emotive templates, with purely factual or generic pitches funding slowest, regardless of gender.",
       "body": "Lenders respond most strongly to high-specificity unique narratives. When those are absent, 'emotive templates' (e.g., 'working tirelessly') outperform bare-bones factual or generic pitches, suggesting a tiered preference for perceived effort and personality.",
       "supporting_loans": [],
-      "confidence": 0.45,
+      "confidence": 0.55,
       "first_seen_batch": 19,
-      "last_updated_batch": 20,
+      "last_updated_batch": 21,
       "confidence_history": [
         [
           19,
@@ -477,6 +489,10 @@
         [
           20,
           0.45
+        ],
+        [
+          21,
+          0.55
         ]
       ]
     },
@@ -619,6 +635,16 @@
       "id": "in-sanitation-loans-pairs-2-and-5-the-text-is-v",
       "body": "In sanitation loans (Pairs 2 and 5), the text is virtually identical, yet speed varies by 55+ hours. This suggests that the specific business type mentioned (cosmetics vs food-vending, pig fattening vs clothing) may be a hidden speed driver.",
       "first_seen_batch": 20
+    },
+    "in-sanitation-loans-there-is-a-recurring-pattern": {
+      "id": "in-sanitation-loans-there-is-a-recurring-pattern",
+      "body": "In sanitation loans, there is a recurring pattern where 'pig fattening' (L3161702, L3157391, L3157142) funds fast, while 'general store' (L3157224, L3157235) funds slow, even when other text is identical.",
+      "first_seen_batch": 21
+    },
+    "the-environmental-protection-penalty-in-sanitati": {
+      "id": "the-environmental-protection-penalty-in-sanitati",
+      "body": "The 'Environmental Protection' penalty in sanitation loans appears to be inconsistent; it slowed L3159425 but was present in the fast loans L3157391 and L3157142. Is the penalty actually a 'General Store' penalty in disguise?",
+      "first_seen_batch": 21
     }
   },
   "retired": {
