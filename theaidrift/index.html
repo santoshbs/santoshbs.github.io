@@ -259,11 +259,17 @@
     .footer-inner { gap: 12px; font-size: 10px; }
   }
 
-  /* Added: match header "All hypotheses..." text to footer-note styling */
+  /* Added: header "All hypotheses..." — match .header-tagline styling */
   .header-note {
-    color: var(--fg-meta);
-    font-size: calc(var(--font-size) * 0.85);
-    font-style: italic;
+    font-size: 11px;
+    color: var(--fg-dim);
+    font-weight: 400;
+  }
+  /* Added: make "read more" visually a link (underline on hover) */
+  .header-line3 a#btn-about {
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 2px;
   }
   /* Added: footer links (santoshbs, theme) — blend with .ft-count-item row */
   .footer-link {
