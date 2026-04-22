@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
-  "batches_seen": 19,
-  "loans_seen": 304,
-  "last_updated": "2026-04-22T19:09:14.090959+00:00",
-  "watching_for": "I am looking for cross-gender pairs to determine if high-specificity narratives (like those in Pairs 3, 7, and 8) are strong enough to overcome the gender baseline for men.",
+  "batches_seen": 20,
+  "loans_seen": 320,
+  "last_updated": "2026-04-22T20:17:54+00:00",
+  "watching_for": "I am looking for more cross-gender pairs to see if 'aesthetic' or 'aspirational' narratives (like the one in Pair 8) consistently fail to overcome the gender baseline, whereas 'labor/hardship' narratives succeed.",
   "claims": {
     "pitches-that-mention-owning-a-home-or-land-fund-faster-regar": {
       "id": "pitches-that-mention-owning-a-home-or-land-fund-faster-regar",
@@ -16,7 +16,7 @@
       ],
       "confidence": 0.88,
       "first_seen_batch": 2,
-      "last_updated_batch": 18,
+      "last_updated_batch": 19,
       "confidence_history": [
         [
           2,
@@ -93,6 +93,10 @@
         [
           18,
           0.88
+        ],
+        [
+          19,
+          0.88
         ]
       ]
     },
@@ -108,9 +112,9 @@
         3159666,
         3160728
       ],
-      "confidence": 0.96,
+      "confidence": 0.97,
       "first_seen_batch": 2,
-      "last_updated_batch": 18,
+      "last_updated_batch": 19,
       "confidence_history": [
         [
           2,
@@ -187,6 +191,10 @@
         [
           18,
           0.96
+        ],
+        [
+          19,
+          0.97
         ]
       ]
     },
@@ -203,7 +211,7 @@
       ],
       "confidence": 1.0,
       "first_seen_batch": 3,
-      "last_updated_batch": 18,
+      "last_updated_batch": 19,
       "confidence_history": [
         [
           3,
@@ -280,6 +288,10 @@
         [
           18,
           1.0
+        ],
+        [
+          19,
+          1.0
         ]
       ]
     },
@@ -297,7 +309,7 @@
       ],
       "confidence": 1.0,
       "first_seen_batch": 9,
-      "last_updated_batch": 18,
+      "last_updated_batch": 19,
       "confidence_history": [
         [
           9,
@@ -346,6 +358,10 @@
         [
           18,
           1.0
+        ],
+        [
+          19,
+          1.0
         ]
       ]
     },
@@ -359,7 +375,7 @@
       ],
       "confidence": 0.82,
       "first_seen_batch": 13,
-      "last_updated_batch": 18,
+      "last_updated_batch": 19,
       "confidence_history": [
         [
           13,
@@ -384,6 +400,10 @@
         [
           18,
           0.82
+        ],
+        [
+          19,
+          0.82
         ]
       ]
     },
@@ -400,7 +420,7 @@
       ],
       "confidence": 0.85,
       "first_seen_batch": 16,
-      "last_updated_batch": 18,
+      "last_updated_batch": 19,
       "confidence_history": [
         [
           16,
@@ -413,6 +433,26 @@
         [
           18,
           0.85
+        ],
+        [
+          19,
+          0.85
+        ]
+      ]
+    },
+    "pitches-follow-a-funding-speed-hierarchy-based-on-textual-re": {
+      "id": "pitches-follow-a-funding-speed-hierarchy-based-on-textual-re",
+      "bucket": "faster",
+      "title": "Pitches follow a funding speed hierarchy based on textual register, where unique personal narratives fund fastest, followed by emotive templates, with purely factual or generic pitches funding slowest, regardless of gender.",
+      "body": "Lenders respond most strongly to high-specificity unique narratives. When those are absent, 'emotive templates' (e.g., 'working tirelessly') outperform bare-bones factual or generic pitches, suggesting a tiered preference for perceived effort and personality.",
+      "supporting_loans": [],
+      "confidence": 0.65,
+      "first_seen_batch": 19,
+      "last_updated_batch": 19,
+      "confidence_history": [
+        [
+          19,
+          0.65
         ]
       ]
     }
@@ -508,11 +548,6 @@
       "body": "In Pair 6, two pitches using the same 'working tirelessly' emotive template differed only in their goal: 'secure the future of her family' (Fast) vs 'expand her business' (Slow). This suggests that within a templated pitch, family-centric goals may be more effective than business-centric goals.",
       "first_seen_batch": 16
     },
-    "the-emotive-template-hierarchy-the-working-tirel": {
-      "id": "the-emotive-template-hierarchy-the-working-tirel",
-      "body": "The Emotive Template Hierarchy: The 'working tirelessly' template is faster than factual demographics (Pair 1) and simple dreams (Pair 6), but significantly slower than unique narratives (Pair 7). This suggests a tiered system of lender preference: Unique Narrative > Emotive Template > Factual/Generic.",
-      "first_seen_batch": 17
-    },
     "in-pair-3-secure-her-family-s-livelihood-vague": {
       "id": "in-pair-3-secure-her-family-s-livelihood-vague",
       "body": "In Pair 3, 'secure her family's livelihood' (vague) beat 'send her children to college' (specific). This contradicts the general specificity booster, suggesting that certain 'template goals' like college may be perceived as less urgent or more generic than family survival.",
@@ -527,6 +562,11 @@
       "id": "does-the-mention-of-specific-social-repayment-e",
       "body": "Does the mention of specific 'social repayment' (e.g., volunteering as a CAMFED Guide in L3162076) act as a powerful speed booster independent of other features?",
       "first_seen_batch": 18
+    },
+    "in-pair-8-a-descriptive-narrative-by-a-man-l3159": {
+      "id": "in-pair-8-a-descriptive-narrative-by-a-man-l3159",
+      "body": "In Pair 8, a descriptive narrative by a man (L3159740) about 'color, detail, and meaning' in his art lost to a generic female template (L3159441). This suggests that not all unique narratives are equal; 'artistic' or 'aesthetic' narratives may not provide the same urgency or trust signal as 'hardship' or 'labor-intensive' narratives (like those in Pairs 6 and 7).",
+      "first_seen_batch": 19
     }
   },
   "retired": {
