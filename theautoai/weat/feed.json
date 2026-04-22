@@ -1,5 +1,111 @@
 [
   {
+    "id": "1816e263b2fd",
+    "timestamp": "2026-04-22T23:05:53.237545+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "diplomats vs urbanites on social grace",
+    "labels": {
+      "X": "diplomats",
+      "Y": "urbanites",
+      "A": "tact",
+      "B": "brusqueness"
+    },
+    "canonical_keys": {
+      "X": "diplomats",
+      "Y": "urbanites",
+      "A": "tact",
+      "B": "brusqueness"
+    },
+    "effect_size": 0.7567530423719012,
+    "p_value": 0.03999,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "diplomat",
+        "envoy",
+        "ambassador",
+        "consul",
+        "emissary",
+        "legate",
+        "attache",
+        "negotiator",
+        "plenipotentiary",
+        "mediator",
+        "representative",
+        "delegate",
+        "statesman",
+        "stateswoman",
+        "minister"
+      ],
+      "Y_used": [
+        "urbanite",
+        "cosmopolitan",
+        "metropolitan",
+        "burgher",
+        "townie",
+        "commuter",
+        "pedestrian",
+        "socialite",
+        "flaneur",
+        "resident",
+        "inhabitant",
+        "dweller",
+        "citizen",
+        "townsman",
+        "townswoman"
+      ],
+      "A_used": [
+        "tactful",
+        "polite",
+        "poised",
+        "discreet",
+        "diplomatic",
+        "courteous",
+        "gracious",
+        "civil",
+        "refined",
+        "smooth",
+        "considerate",
+        "gentle",
+        "mindful",
+        "respectful",
+        "cordial"
+      ],
+      "B_used": [
+        "brusque",
+        "curt",
+        "rude",
+        "blunt",
+        "abrupt",
+        "gruff",
+        "sharp",
+        "coarse",
+        "impolite",
+        "tactless",
+        "harsh",
+        "direct",
+        "short",
+        "abrasive",
+        "surly"
+      ]
+    },
+    "proposal": "I propose that people associate diplomats with tact more strongly than they associate urbanites with tact. While urbanites are often stereotyped in popular culture as brusque, hurried, or curt, diplomats are professionally defined by their ability to navigate sensitive social and political situations with extreme discretion and poise. This association is novel as it contrasts a professional identity with a regional identity on the axis of social grace. Confirming this would highlight how professional labels can override general social traits in our mental representations of interpersonal competence.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "d59e4d6306e3",
     "timestamp": "2026-04-22T22:11:37.805953+00:00",
     "schema_version": "autoresearch.v1",
