@@ -1,5 +1,111 @@
 [
   {
+    "id": "70ffdfc49ef5",
+    "timestamp": "2026-04-23T03:17:38.117570+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "clergy vs artists on transcendence versus mundanity",
+    "labels": {
+      "X": "clergy",
+      "Y": "artists",
+      "A": "transcendence",
+      "B": "mundanity"
+    },
+    "canonical_keys": {
+      "X": "clergy",
+      "Y": "artists",
+      "A": "transcendence",
+      "B": "mundanity"
+    },
+    "effect_size": 0.8580913356615604,
+    "p_value": 0.01825,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "priest",
+        "pastor",
+        "rector",
+        "bishop",
+        "minister",
+        "chaplain",
+        "cleric",
+        "deacon",
+        "vicar",
+        "cardinal",
+        "rabbi",
+        "imam",
+        "monk",
+        "nun",
+        "preacher"
+      ],
+      "Y_used": [
+        "painter",
+        "sculptor",
+        "poet",
+        "musician",
+        "dancer",
+        "actor",
+        "composer",
+        "novelist",
+        "illustrator",
+        "sketcher",
+        "lyricist",
+        "curator",
+        "potter",
+        "weaver",
+        "engraver"
+      ],
+      "A_used": [
+        "divine",
+        "spiritual",
+        "ethereal",
+        "celestial",
+        "metaphysical",
+        "sublime",
+        "infinite",
+        "holy",
+        "sacred",
+        "heavenly",
+        "otherworldly",
+        "mystical",
+        "transcendent",
+        "supernatural",
+        "luminous"
+      ],
+      "B_used": [
+        "earthly",
+        "mundane",
+        "physical",
+        "material",
+        "concrete",
+        "ordinary",
+        "secular",
+        "tangible",
+        "worldly",
+        "practical",
+        "banal",
+        "common",
+        "surface",
+        "literal",
+        "prosaic"
+      ]
+    },
+    "proposal": "People associate clergy with transcendence more strongly than they associate artists with transcendence. While both categories are often linked to the sublime and the metaphysical, the implicit association with transcendence is likely more deeply rooted in the institutional and spiritual identity of the clergy. This is novel because it compares two distinct cultural pathways to the transcendent—the religious and the aesthetic—which are rarely contrasted in implicit association literature. Confirming this would reveal whether the public mentally prioritizes divine transcendence over the transcendental power of creative expression.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "be36b93dc18e",
     "timestamp": "2026-04-23T01:46:27.672897+00:00",
     "schema_version": "autoresearch.v1",
