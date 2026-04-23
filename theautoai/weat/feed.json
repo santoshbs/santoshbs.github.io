@@ -1,5 +1,111 @@
 [
   {
+    "id": "ccbe876183f0",
+    "timestamp": "2026-04-23T10:04:18.679299+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "students vs soldiers on intellectual curiosity versus disciplined duty",
+    "labels": {
+      "X": "students",
+      "Y": "soldiers",
+      "A": "intellectual curiosity",
+      "B": "disciplined duty"
+    },
+    "canonical_keys": {
+      "X": "students",
+      "Y": "soldiers",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 1.4280504885486223,
+    "p_value": 2e-05,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "student",
+        "pupil",
+        "learner",
+        "scholar",
+        "undergraduate",
+        "freshman",
+        "sophomore",
+        "junior",
+        "senior",
+        "apprentice",
+        "disciple",
+        "classmate",
+        "alum",
+        "protege",
+        "novice"
+      ],
+      "Y_used": [
+        "soldier",
+        "troop",
+        "marine",
+        "private",
+        "sergeant",
+        "corporal",
+        "captain",
+        "lieutenant",
+        "colonel",
+        "general",
+        "warrior",
+        "fighter",
+        "combatant",
+        "veteran",
+        "sentry"
+      ],
+      "A_used": [
+        "curious",
+        "inquisitive",
+        "scholarly",
+        "analytical",
+        "thoughtful",
+        "questioning",
+        "exploring",
+        "intellectual",
+        "cognitive",
+        "perceptive",
+        "searching",
+        "wondering",
+        "investigative",
+        "studious",
+        "academic"
+      ],
+      "B_used": [
+        "obedient",
+        "disciplined",
+        "dutiful",
+        "compliant",
+        "rigid",
+        "mechanical",
+        "routine",
+        "strict",
+        "formal",
+        "loyal",
+        "regimented",
+        "subservient",
+        "orderly",
+        "precise",
+        "methodical"
+      ]
+    },
+    "proposal": "I propose that people associate students with intellectual curiosity more strongly than they associate soldiers with intellectual curiosity. This association is novel because while the dichotomy between academic and military life is well-known, it has not been systematically probed as an implicit cognitive association using a WEAT-style framework. Examining this is important because such a stereotype may lead to a devaluation of the cognitive and creative capacities of military personnel. Confirming this bias would highlight a persistent cultural divide between the conceptualization of 'learning' and 'duty'.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "583fd9c8d680",
     "timestamp": "2026-04-23T08:46:21.673461+00:00",
     "schema_version": "autoresearch.v1",
