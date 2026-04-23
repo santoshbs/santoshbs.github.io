@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
-  "batches_seen": 26,
-  "loans_seen": 416,
-  "last_updated": "2026-04-23T01:40:36.003319+00:00",
-  "watching_for": "I am watching for more sanitation loans to see if the 'general store' penalty persists across different partners and if the KBMI-style gratitude markers are a universal booster or specific to Indonesian loans.",
+  "batches_seen": 27,
+  "loans_seen": 432,
+  "last_updated": "2026-04-23T02:21:58.763697+00:00",
+  "watching_for": "I am watching for cross-gender pairs to see if the 'general store' penalty in sanitation loans is a gender-general effect or if it interacts with the gender baseline. I also want to see if the 'college' goal (seen as a slow signal in Pair 2) is a consistent penalty compared to 'family security'.",
   "claims": {
     "pitches-that-mention-owning-a-home-or-land-fund-faster-regar": {
       "id": "pitches-that-mention-owning-a-home-or-land-fund-faster-regar",
@@ -16,7 +16,7 @@
       ],
       "confidence": 0.96,
       "first_seen_batch": 2,
-      "last_updated_batch": 25,
+      "last_updated_batch": 26,
       "confidence_history": [
         [
           2,
@@ -117,6 +117,10 @@
         [
           25,
           0.96
+        ],
+        [
+          26,
+          0.96
         ]
       ]
     },
@@ -134,7 +138,7 @@
       ],
       "confidence": 0.99,
       "first_seen_batch": 2,
-      "last_updated_batch": 25,
+      "last_updated_batch": 26,
       "confidence_history": [
         [
           2,
@@ -231,6 +235,10 @@
         [
           25,
           0.99
+        ],
+        [
+          26,
+          0.99
         ]
       ]
     },
@@ -247,7 +255,7 @@
       ],
       "confidence": 1.0,
       "first_seen_batch": 3,
-      "last_updated_batch": 25,
+      "last_updated_batch": 26,
       "confidence_history": [
         [
           3,
@@ -352,6 +360,10 @@
         [
           25,
           1.0
+        ],
+        [
+          26,
+          1.0
         ]
       ]
     },
@@ -369,7 +381,7 @@
       ],
       "confidence": 1.0,
       "first_seen_batch": 9,
-      "last_updated_batch": 25,
+      "last_updated_batch": 26,
       "confidence_history": [
         [
           9,
@@ -446,6 +458,10 @@
         [
           25,
           1.0
+        ],
+        [
+          26,
+          1.0
         ]
       ]
     },
@@ -457,9 +473,9 @@
       "supporting_loans": [
         3162022
       ],
-      "confidence": 0.92,
+      "confidence": 0.95,
       "first_seen_batch": 13,
-      "last_updated_batch": 25,
+      "last_updated_batch": 26,
       "confidence_history": [
         [
           13,
@@ -508,6 +524,14 @@
         [
           25,
           0.92
+        ],
+        [
+          26,
+          0.95
+        ],
+        [
+          26,
+          0.95
         ]
       ]
     },
@@ -517,9 +541,9 @@
       "title": "Pitches follow a funding speed hierarchy based on textual register, where unique personal narratives fund fastest, followed by emotive templates, with purely factual or generic pitches funding slowest, regardless of gender.",
       "body": "Lenders respond most strongly to high-specificity unique narratives. When those are absent, 'emotive templates' (e.g., 'working tirelessly') outperform bare-bones factual or generic pitches, suggesting a tiered preference for perceived effort and personality.",
       "supporting_loans": [],
-      "confidence": 0.78,
+      "confidence": 0.82,
       "first_seen_batch": 19,
-      "last_updated_batch": 25,
+      "last_updated_batch": 26,
       "confidence_history": [
         [
           19,
@@ -548,6 +572,10 @@
         [
           25,
           0.78
+        ],
+        [
+          26,
+          0.82
         ]
       ]
     },
@@ -565,7 +593,7 @@
       ],
       "confidence": 0.7,
       "first_seen_batch": 23,
-      "last_updated_batch": 25,
+      "last_updated_batch": 26,
       "confidence_history": [
         [
           23,
@@ -582,6 +610,10 @@
         [
           25,
           0.7
+        ],
+        [
+          26,
+          0.7
         ]
       ]
     },
@@ -597,13 +629,21 @@
         3158205,
         3158165
       ],
-      "confidence": 0.65,
+      "confidence": 0.75,
       "first_seen_batch": 25,
-      "last_updated_batch": 25,
+      "last_updated_batch": 26,
       "confidence_history": [
         [
           25,
           0.65
+        ],
+        [
+          26,
+          0.75
+        ],
+        [
+          26,
+          0.75
         ]
       ]
     }
@@ -748,6 +788,11 @@
       "id": "in-sanitation-loans-pig-fattening-was-previousl",
       "body": "In sanitation loans, 'pig fattening' was previously seen as a booster, but in Pairs 5 and 8 it was the slower loan. Is the business-type effect in sanitation loans highly volatile or dependent on the partner?",
       "first_seen_batch": 23
+    },
+    "in-pair-1-l3162207-vs-l3158762-the-pitches-are": {
+      "id": "in-pair-1-l3162207-vs-l3158762-the-pitches-are",
+      "body": "In Pair 1 (L3162207 vs L3158762), the pitches are virtually identical, differing only by the word 'and' in the phrase 'health and hazard risks'. Despite this, there is a 47-hour funding gap, suggesting that for highly templated text, invisible metadata or random noise dominates.",
+      "first_seen_batch": 26
     }
   },
   "retired": {
