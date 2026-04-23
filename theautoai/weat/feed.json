@@ -1,5 +1,111 @@
 [
   {
+    "id": "85b2b23375fc",
+    "timestamp": "2026-04-23T11:23:13.320787+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "aristocrats vs businesspeople on temporal stability",
+    "labels": {
+      "X": "aristocrats",
+      "Y": "businesspeople",
+      "A": "permanence",
+      "B": "volatility"
+    },
+    "canonical_keys": {
+      "X": "aristocrats",
+      "Y": "businesspeople",
+      "A": "permanence",
+      "B": "volatility"
+    },
+    "effect_size": 0.378945652888869,
+    "p_value": 0.31655,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "noble",
+        "nobility",
+        "peer",
+        "lord",
+        "baron",
+        "count",
+        "duke",
+        "earl",
+        "marquess",
+        "royal",
+        "courtier",
+        "hereditary",
+        "lineage",
+        "patrician",
+        "gentry"
+      ],
+      "Y_used": [
+        "entrepreneur",
+        "executive",
+        "manager",
+        "capitalist",
+        "trader",
+        "merchant",
+        "broker",
+        "corporate",
+        "professional",
+        "vendor",
+        "tycoon",
+        "mogul",
+        "seller",
+        "owner",
+        "employee"
+      ],
+      "A_used": [
+        "permanent",
+        "stable",
+        "enduring",
+        "eternal",
+        "lasting",
+        "constant",
+        "fixed",
+        "immutable",
+        "persistent",
+        "timeless",
+        "steady",
+        "unchanging",
+        "forever",
+        "solid",
+        "perennial"
+      ],
+      "B_used": [
+        "volatile",
+        "fleeting",
+        "transient",
+        "temporary",
+        "unstable",
+        "shifting",
+        "erratic",
+        "fluid",
+        "ephemeral",
+        "brief",
+        "momentary",
+        "changing",
+        "fickle",
+        "variable",
+        "precarious"
+      ]
+    },
+    "proposal": "I propose that people associate aristocrats with permanence more strongly than they associate businesspeople with permanence. This association reflects an implicit psychological distinction between the perceived stability of inherited status and the inherent volatility of acquired wealth. This is novel because most implicit association research on socioeconomic status focuses on a binary of rich versus poor, rather than a distinction between types of wealth. Confirming this would reveal how the public mentally represents social hierarchy not just in terms of amount, but in terms of temporal endurance and legitimacy.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "ccbe876183f0",
     "timestamp": "2026-04-23T10:04:18.679299+00:00",
     "schema_version": "autoresearch.v1",
