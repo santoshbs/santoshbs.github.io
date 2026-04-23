@@ -1,5 +1,111 @@
 [
   {
+    "id": "3db9d7bc1784",
+    "timestamp": "2026-04-23T06:19:55.008623+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "scientists vs immigrants on global vs local identity",
+    "labels": {
+      "X": "scientists",
+      "Y": "immigrants",
+      "A": "cosmopolitan",
+      "B": "provincial"
+    },
+    "canonical_keys": {
+      "X": "scientists",
+      "Y": "immigrants",
+      "A": "cosmopolitan",
+      "B": "provincial"
+    },
+    "effect_size": 1.5996096190079547,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "scientist",
+        "physicist",
+        "chemist",
+        "biologist",
+        "astronomer",
+        "mathematician",
+        "researcher",
+        "scholar",
+        "academic",
+        "neurologist",
+        "geologist",
+        "botanist",
+        "geneticist",
+        "analyst",
+        "theorist"
+      ],
+      "Y_used": [
+        "immigrant",
+        "migrant",
+        "refugee",
+        "settler",
+        "newcomer",
+        "alien",
+        "expatriate",
+        "foreigner",
+        "displaced",
+        "arrival",
+        "outsider",
+        "wanderer",
+        "emigrant",
+        "transplant",
+        "sojourner"
+      ],
+      "A_used": [
+        "global",
+        "international",
+        "sophisticated",
+        "worldly",
+        "diverse",
+        "cultured",
+        "urban",
+        "polyglot",
+        "eclectic",
+        "cosmopolitan",
+        "universal",
+        "liberal",
+        "refined",
+        "broad",
+        "traveled"
+      ],
+      "B_used": [
+        "local",
+        "provincial",
+        "narrow",
+        "parochial",
+        "rustic",
+        "isolated",
+        "limited",
+        "insular",
+        "sheltered",
+        "rural",
+        "homegrown",
+        "domestic",
+        "confined",
+        "simple",
+        "restricted"
+      ]
+    },
+    "proposal": "People associate scientists with cosmopolitanism more strongly than they associate immigrants with cosmopolitanism. While immigrants are physically mobile, the implicit stereotype of the 'cosmopolitan' often aligns with high-status professional mobility and a global intellectual identity rather than the experience of migration. This is novel because it examines the intersection of institutional status and global identity, shifting the focus from actual mobility to the perceived nature of that mobility. Confirming this association would reveal a social bias where 'global citizenship' is implicitly reserved for elite professional classes rather than those who have actually crossed borders.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "cd9a73d19187",
     "timestamp": "2026-04-23T04:53:15.612158+00:00",
     "schema_version": "autoresearch.v1",
