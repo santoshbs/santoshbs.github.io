@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
-  "batches_seen": 29,
-  "loans_seen": 464,
-  "last_updated": "2026-04-23T03:55:01.285462+00:00",
-  "watching_for": "I am watching to see if the 'previous loan' booster is the strongest textual signal available, and if it can make a man fund faster than a woman (gender-contrary) in future batches.",
+  "batches_seen": 30,
+  "loans_seen": 480,
+  "last_updated": "2026-04-23T04:41:12+00:00",
+  "watching_for": "I am watching to see if the 'Customer Demand' signal is a consistent booster for men, and if the 'Scenic Penalty' holds across other sectors.",
   "claims": {
     "pitches-that-mention-owning-a-home-or-land-fund-faster-regar": {
       "id": "pitches-that-mention-owning-a-home-or-land-fund-faster-regar",
@@ -16,7 +16,7 @@
       ],
       "confidence": 0.97,
       "first_seen_batch": 2,
-      "last_updated_batch": 27,
+      "last_updated_batch": 29,
       "confidence_history": [
         [
           2,
@@ -125,6 +125,10 @@
         [
           27,
           0.97
+        ],
+        [
+          29,
+          0.97
         ]
       ]
     },
@@ -142,7 +146,7 @@
       ],
       "confidence": 0.99,
       "first_seen_batch": 2,
-      "last_updated_batch": 28,
+      "last_updated_batch": 29,
       "confidence_history": [
         [
           2,
@@ -251,6 +255,10 @@
         [
           28,
           0.99
+        ],
+        [
+          29,
+          0.99
         ]
       ]
     },
@@ -265,9 +273,9 @@
         3158882,
         3162232
       ],
-      "confidence": 1.0,
+      "confidence": 0.95,
       "first_seen_batch": 3,
-      "last_updated_batch": 27,
+      "last_updated_batch": 29,
       "confidence_history": [
         [
           3,
@@ -380,6 +388,10 @@
         [
           27,
           1.0
+        ],
+        [
+          29,
+          0.95
         ]
       ]
     },
@@ -397,7 +409,7 @@
       ],
       "confidence": 1.0,
       "first_seen_batch": 9,
-      "last_updated_batch": 28,
+      "last_updated_batch": 29,
       "confidence_history": [
         [
           9,
@@ -486,6 +498,10 @@
         [
           28,
           1.0
+        ],
+        [
+          29,
+          1.0
         ]
       ]
     },
@@ -497,9 +513,9 @@
       "supporting_loans": [
         3162022
       ],
-      "confidence": 0.95,
+      "confidence": 0.98,
       "first_seen_batch": 13,
-      "last_updated_batch": 27,
+      "last_updated_batch": 29,
       "confidence_history": [
         [
           13,
@@ -560,6 +576,10 @@
         [
           27,
           0.95
+        ],
+        [
+          29,
+          0.98
         ]
       ]
     },
@@ -577,7 +597,7 @@
       ],
       "confidence": 0.85,
       "first_seen_batch": 23,
-      "last_updated_batch": 28,
+      "last_updated_batch": 29,
       "confidence_history": [
         [
           23,
@@ -606,26 +626,10 @@
         [
           28,
           0.85
-        ]
-      ]
-    },
-    "pitches-that-explicitly-mention-a-history-of-successful-prev": {
-      "id": "pitches-that-explicitly-mention-a-history-of-successful-prev",
-      "bucket": "faster",
-      "title": "Pitches that explicitly mention a history of successful previous loans fund faster, regardless of gender.",
-      "body": "Mentioning that the business has been sustained or strengthened by previous loans provides a concrete signal of creditworthiness that outweighs narrative effort or professional ambition.",
-      "supporting_loans": [
-        3159445,
-        3158975,
-        3161109
-      ],
-      "confidence": 0.65,
-      "first_seen_batch": 28,
-      "last_updated_batch": 28,
-      "confidence_history": [
+        ],
         [
-          28,
-          0.65
+          29,
+          0.85
         ]
       ]
     },
@@ -637,13 +641,35 @@
       "supporting_loans": [
         3161804
       ],
-      "confidence": 0.6,
+      "confidence": 0.75,
       "first_seen_batch": 28,
-      "last_updated_batch": 28,
+      "last_updated_batch": 29,
       "confidence_history": [
         [
           28,
           0.6
+        ],
+        [
+          29,
+          0.75
+        ]
+      ]
+    },
+    "pitches-that-mention-existing-customer-demand-or-specific-or": {
+      "id": "pitches-that-mention-existing-customer-demand-or-specific-or",
+      "bucket": "faster",
+      "title": "Pitches that mention existing customer demand or specific orders fund faster, regardless of gender.",
+      "body": "Mentioning that a borrower has 'customer orders that he has to meet' provides a powerful signal of immediate business viability and urgency. This was observed in a gender-contrary pair where it helped a man fund faster than a woman.",
+      "supporting_loans": [
+        3162863
+      ],
+      "confidence": 0.65,
+      "first_seen_batch": 29,
+      "last_updated_batch": 29,
+      "confidence_history": [
+        [
+          29,
+          0.65
         ]
       ]
     }
@@ -803,6 +829,11 @@
       "id": "in-sanitation-loans-general-store-is-sometimes",
       "body": "In sanitation loans, 'general store' is sometimes fast (Pair 2, 3, 5) and sometimes slow (Pair 1, 4). This suggests it is a neutral baseline, and the real speed drivers are environmental framing (Fast) or fish-vending (Slow).",
       "first_seen_batch": 28
+    },
+    "in-pair-4-a-highly-descriptive-scenic-narrativ": {
+      "id": "in-pair-4-a-highly-descriptive-scenic-narrativ",
+      "body": "In Pair 4, a highly descriptive, 'scenic' narrative about a district's beauty and gastronomy (L3159818) was significantly slower than a generic emotive template (L3159061). This suggests a 'Scenic Penalty' where narratives that feel like travel brochures rather than urgent requests for capital are viewed unfavorably.",
+      "first_seen_batch": 29
     }
   },
   "retired": {
@@ -924,6 +955,13 @@
       "retrospective": "I believed narrative register (unique > emotive > factual) was the key. However, this batch shows that a 'factual template' with a repayment track record beats a 'unique narrative' without one.",
       "retired_batch": 28,
       "was_believed_batches": 9
+    },
+    "pitches-that-explicitly-mention-a-history-of-successful-prev": {
+      "id": "pitches-that-explicitly-mention-a-history-of-successful-prev",
+      "title": "Pitches that explicitly mention a history of successful previous loans fund faster, regardless of gender.",
+      "retrospective": "I believed previous loan history was a strong booster. However, in the NWTF/Philippines context, it appears to be a standard part of the template for almost all borrowers, regardless of funding speed.",
+      "retired_batch": 29,
+      "was_believed_batches": 1
     }
   }
 }
