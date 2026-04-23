@@ -1,5 +1,111 @@
 [
   {
+    "id": "21ef90c38848",
+    "timestamp": "2026-04-23T13:07:25.452073+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "artists vs doctors on emotional engagement vs professional detachment",
+    "labels": {
+      "X": "artists",
+      "Y": "doctors",
+      "A": "emotional resonance",
+      "B": "clinical detachment"
+    },
+    "canonical_keys": {
+      "X": "artists",
+      "Y": "doctors",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 1.311630675192937,
+    "p_value": 0.0001,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "painter",
+        "sculptor",
+        "musician",
+        "poet",
+        "dancer",
+        "singer",
+        "composer",
+        "actor",
+        "novelist",
+        "dramatist",
+        "illustrator",
+        "curator",
+        "choreographer",
+        "lyricist",
+        "playwright"
+      ],
+      "Y_used": [
+        "physician",
+        "surgeon",
+        "pediatrician",
+        "oncologist",
+        "cardiologist",
+        "psychiatrist",
+        "internist",
+        "neurologist",
+        "dermatologist",
+        "practitioner",
+        "clinician",
+        "resident",
+        "geriatrician",
+        "radiologist",
+        "anesthesiologist"
+      ],
+      "A_used": [
+        "empathetic",
+        "compassionate",
+        "feeling",
+        "warm",
+        "sensitive",
+        "emotional",
+        "understanding",
+        "intuitive",
+        "caring",
+        "tender",
+        "heartfelt",
+        "resonant",
+        "affectionate",
+        "soft",
+        "open"
+      ],
+      "B_used": [
+        "clinical",
+        "detached",
+        "cold",
+        "distant",
+        "objective",
+        "analytical",
+        "sterile",
+        "formal",
+        "professional",
+        "dispassionate",
+        "indifferent",
+        "remote",
+        "aloof",
+        "methodical",
+        "systemic"
+      ]
+    },
+    "proposal": "I propose that people associate artists with empathy more strongly than they associate doctors with empathy. While both professions are often viewed as helping or understanding the human condition, the public typically perceives artistic empathy as an open, emotional resonance and medical empathy as a clinical or detached professional tool. This association is novel because it moves beyond simple 'creative vs. scientific' dichotomies to examine how different modes of professional care are mentally represented. Confirming this would provide insight into the 'clinical detachment' stereotype and how it contrasts with the perceived emotional permeability of creative actors.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "85b2b23375fc",
     "timestamp": "2026-04-23T11:23:13.320787+00:00",
     "schema_version": "autoresearch.v1",
