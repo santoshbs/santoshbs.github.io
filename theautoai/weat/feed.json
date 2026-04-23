@@ -1,5 +1,111 @@
 [
   {
+    "id": "09fe32d14948",
+    "timestamp": "2026-04-23T04:05:05.518673+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "musicians vs lawyers on emotionality versus rationality",
+    "labels": {
+      "X": "musicians",
+      "Y": "lawyers",
+      "A": "emotional",
+      "B": "rational"
+    },
+    "canonical_keys": {
+      "X": "musicians",
+      "Y": "lawyers",
+      "A": "emotional",
+      "B": "rational"
+    },
+    "effect_size": 1.869101866607155,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "musician",
+        "singer",
+        "pianist",
+        "guitarist",
+        "drummer",
+        "violinist",
+        "cellist",
+        "bassist",
+        "harpist",
+        "flutist",
+        "saxophonist",
+        "composer",
+        "conductor",
+        "vocalist",
+        "performer"
+      ],
+      "Y_used": [
+        "lawyer",
+        "attorney",
+        "barrister",
+        "solicitor",
+        "litigator",
+        "counsel",
+        "advocate",
+        "prosecutor",
+        "paralegal",
+        "jurist",
+        "notary",
+        "clerk",
+        "magistrate",
+        "partner",
+        "associate"
+      ],
+      "A_used": [
+        "emotional",
+        "passionate",
+        "expressive",
+        "sentimental",
+        "intuitive",
+        "tender",
+        "warm",
+        "sensitive",
+        "affective",
+        "spirited",
+        "heartfelt",
+        "moody",
+        "temperamental",
+        "ardent",
+        "fervent"
+      ],
+      "B_used": [
+        "rational",
+        "logical",
+        "analytical",
+        "stoic",
+        "objective",
+        "detached",
+        "clinical",
+        "calculated",
+        "formal",
+        "rigid",
+        "cold",
+        "impartial",
+        "reasoned",
+        "systematic",
+        "factual"
+      ]
+    },
+    "proposal": "I propose that people associate musicians with emotionality more strongly than they associate lawyers with emotionality. While both art and law are established fields, the specific implicit contrast regarding the capacity for or expression of emotion between these two professional identities has not been systematically explored in academic literature. This is interesting because it examines the implicit professional boundaries between roles perceived as 'expressive' versus those perceived as 'analytical' or 'adversarial.' Confirming this association would provide insight into how societal expectations of emotional regulation are tied to professional identity.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "70ffdfc49ef5",
     "timestamp": "2026-04-23T03:17:38.117570+00:00",
     "schema_version": "autoresearch.v1",
