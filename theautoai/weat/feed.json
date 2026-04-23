@@ -1,5 +1,111 @@
 [
   {
+    "id": "9aa60a3b04fb",
+    "timestamp": "2026-04-23T18:21:41.657114+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "peasants vs bourgeoisie on authenticity versus artificiality",
+    "labels": {
+      "X": "peasants",
+      "Y": "bourgeoisie",
+      "A": "authentic",
+      "B": "artificial"
+    },
+    "canonical_keys": {
+      "X": "peasants",
+      "Y": "bourgeoisie",
+      "A": "authentic",
+      "B": "artificial"
+    },
+    "effect_size": -0.08279865565583594,
+    "p_value": 0.82597,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "peasant",
+        "farmer",
+        "serf",
+        "laborer",
+        "tiller",
+        "plowman",
+        "villager",
+        "crofter",
+        "sharecropper",
+        "husbandman",
+        "yeoman",
+        "rustic",
+        "swineherd",
+        "shepherd",
+        "tenant"
+      ],
+      "Y_used": [
+        "bourgeois",
+        "capitalist",
+        "tycoon",
+        "mogul",
+        "plutocrat",
+        "urbanite",
+        "elite",
+        "merchant",
+        "industrialist",
+        "banker",
+        "proprietor",
+        "millionaire",
+        "stockholder",
+        "shareholder",
+        "entrepreneur"
+      ],
+      "A_used": [
+        "authentic",
+        "genuine",
+        "real",
+        "true",
+        "natural",
+        "honest",
+        "sincere",
+        "pure",
+        "organic",
+        "raw",
+        "basic",
+        "straightforward",
+        "candid",
+        "unadulterated",
+        "heartfelt"
+      ],
+      "B_used": [
+        "artificial",
+        "fake",
+        "synthetic",
+        "plastic",
+        "superficial",
+        "manufactured",
+        "staged",
+        "contrived",
+        "false",
+        "counterfeit",
+        "imitation",
+        "pretentious",
+        "glossy",
+        "polished",
+        "insincere"
+      ]
+    },
+    "proposal": "People associate peasants with authenticity more strongly than they associate bourgeoisie with authenticity. This proposal examines the implicit romanticization of the agrarian lower class as being more 'genuine' or 'true' than the urban capitalist class. While wealth and status are often studied in implicit association tasks, the specific link between socioeconomic class and the trait of authenticity remains under-explored. Confirming this association would reveal how contemporary mental representations of class are tied to a perceived dichotomy between rural purity and urban artificiality.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "a2b0dc1e589f",
     "timestamp": "2026-04-23T16:20:15.046058+00:00",
     "schema_version": "autoresearch.v1",
