@@ -1,5 +1,113 @@
 [
   {
+    "id": "6ee33575ce32",
+    "timestamp": "2026-04-23T22:20:33.923774+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "economists vs sociologists on individualism versus collectivism",
+    "labels": {
+      "X": "economists",
+      "Y": "sociologists",
+      "A": "individualism",
+      "B": "collectivism"
+    },
+    "canonical_keys": {
+      "X": "economists",
+      "Y": "sociologists",
+      "A": "individualism",
+      "B": "collectivism"
+    },
+    "effect_size": -0.06524945172118024,
+    "p_value": 0.85919,
+    "n": {
+      "X": 16,
+      "Y": 16,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "economist",
+        "economists",
+        "actuary",
+        "actuaries",
+        "banker",
+        "bankers",
+        "financier",
+        "financiers",
+        "trader",
+        "traders",
+        "broker",
+        "brokers",
+        "accountant",
+        "accountants",
+        "auditor",
+        "auditors"
+      ],
+      "Y_used": [
+        "sociologist",
+        "sociologists",
+        "anthropologist",
+        "anthropologists",
+        "ethnographer",
+        "ethnographers",
+        "demographer",
+        "demographers",
+        "urbanist",
+        "urbanists",
+        "folklorist",
+        "folklorists",
+        "caseworker",
+        "caseworkers",
+        "scholar",
+        "scholars"
+      ],
+      "A_used": [
+        "individual",
+        "independent",
+        "autonomous",
+        "self",
+        "personal",
+        "private",
+        "singular",
+        "solo",
+        "unique",
+        "alone",
+        "selfish",
+        "ego",
+        "egoist",
+        "distinct",
+        "discrete"
+      ],
+      "B_used": [
+        "collective",
+        "community",
+        "public",
+        "together",
+        "common",
+        "shared",
+        "mutual",
+        "cooperative",
+        "population",
+        "mass",
+        "group",
+        "crowd",
+        "assembly",
+        "union",
+        "fellowship"
+      ]
+    },
+    "proposal": "People associate economists with individualism more strongly than they associate sociologists with individualism. Because economics often relies on the theoretical model of the 'rational individual,' while sociology emphasizes collective structures and social determinants, the public likely mirrors this academic divide in their implicit associations. Confirming this would be important for understanding how the foundational assumptions of different social sciences shape the public's mental representation of the experts who practice them.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "f77cd45a1502",
     "timestamp": "2026-04-23T20:39:14.055358+00:00",
     "schema_version": "autoresearch.v1",
