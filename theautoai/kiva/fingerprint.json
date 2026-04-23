@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
-  "batches_seen": 27,
-  "loans_seen": 432,
-  "last_updated": "2026-04-23T02:21:58.763697+00:00",
-  "watching_for": "I am watching for cross-gender pairs to see if the 'general store' penalty in sanitation loans is a gender-general effect or if it interacts with the gender baseline. I also want to see if the 'college' goal (seen as a slow signal in Pair 2) is a consistent penalty compared to 'family security'.",
+  "batches_seen": 28,
+  "loans_seen": 448,
+  "last_updated": "2026-04-23T03:07:31.261574+00:00",
+  "watching_for": "I am watching for more cross-gender pairs to see if professional experience (like the 5 years in L3160737) is a consistent 'gender-contrary' booster for men. I also want to see if the 'fish penalty' holds across all sectors or is specific to sanitation and food.",
   "claims": {
     "pitches-that-mention-owning-a-home-or-land-fund-faster-regar": {
       "id": "pitches-that-mention-owning-a-home-or-land-fund-faster-regar",
@@ -14,9 +14,9 @@
         3160255,
         3160710
       ],
-      "confidence": 0.96,
+      "confidence": 0.97,
       "first_seen_batch": 2,
-      "last_updated_batch": 26,
+      "last_updated_batch": 27,
       "confidence_history": [
         [
           2,
@@ -121,6 +121,10 @@
         [
           26,
           0.96
+        ],
+        [
+          27,
+          0.97
         ]
       ]
     },
@@ -138,7 +142,7 @@
       ],
       "confidence": 0.99,
       "first_seen_batch": 2,
-      "last_updated_batch": 26,
+      "last_updated_batch": 27,
       "confidence_history": [
         [
           2,
@@ -239,6 +243,10 @@
         [
           26,
           0.99
+        ],
+        [
+          27,
+          0.99
         ]
       ]
     },
@@ -255,7 +263,7 @@
       ],
       "confidence": 1.0,
       "first_seen_batch": 3,
-      "last_updated_batch": 26,
+      "last_updated_batch": 27,
       "confidence_history": [
         [
           3,
@@ -364,6 +372,10 @@
         [
           26,
           1.0
+        ],
+        [
+          27,
+          1.0
         ]
       ]
     },
@@ -381,7 +393,7 @@
       ],
       "confidence": 1.0,
       "first_seen_batch": 9,
-      "last_updated_batch": 26,
+      "last_updated_batch": 27,
       "confidence_history": [
         [
           9,
@@ -462,6 +474,10 @@
         [
           26,
           1.0
+        ],
+        [
+          27,
+          1.0
         ]
       ]
     },
@@ -475,7 +491,7 @@
       ],
       "confidence": 0.95,
       "first_seen_batch": 13,
-      "last_updated_batch": 26,
+      "last_updated_batch": 27,
       "confidence_history": [
         [
           13,
@@ -532,6 +548,10 @@
         [
           26,
           0.95
+        ],
+        [
+          27,
+          0.95
         ]
       ]
     },
@@ -541,9 +561,9 @@
       "title": "Pitches follow a funding speed hierarchy based on textual register, where unique personal narratives fund fastest, followed by emotive templates, with purely factual or generic pitches funding slowest, regardless of gender.",
       "body": "Lenders respond most strongly to high-specificity unique narratives. When those are absent, 'emotive templates' (e.g., 'working tirelessly') outperform bare-bones factual or generic pitches, suggesting a tiered preference for perceived effort and personality.",
       "supporting_loans": [],
-      "confidence": 0.82,
+      "confidence": 0.85,
       "first_seen_batch": 19,
-      "last_updated_batch": 26,
+      "last_updated_batch": 27,
       "confidence_history": [
         [
           19,
@@ -576,6 +596,10 @@
         [
           26,
           0.82
+        ],
+        [
+          27,
+          0.85
         ]
       ]
     },
@@ -591,9 +615,9 @@
         3158957,
         3161041
       ],
-      "confidence": 0.7,
+      "confidence": 0.8,
       "first_seen_batch": 23,
-      "last_updated_batch": 26,
+      "last_updated_batch": 27,
       "confidence_history": [
         [
           23,
@@ -614,36 +638,10 @@
         [
           26,
           0.7
-        ]
-      ]
-    },
-    "pitches-for-sanitation-loans-that-identify-the-borrower-s-bu-3": {
-      "id": "pitches-for-sanitation-loans-that-identify-the-borrower-s-bu-3",
-      "bucket": "slower",
-      "title": "Pitches for sanitation loans that identify the borrower's business as a 'general store' fund slower than those identifying more specific business types, regardless of gender.",
-      "body": "In multiple matched pairs, sanitation loans for borrowers with general stores fund significantly slower than those with specific businesses like pig fattening or cosmetics sales. This suggests a lender preference for specialized micro-enterprises over general retail in the sanitation sector.",
-      "supporting_loans": [
-        3158169,
-        3158172,
-        3158760,
-        3158205,
-        3158165
-      ],
-      "confidence": 0.75,
-      "first_seen_batch": 25,
-      "last_updated_batch": 26,
-      "confidence_history": [
-        [
-          25,
-          0.65
         ],
         [
-          26,
-          0.75
-        ],
-        [
-          26,
-          0.75
+          27,
+          0.8
         ]
       ]
     }
@@ -793,6 +791,11 @@
       "id": "in-pair-1-l3162207-vs-l3158762-the-pitches-are",
       "body": "In Pair 1 (L3162207 vs L3158762), the pitches are virtually identical, differing only by the word 'and' in the phrase 'health and hazard risks'. Despite this, there is a 47-hour funding gap, suggesting that for highly templated text, invisible metadata or random noise dominates.",
       "first_seen_batch": 26
+    },
+    "in-pair-4-the-fast-general-store-l3157135-menti": {
+      "id": "in-pair-4-the-fast-general-store-l3157135-menti",
+      "body": "In Pair 4, the fast general store (L3157135) mentions 'neighbors' and 'environmental protection', while the slow general store (L3158772) does not. This suggests that in the sanitation sector, environmental framing may actually be a booster, contradicting some previous observations.",
+      "first_seen_batch": 27
     }
   },
   "retired": {
@@ -900,6 +903,13 @@
       "retrospective": "I believed environmental framing was a penalty in sanitation. This batch showed it present in both fast and slow loans, proving it is noise rather than a signal.",
       "retired_batch": 25,
       "was_believed_batches": 1
+    },
+    "pitches-for-sanitation-loans-that-identify-the-borrower-s-bu-3": {
+      "id": "pitches-for-sanitation-loans-that-identify-the-borrower-s-bu-3",
+      "title": "Pitches for sanitation loans that identify the borrower's business as a 'general store' fund slower than those identifying more specific business types, regardless of gender.",
+      "retrospective": "I believed general stores in sanitation were a slow signal. However, Pair 1 and Pair 4 show them funding much faster than fish-related businesses or basic templates, suggesting the 'slow' signal was actually the fish business, not the general store.",
+      "retired_batch": 27,
+      "was_believed_batches": 2
     }
   }
 }
