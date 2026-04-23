@@ -1,5 +1,111 @@
 [
   {
+    "id": "aee5087fd362",
+    "timestamp": "2026-04-23T00:55:11.323707+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "socialists vs anarchists on level of structural organization",
+    "labels": {
+      "X": "socialists",
+      "Y": "anarchists",
+      "A": "organized",
+      "B": "spontaneous"
+    },
+    "canonical_keys": {
+      "X": "socialists",
+      "Y": "anarchists",
+      "A": "organized",
+      "B": "spontaneous"
+    },
+    "effect_size": 1.3933211895668434,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "socialist",
+        "collectivist",
+        "comrade",
+        "worker",
+        "proletarian",
+        "planner",
+        "bureaucrat",
+        "activist",
+        "organizer",
+        "delegate",
+        "representative",
+        "member",
+        "cadre",
+        "partisan",
+        "functionary"
+      ],
+      "Y_used": [
+        "anarchist",
+        "libertarian",
+        "insurrectionist",
+        "rebel",
+        "autonomist",
+        "nihilist",
+        "agitator",
+        "individualist",
+        "outlier",
+        "nonconformist",
+        "dissident",
+        "iconoclast",
+        "radical",
+        "maverick",
+        "insurgent"
+      ],
+      "A_used": [
+        "organization",
+        "structure",
+        "system",
+        "order",
+        "plan",
+        "hierarchy",
+        "regulation",
+        "discipline",
+        "management",
+        "administration",
+        "arrangement",
+        "method",
+        "protocol",
+        "coordination",
+        "framework"
+      ],
+      "B_used": [
+        "chaos",
+        "spontaneity",
+        "randomness",
+        "disorder",
+        "freedom",
+        "liberty",
+        "volatility",
+        "irregularity",
+        "improvisation",
+        "instability",
+        "whim",
+        "flux",
+        "disarray",
+        "turmoil",
+        "looseness"
+      ]
+    },
+    "proposal": "People associate socialists with organization more strongly than they associate anarchists with organization. This distinction captures the implicit perception of socialists as proponents of structured state or communal systems and anarchists as proponents of the total absence of hierarchy. This is novel because it explores the nuance within left-leaning political identities rather than contrasting them with right-leaning ones. Confirming this would reveal how the conceptual distinction between 'planned' and 'spontaneous' social order is mentally represented in the public consciousness.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "7f9429ebc4f2",
     "timestamp": "2026-04-23T00:01:58.318558+00:00",
     "schema_version": "autoresearch.v1",
