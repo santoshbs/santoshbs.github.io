@@ -1,5 +1,111 @@
 [
   {
+    "id": "cd9a73d19187",
+    "timestamp": "2026-04-23T04:53:15.612158+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Asians vs Europeans on technological orientation",
+    "labels": {
+      "X": "Asians",
+      "Y": "Europeans",
+      "A": "futuristic",
+      "B": "preservationist"
+    },
+    "canonical_keys": {
+      "X": "asians",
+      "Y": "europeans",
+      "A": "futuristic",
+      "B": "preservationist"
+    },
+    "effect_size": 0.37030801843928285,
+    "p_value": 0.32966,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "asian",
+        "easterner",
+        "chinese",
+        "japanese",
+        "korean",
+        "vietnamese",
+        "thai",
+        "indonesian",
+        "filipino",
+        "malaysian",
+        "singaporean",
+        "burmese",
+        "laotian",
+        "cambodian",
+        "mongolian"
+      ],
+      "Y_used": [
+        "european",
+        "westerner",
+        "british",
+        "french",
+        "german",
+        "italian",
+        "spanish",
+        "dutch",
+        "polish",
+        "swedish",
+        "norwegian",
+        "danish",
+        "finnish",
+        "greek",
+        "belgian"
+      ],
+      "A_used": [
+        "futuristic",
+        "modern",
+        "advanced",
+        "innovative",
+        "digital",
+        "robotic",
+        "automated",
+        "progressive",
+        "electronic",
+        "cybernetic",
+        "efficient",
+        "smart",
+        "virtual",
+        "neon",
+        "sleek"
+      ],
+      "B_used": [
+        "traditional",
+        "ancient",
+        "historic",
+        "classic",
+        "antique",
+        "regulatory",
+        "conservative",
+        "old",
+        "vintage",
+        "rustic",
+        "preserved",
+        "heritage",
+        "legacy",
+        "archaic",
+        "conventional"
+      ]
+    },
+    "proposal": "People associate Asians with technological optimism more strongly than they associate Europeans with technological optimism. This association is novel as it moves beyond traditional ethnic stereotypes to examine contemporary perceptions of regional innovation and adaptability. It is interesting because it captures the current geopolitical dichotomy between the 'futuristic' image of East Asian megacities and the 'preservationist' or 'regulatory' image of Europe. Confirming this would shift our understanding of how regional identities are mentally mapped onto the concept of progress.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "09fe32d14948",
     "timestamp": "2026-04-23T04:05:05.518673+00:00",
     "schema_version": "autoresearch.v1",
