@@ -1,5 +1,111 @@
 [
   {
+    "id": "f77cd45a1502",
+    "timestamp": "2026-04-23T20:39:14.055358+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "farmers vs teachers on groundedness vs abstraction",
+    "labels": {
+      "X": "farmers",
+      "Y": "teachers",
+      "A": "grounded",
+      "B": "abstract"
+    },
+    "canonical_keys": {
+      "X": "farmers",
+      "Y": "teachers",
+      "A": "grounded",
+      "B": "abstract"
+    },
+    "effect_size": -0.13251518339126922,
+    "p_value": 0.72633,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "farmer",
+        "grower",
+        "planter",
+        "rancher",
+        "harvester",
+        "tiller",
+        "peasant",
+        "vintner",
+        "orchardist",
+        "cropper",
+        "cultivator",
+        "shepherd",
+        "herdsman",
+        "dairyman",
+        "plowman"
+      ],
+      "Y_used": [
+        "teacher",
+        "educator",
+        "tutor",
+        "professor",
+        "instructor",
+        "lecturer",
+        "pedagogue",
+        "mentor",
+        "coach",
+        "academic",
+        "scholar",
+        "trainer",
+        "dean",
+        "principal",
+        "provost"
+      ],
+      "A_used": [
+        "practical",
+        "realistic",
+        "concrete",
+        "stable",
+        "humble",
+        "simple",
+        "direct",
+        "earthy",
+        "pragmatic",
+        "basic",
+        "tangible",
+        "functional",
+        "natural",
+        "plain",
+        "steady"
+      ],
+      "B_used": [
+        "abstract",
+        "theoretical",
+        "idealistic",
+        "airy",
+        "conceptual",
+        "intellectual",
+        "visionary",
+        "flighty",
+        "imaginative",
+        "remote",
+        "ethereal",
+        "detached",
+        "lofty",
+        "complex",
+        "metaphysical"
+      ]
+    },
+    "proposal": "people associate farmers with groundedness more strongly than they associate teachers with groundedness. This association is novel as it contrasts the perceived psychological state of vocational rural labor with that of pedagogical labor. It is interesting because it examines whether the physical nature of land-based work translates into an implicit association with mental stability and practicality. Confirming this would shift our understanding of how professional identities are linked to perceived personality traits like being 'down-to-earth'.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "9aa60a3b04fb",
     "timestamp": "2026-04-23T18:21:41.657114+00:00",
     "schema_version": "autoresearch.v1",
