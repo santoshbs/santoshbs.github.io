@@ -1,5 +1,111 @@
 [
   {
+    "id": "494d6d62f6b2",
+    "timestamp": "2026-04-23T14:50:49.044818+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "nurses vs engineers on integrative versus reductive thinking",
+    "labels": {
+      "X": "nurses",
+      "Y": "engineers",
+      "A": "holistic",
+      "B": "modular"
+    },
+    "canonical_keys": {
+      "X": "nurses",
+      "Y": "engineers",
+      "A": "holistic",
+      "B": "modular"
+    },
+    "effect_size": 1.2302494837888494,
+    "p_value": 0.00044,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "nurse",
+        "caregiver",
+        "midwife",
+        "clinician",
+        "practitioner",
+        "aide",
+        "orderly",
+        "matron",
+        "attendant",
+        "provider",
+        "caretaker",
+        "medic",
+        "sister",
+        "paramedic",
+        "staff"
+      ],
+      "Y_used": [
+        "engineer",
+        "programmer",
+        "developer",
+        "architect",
+        "technician",
+        "coder",
+        "designer",
+        "builder",
+        "analyst",
+        "mechanic",
+        "operator",
+        "consultant",
+        "metallurgist",
+        "physicist",
+        "mathematician"
+      ],
+      "A_used": [
+        "holistic",
+        "integrative",
+        "comprehensive",
+        "whole",
+        "global",
+        "inclusive",
+        "synergistic",
+        "general",
+        "broad",
+        "overall",
+        "unifying",
+        "systemic",
+        "combined",
+        "total",
+        "universal"
+      ],
+      "B_used": [
+        "modular",
+        "reductive",
+        "analytical",
+        "detailed",
+        "specific",
+        "atomic",
+        "partial",
+        "segmented",
+        "discrete",
+        "linear",
+        "fragmented",
+        "narrow",
+        "pinpoint",
+        "minute",
+        "precise"
+      ]
+    },
+    "proposal": "People associate nurses with holistic thinking more strongly than they associate engineers with holistic thinking. This association is novel as it contrasts the 'whole-person' approach of clinical healthcare with the 'modular-system' approach of technical design. It is interesting because it reveals how we implicitly categorize different types of professional expertise as either integrative or reductive. Confirming this would shift our understanding of how the public perceives the cognitive frameworks inherent to care-giving versus system-building.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "21ef90c38848",
     "timestamp": "2026-04-23T13:07:25.452073+00:00",
     "schema_version": "autoresearch.v1",
