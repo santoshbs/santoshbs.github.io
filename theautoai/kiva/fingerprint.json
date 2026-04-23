@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
-  "batches_seen": 32,
-  "loans_seen": 512,
-  "last_updated": "2026-04-23T06:10:19.374743+00:00",
-  "watching_for": "I am watching for more instances of 'Demographic Drag' (Pair 3 and 6) to see if certain demographics (older age, marital status) actually slow funding when they replace a clean template.",
+  "batches_seen": 33,
+  "loans_seen": 528,
+  "last_updated": "2026-04-23T07:08:23.801071+00:00",
+  "watching_for": "I am watching for more instances of the 'Narrative Penalty' in other partner contexts to see if this is specific to NWTF Philippines or a general lender preference for brevity over detail.",
   "claims": {
     "pitches-that-mention-owning-a-home-or-land-fund-faster-regar": {
       "id": "pitches-that-mention-owning-a-home-or-land-fund-faster-regar",
@@ -16,7 +16,7 @@
       ],
       "confidence": 0.98,
       "first_seen_batch": 2,
-      "last_updated_batch": 31,
+      "last_updated_batch": 32,
       "confidence_history": [
         [
           2,
@@ -137,6 +137,10 @@
         [
           31,
           0.98
+        ],
+        [
+          32,
+          0.98
         ]
       ]
     },
@@ -154,7 +158,7 @@
       ],
       "confidence": 1.0,
       "first_seen_batch": 2,
-      "last_updated_batch": 31,
+      "last_updated_batch": 32,
       "confidence_history": [
         [
           2,
@@ -275,6 +279,10 @@
         [
           31,
           1.0
+        ],
+        [
+          32,
+          1.0
         ]
       ]
     },
@@ -289,9 +297,9 @@
         3158882,
         3162232
       ],
-      "confidence": 0.97,
+      "confidence": 0.6,
       "first_seen_batch": 3,
-      "last_updated_batch": 31,
+      "last_updated_batch": 32,
       "confidence_history": [
         [
           3,
@@ -416,6 +424,10 @@
         [
           31,
           0.97
+        ],
+        [
+          32,
+          0.6
         ]
       ]
     },
@@ -433,7 +445,7 @@
       ],
       "confidence": 1.0,
       "first_seen_batch": 9,
-      "last_updated_batch": 31,
+      "last_updated_batch": 32,
       "confidence_history": [
         [
           9,
@@ -534,6 +546,10 @@
         [
           31,
           1.0
+        ],
+        [
+          32,
+          1.0
         ]
       ]
     },
@@ -547,7 +563,7 @@
       ],
       "confidence": 0.98,
       "first_seen_batch": 13,
-      "last_updated_batch": 31,
+      "last_updated_batch": 32,
       "confidence_history": [
         [
           13,
@@ -620,6 +636,10 @@
         [
           31,
           0.98
+        ],
+        [
+          32,
+          0.98
         ]
       ]
     },
@@ -633,7 +653,7 @@
       ],
       "confidence": 0.65,
       "first_seen_batch": 29,
-      "last_updated_batch": 31,
+      "last_updated_batch": 32,
       "confidence_history": [
         [
           29,
@@ -646,24 +666,10 @@
         [
           31,
           0.65
-        ]
-      ]
-    },
-    "pitches-that-explicitly-mention-the-positive-financial-resul": {
-      "id": "pitches-that-explicitly-mention-the-positive-financial-resul",
-      "bucket": "faster",
-      "title": "Pitches that explicitly mention the positive financial results of a previous loan fund faster, regardless of gender.",
-      "body": "Stating that a previous loan led to improved sales and profits provides a concrete signal of business viability and repayment capacity.",
-      "supporting_loans": [
-        3161123
-      ],
-      "confidence": 0.62,
-      "first_seen_batch": 31,
-      "last_updated_batch": 31,
-      "confidence_history": [
+        ],
         [
-          31,
-          0.62
+          32,
+          0.65
         ]
       ]
     },
@@ -675,12 +681,35 @@
       "supporting_loans": [
         3160845
       ],
-      "confidence": 0.65,
+      "confidence": 0.75,
       "first_seen_batch": 31,
-      "last_updated_batch": 31,
+      "last_updated_batch": 32,
       "confidence_history": [
         [
           31,
+          0.65
+        ],
+        [
+          32,
+          0.75
+        ]
+      ]
+    },
+    "pitches-that-use-highly-detailed-personal-narratives-fund-sl": {
+      "id": "pitches-that-use-highly-detailed-personal-narratives-fund-sl",
+      "bucket": "slower",
+      "title": "Pitches that use highly detailed personal narratives fund slower than basic templated pitches in the NWTF Philippines partner context.",
+      "body": "In the NWTF Philippines context, rich narratives about survival or specific business logistics may be perceived as less professional or more desperate than the standard partner template, which signals a baseline of legitimacy.",
+      "supporting_loans": [
+        3161818,
+        3158883
+      ],
+      "confidence": 0.65,
+      "first_seen_batch": 32,
+      "last_updated_batch": 32,
+      "confidence_history": [
+        [
+          32,
           0.65
         ]
       ]
@@ -846,6 +875,11 @@
       "id": "the-general-store-signal-in-sanitation-loans-is",
       "body": "The 'General Store' signal in sanitation loans is inconsistent: it was the fast feature in Pairs 2, 4, and 6, but the slow feature in Pair 7. I need to determine if this is noise or if other factors (like loan amount or partner) are interacting with it.",
       "first_seen_batch": 30
+    },
+    "in-pair-4-saving-money-was-a-booster-but-in-pa": {
+      "id": "in-pair-4-saving-money-was-a-booster-but-in-pa",
+      "body": "In Pair 4, 'saving money' was a booster, but in Pair 7, the 'general store' template (which usually funds fast in sanitation) was the slow loan. This suggests that while the general store is a strong baseline, it can be overridden by very specific stability narratives (12 years employment).",
+      "first_seen_batch": 32
     }
   },
   "retired": {
@@ -988,6 +1022,13 @@
       "retrospective": "I believed environmental framing was a penalty, but Pair 2 shows it can be a booster when combined with financial benefits like 'saving money'.",
       "retired_batch": 31,
       "was_believed_batches": 3
+    },
+    "pitches-that-explicitly-mention-the-positive-financial-resul": {
+      "id": "pitches-that-explicitly-mention-the-positive-financial-resul",
+      "title": "Pitches that explicitly mention the positive financial results of a previous loan fund faster, regardless of gender.",
+      "retrospective": "Retired to make room for the 'Narrative Penalty' claim, which showed strong evidence in this batch.",
+      "retired_batch": 32,
+      "was_believed_batches": 1
     }
   }
 }
