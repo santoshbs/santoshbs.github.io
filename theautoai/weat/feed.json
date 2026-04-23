@@ -1,5 +1,111 @@
 [
   {
+    "id": "583fd9c8d680",
+    "timestamp": "2026-04-23T08:46:21.673461+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "journalists vs activists on objectivity versus passion",
+    "labels": {
+      "X": "journalists",
+      "Y": "activists",
+      "A": "neutrality",
+      "B": "passion"
+    },
+    "canonical_keys": {
+      "X": "journalists",
+      "Y": "activists",
+      "A": "neutrality",
+      "B": "passion"
+    },
+    "effect_size": 1.1042370304737623,
+    "p_value": 0.00075,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "journalist",
+        "reporter",
+        "correspondent",
+        "anchor",
+        "editor",
+        "columnist",
+        "newscaster",
+        "scribe",
+        "writer",
+        "broadcaster",
+        "blogger",
+        "analyst",
+        "observer",
+        "commentator",
+        "photographer"
+      ],
+      "Y_used": [
+        "activist",
+        "campaigner",
+        "protester",
+        "advocate",
+        "militant",
+        "organizer",
+        "reformer",
+        "agitator",
+        "lobbyist",
+        "rebel",
+        "dissident",
+        "crusader",
+        "partisan",
+        "zealot",
+        "champion"
+      ],
+      "A_used": [
+        "neutral",
+        "objective",
+        "detached",
+        "impartial",
+        "unbiased",
+        "disinterested",
+        "aloof",
+        "distant",
+        "clinical",
+        "fair",
+        "balanced",
+        "cold",
+        "passive",
+        "indifferent",
+        "dispassionate"
+      ],
+      "B_used": [
+        "passionate",
+        "biased",
+        "partial",
+        "emotional",
+        "committed",
+        "fervent",
+        "eager",
+        "zealous",
+        "ardent",
+        "intense",
+        "subjective",
+        "invested",
+        "driven",
+        "active",
+        "spirited"
+      ]
+    },
+    "proposal": "People associate journalists with detachment more strongly than they associate activists with detachment. While contemporary public discourse frequently accuses journalists of ideological bias, this proposal examines whether the implicit stereotype of the 'objective observer' still persists in the public's mental model. This is novel because it tests the tension between the explicit criticism of media partiality and the enduring institutional identity of the journalist as a neutral party. Confirming this association would indicate that the professional ideal of journalistic neutrality remains a dominant implicit representation despite overt societal skepticism.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "3db9d7bc1784",
     "timestamp": "2026-04-23T06:19:55.008623+00:00",
     "schema_version": "autoresearch.v1",
