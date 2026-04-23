@@ -1,5 +1,111 @@
 [
   {
+    "id": "a2b0dc1e589f",
+    "timestamp": "2026-04-23T16:20:15.046058+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "scientists vs aristocrats on effort vs leisure",
+    "labels": {
+      "X": "scientists",
+      "Y": "aristocrats",
+      "A": "diligence",
+      "B": "ease"
+    },
+    "canonical_keys": {
+      "X": "scientists",
+      "Y": "aristocrats",
+      "A": "diligence",
+      "B": "ease"
+    },
+    "effect_size": 1.7180097240123895,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "scientist",
+        "physicist",
+        "chemist",
+        "biologist",
+        "astronomer",
+        "geologist",
+        "mathematician",
+        "researcher",
+        "academic",
+        "scholar",
+        "analyst",
+        "technician",
+        "engineer",
+        "neurologist",
+        "geneticist"
+      ],
+      "Y_used": [
+        "aristocrat",
+        "noble",
+        "peer",
+        "lord",
+        "baron",
+        "duke",
+        "count",
+        "viscount",
+        "patrician",
+        "royal",
+        "nobleman",
+        "gentry",
+        "elite",
+        "sovereign",
+        "monarch"
+      ],
+      "A_used": [
+        "diligent",
+        "industrious",
+        "studious",
+        "rigorous",
+        "persistent",
+        "assiduous",
+        "meticulous",
+        "laborious",
+        "strenuous",
+        "effortful",
+        "tireless",
+        "earnest",
+        "devoted",
+        "conscientious",
+        "active"
+      ],
+      "B_used": [
+        "lazy",
+        "idle",
+        "indolent",
+        "leisurely",
+        "effortless",
+        "passive",
+        "relaxed",
+        "pampered",
+        "privileged",
+        "opulent",
+        "decadent",
+        "slothful",
+        "shiftless",
+        "sluggish",
+        "inert"
+      ]
+    },
+    "proposal": "People associate scientists with diligence more strongly than they associate aristocrats with diligence. This association is interesting because it probes the mental distinction between meritocratic elites and ascriptive elites. While both groups may hold high social status, the path to that status—rigorous study versus inherited privilege—should be reflected in their implicit association with hard work. Confirming this would demonstrate how the public differentiates between different forms of social prestige.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "494d6d62f6b2",
     "timestamp": "2026-04-23T14:50:49.044818+00:00",
     "schema_version": "autoresearch.v1",
