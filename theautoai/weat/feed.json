@@ -1,5 +1,111 @@
 [
   {
+    "id": "be36b93dc18e",
+    "timestamp": "2026-04-23T01:46:27.672897+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "immigrants vs workers on agency and adaptability",
+    "labels": {
+      "X": "immigrants",
+      "Y": "workers",
+      "A": "resourcefulness",
+      "B": "stagnation"
+    },
+    "canonical_keys": {
+      "X": "immigrants",
+      "Y": "workers",
+      "A": "resourcefulness",
+      "B": "stagnation"
+    },
+    "effect_size": 0.008642729656324188,
+    "p_value": 0.98162,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "immigrant",
+        "newcomer",
+        "migrant",
+        "refugee",
+        "exile",
+        "alien",
+        "settler",
+        "expatriate",
+        "outsider",
+        "foreigner",
+        "displaced",
+        "wanderer",
+        "arrival",
+        "voyager",
+        "guest"
+      ],
+      "Y_used": [
+        "worker",
+        "employee",
+        "laborer",
+        "staff",
+        "hireling",
+        "proletarian",
+        "hand",
+        "artisan",
+        "staffer",
+        "operative",
+        "clerk",
+        "technician",
+        "servant",
+        "apprentice",
+        "journeyman"
+      ],
+      "A_used": [
+        "resourceful",
+        "adaptive",
+        "clever",
+        "resilient",
+        "inventive",
+        "versatile",
+        "agile",
+        "scrappy",
+        "capable",
+        "flexible",
+        "shrewd",
+        "ingenious",
+        "hardy",
+        "persistent",
+        "dynamic"
+      ],
+      "B_used": [
+        "stable",
+        "stagnant",
+        "fixed",
+        "routine",
+        "static",
+        "inert",
+        "dormant",
+        "steady",
+        "rigid",
+        "unchanging",
+        "passive",
+        "stuck",
+        "habitual",
+        "monotonous",
+        "constant"
+      ]
+    },
+    "proposal": "I propose that people associate immigrants with resourcefulness more strongly than they associate workers with resourcefulness. While both groups are often linked to economic hardship and manual labor, the prevailing 'immigrant narrative' emphasizes the ability to navigate unfamiliar systems and thrive despite extreme adversity. In contrast, domestic workers are often implicitly associated with stability or systemic stagnation rather than the proactive adaptability of the newcomer. Confirming this association would shift our understanding of how agency is attributed to different classes of marginalized laborers.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "aee5087fd362",
     "timestamp": "2026-04-23T00:55:11.323707+00:00",
     "schema_version": "autoresearch.v1",
