@@ -1,5 +1,111 @@
 [
   {
+    "id": "7f9429ebc4f2",
+    "timestamp": "2026-04-23T00:01:58.318558+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "artists vs lawyers on tolerance for ambiguity vs precision",
+    "labels": {
+      "X": "artists",
+      "Y": "lawyers",
+      "A": "ambiguity tolerance",
+      "B": "precision"
+    },
+    "canonical_keys": {
+      "X": "artists",
+      "Y": "lawyers",
+      "A": "",
+      "B": "precision"
+    },
+    "effect_size": 1.601323571990872,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "painter",
+        "sculptor",
+        "musician",
+        "poet",
+        "actor",
+        "dancer",
+        "composer",
+        "novelist",
+        "illustrator",
+        "singer",
+        "playwright",
+        "muralist",
+        "potter",
+        "weaver",
+        "carver"
+      ],
+      "Y_used": [
+        "attorney",
+        "counselor",
+        "solicitor",
+        "barrister",
+        "litigator",
+        "advocate",
+        "prosecutor",
+        "defender",
+        "judge",
+        "jurist",
+        "notary",
+        "paralegal",
+        "clerk",
+        "mediator",
+        "arbitrator"
+      ],
+      "A_used": [
+        "vague",
+        "uncertain",
+        "abstract",
+        "flexible",
+        "fluid",
+        "open",
+        "ambiguous",
+        "varied",
+        "diverse",
+        "eclectic",
+        "nuanced",
+        "subtle",
+        "complex",
+        "imaginative",
+        "adaptable"
+      ],
+      "B_used": [
+        "precise",
+        "exact",
+        "definite",
+        "certain",
+        "concrete",
+        "rigid",
+        "strict",
+        "clear",
+        "fixed",
+        "specific",
+        "literal",
+        "binary",
+        "absolute",
+        "firm",
+        "explicit"
+      ]
+    },
+    "proposal": "I propose that people associate artists with ambiguity tolerance more strongly than they associate lawyers with ambiguity tolerance. While the general contrast between creativity and law is well-known, the specific implicit association with the psychological trait of ambiguity tolerance—the capacity to perceive ambiguous situations as challenging rather than threatening—has not been systematically explored between these two groups. This is interesting because it examines whether the legal profession's demand for precision, precedent, and binary outcomes creates a corresponding implicit association with a lower tolerance for ambiguity. Confirming this would provide insight into how professional norms and institutional goals are internalized as perceived cognitive traits of the actors within those roles.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "1816e263b2fd",
     "timestamp": "2026-04-22T23:05:53.237545+00:00",
     "schema_version": "autoresearch.v1",
