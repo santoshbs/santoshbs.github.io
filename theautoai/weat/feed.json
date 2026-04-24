@@ -1,5 +1,111 @@
 [
   {
+    "id": "8a7c5178b2c8",
+    "timestamp": "2026-04-24T00:36:02.694536+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "farmers vs police on trustworthiness",
+    "labels": {
+      "X": "farmers",
+      "Y": "police",
+      "A": "trustworthy",
+      "B": "untrustworthy"
+    },
+    "canonical_keys": {
+      "X": "farmers",
+      "Y": "police",
+      "A": "trustworthy",
+      "B": "untrustworthy"
+    },
+    "effect_size": -0.0760348909837097,
+    "p_value": 0.84154,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "farmer",
+        "grower",
+        "rancher",
+        "cultivator",
+        "peasant",
+        "harvester",
+        "tiller",
+        "shepherd",
+        "herdsman",
+        "dairyman",
+        "vintner",
+        "cropper",
+        "plowman",
+        "planter",
+        "stockman"
+      ],
+      "Y_used": [
+        "officer",
+        "cop",
+        "patrolman",
+        "constable",
+        "sheriff",
+        "deputy",
+        "warden",
+        "gendarme",
+        "marshal",
+        "detective",
+        "trooper",
+        "agent",
+        "inspector",
+        "guard",
+        "sergeant"
+      ],
+      "A_used": [
+        "honest",
+        "sincere",
+        "truthful",
+        "reliable",
+        "dependable",
+        "trustworthy",
+        "frank",
+        "candid",
+        "authentic",
+        "genuine",
+        "upright",
+        "honorable",
+        "loyal",
+        "faithful",
+        "principled"
+      ],
+      "B_used": [
+        "dishonest",
+        "deceitful",
+        "lying",
+        "corrupt",
+        "shifty",
+        "fraudulent",
+        "treacherous",
+        "sly",
+        "fake",
+        "insincere",
+        "untrustworthy",
+        "deceptive",
+        "crooked",
+        "shady",
+        "duplicitous"
+      ]
+    },
+    "proposal": "People associate farmers with trustworthiness more strongly than they associate police with trustworthiness. This comparison is novel because it pits a 'salt-of-the-earth' archetype against a representative of institutional authority, a pairing rarely examined in social psychology. It is relevant given the contemporary polarization regarding police legitimacy and the persistent cultural idealization of the agrarian worker as honest and transparent. Confirming this association would illustrate how implicit trust is distributed between those viewed as producers of sustenance and those viewed as enforcers of law.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "1d61021d37c2",
     "timestamp": "2026-04-23T23:28:13.544663+00:00",
     "schema_version": "autoresearch.v1",
