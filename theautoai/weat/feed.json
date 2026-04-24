@@ -1,5 +1,111 @@
 [
   {
+    "id": "5a7639d3d7df",
+    "timestamp": "2026-04-24T22:35:46.962942+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Jews vs Christians on intellectual vs physical orientation",
+    "labels": {
+      "X": "Jews",
+      "Y": "Christians",
+      "A": "intellectual",
+      "B": "physical"
+    },
+    "canonical_keys": {
+      "X": "jews",
+      "Y": "christians",
+      "A": "intellectual",
+      "B": "physical"
+    },
+    "effect_size": -0.46074521507869837,
+    "p_value": 0.21808,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "rabbi",
+        "cantor",
+        "hazzan",
+        "hasid",
+        "kohanim",
+        "levite",
+        "mensch",
+        "adherent",
+        "devotee",
+        "follower",
+        "believer",
+        "worshipper",
+        "convert",
+        "proselyte",
+        "practitioner"
+      ],
+      "Y_used": [
+        "priest",
+        "pastor",
+        "minister",
+        "monk",
+        "nun",
+        "cleric",
+        "disciple",
+        "parishioner",
+        "evangelist",
+        "layman",
+        "saint",
+        "martyr",
+        "deacon",
+        "bishop",
+        "preacher"
+      ],
+      "A_used": [
+        "scholar",
+        "student",
+        "academic",
+        "read",
+        "learn",
+        "study",
+        "library",
+        "book",
+        "intellectual",
+        "literate",
+        "knowledge",
+        "research",
+        "diligent",
+        "brainy",
+        "erudite"
+      ],
+      "B_used": [
+        "athletic",
+        "sport",
+        "muscle",
+        "gym",
+        "play",
+        "relax",
+        "lazy",
+        "simple",
+        "basic",
+        "physical",
+        "active",
+        "casual",
+        "unlearned",
+        "ignorant",
+        "mindless"
+      ]
+    },
+    "proposal": "People associate Jews with studiousness more strongly than they associate Christians with studiousness. This is novel because implicit association research on religious groups typically focuses on negative stereotypes or prejudice rather than the internalization of positive cultural archetypes. It is interesting because it examines how historical traditions of textual analysis and literacy in Jewish culture translate into contemporary mental representations. Confirming this association would demonstrate that positive, trait-based stereotypes are as mentally salient as negative ones in the perception of religious identities.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "f59cbeeb6bf0",
     "timestamp": "2026-04-24T21:45:54.714832+00:00",
     "schema_version": "autoresearch.v1",
