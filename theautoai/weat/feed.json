@@ -1,5 +1,111 @@
 [
   {
+    "id": "d5d1e2c4ea83",
+    "timestamp": "2026-04-24T23:29:11.060228+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "children vs athletes on play versus labor",
+    "labels": {
+      "X": "children",
+      "Y": "athletes",
+      "A": "playfulness",
+      "B": "professionalism"
+    },
+    "canonical_keys": {
+      "X": "children",
+      "Y": "athletes",
+      "A": "playfulness",
+      "B": "professionalism"
+    },
+    "effect_size": 0.7711997586432964,
+    "p_value": 0.03589,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "child",
+        "kid",
+        "toddler",
+        "infant",
+        "youth",
+        "adolescent",
+        "youngster",
+        "preschooler",
+        "juvenile",
+        "boy",
+        "girl",
+        "teen",
+        "babe",
+        "newborn",
+        "minor"
+      ],
+      "Y_used": [
+        "player",
+        "runner",
+        "swimmer",
+        "gymnast",
+        "sprinter",
+        "bowler",
+        "pitcher",
+        "athlete",
+        "sportsman",
+        "competitor",
+        "champion",
+        "pro",
+        "professional",
+        "wrestler",
+        "boxer"
+      ],
+      "A_used": [
+        "play",
+        "fun",
+        "toy",
+        "joy",
+        "whimsical",
+        "lighthearted",
+        "frolic",
+        "amusement",
+        "carefree",
+        "playful",
+        "giggle",
+        "laugh",
+        "hobby",
+        "recreation",
+        "mirth"
+      ],
+      "B_used": [
+        "work",
+        "labor",
+        "job",
+        "career",
+        "duty",
+        "effort",
+        "discipline",
+        "training",
+        "practice",
+        "serious",
+        "rigor",
+        "task",
+        "employment",
+        "stress",
+        "toil"
+      ]
+    },
+    "proposal": "People associate children with playfulness more strongly than they associate athletes with playfulness. While the activities of athletes are formally categorized as 'sports' or 'games,' the professionalization and high-stakes nature of competitive athletics shift the implicit association from leisure to labor. This is novel because it probes the cognitive distinction between 'play' as a developmental state and 'play' as a professional performance. Confirming this would reveal how our mental representations of professional categories strip away the inherent playfulness of the activities they perform.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "5a7639d3d7df",
     "timestamp": "2026-04-24T22:35:46.962942+00:00",
     "schema_version": "autoresearch.v1",
