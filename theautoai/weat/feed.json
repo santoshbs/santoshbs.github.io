@@ -1,5 +1,111 @@
 [
   {
+    "id": "3138af60c66d",
+    "timestamp": "2026-04-24T14:22:31.267769+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "actors vs athletes on social adaptability versus consistency",
+    "labels": {
+      "X": "actors",
+      "Y": "athletes",
+      "A": "social adaptability",
+      "B": "social consistency"
+    },
+    "canonical_keys": {
+      "X": "actors",
+      "Y": "athletes",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 0.7502393927625488,
+    "p_value": 0.04041,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "actor",
+        "actress",
+        "performer",
+        "thespian",
+        "star",
+        "celebrity",
+        "lead",
+        "artist",
+        "cast",
+        "entertainer",
+        "idol",
+        "diva",
+        "protagonist",
+        "mime",
+        "dramatist"
+      ],
+      "Y_used": [
+        "athlete",
+        "player",
+        "runner",
+        "swimmer",
+        "cyclist",
+        "gymnast",
+        "competitor",
+        "sprinter",
+        "wrestler",
+        "boxer",
+        "defender",
+        "striker",
+        "pitcher",
+        "catcher",
+        "kicker"
+      ],
+      "A_used": [
+        "flexible",
+        "versatile",
+        "adaptable",
+        "fluid",
+        "charismatic",
+        "social",
+        "agile",
+        "nimble",
+        "shifting",
+        "changeable",
+        "malleable",
+        "dynamic",
+        "diverse",
+        "resourceful",
+        "supple"
+      ],
+      "B_used": [
+        "consistent",
+        "disciplined",
+        "rigid",
+        "stable",
+        "focused",
+        "steady",
+        "unchanging",
+        "fixed",
+        "resolute",
+        "stubborn",
+        "strict",
+        "constant",
+        "uniform",
+        "static",
+        "inelastic"
+      ]
+    },
+    "proposal": "I propose that people associate actors with social adaptability more strongly than they associate athletes with social adaptability. This association likely stems from the professional requirement of actors to embody diverse personas and navigate varied social scripts, whereas athletes are typically associated with a singular, disciplined identity centered on physical mastery and consistency. This is novel because it compares two distinct modes of high-visibility performance—theatrical versus physical—rather than contrasting performers with non-performers. Confirming this association would provide insight into how implicit beliefs about authenticity and identity-fluidity differ across different types of public celebrities.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "733b07ff8d3f",
     "timestamp": "2026-04-24T13:00:19.897220+00:00",
     "schema_version": "autoresearch.v1",
