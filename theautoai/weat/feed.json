@@ -1,5 +1,111 @@
 [
   {
+    "id": "47b106023904",
+    "timestamp": "2026-04-24T02:22:36.440755+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Buddhists vs Muslims on peacefulness versus conflict",
+    "labels": {
+      "X": "Buddhists",
+      "Y": "Muslims",
+      "A": "pacifism",
+      "B": "aggression"
+    },
+    "canonical_keys": {
+      "X": "buddhists",
+      "Y": "muslims",
+      "A": "pacifism",
+      "B": "aggression"
+    },
+    "effect_size": 1.600603449661071,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "monk",
+        "meditation",
+        "mindfulness",
+        "pagoda",
+        "monastery",
+        "mantra",
+        "sutra",
+        "sangha",
+        "dharma",
+        "nirvana",
+        "zen",
+        "stupa",
+        "bodhisattva",
+        "koan",
+        "mandala"
+      ],
+      "Y_used": [
+        "mosque",
+        "imam",
+        "caliph",
+        "hijab",
+        "mullah",
+        "sultan",
+        "masjid",
+        "zakat",
+        "hajj",
+        "hadith",
+        "crescent",
+        "minaret",
+        "fatwa",
+        "sharia",
+        "qadi"
+      ],
+      "A_used": [
+        "peace",
+        "calm",
+        "serenity",
+        "nonviolence",
+        "gentle",
+        "quiet",
+        "harmless",
+        "passive",
+        "stillness",
+        "harmony",
+        "tranquil",
+        "mild",
+        "patient",
+        "peaceful",
+        "serene"
+      ],
+      "B_used": [
+        "war",
+        "fight",
+        "anger",
+        "aggression",
+        "violence",
+        "conflict",
+        "battle",
+        "strike",
+        "attack",
+        "hatred",
+        "rage",
+        "struggle",
+        "hostility",
+        "combat",
+        "weapon"
+      ]
+    },
+    "proposal": "People associate Buddhists with pacifism more strongly than they associate Muslims with pacifism. This proposal examines the differential implicit association of non-violence and serenity between two major world religions. While academic literature has frequently probed associations between religion and aggression or terrorism, the specific contrast of pacifism as a defining trait between these two groups remains under-examined. Confirming this association would reveal how global stereotypes of 'Eastern' spiritual traditions versus 'Middle Eastern' religious identities are mentally organized in terms of peace and conflict.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "8a7c5178b2c8",
     "timestamp": "2026-04-24T00:36:02.694536+00:00",
     "schema_version": "autoresearch.v1",
