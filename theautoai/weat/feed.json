@@ -1,5 +1,111 @@
 [
   {
+    "id": "545d4cb986f3",
+    "timestamp": "2026-04-24T05:26:16.810292+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "athletes vs lawyers on communication style directness vs ambiguity",
+    "labels": {
+      "X": "athletes",
+      "Y": "lawyers",
+      "A": "directness",
+      "B": "ambiguity"
+    },
+    "canonical_keys": {
+      "X": "athletes",
+      "Y": "lawyers",
+      "A": "directness",
+      "B": "ambiguity"
+    },
+    "effect_size": -0.9985702408606094,
+    "p_value": 0.00546,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "athlete",
+        "runner",
+        "swimmer",
+        "gymnast",
+        "sprinter",
+        "pitcher",
+        "goalie",
+        "wrestler",
+        "skater",
+        "boxer",
+        "kicker",
+        "diver",
+        "surfer",
+        "cyclist",
+        "golfer"
+      ],
+      "Y_used": [
+        "lawyer",
+        "attorney",
+        "barrister",
+        "solicitor",
+        "counsel",
+        "litigator",
+        "advocate",
+        "prosecutor",
+        "defender",
+        "jurist",
+        "notary",
+        "mediator",
+        "arbitrator",
+        "judge",
+        "magistrate"
+      ],
+      "A_used": [
+        "direct",
+        "honest",
+        "blunt",
+        "candid",
+        "open",
+        "frank",
+        "transparent",
+        "plain",
+        "clear",
+        "explicit",
+        "sincere",
+        "simple",
+        "overt",
+        "truthful",
+        "forthright"
+      ],
+      "B_used": [
+        "ambiguous",
+        "strategic",
+        "vague",
+        "subtle",
+        "evasive",
+        "complex",
+        "indirect",
+        "nuanced",
+        "rhetorical",
+        "cryptic",
+        "obscure",
+        "opaque",
+        "elusive",
+        "circuitous",
+        "convoluted"
+      ]
+    },
+    "proposal": "I propose that people associate athletes with directness more strongly than they associate lawyers with directness. While both groups are viewed as high-achieving and competitive, the public persona of the athlete is tied to physical immediacy and transparent performance, whereas the persona of the lawyer is tied to strategic ambiguity, rhetoric, and linguistic precision. This association is novel as most implicit research on these groups focuses on intelligence or competitiveness rather than communication styles. Examining this would be important for understanding how we implicitly link physical prowess with honesty and intellectual sophistication with obfuscation.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "59021f73f526",
     "timestamp": "2026-04-24T04:10:46.060494+00:00",
     "schema_version": "autoresearch.v1",
