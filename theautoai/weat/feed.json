@@ -1,5 +1,112 @@
 [
   {
+    "id": "6151361ea69d",
+    "timestamp": "2026-04-24T17:14:32.298727+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "aristocrats vs elites on tradition versus modernity",
+    "labels": {
+      "X": "aristocrats",
+      "Y": "elites",
+      "A": "tradition",
+      "B": "modernity"
+    },
+    "canonical_keys": {
+      "X": "aristocrats",
+      "Y": "elites",
+      "A": "tradition",
+      "B": "modernity"
+    },
+    "effect_size": 1.3664397487470707,
+    "p_value": 2e-05,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "nobility",
+        "peer",
+        "duke",
+        "count",
+        "baron",
+        "earl",
+        "marquess",
+        "lord",
+        "lady",
+        "royal",
+        "monarch",
+        "dynasty",
+        "lineage",
+        "heraldry",
+        "courtier",
+        "sovereign"
+      ],
+      "Y_used": [
+        "plutocrat",
+        "oligarch",
+        "tycoon",
+        "mogul",
+        "executive",
+        "capitalist",
+        "professional",
+        "technocrat",
+        "banker",
+        "influencer",
+        "celebrity",
+        "leader",
+        "manager",
+        "director",
+        "authority"
+      ],
+      "A_used": [
+        "ancient",
+        "old",
+        "classic",
+        "heritage",
+        "custom",
+        "ritual",
+        "ancestral",
+        "historical",
+        "antique",
+        "traditional",
+        "legacy",
+        "vintage",
+        "timeless",
+        "archaic",
+        "conventional"
+      ],
+      "B_used": [
+        "modern",
+        "new",
+        "current",
+        "contemporary",
+        "recent",
+        "novel",
+        "innovative",
+        "future",
+        "advanced",
+        "fresh",
+        "trendy",
+        "updated",
+        "progressive",
+        "latest",
+        "futuristic"
+      ]
+    },
+    "proposal": "People associate aristocrats with tradition more strongly than they associate elites with tradition. This is novel because contemporary political discourse often conflates all forms of high-status power under the umbrella term 'the elite,' potentially obscuring the distinct hereditary and ritualistic associations tied to the aristocracy. It is interesting to examine whether the public mentally differentiates between power derived from lineage versus power derived from wealth or professional position. Confirming this association would clarify how the psychological representation of historical class structures persists separately from modern power dynamics.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "501f885c4570",
     "timestamp": "2026-04-24T16:23:31.072536+00:00",
     "schema_version": "autoresearch.v1",
