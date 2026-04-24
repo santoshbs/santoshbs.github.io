@@ -193,6 +193,14 @@
       "signals": 1
     },
     {
+      "id": "student-admission-management",
+      "title": "Student Admission Management",
+      "group": "Teaching & Learning",
+      "refs": 1,
+      "revised": "2026-04-25",
+      "signals": 1
+    },
+    {
       "id": "student-assessment",
       "title": "Student Assessment",
       "group": "Teaching & Learning",
@@ -204,9 +212,9 @@
       "id": "student-attraction-recruitment",
       "title": "Student Attraction & Recruitment",
       "group": "Teaching & Learning",
-      "refs": 4,
-      "revised": "2026-04-12",
-      "signals": 4
+      "refs": 5,
+      "revised": "2026-04-25",
+      "signals": 5
     },
     {
       "id": "student-enrolment",
@@ -476,6 +484,11 @@
       "source": "student-attraction-recruitment",
       "target": "student-enrolment",
       "signal": "COVID remote learning put drain on college enrollment"
+    },
+    {
+      "source": "student-admission-management",
+      "target": "student-attraction-recruitment",
+      "signal": "How much will that college cost you? Good luck figuring it out"
     },
     {
       "source": "research-delivery",
