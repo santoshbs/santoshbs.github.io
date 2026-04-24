@@ -1,5 +1,111 @@
 [
   {
+    "id": "501f885c4570",
+    "timestamp": "2026-04-24T16:23:31.072536+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "accountants vs lawyers on Neutrality versus Advocacy",
+    "labels": {
+      "X": "accountants",
+      "Y": "lawyers",
+      "A": "Objectivity",
+      "B": "Advocacy"
+    },
+    "canonical_keys": {
+      "X": "accountants",
+      "Y": "lawyers",
+      "A": "objectivity",
+      "B": "advocacy"
+    },
+    "effect_size": 0.8012473955298391,
+    "p_value": 0.02738,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "accountant",
+        "auditor",
+        "bookkeeper",
+        "controller",
+        "treasurer",
+        "actuary",
+        "bursar",
+        "comptroller",
+        "underwriter",
+        "appraiser",
+        "examiner",
+        "analyst",
+        "financier",
+        "taxman",
+        "clerk"
+      ],
+      "Y_used": [
+        "lawyer",
+        "attorney",
+        "counsel",
+        "solicitor",
+        "barrister",
+        "litigator",
+        "advocate",
+        "jurist",
+        "prosecutor",
+        "defender",
+        "counselor",
+        "paralegal",
+        "notary",
+        "ombudsman",
+        "mediator"
+      ],
+      "A_used": [
+        "objective",
+        "neutral",
+        "impartial",
+        "unbiased",
+        "fair",
+        "detached",
+        "dispassionate",
+        "factual",
+        "clinical",
+        "independent",
+        "disinterested",
+        "balanced",
+        "unprejudiced",
+        "indifferent",
+        "uncolored"
+      ],
+      "B_used": [
+        "biased",
+        "partial",
+        "partisan",
+        "subjective",
+        "skewed",
+        "prejudiced",
+        "slanted",
+        "opinionated",
+        "argumentative",
+        "persuasive",
+        "passionate",
+        "devoted",
+        "loyal",
+        "fervent",
+        "zealous"
+      ]
+    },
+    "proposal": "People associate accountants with objectivity more strongly than they associate lawyers with objectivity. While both are high-status professional roles, the lawyer is implicitly viewed as an advocate whose primary role is to be biased in favor of a client, whereas the accountant is viewed as a neutral reporter of financial fact. This association is novel because it compares two distinct forms of professional 'truth-telling'—the adversarial versus the audited—and confirming it would reveal how we implicitly distinguish between technical precision and impartial neutrality.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "3138af60c66d",
     "timestamp": "2026-04-24T14:22:31.267769+00:00",
     "schema_version": "autoresearch.v1",
