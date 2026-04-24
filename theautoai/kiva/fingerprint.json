@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
-  "batches_seen": 31,
-  "loans_seen": 496,
-  "last_updated": "2026-04-24T19:22:32+00:00",
-  "watching_for": "I am watching to see if the 'Pig Booster' is a consistent cross-sector phenomenon, if 'Scenic Narratives' consistently trigger a penalty, and if explicit mentions of previous loan expiration (vulnerability/urgency) act as a speed booster.",
+  "batches_seen": 32,
+  "loans_seen": 512,
+  "last_updated": "2026-04-24T20:43:24+00:00",
+  "watching_for": "I am watching to see if the 'Pig Booster' continues to hold across more diverse regions and whether the 'Scenic Penalty' represents a general boundary condition for the 'Unique Narrative' booster.",
   "claims": {
     "pitches-that-mention-owning-a-home-or-land-fund-faster-regar": {
       "id": "pitches-that-mention-owning-a-home-or-land-fund-faster-regar",
@@ -16,7 +16,7 @@
       ],
       "confidence": 0.97,
       "first_seen_batch": 2,
-      "last_updated_batch": 38,
+      "last_updated_batch": 39,
       "confidence_history": [
         [
           2,
@@ -133,6 +133,10 @@
         [
           38,
           0.97
+        ],
+        [
+          39,
+          0.97
         ]
       ]
     },
@@ -150,7 +154,7 @@
       ],
       "confidence": 0.99,
       "first_seen_batch": 2,
-      "last_updated_batch": 38,
+      "last_updated_batch": 39,
       "confidence_history": [
         [
           2,
@@ -267,6 +271,10 @@
         [
           38,
           0.99
+        ],
+        [
+          39,
+          0.99
         ]
       ]
     },
@@ -283,7 +291,7 @@
       ],
       "confidence": 0.97,
       "first_seen_batch": 3,
-      "last_updated_batch": 38,
+      "last_updated_batch": 39,
       "confidence_history": [
         [
           3,
@@ -404,6 +412,10 @@
         [
           38,
           0.97
+        ],
+        [
+          39,
+          0.97
         ]
       ]
     },
@@ -421,7 +433,7 @@
       ],
       "confidence": 1.0,
       "first_seen_batch": 9,
-      "last_updated_batch": 38,
+      "last_updated_batch": 39,
       "confidence_history": [
         [
           9,
@@ -518,6 +530,10 @@
         [
           38,
           1.0
+        ],
+        [
+          39,
+          1.0
         ]
       ]
     },
@@ -529,9 +545,9 @@
       "supporting_loans": [
         3162022
       ],
-      "confidence": 0.98,
+      "confidence": 0.99,
       "first_seen_batch": 13,
-      "last_updated_batch": 38,
+      "last_updated_batch": 39,
       "confidence_history": [
         [
           13,
@@ -600,6 +616,10 @@
         [
           38,
           0.98
+        ],
+        [
+          39,
+          0.99
         ]
       ]
     },
@@ -615,9 +635,9 @@
         3158957,
         3161041
       ],
-      "confidence": 0.88,
+      "confidence": 0.9,
       "first_seen_batch": 23,
-      "last_updated_batch": 38,
+      "last_updated_batch": 39,
       "confidence_history": [
         [
           23,
@@ -654,6 +674,10 @@
         [
           38,
           0.88
+        ],
+        [
+          39,
+          0.9
         ]
       ]
     },
@@ -665,9 +689,9 @@
       "supporting_loans": [
         3161804
       ],
-      "confidence": 0.8,
+      "confidence": 0.85,
       "first_seen_batch": 28,
-      "last_updated_batch": 38,
+      "last_updated_batch": 39,
       "confidence_history": [
         [
           28,
@@ -680,6 +704,29 @@
         [
           38,
           0.8
+        ],
+        [
+          39,
+          0.85
+        ]
+      ]
+    },
+    "pitches-for-pig-related-businesses-fund-faster-than-other-li": {
+      "id": "pitches-for-pig-related-businesses-fund-faster-than-other-li",
+      "bucket": "faster",
+      "title": "Pitches for pig-related businesses fund faster than other livestock businesses, regardless of gender.",
+      "body": "Pigs appear to be a high-trust or high-urgency animal for lenders compared to cattle or general livestock, as seen across multiple batches and genders.",
+      "supporting_loans": [
+        3159248,
+        3161274
+      ],
+      "confidence": 0.65,
+      "first_seen_batch": 39,
+      "last_updated_batch": 39,
+      "confidence_history": [
+        [
+          39,
+          0.65
         ]
       ]
     }
@@ -805,11 +852,6 @@
       "body": "In sanitation loans (Pairs 2 and 5), the text is virtually identical, yet speed varies by 55+ hours. This suggests that the specific business type mentioned (cosmetics vs food-vending, pig fattening vs clothing) may be a hidden speed driver.",
       "first_seen_batch": 20
     },
-    "in-sanitation-loans-there-is-a-recurring-pattern": {
-      "id": "in-sanitation-loans-there-is-a-recurring-pattern",
-      "body": "In sanitation loans, there is a recurring pattern where 'pig fattening' (L3161702, L3157391, L3157142) funds fast, while 'general store' (L3157224, L3157235) funds slow, even when other text is identical.",
-      "first_seen_batch": 21
-    },
     "the-environmental-protection-penalty-in-sanitati": {
       "id": "the-environmental-protection-penalty-in-sanitati",
       "body": "The 'Environmental Protection' penalty in sanitation loans appears to be inconsistent; it slowed L3159425 but was present in the fast loans L3157391 and L3157142. Is the penalty actually a 'General Store' penalty in disguise?",
@@ -839,11 +881,6 @@
       "id": "in-sanitation-loans-general-store-is-sometimes",
       "body": "In sanitation loans, 'general store' is sometimes fast (Pair 2, 3, 5) and sometimes slow (Pair 1, 4). This suggests it is a neutral baseline, and the real speed drivers are environmental framing (Fast) or fish-vending (Slow).",
       "first_seen_batch": 28
-    },
-    "in-pair-4-a-highly-descriptive-scenic-narrativ": {
-      "id": "in-pair-4-a-highly-descriptive-scenic-narrativ",
-      "body": "In Pair 4, a highly descriptive, 'scenic' narrative about a district's beauty and gastronomy (L3159818) was significantly slower than a generic emotive template (L3159061). This suggests a 'Scenic Penalty' where narratives that feel like travel brochures rather than urgent requests for capital are viewed unfavorably.",
-      "first_seen_batch": 29
     },
     "in-loan-l3161185-the-borrower-explicitly-mentions": {
       "id": "in-loan-l3161185-the-borrower-explicitly-mentions",
@@ -984,6 +1021,13 @@
       "retrospective": "Evicted to honor the 8-claim cap. This was the lowest-confidence claim and remained orthogonal in the current batch.",
       "retired_batch": 38,
       "was_believed_batches": 9
+    },
+    "pitches-that-use-descriptive-aesthetic-or-scenic-language-to": {
+      "id": "pitches-that-use-descriptive-aesthetic-or-scenic-language-to",
+      "title": "Pitches that use descriptive, aesthetic, or 'scenic' language to describe their location or products fund slower than those using urgent or hardship-based narratives, regardless of gender.",
+      "retrospective": "Auto-evicted to honor the 8-claim cap: this was the lowest-confidence claim at 0.60.",
+      "retired_batch": 39,
+      "was_believed_batches": 0
     }
   }
 }
