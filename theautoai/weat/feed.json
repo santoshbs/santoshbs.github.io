@@ -1,5 +1,111 @@
 [
   {
+    "id": "f59cbeeb6bf0",
+    "timestamp": "2026-04-24T21:45:54.714832+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "workers vs businesspeople on collectivism versus individualism",
+    "labels": {
+      "X": "workers",
+      "Y": "businesspeople",
+      "A": "solidarity",
+      "B": "individualism"
+    },
+    "canonical_keys": {
+      "X": "workers",
+      "Y": "businesspeople",
+      "A": "solidarity",
+      "B": "individualism"
+    },
+    "effect_size": -0.4992204802265177,
+    "p_value": 0.18209,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "worker",
+        "employee",
+        "laborer",
+        "staff",
+        "clerk",
+        "operator",
+        "technician",
+        "artisan",
+        "apprentice",
+        "servant",
+        "helper",
+        "hand",
+        "hireling",
+        "proletarian",
+        "drudge"
+      ],
+      "Y_used": [
+        "manager",
+        "executive",
+        "entrepreneur",
+        "owner",
+        "director",
+        "boss",
+        "capitalist",
+        "tycoon",
+        "mogul",
+        "trader",
+        "banker",
+        "merchant",
+        "partner",
+        "founder",
+        "shareholder"
+      ],
+      "A_used": [
+        "unity",
+        "together",
+        "support",
+        "collective",
+        "group",
+        "shared",
+        "kinship",
+        "community",
+        "cooperation",
+        "ally",
+        "bond",
+        "fellowship",
+        "union",
+        "mutual",
+        "league"
+      ],
+      "B_used": [
+        "individual",
+        "solo",
+        "competition",
+        "rival",
+        "alone",
+        "independence",
+        "separate",
+        "solitary",
+        "distinct",
+        "private",
+        "singular",
+        "loner",
+        "contest",
+        "race",
+        "clash"
+      ]
+    },
+    "proposal": "People associate workers with solidarity more strongly than they associate businesspeople with solidarity. This proposal examines the implicit mental representation of class-based social bonds, contrasting the 'unionized' or 'collective' identity of the working class with the 'competitive' or 'individualistic' identity of the entrepreneurial class. This association is novel in that while the sociology of solidarity is well-studied, the differential implicit association between these two broad actor categories has not been a primary focus of IAT-style research. Confirming this would demonstrate how deeply the archetype of the collective worker versus the solitary entrepreneur is embedded in the public consciousness.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "bacd76c5c50d",
     "timestamp": "2026-04-24T20:51:34.613641+00:00",
     "schema_version": "autoresearch.v1",
