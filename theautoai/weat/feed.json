@@ -1,5 +1,111 @@
 [
   {
+    "id": "8827ea0d727a",
+    "timestamp": "2026-04-24T06:41:05.813650+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "immigrants vs politicians on psychological resilience",
+    "labels": {
+      "X": "immigrants",
+      "Y": "politicians",
+      "A": "resilience",
+      "B": "fragility"
+    },
+    "canonical_keys": {
+      "X": "immigrants",
+      "Y": "politicians",
+      "A": "resilience",
+      "B": "fragility"
+    },
+    "effect_size": -1.026058381557684,
+    "p_value": 0.00375,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "immigrant",
+        "migrant",
+        "refugee",
+        "newcomer",
+        "asylee",
+        "displaced",
+        "expatriate",
+        "settler",
+        "outsider",
+        "wanderer",
+        "voyager",
+        "arrival",
+        "foreigner",
+        "emigrant",
+        "transient"
+      ],
+      "Y_used": [
+        "politician",
+        "senator",
+        "governor",
+        "mayor",
+        "president",
+        "minister",
+        "legislator",
+        "representative",
+        "delegate",
+        "official",
+        "candidate",
+        "bureaucrat",
+        "leader",
+        "statesman",
+        "diplomat"
+      ],
+      "A_used": [
+        "resilience",
+        "grit",
+        "endurance",
+        "strength",
+        "persistence",
+        "toughness",
+        "fortitude",
+        "hardiness",
+        "patience",
+        "stamina",
+        "courage",
+        "bravery",
+        "steadfastness",
+        "determination",
+        "tenacity"
+      ],
+      "B_used": [
+        "fragility",
+        "weakness",
+        "softness",
+        "delicacy",
+        "vulnerability",
+        "feebleness",
+        "instability",
+        "ease",
+        "luxury",
+        "comfort",
+        "brittle",
+        "frail",
+        "flimsy",
+        "shaky",
+        "tentative"
+      ]
+    },
+    "proposal": "I propose that people associate immigrants with resilience more strongly than they associate politicians with resilience. This association is novel because most implicit research on immigrants focuses on threat or competence, rather than contrasting their perceived grit with that of institutional actors. It is interesting because it explores whether the public implicitly views the struggle of migration as producing more genuine resilience than the strategic struggle for political power. Confirming this would reveal a mental representation where psychological strength is associated with the periphery of social power rather than its center.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "545d4cb986f3",
     "timestamp": "2026-04-24T05:26:16.810292+00:00",
     "schema_version": "autoresearch.v1",
