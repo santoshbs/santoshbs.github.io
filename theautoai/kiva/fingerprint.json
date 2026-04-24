@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "batches_seen": 37,
-  "loans_seen": 592,
-  "last_updated": "2026-04-24T09:30:58.319836+00:00",
+  "batches_seen": 38,
+  "loans_seen": 608,
+  "last_updated": "2026-04-24T11:10:37.391316+00:00",
   "watching_for": "I am watching for whether the 'Utility > Entertainment' framing persists in other technology-based loans and if the 'Template vs Specificity' conflict in Pair 5 indicates a country-level baseline difference between the Philippines and Madagascar.",
   "claims": {
     "pitches-that-mention-owning-a-home-or-land-fund-faster-regar": {
@@ -16,7 +16,7 @@
       ],
       "confidence": 0.99,
       "first_seen_batch": 2,
-      "last_updated_batch": 36,
+      "last_updated_batch": 37,
       "confidence_history": [
         [
           2,
@@ -153,6 +153,10 @@
         [
           36,
           0.99
+        ],
+        [
+          37,
+          0.99
         ]
       ]
     },
@@ -170,7 +174,7 @@
       ],
       "confidence": 1.0,
       "first_seen_batch": 2,
-      "last_updated_batch": 35,
+      "last_updated_batch": 37,
       "confidence_history": [
         [
           2,
@@ -303,6 +307,10 @@
         [
           35,
           1.0
+        ],
+        [
+          37,
+          1.0
         ]
       ]
     },
@@ -320,7 +328,7 @@
       ],
       "confidence": 1.0,
       "first_seen_batch": 9,
-      "last_updated_batch": 35,
+      "last_updated_batch": 37,
       "confidence_history": [
         [
           9,
@@ -433,6 +441,10 @@
         [
           35,
           1.0
+        ],
+        [
+          37,
+          1.0
         ]
       ]
     },
@@ -446,7 +458,7 @@
       ],
       "confidence": 0.99,
       "first_seen_batch": 13,
-      "last_updated_batch": 35,
+      "last_updated_batch": 37,
       "confidence_history": [
         [
           13,
@@ -531,6 +543,10 @@
         [
           35,
           0.99
+        ],
+        [
+          37,
+          0.99
         ]
       ]
     },
@@ -544,7 +560,7 @@
       ],
       "confidence": 0.7,
       "first_seen_batch": 29,
-      "last_updated_batch": 35,
+      "last_updated_batch": 37,
       "confidence_history": [
         [
           29,
@@ -569,6 +585,10 @@
         [
           35,
           0.7
+        ],
+        [
+          37,
+          0.7
         ]
       ]
     },
@@ -582,7 +602,7 @@
       ],
       "confidence": 0.75,
       "first_seen_batch": 31,
-      "last_updated_batch": 35,
+      "last_updated_batch": 37,
       "confidence_history": [
         [
           31,
@@ -599,21 +619,25 @@
         [
           35,
           0.75
+        ],
+        [
+          37,
+          0.75
         ]
       ]
     },
     "pitches-that-use-highly-detailed-personal-narratives-fund-sl": {
       "id": "pitches-that-use-highly-detailed-personal-narratives-fund-sl",
       "bucket": "slower",
-      "title": "Pitches that use highly detailed personal narratives fund slower than basic templated pitches in the NWTF Philippines partner context.",
-      "body": "In the NWTF Philippines context, rich narratives about survival or specific business logistics may be perceived as less professional or more desperate than the standard partner template, which signals a baseline of legitimacy.",
+      "title": "In the NWTF Philippines context, the inclusion of personal demographics (age, marital status, number of children) in a templated pitch predicts slower funding than a version without these details.",
+      "body": "While specificity usually helps, in the highly templated NWTF environment, adding personal demographics can create a 'demographic drag' that slows funding compared to cleaner, business-focused versions of the template.",
       "supporting_loans": [
         3161818,
         3158883
       ],
-      "confidence": 0.8,
+      "confidence": 0.85,
       "first_seen_batch": 32,
-      "last_updated_batch": 35,
+      "last_updated_batch": 37,
       "confidence_history": [
         [
           32,
@@ -626,24 +650,33 @@
         [
           35,
           0.8
+        ],
+        [
+          37,
+          0.85
+        ],
+        [
+          37,
+          0.85
         ]
       ]
     },
-    "pitches-for-equipment-loans-that-frame-the-purchase-as-a-nec": {
-      "id": "pitches-for-equipment-loans-that-frame-the-purchase-as-a-nec",
+    "in-the-sanitation-sector-pitches-that-frame-the-loan-as-bene": {
+      "id": "in-the-sanitation-sector-pitches-that-frame-the-loan-as-bene",
       "bucket": "faster",
-      "title": "Pitches for equipment loans that frame the purchase as a necessity for family productivity or utility fund faster than those framing it as a means for entertainment or information access, regardless of gender.",
-      "body": "Framing a loan as a tool for children's education or a practical backup for power outages creates a higher sense of urgency and necessity than purchasing a television for news. This effect is strong enough to overcome the gender baseline.",
+      "title": "In the sanitation sector, pitches that frame the loan as benefiting neighbors and the environment fund faster than those focusing only on the borrower's family.",
+      "body": "Expanding the impact of a sanitary toilet from the nuclear family to include 'neighbors' and 'environmental protection' creates a stronger signal of community value, which accelerates funding.",
       "supporting_loans": [
-        3163812,
-        3163815
+        3159065,
+        3161698,
+        3159963
       ],
       "confidence": 0.65,
-      "first_seen_batch": 35,
-      "last_updated_batch": 35,
+      "first_seen_batch": 37,
+      "last_updated_batch": 37,
       "confidence_history": [
         [
-          35,
+          37,
           0.65
         ]
       ]
@@ -991,6 +1024,13 @@
       "title": "Pitches that identify the business as a 'general store' or 'grocery store' fund faster than more specific retail or food businesses, regardless of gender.",
       "retrospective": "I believed the 'general store' identifier was a general booster. However, this batch shows it is a slow signal in the Retail sector, suggesting the previous booster effect was specific to the Sanitation sector or regional noise.",
       "retired_batch": 35,
+      "was_believed_batches": 2
+    },
+    "pitches-for-equipment-loans-that-frame-the-purchase-as-a-nec": {
+      "id": "pitches-for-equipment-loans-that-frame-the-purchase-as-a-nec",
+      "title": "Pitches for equipment loans that frame the purchase as a necessity for family productivity or utility fund faster than those framing it as a means for entertainment or information access, regardless of gender.",
+      "retrospective": "Evicted to maintain the 8-claim cap to make room for the sanitation sector framing discovery, which showed stronger evidence across multiple samples in this batch.",
+      "retired_batch": 37,
       "was_believed_batches": 2
     }
   }
