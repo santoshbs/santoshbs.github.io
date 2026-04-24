@@ -1,5 +1,111 @@
 [
   {
+    "id": "bacd76c5c50d",
+    "timestamp": "2026-04-24T20:51:34.613641+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "environmentalists vs industrialists on temporal orientation",
+    "labels": {
+      "X": "environmentalists",
+      "Y": "industrialists",
+      "A": "future-orientation",
+      "B": "short-term orientation"
+    },
+    "canonical_keys": {
+      "X": "environmentalists",
+      "Y": "industrialists",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 0.6512290295379609,
+    "p_value": 0.0786,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "environmentalist",
+        "conservationist",
+        "ecologist",
+        "naturalist",
+        "activist",
+        "preservationist",
+        "climatologist",
+        "steward",
+        "campaigner",
+        "advocate",
+        "lobbyist",
+        "biologist",
+        "defender",
+        "protector",
+        "researcher"
+      ],
+      "Y_used": [
+        "industrialist",
+        "manufacturer",
+        "capitalist",
+        "entrepreneur",
+        "executive",
+        "tycoon",
+        "mogul",
+        "director",
+        "financier",
+        "manager",
+        "owner",
+        "producer",
+        "operator",
+        "developer",
+        "shareholder"
+      ],
+      "A_used": [
+        "future",
+        "tomorrow",
+        "later",
+        "upcoming",
+        "distant",
+        "sustainable",
+        "legacy",
+        "endurance",
+        "posterity",
+        "forecast",
+        "vision",
+        "ahead",
+        "prospective",
+        "eventual",
+        "coming"
+      ],
+      "B_used": [
+        "present",
+        "now",
+        "today",
+        "immediate",
+        "instant",
+        "current",
+        "quarterly",
+        "fleeting",
+        "momentary",
+        "brief",
+        "rapid",
+        "prompt",
+        "urgent",
+        "temporary",
+        "existing"
+      ]
+    },
+    "proposal": "People associate environmentalists with future-orientation more strongly than they associate industrialists with future-orientation. This association reflects a pervasive cultural narrative that environmentalists prioritize the long-term viability of the planet while industrialists are driven by short-term quarterly gains. Examining this implicit association is novel because it shifts the focus from moral judgments (e.g., altruism vs. greed) to the temporal horizons people attribute to these actors. Confirming this would reveal how deeply the stereotype of 'industrial short-termism' is embedded in the public's mental representation of economic actors.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "306c340b1416",
     "timestamp": "2026-04-24T19:39:33.491255+00:00",
     "schema_version": "autoresearch.v1",
