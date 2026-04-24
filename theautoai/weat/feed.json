@@ -1,5 +1,111 @@
 [
   {
+    "id": "6086ca0a91c4",
+    "timestamp": "2026-04-24T11:18:46.488243+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "artists vs historians on subjectivity versus objectivity",
+    "labels": {
+      "X": "artists",
+      "Y": "historians",
+      "A": "subjectivity",
+      "B": "objectivity"
+    },
+    "canonical_keys": {
+      "X": "artists",
+      "Y": "historians",
+      "A": "subjectivity",
+      "B": "objectivity"
+    },
+    "effect_size": 1.6512872845805455,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "painter",
+        "sculptor",
+        "musician",
+        "poet",
+        "dancer",
+        "illustrator",
+        "potter",
+        "weaver",
+        "playwright",
+        "composer",
+        "actor",
+        "novelist",
+        "singer",
+        "dramatist",
+        "choreographer"
+      ],
+      "Y_used": [
+        "historian",
+        "archivist",
+        "chronicler",
+        "biographer",
+        "curator",
+        "scholar",
+        "antiquarian",
+        "researcher",
+        "academic",
+        "lecturer",
+        "professor",
+        "archaeologist",
+        "genealogist",
+        "analyst",
+        "scribe"
+      ],
+      "A_used": [
+        "subjective",
+        "emotional",
+        "personal",
+        "intuitive",
+        "opinionated",
+        "impressionistic",
+        "biased",
+        "partial",
+        "creative",
+        "imaginative",
+        "visceral",
+        "internal",
+        "spontaneous",
+        "whimsical",
+        "sentimental"
+      ],
+      "B_used": [
+        "objective",
+        "factual",
+        "neutral",
+        "impartial",
+        "empirical",
+        "detached",
+        "logical",
+        "rational",
+        "clinical",
+        "unbiased",
+        "concrete",
+        "verifiable",
+        "scientific",
+        "standard",
+        "rigorous"
+      ]
+    },
+    "proposal": "People associate artists with subjectivity more strongly than they associate historians with subjectivity. This is an interesting comparison because while history is fundamentally an interpretive and narrative-driven discipline, it maintains a strong public image of objectivity and factual rigidity. Examining this association would reveal the extent to which the public distinguishes between 'creative expression' and 'scholarly interpretation.' This is novel as most existing research compares artists to scientists rather than to other humanities-based scholars who also engage in constructive narratives.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "231f6cbc481d",
     "timestamp": "2026-04-24T09:38:30.815239+00:00",
     "schema_version": "autoresearch.v1",
