@@ -1,5 +1,111 @@
 [
   {
+    "id": "59021f73f526",
+    "timestamp": "2026-04-24T04:10:46.060494+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "engineers vs artists on risk tolerance",
+    "labels": {
+      "X": "engineers",
+      "Y": "artists",
+      "A": "risk-aversion",
+      "B": "risk-taking"
+    },
+    "canonical_keys": {
+      "X": "engineers",
+      "Y": "artists",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 1.5997329443992154,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "engineer",
+        "technician",
+        "developer",
+        "coder",
+        "architect",
+        "mechanic",
+        "programmer",
+        "physicist",
+        "mathematician",
+        "analyst",
+        "operator",
+        "builder",
+        "surveyor",
+        "chemist",
+        "welder"
+      ],
+      "Y_used": [
+        "artist",
+        "painter",
+        "sculptor",
+        "poet",
+        "dancer",
+        "musician",
+        "singer",
+        "actor",
+        "writer",
+        "illustrator",
+        "composer",
+        "performer",
+        "curator",
+        "potter",
+        "novelist"
+      ],
+      "A_used": [
+        "cautious",
+        "safe",
+        "prudent",
+        "careful",
+        "secure",
+        "guarded",
+        "reserved",
+        "wary",
+        "conservative",
+        "stable",
+        "steady",
+        "predictable",
+        "reliable",
+        "meticulous",
+        "vigilant"
+      ],
+      "B_used": [
+        "daring",
+        "bold",
+        "adventurous",
+        "risky",
+        "reckless",
+        "spontaneous",
+        "impulsive",
+        "courageous",
+        "experimental",
+        "audacious",
+        "brave",
+        "wild",
+        "unpredictable",
+        "hazardous",
+        "rash"
+      ]
+    },
+    "proposal": "People associate engineers with risk-aversion more strongly than they associate artists with risk-aversion. While prior academic literature has extensively probed the logic-creativity axis between these two groups, the implicit association between professional identity and risk tolerance remains under-examined. This is interesting because it contrasts the perceived institutional mandate of the engineer as a stabilizer and optimizer with the artist's role as an experimentalist. Confirming this association would demonstrate how the perceived safety requirements of a profession bleed into implicit personality stereotypes of the people within that profession.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "47b106023904",
     "timestamp": "2026-04-24T02:22:36.440755+00:00",
     "schema_version": "autoresearch.v1",
