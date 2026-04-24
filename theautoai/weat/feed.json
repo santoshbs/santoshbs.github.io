@@ -1,5 +1,111 @@
 [
   {
+    "id": "29b6a4590e3f",
+    "timestamp": "2026-04-24T08:22:52.378414+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "immigrants vs diplomats on adaptability",
+    "labels": {
+      "X": "immigrants",
+      "Y": "diplomats",
+      "A": "adaptable",
+      "B": "rigid"
+    },
+    "canonical_keys": {
+      "X": "immigrants",
+      "Y": "diplomats",
+      "A": "adaptable",
+      "B": "rigid"
+    },
+    "effect_size": 0.11288636489585599,
+    "p_value": 0.76512,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "immigrant",
+        "migrant",
+        "refugee",
+        "newcomer",
+        "settler",
+        "expatriate",
+        "arrival",
+        "guest",
+        "foreigner",
+        "transient",
+        "wanderer",
+        "emigrant",
+        "alien",
+        "outsider",
+        "voyager"
+      ],
+      "Y_used": [
+        "diplomat",
+        "ambassador",
+        "envoy",
+        "consul",
+        "attache",
+        "emissary",
+        "negotiator",
+        "mediator",
+        "representative",
+        "delegate",
+        "minister",
+        "official",
+        "statesman",
+        "bureaucrat",
+        "liaison"
+      ],
+      "A_used": [
+        "flexible",
+        "versatile",
+        "resilient",
+        "adaptable",
+        "adjustable",
+        "fluid",
+        "pliant",
+        "malleable",
+        "open",
+        "plastic",
+        "supple",
+        "agile",
+        "variable",
+        "elastic",
+        "accommodating"
+      ],
+      "B_used": [
+        "rigid",
+        "stiff",
+        "fixed",
+        "stubborn",
+        "inflexible",
+        "static",
+        "frozen",
+        "unyielding",
+        "hard",
+        "immutable",
+        "adamant",
+        "obstinate",
+        "set",
+        "constant",
+        "uncompromising"
+      ]
+    },
+    "proposal": "I propose that people associate immigrants with adaptability more strongly than they associate diplomats with adaptability. While diplomats are professionally trained for mobility and cultural navigation, immigrants often undergo a more fundamental, existential process of lived adaptation to survive and integrate into a new society. This is novel because most implicit association research on immigrants focuses on negative stereotypes or 'foreignness' rather than the positive cognitive asset of adaptive resilience. Confirming this association would shift the academic understanding of how the public distinguishes between professional cosmopolitanism and the lived experience of cultural integration.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "8827ea0d727a",
     "timestamp": "2026-04-24T06:41:05.813650+00:00",
     "schema_version": "autoresearch.v1",
