@@ -1,5 +1,111 @@
 [
   {
+    "id": "231f6cbc481d",
+    "timestamp": "2026-04-24T09:38:30.815239+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "doctors vs diplomats on communicative directness",
+    "labels": {
+      "X": "doctors",
+      "Y": "diplomats",
+      "A": "directness",
+      "B": "indirectness"
+    },
+    "canonical_keys": {
+      "X": "doctors",
+      "Y": "diplomats",
+      "A": "directness",
+      "B": "indirectness"
+    },
+    "effect_size": 0.2804111749129606,
+    "p_value": 0.45928,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "physician",
+        "surgeon",
+        "doctor",
+        "medic",
+        "clinician",
+        "psychiatrist",
+        "pediatrician",
+        "dermatologist",
+        "oncologist",
+        "cardiologist",
+        "urologist",
+        "internist",
+        "neurologist",
+        "radiologist",
+        "pathologist"
+      ],
+      "Y_used": [
+        "diplomat",
+        "envoy",
+        "ambassador",
+        "negotiator",
+        "consul",
+        "attache",
+        "mediator",
+        "emissary",
+        "representative",
+        "delegate",
+        "liaison",
+        "minister",
+        "arbitrator",
+        "statesman",
+        "councillor"
+      ],
+      "A_used": [
+        "direct",
+        "blunt",
+        "frank",
+        "explicit",
+        "candid",
+        "straightforward",
+        "honest",
+        "clear",
+        "plain",
+        "open",
+        "abrupt",
+        "succinct",
+        "brusque",
+        "overt",
+        "pointed"
+      ],
+      "B_used": [
+        "tactful",
+        "nuanced",
+        "subtle",
+        "vague",
+        "elusive",
+        "indirect",
+        "cautious",
+        "discreet",
+        "oblique",
+        "evasive",
+        "circuitous",
+        "implicit",
+        "ambiguous",
+        "guarded",
+        "refined"
+      ]
+    },
+    "proposal": "People associate doctors with directness more strongly than they associate diplomats with directness. While both are high-status professionals, the doctor's role is often perceived as requiring clinical bluntness for the sake of efficiency and patient clarity, whereas the diplomat's role is defined by nuance, tact, and the strategic avoidance of directness. This association is novel because it focuses on communicative style rather than typical status or intelligence markers. Examining this would reveal how institutional imperatives—saving a life versus maintaining a geopolitical treaty—shape the implicit personality traits the public attributes to these actors.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "29b6a4590e3f",
     "timestamp": "2026-04-24T08:22:52.378414+00:00",
     "schema_version": "autoresearch.v1",
