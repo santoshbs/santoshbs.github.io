@@ -1,5 +1,111 @@
 [
   {
+    "id": "9ab623af8237",
+    "timestamp": "2026-04-25T09:41:06.826753+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "lawyers vs doctors on form versus function",
+    "labels": {
+      "X": "lawyers",
+      "Y": "doctors",
+      "A": "formalism",
+      "B": "pragmatism"
+    },
+    "canonical_keys": {
+      "X": "lawyers",
+      "Y": "doctors",
+      "A": "formalism",
+      "B": "pragmatism"
+    },
+    "effect_size": 1.0784186574355927,
+    "p_value": 0.00187,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "lawyer",
+        "attorney",
+        "counselor",
+        "barrister",
+        "solicitor",
+        "litigator",
+        "advocate",
+        "jurist",
+        "prosecutor",
+        "defender",
+        "counsel",
+        "notary",
+        "pleader",
+        "ombudsman",
+        "arbitrator"
+      ],
+      "Y_used": [
+        "doctor",
+        "physician",
+        "surgeon",
+        "medic",
+        "clinician",
+        "psychiatrist",
+        "pediatrician",
+        "cardiologist",
+        "dermatologist",
+        "neurologist",
+        "oncologist",
+        "therapist",
+        "practitioner",
+        "intern",
+        "resident"
+      ],
+      "A_used": [
+        "formal",
+        "procedural",
+        "ritual",
+        "rule",
+        "structure",
+        "protocol",
+        "official",
+        "ceremony",
+        "rigid",
+        "strict",
+        "technical",
+        "orthodox",
+        "conventional",
+        "standard",
+        "precise"
+      ],
+      "B_used": [
+        "practical",
+        "functional",
+        "pragmatic",
+        "effective",
+        "useful",
+        "outcome",
+        "result",
+        "utility",
+        "applied",
+        "empirical",
+        "utilitarian",
+        "efficient",
+        "flexible",
+        "adaptive",
+        "operative"
+      ]
+    },
+    "proposal": "people associate lawyers with formalism more strongly than they associate doctors with formalism. This association is novel because while both professions are highly regulated, the nature of their adherence to rules differs significantly. Legal practice is fundamentally based on procedural correctness, whereas medicine is primarily driven by biological pragmatism and clinical outcomes. Examining this would reveal whether the public perceives the law as a system of 'form' and medicine as a system of 'function'. Confirming this association would explain why procedural errors in law are often viewed more harshly than similar administrative lapses in medical settings.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "2715bbf6d47c",
     "timestamp": "2026-04-25T08:47:15.668704+00:00",
     "schema_version": "autoresearch.v1",
