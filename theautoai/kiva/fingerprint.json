@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
-  "batches_seen": 46,
-  "loans_seen": 648,
-  "last_updated": "2026-04-25T19:43:13+00:00",
-  "watching_for": "I am looking for evidence of a 'fluff threshold' where emotive language transitions from a booster to a slow signal, and whether 'dependency framing' (e.g., living with parents) acts as a risk signal that overrides high specificity.",
+  "batches_seen": 47,
+  "loans_seen": 654,
+  "last_updated": "2026-04-25T20:34:13+00:00",
+  "watching_for": "I am looking for more examples of 'social repayment' to see if the booster is tied specifically to CAMFED or if any structured volunteering works. I am also watching for a 'fluff threshold' where emotive language stops being a booster and starts being perceived as generic filler, and whether 'lack of support' framing (no relatives abroad) consistently slows funding.",
   "claims": {
     "pitches-that-mention-owning-a-home-or-land-fund-faster-regar": {
       "id": "pitches-that-mention-owning-a-home-or-land-fund-faster-regar",
@@ -14,9 +14,9 @@
         3160255,
         3160710
       ],
-      "confidence": 0.99,
+      "confidence": 0.95,
       "first_seen_batch": 2,
-      "last_updated_batch": 53,
+      "last_updated_batch": 54,
       "confidence_history": [
         [
           2,
@@ -193,6 +193,10 @@
         [
           53,
           0.99
+        ],
+        [
+          54,
+          0.95
         ]
       ]
     },
@@ -209,7 +213,7 @@
       ],
       "confidence": 1.0,
       "first_seen_batch": 3,
-      "last_updated_batch": 53,
+      "last_updated_batch": 54,
       "confidence_history": [
         [
           3,
@@ -390,6 +394,10 @@
         [
           53,
           1.0
+        ],
+        [
+          54,
+          1.0
         ]
       ]
     },
@@ -407,7 +415,7 @@
       ],
       "confidence": 1.0,
       "first_seen_batch": 9,
-      "last_updated_batch": 53,
+      "last_updated_batch": 54,
       "confidence_history": [
         [
           9,
@@ -560,6 +568,10 @@
         [
           53,
           1.0
+        ],
+        [
+          54,
+          1.0
         ]
       ]
     },
@@ -649,32 +661,6 @@
         ]
       ]
     },
-    "pitches-that-frame-a-need-as-a-direct-health-or-quality-risk": {
-      "id": "pitches-that-frame-a-need-as-a-direct-health-or-quality-risk",
-      "bucket": "faster",
-      "title": "Pitches that frame a need as a direct health or quality risk fund faster than those framing it as a quantity or logistics issue, regardless of gender.",
-      "body": "Lenders respond more urgently to threats to health (e.g., 'dirty water,' 'impurities') than to inconveniences of scarcity (e.g., 'very little water'). This suggests that 'risk' is a more powerful funding trigger than 'need'.",
-      "supporting_loans": [
-        3163110
-      ],
-      "confidence": 0.6,
-      "first_seen_batch": 51,
-      "last_updated_batch": 53,
-      "confidence_history": [
-        [
-          51,
-          0.6
-        ],
-        [
-          52,
-          0.6
-        ],
-        [
-          53,
-          0.6
-        ]
-      ]
-    },
     "pitches-that-frame-the-loan-as-a-tool-for-expansion-based-on": {
       "id": "pitches-that-frame-the-loan-as-a-tool-for-expansion-based-on",
       "bucket": "faster",
@@ -683,9 +669,9 @@
       "supporting_loans": [
         3159567
       ],
-      "confidence": 0.6,
+      "confidence": 0.65,
       "first_seen_batch": 52,
-      "last_updated_batch": 53,
+      "last_updated_batch": 54,
       "confidence_history": [
         [
           52,
@@ -694,6 +680,10 @@
         [
           53,
           0.6
+        ],
+        [
+          54,
+          0.65
         ]
       ]
     },
@@ -705,13 +695,54 @@
       "supporting_loans": [
         3160935
       ],
-      "confidence": 0.6,
+      "confidence": 0.65,
       "first_seen_batch": 53,
-      "last_updated_batch": 53,
+      "last_updated_batch": 54,
       "confidence_history": [
         [
           53,
           0.6
+        ],
+        [
+          54,
+          0.65
+        ]
+      ]
+    },
+    "pitches-that-describe-a-specific-structured-social-repayment": {
+      "id": "pitches-that-describe-a-specific-structured-social-repayment",
+      "bucket": "faster",
+      "title": "Pitches that describe a specific, structured social repayment commitment, such as volunteering for a named organization with defined hours, fund faster, regardless of gender.",
+      "body": "Detailed social commitments (e.g., 'volunteering two and a half hours per week as a CAMFED Learner Guide') provide a signal of high social capital and accountability that lenders find compelling.",
+      "supporting_loans": [
+        3164571
+      ],
+      "confidence": 0.65,
+      "first_seen_batch": 54,
+      "last_updated_batch": 54,
+      "confidence_history": [
+        [
+          54,
+          0.65
+        ]
+      ]
+    },
+    "pitches-that-frame-the-loan-s-purpose-around-immediate-high-": {
+      "id": "pitches-that-frame-the-loan-s-purpose-around-immediate-high-",
+      "bucket": "faster",
+      "title": "Pitches that frame the loan's purpose around immediate, high-urgency risks\u2014such as family security or health and quality hazards\u2014fund faster than those framing it around long-term growth or logistical needs, regardless of gender.",
+      "body": "Lenders respond more urgently to threats to basic survival and health than to the strategic expansion of a business or the long-term benefit of education, particularly when the pitch lacks a high-specificity personal narrative.",
+      "supporting_loans": [
+        3160935,
+        3163110
+      ],
+      "confidence": 0.65,
+      "first_seen_batch": 54,
+      "last_updated_batch": 54,
+      "confidence_history": [
+        [
+          54,
+          0.65
         ]
       ]
     }
@@ -771,11 +802,6 @@
       "id": "in-pair-1-l3159142-vs-l3156899-the-faster-pitch",
       "body": "In Pair 1 (L3159142 vs L3156899), the faster pitch is actually more generic than the slower one. The slower pitch provides more personal data (seven children) but also uses 'environmental protection' language. This suggests the 'grant-like language' penalty is stronger than the 'demographic data' bonus.",
       "first_seen_batch": 10
-    },
-    "the-nwtf-template-paradox-in-pairs-1-3-and-5-t": {
-      "id": "the-nwtf-template-paradox-in-pairs-1-3-and-5-t",
-      "body": "The NWTF Template Paradox: In Pairs 1, 3, and 5, the most basic, pure template ('secure the future of the family') funded faster than pitches that attempted to be more specific ('expand her business' or 'build and develop'). Why is the pure template more effective than a slightly modified one?",
-      "first_seen_batch": 11
     },
     "in-pair-4-l3159096-vs-l3161289-the-faster-pitch": {
       "id": "in-pair-4-l3159096-vs-l3161289-the-faster-pitch",
@@ -871,6 +897,11 @@
       "id": "in-pair-2-l3162794-vs-l3164189-the-only-meaning",
       "body": "In Pair 2 (L3162794 vs L3164189), the only meaningful difference is a textual note identifying the child in the photo. Does explicitly linking text to visual evidence (photo captions) act as a speed booster?",
       "first_seen_batch": 53
+    },
+    "in-loan-l3161798-the-borrower-explicitly-mentions": {
+      "id": "in-loan-l3161798-the-borrower-explicitly-mentions",
+      "body": "In Loan L3161798, the borrower explicitly mentions she 'doesn't have relatives living abroad'. I wonder if mentioning a lack of external financial safety nets acts as a risk signal that slows funding.",
+      "first_seen_batch": 54
     }
   },
   "retired": {
@@ -1160,6 +1191,20 @@
       "retrospective": "Retired to increase parsimony; this is a duplicate of the master narrative/grounded details claim.",
       "retired_batch": 51,
       "was_believed_batches": 1
+    },
+    "pitches-that-frame-a-need-as-a-direct-health-or-quality-risk": {
+      "id": "pitches-that-frame-a-need-as-a-direct-health-or-quality-risk",
+      "title": "Pitches that frame a need as a direct health or quality risk fund faster than those framing it as a quantity or logistics issue, regardless of gender.",
+      "retrospective": "Auto-evicted to honor the 8-claim cap: this was the lowest-confidence claim at 0.60.",
+      "retired_batch": 54,
+      "was_believed_batches": 3
+    },
+    "in-highly-templated-environments-the-most-basic-pure-version": {
+      "id": "in-highly-templated-environments-the-most-basic-pure-version",
+      "title": "In highly templated environments, the most basic, pure versions of a template fund faster than versions that attempt to add specific but generic business goals, regardless of gender.",
+      "retrospective": "Auto-evicted to honor the 8-claim cap: this was the lowest-confidence claim at 0.60.",
+      "retired_batch": 54,
+      "was_believed_batches": 0
     }
   }
 }
