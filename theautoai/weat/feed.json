@@ -1,5 +1,111 @@
 [
   {
+    "id": "2998c2593d88",
+    "timestamp": "2026-04-25T21:48:45.763809+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "athletes vs diplomats on communication style directness",
+    "labels": {
+      "X": "athletes",
+      "Y": "diplomats",
+      "A": "directness",
+      "B": "indirectness"
+    },
+    "canonical_keys": {
+      "X": "athletes",
+      "Y": "diplomats",
+      "A": "directness",
+      "B": "indirectness"
+    },
+    "effect_size": -0.05853191420626113,
+    "p_value": 0.87661,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "athlete",
+        "player",
+        "sprinter",
+        "swimmer",
+        "runner",
+        "golfer",
+        "bowler",
+        "wrestler",
+        "boxer",
+        "skater",
+        "skier",
+        "diver",
+        "climber",
+        "surfer",
+        "cyclist"
+      ],
+      "Y_used": [
+        "diplomat",
+        "ambassador",
+        "envoy",
+        "consul",
+        "negotiator",
+        "mediator",
+        "statesman",
+        "attache",
+        "emissary",
+        "delegate",
+        "representative",
+        "minister",
+        "official",
+        "bureaucrat",
+        "politician"
+      ],
+      "A_used": [
+        "direct",
+        "blunt",
+        "frank",
+        "honest",
+        "open",
+        "candid",
+        "explicit",
+        "plain",
+        "clear",
+        "stark",
+        "bold",
+        "abrupt",
+        "forthright",
+        "overt",
+        "sincere"
+      ],
+      "B_used": [
+        "indirect",
+        "subtle",
+        "ambiguous",
+        "vague",
+        "nuanced",
+        "tactful",
+        "cautious",
+        "oblique",
+        "evasive",
+        "discreet",
+        "implicit",
+        "veiled",
+        "roundabout",
+        "circuitous",
+        "guarded"
+      ]
+    },
+    "proposal": "I propose that people associate athletes with directness more strongly than they associate diplomats with directness. This association likely reflects the contrast between the physical, goal-oriented nature of sports and the linguistic nuance and strategic ambiguity required in international relations. This is novel because it examines communication style across two very different professional domains that are rarely compared in implicit association research. Confirming this would provide insight into how we mentally categorize directness as a trait associated with physical mastery rather than intellectual or political mastery.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "a9b9c07c006b",
     "timestamp": "2026-04-25T21:16:43.673152+00:00",
     "schema_version": "autoresearch.v1",
