@@ -1,5 +1,111 @@
 [
   {
+    "id": "27106f8a3786",
+    "timestamp": "2026-04-25T20:48:26.083619+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "engineers vs philosophers on optimism versus skepticism",
+    "labels": {
+      "X": "engineers",
+      "Y": "philosophers",
+      "A": "optimism",
+      "B": "skepticism"
+    },
+    "canonical_keys": {
+      "X": "engineers",
+      "Y": "philosophers",
+      "A": "optimism",
+      "B": "skepticism"
+    },
+    "effect_size": 1.6451340275500632,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "engineer",
+        "developer",
+        "technician",
+        "builder",
+        "programmer",
+        "coder",
+        "architect",
+        "mechanic",
+        "analyst",
+        "designer",
+        "operator",
+        "fabricator",
+        "inventor",
+        "specialist",
+        "mathematician"
+      ],
+      "Y_used": [
+        "philosopher",
+        "thinker",
+        "theorist",
+        "academic",
+        "ethicist",
+        "metaphysician",
+        "logician",
+        "scholar",
+        "dialectician",
+        "intellectual",
+        "sage",
+        "pundit",
+        "rhetorician",
+        "humanist",
+        "epistemologist"
+      ],
+      "A_used": [
+        "optimistic",
+        "hopeful",
+        "positive",
+        "progressive",
+        "solvable",
+        "possible",
+        "growth",
+        "success",
+        "confident",
+        "efficient",
+        "pragmatic",
+        "capable",
+        "achievable",
+        "bright",
+        "sunny"
+      ],
+      "B_used": [
+        "skeptical",
+        "doubtful",
+        "cynical",
+        "questioning",
+        "uncertain",
+        "pessimistic",
+        "negative",
+        "elusive",
+        "abstract",
+        "vague",
+        "ironic",
+        "paradoxical",
+        "existential",
+        "critical",
+        "bleak"
+      ]
+    },
+    "proposal": "People associate engineers with optimism more strongly than they associate philosophers with optimism. While both categories are intellectual, engineers are implicitly linked to the pragmatic belief that problems are solvable and that progress is linear, whereas philosophers are often implicitly associated with skepticism, existential doubt, and the questioning of fundamental assumptions. This association is novel as it moves beyond the common 'logic vs. creativity' axis to examine the implicit emotional tone of different intellectual roles. Confirming this would reveal how our mental representations of 'problem-solving' are tied to a specific optimistic affect that is absent from our representation of 'critical thinking'.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "89058a37e4f7",
     "timestamp": "2026-04-25T19:54:15.704449+00:00",
     "schema_version": "autoresearch.v1",
