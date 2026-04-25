@@ -1,5 +1,111 @@
 [
   {
+    "id": "e5c991e22196",
+    "timestamp": "2026-04-25T13:50:16.911247+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "philosophers vs scientists on normative versus descriptive inquiry",
+    "labels": {
+      "X": "philosophers",
+      "Y": "scientists",
+      "A": "prescriptive",
+      "B": "descriptive"
+    },
+    "canonical_keys": {
+      "X": "philosophers",
+      "Y": "scientists",
+      "A": "prescriptive",
+      "B": "descriptive"
+    },
+    "effect_size": 1.4092160678437153,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "philosopher",
+        "logician",
+        "metaphysician",
+        "theorist",
+        "thinker",
+        "scholar",
+        "academic",
+        "sage",
+        "dialectician",
+        "epistemologist",
+        "ontologist",
+        "sophist",
+        "humanist",
+        "intellectual",
+        "pedagogue"
+      ],
+      "Y_used": [
+        "scientist",
+        "physicist",
+        "chemist",
+        "biologist",
+        "astronomer",
+        "geologist",
+        "researcher",
+        "physiologist",
+        "geneticist",
+        "microbiologist",
+        "mathematician",
+        "zoologist",
+        "botanist",
+        "meteorologist",
+        "oceanographer"
+      ],
+      "A_used": [
+        "duty",
+        "value",
+        "ethic",
+        "moral",
+        "normative",
+        "prescriptive",
+        "rule",
+        "obligation",
+        "virtue",
+        "right",
+        "wrong",
+        "ideal",
+        "mandate",
+        "precept",
+        "standard"
+      ],
+      "B_used": [
+        "actual",
+        "fact",
+        "data",
+        "evidence",
+        "observation",
+        "descriptive",
+        "empirical",
+        "measure",
+        "result",
+        "reality",
+        "objective",
+        "record",
+        "finding",
+        "statistic",
+        "tangible"
+      ]
+    },
+    "proposal": "I propose that people associate philosophers with prescriptiveness more strongly than they associate scientists with prescriptiveness. While both groups are viewed as intellectual and analytical, this association examines the implicit 'is-ought' divide, where scientists are seen as descriptive (explaining how the world is) and philosophers as prescriptive (arguing how the world should be). This is novel because most implicit association research on these groups focuses on general intelligence or logic rather than the specific distinction between descriptive and normative inquiry. Confirming this would provide insight into how the public mentally categorizes the fundamental roles of empirical evidence versus ethical or conceptual argumentation.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "728333556604",
     "timestamp": "2026-04-25T13:03:40.965714+00:00",
     "schema_version": "autoresearch.v1",
