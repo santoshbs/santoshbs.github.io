@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
-  "batches_seen": 45,
-  "loans_seen": 640,
-  "last_updated": "2026-04-25T18:58:03+00:00",
-  "watching_for": "I am watching for more evidence of the 'Success vs Need' framing (growth signals vs hardship signals) and whether 'community-benefit framing' (e.g., mentioning neighbors) is a general booster across sectors or specific to sanitation.",
+  "batches_seen": 46,
+  "loans_seen": 648,
+  "last_updated": "2026-04-25T19:43:13+00:00",
+  "watching_for": "I am looking for evidence of a 'fluff threshold' where emotive language transitions from a booster to a slow signal, and whether 'dependency framing' (e.g., living with parents) acts as a risk signal that overrides high specificity.",
   "claims": {
     "pitches-that-mention-owning-a-home-or-land-fund-faster-regar": {
       "id": "pitches-that-mention-owning-a-home-or-land-fund-faster-regar",
@@ -16,7 +16,7 @@
       ],
       "confidence": 0.99,
       "first_seen_batch": 2,
-      "last_updated_batch": 52,
+      "last_updated_batch": 53,
       "confidence_history": [
         [
           2,
@@ -189,6 +189,10 @@
         [
           52,
           0.99
+        ],
+        [
+          53,
+          0.99
         ]
       ]
     },
@@ -205,7 +209,7 @@
       ],
       "confidence": 1.0,
       "first_seen_batch": 3,
-      "last_updated_batch": 52,
+      "last_updated_batch": 53,
       "confidence_history": [
         [
           3,
@@ -382,6 +386,10 @@
         [
           52,
           1.0
+        ],
+        [
+          53,
+          1.0
         ]
       ]
     },
@@ -399,7 +407,7 @@
       ],
       "confidence": 1.0,
       "first_seen_batch": 9,
-      "last_updated_batch": 52,
+      "last_updated_batch": 53,
       "confidence_history": [
         [
           9,
@@ -548,6 +556,10 @@
         [
           52,
           1.0
+        ],
+        [
+          53,
+          1.0
         ]
       ]
     },
@@ -561,7 +573,7 @@
       ],
       "confidence": 0.88,
       "first_seen_batch": 28,
-      "last_updated_batch": 52,
+      "last_updated_batch": 53,
       "confidence_history": [
         [
           28,
@@ -630,6 +642,10 @@
         [
           52,
           0.88
+        ],
+        [
+          53,
+          0.88
         ]
       ]
     },
@@ -643,7 +659,7 @@
       ],
       "confidence": 0.6,
       "first_seen_batch": 51,
-      "last_updated_batch": 52,
+      "last_updated_batch": 53,
       "confidence_history": [
         [
           51,
@@ -651,6 +667,10 @@
         ],
         [
           52,
+          0.6
+        ],
+        [
+          53,
           0.6
         ]
       ]
@@ -665,10 +685,32 @@
       ],
       "confidence": 0.6,
       "first_seen_batch": 52,
-      "last_updated_batch": 52,
+      "last_updated_batch": 53,
       "confidence_history": [
         [
           52,
+          0.6
+        ],
+        [
+          53,
+          0.6
+        ]
+      ]
+    },
+    "within-templated-pitches-framing-the-loan-s-purpose-around-i": {
+      "id": "within-templated-pitches-framing-the-loan-s-purpose-around-i",
+      "bucket": "faster",
+      "title": "Within templated pitches, framing the loan's purpose around immediate family security funds faster than framing it around business expansion or long-term educational goals, regardless of gender.",
+      "body": "When the narrative structure is generic and lacks unique personal detail, lenders prioritize the urgency of family survival and basic security over the strategic growth of a business or the long-term benefit of education.",
+      "supporting_loans": [
+        3160935
+      ],
+      "confidence": 0.6,
+      "first_seen_batch": 53,
+      "last_updated_batch": 53,
+      "confidence_history": [
+        [
+          53,
           0.6
         ]
       ]
@@ -744,16 +786,6 @@
       "id": "the-specificity-paradox-in-pair-4-loan-l3161431",
       "body": "The Specificity Paradox: In Pair 4, Loan L3161431 is exceptionally specific (38 years experience, 5 employees, specific crops) yet funded significantly slower than the generic template in L3161059. Because these loans are from different countries (Rwanda vs Philippines), I suspect country-level baseline speed or partner-specific lender bias is overriding the textual benefit of specificity.",
       "first_seen_batch": 15
-    },
-    "in-pair-6-two-pitches-using-the-same-working-tir": {
-      "id": "in-pair-6-two-pitches-using-the-same-working-tir",
-      "body": "In Pair 6, two pitches using the same 'working tirelessly' emotive template differed only in their goal: 'secure the future of her family' (Fast) vs 'expand her business' (Slow). This suggests that within a templated pitch, family-centric goals may be more effective than business-centric goals.",
-      "first_seen_batch": 16
-    },
-    "in-pair-3-secure-her-family-s-livelihood-vague": {
-      "id": "in-pair-3-secure-her-family-s-livelihood-vague",
-      "body": "In Pair 3, 'secure her family's livelihood' (vague) beat 'send her children to college' (specific). This contradicts the general specificity booster, suggesting that certain 'template goals' like college may be perceived as less urgent or more generic than family survival.",
-      "first_seen_batch": 17
     },
     "in-sanitation-loans-does-entrepreneur-framing": {
       "id": "in-sanitation-loans-does-entrepreneur-framing",
@@ -834,6 +866,11 @@
       "id": "in-pair-1-the-addition-of-working-tirelessly-tow",
       "body": "In Pair 1, the addition of 'working tirelessly toward the attainment of her dream' to a standard NWTF template actually slowed funding compared to the leaner version. I wonder if there is a 'fluff threshold' where emotive language stops being a booster and starts being perceived as a generic filler.",
       "first_seen_batch": 50
+    },
+    "in-pair-2-l3162794-vs-l3164189-the-only-meaning": {
+      "id": "in-pair-2-l3162794-vs-l3164189-the-only-meaning",
+      "body": "In Pair 2 (L3162794 vs L3164189), the only meaningful difference is a textual note identifying the child in the photo. Does explicitly linking text to visual evidence (photo captions) act as a speed booster?",
+      "first_seen_batch": 53
     }
   },
   "retired": {
