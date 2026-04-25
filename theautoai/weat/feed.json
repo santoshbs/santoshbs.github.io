@@ -1,5 +1,111 @@
 [
   {
+    "id": "ce4929465b15",
+    "timestamp": "2026-04-25T17:22:12.442505+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "artists vs diplomats on sincerity versus strategic communication",
+    "labels": {
+      "X": "artists",
+      "Y": "diplomats",
+      "A": "sincerity",
+      "B": "strategic tact"
+    },
+    "canonical_keys": {
+      "X": "artists",
+      "Y": "diplomats",
+      "A": "sincerity",
+      "B": ""
+    },
+    "effect_size": 1.3713719161685303,
+    "p_value": 3e-05,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "painter",
+        "sculptor",
+        "musician",
+        "poet",
+        "dancer",
+        "actor",
+        "composer",
+        "novelist",
+        "drawer",
+        "sketcher",
+        "singer",
+        "potter",
+        "carver",
+        "weaver",
+        "lyricist"
+      ],
+      "Y_used": [
+        "ambassador",
+        "envoy",
+        "consul",
+        "negotiator",
+        "mediator",
+        "attache",
+        "diplomat",
+        "emissary",
+        "representative",
+        "delegate",
+        "minister",
+        "official",
+        "statesman",
+        "politician",
+        "bureaucrat"
+      ],
+      "A_used": [
+        "honest",
+        "sincere",
+        "authentic",
+        "genuine",
+        "truthful",
+        "candid",
+        "frank",
+        "open",
+        "heartfelt",
+        "raw",
+        "real",
+        "straightforward",
+        "natural",
+        "unvarnished",
+        "transparent"
+      ],
+      "B_used": [
+        "tactful",
+        "strategic",
+        "calculated",
+        "diplomatic",
+        "subtle",
+        "indirect",
+        "formal",
+        "polished",
+        "guarded",
+        "artificial",
+        "deceitful",
+        "shrewd",
+        "evasive",
+        "measured",
+        "cautious"
+      ]
+    },
+    "proposal": "I propose that people associate artists with sincerity more strongly than they associate diplomats with sincerity. This association is novel because while the perceived lack of transparency in diplomacy is a common trope, it has not been systematically contrasted with the 'authentic' identity of the artist using implicit measures. This is interesting because it explores the tension between social tact and emotional honesty. Confirming this association would demonstrate how professional roles that prioritize strategic communication are implicitly contrasted with roles that prioritize raw self-expression.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "93f95a6fbbea",
     "timestamp": "2026-04-25T16:47:17.205170+00:00",
     "schema_version": "autoresearch.v1",
