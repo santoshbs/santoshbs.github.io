@@ -1,5 +1,111 @@
 [
   {
+    "id": "a9b9c07c006b",
+    "timestamp": "2026-04-25T21:16:43.673152+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "musicians vs politicians on authenticity vs performativity",
+    "labels": {
+      "X": "musicians",
+      "Y": "politicians",
+      "A": "authenticity",
+      "B": "performativity"
+    },
+    "canonical_keys": {
+      "X": "musicians",
+      "Y": "politicians",
+      "A": "authenticity",
+      "B": "performativity"
+    },
+    "effect_size": 0.09692828067226467,
+    "p_value": 0.79764,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "singer",
+        "guitarist",
+        "pianist",
+        "drummer",
+        "violinist",
+        "cellist",
+        "flutist",
+        "hornist",
+        "harpist",
+        "conductor",
+        "composer",
+        "lyricist",
+        "vocalist",
+        "soloist",
+        "instrumentalist"
+      ],
+      "Y_used": [
+        "senator",
+        "governor",
+        "mayor",
+        "president",
+        "congressman",
+        "representative",
+        "legislator",
+        "minister",
+        "diplomat",
+        "councilor",
+        "chancellor",
+        "bureaucrat",
+        "lobbyist",
+        "official",
+        "statesman"
+      ],
+      "A_used": [
+        "honest",
+        "genuine",
+        "sincere",
+        "real",
+        "true",
+        "authentic",
+        "candid",
+        "natural",
+        "heartfelt",
+        "open",
+        "direct",
+        "truthful",
+        "pure",
+        "straightforward",
+        "raw"
+      ],
+      "B_used": [
+        "fake",
+        "false",
+        "insincere",
+        "calculated",
+        "performative",
+        "artificial",
+        "deceptive",
+        "lying",
+        "disingenuous",
+        "superficial",
+        "staged",
+        "polished",
+        "scripted",
+        "plastic",
+        "hollow"
+      ]
+    },
+    "proposal": "People associate musicians with authenticity more strongly than they associate politicians with authenticity. This association reflects a widespread cultural narrative that artistic expression is a vehicle for genuine emotional truth, whereas political discourse is perceived as calculated and performative. While the perceived dishonesty of politicians is a common trope, examining this specifically against the perceived purity of musicians reveals how we contrast aesthetic and institutional forms of public performance. Confirming this would highlight a systematic bias that grants an 'authenticity premium' to artists over civic leaders.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "27106f8a3786",
     "timestamp": "2026-04-25T20:48:26.083619+00:00",
     "schema_version": "autoresearch.v1",
