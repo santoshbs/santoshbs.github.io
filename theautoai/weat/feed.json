@@ -1,5 +1,111 @@
 [
   {
+    "id": "271b5b91f02c",
+    "timestamp": "2026-04-25T01:58:00.543364+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "historians vs engineers on epistemic representation of truth",
+    "labels": {
+      "X": "historians",
+      "Y": "engineers",
+      "A": "nuance",
+      "B": "precision"
+    },
+    "canonical_keys": {
+      "X": "historians",
+      "Y": "engineers",
+      "A": "nuance",
+      "B": "precision"
+    },
+    "effect_size": 1.3402263443545432,
+    "p_value": 7e-05,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "historian",
+        "archivist",
+        "scholar",
+        "researcher",
+        "curator",
+        "biographer",
+        "chronicler",
+        "anthropologist",
+        "academic",
+        "lecturer",
+        "professor",
+        "writer",
+        "author",
+        "paleographer",
+        "genealogist"
+      ],
+      "Y_used": [
+        "engineer",
+        "technician",
+        "programmer",
+        "developer",
+        "architect",
+        "mechanic",
+        "builder",
+        "coder",
+        "operator",
+        "welder",
+        "electrician",
+        "drafter",
+        "machinist",
+        "fabricator",
+        "surveyor"
+      ],
+      "A_used": [
+        "nuanced",
+        "ambiguous",
+        "complex",
+        "subtle",
+        "layered",
+        "vague",
+        "flexible",
+        "subjective",
+        "qualitative",
+        "interpretive",
+        "shaded",
+        "oblique",
+        "multifarious",
+        "multifaceted",
+        "intricate"
+      ],
+      "B_used": [
+        "precise",
+        "exact",
+        "binary",
+        "correct",
+        "objective",
+        "quantitative",
+        "rigid",
+        "strict",
+        "definite",
+        "clear",
+        "concrete",
+        "explicit",
+        "accurate",
+        "definitive",
+        "specific"
+      ]
+    },
+    "proposal": "People associate historians with nuance more strongly than they associate engineers with nuance. While engineers are implicitly linked to precision and binary correctness, historians are associated with the navigation of ambiguity and the weighing of conflicting perspectives. This association is novel as it moves beyond simple 'logic vs. creativity' tropes to examine how different epistemic roles are linked to the perception of complexity. Confirming this would provide insight into the implicit cognitive divide between the humanities and the technical sciences regarding how 'truth' is represented.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "40e19d89592f",
     "timestamp": "2026-04-25T01:11:10.016695+00:00",
     "schema_version": "autoresearch.v1",
