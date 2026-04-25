@@ -1,5 +1,113 @@
 [
   {
+    "id": "f2149814a0c1",
+    "timestamp": "2026-04-25T02:35:51.926691+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "students vs seniors on epistemological openness versus rigidity",
+    "labels": {
+      "X": "students",
+      "Y": "seniors",
+      "A": "intellectual humility",
+      "B": "intellectual rigidity"
+    },
+    "canonical_keys": {
+      "X": "students",
+      "Y": "seniors",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 1.3031143802585812,
+    "p_value": 0.00011,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "student",
+        "pupil",
+        "learner",
+        "intern",
+        "freshman",
+        "sophomore",
+        "graduate",
+        "scholar",
+        "apprentice",
+        "novice",
+        "trainee",
+        "disciple",
+        "undergraduate",
+        "youth",
+        "adolescent",
+        "collegiate"
+      ],
+      "Y_used": [
+        "senior",
+        "elder",
+        "retiree",
+        "pensioner",
+        "grandmother",
+        "grandfather",
+        "octogenarian",
+        "nonagenarian",
+        "centenarian",
+        "geriatric",
+        "veteran",
+        "patriarch",
+        "matriarch",
+        "aged",
+        "elderly"
+      ],
+      "A_used": [
+        "open",
+        "curious",
+        "humble",
+        "inquisitive",
+        "flexible",
+        "receptive",
+        "adaptable",
+        "teachable",
+        "malleable",
+        "questioning",
+        "modest",
+        "tentative",
+        "evolving",
+        "exploratory",
+        "listening",
+        "permeable"
+      ],
+      "B_used": [
+        "rigid",
+        "fixed",
+        "stubborn",
+        "dogmatic",
+        "certain",
+        "closed",
+        "adamant",
+        "inflexible",
+        "resolute",
+        "uncompromising",
+        "opinionated",
+        "convinced",
+        "static",
+        "unyielding",
+        "obstinate"
+      ]
+    },
+    "proposal": "I propose that people associate students with intellectual humility more strongly than they associate seniors with intellectual humility. This association is novel because it examines the implicit intersection of age and epistemological openness, rather than just cognitive ability or technological skill. It is interesting as it contrasts the perceived 'learning phase' of youth with the 'fixed phase' of old age. Confirming this association would provide insight into implicit ageist stereotypes regarding the mental rigidity of the elderly versus the perceived malleability of students.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "271b5b91f02c",
     "timestamp": "2026-04-25T01:58:00.543364+00:00",
     "schema_version": "autoresearch.v1",
