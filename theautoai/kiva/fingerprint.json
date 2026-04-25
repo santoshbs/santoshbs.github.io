@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
-  "batches_seen": 48,
-  "loans_seen": 660,
-  "last_updated": "2026-04-25T22:18:19+00:00",
-  "watching_for": "I am watching to see if the 'NWTF template' is an absolute ceiling on speed regardless of the business type, whether 'well-maintained' house descriptions provide a stronger stability signal than simply stating ownership, and if specific hardship markers (e.g., 'widower') act as a gender-specific booster for men.",
+  "batches_seen": 49,
+  "loans_seen": 666,
+  "last_updated": "2026-04-25T23:06:55+00:00",
+  "watching_for": "I am watching to see if 'risk signals'\u2014such as refugee status or the explicit mention of lacking external financial safety nets\u2014consistently slow funding, and whether lenders exhibit a general preference for 'essential' retail (e.g., general stores) over 'specialized' retail (e.g., office supplies).",
   "claims": {
     "pitches-that-mention-owning-a-home-or-land-fund-faster-regar": {
       "id": "pitches-that-mention-owning-a-home-or-land-fund-faster-regar",
@@ -17,7 +17,7 @@
       ],
       "confidence": 0.96,
       "first_seen_batch": 2,
-      "last_updated_batch": 55,
+      "last_updated_batch": 56,
       "confidence_history": [
         [
           2,
@@ -202,6 +202,10 @@
         [
           55,
           0.96
+        ],
+        [
+          56,
+          0.96
         ]
       ]
     },
@@ -219,7 +223,7 @@
       ],
       "confidence": 1.0,
       "first_seen_batch": 3,
-      "last_updated_batch": 55,
+      "last_updated_batch": 56,
       "confidence_history": [
         [
           3,
@@ -408,6 +412,10 @@
         [
           55,
           1.0
+        ],
+        [
+          56,
+          1.0
         ]
       ]
     },
@@ -425,7 +433,7 @@
       ],
       "confidence": 1.0,
       "first_seen_batch": 9,
-      "last_updated_batch": 55,
+      "last_updated_batch": 56,
       "confidence_history": [
         [
           9,
@@ -586,6 +594,10 @@
         [
           55,
           1.0
+        ],
+        [
+          56,
+          1.0
         ]
       ]
     },
@@ -599,7 +611,7 @@
       ],
       "confidence": 0.88,
       "first_seen_batch": 28,
-      "last_updated_batch": 55,
+      "last_updated_batch": 56,
       "confidence_history": [
         [
           28,
@@ -676,6 +688,10 @@
         [
           55,
           0.88
+        ],
+        [
+          56,
+          0.88
         ]
       ]
     },
@@ -686,11 +702,12 @@
       "body": "Lenders may perceive borrowers who have already generated profit and savings as lower-risk and more capable of managing additional capital. This 'success' framing shifts the loan from a charitable act of rescue to a strategic investment in growth.",
       "supporting_loans": [
         3159567,
-        3163964
+        3163964,
+        3164606
       ],
-      "confidence": 0.68,
+      "confidence": 0.72,
       "first_seen_batch": 52,
-      "last_updated_batch": 55,
+      "last_updated_batch": 56,
       "confidence_history": [
         [
           52,
@@ -711,6 +728,14 @@
         [
           55,
           0.68
+        ],
+        [
+          56,
+          0.72
+        ],
+        [
+          56,
+          0.72
         ]
       ]
     },
@@ -720,11 +745,12 @@
       "title": "Within templated pitches, framing the loan's purpose around immediate family security funds faster than framing it around business expansion or long-term educational goals, regardless of gender.",
       "body": "When the narrative structure is generic and lacks unique personal detail, lenders prioritize the urgency of family survival and basic security over the strategic growth of a business or the long-term benefit of education.",
       "supporting_loans": [
-        3160935
+        3160935,
+        3164703
       ],
-      "confidence": 0.65,
+      "confidence": 0.68,
       "first_seen_batch": 53,
-      "last_updated_batch": 55,
+      "last_updated_batch": 56,
       "confidence_history": [
         [
           53,
@@ -737,28 +763,14 @@
         [
           55,
           0.65
-        ]
-      ]
-    },
-    "pitches-that-describe-a-specific-structured-social-repayment": {
-      "id": "pitches-that-describe-a-specific-structured-social-repayment",
-      "bucket": "faster",
-      "title": "Pitches that describe a specific, structured social repayment commitment, such as volunteering for a named organization with defined hours, fund faster, regardless of gender.",
-      "body": "Detailed social commitments (e.g., 'volunteering two and a half hours per week as a CAMFED Learner Guide') provide a signal of high social capital and accountability that lenders find compelling.",
-      "supporting_loans": [
-        3164571
-      ],
-      "confidence": 0.65,
-      "first_seen_batch": 54,
-      "last_updated_batch": 55,
-      "confidence_history": [
-        [
-          54,
-          0.65
         ],
         [
-          55,
-          0.65
+          56,
+          0.68
+        ],
+        [
+          56,
+          0.68
         ]
       ]
     },
@@ -773,7 +785,7 @@
       ],
       "confidence": 0.65,
       "first_seen_batch": 54,
-      "last_updated_batch": 55,
+      "last_updated_batch": 56,
       "confidence_history": [
         [
           54,
@@ -782,6 +794,30 @@
         [
           55,
           0.65
+        ],
+        [
+          56,
+          0.65
+        ]
+      ]
+    },
+    "pitches-that-frame-the-loan-s-purpose-around-immediate-high--2": {
+      "id": "pitches-that-frame-the-loan-s-purpose-around-immediate-high--2",
+      "bucket": "faster",
+      "title": "Pitches that frame the loan's purpose around immediate, high-urgency risks\u2014such as family security, health, or survival\u2014fund faster than those framing it around long-term growth, business expansion, or educational goals, regardless of gender.",
+      "body": "Lenders respond more urgently to threats to basic survival and health than to the strategic expansion of a business or the long-term benefit of education. This effect is particularly pronounced in templated pitches where specific personal narratives are absent, shifting the lender's motivation from investment to rescue.",
+      "supporting_loans": [
+        3160935,
+        3164703,
+        3163110
+      ],
+      "confidence": 0.68,
+      "first_seen_batch": 56,
+      "last_updated_batch": 56,
+      "confidence_history": [
+        [
+          56,
+          0.68
         ]
       ]
     }
@@ -936,6 +972,11 @@
       "id": "in-loan-l3161798-the-borrower-explicitly-mentions",
       "body": "In Loan L3161798, the borrower explicitly mentions she 'doesn't have relatives living abroad'. I wonder if mentioning a lack of external financial safety nets acts as a risk signal that slows funding.",
       "first_seen_batch": 54
+    },
+    "in-pair-2-loan-l3164087-identifies-as-a-refugee": {
+      "id": "in-pair-2-loan-l3164087-identifies-as-a-refugee",
+      "body": "In Pair 2, Loan L3164087 identifies as a 'refugee entrepreneur'. Despite the potential for empathy, this loan funded significantly slower than L3164606. I wonder if 'refugee' status is perceived as a risk signal that outweighs the hardship narrative.",
+      "first_seen_batch": 56
     }
   },
   "retired": {
@@ -1239,6 +1280,13 @@
       "retrospective": "Auto-evicted to honor the 8-claim cap: this was the lowest-confidence claim at 0.60.",
       "retired_batch": 54,
       "was_believed_batches": 0
+    },
+    "pitches-that-describe-a-specific-structured-social-repayment": {
+      "id": "pitches-that-describe-a-specific-structured-social-repayment",
+      "title": "Pitches that describe a specific, structured social repayment commitment, such as volunteering for a named organization with defined hours, fund faster, regardless of gender.",
+      "retrospective": "Auto-evicted to honor the 8-claim cap: this was the lowest-confidence claim at 0.65.",
+      "retired_batch": 56,
+      "was_believed_batches": 2
     }
   }
 }
