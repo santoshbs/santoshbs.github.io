@@ -1,5 +1,111 @@
 [
   {
+    "id": "d47964ebeee3",
+    "timestamp": "2026-04-25T08:12:12.931456+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "clergy vs aristocrats on asceticism versus luxury",
+    "labels": {
+      "X": "clergy",
+      "Y": "aristocrats",
+      "A": "asceticism",
+      "B": "luxury"
+    },
+    "canonical_keys": {
+      "X": "clergy",
+      "Y": "aristocrats",
+      "A": "asceticism",
+      "B": "luxury"
+    },
+    "effect_size": 1.397946403550595,
+    "p_value": 1e-05,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "priest",
+        "pastor",
+        "monk",
+        "nun",
+        "bishop",
+        "vicar",
+        "cleric",
+        "minister",
+        "chaplain",
+        "curate",
+        "deacon",
+        "friar",
+        "preacher",
+        "rector",
+        "canon"
+      ],
+      "Y_used": [
+        "noble",
+        "peer",
+        "lord",
+        "baron",
+        "duke",
+        "count",
+        "earl",
+        "viscount",
+        "patrician",
+        "royal",
+        "royalty",
+        "monarch",
+        "sovereign",
+        "gentry",
+        "aristocrat"
+      ],
+      "A_used": [
+        "simple",
+        "frugal",
+        "austere",
+        "plain",
+        "modest",
+        "abstinent",
+        "sparse",
+        "meager",
+        "humble",
+        "devout",
+        "disciplined",
+        "severe",
+        "restricted",
+        "fasting",
+        "purity"
+      ],
+      "B_used": [
+        "lavish",
+        "opulent",
+        "rich",
+        "fancy",
+        "extravagant",
+        "plush",
+        "grand",
+        "ornate",
+        "sumptuous",
+        "decadent",
+        "luxurious",
+        "gold",
+        "wealth",
+        "luxury",
+        "indulgence"
+      ]
+    },
+    "proposal": "People associate clergy with asceticism more strongly than they associate aristocrats with asceticism. This differential association is novel because it examines the implicit tension between institutionalized power and the performance of spiritual self-denial. It is interesting because it reveals whether the public perceives religious leaders through the lens of their traditional vows of poverty or their actual socio-economic status. Confirming this association would provide insight into how the mental representation of spiritual authority is fundamentally tied to the rejection of material luxury.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "dd7d1cf7092b",
     "timestamp": "2026-04-25T06:59:49.165281+00:00",
     "schema_version": "autoresearch.v1",
