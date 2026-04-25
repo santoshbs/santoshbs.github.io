@@ -1,5 +1,111 @@
 [
   {
+    "id": "bcb9d119e353",
+    "timestamp": "2026-04-25T12:08:39.950409+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "protesters vs diplomats on cognitive style of moral processing",
+    "labels": {
+      "X": "protesters",
+      "Y": "diplomats",
+      "A": "moral certainty",
+      "B": "nuance and compromise"
+    },
+    "canonical_keys": {
+      "X": "protesters",
+      "Y": "diplomats",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 0.8613507963600616,
+    "p_value": 0.01657,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "protester",
+        "activist",
+        "marcher",
+        "demonstrator",
+        "rebel",
+        "insurgent",
+        "agitator",
+        "dissident",
+        "striker",
+        "picketer",
+        "rioter",
+        "revolutionary",
+        "partisan",
+        "zealot",
+        "militant"
+      ],
+      "Y_used": [
+        "diplomat",
+        "envoy",
+        "ambassador",
+        "negotiator",
+        "mediator",
+        "consul",
+        "attache",
+        "representative",
+        "emissary",
+        "statesman",
+        "delegate",
+        "conciliator",
+        "liaison",
+        "official",
+        "bureaucrat"
+      ],
+      "A_used": [
+        "certain",
+        "absolute",
+        "uncompromising",
+        "rigid",
+        "definite",
+        "firm",
+        "sure",
+        "resolute",
+        "unwavering",
+        "steadfast",
+        "dogmatic",
+        "clear",
+        "fixed",
+        "decisive",
+        "unyielding"
+      ],
+      "B_used": [
+        "nuanced",
+        "yielding",
+        "ambiguous",
+        "subtle",
+        "flexible",
+        "strategic",
+        "moderate",
+        "adaptable",
+        "vague",
+        "open",
+        "malleable",
+        "supple",
+        "indirect",
+        "balanced",
+        "tentative"
+      ]
+    },
+    "proposal": "I propose that people associate protesters with moral certainty more strongly than they associate diplomats with moral certainty. While diplomats are mentally represented as figures of nuance, compromise, and strategic ambiguity, protesters are seen as being driven by absolute convictions and an uncompromising sense of right and wrong. This association is novel as it moves beyond simple valence to examine a specific cognitive style of moral processing. Confirming this would clarify how the public perceives the psychological divide between grassroots agitation and institutional negotiation.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "5a195b74afa8",
     "timestamp": "2026-04-25T11:18:28.725306+00:00",
     "schema_version": "autoresearch.v1",
