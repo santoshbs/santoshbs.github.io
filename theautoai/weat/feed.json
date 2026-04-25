@@ -1,5 +1,111 @@
 [
   {
+    "id": "852b1a03317a",
+    "timestamp": "2026-04-25T22:29:01.988964+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "historians vs politicians on temporal orientation",
+    "labels": {
+      "X": "historians",
+      "Y": "politicians",
+      "A": "long-term",
+      "B": "short-term"
+    },
+    "canonical_keys": {
+      "X": "historians",
+      "Y": "politicians",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 0.8443351162192633,
+    "p_value": 0.02094,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "historian",
+        "archivist",
+        "chronicler",
+        "scholar",
+        "academic",
+        "researcher",
+        "curator",
+        "antiquarian",
+        "biographer",
+        "writer",
+        "lecturer",
+        "professor",
+        "expert",
+        "specialist",
+        "annalist"
+      ],
+      "Y_used": [
+        "politician",
+        "senator",
+        "governor",
+        "representative",
+        "mayor",
+        "legislator",
+        "minister",
+        "diplomat",
+        "official",
+        "candidate",
+        "campaigner",
+        "lobbyist",
+        "president",
+        "premier",
+        "councilor"
+      ],
+      "A_used": [
+        "century",
+        "millennium",
+        "eternal",
+        "permanent",
+        "enduring",
+        "lasting",
+        "future",
+        "distant",
+        "heritage",
+        "legacy",
+        "epoch",
+        "age",
+        "timeless",
+        "perennial",
+        "persistent"
+      ],
+      "B_used": [
+        "immediate",
+        "current",
+        "instant",
+        "brief",
+        "fleeting",
+        "temporary",
+        "urgent",
+        "momentary",
+        "present",
+        "quick",
+        "rapid",
+        "transient",
+        "ephemeral",
+        "short",
+        "today"
+      ]
+    },
+    "proposal": "People associate historians with long-term thinking more strongly than they associate politicians with long-term thinking. This association likely stems from the public perception of historians as analysts of centuries and politicians as actors driven by the immediate pressures of election cycles. This is novel because it examines a temporal cognitive association rather than a standard personality trait or moral judgment. Confirming this would provide empirical evidence for how society implicitly divides the stewardship of the past from the management of the present.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "2998c2593d88",
     "timestamp": "2026-04-25T21:48:45.763809+00:00",
     "schema_version": "autoresearch.v1",
