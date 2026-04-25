@@ -1,5 +1,111 @@
 [
   {
+    "id": "f9cfd7ee552d",
+    "timestamp": "2026-04-25T05:57:18.528042+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "lawyers vs businesspeople on professional risk appetite",
+    "labels": {
+      "X": "lawyers",
+      "Y": "businesspeople",
+      "A": "risk-aversion",
+      "B": "risk-taking"
+    },
+    "canonical_keys": {
+      "X": "lawyers",
+      "Y": "businesspeople",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 0.23810517619960242,
+    "p_value": 0.52613,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "lawyer",
+        "attorney",
+        "counsel",
+        "barrister",
+        "solicitor",
+        "litigator",
+        "advocate",
+        "jurist",
+        "prosecutor",
+        "defender",
+        "notary",
+        "counselor",
+        "pleader",
+        "associate",
+        "clerk"
+      ],
+      "Y_used": [
+        "entrepreneur",
+        "executive",
+        "manager",
+        "businessman",
+        "businesswoman",
+        "trader",
+        "capitalist",
+        "mogul",
+        "merchant",
+        "proprietor",
+        "vendor",
+        "dealer",
+        "director",
+        "operator",
+        "tycoon"
+      ],
+      "A_used": [
+        "cautious",
+        "safe",
+        "prudent",
+        "careful",
+        "secure",
+        "wary",
+        "guarded",
+        "conservative",
+        "vigilant",
+        "hesitant",
+        "stable",
+        "meticulous",
+        "protective",
+        "circumspect",
+        "reserved"
+      ],
+      "B_used": [
+        "bold",
+        "daring",
+        "risky",
+        "adventurous",
+        "speculative",
+        "rash",
+        "reckless",
+        "brave",
+        "aggressive",
+        "courageous",
+        "intrepid",
+        "fearless",
+        "hazardous",
+        "dauntless",
+        "impetuous"
+      ]
+    },
+    "proposal": "I propose that people associate lawyers with risk-aversion more strongly than they associate businesspeople with risk-aversion. While both groups operate in high-stakes environments, the professional identity of a lawyer is fundamentally centered on liability mitigation and the identification of potential failure points, whereas the businessperson is often culturally stereotyped as a risk-taker or 'disruptor.' This is novel because most implicit association research on these groups focuses on moral judgments like honesty or greed rather than cognitive-professional styles. Confirming this would provide insight into how the tension between legal caution and entrepreneurial drive is mentally represented in corporate and institutional hierarchies.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "17279950d2f7",
     "timestamp": "2026-04-25T05:15:42.731669+00:00",
     "schema_version": "autoresearch.v1",
