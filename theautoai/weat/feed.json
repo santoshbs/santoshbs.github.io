@@ -1,5 +1,111 @@
 [
   {
+    "id": "8c982e94c29e",
+    "timestamp": "2026-04-25T06:29:23.044800+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "workers vs aristocrats on earned vs inherited status",
+    "labels": {
+      "X": "workers",
+      "Y": "aristocrats",
+      "A": "merit",
+      "B": "inheritance"
+    },
+    "canonical_keys": {
+      "X": "workers",
+      "Y": "aristocrats",
+      "A": "merit",
+      "B": "inheritance"
+    },
+    "effect_size": 1.0621392943423418,
+    "p_value": 0.00298,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "worker",
+        "laborer",
+        "employee",
+        "peasant",
+        "artisan",
+        "proletarian",
+        "tradesman",
+        "operator",
+        "mechanic",
+        "staff",
+        "clerk",
+        "apprentice",
+        "hand",
+        "journeyman",
+        "servant"
+      ],
+      "Y_used": [
+        "aristocrat",
+        "noble",
+        "peer",
+        "lord",
+        "baron",
+        "duke",
+        "count",
+        "royalty",
+        "patrician",
+        "elite",
+        "gentry",
+        "sovereign",
+        "monarch",
+        "prince",
+        "princess"
+      ],
+      "A_used": [
+        "merit",
+        "achievement",
+        "effort",
+        "skill",
+        "competence",
+        "ability",
+        "diligence",
+        "earned",
+        "struggle",
+        "industrious",
+        "proficiency",
+        "success",
+        "reward",
+        "performance",
+        "attainment"
+      ],
+      "B_used": [
+        "inherited",
+        "birthright",
+        "privilege",
+        "legacy",
+        "lineage",
+        "ancestry",
+        "entitlement",
+        "hereditary",
+        "innate",
+        "bloodline",
+        "station",
+        "caste",
+        "windfall",
+        "effortless",
+        "nepotism"
+      ]
+    },
+    "proposal": "I propose that people associate workers with merit more strongly than they associate aristocrats with merit. While the socio-political contrast between earned and inherited status is a well-known theme, this specific implicit association probes how the cognitive construct of 'merit' is tied to class identity. This is novel as existing literature typically focuses on the prestige or wealth of these groups rather than the implicit legitimacy of their positions. Confirming this association would shift our understanding of how the public mentally represents the moral justification of social hierarchy.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "f9cfd7ee552d",
     "timestamp": "2026-04-25T05:57:18.528042+00:00",
     "schema_version": "autoresearch.v1",
