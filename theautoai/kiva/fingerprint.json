@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
-  "batches_seen": 40,
-  "loans_seen": 598,
-  "last_updated": "2026-04-25T11:13:14+00:00",
-  "watching_for": "I am watching for evidence that 'groundedness' (concrete obstacles/personal history) interacts with gender\u2014specifically, if men need more 'professional quantification' than women to overcome the baseline.",
+  "batches_seen": 41,
+  "loans_seen": 608,
+  "last_updated": "2026-04-25T11:56:50+00:00",
+  "watching_for": "I am watching for evidence that distinguishes 'social environmentalism' (helping neighbors/local nature), which seems to accelerate funding, from 'technical environmentalism' (biodigesters/renewable energy), which seems to slow it down.",
   "claims": {
     "pitches-that-mention-owning-a-home-or-land-fund-faster-regar": {
       "id": "pitches-that-mention-owning-a-home-or-land-fund-faster-regar",
@@ -16,7 +16,7 @@
       ],
       "confidence": 0.99,
       "first_seen_batch": 2,
-      "last_updated_batch": 47,
+      "last_updated_batch": 48,
       "confidence_history": [
         [
           2,
@@ -169,6 +169,10 @@
         [
           47,
           0.99
+        ],
+        [
+          48,
+          0.99
         ]
       ]
     },
@@ -185,7 +189,7 @@
       ],
       "confidence": 1.0,
       "first_seen_batch": 3,
-      "last_updated_batch": 47,
+      "last_updated_batch": 48,
       "confidence_history": [
         [
           3,
@@ -342,6 +346,10 @@
         [
           47,
           1.0
+        ],
+        [
+          48,
+          1.0
         ]
       ]
     },
@@ -359,7 +367,7 @@
       ],
       "confidence": 1.0,
       "first_seen_batch": 9,
-      "last_updated_batch": 46,
+      "last_updated_batch": 48,
       "confidence_history": [
         [
           9,
@@ -488,6 +496,10 @@
         [
           46,
           1.0
+        ],
+        [
+          48,
+          1.0
         ]
       ]
     },
@@ -501,7 +513,7 @@
       ],
       "confidence": 1.0,
       "first_seen_batch": 13,
-      "last_updated_batch": 47,
+      "last_updated_batch": 48,
       "confidence_history": [
         [
           13,
@@ -606,96 +618,10 @@
         [
           47,
           1.0
-        ]
-      ]
-    },
-    "pitches-for-sanitation-loans-that-identify-the-borrower-s-bu-2": {
-      "id": "pitches-for-sanitation-loans-that-identify-the-borrower-s-bu-2",
-      "bucket": "slower",
-      "title": "Pitches that identify the borrower's business as fish-related fund slower than other business types, regardless of sector or gender.",
-      "body": "Borrowers involved in fishing or fish-vending fund slower than those in other sectors (like vegetable or fruit vending), suggesting a general lender bias against fish-related micro-enterprises.",
-      "supporting_loans": [
-        3157378,
-        3157383,
-        3157487,
-        3158957,
-        3161041
-      ],
-      "confidence": 0.9,
-      "first_seen_batch": 23,
-      "last_updated_batch": 47,
-      "confidence_history": [
-        [
-          23,
-          0.6
         ],
         [
-          24,
-          0.7
-        ],
-        [
-          24,
-          0.7
-        ],
-        [
-          25,
-          0.7
-        ],
-        [
-          26,
-          0.7
-        ],
-        [
-          27,
-          0.8
-        ],
-        [
-          28,
-          0.85
-        ],
-        [
-          29,
-          0.85
-        ],
-        [
-          38,
-          0.88
-        ],
-        [
-          39,
-          0.9
-        ],
-        [
-          40,
-          0.75
-        ],
-        [
-          41,
-          0.8
-        ],
-        [
-          42,
-          0.8
-        ],
-        [
-          43,
-          0.85
-        ],
-        [
-          44,
-          0.85
-        ],
-        [
-          45,
-          0.88
-        ],
-        [
-          46,
-          0.88
-        ],
-        [
-          47,
-          0.9
+          48,
+          1.0
         ]
       ]
     },
@@ -709,7 +635,7 @@
       ],
       "confidence": 0.88,
       "first_seen_batch": 28,
-      "last_updated_batch": 47,
+      "last_updated_batch": 48,
       "confidence_history": [
         [
           28,
@@ -757,6 +683,10 @@
         ],
         [
           47,
+          0.88
+        ],
+        [
+          48,
           0.88
         ]
       ]
@@ -775,7 +705,7 @@
       ],
       "confidence": 1.0,
       "first_seen_batch": 43,
-      "last_updated_batch": 47,
+      "last_updated_batch": 48,
       "confidence_history": [
         [
           43,
@@ -800,6 +730,10 @@
         [
           47,
           1.0
+        ],
+        [
+          48,
+          1.0
         ]
       ]
     },
@@ -815,13 +749,36 @@
         3162232,
         3163250
       ],
-      "confidence": 0.85,
+      "confidence": 0.9,
       "first_seen_batch": 47,
-      "last_updated_batch": 47,
+      "last_updated_batch": 48,
       "confidence_history": [
         [
           47,
           0.85
+        ],
+        [
+          48,
+          0.9
+        ]
+      ]
+    },
+    "pitches-that-mention-community-wide-benefits-such-as-helping": {
+      "id": "pitches-that-mention-community-wide-benefits-such-as-helping",
+      "bucket": "faster",
+      "title": "Pitches that mention community-wide benefits, such as helping neighbors or the environment, fund faster than those focusing solely on the borrower's family, regardless of gender.",
+      "body": "In sanitation loans, adding 'neighbors' and 'environmental protection' to the family-benefit template significantly accelerates funding. This suggests lenders are more responsive to a broader social impact than a purely private family benefit.",
+      "supporting_loans": [
+        3156918,
+        3157137
+      ],
+      "confidence": 0.65,
+      "first_seen_batch": 48,
+      "last_updated_batch": 48,
+      "confidence_history": [
+        [
+          48,
+          0.65
         ]
       ]
     }
@@ -996,6 +953,16 @@
       "id": "in-pair-2-the-fast-loan-uses-the-environmental-p",
       "body": "In Pair 2, the fast loan uses the 'environmental protection/neighbors' framing which I previously viewed as noise or a penalty. However, it also includes the 'widow' marker. I am unsure if the community framing is a booster in sanitation or if the hardship marker is doing all the work.",
       "first_seen_batch": 47
+    },
+    "in-pair-2-a-general-store-funded-faster-than-an-o": {
+      "id": "in-pair-2-a-general-store-funded-faster-than-an-o",
+      "body": "In Pair 2, a general store funded faster than an office supplies business despite both having similar specificity. Is there a general lender preference for 'essential' retail over 'specialized' retail?",
+      "first_seen_batch": 48
+    },
+    "the-kbmi-indonesia-template-l3164114-is-so-effic": {
+      "id": "the-kbmi-indonesia-template-l3164114-is-so-effic",
+      "body": "The KBMI Indonesia template (L3164114) is so efficient that it appears to beat descriptive, grounded narratives (L3158907). I wonder if certain partner-specific templates are 'pre-approved' in the minds of lenders.",
+      "first_seen_batch": 48
     }
   },
   "retired": {
@@ -1215,6 +1182,13 @@
       "retrospective": "Auto-evicted to honor the 8-claim cap: this was the lowest-confidence claim at 0.65.",
       "retired_batch": 47,
       "was_believed_batches": 0
+    },
+    "pitches-for-sanitation-loans-that-identify-the-borrower-s-bu-2": {
+      "id": "pitches-for-sanitation-loans-that-identify-the-borrower-s-bu-2",
+      "title": "Pitches that identify the borrower's business as fish-related fund slower than other business types, regardless of sector or gender.",
+      "retrospective": "The observed 'fish penalty' was actually a 'template penalty'. When fish-related businesses use the community-benefit framing (L3157137), they fund fast, proving the business type itself is not the slow signal.",
+      "retired_batch": 48,
+      "was_believed_batches": 25
     }
   }
 }
