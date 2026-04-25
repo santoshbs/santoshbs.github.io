@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
-  "batches_seen": 38,
-  "loans_seen": 584,
-  "last_updated": "2026-04-25T01:44:37+00:00",
-  "watching_for": "I am watching for further evidence of the 'Template Quality' effect\u2014specifically whether certain partner-specific templates (like the KBMI one) consistently outperform others (like NWTF) even when the business type is similar. I am also watching for 'dependency framing' (e.g., living in parents' house) as a potential risk signal that overrides specificity.",
+  "batches_seen": 39,
+  "loans_seen": 590,
+  "last_updated": "2026-04-25T04:28:24+00:00",
+  "watching_for": "I am watching for more evidence of the 'college goal' penalty to see if it persists across different partners and countries, or if it is a specific quirk of the NWTF Philippines templates. I will also continue to monitor the performance of the KBMI Indonesian template.",
   "claims": {
     "pitches-that-mention-owning-a-home-or-land-fund-faster-regar": {
       "id": "pitches-that-mention-owning-a-home-or-land-fund-faster-regar",
@@ -16,7 +16,7 @@
       ],
       "confidence": 0.99,
       "first_seen_batch": 2,
-      "last_updated_batch": 45,
+      "last_updated_batch": 46,
       "confidence_history": [
         [
           2,
@@ -161,6 +161,10 @@
         [
           45,
           0.99
+        ],
+        [
+          46,
+          0.99
         ]
       ]
     },
@@ -175,9 +179,9 @@
         3158882,
         3162232
       ],
-      "confidence": 0.99,
+      "confidence": 1.0,
       "first_seen_batch": 3,
-      "last_updated_batch": 45,
+      "last_updated_batch": 46,
       "confidence_history": [
         [
           3,
@@ -326,6 +330,10 @@
         [
           45,
           0.99
+        ],
+        [
+          46,
+          1.0
         ]
       ]
     },
@@ -343,7 +351,7 @@
       ],
       "confidence": 1.0,
       "first_seen_batch": 9,
-      "last_updated_batch": 45,
+      "last_updated_batch": 46,
       "confidence_history": [
         [
           9,
@@ -468,6 +476,10 @@
         [
           45,
           1.0
+        ],
+        [
+          46,
+          1.0
         ]
       ]
     },
@@ -481,7 +493,7 @@
       ],
       "confidence": 1.0,
       "first_seen_batch": 13,
-      "last_updated_batch": 45,
+      "last_updated_batch": 46,
       "confidence_history": [
         [
           13,
@@ -578,6 +590,10 @@
         [
           45,
           1.0
+        ],
+        [
+          46,
+          1.0
         ]
       ]
     },
@@ -595,7 +611,7 @@
       ],
       "confidence": 0.88,
       "first_seen_batch": 23,
-      "last_updated_batch": 45,
+      "last_updated_batch": 46,
       "confidence_history": [
         [
           23,
@@ -660,6 +676,10 @@
         [
           45,
           0.88
+        ],
+        [
+          46,
+          0.88
         ]
       ]
     },
@@ -673,7 +693,7 @@
       ],
       "confidence": 0.88,
       "first_seen_batch": 28,
-      "last_updated_batch": 45,
+      "last_updated_batch": 46,
       "confidence_history": [
         [
           28,
@@ -714,6 +734,10 @@
         [
           45,
           0.88
+        ],
+        [
+          46,
+          0.88
         ]
       ]
     },
@@ -731,7 +755,7 @@
       ],
       "confidence": 1.0,
       "first_seen_batch": 43,
-      "last_updated_batch": 45,
+      "last_updated_batch": 46,
       "confidence_history": [
         [
           43,
@@ -748,29 +772,32 @@
         [
           45,
           1.0
+        ],
+        [
+          46,
+          1.0
         ]
       ]
     },
-    "pitches-for-sanitation-loans-that-mention-benefits-to-neighb": {
-      "id": "pitches-for-sanitation-loans-that-mention-benefits-to-neighb",
+    "pitches-that-replace-vague-aspirations-or-generic-personal-d": {
+      "id": "pitches-that-replace-vague-aspirations-or-generic-personal-d",
       "bucket": "faster",
-      "title": "Pitches for sanitation loans that mention benefits to neighbors or environmental protection fund faster than those mentioning only family benefits, regardless of gender.",
-      "body": "In the sanitation sector, framing the loan's impact as a community benefit (e.g., 'reducing risks to neighbors') rather than just a private family benefit increases funding speed.",
+      "title": "Pitches that replace vague aspirations or generic personal demographics with concrete, quantifiable professional data\u2014such as specific asset lists, years of experience, or detailed inventory\u2014fund faster, regardless of gender.",
+      "body": "Quantification transforms a pitch from a generic request for help into a tangible business plan. Specific professional markers are more consistent predictors of funding speed than personal demographics (e.g., age, number of children) or generic goals.",
       "supporting_loans": [
-        3156925,
-        3156926
+        3162022,
+        3159809,
+        3158882,
+        3162232,
+        3159676
       ],
-      "confidence": 0.65,
-      "first_seen_batch": 44,
-      "last_updated_batch": 45,
+      "confidence": 1.0,
+      "first_seen_batch": 46,
+      "last_updated_batch": 46,
       "confidence_history": [
         [
-          44,
-          0.65
-        ],
-        [
-          45,
-          0.65
+          46,
+          1.0
         ]
       ]
     }
@@ -845,16 +872,6 @@
       "id": "the-sanitation-framing-flip-in-batch-12-environ",
       "body": "The Sanitation Framing Flip: In Batch 12, 'environmental protection' and 'neighbors' framing was a booster for sanitation loans. In Batch 13 (Pairs 5 and 7), this same phrasing was associated with significantly slower funding compared to pitches focusing solely on family health risks.",
       "first_seen_batch": 13
-    },
-    "the-demographic-drag-in-pair-1-a-pure-template-f": {
-      "id": "the-demographic-drag-in-pair-1-a-pure-template-f",
-      "body": "The Demographic Drag: In Pair 1, a pure template funded faster than a template supplemented with personal demographics (age, widowhood, number of children). This suggests that generic demographics may be a 'slow' signal if they are not integrated into a unique narrative.",
-      "first_seen_batch": 13
-    },
-    "the-emotive-template-vs-pure-template-distinct": {
-      "id": "the-emotive-template-vs-pure-template-distinct",
-      "body": "The 'Emotive Template' vs 'Pure Template' distinction: In previous batches, pure templates ('secure the future of the family') were seen as a baseline or even a booster in some NWTF loans. However, this batch shows a consistent 'slow' signal for a more florid version of the template ('working tirelessly toward the attainment of her dream'). I need to determine if the 'pure' template is neutral and the 'emotive' template is negative.",
-      "first_seen_batch": 14
     },
     "the-specificity-paradox-in-pair-4-loan-l3161431": {
       "id": "the-specificity-paradox-in-pair-4-loan-l3161431",
@@ -1133,6 +1150,27 @@
       "title": "Pitches that specify the use of funds for direct education costs fund slower than those specifying use for business production assets, regardless of gender.",
       "retrospective": "Auto-evicted to honor the 8-claim cap: this was the lowest-confidence claim at 0.60.",
       "retired_batch": 45,
+      "was_believed_batches": 0
+    },
+    "pitches-for-sanitation-loans-that-mention-benefits-to-neighb": {
+      "id": "pitches-for-sanitation-loans-that-mention-benefits-to-neighb",
+      "title": "Pitches for sanitation loans that mention benefits to neighbors or environmental protection fund faster than those mentioning only family benefits, regardless of gender.",
+      "retrospective": "This claim had the lowest confidence and was outcompeted by the emerging evidence regarding the 'college goal' penalty. It was too sector-specific to maintain in the 8-claim cap.",
+      "retired_batch": 46,
+      "was_believed_batches": 2
+    },
+    "pitches-that-specify-sending-children-to-college-as-a-primar": {
+      "id": "pitches-that-specify-sending-children-to-college-as-a-primar",
+      "title": "Pitches that specify sending children to college as a primary goal fund slower than those with more immediate or generic family security goals, regardless of gender.",
+      "retrospective": "Auto-evicted to honor the 8-claim cap: this was the lowest-confidence claim at 0.60.",
+      "retired_batch": 46,
+      "was_believed_batches": 0
+    },
+    "pitches-that-include-generic-personal-demographics-such-as-a": {
+      "id": "pitches-that-include-generic-personal-demographics-such-as-a",
+      "title": "Pitches that include generic personal demographics (such as age or number of children) without integrating them into a unique narrative fund slower than those using a pure template or a specific narrative, regardless of gender.",
+      "retrospective": "Auto-evicted to honor the 8-claim cap: this was the lowest-confidence claim at 0.65.",
+      "retired_batch": 46,
       "was_believed_batches": 0
     }
   }
