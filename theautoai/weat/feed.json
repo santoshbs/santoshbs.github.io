@@ -1,5 +1,111 @@
 [
   {
+    "id": "f953bc228cff",
+    "timestamp": "2026-04-25T04:35:23.872030+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "children vs artists on authenticity vs construction",
+    "labels": {
+      "X": "children",
+      "Y": "artists",
+      "A": "authenticity",
+      "B": "construction"
+    },
+    "canonical_keys": {
+      "X": "children",
+      "Y": "artists",
+      "A": "authenticity",
+      "B": "construction"
+    },
+    "effect_size": 1.2370651483580912,
+    "p_value": 0.00033,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "child",
+        "kid",
+        "toddler",
+        "infant",
+        "youth",
+        "newborn",
+        "juvenile",
+        "adolescent",
+        "preschooler",
+        "youngster",
+        "babe",
+        "boy",
+        "girl",
+        "tot",
+        "progeny"
+      ],
+      "Y_used": [
+        "artist",
+        "painter",
+        "sculptor",
+        "musician",
+        "poet",
+        "drawer",
+        "singer",
+        "composer",
+        "dancer",
+        "performer",
+        "creator",
+        "illustrator",
+        "novelist",
+        "playwright",
+        "potter"
+      ],
+      "A_used": [
+        "genuine",
+        "real",
+        "honest",
+        "raw",
+        "spontaneous",
+        "natural",
+        "sincere",
+        "candid",
+        "true",
+        "pure",
+        "intuitive",
+        "innate",
+        "heartfelt",
+        "organic",
+        "unmasked"
+      ],
+      "B_used": [
+        "artificial",
+        "fake",
+        "staged",
+        "curated",
+        "performed",
+        "calculated",
+        "planned",
+        "crafted",
+        "synthetic",
+        "forced",
+        "theatrical",
+        "polished",
+        "rehearsed",
+        "deliberate",
+        "fabricated"
+      ]
+    },
+    "proposal": "People associate children with authenticity more strongly than they associate artists with authenticity. While artists are professionally tasked with expressing truth and emotion, their work is often implicitly perceived as a conscious construction or a curated performance. In contrast, the behavior of children is typically viewed as raw, unmediated, and spontaneous. This association is novel and important because it suggests that the public implicitly links authenticity to a lack of intentionality rather than the skilled ability to convey it.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "f2149814a0c1",
     "timestamp": "2026-04-25T02:35:51.926691+00:00",
     "schema_version": "autoresearch.v1",
