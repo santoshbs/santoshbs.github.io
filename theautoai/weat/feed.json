@@ -1,5 +1,111 @@
 [
   {
+    "id": "17279950d2f7",
+    "timestamp": "2026-04-25T05:15:42.731669+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "activists vs philosophers on temporal and motivational urgency",
+    "labels": {
+      "X": "activists",
+      "Y": "philosophers",
+      "A": "urgency",
+      "B": "contemplation"
+    },
+    "canonical_keys": {
+      "X": "activists",
+      "Y": "philosophers",
+      "A": "urgency",
+      "B": "contemplation"
+    },
+    "effect_size": 0.9773602321704694,
+    "p_value": 0.00672,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "activist",
+        "campaigner",
+        "protester",
+        "advocate",
+        "rebel",
+        "reformer",
+        "militant",
+        "agitator",
+        "organizer",
+        "crusader",
+        "marcher",
+        "striker",
+        "demonstrator",
+        "lobbyist",
+        "partisan"
+      ],
+      "Y_used": [
+        "philosopher",
+        "thinker",
+        "scholar",
+        "academic",
+        "theorist",
+        "ethicist",
+        "logician",
+        "metaphysician",
+        "sage",
+        "intellectual",
+        "lecturer",
+        "professor",
+        "student",
+        "rhetorician",
+        "dialectician"
+      ],
+      "A_used": [
+        "urgent",
+        "immediate",
+        "fast",
+        "quick",
+        "rapid",
+        "sudden",
+        "pressing",
+        "instant",
+        "prompt",
+        "swift",
+        "haste",
+        "rushing",
+        "emergency",
+        "critical",
+        "acute"
+      ],
+      "B_used": [
+        "slow",
+        "deliberate",
+        "thoughtful",
+        "reflective",
+        "ponderous",
+        "patient",
+        "gradual",
+        "leisurely",
+        "methodical",
+        "careful",
+        "cautious",
+        "meditative",
+        "calm",
+        "lingering",
+        "relaxed"
+      ]
+    },
+    "proposal": "People associate activists with urgency more strongly than they associate philosophers with urgency. This association reflects the perceived cognitive and behavioral divide between the immediate, action-oriented nature of social advocacy and the slow, contemplative nature of philosophical inquiry. This is novel because it moves beyond traditional associations of intelligence or political leaning to examine a temporal and motivational axis. Confirming this association would clarify how society implicitly separates the 'doer' from the 'thinker' in terms of their perceived relationship with time and necessity.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "f953bc228cff",
     "timestamp": "2026-04-25T04:35:23.872030+00:00",
     "schema_version": "autoresearch.v1",
