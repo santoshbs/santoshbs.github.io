@@ -1,5 +1,118 @@
 [
   {
+    "id": "2715bbf6d47c",
+    "timestamp": "2026-04-25T08:47:15.668704+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "socialists vs businesspeople on idealism versus pragmatism",
+    "labels": {
+      "X": "socialists",
+      "Y": "businesspeople",
+      "A": "idealism",
+      "B": "pragmatism"
+    },
+    "canonical_keys": {
+      "X": "socialists",
+      "Y": "businesspeople",
+      "A": "idealism",
+      "B": "pragmatism"
+    },
+    "effect_size": 1.6201592269735643,
+    "p_value": 0.0,
+    "n": {
+      "X": 16,
+      "Y": 16,
+      "A": 16,
+      "B": 16
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "socialist",
+        "socialists",
+        "collectivist",
+        "collectivists",
+        "egalitarian",
+        "egalitarians",
+        "leftist",
+        "leftists",
+        "communalist",
+        "communalists",
+        "syndicalist",
+        "syndicalists",
+        "comrade",
+        "comrades",
+        "activist",
+        "activists"
+      ],
+      "Y_used": [
+        "businessman",
+        "businesspeople",
+        "businessperson",
+        "entrepreneur",
+        "entrepreneurs",
+        "capitalist",
+        "capitalists",
+        "executive",
+        "executives",
+        "manager",
+        "managers",
+        "trader",
+        "traders",
+        "merchant",
+        "merchants",
+        "financier",
+        "financiers",
+        "owner",
+        "owners"
+      ],
+      "A_used": [
+        "idealistic",
+        "idealism",
+        "utopian",
+        "utopia",
+        "moral",
+        "morality",
+        "visionary",
+        "hopeful",
+        "noble",
+        "principled",
+        "dreamy",
+        "altruistic",
+        "altruism",
+        "virtuous",
+        "virtue",
+        "aspiration"
+      ],
+      "B_used": [
+        "pragmatic",
+        "pragmatism",
+        "practical",
+        "material",
+        "materialism",
+        "profit",
+        "profitable",
+        "result",
+        "efficiency",
+        "efficient",
+        "realistic",
+        "realism",
+        "concrete",
+        "tangible",
+        "functional",
+        "utility"
+      ]
+    },
+    "proposal": "People associate socialists with idealism more strongly than they associate businesspeople with idealism. While both categories are often defined by their overarching visions for society and economy, socialists are typically represented in the public imagination as being driven by utopian or moral imperatives, whereas businesspeople are associated with pragmatism and material results. This association is novel because most implicit research on these groups focuses on wealth, power, or greed rather than the underlying psychological orientation of idealism. Examining this would shift our understanding of how ideological groups are mentally represented—not just by what they want, but by the perceived nature of their motivations.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "d47964ebeee3",
     "timestamp": "2026-04-25T08:12:12.931456+00:00",
     "schema_version": "autoresearch.v1",
