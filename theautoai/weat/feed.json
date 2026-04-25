@@ -1,5 +1,111 @@
 [
   {
+    "id": "1ce7d55631b6",
+    "timestamp": "2026-04-25T19:11:14.957153+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "psychologists vs sociologists on individual versus system level analysis",
+    "labels": {
+      "X": "psychologists",
+      "Y": "sociologists",
+      "A": "internal",
+      "B": "external"
+    },
+    "canonical_keys": {
+      "X": "psychologists",
+      "Y": "sociologists",
+      "A": "internal",
+      "B": "external"
+    },
+    "effect_size": 0.5289218537687905,
+    "p_value": 0.15819,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "psychologist",
+        "psychiatrist",
+        "therapist",
+        "counselor",
+        "clinician",
+        "behaviorist",
+        "psychoanalyst",
+        "psychotherapist",
+        "shrink",
+        "practitioner",
+        "analyst",
+        "specialist",
+        "provider",
+        "expert",
+        "professional"
+      ],
+      "Y_used": [
+        "sociologist",
+        "scholar",
+        "academic",
+        "professor",
+        "theoretician",
+        "observer",
+        "researcher",
+        "critic",
+        "intellectual",
+        "thinker",
+        "demographer",
+        "ethnographer",
+        "academician",
+        "lecturer",
+        "statistician"
+      ],
+      "A_used": [
+        "mind",
+        "brain",
+        "thought",
+        "feeling",
+        "mood",
+        "emotion",
+        "self",
+        "ego",
+        "psyche",
+        "memory",
+        "perception",
+        "consciousness",
+        "internal",
+        "introspection",
+        "private"
+      ],
+      "B_used": [
+        "society",
+        "group",
+        "system",
+        "structure",
+        "community",
+        "culture",
+        "public",
+        "population",
+        "organization",
+        "network",
+        "institution",
+        "external",
+        "collective",
+        "social",
+        "global"
+      ]
+    },
+    "proposal": "I propose that people associate psychologists with introspection more strongly than they associate sociologists with introspection. While both are social scientists, psychology is conceptually centered on the internal mental processes of the individual, whereas sociology is centered on external social structures and group dynamics. This association is novel because implicit research typically focuses on demographic stereotypes rather than the nuanced conceptual boundaries between academic disciplines. Examining this would reveal whether the general public implicitly mirrors the theoretical distinction between individual-level and system-level analysis.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "73b8e89790fd",
     "timestamp": "2026-04-25T18:06:27.264611+00:00",
     "schema_version": "autoresearch.v1",
