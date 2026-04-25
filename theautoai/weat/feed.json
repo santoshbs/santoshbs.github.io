@@ -1,5 +1,111 @@
 [
   {
+    "id": "fa8d0475ee94",
+    "timestamp": "2026-04-25T16:14:39.731845+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "businesspeople vs economists on pragmatism versus abstraction",
+    "labels": {
+      "X": "businesspeople",
+      "Y": "economists",
+      "A": "pragmatism",
+      "B": "abstraction"
+    },
+    "canonical_keys": {
+      "X": "businesspeople",
+      "Y": "economists",
+      "A": "pragmatism",
+      "B": "abstraction"
+    },
+    "effect_size": 0.6637044434153339,
+    "p_value": 0.07354,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "entrepreneur",
+        "manager",
+        "executive",
+        "trader",
+        "merchant",
+        "salesman",
+        "businesswoman",
+        "businessman",
+        "ceo",
+        "owner",
+        "vendor",
+        "broker",
+        "capitalist",
+        "director",
+        "operator"
+      ],
+      "Y_used": [
+        "economist",
+        "theorist",
+        "academic",
+        "researcher",
+        "scholar",
+        "professor",
+        "statistician",
+        "econometrician",
+        "lecturer",
+        "fellow",
+        "analyst",
+        "expert",
+        "specialist",
+        "doctor",
+        "mathematician"
+      ],
+      "A_used": [
+        "practical",
+        "pragmatic",
+        "realistic",
+        "concrete",
+        "applicable",
+        "functional",
+        "utilitarian",
+        "effective",
+        "tangible",
+        "useful",
+        "actionable",
+        "empirical",
+        "direct",
+        "real",
+        "actual"
+      ],
+      "B_used": [
+        "theoretical",
+        "abstract",
+        "conceptual",
+        "ideal",
+        "hypothetical",
+        "speculative",
+        "imaginative",
+        "formal",
+        "schematic",
+        "virtual",
+        "intangible",
+        "visionary",
+        "mental",
+        "notional",
+        "idealistic"
+      ]
+    },
+    "proposal": "I propose that people associate businesspeople with pragmatism more strongly than they associate economists with pragmatism. While economists are often perceived as architects of abstract models and theoretical frameworks, businesspeople are seen as actors driven by immediate, real-world outcomes. This association is novel because it probes the implicit mental divide between the academic study of wealth and the practical execution of commerce. Confirming this would reveal a systemic perception that theoretical expertise in economics is viewed as decoupled from the practical sense required for business success.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "e5c991e22196",
     "timestamp": "2026-04-25T13:50:16.911247+00:00",
     "schema_version": "autoresearch.v1",
