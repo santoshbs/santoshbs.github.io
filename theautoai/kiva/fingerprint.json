@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
-  "batches_seen": 43,
-  "loans_seen": 628,
-  "last_updated": "2026-04-25T13:38:48+00:00",
-  "watching_for": "I am watching for evidence of a 'fluff threshold' in emotive language, specifically whether adding phrases like 'working tirelessly toward the attainment of her dream' to a standard template eventually slows funding by being perceived as generic filler.",
+  "batches_seen": 44,
+  "loans_seen": 634,
+  "last_updated": "2026-04-25T15:27:58+00:00",
+  "watching_for": "I am watching for further evidence of the 'health risk vs. scarcity' framing in water and sanitation loans, the 'fluff threshold' where emotive language becomes a penalty, and the specific boundary between technical environmental framing (slow) and community-benefit environmental framing (fast).",
   "claims": {
     "pitches-that-mention-owning-a-home-or-land-fund-faster-regar": {
       "id": "pitches-that-mention-owning-a-home-or-land-fund-faster-regar",
@@ -16,7 +16,7 @@
       ],
       "confidence": 0.99,
       "first_seen_batch": 2,
-      "last_updated_batch": 50,
+      "last_updated_batch": 51,
       "confidence_history": [
         [
           2,
@@ -181,6 +181,10 @@
         [
           50,
           0.99
+        ],
+        [
+          51,
+          0.99
         ]
       ]
     },
@@ -197,7 +201,7 @@
       ],
       "confidence": 1.0,
       "first_seen_batch": 3,
-      "last_updated_batch": 50,
+      "last_updated_batch": 51,
       "confidence_history": [
         [
           3,
@@ -366,6 +370,10 @@
         [
           50,
           1.0
+        ],
+        [
+          51,
+          1.0
         ]
       ]
     },
@@ -383,7 +391,7 @@
       ],
       "confidence": 1.0,
       "first_seen_batch": 9,
-      "last_updated_batch": 50,
+      "last_updated_batch": 51,
       "confidence_history": [
         [
           9,
@@ -524,6 +532,10 @@
         [
           50,
           1.0
+        ],
+        [
+          51,
+          1.0
         ]
       ]
     },
@@ -537,7 +549,7 @@
       ],
       "confidence": 0.88,
       "first_seen_batch": 28,
-      "last_updated_batch": 50,
+      "last_updated_batch": 51,
       "confidence_history": [
         [
           28,
@@ -598,138 +610,28 @@
         [
           50,
           0.88
+        ],
+        [
+          51,
+          0.88
         ]
       ]
     },
-    "pitches-that-prioritize-concrete-quantifiable-professional-d": {
-      "id": "pitches-that-prioritize-concrete-quantifiable-professional-d",
+    "pitches-that-frame-a-need-as-a-direct-health-or-quality-risk": {
+      "id": "pitches-that-frame-a-need-as-a-direct-health-or-quality-risk",
       "bucket": "faster",
-      "title": "Pitches that prioritize concrete, quantifiable professional data over generic personal demographics or vague aspirations fund faster, regardless of gender.",
-      "body": "Quantification transforms a pitch from a generic request for help into a tangible business plan. Specific professional markers (e.g., years of experience, detailed inventory, specific product lists) are more consistent predictors of funding speed than personal demographics (e.g., age, number of children) or generic goals.",
+      "title": "Pitches that frame a need as a direct health or quality risk fund faster than those framing it as a quantity or logistics issue, regardless of gender.",
+      "body": "Lenders respond more urgently to threats to health (e.g., 'dirty water,' 'impurities') than to inconveniences of scarcity (e.g., 'very little water'). This suggests that 'risk' is a more powerful funding trigger than 'need'.",
       "supporting_loans": [
-        3162022,
-        3159809,
-        3158882,
-        3162232,
-        3159676
+        3163110
       ],
-      "confidence": 1.0,
-      "first_seen_batch": 43,
-      "last_updated_batch": 50,
+      "confidence": 0.6,
+      "first_seen_batch": 51,
+      "last_updated_batch": 51,
       "confidence_history": [
         [
-          43,
-          1.0
-        ],
-        [
-          44,
-          1.0
-        ],
-        [
-          44,
-          1.0
-        ],
-        [
-          45,
-          1.0
-        ],
-        [
-          46,
-          1.0
-        ],
-        [
-          47,
-          1.0
-        ],
-        [
-          48,
-          1.0
-        ],
-        [
-          49,
-          1.0
-        ],
-        [
-          50,
-          1.0
-        ]
-      ]
-    },
-    "pitches-that-use-concrete-grounded-details-such-as-specific-": {
-      "id": "pitches-that-use-concrete-grounded-details-such-as-specific-",
-      "bucket": "faster",
-      "title": "Pitches that use concrete, grounded details\u2014such as specific personal histories, precise locations, or tangible physical obstacles\u2014fund faster than those using generic templates or abstract business jargon, regardless of gender.",
-      "body": "Lenders respond more quickly to 'grounded' text that provides a vivid, verifiable sense of the borrower's reality (e.g., 'fled Sudan's war' or 'no access to electricity') than to abstract or templated language, which feels impersonal and less urgent.",
-      "supporting_loans": [
-        3161829,
-        3161552,
-        3158882,
-        3162232,
-        3163250
-      ],
-      "confidence": 0.97,
-      "first_seen_batch": 47,
-      "last_updated_batch": 50,
-      "confidence_history": [
-        [
-          47,
-          0.85
-        ],
-        [
-          48,
-          0.9
-        ],
-        [
-          49,
-          0.95
-        ],
-        [
-          50,
-          0.97
-        ]
-      ]
-    },
-    "pitches-that-prioritize-concrete-quantifiable-professional-d-2": {
-      "id": "pitches-that-prioritize-concrete-quantifiable-professional-d-2",
-      "bucket": "faster",
-      "title": "Pitches that prioritize concrete, quantifiable professional data over generic demographics or vague aspirations fund faster, regardless of gender.",
-      "body": "Quantification transforms a pitch from a generic request for help into a tangible business plan. Specific professional markers (e.g., years of experience, detailed inventory, specific product lists) are more consistent predictors of funding speed than personal demographics (e.g., age, number of children) or generic goals.",
-      "supporting_loans": [
-        3162022,
-        3159809,
-        3158882,
-        3162232,
-        3159676
-      ],
-      "confidence": 1.0,
-      "first_seen_batch": 50,
-      "last_updated_batch": 50,
-      "confidence_history": [
-        [
-          50,
-          1.0
-        ]
-      ]
-    },
-    "pitches-that-use-grounded-unique-narrative-details-fund-fast": {
-      "id": "pitches-that-use-grounded-unique-narrative-details-fund-fast",
-      "bucket": "faster",
-      "title": "Pitches that use grounded, unique narrative details fund faster than those using generic templates or abstract business jargon, regardless of gender.",
-      "body": "Lenders respond more quickly to 'grounded' text that provides a vivid, verifiable sense of the borrower's reality (e.g., 'fled Sudan's war' or 'no access to electricity') than to abstract or templated language, which feels impersonal and less urgent.",
-      "supporting_loans": [
-        3161829,
-        3161552,
-        3158882,
-        3162232,
-        3163250
-      ],
-      "confidence": 0.98,
-      "first_seen_batch": 50,
-      "last_updated_batch": 50,
-      "confidence_history": [
-        [
-          50,
-          0.98
+          51,
+          0.6
         ]
       ]
     }
@@ -909,6 +811,11 @@
       "id": "in-pair-1-the-addition-of-working-tirelessly-tow",
       "body": "In Pair 1, the addition of 'working tirelessly toward the attainment of her dream' to a standard NWTF template actually slowed funding compared to the leaner version. I wonder if there is a 'fluff threshold' where emotive language stops being a booster and starts being perceived as a generic filler.",
       "first_seen_batch": 50
+    },
+    "in-pair-2-l3156945-vs-l3161699-the-inclusion-of": {
+      "id": "in-pair-2-l3156945-vs-l3161699-the-inclusion-of",
+      "body": "In Pair 2 (L3156945 vs L3161699), the inclusion of 'neighbors' and 'environmental protection' accelerated funding in the sanitation sector. I need to determine if community-benefit framing is a general booster or specifically effective for sanitation/hygiene loans.",
+      "first_seen_batch": 51
     }
   },
   "retired": {
@@ -1170,6 +1077,34 @@
       "retrospective": "Auto-evicted to honor the 8-claim cap: this was the lowest-confidence claim at 0.75.",
       "retired_batch": 50,
       "was_believed_batches": 37
+    },
+    "pitches-that-prioritize-concrete-quantifiable-professional-d": {
+      "id": "pitches-that-prioritize-concrete-quantifiable-professional-d",
+      "title": "Pitches that prioritize concrete, quantifiable professional data over generic personal demographics or vague aspirations fund faster, regardless of gender.",
+      "retrospective": "Retired to increase parsimony; this is a duplicate of the master quantification claim.",
+      "retired_batch": 51,
+      "was_believed_batches": 8
+    },
+    "pitches-that-use-concrete-grounded-details-such-as-specific-": {
+      "id": "pitches-that-use-concrete-grounded-details-such-as-specific-",
+      "title": "Pitches that use concrete, grounded details\u2014such as specific personal histories, precise locations, or tangible physical obstacles\u2014fund faster than those using generic templates or abstract business jargon, regardless of gender.",
+      "retrospective": "Retired to increase parsimony; this is a duplicate of the master narrative/grounded details claim.",
+      "retired_batch": 51,
+      "was_believed_batches": 4
+    },
+    "pitches-that-prioritize-concrete-quantifiable-professional-d-2": {
+      "id": "pitches-that-prioritize-concrete-quantifiable-professional-d-2",
+      "title": "Pitches that prioritize concrete, quantifiable professional data over generic demographics or vague aspirations fund faster, regardless of gender.",
+      "retrospective": "Retired to increase parsimony; this is a duplicate of the master quantification claim.",
+      "retired_batch": 51,
+      "was_believed_batches": 1
+    },
+    "pitches-that-use-grounded-unique-narrative-details-fund-fast": {
+      "id": "pitches-that-use-grounded-unique-narrative-details-fund-fast",
+      "title": "Pitches that use grounded, unique narrative details fund faster than those using generic templates or abstract business jargon, regardless of gender.",
+      "retrospective": "Retired to increase parsimony; this is a duplicate of the master narrative/grounded details claim.",
+      "retired_batch": 51,
+      "was_believed_batches": 1
     }
   }
 }
