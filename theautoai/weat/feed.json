@@ -1,5 +1,115 @@
 [
   {
+    "id": "89058a37e4f7",
+    "timestamp": "2026-04-25T19:54:15.704449+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "workers vs elites on authenticity versus artificiality",
+    "labels": {
+      "X": "workers",
+      "Y": "elites",
+      "A": "authenticity",
+      "B": "artificiality"
+    },
+    "canonical_keys": {
+      "X": "workers",
+      "Y": "elites",
+      "A": "authenticity",
+      "B": "artificiality"
+    },
+    "effect_size": 0.9046387682170071,
+    "p_value": 0.00927,
+    "n": {
+      "X": 16,
+      "Y": 16,
+      "A": 16,
+      "B": 16
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "laborer",
+        "worker",
+        "employee",
+        "artisan",
+        "tradesman",
+        "peasant",
+        "mechanic",
+        "farmer",
+        "miner",
+        "plumber",
+        "welder",
+        "driver",
+        "clerk",
+        "servant",
+        "helper",
+        "janitor"
+      ],
+      "Y_used": [
+        "aristocrat",
+        "noble",
+        "millionaire",
+        "billionaire",
+        "executive",
+        "manager",
+        "director",
+        "oligarch",
+        "capitalist",
+        "socialite",
+        "tycoon",
+        "magnate",
+        "governor",
+        "senator",
+        "diplomat",
+        "elite"
+      ],
+      "A_used": [
+        "genuine",
+        "sincere",
+        "honest",
+        "real",
+        "authentic",
+        "natural",
+        "candid",
+        "straightforward",
+        "truthful",
+        "raw",
+        "hearty",
+        "simple",
+        "plain",
+        "direct",
+        "earnest",
+        "open"
+      ],
+      "B_used": [
+        "fake",
+        "artificial",
+        "performative",
+        "pretentious",
+        "phony",
+        "superficial",
+        "plastic",
+        "staged",
+        "calculated",
+        "insincere",
+        "hollow",
+        "contrived",
+        "affected",
+        "polished",
+        "curated",
+        "facade"
+      ]
+    },
+    "proposal": "I propose that people associate workers with authenticity more strongly than they associate elites with authenticity. This association reflects a contemporary cultural and political divide where the working class is stereotyped as 'genuine' and 'salt-of-the-earth,' while the ruling class is viewed as 'performative' or 'artificial.' This is novel because while class-based prejudice has been studied, the specific implicit link to the trait of authenticity has not been systematically probed in academic literature. Confirming this would demonstrate how populist discourse shapes the foundational mental representations of social class.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "1ce7d55631b6",
     "timestamp": "2026-04-25T19:11:14.957153+00:00",
     "schema_version": "autoresearch.v1",
