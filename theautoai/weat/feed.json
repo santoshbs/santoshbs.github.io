@@ -1,5 +1,111 @@
 [
   {
+    "id": "93f95a6fbbea",
+    "timestamp": "2026-04-25T16:47:17.205170+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "immigrants vs artists on resilience vs fragility",
+    "labels": {
+      "X": "immigrants",
+      "Y": "artists",
+      "A": "resilience",
+      "B": "fragility"
+    },
+    "canonical_keys": {
+      "X": "immigrants",
+      "Y": "artists",
+      "A": "resilience",
+      "B": "fragility"
+    },
+    "effect_size": -0.7300298130086187,
+    "p_value": 0.0476,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "immigrant",
+        "migrant",
+        "refugee",
+        "newcomer",
+        "exile",
+        "settler",
+        "foreigner",
+        "alien",
+        "voyager",
+        "wanderer",
+        "outsider",
+        "expatriate",
+        "emigrant",
+        "transient",
+        "sojourner"
+      ],
+      "Y_used": [
+        "artist",
+        "painter",
+        "sculptor",
+        "musician",
+        "writer",
+        "poet",
+        "dancer",
+        "actor",
+        "composer",
+        "dramatist",
+        "illustrator",
+        "curator",
+        "creator",
+        "virtuoso",
+        "performer"
+      ],
+      "A_used": [
+        "resilience",
+        "endurance",
+        "strength",
+        "fortitude",
+        "toughness",
+        "persistence",
+        "grit",
+        "stamina",
+        "tenacity",
+        "perseverance",
+        "hardiness",
+        "robustness",
+        "sturdiness",
+        "resolve",
+        "constancy"
+      ],
+      "B_used": [
+        "fragility",
+        "weakness",
+        "vulnerability",
+        "delicacy",
+        "brittleness",
+        "instability",
+        "softness",
+        "feebleness",
+        "frailty",
+        "shakiness",
+        "precariousness",
+        "pliability",
+        "breakability",
+        "limpness",
+        "docility"
+      ]
+    },
+    "proposal": "I propose that people associate immigrants with resilience more strongly than they associate artists with resilience. While both groups are frequently associated with struggle and perseverance, the narrative surrounding immigrants typically emphasizes a survival-based, structural fortitude, whereas the narrative for artists focuses on emotional or creative persistence. This comparison is novel because it distinguishes between the implicit representations of survivalist endurance and vocational endurance. Confirming this association would clarify whether resilience is conceptually linked more strongly to the experience of displacement than to the experience of artistic pursuit.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "fa8d0475ee94",
     "timestamp": "2026-04-25T16:14:39.731845+00:00",
     "schema_version": "autoresearch.v1",
