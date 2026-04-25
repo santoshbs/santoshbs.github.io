@@ -1,5 +1,111 @@
 [
   {
+    "id": "40e19d89592f",
+    "timestamp": "2026-04-25T01:11:10.016695+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "immigrants vs seniors on resilience vs fragility",
+    "labels": {
+      "X": "immigrants",
+      "Y": "seniors",
+      "A": "resilience",
+      "B": "fragility"
+    },
+    "canonical_keys": {
+      "X": "immigrants",
+      "Y": "seniors",
+      "A": "resilience",
+      "B": "fragility"
+    },
+    "effect_size": 0.7440369280143599,
+    "p_value": 0.04041,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "immigrant",
+        "migrant",
+        "newcomer",
+        "refugee",
+        "expatriate",
+        "settler",
+        "foreigner",
+        "emigrant",
+        "pioneer",
+        "wanderer",
+        "outsider",
+        "transplant",
+        "nomad",
+        "alien",
+        "asylee"
+      ],
+      "Y_used": [
+        "senior",
+        "elderly",
+        "pensioner",
+        "retiree",
+        "aged",
+        "geriatric",
+        "grandmother",
+        "grandfather",
+        "elder",
+        "octogenarian",
+        "nonagenarian",
+        "centenarian",
+        "matriarch",
+        "patriarch",
+        "ancestor"
+      ],
+      "A_used": [
+        "resilient",
+        "strong",
+        "tough",
+        "hardy",
+        "durable",
+        "sturdy",
+        "flexible",
+        "adaptive",
+        "robust",
+        "persistent",
+        "vigorous",
+        "tenacious",
+        "brave",
+        "courageous",
+        "powerful"
+      ],
+      "B_used": [
+        "fragile",
+        "weak",
+        "frail",
+        "brittle",
+        "delicate",
+        "vulnerable",
+        "soft",
+        "feeble",
+        "shaky",
+        "unstable",
+        "breakable",
+        "precarious",
+        "infirm",
+        "helpless",
+        "limp"
+      ]
+    },
+    "proposal": "People associate immigrants with resilience more strongly than they associate seniors with resilience. While both groups are often viewed as having overcome significant hardships, the contemporary 'immigrant narrative' emphasizes a proactive, transformative resilience linked to survival and success in a new land. Examining this differential association would reveal how society distinguishes between the resilience of adaptation (migration) and the resilience of endurance (aging). This is novel as it moves beyond simple age-based or origin-based stereotypes to compare two distinct forms of perceived strength.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "1940bd18eb3b",
     "timestamp": "2026-04-25T00:23:39.718236+00:00",
     "schema_version": "autoresearch.v1",
