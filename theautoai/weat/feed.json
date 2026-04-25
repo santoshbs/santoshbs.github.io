@@ -1,5 +1,111 @@
 [
   {
+    "id": "728333556604",
+    "timestamp": "2026-04-25T13:03:40.965714+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "athletes vs doctors on physical vitality",
+    "labels": {
+      "X": "athletes",
+      "Y": "doctors",
+      "A": "vitality",
+      "B": "fragility"
+    },
+    "canonical_keys": {
+      "X": "athletes",
+      "Y": "doctors",
+      "A": "vitality",
+      "B": "fragility"
+    },
+    "effect_size": 0.054371911209194844,
+    "p_value": 0.88838,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "athlete",
+        "runner",
+        "swimmer",
+        "gymnast",
+        "sprinter",
+        "golfer",
+        "cyclist",
+        "bowler",
+        "skater",
+        "wrestler",
+        "boxer",
+        "jumper",
+        "diver",
+        "hiker",
+        "surfer"
+      ],
+      "Y_used": [
+        "physician",
+        "surgeon",
+        "medic",
+        "clinician",
+        "psychiatrist",
+        "pediatrician",
+        "internist",
+        "dermatologist",
+        "oncologist",
+        "cardiologist",
+        "practitioner",
+        "resident",
+        "therapist",
+        "specialist",
+        "healer"
+      ],
+      "A_used": [
+        "energetic",
+        "strong",
+        "fit",
+        "vigorous",
+        "active",
+        "healthy",
+        "robust",
+        "nimble",
+        "sprightly",
+        "dynamic",
+        "powerful",
+        "agile",
+        "hearty",
+        "vibrant",
+        "lively"
+      ],
+      "B_used": [
+        "weak",
+        "tired",
+        "frail",
+        "lethargic",
+        "sluggish",
+        "sedentary",
+        "exhausted",
+        "sickly",
+        "fragile",
+        "listless",
+        "weary",
+        "passive",
+        "feeble",
+        "stagnant",
+        "languid"
+      ]
+    },
+    "proposal": "People associate athletes with vitality more strongly than they associate doctors with vitality. While doctors are the primary agents of healthcare, there is a common implicit distinction between the scientific knowledge of health and the physical embodiment of peak health. This association is novel because it probes the 'doctor's paradox,' where medical professionals are seen as experts in health but not necessarily as exemplars of it. Examining this could reveal how we mentally separate institutional authority from embodied physical excellence.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "bcb9d119e353",
     "timestamp": "2026-04-25T12:08:39.950409+00:00",
     "schema_version": "autoresearch.v1",
