@@ -5,8 +5,8 @@
         "id": "11",
         "title": "Management",
         "group": "management",
-        "refs": 167,
-        "signals": 135,
+        "refs": 168,
+        "signals": 136,
         "occupations": 33
       },
       {
@@ -77,9 +77,9 @@
         "id": "29",
         "title": "Healthcare Practitioners & Technical",
         "group": "healthcare",
-        "refs": 61,
-        "signals": 38,
-        "occupations": 23
+        "refs": 64,
+        "signals": 40,
+        "occupations": 24
       },
       {
         "id": "31",
@@ -325,7 +325,7 @@
       {
         "source": "11",
         "target": "29",
-        "weight": 1
+        "weight": 2
       },
       {
         "source": "13",
@@ -676,9 +676,9 @@
           "id": "11-9111.00",
           "title": "Medical and Health Services Managers",
           "group": "management",
-          "refs": 4,
-          "revised": "2026-04-09",
-          "signals": 3
+          "refs": 5,
+          "revised": "2026-04-25",
+          "signals": 4
         },
         {
           "id": "11-9131.00",
@@ -3498,9 +3498,9 @@
           "id": "29-1141.00",
           "title": "Registered Nurses",
           "group": "healthcare",
-          "refs": 8,
-          "revised": "2026-04-16",
-          "signals": 7
+          "refs": 9,
+          "revised": "2026-04-25",
+          "signals": 8
         },
         {
           "id": "29-1141.01",
@@ -3508,6 +3508,14 @@
           "group": "healthcare",
           "refs": 2,
           "revised": "2026-04-10",
+          "signals": 1
+        },
+        {
+          "id": "29-1161.00",
+          "title": "Nurse Midwives",
+          "group": "healthcare",
+          "refs": 2,
+          "revised": "2026-04-25",
           "signals": 1
         },
         {
@@ -3693,6 +3701,11 @@
           "source": "29-1141.00",
           "target": "29-2061.00",
           "signal": "Oxytocin and well-being"
+        },
+        {
+          "source": "29-1141.00",
+          "target": "29-1161.00",
+          "signal": "Support for new NI workforce framework but calls grow for safe staffing laws"
         },
         {
           "source": "29-1212.00",
@@ -5241,6 +5254,7 @@
     "29-1071.00": "29",
     "29-1141.00": "29",
     "29-1141.01": "29",
+    "29-1161.00": "29",
     "29-1171.00": "29",
     "29-1212.00": "29",
     "29-1215.00": "29",
