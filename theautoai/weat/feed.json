@@ -1,5 +1,111 @@
 [
   {
+    "id": "589e14616e52",
+    "timestamp": "2026-04-25T10:25:35.762783+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "lawyers vs nurses on professional detachment versus empathetic engagement",
+    "labels": {
+      "X": "lawyers",
+      "Y": "nurses",
+      "A": "moral neutrality",
+      "B": "empathetic engagement"
+    },
+    "canonical_keys": {
+      "X": "lawyers",
+      "Y": "nurses",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 0.7550299852195069,
+    "p_value": 0.04004,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "lawyer",
+        "attorney",
+        "counsel",
+        "litigator",
+        "barrister",
+        "solicitor",
+        "advocate",
+        "jurist",
+        "prosecutor",
+        "defender",
+        "pleader",
+        "counselor",
+        "legalist",
+        "legist",
+        "proctor"
+      ],
+      "Y_used": [
+        "nurse",
+        "caregiver",
+        "midwife",
+        "attendant",
+        "orderly",
+        "medic",
+        "matron",
+        "aide",
+        "clinician",
+        "healer",
+        "assistant",
+        "specialist",
+        "practitioner",
+        "nursemaid",
+        "caretaker"
+      ],
+      "A_used": [
+        "neutral",
+        "objective",
+        "impartial",
+        "detached",
+        "disinterested",
+        "clinical",
+        "unbiased",
+        "professional",
+        "remote",
+        "fair",
+        "dispassionate",
+        "technical",
+        "systemic",
+        "formal",
+        "distant"
+      ],
+      "B_used": [
+        "compassionate",
+        "empathetic",
+        "warm",
+        "caring",
+        "kind",
+        "healing",
+        "altruistic",
+        "emotional",
+        "tender",
+        "supportive",
+        "gentle",
+        "loving",
+        "heartfelt",
+        "benevolent",
+        "sympathetic"
+      ]
+    },
+    "proposal": "People associate lawyers with moral neutrality more strongly than they associate nurses with moral neutrality. This reflects the implicit perception of the legal professional as an agent who provides advocacy regardless of the client's moral character, contrasted with the nurse as a caregiver whose role is inherently tied to the moral imperative of healing and compassion. This is novel because it explores the implicit boundaries of 'professional detachment' across different institutional roles rather than relying on simple positive or negative stereotypes. Confirming this association would clarify how the public distinguishes between technical neutrality and empathetic engagement in professional services.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "9ab623af8237",
     "timestamp": "2026-04-25T09:41:06.826753+00:00",
     "schema_version": "autoresearch.v1",
