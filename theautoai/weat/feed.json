@@ -1,5 +1,111 @@
 [
   {
+    "id": "5a195b74afa8",
+    "timestamp": "2026-04-25T11:18:28.725306+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "criminals vs bureaucrats on flexibility versus rigidity",
+    "labels": {
+      "X": "criminals",
+      "Y": "bureaucrats",
+      "A": "adaptability",
+      "B": "rigidity"
+    },
+    "canonical_keys": {
+      "X": "criminals",
+      "Y": "bureaucrats",
+      "A": "adaptability",
+      "B": "rigidity"
+    },
+    "effect_size": 0.7138290072319033,
+    "p_value": 0.0527,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "convict",
+        "felon",
+        "outlaw",
+        "thief",
+        "crook",
+        "burglar",
+        "robber",
+        "smuggler",
+        "gangster",
+        "culprit",
+        "perpetrator",
+        "delinquent",
+        "fugitive",
+        "pirate",
+        "bandit"
+      ],
+      "Y_used": [
+        "official",
+        "administrator",
+        "clerk",
+        "functionary",
+        "manager",
+        "agent",
+        "regulator",
+        "officer",
+        "secretary",
+        "coordinator",
+        "supervisor",
+        "director",
+        "employee",
+        "staffer",
+        "bureaucrat"
+      ],
+      "A_used": [
+        "flexible",
+        "resourceful",
+        "versatile",
+        "adaptive",
+        "nimble",
+        "agile",
+        "creative",
+        "spontaneous",
+        "cunning",
+        "clever",
+        "fluid",
+        "dynamic",
+        "adjustable",
+        "improvised",
+        "pliant"
+      ],
+      "B_used": [
+        "rigid",
+        "strict",
+        "formal",
+        "stiff",
+        "inflexible",
+        "static",
+        "fixed",
+        "stagnant",
+        "disciplined",
+        "methodical",
+        "routine",
+        "standard",
+        "precise",
+        "unyielding",
+        "stubborn"
+      ]
+    },
+    "proposal": "People associate criminals with adaptability more strongly than they associate bureaucrats with adaptability. This proposal stems from the contrast between the stereotype of the 'resourceful outlaw' and the 'rigid functionary' who is bound by strict protocols. While most research on criminals focuses on negative traits or moral failings, this examines the implicit association with a positive cognitive attribute. Confirming this would reveal how the public conceptualizes the perceived trade-off between institutional order and individual flexibility.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "589e14616e52",
     "timestamp": "2026-04-25T10:25:35.762783+00:00",
     "schema_version": "autoresearch.v1",
