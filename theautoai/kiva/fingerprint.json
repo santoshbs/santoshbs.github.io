@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
-  "batches_seen": 47,
-  "loans_seen": 654,
-  "last_updated": "2026-04-25T20:34:13+00:00",
-  "watching_for": "I am looking for more examples of 'social repayment' to see if the booster is tied specifically to CAMFED or if any structured volunteering works. I am also watching for a 'fluff threshold' where emotive language stops being a booster and starts being perceived as generic filler, and whether 'lack of support' framing (no relatives abroad) consistently slows funding.",
+  "batches_seen": 48,
+  "loans_seen": 660,
+  "last_updated": "2026-04-25T22:18:19+00:00",
+  "watching_for": "I am watching to see if the 'NWTF template' is an absolute ceiling on speed regardless of the business type, whether 'well-maintained' house descriptions provide a stronger stability signal than simply stating ownership, and if specific hardship markers (e.g., 'widower') act as a gender-specific booster for men.",
   "claims": {
     "pitches-that-mention-owning-a-home-or-land-fund-faster-regar": {
       "id": "pitches-that-mention-owning-a-home-or-land-fund-faster-regar",
@@ -12,11 +12,12 @@
       "body": "Explicitly mentioning home ownership as proof of stability (e.g., 'home is proof of her stability') provides a tangible signal of low risk to lenders.",
       "supporting_loans": [
         3160255,
-        3160710
+        3160710,
+        3160693
       ],
-      "confidence": 0.95,
+      "confidence": 0.96,
       "first_seen_batch": 2,
-      "last_updated_batch": 54,
+      "last_updated_batch": 55,
       "confidence_history": [
         [
           2,
@@ -197,6 +198,10 @@
         [
           54,
           0.95
+        ],
+        [
+          55,
+          0.96
         ]
       ]
     },
@@ -206,14 +211,15 @@
       "title": "Pitches that include unique narrative elements like personal history or specific locations fund faster, regardless of gender.",
       "body": "Replacing templated phrases like 'hardworking entrepreneur' with specific details (e.g., 'fled Sudan\u2019s war' or 'farmer from Matuu') creates a stronger connection with lenders.",
       "supporting_loans": [
-        3161829,
         3161552,
         3158882,
-        3162232
+        3162232,
+        3163964,
+        3160693
       ],
       "confidence": 1.0,
       "first_seen_batch": 3,
-      "last_updated_batch": 54,
+      "last_updated_batch": 55,
       "confidence_history": [
         [
           3,
@@ -398,6 +404,10 @@
         [
           54,
           1.0
+        ],
+        [
+          55,
+          1.0
         ]
       ]
     },
@@ -407,15 +417,15 @@
       "title": "Pitches that replace vague aspirations or generic demographics with concrete, quantifiable data\u2014such as specific asset lists, professional experience, or educational milestones\u2014fund faster, regardless of gender.",
       "body": "Quantification transforms a pitch from a generic request for help into a tangible business plan, increasing lender confidence by making the loan's purpose and the borrower's capacity verifiable.",
       "supporting_loans": [
-        3161754,
-        3162022,
-        3159809,
         3158882,
-        3162232
+        3162232,
+        3164583,
+        3163964,
+        3160693
       ],
       "confidence": 1.0,
       "first_seen_batch": 9,
-      "last_updated_batch": 54,
+      "last_updated_batch": 55,
       "confidence_history": [
         [
           9,
@@ -572,6 +582,10 @@
         [
           54,
           1.0
+        ],
+        [
+          55,
+          1.0
         ]
       ]
     },
@@ -585,7 +599,7 @@
       ],
       "confidence": 0.88,
       "first_seen_batch": 28,
-      "last_updated_batch": 53,
+      "last_updated_batch": 55,
       "confidence_history": [
         [
           28,
@@ -658,6 +672,10 @@
         [
           53,
           0.88
+        ],
+        [
+          55,
+          0.88
         ]
       ]
     },
@@ -667,11 +685,12 @@
       "title": "Pitches that frame the loan as a tool for expansion based on proven financial success, such as mentioning profits or savings, fund faster than those framing it as a means to overcome hardship or insecurity, regardless of gender.",
       "body": "Lenders may perceive borrowers who have already generated profit and savings as lower-risk and more capable of managing additional capital. This 'success' framing shifts the loan from a charitable act of rescue to a strategic investment in growth.",
       "supporting_loans": [
-        3159567
+        3159567,
+        3163964
       ],
-      "confidence": 0.65,
+      "confidence": 0.68,
       "first_seen_batch": 52,
-      "last_updated_batch": 54,
+      "last_updated_batch": 55,
       "confidence_history": [
         [
           52,
@@ -684,6 +703,14 @@
         [
           54,
           0.65
+        ],
+        [
+          55,
+          0.68
+        ],
+        [
+          55,
+          0.68
         ]
       ]
     },
@@ -697,7 +724,7 @@
       ],
       "confidence": 0.65,
       "first_seen_batch": 53,
-      "last_updated_batch": 54,
+      "last_updated_batch": 55,
       "confidence_history": [
         [
           53,
@@ -705,6 +732,10 @@
         ],
         [
           54,
+          0.65
+        ],
+        [
+          55,
           0.65
         ]
       ]
@@ -719,10 +750,14 @@
       ],
       "confidence": 0.65,
       "first_seen_batch": 54,
-      "last_updated_batch": 54,
+      "last_updated_batch": 55,
       "confidence_history": [
         [
           54,
+          0.65
+        ],
+        [
+          55,
           0.65
         ]
       ]
@@ -738,10 +773,14 @@
       ],
       "confidence": 0.65,
       "first_seen_batch": 54,
-      "last_updated_batch": 54,
+      "last_updated_batch": 55,
       "confidence_history": [
         [
           54,
+          0.65
+        ],
+        [
+          55,
           0.65
         ]
       ]
@@ -816,11 +855,6 @@
     "in-sanitation-loans-does-entrepreneur-framing": {
       "id": "in-sanitation-loans-does-entrepreneur-framing",
       "body": "In sanitation loans, does 'entrepreneur' framing (L3162225, L3162019) fund faster than 'struggling parent' framing (L3157156, L3157163) when environmental fluff is removed?",
-      "first_seen_batch": 18
-    },
-    "does-the-mention-of-specific-social-repayment-e": {
-      "id": "does-the-mention-of-specific-social-repayment-e",
-      "body": "Does the mention of specific 'social repayment' (e.g., volunteering as a CAMFED Guide in L3162076) act as a powerful speed booster independent of other features?",
       "first_seen_batch": 18
     },
     "in-pair-8-a-descriptive-narrative-by-a-man-l3159": {
