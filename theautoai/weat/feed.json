@@ -1,5 +1,111 @@
 [
   {
+    "id": "73b8e89790fd",
+    "timestamp": "2026-04-25T18:06:27.264611+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "engineers vs diplomats on communication style directness",
+    "labels": {
+      "X": "engineers",
+      "Y": "diplomats",
+      "A": "directness",
+      "B": "indirectness"
+    },
+    "canonical_keys": {
+      "X": "engineers",
+      "Y": "diplomats",
+      "A": "directness",
+      "B": "indirectness"
+    },
+    "effect_size": 0.791263293103477,
+    "p_value": 0.0312,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "engineer",
+        "developer",
+        "programmer",
+        "coder",
+        "technician",
+        "architect",
+        "builder",
+        "analyst",
+        "designer",
+        "specialist",
+        "operator",
+        "constructor",
+        "mechanic",
+        "inventor",
+        "draftsman"
+      ],
+      "Y_used": [
+        "diplomat",
+        "envoy",
+        "ambassador",
+        "consul",
+        "attache",
+        "mediator",
+        "negotiator",
+        "representative",
+        "emissary",
+        "politician",
+        "statesman",
+        "delegate",
+        "liaison",
+        "official",
+        "plenipotentiary"
+      ],
+      "A_used": [
+        "direct",
+        "blunt",
+        "straightforward",
+        "plain",
+        "honest",
+        "candid",
+        "frank",
+        "explicit",
+        "clear",
+        "overt",
+        "succinct",
+        "concise",
+        "precise",
+        "literal",
+        "factual"
+      ],
+      "B_used": [
+        "indirect",
+        "vague",
+        "ambiguous",
+        "nuanced",
+        "subtle",
+        "oblique",
+        "evasive",
+        "equivocal",
+        "cryptic",
+        "implicit",
+        "elusive",
+        "circuitous",
+        "ornate",
+        "flowery",
+        "veiled"
+      ]
+    },
+    "proposal": "I propose that people associate engineers with directness more strongly than they associate diplomats with directness. While both roles require high-level communication, engineers are implicitly linked to a communication style based on technical precision and straightforward problem-solving, whereas diplomats are associated with nuance, equivocation, and strategic indirectness. This association is novel because it examines the cognitive representation of communication styles across different professional families rather than comparing them on general intelligence or prestige. Confirming this would highlight how society subconsciously associates technical expertise with 'plain-speaking' and political expertise with 'calculated ambiguity'.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "ce4929465b15",
     "timestamp": "2026-04-25T17:22:12.442505+00:00",
     "schema_version": "autoresearch.v1",
