@@ -1,5 +1,111 @@
 [
   {
+    "id": "1940bd18eb3b",
+    "timestamp": "2026-04-25T00:23:39.718236+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "journalists vs politicians on skepticism versus certainty",
+    "labels": {
+      "X": "journalists",
+      "Y": "politicians",
+      "A": "skepticism",
+      "B": "certainty"
+    },
+    "canonical_keys": {
+      "X": "journalists",
+      "Y": "politicians",
+      "A": "skepticism",
+      "B": "certainty"
+    },
+    "effect_size": 0.5046748745509338,
+    "p_value": 0.18151,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "reporter",
+        "journalist",
+        "correspondent",
+        "anchor",
+        "columnist",
+        "editor",
+        "writer",
+        "broadcaster",
+        "pundit",
+        "scribe",
+        "blogger",
+        "freelancer",
+        "paparazzo",
+        "observer",
+        "commentator"
+      ],
+      "Y_used": [
+        "politician",
+        "senator",
+        "governor",
+        "mayor",
+        "president",
+        "representative",
+        "legislator",
+        "minister",
+        "deputy",
+        "official",
+        "diplomat",
+        "statesman",
+        "candidate",
+        "lawmaker",
+        "councilor"
+      ],
+      "A_used": [
+        "skeptical",
+        "doubting",
+        "questioning",
+        "critical",
+        "cynical",
+        "dubious",
+        "incredulous",
+        "suspicious",
+        "wary",
+        "distrustful",
+        "probing",
+        "disbelieving",
+        "scrutinizing",
+        "unconvinced",
+        "mistrustful"
+      ],
+      "B_used": [
+        "certain",
+        "trusting",
+        "believing",
+        "accepting",
+        "sure",
+        "confident",
+        "convinced",
+        "optimistic",
+        "gullible",
+        "naive",
+        "credulous",
+        "faithful",
+        "assured",
+        "firm",
+        "positive"
+      ]
+    },
+    "proposal": "People associate journalists with skepticism more strongly than they associate politicians with skepticism. This association reflects the perceived role of the journalist as a 'watchdog' whose professional identity is centered on questioning and doubting official narratives. While politicians may be perceived as cynical or strategic, the trait of active skepticism is fundamentally tied to the journalistic method of verification. Examining this would be important for understanding how the public mentally separates the strategic communication of political actors from the critical scrutiny of the press.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "d5d1e2c4ea83",
     "timestamp": "2026-04-24T23:29:11.060228+00:00",
     "schema_version": "autoresearch.v1",
