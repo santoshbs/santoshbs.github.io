@@ -1,5 +1,111 @@
 [
   {
+    "id": "3f9e7a28ce4b",
+    "timestamp": "2026-04-26T20:46:36.403283+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "scientists vs farmers on environmental alarmism vs normalcy",
+    "labels": {
+      "X": "scientists",
+      "Y": "farmers",
+      "A": "alarmism",
+      "B": "normalcy"
+    },
+    "canonical_keys": {
+      "X": "scientists",
+      "Y": "farmers",
+      "A": "alarmism",
+      "B": "normalcy"
+    },
+    "effect_size": 0.41853291051964536,
+    "p_value": 0.26597,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "scientist",
+        "researcher",
+        "academic",
+        "scholar",
+        "professor",
+        "analyst",
+        "technician",
+        "expert",
+        "theorist",
+        "investigator",
+        "physicist",
+        "chemist",
+        "biologist",
+        "astronomer",
+        "geologist"
+      ],
+      "Y_used": [
+        "farmer",
+        "grower",
+        "planter",
+        "rancher",
+        "tiller",
+        "harvester",
+        "shepherd",
+        "herdsman",
+        "peasant",
+        "agrarian",
+        "cultivator",
+        "dairyman",
+        "cropper",
+        "plowman",
+        "stockman"
+      ],
+      "A_used": [
+        "crisis",
+        "catastrophe",
+        "emergency",
+        "panic",
+        "urgency",
+        "collapse",
+        "disaster",
+        "ruin",
+        "doom",
+        "peril",
+        "threat",
+        "hazard",
+        "warning",
+        "extinction",
+        "alarm"
+      ],
+      "B_used": [
+        "normal",
+        "stable",
+        "routine",
+        "steady",
+        "calm",
+        "balanced",
+        "traditional",
+        "common",
+        "usual",
+        "typical",
+        "ordinary",
+        "patient",
+        "quiet",
+        "peaceful",
+        "secure"
+      ]
+    },
+    "proposal": "I propose that people associate scientists with environmental alarmism more strongly than they associate farmers with environmental alarmism. This association is relevant to contemporary climate discourse, where scientific institutions and agricultural producers often hold opposing implicit frames regarding the urgency and nature of ecological collapse. Confirming this association would reveal a mental divide between 'theoretical' and 'practical' stewards of the land. It is novel because while the explicit political divide is documented, the implicit strength of the 'alarmist' label as it attaches to these two distinct roles has not been systematically examined.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "67bb83064f75",
     "timestamp": "2026-04-26T19:50:12.356492+00:00",
     "schema_version": "autoresearch.v1",
