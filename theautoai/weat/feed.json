@@ -1,5 +1,111 @@
 [
   {
+    "id": "e214c3427597",
+    "timestamp": "2026-04-26T10:51:33.791952+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "environmentalists vs scientists on temporal urgency vs caution",
+    "labels": {
+      "X": "environmentalists",
+      "Y": "scientists",
+      "A": "urgency",
+      "B": "caution"
+    },
+    "canonical_keys": {
+      "X": "environmentalists",
+      "Y": "scientists",
+      "A": "urgency",
+      "B": "caution"
+    },
+    "effect_size": 0.43743880470846364,
+    "p_value": 0.24524,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "activist",
+        "conservationist",
+        "naturalist",
+        "preservationist",
+        "advocate",
+        "campaigner",
+        "environmentalist",
+        "defender",
+        "reformer",
+        "lobbyist",
+        "organizer",
+        "steward",
+        "ecologist",
+        "greens",
+        "protector"
+      ],
+      "Y_used": [
+        "researcher",
+        "academic",
+        "physicist",
+        "chemist",
+        "biologist",
+        "astronomer",
+        "geologist",
+        "mathematician",
+        "analyst",
+        "scholar",
+        "technician",
+        "expert",
+        "theoretician",
+        "practitioner",
+        "investigator"
+      ],
+      "A_used": [
+        "urgent",
+        "immediate",
+        "pressing",
+        "quick",
+        "fast",
+        "now",
+        "instant",
+        "rapid",
+        "critical",
+        "acute",
+        "desperate",
+        "sudden",
+        "prompt",
+        "hasty",
+        "swift"
+      ],
+      "B_used": [
+        "cautious",
+        "careful",
+        "gradual",
+        "slow",
+        "incremental",
+        "methodical",
+        "patient",
+        "deliberate",
+        "measured",
+        "steady",
+        "objective",
+        "neutral",
+        "thorough",
+        "systematic",
+        "prudent"
+      ]
+    },
+    "proposal": "People associate environmentalists with urgency more strongly than they associate scientists with urgency. This proposal examines the implicit mental tension between the perceived cautious, incremental nature of scientific consensus-building and the pressing, immediate demands of ecological advocacy. It is novel because it moves beyond comparing the logic of these groups to comparing the temporal quality of their associated representations. Confirming this association would provide insight into how the public distinguishes between the role of the objective expert and the role of the urgent advocate in the context of global crises.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "831074b32353",
     "timestamp": "2026-04-26T10:12:14.771009+00:00",
     "schema_version": "autoresearch.v1",
