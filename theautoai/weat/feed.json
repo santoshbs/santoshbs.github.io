@@ -1,5 +1,111 @@
 [
   {
+    "id": "8fa516c4b3a9",
+    "timestamp": "2026-04-26T01:57:05.251079+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "activists vs scientists on temporal urgency",
+    "labels": {
+      "X": "activists",
+      "Y": "scientists",
+      "A": "urgency",
+      "B": "deliberation"
+    },
+    "canonical_keys": {
+      "X": "activists",
+      "Y": "scientists",
+      "A": "urgency",
+      "B": "deliberation"
+    },
+    "effect_size": 0.6752107700539889,
+    "p_value": 0.06799,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "activist",
+        "protester",
+        "campaigner",
+        "organizer",
+        "advocate",
+        "rebel",
+        "marcher",
+        "agitator",
+        "dissident",
+        "militant",
+        "reformer",
+        "lobbyist",
+        "demonstrator",
+        "partisan",
+        "crusader"
+      ],
+      "Y_used": [
+        "scientist",
+        "researcher",
+        "physicist",
+        "chemist",
+        "biologist",
+        "astronomer",
+        "geologist",
+        "analyst",
+        "scholar",
+        "academic",
+        "investigator",
+        "expert",
+        "theorist",
+        "technician",
+        "mathematician"
+      ],
+      "A_used": [
+        "urgent",
+        "immediate",
+        "crisis",
+        "alarm",
+        "emergency",
+        "fast",
+        "quick",
+        "rapid",
+        "pressing",
+        "instant",
+        "sudden",
+        "critical",
+        "dire",
+        "haste",
+        "prompt"
+      ],
+      "B_used": [
+        "slow",
+        "gradual",
+        "patient",
+        "methodical",
+        "steady",
+        "careful",
+        "deliberate",
+        "thorough",
+        "measured",
+        "leisurely",
+        "protracted",
+        "lagging",
+        "enduring",
+        "calculated",
+        "systematic"
+      ]
+    },
+    "proposal": "People associate activists with urgency more strongly than they associate scientists with urgency. While both groups often collaborate on systemic issues like climate change, they are perceived to occupy different temporal and emotional spaces, with one seen as the alarm and the other as the evidence. This is novel because it moves beyond the standard logic-versus-emotion dichotomy to examine the implicit perception of time and necessity. Understanding this association is important for analyzing how the public weighs scientific evidence against social advocacy in high-stakes decision-making.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "063a79d41985",
     "timestamp": "2026-04-26T01:26:59.526318+00:00",
     "schema_version": "autoresearch.v1",
