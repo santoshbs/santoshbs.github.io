@@ -1,5 +1,112 @@
 [
   {
+    "id": "831074b32353",
+    "timestamp": "2026-04-26T10:12:14.771009+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "soldiers vs politicians on loyalty vs calculation",
+    "labels": {
+      "X": "soldiers",
+      "Y": "politicians",
+      "A": "loyalty",
+      "B": "calculation"
+    },
+    "canonical_keys": {
+      "X": "soldiers",
+      "Y": "politicians",
+      "A": "loyalty",
+      "B": "calculation"
+    },
+    "effect_size": 0.5187854725032776,
+    "p_value": 0.16722,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "soldier",
+        "troop",
+        "infantry",
+        "marine",
+        "sailor",
+        "airman",
+        "warrior",
+        "guardsman",
+        "sentinel",
+        "veteran",
+        "combatant",
+        "legionnaire",
+        "rifleman",
+        "sergeant",
+        "corporal",
+        "private"
+      ],
+      "Y_used": [
+        "politician",
+        "senator",
+        "governor",
+        "mayor",
+        "deputy",
+        "representative",
+        "legislator",
+        "minister",
+        "chancellor",
+        "official",
+        "lawmaker",
+        "diplomat",
+        "statesman",
+        "bureaucrat",
+        "candidate"
+      ],
+      "A_used": [
+        "loyal",
+        "devoted",
+        "faithful",
+        "selfless",
+        "dutiful",
+        "steadfast",
+        "reliable",
+        "trustworthy",
+        "committed",
+        "honest",
+        "honorable",
+        "noble",
+        "patriotic",
+        "dedicated",
+        "true"
+      ],
+      "B_used": [
+        "calculating",
+        "opportunistic",
+        "strategic",
+        "ambitious",
+        "cunning",
+        "shrewd",
+        "manipulative",
+        "sly",
+        "scheming",
+        "deceptive",
+        "greedy",
+        "pragmatic",
+        "transactional",
+        "crafty",
+        "worldly"
+      ]
+    },
+    "proposal": "People associate soldiers with loyalty more strongly than they associate politicians with loyalty. This association stems from a pervasive cultural narrative that contrasts the perceived selfless devotion and duty of military personnel with the perceived opportunistic and strategic nature of political actors. While trust in government is widely studied, the specific implicit contrast between the 'loyalty' of the warrior class and the 'calculating' nature of the political class remains under-examined in implicit association literature. Confirming this would provide insight into how the public mentally separates the concept of institutional service from the concept of institutional power.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "0d0a94df0935",
     "timestamp": "2026-04-26T09:43:03.496154+00:00",
     "schema_version": "autoresearch.v1",
