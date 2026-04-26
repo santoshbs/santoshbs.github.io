@@ -1,5 +1,111 @@
 [
   {
+    "id": "25d608a92803",
+    "timestamp": "2026-04-26T04:48:15.140599+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "farmers vs engineers on nature of expert knowledge",
+    "labels": {
+      "X": "farmers",
+      "Y": "engineers",
+      "A": "intuition/experiential",
+      "B": "calculation/theoretical"
+    },
+    "canonical_keys": {
+      "X": "farmers",
+      "Y": "engineers",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 1.8016906725457489,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "farmer",
+        "rancher",
+        "grower",
+        "peasant",
+        "plowman",
+        "cultivator",
+        "tiller",
+        "herdsman",
+        "shepherd",
+        "dairyman",
+        "crofter",
+        "vintner",
+        "gardener",
+        "harvester",
+        "planter"
+      ],
+      "Y_used": [
+        "engineer",
+        "technician",
+        "architect",
+        "developer",
+        "programmer",
+        "analyst",
+        "designer",
+        "mathematician",
+        "physicist",
+        "mechanic",
+        "draftsman",
+        "operator",
+        "consultant",
+        "specialist",
+        "strategist"
+      ],
+      "A_used": [
+        "intuition",
+        "instinct",
+        "feeling",
+        "gut",
+        "experience",
+        "tacit",
+        "organic",
+        "natural",
+        "sensory",
+        "visceral",
+        "innate",
+        "spontaneous",
+        "heuristic",
+        "wisdom",
+        "insight"
+      ],
+      "B_used": [
+        "calculation",
+        "logic",
+        "formula",
+        "precision",
+        "rule",
+        "theory",
+        "systemic",
+        "explicit",
+        "formal",
+        "analytical",
+        "mathematical",
+        "rigorous",
+        "technical",
+        "methodical",
+        "structured"
+      ]
+    },
+    "proposal": "People associate farmers with intuition more strongly than they associate engineers with intuition. This association stems from the cultural perception of farming as a practice relying on a 'feel' for nature, weather, and livestock—a form of tacit, experiential knowledge—whereas engineering is viewed as a discipline of precise calculations and formal, explicit rules. This is novel because it shifts the focus from the common creativity-logic dichotomy toward a comparison of different types of expert knowledge (experiential vs. theoretical). Confirming this association would demonstrate how the public mentally distinguishes between organic and systemic forms of professional expertise.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "c0e1a5357f97",
     "timestamp": "2026-04-26T04:09:14.671705+00:00",
     "schema_version": "autoresearch.v1",
