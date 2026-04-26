@@ -1,5 +1,111 @@
 [
   {
+    "id": "a62df6dc1775",
+    "timestamp": "2026-04-26T21:31:45.256750+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "farmers vs workers on independence versus dependence",
+    "labels": {
+      "X": "farmers",
+      "Y": "workers",
+      "A": "independence",
+      "B": "dependence"
+    },
+    "canonical_keys": {
+      "X": "farmers",
+      "Y": "workers",
+      "A": "independence",
+      "B": "dependence"
+    },
+    "effect_size": 1.5811149723035833,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "farmer",
+        "peasant",
+        "grower",
+        "planter",
+        "tiller",
+        "rancher",
+        "cropper",
+        "cultivator",
+        "agrarian",
+        "plowman",
+        "shepherd",
+        "herdsman",
+        "vintner",
+        "orchardist",
+        "dairyman"
+      ],
+      "Y_used": [
+        "worker",
+        "employee",
+        "laborer",
+        "staff",
+        "clerk",
+        "operative",
+        "proletarian",
+        "cog",
+        "apprentice",
+        "assistant",
+        "hand",
+        "hireling",
+        "drudge",
+        "lackey",
+        "intern"
+      ],
+      "A_used": [
+        "independent",
+        "free",
+        "autonomous",
+        "sovereign",
+        "liberated",
+        "unbound",
+        "unrestrained",
+        "unconstrained",
+        "detached",
+        "solitary",
+        "private",
+        "separate",
+        "individual",
+        "freelance",
+        "lone"
+      ],
+      "B_used": [
+        "dependent",
+        "subordinate",
+        "reliant",
+        "subservient",
+        "controlled",
+        "managed",
+        "hired",
+        "obligated",
+        "bound",
+        "restricted",
+        "constrained",
+        "compliant",
+        "subject",
+        "underling",
+        "servant"
+      ]
+    },
+    "proposal": "People associate farmers with independence more strongly than they associate workers with independence. This association is rooted in the enduring cultural archetype of the self-reliant yeoman farmer compared to the industrial worker's perceived dependence on a corporate or managerial hierarchy. Examining this would be novel as it shifts the focus from political divides to the implicit psychological link between land stewardship and personal autonomy. Confirming this would demonstrate how deeply entrenched agrarian ideals remain in the modern collective subconscious despite the rise of corporate agribusiness.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "3f9e7a28ce4b",
     "timestamp": "2026-04-26T20:46:36.403283+00:00",
     "schema_version": "autoresearch.v1",
