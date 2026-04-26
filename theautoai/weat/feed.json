@@ -1,5 +1,111 @@
 [
   {
+    "id": "c332bc7b698c",
+    "timestamp": "2026-04-26T07:25:04.826387+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "entrepreneurs vs employees on authenticity vs artificiality",
+    "labels": {
+      "X": "entrepreneurs",
+      "Y": "employees",
+      "A": "authentic",
+      "B": "artificial"
+    },
+    "canonical_keys": {
+      "X": "entrepreneurs",
+      "Y": "employees",
+      "A": "authentic",
+      "B": "artificial"
+    },
+    "effect_size": 0.8710284966776801,
+    "p_value": 0.01613,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "entrepreneur",
+        "founder",
+        "owner",
+        "proprietor",
+        "innovator",
+        "visionary",
+        "pioneer",
+        "creator",
+        "inventor",
+        "disruptor",
+        "mogul",
+        "capitalist",
+        "merchant",
+        "freelancer",
+        "industrialist"
+      ],
+      "Y_used": [
+        "worker",
+        "employee",
+        "staff",
+        "clerk",
+        "associate",
+        "subordinate",
+        "hire",
+        "operative",
+        "servant",
+        "laborer",
+        "agent",
+        "functionary",
+        "drone",
+        "underling",
+        "peon"
+      ],
+      "A_used": [
+        "genuine",
+        "real",
+        "honest",
+        "sincere",
+        "natural",
+        "true",
+        "candid",
+        "heartfelt",
+        "spontaneous",
+        "original",
+        "raw",
+        "visceral",
+        "organic",
+        "transparent",
+        "unmasked"
+      ],
+      "B_used": [
+        "fake",
+        "artificial",
+        "sanitized",
+        "plastic",
+        "compliant",
+        "formal",
+        "rigid",
+        "stiff",
+        "synthetic",
+        "scripted",
+        "rehearsed",
+        "polished",
+        "robotic",
+        "superficial",
+        "corporate"
+      ]
+    },
+    "proposal": "I propose that people associate entrepreneurs with authenticity more strongly than they associate employees with authenticity. This association is driven by the contemporary cultural trope of the 'corporate drone' who must perform a sanitized, compliant version of themselves, contrasted with the 'visionary founder' who is seen as shaping their environment to reflect their true personality. This is novel because it examines the perceived psychological cost of employment versus the perceived self-actualization of ownership, rather than focusing on typical metrics like risk or income. Confirming this would reveal an implicit bias where the 'authentic' self of the owner is valued more highly than the 'professional' self of the worker.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "dd89e84da2d9",
     "timestamp": "2026-04-26T06:51:25.124603+00:00",
     "schema_version": "autoresearch.v1",
