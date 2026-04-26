@@ -1,5 +1,111 @@
 [
   {
+    "id": "063a79d41985",
+    "timestamp": "2026-04-26T01:26:59.526318+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Linguists vs Philosophers on technicality versus conceptuality",
+    "labels": {
+      "X": "Linguists",
+      "Y": "Philosophers",
+      "A": "technical",
+      "B": "conceptual"
+    },
+    "canonical_keys": {
+      "X": "linguists",
+      "Y": "philosophers",
+      "A": "technical",
+      "B": "conceptual"
+    },
+    "effect_size": 1.1235606995458445,
+    "p_value": 0.00134,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "linguist",
+        "grammarian",
+        "translator",
+        "polyglot",
+        "lexicographer",
+        "philologist",
+        "semanticist",
+        "phonologist",
+        "morphologist",
+        "sociolinguist",
+        "psycholinguist",
+        "interpreter",
+        "etymologist",
+        "phonetician",
+        "comparatist"
+      ],
+      "Y_used": [
+        "philosopher",
+        "ethicist",
+        "logician",
+        "metaphysician",
+        "epistemologist",
+        "thinker",
+        "theorist",
+        "scholar",
+        "sage",
+        "sophist",
+        "rationalist",
+        "empiricist",
+        "idealist",
+        "stoic",
+        "skeptic"
+      ],
+      "A_used": [
+        "technical",
+        "formal",
+        "systematic",
+        "structural",
+        "quantitative",
+        "empirical",
+        "mathematical",
+        "precise",
+        "rigorous",
+        "analytical",
+        "computational",
+        "algorithmic",
+        "mechanical",
+        "statistical",
+        "formulaic"
+      ],
+      "B_used": [
+        "conceptual",
+        "reflective",
+        "abstract",
+        "theoretical",
+        "intuitive",
+        "qualitative",
+        "speculative",
+        "meditative",
+        "interpretive",
+        "discursive",
+        "dialectic",
+        "existential",
+        "metaphysical",
+        "subjective",
+        "contemplative"
+      ]
+    },
+    "proposal": "I propose that people associate Linguists with technicality more strongly than they associate Philosophers with technicality. While both are academic disciplines often grouped within the humanities, linguistics is increasingly perceived as a formal social science involving systematic data and structural rules, whereas philosophy is viewed as a conceptual or reflective pursuit. This association is novel because most implicit research focuses on broader divides (e.g., science vs. art) rather than the nuanced distinctions between specific intellectual traditions. Confirming this would reveal how the public distinguishes between 'rigor' as formal systematization versus 'rigor' as conceptual analysis.",
+    "iterations": 6,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "87a3a4bd5146",
     "timestamp": "2026-04-26T00:39:16.497072+00:00",
     "schema_version": "autoresearch.v1",
