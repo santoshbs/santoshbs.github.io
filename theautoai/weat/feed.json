@@ -1,5 +1,111 @@
 [
   {
+    "id": "dd89e84da2d9",
+    "timestamp": "2026-04-26T06:51:25.124603+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "professors vs teachers on abstraction versus concreteness",
+    "labels": {
+      "X": "professors",
+      "Y": "teachers",
+      "A": "abstraction",
+      "B": "concreteness"
+    },
+    "canonical_keys": {
+      "X": "professors",
+      "Y": "teachers",
+      "A": "abstraction",
+      "B": "concreteness"
+    },
+    "effect_size": 0.9274746161954587,
+    "p_value": 0.01024,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "scholar",
+        "academic",
+        "professor",
+        "lecturer",
+        "dean",
+        "fellow",
+        "researcher",
+        "faculty",
+        "provost",
+        "theoretician",
+        "philosopher",
+        "intellectual",
+        "laureate",
+        "don",
+        "academician"
+      ],
+      "Y_used": [
+        "teacher",
+        "tutor",
+        "educator",
+        "instructor",
+        "coach",
+        "trainer",
+        "facilitator",
+        "guide",
+        "mentor",
+        "practitioner",
+        "specialist",
+        "pedagogue",
+        "preceptor",
+        "governess",
+        "aide"
+      ],
+      "A_used": [
+        "abstract",
+        "theoretical",
+        "conceptual",
+        "hypothetical",
+        "ideal",
+        "formal",
+        "general",
+        "schematic",
+        "intangible",
+        "speculative",
+        "philosophical",
+        "mental",
+        "cognitive",
+        "metaphysical",
+        "ethereal"
+      ],
+      "B_used": [
+        "concrete",
+        "practical",
+        "applied",
+        "utilitarian",
+        "tangible",
+        "factual",
+        "specific",
+        "material",
+        "real",
+        "physical",
+        "functional",
+        "pragmatic",
+        "empirical",
+        "literal",
+        "operational"
+      ]
+    },
+    "proposal": "I propose that people associate professors with abstraction more strongly than they associate teachers with abstraction. While both roles involve pedagogy, the public discourse often distinguishes between the 'ivory tower' of academia and the practical application of K-12 education. This association is novel because it moves beyond simple intelligence markers to probe the specific nature of the intellectual work associated with each role. Confirming this would highlight a persistent implicit bias that views academic instruction as conceptually detached and primary instruction as concrete and utilitarian.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "11500877a695",
     "timestamp": "2026-04-26T06:15:05.659812+00:00",
     "schema_version": "autoresearch.v1",
