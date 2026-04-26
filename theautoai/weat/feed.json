@@ -1,5 +1,112 @@
 [
   {
+    "id": "f76a2734b9cf",
+    "timestamp": "2026-04-26T13:41:44.994275+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "diplomats vs lawyers on interpersonal communication style",
+    "labels": {
+      "X": "diplomats",
+      "Y": "lawyers",
+      "A": "conciliatory",
+      "B": "adversarial"
+    },
+    "canonical_keys": {
+      "X": "diplomats",
+      "Y": "lawyers",
+      "A": "conciliatory",
+      "B": "adversarial"
+    },
+    "effect_size": 0.7232048604627157,
+    "p_value": 0.04895,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "diplomat",
+        "ambassador",
+        "envoy",
+        "consul",
+        "attache",
+        "mediator",
+        "negotiator",
+        "emissary",
+        "plenipotentiary",
+        "representative",
+        "delegate",
+        "minister",
+        "liaison",
+        "peacekeeper",
+        "intermediary"
+      ],
+      "Y_used": [
+        "lawyer",
+        "attorney",
+        "barrister",
+        "solicitor",
+        "counsel",
+        "litigator",
+        "advocate",
+        "prosecutor",
+        "defender",
+        "jurist",
+        "pleader",
+        "counselor",
+        "paralegal",
+        "esquire",
+        "legalist"
+      ],
+      "A_used": [
+        "tactful",
+        "polite",
+        "nuanced",
+        "subtle",
+        "gentle",
+        "courteous",
+        "gracious",
+        "conciliatory",
+        "peaceful",
+        "soft",
+        "considerate",
+        "refined",
+        "discreet",
+        "mild",
+        "civil"
+      ],
+      "B_used": [
+        "aggressive",
+        "adversarial",
+        "hostile",
+        "confrontational",
+        "argumentative",
+        "blunt",
+        "harsh",
+        "abrasive",
+        "pugnacious",
+        "conflicting",
+        "belligerent",
+        "contentious",
+        "forceful",
+        "loud",
+        "stern",
+        "antagonistic"
+      ]
+    },
+    "proposal": "I propose that people associate diplomats with tact more strongly than they associate lawyers with tact. While both professions are centered on high-level communication and negotiation, the public image of the lawyer is often defined by adversarial conflict and aggression, whereas the diplomat is defined by nuance and the avoidance of offense. This association is novel because it compares two prestige professions on a specific interpersonal quality rather than general competence or intelligence. Confirming this association would reveal how deeply the 'adversarial' stereotype of the legal profession is encoded in implicit memory compared to the 'conciliatory' stereotype of diplomacy.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "20093f41b851",
     "timestamp": "2026-04-26T12:53:03.448731+00:00",
     "schema_version": "autoresearch.v1",
