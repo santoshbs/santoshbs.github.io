@@ -1,5 +1,111 @@
 [
   {
+    "id": "c43abeaa3cc5",
+    "timestamp": "2026-04-26T03:18:15.869442+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "critics vs artists on skepticism versus trust",
+    "labels": {
+      "X": "critics",
+      "Y": "artists",
+      "A": "skepticism",
+      "B": "trust"
+    },
+    "canonical_keys": {
+      "X": "critics",
+      "Y": "artists",
+      "A": "skepticism",
+      "B": "trust"
+    },
+    "effect_size": 1.149374252069679,
+    "p_value": 0.00098,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "critic",
+        "reviewer",
+        "pundit",
+        "judge",
+        "evaluator",
+        "analyst",
+        "commentator",
+        "detractor",
+        "connoisseur",
+        "observer",
+        "columnist",
+        "arbiter",
+        "assessor",
+        "examiner",
+        "scholar"
+      ],
+      "Y_used": [
+        "artist",
+        "painter",
+        "sculptor",
+        "musician",
+        "writer",
+        "poet",
+        "dancer",
+        "actor",
+        "composer",
+        "illustrator",
+        "potter",
+        "weaver",
+        "creator",
+        "maker",
+        "visionary"
+      ],
+      "A_used": [
+        "doubt",
+        "suspicion",
+        "cynicism",
+        "disbelief",
+        "distrust",
+        "caution",
+        "wariness",
+        "scrutiny",
+        "hesitation",
+        "skepticism",
+        "incredulity",
+        "reservation",
+        "mistrust",
+        "questioning",
+        "pessimism"
+      ],
+      "B_used": [
+        "faith",
+        "trust",
+        "belief",
+        "certainty",
+        "confidence",
+        "optimism",
+        "acceptance",
+        "conviction",
+        "reliance",
+        "assurance",
+        "credibility",
+        "devotion",
+        "loyalty",
+        "agreement",
+        "hope"
+      ]
+    },
+    "proposal": "People associate critics with skepticism more strongly than they associate artists with skepticism. This association is interesting because it examines the implicit psychological dichotomy between the creator and the evaluator in cultural discourse. While artists may be skeptics themselves, the social role of the critic is conceptually anchored in scrutiny and doubt. Confirming this association would provide insight into how society mentally represents the functional purpose of critical evaluation versus creative production.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "e61eb526a41e",
     "timestamp": "2026-04-26T02:45:05.428850+00:00",
     "schema_version": "autoresearch.v1",
