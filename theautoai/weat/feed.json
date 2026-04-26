@@ -1,5 +1,113 @@
 [
   {
+    "id": "318591c50d67",
+    "timestamp": "2026-04-26T22:50:58.028964+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "soldiers vs lawyers on obedience vs independence",
+    "labels": {
+      "X": "soldiers",
+      "Y": "lawyers",
+      "A": "obedience",
+      "B": "independence"
+    },
+    "canonical_keys": {
+      "X": "soldiers",
+      "Y": "lawyers",
+      "A": "obedience",
+      "B": "independence"
+    },
+    "effect_size": -0.9780175936546333,
+    "p_value": 0.00603,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "soldier",
+        "army",
+        "infantry",
+        "troop",
+        "marine",
+        "sailor",
+        "sergeant",
+        "corporal",
+        "lieutenant",
+        "captain",
+        "colonel",
+        "general",
+        "private",
+        "militia",
+        "recruit",
+        "warrior",
+        "veteran"
+      ],
+      "Y_used": [
+        "lawyer",
+        "attorney",
+        "counsel",
+        "barrister",
+        "solicitor",
+        "litigator",
+        "advocate",
+        "jurist",
+        "paralegal",
+        "counselor",
+        "prosecutor",
+        "defender",
+        "associate",
+        "partner",
+        "magistrate"
+      ],
+      "A_used": [
+        "obedience",
+        "compliance",
+        "submission",
+        "dutiful",
+        "loyal",
+        "disciplined",
+        "submissive",
+        "compliant",
+        "tractable",
+        "deferential",
+        "docile",
+        "respectful",
+        "obedient",
+        "yielding",
+        "servile"
+      ],
+      "B_used": [
+        "independence",
+        "autonomy",
+        "rebellion",
+        "defiant",
+        "rebellious",
+        "stubborn",
+        "assertive",
+        "freedom",
+        "willful",
+        "resistance",
+        "disobedient",
+        "insubordinate",
+        "dissident",
+        "refractory",
+        "unruly"
+      ]
+    },
+    "proposal": "People associate soldiers with obedience more strongly than they associate lawyers with obedience. This differential implicit association is novel because it contrasts two distinct professional paradigms of rule-following: the hierarchical, command-based obedience of the military versus the procedural, statute-based adherence of the legal profession. Confirming this would be important for understanding how the public differentiates between systemic discipline and institutional compliance. It would reveal whether the trait of obedience is mentally mapped as a characteristic of military identity rather than a general characteristic of roles governed by strict codes of conduct.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "c7f7df8e1ae3",
     "timestamp": "2026-04-26T22:05:42.948446+00:00",
     "schema_version": "autoresearch.v1",
