@@ -1,5 +1,111 @@
 [
   {
+    "id": "1967f1b2aea5",
+    "timestamp": "2026-04-26T14:28:25.432263+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "activists vs scientists on temporal urgency vs methodical pace",
+    "labels": {
+      "X": "activists",
+      "Y": "scientists",
+      "A": "urgency",
+      "B": "methodical pace"
+    },
+    "canonical_keys": {
+      "X": "activists",
+      "Y": "scientists",
+      "A": "urgency",
+      "B": ""
+    },
+    "effect_size": 1.4722358625925123,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "activist",
+        "protester",
+        "campaigner",
+        "advocate",
+        "militant",
+        "organizer",
+        "rebel",
+        "agitator",
+        "dissident",
+        "reformer",
+        "lobbyist",
+        "crusader",
+        "partisan",
+        "demonstrator",
+        "radical"
+      ],
+      "Y_used": [
+        "scientist",
+        "researcher",
+        "biologist",
+        "physicist",
+        "chemist",
+        "astronomer",
+        "geologist",
+        "mathematician",
+        "analyst",
+        "academic",
+        "scholar",
+        "technician",
+        "expert",
+        "theorist",
+        "clinician"
+      ],
+      "A_used": [
+        "urgent",
+        "immediate",
+        "rapid",
+        "fast",
+        "quick",
+        "desperate",
+        "pressing",
+        "acute",
+        "hasty",
+        "sudden",
+        "instant",
+        "prompt",
+        "passionate",
+        "feverish",
+        "hurried"
+      ],
+      "B_used": [
+        "methodical",
+        "objective",
+        "patient",
+        "slow",
+        "deliberate",
+        "cautious",
+        "gradual",
+        "systematic",
+        "rigorous",
+        "steady",
+        "measured",
+        "careful",
+        "precise",
+        "analytical",
+        "detached"
+      ]
+    },
+    "proposal": "People associate activists with urgency more strongly than they associate scientists with urgency. This association reflects a deeply embedded cultural script that separates the 'objective' and methodical pace of scientific discovery from the 'passionate' and immediate demands of political advocacy. This is novel as it focuses on the temporal quality of the social role rather than a simple trait like intelligence or emotion. Confirming this would provide insight into why scientific consensus often fails to trigger immediate public action until it is reframed through the lens of activist urgency.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "f76a2734b9cf",
     "timestamp": "2026-04-26T13:41:44.994275+00:00",
     "schema_version": "autoresearch.v1",
