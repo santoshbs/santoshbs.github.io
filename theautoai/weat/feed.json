@@ -1,5 +1,111 @@
 [
   {
+    "id": "56a992bb1f09",
+    "timestamp": "2026-04-26T15:45:19.486309+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "teachers vs scientists on patience versus impatience",
+    "labels": {
+      "X": "teachers",
+      "Y": "scientists",
+      "A": "patience",
+      "B": "impatience"
+    },
+    "canonical_keys": {
+      "X": "teachers",
+      "Y": "scientists",
+      "A": "patience",
+      "B": "impatience"
+    },
+    "effect_size": 0.8570022182118576,
+    "p_value": 0.01716,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "teacher",
+        "educator",
+        "instructor",
+        "tutor",
+        "mentor",
+        "pedagogue",
+        "lecturer",
+        "coach",
+        "trainer",
+        "guide",
+        "dean",
+        "principal",
+        "professor",
+        "academic",
+        "preceptor"
+      ],
+      "Y_used": [
+        "scientist",
+        "researcher",
+        "physicist",
+        "chemist",
+        "biologist",
+        "astronomer",
+        "geologist",
+        "mathematician",
+        "analyst",
+        "theorist",
+        "investigator",
+        "technician",
+        "pharmacologist",
+        "microbiologist",
+        "zoologist"
+      ],
+      "A_used": [
+        "patient",
+        "calm",
+        "steady",
+        "tolerant",
+        "gentle",
+        "persistent",
+        "enduring",
+        "composed",
+        "serene",
+        "placid",
+        "mild",
+        "nurturing",
+        "slow",
+        "poised",
+        "tranquil"
+      ],
+      "B_used": [
+        "impatient",
+        "urgent",
+        "restless",
+        "hasty",
+        "hurried",
+        "eager",
+        "impulsive",
+        "brusque",
+        "abrupt",
+        "frantic",
+        "rushed",
+        "quick",
+        "anxious",
+        "irritable",
+        "volatile"
+      ]
+    },
+    "proposal": "People associate teachers with patience more strongly than they associate scientists with patience. This association is interesting because both roles are centered on the transmission and pursuit of knowledge, yet their primary objects of focus differ: the student versus the discovery. While scientists are often stereotyped as being driven by an urgent, sometimes restless need for breakthrough, teachers are traditionally viewed through the lens of nurturance and persistence. Confirming this implicit association would clarify whether the public mentally represents the 'intellectual' as primarily an impatient seeker of truth or a patient guide to others.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "7b136e819168",
     "timestamp": "2026-04-26T15:08:25.577397+00:00",
     "schema_version": "autoresearch.v1",
