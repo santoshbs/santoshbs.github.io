@@ -1,5 +1,111 @@
 [
   {
+    "id": "c7f7df8e1ae3",
+    "timestamp": "2026-04-26T22:05:42.948446+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "businesspeople vs diplomats on directness versus nuance",
+    "labels": {
+      "X": "businesspeople",
+      "Y": "diplomats",
+      "A": "directness",
+      "B": "nuance"
+    },
+    "canonical_keys": {
+      "X": "businesspeople",
+      "Y": "diplomats",
+      "A": "directness",
+      "B": "nuance"
+    },
+    "effect_size": 0.9170861225135423,
+    "p_value": 0.01128,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "entrepreneur",
+        "executive",
+        "manager",
+        "trader",
+        "broker",
+        "merchant",
+        "capitalist",
+        "owner",
+        "boss",
+        "salesperson",
+        "accountant",
+        "analyst",
+        "clerk",
+        "vendor",
+        "marketer"
+      ],
+      "Y_used": [
+        "ambassador",
+        "envoy",
+        "consul",
+        "attache",
+        "mediator",
+        "negotiator",
+        "delegate",
+        "representative",
+        "emissary",
+        "diplomat",
+        "statesman",
+        "official",
+        "minister",
+        "secretary",
+        "aide"
+      ],
+      "A_used": [
+        "direct",
+        "blunt",
+        "honest",
+        "straightforward",
+        "candid",
+        "plain",
+        "explicit",
+        "frank",
+        "clear",
+        "precise",
+        "concise",
+        "brief",
+        "efficient",
+        "open",
+        "overt"
+      ],
+      "B_used": [
+        "tactful",
+        "nuanced",
+        "subtle",
+        "ambiguous",
+        "vague",
+        "discreet",
+        "evasive",
+        "indirect",
+        "polite",
+        "guarded",
+        "careful",
+        "veiled",
+        "oblique",
+        "elusive",
+        "cautious"
+      ]
+    },
+    "proposal": "People associate businesspeople with directness more strongly than they associate diplomats with directness. This association reflects a professional stereotype where commerce is linked to efficiency and 'bottom-line' communication, whereas diplomacy is defined by nuance, tact, and strategic ambiguity. Studying this is important because it reveals how we mentally categorize the perceived social utility of bluntness versus discretion across different power structures. This is novel because implicit association research typically focuses on broad social identities or general competence rather than the specific communicative norms associated with professional roles.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "a62df6dc1775",
     "timestamp": "2026-04-26T21:31:45.256750+00:00",
     "schema_version": "autoresearch.v1",
