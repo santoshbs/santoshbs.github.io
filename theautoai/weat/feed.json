@@ -1,5 +1,111 @@
 [
   {
+    "id": "8ce5b502b0d8",
+    "timestamp": "2026-04-26T18:27:28.493414+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "lawyers vs journalists on confidentiality versus transparency",
+    "labels": {
+      "X": "lawyers",
+      "Y": "journalists",
+      "A": "discretion",
+      "B": "transparency"
+    },
+    "canonical_keys": {
+      "X": "lawyers",
+      "Y": "journalists",
+      "A": "discretion",
+      "B": "transparency"
+    },
+    "effect_size": -0.2700307405013092,
+    "p_value": 0.47509,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "lawyer",
+        "attorney",
+        "barrister",
+        "solicitor",
+        "litigator",
+        "advocate",
+        "jurist",
+        "prosecutor",
+        "defender",
+        "counselor",
+        "notary",
+        "practitioner",
+        "associate",
+        "partner",
+        "counsel"
+      ],
+      "Y_used": [
+        "journalist",
+        "reporter",
+        "correspondent",
+        "editor",
+        "columnist",
+        "anchor",
+        "broadcaster",
+        "scribe",
+        "blogger",
+        "paparazzi",
+        "newsman",
+        "newswoman",
+        "writer",
+        "chronicler",
+        "pundit"
+      ],
+      "A_used": [
+        "secret",
+        "private",
+        "quiet",
+        "discreet",
+        "hidden",
+        "reserved",
+        "covert",
+        "silent",
+        "stealthy",
+        "veiled",
+        "muted",
+        "guarded",
+        "confidential",
+        "clandestine",
+        "hushed"
+      ],
+      "B_used": [
+        "open",
+        "public",
+        "exposed",
+        "clear",
+        "transparent",
+        "loud",
+        "blatant",
+        "overt",
+        "explicit",
+        "revealed",
+        "known",
+        "manifest",
+        "visible",
+        "vocal",
+        "frank"
+      ]
+    },
+    "proposal": "People associate lawyers with discretion more strongly than they associate journalists with discretion. This is novel because while the legal and journalistic professions have opposite ethical mandates regarding confidentiality and transparency, this tension is rarely studied as an implicit association. It is interesting because it reveals how the public mentally represents the 'guardian of secrets' versus the 'bringer of news.' Confirming this would highlight the implicit cognitive boundaries between professional roles centered on protecting versus disclosing information.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "9f29f2efb853",
     "timestamp": "2026-04-26T17:51:47.897551+00:00",
     "schema_version": "autoresearch.v1",
