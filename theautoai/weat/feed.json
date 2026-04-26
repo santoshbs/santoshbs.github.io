@@ -1,5 +1,111 @@
 [
   {
+    "id": "63dd5d422603",
+    "timestamp": "2026-04-26T00:11:47.044286+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "soldiers vs police on nature of service",
+    "labels": {
+      "X": "soldiers",
+      "Y": "police",
+      "A": "self-sacrifice",
+      "B": "professionalism"
+    },
+    "canonical_keys": {
+      "X": "soldiers",
+      "Y": "police",
+      "A": "",
+      "B": "professionalism"
+    },
+    "effect_size": 0.584809884498308,
+    "p_value": 0.11708,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "soldier",
+        "infantryman",
+        "marine",
+        "warrior",
+        "general",
+        "private",
+        "colonel",
+        "combatant",
+        "veteran",
+        "rifleman",
+        "gunner",
+        "recruit",
+        "sentinel",
+        "grenadier",
+        "artilleryman"
+      ],
+      "Y_used": [
+        "policeman",
+        "policewoman",
+        "officer",
+        "cop",
+        "detective",
+        "constable",
+        "sheriff",
+        "marshal",
+        "deputy",
+        "warden",
+        "lawman",
+        "patrolman",
+        "agent",
+        "inspector",
+        "bailiff"
+      ],
+      "A_used": [
+        "sacrifice",
+        "martyr",
+        "hero",
+        "valor",
+        "bravery",
+        "selfless",
+        "altruism",
+        "noble",
+        "devotion",
+        "gallantry",
+        "fearless",
+        "honor",
+        "glory",
+        "patriotic",
+        "sacred"
+      ],
+      "B_used": [
+        "professional",
+        "career",
+        "employee",
+        "routine",
+        "procedure",
+        "regulation",
+        "occupation",
+        "work",
+        "task",
+        "shift",
+        "employment",
+        "administrative",
+        "bureaucratic",
+        "salary",
+        "vocation"
+      ]
+    },
+    "proposal": "People associate soldiers with self-sacrifice more strongly than they associate police with self-sacrifice. While both roles are characterized by risk and duty, the public often implicitly distinguishes between the 'ultimate sacrifice' associated with military service in foreign conflicts and the professional risks associated with domestic policing. This is interesting as it reveals a hidden hierarchy of valor attributed to different types of state-sanctioned service. Confirming this would suggest that the 'warrior' archetype is more strongly linked to altruistic sacrifice in the public mind than the 'law-enforcer' archetype.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "c9d4ebd5b123",
     "timestamp": "2026-04-25T23:15:26.458337+00:00",
     "schema_version": "autoresearch.v1",
