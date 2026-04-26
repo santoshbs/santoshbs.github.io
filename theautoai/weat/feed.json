@@ -1,5 +1,111 @@
 [
   {
+    "id": "406d709d8557",
+    "timestamp": "2026-04-26T16:34:36.282987+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Christians vs Buddhists on emotional response to morality",
+    "labels": {
+      "X": "Christians",
+      "Y": "Buddhists",
+      "A": "guilt",
+      "B": "detachment"
+    },
+    "canonical_keys": {
+      "X": "christians",
+      "Y": "buddhists",
+      "A": "guilt",
+      "B": "detachment"
+    },
+    "effect_size": 1.4155297585640263,
+    "p_value": 1e-05,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "saint",
+        "parishioner",
+        "congregant",
+        "missionary",
+        "preacher",
+        "pastor",
+        "priest",
+        "deacon",
+        "evangelist",
+        "worshiper",
+        "clergyman",
+        "churchgoer",
+        "curate",
+        "vicar",
+        "bishop"
+      ],
+      "Y_used": [
+        "monk",
+        "nun",
+        "lama",
+        "practitioner",
+        "devotee",
+        "novice",
+        "meditator",
+        "ascetic",
+        "bodhisattva",
+        "yogi",
+        "arhat",
+        "layperson",
+        "disciple",
+        "master",
+        "monastic"
+      ],
+      "A_used": [
+        "guilt",
+        "sinful",
+        "shame",
+        "remorse",
+        "regret",
+        "penitence",
+        "contrition",
+        "blame",
+        "fault",
+        "transgression",
+        "wrong",
+        "sin",
+        "culpability",
+        "apology",
+        "confession"
+      ],
+      "B_used": [
+        "peace",
+        "calm",
+        "serene",
+        "detached",
+        "tranquil",
+        "stillness",
+        "equilibrium",
+        "harmony",
+        "quiet",
+        "poise",
+        "lightness",
+        "freedom",
+        "release",
+        "indifference",
+        "composure"
+      ]
+    },
+    "proposal": "I propose that people associate Christians with guilt more strongly than they associate Buddhists with guilt. This association likely stems from the implicit cultural perception of the Christian theological framework, which emphasizes original sin, redemption, and individual moral accountability, compared to the Buddhist focus on suffering, detachment, and the cessation of desire. Examining this is novel because it probes whether high-level theological differences are internalized as implicit social stereotypes. Confirming this would provide insight into how religious identity shapes the implicit emotional landscapes attributed to different faith groups.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "56a992bb1f09",
     "timestamp": "2026-04-26T15:45:19.486309+00:00",
     "schema_version": "autoresearch.v1",
