@@ -1,5 +1,111 @@
 [
   {
+    "id": "0d0a94df0935",
+    "timestamp": "2026-04-26T09:43:03.496154+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "lawyers vs police on cognitive style of operating",
+    "labels": {
+      "X": "lawyers",
+      "Y": "police",
+      "A": "strategic calculation",
+      "B": "direct action"
+    },
+    "canonical_keys": {
+      "X": "lawyers",
+      "Y": "police",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 1.2738025562689796,
+    "p_value": 0.00016,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "lawyer",
+        "attorney",
+        "counselor",
+        "barrister",
+        "solicitor",
+        "advocate",
+        "litigator",
+        "jurist",
+        "counsel",
+        "pleader",
+        "defender",
+        "prosecutor",
+        "notary",
+        "legalist",
+        "practitioner"
+      ],
+      "Y_used": [
+        "police",
+        "cop",
+        "officer",
+        "sheriff",
+        "deputy",
+        "constable",
+        "patrolman",
+        "marshal",
+        "gendarme",
+        "trooper",
+        "warden",
+        "sentinel",
+        "guard",
+        "detective",
+        "inspector"
+      ],
+      "A_used": [
+        "strategic",
+        "calculated",
+        "deliberate",
+        "intellectual",
+        "cerebral",
+        "analytical",
+        "schematic",
+        "manipulation",
+        "maneuvering",
+        "precise",
+        "cautious",
+        "methodical",
+        "systematic",
+        "thoughtful",
+        "reasoned"
+      ],
+      "B_used": [
+        "action",
+        "physical",
+        "direct",
+        "force",
+        "power",
+        "strength",
+        "muscle",
+        "impact",
+        "sudden",
+        "blunt",
+        "impulsive",
+        "active",
+        "kinetic",
+        "rough",
+        "forceful"
+      ]
+    },
+    "proposal": "I propose that people associate lawyers with calculation more strongly than they associate police with calculation. While both professions are central to the legal system, lawyers are implicitly linked to strategic manipulation and intellectual maneuvering, whereas police are associated with direct action and physical authority. This is novel because it shifts the focus from moral judgments of the professions toward their implicit cognitive styles of operating. Confirming this association would reveal how we mentally distinguish between 'legal' power, which is perceived as strategic, and 'executive' power, which is perceived as tactical.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "4d8922a54c44",
     "timestamp": "2026-04-26T08:36:29.455080+00:00",
     "schema_version": "autoresearch.v1",
