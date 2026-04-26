@@ -1,5 +1,111 @@
 [
   {
+    "id": "20093f41b851",
+    "timestamp": "2026-04-26T12:53:03.448731+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "students vs athletes on mental state under pressure",
+    "labels": {
+      "X": "students",
+      "Y": "athletes",
+      "A": "anxiety",
+      "B": "resilience"
+    },
+    "canonical_keys": {
+      "X": "students",
+      "Y": "athletes",
+      "A": "anxiety",
+      "B": "resilience"
+    },
+    "effect_size": 0.9380371640351967,
+    "p_value": 0.00719,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "student",
+        "scholar",
+        "pupil",
+        "undergraduate",
+        "postgraduate",
+        "freshman",
+        "sophomore",
+        "junior",
+        "senior",
+        "learner",
+        "classmate",
+        "alumnus",
+        "graduate",
+        "academic",
+        "trainee"
+      ],
+      "Y_used": [
+        "athlete",
+        "player",
+        "runner",
+        "swimmer",
+        "gymnast",
+        "sprinter",
+        "wrestler",
+        "boxer",
+        "competitor",
+        "kicker",
+        "pitcher",
+        "defender",
+        "goalie",
+        "captain",
+        "teammate"
+      ],
+      "A_used": [
+        "anxious",
+        "stressed",
+        "nervous",
+        "worried",
+        "tense",
+        "panicky",
+        "frazzled",
+        "jittery",
+        "uneasy",
+        "apprehensive",
+        "frantic",
+        "overwhelmed",
+        "agitated",
+        "distressed",
+        "perturbed"
+      ],
+      "B_used": [
+        "resilient",
+        "calm",
+        "composed",
+        "steady",
+        "strong",
+        "tough",
+        "fearless",
+        "poised",
+        "confident",
+        "stable",
+        "brave",
+        "hardy",
+        "cool",
+        "relaxed",
+        "serene"
+      ]
+    },
+    "proposal": "People associate students with anxiety more strongly than they associate athletes with anxiety. This association reflects the contemporary cultural narrative that contrasts the high-pressure, sedentary intellectual stress of academic life with the perceived resilience and physical composure of athletic performance. While 'dumb jock' stereotypes are common, the specific implicit link between academic identity and mental anxiety, versus athletic identity and emotional fortitude, is less systematically explored. Examining this could reveal how we implicitly gender or categorize different forms of stress and coping mechanisms.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "f38b54349e20",
     "timestamp": "2026-04-26T12:02:50.149238+00:00",
     "schema_version": "autoresearch.v1",
