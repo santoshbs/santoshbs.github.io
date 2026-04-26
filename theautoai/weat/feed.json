@@ -1,5 +1,111 @@
 [
   {
+    "id": "7b136e819168",
+    "timestamp": "2026-04-26T15:08:25.577397+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "doctors vs scientists on epistemic style",
+    "labels": {
+      "X": "doctors",
+      "Y": "scientists",
+      "A": "decisiveness",
+      "B": "provisionality"
+    },
+    "canonical_keys": {
+      "X": "doctors",
+      "Y": "scientists",
+      "A": "decisiveness",
+      "B": "provisionality"
+    },
+    "effect_size": 0.637268673574229,
+    "p_value": 0.08696,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "doctor",
+        "physician",
+        "surgeon",
+        "clinician",
+        "practitioner",
+        "pediatrician",
+        "psychiatrist",
+        "cardiologist",
+        "dermatologist",
+        "internist",
+        "oncologist",
+        "radiologist",
+        "optometrist",
+        "neurologist",
+        "urologist"
+      ],
+      "Y_used": [
+        "scientist",
+        "researcher",
+        "physicist",
+        "chemist",
+        "biologist",
+        "astronomer",
+        "geologist",
+        "mathematician",
+        "academic",
+        "scholar",
+        "theorist",
+        "analyst",
+        "investigator",
+        "microbiologist",
+        "zoologist"
+      ],
+      "A_used": [
+        "decisive",
+        "prompt",
+        "certain",
+        "firm",
+        "resolute",
+        "sure",
+        "definitive",
+        "quick",
+        "direct",
+        "bold",
+        "determined",
+        "final",
+        "explicit",
+        "clear",
+        "assertive"
+      ],
+      "B_used": [
+        "skeptical",
+        "tentative",
+        "uncertain",
+        "provisional",
+        "doubtful",
+        "questioning",
+        "hesitant",
+        "cautious",
+        "indirect",
+        "ambiguous",
+        "vague",
+        "speculative",
+        "hypothetical",
+        "undecided",
+        "precarious"
+      ]
+    },
+    "proposal": "People associate doctors with decisiveness more strongly than they associate scientists with decisiveness. While both are viewed as high-competence professionals, the implicit expectation for a doctor is to provide a definitive diagnosis and a prompt treatment plan, whereas a scientist is expected to maintain a state of provisionality and skepticism. This association is novel because it moves beyond the standard warmth-competence axes to examine the implicit representation of professional epistemic styles. Confirming this would clarify how the public mentally distinguishes between the clinical application of knowledge and the academic production of knowledge.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "1967f1b2aea5",
     "timestamp": "2026-04-26T14:28:25.432263+00:00",
     "schema_version": "autoresearch.v1",
