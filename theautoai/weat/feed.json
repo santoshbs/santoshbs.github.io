@@ -1,5 +1,111 @@
 [
   {
+    "id": "67bb83064f75",
+    "timestamp": "2026-04-26T19:50:12.356492+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "chefs vs artists on precision versus intuition",
+    "labels": {
+      "X": "chefs",
+      "Y": "artists",
+      "A": "precision",
+      "B": "intuition"
+    },
+    "canonical_keys": {
+      "X": "chefs",
+      "Y": "artists",
+      "A": "precision",
+      "B": "intuition"
+    },
+    "effect_size": 0.018184272612857516,
+    "p_value": 0.96138,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "chef",
+        "cook",
+        "baker",
+        "caterer",
+        "confectioner",
+        "patissier",
+        "chocolatier",
+        "gourmand",
+        "epicure",
+        "gastronome",
+        "culinarian",
+        "saucier",
+        "griller",
+        "sommelier",
+        "butcher"
+      ],
+      "Y_used": [
+        "artist",
+        "painter",
+        "sculptor",
+        "drawer",
+        "sketcher",
+        "etcher",
+        "engraver",
+        "potter",
+        "ceramicist",
+        "illustrator",
+        "muralist",
+        "calligrapher",
+        "lithographer",
+        "carver",
+        "weaver"
+      ],
+      "A_used": [
+        "precise",
+        "exact",
+        "accurate",
+        "rigorous",
+        "meticulous",
+        "strict",
+        "detailed",
+        "correct",
+        "specific",
+        "certain",
+        "fixed",
+        "measured",
+        "sharp",
+        "neat",
+        "formal"
+      ],
+      "B_used": [
+        "intuitive",
+        "spontaneous",
+        "abstract",
+        "fluid",
+        "loose",
+        "random",
+        "vague",
+        "casual",
+        "hazy",
+        "free",
+        "expressive",
+        "wild",
+        "erratic",
+        "impressionistic",
+        "organic"
+      ]
+    },
+    "proposal": "People associate chefs with precision more strongly than they associate artists with precision. This proposal is novel because it examines two distinct categories of creative practitioners—one focused on the culinary arts and the other on visual or performing arts—through the lens of technical exactitude. It is interesting because it probes the implicit distinction between 'craft' and 'art,' suggesting that the public views culinary creativity as more bound by rigid technical standards than other forms of artistic expression. Confirming this association would provide insight into how professional creativity is mentally categorized based on the perceived role of precision versus intuition.",
+    "iterations": 3,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "388ffc90920d",
     "timestamp": "2026-04-26T19:10:40.733857+00:00",
     "schema_version": "autoresearch.v1",
