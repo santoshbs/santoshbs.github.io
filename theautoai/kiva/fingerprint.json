@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
-  "batches_seen": 49,
-  "loans_seen": 666,
-  "last_updated": "2026-04-25T23:06:55+00:00",
-  "watching_for": "I am watching to see if 'risk signals'\u2014such as refugee status or the explicit mention of lacking external financial safety nets\u2014consistently slow funding, and whether lenders exhibit a general preference for 'essential' retail (e.g., general stores) over 'specialized' retail (e.g., office supplies).",
+  "batches_seen": 50,
+  "loans_seen": 674,
+  "last_updated": "2026-04-26T00:01:00+00:00",
+  "watching_for": "I am watching for a tension between 'urgency framing' (which accelerates funding) and 'urgency templates' (like 'secure the future of the family'), which may actually signal genericism and slow funding. I want to see if the specific phrasing of the template overrides the emotional register of the request.",
   "claims": {
     "pitches-that-mention-owning-a-home-or-land-fund-faster-regar": {
       "id": "pitches-that-mention-owning-a-home-or-land-fund-faster-regar",
@@ -17,7 +17,7 @@
       ],
       "confidence": 0.96,
       "first_seen_batch": 2,
-      "last_updated_batch": 56,
+      "last_updated_batch": 57,
       "confidence_history": [
         [
           2,
@@ -206,6 +206,10 @@
         [
           56,
           0.96
+        ],
+        [
+          57,
+          0.96
         ]
       ]
     },
@@ -223,7 +227,7 @@
       ],
       "confidence": 1.0,
       "first_seen_batch": 3,
-      "last_updated_batch": 56,
+      "last_updated_batch": 57,
       "confidence_history": [
         [
           3,
@@ -416,6 +420,10 @@
         [
           56,
           1.0
+        ],
+        [
+          57,
+          1.0
         ]
       ]
     },
@@ -433,7 +441,7 @@
       ],
       "confidence": 1.0,
       "first_seen_batch": 9,
-      "last_updated_batch": 56,
+      "last_updated_batch": 57,
       "confidence_history": [
         [
           9,
@@ -598,6 +606,10 @@
         [
           56,
           1.0
+        ],
+        [
+          57,
+          1.0
         ]
       ]
     },
@@ -611,7 +623,7 @@
       ],
       "confidence": 0.88,
       "first_seen_batch": 28,
-      "last_updated_batch": 56,
+      "last_updated_batch": 57,
       "confidence_history": [
         [
           28,
@@ -692,6 +704,10 @@
         [
           56,
           0.88
+        ],
+        [
+          57,
+          0.88
         ]
       ]
     },
@@ -707,7 +723,7 @@
       ],
       "confidence": 0.72,
       "first_seen_batch": 52,
-      "last_updated_batch": 56,
+      "last_updated_batch": 57,
       "confidence_history": [
         [
           52,
@@ -736,6 +752,10 @@
         [
           56,
           0.72
+        ],
+        [
+          57,
+          0.72
         ]
       ]
     },
@@ -748,9 +768,9 @@
         3160935,
         3164703
       ],
-      "confidence": 0.68,
+      "confidence": 0.4,
       "first_seen_batch": 53,
-      "last_updated_batch": 56,
+      "last_updated_batch": 57,
       "confidence_history": [
         [
           53,
@@ -771,6 +791,10 @@
         [
           56,
           0.68
+        ],
+        [
+          57,
+          0.4
         ]
       ]
     },
@@ -785,7 +809,7 @@
       ],
       "confidence": 0.65,
       "first_seen_batch": 54,
-      "last_updated_batch": 56,
+      "last_updated_batch": 57,
       "confidence_history": [
         [
           54,
@@ -797,6 +821,10 @@
         ],
         [
           56,
+          0.65
+        ],
+        [
+          57,
           0.65
         ]
       ]
@@ -813,10 +841,14 @@
       ],
       "confidence": 0.68,
       "first_seen_batch": 56,
-      "last_updated_batch": 56,
+      "last_updated_batch": 57,
       "confidence_history": [
         [
           56,
+          0.68
+        ],
+        [
+          57,
           0.68
         ]
       ]
@@ -977,6 +1009,11 @@
       "id": "in-pair-2-loan-l3164087-identifies-as-a-refugee",
       "body": "In Pair 2, Loan L3164087 identifies as a 'refugee entrepreneur'. Despite the potential for empathy, this loan funded significantly slower than L3164606. I wonder if 'refugee' status is perceived as a risk signal that outweighs the hardship narrative.",
       "first_seen_batch": 56
+    },
+    "the-secure-the-future-of-the-family-template-is": {
+      "id": "the-secure-the-future-of-the-family-template-is",
+      "body": "The 'secure the future of the family' template is almost exclusively associated with slow funding in this batch (L3158313, L3158331). I need to determine if this is a partner-specific penalty (NWTF) or a general lender aversion to this specific phrase.",
+      "first_seen_batch": 57
     }
   },
   "retired": {
