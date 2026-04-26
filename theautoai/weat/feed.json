@@ -1,5 +1,111 @@
 [
   {
+    "id": "c0e1a5357f97",
+    "timestamp": "2026-04-26T04:09:14.671705+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "farmers vs urbanites on practical versatility vs specialization",
+    "labels": {
+      "X": "farmers",
+      "Y": "urbanites",
+      "A": "resourceful",
+      "B": "dependent"
+    },
+    "canonical_keys": {
+      "X": "farmers",
+      "Y": "urbanites",
+      "A": "resourceful",
+      "B": "dependent"
+    },
+    "effect_size": 0.07917165399695926,
+    "p_value": 0.83604,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "farmer",
+        "rancher",
+        "grower",
+        "harvester",
+        "tiller",
+        "planter",
+        "plowman",
+        "shepherd",
+        "herdsman",
+        "agrarian",
+        "cultivator",
+        "rustic",
+        "villager",
+        "peasant",
+        "crofter"
+      ],
+      "Y_used": [
+        "urbanite",
+        "cosmopolitan",
+        "professional",
+        "commuter",
+        "clerk",
+        "socialite",
+        "bourgeois",
+        "bureaucrat",
+        "official",
+        "employee",
+        "manager",
+        "accountant",
+        "lawyer",
+        "banker",
+        "executive"
+      ],
+      "A_used": [
+        "handy",
+        "versatile",
+        "clever",
+        "resourceful",
+        "practical",
+        "capable",
+        "adept",
+        "skilled",
+        "inventive",
+        "efficient",
+        "nimble",
+        "scrappy",
+        "useful",
+        "hardy",
+        "resilient"
+      ],
+      "B_used": [
+        "dependent",
+        "specialized",
+        "helpless",
+        "fragile",
+        "limited",
+        "rigid",
+        "inexperienced",
+        "unskilled",
+        "reliant",
+        "passive",
+        "weak",
+        "narrow",
+        "inept",
+        "clumsy",
+        "pampered"
+      ]
+    },
+    "proposal": "People associate farmers with resourcefulness more strongly than they associate urbanites with resourcefulness. This proposed association draws on the cultural archetype of the rural 'jack-of-all-trades' who must independently repair machinery and solve multifaceted problems with limited tools. It is novel because implicit association research typically focuses on negative stereotypes of rural populations, such as lack of education, rather than positive practical competencies. Confirming this association would provide insight into how the public mentally distinguishes between formal, specialized urban expertise and versatile, practical rural intelligence.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "c43abeaa3cc5",
     "timestamp": "2026-04-26T03:18:15.869442+00:00",
     "schema_version": "autoresearch.v1",
