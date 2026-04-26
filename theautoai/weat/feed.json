@@ -1,5 +1,111 @@
 [
   {
+    "id": "ce00c9bd4806",
+    "timestamp": "2026-04-26T11:33:43.480476+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "teachers vs businesspeople on intellectual humility vs certainty",
+    "labels": {
+      "X": "teachers",
+      "Y": "businesspeople",
+      "A": "intellectual humility",
+      "B": "absolute certainty"
+    },
+    "canonical_keys": {
+      "X": "teachers",
+      "Y": "businesspeople",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 1.0817825166559698,
+    "p_value": 0.00183,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "teacher",
+        "professor",
+        "tutor",
+        "educator",
+        "lecturer",
+        "instructor",
+        "mentor",
+        "pedagogue",
+        "scholar",
+        "academic",
+        "coach",
+        "trainer",
+        "dean",
+        "faculty",
+        "guide"
+      ],
+      "Y_used": [
+        "executive",
+        "manager",
+        "entrepreneur",
+        "director",
+        "capitalist",
+        "merchant",
+        "broker",
+        "trader",
+        "vendor",
+        "corporate",
+        "boss",
+        "employer",
+        "administrator",
+        "officer",
+        "mogul"
+      ],
+      "A_used": [
+        "humble",
+        "open",
+        "modest",
+        "receptive",
+        "curious",
+        "tentative",
+        "flexible",
+        "admitting",
+        "questioning",
+        "listening",
+        "thoughtful",
+        "reflective",
+        "unsure",
+        "learning",
+        "aware"
+      ],
+      "B_used": [
+        "certain",
+        "sure",
+        "confident",
+        "decisive",
+        "arrogant",
+        "proud",
+        "dogmatic",
+        "assertive",
+        "firm",
+        "absolute",
+        "convinced",
+        "bold",
+        "authoritative",
+        "rigid",
+        "stubborn"
+      ]
+    },
+    "proposal": "people associate teachers with intellectual humility more strongly than they associate businesspeople with intellectual humility. This association is novel because it moves beyond simple stereotypes of altruism to examine the implicit cognitive posture associated with different professional identities. It is interesting because it contrasts the pedagogical role of the facilitator, who must be open to the student's perspective, with the corporate role of the decisive leader, who is often expected to project absolute certainty. Confirming this would demonstrate how professional roles shape our implicit expectations regarding a person's openness to being wrong.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "e214c3427597",
     "timestamp": "2026-04-26T10:51:33.791952+00:00",
     "schema_version": "autoresearch.v1",
