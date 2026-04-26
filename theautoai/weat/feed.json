@@ -1,5 +1,111 @@
 [
   {
+    "id": "7c00d8c371cb",
+    "timestamp": "2026-04-26T17:17:03.172438+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "activists vs lawyers on perceived authenticity vs strategic calculation",
+    "labels": {
+      "X": "activists",
+      "Y": "lawyers",
+      "A": "authenticity",
+      "B": "calculation"
+    },
+    "canonical_keys": {
+      "X": "activists",
+      "Y": "lawyers",
+      "A": "authenticity",
+      "B": "calculation"
+    },
+    "effect_size": -0.779150383292622,
+    "p_value": 0.03416,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "activist",
+        "protestor",
+        "rebel",
+        "campaigner",
+        "dissident",
+        "organizer",
+        "reformer",
+        "militant",
+        "agitator",
+        "marcher",
+        "demonstrator",
+        "striker",
+        "insurgent",
+        "radical",
+        "partisan"
+      ],
+      "Y_used": [
+        "lawyer",
+        "attorney",
+        "counselor",
+        "barrister",
+        "solicitor",
+        "litigator",
+        "jurist",
+        "prosecutor",
+        "defender",
+        "pleader",
+        "notary",
+        "counsel",
+        "legalist",
+        "practitioner",
+        "advocate"
+      ],
+      "A_used": [
+        "authentic",
+        "genuine",
+        "sincere",
+        "honest",
+        "raw",
+        "real",
+        "true",
+        "candid",
+        "heartfelt",
+        "natural",
+        "earnest",
+        "pure",
+        "straightforward",
+        "open",
+        "instinctive"
+      ],
+      "B_used": [
+        "calculated",
+        "strategic",
+        "formulaic",
+        "rhetorical",
+        "polished",
+        "artificial",
+        "formal",
+        "tactical",
+        "planned",
+        "rehearsed",
+        "sterile",
+        "rigid",
+        "diplomatic",
+        "contrived",
+        "mechanical"
+      ]
+    },
+    "proposal": "People associate activists with authenticity more strongly than they associate lawyers with authenticity. This association stems from the perception of activists as individuals driven by genuine, raw conviction and lawyers as professionals utilizing calculated, strategic, and formulaic rhetoric. This is novel because it explores the perceived sincerity of social change agents based on whether they operate outside or inside the legal system. Confirming this would shift our understanding of how institutional roles implicitly signal a lack of personal authenticity in public discourse.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "406d709d8557",
     "timestamp": "2026-04-26T16:34:36.282987+00:00",
     "schema_version": "autoresearch.v1",
