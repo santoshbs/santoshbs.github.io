@@ -1,5 +1,111 @@
 [
   {
+    "id": "9f29f2efb853",
+    "timestamp": "2026-04-26T17:51:47.897551+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "immigrants vs urbanites on mental toughness",
+    "labels": {
+      "X": "immigrants",
+      "Y": "urbanites",
+      "A": "resilience",
+      "B": "fragility"
+    },
+    "canonical_keys": {
+      "X": "immigrants",
+      "Y": "urbanites",
+      "A": "resilience",
+      "B": "fragility"
+    },
+    "effect_size": 0.16429353727396834,
+    "p_value": 0.66764,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "immigrant",
+        "migrant",
+        "newcomer",
+        "refugee",
+        "settler",
+        "expatriate",
+        "foreigner",
+        "outsider",
+        "emigrant",
+        "wanderer",
+        "traveler",
+        "pioneer",
+        "guest",
+        "alien",
+        "nomad"
+      ],
+      "Y_used": [
+        "urbanite",
+        "cosmopolitan",
+        "townie",
+        "commuter",
+        "pedestrian",
+        "socialite",
+        "professional",
+        "dweller",
+        "burgher",
+        "resident",
+        "inhabitant",
+        "citizen",
+        "local",
+        "tenant",
+        "clerk"
+      ],
+      "A_used": [
+        "resilient",
+        "tough",
+        "strong",
+        "gritty",
+        "durable",
+        "persistent",
+        "hardy",
+        "steadfast",
+        "enduring",
+        "tenacious",
+        "sturdy",
+        "robust",
+        "firm",
+        "unyielding",
+        "brave"
+      ],
+      "B_used": [
+        "fragile",
+        "weak",
+        "soft",
+        "delicate",
+        "vulnerable",
+        "frail",
+        "brittle",
+        "pliable",
+        "timid",
+        "sensitive",
+        "unstable",
+        "shaky",
+        "flimsy",
+        "feeble",
+        "tender"
+      ]
+    },
+    "proposal": "People associate immigrants with resilience more strongly than they associate urbanites with resilience. This proposal examines the 'immigrant grit' narrative, where newcomers are implicitly viewed as more mentally tough due to the hardships of migration. While existing literature often focuses on negative biases against immigrants, this examines a positive but potentially limiting stereotype. Confirming this association would suggest that resilience is mentally linked to the act of migration rather than the general experience of city living.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "7c00d8c371cb",
     "timestamp": "2026-04-26T17:17:03.172438+00:00",
     "schema_version": "autoresearch.v1",
