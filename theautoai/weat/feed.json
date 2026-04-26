@@ -1,5 +1,111 @@
 [
   {
+    "id": "11500877a695",
+    "timestamp": "2026-04-26T06:15:05.659812+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Christians vs Atheists on guilt versus pride",
+    "labels": {
+      "X": "Christians",
+      "Y": "Atheists",
+      "A": "guilt",
+      "B": "pride"
+    },
+    "canonical_keys": {
+      "X": "christians",
+      "Y": "atheists",
+      "A": "guilt",
+      "B": "pride"
+    },
+    "effect_size": 0.5644532582611145,
+    "p_value": 0.13115,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "believer",
+        "parishioner",
+        "devotee",
+        "disciple",
+        "congregant",
+        "priest",
+        "pastor",
+        "bishop",
+        "deacon",
+        "monk",
+        "nun",
+        "saint",
+        "layperson",
+        "worshipper",
+        "missionary"
+      ],
+      "Y_used": [
+        "atheist",
+        "skeptic",
+        "agnostic",
+        "secularist",
+        "nonbeliever",
+        "rationalist",
+        "humanist",
+        "freethinker",
+        "materialist",
+        "empiricist",
+        "dissident",
+        "iconoclast",
+        "heretic",
+        "unbeliever",
+        "nihilist"
+      ],
+      "A_used": [
+        "guilt",
+        "remorse",
+        "penitence",
+        "shame",
+        "sin",
+        "regret",
+        "sorrow",
+        "confession",
+        "atonement",
+        "contrition",
+        "repentance",
+        "fault",
+        "wrong",
+        "apology",
+        "grief"
+      ],
+      "B_used": [
+        "pride",
+        "confidence",
+        "certainty",
+        "arrogance",
+        "poise",
+        "hubris",
+        "assurance",
+        "boldness",
+        "dignity",
+        "satisfaction",
+        "triumph",
+        "vanity",
+        "smugness",
+        "security",
+        "composure"
+      ]
+    },
+    "proposal": "I propose that people associate Christians with guilt more strongly than they associate atheists with guilt. This association explores the implicit link between organized religious faith, specifically the Christian tradition of original sin and penitence, and the internalized emotional experience of moral debt. While explicit surveys may show varying levels of reported guilt across groups, this implicit measure would reveal how deeply the archetype of the 'penitent believer' is embedded in the public psyche compared to the 'secular rationalist.' Confirming this association would be important as it highlights how religious identities are mentally represented not just by belief, but by specific emotional burdens.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "25d608a92803",
     "timestamp": "2026-04-26T04:48:15.140599+00:00",
     "schema_version": "autoresearch.v1",
