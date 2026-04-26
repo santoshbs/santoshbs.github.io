@@ -1,5 +1,111 @@
 [
   {
+    "id": "388ffc90920d",
+    "timestamp": "2026-04-26T19:10:40.733857+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "politicians vs diplomats on populist appeal vs diplomatic discretion",
+    "labels": {
+      "X": "politicians",
+      "Y": "diplomats",
+      "A": "populism",
+      "B": "discretion"
+    },
+    "canonical_keys": {
+      "X": "politicians",
+      "Y": "diplomats",
+      "A": "populism",
+      "B": "discretion"
+    },
+    "effect_size": 1.5757466815028756,
+    "p_value": 2e-05,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "politician",
+        "senator",
+        "congressman",
+        "governor",
+        "mayor",
+        "legislator",
+        "representative",
+        "premier",
+        "deputy",
+        "councilor",
+        "assemblyman",
+        "candidate",
+        "campaigner",
+        "partisan",
+        "minister"
+      ],
+      "Y_used": [
+        "diplomat",
+        "ambassador",
+        "envoy",
+        "consul",
+        "attache",
+        "emissary",
+        "plenipotentiary",
+        "negotiator",
+        "mediator",
+        "legate",
+        "liaison",
+        "conciliator",
+        "interlocutor",
+        "nuncio",
+        "statesman"
+      ],
+      "A_used": [
+        "populist",
+        "rhetoric",
+        "crowd",
+        "mass",
+        "appeal",
+        "public",
+        "campaign",
+        "rally",
+        "slogan",
+        "speech",
+        "plebeian",
+        "vulgar",
+        "demagogue",
+        "popular",
+        "shout"
+      ],
+      "B_used": [
+        "discreet",
+        "subtle",
+        "private",
+        "elite",
+        "quiet",
+        "professional",
+        "nuanced",
+        "tactful",
+        "formal",
+        "reserved",
+        "clandestine",
+        "secret",
+        "polished",
+        "sophisticated",
+        "decorous"
+      ]
+    },
+    "proposal": "People associate politicians with populism more strongly than they associate diplomats with populism. This is novel because while both are high-level state actors, the domestic politician is perceived as requiring the mass appeal and rhetorical style of the electorate, whereas the diplomat is associated with discreet, elite-to-elite negotiation. This distinction is important as it would reveal whether the public mentally separates the 'representative' function of the state from its 'instrumental' foreign-policy function. Confirming this association would suggest that populism is viewed as a domestic political tool rather than a general characteristic of statecraft.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "8ce5b502b0d8",
     "timestamp": "2026-04-26T18:27:28.493414+00:00",
     "schema_version": "autoresearch.v1",
