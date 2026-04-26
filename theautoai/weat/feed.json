@@ -1,5 +1,111 @@
 [
   {
+    "id": "4d8922a54c44",
+    "timestamp": "2026-04-26T08:36:29.455080+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "musicians vs writers on Sociality vs. Solitude",
+    "labels": {
+      "X": "musicians",
+      "Y": "writers",
+      "A": "Collaboration",
+      "B": "Solitude"
+    },
+    "canonical_keys": {
+      "X": "musicians",
+      "Y": "writers",
+      "A": "collaboration",
+      "B": "solitude"
+    },
+    "effect_size": 0.7374103363453743,
+    "p_value": 0.04314,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "musician",
+        "singer",
+        "drummer",
+        "guitarist",
+        "pianist",
+        "violinist",
+        "cellist",
+        "bassist",
+        "vocalist",
+        "flutist",
+        "trumpeter",
+        "hornist",
+        "percussionist",
+        "conductor",
+        "composer"
+      ],
+      "Y_used": [
+        "writer",
+        "author",
+        "novelist",
+        "poet",
+        "playwright",
+        "dramatist",
+        "essayist",
+        "journalist",
+        "blogger",
+        "scribe",
+        "copywriter",
+        "biographer",
+        "pamphleteer",
+        "lyricist",
+        "columnist"
+      ],
+      "A_used": [
+        "together",
+        "shared",
+        "group",
+        "team",
+        "ensemble",
+        "collective",
+        "cooperative",
+        "social",
+        "joint",
+        "communal",
+        "partnership",
+        "gathering",
+        "interactive",
+        "connected",
+        "network"
+      ],
+      "B_used": [
+        "alone",
+        "solitary",
+        "independent",
+        "isolated",
+        "single",
+        "private",
+        "lonely",
+        "separate",
+        "individual",
+        "secluded",
+        "detached",
+        "withdrawn",
+        "singular",
+        "autonomous",
+        "lone"
+      ]
+    },
+    "proposal": "I propose that people associate musicians with collaboration more strongly than they associate writers with collaboration. While both are categorized as creative professionals, the public perception of music often centers on ensembles, bands, or orchestras, whereas writing is stereotypically viewed as a solitary act of creation. This association is novel because it examines structural social differences within the 'creative' super-category rather than comparing creators to non-creators. Confirming this would reveal how the perceived sociality of a professional practice influences the implicit mental representation of the people who perform that practice.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "84e1383a8acc",
     "timestamp": "2026-04-26T08:07:13.270192+00:00",
     "schema_version": "autoresearch.v1",
