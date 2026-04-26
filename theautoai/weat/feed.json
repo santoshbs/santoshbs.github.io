@@ -1,5 +1,111 @@
 [
   {
+    "id": "87a3a4bd5146",
+    "timestamp": "2026-04-26T00:39:16.497072+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "clergy vs businesspeople on vocational vs market motivation",
+    "labels": {
+      "X": "clergy",
+      "Y": "businesspeople",
+      "A": "sacrifice/altruism",
+      "B": "accumulation/profit"
+    },
+    "canonical_keys": {
+      "X": "clergy",
+      "Y": "businesspeople",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 1.9038465280584536,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "priest",
+        "pastor",
+        "minister",
+        "cleric",
+        "bishop",
+        "chaplain",
+        "monk",
+        "nun",
+        "rabbi",
+        "imam",
+        "deacon",
+        "curate",
+        "preacher",
+        "rector",
+        "vicar"
+      ],
+      "Y_used": [
+        "executive",
+        "manager",
+        "entrepreneur",
+        "trader",
+        "merchant",
+        "banker",
+        "broker",
+        "capitalist",
+        "director",
+        "owner",
+        "vendor",
+        "retailer",
+        "corporate",
+        "mogul",
+        "tycoon"
+      ],
+      "A_used": [
+        "sacrifice",
+        "service",
+        "devotion",
+        "piety",
+        "humility",
+        "asceticism",
+        "altruism",
+        "charity",
+        "fasting",
+        "frugality",
+        "renunciation",
+        "poverty",
+        "selfless",
+        "virtue",
+        "calling"
+      ],
+      "B_used": [
+        "profit",
+        "wealth",
+        "money",
+        "greed",
+        "accumulation",
+        "luxury",
+        "gain",
+        "salary",
+        "income",
+        "revenue",
+        "assets",
+        "materialism",
+        "riches",
+        "dividend",
+        "capital"
+      ]
+    },
+    "proposal": "People associate clergy with sacrifice more strongly than they associate businesspeople with sacrifice. This is interesting because it explores the implicit dichotomy between vocational labor, perceived as being driven by a calling or service, and market labor, perceived as being driven by accumulation and profit. While many businesspeople engage in philanthropy, the mental prototype of the cleric is often rooted in asceticism or the relinquishing of material wealth. Confirming this association would reveal how we implicitly assign moral values to different professional motivations.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "63dd5d422603",
     "timestamp": "2026-04-26T00:11:47.044286+00:00",
     "schema_version": "autoresearch.v1",
