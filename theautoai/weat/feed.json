@@ -1,5 +1,111 @@
 [
   {
+    "id": "e61eb526a41e",
+    "timestamp": "2026-04-26T02:45:05.428850+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "lawyers vs psychologists on Antagonism versus Supportiveness",
+    "labels": {
+      "X": "lawyers",
+      "Y": "psychologists",
+      "A": "Antagonism",
+      "B": "Supportiveness"
+    },
+    "canonical_keys": {
+      "X": "lawyers",
+      "Y": "psychologists",
+      "A": "antagonism",
+      "B": "supportiveness"
+    },
+    "effect_size": 1.4212696046891211,
+    "p_value": 3e-05,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "lawyer",
+        "attorney",
+        "solicitor",
+        "barrister",
+        "litigator",
+        "prosecutor",
+        "defender",
+        "jurist",
+        "legalist",
+        "advocate",
+        "counsel",
+        "pleader",
+        "representative",
+        "lawman",
+        "legist"
+      ],
+      "Y_used": [
+        "psychologist",
+        "therapist",
+        "psychiatrist",
+        "analyst",
+        "clinician",
+        "psychotherapist",
+        "behavioralist",
+        "counselor",
+        "shrink",
+        "specialist",
+        "healer",
+        "helper",
+        "consultant",
+        "expert",
+        "coach"
+      ],
+      "A_used": [
+        "hostile",
+        "aggressive",
+        "argumentative",
+        "confrontational",
+        "adversarial",
+        "antagonistic",
+        "quarrelsome",
+        "belligerent",
+        "combative",
+        "abrasive",
+        "contentious",
+        "oppositional",
+        "prickly",
+        "spiteful",
+        "caustic"
+      ],
+      "B_used": [
+        "supportive",
+        "helpful",
+        "caring",
+        "empathetic",
+        "compassionate",
+        "kind",
+        "nurturing",
+        "understanding",
+        "friendly",
+        "benevolent",
+        "collaborative",
+        "comforting",
+        "gentle",
+        "patient",
+        "soothing"
+      ]
+    },
+    "proposal": "I propose that people associate lawyers with antagonism more strongly than they associate psychologists with antagonism. While both professions deal with human conflict, the legal system is structurally adversarial, whereas psychology is clinically supportive. This is novel because it contrasts two high-status professional roles that both specialize in human behavior but are perceived to employ it for opposite social ends. Confirming this association would highlight how institutional roles shape implicit perceptions of personality and intent, shifting the focus from what these actors *do* to how they are *mentally represented*.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "8fa516c4b3a9",
     "timestamp": "2026-04-26T01:57:05.251079+00:00",
     "schema_version": "autoresearch.v1",
