@@ -1,5 +1,111 @@
 [
   {
+    "id": "f38b54349e20",
+    "timestamp": "2026-04-26T12:02:50.149238+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "historians vs scientists on perceived certainty and objectivity",
+    "labels": {
+      "X": "historians",
+      "Y": "scientists",
+      "A": "speculation",
+      "B": "objectivity"
+    },
+    "canonical_keys": {
+      "X": "historians",
+      "Y": "scientists",
+      "A": "speculation",
+      "B": "objectivity"
+    },
+    "effect_size": 0.8303551739348094,
+    "p_value": 0.01674,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "historian",
+        "archivist",
+        "chronicler",
+        "antiquarian",
+        "biographer",
+        "scholar",
+        "curator",
+        "annalist",
+        "paleographer",
+        "hagiographer",
+        "humanist",
+        "genealogist",
+        "archaeologist",
+        "historiographer",
+        "narrator"
+      ],
+      "Y_used": [
+        "scientist",
+        "biologist",
+        "chemist",
+        "physicist",
+        "astronomer",
+        "geologist",
+        "technician",
+        "experimentalist",
+        "theorist",
+        "mathematician",
+        "pharmacologist",
+        "geneticist",
+        "microbiologist",
+        "astrophysicist",
+        "neurologist"
+      ],
+      "A_used": [
+        "speculation",
+        "interpretation",
+        "subjective",
+        "narrative",
+        "opinion",
+        "conjecture",
+        "impression",
+        "guesswork",
+        "intuition",
+        "perspective",
+        "feeling",
+        "assumption",
+        "surmise",
+        "supposition",
+        "anecdotal"
+      ],
+      "B_used": [
+        "fact",
+        "objectivity",
+        "objective",
+        "evidence",
+        "proof",
+        "data",
+        "measurement",
+        "certainty",
+        "reality",
+        "truth",
+        "empirical",
+        "verification",
+        "precision",
+        "accuracy",
+        "observation"
+      ]
+    },
+    "proposal": "I propose that people associate historians with speculation more strongly than they associate scientists with speculation. While both disciplines rely on evidence and the construction of hypotheses, public perception often frames scientific results as objective 'facts' and historical accounts as subjective 'interpretations' or speculative narratives. This is novel because implicit association research typically compares science to art or religion rather than to another evidence-based academic discipline. Examining this association is important for understanding how society assigns different levels of perceived certainty and authority to the humanities versus the hard sciences.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "ce00c9bd4806",
     "timestamp": "2026-04-26T11:33:43.480476+00:00",
     "schema_version": "autoresearch.v1",
