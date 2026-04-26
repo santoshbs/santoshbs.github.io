@@ -1,5 +1,111 @@
 [
   {
+    "id": "84e1383a8acc",
+    "timestamp": "2026-04-26T08:07:13.270192+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "farmers vs politicians on authenticity versus artificiality",
+    "labels": {
+      "X": "farmers",
+      "Y": "politicians",
+      "A": "authentic",
+      "B": "performative"
+    },
+    "canonical_keys": {
+      "X": "farmers",
+      "Y": "politicians",
+      "A": "authentic",
+      "B": "performative"
+    },
+    "effect_size": -0.729808521378692,
+    "p_value": 0.04762,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "farmer",
+        "peasant",
+        "grower",
+        "tiller",
+        "plowman",
+        "agrarian",
+        "rancher",
+        "cultivator",
+        "husbandman",
+        "crofter",
+        "harvester",
+        "sower",
+        "planter",
+        "shepherd",
+        "herdsman"
+      ],
+      "Y_used": [
+        "politician",
+        "senator",
+        "representative",
+        "legislator",
+        "governor",
+        "minister",
+        "deputy",
+        "mayor",
+        "congressman",
+        "parliamentarian",
+        "diplomat",
+        "official",
+        "statesman",
+        "candidate",
+        "campaigner"
+      ],
+      "A_used": [
+        "honest",
+        "genuine",
+        "sincere",
+        "authentic",
+        "real",
+        "true",
+        "grounded",
+        "natural",
+        "candid",
+        "frank",
+        "straightforward",
+        "heartfelt",
+        "earnest",
+        "plain",
+        "truthful"
+      ],
+      "B_used": [
+        "strategic",
+        "performative",
+        "artificial",
+        "calculated",
+        "fake",
+        "deceptive",
+        "insincere",
+        "polished",
+        "staged",
+        "theatrical",
+        "shrewd",
+        "cunning",
+        "manipulative",
+        "superficial",
+        "curated"
+      ]
+    },
+    "proposal": "People associate farmers with authenticity more strongly than they associate politicians with authenticity. This reflects a pervasive cultural archetype of the 'salt-of-the-earth' agrarian who is seen as honest and grounded, contrasting with the perceived strategic and performative nature of political actors. This association is novel in the context of implicit testing, as authenticity is rarely the focal point of actor-category research. Confirming this would provide empirical evidence for why 'rural' identity is so frequently weaponized as a symbol of truthfulness in modern political discourse.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "c332bc7b698c",
     "timestamp": "2026-04-26T07:25:04.826387+00:00",
     "schema_version": "autoresearch.v1",
