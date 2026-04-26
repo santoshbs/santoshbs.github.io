@@ -1,5 +1,111 @@
 [
   {
+    "id": "9d58899ef1fe",
+    "timestamp": "2026-04-26T23:22:59.546974+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "historians vs journalists on temporal and analytical scale",
+    "labels": {
+      "X": "historians",
+      "Y": "journalists",
+      "A": "depth and reflection",
+      "B": "immediacy and speed"
+    },
+    "canonical_keys": {
+      "X": "historians",
+      "Y": "journalists",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 1.4547679479700713,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "historian",
+        "scholar",
+        "archivist",
+        "chronicler",
+        "researcher",
+        "academic",
+        "biographer",
+        "curator",
+        "professor",
+        "lecturer",
+        "antiquarian",
+        "genealogist",
+        "paleographer",
+        "epigraphist",
+        "medievalist"
+      ],
+      "Y_used": [
+        "journalist",
+        "reporter",
+        "correspondent",
+        "columnist",
+        "editor",
+        "anchor",
+        "broadcaster",
+        "blogger",
+        "pundit",
+        "press",
+        "stringer",
+        "freelancer",
+        "newsman",
+        "newsie",
+        "paparazzi"
+      ],
+      "A_used": [
+        "deep",
+        "profound",
+        "thorough",
+        "comprehensive",
+        "reflective",
+        "analytical",
+        "detailed",
+        "exhaustive",
+        "rigorous",
+        "learned",
+        "scholarly",
+        "complex",
+        "nuanced",
+        "meticulous",
+        "extensive"
+      ],
+      "B_used": [
+        "fast",
+        "quick",
+        "immediate",
+        "rapid",
+        "current",
+        "brief",
+        "fleeting",
+        "momentary",
+        "hasty",
+        "abrupt",
+        "prompt",
+        "sudden",
+        "cursory",
+        "superficial",
+        "ephemeral"
+      ]
+    },
+    "proposal": "People associate historians with depth more strongly than they associate journalists with depth. This association likely stems from the cultural perception of history as a reflective, long-term discipline contrasted with journalism's role as a fast-paced recorder of immediate events. This is novel because it moves beyond typical associations of bias or objectivity to examine the perceived temporal and analytical scale of these professions. Confirming this association would reveal how the public conceptually separates the 'breaking news' cycle from the 'historical record' in terms of intellectual rigor.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "318591c50d67",
     "timestamp": "2026-04-26T22:50:58.028964+00:00",
     "schema_version": "autoresearch.v1",
