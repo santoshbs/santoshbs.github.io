@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "batches_seen": 4,
-  "loans_seen": 64,
-  "last_updated": "2026-04-27T21:06:47.473929+00:00",
+  "batches_seen": 5,
+  "loans_seen": 80,
+  "last_updated": "2026-04-27T21:26:46.594904+00:00",
   "watching_for": "",
   "claims": {
     "institutional-names-slower": {
@@ -13,10 +13,10 @@
       "supporting_loans": [],
       "confidence": 0.65,
       "first_seen_batch": 1,
-      "last_updated_batch": 4,
+      "last_updated_batch": 5,
       "confidence_history": [
         [
-          4,
+          5,
           0.65
         ]
       ]
@@ -29,10 +29,10 @@
       "supporting_loans": [],
       "confidence": 0.65,
       "first_seen_batch": 1,
-      "last_updated_batch": 4,
+      "last_updated_batch": 5,
       "confidence_history": [
         [
-          4,
+          5,
           0.65
         ]
       ]
@@ -44,11 +44,11 @@
       "body": "Pitches that provide concrete details about children or household stability accelerate funding for both men and women.",
       "supporting_loans": [],
       "confidence": 0.47,
-      "first_seen_batch": 2,
-      "last_updated_batch": 4,
+      "first_seen_batch": 1,
+      "last_updated_batch": 5,
       "confidence_history": [
         [
-          4,
+          5,
           0.47
         ]
       ]
@@ -60,41 +60,63 @@
       "body": "Male borrowers who explicitly identify as single tend to fund more slowly than those who do not.",
       "supporting_loans": [],
       "confidence": 0.6,
-      "first_seen_batch": 4,
-      "last_updated_batch": 4,
+      "first_seen_batch": 3,
+      "last_updated_batch": 5,
       "confidence_history": [
         [
-          4,
+          5,
+          0.6
+        ]
+      ]
+    },
+    "environmental-protection-slower": {
+      "id": "environmental-protection-slower",
+      "bucket": "slower",
+      "title": "Mentioning environmental protection predicts slower funding regardless of gender.",
+      "body": "Pitches that focus on environmental or ecological concerns tend to fund more slowly for both men and women.",
+      "supporting_loans": [],
+      "confidence": 0.6,
+      "first_seen_batch": 5,
+      "last_updated_batch": 5,
+      "confidence_history": [
+        [
+          5,
+          0.6
+        ]
+      ]
+    },
+    "female-savings-dreams-slower": {
+      "id": "female-savings-dreams-slower",
+      "bucket": "gendered_women",
+      "title": "Female borrowers who mention dreams of saving money predict slower funding.",
+      "body": "Pitches from women that focus on the dream of saving money tend to fund more slowly than those that do not.",
+      "supporting_loans": [],
+      "confidence": 0.6,
+      "first_seen_batch": 5,
+      "last_updated_batch": 5,
+      "confidence_history": [
+        [
+          5,
           0.6
         ]
       ]
     }
   },
   "puzzles": {
-    "female-future-savings-slower": {
-      "id": "female-future-savings-slower",
-      "body": "Female borrowers mentioning dreams of saving for the future may fund slower.",
-      "first_seen_batch": 1
-    },
-    "male-brevity-faster": {
-      "id": "male-brevity-faster",
-      "body": "Shorter pitch texts may predict faster funding for male borrowers.",
-      "first_seen_batch": 1
-    },
     "hardship-gender-interaction": {
       "id": "hardship-gender-interaction",
       "body": "Details regarding personal hardships may accelerate funding for women but slow it for men.",
-      "first_seen_batch": 2
-    },
-    "male-environmental-slower": {
-      "id": "male-environmental-slower",
-      "body": "Male borrowers who focus on environmental or ecological concerns may fund slower.",
-      "first_seen_batch": 2
+      "first_seen_batch": 1
     },
     "female-technical-outcomes-faster": {
       "id": "female-technical-outcomes-faster",
       "body": "Female borrowers who detail specific technical outcomes may fund faster.",
-      "first_seen_batch": 4
+      "first_seen_batch": 3
+    },
+    "pitch-length-gender-interaction": {
+      "id": "pitch-length-gender-interaction",
+      "body": "Pitch length may accelerate funding for women while decelerating it for men.",
+      "first_seen_batch": 5
     }
   },
   "retired": {
@@ -131,6 +153,13 @@
       "title": "Male borrowers who explicitly state their marital status may see faster funding.",
       "retrospective": "Promoted and refined to a specific claim about single status slowing funding.",
       "retired_batch": 4,
+      "was_believed_batches": 0
+    },
+    "male-brevity-faster": {
+      "id": "male-brevity-faster",
+      "title": "Shorter pitch texts may predict faster funding for male borrowers.",
+      "retrospective": "Contradicted by female observation where lengthier pitches funded faster, suggesting an interaction.",
+      "retired_batch": 5,
       "was_believed_batches": 0
     }
   }
