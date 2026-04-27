@@ -1,5 +1,111 @@
 [
   {
+    "id": "11f55dd2e737",
+    "timestamp": "2026-04-27T09:57:21.570245+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "lawyers vs clergy on moral framework stability",
+    "labels": {
+      "X": "lawyers",
+      "Y": "clergy",
+      "A": "moral ambiguity",
+      "B": "moral absolute"
+    },
+    "canonical_keys": {
+      "X": "lawyers",
+      "Y": "clergy",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 1.0766967330779305,
+    "p_value": 0.00228,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "lawyer",
+        "attorney",
+        "advocate",
+        "barrister",
+        "solicitor",
+        "litigator",
+        "jurist",
+        "prosecutor",
+        "counsel",
+        "pleader",
+        "defender",
+        "legalist",
+        "proctor",
+        "mediator",
+        "arbitrator"
+      ],
+      "Y_used": [
+        "priest",
+        "pastor",
+        "minister",
+        "rector",
+        "vicar",
+        "bishop",
+        "cleric",
+        "chaplain",
+        "rabbi",
+        "imam",
+        "monk",
+        "nun",
+        "deacon",
+        "curate",
+        "preacher"
+      ],
+      "A_used": [
+        "ambiguous",
+        "gray",
+        "strategic",
+        "flexible",
+        "subjective",
+        "nuanced",
+        "relative",
+        "shifting",
+        "equivocal",
+        "vague",
+        "fluid",
+        "opportunistic",
+        "calculated",
+        "evasive",
+        "complex"
+      ],
+      "B_used": [
+        "absolute",
+        "certain",
+        "fixed",
+        "objective",
+        "truthful",
+        "clear",
+        "definite",
+        "righteous",
+        "principled",
+        "unwavering",
+        "constant",
+        "dogmatic",
+        "precise",
+        "stern",
+        "pure"
+      ]
+    },
+    "proposal": "People associate lawyers with moral ambiguity more strongly than they associate clergy with moral ambiguity. While both roles involve interpreting rules and guiding individuals through ethical crises, the legal profession is implicitly linked to the strategic use of 'grey areas' and adversarial interpretations of truth, whereas the clergy are linked to the preservation of absolute moral truths. This association is novel because it moves beyond simple stereotypes of honesty or dishonesty to examine the perceived structural nature of the moral frameworks these actors inhabit. Confirming this differential would shift our understanding of how the public conceptually distinguishes between professional ethics and spiritual morality.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "e18e8337dfce",
     "timestamp": "2026-04-27T09:02:54.069132+00:00",
     "schema_version": "autoresearch.v1",
