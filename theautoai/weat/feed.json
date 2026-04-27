@@ -1,5 +1,111 @@
 [
   {
+    "id": "0d93f5a5b8cb",
+    "timestamp": "2026-04-27T12:38:54.231298+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "scientists vs engineers on theoretical vs practical orientation",
+    "labels": {
+      "X": "scientists",
+      "Y": "engineers",
+      "A": "theoretical",
+      "B": "practical"
+    },
+    "canonical_keys": {
+      "X": "scientists",
+      "Y": "engineers",
+      "A": "theoretical",
+      "B": "practical"
+    },
+    "effect_size": 1.8079229029237807,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "scientist",
+        "physicist",
+        "chemist",
+        "biologist",
+        "astronomer",
+        "researcher",
+        "academic",
+        "theorist",
+        "scholar",
+        "mathematician",
+        "geneticist",
+        "geologist",
+        "paleontologist",
+        "microbiologist",
+        "neurologist"
+      ],
+      "Y_used": [
+        "engineer",
+        "technician",
+        "programmer",
+        "developer",
+        "architect",
+        "builder",
+        "operator",
+        "fabricator",
+        "machinist",
+        "contractor",
+        "drafter",
+        "welder",
+        "artisan",
+        "electrician",
+        "technologist"
+      ],
+      "A_used": [
+        "theory",
+        "abstract",
+        "conceptual",
+        "principle",
+        "hypothesis",
+        "idea",
+        "thought",
+        "mental",
+        "formal",
+        "symbolic",
+        "philosophical",
+        "speculative",
+        "hypothetical",
+        "intangible",
+        "intellectual"
+      ],
+      "B_used": [
+        "practice",
+        "concrete",
+        "applied",
+        "utility",
+        "function",
+        "tool",
+        "product",
+        "result",
+        "execution",
+        "pragmatic",
+        "tangible",
+        "usable",
+        "operational",
+        "efficient",
+        "material"
+      ]
+    },
+    "proposal": "people associate scientists with theoreticality more strongly than they associate engineers with theoreticality. While both groups are associated with STEM fields and technical expertise, current discourse often frames the scientist as the seeker of abstract principles and the engineer as the seeker of practical applications. Examining this differential association is novel because it moves beyond the basic 'logic vs. creativity' dichotomy to probe the specific mental boundary between basic and applied science. Confirming this would clarify how the public differentiates between two closely related professional identities based on their perceived cognitive orientation.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "01bed99647fb",
     "timestamp": "2026-04-27T11:58:37.405258+00:00",
     "schema_version": "autoresearch.v1",
