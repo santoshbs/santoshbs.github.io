@@ -1,5 +1,111 @@
 [
   {
+    "id": "efb591ea3840",
+    "timestamp": "2026-04-27T03:07:11.138734+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "diplomats vs soldiers on ambiguity tolerance",
+    "labels": {
+      "X": "diplomats",
+      "Y": "soldiers",
+      "A": "ambiguity tolerance",
+      "B": "certainty"
+    },
+    "canonical_keys": {
+      "X": "diplomats",
+      "Y": "soldiers",
+      "A": "",
+      "B": "certainty"
+    },
+    "effect_size": 0.21975578327634948,
+    "p_value": 0.56608,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "diplomat",
+        "ambassador",
+        "envoy",
+        "consul",
+        "negotiator",
+        "mediator",
+        "emissary",
+        "attache",
+        "delegate",
+        "representative",
+        "liaison",
+        "statesman",
+        "official",
+        "minister",
+        "arbiter"
+      ],
+      "Y_used": [
+        "soldier",
+        "trooper",
+        "marine",
+        "infantryman",
+        "sergeant",
+        "captain",
+        "lieutenant",
+        "colonel",
+        "general",
+        "warrior",
+        "combatant",
+        "guard",
+        "sentinel",
+        "mercenary",
+        "private"
+      ],
+      "A_used": [
+        "vague",
+        "nuanced",
+        "complex",
+        "flexible",
+        "ambiguous",
+        "subtle",
+        "indirect",
+        "gray",
+        "uncertain",
+        "open",
+        "fluid",
+        "indeterminate",
+        "adaptable",
+        "oblique",
+        "multifarious"
+      ],
+      "B_used": [
+        "clear",
+        "precise",
+        "direct",
+        "definite",
+        "rigid",
+        "certain",
+        "exact",
+        "explicit",
+        "concrete",
+        "absolute",
+        "firm",
+        "sharp",
+        "unambiguous",
+        "straightforward",
+        "decisive"
+      ]
+    },
+    "proposal": "People associate diplomats with ambiguity tolerance more strongly than they associate soldiers with ambiguity tolerance. This association likely stems from the divergent professional requirements of the two roles: diplomacy requires navigating 'grey zones' and sustaining conflicting narratives, while military operations prioritize clear directives and the elimination of ambiguity to ensure tactical efficiency. This probe is novel because it examines a cognitive trait rather than the more common behavioral dichotomy of peace versus war. Confirming this association would reveal how institutional roles are implicitly linked to specific cognitive styles in the public imagination.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "f6da4be7d268",
     "timestamp": "2026-04-27T02:26:43.651102+00:00",
     "schema_version": "autoresearch.v1",
