@@ -1,5 +1,111 @@
 [
   {
+    "id": "5024fe39359c",
+    "timestamp": "2026-04-27T01:53:07.677960+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "farmers vs doctors on modesty versus prestige",
+    "labels": {
+      "X": "farmers",
+      "Y": "doctors",
+      "A": "humility",
+      "B": "prestige"
+    },
+    "canonical_keys": {
+      "X": "farmers",
+      "Y": "doctors",
+      "A": "humility",
+      "B": "prestige"
+    },
+    "effect_size": -0.1577393238093024,
+    "p_value": 0.67963,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "farmer",
+        "grower",
+        "rancher",
+        "cultivator",
+        "tiller",
+        "harvester",
+        "shepherd",
+        "herdsman",
+        "peasant",
+        "stockman",
+        "cropper",
+        "planter",
+        "vintner",
+        "orchardist",
+        "laborer"
+      ],
+      "Y_used": [
+        "doctor",
+        "physician",
+        "surgeon",
+        "medic",
+        "clinician",
+        "psychiatrist",
+        "oncologist",
+        "cardiologist",
+        "pediatrician",
+        "resident",
+        "intern",
+        "specialist",
+        "therapist",
+        "optometrist",
+        "internist"
+      ],
+      "A_used": [
+        "humble",
+        "modest",
+        "unassuming",
+        "meek",
+        "lowly",
+        "simple",
+        "plain",
+        "deferential",
+        "respectful",
+        "quiet",
+        "gentle",
+        "shy",
+        "reserved",
+        "unpretentious",
+        "mild"
+      ],
+      "B_used": [
+        "proud",
+        "arrogant",
+        "haughty",
+        "vain",
+        "pompous",
+        "prestigious",
+        "superior",
+        "conceited",
+        "snobbish",
+        "elite",
+        "grand",
+        "imposing",
+        "lofty",
+        "stately",
+        "ostentatious"
+      ]
+    },
+    "proposal": "People associate farmers with humility more strongly than they associate doctors with humility. While stereotypes about the modesty of rural workers and the prestige of medical professionals exist, the implicit strength of this association has not been systematically examined in academic literature. This research would be interesting as it would reveal how professional prestige and institutional authority are cognitively linked to a perceived lack of humility. Confirming this association would demonstrate how social class and occupational status are mentally represented as being in opposition to personal modesty.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "7ac62b108da1",
     "timestamp": "2026-04-27T01:09:45.681096+00:00",
     "schema_version": "autoresearch.v1",
