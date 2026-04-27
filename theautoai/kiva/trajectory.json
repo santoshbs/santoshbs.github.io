@@ -10,11 +10,41 @@
     "alive": false
   },
   {
+    "id": "men-family-wellbeing",
+    "title": "Male borrowers who focus on children or family well-being may fund faster.",
+    "bucket": "",
+    "birth_batch": 0,
+    "death_batch": 3,
+    "last_batch": 3,
+    "confidence": 0,
+    "alive": false
+  },
+  {
+    "id": "female-specific-ages-faster",
+    "title": "Female borrowers who include specific ages for themselves or their children may fund faster.",
+    "bucket": "",
+    "birth_batch": 0,
+    "death_batch": 3,
+    "last_batch": 3,
+    "confidence": 0,
+    "alive": false
+  },
+  {
+    "id": "male-hardship-details-slower",
+    "title": "Male borrowers who provide extensive details on location or personal hardships may fund slower.",
+    "bucket": "",
+    "birth_batch": 0,
+    "death_batch": 3,
+    "last_batch": 3,
+    "confidence": 0,
+    "alive": false
+  },
+  {
     "id": "institutional-names-slower",
     "title": "Mentioning specific institutional or brand names predicts slower funding regardless of gender.",
     "bucket": "slower",
     "birth_batch": 1,
-    "last_batch": 2,
+    "last_batch": 3,
     "confidence": 0.65,
     "peak_confidence": 0.65,
     "alive": true
@@ -23,10 +53,20 @@
     "id": "professional-experience-faster",
     "title": "Mentioning specific years of professional experience predicts faster funding regardless of gender.",
     "bucket": "faster",
-    "birth_batch": 2,
-    "last_batch": 2,
+    "birth_batch": 1,
+    "last_batch": 3,
     "confidence": 0.6,
     "peak_confidence": 0.6,
+    "alive": true
+  },
+  {
+    "id": "family-details-faster",
+    "title": "Mentioning specific family details predicts faster funding regardless of gender.",
+    "bucket": "faster",
+    "birth_batch": 3,
+    "last_batch": 3,
+    "confidence": 0.62,
+    "peak_confidence": 0.62,
     "alive": true
   }
 ]
