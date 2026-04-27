@@ -1,5 +1,111 @@
 [
   {
+    "id": "8bb322999148",
+    "timestamp": "2026-04-27T07:38:15.199582+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "athletes vs businesspeople on accountability versus opacity",
+    "labels": {
+      "X": "athletes",
+      "Y": "businesspeople",
+      "A": "Accountability",
+      "B": "Opacity"
+    },
+    "canonical_keys": {
+      "X": "athletes",
+      "Y": "businesspeople",
+      "A": "accountability",
+      "B": "opacity"
+    },
+    "effect_size": -1.3351918682412025,
+    "p_value": 7e-05,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "athlete",
+        "player",
+        "runner",
+        "swimmer",
+        "golfer",
+        "pitcher",
+        "batter",
+        "quarterback",
+        "striker",
+        "defender",
+        "gymnast",
+        "skater",
+        "cyclist",
+        "wrestler",
+        "boxer"
+      ],
+      "Y_used": [
+        "executive",
+        "manager",
+        "director",
+        "entrepreneur",
+        "trader",
+        "banker",
+        "accountant",
+        "consultant",
+        "officer",
+        "partner",
+        "proprietor",
+        "employee",
+        "salesman",
+        "clerk",
+        "supervisor"
+      ],
+      "A_used": [
+        "accountable",
+        "responsible",
+        "transparent",
+        "visible",
+        "open",
+        "honest",
+        "direct",
+        "clear",
+        "observable",
+        "public",
+        "evident",
+        "manifest",
+        "verifiable",
+        "definite",
+        "certain"
+      ],
+      "B_used": [
+        "opaque",
+        "hidden",
+        "secret",
+        "evasive",
+        "obscure",
+        "vague",
+        "deferred",
+        "indirect",
+        "ambiguous",
+        "covert",
+        "stealthy",
+        "elusive",
+        "shadowy",
+        "unclear",
+        "masked"
+      ]
+    },
+    "proposal": "People associate athletes with accountability more strongly than they associate businesspeople with accountability. This proposal explores the implicit contrast between the public, immediate feedback loop of athletic performance and the often opaque, deferred responsibility of corporate leadership. It is novel because it shifts the focus from typical stereotypes of intelligence or greed toward the perceived visibility of failure. Confirming this would suggest that people mentally represent athletic success as more directly tied to individual effort and responsibility than business success.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "9e72504fd000",
     "timestamp": "2026-04-27T07:07:13.211550+00:00",
     "schema_version": "autoresearch.v1",
