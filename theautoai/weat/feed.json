@@ -1,5 +1,111 @@
 [
   {
+    "id": "6580e5eea2fe",
+    "timestamp": "2026-04-27T15:07:36.897648+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "philosophers vs historians on conceptual exploration versus empirical evidence",
+    "labels": {
+      "X": "philosophers",
+      "Y": "historians",
+      "A": "speculation",
+      "B": "evidence"
+    },
+    "canonical_keys": {
+      "X": "philosophers",
+      "Y": "historians",
+      "A": "speculation",
+      "B": "evidence"
+    },
+    "effect_size": 1.7402815013036097,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "philosopher",
+        "ethicist",
+        "logician",
+        "metaphysician",
+        "epistemologist",
+        "thinker",
+        "theorist",
+        "dialectician",
+        "sage",
+        "rhetorician",
+        "phenomenologist",
+        "rationalist",
+        "idealist",
+        "ontologist",
+        "conceptualist"
+      ],
+      "Y_used": [
+        "historian",
+        "archivist",
+        "chronicler",
+        "antiquarian",
+        "curator",
+        "annalist",
+        "biographer",
+        "researcher",
+        "genealogist",
+        "historiographer",
+        "documentarian",
+        "scribe",
+        "clerk",
+        "cataloger",
+        "analyst"
+      ],
+      "A_used": [
+        "speculation",
+        "theory",
+        "abstraction",
+        "conjecture",
+        "hypothesis",
+        "concept",
+        "idea",
+        "thought",
+        "logic",
+        "imagination",
+        "intuition",
+        "premise",
+        "postulate",
+        "supposition",
+        "pondering"
+      ],
+      "B_used": [
+        "evidence",
+        "fact",
+        "archive",
+        "document",
+        "record",
+        "data",
+        "proof",
+        "empirical",
+        "source",
+        "chronicle",
+        "artifact",
+        "witness",
+        "detail",
+        "reality",
+        "verification"
+      ]
+    },
+    "proposal": "People associate philosophers with speculation more strongly than they associate historians with speculation. This association is novel because while both are academic humanities roles, the distinction between the philosopher's conceptual exploration and the historian's archival evidence is rarely tested as an implicit association. It is interesting because it reveals whether the public perceives the humanities as a monolith or as a divide between 'pure thought' and 'recorded fact.' Confirming this would shift our understanding of how intellectual roles are categorized based on their perceived relationship with empirical evidence.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "e641c12822f5",
     "timestamp": "2026-04-27T14:12:59.787011+00:00",
     "schema_version": "autoresearch.v1",
