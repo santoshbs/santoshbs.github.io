@@ -1,5 +1,111 @@
 [
   {
+    "id": "31228c4f962b",
+    "timestamp": "2026-04-27T06:17:38.979398+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "philosophers vs psychologists on theory versus evidence",
+    "labels": {
+      "X": "philosophers",
+      "Y": "psychologists",
+      "A": "speculative",
+      "B": "empirical"
+    },
+    "canonical_keys": {
+      "X": "philosophers",
+      "Y": "psychologists",
+      "A": "speculative",
+      "B": "empirical"
+    },
+    "effect_size": 1.1442588775762887,
+    "p_value": 0.00132,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "philosopher",
+        "thinker",
+        "ethicist",
+        "logician",
+        "metaphysician",
+        "ontologist",
+        "theorist",
+        "academic",
+        "sage",
+        "intellectual",
+        "rhetorician",
+        "dialectician",
+        "sophist",
+        "epistemologist",
+        "phenomenologist"
+      ],
+      "Y_used": [
+        "psychologist",
+        "therapist",
+        "clinician",
+        "psychiatrist",
+        "behaviorist",
+        "analyst",
+        "counselor",
+        "practitioner",
+        "researcher",
+        "scientist",
+        "psychotherapist",
+        "neuropsychologist",
+        "experimentalist",
+        "psychoanalyst",
+        "psychometrician"
+      ],
+      "A_used": [
+        "speculative",
+        "theoretical",
+        "abstract",
+        "conceptual",
+        "hypothetical",
+        "conjectural",
+        "ideal",
+        "imaginative",
+        "contemplative",
+        "intuitive",
+        "visionary",
+        "meditative",
+        "ethereal",
+        "arcane",
+        "philosophical"
+      ],
+      "B_used": [
+        "empirical",
+        "scientific",
+        "factual",
+        "evidential",
+        "observable",
+        "clinical",
+        "practical",
+        "measurable",
+        "quantitative",
+        "objective",
+        "experimental",
+        "verified",
+        "tangible",
+        "concrete",
+        "material"
+      ]
+    },
+    "proposal": "People associate philosophers with speculation more strongly than they associate psychologists with speculation. While both categories are concerned with the human mind and existence, psychologists are implicitly linked to empirical evidence, clinical data, and scientific validation. In contrast, philosophers are viewed as operating in a realm of theoretical conjecture and abstract reasoning. This association is novel as it distinguishes between two similarly 'intellectual' roles based on the perceived role of evidence versus theory in their respective methods.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "22e1f085f448",
     "timestamp": "2026-04-27T05:32:49.222023+00:00",
     "schema_version": "autoresearch.v1",
