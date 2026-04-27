@@ -1,5 +1,111 @@
 [
   {
+    "id": "3e590987b908",
+    "timestamp": "2026-04-27T22:58:53.598434+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "protesters vs politicians on conviction versus pragmatism",
+    "labels": {
+      "X": "protesters",
+      "Y": "politicians",
+      "A": "conviction",
+      "B": "pragmatism"
+    },
+    "canonical_keys": {
+      "X": "protesters",
+      "Y": "politicians",
+      "A": "conviction",
+      "B": "pragmatism"
+    },
+    "effect_size": 1.0348556286075585,
+    "p_value": 0.00288,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "protester",
+        "activist",
+        "demonstrator",
+        "rebel",
+        "marcher",
+        "agitator",
+        "dissident",
+        "insurgent",
+        "campaigner",
+        "striker",
+        "objector",
+        "militant",
+        "rioter",
+        "picket",
+        "vigilante"
+      ],
+      "Y_used": [
+        "politician",
+        "senator",
+        "governor",
+        "mayor",
+        "representative",
+        "legislator",
+        "minister",
+        "official",
+        "diplomat",
+        "bureaucrat",
+        "president",
+        "councilor",
+        "delegate",
+        "statesman",
+        "lobbyist"
+      ],
+      "A_used": [
+        "conviction",
+        "belief",
+        "ideal",
+        "passion",
+        "principle",
+        "faith",
+        "purity",
+        "zeal",
+        "devotion",
+        "sincerity",
+        "loyalty",
+        "steadfastness",
+        "earnestness",
+        "dogmatism",
+        "rigidity"
+      ],
+      "B_used": [
+        "pragmatism",
+        "compromise",
+        "strategy",
+        "flexibility",
+        "opportunism",
+        "utility",
+        "practicality",
+        "calculation",
+        "maneuver",
+        "diplomacy",
+        "expediency",
+        "realism",
+        "tact",
+        "nuance",
+        "moderation"
+      ]
+    },
+    "proposal": "People associate protesters with conviction more strongly than they associate politicians with conviction. This association is novel because it focuses on the perceived internal strength of belief rather than the external legality or efficacy of the actors' methods. It is interesting because it captures the dichotomy between the 'idealist' and the 'pragmatist' in the public imagination. Confirming this would demonstrate that the public implicitly views political office as a role that requires the sacrifice of personal conviction for the sake of strategic compromise.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "acf3fdab1b8f",
     "timestamp": "2026-04-27T22:22:54.603160+00:00",
     "schema_version": "autoresearch.v1",
