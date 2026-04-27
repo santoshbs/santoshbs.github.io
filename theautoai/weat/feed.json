@@ -1,5 +1,111 @@
 [
   {
+    "id": "f6da4be7d268",
+    "timestamp": "2026-04-27T02:26:43.651102+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "businesspeople vs politicians on operational efficiency",
+    "labels": {
+      "X": "businesspeople",
+      "Y": "politicians",
+      "A": "efficiency",
+      "B": "inefficiency"
+    },
+    "canonical_keys": {
+      "X": "businesspeople",
+      "Y": "politicians",
+      "A": "efficiency",
+      "B": "inefficiency"
+    },
+    "effect_size": 0.9250111275999064,
+    "p_value": 0.01135,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "businessman",
+        "businesswoman",
+        "executive",
+        "manager",
+        "entrepreneur",
+        "director",
+        "trader",
+        "merchant",
+        "vendor",
+        "salesman",
+        "broker",
+        "owner",
+        "capitalist",
+        "banker",
+        "accountant"
+      ],
+      "Y_used": [
+        "politician",
+        "senator",
+        "governor",
+        "mayor",
+        "representative",
+        "deputy",
+        "minister",
+        "chancellor",
+        "president",
+        "legislator",
+        "diplomat",
+        "councillor",
+        "official",
+        "statesman",
+        "lawmaker"
+      ],
+      "A_used": [
+        "efficient",
+        "fast",
+        "productive",
+        "streamlined",
+        "effective",
+        "quick",
+        "organized",
+        "prompt",
+        "optimized",
+        "agile",
+        "capable",
+        "smooth",
+        "swift",
+        "brisk",
+        "direct"
+      ],
+      "B_used": [
+        "inefficient",
+        "slow",
+        "wasteful",
+        "bureaucratic",
+        "sluggish",
+        "clumsy",
+        "redundant",
+        "tedious",
+        "ponderous",
+        "lagging",
+        "delayed",
+        "cumbersome",
+        "disorganized",
+        "messy",
+        "inert"
+      ]
+    },
+    "proposal": "I propose that people associate businesspeople with efficiency more strongly than they associate politicians with efficiency. While the idea that the private sector is more efficient than the public sector is a common explicit political talking point, examining this as an implicit association would reveal the depth of this systemic bias. This is novel because most research on political stereotypes focuses on honesty or ideology rather than operational efficiency. Confirming this association would provide insight into the cognitive foundations of the 'government-as-a-business' mindset.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "5024fe39359c",
     "timestamp": "2026-04-27T01:53:07.677960+00:00",
     "schema_version": "autoresearch.v1",
