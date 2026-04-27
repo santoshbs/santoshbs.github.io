@@ -1,5 +1,111 @@
 [
   {
+    "id": "e641c12822f5",
+    "timestamp": "2026-04-27T14:12:59.787011+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "workers vs professionals on genuineness versus artifice",
+    "labels": {
+      "X": "workers",
+      "Y": "professionals",
+      "A": "authenticity",
+      "B": "artifice"
+    },
+    "canonical_keys": {
+      "X": "workers",
+      "Y": "professionals",
+      "A": "authenticity",
+      "B": "artifice"
+    },
+    "effect_size": -0.6197020778980381,
+    "p_value": 0.0949,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "laborer",
+        "worker",
+        "plumber",
+        "welder",
+        "builder",
+        "trucker",
+        "mechanic",
+        "carpenter",
+        "miner",
+        "farmer",
+        "janitor",
+        "driver",
+        "stevedore",
+        "mason",
+        "painter"
+      ],
+      "Y_used": [
+        "lawyer",
+        "doctor",
+        "manager",
+        "executive",
+        "consultant",
+        "accountant",
+        "analyst",
+        "banker",
+        "architect",
+        "engineer",
+        "professor",
+        "director",
+        "officer",
+        "specialist",
+        "administrator"
+      ],
+      "A_used": [
+        "genuine",
+        "sincere",
+        "honest",
+        "real",
+        "true",
+        "natural",
+        "candid",
+        "raw",
+        "authentic",
+        "hearty",
+        "plain",
+        "simple",
+        "direct",
+        "open",
+        "frank"
+      ],
+      "B_used": [
+        "performative",
+        "curated",
+        "fake",
+        "artificial",
+        "staged",
+        "polished",
+        "formal",
+        "superficial",
+        "calculated",
+        "synthetic",
+        "manicured",
+        "pretentious",
+        "facade",
+        "mask",
+        "veneer"
+      ]
+    },
+    "proposal": "People associate workers with authenticity more strongly than they associate professionals with authenticity. This proposal examines the implicit class-based stereotype of the 'salt-of-the-earth' laborer versus the 'performative' or 'curated' professional. It is novel because most research on these groups focuses on competence or wealth, rather than the perceived genuineness of their identities. Confirming this association would provide insight into how social class continues to shape perceptions of sincerity and artifice in contemporary professional life.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "1ec2c74f60ef",
     "timestamp": "2026-04-27T13:27:11.536541+00:00",
     "schema_version": "autoresearch.v1",
