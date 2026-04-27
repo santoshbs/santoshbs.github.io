@@ -1,5 +1,111 @@
 [
   {
+    "id": "82bc949f82b7",
+    "timestamp": "2026-04-27T00:05:19.009740+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "bureaucrats vs activists on emotional availability",
+    "labels": {
+      "X": "bureaucrats",
+      "Y": "activists",
+      "A": "detachment",
+      "B": "passion"
+    },
+    "canonical_keys": {
+      "X": "bureaucrats",
+      "Y": "activists",
+      "A": "detachment",
+      "B": "passion"
+    },
+    "effect_size": 1.2010189053877616,
+    "p_value": 0.00045,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "official",
+        "clerk",
+        "administrator",
+        "manager",
+        "director",
+        "regulator",
+        "functionary",
+        "bureaucrat",
+        "officer",
+        "appointee",
+        "agent",
+        "employee",
+        "supervisor",
+        "coordinator",
+        "executive"
+      ],
+      "Y_used": [
+        "protester",
+        "advocate",
+        "campaigner",
+        "reformer",
+        "militant",
+        "organizer",
+        "rebel",
+        "agitator",
+        "dissident",
+        "radical",
+        "lobbyist",
+        "crusader",
+        "petitioner",
+        "volunteer",
+        "partisan"
+      ],
+      "A_used": [
+        "cold",
+        "detached",
+        "impersonal",
+        "neutral",
+        "distant",
+        "objective",
+        "formal",
+        "indifferent",
+        "aloof",
+        "robotic",
+        "stoic",
+        "reserved",
+        "dispassionate",
+        "mechanical",
+        "unfeeling"
+      ],
+      "B_used": [
+        "passionate",
+        "warm",
+        "emotional",
+        "fervent",
+        "zealous",
+        "ardent",
+        "enthusiastic",
+        "caring",
+        "empathetic",
+        "fiery",
+        "spirited",
+        "intense",
+        "eager",
+        "devoted",
+        "heartfelt"
+      ]
+    },
+    "proposal": "People associate bureaucrats with detachment more strongly than they associate activists with detachment. This association reflects the cultural stereotype of the 'impersonal' civil servant versus the 'passionate' advocate. While existing research often focuses on the power dynamics between these groups, examining the implicit association with detachment is novel because it probes the perceived emotional availability of the actor. Confirming this would illustrate how the public mentally represents the fundamental tension between institutional stability and social change as a conflict between coldness and warmth.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "9d58899ef1fe",
     "timestamp": "2026-04-26T23:22:59.546974+00:00",
     "schema_version": "autoresearch.v1",
