@@ -1,5 +1,111 @@
 [
   {
+    "id": "1ec2c74f60ef",
+    "timestamp": "2026-04-27T13:27:11.536541+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "doctors vs psychologists on reductionism vs holism",
+    "labels": {
+      "X": "doctors",
+      "Y": "psychologists",
+      "A": "reductionism",
+      "B": "holism"
+    },
+    "canonical_keys": {
+      "X": "doctors",
+      "Y": "psychologists",
+      "A": "reductionism",
+      "B": "holism"
+    },
+    "effect_size": 0.3726302375654703,
+    "p_value": 0.32277,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "doctor",
+        "physician",
+        "surgeon",
+        "intern",
+        "resident",
+        "pediatrician",
+        "oncologist",
+        "cardiologist",
+        "dermatologist",
+        "radiologist",
+        "neurologist",
+        "urologist",
+        "optometrist",
+        "podiatrist",
+        "psychiatrist"
+      ],
+      "Y_used": [
+        "psychologist",
+        "therapist",
+        "counselor",
+        "analyst",
+        "shrink",
+        "psychoanalyst",
+        "psychotherapist",
+        "behaviorist",
+        "cognitivist",
+        "humanist",
+        "facilitator",
+        "practitioner",
+        "clinician",
+        "coach",
+        "existentialist"
+      ],
+      "A_used": [
+        "reductionist",
+        "biological",
+        "discrete",
+        "isolated",
+        "mechanistic",
+        "atomistic",
+        "component",
+        "elemental",
+        "specific",
+        "narrow",
+        "fragmented",
+        "linear",
+        "simple",
+        "part",
+        "molecular"
+      ],
+      "B_used": [
+        "holistic",
+        "systemic",
+        "integrated",
+        "comprehensive",
+        "global",
+        "complex",
+        "interconnected",
+        "unified",
+        "broad",
+        "general",
+        "synergistic",
+        "overall",
+        "whole",
+        "inclusive",
+        "relational"
+      ]
+    },
+    "proposal": "People associate doctors with reductionism more strongly than they associate psychologists with reductionism. This association examines the implicit perception that medical doctors view health as a series of discrete biological malfunctions to be isolated, whereas psychologists are perceived as adopting more holistic or systemic perspectives. This is novel because most research on these groups focuses on prestige or gender rather than their perceived philosophical approach to healing. Confirming this would provide insight into the public's conceptual divide between the 'medical model' and the 'biopsychosocial model' of health.",
+    "iterations": 3,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "0d93f5a5b8cb",
     "timestamp": "2026-04-27T12:38:54.231298+00:00",
     "schema_version": "autoresearch.v1",
