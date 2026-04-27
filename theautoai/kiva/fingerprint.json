@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "batches_seen": 0,
+  "batches_seen": 2,
   "loans_seen": 0,
-  "last_updated": "2026-04-27T17:47:46.458739+00:00",
+  "last_updated": "2026-04-27T18:07:58.366942+00:00",
   "watching_for": "",
   "claims": {
     "institutional-names-slower": {
@@ -11,23 +11,34 @@
       "title": "Mentioning specific institutional or brand names predicts slower funding regardless of gender.",
       "body": "Pitches that reference specific financial institutions or brands tend to fund more slowly for both men and women.",
       "supporting_loans": [],
-      "confidence": 0.6,
+      "confidence": 0.65,
       "first_seen_batch": 1,
-      "last_updated_batch": 0,
+      "last_updated_batch": 2,
       "confidence_history": [
         [
-          0,
+          2,
+          0.65
+        ]
+      ]
+    },
+    "professional-experience-faster": {
+      "id": "professional-experience-faster",
+      "bucket": "faster",
+      "title": "Mentioning specific years of professional experience predicts faster funding regardless of gender.",
+      "body": "Quantifying professional experience or tenure in a field accelerates the funding process for both men and women.",
+      "supporting_loans": [],
+      "confidence": 0.6,
+      "first_seen_batch": 2,
+      "last_updated_batch": 2,
+      "confidence_history": [
+        [
+          2,
           0.6
         ]
       ]
     }
   },
   "puzzles": {
-    "women-assets-experience": {
-      "id": "women-assets-experience",
-      "body": "Female borrowers who list specific assets or professional backgrounds may fund faster.",
-      "first_seen_batch": 1
-    },
     "men-marital-status": {
       "id": "men-marital-status",
       "body": "Male borrowers who explicitly state their marital status may see faster funding.",
@@ -37,7 +48,35 @@
       "id": "men-family-wellbeing",
       "body": "Male borrowers who focus on children or family well-being may fund faster.",
       "first_seen_batch": 1
+    },
+    "female-specific-ages-faster": {
+      "id": "female-specific-ages-faster",
+      "body": "Female borrowers who include specific ages for themselves or their children may fund faster.",
+      "first_seen_batch": 2
+    },
+    "female-future-savings-slower": {
+      "id": "female-future-savings-slower",
+      "body": "Female borrowers mentioning dreams of saving for the future may fund slower.",
+      "first_seen_batch": 2
+    },
+    "male-hardship-details-slower": {
+      "id": "male-hardship-details-slower",
+      "body": "Male borrowers who provide extensive details on location or personal hardships may fund slower.",
+      "first_seen_batch": 2
+    },
+    "male-brevity-faster": {
+      "id": "male-brevity-faster",
+      "body": "Shorter pitch texts may predict faster funding for male borrowers.",
+      "first_seen_batch": 2
     }
   },
-  "retired": {}
+  "retired": {
+    "women-assets-experience": {
+      "id": "women-assets-experience",
+      "title": "Female borrowers who list specific assets or professional backgrounds may fund faster.",
+      "retrospective": "Promoted and generalized to a gender-neutral claim after corroboration in male pairs.",
+      "retired_batch": 2,
+      "was_believed_batches": 0
+    }
+  }
 }
