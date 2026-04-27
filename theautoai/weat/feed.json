@@ -1,5 +1,113 @@
 [
   {
+    "id": "22e1f085f448",
+    "timestamp": "2026-04-27T05:32:49.222023+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "aristocrats vs bourgeoisie on tradition versus modernity",
+    "labels": {
+      "X": "aristocrats",
+      "Y": "bourgeoisie",
+      "A": "tradition",
+      "B": "modernity"
+    },
+    "canonical_keys": {
+      "X": "aristocrats",
+      "Y": "bourgeoisie",
+      "A": "tradition",
+      "B": "modernity"
+    },
+    "effect_size": 1.1623226177596275,
+    "p_value": 0.00095,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "noble",
+        "lord",
+        "duke",
+        "count",
+        "baron",
+        "peer",
+        "royal",
+        "monarch",
+        "prince",
+        "princess",
+        "queen",
+        "king",
+        "knight",
+        "courtier",
+        "patrician",
+        "gentry",
+        "sovereign"
+      ],
+      "Y_used": [
+        "merchant",
+        "capitalist",
+        "bourgeois",
+        "trader",
+        "vendor",
+        "entrepreneur",
+        "professional",
+        "burgher",
+        "financier",
+        "banker",
+        "investor",
+        "manager",
+        "clerk",
+        "broker",
+        "wholesaler"
+      ],
+      "A_used": [
+        "heritage",
+        "custom",
+        "lineage",
+        "ancestor",
+        "ancient",
+        "classic",
+        "ritual",
+        "legacy",
+        "antiquity",
+        "ancestral",
+        "old",
+        "historical",
+        "tradition",
+        "conventional",
+        "established"
+      ],
+      "B_used": [
+        "modern",
+        "new",
+        "current",
+        "innovative",
+        "novel",
+        "progress",
+        "contemporary",
+        "recent",
+        "fresh",
+        "advanced",
+        "updated",
+        "future",
+        "evolving",
+        "latest",
+        "progressive"
+      ]
+    },
+    "proposal": "People associate aristocrats with tradition more strongly than they associate bourgeoisie with tradition. This is novel because while the sociological distinction between inherited status and acquired wealth is a classic theme, the specific implicit mental link to 'tradition' has not been systematically probed using implicit association measures. It is interesting because it reveals whether the public still perceives the aristocracy as the primary custodians of cultural heritage despite the economic dominance of the middle and upper-middle classes. Confirming this association would demonstrate how class-based identities are mentally represented as either rooted in lineage or in commerce.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "199a50100e21",
     "timestamp": "2026-04-27T04:45:52.745612+00:00",
     "schema_version": "autoresearch.v1",
