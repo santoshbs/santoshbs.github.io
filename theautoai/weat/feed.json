@@ -1,5 +1,111 @@
 [
   {
+    "id": "89091d04d2da",
+    "timestamp": "2026-04-27T03:37:02.205317+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "teachers vs engineers on dynamic versus structured problem-solving",
+    "labels": {
+      "X": "teachers",
+      "Y": "engineers",
+      "A": "improvisation",
+      "B": "precision"
+    },
+    "canonical_keys": {
+      "X": "teachers",
+      "Y": "engineers",
+      "A": "improvisation",
+      "B": "precision"
+    },
+    "effect_size": -0.6413302066269065,
+    "p_value": 0.08284,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "teacher",
+        "educator",
+        "instructor",
+        "tutor",
+        "professor",
+        "lecturer",
+        "mentor",
+        "coach",
+        "pedagogue",
+        "faculty",
+        "academic",
+        "trainer",
+        "guide",
+        "moderator",
+        "scholar"
+      ],
+      "Y_used": [
+        "engineer",
+        "developer",
+        "programmer",
+        "architect",
+        "technician",
+        "builder",
+        "designer",
+        "analyst",
+        "coder",
+        "machinist",
+        "specialist",
+        "constructor",
+        "draftsman",
+        "operator",
+        "optimizer"
+      ],
+      "A_used": [
+        "improvised",
+        "spontaneous",
+        "flexible",
+        "adaptive",
+        "fluid",
+        "dynamic",
+        "versatile",
+        "intuitive",
+        "organic",
+        "agile",
+        "creative",
+        "unscripted",
+        "casual",
+        "unplanned",
+        "reactive"
+      ],
+      "B_used": [
+        "precise",
+        "exact",
+        "rigid",
+        "structured",
+        "methodical",
+        "strict",
+        "formal",
+        "calculated",
+        "systematic",
+        "technical",
+        "specific",
+        "rigorous",
+        "standard",
+        "planned",
+        "organized"
+      ]
+    },
+    "proposal": "People associate teachers with improvisation more strongly than they associate engineers with improvisation. This association stems from the contrast between the socially volatile classroom environment, which requires real-time adjustment to student behavior, and the precision-oriented nature of engineering, which rewards strict adherence to specifications. This is novel because it compares the 'dynamic' versus 'structured' nature of professional problem-solving rather than general intelligence. Confirming this would reveal how the public implicitly distinguishes between expertise in human management and expertise in technical systems.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "efb591ea3840",
     "timestamp": "2026-04-27T03:07:11.138734+00:00",
     "schema_version": "autoresearch.v1",
