@@ -1,5 +1,111 @@
 [
   {
+    "id": "199a50100e21",
+    "timestamp": "2026-04-27T04:45:52.745612+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "psychologists vs philosophers on practicality of intellectual inquiry",
+    "labels": {
+      "X": "psychologists",
+      "Y": "philosophers",
+      "A": "pragmatic",
+      "B": "theoretical"
+    },
+    "canonical_keys": {
+      "X": "psychologists",
+      "Y": "philosophers",
+      "A": "pragmatic",
+      "B": "theoretical"
+    },
+    "effect_size": 1.263285511857395,
+    "p_value": 0.0002,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "psychologist",
+        "therapist",
+        "counselor",
+        "psychiatrist",
+        "analyst",
+        "behaviorist",
+        "psychotherapist",
+        "psychoanalyst",
+        "clinician",
+        "practitioner",
+        "psychometrician",
+        "researcher",
+        "scientist",
+        "specialist",
+        "professional"
+      ],
+      "Y_used": [
+        "philosopher",
+        "ethicist",
+        "logician",
+        "scholar",
+        "sophist",
+        "intellectual",
+        "thinker",
+        "sage",
+        "dialectician",
+        "epistemologist",
+        "ontologist",
+        "rhetorician",
+        "rationalist",
+        "meditator",
+        "pundit"
+      ],
+      "A_used": [
+        "practical",
+        "useful",
+        "applied",
+        "pragmatic",
+        "functional",
+        "concrete",
+        "effective",
+        "efficient",
+        "utilitarian",
+        "helpful",
+        "tangible",
+        "real",
+        "empirical",
+        "actionable",
+        "instrumental"
+      ],
+      "B_used": [
+        "theoretical",
+        "abstract",
+        "conceptual",
+        "ideal",
+        "speculative",
+        "metaphysical",
+        "hypothetical",
+        "formal",
+        "academic",
+        "idealistic",
+        "visionary",
+        "imaginative",
+        "conjectural",
+        "arcane",
+        "transcendental"
+      ]
+    },
+    "proposal": "People associate psychologists with pragmatism more strongly than they associate philosophers with pragmatism. While both categories are focused on the study of the mind and human existence, the former is implicitly tied to clinical application and therapeutic outcomes, whereas the latter is tied to theoretical and abstract inquiry. This association is novel because it examines the perceived utility of two closely related intellectual disciplines rather than comparing them to an unrelated field. Confirming this would shift our understanding of how the public distinguishes between 'applied' and 'pure' intellectual labor in the realm of the humanities and social sciences.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "305e83a055ad",
     "timestamp": "2026-04-27T04:09:06.082531+00:00",
     "schema_version": "autoresearch.v1",
