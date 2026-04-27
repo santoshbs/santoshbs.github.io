@@ -1,5 +1,111 @@
 [
   {
+    "id": "70b24a48bff6",
+    "timestamp": "2026-04-27T00:34:11.624238+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "artisans vs industrialists on authenticity versus sterility",
+    "labels": {
+      "X": "artisans",
+      "Y": "industrialists",
+      "A": "authenticity",
+      "B": "sterility"
+    },
+    "canonical_keys": {
+      "X": "artisans",
+      "Y": "industrialists",
+      "A": "authenticity",
+      "B": "sterility"
+    },
+    "effect_size": 1.1223338441350685,
+    "p_value": 0.00018,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "potter",
+        "weaver",
+        "smith",
+        "carver",
+        "jeweler",
+        "painter",
+        "sculptor",
+        "tailor",
+        "cobbler",
+        "baker",
+        "carpenter",
+        "knitter",
+        "craftsman",
+        "artisan",
+        "mason"
+      ],
+      "Y_used": [
+        "tycoon",
+        "magnate",
+        "executive",
+        "manufacturer",
+        "capitalist",
+        "owner",
+        "director",
+        "manager",
+        "operator",
+        "producer",
+        "financier",
+        "developer",
+        "industrialist",
+        "boss",
+        "stockholder"
+      ],
+      "A_used": [
+        "authentic",
+        "genuine",
+        "soulful",
+        "organic",
+        "natural",
+        "raw",
+        "real",
+        "original",
+        "honest",
+        "pure",
+        "heartfelt",
+        "sincere",
+        "traditional",
+        "rustic",
+        "earthy"
+      ],
+      "B_used": [
+        "sterile",
+        "artificial",
+        "mechanical",
+        "synthetic",
+        "plastic",
+        "fake",
+        "processed",
+        "automatic",
+        "industrial",
+        "cold",
+        "clinical",
+        "robotic",
+        "uniform",
+        "standard",
+        "generic"
+      ]
+    },
+    "proposal": "I propose that people associate artisans with authenticity more strongly than they associate industrialists with authenticity. This association reflects a deep-seated cultural divide between the perceived 'soul' of hand-crafted production and the perceived 'sterility' of mass industrialization. While previous research has looked at attitudes toward organic vs. processed goods, examining the implicit association of the actors themselves is novel. Confirming this would reveal how the mode of production implicitly colors our perception of the human integrity of the producer.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "82bc949f82b7",
     "timestamp": "2026-04-27T00:05:19.009740+00:00",
     "schema_version": "autoresearch.v1",
