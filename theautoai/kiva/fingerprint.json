@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "batches_seen": 3,
-  "loans_seen": 48,
-  "last_updated": "2026-04-27T18:24:04.343971+00:00",
+  "batches_seen": 4,
+  "loans_seen": 64,
+  "last_updated": "2026-04-27T21:06:47.473929+00:00",
   "watching_for": "",
   "claims": {
     "institutional-names-slower": {
@@ -13,10 +13,10 @@
       "supporting_loans": [],
       "confidence": 0.65,
       "first_seen_batch": 1,
-      "last_updated_batch": 3,
+      "last_updated_batch": 4,
       "confidence_history": [
         [
-          3,
+          4,
           0.65
         ]
       ]
@@ -27,13 +27,13 @@
       "title": "Mentioning specific years of professional experience predicts faster funding regardless of gender.",
       "body": "Quantifying professional experience or tenure in a field accelerates the funding process for both men and women.",
       "supporting_loans": [],
-      "confidence": 0.6,
+      "confidence": 0.65,
       "first_seen_batch": 1,
-      "last_updated_batch": 3,
+      "last_updated_batch": 4,
       "confidence_history": [
         [
-          3,
-          0.6
+          4,
+          0.65
         ]
       ]
     },
@@ -43,23 +43,34 @@
       "title": "Mentioning specific family details predicts faster funding regardless of gender.",
       "body": "Pitches that provide concrete details about children or household stability accelerate funding for both men and women.",
       "supporting_loans": [],
-      "confidence": 0.62,
-      "first_seen_batch": 3,
-      "last_updated_batch": 3,
+      "confidence": 0.47,
+      "first_seen_batch": 2,
+      "last_updated_batch": 4,
       "confidence_history": [
         [
-          3,
-          0.62
+          4,
+          0.47
+        ]
+      ]
+    },
+    "men-single-status-slower": {
+      "id": "men-single-status-slower",
+      "bucket": "gendered_men",
+      "title": "Stating single marital status predicts slower funding for male borrowers.",
+      "body": "Male borrowers who explicitly identify as single tend to fund more slowly than those who do not.",
+      "supporting_loans": [],
+      "confidence": 0.6,
+      "first_seen_batch": 4,
+      "last_updated_batch": 4,
+      "confidence_history": [
+        [
+          4,
+          0.6
         ]
       ]
     }
   },
   "puzzles": {
-    "men-marital-status": {
-      "id": "men-marital-status",
-      "body": "Male borrowers who explicitly state their marital status may see faster funding.",
-      "first_seen_batch": 1
-    },
     "female-future-savings-slower": {
       "id": "female-future-savings-slower",
       "body": "Female borrowers mentioning dreams of saving for the future may fund slower.",
@@ -73,12 +84,17 @@
     "hardship-gender-interaction": {
       "id": "hardship-gender-interaction",
       "body": "Details regarding personal hardships may accelerate funding for women but slow it for men.",
-      "first_seen_batch": 3
+      "first_seen_batch": 2
     },
     "male-environmental-slower": {
       "id": "male-environmental-slower",
       "body": "Male borrowers who focus on environmental or ecological concerns may fund slower.",
-      "first_seen_batch": 3
+      "first_seen_batch": 2
+    },
+    "female-technical-outcomes-faster": {
+      "id": "female-technical-outcomes-faster",
+      "body": "Female borrowers who detail specific technical outcomes may fund faster.",
+      "first_seen_batch": 4
     }
   },
   "retired": {
@@ -108,6 +124,13 @@
       "title": "Male borrowers who provide extensive details on location or personal hardships may fund slower.",
       "retrospective": "Merged into interaction puzzle after conflicting evidence in female pairs.",
       "retired_batch": 3,
+      "was_believed_batches": 0
+    },
+    "men-marital-status": {
+      "id": "men-marital-status",
+      "title": "Male borrowers who explicitly state their marital status may see faster funding.",
+      "retrospective": "Promoted and refined to a specific claim about single status slowing funding.",
+      "retired_batch": 4,
       "was_believed_batches": 0
     }
   }

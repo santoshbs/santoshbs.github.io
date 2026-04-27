@@ -40,11 +40,21 @@
     "alive": false
   },
   {
+    "id": "men-marital-status",
+    "title": "Male borrowers who explicitly state their marital status may see faster funding.",
+    "bucket": "",
+    "birth_batch": 0,
+    "death_batch": 4,
+    "last_batch": 4,
+    "confidence": 0,
+    "alive": false
+  },
+  {
     "id": "institutional-names-slower",
     "title": "Mentioning specific institutional or brand names predicts slower funding regardless of gender.",
     "bucket": "slower",
     "birth_batch": 1,
-    "last_batch": 3,
+    "last_batch": 4,
     "confidence": 0.65,
     "peak_confidence": 0.65,
     "alive": true
@@ -54,19 +64,29 @@
     "title": "Mentioning specific years of professional experience predicts faster funding regardless of gender.",
     "bucket": "faster",
     "birth_batch": 1,
-    "last_batch": 3,
-    "confidence": 0.6,
-    "peak_confidence": 0.6,
+    "last_batch": 4,
+    "confidence": 0.65,
+    "peak_confidence": 0.65,
     "alive": true
   },
   {
     "id": "family-details-faster",
     "title": "Mentioning specific family details predicts faster funding regardless of gender.",
     "bucket": "faster",
-    "birth_batch": 3,
-    "last_batch": 3,
-    "confidence": 0.62,
-    "peak_confidence": 0.62,
+    "birth_batch": 2,
+    "last_batch": 4,
+    "confidence": 0.47,
+    "peak_confidence": 0.47,
+    "alive": true
+  },
+  {
+    "id": "men-single-status-slower",
+    "title": "Stating single marital status predicts slower funding for male borrowers.",
+    "bucket": "gendered_men",
+    "birth_batch": 4,
+    "last_batch": 4,
+    "confidence": 0.6,
+    "peak_confidence": 0.6,
     "alive": true
   }
 ]
