@@ -1,5 +1,111 @@
 [
   {
+    "id": "f52d1565e3af",
+    "timestamp": "2026-04-27T08:11:28.930964+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "farmers vs businesspeople on moral responsibility vs economic gain",
+    "labels": {
+      "X": "farmers",
+      "Y": "businesspeople",
+      "A": "stewardship",
+      "B": "profit seeking"
+    },
+    "canonical_keys": {
+      "X": "farmers",
+      "Y": "businesspeople",
+      "A": "stewardship",
+      "B": ""
+    },
+    "effect_size": 1.5157550524751808,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "farmer",
+        "grower",
+        "planter",
+        "cultivator",
+        "tiller",
+        "agrarian",
+        "harvester",
+        "rancher",
+        "peasant",
+        "cropper",
+        "plowman",
+        "shepherd",
+        "herdsman",
+        "sower",
+        "husbandman"
+      ],
+      "Y_used": [
+        "executive",
+        "manager",
+        "entrepreneur",
+        "capitalist",
+        "trader",
+        "broker",
+        "merchant",
+        "banker",
+        "corporate",
+        "director",
+        "financier",
+        "investor",
+        "owner",
+        "vendor",
+        "dealer"
+      ],
+      "A_used": [
+        "care",
+        "nurture",
+        "protect",
+        "preserve",
+        "sustain",
+        "safeguard",
+        "maintain",
+        "conserve",
+        "guard",
+        "tend",
+        "cherish",
+        "respect",
+        "stewardship",
+        "responsibility",
+        "duty"
+      ],
+      "B_used": [
+        "profit",
+        "gain",
+        "money",
+        "wealth",
+        "revenue",
+        "income",
+        "capital",
+        "asset",
+        "dividend",
+        "margin",
+        "growth",
+        "return",
+        "lucre",
+        "earnings",
+        "monetary"
+      ]
+    },
+    "proposal": "People associate farmers with stewardship more strongly than they associate businesspeople with stewardship. While businesspeople are often linked to the stewardship of capital or assets, the term stewardship in a social context is more deeply rooted in the notion of caring for the land and future generations. This association is novel as it shifts the focus from economic productivity to the implicit moral and ecological responsibilities assigned to these roles. Examining this would reveal whether the cultural archetype of the 'steward of the earth' still persists in contrast to the 'profit-seeker' archetype of the business world.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "8bb322999148",
     "timestamp": "2026-04-27T07:38:15.199582+00:00",
     "schema_version": "autoresearch.v1",
