@@ -1,5 +1,111 @@
 [
   {
+    "id": "63e004bb12da",
+    "timestamp": "2026-04-27T10:48:27.143399+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "economists vs philosophers on certainty versus ambiguity",
+    "labels": {
+      "X": "economists",
+      "Y": "philosophers",
+      "A": "certainty",
+      "B": "ambiguity"
+    },
+    "canonical_keys": {
+      "X": "economists",
+      "Y": "philosophers",
+      "A": "certainty",
+      "B": "ambiguity"
+    },
+    "effect_size": 1.4700975765635962,
+    "p_value": 2e-05,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "economist",
+        "analyst",
+        "statistician",
+        "actuary",
+        "quant",
+        "econometrician",
+        "financier",
+        "planner",
+        "consultant",
+        "strategist",
+        "auditor",
+        "accountant",
+        "treasurer",
+        "bookkeeper",
+        "banker"
+      ],
+      "Y_used": [
+        "philosopher",
+        "ethicist",
+        "logician",
+        "thinker",
+        "sage",
+        "sophist",
+        "metaphysician",
+        "epistemologist",
+        "dialectician",
+        "phenomenologist",
+        "humanist",
+        "idealist",
+        "scholastic",
+        "ontologist",
+        "moralist"
+      ],
+      "A_used": [
+        "certain",
+        "precise",
+        "exact",
+        "definite",
+        "sure",
+        "absolute",
+        "clear",
+        "factual",
+        "quantitative",
+        "fixed",
+        "concrete",
+        "proven",
+        "stable",
+        "decided",
+        "rigorous"
+      ],
+      "B_used": [
+        "uncertain",
+        "vague",
+        "ambiguous",
+        "doubtful",
+        "unclear",
+        "qualitative",
+        "abstract",
+        "speculative",
+        "debatable",
+        "fluid",
+        "questionable",
+        "obscure",
+        "hazy",
+        "indeterminate",
+        "nuanced"
+      ]
+    },
+    "proposal": "People associate economists with certainty more strongly than they associate philosophers with certainty. While both are intellectual disciplines, economics often utilizes quantitative modeling and precise forecasting that projects an aura of mathematical certainty, whereas philosophy is fundamentally characterized by the questioning of premises and dialectic ambiguity. This association is novel because it examines the implicit distinction between different modes of intellectual authority—the quantitative versus the qualitative. Confirming this would reveal how the public differentiates between 'hard' and 'soft' forms of expertise within the social sciences and humanities.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "11f55dd2e737",
     "timestamp": "2026-04-27T09:57:21.570245+00:00",
     "schema_version": "autoresearch.v1",
