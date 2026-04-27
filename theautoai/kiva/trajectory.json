@@ -1,10 +1,40 @@
 [
   {
+    "id": "male-dependency-penalty",
+    "title": "Mentioning children's education or dependency may specifically slow down funding for men.",
+    "bucket": "",
+    "birth_batch": 0,
+    "death_batch": 67,
+    "last_batch": 67,
+    "confidence": 0,
+    "alive": false
+  },
+  {
     "id": "specificity-accelerates-funding",
     "title": "High levels of detail and specificity in the pitch accelerate funding speed regardless of gender.",
     "bucket": "faster",
-    "birth_batch": 66,
-    "last_batch": 66,
+    "birth_batch": 65,
+    "last_batch": 67,
+    "confidence": 0.66,
+    "peak_confidence": 0.66,
+    "alive": true
+  },
+  {
+    "id": "family-dependency-slows-funding",
+    "title": "Mentioning children or family dependencies slows funding speed regardless of gender.",
+    "bucket": "slower",
+    "birth_batch": 67,
+    "last_batch": 67,
+    "confidence": 0.6,
+    "peak_confidence": 0.6,
+    "alive": true
+  },
+  {
+    "id": "length-interaction-effect",
+    "title": "Pitch length has opposite effects on funding speed based on borrower gender.",
+    "bucket": "interaction",
+    "birth_batch": 67,
+    "last_batch": 67,
     "confidence": 0.6,
     "peak_confidence": 0.6,
     "alive": true
