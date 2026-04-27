@@ -1,5 +1,111 @@
 [
   {
+    "id": "9192eba93be9",
+    "timestamp": "2026-04-27T23:40:29.192528+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "clergy vs scientists on moral versus epistemic authority",
+    "labels": {
+      "X": "clergy",
+      "Y": "scientists",
+      "A": "moral authority",
+      "B": "epistemic authority"
+    },
+    "canonical_keys": {
+      "X": "clergy",
+      "Y": "scientists",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 1.891781498707163,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "priest",
+        "pastor",
+        "minister",
+        "bishop",
+        "rabbi",
+        "imam",
+        "cleric",
+        "deacon",
+        "chaplain",
+        "curate",
+        "vicar",
+        "pope",
+        "cardinal",
+        "parson",
+        "preacher"
+      ],
+      "Y_used": [
+        "chemist",
+        "physicist",
+        "biologist",
+        "astronomer",
+        "geologist",
+        "researcher",
+        "academic",
+        "analyst",
+        "technician",
+        "mathematician",
+        "neurologist",
+        "psychologist",
+        "engineer",
+        "pathologist",
+        "geneticist"
+      ],
+      "A_used": [
+        "virtue",
+        "ethics",
+        "morality",
+        "righteousness",
+        "piety",
+        "goodness",
+        "faith",
+        "sanctity",
+        "spirit",
+        "soul",
+        "honor",
+        "duty",
+        "conscience",
+        "principle",
+        "integrity"
+      ],
+      "B_used": [
+        "fact",
+        "evidence",
+        "logic",
+        "proof",
+        "data",
+        "theory",
+        "empirical",
+        "objective",
+        "reason",
+        "analysis",
+        "method",
+        "discovery",
+        "observation",
+        "theorem",
+        "calculation"
+      ]
+    },
+    "proposal": "People associate clergy with moral authority more strongly than they associate scientists with moral authority. While scientists are implicitly associated with epistemic authority and factual correctness, this proposal examines whether that authority fails to translate into the domain of moral judgment. This is novel because it distinguishes between 'authority over facts' and 'authority over values,' an important distinction in contemporary public discourse regarding ethics and policy. Confirming this association would suggest that the public maintains a strict mental boundary between scientific expertise and moral guidance.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "3e590987b908",
     "timestamp": "2026-04-27T22:58:53.598434+00:00",
     "schema_version": "autoresearch.v1",
