@@ -2,9 +2,42 @@
   "schema_version": 1,
   "batches_seen": 0,
   "loans_seen": 0,
-  "last_updated": "2026-04-27T17:19:02.369470+00:00",
+  "last_updated": "2026-04-27T17:46:25.543215+00:00",
   "watching_for": "",
-  "claims": {},
-  "puzzles": {},
+  "claims": {
+    "children-slow-general": {
+      "id": "children-slow-general",
+      "bucket": "slower",
+      "title": "Mentioning children or dependents predicts slower funding regardless of borrower gender.",
+      "body": "Observations across both female and male pairs indicate that references to children or dependents are associated with slower funding.",
+      "supporting_loans": [],
+      "confidence": 0.6,
+      "first_seen_batch": 1,
+      "last_updated_batch": 0,
+      "confidence_history": [
+        [
+          0,
+          0.6
+        ]
+      ]
+    }
+  },
+  "puzzles": {
+    "local-currency-women-slow": {
+      "id": "local-currency-women-slow",
+      "body": "Does mentioning specific loan amounts in local currency slow funding for women?",
+      "first_seen_batch": 1
+    },
+    "agri-length-women-fast": {
+      "id": "agri-length-women-fast",
+      "body": "Does increased pitch length in agriculture accelerate funding for women?",
+      "first_seen_batch": 1
+    },
+    "equipment-conditions-men-fast": {
+      "id": "equipment-conditions-men-fast",
+      "body": "Does describing specific living or equipment conditions accelerate funding for men?",
+      "first_seen_batch": 1
+    }
+  },
   "retired": {}
 }
