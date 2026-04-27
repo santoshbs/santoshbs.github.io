@@ -1,5 +1,111 @@
 [
   {
+    "id": "01bed99647fb",
+    "timestamp": "2026-04-27T11:58:37.405258+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "politicians vs actors on sincerity versus insincerity",
+    "labels": {
+      "X": "politicians",
+      "Y": "actors",
+      "A": "insincerity",
+      "B": "sincerity"
+    },
+    "canonical_keys": {
+      "X": "politicians",
+      "Y": "actors",
+      "A": "insincerity",
+      "B": "sincerity"
+    },
+    "effect_size": 0.7840085063179526,
+    "p_value": 0.03168,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "senator",
+        "governor",
+        "mayor",
+        "representative",
+        "president",
+        "lawmaker",
+        "councilor",
+        "candidate",
+        "diplomat",
+        "minister",
+        "bureaucrat",
+        "elector",
+        "statesman",
+        "politician",
+        "legislator"
+      ],
+      "Y_used": [
+        "actor",
+        "actress",
+        "performer",
+        "thespian",
+        "star",
+        "celebrity",
+        "cast",
+        "player",
+        "lead",
+        "extra",
+        "artist",
+        "entertainer",
+        "dramatist",
+        "mime",
+        "impersonator"
+      ],
+      "A_used": [
+        "deceptive",
+        "dishonest",
+        "false",
+        "fake",
+        "insincere",
+        "lying",
+        "crooked",
+        "fraudulent",
+        "hypocritical",
+        "disingenuous",
+        "untruthful",
+        "misleading",
+        "shifty",
+        "slippery",
+        "phony"
+      ],
+      "B_used": [
+        "sincere",
+        "honest",
+        "truthful",
+        "authentic",
+        "genuine",
+        "candid",
+        "frank",
+        "upright",
+        "transparent",
+        "direct",
+        "real",
+        "trustworthy",
+        "reliable",
+        "heartfelt",
+        "open"
+      ]
+    },
+    "proposal": "I propose that people associate politicians with insincerity more strongly than they associate actors with insincerity. This is a paradoxically interesting association because, while actors are professionally paid to simulate emotions and identities, their 'performance' is viewed as an honest pursuit of art. In contrast, a politician's performative nature is often perceived as a deceptive tool for power. Confirming this differential association would shift our understanding of how the public distinguishes between professional performance and personal authenticity across different social roles.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "52795c151ec7",
     "timestamp": "2026-04-27T11:27:02.872054+00:00",
     "schema_version": "autoresearch.v1",
