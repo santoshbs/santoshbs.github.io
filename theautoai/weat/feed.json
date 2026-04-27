@@ -1,5 +1,113 @@
 [
   {
+    "id": "656ed41b8211",
+    "timestamp": "2026-04-27T18:04:51.194397+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "workers vs philosophers on practical versus theoretical",
+    "labels": {
+      "X": "workers",
+      "Y": "philosophers",
+      "A": "pragmatism",
+      "B": "abstraction"
+    },
+    "canonical_keys": {
+      "X": "workers",
+      "Y": "philosophers",
+      "A": "pragmatism",
+      "B": "abstraction"
+    },
+    "effect_size": 1.5883294803192292,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "laborer",
+        "worker",
+        "employee",
+        "artisan",
+        "craftsman",
+        "builder",
+        "mechanic",
+        "plumber",
+        "carpenter",
+        "welder",
+        "operator",
+        "technician",
+        "clerk",
+        "driver",
+        "sailor",
+        "miner",
+        "farmer"
+      ],
+      "Y_used": [
+        "philosopher",
+        "thinker",
+        "theorist",
+        "scholar",
+        "intellectual",
+        "logician",
+        "ethicist",
+        "metaphysician",
+        "sage",
+        "pundit",
+        "academician",
+        "professor",
+        "writer",
+        "student",
+        "lecturer"
+      ],
+      "A_used": [
+        "practical",
+        "pragmatic",
+        "useful",
+        "functional",
+        "applied",
+        "concrete",
+        "realistic",
+        "tangible",
+        "utility",
+        "efficient",
+        "direct",
+        "simple",
+        "effective",
+        "workable",
+        "usable"
+      ],
+      "B_used": [
+        "abstract",
+        "theoretical",
+        "conceptual",
+        "ideal",
+        "hypothetical",
+        "speculative",
+        "metaphysical",
+        "intangible",
+        "complex",
+        "detached",
+        "illusory",
+        "mental",
+        "ethereal",
+        "visionary",
+        "idealistic"
+      ]
+    },
+    "proposal": "People associate workers with pragmatism more strongly than they associate philosophers with pragmatism. This proposal examines the implicit mental divide between those perceived as engaged in material, hands-on labor and those engaged in abstract, conceptual inquiry. While philosophers are often stereotyped as being detached from practical concerns, workers are seen as the embodiment of functional application. Confirming this association would highlight how we implicitly link social class and occupational role to the perceived utility of one's thought processes.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "e5fde5d6632a",
     "timestamp": "2026-04-27T16:55:21.645812+00:00",
     "schema_version": "autoresearch.v1",
