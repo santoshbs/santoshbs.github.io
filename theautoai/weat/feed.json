@@ -1,5 +1,111 @@
 [
   {
+    "id": "7ac62b108da1",
+    "timestamp": "2026-04-27T01:09:45.681096+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "paupers vs aristocrats on ingenuity vs dependence",
+    "labels": {
+      "X": "paupers",
+      "Y": "aristocrats",
+      "A": "resourcefulness",
+      "B": "dependence"
+    },
+    "canonical_keys": {
+      "X": "paupers",
+      "Y": "aristocrats",
+      "A": "resourcefulness",
+      "B": "dependence"
+    },
+    "effect_size": -0.8440208370704482,
+    "p_value": 0.02039,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "poor",
+        "pauper",
+        "beggar",
+        "vagrant",
+        "needy",
+        "destitute",
+        "impoverished",
+        "underprivileged",
+        "penniless",
+        "broke",
+        "indigent",
+        "disadvantaged",
+        "homeless",
+        "proletarian",
+        "peasant"
+      ],
+      "Y_used": [
+        "aristocrat",
+        "noble",
+        "royal",
+        "wealthy",
+        "rich",
+        "affluent",
+        "privileged",
+        "elite",
+        "patrician",
+        "opulent",
+        "millionaire",
+        "billionaire",
+        "mogul",
+        "plutocrat",
+        "tycoon"
+      ],
+      "A_used": [
+        "resourceful",
+        "scrappy",
+        "ingenious",
+        "adaptable",
+        "clever",
+        "inventive",
+        "hardy",
+        "resilient",
+        "shrewd",
+        "cunning",
+        "practical",
+        "capable",
+        "versatile",
+        "nimble",
+        "flexible"
+      ],
+      "B_used": [
+        "dependent",
+        "reliant",
+        "pampered",
+        "sheltered",
+        "spoiled",
+        "helpless",
+        "fragile",
+        "passive",
+        "entitled",
+        "effortless",
+        "cushioned",
+        "supported",
+        "inherited",
+        "complacent",
+        "idle"
+      ]
+    },
+    "proposal": "I propose that people associate paupers with resourcefulness more strongly than they associate aristocrats with resourcefulness. This examines the 'scrappiness' stereotype—the implicit belief that individuals living in extreme poverty must develop superior ingenuity and adaptability to survive, whereas those in the upper class are perceived as relying on inherited systems and wealth. This is novel because implicit association research on socioeconomic status typically focuses on negative stereotypes of the poor (e.g., laziness or lack of intelligence) rather than positive survival-based traits. Confirming this would shift our understanding of how class-based competence is mentally represented, highlighting a paradox where the marginalized are seen as more capable in practical survival contexts.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "70b24a48bff6",
     "timestamp": "2026-04-27T00:34:11.624238+00:00",
     "schema_version": "autoresearch.v1",
