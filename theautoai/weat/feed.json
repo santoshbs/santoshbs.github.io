@@ -1,5 +1,111 @@
 [
   {
+    "id": "acf3fdab1b8f",
+    "timestamp": "2026-04-27T22:22:54.603160+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "students vs teachers on intellectual humility versus certainty",
+    "labels": {
+      "X": "students",
+      "Y": "teachers",
+      "A": "intellectual humility",
+      "B": "intellectual certainty"
+    },
+    "canonical_keys": {
+      "X": "students",
+      "Y": "teachers",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 0.7487170730974568,
+    "p_value": 0.04131,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "student",
+        "pupil",
+        "learner",
+        "intern",
+        "freshman",
+        "sophomore",
+        "junior",
+        "senior",
+        "apprentice",
+        "novice",
+        "disciple",
+        "trainee",
+        "undergraduate",
+        "classmate",
+        "scholar"
+      ],
+      "Y_used": [
+        "teacher",
+        "instructor",
+        "professor",
+        "educator",
+        "tutor",
+        "lecturer",
+        "mentor",
+        "coach",
+        "dean",
+        "provost",
+        "master",
+        "academic",
+        "pedagogue",
+        "guide",
+        "principal"
+      ],
+      "A_used": [
+        "humble",
+        "open",
+        "modest",
+        "curious",
+        "inquisitive",
+        "receptive",
+        "tentative",
+        "agnostic",
+        "flexible",
+        "unsure",
+        "questioning",
+        "malleable",
+        "adaptable",
+        "yielding",
+        "deferential"
+      ],
+      "B_used": [
+        "certain",
+        "rigid",
+        "confident",
+        "dogmatic",
+        "stubborn",
+        "fixed",
+        "absolute",
+        "authoritative",
+        "arrogant",
+        "firm",
+        "unwavering",
+        "inflexible",
+        "convinced",
+        "decisive",
+        "resolute"
+      ]
+    },
+    "proposal": "People associate students with intellectual humility more strongly than they associate teachers with intellectual humility. This proposed association examines the implicit trade-off between the role of the learner and the role of the expert, suggesting that the position of authority is mentally linked with certainty or rigidity. This is novel as most research on this pair focuses on knowledge acquisition or power dynamics rather than the perceived humility of the actors. Confirming this would shift our understanding of how the public implicitly perceives the psychological cost of expertise.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "749037119dc4",
     "timestamp": "2026-04-27T21:46:30.317855+00:00",
     "schema_version": "autoresearch.v1",
