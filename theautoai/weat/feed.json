@@ -1,5 +1,111 @@
 [
   {
+    "id": "e5fde5d6632a",
+    "timestamp": "2026-04-27T16:55:21.645812+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "artists vs businesspeople on emotional openness versus stability and strength",
+    "labels": {
+      "X": "artists",
+      "Y": "businesspeople",
+      "A": "vulnerability",
+      "B": "strength and control"
+    },
+    "canonical_keys": {
+      "X": "artists",
+      "Y": "businesspeople",
+      "A": "vulnerability",
+      "B": ""
+    },
+    "effect_size": 1.6378480614832842,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "painter",
+        "sculptor",
+        "musician",
+        "poet",
+        "dancer",
+        "actor",
+        "writer",
+        "novelist",
+        "composer",
+        "curator",
+        "illustrator",
+        "dramatist",
+        "lyricist",
+        "potter",
+        "weaver"
+      ],
+      "Y_used": [
+        "manager",
+        "executive",
+        "administrator",
+        "director",
+        "accountant",
+        "banker",
+        "trader",
+        "broker",
+        "entrepreneur",
+        "consultant",
+        "analyst",
+        "merchant",
+        "vendor",
+        "dealer",
+        "salesperson"
+      ],
+      "A_used": [
+        "vulnerable",
+        "exposed",
+        "raw",
+        "fragile",
+        "sensitive",
+        "open",
+        "tender",
+        "emotional",
+        "delicate",
+        "soft",
+        "unstable",
+        "weak",
+        "transparent",
+        "insecure",
+        "susceptible"
+      ],
+      "B_used": [
+        "strong",
+        "certain",
+        "controlled",
+        "stable",
+        "firm",
+        "confident",
+        "resolute",
+        "tough",
+        "rigid",
+        "secure",
+        "steady",
+        "hardy",
+        "robust",
+        "commanding",
+        "disciplined"
+      ]
+    },
+    "proposal": "People associate artists with vulnerability more strongly than they associate businesspeople with vulnerability. While professional success in business is often implicitly linked to an image of strength, certainty, and emotional control, success in art is frequently associated with the ability to be raw, exposed, and emotionally transparent. This is novel because it focuses on the implicit social value of emotional vulnerability across different professional identities rather than traditional axes like creativity or wealth. Examining this association would reveal how we mentally categorize the relationship between emotional exposure and professional competence.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "4ff648b7b9cb",
     "timestamp": "2026-04-27T16:00:56.664214+00:00",
     "schema_version": "autoresearch.v1",
