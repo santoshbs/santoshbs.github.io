@@ -1,5 +1,111 @@
 [
   {
+    "id": "305e83a055ad",
+    "timestamp": "2026-04-27T04:09:06.082531+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "clergy vs politicians on humility versus ego and power",
+    "labels": {
+      "X": "clergy",
+      "Y": "politicians",
+      "A": "humility",
+      "B": "ego and power"
+    },
+    "canonical_keys": {
+      "X": "clergy",
+      "Y": "politicians",
+      "A": "humility",
+      "B": ""
+    },
+    "effect_size": 1.4426458533822977,
+    "p_value": 1e-05,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "priest",
+        "pastor",
+        "rabbi",
+        "imam",
+        "bishop",
+        "cleric",
+        "deacon",
+        "chaplain",
+        "monk",
+        "nun",
+        "friar",
+        "vicar",
+        "curate",
+        "preacher",
+        "evangelist"
+      ],
+      "Y_used": [
+        "senator",
+        "governor",
+        "mayor",
+        "president",
+        "congressman",
+        "legislator",
+        "diplomat",
+        "representative",
+        "councilor",
+        "official",
+        "delegate",
+        "lawmaker",
+        "politician",
+        "candidate",
+        "bureaucrat"
+      ],
+      "A_used": [
+        "humble",
+        "modest",
+        "selfless",
+        "meek",
+        "unassuming",
+        "deferential",
+        "gentle",
+        "patient",
+        "altruistic",
+        "servant",
+        "submissive",
+        "quiet",
+        "reserved",
+        "timid",
+        "lowly"
+      ],
+      "B_used": [
+        "proud",
+        "arrogant",
+        "greedy",
+        "ambitious",
+        "powerful",
+        "vain",
+        "haughty",
+        "narcissistic",
+        "egoistic",
+        "dominant",
+        "commanding",
+        "superior",
+        "boastful",
+        "imperial",
+        "opulent"
+      ]
+    },
+    "proposal": "I propose that people associate clergy with humility more strongly than they associate politicians with humility. This association is novel because it contrasts the implicit expectations of spiritual leadership, which is framed as a service of self-effacement, with the expectations of secular political leadership, which is often perceived as a pursuit of ego and power. Examining this would be important as it reveals how society mentally segregates 'sacred' authority from 'profane' authority. Confirming this would highlight a persistent cultural bias that views religious roles as inherently more selfless than roles of civic governance.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "89091d04d2da",
     "timestamp": "2026-04-27T03:37:02.205317+00:00",
     "schema_version": "autoresearch.v1",
