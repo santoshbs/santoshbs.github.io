@@ -1,5 +1,111 @@
 [
   {
+    "id": "e18e8337dfce",
+    "timestamp": "2026-04-27T09:02:54.069132+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "philosophers vs diplomats on idealism versus pragmatism",
+    "labels": {
+      "X": "philosophers",
+      "Y": "diplomats",
+      "A": "idealism",
+      "B": "pragmatism"
+    },
+    "canonical_keys": {
+      "X": "philosophers",
+      "Y": "diplomats",
+      "A": "idealism",
+      "B": "pragmatism"
+    },
+    "effect_size": 1.5443526643464547,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "philosopher",
+        "ethicist",
+        "logician",
+        "thinker",
+        "theorist",
+        "intellectual",
+        "scholar",
+        "academic",
+        "sage",
+        "rationalist",
+        "empiricist",
+        "dialectician",
+        "sophist",
+        "metaphysician",
+        "epistemologist"
+      ],
+      "Y_used": [
+        "diplomat",
+        "envoy",
+        "ambassador",
+        "consul",
+        "negotiator",
+        "mediator",
+        "emissary",
+        "attache",
+        "statesman",
+        "representative",
+        "delegate",
+        "conduit",
+        "liaison",
+        "intermediary",
+        "nuncio"
+      ],
+      "A_used": [
+        "idealism",
+        "truth",
+        "virtue",
+        "purity",
+        "principle",
+        "absolute",
+        "utopia",
+        "perfection",
+        "ethics",
+        "morality",
+        "theory",
+        "abstract",
+        "conceptual",
+        "transcendent",
+        "noble"
+      ],
+      "B_used": [
+        "pragmatism",
+        "compromise",
+        "realism",
+        "practical",
+        "utility",
+        "result",
+        "efficiency",
+        "arrangement",
+        "concrete",
+        "tangible",
+        "feasible",
+        "functional",
+        "strategy",
+        "efficacy",
+        "deal"
+      ]
+    },
+    "proposal": "I propose that people associate philosophers with idealism more strongly than they associate diplomats with idealism. While both roles are viewed as highly intellectual and strategic, philosophers are mentally linked to the pursuit of absolute truths and optimal moral frameworks, whereas diplomats are linked to the pragmatic constraints of realpolitik and compromise. This association is novel because it moves beyond simple intelligence metrics to examine the perceived tension between theoretical purity and practical negotiation. Confirming this would reveal how the public distinguishes between different modes of high-level intellectual labor.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "f52d1565e3af",
     "timestamp": "2026-04-27T08:11:28.930964+00:00",
     "schema_version": "autoresearch.v1",
