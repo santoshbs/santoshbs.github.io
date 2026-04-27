@@ -1,5 +1,111 @@
 [
   {
+    "id": "749037119dc4",
+    "timestamp": "2026-04-27T21:46:30.317855+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "conservatives vs liberals on emotional regulation style",
+    "labels": {
+      "X": "conservatives",
+      "Y": "liberals",
+      "A": "emotional restraint",
+      "B": "emotional openness"
+    },
+    "canonical_keys": {
+      "X": "conservatives",
+      "Y": "liberals",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 0.692174585164462,
+    "p_value": 0.06055,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "conservative",
+        "traditionalist",
+        "rightist",
+        "reactionary",
+        "orthodox",
+        "conventional",
+        "rightward",
+        "rightmost",
+        "rightwards",
+        "rightism",
+        "traditional",
+        "rightwing",
+        "rightwardly",
+        "rightish",
+        "rightists"
+      ],
+      "Y_used": [
+        "liberal",
+        "progressive",
+        "leftist",
+        "reformist",
+        "radical",
+        "modern",
+        "unconventional",
+        "leftward",
+        "leftmost",
+        "leftwards",
+        "leftism",
+        "leftwing",
+        "leftwardly",
+        "leftish",
+        "leftists"
+      ],
+      "A_used": [
+        "stoic",
+        "reserved",
+        "calm",
+        "stiff",
+        "restrained",
+        "impassive",
+        "phlegmatic",
+        "detached",
+        "unemotional",
+        "composed",
+        "steady",
+        "controlled",
+        "taciturn",
+        "quiet",
+        "unexpressive"
+      ],
+      "B_used": [
+        "expressive",
+        "open",
+        "vulnerable",
+        "emotional",
+        "passionate",
+        "volatile",
+        "exuberant",
+        "histrionic",
+        "demonstrative",
+        "effusive",
+        "sensitive",
+        "touchy",
+        "emotive",
+        "outward",
+        "heartfelt"
+      ]
+    },
+    "proposal": "People associate conservatives with stoicism more strongly than they associate liberals with stoicism. While much research focuses on political values or affective polarization, the mapping of political identity onto emotional regulation styles—specifically the value placed on emotional restraint versus emotional openness—remains under-examined. This association is interesting because it reflects contemporary gendered and cultural tropes that link traditionalist ideologies with the 'stiff upper lip' and progressive ideologies with the expression of vulnerability. Confirming this would shift our understanding of how political factions are mentally represented not just by what they believe, but by how they are perceived to manage their internal emotional states.",
+    "iterations": 3,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "656ed41b8211",
     "timestamp": "2026-04-27T18:04:51.194397+00:00",
     "schema_version": "autoresearch.v1",
