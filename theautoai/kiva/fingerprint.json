@@ -2,14 +2,14 @@
   "schema_version": 1,
   "batches_seen": 0,
   "loans_seen": 0,
-  "last_updated": "2026-04-27T17:46:25.543215+00:00",
+  "last_updated": "2026-04-27T17:47:46.458739+00:00",
   "watching_for": "",
   "claims": {
-    "children-slow-general": {
-      "id": "children-slow-general",
+    "institutional-names-slower": {
+      "id": "institutional-names-slower",
       "bucket": "slower",
-      "title": "Mentioning children or dependents predicts slower funding regardless of borrower gender.",
-      "body": "Observations across both female and male pairs indicate that references to children or dependents are associated with slower funding.",
+      "title": "Mentioning specific institutional or brand names predicts slower funding regardless of gender.",
+      "body": "Pitches that reference specific financial institutions or brands tend to fund more slowly for both men and women.",
       "supporting_loans": [],
       "confidence": 0.6,
       "first_seen_batch": 1,
@@ -23,19 +23,19 @@
     }
   },
   "puzzles": {
-    "local-currency-women-slow": {
-      "id": "local-currency-women-slow",
-      "body": "Does mentioning specific loan amounts in local currency slow funding for women?",
+    "women-assets-experience": {
+      "id": "women-assets-experience",
+      "body": "Female borrowers who list specific assets or professional backgrounds may fund faster.",
       "first_seen_batch": 1
     },
-    "agri-length-women-fast": {
-      "id": "agri-length-women-fast",
-      "body": "Does increased pitch length in agriculture accelerate funding for women?",
+    "men-marital-status": {
+      "id": "men-marital-status",
+      "body": "Male borrowers who explicitly state their marital status may see faster funding.",
       "first_seen_batch": 1
     },
-    "equipment-conditions-men-fast": {
-      "id": "equipment-conditions-men-fast",
-      "body": "Does describing specific living or equipment conditions accelerate funding for men?",
+    "men-family-wellbeing": {
+      "id": "men-family-wellbeing",
+      "body": "Male borrowers who focus on children or family well-being may fund faster.",
       "first_seen_batch": 1
     }
   },
