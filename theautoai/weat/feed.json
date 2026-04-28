@@ -1,5 +1,111 @@
 [
   {
+    "id": "fef8bbea02aa",
+    "timestamp": "2026-04-28T08:34:14.492159+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "diplomats vs journalists on discretion versus disclosure",
+    "labels": {
+      "X": "diplomats",
+      "Y": "journalists",
+      "A": "discretion",
+      "B": "disclosure"
+    },
+    "canonical_keys": {
+      "X": "diplomats",
+      "Y": "journalists",
+      "A": "discretion",
+      "B": "disclosure"
+    },
+    "effect_size": 0.8666144547240534,
+    "p_value": 0.01709,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "diplomat",
+        "envoy",
+        "ambassador",
+        "consul",
+        "attache",
+        "negotiator",
+        "mediator",
+        "emissary",
+        "representative",
+        "legate",
+        "minister",
+        "statesperson",
+        "delegate",
+        "official",
+        "plenipotentiary"
+      ],
+      "Y_used": [
+        "journalist",
+        "reporter",
+        "correspondent",
+        "editor",
+        "columnist",
+        "anchor",
+        "newscaster",
+        "blogger",
+        "scribe",
+        "pundit",
+        "writer",
+        "pressman",
+        "broadcaster",
+        "paparazzo",
+        "interviewer"
+      ],
+      "A_used": [
+        "discreet",
+        "secret",
+        "silent",
+        "tactful",
+        "cautious",
+        "private",
+        "reserved",
+        "stealthy",
+        "covert",
+        "confidential",
+        "subtle",
+        "quiet",
+        "hidden",
+        "veiled",
+        "muted"
+      ],
+      "B_used": [
+        "open",
+        "transparent",
+        "public",
+        "loud",
+        "obvious",
+        "blatant",
+        "exposed",
+        "revealed",
+        "explicit",
+        "overt",
+        "manifest",
+        "vocal",
+        "candid",
+        "frank",
+        "direct"
+      ]
+    },
+    "proposal": "I propose that people associate diplomats with discretion more strongly than they associate journalists with discretion. This association reflects a deep-seated cultural perception of diplomacy as the art of tact, secrecy, and strategic silence, contrasted with journalism's fundamental mission of disclosure, transparency, and exposure. This is novel because most implicit association research on professional roles focuses on broad axes like competence or warmth rather than specific operational virtues like discretion. Confirming this would provide insight into how the public cognitively differentiates between institutional 'insiders' who protect information and institutional 'outsiders' who reveal it.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "f4e2fce14c37",
     "timestamp": "2026-04-28T07:57:23.858087+00:00",
     "schema_version": "autoresearch.v1",
