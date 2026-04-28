@@ -1,5 +1,111 @@
 [
   {
+    "id": "c82a8f88bd57",
+    "timestamp": "2026-04-28T15:42:10.038180+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "immigrants vs urbanites on flexibility and adaptability",
+    "labels": {
+      "X": "immigrants",
+      "Y": "urbanites",
+      "A": "adaptability",
+      "B": "rigidity"
+    },
+    "canonical_keys": {
+      "X": "immigrants",
+      "Y": "urbanites",
+      "A": "adaptability",
+      "B": "rigidity"
+    },
+    "effect_size": -0.4079897375320026,
+    "p_value": 0.27746,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "immigrant",
+        "migrant",
+        "newcomer",
+        "foreigner",
+        "settler",
+        "exile",
+        "refugee",
+        "expatriate",
+        "alien",
+        "sojourner",
+        "emigrant",
+        "outsider",
+        "wanderer",
+        "transplant",
+        "traveler"
+      ],
+      "Y_used": [
+        "urbanite",
+        "resident",
+        "citizen",
+        "inhabitant",
+        "dweller",
+        "local",
+        "commuter",
+        "burgher",
+        "townie",
+        "native",
+        "civilian",
+        "occupant",
+        "neighbor",
+        "denizen",
+        "cosmopolite"
+      ],
+      "A_used": [
+        "flexible",
+        "resilient",
+        "versatile",
+        "adjustable",
+        "malleable",
+        "pliant",
+        "fluid",
+        "agile",
+        "accommodating",
+        "resourceful",
+        "open",
+        "elastic",
+        "supple",
+        "nimble",
+        "adaptive"
+      ],
+      "B_used": [
+        "rigid",
+        "stiff",
+        "inflexible",
+        "stubborn",
+        "fixed",
+        "static",
+        "unchanging",
+        "obstinate",
+        "unyielding",
+        "adamant",
+        "stern",
+        "immutable",
+        "constant",
+        "set",
+        "uncompromising"
+      ]
+    },
+    "proposal": "People associate immigrants with cultural adaptability more strongly than they associate urbanites with cultural adaptability. While urbanites are often seen as cosmopolitan, the implicit association of adaptability is likely more potent for immigrants due to the fundamental necessity of navigation and assimilation in a new society. This is novel as most research focuses on urbanites' openness rather than the active adaptability of immigrants. Confirming this would shift our understanding of how the public represents the psychological resilience of migrant populations versus the passive exposure of city dwellers.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "6bca121c2616",
     "timestamp": "2026-04-28T14:42:25.268189+00:00",
     "schema_version": "autoresearch.v1",
