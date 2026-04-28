@@ -1,5 +1,111 @@
 [
   {
+    "id": "43e14966c604",
+    "timestamp": "2026-04-28T18:53:42.943366+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "students vs workers on idealism versus pragmatism",
+    "labels": {
+      "X": "students",
+      "Y": "workers",
+      "A": "idealism",
+      "B": "pragmatism"
+    },
+    "canonical_keys": {
+      "X": "students",
+      "Y": "workers",
+      "A": "idealism",
+      "B": "pragmatism"
+    },
+    "effect_size": 1.1463626643427114,
+    "p_value": 0.00105,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "student",
+        "pupil",
+        "undergraduate",
+        "scholar",
+        "learner",
+        "freshman",
+        "sophomore",
+        "junior",
+        "senior",
+        "collegiate",
+        "youth",
+        "novice",
+        "disciple",
+        "alumnus",
+        "undergrad"
+      ],
+      "Y_used": [
+        "worker",
+        "employee",
+        "staff",
+        "laborer",
+        "professional",
+        "operative",
+        "artisan",
+        "clerk",
+        "manager",
+        "executive",
+        "contractor",
+        "technician",
+        "proletarian",
+        "personnel",
+        "official"
+      ],
+      "A_used": [
+        "ideal",
+        "hope",
+        "pure",
+        "dream",
+        "aspiring",
+        "optimistic",
+        "utopian",
+        "noble",
+        "visionary",
+        "naive",
+        "innocent",
+        "theoretical",
+        "principled",
+        "altruistic",
+        "romantic"
+      ],
+      "B_used": [
+        "practical",
+        "realistic",
+        "cynical",
+        "grounded",
+        "routine",
+        "pragmatic",
+        "experienced",
+        "disillusioned",
+        "worldly",
+        "efficient",
+        "mundane",
+        "concrete",
+        "functional",
+        "utilitarian",
+        "sober"
+      ]
+    },
+    "proposal": "I propose that people associate students with idealism more strongly than they associate workers with idealism. This association reflects a pervasive cultural narrative that academic environments foster theoretical purity and hope, whereas the workforce is associated with pragmatism, compromise, and professional disillusionment. While the 'idealistic student' is a common trope, the shift in implicit association between these two social roles has not been systematically measured. Confirming this would demonstrate how society views the transition from education to employment as a movement away from idealistic aspirations toward a more cynical or grounded reality.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "94a5abf6fd07",
     "timestamp": "2026-04-28T18:14:08.443469+00:00",
     "schema_version": "autoresearch.v1",
