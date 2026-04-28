@@ -1,5 +1,111 @@
 [
   {
+    "id": "585072ce7d3e",
+    "timestamp": "2026-04-28T12:52:26.537937+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "athletes vs scientists on instinctive versus systematic knowledge",
+    "labels": {
+      "X": "athletes",
+      "Y": "scientists",
+      "A": "intuition",
+      "B": "deliberation"
+    },
+    "canonical_keys": {
+      "X": "athletes",
+      "Y": "scientists",
+      "A": "intuition",
+      "B": "deliberation"
+    },
+    "effect_size": 1.8740953717751057,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "runner",
+        "swimmer",
+        "player",
+        "cyclist",
+        "gymnast",
+        "boxer",
+        "skater",
+        "golfer",
+        "wrestler",
+        "dancer",
+        "kicker",
+        "sprinter",
+        "diver",
+        "hiker",
+        "athlete"
+      ],
+      "Y_used": [
+        "chemist",
+        "physicist",
+        "biologist",
+        "geologist",
+        "astronomer",
+        "researcher",
+        "analyst",
+        "scholar",
+        "theorist",
+        "mathematician",
+        "engineer",
+        "expert",
+        "academic",
+        "professor",
+        "scientist"
+      ],
+      "A_used": [
+        "intuitive",
+        "instinctive",
+        "gut",
+        "spontaneous",
+        "immediate",
+        "natural",
+        "subconscious",
+        "automatic",
+        "visceral",
+        "rapid",
+        "fluid",
+        "reflexive",
+        "implicit",
+        "unplanned",
+        "sudden"
+      ],
+      "B_used": [
+        "analytical",
+        "systematic",
+        "logical",
+        "deliberative",
+        "methodical",
+        "rigorous",
+        "calculated",
+        "reasoned",
+        "evidence",
+        "empirical",
+        "structured",
+        "formal",
+        "cautious",
+        "planned",
+        "detailed"
+      ]
+    },
+    "proposal": "People associate athletes with intuition more strongly than they associate scientists with intuition. This is interesting because it challenges the traditional 'brawn vs. brain' dichotomy by attributing a specific cognitive strength—intuitive, split-second decision-making—to the athletic category. While scientists are associated with rigorous deliberation and systematic evidence, the 'flow state' of an athlete is seen as a pinnacle of implicit, non-deliberative expertise. Confirming this association would reveal how the public differentiates between types of mastery, specifically contrasting systematic knowledge with instinctive knowledge.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "581ff43c1bf2",
     "timestamp": "2026-04-28T12:15:00.498803+00:00",
     "schema_version": "autoresearch.v1",
