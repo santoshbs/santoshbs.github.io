@@ -1,5 +1,111 @@
 [
   {
+    "id": "4452e58761f4",
+    "timestamp": "2026-04-28T19:33:09.020707+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "writers vs actors on perceived genuineness",
+    "labels": {
+      "X": "writers",
+      "Y": "actors",
+      "A": "authenticity",
+      "B": "simulation"
+    },
+    "canonical_keys": {
+      "X": "writers",
+      "Y": "actors",
+      "A": "authenticity",
+      "B": "simulation"
+    },
+    "effect_size": 0.5590174017560862,
+    "p_value": 0.13601,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "writer",
+        "poet",
+        "novelist",
+        "author",
+        "dramatist",
+        "scribe",
+        "columnist",
+        "playwright",
+        "journalist",
+        "biographer",
+        "essayist",
+        "blogger",
+        "lyricist",
+        "copywriter",
+        "editor"
+      ],
+      "Y_used": [
+        "actor",
+        "performer",
+        "thespian",
+        "star",
+        "lead",
+        "cast",
+        "player",
+        "mime",
+        "impersonator",
+        "entertainer",
+        "celebrity",
+        "diva",
+        "protagonist",
+        "understudy",
+        "extra"
+      ],
+      "A_used": [
+        "genuine",
+        "real",
+        "honest",
+        "sincere",
+        "authentic",
+        "true",
+        "candid",
+        "heartfelt",
+        "raw",
+        "natural",
+        "direct",
+        "pure",
+        "actual",
+        "straightforward",
+        "truthful"
+      ],
+      "B_used": [
+        "fake",
+        "false",
+        "artificial",
+        "simulated",
+        "performed",
+        "masked",
+        "superficial",
+        "staged",
+        "pretentious",
+        "deceptive",
+        "plastic",
+        "imitation",
+        "facade",
+        "theatrical",
+        "scripted"
+      ]
+    },
+    "proposal": "People associate writers with authenticity more strongly than they associate actors with authenticity. While both are recognized as creative professionals, actors are often implicitly perceived as people who specialize in simulation and the adoption of personas, whereas writers are viewed as individuals who distill and express their own internal truth. This proposal is novel because it examines internal hierarchies of perceived genuineness within the arts, rather than comparing artists to non-artists. Confirming this association would provide insight into how the public differentiates between interpretive and generative forms of creativity.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "43e14966c604",
     "timestamp": "2026-04-28T18:53:42.943366+00:00",
     "schema_version": "autoresearch.v1",
