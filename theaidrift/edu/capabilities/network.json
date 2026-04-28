@@ -38,7 +38,7 @@
       "group": "Strategy & Governance",
       "refs": 22,
       "revised": "2026-04-29",
-      "signals": 28
+      "signals": 29
     },
     {
       "id": "curriculum-management",
@@ -63,6 +63,14 @@
       "refs": 7,
       "revised": "2026-04-11",
       "signals": 7
+    },
+    {
+      "id": "government-public-stakeholder-relationships",
+      "title": "Government, Public & Stakeholder Relationships",
+      "group": "Enabling",
+      "refs": 1,
+      "revised": "2026-04-29",
+      "signals": 1
     },
     {
       "id": "human-resource-management",
@@ -92,9 +100,9 @@
       "id": "legal-services",
       "title": "Legal Services",
       "group": "Enabling",
-      "refs": 14,
+      "refs": 15,
       "revised": "2026-04-29",
-      "signals": 14
+      "signals": 15
     },
     {
       "id": "library-management",
@@ -524,6 +532,16 @@
       "source": "corporate-governance",
       "target": "finance-management",
       "signal": "Judgment Layer for Financial AI Agents"
+    },
+    {
+      "source": "corporate-governance",
+      "target": "government-public-stakeholder-relationships",
+      "signal": "Florida AG launches criminal investigation into ChatGPT over FSU shooting"
+    },
+    {
+      "source": "government-public-stakeholder-relationships",
+      "target": "legal-services",
+      "signal": "Florida AG launches criminal investigation into ChatGPT over FSU shooting"
     },
     {
       "source": "finance-management",
