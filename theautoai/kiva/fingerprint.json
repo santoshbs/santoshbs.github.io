@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "batches_seen": 10,
-  "loans_seen": 160,
-  "last_updated": "2026-04-28T00:56:48.978341+00:00",
+  "batches_seen": 11,
+  "loans_seen": 176,
+  "last_updated": "2026-04-28T01:36:38.616511+00:00",
   "watching_for": "",
   "claims": {
     "institutional-names-slower": {
@@ -13,10 +13,10 @@
       "supporting_loans": [],
       "confidence": 0.65,
       "first_seen_batch": 1,
-      "last_updated_batch": 10,
+      "last_updated_batch": 11,
       "confidence_history": [
         [
-          10,
+          11,
           0.65
         ]
       ]
@@ -29,10 +29,10 @@
       "supporting_loans": [],
       "confidence": 0.7,
       "first_seen_batch": 1,
-      "last_updated_batch": 10,
+      "last_updated_batch": 11,
       "confidence_history": [
         [
-          10,
+          11,
           0.7
         ]
       ]
@@ -45,10 +45,10 @@
       "supporting_loans": [],
       "confidence": 0.53,
       "first_seen_batch": 1,
-      "last_updated_batch": 10,
+      "last_updated_batch": 11,
       "confidence_history": [
         [
-          10,
+          11,
           0.53
         ]
       ]
@@ -61,10 +61,10 @@
       "supporting_loans": [],
       "confidence": 0.6,
       "first_seen_batch": 1,
-      "last_updated_batch": 10,
+      "last_updated_batch": 11,
       "confidence_history": [
         [
-          10,
+          11,
           0.6
         ]
       ]
@@ -77,10 +77,10 @@
       "supporting_loans": [],
       "confidence": 0.6,
       "first_seen_batch": 1,
-      "last_updated_batch": 10,
+      "last_updated_batch": 11,
       "confidence_history": [
         [
-          10,
+          11,
           0.6
         ]
       ]
@@ -93,10 +93,10 @@
       "supporting_loans": [],
       "confidence": 0.6,
       "first_seen_batch": 1,
-      "last_updated_batch": 10,
+      "last_updated_batch": 11,
       "confidence_history": [
         [
-          10,
+          11,
           0.6
         ]
       ]
@@ -108,11 +108,27 @@
       "body": "Pitches from women that emphasize personal traits like being hardworking or putting in hard work predict slower funding.",
       "supporting_loans": [],
       "confidence": 0.6,
-      "first_seen_batch": 10,
-      "last_updated_batch": 10,
+      "first_seen_batch": 9,
+      "last_updated_batch": 11,
       "confidence_history": [
         [
-          10,
+          11,
+          0.6
+        ]
+      ]
+    },
+    "female-technical-specificity-faster": {
+      "id": "female-technical-specificity-faster",
+      "bucket": "gendered_women",
+      "title": "Female borrowers who list specific products or goals beyond family welfare fund faster.",
+      "body": "Pitches from women that detail specific business inputs or concrete objectives beyond general family security accelerate funding.",
+      "supporting_loans": [],
+      "confidence": 0.6,
+      "first_seen_batch": 11,
+      "last_updated_batch": 11,
+      "confidence_history": [
+        [
+          11,
           0.6
         ]
       ]
@@ -124,11 +140,6 @@
       "body": "Details regarding personal hardships may accelerate funding for women but slow it for men.",
       "first_seen_batch": 1
     },
-    "female-technical-outcomes-faster": {
-      "id": "female-technical-outcomes-faster",
-      "body": "Female borrowers who detail specific technical outcomes may fund faster.",
-      "first_seen_batch": 1
-    },
     "pitch-length-gender-interaction": {
       "id": "pitch-length-gender-interaction",
       "body": "Pitch length may accelerate funding for women while decelerating it for men.",
@@ -137,12 +148,12 @@
     "female-ag-success-slower": {
       "id": "female-ag-success-slower",
       "body": "Mentioning previous business success in agricultural pitches may predict slower funding for women.",
-      "first_seen_batch": 4
+      "first_seen_batch": 3
     },
     "female-marital-status-slower": {
       "id": "female-marital-status-slower",
       "body": "Mentioning marital status or widowhood may predict slower funding for female borrowers.",
-      "first_seen_batch": 6
+      "first_seen_batch": 5
     }
   },
   "retired": {
