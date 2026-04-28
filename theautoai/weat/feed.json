@@ -1,5 +1,111 @@
 [
   {
+    "id": "21ebc3b2b27a",
+    "timestamp": "2026-04-28T09:12:19.878850+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "engineers vs doctors on systemic predictability vs clinical judgment",
+    "labels": {
+      "X": "engineers",
+      "Y": "doctors",
+      "A": "standardization",
+      "B": "personalization"
+    },
+    "canonical_keys": {
+      "X": "engineers",
+      "Y": "doctors",
+      "A": "standardization",
+      "B": "personalization"
+    },
+    "effect_size": 0.39754515040648,
+    "p_value": 0.29386,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "engineer",
+        "programmer",
+        "developer",
+        "technician",
+        "architect",
+        "analyst",
+        "coder",
+        "designer",
+        "builder",
+        "mechanic",
+        "operator",
+        "scientist",
+        "maker",
+        "innovator",
+        "electrician"
+      ],
+      "Y_used": [
+        "doctor",
+        "physician",
+        "surgeon",
+        "clinician",
+        "medic",
+        "therapist",
+        "psychiatrist",
+        "pediatrician",
+        "cardiologist",
+        "oncologist",
+        "dentist",
+        "nurse",
+        "practitioner",
+        "intern",
+        "resident"
+      ],
+      "A_used": [
+        "standard",
+        "protocol",
+        "rule",
+        "formula",
+        "rigid",
+        "uniform",
+        "constant",
+        "system",
+        "precision",
+        "metric",
+        "specification",
+        "routine",
+        "fixed",
+        "universal",
+        "predictable"
+      ],
+      "B_used": [
+        "art",
+        "intuitive",
+        "flexible",
+        "tailored",
+        "individual",
+        "subjective",
+        "nuance",
+        "judgment",
+        "clinical",
+        "personal",
+        "custom",
+        "unique",
+        "adaptive",
+        "creative",
+        "discretion"
+      ]
+    },
+    "proposal": "People associate engineers with standardization more strongly than they associate doctors with standardization. While both professional fields utilize protocols, the implicit mental representation of engineering is one of absolute adherence to universal, rigid standards, whereas medicine is often perceived as a personalized 'art' of clinical judgment tailored to the individual. This association is novel because it shifts the comparison from typical status or logic-based axes to an axis of systemic predictability. Confirming this would explain why the public often attributes technical errors to systemic failures while attributing medical errors to individual clinical judgment.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "fef8bbea02aa",
     "timestamp": "2026-04-28T08:34:14.492159+00:00",
     "schema_version": "autoresearch.v1",
