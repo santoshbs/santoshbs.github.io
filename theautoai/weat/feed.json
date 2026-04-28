@@ -1,5 +1,111 @@
 [
   {
+    "id": "c4152e4ce360",
+    "timestamp": "2026-04-28T23:57:23.286253+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "lawyers vs scientists on ambiguity versus clarity",
+    "labels": {
+      "X": "lawyers",
+      "Y": "scientists",
+      "A": "ambiguity",
+      "B": "clarity"
+    },
+    "canonical_keys": {
+      "X": "lawyers",
+      "Y": "scientists",
+      "A": "ambiguity",
+      "B": "clarity"
+    },
+    "effect_size": -0.17966687819974117,
+    "p_value": 0.63813,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "lawyer",
+        "attorney",
+        "counselor",
+        "barrister",
+        "solicitor",
+        "litigator",
+        "advocate",
+        "jurist",
+        "counsel",
+        "prosecutor",
+        "defender",
+        "litigant",
+        "pleader",
+        "lawyerly",
+        "judicial"
+      ],
+      "Y_used": [
+        "scientist",
+        "researcher",
+        "physicist",
+        "chemist",
+        "biologist",
+        "astronomer",
+        "geologist",
+        "mathematician",
+        "analyst",
+        "empiricist",
+        "theoretician",
+        "academic",
+        "scholar",
+        "investigator",
+        "naturalist"
+      ],
+      "A_used": [
+        "vague",
+        "ambiguous",
+        "equivocal",
+        "oblique",
+        "obscure",
+        "nebulous",
+        "hazy",
+        "unclear",
+        "indeterminate",
+        "elusive",
+        "subtle",
+        "implicit",
+        "nuanced",
+        "evasive",
+        "indirect"
+      ],
+      "B_used": [
+        "clear",
+        "precise",
+        "exact",
+        "explicit",
+        "definite",
+        "concrete",
+        "lucid",
+        "unambiguous",
+        "certain",
+        "factual",
+        "rigorous",
+        "specific",
+        "direct",
+        "plain",
+        "transparent"
+      ]
+    },
+    "proposal": "People associate lawyers with strategic ambiguity more strongly than they associate scientists with strategic ambiguity. While both professions value precision, legal precision often involves the deliberate use of language that permits multiple interpretations to safeguard a client's position. In contrast, scientific precision is focused on the total elimination of ambiguity to ensure reproducibility and factual clarity. Examining this association is novel as it contrasts two distinct professional paradigms of precision—the adversarial and the empirical—and matters because it reveals how the public conceptualizes the pursuit of truth in different institutional contexts.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "e208a064d759",
     "timestamp": "2026-04-28T22:53:26.313218+00:00",
     "schema_version": "autoresearch.v1",
