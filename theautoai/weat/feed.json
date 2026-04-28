@@ -1,5 +1,111 @@
 [
   {
+    "id": "f833fdf4aaae",
+    "timestamp": "2026-04-28T20:57:34.653970+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "lobbyists vs activists on pragmatism versus idealism",
+    "labels": {
+      "X": "lobbyists",
+      "Y": "activists",
+      "A": "Pragmatism",
+      "B": "Idealism"
+    },
+    "canonical_keys": {
+      "X": "lobbyists",
+      "Y": "activists",
+      "A": "pragmatism",
+      "B": "idealism"
+    },
+    "effect_size": 1.4414145062993078,
+    "p_value": 1e-05,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "lobbyist",
+        "representative",
+        "agent",
+        "consultant",
+        "broker",
+        "intermediary",
+        "negotiator",
+        "insider",
+        "fixer",
+        "emissary",
+        "strategist",
+        "delegate",
+        "envoy",
+        "operator",
+        "liaison"
+      ],
+      "Y_used": [
+        "activist",
+        "protester",
+        "demonstrator",
+        "rebel",
+        "agitator",
+        "radical",
+        "reformist",
+        "campaigner",
+        "outsider",
+        "crusader",
+        "militant",
+        "dissident",
+        "partisan",
+        "champion",
+        "zealot"
+      ],
+      "A_used": [
+        "pragmatic",
+        "practical",
+        "realistic",
+        "efficient",
+        "effective",
+        "flexible",
+        "adaptable",
+        "utilitarian",
+        "strategic",
+        "calculated",
+        "negotiable",
+        "moderate",
+        "expedient",
+        "feasible",
+        "functional"
+      ],
+      "B_used": [
+        "idealistic",
+        "principled",
+        "moral",
+        "pure",
+        "righteous",
+        "uncompromising",
+        "steadfast",
+        "unwavering",
+        "utopian",
+        "visionary",
+        "dogmatic",
+        "absolute",
+        "virtuous",
+        "earnest",
+        "devout"
+      ]
+    },
+    "proposal": "People associate lobbyists with pragmatism more strongly than they associate activists with pragmatism. This proposal is novel because while the morality of lobbying is frequently studied, the implicit cognitive style—specifically the contrast between institutional pragmatism and grassroots idealism—has not been systematically probed. It is interesting because it examines whether the public perceives a fundamental trade-off between moral purity and the ability to negotiate. Confirming this association would shift our understanding of how the 'insider' versus 'outsider' strategies for social change are mentally represented in terms of efficacy and flexibility.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "4452e58761f4",
     "timestamp": "2026-04-28T19:33:09.020707+00:00",
     "schema_version": "autoresearch.v1",
