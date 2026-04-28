@@ -1,5 +1,111 @@
 [
   {
+    "id": "c9d5addd82cf",
+    "timestamp": "2026-04-28T01:07:35.720574+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "artists vs athletes on intuition versus routine",
+    "labels": {
+      "X": "artists",
+      "Y": "athletes",
+      "A": "spontaneity",
+      "B": "discipline"
+    },
+    "canonical_keys": {
+      "X": "artists",
+      "Y": "athletes",
+      "A": "spontaneity",
+      "B": "discipline"
+    },
+    "effect_size": 0.6284502246779363,
+    "p_value": 0.09132,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "painter",
+        "sculptor",
+        "poet",
+        "musician",
+        "dancer",
+        "actor",
+        "writer",
+        "composer",
+        "singer",
+        "novelist",
+        "playwright",
+        "illustrator",
+        "ceramicist",
+        "lyricist",
+        "virtuoso"
+      ],
+      "Y_used": [
+        "runner",
+        "swimmer",
+        "gymnast",
+        "boxer",
+        "wrestler",
+        "sprinter",
+        "cyclist",
+        "golfer",
+        "bowler",
+        "skater",
+        "diver",
+        "fencer",
+        "surfer",
+        "pitcher",
+        "catcher"
+      ],
+      "A_used": [
+        "spontaneous",
+        "intuitive",
+        "unplanned",
+        "whim",
+        "improv",
+        "free",
+        "fluid",
+        "natural",
+        "random",
+        "casual",
+        "instinctive",
+        "abrupt",
+        "sudden",
+        "erratic",
+        "impulsive"
+      ],
+      "B_used": [
+        "disciplined",
+        "rehearsed",
+        "routine",
+        "structured",
+        "planned",
+        "drilled",
+        "rigid",
+        "systematic",
+        "methodical",
+        "scheduled",
+        "organized",
+        "formal",
+        "strict",
+        "precise",
+        "practiced"
+      ]
+    },
+    "proposal": "people associate artists with spontaneity more strongly than they associate athletes with spontaneity. This association is interesting because it highlights the public perception of 'flow' as an intuitive, unplanned emergence in art versus a drilled, rehearsed execution in sports. While both domains require high levels of practice, the implicit representation likely contrasts the inspired whim of the artist with the disciplined routine of the athlete. Confirming this would shift our understanding of how society conceptualizes different forms of expertise and the perceived role of intuition versus training in high-level performance.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "e443f7628efd",
     "timestamp": "2026-04-28T00:18:19.034043+00:00",
     "schema_version": "autoresearch.v1",
