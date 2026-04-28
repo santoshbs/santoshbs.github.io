@@ -1,5 +1,111 @@
 [
   {
+    "id": "56183b73aa10",
+    "timestamp": "2026-04-28T09:54:23.788674+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "libertarians vs conservatives on philosophical consistency",
+    "labels": {
+      "X": "libertarians",
+      "Y": "conservatives",
+      "A": "consistency",
+      "B": "inconsistency"
+    },
+    "canonical_keys": {
+      "X": "libertarians",
+      "Y": "conservatives",
+      "A": "consistency",
+      "B": "inconsistency"
+    },
+    "effect_size": -0.5589917419184363,
+    "p_value": 0.13349,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "libertarian",
+        "individualist",
+        "voluntaryist",
+        "minarchist",
+        "egoist",
+        "agorist",
+        "goldbug",
+        "anarchist",
+        "nonconformist",
+        "dissident",
+        "maverick",
+        "iconoclast",
+        "autonomist",
+        "freethinker",
+        "skeptic"
+      ],
+      "Y_used": [
+        "conservative",
+        "traditionalist",
+        "reactionary",
+        "rightist",
+        "conventionalist",
+        "fundamentalist",
+        "preservationist",
+        "conformist",
+        "moralist",
+        "patriot",
+        "nationalist",
+        "stalwart",
+        "loyalist",
+        "devotee",
+        "partisan"
+      ],
+      "A_used": [
+        "consistent",
+        "logical",
+        "rigorous",
+        "coherent",
+        "stable",
+        "uniform",
+        "steady",
+        "constant",
+        "systematic",
+        "principled",
+        "reliable",
+        "methodical",
+        "orderly",
+        "predictable",
+        "precise"
+      ],
+      "B_used": [
+        "inconsistent",
+        "contradictory",
+        "eclectic",
+        "erratic",
+        "variable",
+        "fickle",
+        "capricious",
+        "random",
+        "fragmented",
+        "disjointed",
+        "shifting",
+        "fluctuating",
+        "unstable",
+        "arbitrary",
+        "paradoxical"
+      ]
+    },
+    "proposal": "People associate libertarians with consistency more strongly than they associate conservatives with consistency. This association likely stems from the libertarian emphasis on a single, unifying axiom, such as the non-aggression principle, compared to the broader, more eclectic coalition of interests and values that define conservatism. Examining this is novel as it distinguishes between two distinct right-leaning ideologies rather than the standard liberal-conservative binary. This matters because it reveals whether the public perceives libertarianism as a rigorous philosophical system rather than just a political preference.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "21ebc3b2b27a",
     "timestamp": "2026-04-28T09:12:19.878850+00:00",
     "schema_version": "autoresearch.v1",
