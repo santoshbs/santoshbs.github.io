@@ -1,5 +1,111 @@
 [
   {
+    "id": "5baf81b56d7a",
+    "timestamp": "2026-04-28T11:29:32.238951+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "athletes vs soldiers on performance versus utility",
+    "labels": {
+      "X": "athletes",
+      "Y": "soldiers",
+      "A": "theatricality",
+      "B": "utility"
+    },
+    "canonical_keys": {
+      "X": "athletes",
+      "Y": "soldiers",
+      "A": "theatricality",
+      "B": "utility"
+    },
+    "effect_size": 1.547615560416947,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "athlete",
+        "runner",
+        "swimmer",
+        "gymnast",
+        "sprinter",
+        "wrestler",
+        "golfer",
+        "skater",
+        "boxer",
+        "bowler",
+        "cyclist",
+        "skier",
+        "climber",
+        "surfer",
+        "diver"
+      ],
+      "Y_used": [
+        "soldier",
+        "trooper",
+        "private",
+        "marine",
+        "sergeant",
+        "corporal",
+        "lieutenant",
+        "captain",
+        "colonel",
+        "general",
+        "warrior",
+        "sentinel",
+        "guard",
+        "ranger",
+        "commando"
+      ],
+      "A_used": [
+        "spectacle",
+        "performance",
+        "show",
+        "theatrics",
+        "drama",
+        "exhibition",
+        "pageant",
+        "display",
+        "flash",
+        "glamour",
+        "audience",
+        "costume",
+        "applause",
+        "acting",
+        "stage"
+      ],
+      "B_used": [
+        "utility",
+        "service",
+        "duty",
+        "function",
+        "mission",
+        "effort",
+        "labor",
+        "work",
+        "task",
+        "routine",
+        "order",
+        "discipline",
+        "operation",
+        "purpose",
+        "use"
+      ]
+    },
+    "proposal": "People associate athletes with theatricality more strongly than they associate soldiers with theatricality. While both categories are characterized by rigorous physical training, strict discipline, and the use of uniforms, the social purpose of athletic exertion is fundamentally tied to public entertainment and spectacle. This association is novel because it probes the implicit distinction between two forms of highly structured physical identity—one viewed as a performance and the other as a utility. Confirming this would shift our understanding of how the public mentally separates 'discipline for show' from 'discipline for service'.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "56183b73aa10",
     "timestamp": "2026-04-28T09:54:23.788674+00:00",
     "schema_version": "autoresearch.v1",
