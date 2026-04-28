@@ -1,5 +1,111 @@
 [
   {
+    "id": "b3a5dfdfd733",
+    "timestamp": "2026-04-28T03:39:58.264327+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "journalists vs historians on temporal pressure",
+    "labels": {
+      "X": "journalists",
+      "Y": "historians",
+      "A": "urgency",
+      "B": "deliberation"
+    },
+    "canonical_keys": {
+      "X": "journalists",
+      "Y": "historians",
+      "A": "urgency",
+      "B": "deliberation"
+    },
+    "effect_size": 1.5304313154556632,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "reporter",
+        "journalist",
+        "correspondent",
+        "anchor",
+        "editor",
+        "columnist",
+        "blogger",
+        "broadcaster",
+        "announcer",
+        "stringer",
+        "paparazzi",
+        "newsman",
+        "newswoman",
+        "press",
+        "scribe"
+      ],
+      "Y_used": [
+        "historian",
+        "archivist",
+        "chronicler",
+        "scholar",
+        "researcher",
+        "academic",
+        "curator",
+        "biographer",
+        "paleographer",
+        "genealogist",
+        "annalist",
+        "antiquary",
+        "historiographer",
+        "hagiographer",
+        "expert"
+      ],
+      "A_used": [
+        "urgent",
+        "fast",
+        "quick",
+        "immediate",
+        "hasty",
+        "rapid",
+        "rushed",
+        "prompt",
+        "sudden",
+        "swift",
+        "instant",
+        "fleeting",
+        "pressing",
+        "brisk",
+        "accelerated"
+      ],
+      "B_used": [
+        "slow",
+        "deliberate",
+        "patient",
+        "leisurely",
+        "gradual",
+        "steady",
+        "methodical",
+        "thorough",
+        "measured",
+        "lingering",
+        "prolonged",
+        "enduring",
+        "cautious",
+        "reflective",
+        "painstaking"
+      ]
+    },
+    "proposal": "People associate journalists with urgency more strongly than they associate historians with urgency. While both professions are dedicated to the documentation and analysis of events, the implicit temporal pressure of the news cycle creates a mental association of haste and immediacy for the former. This proposal is novel because it examines the temporal perception of knowledge production rather than traditional competence or political bias. Understanding this association would clarify how the public distinguishes between 'fast' and 'slow' modes of truth-seeking.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "330d1b025db7",
     "timestamp": "2026-04-28T03:06:53.425005+00:00",
     "schema_version": "autoresearch.v1",
