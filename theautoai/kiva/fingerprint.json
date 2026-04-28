@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "batches_seen": 24,
-  "loans_seen": 384,
-  "last_updated": "2026-04-28T10:23:23.839227+00:00",
+  "batches_seen": 25,
+  "loans_seen": 400,
+  "last_updated": "2026-04-28T11:21:29.236969+00:00",
   "watching_for": "",
   "claims": {
     "institutional-names-slower": {
@@ -13,10 +13,10 @@
       "supporting_loans": [],
       "confidence": 0.91,
       "first_seen_batch": 1,
-      "last_updated_batch": 24,
+      "last_updated_batch": 25,
       "confidence_history": [
         [
-          24,
+          25,
           0.91
         ]
       ]
@@ -29,10 +29,10 @@
       "supporting_loans": [],
       "confidence": 0.85,
       "first_seen_batch": 1,
-      "last_updated_batch": 24,
+      "last_updated_batch": 25,
       "confidence_history": [
         [
-          24,
+          25,
           0.85
         ]
       ]
@@ -45,10 +45,10 @@
       "supporting_loans": [],
       "confidence": 0.6,
       "first_seen_batch": 1,
-      "last_updated_batch": 24,
+      "last_updated_batch": 25,
       "confidence_history": [
         [
-          24,
+          25,
           0.6
         ]
       ]
@@ -61,10 +61,10 @@
       "supporting_loans": [],
       "confidence": 0.71,
       "first_seen_batch": 1,
-      "last_updated_batch": 24,
+      "last_updated_batch": 25,
       "confidence_history": [
         [
-          24,
+          25,
           0.71
         ]
       ]
@@ -77,10 +77,10 @@
       "supporting_loans": [],
       "confidence": 0.7,
       "first_seen_batch": 1,
-      "last_updated_batch": 24,
+      "last_updated_batch": 25,
       "confidence_history": [
         [
-          24,
+          25,
           0.7
         ]
       ]
@@ -93,10 +93,10 @@
       "supporting_loans": [],
       "confidence": 1.0,
       "first_seen_batch": 1,
-      "last_updated_batch": 24,
+      "last_updated_batch": 25,
       "confidence_history": [
         [
-          24,
+          25,
           1.0
         ]
       ]
@@ -108,11 +108,11 @@
       "body": "Pitches from women that include the borrower's age tend to fund more slowly than those that omit it.",
       "supporting_loans": [],
       "confidence": 0.66,
-      "first_seen_batch": 10,
-      "last_updated_batch": 24,
+      "first_seen_batch": 9,
+      "last_updated_batch": 25,
       "confidence_history": [
         [
-          24,
+          25,
           0.66
         ]
       ]
@@ -124,11 +124,11 @@
       "body": "Pitches from women that use the term 'entrepreneur' to describe themselves tend to accelerate funding.",
       "supporting_loans": [],
       "confidence": 0.6,
-      "first_seen_batch": 16,
-      "last_updated_batch": 24,
+      "first_seen_batch": 15,
+      "last_updated_batch": 25,
       "confidence_history": [
         [
-          24,
+          25,
           0.6
         ]
       ]
@@ -158,17 +158,22 @@
     "female-social-goals-faster": {
       "id": "female-social-goals-faster",
       "body": "Mentioning specific social goals like food security or children's education may accelerate funding for women.",
-      "first_seen_batch": 20
+      "first_seen_batch": 19
     },
     "female-local-currency-slower": {
       "id": "female-local-currency-slower",
       "body": "Including the exact loan amount in local currency may predict slower funding for women.",
-      "first_seen_batch": 22
+      "first_seen_batch": 21
     },
     "female-number-of-children-slower": {
       "id": "female-number-of-children-slower",
       "body": "Mentioning the specific number of children may predict slower funding for female borrowers.",
-      "first_seen_batch": 24
+      "first_seen_batch": 23
+    },
+    "female-self-effort-slower": {
+      "id": "female-self-effort-slower",
+      "body": "Female borrowers who emphasize sustaining their business through their own efforts may fund more slowly.",
+      "first_seen_batch": 25
     }
   },
   "retired": {
