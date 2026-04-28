@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "batches_seen": 19,
-  "loans_seen": 304,
-  "last_updated": "2026-04-28T06:54:43.441298+00:00",
+  "batches_seen": 20,
+  "loans_seen": 320,
+  "last_updated": "2026-04-28T07:50:38.626290+00:00",
   "watching_for": "",
   "claims": {
     "institutional-names-slower": {
@@ -13,10 +13,10 @@
       "supporting_loans": [],
       "confidence": 0.76,
       "first_seen_batch": 1,
-      "last_updated_batch": 19,
+      "last_updated_batch": 20,
       "confidence_history": [
         [
-          19,
+          20,
           0.76
         ]
       ]
@@ -29,27 +29,11 @@
       "supporting_loans": [],
       "confidence": 0.75,
       "first_seen_batch": 1,
-      "last_updated_batch": 19,
+      "last_updated_batch": 20,
       "confidence_history": [
         [
-          19,
+          20,
           0.75
-        ]
-      ]
-    },
-    "family-details-faster": {
-      "id": "family-details-faster",
-      "bucket": "faster",
-      "title": "Mentioning specific family details predicts faster funding regardless of gender.",
-      "body": "Pitches that provide concrete details about children or household stability accelerate funding for both men and women.",
-      "supporting_loans": [],
-      "confidence": 0.51,
-      "first_seen_batch": 1,
-      "last_updated_batch": 19,
-      "confidence_history": [
-        [
-          19,
-          0.51
         ]
       ]
     },
@@ -61,10 +45,10 @@
       "supporting_loans": [],
       "confidence": 0.6,
       "first_seen_batch": 1,
-      "last_updated_batch": 19,
+      "last_updated_batch": 20,
       "confidence_history": [
         [
-          19,
+          20,
           0.6
         ]
       ]
@@ -77,10 +61,10 @@
       "supporting_loans": [],
       "confidence": 0.71,
       "first_seen_batch": 1,
-      "last_updated_batch": 19,
+      "last_updated_batch": 20,
       "confidence_history": [
         [
-          19,
+          20,
           0.71
         ]
       ]
@@ -93,10 +77,10 @@
       "supporting_loans": [],
       "confidence": 0.65,
       "first_seen_batch": 1,
-      "last_updated_batch": 19,
+      "last_updated_batch": 20,
       "confidence_history": [
         [
-          19,
+          20,
           0.65
         ]
       ]
@@ -108,11 +92,11 @@
       "body": "Pitches from women that detail specific business inputs or concrete objectives beyond general family security accelerate funding.",
       "supporting_loans": [],
       "confidence": 0.92,
-      "first_seen_batch": 3,
-      "last_updated_batch": 19,
+      "first_seen_batch": 2,
+      "last_updated_batch": 20,
       "confidence_history": [
         [
-          19,
+          20,
           0.92
         ]
       ]
@@ -124,12 +108,28 @@
       "body": "Pitches from women that include the borrower's age tend to fund more slowly than those that omit it.",
       "supporting_loans": [],
       "confidence": 0.66,
-      "first_seen_batch": 15,
-      "last_updated_batch": 19,
+      "first_seen_batch": 14,
+      "last_updated_batch": 20,
       "confidence_history": [
         [
-          19,
+          20,
           0.66
+        ]
+      ]
+    },
+    "female-entrepreneur-faster": {
+      "id": "female-entrepreneur-faster",
+      "bucket": "gendered_women",
+      "title": "Female borrowers who identify as entrepreneurs fund faster.",
+      "body": "Pitches from women that use the term 'entrepreneur' to describe themselves tend to accelerate funding.",
+      "supporting_loans": [],
+      "confidence": 0.6,
+      "first_seen_batch": 20,
+      "last_updated_batch": 20,
+      "confidence_history": [
+        [
+          20,
+          0.6
         ]
       ]
     }
@@ -154,11 +154,6 @@
       "id": "female-marital-status-slower",
       "body": "Mentioning marital status or widowhood may predict slower funding for female borrowers.",
       "first_seen_batch": 1
-    },
-    "female-entrepreneur-faster": {
-      "id": "female-entrepreneur-faster",
-      "body": "Using the word 'entrepreneur' may accelerate funding for female borrowers.",
-      "first_seen_batch": 19
     }
   },
   "retired": {
@@ -216,6 +211,13 @@
       "title": "Pitches from women that emphasize personal traits like being hardworking or putting in hard work predict slower funding.",
       "retrospective": "Retired to make room for promoted age claim due to memory cap.",
       "retired_batch": 17,
+      "was_believed_batches": 0
+    },
+    "family-details-faster": {
+      "id": "family-details-faster",
+      "title": "Pitches that provide concrete details about children or household stability accelerate funding for both men and women.",
+      "retrospective": "Contradicted by observations that mentioning the number of children predicts slower funding for women.",
+      "retired_batch": 20,
       "was_believed_batches": 0
     }
   }
