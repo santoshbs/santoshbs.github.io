@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "batches_seen": 26,
-  "loans_seen": 416,
-  "last_updated": "2026-04-28T12:05:55.992020+00:00",
+  "batches_seen": 27,
+  "loans_seen": 432,
+  "last_updated": "2026-04-28T12:46:14.681946+00:00",
   "watching_for": "",
   "claims": {
     "institutional-names-slower": {
@@ -11,13 +11,13 @@
       "title": "Mentioning specific institutional or brand names predicts slower funding regardless of gender.",
       "body": "Pitches that reference specific financial institutions or brands tend to fund more slowly for both men and women.",
       "supporting_loans": [],
-      "confidence": 0.91,
+      "confidence": 0.96,
       "first_seen_batch": 1,
-      "last_updated_batch": 26,
+      "last_updated_batch": 27,
       "confidence_history": [
         [
-          26,
-          0.91
+          27,
+          0.96
         ]
       ]
     },
@@ -29,10 +29,10 @@
       "supporting_loans": [],
       "confidence": 0.85,
       "first_seen_batch": 1,
-      "last_updated_batch": 26,
+      "last_updated_batch": 27,
       "confidence_history": [
         [
-          26,
+          27,
           0.85
         ]
       ]
@@ -45,10 +45,10 @@
       "supporting_loans": [],
       "confidence": 0.6,
       "first_seen_batch": 1,
-      "last_updated_batch": 26,
+      "last_updated_batch": 27,
       "confidence_history": [
         [
-          26,
+          27,
           0.6
         ]
       ]
@@ -61,10 +61,10 @@
       "supporting_loans": [],
       "confidence": 0.71,
       "first_seen_batch": 1,
-      "last_updated_batch": 26,
+      "last_updated_batch": 27,
       "confidence_history": [
         [
-          26,
+          27,
           0.71
         ]
       ]
@@ -72,16 +72,16 @@
     "female-savings-dreams-slower": {
       "id": "female-savings-dreams-slower",
       "bucket": "gendered_women",
-      "title": "Female borrowers who mention dreams of saving money predict slower funding.",
-      "body": "Pitches from women that focus on the dream of saving money tend to fund more slowly than those that do not.",
+      "title": "Female borrowers who mention dreams or future aspirations predict slower funding.",
+      "body": "Pitches from women that focus on dreams, aspirations, or the goal of saving money tend to fund more slowly.",
       "supporting_loans": [],
-      "confidence": 0.7,
+      "confidence": 0.75,
       "first_seen_batch": 1,
-      "last_updated_batch": 26,
+      "last_updated_batch": 27,
       "confidence_history": [
         [
-          26,
-          0.7
+          27,
+          0.75
         ]
       ]
     },
@@ -93,10 +93,10 @@
       "supporting_loans": [],
       "confidence": 1.0,
       "first_seen_batch": 1,
-      "last_updated_batch": 26,
+      "last_updated_batch": 27,
       "confidence_history": [
         [
-          26,
+          27,
           1.0
         ]
       ]
@@ -108,27 +108,27 @@
       "body": "Pitches from women that include the borrower's age tend to fund more slowly than those that omit it.",
       "supporting_loans": [],
       "confidence": 0.66,
-      "first_seen_batch": 8,
-      "last_updated_batch": 26,
+      "first_seen_batch": 7,
+      "last_updated_batch": 27,
       "confidence_history": [
         [
-          26,
+          27,
           0.66
         ]
       ]
     },
-    "female-entrepreneur-faster": {
-      "id": "female-entrepreneur-faster",
+    "female-local-currency-slower": {
+      "id": "female-local-currency-slower",
       "bucket": "gendered_women",
-      "title": "Female borrowers who identify as entrepreneurs fund faster.",
-      "body": "Pitches from women that use the term 'entrepreneur' to describe themselves tend to accelerate funding.",
+      "title": "Female borrowers who include the loan amount in local currency predict slower funding.",
+      "body": "Pitches from women that specify the loan amount in the local currency tend to fund more slowly than those that do not.",
       "supporting_loans": [],
       "confidence": 0.6,
-      "first_seen_batch": 14,
-      "last_updated_batch": 26,
+      "first_seen_batch": 27,
+      "last_updated_batch": 27,
       "confidence_history": [
         [
-          26,
+          27,
           0.6
         ]
       ]
@@ -158,27 +158,22 @@
     "female-social-goals-faster": {
       "id": "female-social-goals-faster",
       "body": "Mentioning specific social goals like food security or children's education may accelerate funding for women.",
-      "first_seen_batch": 18
-    },
-    "female-local-currency-slower": {
-      "id": "female-local-currency-slower",
-      "body": "Including the exact loan amount in local currency may predict slower funding for women.",
-      "first_seen_batch": 20
+      "first_seen_batch": 17
     },
     "female-number-of-children-slower": {
       "id": "female-number-of-children-slower",
       "body": "Mentioning the specific number of children may predict slower funding for female borrowers.",
-      "first_seen_batch": 22
+      "first_seen_batch": 21
     },
     "female-self-effort-slower": {
       "id": "female-self-effort-slower",
       "body": "Female borrowers who emphasize sustaining their business through their own efforts may fund more slowly.",
-      "first_seen_batch": 24
+      "first_seen_batch": 23
     },
     "female-children-gender-faster": {
       "id": "female-children-gender-faster",
       "body": "Specifying the gender of children may predict faster funding for female borrowers.",
-      "first_seen_batch": 26
+      "first_seen_batch": 25
     }
   },
   "retired": {
@@ -243,6 +238,13 @@
       "title": "Pitches that provide concrete details about children or household stability accelerate funding for both men and women.",
       "retrospective": "Contradicted by observations that mentioning the number of children predicts slower funding for women.",
       "retired_batch": 20,
+      "was_believed_batches": 0
+    },
+    "female-entrepreneur-faster": {
+      "id": "female-entrepreneur-faster",
+      "title": "Pitches from women that use the term 'entrepreneur' to describe themselves tend to accelerate funding.",
+      "retrospective": "Retired to make room for promoted local currency claim due to memory cap.",
+      "retired_batch": 27,
       "was_believed_batches": 0
     }
   }
