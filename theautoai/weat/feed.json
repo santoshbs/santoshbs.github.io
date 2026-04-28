@@ -1,5 +1,111 @@
 [
   {
+    "id": "bc62239de5b4",
+    "timestamp": "2026-04-28T04:16:14.027900+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "activists vs diplomats on moral clarity vs strategic ambiguity",
+    "labels": {
+      "X": "activists",
+      "Y": "diplomats",
+      "A": "moral certainty",
+      "B": "strategic ambiguity"
+    },
+    "canonical_keys": {
+      "X": "activists",
+      "Y": "diplomats",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 0.8928467054233199,
+    "p_value": 0.01356,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "activist",
+        "campaigner",
+        "protester",
+        "reformer",
+        "agitator",
+        "militant",
+        "advocate",
+        "dissident",
+        "rebel",
+        "radical",
+        "organizer",
+        "crusader",
+        "zealot",
+        "partisan",
+        "insurgent"
+      ],
+      "Y_used": [
+        "diplomat",
+        "ambassador",
+        "envoy",
+        "mediator",
+        "negotiator",
+        "consul",
+        "emissary",
+        "attache",
+        "statesman",
+        "representative",
+        "conciliator",
+        "arbiter",
+        "liaison",
+        "official",
+        "delegate"
+      ],
+      "A_used": [
+        "certain",
+        "absolute",
+        "rigid",
+        "firm",
+        "clear",
+        "definite",
+        "dogmatic",
+        "righteous",
+        "steadfast",
+        "unwavering",
+        "resolute",
+        "pure",
+        "uncompromising",
+        "principled",
+        "austere"
+      ],
+      "B_used": [
+        "ambiguous",
+        "vague",
+        "nuanced",
+        "pragmatic",
+        "flexible",
+        "subtle",
+        "adaptable",
+        "moderate",
+        "fluid",
+        "oblique",
+        "indirect",
+        "tentative",
+        "elusive",
+        "pliable",
+        "opportunistic"
+      ]
+    },
+    "proposal": "People associate activists with moral certainty more strongly than they associate diplomats with moral certainty. This examines the implicit tension between the perceived purity of ideological conviction and the strategic ambiguity required for professional negotiation. It is novel because it moves beyond simple metrics of aggression or politeness to probe the cognitive representation of moral clarity. Confirming this association would highlight a systemic mental link between pragmatic compromise and a perceived lack of moral conviction.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "b3a5dfdfd733",
     "timestamp": "2026-04-28T03:39:58.264327+00:00",
     "schema_version": "autoresearch.v1",
