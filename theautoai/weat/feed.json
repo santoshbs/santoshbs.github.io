@@ -1,5 +1,111 @@
 [
   {
+    "id": "44be37be99d6",
+    "timestamp": "2026-04-28T13:28:04.583450+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "activists vs politicians on moral purity vs pragmatism",
+    "labels": {
+      "X": "activists",
+      "Y": "politicians",
+      "A": "moral purity",
+      "B": "pragmatism"
+    },
+    "canonical_keys": {
+      "X": "activists",
+      "Y": "politicians",
+      "A": "",
+      "B": "pragmatism"
+    },
+    "effect_size": 0.599724920470895,
+    "p_value": 0.10773,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "activist",
+        "protester",
+        "campaigner",
+        "advocate",
+        "reformer",
+        "dissident",
+        "militant",
+        "organizer",
+        "agitator",
+        "rebel",
+        "crusader",
+        "demonstrator",
+        "marcher",
+        "radical",
+        "picket"
+      ],
+      "Y_used": [
+        "politician",
+        "senator",
+        "governor",
+        "mayor",
+        "representative",
+        "legislator",
+        "minister",
+        "congressman",
+        "official",
+        "diplomat",
+        "statesman",
+        "bureaucrat",
+        "parliamentarian",
+        "candidate",
+        "councilman"
+      ],
+      "A_used": [
+        "pure",
+        "principled",
+        "honest",
+        "upright",
+        "virtuous",
+        "moral",
+        "idealistic",
+        "unwavering",
+        "steadfast",
+        "sincere",
+        "incorruptible",
+        "noble",
+        "righteous",
+        "ethical",
+        "chaste"
+      ],
+      "B_used": [
+        "pragmatic",
+        "flexible",
+        "compromising",
+        "strategic",
+        "opportunistic",
+        "practical",
+        "calculating",
+        "adaptive",
+        "negotiable",
+        "expedient",
+        "shrewd",
+        "diplomatic",
+        "realistic",
+        "versatile",
+        "moderate"
+      ]
+    },
+    "proposal": "I propose that people associate activists with moral purity more strongly than they associate politicians with moral purity. While politicians are often implicitly linked to compromise and pragmatic negotiation, activists are seen as driven by unwavering principled stances. This is novel because it shifts the focus from the competence/warmth dichotomy to the perceived ethical status of the actor. Confirming this would provide insight into how activists maintain ideological legitimacy in the public eye despite lacking formal institutional power.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "585072ce7d3e",
     "timestamp": "2026-04-28T12:52:26.537937+00:00",
     "schema_version": "autoresearch.v1",
