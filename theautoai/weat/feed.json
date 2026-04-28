@@ -1,5 +1,116 @@
 [
   {
+    "id": "c6ab04ee0b12",
+    "timestamp": "2026-04-28T21:46:26.519478+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "socialists vs liberals on systemic overhaul versus incremental reform",
+    "labels": {
+      "X": "socialists",
+      "Y": "liberals",
+      "A": "utopianism",
+      "B": "pragmatism"
+    },
+    "canonical_keys": {
+      "X": "socialists",
+      "Y": "liberals",
+      "A": "utopianism",
+      "B": "pragmatism"
+    },
+    "effect_size": 0.9697017699707109,
+    "p_value": 0.00432,
+    "n": {
+      "X": 16,
+      "Y": 16,
+      "A": 16,
+      "B": 16
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "socialist",
+        "socialists",
+        "collectivist",
+        "collectivists",
+        "egalitarian",
+        "egalitarians",
+        "comrade",
+        "comrades",
+        "leftists",
+        "proletarian",
+        "proletarians",
+        "communalist",
+        "communalists",
+        "syndicalist",
+        "syndicalists",
+        "redistributionist"
+      ],
+      "Y_used": [
+        "liberal",
+        "liberals",
+        "centrist",
+        "centrists",
+        "moderate",
+        "moderates",
+        "pluralist",
+        "pluralists",
+        "capitalist",
+        "capitalists",
+        "individualist",
+        "individualists",
+        "constitutionalist",
+        "constitutionalists",
+        "libertarian",
+        "libertarians"
+      ],
+      "A_used": [
+        "utopia",
+        "utopian",
+        "utopianism",
+        "ideal",
+        "idealist",
+        "idealism",
+        "dream",
+        "dreaming",
+        "visionary",
+        "vision",
+        "revolution",
+        "revolutionary",
+        "radical",
+        "radicalism",
+        "overhaul",
+        "transformation",
+        "paradise"
+      ],
+      "B_used": [
+        "pragmatism",
+        "pragmatic",
+        "practical",
+        "practicality",
+        "realism",
+        "realist",
+        "incremental",
+        "incrementalism",
+        "reform",
+        "gradual",
+        "gradualism",
+        "step",
+        "adjustment",
+        "stability",
+        "feasibility",
+        "feasible"
+      ]
+    },
+    "proposal": "People associate socialists with utopianism more strongly than they associate liberals with utopianism. While both groups are often categorized as 'left-wing,' the implicit distinction lies in the perceived scale of their goals—systemic overhaul versus incremental reform. This association is novel because most implicit bias research collapses these identities into a single 'progressive' category against 'conservatives.' Confirming this would reveal how the public distinguishes between different modalities of social change, specifically the perceived gap between pragmatic reformism and idealistic restructuring.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "f833fdf4aaae",
     "timestamp": "2026-04-28T20:57:34.653970+00:00",
     "schema_version": "autoresearch.v1",
