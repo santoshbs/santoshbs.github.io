@@ -1,5 +1,111 @@
 [
   {
+    "id": "581ff43c1bf2",
+    "timestamp": "2026-04-28T12:15:00.498803+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "lawyers vs scientists on adversarial versus collaborative nature of work",
+    "labels": {
+      "X": "lawyers",
+      "Y": "scientists",
+      "A": "adversarial",
+      "B": "collaborative"
+    },
+    "canonical_keys": {
+      "X": "lawyers",
+      "Y": "scientists",
+      "A": "adversarial",
+      "B": "collaborative"
+    },
+    "effect_size": 0.7928234672068758,
+    "p_value": 0.03027,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "lawyer",
+        "attorney",
+        "solicitor",
+        "barrister",
+        "counsel",
+        "litigator",
+        "advocate",
+        "prosecutor",
+        "defender",
+        "jurist",
+        "paralegal",
+        "notary",
+        "counselor",
+        "mediator",
+        "arbitrator"
+      ],
+      "Y_used": [
+        "scientist",
+        "chemist",
+        "physicist",
+        "biologist",
+        "astronomer",
+        "geologist",
+        "researcher",
+        "academic",
+        "scholar",
+        "technician",
+        "analyst",
+        "mathematician",
+        "ecologist",
+        "zoologist",
+        "botanist"
+      ],
+      "A_used": [
+        "conflict",
+        "battle",
+        "fight",
+        "competition",
+        "opposing",
+        "rival",
+        "clash",
+        "dispute",
+        "argument",
+        "struggle",
+        "contest",
+        "adversary",
+        "hostility",
+        "enmity",
+        "antagonism"
+      ],
+      "B_used": [
+        "cooperation",
+        "collaboration",
+        "teamwork",
+        "partnership",
+        "harmony",
+        "consensus",
+        "unity",
+        "shared",
+        "joint",
+        "together",
+        "supportive",
+        "alliance",
+        "agreement",
+        "synergy",
+        "mutual"
+      ]
+    },
+    "proposal": "I propose that people associate lawyers with adversarialism more strongly than they associate scientists with adversarialism. While both professions rely on evidence and argumentation, the legal system is explicitly built on an adversarial model of competing parties, whereas science is implicitly represented as a collaborative, cumulative effort toward a shared truth. This is novel because it shifts the focus from competence or warmth stereotypes to the implicit representation of the structural nature of a profession's work. Confirming this would reveal how institutional processes—like the courtroom battle versus the peer-review process—shape the social identity of the practitioners in the public mind.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "5baf81b56d7a",
     "timestamp": "2026-04-28T11:29:32.238951+00:00",
     "schema_version": "autoresearch.v1",
