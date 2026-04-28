@@ -1,5 +1,111 @@
 [
   {
+    "id": "f4e2fce14c37",
+    "timestamp": "2026-04-28T07:57:23.858087+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "clergy vs psychologists on moral scrutiny versus clinical neutrality",
+    "labels": {
+      "X": "clergy",
+      "Y": "psychologists",
+      "A": "moral judgment",
+      "B": "clinical neutrality"
+    },
+    "canonical_keys": {
+      "X": "clergy",
+      "Y": "psychologists",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 1.735680755886173,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "priest",
+        "pastor",
+        "minister",
+        "imam",
+        "rabbi",
+        "bishop",
+        "cleric",
+        "deacon",
+        "chaplain",
+        "vicar",
+        "curate",
+        "parson",
+        "preacher",
+        "monk",
+        "nun"
+      ],
+      "Y_used": [
+        "psychologist",
+        "therapist",
+        "counselor",
+        "psychiatrist",
+        "clinician",
+        "analyst",
+        "shrink",
+        "psychotherapist",
+        "behavioralist",
+        "psychoanalyst",
+        "practitioner",
+        "specialist",
+        "consultant",
+        "examiner",
+        "evaluator"
+      ],
+      "A_used": [
+        "sin",
+        "virtue",
+        "guilt",
+        "shame",
+        "wrong",
+        "right",
+        "moral",
+        "immoral",
+        "judgment",
+        "condemnation",
+        "salvation",
+        "piety",
+        "heresy",
+        "vice",
+        "purity"
+      ],
+      "B_used": [
+        "objective",
+        "neutral",
+        "scientific",
+        "empirical",
+        "factual",
+        "clinical",
+        "analytical",
+        "impartial",
+        "detached",
+        "observational",
+        "data",
+        "evidence",
+        "logic",
+        "rational",
+        "dispassionate"
+      ]
+    },
+    "proposal": "I propose that people associate clergy with moral judgment more strongly than they associate psychologists with moral judgment. While both roles involve counseling and supporting individuals in distress, the implicit association of moral scrutiny is likely stronger for religious leaders due to their institutional role as arbiters of sin and virtue. This is novel because existing literature typically compares these groups on axes of empathy or trust, rather than the implicit perception of condemnation versus clinical neutrality. Confirming this would shift our understanding of the perceived psychological 'safety' of secular versus spiritual institutional roles.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "eeaddfaa83c1",
     "timestamp": "2026-04-28T07:02:21.737442+00:00",
     "schema_version": "autoresearch.v1",
