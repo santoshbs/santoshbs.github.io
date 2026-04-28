@@ -1,5 +1,111 @@
 [
   {
+    "id": "439a5c5f6232",
+    "timestamp": "2026-04-28T16:34:32.040518+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "activists vs protesters on strategic intentionality",
+    "labels": {
+      "X": "activists",
+      "Y": "protesters",
+      "A": "strategic",
+      "B": "spontaneous"
+    },
+    "canonical_keys": {
+      "X": "activists",
+      "Y": "protesters",
+      "A": "strategic",
+      "B": "spontaneous"
+    },
+    "effect_size": 1.5045592018298402,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "advocate",
+        "campaigner",
+        "lobbyist",
+        "reformer",
+        "champion",
+        "crusader",
+        "organizer",
+        "representative",
+        "coordinator",
+        "volunteer",
+        "partisan",
+        "supporter",
+        "pioneer",
+        "activist",
+        "delegate"
+      ],
+      "Y_used": [
+        "protester",
+        "demonstrator",
+        "rioter",
+        "marcher",
+        "insurgent",
+        "striker",
+        "objector",
+        "mob",
+        "crowd",
+        "agitator",
+        "dissident",
+        "militant",
+        "rebel",
+        "picketer",
+        "mutineer"
+      ],
+      "A_used": [
+        "strategy",
+        "plan",
+        "logic",
+        "method",
+        "design",
+        "tactic",
+        "organization",
+        "intent",
+        "deliberate",
+        "calculated",
+        "systematic",
+        "coordination",
+        "goal",
+        "target",
+        "blueprint"
+      ],
+      "B_used": [
+        "spontaneous",
+        "impulsive",
+        "random",
+        "chaos",
+        "reaction",
+        "instinct",
+        "unplanned",
+        "sudden",
+        "haphazard",
+        "erratic",
+        "wild",
+        "emotional",
+        "reflex",
+        "frenzy",
+        "outburst"
+      ]
+    },
+    "proposal": "People associate activists with strategy more strongly than they associate protesters with strategy. This association is novel because social psychology typically conflates activism and protesting into a single category of social movement behavior. It is interesting because it explores whether the public distinguishes between the perceived mental processes of organized, long-term advocacy and spontaneous, visible dissent. Confirming this would reveal an implicit hierarchy of perceived intellectual intentionality in how different forms of political expression are mentally represented.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "c82a8f88bd57",
     "timestamp": "2026-04-28T15:42:10.038180+00:00",
     "schema_version": "autoresearch.v1",
