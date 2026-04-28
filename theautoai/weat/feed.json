@@ -1,5 +1,115 @@
 [
   {
+    "id": "92ffe7ae89b3",
+    "timestamp": "2026-04-28T04:51:45.598857+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "athletes vs politicians on authenticity versus calculation",
+    "labels": {
+      "X": "athletes",
+      "Y": "politicians",
+      "A": "authenticity",
+      "B": "calculation"
+    },
+    "canonical_keys": {
+      "X": "athletes",
+      "Y": "politicians",
+      "A": "authenticity",
+      "B": "calculation"
+    },
+    "effect_size": -0.1794500739258543,
+    "p_value": 0.62353,
+    "n": {
+      "X": 16,
+      "Y": 16,
+      "A": 16,
+      "B": 16
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "runner",
+        "swimmer",
+        "cyclist",
+        "golfer",
+        "player",
+        "gymnast",
+        "skier",
+        "bowler",
+        "wrestler",
+        "boxer",
+        "sprinter",
+        "athlete",
+        "skater",
+        "diver",
+        "surfer",
+        "hiker"
+      ],
+      "Y_used": [
+        "senator",
+        "governor",
+        "mayor",
+        "minister",
+        "president",
+        "legislator",
+        "representative",
+        "politician",
+        "deputy",
+        "chancellor",
+        "official",
+        "statesman",
+        "lawmaker",
+        "councillor",
+        "diplomat",
+        "bureaucrat"
+      ],
+      "A_used": [
+        "genuine",
+        "sincere",
+        "real",
+        "authentic",
+        "natural",
+        "candid",
+        "open",
+        "true",
+        "transparent",
+        "heartfelt",
+        "honest",
+        "direct",
+        "raw",
+        "pure",
+        "actual",
+        "spontaneous"
+      ],
+      "B_used": [
+        "fake",
+        "artificial",
+        "calculated",
+        "staged",
+        "scripted",
+        "insincere",
+        "deceptive",
+        "plastic",
+        "synthetic",
+        "rehearsed",
+        "superficial",
+        "phony",
+        "contrived",
+        "theatrical",
+        "manufactured",
+        "stilted"
+      ]
+    },
+    "proposal": "People associate athletes with authenticity more strongly than they associate politicians with authenticity. This association likely stems from the perceived transparency of physical performance compared to the perceived performative and calculated nature of political discourse. This is novel because most implicit association research on politicians focuses on competence or honesty rather than the broader construct of authenticity. Confirming this would provide insight into why public figures in sports often maintain higher levels of trust and personal admiration than those in governance.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "bc62239de5b4",
     "timestamp": "2026-04-28T04:16:14.027900+00:00",
     "schema_version": "autoresearch.v1",
