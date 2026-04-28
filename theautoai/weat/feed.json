@@ -1,5 +1,111 @@
 [
   {
+    "id": "e443f7628efd",
+    "timestamp": "2026-04-28T00:18:19.034043+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "actors vs musicians on versatility vs specialization",
+    "labels": {
+      "X": "actors",
+      "Y": "musicians",
+      "A": "versatility",
+      "B": "specialization"
+    },
+    "canonical_keys": {
+      "X": "actors",
+      "Y": "musicians",
+      "A": "versatility",
+      "B": "specialization"
+    },
+    "effect_size": -1.0197753568839005,
+    "p_value": 0.0044,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "actor",
+        "actress",
+        "performer",
+        "thespian",
+        "star",
+        "lead",
+        "mime",
+        "celebrity",
+        "idol",
+        "talent",
+        "player",
+        "understudy",
+        "extra",
+        "headliner",
+        "showman"
+      ],
+      "Y_used": [
+        "musician",
+        "singer",
+        "pianist",
+        "guitarist",
+        "drummer",
+        "cellist",
+        "violinist",
+        "flutist",
+        "conductor",
+        "composer",
+        "vocalist",
+        "soloist",
+        "instrumentalist",
+        "bassist",
+        "harpist"
+      ],
+      "A_used": [
+        "versatile",
+        "flexible",
+        "adaptable",
+        "diverse",
+        "multifaceted",
+        "varied",
+        "elastic",
+        "agile",
+        "eclectic",
+        "dynamic",
+        "changeable",
+        "protean",
+        "universal",
+        "multifarious",
+        "pliant"
+      ],
+      "B_used": [
+        "specialized",
+        "specific",
+        "focused",
+        "expert",
+        "master",
+        "precise",
+        "narrow",
+        "technical",
+        "detailed",
+        "rigorous",
+        "niche",
+        "concentrated",
+        "fixed",
+        "deep",
+        "disciplined"
+      ]
+    },
+    "proposal": "People associate actors with versatility more strongly than they associate musicians with versatility. While both are creative performers, the conceptual core of acting is the ability to adopt diverse personas and emotional states, whereas musical expertise is often perceived as the deep mastery of a specific instrument or vocal range. This association is novel because it contrasts two distinct artistic disciplines to examine whether versatility is implicitly linked to identity-shifting versus technical specialization. Confirming this would provide insight into how we mentally represent the nature of artistic talent.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "9192eba93be9",
     "timestamp": "2026-04-27T23:40:29.192528+00:00",
     "schema_version": "autoresearch.v1",
