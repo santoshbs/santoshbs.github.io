@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "batches_seen": 9,
-  "loans_seen": 144,
-  "last_updated": "2026-04-28T00:08:12.871180+00:00",
+  "batches_seen": 10,
+  "loans_seen": 160,
+  "last_updated": "2026-04-28T00:56:48.978341+00:00",
   "watching_for": "",
   "claims": {
     "institutional-names-slower": {
@@ -13,10 +13,10 @@
       "supporting_loans": [],
       "confidence": 0.65,
       "first_seen_batch": 1,
-      "last_updated_batch": 9,
+      "last_updated_batch": 10,
       "confidence_history": [
         [
-          9,
+          10,
           0.65
         ]
       ]
@@ -27,13 +27,13 @@
       "title": "Mentioning specific years of professional experience predicts faster funding regardless of gender.",
       "body": "Quantifying professional experience or tenure in a field accelerates the funding process for both men and women.",
       "supporting_loans": [],
-      "confidence": 0.65,
+      "confidence": 0.7,
       "first_seen_batch": 1,
-      "last_updated_batch": 9,
+      "last_updated_batch": 10,
       "confidence_history": [
         [
-          9,
-          0.65
+          10,
+          0.7
         ]
       ]
     },
@@ -43,13 +43,13 @@
       "title": "Mentioning specific family details predicts faster funding regardless of gender.",
       "body": "Pitches that provide concrete details about children or household stability accelerate funding for both men and women.",
       "supporting_loans": [],
-      "confidence": 0.63,
+      "confidence": 0.53,
       "first_seen_batch": 1,
-      "last_updated_batch": 9,
+      "last_updated_batch": 10,
       "confidence_history": [
         [
-          9,
-          0.63
+          10,
+          0.53
         ]
       ]
     },
@@ -61,10 +61,10 @@
       "supporting_loans": [],
       "confidence": 0.6,
       "first_seen_batch": 1,
-      "last_updated_batch": 9,
+      "last_updated_batch": 10,
       "confidence_history": [
         [
-          9,
+          10,
           0.6
         ]
       ]
@@ -77,10 +77,10 @@
       "supporting_loans": [],
       "confidence": 0.6,
       "first_seen_batch": 1,
-      "last_updated_batch": 9,
+      "last_updated_batch": 10,
       "confidence_history": [
         [
-          9,
+          10,
           0.6
         ]
       ]
@@ -93,27 +93,27 @@
       "supporting_loans": [],
       "confidence": 0.6,
       "first_seen_batch": 1,
-      "last_updated_batch": 9,
+      "last_updated_batch": 10,
       "confidence_history": [
         [
-          9,
+          10,
           0.6
         ]
       ]
     },
-    "female-concrete-goals-faster": {
-      "id": "female-concrete-goals-faster",
+    "female-hardworking-slower": {
+      "id": "female-hardworking-slower",
       "bucket": "gendered_women",
-      "title": "Female borrowers who specify concrete items or goals fund faster.",
-      "body": "Pitches from women that mention specific goals like college or certified seeds accelerate funding.",
+      "title": "Female borrowers who describe themselves as hardworking fund more slowly.",
+      "body": "Pitches from women that emphasize personal traits like being hardworking or putting in hard work predict slower funding.",
       "supporting_loans": [],
-      "confidence": 0.62,
-      "first_seen_batch": 7,
-      "last_updated_batch": 9,
+      "confidence": 0.6,
+      "first_seen_batch": 10,
+      "last_updated_batch": 10,
       "confidence_history": [
         [
-          9,
-          0.62
+          10,
+          0.6
         ]
       ]
     }
@@ -137,17 +137,12 @@
     "female-ag-success-slower": {
       "id": "female-ag-success-slower",
       "body": "Mentioning previous business success in agricultural pitches may predict slower funding for women.",
-      "first_seen_batch": 5
+      "first_seen_batch": 4
     },
     "female-marital-status-slower": {
       "id": "female-marital-status-slower",
       "body": "Mentioning marital status or widowhood may predict slower funding for female borrowers.",
-      "first_seen_batch": 7
-    },
-    "female-hardworking-slower": {
-      "id": "female-hardworking-slower",
-      "body": "Female borrowers who describe themselves as 'hardworking' may fund more slowly.",
-      "first_seen_batch": 9
+      "first_seen_batch": 6
     }
   },
   "retired": {
@@ -191,6 +186,13 @@
       "title": "Shorter pitch texts may predict faster funding for male borrowers.",
       "retrospective": "Contradicted by female observation where lengthier pitches funded faster, suggesting an interaction.",
       "retired_batch": 5,
+      "was_believed_batches": 0
+    },
+    "female-concrete-goals-faster": {
+      "id": "female-concrete-goals-faster",
+      "title": "Pitches from women that mention specific goals like college or certified seeds accelerate funding.",
+      "retrospective": "Contradicted by evidence that mentioning college as a goal slows funding for women.",
+      "retired_batch": 10,
       "was_believed_batches": 0
     }
   }
