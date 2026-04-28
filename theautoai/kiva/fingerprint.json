@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "batches_seen": 33,
-  "loans_seen": 528,
-  "last_updated": "2026-04-28T17:07:01.455464+00:00",
+  "batches_seen": 34,
+  "loans_seen": 544,
+  "last_updated": "2026-04-28T17:52:18.588163+00:00",
   "watching_for": "",
   "claims": {
     "institutional-names-slower": {
@@ -13,10 +13,10 @@
       "supporting_loans": [],
       "confidence": 1.0,
       "first_seen_batch": 1,
-      "last_updated_batch": 33,
+      "last_updated_batch": 34,
       "confidence_history": [
         [
-          33,
+          34,
           1.0
         ]
       ]
@@ -29,10 +29,10 @@
       "supporting_loans": [],
       "confidence": 0.95,
       "first_seen_batch": 1,
-      "last_updated_batch": 33,
+      "last_updated_batch": 34,
       "confidence_history": [
         [
-          33,
+          34,
           0.95
         ]
       ]
@@ -45,10 +45,10 @@
       "supporting_loans": [],
       "confidence": 0.71,
       "first_seen_batch": 1,
-      "last_updated_batch": 33,
+      "last_updated_batch": 34,
       "confidence_history": [
         [
-          33,
+          34,
           0.71
         ]
       ]
@@ -59,13 +59,13 @@
       "title": "Female borrowers who mention dreams or future aspirations predict slower funding.",
       "body": "Pitches from women that focus on dreams, aspirations, or the goal of saving money tend to fund more slowly.",
       "supporting_loans": [],
-      "confidence": 0.75,
+      "confidence": 0.8,
       "first_seen_batch": 1,
-      "last_updated_batch": 33,
+      "last_updated_batch": 34,
       "confidence_history": [
         [
-          33,
-          0.75
+          34,
+          0.8
         ]
       ]
     },
@@ -77,10 +77,10 @@
       "supporting_loans": [],
       "confidence": 1.0,
       "first_seen_batch": 1,
-      "last_updated_batch": 33,
+      "last_updated_batch": 34,
       "confidence_history": [
         [
-          33,
+          34,
           1.0
         ]
       ]
@@ -93,10 +93,10 @@
       "supporting_loans": [],
       "confidence": 0.66,
       "first_seen_batch": 1,
-      "last_updated_batch": 33,
+      "last_updated_batch": 34,
       "confidence_history": [
         [
-          33,
+          34,
           0.66
         ]
       ]
@@ -108,11 +108,11 @@
       "body": "Pitches from women that highlight specific social goals, particularly schooling for children, tend to accelerate funding.",
       "supporting_loans": [],
       "confidence": 0.7,
-      "first_seen_batch": 23,
-      "last_updated_batch": 33,
+      "first_seen_batch": 22,
+      "last_updated_batch": 34,
       "confidence_history": [
         [
-          33,
+          34,
           0.7
         ]
       ]
@@ -142,42 +142,35 @@
     "female-self-effort-slower": {
       "id": "female-self-effort-slower",
       "body": "Female borrowers who emphasize sustaining their business through their own efforts may fund more slowly.",
-      "first_seen_batch": 17
+      "first_seen_batch": 16
     },
     "female-children-gender-faster": {
       "id": "female-children-gender-faster",
       "body": "Specifying the gender of children may predict faster funding for female borrowers.",
-      "first_seen_batch": 19
+      "first_seen_batch": 18
     },
-    "female-business-expansion-slower": {
-      "id": "female-business-expansion-slower",
-      "body": "Mentioning the goal of expanding or developing the business may predict slower funding for female borrowers.",
-      "first_seen_batch": 23
-    },
-    "female-local-currency-slower": {
-      "id": "female-local-currency-slower",
-      "body": "Female borrowers who specify the loan amount in local currency (PHP) may fund more slowly.",
-      "first_seen_batch": 25
+    "female-business-expansion-faster": {
+      "id": "female-business-expansion-faster",
+      "body": "Mentioning the goal of expanding the business may predict faster funding for female borrowers.",
+      "first_seen_batch": 34
     },
     "female-asset-geographic-faster": {
       "id": "female-asset-geographic-faster",
       "body": "Female borrowers who mention specific assets like home ownership or geographic distance from cities may fund faster.",
-      "first_seen_batch": 27
+      "first_seen_batch": 26
     },
     "female-children-count-faster": {
       "id": "female-children-count-faster",
       "body": "Mentioning the specific number of children may predict faster funding for female borrowers.",
-      "first_seen_batch": 33
+      "first_seen_batch": 32
+    },
+    "female-professional-values-faster": {
+      "id": "female-professional-values-faster",
+      "body": "Female borrowers who mention professional values, such as customer service, may fund faster.",
+      "first_seen_batch": 34
     }
   },
   "retired": {
-    "male-hardship-details-slower": {
-      "id": "male-hardship-details-slower",
-      "title": "Male borrowers who provide extensive details on location or personal hardships may fund slower.",
-      "retrospective": "Merged into interaction puzzle after conflicting evidence in female pairs.",
-      "retired_batch": 3,
-      "was_believed_batches": 0
-    },
     "men-marital-status": {
       "id": "men-marital-status",
       "title": "Male borrowers who explicitly state their marital status may see faster funding.",
@@ -239,6 +232,13 @@
       "title": "Pitches from women that explicitly state how many children they have tend to fund more slowly.",
       "retrospective": "Contradicted by new evidence that mentioning child count correlates with faster funding; confidence fell below survival floor.",
       "retired_batch": 33,
+      "was_believed_batches": 0
+    },
+    "female-business-expansion-slower": {
+      "id": "female-business-expansion-slower",
+      "title": "Mentioning the goal of expanding or developing the business may predict slower funding for female borrowers.",
+      "retrospective": "Contradicted by evidence that expanding the business predicts faster funding.",
+      "retired_batch": 34,
       "was_believed_batches": 0
     }
   }
