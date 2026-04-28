@@ -1,5 +1,111 @@
 [
   {
+    "id": "6bca121c2616",
+    "timestamp": "2026-04-28T14:42:25.268189+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "environmentalists vs artists on materialism vs anti-materialism",
+    "labels": {
+      "X": "environmentalists",
+      "Y": "artists",
+      "A": "anti-materialism",
+      "B": "materialism"
+    },
+    "canonical_keys": {
+      "X": "environmentalists",
+      "Y": "artists",
+      "A": "",
+      "B": "materialism"
+    },
+    "effect_size": 0.7574842832846999,
+    "p_value": 0.03854,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "conservationist",
+        "ecologist",
+        "environmentalist",
+        "preservationist",
+        "recycler",
+        "naturalist",
+        "climatologist",
+        "biologist",
+        "botanist",
+        "zoologist",
+        "ornithologist",
+        "oceanographer",
+        "forester",
+        "steward",
+        "activist"
+      ],
+      "Y_used": [
+        "painter",
+        "sculptor",
+        "musician",
+        "poet",
+        "dancer",
+        "actor",
+        "singer",
+        "composer",
+        "curator",
+        "illustrator",
+        "printmaker",
+        "weaver",
+        "potter",
+        "calligrapher",
+        "dramatist"
+      ],
+      "A_used": [
+        "frugal",
+        "simple",
+        "austere",
+        "modest",
+        "ascetic",
+        "sparse",
+        "plain",
+        "meager",
+        "minimal",
+        "humble",
+        "basic",
+        "unadorned",
+        "abstinent",
+        "unpretentious",
+        "scant"
+      ],
+      "B_used": [
+        "lavish",
+        "opulent",
+        "luxurious",
+        "expensive",
+        "wealthy",
+        "rich",
+        "extravagant",
+        "greedy",
+        "posh",
+        "fancy",
+        "gilded",
+        "affluent",
+        "consumerist",
+        "possessive",
+        "excessive"
+      ]
+    },
+    "proposal": "People associate environmentalists with anti-materialism more strongly than they associate artists with anti-materialism. While both groups are often viewed as counter-cultural or bohemian, environmentalism is more explicitly tied to a philosophical and political rejection of consumerist material culture. This is novel because it contrasts two groups that both diverge from mainstream corporate norms but do so for different motives—one for ecological preservation and the other for aesthetic expression. Confirming this association would clarify whether the 'green' identity is more strongly linked to the rejection of possessions than the 'artistic' identity.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "ffc8f5b2614e",
     "timestamp": "2026-04-28T14:02:20.499235+00:00",
     "schema_version": "autoresearch.v1",
