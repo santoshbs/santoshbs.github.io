@@ -1,5 +1,111 @@
 [
   {
+    "id": "330d1b025db7",
+    "timestamp": "2026-04-28T03:06:53.425005+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "farmers vs soldiers on nature of patience",
+    "labels": {
+      "X": "farmers",
+      "Y": "soldiers",
+      "A": "harmony",
+      "B": "restraint"
+    },
+    "canonical_keys": {
+      "X": "farmers",
+      "Y": "soldiers",
+      "A": "harmony",
+      "B": "restraint"
+    },
+    "effect_size": 1.0433570443111075,
+    "p_value": 0.00382,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "farmer",
+        "grower",
+        "planter",
+        "rancher",
+        "tiller",
+        "harvester",
+        "sower",
+        "peasant",
+        "cultivator",
+        "plowman",
+        "dairyman",
+        "herdsman",
+        "shepherd",
+        "gardener",
+        "cropper"
+      ],
+      "Y_used": [
+        "soldier",
+        "trooper",
+        "infantryman",
+        "warrior",
+        "marine",
+        "guardsman",
+        "sentinel",
+        "combatant",
+        "legionnaire",
+        "private",
+        "sergeant",
+        "corporal",
+        "rifleman",
+        "mercenary",
+        "veteran"
+      ],
+      "A_used": [
+        "calm",
+        "peaceful",
+        "natural",
+        "growth",
+        "seasonal",
+        "organic",
+        "gentle",
+        "rhythmic",
+        "waiting",
+        "slow",
+        "steady",
+        "patient",
+        "serene",
+        "quiet",
+        "mellow"
+      ],
+      "B_used": [
+        "disciplined",
+        "rigid",
+        "tense",
+        "vigilant",
+        "strict",
+        "controlled",
+        "alert",
+        "firm",
+        "stoic",
+        "hardy",
+        "stern",
+        "formal",
+        "constrained",
+        "taut",
+        "braced"
+      ]
+    },
+    "proposal": "I propose that people associate farmers with patience more strongly than they associate soldiers with patience. While both roles require significant periods of waiting, the farmer's patience is implicitly linked to the natural, seasonal rhythms of growth, whereas the soldier's patience is associated with tactical discipline and high-tension vigilance. This is novel because it moves beyond common stereotypes of bravery or hard work to examine the differential mental representation of temporal endurance. Confirming this would suggest that the public distinguishes between 'patience as harmony' and 'patience as restraint'.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "68babde87964",
     "timestamp": "2026-04-28T02:24:25.535088+00:00",
     "schema_version": "autoresearch.v1",
