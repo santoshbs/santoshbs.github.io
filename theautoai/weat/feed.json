@@ -1,5 +1,111 @@
 [
   {
+    "id": "68babde87964",
+    "timestamp": "2026-04-28T02:24:25.535088+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "lawyers vs politicians on precision versus ambiguity",
+    "labels": {
+      "X": "lawyers",
+      "Y": "politicians",
+      "A": "precision",
+      "B": "ambiguity"
+    },
+    "canonical_keys": {
+      "X": "lawyers",
+      "Y": "politicians",
+      "A": "precision",
+      "B": "ambiguity"
+    },
+    "effect_size": 0.30044772074942405,
+    "p_value": 0.4236,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "lawyer",
+        "attorney",
+        "counsel",
+        "barrister",
+        "solicitor",
+        "advocate",
+        "litigator",
+        "jurist",
+        "notary",
+        "prosecutor",
+        "defender",
+        "paralegal",
+        "counselor",
+        "magistrate",
+        "clerk"
+      ],
+      "Y_used": [
+        "politician",
+        "senator",
+        "governor",
+        "congressman",
+        "representative",
+        "legislator",
+        "minister",
+        "deputy",
+        "mayor",
+        "president",
+        "premier",
+        "official",
+        "candidate",
+        "campaigner",
+        "statesman"
+      ],
+      "A_used": [
+        "precise",
+        "exact",
+        "accurate",
+        "rigorous",
+        "meticulous",
+        "detailed",
+        "specific",
+        "correct",
+        "definite",
+        "explicit",
+        "strict",
+        "clear",
+        "formal",
+        "concrete",
+        "pinpoint"
+      ],
+      "B_used": [
+        "vague",
+        "ambiguous",
+        "obscure",
+        "hazy",
+        "unclear",
+        "indefinite",
+        "imprecise",
+        "flexible",
+        "general",
+        "nebulous",
+        "elusive",
+        "abstract",
+        "oblique",
+        "equivocal",
+        "fuzzy"
+      ]
+    },
+    "proposal": "People associate lawyers with precision more strongly than they associate politicians with precision. This differential association is novel because it examines the implicit cognitive tension between the legal mandate for linguistic exactness and the political utility of strategic ambiguity. It is interesting because it explores whether the professional requirement to eliminate loopholes in law translates into a general public implicit association of 'precision' for the actor. Confirming this would shift our understanding of how we mentally represent professional expertise—contrasting the perceived rigid accuracy of the legal mind with the perceived flexibility or vagueness of the political mind.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "5d16d337271b",
     "timestamp": "2026-04-28T01:49:28.026912+00:00",
     "schema_version": "autoresearch.v1",
