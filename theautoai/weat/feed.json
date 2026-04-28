@@ -1,5 +1,111 @@
 [
   {
+    "id": "94a5abf6fd07",
+    "timestamp": "2026-04-28T18:14:08.443469+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "urbanites vs farmers on social tolerance",
+    "labels": {
+      "X": "urbanites",
+      "Y": "farmers",
+      "A": "openness",
+      "B": "insularity"
+    },
+    "canonical_keys": {
+      "X": "urbanites",
+      "Y": "farmers",
+      "A": "openness",
+      "B": "insularity"
+    },
+    "effect_size": 0.613834549531269,
+    "p_value": 0.10043,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "urbanite",
+        "cosmopolitan",
+        "metropolitan",
+        "townie",
+        "bourgeois",
+        "sophisticate",
+        "commuter",
+        "pedestrian",
+        "tenant",
+        "resident",
+        "dweller",
+        "inhabitant",
+        "local",
+        "citizen",
+        "burgher"
+      ],
+      "Y_used": [
+        "farmer",
+        "peasant",
+        "rustic",
+        "rancher",
+        "plowman",
+        "cultivator",
+        "grower",
+        "shepherd",
+        "herdsman",
+        "villager",
+        "countryman",
+        "tiller",
+        "crofter",
+        "yeoman",
+        "agrarian"
+      ],
+      "A_used": [
+        "tolerant",
+        "open",
+        "accepting",
+        "inclusive",
+        "liberal",
+        "progressive",
+        "diverse",
+        "welcoming",
+        "flexible",
+        "broad",
+        "egalitarian",
+        "pluralist",
+        "permissive",
+        "curious",
+        "empathetic"
+      ],
+      "B_used": [
+        "intolerant",
+        "closed",
+        "narrow",
+        "rigid",
+        "conservative",
+        "insular",
+        "prejudiced",
+        "bigoted",
+        "dogmatic",
+        "exclusive",
+        "strict",
+        "stubborn",
+        "traditional",
+        "orthodox",
+        "xenophobic"
+      ]
+    },
+    "proposal": "People associate urbanites with social tolerance more strongly than they associate farmers with social tolerance. While explicit beliefs about political leanings are well-studied, the implicit mental link between geographic living environment and the trait of tolerance remains under-examined in implicit association literature. This is interesting because it reflects deep-seated cultural stereotypes about the 'open' city versus the 'insular' countryside. Confirming this association would highlight how spatial identities shape implicit biases regarding an individual's openness to diversity.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "439a5c5f6232",
     "timestamp": "2026-04-28T16:34:32.040518+00:00",
     "schema_version": "autoresearch.v1",
