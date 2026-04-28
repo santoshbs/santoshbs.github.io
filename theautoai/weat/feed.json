@@ -1,5 +1,111 @@
 [
   {
+    "id": "5d16d337271b",
+    "timestamp": "2026-04-28T01:49:28.026912+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "teachers vs diplomats on authenticity versus strategic opacity",
+    "labels": {
+      "X": "teachers",
+      "Y": "diplomats",
+      "A": "sincerity",
+      "B": "opacity"
+    },
+    "canonical_keys": {
+      "X": "teachers",
+      "Y": "diplomats",
+      "A": "sincerity",
+      "B": "opacity"
+    },
+    "effect_size": 0.855075043952848,
+    "p_value": 0.01874,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "teacher",
+        "professor",
+        "educator",
+        "instructor",
+        "tutor",
+        "mentor",
+        "lecturer",
+        "coach",
+        "academic",
+        "faculty",
+        "dean",
+        "principal",
+        "pedagogue",
+        "scholar",
+        "trainer"
+      ],
+      "Y_used": [
+        "diplomat",
+        "ambassador",
+        "envoy",
+        "consul",
+        "attache",
+        "emissary",
+        "negotiator",
+        "statesman",
+        "representative",
+        "mediator",
+        "delegate",
+        "minister",
+        "official",
+        "liaison",
+        "agent"
+      ],
+      "A_used": [
+        "honest",
+        "sincere",
+        "truthful",
+        "authentic",
+        "genuine",
+        "candid",
+        "open",
+        "frank",
+        "straightforward",
+        "transparent",
+        "heartfelt",
+        "direct",
+        "pure",
+        "trustworthy",
+        "real"
+      ],
+      "B_used": [
+        "secretive",
+        "evasive",
+        "calculating",
+        "tactful",
+        "discrete",
+        "strategic",
+        "cunning",
+        "deceptive",
+        "sly",
+        "guarded",
+        "subtle",
+        "indirect",
+        "opaque",
+        "crafty",
+        "elusive"
+      ]
+    },
+    "proposal": "I propose that people associate teachers with sincerity more strongly than they associate diplomats with sincerity. This association reflects a cultural contrast between the perceived vocational purity of education and the perceived strategic opacity of international relations. While teachers are viewed as nurturers of truth and personal growth, diplomats are often implicitly seen as masters of tact, discretion, and calculated evasion. Confirming this association would clarify how different forms of professional service are mentally categorized along axes of trust and authenticity.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "c9d5addd82cf",
     "timestamp": "2026-04-28T01:07:35.720574+00:00",
     "schema_version": "autoresearch.v1",
