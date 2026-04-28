@@ -1,5 +1,111 @@
 [
   {
+    "id": "dc0eed557f27",
+    "timestamp": "2026-04-28T06:15:39.698209+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "conservatives vs socialists on temporal orientation",
+    "labels": {
+      "X": "conservatives",
+      "Y": "socialists",
+      "A": "past orientation",
+      "B": "future orientation"
+    },
+    "canonical_keys": {
+      "X": "conservatives",
+      "Y": "socialists",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 0.7847349856619537,
+    "p_value": 0.03188,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "conservative",
+        "traditionalist",
+        "reactionary",
+        "conventionalist",
+        "preservationist",
+        "orthodox",
+        "rightist",
+        "right",
+        "stalwart",
+        "loyalist",
+        "partisan",
+        "adherent",
+        "devotee",
+        "follower",
+        "rightward"
+      ],
+      "Y_used": [
+        "socialist",
+        "leftist",
+        "collectivist",
+        "egalitarian",
+        "communalist",
+        "proletarian",
+        "reformer",
+        "activist",
+        "radical",
+        "leftward",
+        "left",
+        "liberal",
+        "populist",
+        "statist",
+        "socialistic"
+      ],
+      "A_used": [
+        "nostalgia",
+        "past",
+        "antique",
+        "ancient",
+        "memory",
+        "history",
+        "heritage",
+        "tradition",
+        "ancestor",
+        "throwback",
+        "vintage",
+        "former",
+        "yesterday",
+        "bygone",
+        "archaic"
+      ],
+      "B_used": [
+        "future",
+        "new",
+        "modern",
+        "progressive",
+        "forward",
+        "novel",
+        "tomorrow",
+        "advanced",
+        "innovative",
+        "current",
+        "upcoming",
+        "ahead",
+        "change",
+        "evolution",
+        "development"
+      ]
+    },
+    "proposal": "People associate conservatives with nostalgia more strongly than they associate socialists with nostalgia. This proposal examines the implicit temporal orientation associated with different political identities. While prior research has extensively mapped the axis of authority and equality, the association between political affiliation and a psychological longing for the past is less systematically probed. Confirming this would suggest that political identity is tied to deep-seated emotional attitudes toward time and change.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "92ffe7ae89b3",
     "timestamp": "2026-04-28T04:51:45.598857+00:00",
     "schema_version": "autoresearch.v1",
