@@ -1,5 +1,111 @@
 [
   {
+    "id": "e208a064d759",
+    "timestamp": "2026-04-28T22:53:26.313218+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "peasants vs aristocrats on authenticity versus performativity",
+    "labels": {
+      "X": "peasants",
+      "Y": "aristocrats",
+      "A": "authentic",
+      "B": "performative"
+    },
+    "canonical_keys": {
+      "X": "peasants",
+      "Y": "aristocrats",
+      "A": "authentic",
+      "B": "performative"
+    },
+    "effect_size": -0.382451765224161,
+    "p_value": 0.30796,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "peasant",
+        "farmer",
+        "serf",
+        "laborer",
+        "rustic",
+        "villager",
+        "worker",
+        "plowman",
+        "tiller",
+        "yeoman",
+        "countryman",
+        "sharecropper",
+        "herder",
+        "drudge",
+        "shepherd"
+      ],
+      "Y_used": [
+        "aristocrat",
+        "noble",
+        "nobleman",
+        "lord",
+        "baron",
+        "count",
+        "duke",
+        "peer",
+        "patrician",
+        "elite",
+        "royal",
+        "sovereign",
+        "monarch",
+        "courtier",
+        "gentry"
+      ],
+      "A_used": [
+        "honest",
+        "sincere",
+        "genuine",
+        "real",
+        "natural",
+        "true",
+        "pure",
+        "candid",
+        "direct",
+        "straightforward",
+        "authentic",
+        "raw",
+        "heartfelt",
+        "plain",
+        "unadorned"
+      ],
+      "B_used": [
+        "fake",
+        "artificial",
+        "phony",
+        "superficial",
+        "pretentious",
+        "theatrical",
+        "staged",
+        "curated",
+        "stilted",
+        "synthetic",
+        "deceptive",
+        "insincere",
+        "affected",
+        "formal",
+        "ornate"
+      ]
+    },
+    "proposal": "I propose that people associate peasants with authenticity more strongly than they associate aristocrats with authenticity. While the romanticization of rural life is a known cultural trope, the specific implicit contrast between the 'genuine' nature of the peasantry and the 'performative' nature of the aristocracy has not been systematically examined using implicit association tests. This is interesting because it would reveal the persistence of pre-industrial class stereotypes in the modern psyche. Confirming this association would shift our understanding of how class-based moral judgments are mentally represented, showing that lower socioeconomic status is sometimes implicitly linked to higher perceived integrity.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "c6ab04ee0b12",
     "timestamp": "2026-04-28T21:46:26.519478+00:00",
     "schema_version": "autoresearch.v1",
