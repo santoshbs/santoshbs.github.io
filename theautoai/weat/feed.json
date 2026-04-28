@@ -1,5 +1,111 @@
 [
   {
+    "id": "ffc8f5b2614e",
+    "timestamp": "2026-04-28T14:02:20.499235+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "immigrants vs elites on adaptability versus rigidity",
+    "labels": {
+      "X": "immigrants",
+      "Y": "elites",
+      "A": "adaptability",
+      "B": "rigidity"
+    },
+    "canonical_keys": {
+      "X": "immigrants",
+      "Y": "elites",
+      "A": "adaptability",
+      "B": "rigidity"
+    },
+    "effect_size": 0.022073137622156472,
+    "p_value": 0.95536,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "migrant",
+        "immigrant",
+        "newcomer",
+        "settler",
+        "exile",
+        "refugee",
+        "foreigner",
+        "expatriate",
+        "alien",
+        "wanderer",
+        "traveler",
+        "arrival",
+        "displaced",
+        "nomad",
+        "transplant"
+      ],
+      "Y_used": [
+        "elite",
+        "aristocrat",
+        "nobleman",
+        "oligarch",
+        "plutocrat",
+        "mogul",
+        "tycoon",
+        "leader",
+        "ruler",
+        "patrician",
+        "dignitary",
+        "magnate",
+        "bourgeois",
+        "privileged",
+        "wealthy"
+      ],
+      "A_used": [
+        "flexible",
+        "versatile",
+        "resilient",
+        "agile",
+        "pliant",
+        "malleable",
+        "fluid",
+        "nimble",
+        "adjustable",
+        "plastic",
+        "compliant",
+        "open",
+        "dynamic",
+        "elastic",
+        "resourceful"
+      ],
+      "B_used": [
+        "rigid",
+        "stiff",
+        "fixed",
+        "static",
+        "inflexible",
+        "stubborn",
+        "formal",
+        "stern",
+        "hard",
+        "frozen",
+        "constant",
+        "stagnant",
+        "immobile",
+        "unyielding",
+        "adamant"
+      ]
+    },
+    "proposal": "I propose that people associate immigrants with adaptability more strongly than they associate elites with adaptability. While elites are often viewed as possessing high social and financial mobility, the implicit association of adaptability is likely more strongly linked to the lived experience of migrants navigating unfamiliar cultural and linguistic environments. This research is novel because existing implicit association studies typically focus on the negative stereotypes or prejudices toward immigrants rather than their perceived adaptive strengths. Confirming this association would shift the academic understanding of how the 'immigrant experience' is mentally represented, moving from a model of deficiency or burden to one of resilience and flexibility.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "44be37be99d6",
     "timestamp": "2026-04-28T13:28:04.583450+00:00",
     "schema_version": "autoresearch.v1",
