@@ -1,5 +1,111 @@
 [
   {
+    "id": "eeaddfaa83c1",
+    "timestamp": "2026-04-28T07:02:21.737442+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "teachers vs doctors on patience versus urgency",
+    "labels": {
+      "X": "teachers",
+      "Y": "doctors",
+      "A": "patience/nurturing",
+      "B": "urgency/efficiency"
+    },
+    "canonical_keys": {
+      "X": "teachers",
+      "Y": "doctors",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 0.0544030308254786,
+    "p_value": 0.8866,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "teacher",
+        "educator",
+        "tutor",
+        "professor",
+        "instructor",
+        "lecturer",
+        "mentor",
+        "pedagogue",
+        "coach",
+        "faculty",
+        "scholar",
+        "academic",
+        "trainer",
+        "guide",
+        "schoolmaster"
+      ],
+      "Y_used": [
+        "doctor",
+        "physician",
+        "surgeon",
+        "psychiatrist",
+        "cardiologist",
+        "pediatrician",
+        "clinician",
+        "medic",
+        "specialist",
+        "practitioner",
+        "intern",
+        "resident",
+        "therapist",
+        "healer",
+        "oncologist"
+      ],
+      "A_used": [
+        "patient",
+        "slow",
+        "nurturing",
+        "iterative",
+        "gentle",
+        "calm",
+        "tolerant",
+        "enduring",
+        "gradual",
+        "steady",
+        "supportive",
+        "caring",
+        "mindful",
+        "soft",
+        "persistent"
+      ],
+      "B_used": [
+        "urgent",
+        "decisive",
+        "fast",
+        "quick",
+        "efficient",
+        "rapid",
+        "immediate",
+        "prompt",
+        "sudden",
+        "brisk",
+        "swift",
+        "direct",
+        "sharp",
+        "acute",
+        "pressing"
+      ]
+    },
+    "proposal": "People associate teachers with patience more strongly than they associate doctors with patience. While both are care-oriented professions, the pedagogical nature of teaching is implicitly linked to the slow, iterative process of student growth, whereas the medical profession is associated with urgent, decisive, and time-constrained intervention. This association is interesting because it highlights a perceived psychological trade-off between patience and efficiency in professional expertise. Confirming this would reveal how the public differentiates between 'nurturing' expertise and 'interventional' expertise in the mental representation of high-status occupations.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "dc0eed557f27",
     "timestamp": "2026-04-28T06:15:39.698209+00:00",
     "schema_version": "autoresearch.v1",
