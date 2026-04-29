@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "batches_seen": 54,
-  "loans_seen": 864,
-  "last_updated": "2026-04-29T10:05:17.404401+00:00",
+  "batches_seen": 55,
+  "loans_seen": 880,
+  "last_updated": "2026-04-29T10:41:25.516637+00:00",
   "watching_for": "",
   "claims": {
     "institutional-names-slower": {
@@ -13,10 +13,10 @@
       "supporting_loans": [],
       "confidence": 1.0,
       "first_seen_batch": 1,
-      "last_updated_batch": 54,
+      "last_updated_batch": 55,
       "confidence_history": [
         [
-          54,
+          55,
           1.0
         ]
       ]
@@ -29,10 +29,10 @@
       "supporting_loans": [],
       "confidence": 0.67,
       "first_seen_batch": 1,
-      "last_updated_batch": 54,
+      "last_updated_batch": 55,
       "confidence_history": [
         [
-          54,
+          55,
           0.67
         ]
       ]
@@ -45,10 +45,10 @@
       "supporting_loans": [],
       "confidence": 0.85,
       "first_seen_batch": 1,
-      "last_updated_batch": 54,
+      "last_updated_batch": 55,
       "confidence_history": [
         [
-          54,
+          55,
           0.85
         ]
       ]
@@ -61,10 +61,10 @@
       "supporting_loans": [],
       "confidence": 1.0,
       "first_seen_batch": 1,
-      "last_updated_batch": 54,
+      "last_updated_batch": 55,
       "confidence_history": [
         [
-          54,
+          55,
           1.0
         ]
       ]
@@ -77,10 +77,10 @@
       "supporting_loans": [],
       "confidence": 0.88,
       "first_seen_batch": 1,
-      "last_updated_batch": 54,
+      "last_updated_batch": 55,
       "confidence_history": [
         [
-          54,
+          55,
           0.88
         ]
       ]
@@ -91,13 +91,13 @@
       "title": "Female borrowers who mention children's education or food security fund faster.",
       "body": "Pitches from women that highlight specific social goals, particularly schooling for children, tend to accelerate funding.",
       "supporting_loans": [],
-      "confidence": 0.98,
-      "first_seen_batch": 2,
-      "last_updated_batch": 54,
+      "confidence": 1.0,
+      "first_seen_batch": 1,
+      "last_updated_batch": 55,
       "confidence_history": [
         [
-          54,
-          0.98
+          55,
+          1.0
         ]
       ]
     },
@@ -108,11 +108,11 @@
       "body": "Pitches from women that use terms like 'hardworking' or 'hardworking entrepreneur' tend to accelerate funding.",
       "supporting_loans": [],
       "confidence": 0.66,
-      "first_seen_batch": 36,
-      "last_updated_batch": 54,
+      "first_seen_batch": 35,
+      "last_updated_batch": 55,
       "confidence_history": [
         [
-          54,
+          55,
           0.66
         ]
       ]
@@ -123,13 +123,13 @@
       "title": "Female borrowers who mention owning or aspiring to own property fund faster.",
       "body": "Pitches from women that reference the ownership or goal of acquiring property, such as a house or shop, accelerate funding.",
       "supporting_loans": [],
-      "confidence": 0.45,
-      "first_seen_batch": 46,
-      "last_updated_batch": 54,
+      "confidence": 0.52,
+      "first_seen_batch": 45,
+      "last_updated_batch": 55,
       "confidence_history": [
         [
-          54,
-          0.45
+          55,
+          0.52
         ]
       ]
     }
@@ -158,42 +158,35 @@
     "female-business-expansion-faster": {
       "id": "female-business-expansion-faster",
       "body": "Mentioning the goal of expanding the business may predict faster funding for female borrowers.",
-      "first_seen_batch": 14
+      "first_seen_batch": 13
     },
     "female-professional-values-faster": {
       "id": "female-professional-values-faster",
       "body": "Female borrowers who mention professional values, such as customer service, may fund faster.",
-      "first_seen_batch": 14
-    },
-    "female-gratitude-faster": {
-      "id": "female-gratitude-faster",
-      "body": "Explicit expressions of gratitude to lenders may accelerate funding for female borrowers.",
-      "first_seen_batch": 42
+      "first_seen_batch": 13
     },
     "female-past-loans-faster": {
       "id": "female-past-loans-faster",
       "body": "Female borrowers who mention sustaining their business through past loans may fund faster.",
-      "first_seen_batch": 52
+      "first_seen_batch": 51
     },
     "female-business-duration-faster": {
       "id": "female-business-duration-faster",
       "body": "Specifying the number of years the business has operated may accelerate funding for women.",
-      "first_seen_batch": 54
+      "first_seen_batch": 53
     },
     "female-child-count-faster": {
       "id": "female-child-count-faster",
       "body": "Mentioning the specific number of children may predict faster funding for women.",
-      "first_seen_batch": 54
+      "first_seen_batch": 53
+    },
+    "female-loan-amount-faster": {
+      "id": "female-loan-amount-faster",
+      "body": "Requesting a smaller loan amount may predict faster funding for female borrowers.",
+      "first_seen_batch": 55
     }
   },
   "retired": {
-    "female-asset-geographic-faster": {
-      "id": "female-asset-geographic-faster",
-      "title": "Female borrowers who mention specific assets like home ownership or geographic distance from cities may fund faster.",
-      "retrospective": "Contradicted by observation that detailed land ownership slows funding for women.",
-      "retired_batch": 40,
-      "was_believed_batches": 0
-    },
     "professional-experience-faster": {
       "id": "professional-experience-faster",
       "title": "Quantifying professional experience or tenure in a field accelerates the funding process for both men and women.",
@@ -255,6 +248,13 @@
       "title": "Providing detailed personal or geographic background may predict slower funding for female borrowers.",
       "retrospective": "Dropped to make room for child count puzzle.",
       "retired_batch": 54,
+      "was_believed_batches": 0
+    },
+    "female-gratitude-faster": {
+      "id": "female-gratitude-faster",
+      "title": "Explicit expressions of gratitude to lenders may accelerate funding for female borrowers.",
+      "retrospective": "Contradicted by observation that gratitude appeared in a slower pitch.",
+      "retired_batch": 55,
       "was_believed_batches": 0
     }
   }
