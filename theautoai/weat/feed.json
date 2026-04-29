@@ -1,5 +1,111 @@
 [
   {
+    "id": "8664ea2b6eee",
+    "timestamp": "2026-04-29T12:53:42.652846+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "veterans vs teachers on predictability versus adaptability",
+    "labels": {
+      "X": "veterans",
+      "Y": "teachers",
+      "A": "predictability",
+      "B": "adaptability"
+    },
+    "canonical_keys": {
+      "X": "veterans",
+      "Y": "teachers",
+      "A": "predictability",
+      "B": "adaptability"
+    },
+    "effect_size": 1.213003954149556,
+    "p_value": 0.00048,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "veteran",
+        "soldier",
+        "marine",
+        "sailor",
+        "trooper",
+        "combatant",
+        "recruit",
+        "cadet",
+        "officer",
+        "sergeant",
+        "corporal",
+        "private",
+        "lieutenant",
+        "colonel",
+        "general"
+      ],
+      "Y_used": [
+        "teacher",
+        "educator",
+        "instructor",
+        "professor",
+        "lecturer",
+        "tutor",
+        "mentor",
+        "principal",
+        "dean",
+        "academic",
+        "scholar",
+        "faculty",
+        "trainer",
+        "coach",
+        "pedagogue"
+      ],
+      "A_used": [
+        "predictable",
+        "routine",
+        "structured",
+        "rigid",
+        "consistent",
+        "stable",
+        "orderly",
+        "disciplined",
+        "planned",
+        "systematic",
+        "methodical",
+        "reliable",
+        "steady",
+        "conventional",
+        "standardized"
+      ],
+      "B_used": [
+        "adaptable",
+        "spontaneous",
+        "flexible",
+        "dynamic",
+        "innovative",
+        "versatile",
+        "creative",
+        "variable",
+        "changing",
+        "free",
+        "unstructured",
+        "chaotic",
+        "novel",
+        "original",
+        "agile"
+      ]
+    },
+    "proposal": "People associate veterans with predictability more strongly than they associate teachers with predictability. This differential implicit association likely stems from pervasive cultural narratives that frame military service as requiring strict adherence to protocol and standardized routines, while portraying teaching as a dynamic, adaptive practice requiring constant improvisation. Examining this bias is novel because implicit attitude research has largely focused on veterans’ perceived competence or teachers’ perceived warmth, neglecting how structural predictability is mapped onto these groups. Understanding this association matters because it may shape public support for cross-sector workforce transitions, such as policies encouraging military personnel to move into educational administration, where perceived rigidity could either be valorized as stability or stigmatized as inflexibility.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "93bfb5e6c2ab",
     "timestamp": "2026-04-29T10:12:35.928861+00:00",
     "schema_version": "autoresearch.v1",
