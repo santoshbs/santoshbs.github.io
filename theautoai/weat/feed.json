@@ -1,5 +1,111 @@
 [
   {
+    "id": "df8e0781f4f6",
+    "timestamp": "2026-04-29T06:59:17.875875+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "children vs scientists on experiential awe versus analytical explanation",
+    "labels": {
+      "X": "children",
+      "Y": "scientists",
+      "A": "naive wonder",
+      "B": "analytical rigor"
+    },
+    "canonical_keys": {
+      "X": "children",
+      "Y": "scientists",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 1.265583054063018,
+    "p_value": 0.00021,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "child",
+        "kids",
+        "toddler",
+        "infant",
+        "youth",
+        "youngster",
+        "newborn",
+        "adolescent",
+        "pupil",
+        "student",
+        "boy",
+        "girl",
+        "babe",
+        "juvenile",
+        "minor"
+      ],
+      "Y_used": [
+        "scientist",
+        "researcher",
+        "physicist",
+        "chemist",
+        "biologist",
+        "astronomer",
+        "mathematician",
+        "scholar",
+        "professor",
+        "analyst",
+        "expert",
+        "academic",
+        "technician",
+        "investigator",
+        "specialist"
+      ],
+      "A_used": [
+        "wonder",
+        "awe",
+        "magic",
+        "mystery",
+        "amazement",
+        "astonishment",
+        "marvel",
+        "fascination",
+        "innocence",
+        "curiosity",
+        "purity",
+        "naive",
+        "whimsical",
+        "enchantment",
+        "dreaming"
+      ],
+      "B_used": [
+        "logic",
+        "reason",
+        "proof",
+        "fact",
+        "evidence",
+        "analysis",
+        "data",
+        "formula",
+        "theory",
+        "method",
+        "rigor",
+        "precision",
+        "calculation",
+        "empirical",
+        "systematic"
+      ]
+    },
+    "proposal": "People associate children with wonder more strongly than they associate scientists with wonder. While scientists are characterized by curiosity and exploration, the implicit association of 'wonder'—as a state of naive, emotional awe—is likely more strongly tied to childhood. This is novel because it examines the tension between scientific inquiry (which often seeks to explain away the mysterious) and the experiential quality of awe. Confirming this would suggest that society views the scientific process as conceptually distinct from, or perhaps even an antidote to, the feeling of wonder.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "9ea8110a2e54",
     "timestamp": "2026-04-29T06:18:28.913572+00:00",
     "schema_version": "autoresearch.v1",
