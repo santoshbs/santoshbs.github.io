@@ -1,5 +1,111 @@
 [
   {
+    "id": "233fc2c2dab0",
+    "timestamp": "2026-04-29T04:55:55.397977+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "expatriates vs immigrants on social privilege",
+    "labels": {
+      "X": "expatriates",
+      "Y": "immigrants",
+      "A": "privileged",
+      "B": "marginalized"
+    },
+    "canonical_keys": {
+      "X": "expatriates",
+      "Y": "immigrants",
+      "A": "privileged",
+      "B": "marginalized"
+    },
+    "effect_size": 1.2089454653349676,
+    "p_value": 0.00051,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "expat",
+        "expatriate",
+        "diplomat",
+        "ambassador",
+        "envoy",
+        "consul",
+        "attache",
+        "representative",
+        "delegate",
+        "official",
+        "emissary",
+        "sojourner",
+        "nomad",
+        "executive",
+        "manager"
+      ],
+      "Y_used": [
+        "immigrant",
+        "migrant",
+        "refugee",
+        "newcomer",
+        "alien",
+        "settler",
+        "outsider",
+        "transient",
+        "wanderer",
+        "guest",
+        "foreigner",
+        "transplant",
+        "exile",
+        "evacuee",
+        "outcast"
+      ],
+      "A_used": [
+        "wealthy",
+        "rich",
+        "privileged",
+        "affluent",
+        "powerful",
+        "elite",
+        "upper",
+        "luxurious",
+        "advantageous",
+        "prestigious",
+        "prosperous",
+        "opulent",
+        "posh",
+        "noble",
+        "successful"
+      ],
+      "B_used": [
+        "poor",
+        "impoverished",
+        "needy",
+        "struggling",
+        "disadvantaged",
+        "marginal",
+        "lower",
+        "humble",
+        "desperate",
+        "precarious",
+        "broke",
+        "meager",
+        "destitute",
+        "penniless",
+        "indigent"
+      ]
+    },
+    "proposal": "I propose that people associate expatriates with privilege more strongly than they associate immigrants with privilege. This is novel because while the sociological distinction between these two terms is frequently discussed in critical discourse, it has not been systematically probed as a differential implicit association in academic literature. It is interesting because it examines how the same basic action—relocating to a foreign country—is mentally categorized differently based on the perceived social status of the actor. Confirming this association would reveal how specific terminology acts as a proxy for implicit beliefs about class, power, and global mobility.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "cc1d556e2691",
     "timestamp": "2026-04-29T04:00:05.492789+00:00",
     "schema_version": "autoresearch.v1",
