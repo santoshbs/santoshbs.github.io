@@ -1,5 +1,111 @@
 [
   {
+    "id": "c3b02244b81f",
+    "timestamp": "2026-04-29T01:46:20.842194+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "musicians vs artists on sociality of production",
+    "labels": {
+      "X": "musicians",
+      "Y": "artists",
+      "A": "collaboration",
+      "B": "solitude"
+    },
+    "canonical_keys": {
+      "X": "musicians",
+      "Y": "artists",
+      "A": "collaboration",
+      "B": "solitude"
+    },
+    "effect_size": 0.21937598939528008,
+    "p_value": 0.56975,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "musician",
+        "singer",
+        "drummer",
+        "guitarist",
+        "pianist",
+        "bassist",
+        "cellist",
+        "violinist",
+        "flutist",
+        "trumpeter",
+        "vocalist",
+        "conductor",
+        "composer",
+        "lyricist",
+        "performer"
+      ],
+      "Y_used": [
+        "painter",
+        "sculptor",
+        "drawer",
+        "etcher",
+        "sketcher",
+        "curator",
+        "illustrator",
+        "ceramicist",
+        "potter",
+        "printmaker",
+        "muralist",
+        "engraver",
+        "calligrapher",
+        "carver",
+        "designer"
+      ],
+      "A_used": [
+        "collaboration",
+        "cooperation",
+        "together",
+        "social",
+        "communal",
+        "team",
+        "collective",
+        "joint",
+        "shared",
+        "partner",
+        "interactive",
+        "group",
+        "unity",
+        "gathering",
+        "ensemble"
+      ],
+      "B_used": [
+        "alone",
+        "solo",
+        "solitary",
+        "individual",
+        "single",
+        "isolated",
+        "independent",
+        "private",
+        "secluded",
+        "lone",
+        "separate",
+        "withdrawn",
+        "detached",
+        "hermit",
+        "singular"
+      ]
+    },
+    "proposal": "People associate musicians with collaboration more strongly than they associate artists with collaboration. While both are categorized under the broad umbrella of 'creatives,' the public perception of music is heavily tied to collective performance in bands, orchestras, and choirs, whereas visual art is traditionally viewed as a solitary pursuit in a studio. This is novel because implicit association research typically groups all artistic roles together; distinguishing between the social structures of different creative disciplines would reveal how specific professional practices shape subconscious stereotypes. Confirming this association would show that the sociality of a craft is mentally represented even when the overarching social identity is the same.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "d2ca38f3ebbc",
     "timestamp": "2026-04-29T00:49:52.870007+00:00",
     "schema_version": "autoresearch.v1",
