@@ -1,5 +1,111 @@
 [
   {
+    "id": "9ea8110a2e54",
+    "timestamp": "2026-04-29T06:18:28.913572+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "lawyers vs philosophers on pragmatic versus theoretical focus",
+    "labels": {
+      "X": "lawyers",
+      "Y": "philosophers",
+      "A": "Pragmatism",
+      "B": "Idealism"
+    },
+    "canonical_keys": {
+      "X": "lawyers",
+      "Y": "philosophers",
+      "A": "pragmatism",
+      "B": "idealism"
+    },
+    "effect_size": 1.423728132834331,
+    "p_value": 2e-05,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "lawyer",
+        "attorney",
+        "counsel",
+        "solicitor",
+        "barrister",
+        "litigator",
+        "advocate",
+        "jurist",
+        "prosecutor",
+        "judge",
+        "notary",
+        "clerk",
+        "paralegal",
+        "mediator",
+        "arbitrator"
+      ],
+      "Y_used": [
+        "philosopher",
+        "thinker",
+        "ethicist",
+        "logician",
+        "scholar",
+        "academic",
+        "theorist",
+        "sage",
+        "intellectual",
+        "dialectician",
+        "epistemologist",
+        "phenomenologist",
+        "ontologist",
+        "rhetorician",
+        "sophist"
+      ],
+      "A_used": [
+        "practical",
+        "pragmatic",
+        "useful",
+        "functional",
+        "concrete",
+        "efficient",
+        "actionable",
+        "realistic",
+        "applied",
+        "effective",
+        "direct",
+        "tangible",
+        "empirical",
+        "operative",
+        "utilitarian"
+      ],
+      "B_used": [
+        "abstract",
+        "theoretical",
+        "ideal",
+        "conceptual",
+        "metaphysical",
+        "hypothetical",
+        "speculative",
+        "ethereal",
+        "transcendental",
+        "visionary",
+        "essence",
+        "principle",
+        "truth",
+        "thought",
+        "notion"
+      ]
+    },
+    "proposal": "People associate lawyers with pragmatism more strongly than they associate philosophers with pragmatism. While both categories are viewed as intellectually rigorous, the former is seen as focused on actionable outcomes and procedural efficiency, whereas the latter is viewed as focused on abstract or ideal truths. This association is novel because prior research on these groups typically focuses on perceived honesty or abstract intelligence rather than the specific axis of pragmatism. Examining this would reveal whether the public distinguishes between 'intellectual' work that is applied (legal) and 'intellectual' work that is theoretical (philosophical).",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "b66f89841761",
     "timestamp": "2026-04-29T05:38:58.158768+00:00",
     "schema_version": "autoresearch.v1",
