@@ -1,5 +1,111 @@
 [
   {
+    "id": "b66f89841761",
+    "timestamp": "2026-04-29T05:38:58.158768+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "believers vs atheists on moral certainty versus relativism",
+    "labels": {
+      "X": "believers",
+      "Y": "atheists",
+      "A": "certainty",
+      "B": "uncertainty"
+    },
+    "canonical_keys": {
+      "X": "believers",
+      "Y": "atheists",
+      "A": "certainty",
+      "B": "uncertainty"
+    },
+    "effect_size": 0.7940933348511269,
+    "p_value": 0.02868,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "believer",
+        "devotee",
+        "parishioner",
+        "worshiper",
+        "follower",
+        "theist",
+        "monk",
+        "nun",
+        "priest",
+        "cleric",
+        "disciple",
+        "convert",
+        "layperson",
+        "deacon",
+        "cardinal"
+      ],
+      "Y_used": [
+        "atheist",
+        "skeptic",
+        "nonbeliever",
+        "secularist",
+        "agnostic",
+        "humanist",
+        "freethinker",
+        "materialist",
+        "rationalist",
+        "naturalist",
+        "doubter",
+        "unbeliever",
+        "nihilist",
+        "empiricist",
+        "heretic"
+      ],
+      "A_used": [
+        "certain",
+        "sure",
+        "convinced",
+        "absolute",
+        "dogmatic",
+        "rigid",
+        "fixed",
+        "firm",
+        "resolute",
+        "decided",
+        "definite",
+        "unwavering",
+        "concrete",
+        "steadfast",
+        "clear"
+      ],
+      "B_used": [
+        "uncertain",
+        "doubtful",
+        "hesitant",
+        "flexible",
+        "relative",
+        "ambiguous",
+        "vague",
+        "skeptical",
+        "unsure",
+        "fluid",
+        "undecided",
+        "tentative",
+        "debatable",
+        "open",
+        "malleable"
+      ]
+    },
+    "proposal": "People associate believers with moral certainty more strongly than they associate atheists with moral certainty. While prior research has frequently examined whether religious or non-religious individuals are perceived as more moral, this proposal examines the implicit association with the confidence or rigidity of those moral convictions. This is novel because it shifts the axis from the content of morality to the psychological state of certainty. Confirming this would provide insight into the implicit stereotypes regarding dogmatism and moral relativism that characterize contemporary secular-religious tensions.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "233fc2c2dab0",
     "timestamp": "2026-04-29T04:55:55.397977+00:00",
     "schema_version": "autoresearch.v1",
