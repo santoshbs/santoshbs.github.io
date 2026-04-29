@@ -1,5 +1,111 @@
 [
   {
+    "id": "93bfb5e6c2ab",
+    "timestamp": "2026-04-29T10:12:35.928861+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "clergy vs journalists on moral vs factual orientation",
+    "labels": {
+      "X": "clergy",
+      "Y": "journalists",
+      "A": "moral",
+      "B": "factual"
+    },
+    "canonical_keys": {
+      "X": "clergy",
+      "Y": "journalists",
+      "A": "moral",
+      "B": "factual"
+    },
+    "effect_size": 1.7319555695477757,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "priest",
+        "pastor",
+        "minister",
+        "bishop",
+        "vicar",
+        "chaplain",
+        "monk",
+        "nun",
+        "rabbi",
+        "imam",
+        "cardinal",
+        "deacon",
+        "reverend",
+        "rector",
+        "elder"
+      ],
+      "Y_used": [
+        "reporter",
+        "correspondent",
+        "columnist",
+        "editor",
+        "anchor",
+        "broadcaster",
+        "commentator",
+        "journalist",
+        "interviewer",
+        "presenter",
+        "chronicler",
+        "newscaster",
+        "critic",
+        "stringer",
+        "producer"
+      ],
+      "A_used": [
+        "virtue",
+        "sin",
+        "evil",
+        "right",
+        "wrong",
+        "ethics",
+        "righteousness",
+        "conscience",
+        "holiness",
+        "piety",
+        "judgment",
+        "salvation",
+        "morality",
+        "grace",
+        "penance"
+      ],
+      "B_used": [
+        "facts",
+        "data",
+        "evidence",
+        "science",
+        "logic",
+        "analysis",
+        "information",
+        "objective",
+        "accuracy",
+        "research",
+        "statistics",
+        "empirical",
+        "knowledge",
+        "proof",
+        "findings"
+      ]
+    },
+    "proposal": "People associate clergy with moral authority more strongly than they associate journalists with moral authority. This association is novel because, although explicit trust in religion and media has been surveyed, no implicit research has pitted the normative legitimacy of religious figures against the epistemic role of news producers. It is interesting because it reveals whether secularization has eroded the automatic cognitive link between religious roles and the power to define moral truth. Confirming this association would matter by demonstrating that moral reasoning in the public sphere remains structurally anchored in religious schemas, influencing how audiences evaluate the legitimacy of moral versus factual claims.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "49aaa582961f",
     "timestamp": "2026-04-29T08:52:07.552681+00:00",
     "schema_version": "autoresearch.v1",
