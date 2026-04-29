@@ -1,5 +1,111 @@
 [
   {
+    "id": "d2ca38f3ebbc",
+    "timestamp": "2026-04-29T00:49:52.870007+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "engineers vs musicians on methodicalness versus intuition",
+    "labels": {
+      "X": "engineers",
+      "Y": "musicians",
+      "A": "methodical",
+      "B": "intuitive"
+    },
+    "canonical_keys": {
+      "X": "engineers",
+      "Y": "musicians",
+      "A": "methodical",
+      "B": "intuitive"
+    },
+    "effect_size": 1.83917338859781,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "engineer",
+        "coder",
+        "programmer",
+        "developer",
+        "technician",
+        "mechanic",
+        "analyst",
+        "architect",
+        "builder",
+        "operator",
+        "metallurgist",
+        "electrician",
+        "welder",
+        "drafter",
+        "surveyor"
+      ],
+      "Y_used": [
+        "musician",
+        "singer",
+        "composer",
+        "pianist",
+        "violinist",
+        "guitarist",
+        "drummer",
+        "cellist",
+        "flutist",
+        "vocalist",
+        "soloist",
+        "conductor",
+        "performer",
+        "songwriter",
+        "lyricist"
+      ],
+      "A_used": [
+        "logical",
+        "systematic",
+        "precise",
+        "structured",
+        "methodical",
+        "analytical",
+        "rigorous",
+        "exact",
+        "orderly",
+        "calculated",
+        "formulaic",
+        "consistent",
+        "objective",
+        "efficient",
+        "detailed"
+      ],
+      "B_used": [
+        "intuitive",
+        "spontaneous",
+        "creative",
+        "inspired",
+        "artistic",
+        "feeling",
+        "expressive",
+        "imaginative",
+        "abstract",
+        "fluid",
+        "emotional",
+        "free",
+        "instinctive",
+        "whimsical",
+        "organic"
+      ]
+    },
+    "proposal": "People associate engineers with methodicalness more strongly than they associate musicians with methodicalness. While music composition and performance rely on highly structured systems and theory, public perception often dichotomizes the 'analytical' engineer and the 'intuitive' musician. This association is interesting because it examines whether the technical rigor of music is implicitly ignored in favor of an artistic stereotype. Confirming this differential association would demonstrate the strength of the intuitive-analytical divide in social cognition, despite the objective overlap in the systematic nature of both fields.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "c4152e4ce360",
     "timestamp": "2026-04-28T23:57:23.286253+00:00",
     "schema_version": "autoresearch.v1",
