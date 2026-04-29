@@ -1,5 +1,111 @@
 [
   {
+    "id": "a00e1180fa33",
+    "timestamp": "2026-04-29T15:19:56.499934+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "curators vs collectors on accessibility versus exclusivity",
+    "labels": {
+      "X": "curators",
+      "Y": "collectors",
+      "A": "accessible",
+      "B": "exclusive"
+    },
+    "canonical_keys": {
+      "X": "curators",
+      "Y": "collectors",
+      "A": "accessible",
+      "B": "exclusive"
+    },
+    "effect_size": 0.9689881188735516,
+    "p_value": 0.00547,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "curator",
+        "archivist",
+        "librarian",
+        "conservator",
+        "docent",
+        "registrar",
+        "steward",
+        "historian",
+        "educator",
+        "guide",
+        "restorer",
+        "professor",
+        "teacher",
+        "director",
+        "researcher"
+      ],
+      "Y_used": [
+        "collector",
+        "hoarder",
+        "owner",
+        "dealer",
+        "buyer",
+        "investor",
+        "enthusiast",
+        "connoisseur",
+        "aficionado",
+        "patron",
+        "donor",
+        "sponsor",
+        "possessor",
+        "holder",
+        "accumulator"
+      ],
+      "A_used": [
+        "accessible",
+        "open",
+        "public",
+        "available",
+        "inclusive",
+        "free",
+        "transparent",
+        "visible",
+        "shared",
+        "displayed",
+        "exhibited",
+        "approachable",
+        "usable",
+        "reachable",
+        "communal"
+      ],
+      "B_used": [
+        "exclusive",
+        "private",
+        "hidden",
+        "closed",
+        "secret",
+        "hoarded",
+        "restricted",
+        "possessed",
+        "kept",
+        "locked",
+        "limited",
+        "concealed",
+        "solitary",
+        "possessive",
+        "reserved"
+      ]
+    },
+    "proposal": "People associate curators with accessibility more strongly than they associate collectors with accessibility. This differential implicit association highlights a potential tension in how the public mentally represents cultural stewardship versus private accumulation, suggesting that the role of the collector is implicitly linked to hoarding or exclusivity, whereas the curator is linked to facilitation and public sharing. This is novel because, while literature has examined professionals versus businesspeople or artists versus patrons, the specific dyad of curators versus collectors has not been probed, despite the rising cultural salience of debates around digital hoarding, museum repatriation, and the commercialization of knowledge. Examining this association is important because it reveals whether implicit biases favor institutional gatekeepers who enable access over private agents who preserve artifacts, potentially obscuring the role collectors play in funding and safeguarding cultural heritage.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "9137425d457e",
     "timestamp": "2026-04-29T14:20:53.098723+00:00",
     "schema_version": "autoresearch.v1",
