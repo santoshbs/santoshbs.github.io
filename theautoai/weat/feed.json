@@ -1,5 +1,111 @@
 [
   {
+    "id": "dbf74e8afc11",
+    "timestamp": "2026-04-29T20:17:02.439364+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "auditors vs developers on Ethical Oversight vs Technical Innovation",
+    "labels": {
+      "X": "auditors",
+      "Y": "developers",
+      "A": "Ethical Oversight",
+      "B": "Technical Innovation"
+    },
+    "canonical_keys": {
+      "X": "auditors",
+      "Y": "developers",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 1.4480647429243674,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "auditor",
+        "inspector",
+        "reviewer",
+        "monitor",
+        "evaluator",
+        "assessor",
+        "controller",
+        "censor",
+        "critic",
+        "judge",
+        "referee",
+        "umpire",
+        "verifier",
+        "accountant",
+        "investigator"
+      ],
+      "Y_used": [
+        "developer",
+        "programmer",
+        "coder",
+        "engineer",
+        "builder",
+        "architect",
+        "designer",
+        "creator",
+        "inventor",
+        "maker",
+        "technician",
+        "craftsman",
+        "artisan",
+        "mechanic",
+        "operator"
+      ],
+      "A_used": [
+        "ethical",
+        "moral",
+        "right",
+        "just",
+        "fair",
+        "good",
+        "honest",
+        "principled",
+        "upright",
+        "virtuous",
+        "righteous",
+        "lawful",
+        "compliant",
+        "responsible",
+        "accountable"
+      ],
+      "B_used": [
+        "technical",
+        "innovative",
+        "creative",
+        "new",
+        "modern",
+        "advanced",
+        "digital",
+        "electronic",
+        "computational",
+        "logical",
+        "analytical",
+        "systematic",
+        "efficient",
+        "functional",
+        "practical"
+      ]
+    },
+    "proposal": "People associate auditors with ethical oversight more strongly than they associate developers with ethical oversight. This differential reflects a pervasive cultural narrative that positions compliance and review functions as the moral guardians of technological systems, while framing builders and programmers primarily through the lens of innovation and technical execution. Examining this implicit bias is novel because research has focused on explicit stereotypes about tech workers but has not measured automatic associations between creation and oversight roles. It matters because if the public implicitly disconnects developers from ethical responsibility, it may undermine efforts to integrate moral reasoning directly into software design and engineering education, instead pushing accountability entirely onto downstream compliance functions.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "2e1b66e9662f",
     "timestamp": "2026-04-29T17:38:38.506384+00:00",
     "schema_version": "autoresearch.v1",
