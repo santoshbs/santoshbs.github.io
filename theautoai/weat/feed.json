@@ -1,5 +1,113 @@
 [
   {
+    "id": "9137425d457e",
+    "timestamp": "2026-04-29T14:20:53.098723+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "journalists vs economists on causal reasoning style",
+    "labels": {
+      "X": "journalists",
+      "Y": "economists",
+      "A": "simplification",
+      "B": "complexity"
+    },
+    "canonical_keys": {
+      "X": "journalists",
+      "Y": "economists",
+      "A": "simplification",
+      "B": "complexity"
+    },
+    "effect_size": 0.6333257607741329,
+    "p_value": 0.08952,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "reporter",
+        "correspondent",
+        "anchor",
+        "columnist",
+        "editor",
+        "newscaster",
+        "writer",
+        "broadcaster",
+        "commentator",
+        "chronicler",
+        "stringer",
+        "features",
+        "publicist",
+        "press",
+        "media"
+      ],
+      "Y_used": [
+        "economist",
+        "analyst",
+        "financier",
+        "accountant",
+        "statistician",
+        "actuary",
+        "trader",
+        "banker",
+        "investor",
+        "auditor",
+        "comptroller",
+        "budgeter",
+        "planner",
+        "forecaster",
+        "consultant"
+      ],
+      "A_used": [
+        "simple",
+        "straightforward",
+        "clear",
+        "easy",
+        "direct",
+        "single",
+        "obvious",
+        "plain",
+        "basic",
+        "uncomplicated",
+        "elementary",
+        "rudimentary",
+        "fundamental",
+        "linear",
+        "focused",
+        "specific",
+        "concrete"
+      ],
+      "B_used": [
+        "complex",
+        "multifactorial",
+        "systemic",
+        "probabilistic",
+        "structural",
+        "nuanced",
+        "multivariate",
+        "intricate",
+        "complicated",
+        "multifaceted",
+        "interdependent",
+        "networked",
+        "contextual",
+        "layered",
+        "comprehensive"
+      ]
+    },
+    "proposal": "people associate journalists with causal simplification more strongly than they associate economists with causal simplification. This differential implicit association captures how public discourse mental models diverge along epistemic axes: news professionals are culturally framed as prioritizing crisp, single-cause narratives for rapid consumption, whereas economic experts are stereotyped as emphasizing multivariate, systemic, and probabilistic explanations. While explicit surveys routinely measure trust or perceived competence, implicit measures of causal thinking styles between these professions remain unexamined. Confirming this association would reveal a deep-seated mental shortcut that shapes how audiences evaluate policy explanations, potentially biasing public receptivity toward reductionist versus structural framings of social problems. Disconfirming it would challenge assumptions about the epistemic caricatures that dominate media economics and public communication research.",
+    "iterations": 3,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "8664ea2b6eee",
     "timestamp": "2026-04-29T12:53:42.652846+00:00",
     "schema_version": "autoresearch.v1",
