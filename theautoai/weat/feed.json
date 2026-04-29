@@ -1,5 +1,111 @@
 [
   {
+    "id": "54325cfb79d9",
+    "timestamp": "2026-04-29T02:31:01.952544+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Muslims vs Christians on social orientation",
+    "labels": {
+      "X": "Muslims",
+      "Y": "Christians",
+      "A": "collectivism",
+      "B": "individualism"
+    },
+    "canonical_keys": {
+      "X": "muslims",
+      "Y": "christians",
+      "A": "collectivism",
+      "B": "individualism"
+    },
+    "effect_size": -0.4025794023127308,
+    "p_value": 0.28475,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "imam",
+        "sheikh",
+        "mullah",
+        "caliph",
+        "sufi",
+        "dervish",
+        "muezzin",
+        "qadi",
+        "mufti",
+        "hafiz",
+        "emir",
+        "zakir",
+        "murshid",
+        "wali",
+        "sayyid"
+      ],
+      "Y_used": [
+        "priest",
+        "pastor",
+        "bishop",
+        "deacon",
+        "cardinal",
+        "pope",
+        "monk",
+        "nun",
+        "cleric",
+        "curate",
+        "vicar",
+        "rector",
+        "chaplain",
+        "evangelist",
+        "missionary"
+      ],
+      "A_used": [
+        "community",
+        "group",
+        "shared",
+        "together",
+        "collective",
+        "social",
+        "cooperation",
+        "unity",
+        "team",
+        "family",
+        "harmony",
+        "kinship",
+        "connection",
+        "mutual",
+        "common"
+      ],
+      "B_used": [
+        "individual",
+        "independent",
+        "autonomous",
+        "unique",
+        "solo",
+        "single",
+        "self",
+        "personal",
+        "private",
+        "separate",
+        "distinct",
+        "freedom",
+        "liberty",
+        "solitary",
+        "lone"
+      ]
+    },
+    "proposal": "People associate Muslims with collectivism more strongly than they associate Christians with collectivism. This is novel as most implicit association research on religion focuses on prejudice, violence, or piety rather than social-orientation axes. It is interesting because it examines whether religious identity is mentally conflated with the collectivist cultural norms of the Global South. Confirming this would suggest that religious stereotypes often function as proxies for geographic and cultural stereotypes rather than theological ones.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "gemma4:31b-it-q8_0"
+    }
+  },
+  {
     "id": "c3b02244b81f",
     "timestamp": "2026-04-29T01:46:20.842194+00:00",
     "schema_version": "autoresearch.v1",
