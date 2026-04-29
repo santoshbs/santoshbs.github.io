@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "batches_seen": 65,
-  "loans_seen": 1040,
-  "last_updated": "2026-04-29T20:06:38.908050+00:00",
+  "batches_seen": 66,
+  "loans_seen": 1056,
+  "last_updated": "2026-04-29T20:47:38.713329+00:00",
   "watching_for": "",
   "claims": {
     "institutional-names-slower": {
@@ -13,10 +13,10 @@
       "supporting_loans": [],
       "confidence": 0.95,
       "first_seen_batch": 1,
-      "last_updated_batch": 65,
+      "last_updated_batch": 66,
       "confidence_history": [
         [
-          65,
+          66,
           0.95
         ]
       ]
@@ -29,10 +29,10 @@
       "supporting_loans": [],
       "confidence": 0.72,
       "first_seen_batch": 1,
-      "last_updated_batch": 65,
+      "last_updated_batch": 66,
       "confidence_history": [
         [
-          65,
+          66,
           0.72
         ]
       ]
@@ -45,10 +45,10 @@
       "supporting_loans": [],
       "confidence": 0.85,
       "first_seen_batch": 1,
-      "last_updated_batch": 65,
+      "last_updated_batch": 66,
       "confidence_history": [
         [
-          65,
+          66,
           0.85
         ]
       ]
@@ -61,10 +61,10 @@
       "supporting_loans": [],
       "confidence": 1.0,
       "first_seen_batch": 1,
-      "last_updated_batch": 65,
+      "last_updated_batch": 66,
       "confidence_history": [
         [
-          65,
+          66,
           1.0
         ]
       ]
@@ -77,10 +77,10 @@
       "supporting_loans": [],
       "confidence": 0.88,
       "first_seen_batch": 1,
-      "last_updated_batch": 65,
+      "last_updated_batch": 66,
       "confidence_history": [
         [
-          65,
+          66,
           0.88
         ]
       ]
@@ -93,10 +93,10 @@
       "supporting_loans": [],
       "confidence": 0.74,
       "first_seen_batch": 1,
-      "last_updated_batch": 65,
+      "last_updated_batch": 66,
       "confidence_history": [
         [
-          65,
+          66,
           0.74
         ]
       ]
@@ -108,11 +108,11 @@
       "body": "Pitches from women that include extensive details about their origins or personal history tend to decelerate funding.",
       "supporting_loans": [],
       "confidence": 0.65,
-      "first_seen_batch": 47,
-      "last_updated_batch": 65,
+      "first_seen_batch": 46,
+      "last_updated_batch": 66,
       "confidence_history": [
         [
-          65,
+          66,
           0.65
         ]
       ]
@@ -124,11 +124,11 @@
       "body": "Pitches from female borrowers that specify exact loan amounts in local currency tend to fund more slowly.",
       "supporting_loans": [],
       "confidence": 0.6,
-      "first_seen_batch": 55,
-      "last_updated_batch": 65,
+      "first_seen_batch": 54,
+      "last_updated_batch": 66,
       "confidence_history": [
         [
-          65,
+          66,
           0.6
         ]
       ]
@@ -163,37 +163,30 @@
     "female-business-duration-faster": {
       "id": "female-business-duration-faster",
       "body": "Specifying the number of years the business has operated may accelerate funding for women.",
-      "first_seen_batch": 43
+      "first_seen_batch": 42
     },
     "female-loan-amount-faster": {
       "id": "female-loan-amount-faster",
       "body": "Requesting a smaller loan amount may predict faster funding for female borrowers.",
-      "first_seen_batch": 45
+      "first_seen_batch": 44
     },
     "female-pig-farming-slower": {
       "id": "female-pig-farming-slower",
       "body": "Pitches from female borrowers focusing specifically on pig farming may predict slower funding.",
-      "first_seen_batch": 53
+      "first_seen_batch": 52
     },
     "female-past-loans-slower": {
       "id": "female-past-loans-slower",
       "body": "Mentioning the use of previous loans to sustain a business may predict slower funding for female borrowers.",
-      "first_seen_batch": 61
+      "first_seen_batch": 60
     },
-    "female-geographic-specificity-faster": {
-      "id": "female-geographic-specificity-faster",
-      "body": "Providing specific geographic locations or settlement names may predict faster funding for female borrowers.",
-      "first_seen_batch": 63
+    "female-gratitude-faster-revisited": {
+      "id": "female-gratitude-faster-revisited",
+      "body": "Explicit thank yous to lenders may accelerate funding for female borrowers.",
+      "first_seen_batch": 66
     }
   },
   "retired": {
-    "female-exact-child-count-faster": {
-      "id": "female-exact-child-count-faster",
-      "title": "Specifying the exact number of children may accelerate funding for female borrowers.",
-      "retrospective": "Contradicted by observation that mentioning children and marital status predicts slower funding.",
-      "retired_batch": 49,
-      "was_believed_batches": 0
-    },
     "female-technical-over-specification-slower": {
       "id": "female-technical-over-specification-slower",
       "title": "Pitches from women that specify large quantities of assets or long years of experience tend to decelerate funding.",
@@ -255,6 +248,13 @@
       "title": "Pitches from women that reference the use of past loans to maintain their business tend to accelerate funding.",
       "retrospective": "Retired to make room for promoted financial specificity claim due to memory cap.",
       "retired_batch": 60,
+      "was_believed_batches": 0
+    },
+    "female-geographic-specificity-faster": {
+      "id": "female-geographic-specificity-faster",
+      "title": "Providing specific geographic locations or settlement names may predict faster funding for female borrowers.",
+      "retrospective": "Dropped from puzzles to make room for gratitude puzzle.",
+      "retired_batch": 66,
       "was_believed_batches": 0
     }
   }
