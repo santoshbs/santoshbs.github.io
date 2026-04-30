@@ -1,5 +1,111 @@
 [
   {
+    "id": "de102c273f2b",
+    "timestamp": "2026-04-30T18:54:18.535569+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "mentors vs apprentices on independence versus dependence",
+    "labels": {
+      "X": "mentors",
+      "Y": "apprentices",
+      "A": "independence",
+      "B": "dependence"
+    },
+    "canonical_keys": {
+      "X": "mentors",
+      "Y": "apprentices",
+      "A": "independence",
+      "B": "dependence"
+    },
+    "effect_size": -0.3199000138492121,
+    "p_value": 0.39502,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "mentor",
+        "advisor",
+        "coach",
+        "teacher",
+        "guide",
+        "tutor",
+        "counselor",
+        "instructor",
+        "trainer",
+        "facilitator",
+        "supervisor",
+        "patron",
+        "consultant",
+        "director",
+        "manager"
+      ],
+      "Y_used": [
+        "apprentice",
+        "novice",
+        "trainee",
+        "student",
+        "learner",
+        "pupil",
+        "acolyte",
+        "disciple",
+        "cadet",
+        "rookie",
+        "neophyte",
+        "initiate",
+        "protege",
+        "intern",
+        "recruit"
+      ],
+      "A_used": [
+        "independence",
+        "autonomy",
+        "freedom",
+        "liberty",
+        "sovereign",
+        "emancipated",
+        "liberated",
+        "unbound",
+        "uncontrolled",
+        "individualistic",
+        "freewheeling",
+        "unswayed",
+        "unattached",
+        "autonomous",
+        "unregulated"
+      ],
+      "B_used": [
+        "dependence",
+        "dependency",
+        "reliance",
+        "subservience",
+        "obedience",
+        "submission",
+        "servitude",
+        "subordinate",
+        "auxiliary",
+        "contingent",
+        "reliant",
+        "submissive",
+        "obedient",
+        "dependent",
+        "needy"
+      ]
+    },
+    "proposal": "People associate mentors with independence more strongly than they associate apprentices with independence. This differential implicit association highlights a cultural bias where guidance is linked to autonomy and self-direction, while learning is framed as dependence and structured submission. Examining this bias is novel because it moves beyond traditional hierarchical pairs (like bosses versus employees) to explore how mentorship specifically shapes mental representations of agency. Confirming this association would illuminate how organizational discourse frames the development of expertise, potentially influencing how mentorship programs are designed and how early-career individuals perceive their own professional agency.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "3722369bbe0b",
     "timestamp": "2026-04-30T05:24:40.095014+00:00",
     "schema_version": "autoresearch.v1",
