@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "batches_seen": 72,
-  "loans_seen": 1152,
-  "last_updated": "2026-04-30T02:42:50.512097+00:00",
+  "batches_seen": 73,
+  "loans_seen": 1168,
+  "last_updated": "2026-04-30T03:26:25.640375+00:00",
   "watching_for": "",
   "claims": {
     "institutional-names-slower": {
@@ -13,10 +13,10 @@
       "supporting_loans": [],
       "confidence": 0.95,
       "first_seen_batch": 1,
-      "last_updated_batch": 72,
+      "last_updated_batch": 73,
       "confidence_history": [
         [
-          72,
+          73,
           0.95
         ]
       ]
@@ -29,10 +29,10 @@
       "supporting_loans": [],
       "confidence": 0.72,
       "first_seen_batch": 1,
-      "last_updated_batch": 72,
+      "last_updated_batch": 73,
       "confidence_history": [
         [
-          72,
+          73,
           0.72
         ]
       ]
@@ -45,10 +45,10 @@
       "supporting_loans": [],
       "confidence": 0.75,
       "first_seen_batch": 1,
-      "last_updated_batch": 72,
+      "last_updated_batch": 73,
       "confidence_history": [
         [
-          72,
+          73,
           0.75
         ]
       ]
@@ -61,10 +61,10 @@
       "supporting_loans": [],
       "confidence": 1.0,
       "first_seen_batch": 1,
-      "last_updated_batch": 72,
+      "last_updated_batch": 73,
       "confidence_history": [
         [
-          72,
+          73,
           1.0
         ]
       ]
@@ -75,13 +75,13 @@
       "title": "Female borrowers who explicitly state their age fund more slowly.",
       "body": "Pitches from women that include the borrower's age tend to fund more slowly than those that omit it.",
       "supporting_loans": [],
-      "confidence": 0.89,
+      "confidence": 0.95,
       "first_seen_batch": 1,
-      "last_updated_batch": 72,
+      "last_updated_batch": 73,
       "confidence_history": [
         [
-          72,
-          0.89
+          73,
+          0.95
         ]
       ]
     },
@@ -92,11 +92,11 @@
       "body": "Pitches from women that include extensive details about their origins or personal history tend to decelerate funding.",
       "supporting_loans": [],
       "confidence": 0.71,
-      "first_seen_batch": 40,
-      "last_updated_batch": 72,
+      "first_seen_batch": 39,
+      "last_updated_batch": 73,
       "confidence_history": [
         [
-          72,
+          73,
           0.71
         ]
       ]
@@ -108,11 +108,11 @@
       "body": "Pitches from female borrowers that specify exact loan amounts in local currency tend to fund more slowly.",
       "supporting_loans": [],
       "confidence": 0.7,
-      "first_seen_batch": 48,
-      "last_updated_batch": 72,
+      "first_seen_batch": 47,
+      "last_updated_batch": 73,
       "confidence_history": [
         [
-          72,
+          73,
           0.7
         ]
       ]
@@ -124,11 +124,11 @@
       "body": "Pitches from women requesting smaller loan amounts in local currency tend to accelerate funding speed.",
       "supporting_loans": [],
       "confidence": 0.65,
-      "first_seen_batch": 72,
-      "last_updated_batch": 72,
+      "first_seen_batch": 71,
+      "last_updated_batch": 73,
       "confidence_history": [
         [
-          72,
+          73,
           0.65
         ]
       ]
@@ -163,22 +163,27 @@
     "female-business-duration-faster": {
       "id": "female-business-duration-faster",
       "body": "Specifying the number of years the business has operated may accelerate funding for women.",
-      "first_seen_batch": 36
-    },
-    "female-pig-farming-slower": {
-      "id": "female-pig-farming-slower",
-      "body": "Pitches from female borrowers focusing specifically on pig farming may predict slower funding.",
-      "first_seen_batch": 46
+      "first_seen_batch": 35
     },
     "male-length-slower": {
       "id": "male-length-slower",
       "body": "Pitches from male borrowers that are longer in length may predict slower funding.",
-      "first_seen_batch": 70
+      "first_seen_batch": 69
     },
     "male-equipment-specificity-slower": {
       "id": "male-equipment-specificity-slower",
       "body": "Mentioning specific equipment models or electronics may predict slower funding for male borrowers.",
-      "first_seen_batch": 70
+      "first_seen_batch": 69
+    },
+    "female-gratitude-faster-v3": {
+      "id": "female-gratitude-faster-v3",
+      "body": "Specific expressions of gratitude to lenders may accelerate funding for female borrowers.",
+      "first_seen_batch": 73
+    },
+    "female-hardworking-faster-v2": {
+      "id": "female-hardworking-faster-v2",
+      "body": "Describing the borrower as hardworking may accelerate funding for female borrowers.",
+      "first_seen_batch": 73
     }
   },
   "retired": {
