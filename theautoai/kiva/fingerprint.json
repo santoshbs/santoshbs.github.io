@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "batches_seen": 76,
-  "loans_seen": 1216,
-  "last_updated": "2026-04-30T05:52:53.663592+00:00",
+  "batches_seen": 77,
+  "loans_seen": 1232,
+  "last_updated": "2026-04-30T06:52:56.911874+00:00",
   "watching_for": "",
   "claims": {
     "institutional-names-slower": {
@@ -11,29 +11,13 @@
       "title": "Mentioning specific institutional or brand names predicts slower funding regardless of gender.",
       "body": "Pitches that reference specific financial institutions or brands tend to fund more slowly for both men and women.",
       "supporting_loans": [],
-      "confidence": 0.95,
+      "confidence": 1.0,
       "first_seen_batch": 1,
-      "last_updated_batch": 76,
+      "last_updated_batch": 77,
       "confidence_history": [
         [
-          76,
-          0.95
-        ]
-      ]
-    },
-    "environmental-protection-slower": {
-      "id": "environmental-protection-slower",
-      "bucket": "slower",
-      "title": "Mentioning environmental protection predicts slower funding regardless of gender.",
-      "body": "Pitches that focus on environmental or ecological concerns tend to fund more slowly for both men and women.",
-      "supporting_loans": [],
-      "confidence": 0.57,
-      "first_seen_batch": 1,
-      "last_updated_batch": 76,
-      "confidence_history": [
-        [
-          76,
-          0.57
+          77,
+          1.0
         ]
       ]
     },
@@ -45,10 +29,10 @@
       "supporting_loans": [],
       "confidence": 0.8,
       "first_seen_batch": 1,
-      "last_updated_batch": 76,
+      "last_updated_batch": 77,
       "confidence_history": [
         [
-          76,
+          77,
           0.8
         ]
       ]
@@ -61,10 +45,10 @@
       "supporting_loans": [],
       "confidence": 1.0,
       "first_seen_batch": 1,
-      "last_updated_batch": 76,
+      "last_updated_batch": 77,
       "confidence_history": [
         [
-          76,
+          77,
           1.0
         ]
       ]
@@ -77,10 +61,10 @@
       "supporting_loans": [],
       "confidence": 1.0,
       "first_seen_batch": 1,
-      "last_updated_batch": 76,
+      "last_updated_batch": 77,
       "confidence_history": [
         [
-          76,
+          77,
           1.0
         ]
       ]
@@ -92,11 +76,11 @@
       "body": "Pitches from women that include extensive details about their origins or personal history tend to decelerate funding.",
       "supporting_loans": [],
       "confidence": 0.81,
-      "first_seen_batch": 36,
-      "last_updated_batch": 76,
+      "first_seen_batch": 35,
+      "last_updated_batch": 77,
       "confidence_history": [
         [
-          76,
+          77,
           0.81
         ]
       ]
@@ -108,11 +92,11 @@
       "body": "Pitches from female borrowers that specify exact loan amounts in local currency tend to fund more slowly.",
       "supporting_loans": [],
       "confidence": 0.7,
-      "first_seen_batch": 44,
-      "last_updated_batch": 76,
+      "first_seen_batch": 43,
+      "last_updated_batch": 77,
       "confidence_history": [
         [
-          76,
+          77,
           0.7
         ]
       ]
@@ -124,11 +108,27 @@
       "body": "Pitches from women that emphasize business development and growth as a means to provide family security accelerate funding speed.",
       "supporting_loans": [],
       "confidence": 0.6,
-      "first_seen_batch": 72,
-      "last_updated_batch": 76,
+      "first_seen_batch": 71,
+      "last_updated_batch": 77,
       "confidence_history": [
         [
-          76,
+          77,
+          0.6
+        ]
+      ]
+    },
+    "female-business-duration-faster": {
+      "id": "female-business-duration-faster",
+      "bucket": "gendered_women",
+      "title": "Female borrowers who specify the number of years the business has operated fund faster.",
+      "body": "Pitches from women that include the duration of their business operations tend to accelerate funding speed.",
+      "supporting_loans": [],
+      "confidence": 0.6,
+      "first_seen_batch": 77,
+      "last_updated_batch": 77,
+      "confidence_history": [
+        [
+          77,
           0.6
         ]
       ]
@@ -150,50 +150,38 @@
       "body": "Female borrowers who mention professional values, such as customer service, may fund faster.",
       "first_seen_batch": 1
     },
-    "female-business-duration-faster": {
-      "id": "female-business-duration-faster",
-      "body": "Specifying the number of years the business has operated may accelerate funding for women.",
-      "first_seen_batch": 32
-    },
     "male-length-slower": {
       "id": "male-length-slower",
       "body": "Pitches from male borrowers that are longer in length may predict slower funding.",
-      "first_seen_batch": 66
+      "first_seen_batch": 65
     },
     "male-equipment-specificity-slower": {
       "id": "male-equipment-specificity-slower",
       "body": "Mentioning specific equipment models or electronics may predict slower funding for male borrowers.",
-      "first_seen_batch": 66
+      "first_seen_batch": 65
     },
     "female-gratitude-faster-v3": {
       "id": "female-gratitude-faster-v3",
       "body": "Specific expressions of gratitude to lenders may accelerate funding for female borrowers.",
-      "first_seen_batch": 70
+      "first_seen_batch": 69
     },
     "female-hardworking-faster-v2": {
       "id": "female-hardworking-faster-v2",
       "body": "Describing the borrower as hardworking may accelerate funding for female borrowers.",
-      "first_seen_batch": 70
+      "first_seen_batch": 69
     },
     "female-child-count-slower": {
       "id": "female-child-count-slower",
       "body": "Specifying the number of children may predict slower funding for female borrowers.",
-      "first_seen_batch": 76
+      "first_seen_batch": 75
     },
     "female-geographic-specificity-faster-v2": {
       "id": "female-geographic-specificity-faster-v2",
       "body": "Mentioning specific geographic locations may accelerate funding for female borrowers.",
-      "first_seen_batch": 76
+      "first_seen_batch": 75
     }
   },
   "retired": {
-    "female-hardworking-faster": {
-      "id": "female-hardworking-faster",
-      "title": "Pitches from women that use terms like 'hardworking' or 'hardworking entrepreneur' tend to accelerate funding.",
-      "retrospective": "Retired to make room for new claims due to memory cap.",
-      "retired_batch": 56,
-      "was_believed_batches": 0
-    },
     "female-past-loans-faster": {
       "id": "female-past-loans-faster",
       "title": "Pitches from women that reference the use of past loans to maintain their business tend to accelerate funding.",
@@ -255,6 +243,13 @@
       "title": "Specifying the gender of children may predict faster funding for female borrowers.",
       "retrospective": "Retired to make room for new child-count puzzle and geographic puzzle due to contradiction and memory cap.",
       "retired_batch": 76,
+      "was_believed_batches": 0
+    },
+    "environmental-protection-slower": {
+      "id": "environmental-protection-slower",
+      "title": "Pitches that focus on environmental or ecological concerns tend to fund more slowly for both men and women.",
+      "retrospective": "Retired to make room for promoted female-business-duration-faster claim due to memory cap.",
+      "retired_batch": 77,
       "was_believed_batches": 0
     }
   }
