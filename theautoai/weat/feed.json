@@ -1,5 +1,111 @@
 [
   {
+    "id": "f5994a37a2b0",
+    "timestamp": "2026-04-30T21:48:59.282165+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "teachers vs journalists on epistemic caution versus certainty",
+    "labels": {
+      "X": "teachers",
+      "Y": "journalists",
+      "A": "epistemic caution",
+      "B": "epistemic certainty"
+    },
+    "canonical_keys": {
+      "X": "teachers",
+      "Y": "journalists",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 0.15985052437754318,
+    "p_value": 0.67423,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "teacher",
+        "professor",
+        "tutor",
+        "instructor",
+        "lecturer",
+        "mentor",
+        "educator",
+        "coach",
+        "trainer",
+        "counselor",
+        "advisor",
+        "dean",
+        "principal",
+        "supervisor",
+        "headmaster"
+      ],
+      "Y_used": [
+        "journalist",
+        "reporter",
+        "correspondent",
+        "anchor",
+        "broadcaster",
+        "columnist",
+        "writer",
+        "editor",
+        "photographer",
+        "commentator",
+        "newsman",
+        "newswoman",
+        "newscaster",
+        "stringer",
+        "anchorperson"
+      ],
+      "A_used": [
+        "cautious",
+        "careful",
+        "deliberate",
+        "patient",
+        "measured",
+        "tentative",
+        "thoughtful",
+        "reflective",
+        "prudent",
+        "hesitant",
+        "slow",
+        "methodical",
+        "thorough",
+        "precise",
+        "skeptical"
+      ],
+      "B_used": [
+        "certain",
+        "urgent",
+        "fast",
+        "rapid",
+        "definitive",
+        "bold",
+        "immediate",
+        "quick",
+        "hasty",
+        "confident",
+        "assertive",
+        "decisive",
+        "sudden",
+        "prompt",
+        "swift"
+      ]
+    },
+    "proposal": "People associate teachers with epistemic caution more strongly than they associate journalists with epistemic caution. This differential association captures how educational norms implicitly scaffold knowledge through verification, patience, and acknowledgment of complexity, whereas media discourse links journalistic roles to rapid, definitive framing and narrative certainty. It is novel because implicit bias research has largely overlooked how institutional knowledge-production contexts shape mental representations of cognitive restraint. Confirming this association would matter for understanding public trust dynamics, especially during misinformation crises where pedagogical slowness clashes with journalistic urgency.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "de102c273f2b",
     "timestamp": "2026-04-30T18:54:18.535569+00:00",
     "schema_version": "autoresearch.v1",
