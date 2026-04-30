@@ -21,8 +21,8 @@
         "id": "15",
         "title": "Computer & Mathematical",
         "group": "computer & math",
-        "refs": 369,
-        "signals": 428,
+        "refs": 370,
+        "signals": 429,
         "occupations": 33
       },
       {
@@ -101,8 +101,8 @@
         "id": "35",
         "title": "Food Preparation & Serving",
         "group": "food",
-        "refs": 28,
-        "signals": 20,
+        "refs": 30,
+        "signals": 22,
         "occupations": 8
       },
       {
@@ -341,6 +341,11 @@
         "source": "13",
         "target": "17",
         "weight": 5
+      },
+      {
+        "source": "15",
+        "target": "35",
+        "weight": 1
       },
       {
         "source": "15",
@@ -1624,9 +1629,9 @@
           "id": "15-1255.00",
           "title": "Web and Digital Interface Designers",
           "group": "computer & math",
-          "refs": 6,
-          "revised": "2026-04-22",
-          "signals": 5
+          "refs": 7,
+          "revised": "2026-04-30",
+          "signals": 6
         },
         {
           "id": "15-1255.01",
@@ -4148,9 +4153,9 @@
           "id": "35-3023.00",
           "title": "Fast Food and Counter Workers",
           "group": "food",
-          "refs": 6,
-          "revised": "2026-04-24",
-          "signals": 5
+          "refs": 7,
+          "revised": "2026-04-30",
+          "signals": 6
         },
         {
           "id": "35-3023.01",
@@ -4164,9 +4169,9 @@
           "id": "35-3031.00",
           "title": "Waiters and Waitresses",
           "group": "food",
-          "refs": 6,
-          "revised": "2026-04-28",
-          "signals": 5
+          "refs": 7,
+          "revised": "2026-04-30",
+          "signals": 6
         },
         {
           "id": "35-3041.00",
@@ -4178,6 +4183,11 @@
         }
       ],
       "edges": [
+        {
+          "source": "35-3023.00",
+          "target": "35-3031.00",
+          "signal": "Why AI-Powered Ordering Can Redefine the Restaurant’s Digital Experience"
+        },
         {
           "source": "35-3011.00",
           "target": "35-3031.00",
@@ -4202,11 +4212,6 @@
           "source": "35-1012.00",
           "target": "35-3023.01",
           "signal": "Starbucks adds performance bonuses for front-line workers"
-        },
-        {
-          "source": "35-3023.00",
-          "target": "35-3031.00",
-          "signal": "Is Efficiency Replacing Empathy?"
         }
       ]
     },
