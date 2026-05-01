@@ -1,5 +1,111 @@
 [
   {
+    "id": "a16deeb35ac1",
+    "timestamp": "2026-05-01T16:33:59.299417+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "therapists vs sociologists on practical utility versus theoretical abstraction",
+    "labels": {
+      "X": "therapists",
+      "Y": "sociologists",
+      "A": "practical utility",
+      "B": "theoretical abstraction"
+    },
+    "canonical_keys": {
+      "X": "therapists",
+      "Y": "sociologists",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 1.3125367623593307,
+    "p_value": 0.00011,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "therapist",
+        "psychologist",
+        "counselor",
+        "clinician",
+        "psychiatrist",
+        "psychotherapist",
+        "shrink",
+        "healer",
+        "psychoanalyst",
+        "doctor",
+        "nurse",
+        "specialist",
+        "practitioner",
+        "medic",
+        "coach"
+      ],
+      "Y_used": [
+        "sociologist",
+        "professor",
+        "scientist",
+        "criminologist",
+        "anthropologist",
+        "historian",
+        "expert",
+        "theorist",
+        "lecturer",
+        "investigator",
+        "demographer",
+        "statistician",
+        "researcher",
+        "analyst",
+        "faculty"
+      ],
+      "A_used": [
+        "practical",
+        "useful",
+        "applied",
+        "helpful",
+        "effective",
+        "concrete",
+        "actionable",
+        "immediate",
+        "tangible",
+        "direct",
+        "real",
+        "service",
+        "support",
+        "care",
+        "benefit"
+      ],
+      "B_used": [
+        "theoretical",
+        "academic",
+        "abstract",
+        "conceptual",
+        "systemic",
+        "structural",
+        "scholarly",
+        "intellectual",
+        "macro",
+        "paradigm",
+        "framework",
+        "model",
+        "principle",
+        "doctrine",
+        "ideology"
+      ]
+    },
+    "proposal": "People associate therapists with practical utility more strongly than they associate sociologists with practical utility. This differential implicit association reflects a latent cultural heuristic that privileges immediate, individual-level intervention over broad, systemic analysis, even though both fields aim to improve human functioning. Examining this association is novel because prior implicit research has largely focused on clinical versus biological distinctions, leaving the applied social sciences comparatively unexamined in this domain. It matters because implicit devaluation of macro-level social inquiry could subtly reinforce public policy preferences that favor individualized remedies over structural reforms, thereby shaping how institutional resources are prioritized in mental health, education, and urban planning.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "d2b80883151f",
     "timestamp": "2026-05-01T13:31:36.779438+00:00",
     "schema_version": "autoresearch.v1",
