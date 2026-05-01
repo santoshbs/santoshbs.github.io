@@ -1,5 +1,111 @@
 [
   {
+    "id": "f23f427eb15c",
+    "timestamp": "2026-05-01T11:41:00.879035+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "merchants vs monks on behavioral plasticity vs rigidity",
+    "labels": {
+      "X": "merchants",
+      "Y": "monks",
+      "A": "adaptability",
+      "B": "rigidity"
+    },
+    "canonical_keys": {
+      "X": "merchants",
+      "Y": "monks",
+      "A": "adaptability",
+      "B": "rigidity"
+    },
+    "effect_size": 1.5422145232077271,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "merchant",
+        "trader",
+        "vendor",
+        "broker",
+        "dealer",
+        "seller",
+        "shopkeeper",
+        "entrepreneur",
+        "capitalist",
+        "retailer",
+        "wholesaler",
+        "peddler",
+        "exporter",
+        "importer",
+        "shopowner"
+      ],
+      "Y_used": [
+        "monk",
+        "friar",
+        "abbot",
+        "novice",
+        "hermit",
+        "ascetic",
+        "lama",
+        "dervish",
+        "prior",
+        "recluse",
+        "brother",
+        "devotee",
+        "mendicant",
+        "anchorite",
+        "novitiate"
+      ],
+      "A_used": [
+        "adaptable",
+        "flexible",
+        "fluid",
+        "agile",
+        "responsive",
+        "dynamic",
+        "versatile",
+        "malleable",
+        "supple",
+        "elastic",
+        "adjustable",
+        "pliant",
+        "mutable",
+        "nimble",
+        "shifting"
+      ],
+      "B_used": [
+        "rigid",
+        "static",
+        "traditional",
+        "unchanging",
+        "fixed",
+        "steadfast",
+        "disciplined",
+        "vow",
+        "ritual",
+        "austere",
+        "dogmatic",
+        "inflexible",
+        "immutable",
+        "permanent",
+        "stable"
+      ]
+    },
+    "proposal": "People associate merchants with adaptability more strongly than they associate monks with adaptability. Contemporary discourse often frames merchants as fluid agents who must pivot rapidly to market conditions, global shifts, and consumer demands, whereas monks are culturally idealized as guardians of static traditions, adhering to unchanging vows, rituals, and ascetic disciplines. This differential implicit association has not been systematically probed, despite the rich vocabulary available for both categories (e.g., traders, brokers, vendors, peddlers, capitalists vs. friars, abbots, hermits, ascetics, novices, lamas). Confirming this association would be important for understanding how economic roles are cognitively linked to behavioral plasticity while spiritual roles are linked to behavioral rigidity, potentially influencing expectations of these actors in contexts requiring change management versus continuity.",
+    "iterations": 3,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "81957d21f260",
     "timestamp": "2026-05-01T10:45:31.231567+00:00",
     "schema_version": "autoresearch.v1",
