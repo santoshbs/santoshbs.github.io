@@ -1,5 +1,115 @@
 [
   {
+    "id": "e44550b526cf",
+    "timestamp": "2026-05-01T23:03:58.982029+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "politicians vs nurses on temporal and cognitive orientation",
+    "labels": {
+      "X": "politicians",
+      "Y": "nurses",
+      "A": "strategic foresight",
+      "B": "reactive present-focused"
+    },
+    "canonical_keys": {
+      "X": "politicians",
+      "Y": "nurses",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 1.556638109210667,
+    "p_value": 0.0,
+    "n": {
+      "X": 16,
+      "Y": 16,
+      "A": 16,
+      "B": 16
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "politician",
+        "senator",
+        "governor",
+        "mayor",
+        "diplomat",
+        "legislator",
+        "chancellor",
+        "minister",
+        "ambassador",
+        "representative",
+        "delegate",
+        "official",
+        "administrator",
+        "bureaucrat",
+        "parliamentarian",
+        "statesman"
+      ],
+      "Y_used": [
+        "nurse",
+        "medic",
+        "caregiver",
+        "attendant",
+        "orderly",
+        "matron",
+        "nursemaid",
+        "paramedic",
+        "technician",
+        "assistant",
+        "volunteer",
+        "helper",
+        "clinician",
+        "practitioner",
+        "doctor",
+        "physician"
+      ],
+      "A_used": [
+        "strategic",
+        "foresight",
+        "anticipate",
+        "forecast",
+        "plan",
+        "future",
+        "visionary",
+        "calculate",
+        "tactical",
+        "prepare",
+        "scheme",
+        "maneuver",
+        "deliberate",
+        "prospect",
+        "horizon",
+        "outlook"
+      ],
+      "B_used": [
+        "reactive",
+        "immediate",
+        "emotional",
+        "impulsive",
+        "spontaneous",
+        "instinctive",
+        "intuitive",
+        "feeling",
+        "passionate",
+        "urgent",
+        "crisis",
+        "emergency",
+        "response",
+        "react",
+        "quick",
+        "sudden"
+      ]
+    },
+    "proposal": "People associate politicians with strategic foresight more strongly than they associate nurses with strategic foresight. This differential implicit association captures a culturally pervasive but underexamined split in how care-oriented versus governance-oriented roles are mentally represented: nurses are routinely framed as reactive, present-focused, and emotionally driven, whereas politicians are implicitly cast as anticipatory, future-oriented, and tactically calculating. Testing this association is novel because prior stereotype research has focused broadly on warmth versus competence, leaving the specific implicit link between political roles and strategic foresight—relative to care professions—unprobed. Examining it matters because it reveals how implicit mental shortcuts may legitimize political maneuvering as inherently forward-looking while rendering care work as merely responsive, thereby shaping public expectations, professional prestige, and policy prioritization across sectors.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "f55cfbe84b0b",
     "timestamp": "2026-05-01T18:59:29.100149+00:00",
     "schema_version": "autoresearch.v1",
