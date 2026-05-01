@@ -1,5 +1,111 @@
 [
   {
+    "id": "f6d8030ce0f1",
+    "timestamp": "2026-05-01T06:23:15.560300+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "surgeons vs pharmacists on intervention vs maintenance",
+    "labels": {
+      "X": "surgeons",
+      "Y": "pharmacists",
+      "A": "heroic intervention",
+      "B": "routine maintenance"
+    },
+    "canonical_keys": {
+      "X": "surgeons",
+      "Y": "pharmacists",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 0.9013218765050214,
+    "p_value": 0.01273,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "surgeon",
+        "doctor",
+        "physician",
+        "medic",
+        "clinician",
+        "practitioner",
+        "healer",
+        "specialist",
+        "cardiologist",
+        "orthopedist",
+        "anesthesiologist",
+        "internist",
+        "pediatrician",
+        "generalist",
+        "pathologist"
+      ],
+      "Y_used": [
+        "pharmacist",
+        "chemist",
+        "druggist",
+        "apothecary",
+        "dispenser",
+        "compounder",
+        "formulator",
+        "technician",
+        "assistant",
+        "supplier",
+        "vendor",
+        "aide",
+        "clerk",
+        "provider",
+        "expert"
+      ],
+      "A_used": [
+        "hero",
+        "brave",
+        "daring",
+        "rescue",
+        "save",
+        "emergency",
+        "crisis",
+        "trauma",
+        "critical",
+        "acute",
+        "dramatic",
+        "action",
+        "fast",
+        "urgent",
+        "bold"
+      ],
+      "B_used": [
+        "routine",
+        "maintenance",
+        "support",
+        "supply",
+        "preventive",
+        "steady",
+        "slow",
+        "calm",
+        "background",
+        "invisible",
+        "administrative",
+        "logistical",
+        "consistent",
+        "predictable",
+        "mundane"
+      ]
+    },
+    "proposal": "People associate surgeons with heroic intervention more strongly than they associate pharmacists with heroic intervention. This differential association taps into contemporary media narratives and public intuition that dramatize acute, procedural crisis-response while rendering supply-chain, diagnostic, and maintenance-oriented medical labor invisible. It is novel because prior implicit bias research on healthcare roles has focused almost exclusively on gendered divisions or broad status hierarchies, neglecting the action-orientation split within clinical teams. Examining this bias matters because it reveals how invisible, systemic forms of expertise are systematically undervalued in public discourse, potentially influencing funding priorities, workplace morale, and the social recognition of maintenance versus intervention roles across all professions.",
+    "iterations": 3,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "01bc316feb38",
     "timestamp": "2026-05-01T05:31:29.457374+00:00",
     "schema_version": "autoresearch.v1",
