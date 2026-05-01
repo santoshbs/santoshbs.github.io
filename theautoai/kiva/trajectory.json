@@ -1,25 +1,5 @@
 [
   {
-    "id": "environmental-protection-slower-v2",
-    "title": "Mentioning environmental protection may predict slower funding for female borrowers.",
-    "bucket": "",
-    "birth_batch": 0,
-    "death_batch": 86,
-    "last_batch": 86,
-    "confidence": 0,
-    "alive": false
-  },
-  {
-    "id": "female-growth-expansion-faster",
-    "title": "Pitches from women that mention growing, expanding, or supporting the business may fund faster.",
-    "bucket": "",
-    "birth_batch": 0,
-    "death_batch": 90,
-    "last_batch": 90,
-    "confidence": 0,
-    "alive": false
-  },
-  {
     "id": "female-schooling-slower",
     "title": "Mentioning children's schooling or college as a goal may predict slower funding for women.",
     "bucket": "",
@@ -100,11 +80,31 @@
     "alive": false
   },
   {
+    "id": "female-php-specificity-slower",
+    "title": "Mentioning specific loan amounts in Philippine Pesos (PHP) may predict slower funding for women.",
+    "bucket": "",
+    "birth_batch": 0,
+    "death_batch": 100,
+    "last_batch": 100,
+    "confidence": 0,
+    "alive": false
+  },
+  {
+    "id": "female-child-count-specificity-slower",
+    "title": "Specifying the exact number of children may predict slower funding for female borrowers, distinct from general mentions of children.",
+    "bucket": "",
+    "birth_batch": 0,
+    "death_batch": 100,
+    "last_batch": 100,
+    "confidence": 0,
+    "alive": false
+  },
+  {
     "id": "institutional-names-slower",
     "title": "Mentioning specific institutional or brand names predicts slower funding regardless of gender.",
     "bucket": "slower",
     "birth_batch": 1,
-    "last_batch": 99,
+    "last_batch": 100,
     "confidence": 1.0,
     "peak_confidence": 1.0,
     "alive": true
@@ -114,7 +114,7 @@
     "title": "Female borrowers who mention dreams or future aspirations predict slower funding.",
     "bucket": "gendered_women",
     "birth_batch": 1,
-    "last_batch": 99,
+    "last_batch": 100,
     "confidence": 1.0,
     "peak_confidence": 1.0,
     "alive": true
@@ -124,7 +124,7 @@
     "title": "Female borrowers who list specific products or goals beyond family welfare fund faster.",
     "bucket": "gendered_women",
     "birth_batch": 1,
-    "last_batch": 99,
+    "last_batch": 100,
     "confidence": 1.0,
     "peak_confidence": 1.0,
     "alive": true
@@ -134,7 +134,7 @@
     "title": "Female borrowers who explicitly state their age fund more slowly.",
     "bucket": "gendered_women",
     "birth_batch": 1,
-    "last_batch": 99,
+    "last_batch": 100,
     "confidence": 1.0,
     "peak_confidence": 1.0,
     "alive": true
@@ -143,18 +143,18 @@
     "id": "female-detailed-background-slower",
     "title": "Female borrowers who provide detailed personal backstories fund more slowly.",
     "bucket": "gendered_women",
-    "birth_batch": 13,
-    "last_batch": 99,
-    "confidence": 0.87,
-    "peak_confidence": 0.87,
+    "birth_batch": 12,
+    "last_batch": 100,
+    "confidence": 0.91,
+    "peak_confidence": 0.91,
     "alive": true
   },
   {
     "id": "female-gratitude-faster",
     "title": "Explicit expressions of gratitude to lenders accelerate funding for female borrowers.",
     "bucket": "gendered_women",
-    "birth_batch": 63,
-    "last_batch": 99,
+    "birth_batch": 62,
+    "last_batch": 100,
     "confidence": 1.0,
     "peak_confidence": 1.0,
     "alive": true
@@ -163,8 +163,8 @@
     "id": "business-duration-faster",
     "title": "Specifying the number of years the business has operated predicts faster funding regardless of gender.",
     "bucket": "faster",
-    "birth_batch": 67,
-    "last_batch": 99,
+    "birth_batch": 66,
+    "last_batch": 100,
     "confidence": 0.71,
     "peak_confidence": 0.71,
     "alive": true
@@ -173,8 +173,8 @@
     "id": "female-community-benefit-faster",
     "title": "Female borrowers who mention benefits to their family or community fund faster.",
     "bucket": "gendered_women",
-    "birth_batch": 91,
-    "last_batch": 99,
+    "birth_batch": 90,
+    "last_batch": 100,
     "confidence": 0.77,
     "peak_confidence": 0.77,
     "alive": true
