@@ -1,5 +1,111 @@
 [
   {
+    "id": "01bc316feb38",
+    "timestamp": "2026-05-01T05:31:29.457374+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "teachers vs police on patience vs impatience",
+    "labels": {
+      "X": "teachers",
+      "Y": "police",
+      "A": "patience",
+      "B": "impatience"
+    },
+    "canonical_keys": {
+      "X": "teachers",
+      "Y": "police",
+      "A": "patience",
+      "B": "impatience"
+    },
+    "effect_size": 1.5758238369107438,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "teacher",
+        "educator",
+        "instructor",
+        "professor",
+        "tutor",
+        "mentor",
+        "lecturer",
+        "academic",
+        "master",
+        "coach",
+        "guide",
+        "trainer",
+        "adviser",
+        "supervisor",
+        "counselor"
+      ],
+      "Y_used": [
+        "police",
+        "cop",
+        "officer",
+        "detective",
+        "sheriff",
+        "deputy",
+        "constable",
+        "marshal",
+        "guard",
+        "agent",
+        "investigator",
+        "inspector",
+        "trooper",
+        "sergeant",
+        "lieutenant"
+      ],
+      "A_used": [
+        "patience",
+        "calm",
+        "tranquil",
+        "serene",
+        "composed",
+        "patient",
+        "gentle",
+        "steady",
+        "leisurely",
+        "unhurried",
+        "tolerant",
+        "forgiving",
+        "understanding",
+        "mild",
+        "peaceful"
+      ],
+      "B_used": [
+        "impatience",
+        "impatient",
+        "hurried",
+        "rushed",
+        "frantic",
+        "abrupt",
+        "urgent",
+        "aggressive",
+        "hostile",
+        "angry",
+        "irritable",
+        "harsh",
+        "forceful",
+        "coercive",
+        "tense"
+      ]
+    },
+    "proposal": "People associate teachers with patience more strongly than they associate police with patience. This differential reflects contemporary cultural narratives that frame educators as skilled in sustained, non-coercive engagement with challenging behavior, while law enforcement is implicitly stereotyped toward rapid, authority-driven intervention. Probing this association is novel because implicit patience linkages have not been systematically measured between these institutional roles, despite their central function in managing public order and youth development. Understanding this bias matters for how society allocates legitimacy to different forms of social control and informs ongoing debates about de-escalation training, school policing policies, and institutional trust.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "8cbff5dc1c97",
     "timestamp": "2026-05-01T01:38:42.544074+00:00",
     "schema_version": "autoresearch.v1",
