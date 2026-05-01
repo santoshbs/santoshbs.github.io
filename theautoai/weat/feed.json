@@ -1,5 +1,111 @@
 [
   {
+    "id": "d2b80883151f",
+    "timestamp": "2026-05-01T13:31:36.779438+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "mystics vs materialists on detachment vs worldly attachment",
+    "labels": {
+      "X": "mystics",
+      "Y": "materialists",
+      "A": "detachment",
+      "B": "worldly attachment"
+    },
+    "canonical_keys": {
+      "X": "mystics",
+      "Y": "materialists",
+      "A": "detachment",
+      "B": ""
+    },
+    "effect_size": 0.34125016709949735,
+    "p_value": 0.36388,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "mystic",
+        "sage",
+        "ascetic",
+        "monk",
+        "nun",
+        "hermit",
+        "yogi",
+        "guru",
+        "shaman",
+        "medium",
+        "oracle",
+        "seer",
+        "visionary",
+        "spiritualist",
+        "recluse"
+      ],
+      "Y_used": [
+        "materialist",
+        "capitalist",
+        "consumer",
+        "shopper",
+        "investor",
+        "trader",
+        "merchant",
+        "tycoon",
+        "billionaire",
+        "magnate",
+        "millionaire",
+        "executive",
+        "banker",
+        "broker",
+        "hoarder"
+      ],
+      "A_used": [
+        "detached",
+        "aloof",
+        "removed",
+        "isolated",
+        "withdrawn",
+        "secluded",
+        "separate",
+        "dispassionate",
+        "indifferent",
+        "apathetic",
+        "unattached",
+        "distant",
+        "remote",
+        "solitary",
+        "reserved"
+      ],
+      "B_used": [
+        "attached",
+        "engaged",
+        "worldly",
+        "materialistic",
+        "possessive",
+        "greedy",
+        "covetous",
+        "acquisitive",
+        "consumerist",
+        "earthly",
+        "mundane",
+        "physical",
+        "tangible",
+        "corporeal",
+        "immersed"
+      ]
+    },
+    "proposal": "People associate mystics with detachment more strongly than they associate materialists with detachment. This differential implicit association reflects how contemporary discourse frames spiritual seekers as naturally withdrawn from worldly concerns, while framing consumer-oriented individuals as inherently attached to possessions and status. It is novel because existing literature has largely examined detachment in clinical or religious contexts without contrasting it against materialist identities. It is interesting and important because it reveals how implicit cognition may reinforce cultural narratives about the moral or psychological costs of wealth accumulation versus spiritual pursuit, potentially influencing public attitudes toward economic inequality and wellness practices.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "f23f427eb15c",
     "timestamp": "2026-05-01T11:41:00.879035+00:00",
     "schema_version": "autoresearch.v1",
