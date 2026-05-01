@@ -1,5 +1,111 @@
 [
   {
+    "id": "81957d21f260",
+    "timestamp": "2026-05-01T10:45:31.231567+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "aristocrats vs bourgeoisie on moral obligation versus profit accumulation",
+    "labels": {
+      "X": "aristocrats",
+      "Y": "bourgeoisie",
+      "A": "moral duty",
+      "B": "economic self-interest"
+    },
+    "canonical_keys": {
+      "X": "aristocrats",
+      "Y": "bourgeoisie",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 1.3367287754760826,
+    "p_value": 0.0001,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "aristocrat",
+        "duke",
+        "duchess",
+        "lord",
+        "lady",
+        "earl",
+        "count",
+        "countess",
+        "baron",
+        "baroness",
+        "noble",
+        "peer",
+        "prince",
+        "princess",
+        "monarch"
+      ],
+      "Y_used": [
+        "bourgeois",
+        "bourgeoisie",
+        "merchant",
+        "capitalist",
+        "tycoon",
+        "financier",
+        "banker",
+        "entrepreneur",
+        "plutocrat",
+        "businessman",
+        "businesswoman",
+        "trader",
+        "dealer",
+        "broker",
+        "magnate"
+      ],
+      "A_used": [
+        "duty",
+        "obligation",
+        "honor",
+        "service",
+        "sacrifice",
+        "virtue",
+        "morality",
+        "ethics",
+        "conscience",
+        "responsibility",
+        "commitment",
+        "integrity",
+        "benevolence",
+        "philanthropy",
+        "charity"
+      ],
+      "B_used": [
+        "profit",
+        "wealth",
+        "money",
+        "gain",
+        "accumulation",
+        "commerce",
+        "trade",
+        "business",
+        "finance",
+        "capital",
+        "interest",
+        "return",
+        "revenue",
+        "income",
+        "earnings"
+      ]
+    },
+    "proposal": "People associate aristocrats with moral duty more strongly than they associate bourgeoisie with moral duty. This differential implicit association reflects the enduring cultural trope of 'noblesse oblige,' which links hereditary status to a code of honor and service, contrasting with stereotypes of the bourgeoisie as driven primarily by individual profit and accumulation. Examining this association is novel because prior research has focused on explicit class attitudes or general perceptions of competence and warmth, neglecting how implicit schemas may preserve archaic moral hierarchies that contradict contemporary egalitarian norms. Confirming this association would suggest that mental representations of aristocrats retain a romanticized component of public-spirited obligation that is not projected onto commercial classes, highlighting a dissonance between modern political ideology and deep-seated cultural narratives about status and responsibility.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "55bcc925a1ee",
     "timestamp": "2026-05-01T09:16:47.917860+00:00",
     "schema_version": "autoresearch.v1",
