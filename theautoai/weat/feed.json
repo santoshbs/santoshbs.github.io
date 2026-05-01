@@ -1,5 +1,111 @@
 [
   {
+    "id": "f55cfbe84b0b",
+    "timestamp": "2026-05-01T18:59:29.100149+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "artisans vs merchants on carefulness and attentiveness vs indifference and self-interest",
+    "labels": {
+      "X": "artisans",
+      "Y": "merchants",
+      "A": "care",
+      "B": "detachment"
+    },
+    "canonical_keys": {
+      "X": "artisans",
+      "Y": "merchants",
+      "A": "care",
+      "B": "detachment"
+    },
+    "effect_size": 0.29788911190823913,
+    "p_value": 0.43268,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "artisan",
+        "carpenter",
+        "blacksmith",
+        "potter",
+        "weaver",
+        "jeweler",
+        "cobbler",
+        "tailor",
+        "mason",
+        "sculptor",
+        "painter",
+        "crafter",
+        "builder",
+        "forger",
+        "carver"
+      ],
+      "Y_used": [
+        "merchant",
+        "trader",
+        "broker",
+        "dealer",
+        "vendor",
+        "retailer",
+        "shopkeeper",
+        "peddler",
+        "hawker",
+        "middleman",
+        "salesman",
+        "buyer",
+        "exporter",
+        "wholesaler",
+        "distributor"
+      ],
+      "A_used": [
+        "careful",
+        "attentive",
+        "thoughtful",
+        "considerate",
+        "meticulous",
+        "devoted",
+        "gentle",
+        "patient",
+        "dedicated",
+        "mindful",
+        "conscientious",
+        "earnest",
+        "sincere",
+        "nurturing",
+        "protective"
+      ],
+      "B_used": [
+        "indifferent",
+        "detached",
+        "selfish",
+        "cold",
+        "calculating",
+        "greedy",
+        "mercenary",
+        "opportunistic",
+        "cynical",
+        "aloof",
+        "unfeeling",
+        "ruthless",
+        "heartless",
+        "uncaring",
+        "apathetic"
+      ]
+    },
+    "proposal": "People associate artisans with care more strongly than they associate merchants with care. This differential association probes the implicit valuation of the maker-versus-seller dynamic, distinguishing those who physically craft goods from those who primarily facilitate exchange. While social psychology has extensively studied broad contrasts like scientists versus artists or businesspeople versus activists, the specific implicit link between manual creation and attentiveness has not been systematically examined against the role of the merchant. Confirming this association would reveal how contemporary discourses around craftsmanship, the 'maker movement,' and local economies reinforce a cognitive bias that equates production with benevolence and quality, while potentially associating distribution with detachment or self-interest.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "a16deeb35ac1",
     "timestamp": "2026-05-01T16:33:59.299417+00:00",
     "schema_version": "autoresearch.v1",
