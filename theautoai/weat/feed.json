@@ -1,5 +1,111 @@
 [
   {
+    "id": "5b9e4eb84734",
+    "timestamp": "2026-05-02T00:00:07.415876+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "philanthropists vs merchants on altruism versus self-interest",
+    "labels": {
+      "X": "philanthropists",
+      "Y": "merchants",
+      "A": "altruism",
+      "B": "self-interest"
+    },
+    "canonical_keys": {
+      "X": "philanthropists",
+      "Y": "merchants",
+      "A": "altruism",
+      "B": ""
+    },
+    "effect_size": 1.5064230591626653,
+    "p_value": 1e-05,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "donor",
+        "benefactor",
+        "volunteer",
+        "sponsor",
+        "patron",
+        "trustee",
+        "contributor",
+        "fundraiser",
+        "caregiver",
+        "carer",
+        "helper",
+        "activist",
+        "givers",
+        "supporters",
+        "volunteers"
+      ],
+      "Y_used": [
+        "merchant",
+        "trader",
+        "seller",
+        "dealer",
+        "retailer",
+        "vendor",
+        "shopkeeper",
+        "businessman",
+        "entrepreneur",
+        "capitalist",
+        "investor",
+        "broker",
+        "agent",
+        "peddler",
+        "hawker"
+      ],
+      "A_used": [
+        "altruistic",
+        "selfless",
+        "generous",
+        "charitable",
+        "kind",
+        "compassionate",
+        "virtuous",
+        "noble",
+        "pure",
+        "giving",
+        "caring",
+        "helpful",
+        "benevolent",
+        "saintly",
+        "unselfish"
+      ],
+      "B_used": [
+        "selfish",
+        "greedy",
+        "mercenary",
+        "calculating",
+        "profit",
+        "gain",
+        "benefit",
+        "advantage",
+        "commercial",
+        "trading",
+        "market",
+        "pricing",
+        "costly",
+        "valuable",
+        "revenue"
+      ]
+    },
+    "proposal": "People associate philanthropists with altruism more strongly than they associate merchants with altruism. While contemporary discourse increasingly celebrates social enterprise and 'giving back,' this proposal examines whether a deep-seated implicit bias persists that frames profit-seeking actors as inherently self-interested, regardless of their actual social impact. This association is novel because prior research has focused on broad contrasts like 'businesspeople versus activists' or 'merchants versus monks,' but has not isolated the specific tension between the secular roles of charitable giving and commercial trade. Confirming this association would reveal how deeply the 'virtuous giver' versus 'calculating trader' dichotomy remains embedded in public mental representations of economic actors.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "e44550b526cf",
     "timestamp": "2026-05-01T23:03:58.982029+00:00",
     "schema_version": "autoresearch.v1",
