@@ -1,5 +1,111 @@
 [
   {
+    "id": "c191b6241748",
+    "timestamp": "2026-05-02T21:08:43.906148+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "editors vs journalists on gatekeeping vs truth-seeking",
+    "labels": {
+      "X": "editors",
+      "Y": "journalists",
+      "A": "control",
+      "B": "truth"
+    },
+    "canonical_keys": {
+      "X": "editors",
+      "Y": "journalists",
+      "A": "control",
+      "B": "truth"
+    },
+    "effect_size": 1.025803080603085,
+    "p_value": 0.0039,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "editor",
+        "publisher",
+        "manager",
+        "coordinator",
+        "moderator",
+        "supervisor",
+        "overseer",
+        "administrator",
+        "boss",
+        "chief",
+        "head",
+        "reviewer",
+        "critic",
+        "evaluator",
+        "judge"
+      ],
+      "Y_used": [
+        "journalist",
+        "reporter",
+        "correspondent",
+        "writer",
+        "columnist",
+        "blogger",
+        "commentator",
+        "interviewer",
+        "anchor",
+        "broadcaster",
+        "cameraman",
+        "photographer",
+        "freelancer",
+        "contributor",
+        "author"
+      ],
+      "A_used": [
+        "authority",
+        "filter",
+        "censor",
+        "control",
+        "suppress",
+        "block",
+        "hide",
+        "restrict",
+        "curate",
+        "select",
+        "decide",
+        "determine",
+        "shape",
+        "manipulate",
+        "influence"
+      ],
+      "B_used": [
+        "truth",
+        "fact",
+        "report",
+        "news",
+        "investigate",
+        "find",
+        "discover",
+        "uncover",
+        "reveal",
+        "expose",
+        "witness",
+        "observe",
+        "record",
+        "document",
+        "verify"
+      ]
+    },
+    "proposal": "People associate editors with information gatekeeping more strongly than they associate journalists with information gatekeeping. This differential implicit association remains unexamined despite widespread public narratives that contrast frontline reporters’ truth-seeking with behind-the-scenes decision-makers’ structural control over published content. Mapping this bias is novel because prior media psychology research focuses on explicit trust in news organizations rather than implicit role-based attributions of control. The finding matters for media literacy and public policy, as implicit blame attribution shapes how audiences assign accountability for misinformation and editorial failures. Confirming or disconfirming this association would reveal whether reform efforts should target perceptions of individual correspondents versus institutional gatekeepers.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "ce1b0f0b19e5",
     "timestamp": "2026-05-02T18:39:38.700509+00:00",
     "schema_version": "autoresearch.v1",
