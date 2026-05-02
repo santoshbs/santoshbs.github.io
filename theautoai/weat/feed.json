@@ -1,5 +1,111 @@
 [
   {
+    "id": "96657123705a",
+    "timestamp": "2026-05-02T05:09:17.645656+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Audiences vs Performers on authenticity versus artificiality",
+    "labels": {
+      "X": "Audiences",
+      "Y": "Performers",
+      "A": "authenticity",
+      "B": "artificiality"
+    },
+    "canonical_keys": {
+      "X": "audiences",
+      "Y": "performers",
+      "A": "authenticity",
+      "B": "artificiality"
+    },
+    "effect_size": 0.8723290893763086,
+    "p_value": 0.01666,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "audience",
+        "spectators",
+        "viewers",
+        "watchers",
+        "listeners",
+        "crowd",
+        "fans",
+        "public",
+        "attendees",
+        "observers",
+        "consumers",
+        "patrons",
+        "followers",
+        "readers",
+        "subscribers"
+      ],
+      "Y_used": [
+        "performers",
+        "actors",
+        "singers",
+        "dancers",
+        "musicians",
+        "comedians",
+        "artists",
+        "entertainers",
+        "stars",
+        "presenters",
+        "hosts",
+        "idols",
+        "models",
+        "vocalists",
+        "celebrities"
+      ],
+      "A_used": [
+        "genuine",
+        "real",
+        "true",
+        "sincere",
+        "honest",
+        "authentic",
+        "pure",
+        "natural",
+        "candid",
+        "trustworthy",
+        "reliable",
+        "transparent",
+        "frank",
+        "straightforward",
+        "loyal"
+      ],
+      "B_used": [
+        "fake",
+        "artificial",
+        "false",
+        "insincere",
+        "staged",
+        "fabricated",
+        "pretentious",
+        "shallow",
+        "calculated",
+        "scripted",
+        "rehearsed",
+        "contrived",
+        "phony",
+        "bogus",
+        "commercialized"
+      ]
+    },
+    "proposal": "People associate Audiences with Authenticity more strongly than they associate Performers with Authenticity. While cultural discourse often scrutinizes performers for 'selling out' or crafting artificial personas, audiences are increasingly framed as the arbiters of 'real' taste and emotion, especially in digital contexts where viewer reactions and user-generated commentary are valorized as unvarnished truth. This differential implicit association has not been systematically examined, as research typically focuses on performer authenticity or audience passivity rather than the comparative moral texture of these roles. Confirming this association would reveal a tacit shift in cultural authority, suggesting that the public mentally represents audiences not merely as consumers, but as more genuine sources of cultural value than the creators they consume.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "3eb9814532cf",
     "timestamp": "2026-05-02T02:29:19.961161+00:00",
     "schema_version": "autoresearch.v1",
