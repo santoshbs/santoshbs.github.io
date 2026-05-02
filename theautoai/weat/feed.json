@@ -1,5 +1,111 @@
 [
   {
+    "id": "08602f9f85d7",
+    "timestamp": "2026-05-02T22:18:02.868237+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "journalists vs historians on temporal pacing",
+    "labels": {
+      "X": "journalists",
+      "Y": "historians",
+      "A": "Urgency",
+      "B": "Deliberation"
+    },
+    "canonical_keys": {
+      "X": "journalists",
+      "Y": "historians",
+      "A": "urgency",
+      "B": "deliberation"
+    },
+    "effect_size": 1.5410846954218722,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "journalist",
+        "reporter",
+        "correspondent",
+        "anchor",
+        "broadcaster",
+        "newscaster",
+        "cameraman",
+        "producer",
+        "editor",
+        "publicist",
+        "columnist",
+        "interviewer",
+        "commentator",
+        "stringer",
+        "writer"
+      ],
+      "Y_used": [
+        "historian",
+        "archaeologist",
+        "anthropologist",
+        "archivist",
+        "curator",
+        "researcher",
+        "academic",
+        "scholar",
+        "professor",
+        "teacher",
+        "librarian",
+        "conservator",
+        "genealogist",
+        "antiquarian",
+        "ethnographer"
+      ],
+      "A_used": [
+        "urgent",
+        "immediate",
+        "fast",
+        "rapid",
+        "quick",
+        "instant",
+        "prompt",
+        "swift",
+        "hasty",
+        "brisk",
+        "fleeting",
+        "current",
+        "pressing",
+        "speedy",
+        "sudden"
+      ],
+      "B_used": [
+        "deliberate",
+        "slow",
+        "careful",
+        "thoughtful",
+        "reflective",
+        "patient",
+        "gradual",
+        "prolonged",
+        "enduring",
+        "lasting",
+        "thorough",
+        "methodical",
+        "measured",
+        "painstaking",
+        "meticulous"
+      ]
+    },
+    "proposal": "People associate journalists with temporal urgency more strongly than they associate historians with temporal urgency. While both professions deal with the documentation and interpretation of events, contemporary media discourse and professional training emphasize immediacy, breaking news cycles, and real-time accountability for journalists, whereas historians are culturally framed as deliberate, reflective, and focused on long-term synthesis. This differential implicit association is novel because existing research has extensively mapped epistemic traits (e.g., objectivity, accuracy, bias) across these groups but has not examined the implicit temporal pacing dimension. It matters because public trust in information ecosystems may partly depend on whether audiences implicitly expect rapid responsiveness versus slow deliberation from different knowledge producers, shaping how society allocates credibility during crises versus long-term policy debates.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "c191b6241748",
     "timestamp": "2026-05-02T21:08:43.906148+00:00",
     "schema_version": "autoresearch.v1",
