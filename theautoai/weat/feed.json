@@ -1,5 +1,111 @@
 [
   {
+    "id": "7a0bc792029a",
+    "timestamp": "2026-05-02T11:18:30.085824+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "politicians vs criminals on deceptiveness vs honesty",
+    "labels": {
+      "X": "politicians",
+      "Y": "criminals",
+      "A": "deceit",
+      "B": "honesty"
+    },
+    "canonical_keys": {
+      "X": "politicians",
+      "Y": "criminals",
+      "A": "deceit",
+      "B": "honesty"
+    },
+    "effect_size": -1.725020952905704,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "politician",
+        "senator",
+        "congressman",
+        "representative",
+        "president",
+        "governor",
+        "mayor",
+        "diplomat",
+        "ambassador",
+        "minister",
+        "secretary",
+        "chancellor",
+        "councilor",
+        "official",
+        "lobbyist"
+      ],
+      "Y_used": [
+        "criminal",
+        "thief",
+        "burglar",
+        "robber",
+        "murderer",
+        "felon",
+        "outlaw",
+        "bandit",
+        "gangster",
+        "smuggler",
+        "conman",
+        "swindler",
+        "forger",
+        "kidnapper",
+        "hijacker"
+      ],
+      "A_used": [
+        "deceit",
+        "deception",
+        "lying",
+        "dishonesty",
+        "fakery",
+        "manipulation",
+        "spin",
+        "duplicity",
+        "deceitfulness",
+        "trickery",
+        "falsehood",
+        "cheating",
+        "betrayal",
+        "perjury",
+        "slander"
+      ],
+      "B_used": [
+        "honesty",
+        "truth",
+        "integrity",
+        "sincerity",
+        "genuineness",
+        "uprightness",
+        "rectitude",
+        "veracity",
+        "candor",
+        "frankness",
+        "trustworthiness",
+        "loyalty",
+        "fairness",
+        "openness",
+        "transparency"
+      ]
+    },
+    "proposal": "People associate politicians with deceit more strongly than they associate criminals with deceit. While prior literature has contrasted politicians with professionals like lawyers or journalists, it has not systematically examined the implicit distinction between political actors and criminal actors regarding duplicity. Public discourse often frames criminality around overt violations of physical or property rights, whereas political failure is frequently characterized as rhetorical manipulation, spin, and broken promises, suggesting politicians may be the implicit archetype of duplicity rather than criminals. Confirming this association would reveal that the public mentally categorizes political deception as more central to the political identity than criminal deception is to the criminal identity, highlighting a unique moral distinction in how societal roles are stereotyped.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "3339b1f8e64f",
     "timestamp": "2026-05-02T08:52:59.099773+00:00",
     "schema_version": "autoresearch.v1",
