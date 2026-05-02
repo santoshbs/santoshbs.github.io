@@ -1,5 +1,111 @@
 [
   {
+    "id": "b123d016a173",
+    "timestamp": "2026-05-02T16:44:47.907522+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "sailors vs soldiers on Spontaneous Adaptation vs Rigid Order",
+    "labels": {
+      "X": "sailors",
+      "Y": "soldiers",
+      "A": "Improvisation",
+      "B": "Protocol"
+    },
+    "canonical_keys": {
+      "X": "sailors",
+      "Y": "soldiers",
+      "A": "improvisation",
+      "B": "protocol"
+    },
+    "effect_size": 0.18605474606751823,
+    "p_value": 0.62459,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "sailor",
+        "seaman",
+        "mariner",
+        "navigator",
+        "skipper",
+        "mate",
+        "helmsman",
+        "bosun",
+        "boatswain",
+        "deckhand",
+        "captain",
+        "crewman",
+        "seafarer",
+        "boatman",
+        "diver"
+      ],
+      "Y_used": [
+        "soldier",
+        "infantryman",
+        "trooper",
+        "warrior",
+        "fighter",
+        "combatant",
+        "footman",
+        "gunman",
+        "marksman",
+        "ranger",
+        "scout",
+        "rifleman",
+        "mercenary",
+        "conscript",
+        "guard"
+      ],
+      "A_used": [
+        "improvisation",
+        "spontaneous",
+        "adapt",
+        "creative",
+        "flexible",
+        "instinct",
+        "invent",
+        "resourceful",
+        "intuitive",
+        "unpredictable",
+        "change",
+        "agile",
+        "innovate",
+        "free",
+        "original"
+      ],
+      "B_used": [
+        "protocol",
+        "rigid",
+        "discipline",
+        "rules",
+        "obedience",
+        "strict",
+        "order",
+        "hierarchy",
+        "standard",
+        "procedure",
+        "obey",
+        "drill",
+        "march",
+        "formal",
+        "structure"
+      ]
+    },
+    "proposal": "People associate sailors with improvisation more strongly than they associate soldiers with improvisation. This differential likely stems from a deep cultural land-versus-sea dichotomy in which naval service is stereotyped as demanding spontaneous adaptation to unpredictable environmental hazards and isolated resource constraints, whereas ground forces are implicitly framed as functioning through rigid hierarchical protocols, standardized logistics, and predictable tactical orders. Investigating this association is novel because implicit bias research has overwhelmingly treated military personnel as a monolithic category or focused on civil-military divides, neglecting the distinct mental representations of specific service branches. Confirming this bias would be important for understanding how the public evaluates competence in crisis response, allocates symbolic value to different forms of sacrifice, and potentially misattributes the psychological demands of naval versus infantry service based on environmental metaphors rather than operational realities.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "7a0bc792029a",
     "timestamp": "2026-05-02T11:18:30.085824+00:00",
     "schema_version": "autoresearch.v1",
