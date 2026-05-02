@@ -1,5 +1,118 @@
 [
   {
+    "id": "823c609367c2",
+    "timestamp": "2026-05-02T05:50:46.994784+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "writers vs teachers on iconoclasm vs conformity",
+    "labels": {
+      "X": "writers",
+      "Y": "teachers",
+      "A": "iconoclasm",
+      "B": "conformity"
+    },
+    "canonical_keys": {
+      "X": "writers",
+      "Y": "teachers",
+      "A": "iconoclasm",
+      "B": "conformity"
+    },
+    "effect_size": 1.3264016917855286,
+    "p_value": 6e-05,
+    "n": {
+      "X": 16,
+      "Y": 16,
+      "A": 17,
+      "B": 17
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "writer",
+        "author",
+        "novelist",
+        "poet",
+        "journalist",
+        "essayist",
+        "playwright",
+        "blogger",
+        "storyteller",
+        "scribe",
+        "bard",
+        "diarist",
+        "lyricist",
+        "reporter",
+        "correspondent",
+        "columnist",
+        "editor"
+      ],
+      "Y_used": [
+        "teacher",
+        "educator",
+        "professor",
+        "instructor",
+        "lecturer",
+        "tutor",
+        "mentor",
+        "academic",
+        "pedagogue",
+        "master",
+        "trainer",
+        "guide",
+        "coach",
+        "schoolteacher",
+        "counselor",
+        "supervisor"
+      ],
+      "A_used": [
+        "rebellious",
+        "innovative",
+        "radical",
+        "unconventional",
+        "free",
+        "subversive",
+        "revolutionary",
+        "independent",
+        "original",
+        "disruptive",
+        "nonconformist",
+        "maverick",
+        "iconoclastic",
+        "creative",
+        "progressive",
+        "autonomous",
+        "daring"
+      ],
+      "B_used": [
+        "conformist",
+        "traditional",
+        "obedient",
+        "compliant",
+        "conventional",
+        "orderly",
+        "disciplined",
+        "conservative",
+        "stable",
+        "lawful",
+        "steady",
+        "orthodox",
+        "regular",
+        "predictable",
+        "passive",
+        "dutiful",
+        "cautious"
+      ]
+    },
+    "proposal": "People associate writers with iconoclasm more strongly than they associate teachers with iconoclasm. This differential implicit association reflects a pervasive cultural script that casts literary creators as autonomous norm-breakers and truth-tellers, while framing educators as institutional gatekeepers tasked with transmitting established knowledge and socializing students within existing boundaries. Examining this link is novel because implicit comparisons between these two text-reliant professions have not been probed, despite their central roles in discourse and culture. The finding would be important because it reveals how the public mentally partitions the functions of knowledge production versus transmission, attributing the moral license to challenge authority to authors while reserving that role from instructors, thereby illuminating deep assumptions about which social positions are legitimized to question the status quo.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "96657123705a",
     "timestamp": "2026-05-02T05:09:17.645656+00:00",
     "schema_version": "autoresearch.v1",
