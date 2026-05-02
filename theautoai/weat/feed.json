@@ -1,5 +1,111 @@
 [
   {
+    "id": "ce1b0f0b19e5",
+    "timestamp": "2026-05-02T18:39:38.700509+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "architects vs engineers on grandiosity vs functional pragmatism",
+    "labels": {
+      "X": "architects",
+      "Y": "engineers",
+      "A": "grandiose",
+      "B": "pragmatic"
+    },
+    "canonical_keys": {
+      "X": "architects",
+      "Y": "engineers",
+      "A": "grandiose",
+      "B": "pragmatic"
+    },
+    "effect_size": 1.0976880888839373,
+    "p_value": 0.00159,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "architect",
+        "designer",
+        "planner",
+        "draftsman",
+        "builder",
+        "constructor",
+        "developer",
+        "contractor",
+        "surveyor",
+        "estimator",
+        "supervisor",
+        "consultant",
+        "artisan",
+        "craftsman",
+        "founder"
+      ],
+      "Y_used": [
+        "engineer",
+        "technician",
+        "mechanic",
+        "operator",
+        "programmer",
+        "coder",
+        "analyst",
+        "researcher",
+        "electrician",
+        "machinist",
+        "pilot",
+        "navigator",
+        "chemist",
+        "physicist",
+        "mathematician"
+      ],
+      "A_used": [
+        "grand",
+        "magnificent",
+        "majestic",
+        "monumental",
+        "ambitious",
+        "artistic",
+        "aesthetic",
+        "creative",
+        "elegant",
+        "stylish",
+        "beautiful",
+        "spectacular",
+        "visionary",
+        "flamboyant",
+        "luxurious"
+      ],
+      "B_used": [
+        "practical",
+        "pragmatic",
+        "functional",
+        "technical",
+        "efficient",
+        "reliable",
+        "utilitarian",
+        "grounded",
+        "logical",
+        "rational",
+        "methodical",
+        "precise",
+        "exact",
+        "conservative",
+        "safe"
+      ]
+    },
+    "proposal": "People associate architects with grandiosity more strongly than they associate engineers with grandiosity. This differential implicit association taps into contemporary discourse that frames architectural practice as driven by aesthetic ego and monumental vision, whereas engineering is cast as grounded in functional pragmatism and constraint management. Examining this bias is novel because implicit association measures have rarely been applied to distinguish between design-centric and function-centric technical professions on a scale or self-promotion axis. Confirming this association would matter because it reveals how public intuition may privilege symbolic capital over utilitarian reliability, potentially influencing policy debates around urban development, infrastructure funding, and professional prestige in STEM-adjacent fields.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "be6f5c2bea27",
     "timestamp": "2026-05-02T17:46:08.031044+00:00",
     "schema_version": "autoresearch.v1",
