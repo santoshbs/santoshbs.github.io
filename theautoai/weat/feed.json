@@ -1,5 +1,111 @@
 [
   {
+    "id": "3339b1f8e64f",
+    "timestamp": "2026-05-02T08:52:59.099773+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "ranchers vs farmers on Spontaneity vs Methodical Planning",
+    "labels": {
+      "X": "ranchers",
+      "Y": "farmers",
+      "A": "Spontaneity",
+      "B": "Methodical"
+    },
+    "canonical_keys": {
+      "X": "ranchers",
+      "Y": "farmers",
+      "A": "spontaneity",
+      "B": "methodical"
+    },
+    "effect_size": 1.2645851263711305,
+    "p_value": 0.00012,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "rancher",
+        "cowboy",
+        "cattleman",
+        "herder",
+        "stockman",
+        "wrangler",
+        "drover",
+        "cowpoke",
+        "cowhand",
+        "ranchhand",
+        "vaquero",
+        "cowgirl",
+        "horseman",
+        "rider",
+        "herdsman"
+      ],
+      "Y_used": [
+        "farmer",
+        "agriculturalist",
+        "cultivator",
+        "planter",
+        "grower",
+        "harvester",
+        "tiller",
+        "sower",
+        "farmhand",
+        "plowman",
+        "yeoman",
+        "husbandman",
+        "sharecropper",
+        "tenant",
+        "agrarian"
+      ],
+      "A_used": [
+        "spontaneous",
+        "impulsive",
+        "unpredictable",
+        "adaptive",
+        "flexible",
+        "quick",
+        "agile",
+        "rash",
+        "reckless",
+        "hasty",
+        "sudden",
+        "erratic",
+        "whimsical",
+        "unscripted",
+        "improvised"
+      ],
+      "B_used": [
+        "methodical",
+        "structured",
+        "planned",
+        "predictable",
+        "orderly",
+        "systematic",
+        "organized",
+        "deliberate",
+        "careful",
+        "cautious",
+        "meticulous",
+        "disciplined",
+        "regulated",
+        "scheduled",
+        "routine"
+      ]
+    },
+    "proposal": "People associate ranchers with spontaneity more strongly than they associate farmers with spontaneity. This differential implicit association reflects how cultural narratives portray livestock management as requiring rapid, adaptive decision-making in unpredictable outdoor conditions, whereas crop cultivation is often mentally framed as methodical, calendar-driven, and highly structured. Examining this link is novel because implicit studies of agricultural labor have largely focused on competence or morality, leaving the temporal and behavioral dimensions of these roles unexplored. Understanding whether the public mentally segregates these two agrarian groups along a predictability axis matters for how policy, media, and hiring practices allocate trust and autonomy to different types of land-based workers.",
+    "iterations": 3,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "823c609367c2",
     "timestamp": "2026-05-02T05:50:46.994784+00:00",
     "schema_version": "autoresearch.v1",
