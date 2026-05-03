@@ -1,5 +1,111 @@
 [
   {
+    "id": "0fd93462cb7c",
+    "timestamp": "2026-05-03T23:28:12.967170+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Priests vs Chefs on auspicious vs mundane",
+    "labels": {
+      "X": "Priests",
+      "Y": "Chefs",
+      "A": "auspicious",
+      "B": "mundane"
+    },
+    "canonical_keys": {
+      "X": "priests",
+      "Y": "chefs",
+      "A": "auspicious",
+      "B": "mundane"
+    },
+    "effect_size": 1.6020959097032639,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "priest",
+        "minister",
+        "pastor",
+        "reverend",
+        "cleric",
+        "vicar",
+        "chaplain",
+        "friar",
+        "monk",
+        "nun",
+        "imam",
+        "rabbi",
+        "shaman",
+        "guru",
+        "lama"
+      ],
+      "Y_used": [
+        "chef",
+        "cook",
+        "baker",
+        "caterer",
+        "sommelier",
+        "brewer",
+        "distiller",
+        "vintner",
+        "butcher",
+        "charcutier",
+        "patissier",
+        "confectioner",
+        "chocolatier",
+        "barista",
+        "bartender"
+      ],
+      "A_used": [
+        "blessed",
+        "fortunate",
+        "lucky",
+        "favorable",
+        "propitious",
+        "divine",
+        "holy",
+        "sacred",
+        "grace",
+        "charm",
+        "miracle",
+        "blessing",
+        "gift",
+        "heaven",
+        "mercy"
+      ],
+      "B_used": [
+        "mundane",
+        "ordinary",
+        "practical",
+        "material",
+        "earthly",
+        "secular",
+        "common",
+        "routine",
+        "basic",
+        "simple",
+        "plain",
+        "worldly",
+        "temporal",
+        "physical",
+        "natural"
+      ]
+    },
+    "proposal": "People associate Priests with auspiciousness more strongly than they associate Chefs with auspiciousness. This differential implicit association probes the extent to which religious actors are mentally linked to the conferral of good fortune and favorable omens compared to skilled providers of sustenance. While Chefs are associated with nourishment and pleasure, Priests occupy a unique cultural role as mediators of divine favor, blessing, and ritual propriety, suggesting a deeper attribution of control over future outcomes. Confirming this association would highlight a persistent implicit bias that reserves the attribute of auspiciousness for spiritual intermediaries rather than for experts who ensure daily survival, revealing how metaphysical utility is prioritized over material utility in social cognition.",
+    "iterations": 3,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "d94ee70b684a",
     "timestamp": "2026-05-03T22:31:26.672417+00:00",
     "schema_version": "autoresearch.v1",
