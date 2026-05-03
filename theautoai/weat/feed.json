@@ -1,5 +1,111 @@
 [
   {
+    "id": "5350915796b8",
+    "timestamp": "2026-05-03T10:38:55.764585+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "writers vs readers on pretentiousness versus humility",
+    "labels": {
+      "X": "writers",
+      "Y": "readers",
+      "A": "Pretentiousness",
+      "B": "Humility"
+    },
+    "canonical_keys": {
+      "X": "writers",
+      "Y": "readers",
+      "A": "pretentiousness",
+      "B": "humility"
+    },
+    "effect_size": 1.247774928734116,
+    "p_value": 0.00028,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "writer",
+        "author",
+        "novelist",
+        "poet",
+        "playwright",
+        "essayist",
+        "scriptwriter",
+        "journalist",
+        "editor",
+        "biographer",
+        "columnist",
+        "chronicler",
+        "memoirist",
+        "wordsmith",
+        "storyteller"
+      ],
+      "Y_used": [
+        "reader",
+        "audience",
+        "consumer",
+        "viewer",
+        "spectator",
+        "listener",
+        "fan",
+        "follower",
+        "pupil",
+        "student",
+        "patron",
+        "enthusiast",
+        "public",
+        "crowd",
+        "observer"
+      ],
+      "A_used": [
+        "pretentious",
+        "arrogant",
+        "pompous",
+        "snobbish",
+        "superior",
+        "snooty",
+        "haughty",
+        "aloof",
+        "grandiose",
+        "elitist",
+        "conceited",
+        "egotistical",
+        "uppity",
+        "flashy",
+        "ostentatious"
+      ],
+      "B_used": [
+        "humble",
+        "modest",
+        "simple",
+        "plain",
+        "ordinary",
+        "common",
+        "unassuming",
+        "meek",
+        "basic",
+        "straightforward",
+        "quiet",
+        "regular",
+        "lowly",
+        "rustic",
+        "sober"
+      ]
+    },
+    "proposal": "People associate writers with pretentiousness more strongly than they associate readers with pretentiousness. This differential reflects a persistent cultural narrative that positions writers as self-absorbed creators obsessed with artistic ego and intellectual superiority, while casting readers as the receptive, passive audience or humble consumers of content. Examining this association is novel because prior research has focused on creators versus performers or critics, but has not probed the implicit valuation of the textual producer–receiver dyad. It matters because such biases may influence how the public evaluates authority in written discourse and whether the democratization of writing platforms has successfully eroded the stereotype of the aloof literary elite.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "a7b9cdb8bf13",
     "timestamp": "2026-05-03T09:09:01.064313+00:00",
     "schema_version": "autoresearch.v1",
