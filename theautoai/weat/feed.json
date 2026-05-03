@@ -1,5 +1,111 @@
 [
   {
+    "id": "0a1b87b571eb",
+    "timestamp": "2026-05-03T14:56:17.243214+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "activists vs advocates on mode of engagement",
+    "labels": {
+      "X": "activists",
+      "Y": "advocates",
+      "A": "confrontational",
+      "B": "institutional"
+    },
+    "canonical_keys": {
+      "X": "activists",
+      "Y": "advocates",
+      "A": "confrontational",
+      "B": "institutional"
+    },
+    "effect_size": 1.5523140294054392,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "activist",
+        "protester",
+        "campaigner",
+        "dissident",
+        "rebel",
+        "agitator",
+        "striker",
+        "demonstrator",
+        "unionist",
+        "insurgent",
+        "crusader",
+        "reformer",
+        "marcher",
+        "organizer",
+        "picket"
+      ],
+      "Y_used": [
+        "advocate",
+        "lawyer",
+        "lobbyist",
+        "mediator",
+        "diplomat",
+        "counselor",
+        "representative",
+        "spokesperson",
+        "agent",
+        "defender",
+        "attorney",
+        "negotiator",
+        "advisor",
+        "champion",
+        "solicitor"
+      ],
+      "A_used": [
+        "disruptive",
+        "confrontational",
+        "militant",
+        "aggressive",
+        "hostile",
+        "violent",
+        "direct",
+        "uncompromising",
+        "extreme",
+        "belligerent",
+        "adversarial",
+        "riotous",
+        "unruly",
+        "rebellious",
+        "forceful"
+      ],
+      "B_used": [
+        "institutional",
+        "diplomatic",
+        "legal",
+        "procedural",
+        "formal",
+        "moderate",
+        "conventional",
+        "established",
+        "regulatory",
+        "bureaucratic",
+        "legalistic",
+        "administrative",
+        "official",
+        "structured",
+        "methodical"
+      ]
+    },
+    "proposal": "People associate activists with confrontational tactics more strongly than they associate advocates with confrontational tactics. While both groups pursue social or legal change, public discourse typically frames activists around street-level disruption and direct action, whereas advocates are depicted as operating through established institutional channels. Measuring this implicit link is novel, as existing work has largely examined explicit evaluations of political roles rather than automatic associations between category labels and perceived modes of engagement. Confirming or disconfirming this bias is important because it influences public tolerance for different forms of civic participation and shapes how institutions legitimize or marginalize grassroots movements.",
+    "iterations": 3,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "2bbc9b564f68",
     "timestamp": "2026-05-03T13:49:51.363651+00:00",
     "schema_version": "autoresearch.v1",
