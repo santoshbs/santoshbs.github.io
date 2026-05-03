@@ -1,5 +1,111 @@
 [
   {
+    "id": "1c387274fec8",
+    "timestamp": "2026-05-03T07:13:28.710296+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "historians vs economists on caution versus bold projection",
+    "labels": {
+      "X": "historians",
+      "Y": "economists",
+      "A": "caution",
+      "B": "boldness"
+    },
+    "canonical_keys": {
+      "X": "historians",
+      "Y": "economists",
+      "A": "caution",
+      "B": "boldness"
+    },
+    "effect_size": -0.16603166100274958,
+    "p_value": 0.69082,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "historian",
+        "archivist",
+        "chronicler",
+        "biographer",
+        "antiquarian",
+        "genealogist",
+        "scholar",
+        "academic",
+        "researcher",
+        "professor",
+        "academician",
+        "humanist",
+        "classicist",
+        "medievalist",
+        "antiquary"
+      ],
+      "Y_used": [
+        "economist",
+        "financier",
+        "banker",
+        "trader",
+        "investor",
+        "broker",
+        "accountant",
+        "analyst",
+        "actuary",
+        "statistician",
+        "capitalist",
+        "entrepreneur",
+        "businessman",
+        "merchant",
+        "auditor"
+      ],
+      "A_used": [
+        "cautious",
+        "careful",
+        "prudent",
+        "wary",
+        "skeptical",
+        "hesitant",
+        "reserved",
+        "guarded",
+        "circumspect",
+        "conservative",
+        "modest",
+        "doubtful",
+        "apprehensive",
+        "tentative",
+        "timid"
+      ],
+      "B_used": [
+        "bold",
+        "optimistic",
+        "confident",
+        "ambitious",
+        "daring",
+        "proactive",
+        "assertive",
+        "fearless",
+        "visionary",
+        "audacious",
+        "enthusiastic",
+        "hopeful",
+        "expectant",
+        "aggressive",
+        "dynamic"
+      ]
+    },
+    "proposal": "People associate historians with caution more strongly than they associate economists with caution. This differential captures a recurring cultural narrative that economists are driven by predictive modeling and forward-looking optimism, whereas historians are framed as emphasizing contingency, cyclical patterns, and the limits of foresight. While general epistemic humility has been measured in laboratory settings, implicit contrasts between these two specific knowledge-producing professions on the dimension of caution versus bold projection remain unexamined. Testing this association matters because implicit perceptions of caution may subtly influence public trust in policy recommendations during financial or social crises. Confirming or disconfirming the pattern would clarify how disciplinary reputations silently shape expectations about expertise, risk tolerance, and the appropriate pace of institutional decision-making.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "a0d387d63d47",
     "timestamp": "2026-05-03T06:12:09.344895+00:00",
     "schema_version": "autoresearch.v1",
