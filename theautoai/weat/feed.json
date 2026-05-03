@@ -1,5 +1,111 @@
 [
   {
+    "id": "cfbff191aaf0",
+    "timestamp": "2026-05-03T00:52:08.527222+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "journalists vs influencers on informational reliability",
+    "labels": {
+      "X": "journalists",
+      "Y": "influencers",
+      "A": "factual_objectivity",
+      "B": "subjective_promotional"
+    },
+    "canonical_keys": {
+      "X": "journalists",
+      "Y": "influencers",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 0.1578692436727899,
+    "p_value": 0.6797,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "journalist",
+        "reporter",
+        "correspondent",
+        "anchor",
+        "newscaster",
+        "broadcaster",
+        "columnist",
+        "editor",
+        "stringer",
+        "producer",
+        "cameraman",
+        "newswriter",
+        "newsperson",
+        "newsman",
+        "newswoman"
+      ],
+      "Y_used": [
+        "influencer",
+        "blogger",
+        "vlogger",
+        "streamer",
+        "podcaster",
+        "creator",
+        "celebrity",
+        "model",
+        "star",
+        "guru",
+        "icon",
+        "personality",
+        "entertainer",
+        "performer",
+        "tastemaker"
+      ],
+      "A_used": [
+        "factual",
+        "objective",
+        "truth",
+        "accurate",
+        "verified",
+        "impartial",
+        "neutral",
+        "reliable",
+        "evidence",
+        "reality",
+        "certainty",
+        "correctness",
+        "valid",
+        "authentic",
+        "genuine"
+      ],
+      "B_used": [
+        "subjective",
+        "promotional",
+        "opinion",
+        "biased",
+        "sponsored",
+        "clickbait",
+        "fake",
+        "false",
+        "lie",
+        "unverified",
+        "fantasy",
+        "propaganda",
+        "spin",
+        "hype",
+        "commercial"
+      ]
+    },
+    "proposal": "People associate journalists with factual objectivity more strongly than they associate influencers with factual objectivity. This differential implicit association probes the underlying hierarchy of truth-claims in the contemporary information ecosystem, where algorithmic personalities compete with institutional media for public trust. While explicit surveys might capture stated preferences for 'authentic' creators, implicit measures can reveal whether the public still mentally categorizes journalists as the default standard for neutral, verified information versus influencers as inherently promotional or subjective actors. Examining this gradient is crucial for understanding how society mentally legitimizes different sources of knowledge and how deeply ingrained biases may favor institutional gatekeepers over decentralized creators, even among demographics that explicitly champion the latter.",
+    "iterations": 3,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "08602f9f85d7",
     "timestamp": "2026-05-02T22:18:02.868237+00:00",
     "schema_version": "autoresearch.v1",
