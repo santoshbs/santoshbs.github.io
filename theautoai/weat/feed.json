@@ -1,5 +1,111 @@
 [
   {
+    "id": "0085ebb461b9",
+    "timestamp": "2026-05-03T18:19:42.953759+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "founders vs heirs on competence evaluation",
+    "labels": {
+      "X": "founders",
+      "Y": "heirs",
+      "A": "competence",
+      "B": "incompetence"
+    },
+    "canonical_keys": {
+      "X": "founders",
+      "Y": "heirs",
+      "A": "competence",
+      "B": "incompetence"
+    },
+    "effect_size": 1.7125702298305663,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "founder",
+        "entrepreneur",
+        "creator",
+        "originator",
+        "pioneer",
+        "builder",
+        "initiator",
+        "innovator",
+        "architect",
+        "inventor",
+        "maker",
+        "developer",
+        "designer",
+        "engineer",
+        "investor"
+      ],
+      "Y_used": [
+        "heir",
+        "inheritor",
+        "successor",
+        "scion",
+        "beneficiary",
+        "legatee",
+        "descendant",
+        "offspring",
+        "child",
+        "son",
+        "daughter",
+        "nephew",
+        "niece",
+        "grandson",
+        "granddaughter"
+      ],
+      "A_used": [
+        "competent",
+        "capable",
+        "skilled",
+        "talented",
+        "able",
+        "intelligent",
+        "smart",
+        "clever",
+        "gifted",
+        "expert",
+        "proficient",
+        "adept",
+        "effective",
+        "qualified",
+        "knowledgeable"
+      ],
+      "B_used": [
+        "incompetent",
+        "incapable",
+        "unskilled",
+        "inept",
+        "unqualified",
+        "ineffective",
+        "clueless",
+        "amateur",
+        "novice",
+        "weak",
+        "lazy",
+        "foolish",
+        "dumb",
+        "stupid",
+        "clumsy"
+      ]
+    },
+    "proposal": "People associate founders with competence more strongly than they associate heirs with competence. This differential association captures a latent meritocratic bias that valorizes the act of creation or origination while implicitly devaluing the stewardship or continuation of legacy through inheritance. Examining this association is novel because implicit bias research has extensively covered ascribed versus achieved status broadly (e.g., race, gender, class) but has not isolated the specific cognitive contrast between those who establish institutions or wealth and those who merely inherit them. This matters because such an implicit association would reveal a mental shortcut that legitimizes 'dynastic' hierarchies only when traced to a perceived competent founder, potentially shaping public attitudes toward nepotism, succession, and the moral worth of intergenerational wealth transfer.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "4d7ec0e84608",
     "timestamp": "2026-05-03T17:34:28.015414+00:00",
     "schema_version": "autoresearch.v1",
