@@ -1,5 +1,111 @@
 [
   {
+    "id": "607d3d828ee6",
+    "timestamp": "2026-05-03T13:13:17.443057+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Beggars vs Bishops on spiritual purity vs material worldliness",
+    "labels": {
+      "X": "Beggars",
+      "Y": "Bishops",
+      "A": "sanctity",
+      "B": "worldliness"
+    },
+    "canonical_keys": {
+      "X": "beggars",
+      "Y": "bishops",
+      "A": "sanctity",
+      "B": "worldliness"
+    },
+    "effect_size": -1.707850454516884,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "beggar",
+        "pauper",
+        "vagrant",
+        "tramp",
+        "hobo",
+        "homeless",
+        "drifter",
+        "transient",
+        "vagabond",
+        "orphan",
+        "refugee",
+        "destitute",
+        "penniless",
+        "impoverished",
+        "needy"
+      ],
+      "Y_used": [
+        "bishop",
+        "archbishop",
+        "prelate",
+        "cardinal",
+        "pontiff",
+        "clergyman",
+        "cleric",
+        "deacon",
+        "vicar",
+        "curate",
+        "canon",
+        "abbot",
+        "patriarch",
+        "pastor",
+        "minister"
+      ],
+      "A_used": [
+        "holy",
+        "righteous",
+        "pure",
+        "pious",
+        "devout",
+        "sacred",
+        "blessed",
+        "virtuous",
+        "moral",
+        "spiritual",
+        "divine",
+        "reverent",
+        "saintly",
+        "angelic",
+        "chaste"
+      ],
+      "B_used": [
+        "worldly",
+        "corrupt",
+        "greedy",
+        "wealthy",
+        "powerful",
+        "arrogant",
+        "secular",
+        "selfish",
+        "vain",
+        "opulent",
+        "cynical",
+        "luxurious",
+        "rich",
+        "extravagant",
+        "covetous"
+      ]
+    },
+    "proposal": "People associate Beggars with Sanctity more strongly than they associate Bishops with Sanctity. This differential implicit association draws on the pervasive cultural archetype of the 'holy beggar' or 'poor but righteous' figure, contrasted with the 'worldly bishop' whose institutional power and wealth are often viewed as compromising spiritual purity. While explicit attitudes toward religious authorities fluctuate widely, implicit associations may systematically link marginalization and material poverty with higher sanctity than institutional hierarchy and status. Examining this novel pairing is important because it illuminates how class-based stereotypes and religious narratives intersect in unconscious mental representations, potentially revealing a deep-seated skepticism toward the moral legitimacy of hierarchical religious structures.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "c89db7440827",
     "timestamp": "2026-05-03T12:29:38.504853+00:00",
     "schema_version": "autoresearch.v1",
