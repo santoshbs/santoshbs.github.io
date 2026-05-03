@@ -1,5 +1,112 @@
 [
   {
+    "id": "2bbc9b564f68",
+    "timestamp": "2026-05-03T13:49:51.363651+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Whistleblowers vs Conformists on loyalty vs treachery",
+    "labels": {
+      "X": "Whistleblowers",
+      "Y": "Conformists",
+      "A": "treachery",
+      "B": "loyalty"
+    },
+    "canonical_keys": {
+      "X": "whistleblowers",
+      "Y": "conformists",
+      "A": "treachery",
+      "B": "loyalty"
+    },
+    "effect_size": 1.1923536952163507,
+    "p_value": 0.00059,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "whistleblower",
+        "leaker",
+        "informant",
+        "dissenter",
+        "nonconformist",
+        "critic",
+        "truthseeker",
+        "activist",
+        "insider",
+        "source",
+        "snitch",
+        "rat",
+        "mole",
+        "spy",
+        "accuser",
+        "complainant"
+      ],
+      "Y_used": [
+        "conformist",
+        "follower",
+        "adherent",
+        "loyalist",
+        "obedient",
+        "submissive",
+        "traditionalist",
+        "conservative",
+        "citizen",
+        "employee",
+        "subordinate",
+        "supporter",
+        "advocate",
+        "defender",
+        "compliant"
+      ],
+      "A_used": [
+        "treachery",
+        "betrayal",
+        "treason",
+        "disloyalty",
+        "perfidy",
+        "infidelity",
+        "deceit",
+        "dishonesty",
+        "sabotage",
+        "treacherous",
+        "disloyal",
+        "traitor",
+        "betrayer",
+        "unfaithful",
+        "deceitful"
+      ],
+      "B_used": [
+        "loyalty",
+        "faithfulness",
+        "fidelity",
+        "allegiance",
+        "patriotism",
+        "dependability",
+        "devotion",
+        "steadfastness",
+        "trustworthiness",
+        "reliability",
+        "honesty",
+        "integrity",
+        "loyal",
+        "faithful",
+        "true"
+      ]
+    },
+    "proposal": "People implicitly associate Whistleblowers with treachery more strongly than they associate Conformists with treachery. This differential association tests a latent social cohesion bias in which individuals who breach group silence are automatically categorized alongside betrayers, overriding the explicit moral valor often ascribed to truth-tellers. While organizational research extensively examines explicit attitudes toward whistleblowers, no study has measured the implicit linkage of whistleblowers to treachery relative to conformists, leaving a critical gap in understanding the automatic cognitive costs of dissent. Demonstrating this association would reveal that public discourse celebrating whistleblowers may mask a deeper, ingrained mental representation that equates the exposure of wrongdoing with social betrayal, thereby hindering structural support for accountability mechanisms.",
+    "iterations": 3,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "607d3d828ee6",
     "timestamp": "2026-05-03T13:13:17.443057+00:00",
     "schema_version": "autoresearch.v1",
