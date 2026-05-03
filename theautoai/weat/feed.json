@@ -1,5 +1,111 @@
 [
   {
+    "id": "190556a5cc99",
+    "timestamp": "2026-05-03T04:54:15.149657+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "farmers vs chefs on ecological sustainability vs consumption and waste",
+    "labels": {
+      "X": "farmers",
+      "Y": "chefs",
+      "A": "ecological sustainability",
+      "B": "consumption and waste"
+    },
+    "canonical_keys": {
+      "X": "farmers",
+      "Y": "chefs",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 1.046335284422232,
+    "p_value": 0.00307,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "farmer",
+        "grower",
+        "cultivator",
+        "agriculturalist",
+        "planter",
+        "rancher",
+        "gardener",
+        "sower",
+        "harvester",
+        "tiller",
+        "agronomist",
+        "stockman",
+        "vintner",
+        "orchardist",
+        "haymaker"
+      ],
+      "Y_used": [
+        "chef",
+        "cook",
+        "gourmet",
+        "foodie",
+        "restaurateur",
+        "caterer",
+        "baker",
+        "confectioner",
+        "charcutier",
+        "waiter",
+        "server",
+        "host",
+        "sommelier",
+        "mixologist",
+        "brewer"
+      ],
+      "A_used": [
+        "sustainable",
+        "ecological",
+        "green",
+        "renewable",
+        "organic",
+        "natural",
+        "conservation",
+        "preserve",
+        "recycle",
+        "compost",
+        "biodiversity",
+        "biodegradable",
+        "environment",
+        "planet",
+        "earth"
+      ],
+      "B_used": [
+        "wasteful",
+        "consumption",
+        "trash",
+        "garbage",
+        "landfill",
+        "pollution",
+        "toxic",
+        "hazardous",
+        "chemical",
+        "synthetic",
+        "artificial",
+        "manufactured",
+        "industrial",
+        "commercial",
+        "luxury"
+      ]
+    },
+    "proposal": "People associate farmers with sustainability more strongly than they associate chefs with sustainability. Although contemporary food discourse often elevates chefs as moral leaders of the 'farm-to-table' movement who champion local sourcing and reduced waste, implicit mental representations may still anchor the core attribute of ecological stewardship more deeply to agricultural producers than to culinary intermediaries. This association is novel because while farmers have been contrasted with many professional groups, their implicit profile has not been directly compared to chefs, and it is important because it reveals whether the cultural narrative of chef-driven sustainability has successfully transferred the halo of environmental virtue to the kitchen, or if the public mind still reserves the primary credit for ecological harmony for those who directly cultivate the land.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "aaa1c95f4b7a",
     "timestamp": "2026-05-03T03:58:03.835425+00:00",
     "schema_version": "autoresearch.v1",
