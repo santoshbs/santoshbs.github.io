@@ -1,5 +1,111 @@
 [
   {
+    "id": "c89db7440827",
+    "timestamp": "2026-05-03T12:29:38.504853+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "veterans vs academics on institutional orientation",
+    "labels": {
+      "X": "veterans",
+      "Y": "academics",
+      "A": "compliance",
+      "B": "questioning"
+    },
+    "canonical_keys": {
+      "X": "veterans",
+      "Y": "academics",
+      "A": "compliance",
+      "B": "questioning"
+    },
+    "effect_size": 1.393502121513918,
+    "p_value": 4e-05,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "veteran",
+        "soldier",
+        "marine",
+        "sailor",
+        "airman",
+        "sergeant",
+        "corporal",
+        "general",
+        "lieutenant",
+        "colonel",
+        "major",
+        "officer",
+        "cadet",
+        "recruit",
+        "trooper"
+      ],
+      "Y_used": [
+        "academic",
+        "scholar",
+        "professor",
+        "researcher",
+        "scientist",
+        "lecturer",
+        "instructor",
+        "dean",
+        "fellow",
+        "tutor",
+        "intellectual",
+        "philosopher",
+        "historian",
+        "biologist",
+        "physicist"
+      ],
+      "A_used": [
+        "compliance",
+        "obedience",
+        "discipline",
+        "conformity",
+        "submission",
+        "loyalty",
+        "duty",
+        "order",
+        "regulation",
+        "hierarchy",
+        "control",
+        "command",
+        "protocol",
+        "routine",
+        "standard"
+      ],
+      "B_used": [
+        "subversion",
+        "skepticism",
+        "doubt",
+        "inquiry",
+        "criticism",
+        "debate",
+        "argument",
+        "controversy",
+        "rebellion",
+        "dissent",
+        "independence",
+        "autonomy",
+        "freedom",
+        "creativity",
+        "innovation"
+      ]
+    },
+    "proposal": "People associate veterans with compliance more strongly than they associate academics with compliance. This differential implicit association reflects contemporary cultural narratives that frame military service as inherently hierarchical and disciplined, while casting scholarly work as inherently questioning and subversive. Although both institutions demand rigor, public discourse often celebrates academic skepticism as an intellectual virtue while treating military obedience as a moral or operational necessity. Examining this implicit link is novel because prior research has focused explicitly on explicit stereotypes about patriotism or aggression, leaving the implicit dimension of institutional compliance largely unexplored. Confirming this association would illuminate how deeply embedded hierarchies shape everyday moral reasoning about different professional identities, with implications for recruitment, civil-military relations, and educational policy.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "5350915796b8",
     "timestamp": "2026-05-03T10:38:55.764585+00:00",
     "schema_version": "autoresearch.v1",
