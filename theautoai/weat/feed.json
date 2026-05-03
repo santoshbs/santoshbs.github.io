@@ -1,5 +1,111 @@
 [
   {
+    "id": "4d7ec0e84608",
+    "timestamp": "2026-05-03T17:34:28.015414+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "nuns vs monks on nurturing vs aggressive",
+    "labels": {
+      "X": "nuns",
+      "Y": "monks",
+      "A": "nurturing",
+      "B": "aggressive"
+    },
+    "canonical_keys": {
+      "X": "nuns",
+      "Y": "monks",
+      "A": "nurturing",
+      "B": "aggressive"
+    },
+    "effect_size": 0.19122876536291486,
+    "p_value": 0.61277,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "nun",
+        "sister",
+        "abbess",
+        "prioress",
+        "postulant",
+        "laywoman",
+        "anchoress",
+        "devotee",
+        "recluse",
+        "ascetic",
+        "devout",
+        "pious",
+        "zealous",
+        "fervent",
+        "spiritual"
+      ],
+      "Y_used": [
+        "monk",
+        "brother",
+        "abbot",
+        "prior",
+        "novice",
+        "layman",
+        "anchorite",
+        "hermit",
+        "friar",
+        "mendicant",
+        "penitent",
+        "pilgrim",
+        "worshiper",
+        "believer",
+        "faithful"
+      ],
+      "A_used": [
+        "nurturing",
+        "caring",
+        "tender",
+        "gentle",
+        "warm",
+        "affectionate",
+        "loving",
+        "kind",
+        "compassionate",
+        "sympathetic",
+        "understanding",
+        "supportive",
+        "helpful",
+        "protective",
+        "comforting"
+      ],
+      "B_used": [
+        "aggressive",
+        "hostile",
+        "cruel",
+        "harsh",
+        "severe",
+        "strict",
+        "rigid",
+        "stern",
+        "tough",
+        "hard",
+        "rough",
+        "unyielding",
+        "unforgiving",
+        "demanding",
+        "oppressive"
+      ]
+    },
+    "proposal": "people associate nuns with nurturing more strongly than they associate monks with nurturing. This differential implicit association examines whether historical gendered divisions of labor within religious orders continue to shape automatic mental representations, linking female religious figures to caregiving and emotional labor while decoupling male religious figures from these traits. It is novel because implicit measures have rarely compared parallel spiritual roles across gender, focusing instead on broad demographic or denominational categories. Confirming or disconfirming this association would illuminate how institutional gender norms become internalized as automatic cognitive biases, potentially influencing contemporary perceptions of women versus men in spiritual leadership and pastoral roles.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "7ec570cb305b",
     "timestamp": "2026-05-03T16:22:12.287353+00:00",
     "schema_version": "autoresearch.v1",
