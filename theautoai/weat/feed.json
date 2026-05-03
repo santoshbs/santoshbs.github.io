@@ -1,5 +1,111 @@
 [
   {
+    "id": "073133e659d2",
+    "timestamp": "2026-05-03T02:28:36.283867+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Mystics vs Scientists on Humility vs Arrogance",
+    "labels": {
+      "X": "Mystics",
+      "Y": "Scientists",
+      "A": "Humility",
+      "B": "Arrogance"
+    },
+    "canonical_keys": {
+      "X": "mystics",
+      "Y": "scientists",
+      "A": "humility",
+      "B": "arrogance"
+    },
+    "effect_size": 0.7359030349569646,
+    "p_value": 0.03075,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "mystic",
+        "sage",
+        "guru",
+        "hermit",
+        "ascetic",
+        "monk",
+        "nun",
+        "prophet",
+        "shaman",
+        "medium",
+        "oracle",
+        "saint",
+        "seer",
+        "yogi",
+        "druid"
+      ],
+      "Y_used": [
+        "scientist",
+        "researcher",
+        "investigator",
+        "experimenter",
+        "analyst",
+        "chemist",
+        "physicist",
+        "biologist",
+        "mathematician",
+        "astronomer",
+        "geologist",
+        "botanist",
+        "zoologist",
+        "psychologist",
+        "sociologist"
+      ],
+      "A_used": [
+        "humble",
+        "modest",
+        "meek",
+        "unpretentious",
+        "unassuming",
+        "selfless",
+        "deferential",
+        "submissive",
+        "obedient",
+        "yielding",
+        "compliant",
+        "docile",
+        "gentle",
+        "mild",
+        "soft"
+      ],
+      "B_used": [
+        "arrogant",
+        "proud",
+        "conceited",
+        "haughty",
+        "pompous",
+        "boastful",
+        "egotistical",
+        "narcissistic",
+        "vain",
+        "cocky",
+        "grandiose",
+        "overconfident",
+        "imperious",
+        "superior",
+        "vainglorious"
+      ]
+    },
+    "proposal": "People associate Mystics with Humility more strongly than they associate Scientists with Humility. While both groups are often viewed as seekers of truth, public discourse may implicitly frame Mystics as receptive vessels surrendering to a higher reality, whereas Scientists are portrayed as active conquerors of nature or ego-driven claimants of discovery. This association is novel because prior work has largely focused on competence or rationality, neglecting the moral dimension of humility in epistemic roles. Examining this differential is important as it reveals how the perceived moral character of knowledge production shapes the public's receptivity to insights from these distinct traditions.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "cfbff191aaf0",
     "timestamp": "2026-05-03T00:52:08.527222+00:00",
     "schema_version": "autoresearch.v1",
