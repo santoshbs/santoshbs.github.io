@@ -1,5 +1,111 @@
 [
   {
+    "id": "8959def21668",
+    "timestamp": "2026-05-04T19:17:35.409449+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "lenders vs borrowers on agency versus passivity",
+    "labels": {
+      "X": "lenders",
+      "Y": "borrowers",
+      "A": "agency",
+      "B": "passivity"
+    },
+    "canonical_keys": {
+      "X": "lenders",
+      "Y": "borrowers",
+      "A": "agency",
+      "B": "passivity"
+    },
+    "effect_size": 0.13611703045363943,
+    "p_value": 0.72192,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "lender",
+        "creditor",
+        "banker",
+        "investor",
+        "financier",
+        "tycoon",
+        "magnate",
+        "patron",
+        "backer",
+        "sponsor",
+        "donor",
+        "grantor",
+        "funder",
+        "provider",
+        "philanthropist"
+      ],
+      "Y_used": [
+        "borrower",
+        "debtor",
+        "client",
+        "customer",
+        "applicant",
+        "dependent",
+        "recipient",
+        "claimant",
+        "consumer",
+        "user",
+        "tenant",
+        "shopper",
+        "buyer",
+        "beneficiary",
+        "seeker"
+      ],
+      "A_used": [
+        "autonomy",
+        "independence",
+        "control",
+        "power",
+        "authority",
+        "command",
+        "influence",
+        "mastery",
+        "volition",
+        "initiative",
+        "leadership",
+        "freedom",
+        "liberty",
+        "choice",
+        "will"
+      ],
+      "B_used": [
+        "passivity",
+        "dependence",
+        "submission",
+        "obedience",
+        "compliance",
+        "surrender",
+        "yielding",
+        "helplessness",
+        "vulnerability",
+        "constraint",
+        "limitation",
+        "restriction",
+        "bondage",
+        "subservience",
+        "servitude"
+      ]
+    },
+    "proposal": "People associate lenders with agency more strongly than they associate borrowers with agency. This differential implicit association is novel because while the economic power imbalance between creditors and debtors is a standard topic in finance and sociology, the specific psychological attribution of fundamental agency—the sense of volition, control, and capacity to initiate action—to lenders versus the implicit framing of borrowers as reactive or constrained has not been systematically tested as an implicit bias. It is interesting because it reveals how everyday financial relationships may be internalized not just as economic transactions but as enduring characterologies, where the act of lending is conflated with empowerment and the act of borrowing with dependence. It matters because such implicit associations can shape public attitudes toward debt relief, influence judicial leniency in bankruptcy proceedings, and reinforce the social stigma attached to those who utilize credit, framing them as lacking the fundamental autonomy afforded to those who extend it.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "8c0c684909f1",
     "timestamp": "2026-05-04T18:22:37.966152+00:00",
     "schema_version": "autoresearch.v1",
