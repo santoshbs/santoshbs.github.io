@@ -1,5 +1,111 @@
 [
   {
+    "id": "c80a12b70211",
+    "timestamp": "2026-05-04T02:08:15.502276+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "residents vs tourists on authenticity vs inauthenticity",
+    "labels": {
+      "X": "residents",
+      "Y": "tourists",
+      "A": "Authenticity",
+      "B": "Inauthenticity"
+    },
+    "canonical_keys": {
+      "X": "residents",
+      "Y": "tourists",
+      "A": "authenticity",
+      "B": "inauthenticity"
+    },
+    "effect_size": -0.029465632209702233,
+    "p_value": 0.938,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "resident",
+        "residents",
+        "local",
+        "locals",
+        "inhabitant",
+        "inhabitants",
+        "citizen",
+        "citizens",
+        "native",
+        "natives",
+        "denizen",
+        "denizens",
+        "townsman",
+        "townsmen",
+        "villager"
+      ],
+      "Y_used": [
+        "tourist",
+        "tourists",
+        "visitor",
+        "visitors",
+        "traveler",
+        "travelers",
+        "vacationer",
+        "vacationers",
+        "sightseer",
+        "sightseers",
+        "backpacker",
+        "backpackers",
+        "guest",
+        "guests",
+        "outsider"
+      ],
+      "A_used": [
+        "authentic",
+        "genuine",
+        "real",
+        "true",
+        "honest",
+        "sincere",
+        "natural",
+        "organic",
+        "original",
+        "pure",
+        "legitimate",
+        "valid",
+        "heartfelt",
+        "earnest",
+        "candid"
+      ],
+      "B_used": [
+        "inauthentic",
+        "fake",
+        "artificial",
+        "synthetic",
+        "contrived",
+        "staged",
+        "manufactured",
+        "superficial",
+        "shallow",
+        "hollow",
+        "false",
+        "counterfeit",
+        "bogus",
+        "phony",
+        "pretentious"
+      ]
+    },
+    "proposal": "People associate residents with authenticity more strongly than they associate tourists with authenticity. This differential implicit association captures a pervasive cultural bias that privileges static, localized presence as inherently more genuine than mobile, curious engagement. While tourism studies extensively documents explicit stereotypes about visitors, the automatic cognitive linkage between residential status and cultural authenticity remains unprobed at the implicit level. Testing this association would clarify whether spatial mobility itself triggers automatic devaluation of experiential genuineness, with implications for cross-cultural exchange, hospitality ethics, and urban planning. Confirming this bias would reveal how deeply rootedness is conflated with moral and cultural truth in public mentalities.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "930d24a76d22",
     "timestamp": "2026-05-04T00:11:57.515507+00:00",
     "schema_version": "autoresearch.v1",
