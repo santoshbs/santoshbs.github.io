@@ -1,5 +1,111 @@
 [
   {
+    "id": "e35eb7e5ae54",
+    "timestamp": "2026-05-04T14:08:29.636962+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "scholars vs merchants on communicative clarity vs obfuscation",
+    "labels": {
+      "X": "scholars",
+      "Y": "merchants",
+      "A": "obfuscation",
+      "B": "clarity"
+    },
+    "canonical_keys": {
+      "X": "scholars",
+      "Y": "merchants",
+      "A": "obfuscation",
+      "B": "clarity"
+    },
+    "effect_size": -0.020925758278817496,
+    "p_value": 0.95743,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "scholar",
+        "professor",
+        "academic",
+        "researcher",
+        "philosopher",
+        "writer",
+        "teacher",
+        "tutor",
+        "lecturer",
+        "scientist",
+        "intellectual",
+        "essayist",
+        "historian",
+        "anthropologist",
+        "sociologist"
+      ],
+      "Y_used": [
+        "merchant",
+        "trader",
+        "dealer",
+        "salesman",
+        "vendor",
+        "retailer",
+        "wholesaler",
+        "peddler",
+        "broker",
+        "exporter",
+        "importer",
+        "buyer",
+        "seller",
+        "agent",
+        "clerk"
+      ],
+      "A_used": [
+        "obfuscate",
+        "obscure",
+        "confuse",
+        "muddle",
+        "veil",
+        "mask",
+        "hide",
+        "conceal",
+        "disguise",
+        "shroud",
+        "encrypt",
+        "cipher",
+        "cryptic",
+        "ambiguous",
+        "vague"
+      ],
+      "B_used": [
+        "clarify",
+        "clear",
+        "direct",
+        "plain",
+        "open",
+        "frank",
+        "candid",
+        "lucid",
+        "explicit",
+        "evident",
+        "obvious",
+        "simple",
+        "straightforward",
+        "unambiguous",
+        "transparent"
+      ]
+    },
+    "proposal": "People associate scholars with obfuscation more strongly than they associate merchants with obfuscation. This differential reflects a cultural skepticism toward academic jargon and complex theoretical frameworks as deliberate barriers to public understanding, contrasting with a perception of mercantile communication as transactionally direct or merely persuasive rather than intentionally obscure. Examining this implicit association is novel because while explicit critiques of academic elitism exist, the automatic mental link between knowledge production and deliberate confusion has not been systematically measured against economic actors. It matters because such associations may undermine public trust in expert knowledge and skew resource allocation toward more accessible, commercially driven forms of information dissemination.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "e1a961ce83ec",
     "timestamp": "2026-05-04T05:29:41.569904+00:00",
     "schema_version": "autoresearch.v1",
