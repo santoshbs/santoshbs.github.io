@@ -1,5 +1,111 @@
 [
   {
+    "id": "7f3ab9a56da3",
+    "timestamp": "2026-05-04T21:56:37.609706+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "teachers vs coaches on developmental patience vs immediate performance optimization",
+    "labels": {
+      "X": "teachers",
+      "Y": "coaches",
+      "A": "long-term growth",
+      "B": "short-term performance"
+    },
+    "canonical_keys": {
+      "X": "teachers",
+      "Y": "coaches",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 0.761124503405819,
+    "p_value": 0.03764,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "teacher",
+        "educator",
+        "instructor",
+        "professor",
+        "tutor",
+        "pedagogue",
+        "academic",
+        "lecturer",
+        "schoolteacher",
+        "principal",
+        "dean",
+        "faculty",
+        "staff",
+        "librarian",
+        "headmaster"
+      ],
+      "Y_used": [
+        "coach",
+        "trainer",
+        "drillmaster",
+        "mentor",
+        "advisor",
+        "guide",
+        "director",
+        "manager",
+        "counselor",
+        "strategist",
+        "sports",
+        "fitness",
+        "athletic",
+        "personal",
+        "captain"
+      ],
+      "A_used": [
+        "patient",
+        "gradual",
+        "foundational",
+        "steady",
+        "slow",
+        "deliberate",
+        "nurturing",
+        "cultivating",
+        "growing",
+        "developing",
+        "evolving",
+        "maturing",
+        "enduring",
+        "lasting",
+        "persistent"
+      ],
+      "B_used": [
+        "fast",
+        "quick",
+        "immediate",
+        "urgent",
+        "rapid",
+        "swift",
+        "instant",
+        "prompt",
+        "sudden",
+        "performance",
+        "competitive",
+        "tactical",
+        "readiness",
+        "outcome",
+        "result"
+      ]
+    },
+    "proposal": "People associate teachers with developmental patience more strongly than they associate coaches with developmental patience. This axis captures the implicit contrast between long-term foundational growth and short-term performance optimization. While both roles involve structured instruction, contemporary discourse frames educators as stewards of gradual cognitive maturation, whereas athletic trainers are culturally coded around immediate tactical readiness and competitive outcomes. Examining this implicit bias matters because it reveals how society mentally partitions learning environments, potentially influencing cross-domain pedagogical borrowing, institutional funding priorities, and public tolerance for different instructional timelines.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "cf1b44c88047",
     "timestamp": "2026-05-04T21:04:37.094264+00:00",
     "schema_version": "autoresearch.v1",
