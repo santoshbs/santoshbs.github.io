@@ -1,5 +1,111 @@
 [
   {
+    "id": "930d24a76d22",
+    "timestamp": "2026-05-04T00:11:57.515507+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "actors vs artists on deception versus authenticity",
+    "labels": {
+      "X": "actors",
+      "Y": "artists",
+      "A": "deception",
+      "B": "authenticity"
+    },
+    "canonical_keys": {
+      "X": "actors",
+      "Y": "artists",
+      "A": "deception",
+      "B": "authenticity"
+    },
+    "effect_size": 0.8341068352098282,
+    "p_value": 0.01838,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "actor",
+        "actress",
+        "performer",
+        "star",
+        "player",
+        "thespian",
+        "lead",
+        "character",
+        "extra",
+        "entertainer",
+        "showman",
+        "presenter",
+        "impersonator",
+        "mimic",
+        "dramatist"
+      ],
+      "Y_used": [
+        "artist",
+        "painter",
+        "sculptor",
+        "musician",
+        "writer",
+        "poet",
+        "creator",
+        "designer",
+        "architect",
+        "photographer",
+        "illustrator",
+        "craftsman",
+        "artisan",
+        "composer",
+        "choreographer"
+      ],
+      "A_used": [
+        "deception",
+        "fake",
+        "false",
+        "lie",
+        "deceit",
+        "fraud",
+        "trick",
+        "cheat",
+        "disguise",
+        "pretense",
+        "hypocrisy",
+        "sham",
+        "forgery",
+        "counterfeit",
+        "phony"
+      ],
+      "B_used": [
+        "authenticity",
+        "truth",
+        "real",
+        "honest",
+        "sincere",
+        "genuine",
+        "reality",
+        "transparency",
+        "integrity",
+        "candid",
+        "faithful",
+        "reliable",
+        "trustworthy",
+        "straightforward",
+        "frank"
+      ]
+    },
+    "proposal": "People associate actors with deception more strongly than they associate artists with deception. This differential association arises from the cultural framing of acting as the simulation of false identities and emotions for entertainment, whereas artistry is often romanticized as the authentic revelation of truth or inner vision. Examining this link is novel because implicit bias research has focused extensively on gender and race, but has rarely tested moral dimensions like deception across creative professions. It is interesting because it reveals how the public mentally categorizes performance-based versus creation-based roles on a fundamental trust axis, potentially influencing moral judgments and career prestige. Confirming this association would demonstrate that the 'fake vs. real' dichotomy in art discourse is embedded in implicit cognition, not just explicit critique.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "0fd93462cb7c",
     "timestamp": "2026-05-03T23:28:12.967170+00:00",
     "schema_version": "autoresearch.v1",
