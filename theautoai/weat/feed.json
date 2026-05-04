@@ -1,5 +1,115 @@
 [
   {
+    "id": "e1a961ce83ec",
+    "timestamp": "2026-05-04T05:29:41.569904+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Rogues vs Wanderers on deceptiveness versus honesty",
+    "labels": {
+      "X": "Rogues",
+      "Y": "Wanderers",
+      "A": "Duplicity",
+      "B": "Honesty"
+    },
+    "canonical_keys": {
+      "X": "rogues",
+      "Y": "wanderers",
+      "A": "duplicity",
+      "B": "honesty"
+    },
+    "effect_size": 1.5705412159342989,
+    "p_value": 0.0,
+    "n": {
+      "X": 16,
+      "Y": 16,
+      "A": 16,
+      "B": 16
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "rogue",
+        "scoundrel",
+        "villain",
+        "trickster",
+        "fraud",
+        "swindler",
+        "cheat",
+        "crook",
+        "rascal",
+        "renegade",
+        "outlaw",
+        "smuggler",
+        "accomplice",
+        "spy",
+        "thief",
+        "ruffian"
+      ],
+      "Y_used": [
+        "wanderer",
+        "nomad",
+        "traveler",
+        "vagabond",
+        "drifter",
+        "pilgrim",
+        "explorer",
+        "roamer",
+        "hiker",
+        "tourist",
+        "migrant",
+        "rover",
+        "rambler",
+        "backpacker",
+        "sojourner",
+        "expatriate"
+      ],
+      "A_used": [
+        "deceit",
+        "deception",
+        "lie",
+        "trick",
+        "feign",
+        "bluff",
+        "guile",
+        "hypocrisy",
+        "conceal",
+        "falsify",
+        "scheme",
+        "swindle",
+        "treachery",
+        "falsehood",
+        "pretense",
+        "duplicity"
+      ],
+      "B_used": [
+        "honesty",
+        "truth",
+        "sincerity",
+        "candor",
+        "genuine",
+        "authentic",
+        "frank",
+        "transparent",
+        "veracity",
+        "integrity",
+        "loyalty",
+        "faithfulness",
+        "reliability",
+        "trustworthiness",
+        "open",
+        "candid"
+      ]
+    },
+    "proposal": "People associate Rogues with Duplicity more strongly than they associate Wanderers with Duplicity. This proposal examines whether the social archetype of the rogue—a figure historically and culturally linked to deception, trickery, and moral ambiguity—is implicitly distinguished from the wanderer, a figure associated with mobility, displacement, or freedom but not necessarily with deceit. While both categories may be viewed as operating outside conventional social structures, the attribute of duplicity captures a specific suspicion about intent and honesty that should characterize rogues more than wanderers. Investigating this association is novel, as prior research has rarely compared these two distinct archetypes of social marginality, and it matters for understanding how public discourse differentiates between actors who are merely unanchored versus those who are actively untrustworthy.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "46f2dc0ebd66",
     "timestamp": "2026-05-04T02:43:20.710195+00:00",
     "schema_version": "autoresearch.v1",
