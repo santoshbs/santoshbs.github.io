@@ -1,5 +1,111 @@
 [
   {
+    "id": "cf1b44c88047",
+    "timestamp": "2026-05-04T21:04:37.094264+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "midwives vs morticians on vitality versus stagnation",
+    "labels": {
+      "X": "midwives",
+      "Y": "morticians",
+      "A": "vitality",
+      "B": "stagnation"
+    },
+    "canonical_keys": {
+      "X": "midwives",
+      "Y": "morticians",
+      "A": "vitality",
+      "B": "stagnation"
+    },
+    "effect_size": 1.7126879574309577,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "midwife",
+        "midwives",
+        "doula",
+        "doulas",
+        "obstetrician",
+        "obstetricians",
+        "nurse",
+        "nurses",
+        "doctor",
+        "doctors",
+        "physician",
+        "physicians",
+        "clinician",
+        "clinicians",
+        "provider"
+      ],
+      "Y_used": [
+        "mortician",
+        "morticians",
+        "undertaker",
+        "undertakers",
+        "embalmer",
+        "embalmers",
+        "cremator",
+        "cremators",
+        "sexton",
+        "sextons",
+        "gravekeeper",
+        "gravekeepers",
+        "caretaker",
+        "caretakers",
+        "attendant"
+      ],
+      "A_used": [
+        "alive",
+        "vibrant",
+        "energetic",
+        "dynamic",
+        "active",
+        "vigorous",
+        "robust",
+        "healthy",
+        "thriving",
+        "flourishing",
+        "blooming",
+        "growing",
+        "sprouting",
+        "budding",
+        "fresh"
+      ],
+      "B_used": [
+        "dead",
+        "departed",
+        "gone",
+        "lost",
+        "vanished",
+        "extinct",
+        "lifeless",
+        "spiritless",
+        "soulless",
+        "inert",
+        "still",
+        "quiet",
+        "silent",
+        "hushed",
+        "mute"
+      ]
+    },
+    "proposal": "People associate midwives with vitality more strongly than they associate morticians with vitality. This differential implicit association examines a culturally entrenched but underprobed life-course duality: the mental coupling of birth professionals with generative energy versus death professionals with stagnation or absence. While social psychology has extensively mapped warmth and competence stereotypes across many occupations, the implicit polarity between agents of beginning and agents of ending remains largely unexamined. Testing this association would reveal whether contemporary mental models preserve a rigid symbolic boundary between life-giving and death-tending roles, or whether modern healthcare exposure has normalized their representation. The finding would matter for public health messaging, hospice and maternity care communication, and how societies allocate moral and emotional weight to different stages of human care.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "8959def21668",
     "timestamp": "2026-05-04T19:17:35.409449+00:00",
     "schema_version": "autoresearch.v1",
