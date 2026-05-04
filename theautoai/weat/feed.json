@@ -1,5 +1,111 @@
 [
   {
+    "id": "46f2dc0ebd66",
+    "timestamp": "2026-05-04T02:43:20.710195+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Poets vs Linguists on rule violation versus rule adherence",
+    "labels": {
+      "X": "Poets",
+      "Y": "Linguists",
+      "A": "rule-breaking",
+      "B": "rule-adherence"
+    },
+    "canonical_keys": {
+      "X": "poets",
+      "Y": "linguists",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 0.6237021778020293,
+    "p_value": 0.09379,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "poet",
+        "bard",
+        "lyricist",
+        "sonneteer",
+        "troubadour",
+        "writer",
+        "author",
+        "artist",
+        "creator",
+        "composer",
+        "songwriter",
+        "wordsmith",
+        "narrator",
+        "dramatist",
+        "storyteller"
+      ],
+      "Y_used": [
+        "linguist",
+        "scholar",
+        "academic",
+        "professor",
+        "researcher",
+        "scientist",
+        "analyst",
+        "grammarian",
+        "philologist",
+        "etymologist",
+        "lexicographer",
+        "semanticist",
+        "morphologist",
+        "phonologist",
+        "educator"
+      ],
+      "A_used": [
+        "violation",
+        "transgression",
+        "disobedience",
+        "rebellion",
+        "defiance",
+        "insubordination",
+        "mutiny",
+        "uprising",
+        "revolt",
+        "protest",
+        "resistance",
+        "opposition",
+        "confrontation",
+        "conflict",
+        "clash"
+      ],
+      "B_used": [
+        "adherence",
+        "compliance",
+        "obedience",
+        "conformity",
+        "loyalty",
+        "allegiance",
+        "devotion",
+        "fidelity",
+        "faithfulness",
+        "trustworthiness",
+        "reliability",
+        "dependability",
+        "consistency",
+        "stability",
+        "order"
+      ]
+    },
+    "proposal": "People associate Poets with rule-breaking more strongly than they associate Linguists with rule-breaking. This differential implicit association highlights a distinct axis of language cognition: while both groups work with language, Poets are mentally linked to transgressing grammatical and semantic norms for expressive effect, whereas Linguists are linked to preserving and describing those norms as scientific experts. This pair is novel, as Poets and Linguists have not been compared in implicit association research, and the axis moves beyond the cliché of creativity versus logic by focusing specifically on the social dimension of rule violation versus rule adherence. Confirming this association would reveal how the public mentally partitions the guardians of language structure from the agents of linguistic innovation and disruption.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "c80a12b70211",
     "timestamp": "2026-05-04T02:08:15.502276+00:00",
     "schema_version": "autoresearch.v1",
