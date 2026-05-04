@@ -1,5 +1,111 @@
 [
   {
+    "id": "8c0c684909f1",
+    "timestamp": "2026-05-04T18:22:37.966152+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Followers vs Leaders on peace versus conflict",
+    "labels": {
+      "X": "Followers",
+      "Y": "Leaders",
+      "A": "peace",
+      "B": "strife"
+    },
+    "canonical_keys": {
+      "X": "followers",
+      "Y": "leaders",
+      "A": "peace",
+      "B": "strife"
+    },
+    "effect_size": 0.4285520334751192,
+    "p_value": 0.25808,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "follower",
+        "supporter",
+        "subordinate",
+        "assistant",
+        "aide",
+        "deputy",
+        "lieutenant",
+        "attendant",
+        "disciple",
+        "partisan",
+        "underling",
+        "adherent",
+        "recruit",
+        "volunteer",
+        "spectator"
+      ],
+      "Y_used": [
+        "leader",
+        "boss",
+        "chief",
+        "commander",
+        "director",
+        "manager",
+        "president",
+        "governor",
+        "ruler",
+        "captain",
+        "chairman",
+        "head",
+        "overseer",
+        "foreman",
+        "general"
+      ],
+      "A_used": [
+        "peace",
+        "calm",
+        "tranquility",
+        "quiet",
+        "serenity",
+        "harmony",
+        "stillness",
+        "rest",
+        "peaceful",
+        "placid",
+        "gentle",
+        "mild",
+        "soothing",
+        "tranquil",
+        "repose"
+      ],
+      "B_used": [
+        "strife",
+        "conflict",
+        "turbulence",
+        "struggle",
+        "war",
+        "battle",
+        "discord",
+        "chaos",
+        "turmoil",
+        "violence",
+        "anger",
+        "rage",
+        "dispute",
+        "argument",
+        "clash"
+      ]
+    },
+    "proposal": "People associate Followers with peace more strongly than they associate Leaders with peace. This proposal posits a differential implicit association where followerhood is linked to calm, stability, and the absence of conflict, while leadership is implicitly represented as a state of turbulence, perpetual negotiation, and strife. This angle is novel because existing literature has extensively examined explicit stereotypes regarding conformity, intelligence, and agency for these categories, but has not probed how affective and environmental dimensions like peace are distributed across them. Examining this association is interesting and important because it may reveal a latent ambivalence toward leadership: although leaders are often valorized for achievement, they may be mentally categorized as inhabiting a more chaotic and less peaceful existence, which could have implications for organizational retention, the psychological cost of leadership, and public perceptions of social hierarchy.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "e35eb7e5ae54",
     "timestamp": "2026-05-04T14:08:29.636962+00:00",
     "schema_version": "autoresearch.v1",
