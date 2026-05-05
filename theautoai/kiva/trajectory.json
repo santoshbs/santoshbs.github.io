@@ -1,35 +1,5 @@
 [
   {
-    "id": "female-local-currency-slower-claim",
-    "title": "Pitches from women that specify the loan amount using local currency denominations tend to predict slower funding speed.",
-    "bucket": "",
-    "birth_batch": 0,
-    "death_batch": 142,
-    "last_batch": 142,
-    "confidence": 0,
-    "alive": false
-  },
-  {
-    "id": "female-seasonal-timing-faster",
-    "title": "Mentioning a specific seasonal event or holiday to justify loan timing may accelerate funding for female borrowers.",
-    "bucket": "",
-    "birth_batch": 0,
-    "death_batch": 148,
-    "last_batch": 148,
-    "confidence": 0,
-    "alive": false
-  },
-  {
-    "id": "female-age-mention-faster",
-    "title": "Pitches from women that explicitly state the borrower's age tend to accelerate funding speed.",
-    "bucket": "",
-    "birth_batch": 0,
-    "death_batch": 149,
-    "last_batch": 149,
-    "confidence": 0,
-    "alive": false
-  },
-  {
     "id": "female-tireless-dream-faster",
     "title": "The phrase 'working tirelessly toward the attainment of her dream' may accelerate funding for women, contrasting with general mentions of dreams.",
     "bucket": "",
@@ -100,11 +70,31 @@
     "alive": false
   },
   {
+    "id": "female-own-efforts-slower",
+    "title": "Female borrowers who mention sustaining their business through their 'own efforts' may fund more slowly.",
+    "bucket": "",
+    "birth_batch": 0,
+    "death_batch": 165,
+    "last_batch": 165,
+    "confidence": 0,
+    "alive": false
+  },
+  {
+    "id": "male-family-emphasis-slower",
+    "title": "Men who emphasize family roles or use highly descriptive narrative language may fund more slowly, potentially contrasting with the effect for women.",
+    "bucket": "",
+    "birth_batch": 0,
+    "death_batch": 165,
+    "last_batch": 165,
+    "confidence": 0,
+    "alive": false
+  },
+  {
     "id": "institutional-names-slower",
     "title": "Mentioning specific institutional or brand names predicts slower funding regardless of gender.",
     "bucket": "slower",
     "birth_batch": 1,
-    "last_batch": 164,
+    "last_batch": 165,
     "confidence": 0.7,
     "peak_confidence": 0.7,
     "alive": true
@@ -114,7 +104,7 @@
     "title": "Female borrowers who list specific products or goals beyond family welfare fund faster.",
     "bucket": "gendered_women",
     "birth_batch": 1,
-    "last_batch": 164,
+    "last_batch": 165,
     "confidence": 1.0,
     "peak_confidence": 1.0,
     "alive": true
@@ -124,7 +114,7 @@
     "title": "Explicit expressions of gratitude to lenders accelerate funding for female borrowers.",
     "bucket": "gendered_women",
     "birth_batch": 1,
-    "last_batch": 164,
+    "last_batch": 165,
     "confidence": 1.0,
     "peak_confidence": 1.0,
     "alive": true
@@ -134,7 +124,7 @@
     "title": "Specifying the number of years the business has operated predicts faster funding regardless of gender.",
     "bucket": "faster",
     "birth_batch": 1,
-    "last_batch": 164,
+    "last_batch": 165,
     "confidence": 1.0,
     "peak_confidence": 1.0,
     "alive": true
@@ -144,7 +134,7 @@
     "title": "Female borrowers who mention benefits to their family or community fund faster.",
     "bucket": "gendered_women",
     "birth_batch": 1,
-    "last_batch": 164,
+    "last_batch": 165,
     "confidence": 0.86,
     "peak_confidence": 0.86,
     "alive": true
@@ -154,7 +144,7 @@
     "title": "Mentioning benefits for children predicts faster funding regardless of gender.",
     "bucket": "faster",
     "birth_batch": 1,
-    "last_batch": 164,
+    "last_batch": 165,
     "confidence": 1.0,
     "peak_confidence": 1.0,
     "alive": true
@@ -163,8 +153,8 @@
     "id": "living-conditions-interaction",
     "title": "Mentioning home or living condition improvements accelerates funding for women but slows it for men.",
     "bucket": "interaction",
-    "birth_batch": 82,
-    "last_batch": 164,
+    "birth_batch": 81,
+    "last_batch": 165,
     "confidence": 0.45,
     "peak_confidence": 0.45,
     "alive": true
@@ -173,8 +163,8 @@
     "id": "female-education-level-slower",
     "title": "Female borrowers who explicitly mention their education level fund more slowly.",
     "bucket": "gendered_women",
-    "birth_batch": 156,
-    "last_batch": 164,
+    "birth_batch": 155,
+    "last_batch": 165,
     "confidence": 0.6,
     "peak_confidence": 0.6,
     "alive": true
