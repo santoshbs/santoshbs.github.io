@@ -1,5 +1,111 @@
 [
   {
+    "id": "16c59949d4b9",
+    "timestamp": "2026-05-05T03:43:28.292783+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Police vs Journalists on Epistemic Certainty",
+    "labels": {
+      "X": "Police",
+      "Y": "Journalists",
+      "A": "Certainty",
+      "B": "Uncertainty"
+    },
+    "canonical_keys": {
+      "X": "police",
+      "Y": "journalists",
+      "A": "certainty",
+      "B": "uncertainty"
+    },
+    "effect_size": -0.08525729107262513,
+    "p_value": 0.82397,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "policeman",
+        "officer",
+        "cop",
+        "sheriff",
+        "deputy",
+        "marshal",
+        "constable",
+        "detective",
+        "trooper",
+        "patrolman",
+        "guard",
+        "bailiff",
+        "warden",
+        "ranger",
+        "policewoman"
+      ],
+      "Y_used": [
+        "journalist",
+        "reporter",
+        "editor",
+        "correspondent",
+        "writer",
+        "photographer",
+        "blogger",
+        "anchor",
+        "newscaster",
+        "columnist",
+        "stringer",
+        "cameraman",
+        "interviewer",
+        "broadcaster",
+        "anchorwoman"
+      ],
+      "A_used": [
+        "certain",
+        "sure",
+        "definite",
+        "absolute",
+        "clear",
+        "precise",
+        "exact",
+        "confirmed",
+        "final",
+        "solid",
+        "firm",
+        "concrete",
+        "proven",
+        "decisive",
+        "explicit"
+      ],
+      "B_used": [
+        "uncertain",
+        "unsure",
+        "ambiguous",
+        "vague",
+        "tentative",
+        "provisional",
+        "hypothetical",
+        "possible",
+        "doubtful",
+        "questionable",
+        "unclear",
+        "murky",
+        "speculative",
+        "exploratory",
+        "obscure"
+      ]
+    },
+    "proposal": "People associate Police with certainty more strongly than they associate Journalists with certainty. This implicit association reflects the cultural expectation that police work demands decisive, unambiguous action in high-stakes moments, whereas journalism is framed as an ongoing process of inquiry, verification, and nuance. The proposal is novel because implicit research has largely examined warmth, competence, and morality, leaving the epistemic dimension of certainty unprobed for these distinct institutional roles. Confirming this bias would reveal how the public mental model of authority may privilege decisive closure over open-ended investigation, potentially shaping how society tolerates error or demands accountability from each group.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "5443705497e8",
     "timestamp": "2026-05-05T01:28:28.670845+00:00",
     "schema_version": "autoresearch.v1",
