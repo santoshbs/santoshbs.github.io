@@ -1,5 +1,111 @@
 [
   {
+    "id": "bea0010a7093",
+    "timestamp": "2026-05-05T19:01:21.474301+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "immigrants vs locals on temporal orientation and outlook",
+    "labels": {
+      "X": "immigrants",
+      "Y": "locals",
+      "A": "temporal optimism",
+      "B": "past/present focus"
+    },
+    "canonical_keys": {
+      "X": "immigrants",
+      "Y": "locals",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 0.8382521146961597,
+    "p_value": 0.02019,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "immigrant",
+        "migrant",
+        "refugee",
+        "exile",
+        "foreigner",
+        "newcomer",
+        "guest",
+        "expatriate",
+        "alien",
+        "outsider",
+        "transient",
+        "sojourner",
+        "visitor",
+        "stranger",
+        "foreign"
+      ],
+      "Y_used": [
+        "local",
+        "native",
+        "resident",
+        "citizen",
+        "inhabitant",
+        "indigenous",
+        "host",
+        "original",
+        "denizen",
+        "villager",
+        "dweller",
+        "populace",
+        "citizenry",
+        "aboriginal",
+        "settler"
+      ],
+      "A_used": [
+        "future",
+        "tomorrow",
+        "hope",
+        "optimistic",
+        "aspire",
+        "advance",
+        "progress",
+        "forward",
+        "bright",
+        "rise",
+        "growth",
+        "innovate",
+        "anticipate",
+        "dream",
+        "vision"
+      ],
+      "B_used": [
+        "past",
+        "present",
+        "history",
+        "tradition",
+        "yesterday",
+        "current",
+        "existing",
+        "stationary",
+        "rooted",
+        "legacy",
+        "heritage",
+        "conventional",
+        "archaic",
+        "antique",
+        "fixed"
+      ]
+    },
+    "proposal": "People associate immigrants with temporal optimism more strongly than they associate locals with temporal optimism. This differential implicit association captures a culturally pervasive stereotype that frames newcomers as inherently future-oriented, hopeful, and driven by forward-looking aspirations, while casting long-term residents as more present-focused or historically anchored. Although sociological and economic research has documented the explicit 'immigrant optimism paradox,' no study has yet measured whether this contrast is automatically activated at a non-conscious level using implicit association paradigms. Examining this link matters because implicit temporal framing can quietly shape public evaluations of migrant integration, influence policy support for immigrant entrepreneurship, and affect perceptions of which groups are psychologically suited to thrive in rapidly changing economic landscapes.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "c4a34ecc3327",
     "timestamp": "2026-05-05T15:54:56.812530+00:00",
     "schema_version": "autoresearch.v1",
