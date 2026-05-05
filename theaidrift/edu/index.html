@@ -70,6 +70,10 @@
   .overlay-content .about-meta{margin-top:32px;padding-top:16px;border-top:1px solid var(--separator);font-size:12px;color:var(--fg-dim);line-height:1.8}
   @media(max-width:700px){.graph-legend-g{display:none}#graph-legend-mobile{display:flex!important}:root{--font-size:14px}.log-row{font-size:12px}.log-expanded{padding:12px;font-size:13px}.log-previews{margin-left:4px}.log-expand-link{padding-left:4px}}
   @media(max-width:480px){.log-meta{display:none}.log-code{min-width:70px}}
+
+  .header-download{font-size:10px;color:var(--fg-dim);text-decoration:none;letter-spacing:.05em;text-transform:uppercase;opacity:.7}
+  .header-download:hover{opacity:1;color:var(--accent)}
+  .header-line-download{margin-top:2px}
 </style>
 </head>
 <body>
@@ -77,6 +81,7 @@
   <div class="header-inner">
     <div class="header-line1"><a class="header-title" id="home-refresh" href="#">the<span class="acronym">[edu]</span>drift</a></div>
     <div class="header-line2"><span class="header-tagline">an LLM's living hypothesis log on AI's impact on higher education<br>each entry extrapolated from educational capability data and RSS feed summaries (not full articles) · not manually edited · <a href="#" id="btn-about" style="color:inherit;text-decoration:underline">read more</a></span></div>
+    <div class="header-line-download"><a class="header-download" href="edudrift_hypotheses.pdf" download>Download as PDF ↓</a></div>
     <div class="header-spacer-row"></div>
     <div id="last-updated" style="font-size:10px;color:var(--fg-dim);margin-bottom:4px"></div>
   </div>
