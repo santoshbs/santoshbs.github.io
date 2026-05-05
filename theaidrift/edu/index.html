@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
 <style>
-  :root,[data-theme="light"]{--bg:#fafbfd;--bg-alt:#f0f3f8;--fg:#1a2030;--fg-dim:#2a3445;--fg-meta:#243246;--accent:#2563a8;--accent2:#1a6b8a;--hyp-color:#1a2030;--ref-color:#2563a8;--separator:#c8d1de;--separator-light:#dde3ed;--header-bg:#fafbfd;--footer-bg:#fafbfd;--overlay-bg:rgba(250,251,253,0.97);--expand-bg:rgba(37,99,168,0.04);--expand-hl:rgba(37,99,168,0.08);--mono:'IBM Plex Mono','Menlo','Consolas',monospace;--font-size:15px;--line-height:1.5;--content-width:860px;--edge-color:#6a7a90;--title-flash:#2563a8;--tagline-color:#243246;--hint-color:#2a3a52}
+  :root,[data-theme="light"]{--bg:#ffffff;--bg-alt:#f0f3f8;--fg:#0d1320;--fg-dim:#2a3445;--fg-meta:#243246;--accent:#1452a0;--accent2:#1a6b8a;--hyp-color:#1a2030;--ref-color:#1452a0;--separator:#c8d1de;--separator-light:#dde3ed;--header-bg:#ffffff;--footer-bg:#ffffff;--overlay-bg:rgba(255,255,255,0.97);--expand-bg:rgba(37,99,168,0.04);--expand-hl:rgba(37,99,168,0.08);--mono:'IBM Plex Mono','Menlo','Consolas',monospace;--font-size:15px;--line-height:1.5;--content-width:860px;--edge-color:#6a7a90;--title-flash:#1452a0;--tagline-color:#243246;--hint-color:#2a3a52}
   [data-theme="dark"]{--bg:#08090e;--bg-alt:#0f1118;--fg:#dce4f0;--fg-dim:#c2cee0;--fg-meta:#cad5e6;--accent:#5ba4cf;--accent2:#7ec8e3;--hyp-color:#a8c4e0;--ref-color:#5ba4cf;--separator:#1a2035;--separator-light:#141a2a;--header-bg:#08090e;--footer-bg:#08090e;--overlay-bg:rgba(8,9,14,0.97);--expand-bg:rgba(91,164,207,0.05);--expand-hl:rgba(91,164,207,0.10);--edge-color:#4a7a9a;--title-flash:#7ec8e3;--tagline-color:#b5c2d8;--hint-color:#5ba4cf}
   *{margin:0;padding:0;box-sizing:border-box}
   html,body{background:var(--bg);color:var(--fg);font-family:var(--mono);font-size:var(--font-size);line-height:var(--line-height);-webkit-font-smoothing:antialiased;overflow-x:hidden}
@@ -71,9 +71,9 @@
   @media(max-width:700px){.graph-legend-g{display:none}#graph-legend-mobile{display:flex!important}:root{--font-size:14px}.log-row{font-size:12px}.log-expanded{padding:12px;font-size:13px}.log-previews{margin-left:4px}.log-expand-link{padding-left:4px}}
   @media(max-width:480px){.log-meta{display:none}.log-code{min-width:70px}}
 
-  .header-download{font-size:10px;color:var(--fg-dim);text-decoration:none;letter-spacing:.05em;text-transform:uppercase;opacity:.95}
-  .header-download:hover{opacity:1;color:var(--accent)}
-  .header-line-download{margin-top:2px}
+  .header-download{font-size:12px;color:var(--accent);text-decoration:none;letter-spacing:.04em;font-weight:600;opacity:1;border-bottom:1px solid var(--accent);padding-bottom:1px}
+  .header-download:hover{color:var(--accent2);border-color:var(--accent2)}
+  .header-line-download{margin-top:6px;margin-bottom:2px}
 </style>
 </head>
 <body>
@@ -81,7 +81,7 @@
   <div class="header-inner">
     <div class="header-line1"><a class="header-title" id="home-refresh" href="#">the<span class="acronym">[edu]</span>drift</a></div>
     <div class="header-line2"><span class="header-tagline">an LLM's living hypothesis log on AI's impact on higher education<br>each entry extrapolated from educational capability data and RSS feed summaries (not full articles) · not manually edited · <a href="#" id="btn-about" style="color:inherit;text-decoration:underline">read more</a></span></div>
-    <div class="header-line-download"><a class="header-download" href="edudrift_hypotheses.pdf" download>Download as PDF ↓</a></div>
+    <div class="header-line-download"><a class="header-download" href="edudrift_hypotheses.pdf" download>download current hypotheses log as pdf ↓</a></div>
     <div class="header-spacer-row"></div>
     <div id="last-updated" style="font-size:10px;color:var(--fg-dim);margin-bottom:4px"></div>
   </div>
@@ -123,8 +123,9 @@
   var selectedId=null,allEntries=[],networkData=null;
   var currentView='graph',animating=false;
 
-  var GROUP_COLORS={'Teaching & Learning':'#5BA4CF','Research':'#7EC8E3','Strategy & Governance':'#F0997B','Commercial Activity':'#FAC775','Enabling':'#AFA9EC'};
-  function groupColor(g){return GROUP_COLORS[g]||'#D3D1C7'}
+  var GROUP_COLORS_DARK={'Teaching & Learning':'#5BA4CF','Research':'#7EC8E3','Strategy & Governance':'#F0997B','Commercial Activity':'#FAC775','Enabling':'#AFA9EC'};
+  var GROUP_COLORS_LIGHT={'Teaching & Learning':'#1f6fa8','Research':'#1a8aaf','Strategy & Governance':'#c2521d','Commercial Activity':'#a8650a','Enabling':'#5b4cc4'};
+  function groupColor(g){var theme=document.documentElement.getAttribute('data-theme')||'light';var palette=(theme==='light')?GROUP_COLORS_LIGHT:GROUP_COLORS_DARK;return palette[g]||(theme==='light'?'#666':'#D3D1C7')}
   function shortCode(code){return code.replace(/\.00$/,'')}
 
   function adjustTop(){var h=document.getElementById('site-header');if(h)mainEl.style.paddingTop=(h.offsetHeight+8)+'px'}
@@ -437,7 +438,7 @@
   document.addEventListener('keydown',function(e){if(e.key==='Escape')aboutOverlay.classList.remove('active')});
   aboutOverlay.addEventListener('click',function(e){if(e.target===aboutOverlay)aboutOverlay.classList.remove('active')});
   document.getElementById('home-refresh').addEventListener('click',function(e){e.preventDefault();location.reload()});
-  function setTheme(t){document.documentElement.setAttribute('data-theme',t);localStorage.setItem('edudrift-theme',t)}
+  function setTheme(t){document.documentElement.setAttribute('data-theme',t);localStorage.setItem('edudrift-theme',t);if(typeof currentView!=='undefined'&&currentView){try{setView(currentView,false)}catch(e){}}}
   setTheme(localStorage.getItem('edudrift-theme')||'light');
   document.getElementById('btn-theme').addEventListener('click',function(e){e.preventDefault();setTheme(document.documentElement.getAttribute('data-theme')==='light'?'dark':'light')});
   document.addEventListener('keydown',function(e){if(aboutOverlay.classList.contains('active'))return;if(e.key==='j'||e.key==='ArrowDown'){e.preventDefault();navRow(1)}else if(e.key==='k'||e.key==='ArrowUp'){e.preventDefault();navRow(-1)}});
