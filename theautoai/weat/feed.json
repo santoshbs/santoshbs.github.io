@@ -1,5 +1,111 @@
 [
   {
+    "id": "7f5d47739f0d",
+    "timestamp": "2026-05-05T00:26:48.822172+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Innovators vs Traditionalists on pragmatic utility versus rigid formalism",
+    "labels": {
+      "X": "Innovators",
+      "Y": "Traditionalists",
+      "A": "Pragmatic_Adaptability",
+      "B": "Rigid_Adherence"
+    },
+    "canonical_keys": {
+      "X": "innovators",
+      "Y": "traditionalists",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 1.6871083969488343,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "innovator",
+        "pioneer",
+        "entrepreneur",
+        "creator",
+        "inventor",
+        "designer",
+        "engineer",
+        "architect",
+        "developer",
+        "maker",
+        "builder",
+        "tinkerer",
+        "strategist",
+        "visionary",
+        "disruptor"
+      ],
+      "Y_used": [
+        "traditionalist",
+        "conservative",
+        "classicist",
+        "purist",
+        "historian",
+        "archivist",
+        "preserver",
+        "guardian",
+        "custodian",
+        "adherent",
+        "conformist",
+        "loyalist",
+        "preservationist",
+        "veteran",
+        "elder"
+      ],
+      "A_used": [
+        "pragmatic",
+        "practical",
+        "flexible",
+        "adaptable",
+        "efficient",
+        "functional",
+        "versatile",
+        "resourceful",
+        "effective",
+        "dynamic",
+        "responsive",
+        "grounded",
+        "actionable",
+        "strategic",
+        "useful"
+      ],
+      "B_used": [
+        "rigid",
+        "fixed",
+        "inflexible",
+        "strict",
+        "dogmatic",
+        "static",
+        "formal",
+        "orthodox",
+        "bureaucratic",
+        "prescribed",
+        "mandated",
+        "regulated",
+        "entrenched",
+        "immutable",
+        "stiff"
+      ]
+    },
+    "proposal": "People associate innovators with pragmatic problem-solving more strongly than they associate traditionalists with pragmatic problem-solving. While both groups are frequently discussed in terms of their stance toward change, contemporary institutional and media discourse increasingly frames innovators as highly adaptable, solution-oriented, and practically grounded, whereas traditionalists are often characterized by rigid adherence to established protocols. Examining this implicit association is novel because it isolates pragmatic utility from the broader change-resistance axis, revealing how modern professional cultures implicitly valorize flexibility over fidelity. Confirming or disconfirming this bias would matter for understanding hiring practices, cross-generational collaboration, and policy implementation in rapidly shifting organizational environments.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "7f3ab9a56da3",
     "timestamp": "2026-05-04T21:56:37.609706+00:00",
     "schema_version": "autoresearch.v1",
