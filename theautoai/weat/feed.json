@@ -1,5 +1,111 @@
 [
   {
+    "id": "ca678938c30b",
+    "timestamp": "2026-05-05T09:16:52.423657+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "explorers vs engineers on spontaneity vs systematicity",
+    "labels": {
+      "X": "explorers",
+      "Y": "engineers",
+      "A": "improvisation",
+      "B": "planning"
+    },
+    "canonical_keys": {
+      "X": "explorers",
+      "Y": "engineers",
+      "A": "improvisation",
+      "B": "planning"
+    },
+    "effect_size": 1.3245299835075872,
+    "p_value": 0.00011,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "explorer",
+        "pioneer",
+        "adventurer",
+        "scout",
+        "trekker",
+        "wanderer",
+        "voyager",
+        "traveler",
+        "backpacker",
+        "climber",
+        "hiker",
+        "nomad",
+        "rover",
+        "pathfinder",
+        "trailblazer"
+      ],
+      "Y_used": [
+        "engineer",
+        "architect",
+        "builder",
+        "constructor",
+        "designer",
+        "technician",
+        "machinist",
+        "programmer",
+        "coder",
+        "draftsman",
+        "mechanic",
+        "electrician",
+        "plumber",
+        "welder",
+        "carpenter"
+      ],
+      "A_used": [
+        "improvisation",
+        "spontaneity",
+        "impromptu",
+        "improvised",
+        "spontaneous",
+        "agile",
+        "reactive",
+        "intuitive",
+        "unscripted",
+        "unplanned",
+        "freestyle",
+        "opportunistic",
+        "fluid",
+        "dynamic",
+        "extemporaneous"
+      ],
+      "B_used": [
+        "planning",
+        "systematic",
+        "structured",
+        "methodical",
+        "organized",
+        "calculated",
+        "deliberate",
+        "intentional",
+        "strategic",
+        "analytical",
+        "logical",
+        "rational",
+        "careful",
+        "precise",
+        "thorough"
+      ]
+    },
+    "proposal": "People associate explorers with improvisation more strongly than they associate engineers with improvisation. While both groups are culturally valued for solving novel problems, public discourse implicitly frames explorers as relying on spontaneous adaptation and on-the-fly judgment, whereas engineers are mentally linked to premeditated planning and systematic execution. This differential association has not been systematically examined using implicit measures, despite contemporary debates emphasizing adaptive problem-solving in volatile domains like climate response and technology deployment. Confirming or disconfirming this bias would reveal whether mental representations of competence under uncertainty privilege structured predictability or fluid spontaneity, directly informing how organizations recruit, train, and fund innovators in unpredictable environments.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "0c751a4a7086",
     "timestamp": "2026-05-05T08:36:15.989021+00:00",
     "schema_version": "autoresearch.v1",
