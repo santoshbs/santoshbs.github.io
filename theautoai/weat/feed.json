@@ -1,5 +1,111 @@
 [
   {
+    "id": "0c751a4a7086",
+    "timestamp": "2026-05-05T08:36:15.989021+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "landlords vs tenants on Moral disposition",
+    "labels": {
+      "X": "landlords",
+      "Y": "tenants",
+      "A": "Greed",
+      "B": "Generosity"
+    },
+    "canonical_keys": {
+      "X": "landlords",
+      "Y": "tenants",
+      "A": "greed",
+      "B": "generosity"
+    },
+    "effect_size": -0.5360671252346997,
+    "p_value": 0.15334,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "landlord",
+        "lessor",
+        "owner",
+        "proprietor",
+        "slumlord",
+        "manager",
+        "administrator",
+        "superintendent",
+        "agent",
+        "broker",
+        "director",
+        "executive",
+        "boss",
+        "capitalist",
+        "investor"
+      ],
+      "Y_used": [
+        "tenant",
+        "renter",
+        "lessee",
+        "lodger",
+        "boarder",
+        "occupant",
+        "resident",
+        "dweller",
+        "inhabitant",
+        "flatmate",
+        "roommate",
+        "guest",
+        "squatter",
+        "subtenant",
+        "roomer"
+      ],
+      "A_used": [
+        "greedy",
+        "selfish",
+        "covetous",
+        "stingy",
+        "mean",
+        "miserly",
+        "exploitative",
+        "ruthless",
+        "mercenary",
+        "calculating",
+        "opportunistic",
+        "predatory",
+        "cutthroat",
+        "materialistic",
+        "grasping"
+      ],
+      "B_used": [
+        "generous",
+        "charitable",
+        "altruistic",
+        "compassionate",
+        "benevolent",
+        "selfless",
+        "giving",
+        "bountiful",
+        "kind",
+        "caring",
+        "helpful",
+        "supportive",
+        "friendly",
+        "warm",
+        "loving"
+      ]
+    },
+    "proposal": "People associate landlords with greed more strongly than they associate tenants with greed. This implicit bias reflects deep-seated cultural narratives that frame property owners as extractive and self-serving, while framing renters as vulnerable and in need of protection. Examining this association is novel because prior research has focused on explicit political attitudes toward rent control or housing policy, leaving the automatic, unconscious links between housing roles and moral traits like greed largely unmeasured. It matters because these implicit associations may silently shape public discourse, media portrayals, and legislative sympathy, ultimately influencing how housing justice is conceptualized and pursued in society.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "e8e78133a978",
     "timestamp": "2026-05-05T07:15:39.981333+00:00",
     "schema_version": "autoresearch.v1",
