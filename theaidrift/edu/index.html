@@ -438,7 +438,7 @@
   aboutOverlay.addEventListener('click',function(e){if(e.target===aboutOverlay)aboutOverlay.classList.remove('active')});
   document.getElementById('home-refresh').addEventListener('click',function(e){e.preventDefault();location.reload()});
   function setTheme(t){document.documentElement.setAttribute('data-theme',t);localStorage.setItem('edudrift-theme',t)}
-  setTheme(localStorage.getItem('edudrift-theme')||'dark');
+  setTheme(localStorage.getItem('edudrift-theme')||'light');
   document.getElementById('btn-theme').addEventListener('click',function(e){e.preventDefault();setTheme(document.documentElement.getAttribute('data-theme')==='light'?'dark':'light')});
   document.addEventListener('keydown',function(e){if(aboutOverlay.classList.contains('active'))return;if(e.key==='j'||e.key==='ArrowDown'){e.preventDefault();navRow(1)}else if(e.key==='k'||e.key==='ArrowUp'){e.preventDefault();navRow(-1)}});
   function navRow(dir){var rows=Array.from(document.querySelectorAll('.log-row'));if(!rows.length)return;var idx=-1;for(var i=0;i<rows.length;i++){if(rows[i].getAttribute('data-id')===selectedId){idx=i;break}}var next=idx<0?(dir>0?0:rows.length-1):Math.max(0,Math.min(rows.length-1,idx+dir));doToggle(rows[next].getAttribute('data-id'));rows[next].scrollIntoView({block:'nearest',behavior:'smooth'})}
