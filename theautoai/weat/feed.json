@@ -1,5 +1,111 @@
 [
   {
+    "id": "963891f5673b",
+    "timestamp": "2026-05-05T19:45:54.824823+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "teachers vs nurses on Professional autonomy vs subordination",
+    "labels": {
+      "X": "teachers",
+      "Y": "nurses",
+      "A": "Autonomy",
+      "B": "Subordination"
+    },
+    "canonical_keys": {
+      "X": "teachers",
+      "Y": "nurses",
+      "A": "autonomy",
+      "B": "subordination"
+    },
+    "effect_size": 0.5857702982293774,
+    "p_value": 0.11637,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "teacher",
+        "instructor",
+        "professor",
+        "educator",
+        "principal",
+        "tutor",
+        "lecturer",
+        "academic",
+        "mentor",
+        "dean",
+        "pedagogue",
+        "headmaster",
+        "supervisor",
+        "trainer",
+        "superintendent"
+      ],
+      "Y_used": [
+        "nurse",
+        "medic",
+        "paramedic",
+        "orderly",
+        "attendant",
+        "caregiver",
+        "carer",
+        "technician",
+        "assistant",
+        "worker",
+        "professional",
+        "practitioner",
+        "midwife",
+        "therapist",
+        "specialist"
+      ],
+      "A_used": [
+        "autonomy",
+        "authority",
+        "independence",
+        "freedom",
+        "liberty",
+        "power",
+        "control",
+        "command",
+        "leader",
+        "boss",
+        "master",
+        "director",
+        "captain",
+        "ruler",
+        "sovereign"
+      ],
+      "B_used": [
+        "subordination",
+        "obedience",
+        "dependence",
+        "duty",
+        "service",
+        "servant",
+        "slave",
+        "follower",
+        "subordinate",
+        "underling",
+        "subject",
+        "minion",
+        "hireling",
+        "peon",
+        "lackey"
+      ]
+    },
+    "proposal": "People associate teachers with professional autonomy more strongly than they associate nurses with professional autonomy. This differential implicit association captures the subtle status hierarchy embedded in public mental representations of two female-dominated helping professions: teachers are culturally scripted as primary authorities who command their domain, whereas nurses are often implicitly conceptualized as subordinate helpers who execute the directives of physicians. While structural role differences exist, the extent to which the public essentializes these positions as inherent traits of autonomy versus subordination has not been explicitly probed as a comparative implicit association. Examining this mapping reveals how institutional power dynamics become internalized as actor-based biases, with implications for understanding the persistence of status disparities between distinct care and education roles.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "bea0010a7093",
     "timestamp": "2026-05-05T19:01:21.474301+00:00",
     "schema_version": "autoresearch.v1",
