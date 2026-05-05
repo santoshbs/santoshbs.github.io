@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "batches_seen": 176,
-  "loans_seen": 2816,
-  "last_updated": "2026-05-05T15:33:23.372749+00:00",
+  "batches_seen": 177,
+  "loans_seen": 2832,
+  "last_updated": "2026-05-05T16:29:49.928063+00:00",
   "watching_for": "",
   "claims": {
     "institutional-names-slower": {
@@ -13,10 +13,10 @@
       "supporting_loans": [],
       "confidence": 0.7,
       "first_seen_batch": 1,
-      "last_updated_batch": 176,
+      "last_updated_batch": 177,
       "confidence_history": [
         [
-          176,
+          177,
           0.7
         ]
       ]
@@ -29,10 +29,10 @@
       "supporting_loans": [],
       "confidence": 1.0,
       "first_seen_batch": 1,
-      "last_updated_batch": 176,
+      "last_updated_batch": 177,
       "confidence_history": [
         [
-          176,
+          177,
           1.0
         ]
       ]
@@ -45,27 +45,27 @@
       "supporting_loans": [],
       "confidence": 1.0,
       "first_seen_batch": 1,
-      "last_updated_batch": 176,
+      "last_updated_batch": 177,
       "confidence_history": [
         [
-          176,
+          177,
           1.0
         ]
       ]
     },
-    "business-duration-faster": {
-      "id": "business-duration-faster",
-      "bucket": "faster",
-      "title": "Specifying the number of years the business has operated predicts faster funding regardless of gender.",
-      "body": "Pitches that include the duration of business operation or years of professional experience tend to accelerate funding speed for both men and women.",
+    "male-business-duration-faster": {
+      "id": "male-business-duration-faster",
+      "bucket": "gendered_men",
+      "title": "Male borrowers who specify the number of years the business has operated fund faster.",
+      "body": "Pitches from men that include the duration of business operation or years of professional experience tend to accelerate funding speed.",
       "supporting_loans": [],
-      "confidence": 1.0,
+      "confidence": 0.8,
       "first_seen_batch": 1,
-      "last_updated_batch": 176,
+      "last_updated_batch": 177,
       "confidence_history": [
         [
-          176,
-          1.0
+          177,
+          0.8
         ]
       ]
     },
@@ -77,10 +77,10 @@
       "supporting_loans": [],
       "confidence": 0.71,
       "first_seen_batch": 1,
-      "last_updated_batch": 176,
+      "last_updated_batch": 177,
       "confidence_history": [
         [
-          176,
+          177,
           0.71
         ]
       ]
@@ -93,27 +93,11 @@
       "supporting_loans": [],
       "confidence": 0.85,
       "first_seen_batch": 1,
-      "last_updated_batch": 176,
+      "last_updated_batch": 177,
       "confidence_history": [
         [
-          176,
+          177,
           0.85
-        ]
-      ]
-    },
-    "living-conditions-interaction": {
-      "id": "living-conditions-interaction",
-      "bucket": "interaction",
-      "title": "Mentioning home or living condition improvements accelerates funding for women but slows it for men.",
-      "body": "Pitches from women that focus on improving living conditions fund faster, whereas similar mentions in male pitches predict slower funding.",
-      "supporting_loans": [],
-      "confidence": 0.45,
-      "first_seen_batch": 70,
-      "last_updated_batch": 176,
-      "confidence_history": [
-        [
-          176,
-          0.45
         ]
       ]
     },
@@ -124,11 +108,27 @@
       "body": "Pitches from women that specify the borrower's or their children's education level tend to predict slower funding speed.",
       "supporting_loans": [],
       "confidence": 0.6,
-      "first_seen_batch": 144,
-      "last_updated_batch": 176,
+      "first_seen_batch": 143,
+      "last_updated_batch": 177,
       "confidence_history": [
         [
-          176,
+          177,
+          0.6
+        ]
+      ]
+    },
+    "female-history-slower": {
+      "id": "female-history-slower",
+      "bucket": "gendered_women",
+      "title": "Female borrowers who mention business duration or loan history fund more slowly.",
+      "body": "Pitches from women that reference the length of time their business has operated or their history with loans tend to fund more slowly.",
+      "supporting_loans": [],
+      "confidence": 0.6,
+      "first_seen_batch": 177,
+      "last_updated_batch": 177,
+      "confidence_history": [
+        [
+          177,
           0.6
         ]
       ]
@@ -138,62 +138,50 @@
     "female-logistical-detail-slower": {
       "id": "female-logistical-detail-slower",
       "body": "Female borrowers who include specific daily logistics like walking distances may fund more slowly.",
-      "first_seen_batch": 130
+      "first_seen_batch": 129
     },
     "male-repeat-borrower-faster": {
       "id": "male-repeat-borrower-faster",
       "body": "Mentioning status as a repeat borrower may accelerate funding for male borrowers.",
-      "first_seen_batch": 132
-    },
-    "female-repayment-history-slower": {
-      "id": "female-repayment-history-slower",
-      "body": "Female borrowers who mention a history of previous loan repayment may fund more slowly.",
-      "first_seen_batch": 146
+      "first_seen_batch": 131
     },
     "female-diversification-faster": {
       "id": "female-diversification-faster",
       "body": "Female borrowers who mention diversifying their income or product range may fund faster.",
-      "first_seen_batch": 154
+      "first_seen_batch": 153
     },
     "female-marital-status-slower": {
       "id": "female-marital-status-slower",
       "body": "Explicitly stating marital status may predict slower funding for female borrowers.",
-      "first_seen_batch": 154
+      "first_seen_batch": 153
     },
     "male-daily-routine-faster": {
       "id": "male-daily-routine-faster",
       "body": "Detailed daily routines may accelerate funding for male borrowers.",
-      "first_seen_batch": 156
+      "first_seen_batch": 155
     },
     "male-family-roles-slower": {
       "id": "male-family-roles-slower",
       "body": "Mentioning family members and their roles may predict slower funding for male borrowers.",
-      "first_seen_batch": 156
+      "first_seen_batch": 155
     },
     "male-geographic-specificity-slower": {
       "id": "male-geographic-specificity-slower",
       "body": "Male borrowers who mention specific geographic locations may fund more slowly.",
-      "first_seen_batch": 176
+      "first_seen_batch": 175
     },
     "male-length-slower": {
       "id": "male-length-slower",
       "body": "Longer pitch text may predict slower funding for male borrowers.",
-      "first_seen_batch": 176
+      "first_seen_batch": 175
     },
     "female-cliche-family-slower": {
       "id": "female-cliche-family-slower",
       "body": "Female borrowers using clich\u00e9d phrases about family futures may fund more slowly.",
-      "first_seen_batch": 176
+      "first_seen_batch": 175
     }
   },
   "retired": {
-    "demographic-specificity-faster": {
-      "id": "demographic-specificity-faster",
-      "title": "Pitches that include concrete demographic details, including the borrower's age or educational background, tend to accelerate funding speed for both men and women.",
-      "retrospective": "Contradicted by female observations regarding education; confidence fell below 0.35.",
-      "retired_batch": 160,
-      "was_believed_batches": 0
-    },
     "female-own-efforts-slower": {
       "id": "female-own-efforts-slower",
       "title": "Female borrowers who mention sustaining their business through their 'own efforts' may fund more slowly.",
@@ -255,6 +243,13 @@
       "title": "Lengthier pitches may predict slower funding for female borrowers.",
       "retrospective": "Stale puzzle dropped to make room for new observations.",
       "retired_batch": 177,
+      "was_believed_batches": 0
+    },
+    "living-conditions-interaction": {
+      "id": "living-conditions-interaction",
+      "title": "Mentioning home or living condition improvements accelerates funding for women but slows it for men.",
+      "retrospective": "Retired to make room for new claim regarding female history/duration effects.",
+      "retired_batch": 178,
       "was_believed_batches": 0
     }
   }
