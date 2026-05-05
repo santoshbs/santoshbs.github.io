@@ -1,5 +1,111 @@
 [
   {
+    "id": "5443705497e8",
+    "timestamp": "2026-05-05T01:28:28.670845+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "writers vs thieves on voyeurism versus theft",
+    "labels": {
+      "X": "writers",
+      "Y": "thieves",
+      "A": "voyeurism",
+      "B": "theft"
+    },
+    "canonical_keys": {
+      "X": "writers",
+      "Y": "thieves",
+      "A": "voyeurism",
+      "B": "theft"
+    },
+    "effect_size": 1.717381579379136,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "writer",
+        "author",
+        "novelist",
+        "poet",
+        "playwright",
+        "journalist",
+        "reporter",
+        "biographer",
+        "essayist",
+        "columnist",
+        "critic",
+        "storyteller",
+        "wordsmith",
+        "scribe",
+        "bard"
+      ],
+      "Y_used": [
+        "thief",
+        "burglar",
+        "robber",
+        "pickpocket",
+        "shoplifter",
+        "bandit",
+        "smuggler",
+        "poacher",
+        "mugger",
+        "outlaw",
+        "felon",
+        "criminal",
+        "marauder",
+        "plunderer",
+        "swindler"
+      ],
+      "A_used": [
+        "voyeur",
+        "spying",
+        "peeping",
+        "prying",
+        "observing",
+        "watching",
+        "staring",
+        "gazing",
+        "eavesdropping",
+        "peeking",
+        "lurking",
+        "intrusive",
+        "surveillance",
+        "scrutiny",
+        "monitor"
+      ],
+      "B_used": [
+        "stealing",
+        "theft",
+        "plunder",
+        "pilfering",
+        "sneaking",
+        "stealth",
+        "greed",
+        "greedy",
+        "swipe",
+        "swiping",
+        "heist",
+        "larceny",
+        "looting",
+        "robbing",
+        "breaking"
+      ]
+    },
+    "proposal": "People associate writers with voyeurism more strongly than they associate thieves with voyeurism. This differential implicit association captures a distinct cultural tension where writers are simultaneously celebrated as acute observers and stigmatized as invasive pryers who commodify the private lives of others, whereas thieves are stereotyped as agents of manual theft, stealth, or greed rather than psychological intrusiveness. Prior literature has extensively examined axes like creativity versus danger or moral legitimacy, but has neglected the specific ethics of the gaze that structure public discourse around journalism, memoir, and true crime. Probing this association is important because it reveals whether the mental representation of writers includes a unique dimension of intrusive observation that separates them from other rule-breakers, highlighting a latent social anxiety about the boundaries between artistic scrutiny and exploitation.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "7f5d47739f0d",
     "timestamp": "2026-05-05T00:26:48.822172+00:00",
     "schema_version": "autoresearch.v1",
