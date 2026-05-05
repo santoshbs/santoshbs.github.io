@@ -1,5 +1,111 @@
 [
   {
+    "id": "040811aab321",
+    "timestamp": "2026-05-05T14:20:43.147087+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "breakers vs builders on authenticity versus artifice",
+    "labels": {
+      "X": "breakers",
+      "Y": "builders",
+      "A": "authenticity",
+      "B": "artifice"
+    },
+    "canonical_keys": {
+      "X": "breakers",
+      "Y": "builders",
+      "A": "authenticity",
+      "B": "artifice"
+    },
+    "effect_size": -1.1872960723192845,
+    "p_value": 0.0005,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "breaker",
+        "destroyer",
+        "wrecker",
+        "vandal",
+        "brawler",
+        "fighter",
+        "raider",
+        "smasher",
+        "shatterer",
+        "crusher",
+        "batter",
+        "ripper",
+        "tearer",
+        "demolisher",
+        "dismantler"
+      ],
+      "Y_used": [
+        "builder",
+        "constructor",
+        "architect",
+        "maker",
+        "creator",
+        "designer",
+        "fabricator",
+        "carpenter",
+        "engineer",
+        "planner",
+        "developer",
+        "producer",
+        "manufacturer",
+        "artisan",
+        "craftsman"
+      ],
+      "A_used": [
+        "authentic",
+        "genuine",
+        "real",
+        "true",
+        "natural",
+        "honest",
+        "sincere",
+        "pure",
+        "raw",
+        "unvarnished",
+        "crude",
+        "original",
+        "factual",
+        "actual",
+        "valid"
+      ],
+      "B_used": [
+        "fake",
+        "artificial",
+        "false",
+        "synthetic",
+        "contrived",
+        "phony",
+        "bogus",
+        "fictitious",
+        "sham",
+        "counterfeit",
+        "imitation",
+        "simulated",
+        "superficial",
+        "feigned",
+        "affected"
+      ]
+    },
+    "proposal": "People associate breakers with authenticity more strongly than they associate builders with authenticity. This differential association suggests an implicit cognitive link between destruction and the revelation of raw truth, whereas construction is subconsciously tied to fabrication, artifice, or the imposition of structure. This hypothesis is novel because existing research on creators versus destroyers focuses almost exclusively on moral valence (good versus bad), neglecting the epistemic dimension of authenticity. Examining this association is important for understanding how discourses of deconstruction, radical transparency, or 'shattering illusions' recruit the metaphor of breaking to signal genuineness over the potentially suspect nature of building.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "ca678938c30b",
     "timestamp": "2026-05-05T09:16:52.423657+00:00",
     "schema_version": "autoresearch.v1",
