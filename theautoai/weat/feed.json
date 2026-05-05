@@ -1,5 +1,111 @@
 [
   {
+    "id": "c4a34ecc3327",
+    "timestamp": "2026-05-05T15:54:56.812530+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "monks vs pilgrims on temporal stillness vs movement",
+    "labels": {
+      "X": "monks",
+      "Y": "pilgrims",
+      "A": "stillness",
+      "B": "movement"
+    },
+    "canonical_keys": {
+      "X": "monks",
+      "Y": "pilgrims",
+      "A": "stillness",
+      "B": "movement"
+    },
+    "effect_size": 1.279490538272174,
+    "p_value": 0.00026,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "monk",
+        "friar",
+        "abbot",
+        "novice",
+        "brother",
+        "abbess",
+        "hermit",
+        "anchorite",
+        "prior",
+        "prioress",
+        "novitiate",
+        "postulant",
+        "cellarer",
+        "bursar",
+        "almoner"
+      ],
+      "Y_used": [
+        "pilgrim",
+        "traveler",
+        "walker",
+        "hiker",
+        "wanderer",
+        "roamer",
+        "voyager",
+        "tourist",
+        "backpacker",
+        "trekker",
+        "explorer",
+        "nomad",
+        "migrant",
+        "commuter",
+        "wayfarer"
+      ],
+      "A_used": [
+        "still",
+        "stationary",
+        "motionless",
+        "quiet",
+        "calm",
+        "pause",
+        "rest",
+        "fixed",
+        "stable",
+        "steady",
+        "immobile",
+        "anchored",
+        "unmoving",
+        "constant",
+        "settled"
+      ],
+      "B_used": [
+        "moving",
+        "journey",
+        "travel",
+        "run",
+        "dynamic",
+        "active",
+        "motion",
+        "flow",
+        "drift",
+        "transit",
+        "pace",
+        "shift",
+        "churn",
+        "spin",
+        "rotate"
+      ]
+    },
+    "proposal": "People associate monks with temporal stillness more strongly than they associate pilgrims with temporal stillness. This contrast taps into contemporary discourse around digital detox and attention economies, where monastic life is increasingly romanticized as a model of uninterrupted focus, while pilgrimage is framed as a journey of movement and change. Examining this implicit link matters because it reveals how modern audiences mentally partition contemplative practices into static versus dynamic archetypes, influencing how wellness, mindfulness, and retreat industries are culturally positioned. The association has not been systematically tested despite its resonance in media representations and spiritual tourism marketing.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "040811aab321",
     "timestamp": "2026-05-05T14:20:43.147087+00:00",
     "schema_version": "autoresearch.v1",
