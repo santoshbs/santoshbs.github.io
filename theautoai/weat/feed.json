@@ -1,5 +1,111 @@
 [
   {
+    "id": "b49b763be04a",
+    "timestamp": "2026-05-06T13:11:14.426196+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "anarchists vs authoritarians on spontaneity versus rigidity",
+    "labels": {
+      "X": "anarchists",
+      "Y": "authoritarians",
+      "A": "spontaneity",
+      "B": "rigidity"
+    },
+    "canonical_keys": {
+      "X": "anarchists",
+      "Y": "authoritarians",
+      "A": "spontaneity",
+      "B": "rigidity"
+    },
+    "effect_size": 1.111065444300729,
+    "p_value": 0.00115,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "anarchist",
+        "rebel",
+        "revolutionary",
+        "insurgent",
+        "subversive",
+        "radical",
+        "dissident",
+        "agitator",
+        "insurrectionist",
+        "autonomist",
+        "libertarian",
+        "individualist",
+        "nonconformist",
+        "rogue",
+        "outlaw"
+      ],
+      "Y_used": [
+        "authoritarian",
+        "autocrat",
+        "dictator",
+        "tyrant",
+        "despot",
+        "totalitarian",
+        "absolutist",
+        "imperialist",
+        "fascist",
+        "monarch",
+        "czar",
+        "emperor",
+        "king",
+        "ruler",
+        "leader"
+      ],
+      "A_used": [
+        "spontaneous",
+        "impromptu",
+        "unplanned",
+        "improvised",
+        "extemporaneous",
+        "unscripted",
+        "unpremeditated",
+        "natural",
+        "organic",
+        "fluid",
+        "free",
+        "loose",
+        "impulsive",
+        "sudden",
+        "unexpected"
+      ],
+      "B_used": [
+        "rigid",
+        "inflexible",
+        "strict",
+        "stiff",
+        "fixed",
+        "structured",
+        "regulated",
+        "controlled",
+        "disciplined",
+        "unyielding",
+        "static",
+        "formal",
+        "regimented",
+        "methodical",
+        "systematic"
+      ]
+    },
+    "proposal": "People associate anarchists with spontaneity more strongly than they associate authoritarians with spontaneity. This differential implicit association taps into the mental contrast between decentralized, emergent order and centralized, hierarchical control that underlies public representations of political organization. While explicit discourse often reduces anarchists to violence or chaos, the implicit link to spontaneity reflects a deeper cognitive association with unpredictability, adaptability, and unscripted action that distinguishes them from the rigid, planned, and regulated schemas linked to authoritarians. Examining this association is novel because prior work has focused on valenced traits like safety or morality, rather than the structural dimension of spontaneity versus rigidity. Confirming this link would reveal how the public intuitively encodes the fundamental mechanism of coordination—organic versus imposed—associated with these opposing ideologies.",
+    "iterations": 3,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "4c67d6548525",
     "timestamp": "2026-05-06T10:27:41.825517+00:00",
     "schema_version": "autoresearch.v1",
