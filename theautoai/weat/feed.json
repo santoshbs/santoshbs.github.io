@@ -1,5 +1,111 @@
 [
   {
+    "id": "605b6835e7c6",
+    "timestamp": "2026-05-06T07:29:45.093019+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "bystanders vs witnesses on Moral Responsibility",
+    "labels": {
+      "X": "bystanders",
+      "Y": "witnesses",
+      "A": "Complicity",
+      "B": "Integrity"
+    },
+    "canonical_keys": {
+      "X": "bystanders",
+      "Y": "witnesses",
+      "A": "complicity",
+      "B": "integrity"
+    },
+    "effect_size": 0.5939353133322056,
+    "p_value": 0.11313,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "bystander",
+        "onlooker",
+        "spectator",
+        "passerby",
+        "bystanders",
+        "onlookers",
+        "spectators",
+        "viewers",
+        "watchers",
+        "crowd",
+        "mob",
+        "public",
+        "audience",
+        "noncombatant",
+        "civilian"
+      ],
+      "Y_used": [
+        "witness",
+        "eyewitness",
+        "witnesses",
+        "testifier",
+        "informant",
+        "reporter",
+        "source",
+        "narrator",
+        "teller",
+        "seer",
+        "spotter",
+        "eyewitnesses",
+        "testifiers",
+        "informants",
+        "reporters"
+      ],
+      "A_used": [
+        "complicit",
+        "guilty",
+        "blame",
+        "fault",
+        "failure",
+        "indifferent",
+        "apathy",
+        "negligent",
+        "criminal",
+        "accessory",
+        "accomplice",
+        "silent",
+        "passive",
+        "inaction",
+        "irresponsible"
+      ],
+      "B_used": [
+        "honest",
+        "truth",
+        "justice",
+        "integrity",
+        "evidence",
+        "testimony",
+        "active",
+        "helpful",
+        "brave",
+        "clear",
+        "accurate",
+        "moral",
+        "right",
+        "good",
+        "fair"
+      ]
+    },
+    "proposal": "People associate bystanders with complicity more strongly than they associate witnesses with complicity. This differential implicit association is novel because while 'bystander' and 'witness' are often used interchangeably in casual discourse, they carry distinct moral weights in contemporary conversations about civic responsibility and the 'bystander effect.' By examining whether the label 'bystander' inherently triggers stronger associations with moral failure or complicity compared to 'witness,' we can uncover how language subtly assigns blame for inaction. This matters because such implicit biases may influence how the public perceives victims, law enforcement, and everyday citizens in the context of social injustice and viral media events.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "87e0b87001da",
     "timestamp": "2026-05-06T06:53:34.410953+00:00",
     "schema_version": "autoresearch.v1",
