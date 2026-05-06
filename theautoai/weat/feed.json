@@ -1,5 +1,111 @@
 [
   {
+    "id": "f3314c61c62c",
+    "timestamp": "2026-05-06T17:45:40.791526+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "restaurateurs vs grocers on social permissiveness vs conventional utility",
+    "labels": {
+      "X": "restaurateurs",
+      "Y": "grocers",
+      "A": "social permissiveness",
+      "B": "conventional utility"
+    },
+    "canonical_keys": {
+      "X": "restaurateurs",
+      "Y": "grocers",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 1.3591502204341133,
+    "p_value": 9e-05,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "chef",
+        "cook",
+        "server",
+        "bartender",
+        "waiter",
+        "waitress",
+        "host",
+        "hostess",
+        "sommelier",
+        "barkeep",
+        "caterer",
+        "proprietor",
+        "restaurateur",
+        "barman",
+        "manager"
+      ],
+      "Y_used": [
+        "grocer",
+        "cashier",
+        "stocker",
+        "bagger",
+        "vendor",
+        "retailer",
+        "shopkeeper",
+        "checker",
+        "clerk",
+        "seller",
+        "butcher",
+        "baker",
+        "fishmonger",
+        "owner",
+        "buyer"
+      ],
+      "A_used": [
+        "permissive",
+        "indulgent",
+        "liberal",
+        "open",
+        "relaxed",
+        "casual",
+        "fun",
+        "exciting",
+        "vibrant",
+        "lively",
+        "bohemian",
+        "wild",
+        "free",
+        "spontaneous",
+        "creative"
+      ],
+      "B_used": [
+        "conventional",
+        "routine",
+        "domestic",
+        "household",
+        "practical",
+        "utilitarian",
+        "functional",
+        "mundane",
+        "ordinary",
+        "commonplace",
+        "everyday",
+        "regular",
+        "standard",
+        "typical",
+        "usual"
+      ]
+    },
+    "proposal": "People associate restaurateurs with social permissiveness more strongly than they associate grocers with social permissiveness. While both categories involve the provision of food, contemporary cultural discourse frames restaurants as spaces of social performance, indulgence, and boundary-pushing (e.g., late hours, alcohol service, experiential dining, communal tables), whereas grocery stores are implicitly coded as sites of domestic routine, utility, and conventional household management. This differential implicit association has not been systematically examined, despite the growing sociological interest in how food-commerce venues shape normative expectations around social behavior. Confirming this association would reveal how mundane commercial roles are mentally mapped onto axes of moral and social flexibility, influencing public perceptions of acceptable conduct, licensing regulations, and neighborhood zoning debates.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "3b9ae323d2a9",
     "timestamp": "2026-05-06T14:58:09.663070+00:00",
     "schema_version": "autoresearch.v1",
