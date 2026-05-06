@@ -1,5 +1,111 @@
 [
   {
+    "id": "05a302e01df5",
+    "timestamp": "2026-05-06T20:38:24.617705+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "architects vs contractors on creative vs. pragmatic",
+    "labels": {
+      "X": "architects",
+      "Y": "contractors",
+      "A": "Aesthetic Creativity",
+      "B": "Practical Utility"
+    },
+    "canonical_keys": {
+      "X": "architects",
+      "Y": "contractors",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 0.6861709236073658,
+    "p_value": 0.06328,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "architect",
+        "designer",
+        "planner",
+        "draftsman",
+        "drafter",
+        "engineer",
+        "surveyor",
+        "consultant",
+        "director",
+        "partner",
+        "associate",
+        "principal",
+        "specialist",
+        "professional",
+        "manager"
+      ],
+      "Y_used": [
+        "contractor",
+        "builder",
+        "carpenter",
+        "mason",
+        "plumber",
+        "electrician",
+        "painter",
+        "roofer",
+        "welder",
+        "laborer",
+        "worker",
+        "tradesman",
+        "superintendent",
+        "foreman",
+        "apprentice"
+      ],
+      "A_used": [
+        "creative",
+        "original",
+        "innovative",
+        "artistic",
+        "aesthetic",
+        "beautiful",
+        "imaginative",
+        "inspired",
+        "unique",
+        "distinct",
+        "novel",
+        "expressive",
+        "conceptual",
+        "abstract",
+        "experimental"
+      ],
+      "B_used": [
+        "practical",
+        "pragmatic",
+        "functional",
+        "applied",
+        "effective",
+        "efficient",
+        "sturdy",
+        "durable",
+        "robust",
+        "useful",
+        "sensible",
+        "logical",
+        "rational",
+        "material",
+        "concrete"
+      ]
+    },
+    "proposal": "People associate architects with aesthetic originality more strongly than they associate contractors with aesthetic originality. This implicit bias reflects contemporary cultural narratives that frame architects as visionary creators of space while casting contractors as purely pragmatic executors bound by practical constraints. Investigating this association is novel because prior research has focused on explicit stereotypes regarding trustworthiness or technical competence, leaving the implicit creative hierarchy unexamined. The finding matters because it reveals how mental representations of the built environment artificially separate conception from realization, potentially reinforcing undervaluations of skilled trade labor and obscuring the deeply collaborative nature of design implementation.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "f3314c61c62c",
     "timestamp": "2026-05-06T17:45:40.791526+00:00",
     "schema_version": "autoresearch.v1",
