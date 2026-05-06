@@ -1,5 +1,111 @@
 [
   {
+    "id": "057b713c5f68",
+    "timestamp": "2026-05-06T01:16:07.514372+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "singers vs instrumentalists on emotional exposure vs shielding",
+    "labels": {
+      "X": "singers",
+      "Y": "instrumentalists",
+      "A": "vulnerability",
+      "B": "protection"
+    },
+    "canonical_keys": {
+      "X": "singers",
+      "Y": "instrumentalists",
+      "A": "vulnerability",
+      "B": "protection"
+    },
+    "effect_size": 0.5572728837161076,
+    "p_value": 0.1344,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "singer",
+        "vocalist",
+        "tenor",
+        "soprano",
+        "alto",
+        "baritone",
+        "bass",
+        "crooner",
+        "chorister",
+        "soloist",
+        "diva",
+        "balladeer",
+        "cantor",
+        "countertenor",
+        "contralto"
+      ],
+      "Y_used": [
+        "guitarist",
+        "pianist",
+        "violinist",
+        "cellist",
+        "flautist",
+        "trumpeter",
+        "drummer",
+        "bassist",
+        "saxophonist",
+        "harpist",
+        "percussionist",
+        "organist",
+        "clarinetist",
+        "trombonist",
+        "violist"
+      ],
+      "A_used": [
+        "vulnerable",
+        "fragile",
+        "defenseless",
+        "raw",
+        "open",
+        "sensitive",
+        "susceptible",
+        "unprotected",
+        "weak",
+        "delicate",
+        "liable",
+        "tender",
+        "naked",
+        "exposed",
+        "prone"
+      ],
+      "B_used": [
+        "strong",
+        "protected",
+        "resilient",
+        "shielded",
+        "tough",
+        "safe",
+        "secure",
+        "armored",
+        "guarded",
+        "robust",
+        "solid",
+        "fortified",
+        "defended",
+        "sturdy",
+        "invulnerable"
+      ]
+    },
+    "proposal": "People associate singers with vulnerability more strongly than they associate instrumentalists with vulnerability. This differential association likely stems from the physical and expressive nature of vocal performance, where singers bare their voices and faces directly to an audience without the mediating shield of an object, whereas instrumentalists often hide behind or interact with their instruments. Examining this association is novel because implicit cognition research on musicians has rarely distinguished between vocal and instrumental performers, focusing instead on broad 'musician' stereotypes or comparing musicians to other professions. It is relevant and important because such an association could bias how audiences, educators, and industry professionals perceive risk, authenticity, and emotional exposure, potentially influencing hiring decisions, social support, and the allocation of resources to vocal versus instrumental training.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "7f703092adc6",
     "timestamp": "2026-05-05T22:46:55.509199+00:00",
     "schema_version": "autoresearch.v1",
