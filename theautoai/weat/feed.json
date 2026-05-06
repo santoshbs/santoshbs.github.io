@@ -1,5 +1,111 @@
 [
   {
+    "id": "922f74279599",
+    "timestamp": "2026-05-06T03:59:01.117100+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Musicians vs Athletes on longevity versus decline",
+    "labels": {
+      "X": "Musicians",
+      "Y": "Athletes",
+      "A": "enduring",
+      "B": "declining"
+    },
+    "canonical_keys": {
+      "X": "musicians",
+      "Y": "athletes",
+      "A": "enduring",
+      "B": "declining"
+    },
+    "effect_size": 0.3224628892813459,
+    "p_value": 0.39446,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "musician",
+        "singer",
+        "pianist",
+        "guitarist",
+        "drummer",
+        "vocalist",
+        "cellist",
+        "violinist",
+        "conductor",
+        "composer",
+        "organist",
+        "harpist",
+        "flutist",
+        "trumpeter",
+        "bassist"
+      ],
+      "Y_used": [
+        "athlete",
+        "runner",
+        "swimmer",
+        "sprinter",
+        "marathoner",
+        "cyclist",
+        "rower",
+        "boxer",
+        "wrestler",
+        "gymnast",
+        "footballer",
+        "golfer",
+        "skater",
+        "skier",
+        "diver"
+      ],
+      "A_used": [
+        "lasting",
+        "enduring",
+        "permanent",
+        "sustained",
+        "resilient",
+        "abiding",
+        "perpetual",
+        "continuous",
+        "persistent",
+        "timeless",
+        "steadfast",
+        "unending",
+        "prolonged",
+        "durable",
+        "robust"
+      ],
+      "B_used": [
+        "declining",
+        "fading",
+        "transient",
+        "fleeting",
+        "temporary",
+        "perishable",
+        "decaying",
+        "diminishing",
+        "shrinking",
+        "expiring",
+        "ending",
+        "vanishing",
+        "weakening",
+        "deteriorating",
+        "crumbling"
+      ]
+    },
+    "proposal": "People associate Musicians with longevity more strongly than they associate Athletes with longevity. This differential association suggests that the public implicitly views musical artistry as a craft that endures and deepens with age, while viewing athletic prowess as a trait that peaks early and declines sharply. This is novel because it contrasts two high-performance categories often grouped together, revealing a hidden bias about how time and aging affect perceived capability in creative versus physical domains. Understanding this implicit link matters because it shapes how society values, retains, and supports aging professionals in these distinct industries, potentially influencing funding, media representation, and career transition policies.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "af0dc91bcde3",
     "timestamp": "2026-05-06T02:11:51.049445+00:00",
     "schema_version": "autoresearch.v1",
