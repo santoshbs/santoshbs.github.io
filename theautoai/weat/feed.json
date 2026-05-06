@@ -1,5 +1,111 @@
 [
   {
+    "id": "3d25f9ca5472",
+    "timestamp": "2026-05-06T09:35:01.566943+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "therapists vs builders on moral permissiveness vs strictness",
+    "labels": {
+      "X": "therapists",
+      "Y": "builders",
+      "A": "moral permissiveness",
+      "B": "moral strictness"
+    },
+    "canonical_keys": {
+      "X": "therapists",
+      "Y": "builders",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 1.0971277434520648,
+    "p_value": 0.00234,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "therapist",
+        "counselor",
+        "psychologist",
+        "psychiatrist",
+        "clinician",
+        "psychotherapist",
+        "psychoanalyst",
+        "shrink",
+        "analyst",
+        "healer",
+        "practitioner",
+        "doctor",
+        "guide",
+        "helper",
+        "advisor"
+      ],
+      "Y_used": [
+        "builder",
+        "contractor",
+        "carpenter",
+        "mason",
+        "laborer",
+        "tradesman",
+        "craftsman",
+        "handyman",
+        "bricklayer",
+        "welder",
+        "plumber",
+        "electrician",
+        "foreman",
+        "technician",
+        "mechanic"
+      ],
+      "A_used": [
+        "permissive",
+        "liberal",
+        "tolerant",
+        "accepting",
+        "lenient",
+        "indulgent",
+        "open",
+        "flexible",
+        "progressive",
+        "free",
+        "relaxed",
+        "easygoing",
+        "unconventional",
+        "alternative",
+        "experimental"
+      ],
+      "B_used": [
+        "strict",
+        "conservative",
+        "traditional",
+        "conventional",
+        "rigid",
+        "dogmatic",
+        "austere",
+        "disciplined",
+        "principled",
+        "orthodox",
+        "classic",
+        "proper",
+        "respectable",
+        "wholesome",
+        "upright"
+      ]
+    },
+    "proposal": "People associate therapists with moral permissiveness more strongly than they associate builders with moral permissiveness. This differential implicit association examines how the clinical training in non-judgment and value neutrality required in psychotherapy cognitively maps onto broader public stereotypes about personal morality. While the therapeutic mandate emphasizes accepting diverse lifestyles and unconventional choices, the practical, problem-solving ethos of construction trades is culturally linked to traditional, functional, and straightforward ethical frameworks. Probing this association is novel because implicit bias research has largely focused on warmth, competence, or logic-emotion dichotomies, leaving the moral-permissiveness axis unexamined. Understanding this hidden link matters because it reveals how professional clinical norms may inadvertently fuel cross-class moral stereotyping, shaping public trust and political polarization in contemporary discourse.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "8ccf034a68ac",
     "timestamp": "2026-05-06T08:13:51.563859+00:00",
     "schema_version": "autoresearch.v1",
