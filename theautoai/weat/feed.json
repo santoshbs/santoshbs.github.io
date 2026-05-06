@@ -1,5 +1,111 @@
 [
   {
+    "id": "4c67d6548525",
+    "timestamp": "2026-05-06T10:27:41.825517+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "missionaries vs monks on social orientation",
+    "labels": {
+      "X": "missionaries",
+      "Y": "monks",
+      "A": "extroversion",
+      "B": "introversion"
+    },
+    "canonical_keys": {
+      "X": "missionaries",
+      "Y": "monks",
+      "A": "extroversion",
+      "B": "introversion"
+    },
+    "effect_size": 1.3313292782744284,
+    "p_value": 0.0001,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "missionary",
+        "evangelist",
+        "proselytizer",
+        "apostle",
+        "preacher",
+        "clergyman",
+        "minister",
+        "pastor",
+        "vicar",
+        "reverend",
+        "chaplain",
+        "deacon",
+        "evangelizer",
+        "catechist",
+        "revivalist"
+      ],
+      "Y_used": [
+        "monk",
+        "friar",
+        "hermit",
+        "brother",
+        "novice",
+        "recluse",
+        "ascetic",
+        "anchorite",
+        "contemplative",
+        "aspirant",
+        "eremite",
+        "dervish",
+        "yogi",
+        "sadhu",
+        "mystic"
+      ],
+      "A_used": [
+        "outgoing",
+        "extroverted",
+        "sociable",
+        "gregarious",
+        "talkative",
+        "assertive",
+        "active",
+        "energetic",
+        "enthusiastic",
+        "bold",
+        "lively",
+        "friendly",
+        "cheerful",
+        "popular",
+        "social"
+      ],
+      "B_used": [
+        "introverted",
+        "reserved",
+        "quiet",
+        "isolated",
+        "introspective",
+        "reflective",
+        "withdrawn",
+        "shy",
+        "secluded",
+        "inward",
+        "thoughtful",
+        "meditative",
+        "reclusive",
+        "solitary",
+        "passive"
+      ]
+    },
+    "proposal": "People associate missionaries with extroversion more strongly than they associate monks with extroversion. This differential implicit association reflects the cultural dichotomy between active, outward-facing proselytizing and contemplative, inward-facing spiritual practice. Examining this association is novel because implicit bias research has rarely distinguished between these two major forms of religious vocation, focusing instead on broad religious identities. Confirming this association would demonstrate that the public implicitly maps personality traits onto specific religious roles, reinforcing stereotypes about the behavioral norms of evangelicals versus contemplatives. Disconfirming it would suggest that people do not automatically link religious function to social orientation, challenging assumptions about how religious archetypes are mentally represented.",
+    "iterations": 3,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "3d25f9ca5472",
     "timestamp": "2026-05-06T09:35:01.566943+00:00",
     "schema_version": "autoresearch.v1",
