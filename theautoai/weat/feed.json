@@ -1,5 +1,111 @@
 [
   {
+    "id": "af0dc91bcde3",
+    "timestamp": "2026-05-06T02:11:51.049445+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "sailors vs merchants on courage vs caution",
+    "labels": {
+      "X": "sailors",
+      "Y": "merchants",
+      "A": "courage",
+      "B": "caution"
+    },
+    "canonical_keys": {
+      "X": "sailors",
+      "Y": "merchants",
+      "A": "courage",
+      "B": "caution"
+    },
+    "effect_size": 1.6482468942927868,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "sailor",
+        "seaman",
+        "mariner",
+        "captain",
+        "skipper",
+        "navigator",
+        "deckhand",
+        "helmsman",
+        "fisherman",
+        "pirate",
+        "whaler",
+        "yachtsman",
+        "seafarer",
+        "pilot",
+        "rower"
+      ],
+      "Y_used": [
+        "merchant",
+        "trader",
+        "dealer",
+        "broker",
+        "salesman",
+        "shopkeeper",
+        "retailer",
+        "wholesaler",
+        "importer",
+        "exporter",
+        "buyer",
+        "vendor",
+        "peddler",
+        "huckster",
+        "tradesman"
+      ],
+      "A_used": [
+        "brave",
+        "courageous",
+        "valiant",
+        "bold",
+        "daring",
+        "heroic",
+        "fearless",
+        "plucky",
+        "intrepid",
+        "stalwart",
+        "gallant",
+        "audacious",
+        "resolute",
+        "staunch",
+        "dauntless"
+      ],
+      "B_used": [
+        "cautious",
+        "careful",
+        "prudent",
+        "calculating",
+        "conservative",
+        "guarded",
+        "wary",
+        "hesitant",
+        "timid",
+        "fearful",
+        "apprehensive",
+        "nervous",
+        "shy",
+        "circumspect",
+        "deliberate"
+      ]
+    },
+    "proposal": "People associate sailors with courage more strongly than they associate merchants with courage. This differential association is novel because, while both groups historically engage in high-stakes, unpredictable endeavors, cultural narratives and folklore overwhelmingly romanticize the physical bravery of sailors facing the elements and the unknown, whereas merchants are stereotypically framed as calculative, cautious, and motivated by profit rather than heroic valor. Examining this association matters because it reveals how society implicitly differentiates between physical risk-taking and financial risk-taking, potentially undervaluing the resilience inherent in commercial ventures while over-romanticizing maritime labor. Confirming or disconfirming this would shift our understanding of how historical archetypes of bravery persist in modern mental representations of occupational roles.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "057b713c5f68",
     "timestamp": "2026-05-06T01:16:07.514372+00:00",
     "schema_version": "autoresearch.v1",
