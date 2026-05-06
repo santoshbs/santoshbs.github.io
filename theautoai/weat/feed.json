@@ -1,5 +1,111 @@
 [
   {
+    "id": "87e0b87001da",
+    "timestamp": "2026-05-06T06:53:34.410953+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "activists vs capitalists on temporal urgency versus patience",
+    "labels": {
+      "X": "activists",
+      "Y": "capitalists",
+      "A": "urgency",
+      "B": "patience"
+    },
+    "canonical_keys": {
+      "X": "activists",
+      "Y": "capitalists",
+      "A": "urgency",
+      "B": "patience"
+    },
+    "effect_size": 0.6604040793520469,
+    "p_value": 0.07463,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "activists",
+        "protesters",
+        "demonstrators",
+        "campaigners",
+        "reformers",
+        "radicals",
+        "revolutionaries",
+        "organizers",
+        "advocates",
+        "militants",
+        "dissidents",
+        "crusaders",
+        "agitators",
+        "progressives",
+        "unionists"
+      ],
+      "Y_used": [
+        "capitalists",
+        "entrepreneurs",
+        "investors",
+        "executives",
+        "magnates",
+        "tycoons",
+        "owners",
+        "industrialists",
+        "plutocrats",
+        "financiers",
+        "shareholders",
+        "millionaires",
+        "billionaires",
+        "moguls",
+        "bankers"
+      ],
+      "A_used": [
+        "urgent",
+        "immediate",
+        "pressing",
+        "frantic",
+        "hasty",
+        "rushed",
+        "emergency",
+        "crisis",
+        "critical",
+        "imperative",
+        "sudden",
+        "instant",
+        "rapid",
+        "swift",
+        "quick"
+      ],
+      "B_used": [
+        "patient",
+        "enduring",
+        "gradual",
+        "slow",
+        "steady",
+        "measured",
+        "deliberate",
+        "careful",
+        "calculated",
+        "strategic",
+        "sustained",
+        "persistent",
+        "unhurried",
+        "methodical",
+        "systematic"
+      ]
+    },
+    "proposal": "People associate activists with moral urgency more strongly than they associate capitalists with moral urgency. This differential implicit association reflects contemporary discourse framing social movement participants as driven by immediate ethical imperatives, while capitalist actors are typically constructed around calculative patience and long-term market cycles. Examining this linkage is novel because prior work has focused on explicit attitudes toward economic systems or political ideologies, rather than the automatic temporal-moral valence attached to these specific social roles. The finding matters for understanding how moral motivation is implicitly allocated in public imagination, potentially shaping perceptions of legitimacy, radicalism, and appropriate spheres of influence for each group.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "0b93b92038be",
     "timestamp": "2026-05-06T05:29:52.437820+00:00",
     "schema_version": "autoresearch.v1",
