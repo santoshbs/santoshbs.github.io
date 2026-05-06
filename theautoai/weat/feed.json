@@ -1,5 +1,111 @@
 [
   {
+    "id": "3b9ae323d2a9",
+    "timestamp": "2026-05-06T14:58:09.663070+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "underdogs vs favorites on hope vs inevitability/stagnation",
+    "labels": {
+      "X": "underdogs",
+      "Y": "favorites",
+      "A": "hope",
+      "B": "stagnation"
+    },
+    "canonical_keys": {
+      "X": "underdogs",
+      "Y": "favorites",
+      "A": "hope",
+      "B": "stagnation"
+    },
+    "effect_size": -0.9211508989732136,
+    "p_value": 0.0111,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "underdog",
+        "challenger",
+        "contender",
+        "rookie",
+        "outsider",
+        "novice",
+        "amateur",
+        "beginner",
+        "apprentice",
+        "student",
+        "learner",
+        "junior",
+        "recruit",
+        "cadet",
+        "volunteer"
+      ],
+      "Y_used": [
+        "favorite",
+        "winner",
+        "champion",
+        "victor",
+        "leader",
+        "frontrunner",
+        "headliner",
+        "star",
+        "celebrity",
+        "icon",
+        "idol",
+        "hero",
+        "legend",
+        "superstar",
+        "ace"
+      ],
+      "A_used": [
+        "hope",
+        "optimism",
+        "aspiration",
+        "dream",
+        "vision",
+        "inspiration",
+        "motivation",
+        "ambition",
+        "desire",
+        "wish",
+        "longing",
+        "yearning",
+        "craving",
+        "passion",
+        "fervor"
+      ],
+      "B_used": [
+        "inevitable",
+        "predictable",
+        "routine",
+        "stagnant",
+        "certain",
+        "settled",
+        "complacent",
+        "dull",
+        "tedious",
+        "monotonous",
+        "repetitive",
+        "habitual",
+        "customary",
+        "boring",
+        "safe"
+      ]
+    },
+    "proposal": "People associate underdogs with hope more strongly than they associate favorites with hope. This probes the cultural 'underdog effect,' suggesting that we implicitly link the status of being an outsider or expected loser with the positive, future-oriented emotion of hope, while linking the status of being the expected winner with inevitability, satisfaction, or even stagnation. Confirming this association would reveal how status hierarchies are emotionally coded, showing that we reserve the moral and emotional currency of 'hope' for those perceived to be lacking power, rather than distributing it neutrally based on merit or likelihood of success. It matters because this implicit bias may reinforce 'victimhood' as a prerequisite for moral and emotional legitimacy, shaping how political candidates, sports teams, and social movements are framed and supported.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "b49b763be04a",
     "timestamp": "2026-05-06T13:11:14.426196+00:00",
     "schema_version": "autoresearch.v1",
