@@ -1,5 +1,111 @@
 [
   {
+    "id": "9c7909965a1c",
+    "timestamp": "2026-05-06T22:01:14.663924+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "booksellers vs librarians on commercial vs public service orientation",
+    "labels": {
+      "X": "booksellers",
+      "Y": "librarians",
+      "A": "commercial",
+      "B": "public_service"
+    },
+    "canonical_keys": {
+      "X": "booksellers",
+      "Y": "librarians",
+      "A": "commercial",
+      "B": ""
+    },
+    "effect_size": 1.55096107417609,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "bookseller",
+        "bookdealer",
+        "shopkeeper",
+        "retailer",
+        "vendor",
+        "seller",
+        "merchant",
+        "salesman",
+        "salesperson",
+        "clerk",
+        "cashier",
+        "antiquarian",
+        "trader",
+        "dealer",
+        "shopowner"
+      ],
+      "Y_used": [
+        "librarian",
+        "archivist",
+        "curator",
+        "educator",
+        "teacher",
+        "academic",
+        "scholar",
+        "researcher",
+        "assistant",
+        "director",
+        "manager",
+        "administrator",
+        "worker",
+        "staff",
+        "employee"
+      ],
+      "A_used": [
+        "profit",
+        "market",
+        "sell",
+        "commercial",
+        "business",
+        "money",
+        "trade",
+        "retail",
+        "consumer",
+        "capital",
+        "investment",
+        "financial",
+        "economic",
+        "corporate",
+        "enterprise"
+      ],
+      "B_used": [
+        "public",
+        "civic",
+        "community",
+        "free",
+        "charitable",
+        "government",
+        "state",
+        "federal",
+        "municipal",
+        "social",
+        "welfare",
+        "service",
+        "education",
+        "knowledge",
+        "access"
+      ]
+    },
+    "proposal": "People associate booksellers with commercialism more strongly than they associate librarians with commercialism. This differential implicit association reflects how public discourse frames knowledge access: bookstores are routinely discussed in terms of market dynamics, profit margins, and consumer choice, whereas libraries are framed around civic duty, public funding, and non-commercial service. Probing this bias is novel because prior implicit association research has focused on high-status professional contrasts rather than adjacent cultural intermediaries that share identical core objects but differ in institutional mission. Confirming this association would reveal how deeply the public mentally partitions free public goods from market commodities, which matters for public support policies and debates over the privatization of educational resources.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "05a302e01df5",
     "timestamp": "2026-05-06T20:38:24.617705+00:00",
     "schema_version": "autoresearch.v1",
