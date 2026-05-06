@@ -1,5 +1,111 @@
 [
   {
+    "id": "e69fd6f21842",
+    "timestamp": "2026-05-06T04:50:25.413980+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "artisans vs workers on aesthetic versus utilitarian valuation",
+    "labels": {
+      "X": "artisans",
+      "Y": "workers",
+      "A": "aesthetic",
+      "B": "utilitarian"
+    },
+    "canonical_keys": {
+      "X": "artisans",
+      "Y": "workers",
+      "A": "aesthetic",
+      "B": "utilitarian"
+    },
+    "effect_size": 1.688827740660492,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "carpenter",
+        "potter",
+        "jeweler",
+        "tailor",
+        "weaver",
+        "sculptor",
+        "painter",
+        "craftsman",
+        "seamstress",
+        "mason",
+        "luthier",
+        "glazier",
+        "engraver",
+        "carver",
+        "turner"
+      ],
+      "Y_used": [
+        "laborer",
+        "clerk",
+        "driver",
+        "operator",
+        "attendant",
+        "porter",
+        "janitor",
+        "mechanic",
+        "cashier",
+        "courier",
+        "dispatcher",
+        "supervisor",
+        "guard",
+        "helper",
+        "cleaner"
+      ],
+      "A_used": [
+        "beautiful",
+        "elegant",
+        "artistic",
+        "creative",
+        "graceful",
+        "lovely",
+        "refined",
+        "exquisite",
+        "charming",
+        "stylish",
+        "ornate",
+        "delicate",
+        "expressive",
+        "harmonious",
+        "sophisticated"
+      ],
+      "B_used": [
+        "functional",
+        "practical",
+        "utilitarian",
+        "ordinary",
+        "routine",
+        "standard",
+        "basic",
+        "simple",
+        "industrial",
+        "systematic",
+        "logical",
+        "necessary",
+        "mundane",
+        "plain",
+        "serviceable"
+      ]
+    },
+    "proposal": "People associate artisans with aesthetic qualities more strongly than they associate workers with aesthetic qualities. While implicit bias research has extensively mapped class-based associations regarding competence, warmth, and morality, the specific dimension of aesthetic valuation remains underexplored for this pair, despite its prevalence in contemporary discourse. Cultural narratives often romanticize 'maker' identities—linking artisans to beauty, refinement, and creative expression—while framing generic labor through a utilitarian lens that emphasizes function, drudgery, or interchangeability. This differential association matters because it reveals how aesthetic discourse can reinforce economic hierarchies, valorizing certain forms of skilled production while obscuring the aesthetic and creative dimensions of broader manual and service labor.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "922f74279599",
     "timestamp": "2026-05-06T03:59:01.117100+00:00",
     "schema_version": "autoresearch.v1",
