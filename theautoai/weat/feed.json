@@ -1,5 +1,111 @@
 [
   {
+    "id": "0a08ba4e57b1",
+    "timestamp": "2026-05-07T21:29:49.074550+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "journalists vs scientists on temporal urgency versus methodical pacing",
+    "labels": {
+      "X": "journalists",
+      "Y": "scientists",
+      "A": "immediacy",
+      "B": "deliberation"
+    },
+    "canonical_keys": {
+      "X": "journalists",
+      "Y": "scientists",
+      "A": "immediacy",
+      "B": "deliberation"
+    },
+    "effect_size": 1.703370120508957,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "journalist",
+        "reporter",
+        "correspondent",
+        "anchor",
+        "broadcaster",
+        "newscaster",
+        "commentator",
+        "columnist",
+        "pressman",
+        "editor",
+        "newswriter",
+        "stringer",
+        "newsman",
+        "newsperson",
+        "writer"
+      ],
+      "Y_used": [
+        "scientist",
+        "researcher",
+        "chemist",
+        "physicist",
+        "biologist",
+        "geologist",
+        "astronomer",
+        "mathematician",
+        "engineer",
+        "academic",
+        "scholar",
+        "expert",
+        "specialist",
+        "clinician",
+        "geneticist"
+      ],
+      "A_used": [
+        "fast",
+        "quick",
+        "rapid",
+        "instant",
+        "immediate",
+        "urgent",
+        "swift",
+        "speedy",
+        "hasty",
+        "prompt",
+        "haste",
+        "sudden",
+        "momentary",
+        "fleeting",
+        "rush"
+      ],
+      "B_used": [
+        "slow",
+        "methodical",
+        "careful",
+        "gradual",
+        "extended",
+        "iterative",
+        "patient",
+        "thorough",
+        "precise",
+        "steady",
+        "long",
+        "deep",
+        "rigorous",
+        "systematic",
+        "deliberate"
+      ]
+    },
+    "proposal": "People associate journalists with immediacy more strongly than they associate scientists with immediacy. This differential implicit association reflects the cultural framing of news media as driven by breaking cycles and real-time urgency, contrasted with the public perception of scientific research as methodical, iterative, and temporally extended. While explicit media literacy education often addresses source credibility, the automatic temporal linkage remains unexamined in implicit association paradigms. Testing this matters because it reveals whether laypeople’s mental shortcuts automatically conflate journalistic speed with relevance while implicitly penalizing scientific deliberation as detachment, potentially shaping how society prioritizes information during crises.",
+    "iterations": 3,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "5e80c25296ab",
     "timestamp": "2026-05-07T14:09:02.081421+00:00",
     "schema_version": "autoresearch.v1",
