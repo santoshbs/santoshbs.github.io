@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "batches_seen": 199,
-  "loans_seen": 3184,
-  "last_updated": "2026-05-07T14:37:09.018389+00:00",
+  "batches_seen": 200,
+  "loans_seen": 3200,
+  "last_updated": "2026-05-07T15:40:23.439477+00:00",
   "watching_for": "",
   "claims": {
     "institutional-names-slower": {
@@ -13,10 +13,10 @@
       "supporting_loans": [],
       "confidence": 0.65,
       "first_seen_batch": 1,
-      "last_updated_batch": 199,
+      "last_updated_batch": 200,
       "confidence_history": [
         [
-          199,
+          200,
           0.65
         ]
       ]
@@ -29,10 +29,10 @@
       "supporting_loans": [],
       "confidence": 1.0,
       "first_seen_batch": 1,
-      "last_updated_batch": 199,
+      "last_updated_batch": 200,
       "confidence_history": [
         [
-          199,
+          200,
           1.0
         ]
       ]
@@ -45,10 +45,10 @@
       "supporting_loans": [],
       "confidence": 1.0,
       "first_seen_batch": 1,
-      "last_updated_batch": 199,
+      "last_updated_batch": 200,
       "confidence_history": [
         [
-          199,
+          200,
           1.0
         ]
       ]
@@ -59,13 +59,13 @@
       "title": "Female borrowers who mention benefits to their family or community fund faster.",
       "body": "Pitches from women that highlight how the loan will benefit their family or the wider community tend to accelerate funding speed.",
       "supporting_loans": [],
-      "confidence": 0.71,
+      "confidence": 0.75,
       "first_seen_batch": 1,
-      "last_updated_batch": 199,
+      "last_updated_batch": 200,
       "confidence_history": [
         [
-          199,
-          0.71
+          200,
+          0.75
         ]
       ]
     },
@@ -75,13 +75,13 @@
       "title": "Mentioning benefits for children predicts faster funding regardless of gender.",
       "body": "Pitches that highlight social or educational benefits for children tend to accelerate funding for both men and women.",
       "supporting_loans": [],
-      "confidence": 0.9,
+      "confidence": 0.93,
       "first_seen_batch": 1,
-      "last_updated_batch": 199,
+      "last_updated_batch": 200,
       "confidence_history": [
         [
-          199,
-          0.9
+          200,
+          0.93
         ]
       ]
     },
@@ -92,11 +92,11 @@
       "body": "Pitches that include the specific duration of business operation or professional experience tend to accelerate funding for both men and women.",
       "supporting_loans": [],
       "confidence": 0.55,
-      "first_seen_batch": 161,
-      "last_updated_batch": 199,
+      "first_seen_batch": 160,
+      "last_updated_batch": 200,
       "confidence_history": [
         [
-          199,
+          200,
           0.55
         ]
       ]
@@ -106,62 +106,55 @@
     "male-geographic-specificity-slower": {
       "id": "male-geographic-specificity-slower",
       "body": "Male borrowers who mention specific geographic locations may fund more slowly.",
-      "first_seen_batch": 153
+      "first_seen_batch": 152
     },
     "male-length-slower": {
       "id": "male-length-slower",
       "body": "Longer pitch text may predict slower funding for male borrowers.",
-      "first_seen_batch": 153
-    },
-    "female-cliche-family-slower": {
-      "id": "female-cliche-family-slower",
-      "body": "Female borrowers using clich\u00e9d phrases about family futures may fund more slowly.",
-      "first_seen_batch": 153
+      "first_seen_batch": 152
     },
     "female-status-mention-slower": {
       "id": "female-status-mention-slower",
       "body": "Mentioning marital status or children without specifying benefits may slow funding for women.",
-      "first_seen_batch": 161
+      "first_seen_batch": 160
     },
     "female-local-currency-faster": {
       "id": "female-local-currency-faster",
       "body": "Female borrowers who specify the loan amount in local currency may fund faster.",
-      "first_seen_batch": 171
+      "first_seen_batch": 170
     },
     "female-age-education-faster": {
       "id": "female-age-education-faster",
       "body": "Female borrowers who mention their age and education level may fund faster.",
-      "first_seen_batch": 179
+      "first_seen_batch": 178
     },
     "female-infrastructure-goals-slower": {
       "id": "female-infrastructure-goals-slower",
       "body": "Female borrowers who mention long-term infrastructure goals, such as building a house or stall, may fund more slowly.",
-      "first_seen_batch": 183
+      "first_seen_batch": 182
     },
     "male-personal-background-faster": {
       "id": "male-personal-background-faster",
       "body": "Male borrowers who include specific details about personal background or secondary income may fund faster.",
-      "first_seen_batch": 187
+      "first_seen_batch": 186
     },
     "male-experience-scale-slower": {
       "id": "male-experience-scale-slower",
       "body": "Male borrowers who emphasize the length of their experience or the scale of their operation may fund more slowly.",
-      "first_seen_batch": 187
+      "first_seen_batch": 186
     },
     "female-no-dependents-faster": {
       "id": "female-no-dependents-faster",
       "body": "Mentioning the absence of dependent children may accelerate funding for female borrowers.",
-      "first_seen_batch": 199
+      "first_seen_batch": 198
+    },
+    "female-hardworking-mother-faster": {
+      "id": "female-hardworking-mother-faster",
+      "body": "Female borrowers using the phrase 'hardworking mother' may fund faster.",
+      "first_seen_batch": 200
     }
   },
   "retired": {
-    "female-marital-status-slower": {
-      "id": "female-marital-status-slower",
-      "title": "Explicitly stating marital status may predict slower funding for female borrowers.",
-      "retrospective": "Stale puzzle dropped to make room for new observations.",
-      "retired_batch": 179,
-      "was_believed_batches": 0
-    },
     "male-daily-routine-faster": {
       "id": "male-daily-routine-faster",
       "title": "Detailed daily routines may accelerate funding for male borrowers.",
@@ -223,6 +216,13 @@
       "title": "Mentioning status as a repeat borrower may accelerate funding for male borrowers.",
       "retrospective": "Stale puzzle dropped to make room for new observation.",
       "retired_batch": 199,
+      "was_believed_batches": 0
+    },
+    "female-cliche-family-slower": {
+      "id": "female-cliche-family-slower",
+      "title": "Female borrowers using clich\u00e9d phrases about family futures may fund more slowly.",
+      "retrospective": "Stale puzzle dropped to make room for new observation regarding identity markers.",
+      "retired_batch": 200,
       "was_believed_batches": 0
     }
   }
