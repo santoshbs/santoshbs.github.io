@@ -1,5 +1,111 @@
 [
   {
+    "id": "86e4b415f40c",
+    "timestamp": "2026-05-07T08:16:18.809704+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "coaches vs referees on emotional warmth vs impartial detachment",
+    "labels": {
+      "X": "coaches",
+      "Y": "referees",
+      "A": "empathy",
+      "B": "detachment"
+    },
+    "canonical_keys": {
+      "X": "coaches",
+      "Y": "referees",
+      "A": "empathy",
+      "B": "detachment"
+    },
+    "effect_size": 1.6818977268479018,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "coach",
+        "trainer",
+        "mentor",
+        "tutor",
+        "instructor",
+        "educator",
+        "teacher",
+        "advisor",
+        "counselor",
+        "guide",
+        "facilitator",
+        "director",
+        "supervisor",
+        "manager",
+        "captain"
+      ],
+      "Y_used": [
+        "referee",
+        "umpire",
+        "official",
+        "linesman",
+        "judge",
+        "moderator",
+        "arbiter",
+        "arbitrator",
+        "adjudicator",
+        "enforcer",
+        "marshal",
+        "warden",
+        "guard",
+        "monitor",
+        "inspector"
+      ],
+      "A_used": [
+        "empathy",
+        "compassion",
+        "sympathy",
+        "kindness",
+        "warmth",
+        "caring",
+        "affection",
+        "support",
+        "understanding",
+        "gentle",
+        "tender",
+        "nurturing",
+        "protective",
+        "generous",
+        "considerate"
+      ],
+      "B_used": [
+        "cold",
+        "detached",
+        "strict",
+        "impartial",
+        "rigid",
+        "harsh",
+        "severe",
+        "indifferent",
+        "aloof",
+        "distant",
+        "stern",
+        "unfeeling",
+        "objective",
+        "impersonal",
+        "neutral"
+      ]
+    },
+    "proposal": "People associate coaches with empathy more strongly than they associate referees with empathy. This proposal probes the implicit representation of two ubiquitous figures in structured activity who play distinct normative roles: coaches are culturally framed as mentors invested in the personal development and well-being of participants, whereas referees are framed as neutral enforcers of rules whose primary obligation is to the game's integrity rather than the individuals playing it. Examining this association is novel because, while the functional difference is explicit, implicit measures can reveal whether the public mentally categorizes referees as inherently cold or detached in a way that goes beyond their role description, potentially influencing how blame is assigned or authority is perceived in conflict situations. This matters because it touches on broader perceptions of authority figures who are tasked with care versus those tasked with control, shedding light on the psychological distance attributed to different types of institutional actors.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "004b4f8a23e8",
     "timestamp": "2026-05-07T07:05:51.017728+00:00",
     "schema_version": "autoresearch.v1",
