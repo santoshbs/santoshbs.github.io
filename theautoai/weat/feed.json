@@ -1,5 +1,111 @@
 [
   {
+    "id": "5e80c25296ab",
+    "timestamp": "2026-05-07T14:09:02.081421+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Mendicants vs Monarchs on Spiritual Authority vs Worldly Power",
+    "labels": {
+      "X": "Mendicants",
+      "Y": "Monarchs",
+      "A": "Spiritual Authority",
+      "B": "Worldly Power"
+    },
+    "canonical_keys": {
+      "X": "mendicants",
+      "Y": "monarchs",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 1.141001413232324,
+    "p_value": 0.00098,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "beggar",
+        "monk",
+        "friar",
+        "ascetic",
+        "pilgrim",
+        "vagrant",
+        "pauper",
+        "hobo",
+        "hermit",
+        "recluse",
+        "seeker",
+        "wanderer",
+        "tramp",
+        "drifter",
+        "mendicant"
+      ],
+      "Y_used": [
+        "king",
+        "queen",
+        "emperor",
+        "empress",
+        "ruler",
+        "sovereign",
+        "prince",
+        "princess",
+        "monarch",
+        "regent",
+        "duke",
+        "duchess",
+        "lord",
+        "lady",
+        "tsar"
+      ],
+      "A_used": [
+        "god",
+        "holiness",
+        "divine",
+        "sacred",
+        "soul",
+        "prayer",
+        "faith",
+        "spirit",
+        "virtue",
+        "sanctity",
+        "grace",
+        "revelation",
+        "miracle",
+        "worship",
+        "temple"
+      ],
+      "B_used": [
+        "power",
+        "wealth",
+        "money",
+        "gold",
+        "luxury",
+        "palace",
+        "throne",
+        "army",
+        "war",
+        "conquest",
+        "status",
+        "prestige",
+        "politics",
+        "government",
+        "empire"
+      ]
+    },
+    "proposal": "People associate Mendicants with Spiritual Authority more strongly than they associate Monarchs with Spiritual Authority. This proposed differential reflects a pervasive cultural motif in which worldly power—symbolized by monarchs—is implicitly viewed as distinct from or even antithetical to divine legitimacy, whereas mendicants, who renounce material wealth, are linked to humility, sanctity, and unmediated access to the sacred. While explicit research has examined historical power dynamics or specific religious orders, no work has tested whether the public implicitly grants higher spiritual authority to the archetype of the destitute seeker over the sovereign ruler. Confirming this association would highlight how implicit hierarchies of legitimacy often invert secular rankings, favoring asceticism over sovereignty in the mental representation of spiritual power.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "8b5dc9182764",
     "timestamp": "2026-05-07T13:14:31.903457+00:00",
     "schema_version": "autoresearch.v1",
