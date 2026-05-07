@@ -1,5 +1,115 @@
 [
   {
+    "id": "3a84bccb33d0",
+    "timestamp": "2026-05-07T05:11:11.065953+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "critics vs fans on expertise vs emotion",
+    "labels": {
+      "X": "critics",
+      "Y": "fans",
+      "A": "expertise",
+      "B": "emotion"
+    },
+    "canonical_keys": {
+      "X": "critics",
+      "Y": "fans",
+      "A": "expertise",
+      "B": "emotion"
+    },
+    "effect_size": 1.4279215706035162,
+    "p_value": 0.0,
+    "n": {
+      "X": 16,
+      "Y": 16,
+      "A": 16,
+      "B": 16
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "critic",
+        "reviewer",
+        "evaluator",
+        "commentator",
+        "pundit",
+        "judge",
+        "assessor",
+        "examiner",
+        "connoisseur",
+        "arbiter",
+        "inspector",
+        "taster",
+        "selector",
+        "rater",
+        "appraiser",
+        "auditor"
+      ],
+      "Y_used": [
+        "fan",
+        "enthusiast",
+        "supporter",
+        "devotee",
+        "admirer",
+        "follower",
+        "partisan",
+        "loyalist",
+        "aficionado",
+        "buff",
+        "groupie",
+        "backer",
+        "booster",
+        "zealot",
+        "disciple",
+        "advocate"
+      ],
+      "A_used": [
+        "expertise",
+        "knowledge",
+        "skill",
+        "competence",
+        "mastery",
+        "proficiency",
+        "wisdom",
+        "talent",
+        "ability",
+        "acumen",
+        "intellect",
+        "genius",
+        "scholarship",
+        "understanding",
+        "erudition",
+        "aptitude"
+      ],
+      "B_used": [
+        "passion",
+        "emotion",
+        "love",
+        "zeal",
+        "fervor",
+        "affection",
+        "adoration",
+        "excitement",
+        "warmth",
+        "eagerness",
+        "fondness",
+        "ardor",
+        "rapture",
+        "infatuation",
+        "delight",
+        "joy"
+      ]
+    },
+    "proposal": "People associate critics with expertise more strongly than they associate fans with expertise. This differential implicit association probes whether the social role of evaluation is mentally linked to competence and knowledge, whereas the role of allegiance is linked to affect rather than appraisal. It is novel because implicit studies have largely ignored the critic-fan dichotomy, despite its centrality in online discourse, cancel culture, and 'fan wars.' Examining this association matters because it reveals latent biases about the epistemic value of different audience positions, potentially showing that mental representations privilege the posture of critique over the posture of support as a marker of intellectual authority.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "a280e7f0f1cb",
     "timestamp": "2026-05-07T04:39:42.967774+00:00",
     "schema_version": "autoresearch.v1",
