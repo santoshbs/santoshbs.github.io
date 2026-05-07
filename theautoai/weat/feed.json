@@ -1,5 +1,111 @@
 [
   {
+    "id": "a396154751b6",
+    "timestamp": "2026-05-07T10:15:51.265582+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "bureaucrats vs activists on moral-affective motivation",
+    "labels": {
+      "X": "bureaucrats",
+      "Y": "activists",
+      "A": "cynical pragmatism",
+      "B": "idealistic sincerity"
+    },
+    "canonical_keys": {
+      "X": "bureaucrats",
+      "Y": "activists",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 1.2874665716465032,
+    "p_value": 9e-05,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "bureaucrat",
+        "official",
+        "administrator",
+        "functionary",
+        "clerk",
+        "manager",
+        "regulator",
+        "director",
+        "secretary",
+        "inspector",
+        "auditor",
+        "commissioner",
+        "representative",
+        "executive",
+        "overseer"
+      ],
+      "Y_used": [
+        "activist",
+        "protester",
+        "campaigner",
+        "organizer",
+        "reformer",
+        "radical",
+        "advocate",
+        "demonstrator",
+        "crusader",
+        "unionist",
+        "dissenter",
+        "agitator",
+        "militant",
+        "reformist",
+        "volunteer"
+      ],
+      "A_used": [
+        "cynical",
+        "pragmatic",
+        "realistic",
+        "calculating",
+        "opportunistic",
+        "strategic",
+        "worldly",
+        "shrewd",
+        "manipulative",
+        "practical",
+        "grounded",
+        "sensible",
+        "cautious",
+        "conservative",
+        "diplomatic"
+      ],
+      "B_used": [
+        "idealistic",
+        "sincere",
+        "naive",
+        "passionate",
+        "principled",
+        "devoted",
+        "enthusiastic",
+        "optimistic",
+        "hopeful",
+        "visionary",
+        "pure",
+        "honest",
+        "genuine",
+        "earnest",
+        "zealous"
+      ]
+    },
+    "proposal": "People associate bureaucrats with cynical pragmatism more strongly than they associate activists with cynical pragmatism. This implicit link captures a latent cultural narrative that institutional administrators are fundamentally driven by self-interested maneuvering and procedural compromise, whereas grassroots organizers are viewed as ideologically sincere. The association is novel because prior implicit research has examined stereotypes of efficiency, rigidity, or corruption, but has not probed the moral-affective dimension of cynical realism versus idealistic naiveté. Disconfirming this link would suggest that public distrust of governance stems more from explicit political rhetoric than from automatic cognitive associations, which matters for designing interventions to restore institutional legitimacy.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "86e4b415f40c",
     "timestamp": "2026-05-07T08:16:18.809704+00:00",
     "schema_version": "autoresearch.v1",
