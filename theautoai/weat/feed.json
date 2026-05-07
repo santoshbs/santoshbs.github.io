@@ -1,5 +1,111 @@
 [
   {
+    "id": "8b5dc9182764",
+    "timestamp": "2026-05-07T13:14:31.903457+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "reviewers vs authors on affective valence",
+    "labels": {
+      "X": "reviewers",
+      "Y": "authors",
+      "A": "negative",
+      "B": "positive"
+    },
+    "canonical_keys": {
+      "X": "reviewers",
+      "Y": "authors",
+      "A": "negative",
+      "B": "positive"
+    },
+    "effect_size": 1.641214292062441,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "reviewer",
+        "critic",
+        "referee",
+        "evaluator",
+        "assessor",
+        "judge",
+        "grader",
+        "examiner",
+        "inspector",
+        "analyst",
+        "commentator",
+        "observer",
+        "monitor",
+        "auditor",
+        "censor"
+      ],
+      "Y_used": [
+        "author",
+        "writer",
+        "creator",
+        "novelist",
+        "poet",
+        "journalist",
+        "composer",
+        "illustrator",
+        "filmmaker",
+        "architect",
+        "designer",
+        "inventor",
+        "producer",
+        "contributor",
+        "scribe"
+      ],
+      "A_used": [
+        "negative",
+        "bad",
+        "poor",
+        "terrible",
+        "awful",
+        "horrible",
+        "dreadful",
+        "rotten",
+        "lousy",
+        "miserable",
+        "unpleasant",
+        "unfortunate",
+        "unfavorable",
+        "unsatisfactory",
+        "disappointing"
+      ],
+      "B_used": [
+        "positive",
+        "good",
+        "excellent",
+        "great",
+        "wonderful",
+        "fantastic",
+        "superb",
+        "outstanding",
+        "remarkable",
+        "brilliant",
+        "admirable",
+        "commendable",
+        "impressive",
+        "splendid",
+        "marvelous"
+      ]
+    },
+    "proposal": "People associate reviewers with negativity more strongly than they associate authors with negativity. While authors are culturally framed as creators who generate new content, reviewers are often stereotyped as gatekeepers whose primary function is to critique, find faults, or dismiss work, leading to an implicit link between the role of reviewing and negative valence or destructive evaluation. This association is novel because implicit bias research has largely focused on intergroup or professional competence stereotypes, rarely examining the evaluative dyad of creator versus critic within knowledge production. It matters because such an implicit bias could disincentivize individuals from engaging in peer review or critical analysis, or lead to the systematic devaluation of critical feedback in favor of uncritical creation.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "a396154751b6",
     "timestamp": "2026-05-07T10:15:51.265582+00:00",
     "schema_version": "autoresearch.v1",
