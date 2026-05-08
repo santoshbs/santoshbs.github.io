@@ -1,5 +1,111 @@
 [
   {
+    "id": "56527ce4c566",
+    "timestamp": "2026-05-08T02:13:20.055045+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "therapists vs surgeons on emotional transparency vs. insulation",
+    "labels": {
+      "X": "therapists",
+      "Y": "surgeons",
+      "A": "emotional_openness",
+      "B": "emotional_insulation"
+    },
+    "canonical_keys": {
+      "X": "therapists",
+      "Y": "surgeons",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 1.1269497909554063,
+    "p_value": 0.00114,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "therapist",
+        "psychologist",
+        "psychiatrist",
+        "counselor",
+        "psychoanalyst",
+        "psychotherapist",
+        "shrink",
+        "clinician",
+        "healer",
+        "listener",
+        "guide",
+        "mentor",
+        "coach",
+        "helper",
+        "practitioner"
+      ],
+      "Y_used": [
+        "surgeon",
+        "doctor",
+        "physician",
+        "medic",
+        "orthopedist",
+        "neurosurgeon",
+        "cardiologist",
+        "anesthesiologist",
+        "radiologist",
+        "pathologist",
+        "dermatologist",
+        "neurologist",
+        "internist",
+        "pediatrician",
+        "specialist"
+      ],
+      "A_used": [
+        "open",
+        "transparent",
+        "honest",
+        "sincere",
+        "frank",
+        "candid",
+        "revealing",
+        "exposed",
+        "vulnerable",
+        "accessible",
+        "expressive",
+        "communicative",
+        "forthcoming",
+        "genuine",
+        "straightforward"
+      ],
+      "B_used": [
+        "closed",
+        "insulated",
+        "detached",
+        "stoic",
+        "reserved",
+        "unemotional",
+        "clinical",
+        "objective",
+        "neutral",
+        "distant",
+        "aloof",
+        "guarded",
+        "private",
+        "restrained",
+        "composed"
+      ]
+    },
+    "proposal": "People associate therapists with emotional transparency more strongly than they associate surgeons with emotional transparency. This differential implicit association stems from cultural narratives that frame talk-based healers as inherently open and psychologically exposed, while procedural specialists are stereotyped as technically focused and emotionally insulated. Examining this split is novel because implicit bias research in medicine has overwhelmingly treated physicians as a monolith or focused on demographic stereotypes, neglecting how clinical modality shapes automatic mental representations of affective availability. Confirming or disconfirming this association would reshape how we understand the allocation of moral and emotional labor across healthcare fields, with implications for patient trust, interdisciplinary collaboration, and professional identity formation.",
+    "iterations": 3,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "0a08ba4e57b1",
     "timestamp": "2026-05-07T21:29:49.074550+00:00",
     "schema_version": "autoresearch.v1",
