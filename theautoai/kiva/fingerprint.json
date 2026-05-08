@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "batches_seen": 206,
-  "loans_seen": 3296,
-  "last_updated": "2026-05-08T03:38:23.469204+00:00",
+  "batches_seen": 207,
+  "loans_seen": 3312,
+  "last_updated": "2026-05-08T05:48:49.489610+00:00",
   "watching_for": "",
   "claims": {
     "institutional-names-slower": {
@@ -13,10 +13,10 @@
       "supporting_loans": [],
       "confidence": 0.7,
       "first_seen_batch": 1,
-      "last_updated_batch": 206,
+      "last_updated_batch": 207,
       "confidence_history": [
         [
-          206,
+          207,
           0.7
         ]
       ]
@@ -29,10 +29,10 @@
       "supporting_loans": [],
       "confidence": 1.0,
       "first_seen_batch": 1,
-      "last_updated_batch": 206,
+      "last_updated_batch": 207,
       "confidence_history": [
         [
-          206,
+          207,
           1.0
         ]
       ]
@@ -45,10 +45,10 @@
       "supporting_loans": [],
       "confidence": 1.0,
       "first_seen_batch": 1,
-      "last_updated_batch": 206,
+      "last_updated_batch": 207,
       "confidence_history": [
         [
-          206,
+          207,
           1.0
         ]
       ]
@@ -61,10 +61,10 @@
       "supporting_loans": [],
       "confidence": 0.75,
       "first_seen_batch": 1,
-      "last_updated_batch": 206,
+      "last_updated_batch": 207,
       "confidence_history": [
         [
-          206,
+          207,
           0.75
         ]
       ]
@@ -77,10 +77,10 @@
       "supporting_loans": [],
       "confidence": 0.93,
       "first_seen_batch": 1,
-      "last_updated_batch": 206,
+      "last_updated_batch": 207,
       "confidence_history": [
         [
-          206,
+          207,
           0.93
         ]
       ]
@@ -92,76 +92,69 @@
       "body": "Pitches that include the specific duration of business operation or professional experience tend to accelerate funding for both men and women.",
       "supporting_loans": [],
       "confidence": 0.6,
-      "first_seen_batch": 154,
-      "last_updated_batch": 206,
+      "first_seen_batch": 153,
+      "last_updated_batch": 207,
       "confidence_history": [
         [
-          206,
+          207,
           0.6
         ]
       ]
     }
   },
   "puzzles": {
-    "male-geographic-specificity-slower": {
-      "id": "male-geographic-specificity-slower",
-      "body": "Male borrowers who mention specific geographic locations may fund more slowly.",
-      "first_seen_batch": 146
-    },
     "male-length-slower": {
       "id": "male-length-slower",
       "body": "Longer pitch text may predict slower funding for male borrowers.",
-      "first_seen_batch": 146
+      "first_seen_batch": 145
     },
     "female-status-mention-slower": {
       "id": "female-status-mention-slower",
       "body": "Mentioning marital status or children without specifying benefits may slow funding for women.",
-      "first_seen_batch": 154
+      "first_seen_batch": 153
     },
     "female-age-education-faster": {
       "id": "female-age-education-faster",
       "body": "Female borrowers who mention their age and education level may fund faster.",
-      "first_seen_batch": 172
+      "first_seen_batch": 171
     },
     "female-infrastructure-goals-slower": {
       "id": "female-infrastructure-goals-slower",
       "body": "Female borrowers who mention long-term infrastructure goals, such as building a house or stall, may fund more slowly.",
-      "first_seen_batch": 176
+      "first_seen_batch": 175
     },
     "male-personal-background-faster": {
       "id": "male-personal-background-faster",
       "body": "Male borrowers who include specific details about personal background or secondary income may fund faster.",
-      "first_seen_batch": 180
+      "first_seen_batch": 179
     },
     "male-experience-scale-slower": {
       "id": "male-experience-scale-slower",
       "body": "Male borrowers who emphasize the length of their experience or the scale of their operation may fund more slowly.",
-      "first_seen_batch": 180
+      "first_seen_batch": 179
     },
     "female-no-dependents-faster": {
       "id": "female-no-dependents-faster",
       "body": "Mentioning the absence of dependent children may accelerate funding for female borrowers.",
-      "first_seen_batch": 192
+      "first_seen_batch": 191
     },
     "female-hardworking-mother-faster": {
       "id": "female-hardworking-mother-faster",
       "body": "Female borrowers using the phrase 'hardworking mother' may fund faster.",
-      "first_seen_batch": 194
+      "first_seen_batch": 193
     },
     "female-local-currency-slower": {
       "id": "female-local-currency-slower",
       "body": "Female borrowers who mention the loan amount in local currency may fund more slowly.",
-      "first_seen_batch": 198
+      "first_seen_batch": 197
+    },
+    "female-social-repayment-slower": {
+      "id": "female-social-repayment-slower",
+      "body": "Female borrowers who mention social repayment commitments like mentoring may fund more slowly.",
+      "first_seen_batch": 207
     }
   },
   "retired": {
-    "male-family-roles-slower": {
-      "id": "male-family-roles-slower",
-      "title": "Mentioning family members and their roles may predict slower funding for male borrowers.",
-      "retrospective": "Stale puzzle dropped to make room for new observations.",
-      "retired_batch": 179,
-      "was_believed_batches": 0
-    },
     "female-history-slower": {
       "id": "female-history-slower",
       "title": "Female borrowers who mention business duration or loan history fund more slowly.",
@@ -223,6 +216,13 @@
       "title": "Female borrowers who specify the loan amount in local currency may fund faster.",
       "retrospective": "Contradicted by observation that local currency mentions appear in slower pitches.",
       "retired_batch": 201,
+      "was_believed_batches": 0
+    },
+    "male-geographic-specificity-slower": {
+      "id": "male-geographic-specificity-slower",
+      "title": "Male borrowers who mention specific geographic locations may fund more slowly.",
+      "retrospective": "Stale puzzle retired to make room for new observation.",
+      "retired_batch": 208,
       "was_believed_batches": 0
     }
   }
