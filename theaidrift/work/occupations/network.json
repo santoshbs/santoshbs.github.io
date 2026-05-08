@@ -157,9 +157,9 @@
         "id": "49",
         "title": "Installation, Maintenance, & Repair",
         "group": "maintenance",
-        "refs": 16,
-        "signals": 9,
-        "occupations": 7
+        "refs": 20,
+        "signals": 11,
+        "occupations": 9
       },
       {
         "id": "51",
@@ -4812,6 +4812,14 @@
           "signals": 1
         },
         {
+          "id": "49-2022.00",
+          "title": "Telecommunications Equipment Installers and Repairers, Except Line Installers",
+          "group": "maintenance",
+          "refs": 2,
+          "revised": "2026-05-08",
+          "signals": 1
+        },
+        {
           "id": "49-2091.00",
           "title": "Avionics Technicians",
           "group": "maintenance",
@@ -4852,6 +4860,14 @@
           "signals": 2
         },
         {
+          "id": "49-9052.00",
+          "title": "Telecommunications Line Installers and Repairers",
+          "group": "maintenance",
+          "refs": 2,
+          "revised": "2026-05-08",
+          "signals": 1
+        },
+        {
           "id": "49-9099.01",
           "title": "Geothermal Technicians",
           "group": "maintenance",
@@ -4861,6 +4877,11 @@
         }
       ],
       "edges": [
+        {
+          "source": "49-2022.00",
+          "target": "49-9052.00",
+          "signal": "CBRE, Meta launch data center trade skills training program"
+        },
         {
           "source": "49-9021.00",
           "target": "49-9099.01",
@@ -5837,11 +5858,13 @@
     "47-5012.00": "47",
     "47-5071.00": "47",
     "49-2011.00": "49",
+    "49-2022.00": "49",
     "49-2091.00": "49",
     "49-2097.00": "49",
     "49-3011.00": "49",
     "49-3031.00": "49",
     "49-9021.00": "49",
+    "49-9052.00": "49",
     "49-9099.01": "49",
     "51-1011.00": "51",
     "51-2011.00": "51",
