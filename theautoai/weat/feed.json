@@ -1,5 +1,111 @@
 [
   {
+    "id": "cf1a2a00721b",
+    "timestamp": "2026-05-08T10:33:54.784973+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Scientists vs Artists on collaboration vs individualism",
+    "labels": {
+      "X": "Scientists",
+      "Y": "Artists",
+      "A": "collaborative",
+      "B": "individualistic"
+    },
+    "canonical_keys": {
+      "X": "scientists",
+      "Y": "artists",
+      "A": "collaborative",
+      "B": "individualistic"
+    },
+    "effect_size": 0.6314504073971786,
+    "p_value": 0.08849,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "scientist",
+        "biologist",
+        "physicist",
+        "chemist",
+        "engineer",
+        "researcher",
+        "doctor",
+        "professor",
+        "astronomer",
+        "geneticist",
+        "mathematician",
+        "physician",
+        "geologist",
+        "ecologist",
+        "veterinarian"
+      ],
+      "Y_used": [
+        "artist",
+        "painter",
+        "sculptor",
+        "musician",
+        "writer",
+        "poet",
+        "actor",
+        "director",
+        "dancer",
+        "illustrator",
+        "photographer",
+        "designer",
+        "composer",
+        "animator",
+        "performer"
+      ],
+      "A_used": [
+        "collaboration",
+        "teamwork",
+        "cooperative",
+        "collective",
+        "partnership",
+        "joint",
+        "group",
+        "united",
+        "collaborative",
+        "mutual",
+        "team",
+        "alliance",
+        "coalition",
+        "network",
+        "union"
+      ],
+      "B_used": [
+        "individual",
+        "solitary",
+        "solo",
+        "independent",
+        "alone",
+        "lone",
+        "separate",
+        "single",
+        "autonomous",
+        "isolated",
+        "exclusive",
+        "personal",
+        "private",
+        "unilateral",
+        "secluded"
+      ]
+    },
+    "proposal": "People associate Scientists with collaboration more strongly than they associate Artists with collaboration. This differential implicit association is novel because research typically contrasts these groups on cognitive axes like logic versus creativity, rarely probing their perceived social dynamics. It is interesting and important because public discourse frequently romanticizes the solitary artist while overlooking the large-scale, team-based nature of modern scientific discovery; confirming this bias would reveal a cultural lag in how society implicitly represents the collective versus individual structures of knowledge production.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "56527ce4c566",
     "timestamp": "2026-05-08T02:13:20.055045+00:00",
     "schema_version": "autoresearch.v1",
