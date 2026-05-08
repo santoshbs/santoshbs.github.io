@@ -141,8 +141,8 @@
         "id": "45",
         "title": "Farming, Fishing, & Forestry",
         "group": "farming",
-        "refs": 12,
-        "signals": 8,
+        "refs": 14,
+        "signals": 10,
         "occupations": 4
       },
       {
@@ -4668,17 +4668,17 @@
           "id": "45-2091.00",
           "title": "Agricultural Equipment Operators",
           "group": "farming",
-          "refs": 3,
-          "revised": "2026-04-22",
-          "signals": 2
+          "refs": 4,
+          "revised": "2026-05-08",
+          "signals": 3
         },
         {
           "id": "45-2092.00",
           "title": "Farmworkers and Laborers, Crop, Nursery, and Greenhouse",
           "group": "farming",
-          "refs": 4,
-          "revised": "2026-04-14",
-          "signals": 3
+          "refs": 5,
+          "revised": "2026-05-08",
+          "signals": 4
         },
         {
           "id": "45-2093.00",
@@ -4690,6 +4690,11 @@
         }
       ],
       "edges": [
+        {
+          "source": "45-2091.00",
+          "target": "45-2092.00",
+          "signal": "🎥 AgriPass on ag robotics 2.0: ‘We’re replicating the human weeding process but "
+        },
         {
           "source": "45-1011.00",
           "target": "45-2092.00",
