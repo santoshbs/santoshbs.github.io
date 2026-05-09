@@ -1,5 +1,113 @@
 [
   {
+    "id": "4b22d7d43047",
+    "timestamp": "2026-05-09T16:34:54.168121+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "spies vs diplomats on competence vs incompetence",
+    "labels": {
+      "X": "spies",
+      "Y": "diplomats",
+      "A": "competence",
+      "B": "incompetence"
+    },
+    "canonical_keys": {
+      "X": "spies",
+      "Y": "diplomats",
+      "A": "competence",
+      "B": "incompetence"
+    },
+    "effect_size": -0.15282416316316927,
+    "p_value": 0.67738,
+    "n": {
+      "X": 16,
+      "Y": 16,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "spy",
+        "spies",
+        "agent",
+        "agents",
+        "operative",
+        "operatives",
+        "informant",
+        "informants",
+        "mole",
+        "moles",
+        "asset",
+        "assets",
+        "handler",
+        "handlers",
+        "recruiter",
+        "recruiters"
+      ],
+      "Y_used": [
+        "diplomat",
+        "diplomats",
+        "ambassador",
+        "ambassadors",
+        "envoy",
+        "envoys",
+        "consul",
+        "consuls",
+        "delegate",
+        "delegates",
+        "representative",
+        "representatives",
+        "negotiator",
+        "negotiators",
+        "attache",
+        "attaches"
+      ],
+      "A_used": [
+        "competent",
+        "skilled",
+        "effective",
+        "capable",
+        "proficient",
+        "expert",
+        "talented",
+        "adept",
+        "masterful",
+        "accomplished",
+        "efficient",
+        "productive",
+        "successful",
+        "gifted",
+        "brilliant"
+      ],
+      "B_used": [
+        "incompetent",
+        "unskilled",
+        "ineffective",
+        "incapable",
+        "inept",
+        "clueless",
+        "useless",
+        "bungling",
+        "foolish",
+        "dull",
+        "mediocre",
+        "poor",
+        "lacking",
+        "deficient",
+        "inadequate"
+      ]
+    },
+    "proposal": "People associate spies with competence more strongly than they associate diplomats with competence. While diplomatic work is often publicly framed around process, protocol, and consensus-building, popular culture and institutional memory frequently cast espionage as a domain requiring direct, unvarnished effectiveness and decisive action. Examining this differential implicit association is novel because existing research has focused on overt stereotypes about trustworthiness or morality, neglecting how laypeople mentally partition perceived efficacy between open and covert statecraft. Confirming this association would reveal how public intuition privileges covert, results-oriented problem-solving over formal, norm-based negotiation, with implications for democratic oversight and public support for intelligence agencies versus traditional foreign ministries.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "97e7db7ba286",
     "timestamp": "2026-05-09T12:58:56.625350+00:00",
     "schema_version": "autoresearch.v1",
