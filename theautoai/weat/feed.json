@@ -1,5 +1,111 @@
 [
   {
+    "id": "fa07a019d69d",
+    "timestamp": "2026-05-09T20:38:38.432182+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "economists vs politicians on emotional detachment versus engagement",
+    "labels": {
+      "X": "economists",
+      "Y": "politicians",
+      "A": "detachment",
+      "B": "connection"
+    },
+    "canonical_keys": {
+      "X": "economists",
+      "Y": "politicians",
+      "A": "detachment",
+      "B": "connection"
+    },
+    "effect_size": 0.8047980320875291,
+    "p_value": 0.02713,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "economist",
+        "financier",
+        "accountant",
+        "statistician",
+        "actuary",
+        "banker",
+        "trader",
+        "investor",
+        "auditor",
+        "consultant",
+        "broker",
+        "researcher",
+        "specialist",
+        "expert",
+        "evaluator"
+      ],
+      "Y_used": [
+        "politician",
+        "senator",
+        "mayor",
+        "governor",
+        "president",
+        "leader",
+        "official",
+        "candidate",
+        "representative",
+        "delegate",
+        "commissioner",
+        "legislator",
+        "councilor",
+        "ambassador",
+        "diplomat"
+      ],
+      "A_used": [
+        "detached",
+        "aloof",
+        "distant",
+        "cold",
+        "unemotional",
+        "objective",
+        "rational",
+        "logical",
+        "clinical",
+        "impersonal",
+        "neutral",
+        "impartial",
+        "reserved",
+        "stoic",
+        "isolated"
+      ],
+      "B_used": [
+        "connected",
+        "engaged",
+        "warm",
+        "caring",
+        "emotional",
+        "sympathetic",
+        "empathetic",
+        "passionate",
+        "enthusiastic",
+        "social",
+        "outgoing",
+        "friendly",
+        "popular",
+        "accessible",
+        "responsive"
+      ]
+    },
+    "proposal": "People associate economists with detachment more strongly than they associate politicians with detachment. While political discourse routinely frames elected officials as emotionally responsive to public sentiment, economic experts are frequently portrayed in media and institutional practice as insulated, model-driven, and removed from everyday human experience. Testing this implicit link is novel because prior IAT and WEAT research has largely examined detachment along partisan or scientific-artistic divides, but has never systematically contrasted economic technocrats with political representatives on this axis. Confirming or disconfirming this association would clarify how the public mentally partitions technocratic expertise from representative governance, directly shaping understandings of policy legitimacy and public trust in economic forecasting.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "4b22d7d43047",
     "timestamp": "2026-05-09T16:34:54.168121+00:00",
     "schema_version": "autoresearch.v1",
