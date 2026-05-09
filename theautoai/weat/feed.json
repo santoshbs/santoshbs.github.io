@@ -1,5 +1,111 @@
 [
   {
+    "id": "ec0234324634",
+    "timestamp": "2026-05-09T03:03:17.665362+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "archivists vs historians on neutrality versus subjectivity",
+    "labels": {
+      "X": "archivists",
+      "Y": "historians",
+      "A": "neutrality_objectivity",
+      "B": "subjectivity_interpretation"
+    },
+    "canonical_keys": {
+      "X": "archivists",
+      "Y": "historians",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 1.0740006489390956,
+    "p_value": 0.00237,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "archivists",
+        "curators",
+        "catalogers",
+        "librarians",
+        "custodians",
+        "keepers",
+        "preservers",
+        "indexers",
+        "stewards",
+        "collectors",
+        "registrars",
+        "scribes",
+        "clerks",
+        "transcribers",
+        "conservators"
+      ],
+      "Y_used": [
+        "historians",
+        "biographers",
+        "chroniclers",
+        "antiquarians",
+        "researchers",
+        "scholars",
+        "academics",
+        "professors",
+        "teachers",
+        "writers",
+        "authors",
+        "narrators",
+        "storytellers",
+        "analysts",
+        "critics"
+      ],
+      "A_used": [
+        "neutral",
+        "objective",
+        "impartial",
+        "unbiased",
+        "fair",
+        "balanced",
+        "evenhanded",
+        "dispassionate",
+        "detached",
+        "factual",
+        "empirical",
+        "rigorous",
+        "exact",
+        "precise",
+        "accurate"
+      ],
+      "B_used": [
+        "subjective",
+        "biased",
+        "partial",
+        "prejudiced",
+        "opinionated",
+        "interpretive",
+        "narrative",
+        "creative",
+        "speculative",
+        "theoretical",
+        "imaginative",
+        "personal",
+        "emotional",
+        "partisan",
+        "slanted"
+      ]
+    },
+    "proposal": "People associate archivists with neutrality more strongly than they associate historians with neutrality. This differential implicit association highlights a latent cultural intuition distinguishing the guardians of raw records from the narrators of the past, suggesting that the public implicitly views curation as inherently more objective than interpretation. Examining this association is novel because, while the roles are frequently conflated in public discourse, no empirical work has probed the implicit trust hierarchy between the keeper of primary sources and the teller of stories. This matters in an era of epistemic crisis, as confirming this bias would reveal that institutions framing historical evidence as 'neutral' while framing analysis as 'subjective' may be tapping into, or reinforcing, a deep-seated asymmetry in how credibility is allocated across knowledge-production roles.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "b2d94a45c3eb",
     "timestamp": "2026-05-09T00:12:58.176881+00:00",
     "schema_version": "autoresearch.v1",
