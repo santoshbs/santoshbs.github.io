@@ -1,5 +1,111 @@
 [
   {
+    "id": "6b14d850346d",
+    "timestamp": "2026-05-10T02:47:35.760129+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "prophets vs preachers on rebellion vs stability",
+    "labels": {
+      "X": "prophets",
+      "Y": "preachers",
+      "A": "rebellion",
+      "B": "stability"
+    },
+    "canonical_keys": {
+      "X": "prophets",
+      "Y": "preachers",
+      "A": "rebellion",
+      "B": "stability"
+    },
+    "effect_size": -0.5307124129699811,
+    "p_value": 0.15694,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "prophet",
+        "seer",
+        "oracle",
+        "visionary",
+        "soothsayer",
+        "diviner",
+        "prophetess",
+        "mystic",
+        "sage",
+        "ascetic",
+        "hermit",
+        "recluse",
+        "shaman",
+        "apostle",
+        "evangelist"
+      ],
+      "Y_used": [
+        "preacher",
+        "pastor",
+        "minister",
+        "priest",
+        "cleric",
+        "vicar",
+        "rector",
+        "parson",
+        "chaplain",
+        "deacon",
+        "bishop",
+        "cardinal",
+        "abbot",
+        "friar",
+        "monk"
+      ],
+      "A_used": [
+        "rebellion",
+        "revolt",
+        "uprising",
+        "insurrection",
+        "mutiny",
+        "sedition",
+        "riot",
+        "subversion",
+        "dissent",
+        "protest",
+        "demonstration",
+        "march",
+        "strike",
+        "boycott",
+        "sabotage"
+      ],
+      "B_used": [
+        "stability",
+        "order",
+        "peace",
+        "harmony",
+        "tranquility",
+        "calm",
+        "serenity",
+        "quiet",
+        "stillness",
+        "rest",
+        "repose",
+        "safety",
+        "security",
+        "protection",
+        "defense"
+      ]
+    },
+    "proposal": "People associate prophets with rebellion more strongly than they associate preachers with rebellion. This differential implicit association tests whether the public retains a latent cognitive distinction between charismatic religious figures who challenge established orders and institutional religious figures who maintain social stability. Although religious actors are often homogenized as 'conservative' in overt discourse, the cultural archetype of the prophet is deeply linked to moral insurgency, critique of power, and disruption of the status quo, whereas preachers are typically framed as pastoral stabilizers. Confirming this association would reveal that implicit mental representations of religious authority are more nuanced than broad demographic stereotypes suggest, tracking a Weberian distinction between charismatic disruption and routinized maintenance that has not been systematically probed using implicit measures.",
+    "iterations": 3,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "9bbc0da5648c",
     "timestamp": "2026-05-10T01:19:46.680085+00:00",
     "schema_version": "autoresearch.v1",
