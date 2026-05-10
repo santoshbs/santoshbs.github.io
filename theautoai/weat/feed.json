@@ -1,5 +1,111 @@
 [
   {
+    "id": "a61182de851b",
+    "timestamp": "2026-05-10T21:18:05.068799+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "musicians vs writers on physical embodiment vs cognitive abstraction",
+    "labels": {
+      "X": "musicians",
+      "Y": "writers",
+      "A": "embodiment",
+      "B": "cognition"
+    },
+    "canonical_keys": {
+      "X": "musicians",
+      "Y": "writers",
+      "A": "embodiment",
+      "B": "cognition"
+    },
+    "effect_size": 1.6376857272709093,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "musician",
+        "singer",
+        "guitarist",
+        "pianist",
+        "drummer",
+        "violinist",
+        "flutist",
+        "conductor",
+        "composer",
+        "cellist",
+        "trumpeter",
+        "bassist",
+        "harpist",
+        "organist",
+        "clarinetist"
+      ],
+      "Y_used": [
+        "writer",
+        "author",
+        "novelist",
+        "poet",
+        "journalist",
+        "essayist",
+        "playwright",
+        "columnist",
+        "correspondent",
+        "biographer",
+        "editor",
+        "reporter",
+        "storyteller",
+        "scribe",
+        "reviewer"
+      ],
+      "A_used": [
+        "physical",
+        "bodily",
+        "tactile",
+        "kinetic",
+        "muscular",
+        "somatic",
+        "visceral",
+        "gesture",
+        "breath",
+        "flesh",
+        "bone",
+        "motion",
+        "posture",
+        "touch",
+        "active"
+      ],
+      "B_used": [
+        "mental",
+        "intellectual",
+        "cognitive",
+        "abstract",
+        "cerebral",
+        "rational",
+        "logical",
+        "theoretical",
+        "academic",
+        "contemplative",
+        "philosophical",
+        "scholarly",
+        "verbal",
+        "textual",
+        "conceptual"
+      ]
+    },
+    "proposal": "People associate musicians with embodiment more strongly than they associate writers with embodiment. This differential association likely stems from the live, physical nature of musical performance, where breath, gesture, and instrument handling are inextricable from the output, whereas writing is culturally framed as a detached, cognitive, and text-bound craft. Examining this bias is novel because implicit association research has largely overlooked the physical dimension of artistic labor, focusing instead on creativity or emotion. It matters because assumptions about embodiment shape how audiences perceive artist vulnerability, how institutions fund rehearsal versus drafting spaces, and how we evaluate the authenticity of different art forms in an increasingly digital, disembodied media landscape.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "c74c6298c65d",
     "timestamp": "2026-05-10T17:39:23.181335+00:00",
     "schema_version": "autoresearch.v1",
