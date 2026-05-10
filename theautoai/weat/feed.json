@@ -1,5 +1,111 @@
 [
   {
+    "id": "5f2b43a1463c",
+    "timestamp": "2026-05-10T14:17:44.340422+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "curators vs producers on cultural preservation vs novelty",
+    "labels": {
+      "X": "curators",
+      "Y": "producers",
+      "A": "preservation",
+      "B": "creation"
+    },
+    "canonical_keys": {
+      "X": "curators",
+      "Y": "producers",
+      "A": "preservation",
+      "B": "creation"
+    },
+    "effect_size": 1.820214679767134,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "curator",
+        "archivist",
+        "librarian",
+        "conservator",
+        "historian",
+        "restorer",
+        "keeper",
+        "guardian",
+        "steward",
+        "caretaker",
+        "warden",
+        "trustee",
+        "collector",
+        "preserver",
+        "custodian"
+      ],
+      "Y_used": [
+        "producer",
+        "creator",
+        "innovator",
+        "inventor",
+        "developer",
+        "maker",
+        "builder",
+        "designer",
+        "originator",
+        "generator",
+        "author",
+        "writer",
+        "director",
+        "composer",
+        "architect"
+      ],
+      "A_used": [
+        "preserve",
+        "conserve",
+        "protect",
+        "maintain",
+        "archive",
+        "guard",
+        "historic",
+        "tradition",
+        "heritage",
+        "legacy",
+        "safeguard",
+        "restore",
+        "save",
+        "sustain",
+        "keep"
+      ],
+      "B_used": [
+        "create",
+        "innovate",
+        "invent",
+        "generate",
+        "produce",
+        "design",
+        "develop",
+        "original",
+        "novel",
+        "new",
+        "modern",
+        "fashion",
+        "build",
+        "make",
+        "compose"
+      ]
+    },
+    "proposal": "People associate curators with preservation more strongly than they associate producers with preservation. While contemporary cultural and institutional discourse explicitly frames curators and producers as complementary forces in creative ecosystems, implicit cognition may rigidly bind curators to stewardship, conservation, and heritage maintenance while systematically decoupling producers from preservationist values. This differential association has not been systematically examined using implicit measures, moving beyond explicit occupational definitions to uncover hidden mental models about cultural responsibility. Confirming or disconfirming this bias matters because it reveals how public trust, creative legitimacy, and institutional resource allocation are unconsciously skewed toward either safeguarding existing cultural records or prioritizing novel content generation.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "11e3f1e45dfb",
     "timestamp": "2026-05-10T05:20:06.806925+00:00",
     "schema_version": "autoresearch.v1",
