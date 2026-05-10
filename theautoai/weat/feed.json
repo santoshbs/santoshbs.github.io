@@ -1,5 +1,111 @@
 [
   {
+    "id": "24572b56bd79",
+    "timestamp": "2026-05-10T03:18:30.652788+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "bureaucrats vs merchants on normative adherence vs individualistic deviation",
+    "labels": {
+      "X": "bureaucrats",
+      "Y": "merchants",
+      "A": "conformity",
+      "B": "independence"
+    },
+    "canonical_keys": {
+      "X": "bureaucrats",
+      "Y": "merchants",
+      "A": "conformity",
+      "B": "independence"
+    },
+    "effect_size": 1.0030682089546894,
+    "p_value": 0.00362,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "bureaucrat",
+        "administrator",
+        "clerk",
+        "official",
+        "functionary",
+        "regulator",
+        "inspector",
+        "auditor",
+        "secretary",
+        "deputy",
+        "commissioner",
+        "officer",
+        "supervisor",
+        "director",
+        "manager"
+      ],
+      "Y_used": [
+        "merchant",
+        "trader",
+        "vendor",
+        "seller",
+        "entrepreneur",
+        "dealer",
+        "broker",
+        "shopkeeper",
+        "retailer",
+        "wholesaler",
+        "capitalist",
+        "investor",
+        "banker",
+        "marketer",
+        "salesman"
+      ],
+      "A_used": [
+        "conformist",
+        "compliant",
+        "obedient",
+        "conventional",
+        "standardized",
+        "regulated",
+        "disciplined",
+        "lawful",
+        "dutiful",
+        "orderly",
+        "uniform",
+        "predictable",
+        "systematic",
+        "structured",
+        "rigid"
+      ],
+      "B_used": [
+        "independent",
+        "innovative",
+        "individualistic",
+        "creative",
+        "unconventional",
+        "rebellious",
+        "autonomous",
+        "ambitious",
+        "free",
+        "spontaneous",
+        "original",
+        "dynamic",
+        "flexible",
+        "enterprising",
+        "opportunistic"
+      ]
+    },
+    "proposal": "People associate bureaucrats with conformity more strongly than they associate merchants with conformity. This implicit association highlights a cultural narrative where institutional functionaries are viewed as the psychological embodiment of rule-following and social uniformity, while market actors are implicitly cast as independent, nonconformist agents driven by self-interest or innovation. Examining this link is novel because it moves beyond overt stereotypes of corruption or efficiency to probe the deeper, automatic perception of these roles' relationship to social norms. Confirming this association would demonstrate how the mental representation of political vs. economic actors relies on a fundamental opposition between normative adherence and individualistic deviation.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "6b14d850346d",
     "timestamp": "2026-05-10T02:47:35.760129+00:00",
     "schema_version": "autoresearch.v1",
