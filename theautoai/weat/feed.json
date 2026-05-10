@@ -1,5 +1,111 @@
 [
   {
+    "id": "eae594984491",
+    "timestamp": "2026-05-10T04:05:22.502750+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Revolutionaries vs Traitors on Courage vs Cowardice",
+    "labels": {
+      "X": "Revolutionaries",
+      "Y": "Traitors",
+      "A": "Courage",
+      "B": "Cowardice"
+    },
+    "canonical_keys": {
+      "X": "revolutionaries",
+      "Y": "traitors",
+      "A": "courage",
+      "B": "cowardice"
+    },
+    "effect_size": 0.8578484772008941,
+    "p_value": 0.01945,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "rebel",
+        "insurgent",
+        "liberator",
+        "dissident",
+        "activist",
+        "mutineer",
+        "partisan",
+        "guerrilla",
+        "revolutionary",
+        "radical",
+        "nationalist",
+        "militant",
+        "protester",
+        "agitator",
+        "secessionist"
+      ],
+      "Y_used": [
+        "traitor",
+        "renegade",
+        "defector",
+        "betrayer",
+        "collaborator",
+        "informer",
+        "spy",
+        "mole",
+        "snitch",
+        "rat",
+        "turncoat",
+        "sellout",
+        "deserter",
+        "quisling",
+        "apostate"
+      ],
+      "A_used": [
+        "courage",
+        "bravery",
+        "valor",
+        "boldness",
+        "heroism",
+        "fearlessness",
+        "daring",
+        "intrepidity",
+        "gallantry",
+        "audacity",
+        "pluck",
+        "nerve",
+        "grit",
+        "backbone",
+        "spunk"
+      ],
+      "B_used": [
+        "cowardice",
+        "fear",
+        "timidity",
+        "weakness",
+        "spinelessness",
+        "craven",
+        "pusillanimity",
+        "faintness",
+        "cowering",
+        "trembling",
+        "scare",
+        "fright",
+        "terror",
+        "panic",
+        "dread"
+      ]
+    },
+    "proposal": "People associate Revolutionaries with Courage more strongly than they associate Traitors with Courage. While both categories can involve defiance of authority or group norms, contemporary discourse often frames revolutionaries as morally justified risk-takers acting for collective liberation, whereas traitors are stereotypically depicted as self-interested defectors motivated by fear or greed. Examining this differential implicit association is novel because prior research has focused heavily on broad valence (good vs. bad) or competence stereotypes of generic political groups, but has not isolated the specific moral-agency dimension that distinguishes sanctioned dissent from betrayal. This association matters because the implicit linkage of traitors with cowardice may reinforce social mechanisms of ostracism and dehumanization toward those perceived as abandoning a group, even when their actions might otherwise be viewed as principled dissent in different contexts.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "24572b56bd79",
     "timestamp": "2026-05-10T03:18:30.652788+00:00",
     "schema_version": "autoresearch.v1",
