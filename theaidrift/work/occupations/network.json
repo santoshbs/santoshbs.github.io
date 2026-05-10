@@ -85,9 +85,9 @@
         "id": "31",
         "title": "Healthcare Support",
         "group": "health support",
-        "refs": 8,
-        "signals": 4,
-        "occupations": 4
+        "refs": 11,
+        "signals": 6,
+        "occupations": 5
       },
       {
         "id": "33",
@@ -4200,8 +4200,16 @@
           "id": "31-1131.00",
           "title": "Nursing Assistants",
           "group": "health support",
+          "refs": 3,
+          "revised": "2026-05-10",
+          "signals": 2
+        },
+        {
+          "id": "31-1132.00",
+          "title": "Orderlies",
+          "group": "health support",
           "refs": 2,
-          "revised": "2026-04-16",
+          "revised": "2026-05-10",
           "signals": 1
         },
         {
@@ -4228,6 +4236,11 @@
           "source": "31-1122.00",
           "target": "31-1131.00",
           "signal": "Guidance: International recruitment regional fund for the adult social care sect"
+        },
+        {
+          "source": "31-1131.00",
+          "target": "31-1132.00",
+          "signal": "Rovex and BayCare partner to explore in-hospital transport robots"
         }
       ]
     },
@@ -5875,6 +5888,7 @@
     "31-1121.00": "31",
     "31-1122.00": "31",
     "31-1131.00": "31",
+    "31-1132.00": "31",
     "31-9092.00": "31",
     "33-1021.00": "33",
     "33-2011.00": "33",
