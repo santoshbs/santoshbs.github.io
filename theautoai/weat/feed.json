@@ -1,5 +1,111 @@
 [
   {
+    "id": "9bbc0da5648c",
+    "timestamp": "2026-05-10T01:19:46.680085+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "librarians vs historians on epistemic caution vs interpretive synthesis",
+    "labels": {
+      "X": "librarians",
+      "Y": "historians",
+      "A": "epistemic_caution",
+      "B": "interpretive_synthesis"
+    },
+    "canonical_keys": {
+      "X": "librarians",
+      "Y": "historians",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 1.3011313839342349,
+    "p_value": 0.00018,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "librarian",
+        "archivist",
+        "curator",
+        "cataloger",
+        "clerk",
+        "keeper",
+        "steward",
+        "specialist",
+        "assistant",
+        "director",
+        "supervisor",
+        "manager",
+        "coordinator",
+        "technician",
+        "aide"
+      ],
+      "Y_used": [
+        "historian",
+        "archaeologist",
+        "anthropologist",
+        "antiquarian",
+        "chronicler",
+        "biographer",
+        "genealogist",
+        "researcher",
+        "academic",
+        "professor",
+        "scholar",
+        "author",
+        "critic",
+        "analyst",
+        "theorist"
+      ],
+      "A_used": [
+        "cautious",
+        "careful",
+        "neutral",
+        "verified",
+        "accurate",
+        "precise",
+        "objective",
+        "factual",
+        "methodical",
+        "deliberate",
+        "rigorous",
+        "conservative",
+        "prudent",
+        "restrained",
+        "guarded"
+      ],
+      "B_used": [
+        "interpretive",
+        "creative",
+        "narrative",
+        "argumentative",
+        "synthetic",
+        "imaginative",
+        "expressive",
+        "subjective",
+        "persuasive",
+        "rhetorical",
+        "constructive",
+        "theoretical",
+        "speculative",
+        "inventive",
+        "descriptive"
+      ]
+    },
+    "proposal": "People associate librarians with epistemic caution more strongly than they associate historians with epistemic caution. This differential association reflects a contemporary cultural framing that positions librarians as neutral guardians of verified information and static preservation, while casting historians as active interpreters who prioritize narrative construction and argumentative synthesis over strict verification. Although both professions work with archives and evidence, public discourse rarely examines whether laypeople implicitly link the library role to a higher threshold for judgment and source neutrality compared to the historical role. Confirming or disconfirming this implicit bias would illuminate how digital-age information anxiety shapes mental representations of knowledge stewardship versus knowledge interpretation.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "fa07a019d69d",
     "timestamp": "2026-05-09T20:38:38.432182+00:00",
     "schema_version": "autoresearch.v1",
