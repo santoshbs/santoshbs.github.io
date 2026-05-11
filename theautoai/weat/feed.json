@@ -1,5 +1,111 @@
 [
   {
+    "id": "3d577ea32466",
+    "timestamp": "2026-05-11T19:58:54.658216+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "nurses vs lawyers on epistemic caution versus strategic decisiveness",
+    "labels": {
+      "X": "nurses",
+      "Y": "lawyers",
+      "A": "epistemic caution",
+      "B": "strategic decisiveness"
+    },
+    "canonical_keys": {
+      "X": "nurses",
+      "Y": "lawyers",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 0.8428328523983949,
+    "p_value": 0.01952,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "nurse",
+        "medic",
+        "paramedic",
+        "caregiver",
+        "attendant",
+        "midwife",
+        "orderly",
+        "aide",
+        "clinician",
+        "practitioner",
+        "specialist",
+        "carer",
+        "assistant",
+        "matron",
+        "therapist"
+      ],
+      "Y_used": [
+        "lawyer",
+        "attorney",
+        "solicitor",
+        "barrister",
+        "counsel",
+        "advocate",
+        "litigator",
+        "prosecutor",
+        "defender",
+        "jurist",
+        "counselor",
+        "arbitrator",
+        "mediator",
+        "notary",
+        "advisor"
+      ],
+      "A_used": [
+        "careful",
+        "cautious",
+        "deliberate",
+        "slow",
+        "observant",
+        "patient",
+        "thoughtful",
+        "measured",
+        "hesitant",
+        "wary",
+        "prudent",
+        "circumspect",
+        "vigilant",
+        "meticulous",
+        "painstaking"
+      ],
+      "B_used": [
+        "certain",
+        "decisive",
+        "rapid",
+        "fast",
+        "assertive",
+        "confident",
+        "bold",
+        "sure",
+        "swift",
+        "quick",
+        "aggressive",
+        "forceful",
+        "firm",
+        "resolute",
+        "determined"
+      ]
+    },
+    "proposal": "People associate nurses with epistemic caution more strongly than they associate lawyers with epistemic caution. In public discourse and professional training, nurses are routinely portrayed as observant, iterative, and deliberately slow in forming clinical judgments, whereas lawyers are characterized by rapid case assessment, rhetorical certainty, and strategic decisiveness. This differential implicit association has not been systematically examined, as prior research has focused on explicit gendered stereotypes or explicit trust metrics rather than automatic mappings of verification tempo and deliberative restraint. Confirming this association would reveal how the public mentally partitions care-oriented professions from advocacy-oriented ones, offering insight into why medical advice is often granted the benefit of the doubt while legal counsel is frequently met with strategic suspicion.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "debc5a75c707",
     "timestamp": "2026-05-11T12:29:33.619559+00:00",
     "schema_version": "autoresearch.v1",
