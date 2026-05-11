@@ -109,9 +109,9 @@
         "id": "37",
         "title": "Building & Grounds Cleaning & Maintenance",
         "group": "grounds",
-        "refs": 2,
-        "signals": 1,
-        "occupations": 1
+        "refs": 6,
+        "signals": 3,
+        "occupations": 3
       },
       {
         "id": "39",
@@ -173,8 +173,8 @@
         "id": "53",
         "title": "Transportation & Material Moving",
         "group": "transport",
-        "refs": 84,
-        "signals": 61,
+        "refs": 85,
+        "signals": 62,
         "occupations": 23
       },
       {
@@ -191,6 +191,11 @@
         "source": "11",
         "target": "13",
         "weight": 43
+      },
+      {
+        "source": "37",
+        "target": "53",
+        "weight": 1
       },
       {
         "source": "45",
@@ -4581,6 +4586,22 @@
     "37": {
       "nodes": [
         {
+          "id": "37-2011.00",
+          "title": "Janitors and Cleaners, Except Maids and Housekeeping Cleaners",
+          "group": "grounds",
+          "refs": 2,
+          "revised": "2026-05-11",
+          "signals": 1
+        },
+        {
+          "id": "37-2012.00",
+          "title": "Maids and Housekeeping Cleaners",
+          "group": "grounds",
+          "refs": 2,
+          "revised": "2026-05-11",
+          "signals": 1
+        },
+        {
           "id": "37-3011.00",
           "title": "Landscaping and Groundskeeping Workers",
           "group": "grounds",
@@ -4589,7 +4610,13 @@
           "signals": 1
         }
       ],
-      "edges": []
+      "edges": [
+        {
+          "source": "37-2011.00",
+          "target": "37-2012.00",
+          "signal": "Pudu Robotics debuts commercial cleaning and delivery robots"
+        }
+      ]
     },
     "39": {
       "nodes": [
@@ -5400,9 +5427,9 @@
           "id": "53-7062.00",
           "title": "Laborers and Freight, Stock, and Material Movers, Hand",
           "group": "transport",
-          "refs": 4,
-          "revised": "2026-04-14",
-          "signals": 3
+          "refs": 5,
+          "revised": "2026-05-11",
+          "signals": 4
         },
         {
           "id": "53-7064.00",
@@ -5973,6 +6000,8 @@
     "35-3023.01": "35",
     "35-3031.00": "35",
     "35-3041.00": "35",
+    "37-2011.00": "37",
+    "37-2012.00": "37",
     "37-3011.00": "37",
     "39-3011.00": "39",
     "41-1011.00": "41",
