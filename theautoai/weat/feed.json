@@ -1,5 +1,111 @@
 [
   {
+    "id": "bb53f691f7e6",
+    "timestamp": "2026-05-11T03:28:43.165985+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "gamblers vs traders on impulsivity versus rationality",
+    "labels": {
+      "X": "gamblers",
+      "Y": "traders",
+      "A": "impulsivity",
+      "B": "rationality"
+    },
+    "canonical_keys": {
+      "X": "gamblers",
+      "Y": "traders",
+      "A": "impulsivity",
+      "B": "rationality"
+    },
+    "effect_size": 1.444560763974074,
+    "p_value": 1e-05,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "gambler",
+        "bettor",
+        "punter",
+        "speculator",
+        "player",
+        "risker",
+        "chancer",
+        "dicer",
+        "wagerer",
+        "staker",
+        "bookmaker",
+        "hustler",
+        "shark",
+        "roller",
+        "cardsharp"
+      ],
+      "Y_used": [
+        "trader",
+        "broker",
+        "banker",
+        "investor",
+        "analyst",
+        "manager",
+        "director",
+        "executive",
+        "financier",
+        "underwriter",
+        "strategist",
+        "dealmaker",
+        "agent",
+        "advisor",
+        "planner"
+      ],
+      "A_used": [
+        "impulsive",
+        "reckless",
+        "rash",
+        "hasty",
+        "impetuous",
+        "spontaneous",
+        "instinctive",
+        "intuitive",
+        "emotional",
+        "passionate",
+        "erratic",
+        "volatile",
+        "unstable",
+        "careless",
+        "capricious"
+      ],
+      "B_used": [
+        "rational",
+        "analytical",
+        "logical",
+        "calculated",
+        "deliberate",
+        "strategic",
+        "planned",
+        "methodical",
+        "systematic",
+        "objective",
+        "disciplined",
+        "restrained",
+        "controlled",
+        "measured",
+        "thoughtful"
+      ]
+    },
+    "proposal": "People associate gamblers with impulsivity more strongly than they associate traders with impulsivity. This differential association is novel because, while the rhetorical overlap between speculative trading and gambling is frequently debated in financial and media discourse, no implicit measure has examined whether the public maintains a subconscious distinction in perceived behavioral restraint between these categories. It is relevant given the cultural tendency to label volatile market behaviors as 'gambling,' yet traders are institutionally framed as analytical actors, whereas gamblers are culturally framed as succumbing to chance and immediate urge. Confirming a robust gap would suggest that institutional framing preserves a latent distinction of rationality; disconfirming it would reveal a deeper cognitive equivalence that could impact public trust in financial markets and the moral evaluation of market participants.",
+    "iterations": 3,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "21e214991f5c",
     "timestamp": "2026-05-11T02:45:40.637563+00:00",
     "schema_version": "autoresearch.v1",
