@@ -1,5 +1,111 @@
 [
   {
+    "id": "26b4602cf63a",
+    "timestamp": "2026-05-11T00:09:37.556885+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "merchants vs monarchs on innovation versus tradition",
+    "labels": {
+      "X": "merchants",
+      "Y": "monarchs",
+      "A": "innovation",
+      "B": "tradition"
+    },
+    "canonical_keys": {
+      "X": "merchants",
+      "Y": "monarchs",
+      "A": "innovation",
+      "B": "tradition"
+    },
+    "effect_size": 1.6300967004956013,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "merchant",
+        "trader",
+        "seller",
+        "vendor",
+        "retailer",
+        "shopkeeper",
+        "dealer",
+        "broker",
+        "businessman",
+        "exporter",
+        "importer",
+        "salesman",
+        "wholesaler",
+        "agent",
+        "distributor"
+      ],
+      "Y_used": [
+        "king",
+        "queen",
+        "emperor",
+        "empress",
+        "sovereign",
+        "ruler",
+        "prince",
+        "princess",
+        "lord",
+        "monarch",
+        "tyrant",
+        "despot",
+        "autocrat",
+        "sultan",
+        "tsar"
+      ],
+      "A_used": [
+        "innovation",
+        "novelty",
+        "change",
+        "progress",
+        "modernity",
+        "creativity",
+        "invention",
+        "discovery",
+        "advancement",
+        "breakthrough",
+        "reform",
+        "evolution",
+        "dynamism",
+        "transformation",
+        "experiment"
+      ],
+      "B_used": [
+        "tradition",
+        "preservation",
+        "stability",
+        "convention",
+        "heritage",
+        "custom",
+        "legacy",
+        "conservatism",
+        "antiquity",
+        "history",
+        "establishment",
+        "routine",
+        "continuity",
+        "classicism",
+        "stasis"
+      ]
+    },
+    "proposal": "People implicitly associate merchants with innovation more strongly than they associate monarchs with innovation. This differential association is novel because implicit studies of innovation typically focus on scientists, artists, or entrepreneurs, overlooking the historical and cultural linkage between mercantile activity and adaptive change. It is relevant to contemporary discourse contrasting state-centric governance with market-driven dynamism, revealing whether the mental representation of rulers remains anchored in tradition and preservation while traders are coded as agents of novelty and transformation. Confirming this association would suggest that the 'merchant as innovator' heuristic is deeply embedded in social cognition, potentially influencing how institutions and markets are perceived as sources of progress.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "a61182de851b",
     "timestamp": "2026-05-10T21:18:05.068799+00:00",
     "schema_version": "autoresearch.v1",
