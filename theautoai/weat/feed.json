@@ -1,5 +1,111 @@
 [
   {
+    "id": "8a736d976af2",
+    "timestamp": "2026-05-11T22:55:47.340501+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "mediators vs arbitrators on empathy vs coldness",
+    "labels": {
+      "X": "mediators",
+      "Y": "arbitrators",
+      "A": "empathy",
+      "B": "coldness"
+    },
+    "canonical_keys": {
+      "X": "mediators",
+      "Y": "arbitrators",
+      "A": "empathy",
+      "B": "coldness"
+    },
+    "effect_size": 1.1927172030671473,
+    "p_value": 0.00058,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "mediator",
+        "facilitator",
+        "conciliator",
+        "peacemaker",
+        "negotiator",
+        "counselor",
+        "therapist",
+        "diplomat",
+        "reconciler",
+        "intermediary",
+        "moderator",
+        "helper",
+        "listener",
+        "guide",
+        "advocate"
+      ],
+      "Y_used": [
+        "arbitrator",
+        "adjudicator",
+        "judge",
+        "referee",
+        "umpire",
+        "magistrate",
+        "decider",
+        "arbiter",
+        "assessor",
+        "examiner",
+        "inspector",
+        "controller",
+        "director",
+        "commander",
+        "leader"
+      ],
+      "A_used": [
+        "empathy",
+        "compassion",
+        "understanding",
+        "warmth",
+        "kindness",
+        "sympathy",
+        "tenderness",
+        "affection",
+        "care",
+        "love",
+        "sensitivity",
+        "mercy",
+        "grace",
+        "gentleness",
+        "caring"
+      ],
+      "B_used": [
+        "coldness",
+        "judgment",
+        "harshness",
+        "severity",
+        "strictness",
+        "rigidity",
+        "indifference",
+        "aloofness",
+        "sternness",
+        "discipline",
+        "punishment",
+        "decree",
+        "ruling",
+        "order",
+        "mandate"
+      ]
+    },
+    "proposal": "People associate mediators with empathy more strongly than they associate arbitrators with empathy. This differential implicit association is proposed based on the structural roles these actors occupy in public discourse: mediators are culturally framed as facilitators who bridge divides and listen to conflicting parties, whereas arbitrators are cast as adjudicators who impose binding decisions from a position of authority. Examining this association is novel because implicit cognition research has largely ignored the mental representations of dispute-resolution roles, focusing instead on broader legal or political categories. It matters because public trust in alternative dispute resolution mechanisms may depend on latent perceptions of warmth and understanding versus cold judgment, influencing which roles are legitimized in community conflicts versus commercial disputes.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "3d577ea32466",
     "timestamp": "2026-05-11T19:58:54.658216+00:00",
     "schema_version": "autoresearch.v1",
