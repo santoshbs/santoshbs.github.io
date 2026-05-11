@@ -1,5 +1,111 @@
 [
   {
+    "id": "debc5a75c707",
+    "timestamp": "2026-05-11T12:29:33.619559+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "judges vs executives on impartiality versus partiality",
+    "labels": {
+      "X": "judges",
+      "Y": "executives",
+      "A": "impartiality",
+      "B": "partiality"
+    },
+    "canonical_keys": {
+      "X": "judges",
+      "Y": "executives",
+      "A": "impartiality",
+      "B": "partiality"
+    },
+    "effect_size": 1.1405173504327473,
+    "p_value": 0.0009,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "judge",
+        "justice",
+        "magistrate",
+        "jurist",
+        "arbitrator",
+        "mediator",
+        "referee",
+        "umpire",
+        "assessor",
+        "examiner",
+        "censor",
+        "auditor",
+        "inspector",
+        "chancellor",
+        "inquisitor"
+      ],
+      "Y_used": [
+        "executive",
+        "manager",
+        "boss",
+        "director",
+        "president",
+        "administrator",
+        "leader",
+        "supervisor",
+        "overseer",
+        "chief",
+        "chairman",
+        "head",
+        "foreman",
+        "steward",
+        "superintendent"
+      ],
+      "A_used": [
+        "impartial",
+        "neutral",
+        "fair",
+        "objective",
+        "unbiased",
+        "detached",
+        "disinterested",
+        "balanced",
+        "evenhanded",
+        "just",
+        "equitable",
+        "unprejudiced",
+        "dispassionate",
+        "reasonable",
+        "rational"
+      ],
+      "B_used": [
+        "partial",
+        "biased",
+        "unfair",
+        "subjective",
+        "partisan",
+        "prejudiced",
+        "slanted",
+        "skewed",
+        "weighted",
+        "loaded",
+        "selfish",
+        "greedy",
+        "devoted",
+        "loyal",
+        "committed"
+      ]
+    },
+    "proposal": "People associate judges with impartiality more strongly than they associate executives with impartiality. This differential implicit association contrasts the cultural ideal of the judicial role as a neutral arbiter of justice with the corporate executive's fiduciary duty to advance specific organizational interests. Examining this association is novel because it bridges institutional trust in courts versus corporations, revealing how deeply ingrained notions of partiality and instrumentalism are in public mental representations of business leadership compared to legal authority. Confirming this would highlight the asymmetry in how we conceptualize neutrality in law versus the expected partiality of market actors, shaping public expectations of fairness across different societal domains.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "d6a6f2ae694f",
     "timestamp": "2026-05-11T10:33:27.061309+00:00",
     "schema_version": "autoresearch.v1",
