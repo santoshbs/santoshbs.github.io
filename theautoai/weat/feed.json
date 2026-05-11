@@ -1,5 +1,111 @@
 [
   {
+    "id": "51e370273952",
+    "timestamp": "2026-05-11T00:56:48.722045+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "investors vs speculators on Prudence vs Recklessness",
+    "labels": {
+      "X": "investors",
+      "Y": "speculators",
+      "A": "Prudence",
+      "B": "Recklessness"
+    },
+    "canonical_keys": {
+      "X": "investors",
+      "Y": "speculators",
+      "A": "prudence",
+      "B": "recklessness"
+    },
+    "effect_size": 1.5675190700800836,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "investor",
+        "owner",
+        "manager",
+        "banker",
+        "entrepreneur",
+        "capitalist",
+        "analyst",
+        "advisor",
+        "broker",
+        "funder",
+        "sponsor",
+        "donor",
+        "saver",
+        "patron",
+        "backer"
+      ],
+      "Y_used": [
+        "speculator",
+        "gambler",
+        "punter",
+        "bettor",
+        "opportunist",
+        "adventurer",
+        "hustler",
+        "player",
+        "daredevil",
+        "maniac",
+        "hothead",
+        "scalper",
+        "flipper",
+        "risker",
+        "fool"
+      ],
+      "A_used": [
+        "prudent",
+        "cautious",
+        "careful",
+        "wise",
+        "patient",
+        "sensible",
+        "conservative",
+        "safe",
+        "measured",
+        "steady",
+        "stable",
+        "calm",
+        "thoughtful",
+        "deliberate",
+        "slow"
+      ],
+      "B_used": [
+        "reckless",
+        "rash",
+        "crazy",
+        "stupid",
+        "risky",
+        "unsafe",
+        "lucky",
+        "wild",
+        "manic",
+        "impulsive",
+        "sudden",
+        "fast",
+        "aggressive",
+        "dangerous",
+        "volatile"
+      ]
+    },
+    "proposal": "People associate investors with prudence more strongly than they associate speculators with prudence. This differential implicit association is novel because while explicit attitudes toward financial risk are extensively studied, the implicit moral contrast between the 'patient investor' and the 'reckless speculator' has not been operationalized as a social category contrast. It is interesting because it reveals how economic actors are evaluated through the lens of time preference and the perceived legitimacy of their risk-taking. Confirming this association would demonstrate that public mental representations already embed a normative distinction between value-creation and zero-sum gambling, which matters for understanding resistance to speculative financial instruments and support for long-term economic policy.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "26b4602cf63a",
     "timestamp": "2026-05-11T00:09:37.556885+00:00",
     "schema_version": "autoresearch.v1",
