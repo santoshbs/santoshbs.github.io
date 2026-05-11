@@ -1,5 +1,111 @@
 [
   {
+    "id": "d6a6f2ae694f",
+    "timestamp": "2026-05-11T10:33:27.061309+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "travelers vs vagrants on agency versus involuntariness",
+    "labels": {
+      "X": "travelers",
+      "Y": "vagrants",
+      "A": "autonomy",
+      "B": "constraint"
+    },
+    "canonical_keys": {
+      "X": "travelers",
+      "Y": "vagrants",
+      "A": "autonomy",
+      "B": "constraint"
+    },
+    "effect_size": 1.1020968535669269,
+    "p_value": 0.0018,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "traveler",
+        "tourist",
+        "backpacker",
+        "adventurer",
+        "explorer",
+        "vacationer",
+        "hitchhiker",
+        "nomad",
+        "voyager",
+        "sojourner",
+        "globetrotter",
+        "pilgrim",
+        "commuter",
+        "visitor",
+        "sightseer"
+      ],
+      "Y_used": [
+        "vagrant",
+        "homeless",
+        "tramp",
+        "beggar",
+        "transient",
+        "drifter",
+        "squatter",
+        "vagabond",
+        "hobo",
+        "derelict",
+        "outcast",
+        "pauper",
+        "floater",
+        "panhandler",
+        "wino"
+      ],
+      "A_used": [
+        "freedom",
+        "liberty",
+        "choice",
+        "control",
+        "agency",
+        "autonomy",
+        "independence",
+        "will",
+        "option",
+        "preference",
+        "decision",
+        "selection",
+        "initiative",
+        "power",
+        "right"
+      ],
+      "B_used": [
+        "force",
+        "compulsion",
+        "constraint",
+        "restriction",
+        "trap",
+        "bondage",
+        "obligation",
+        "fate",
+        "accident",
+        "randomness",
+        "chaos",
+        "passivity",
+        "dependence",
+        "limitation",
+        "captivity"
+      ]
+    },
+    "proposal": "People associate travelers with autonomy more strongly than they associate vagrants with autonomy. This differential implicit association reflects a pervasive but unexamined bias in how societies cognitively map mobility: recreational or exploratory movement is mentally bundled with personal agency and choice, whereas non-commercial displacement is implicitly coded as involuntary or circumstantial. Examining this association is novel because existing literature focuses on poverty stigma or spatial segregation, but rarely isolates the psychological attribution of autonomy as a function of mobility category. Confirming this bias would reveal how deeply implicit cognition separates chosen movement from unchosen displacement, with implications for public policy, media framing, and urban planning.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "bb53f691f7e6",
     "timestamp": "2026-05-11T03:28:43.165985+00:00",
     "schema_version": "autoresearch.v1",
