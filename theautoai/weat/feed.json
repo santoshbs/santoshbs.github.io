@@ -1,5 +1,111 @@
 [
   {
+    "id": "634f3e950791",
+    "timestamp": "2026-05-11T01:28:20.761306+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Resisters vs Adopters on moral character: integrity versus conformity",
+    "labels": {
+      "X": "Resisters",
+      "Y": "Adopters",
+      "A": "Integrity and Steadfastness",
+      "B": "Conformity and Malleability"
+    },
+    "canonical_keys": {
+      "X": "resisters",
+      "Y": "adopters",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 0.24667778257039044,
+    "p_value": 0.51263,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "dissenter",
+        "resistor",
+        "rebel",
+        "opponent",
+        "objector",
+        "holdout",
+        "contrarian",
+        "traditionalist",
+        "conservative",
+        "skeptic",
+        "nonconformist",
+        "individualist",
+        "dissident",
+        "luddite",
+        "diehard"
+      ],
+      "Y_used": [
+        "adopter",
+        "follower",
+        "adapter",
+        "proponent",
+        "supporter",
+        "advocate",
+        "convert",
+        "conformist",
+        "imitator",
+        "copycat",
+        "groupie",
+        "partisan",
+        "adherent",
+        "disciple",
+        "modernizer"
+      ],
+      "A_used": [
+        "integrity",
+        "honest",
+        "faithful",
+        "loyal",
+        "steadfast",
+        "reliable",
+        "principled",
+        "consistent",
+        "authentic",
+        "genuine",
+        "true",
+        "strong",
+        "solid",
+        "firm",
+        "resolute"
+      ],
+      "B_used": [
+        "conformity",
+        "compliance",
+        "trendy",
+        "popular",
+        "fashionable",
+        "shallow",
+        "fleeting",
+        "disposable",
+        "fake",
+        "plastic",
+        "hollow",
+        "weak",
+        "soft",
+        "yielding",
+        "fickle"
+      ]
+    },
+    "proposal": "People associate Resisters with integrity more strongly than they associate Adopters with integrity. This proposal targets a latent dimension of moral character where resisting change, trends, or external pressures is implicitly linked to principled steadfastness, whereas adopting is linked to conformity or trend-chasing. While explicit discourse often valorizes innovation, implicit representations may preserve older moral intuitions that equate resistance with fidelity to core values and adoption with malleability. Examining this association is novel because prior research has focused on competence, creativity, or openness dimensions, neglecting the moral character axis of resistance versus adoption. It matters because it reveals how public cognition may subtly legitimize dissent and delegitimize compliance through moral signaling, regardless of the rational merits of the change being debated.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "51e370273952",
     "timestamp": "2026-05-11T00:56:48.722045+00:00",
     "schema_version": "autoresearch.v1",
