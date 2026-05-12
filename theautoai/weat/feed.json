@@ -1,5 +1,111 @@
 [
   {
+    "id": "88d3c6274cb7",
+    "timestamp": "2026-05-12T17:37:15.129786+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "citizens vs aliens on entitlement and deservingness",
+    "labels": {
+      "X": "citizens",
+      "Y": "aliens",
+      "A": "entitlement/deserving",
+      "B": "burden/undeserving"
+    },
+    "canonical_keys": {
+      "X": "citizens",
+      "Y": "aliens",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 1.1172168768027628,
+    "p_value": 0.00121,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "citizen",
+        "national",
+        "resident",
+        "voter",
+        "populace",
+        "community",
+        "electorate",
+        "society",
+        "member",
+        "inhabitant",
+        "local",
+        "native",
+        "demographic",
+        "public",
+        "taxpayer"
+      ],
+      "Y_used": [
+        "alien",
+        "immigrant",
+        "migrant",
+        "foreigner",
+        "visitor",
+        "exile",
+        "stranger",
+        "outsider",
+        "noncitizen",
+        "transient",
+        "expatriate",
+        "guest",
+        "traveler",
+        "refugee",
+        "newcomer"
+      ],
+      "A_used": [
+        "entitled",
+        "deserving",
+        "rightful",
+        "legitimate",
+        "ownership",
+        "rights",
+        "privilege",
+        "claim",
+        "benefit",
+        "reward",
+        "inheritance",
+        "share",
+        "portion",
+        "due",
+        "owed"
+      ],
+      "B_used": [
+        "burden",
+        "liability",
+        "expense",
+        "cost",
+        "drain",
+        "parasite",
+        "freeloader",
+        "mooch",
+        "taker",
+        "dependent",
+        "needy",
+        "illegitimate",
+        "unwarranted",
+        "unwelcome",
+        "unauthorized"
+      ]
+    },
+    "proposal": "This proposal suggests that people associate citizens with entitlement more strongly than they associate aliens with entitlement. In contemporary political discourse, citizenship is often framed as the basis for legitimate claims to state resources and protections, whereas non-citizens are frequently stigmatized as illegitimate benefit claimants or burdens on the system. Examining this association is novel because it moves beyond standard ingroup-outgroup trust or warmth dimensions to focus on the specific stereotype of moral and legal desert. It matters because confirming this implicit link would reveal how deeply the boundary of membership shapes perceptions of who is deserving of social support versus who is viewed as an interloper.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "33f1ba259bbd",
     "timestamp": "2026-05-12T15:59:53.996902+00:00",
     "schema_version": "autoresearch.v1",
