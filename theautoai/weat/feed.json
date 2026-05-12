@@ -1,5 +1,118 @@
 [
   {
+    "id": "e5ac7f46f4cb",
+    "timestamp": "2026-05-12T00:54:44.219120+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "carpenters vs masons on adaptability versus rigidity",
+    "labels": {
+      "X": "carpenters",
+      "Y": "masons",
+      "A": "adaptability",
+      "B": "rigidity"
+    },
+    "canonical_keys": {
+      "X": "carpenters",
+      "Y": "masons",
+      "A": "adaptability",
+      "B": "rigidity"
+    },
+    "effect_size": 0.9685986237034113,
+    "p_value": 0.00657,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 18,
+      "B": 18
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "carpenter",
+        "carpenters",
+        "woodworker",
+        "woodworkers",
+        "joiner",
+        "joiners",
+        "framer",
+        "framers",
+        "cabinetmaker",
+        "cabinetmakers",
+        "millwright",
+        "millwrights",
+        "finisher",
+        "finishers",
+        "sawyer",
+        "sawyers"
+      ],
+      "Y_used": [
+        "mason",
+        "masons",
+        "bricklayer",
+        "bricklayers",
+        "stonemason",
+        "stonemasons",
+        "plasterer",
+        "plasterers",
+        "brickmaker",
+        "brickmakers",
+        "stonecutter",
+        "stonecutters",
+        "tiler",
+        "tilers",
+        "brickmasons"
+      ],
+      "A_used": [
+        "adaptable",
+        "flexible",
+        "responsive",
+        "agile",
+        "nimble",
+        "versatile",
+        "elastic",
+        "supple",
+        "pliant",
+        "dynamic",
+        "fluid",
+        "shifting",
+        "creative",
+        "innovative",
+        "adjusting",
+        "accommodating",
+        "spontaneous",
+        "malleable"
+      ],
+      "B_used": [
+        "rigid",
+        "static",
+        "fixed",
+        "inflexible",
+        "stiff",
+        "unyielding",
+        "solid",
+        "firm",
+        "stable",
+        "permanent",
+        "unchanging",
+        "predictable",
+        "strict",
+        "heavy",
+        "precise",
+        "sturdy",
+        "dense",
+        "orderly"
+      ]
+    },
+    "proposal": "People associate carpenters with adaptability more strongly than they associate masons with adaptability. This differential implicit association likely originates from the contrasting material demands of each trade: woodworking requires reading grain, bending, and adjusting to organic irregularities, whereas masonry relies on precise cutting, heavy lifting, and imposing rigid geometric order. Although both groups are equally essential to construction, cultural narratives and vocational media subtly frame carpenters as responsive problem-solvers and masons as static implementers, yet this material-to-temperament mapping has never been subjected to implicit measurement. Testing it matters because such unexamined biases can quietly shape how society evaluates trade labor, influence apprenticeship counseling, and reinforce stereotypes about which skilled workers are best suited for dynamic versus routine tasks. To my knowledge, no prior WEAT or IAT research has probed how implicit flexibility attributions diverge across these two foundational building professions.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "bb7b4bd984c4",
     "timestamp": "2026-05-12T00:16:36.720843+00:00",
     "schema_version": "autoresearch.v1",
