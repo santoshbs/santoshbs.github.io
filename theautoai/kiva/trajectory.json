@@ -1,15 +1,5 @@
 [
   {
-    "id": "female-logistical-detail-slower",
-    "title": "Female borrowers who include specific daily logistics like walking distances may fund more slowly.",
-    "bucket": "",
-    "birth_batch": 0,
-    "death_batch": 193,
-    "last_batch": 193,
-    "confidence": 0,
-    "alive": false
-  },
-  {
     "id": "male-repeat-borrower-faster",
     "title": "Mentioning status as a repeat borrower may accelerate funding for male borrowers.",
     "bucket": "",
@@ -100,11 +90,21 @@
     "alive": false
   },
   {
+    "id": "female-infrastructure-goals-slower",
+    "title": "Female borrowers who mention long-term infrastructure goals, such as building a house or stall, may fund more slowly.",
+    "bucket": "",
+    "birth_batch": 0,
+    "death_batch": 243,
+    "last_batch": 243,
+    "confidence": 0,
+    "alive": false
+  },
+  {
     "id": "institutional-names-slower",
     "title": "Mentioning specific institutional or brand names predicts slower funding regardless of gender.",
     "bucket": "slower",
     "birth_batch": 1,
-    "last_batch": 242,
+    "last_batch": 243,
     "confidence": 0.85,
     "peak_confidence": 0.85,
     "alive": true
@@ -114,7 +114,7 @@
     "title": "Female borrowers who list specific products or goals beyond family welfare fund faster.",
     "bucket": "gendered_women",
     "birth_batch": 1,
-    "last_batch": 242,
+    "last_batch": 243,
     "confidence": 1.0,
     "peak_confidence": 1.0,
     "alive": true
@@ -124,7 +124,7 @@
     "title": "Explicit expressions of gratitude to lenders accelerate funding for female borrowers.",
     "bucket": "gendered_women",
     "birth_batch": 1,
-    "last_batch": 242,
+    "last_batch": 243,
     "confidence": 0.7,
     "peak_confidence": 0.7,
     "alive": true
@@ -134,7 +134,7 @@
     "title": "Female borrowers who mention benefits to their family or community fund faster.",
     "bucket": "gendered_women",
     "birth_batch": 1,
-    "last_batch": 242,
+    "last_batch": 243,
     "confidence": 0.78,
     "peak_confidence": 0.78,
     "alive": true
@@ -144,7 +144,7 @@
     "title": "Mentioning benefits for children predicts faster funding regardless of gender.",
     "bucket": "faster",
     "birth_batch": 1,
-    "last_batch": 242,
+    "last_batch": 243,
     "confidence": 1.0,
     "peak_confidence": 1.0,
     "alive": true
@@ -153,8 +153,8 @@
     "id": "business-duration-faster",
     "title": "Specifying the number of years a business has operated predicts faster funding regardless of gender.",
     "bucket": "faster",
-    "birth_batch": 118,
-    "last_batch": 242,
+    "birth_batch": 117,
+    "last_batch": 243,
     "confidence": 0.72,
     "peak_confidence": 0.72,
     "alive": true
@@ -163,8 +163,8 @@
     "id": "pitch-length-slower",
     "title": "Longer pitch text predicts slower funding regardless of gender.",
     "bucket": "slower",
-    "birth_batch": 176,
-    "last_batch": 242,
+    "birth_batch": 175,
+    "last_batch": 243,
     "confidence": 0.7,
     "peak_confidence": 0.7,
     "alive": true
@@ -173,10 +173,10 @@
     "id": "biographical-details-slower",
     "title": "Mentioning biographical details such as education level or daily routines predicts slower funding regardless of gender.",
     "bucket": "slower",
-    "birth_batch": 222,
-    "last_batch": 242,
-    "confidence": 0.68,
-    "peak_confidence": 0.68,
+    "birth_batch": 221,
+    "last_batch": 243,
+    "confidence": 0.53,
+    "peak_confidence": 0.53,
     "alive": true
   }
 ]
