@@ -1,5 +1,111 @@
 [
   {
+    "id": "6fadbfe6a6fc",
+    "timestamp": "2026-05-12T04:46:05.186375+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "activists vs journalists on urgency vs detachment",
+    "labels": {
+      "X": "activists",
+      "Y": "journalists",
+      "A": "urgency",
+      "B": "detachment"
+    },
+    "canonical_keys": {
+      "X": "activists",
+      "Y": "journalists",
+      "A": "urgency",
+      "B": "detachment"
+    },
+    "effect_size": 1.2869474404341148,
+    "p_value": 6e-05,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "activist",
+        "protester",
+        "campaigner",
+        "reformer",
+        "agitator",
+        "dissident",
+        "revolutionary",
+        "organizer",
+        "volunteer",
+        "advocate",
+        "crusader",
+        "lobbyist",
+        "demonstrator",
+        "marcher",
+        "unionist"
+      ],
+      "Y_used": [
+        "reporter",
+        "journalist",
+        "editor",
+        "anchor",
+        "broadcaster",
+        "columnist",
+        "correspondent",
+        "newscaster",
+        "commentator",
+        "chronicler",
+        "publicist",
+        "writer",
+        "author",
+        "pressman",
+        "newswriter"
+      ],
+      "A_used": [
+        "urgent",
+        "immediate",
+        "pressing",
+        "critical",
+        "vital",
+        "desperate",
+        "frantic",
+        "emotional",
+        "passionate",
+        "fervent",
+        "intense",
+        "ardent",
+        "zealous",
+        "fiery",
+        "visceral"
+      ],
+      "B_used": [
+        "neutral",
+        "detached",
+        "objective",
+        "impartial",
+        "dispassionate",
+        "aloof",
+        "indifferent",
+        "calm",
+        "cool",
+        "rational",
+        "measured",
+        "balanced",
+        "unbiased",
+        "fair",
+        "disinterested"
+      ]
+    },
+    "proposal": "People associate activists with moral urgency more strongly than they associate journalists with moral urgency. While explicit surveys routinely measure credibility or political bias, implicit measures rarely capture the underlying affective and temporal dimensions of how these roles are mentally structured. In contemporary discourse, activists are routinely framed as responding to immediate ethical crises, whereas journalists are normatively pressured toward detachment and procedural neutrality. Examining this differential implicit association matters because it reveals whether the cognitive architecture of public trust inherently privileges emotional immediacy over institutional objectivity when evaluating social change agents. If confirmed, the finding would suggest that interventions aimed at bridging media skepticism and movement support must first address deep-seated, automatic contrasts in how urgency is mapped onto grassroots versus professional identities.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "77f18b59ecb1",
     "timestamp": "2026-05-12T02:43:47.824682+00:00",
     "schema_version": "autoresearch.v1",
