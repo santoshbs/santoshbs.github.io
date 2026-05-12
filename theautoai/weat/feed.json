@@ -1,5 +1,111 @@
 [
   {
+    "id": "9e5c367ba724",
+    "timestamp": "2026-05-12T20:34:21.259412+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Owners vs Managers on Entitlement vs Merit",
+    "labels": {
+      "X": "Owners",
+      "Y": "Managers",
+      "A": "Entitlement",
+      "B": "Merit"
+    },
+    "canonical_keys": {
+      "X": "owners",
+      "Y": "managers",
+      "A": "entitlement",
+      "B": "merit"
+    },
+    "effect_size": 1.5656552736172131,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "owner",
+        "proprietor",
+        "landlord",
+        "shareholder",
+        "investor",
+        "capitalist",
+        "magnate",
+        "tycoon",
+        "baron",
+        "lord",
+        "master",
+        "patriarch",
+        "mogul",
+        "boss",
+        "patron"
+      ],
+      "Y_used": [
+        "manager",
+        "supervisor",
+        "administrator",
+        "director",
+        "executive",
+        "foreman",
+        "agent",
+        "employee",
+        "secretary",
+        "clerk",
+        "officer",
+        "steward",
+        "handler",
+        "coordinator",
+        "deputy"
+      ],
+      "A_used": [
+        "entitlement",
+        "privilege",
+        "right",
+        "prerogative",
+        "monopoly",
+        "inheritance",
+        "birthright",
+        "favor",
+        "advantage",
+        "claim",
+        "benefit",
+        "handout",
+        "gift",
+        "bounty",
+        "legacy"
+      ],
+      "B_used": [
+        "merit",
+        "achievement",
+        "skill",
+        "talent",
+        "effort",
+        "work",
+        "labor",
+        "performance",
+        "success",
+        "promotion",
+        "wage",
+        "salary",
+        "contract",
+        "duty",
+        "job"
+      ]
+    },
+    "proposal": "People associate Owners with entitlement more strongly than they associate Managers with entitlement. This differential implicit association reflects the distinction between residual claimants who hold rights by virtue of property ownership versus hired agents who exercise authority through contractual employment. While both groups wield organizational power, public discourse often frames ownership as conferring unearned privilege or hereditary status, whereas management is implicitly linked to professional advancement and agency. Examining this association is novel because prior research typically aggregates business elites into a single 'managerial' or 'corporate' category, obscuring how laypeople mentally differentiate the moral standing of capital holders from those who administer daily operations. Confirming or disconfirming this link matters for understanding resistance to worker-ownership models, perceptions of executive compensation, and the cultural roots of class-based animosity.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "b899ebee50bd",
     "timestamp": "2026-05-12T19:13:32.417483+00:00",
     "schema_version": "autoresearch.v1",
