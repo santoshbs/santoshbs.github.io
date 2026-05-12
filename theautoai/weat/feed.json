@@ -1,5 +1,111 @@
 [
   {
+    "id": "ae9e0d5fe474",
+    "timestamp": "2026-05-12T21:52:26.395027+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "coaches vs therapists on moral vs clinical focus",
+    "labels": {
+      "X": "coaches",
+      "Y": "therapists",
+      "A": "moral cultivation",
+      "B": "clinical remediation"
+    },
+    "canonical_keys": {
+      "X": "coaches",
+      "Y": "therapists",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 1.4337709212623686,
+    "p_value": 5e-05,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "coach",
+        "trainer",
+        "mentor",
+        "guide",
+        "instructor",
+        "director",
+        "leader",
+        "facilitator",
+        "teacher",
+        "tutor",
+        "expert",
+        "captain",
+        "supervisor",
+        "manager",
+        "scout"
+      ],
+      "Y_used": [
+        "therapist",
+        "psychologist",
+        "psychiatrist",
+        "clinician",
+        "doctor",
+        "nurse",
+        "counselor",
+        "practitioner",
+        "medic",
+        "physician",
+        "analyst",
+        "surgeon",
+        "specialist",
+        "professional",
+        "healer"
+      ],
+      "A_used": [
+        "virtue",
+        "character",
+        "honor",
+        "integrity",
+        "righteousness",
+        "nobility",
+        "goodness",
+        "conscience",
+        "piety",
+        "dignity",
+        "excellence",
+        "morality",
+        "principle",
+        "decency",
+        "honesty"
+      ],
+      "B_used": [
+        "disease",
+        "illness",
+        "disorder",
+        "pathology",
+        "treatment",
+        "cure",
+        "remedy",
+        "medical",
+        "clinical",
+        "patient",
+        "symptom",
+        "diagnosis",
+        "medicine",
+        "hospital",
+        "clinic"
+      ]
+    },
+    "proposal": "People associate coaches with moral cultivation more strongly than they associate therapists with moral cultivation. This differential implicit association reflects a contemporary cultural narrative that frames coaching as a primary vehicle for character building and virtue development, while therapy is increasingly stereotyped as focused on clinical remediation and pathology management. Examining this bias is novel because implicit measures have rarely contrasted these adjacent help professions along a moral or ethical development axis. Confirming this association would clarify how public discourse shapes expectations for personal guidance, potentially influencing whether individuals seek moral development through performance-oriented coaching or clinical mental health care.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "1f96ceed2a97",
     "timestamp": "2026-05-12T21:15:44.645591+00:00",
     "schema_version": "autoresearch.v1",
