@@ -1,5 +1,111 @@
 [
   {
+    "id": "1f96ceed2a97",
+    "timestamp": "2026-05-12T21:15:44.645591+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "veterans vs professors on Decisiveness vs Deliberation",
+    "labels": {
+      "X": "veterans",
+      "Y": "professors",
+      "A": "Decisiveness",
+      "B": "Deliberation"
+    },
+    "canonical_keys": {
+      "X": "veterans",
+      "Y": "professors",
+      "A": "decisiveness",
+      "B": "deliberation"
+    },
+    "effect_size": 1.7466523402827123,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "veteran",
+        "soldier",
+        "general",
+        "officer",
+        "sergeant",
+        "corporal",
+        "private",
+        "marine",
+        "sailor",
+        "fighter",
+        "guard",
+        "ranger",
+        "scout",
+        "trooper",
+        "warrior"
+      ],
+      "Y_used": [
+        "professor",
+        "teacher",
+        "academic",
+        "scholar",
+        "lecturer",
+        "instructor",
+        "tutor",
+        "educator",
+        "specialist",
+        "researcher",
+        "scientist",
+        "philosopher",
+        "historian",
+        "dean",
+        "librarian"
+      ],
+      "A_used": [
+        "decisive",
+        "action",
+        "bold",
+        "swift",
+        "fast",
+        "quick",
+        "rapid",
+        "leader",
+        "command",
+        "force",
+        "power",
+        "assertive",
+        "firm",
+        "immediate",
+        "determined"
+      ],
+      "B_used": [
+        "deliberate",
+        "careful",
+        "cautious",
+        "methodical",
+        "patient",
+        "thoughtful",
+        "analysis",
+        "research",
+        "theory",
+        "logic",
+        "reasoning",
+        "precise",
+        "exact",
+        "studious",
+        "reserved"
+      ]
+    },
+    "proposal": "People associate veterans with decisiveness more strongly than they associate professors with decisiveness. This differential implicit association captures a latent cultural contrast between military institutional culture, which prioritizes rapid execution and command under pressure, and academic institutional culture, which valorizes deliberation, peer review, and theoretical refinement. Examining this association is novel because prior research has focused on explicit stereotypes about intelligence or conformity, but has overlooked implicit biases regarding temporal pacing and decision-making styles across these high-status professions. Confirming this bias would matter for understanding how public discourse frames expert credibility during crises, where veterans are often implicitly viewed as inherently suited for swift intervention while professors are implicitly cast as cautious or detached.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "9e5c367ba724",
     "timestamp": "2026-05-12T20:34:21.259412+00:00",
     "schema_version": "autoresearch.v1",
