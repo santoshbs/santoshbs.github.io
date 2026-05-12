@@ -1,5 +1,111 @@
 [
   {
+    "id": "bf4024adaed1",
+    "timestamp": "2026-05-12T12:10:13.290437+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "immigrants vs refugees on migration motivation",
+    "labels": {
+      "X": "immigrants",
+      "Y": "refugees",
+      "A": "economic ambition",
+      "B": "survival need"
+    },
+    "canonical_keys": {
+      "X": "immigrants",
+      "Y": "refugees",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 1.221927846824391,
+    "p_value": 0.00021,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "immigrant",
+        "migrant",
+        "emigrant",
+        "newcomer",
+        "expat",
+        "settler",
+        "laborer",
+        "worker",
+        "expatriate",
+        "alien",
+        "foreigner",
+        "colonist",
+        "pioneer",
+        "visitor",
+        "traveler"
+      ],
+      "Y_used": [
+        "refugee",
+        "exile",
+        "evacuee",
+        "displaced",
+        "homeless",
+        "wanderer",
+        "outcast",
+        "fugitive",
+        "banished",
+        "exiled",
+        "survivor",
+        "victim",
+        "nomad",
+        "drifter",
+        "vagabond"
+      ],
+      "A_used": [
+        "ambition",
+        "wealth",
+        "career",
+        "opportunity",
+        "success",
+        "profit",
+        "progress",
+        "achievement",
+        "prosperity",
+        "enterprise",
+        "commerce",
+        "finance",
+        "business",
+        "entrepreneur",
+        "growth"
+      ],
+      "B_used": [
+        "survival",
+        "crisis",
+        "necessity",
+        "hardship",
+        "poverty",
+        "danger",
+        "flight",
+        "asylum",
+        "hunger",
+        "disaster",
+        "emergency",
+        "refuge",
+        "destitution",
+        "need",
+        "aid"
+      ]
+    },
+    "proposal": "People associate immigrants with economic ambition more strongly than they associate refugees with economic ambition. This differential reflects how public discourse often frames voluntary migration as driven by opportunity-seeking and career advancement, while involuntary displacement is implicitly categorized around survival and humanitarian need. Testing this association is novel because most implicit bias research on mobility focuses on legality or perceived threat, neglecting how the underlying motivation for movement shapes mental representations of agency. Confirming this split matters for integration policy, as it reveals whether refugees are systematically mentally stripped of future-oriented economic agency, potentially influencing employer perceptions and resource allocation.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "6fadbfe6a6fc",
     "timestamp": "2026-05-12T04:46:05.186375+00:00",
     "schema_version": "autoresearch.v1",
