@@ -1,5 +1,111 @@
 [
   {
+    "id": "b899ebee50bd",
+    "timestamp": "2026-05-12T19:13:32.417483+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "activists vs scholars on willingness to embrace public confrontation",
+    "labels": {
+      "X": "activists",
+      "Y": "scholars",
+      "A": "confrontation",
+      "B": "avoidance"
+    },
+    "canonical_keys": {
+      "X": "activists",
+      "Y": "scholars",
+      "A": "confrontation",
+      "B": "avoidance"
+    },
+    "effect_size": 1.5053952474189378,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "activist",
+        "protester",
+        "rebel",
+        "revolutionary",
+        "militant",
+        "campaigner",
+        "organizer",
+        "agitator",
+        "unionist",
+        "volunteer",
+        "marcher",
+        "dissenter",
+        "picketer",
+        "crusader",
+        "reformer"
+      ],
+      "Y_used": [
+        "professor",
+        "researcher",
+        "academic",
+        "scientist",
+        "scholar",
+        "teacher",
+        "educator",
+        "lecturer",
+        "author",
+        "writer",
+        "analyst",
+        "intellectual",
+        "student",
+        "fellow",
+        "graduate"
+      ],
+      "A_used": [
+        "fight",
+        "struggle",
+        "war",
+        "battle",
+        "conflict",
+        "confrontation",
+        "clash",
+        "riot",
+        "protest",
+        "agitation",
+        "anger",
+        "aggression",
+        "violence",
+        "resistance",
+        "opposition"
+      ],
+      "B_used": [
+        "peace",
+        "agreement",
+        "harmony",
+        "consensus",
+        "calm",
+        "civility",
+        "discussion",
+        "dialogue",
+        "negotiation",
+        "reconciliation",
+        "tolerance",
+        "understanding",
+        "cooperation",
+        "accord",
+        "unity"
+      ]
+    },
+    "proposal": "People associate activists with willingness to embrace public confrontation more strongly than they associate scholars with willingness to embrace public confrontation. This differential implicit association is novel because while explicit research has extensively documented behavioral differences between protest movements and academic discourse, the automatic cognitive linkage between scholarly identity and conflict avoidance has never been systematically probed. It is interesting because contemporary digital discourse increasingly blurs these roles as academics adopt activist rhetoric online and grassroots organizers publish peer-reviewed research, yet implicit mental representations may still rigidly partition these domains. Confirming or disconfirming this association would meaningfully shift how we understand the automatic cognitive scaffolding that shapes public expectations around civic engagement and institutional conflict tolerance.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "88d3c6274cb7",
     "timestamp": "2026-05-12T17:37:15.129786+00:00",
     "schema_version": "autoresearch.v1",
