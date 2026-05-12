@@ -1,5 +1,111 @@
 [
   {
+    "id": "bb7b4bd984c4",
+    "timestamp": "2026-05-12T00:16:36.720843+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "investigators vs survivors on objectivity vs subjectivity",
+    "labels": {
+      "X": "investigators",
+      "Y": "survivors",
+      "A": "epistemic authority",
+      "B": "personal narrative"
+    },
+    "canonical_keys": {
+      "X": "investigators",
+      "Y": "survivors",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 1.6533296672945765,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "investigator",
+        "detective",
+        "sleuth",
+        "examiner",
+        "analyst",
+        "inspector",
+        "auditor",
+        "inquisitor",
+        "official",
+        "agent",
+        "officer",
+        "profiler",
+        "specialist",
+        "technician",
+        "observer"
+      ],
+      "Y_used": [
+        "survivor",
+        "victim",
+        "patient",
+        "refugee",
+        "casualty",
+        "sufferer",
+        "orphan",
+        "detainee",
+        "displaced",
+        "homeless",
+        "unhoused",
+        "needy",
+        "helpless",
+        "vulnerable",
+        "traumatized"
+      ],
+      "A_used": [
+        "objective",
+        "credible",
+        "expert",
+        "authoritative",
+        "validated",
+        "factual",
+        "evidence",
+        "scientific",
+        "reliable",
+        "institutional",
+        "professional",
+        "analytical",
+        "systematic",
+        "accurate",
+        "impartial"
+      ],
+      "B_used": [
+        "subjective",
+        "personal",
+        "emotional",
+        "narrative",
+        "experience",
+        "trauma",
+        "witness",
+        "story",
+        "feeling",
+        "anecdotal",
+        "individual",
+        "private",
+        "intimate",
+        "visceral",
+        "spontaneous"
+      ]
+    },
+    "proposal": "People associate investigators with epistemic authority more strongly than they associate survivors with epistemic authority. Although survivor testimony is increasingly valorized in media, activism, and legal reform, implicit cognitive schemas may still partition firsthand experience from validated knowledge. This differential association matters because it exposes how institutional trust and public reasoning silently privilege methodological detachment over personal narrative, potentially influencing how juries, policymakers, and citizens weigh trauma accounts against expert findings during crises, abuse allegations, and historical reckonings. Uncovering this bias would clarify a hidden mental boundary between subjective witness and objective arbiter, offering critical insight into how society allocates credibility in trauma-informed contexts.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "8a736d976af2",
     "timestamp": "2026-05-11T22:55:47.340501+00:00",
     "schema_version": "autoresearch.v1",
