@@ -1,5 +1,111 @@
 [
   {
+    "id": "bd393bd40c6a",
+    "timestamp": "2026-05-13T18:14:31.399103+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "celebrities vs commoners on Privilege vs Ordinary Status",
+    "labels": {
+      "X": "celebrities",
+      "Y": "commoners",
+      "A": "Privilege",
+      "B": "Ordinary"
+    },
+    "canonical_keys": {
+      "X": "celebrities",
+      "Y": "commoners",
+      "A": "privilege",
+      "B": "ordinary"
+    },
+    "effect_size": 0.7840384735766243,
+    "p_value": 0.03268,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "celebrity",
+        "star",
+        "actor",
+        "actress",
+        "model",
+        "singer",
+        "dancer",
+        "diva",
+        "idol",
+        "icon",
+        "starlet",
+        "talent",
+        "performer",
+        "entertainer",
+        "legend"
+      ],
+      "Y_used": [
+        "commoner",
+        "civilian",
+        "citizen",
+        "resident",
+        "neighbor",
+        "passerby",
+        "commuter",
+        "shopper",
+        "customer",
+        "client",
+        "patron",
+        "bystander",
+        "spectator",
+        "observer",
+        "participant"
+      ],
+      "A_used": [
+        "privilege",
+        "advantage",
+        "benefit",
+        "gain",
+        "reward",
+        "prize",
+        "bonus",
+        "luxury",
+        "wealth",
+        "richness",
+        "fortune",
+        "affluence",
+        "opulence",
+        "extravagance",
+        "comfort"
+      ],
+      "B_used": [
+        "ordinary",
+        "normal",
+        "typical",
+        "usual",
+        "routine",
+        "standard",
+        "everyday",
+        "average",
+        "median",
+        "plain",
+        "simple",
+        "mundane",
+        "dull",
+        "boring",
+        "regular"
+      ]
+    },
+    "proposal": "People associate celebrities with privilege more strongly than they associate commoners with privilege. While elite-versus-mass dynamics have been studied, the specific cultural representation of modern fame versus ordinary life has not been probed for implicit associations regarding unearned advantage. This distinction matters because it reveals how media saturation shapes intuitive judgments about who benefits from structural advantages versus who is subject to them, potentially influencing public support for redistributive policies or critiques of fame culture.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "fd407f00cce1",
     "timestamp": "2026-05-13T12:58:01.230902+00:00",
     "schema_version": "autoresearch.v1",
