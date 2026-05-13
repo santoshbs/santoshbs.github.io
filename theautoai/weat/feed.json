@@ -1,5 +1,111 @@
 [
   {
+    "id": "21287f106c32",
+    "timestamp": "2026-05-13T06:17:55.642569+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "merchants vs farmers on risk tolerance versus steadiness",
+    "labels": {
+      "X": "merchants",
+      "Y": "farmers",
+      "A": "risk-taking",
+      "B": "stability"
+    },
+    "canonical_keys": {
+      "X": "merchants",
+      "Y": "farmers",
+      "A": "",
+      "B": "stability"
+    },
+    "effect_size": 0.5005072244056433,
+    "p_value": 0.18159,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "merchant",
+        "trader",
+        "dealer",
+        "vendor",
+        "broker",
+        "salesman",
+        "shopkeeper",
+        "retailer",
+        "businessman",
+        "capitalist",
+        "entrepreneur",
+        "peddler",
+        "salesperson",
+        "financier",
+        "tycoon"
+      ],
+      "Y_used": [
+        "farmer",
+        "grower",
+        "agrarian",
+        "rancher",
+        "stockman",
+        "cultivator",
+        "farmhand",
+        "agriculturalist",
+        "planter",
+        "herder",
+        "shepherd",
+        "drover",
+        "breeder",
+        "tiller",
+        "horticulturist"
+      ],
+      "A_used": [
+        "risk",
+        "gamble",
+        "speculator",
+        "volatile",
+        "uncertain",
+        "daring",
+        "adventurous",
+        "speculative",
+        "reckless",
+        "bold",
+        "chance",
+        "hazard",
+        "venture",
+        "thrill",
+        "audacious"
+      ],
+      "B_used": [
+        "stable",
+        "steady",
+        "cautious",
+        "predictable",
+        "grounded",
+        "safe",
+        "secure",
+        "routine",
+        "methodical",
+        "careful",
+        "reliable",
+        "conservative",
+        "traditional",
+        "patient",
+        "enduring"
+      ]
+    },
+    "proposal": "People associate merchants with risk-taking more strongly than they associate farmers with risk-taking. Although agricultural work involves substantial objective hazards from weather and ecology, cultural narratives often construct merchants as the quintessential speculators who gamble on volatile markets and uncertain contracts, while framing farmers as grounded, steady custodians of the land whose labor follows predictable seasonal cycles. Examining this differential implicit association is important because it reveals how societies mentally disentangle or conflate economic speculation with productive risk, potentially biasing public valuation of different economic contributions. Confirming this bias would highlight a disconnect between the actual risk profiles of these roles and their stereotypes, offering insight into how dynamism and caution are distributed across social representations of economic life.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "42c596f2b087",
     "timestamp": "2026-05-13T05:01:28.548721+00:00",
     "schema_version": "autoresearch.v1",
