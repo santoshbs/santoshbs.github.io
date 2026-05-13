@@ -1,5 +1,111 @@
 [
   {
+    "id": "a95130fa6200",
+    "timestamp": "2026-05-13T10:31:19.856432+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "plaintiffs vs defendants on truthfulness vs deception",
+    "labels": {
+      "X": "plaintiffs",
+      "Y": "defendants",
+      "A": "epistemic authority",
+      "B": "deception"
+    },
+    "canonical_keys": {
+      "X": "plaintiffs",
+      "Y": "defendants",
+      "A": "",
+      "B": "deception"
+    },
+    "effect_size": 0.7758484045112906,
+    "p_value": 0.0325,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "plaintiff",
+        "claimant",
+        "complainant",
+        "litigant",
+        "accuser",
+        "petitioner",
+        "initiator",
+        "pursuer",
+        "challenger",
+        "grievant",
+        "requester",
+        "aggrieved",
+        "victim",
+        "sufferer",
+        "injured"
+      ],
+      "Y_used": [
+        "defendant",
+        "respondent",
+        "accused",
+        "suspect",
+        "perpetrator",
+        "offender",
+        "violator",
+        "culprit",
+        "wrongdoer",
+        "appellee",
+        "charged",
+        "indicted",
+        "arraigned",
+        "criminal",
+        "opponent"
+      ],
+      "A_used": [
+        "truth",
+        "honest",
+        "accurate",
+        "reliable",
+        "credible",
+        "factual",
+        "sincere",
+        "valid",
+        "genuine",
+        "authentic",
+        "just",
+        "right",
+        "correct",
+        "precise",
+        "trustworthy"
+      ],
+      "B_used": [
+        "lie",
+        "false",
+        "deceptive",
+        "dishonest",
+        "unreliable",
+        "misleading",
+        "fake",
+        "deceitful",
+        "fraudulent",
+        "evasive",
+        "suspicious",
+        "dubious",
+        "questionable",
+        "wrong",
+        "inaccurate"
+      ]
+    },
+    "proposal": "People associate plaintiffs with epistemic authority more strongly than they associate defendants with epistemic authority. This differential association taps into how public discourse frames litigants, where plaintiffs are routinely portrayed as truth-seekers exposing wrongdoing while defendants are implicitly cast as evasive or deceptive. Examining this bias is novel because implicit cognition research has largely neglected the legal arena, focusing instead on broader demographic or occupational stereotypes. It matters because such an association could subtly undermine the presumption of innocence and distort public perceptions of judicial fairness before evidence is even presented.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "21287f106c32",
     "timestamp": "2026-05-13T06:17:55.642569+00:00",
     "schema_version": "autoresearch.v1",
