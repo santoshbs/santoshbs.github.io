@@ -1,5 +1,115 @@
 [
   {
+    "id": "4e6041cbf833",
+    "timestamp": "2026-05-13T21:51:47.424584+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Ancestors vs Descendants on mystery versus familiarity",
+    "labels": {
+      "X": "Ancestors",
+      "Y": "Descendants",
+      "A": "Mystery",
+      "B": "Familiarity"
+    },
+    "canonical_keys": {
+      "X": "ancestors",
+      "Y": "descendants",
+      "A": "mystery",
+      "B": "familiarity"
+    },
+    "effect_size": 0.7916504171653425,
+    "p_value": 0.02637,
+    "n": {
+      "X": 16,
+      "Y": 16,
+      "A": 16,
+      "B": 16
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "ancestor",
+        "forebear",
+        "elder",
+        "patriarch",
+        "matriarch",
+        "forefather",
+        "foremother",
+        "predecessor",
+        "founder",
+        "pioneer",
+        "settler",
+        "colonist",
+        "immigrant",
+        "kin",
+        "relative",
+        "progenitor"
+      ],
+      "Y_used": [
+        "descendant",
+        "offspring",
+        "child",
+        "kid",
+        "baby",
+        "infant",
+        "toddler",
+        "youngster",
+        "youth",
+        "adolescent",
+        "teen",
+        "successor",
+        "newborn",
+        "heir",
+        "scion",
+        "progeny"
+      ],
+      "A_used": [
+        "mystery",
+        "secret",
+        "unknown",
+        "enigma",
+        "puzzle",
+        "riddle",
+        "obscure",
+        "cryptic",
+        "arcane",
+        "hidden",
+        "shadowy",
+        "mystic",
+        "enigmatic",
+        "perplexing",
+        "baffling",
+        "mysterious"
+      ],
+      "B_used": [
+        "familiar",
+        "known",
+        "clear",
+        "obvious",
+        "plain",
+        "simple",
+        "ordinary",
+        "routine",
+        "practical",
+        "pragmatic",
+        "concrete",
+        "tangible",
+        "evident",
+        "straightforward",
+        "lucid",
+        "common"
+      ]
+    },
+    "proposal": "People associate Ancestors with mystery more strongly than they associate Descendants with mystery. This differential implicit association is novel because implicit social cognition research has largely focused on contemporary intergroup dynamics or immediate family roles, neglecting the temporal axis of kinship. It is interesting as it probes whether cultural narratives that romanticize or mystify the past create an automatic cognitive link between ancestral figures and the unknown, contrasting with the perceived familiarity or pragmatism of living descendants. Examining this matters because such implicit associations may underpin societal preferences for heritage preservation over investment in future generations, revealing a hidden temporal bias in how we value human lives across time.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "1d1170a18a61",
     "timestamp": "2026-05-13T19:16:09.669943+00:00",
     "schema_version": "autoresearch.v1",
