@@ -1,5 +1,111 @@
 [
   {
+    "id": "42c596f2b087",
+    "timestamp": "2026-05-13T05:01:28.548721+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Mediators vs Adjudicators on mutuality versus adversarial",
+    "labels": {
+      "X": "Mediators",
+      "Y": "Adjudicators",
+      "A": "mutuality",
+      "B": "adversarial"
+    },
+    "canonical_keys": {
+      "X": "mediators",
+      "Y": "adjudicators",
+      "A": "mutuality",
+      "B": "adversarial"
+    },
+    "effect_size": 0.7347250563562907,
+    "p_value": 0.04689,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "mediator",
+        "negotiator",
+        "conciliator",
+        "peacemaker",
+        "facilitator",
+        "intermediary",
+        "broker",
+        "diplomat",
+        "adjuster",
+        "reconciler",
+        "moderator",
+        "liaison",
+        "coordinator",
+        "peacekeeper",
+        "envoy"
+      ],
+      "Y_used": [
+        "adjudicator",
+        "judge",
+        "arbitrator",
+        "referee",
+        "umpire",
+        "magistrate",
+        "arbiter",
+        "inquisitor",
+        "censor",
+        "regulator",
+        "inspector",
+        "examiner",
+        "assessor",
+        "evaluator",
+        "chair"
+      ],
+      "A_used": [
+        "mutual",
+        "cooperative",
+        "collaborative",
+        "shared",
+        "joint",
+        "reciprocal",
+        "consensus",
+        "harmony",
+        "unity",
+        "partnership",
+        "teamwork",
+        "agreement",
+        "compromise",
+        "balance",
+        "equitable"
+      ],
+      "B_used": [
+        "adversarial",
+        "competitive",
+        "conflict",
+        "dispute",
+        "hostile",
+        "antagonistic",
+        "opposing",
+        "contentious",
+        "aggressive",
+        "combative",
+        "litigious",
+        "punitive",
+        "winner",
+        "loser",
+        "victory"
+      ]
+    },
+    "proposal": "People associate mediators with mutuality more strongly than they associate adjudicators with mutuality. This differential implicit association reflects a pervasive cultural bias that frames negotiated settlements as inherently cooperative and win-win, while instinctively characterizing authoritative rulings as zero-sum or adversarial. Examining this link is novel because prior research has focused almost exclusively on explicit preferences for conflict resolution styles, leaving the automatic affective valence attached to these roles unprobed. Confirming this association would matter for understanding why laypeople and discourse communities may implicitly distrust formal legal or sporting processes in favor of informal bargaining, even in disputes where binding standards are essential.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "ae9e0d5fe474",
     "timestamp": "2026-05-12T21:52:26.395027+00:00",
     "schema_version": "autoresearch.v1",
