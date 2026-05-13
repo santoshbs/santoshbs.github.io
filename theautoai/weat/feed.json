@@ -1,5 +1,111 @@
 [
   {
+    "id": "a2a9d0644b68",
+    "timestamp": "2026-05-13T23:43:56.184120+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "perpetrators vs victims on agency vs passivity",
+    "labels": {
+      "X": "perpetrators",
+      "Y": "victims",
+      "A": "agency",
+      "B": "passivity"
+    },
+    "canonical_keys": {
+      "X": "perpetrators",
+      "Y": "victims",
+      "A": "agency",
+      "B": "passivity"
+    },
+    "effect_size": 0.34298113189647306,
+    "p_value": 0.3628,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "murderer",
+        "attacker",
+        "criminal",
+        "killer",
+        "aggressor",
+        "villain",
+        "abuser",
+        "offender",
+        "bully",
+        "rapist",
+        "terrorist",
+        "arsonist",
+        "thief",
+        "hacker",
+        "saboteur"
+      ],
+      "Y_used": [
+        "victim",
+        "survivor",
+        "casualty",
+        "target",
+        "hostage",
+        "sufferer",
+        "orphan",
+        "refugee",
+        "widow",
+        "bereaved",
+        "ward",
+        "dependent",
+        "patient",
+        "civilian",
+        "innocent"
+      ],
+      "A_used": [
+        "agent",
+        "actor",
+        "active",
+        "control",
+        "power",
+        "drive",
+        "force",
+        "leader",
+        "master",
+        "command",
+        "influence",
+        "intent",
+        "purpose",
+        "volition",
+        "will"
+      ],
+      "B_used": [
+        "passive",
+        "recipient",
+        "inactive",
+        "helpless",
+        "weak",
+        "quiet",
+        "calm",
+        "still",
+        "static",
+        "dormant",
+        "inert",
+        "idle",
+        "submissive",
+        "vulnerable",
+        "powerless"
+      ]
+    },
+    "proposal": "People associate perpetrators with agency more strongly than they associate victims with agency. This implicit association captures a fundamental asymmetry in how social cognition attributes causal power and intentionality to individuals involved in harm events. While victims are often framed as passive recipients of action, perpetrators are implicitly encoded as the active agents driving outcomes. Examining this association is novel because prior research has focused on agency differences between gender or hierarchy, but rarely directly contrasts the perpetrator-victim dyad itself. This matters because implicit attribution of agency to perpetrators versus passivity to victims may underlie biases in legal judgment, victim-blaming, and the psychological distance between the two roles in public discourse.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "4e6041cbf833",
     "timestamp": "2026-05-13T21:51:47.424584+00:00",
     "schema_version": "autoresearch.v1",
