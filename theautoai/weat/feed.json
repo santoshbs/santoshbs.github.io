@@ -1,5 +1,111 @@
 [
   {
+    "id": "ce89692358cc",
+    "timestamp": "2026-05-13T11:04:28.565561+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "innovators vs regulators on adaptability vs rigidity",
+    "labels": {
+      "X": "innovators",
+      "Y": "regulators",
+      "A": "adaptability",
+      "B": "rigidity"
+    },
+    "canonical_keys": {
+      "X": "innovators",
+      "Y": "regulators",
+      "A": "adaptability",
+      "B": "rigidity"
+    },
+    "effect_size": 1.745318285793332,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "entrepreneur",
+        "inventor",
+        "creator",
+        "pioneer",
+        "visionary",
+        "designer",
+        "developer",
+        "scientist",
+        "architect",
+        "maker",
+        "technologist",
+        "engineer",
+        "researcher",
+        "explorer",
+        "founder"
+      ],
+      "Y_used": [
+        "bureaucrat",
+        "policeman",
+        "judge",
+        "official",
+        "administrator",
+        "censor",
+        "controller",
+        "overseer",
+        "inspector",
+        "auditor",
+        "constable",
+        "officer",
+        "supervisor",
+        "comptroller",
+        "sheriff"
+      ],
+      "A_used": [
+        "flexible",
+        "adaptable",
+        "agile",
+        "versatile",
+        "fluid",
+        "dynamic",
+        "spontaneous",
+        "nimble",
+        "mobile",
+        "malleable",
+        "pliable",
+        "supple",
+        "shifting",
+        "evolving",
+        "responsive"
+      ],
+      "B_used": [
+        "rigid",
+        "stiff",
+        "inflexible",
+        "static",
+        "fixed",
+        "immovable",
+        "firm",
+        "solid",
+        "stable",
+        "constant",
+        "unchanging",
+        "permanent",
+        "stubborn",
+        "strict",
+        "unyielding"
+      ]
+    },
+    "proposal": "people associate innovators with adaptability more strongly than they associate regulators with adaptability. This differential implicit association captures a pervasive contemporary narrative contrasting agile, fluid problem-solving cultures with compliance-driven, rule-bound institutional environments. While explicit surveys often document these stereotypes, implicit measures would reveal whether this distinction is cognitively automatic and robust across contexts. Examining this link matters because it sheds light on how mental representations of organizational roles shape public trust, policy design, and interdisciplinary collaboration in increasingly complex societies. To the best of my knowledge, no prior WEAT or IAT study has specifically mapped this innovator-regulator divide onto automatic adaptability associations.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "a95130fa6200",
     "timestamp": "2026-05-13T10:31:19.856432+00:00",
     "schema_version": "autoresearch.v1",
