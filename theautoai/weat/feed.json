@@ -1,5 +1,111 @@
 [
   {
+    "id": "4a5f855269bf",
+    "timestamp": "2026-05-14T12:14:42.999204+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "journalists vs musicians on epistemic stance",
+    "labels": {
+      "X": "journalists",
+      "Y": "musicians",
+      "A": "epistemic humility",
+      "B": "epistemic confidence"
+    },
+    "canonical_keys": {
+      "X": "journalists",
+      "Y": "musicians",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 0.3458134726625661,
+    "p_value": 0.35881,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "journalist",
+        "reporter",
+        "correspondent",
+        "columnist",
+        "newswriter",
+        "editor",
+        "anchor",
+        "newscaster",
+        "commentator",
+        "broadcaster",
+        "reviewer",
+        "critic",
+        "stringer",
+        "writer",
+        "interviewer"
+      ],
+      "Y_used": [
+        "musician",
+        "singer",
+        "guitarist",
+        "pianist",
+        "drummer",
+        "bassist",
+        "violinist",
+        "cellist",
+        "flutist",
+        "trumpeter",
+        "clarinetist",
+        "saxophonist",
+        "instrumentalist",
+        "vocalist",
+        "percussionist"
+      ],
+      "A_used": [
+        "humble",
+        "cautious",
+        "uncertain",
+        "tentative",
+        "doubtful",
+        "reserved",
+        "modest",
+        "careful",
+        "hesitant",
+        "wary",
+        "skeptical",
+        "fallible",
+        "provisional",
+        "diffident",
+        "circumspect"
+      ],
+      "B_used": [
+        "confident",
+        "certain",
+        "sure",
+        "bold",
+        "assertive",
+        "decisive",
+        "definitive",
+        "absolute",
+        "forceful",
+        "strong",
+        "unwavering",
+        "resolute",
+        "firm",
+        "explicit",
+        "precise"
+      ]
+    },
+    "proposal": "People associate journalists with epistemic humility more strongly than they associate musicians with epistemic humility. This differential association reflects deep-seated cultural coding: journalism is institutionally framed around verification, source attribution, and the correction of error, which implicitly maps onto cognitive caution and acknowledgment of uncertainty. In contrast, musicians are culturally stereotyped as channels of subjective expression and emotional authenticity, where certainty or doubt is less relevant than aesthetic impact. Probing this implicit link is novel because it moves beyond standard creative/analytic or skeptical/trusting dimensions to examine how the public intuitively categorizes the epistemic cultures of media versus entertainment professions. It matters because implicit assumptions about who embodies epistemic caution could shape public deference to expertise during crises of misinformation, revealing hidden biases in how we value different forms of knowledge production.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "37d37bb82c44",
     "timestamp": "2026-05-14T10:01:56.222936+00:00",
     "schema_version": "autoresearch.v1",
