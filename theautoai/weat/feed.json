@@ -1,5 +1,111 @@
 [
   {
+    "id": "c1407b091686",
+    "timestamp": "2026-05-14T15:00:40.601236+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "painters vs sculptors on material state: fluid vs solid",
+    "labels": {
+      "X": "painters",
+      "Y": "sculptors",
+      "A": "fluidity",
+      "B": "solidity"
+    },
+    "canonical_keys": {
+      "X": "painters",
+      "Y": "sculptors",
+      "A": "fluidity",
+      "B": "solidity"
+    },
+    "effect_size": 0.8723490009204031,
+    "p_value": 0.0168,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "painter",
+        "artist",
+        "illustrator",
+        "draftsman",
+        "colorist",
+        "muralist",
+        "portraitist",
+        "watercolorist",
+        "sketcher",
+        "designer",
+        "decorator",
+        "restorer",
+        "cartoonist",
+        "lithographer",
+        "printmaker"
+      ],
+      "Y_used": [
+        "sculptor",
+        "carver",
+        "molder",
+        "caster",
+        "modeler",
+        "stonemason",
+        "metalworker",
+        "welder",
+        "smith",
+        "forger",
+        "chiseler",
+        "ceramist",
+        "artisan",
+        "craftsman",
+        "shaper"
+      ],
+      "A_used": [
+        "fluid",
+        "liquid",
+        "flow",
+        "flowing",
+        "wet",
+        "moist",
+        "damp",
+        "runny",
+        "pouring",
+        "dripping",
+        "streaming",
+        "oozing",
+        "melting",
+        "aqueous",
+        "watery"
+      ],
+      "B_used": [
+        "solid",
+        "hard",
+        "firm",
+        "rigid",
+        "stiff",
+        "sturdy",
+        "dense",
+        "compact",
+        "fixed",
+        "stable",
+        "stationary",
+        "immobile",
+        "static",
+        "frozen",
+        "hardened"
+      ]
+    },
+    "proposal": "people associate painters with fluidity more strongly than they associate sculptors with fluidity. This association taps into the material ontology of each art form: painting is historically defined by liquids, washes, glazes, and the bleeding or merging of boundaries, whereas sculpture is defined by carving, chiseling, drilling, and the fixation of solid matter. Examining this differential is novel because prior research on the arts has focused almost exclusively on abstract axes like creativity versus logic or masculinity versus femininity, ignoring how the physical medium of an artist's craft might implicitly color social perceptions of their character. Confirming this association would demonstrate that embodied metaphors of material handling (flowing versus congealing) are deeply internalized in how the public categorizes creative roles, which matters for understanding the hidden material biases in our social cognition.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "86c3ff732a81",
     "timestamp": "2026-05-14T14:09:54.451515+00:00",
     "schema_version": "autoresearch.v1",
