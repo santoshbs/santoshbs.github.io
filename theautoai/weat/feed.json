@@ -1,5 +1,111 @@
 [
   {
+    "id": "d8f71e45cf48",
+    "timestamp": "2026-05-14T19:11:03.947878+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "teachers vs soldiers on informational openness versus secrecy",
+    "labels": {
+      "X": "teachers",
+      "Y": "soldiers",
+      "A": "transparency",
+      "B": "secrecy"
+    },
+    "canonical_keys": {
+      "X": "teachers",
+      "Y": "soldiers",
+      "A": "transparency",
+      "B": "secrecy"
+    },
+    "effect_size": 1.4158086429976595,
+    "p_value": 3e-05,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "teacher",
+        "educator",
+        "instructor",
+        "professor",
+        "lecturer",
+        "tutor",
+        "mentor",
+        "trainer",
+        "academic",
+        "scholar",
+        "supervisor",
+        "dean",
+        "principal",
+        "adviser",
+        "pedagogue"
+      ],
+      "Y_used": [
+        "soldier",
+        "trooper",
+        "marine",
+        "sergeant",
+        "lieutenant",
+        "captain",
+        "general",
+        "corporal",
+        "recruit",
+        "ranger",
+        "guard",
+        "fighter",
+        "combatant",
+        "warrior",
+        "veteran"
+      ],
+      "A_used": [
+        "transparent",
+        "open",
+        "clear",
+        "honest",
+        "visible",
+        "public",
+        "accessible",
+        "straightforward",
+        "frank",
+        "candid",
+        "explicit",
+        "obvious",
+        "plain",
+        "revealed",
+        "disclosed"
+      ],
+      "B_used": [
+        "secret",
+        "hidden",
+        "confidential",
+        "classified",
+        "covert",
+        "private",
+        "closed",
+        "opaque",
+        "concealed",
+        "stealthy",
+        "undercover",
+        "obscured",
+        "cryptic",
+        "coded",
+        "restricted"
+      ]
+    },
+    "proposal": "People associate teachers with transparency more strongly than they associate soldiers with transparency. While teachers are culturally constructed as agents of enlightenment who must be open, clear, and honest to facilitate learning, soldiers are stereotypically linked to operational security, classified information, and the 'fog of war.' This differential implicit association is novel because most occupational research focuses on warmth or competence, neglecting the axis of informational openness versus secrecy that fundamentally defines the public representation of these two institutional roles. Examining this association matters because it reveals how deeply the cultural tropes of 'enlightenment' and 'mystification' are tied to our mental representations of educators versus warriors.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "c1407b091686",
     "timestamp": "2026-05-14T15:00:40.601236+00:00",
     "schema_version": "autoresearch.v1",
