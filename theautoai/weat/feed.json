@@ -1,5 +1,111 @@
 [
   {
+    "id": "37d37bb82c44",
+    "timestamp": "2026-05-14T10:01:56.222936+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "optimists vs pessimists on gullibility versus skepticism",
+    "labels": {
+      "X": "optimists",
+      "Y": "pessimists",
+      "A": "gullibility",
+      "B": "skepticism"
+    },
+    "canonical_keys": {
+      "X": "optimists",
+      "Y": "pessimists",
+      "A": "gullibility",
+      "B": "skepticism"
+    },
+    "effect_size": 0.45223189673978015,
+    "p_value": 0.22729,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "optimist",
+        "optimists",
+        "hopeful",
+        "hopefuls",
+        "idealist",
+        "idealists",
+        "believer",
+        "believers",
+        "dreamer",
+        "dreamers",
+        "cheerleader",
+        "cheerleaders",
+        "optimistic",
+        "positive",
+        "upbeat"
+      ],
+      "Y_used": [
+        "pessimist",
+        "pessimists",
+        "doomsayer",
+        "doomsayers",
+        "skeptic",
+        "skeptics",
+        "cynic",
+        "cynics",
+        "doubter",
+        "doubters",
+        "realist",
+        "realists",
+        "fatalist",
+        "fatalists",
+        "contrarian"
+      ],
+      "A_used": [
+        "gullible",
+        "naive",
+        "credulous",
+        "unsuspecting",
+        "dupable",
+        "simple",
+        "innocent",
+        "pliable",
+        "impressionable",
+        "tractable",
+        "trusting",
+        "open",
+        "receptive",
+        "pliant",
+        "unsophisticated"
+      ],
+      "B_used": [
+        "skeptical",
+        "wary",
+        "discerning",
+        "critical",
+        "doubtful",
+        "suspicious",
+        "cautious",
+        "pragmatic",
+        "shrewd",
+        "astute",
+        "circumspect",
+        "guarded",
+        "rational",
+        "analytical",
+        "judicious"
+      ]
+    },
+    "proposal": "People associate optimists with 'gullibility' more strongly than they associate pessimists with gullibility. This proposal examines a subtle asymmetry in how we mentally represent dispositional worldviews: while optimism is often culturally valorized, implicit cognition may link optimism to a susceptibility to being deceived or duped, reflecting a 'grain of truth' bias that privileges negative realism. Conversely, pessimists may be implicitly associated with skepticism that functions as a heuristic for accuracy and discernment, making them appear less gullible. This association is novel because implicit measures have rarely tested dispositional categories beyond valence or agency, and it is important because it reveals how cultural narratives about 'blind faith' versus 'critical doubt' may embed themselves in automatic associations that influence trust and credibility judgments in everyday discourse.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "678fdb1b59ee",
     "timestamp": "2026-05-14T06:32:39.272706+00:00",
     "schema_version": "autoresearch.v1",
