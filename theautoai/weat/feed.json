@@ -1,5 +1,111 @@
 [
   {
+    "id": "ce7ff5da11ac",
+    "timestamp": "2026-05-14T21:27:30.021835+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "lawyers vs journalists on advocacy vs objectivity",
+    "labels": {
+      "X": "lawyers",
+      "Y": "journalists",
+      "A": "zealous advocacy",
+      "B": "objectivity"
+    },
+    "canonical_keys": {
+      "X": "lawyers",
+      "Y": "journalists",
+      "A": "",
+      "B": "objectivity"
+    },
+    "effect_size": 0.11882147042241871,
+    "p_value": 0.75676,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "lawyer",
+        "attorney",
+        "advocate",
+        "solicitor",
+        "barrister",
+        "litigator",
+        "counselor",
+        "defender",
+        "jurist",
+        "prosecutor",
+        "paralegal",
+        "counsel",
+        "esquire",
+        "associate",
+        "partner"
+      ],
+      "Y_used": [
+        "journalist",
+        "reporter",
+        "correspondent",
+        "anchor",
+        "columnist",
+        "editor",
+        "producer",
+        "writer",
+        "newscaster",
+        "broadcaster",
+        "cameraman",
+        "interviewer",
+        "photographer",
+        "commentator",
+        "stringer"
+      ],
+      "A_used": [
+        "partisan",
+        "biased",
+        "partial",
+        "zealous",
+        "passionate",
+        "loyal",
+        "committed",
+        "aggressive",
+        "militant",
+        "staunch",
+        "ardent",
+        "fervent",
+        "devoted",
+        "subjective",
+        "prejudiced"
+      ],
+      "B_used": [
+        "objective",
+        "impartial",
+        "neutral",
+        "unbiased",
+        "fair",
+        "balanced",
+        "dispassionate",
+        "detached",
+        "factual",
+        "accurate",
+        "truthful",
+        "honest",
+        "open",
+        "equitable",
+        "evenhanded"
+      ]
+    },
+    "proposal": "People associate lawyers with zealous advocacy more strongly than they associate journalists with zealous advocacy. This differential implicit association stems from the fundamental institutional roles of each profession: lawyers are ethically mandated to act as passionate defenders of their clients' interests, while journalists are normatively trained to pursue objectivity and report facts impartially. Despite public skepticism toward both groups, this distinction remains underexamined in implicit cognitive research, which has focused heavily on political identities rather than professional norms. Investigating this association is important because it reveals whether the public mentally conflates the structural partiality of legal representation with the perceived bias of modern media, potentially undermining support for a free press by misattributing its function.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "d8f71e45cf48",
     "timestamp": "2026-05-14T19:11:03.947878+00:00",
     "schema_version": "autoresearch.v1",
