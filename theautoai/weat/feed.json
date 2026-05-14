@@ -1,5 +1,111 @@
 [
   {
+    "id": "2996956e6950",
+    "timestamp": "2026-05-14T13:10:40.934995+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "diplomats vs athletes on Communication clarity vs ambiguity",
+    "labels": {
+      "X": "diplomats",
+      "Y": "athletes",
+      "A": "Ambiguity",
+      "B": "Clarity"
+    },
+    "canonical_keys": {
+      "X": "diplomats",
+      "Y": "athletes",
+      "A": "ambiguity",
+      "B": "clarity"
+    },
+    "effect_size": 0.27639621341526316,
+    "p_value": 0.46812,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "ambassador",
+        "diplomat",
+        "envoy",
+        "negotiator",
+        "representative",
+        "delegate",
+        "consul",
+        "minister",
+        "mediator",
+        "secretary",
+        "plenipotentiary",
+        "statesman",
+        "politician",
+        "official",
+        "diplomatist"
+      ],
+      "Y_used": [
+        "athlete",
+        "player",
+        "competitor",
+        "runner",
+        "sprinter",
+        "swimmer",
+        "golfer",
+        "cyclist",
+        "boxer",
+        "wrestler",
+        "skater",
+        "surfer",
+        "skier",
+        "diver",
+        "jumper"
+      ],
+      "A_used": [
+        "ambiguous",
+        "vague",
+        "unclear",
+        "evasive",
+        "opaque",
+        "hidden",
+        "covert",
+        "secret",
+        "subtle",
+        "nuanced",
+        "elusive",
+        "murky",
+        "cloudy",
+        "deceptive",
+        "concealed"
+      ],
+      "B_used": [
+        "clear",
+        "transparent",
+        "definite",
+        "explicit",
+        "straightforward",
+        "obvious",
+        "precise",
+        "unambiguous",
+        "direct",
+        "open",
+        "visible",
+        "plain",
+        "concrete",
+        "evident",
+        "honest"
+      ]
+    },
+    "proposal": "People associate diplomats with strategic ambiguity more strongly than they associate athletes with strategic ambiguity. This implicit axis captures a culturally entrenched divide between institutions that normalize opaque, backchannel, and deniable communication versus those that prize transparent rule enforcement and unambiguous scoring. While explicit surveys frequently measure trust or competence, implicit associations with ambiguity remain unexamined and could reveal how laypersons intuitively code diplomatic discourse as inherently evasive or tactically opaque compared to the crystallized outcomes of competitive sports. Confirming this bias would clarify why public skepticism toward international negotiations persists even when diplomatic success requires nuanced, non-binary positioning.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "4a5f855269bf",
     "timestamp": "2026-05-14T12:14:42.999204+00:00",
     "schema_version": "autoresearch.v1",
