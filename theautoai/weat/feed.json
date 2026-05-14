@@ -1,5 +1,111 @@
 [
   {
+    "id": "678fdb1b59ee",
+    "timestamp": "2026-05-14T06:32:39.272706+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "patrons vs clients on relational vs transactional orientation",
+    "labels": {
+      "X": "patrons",
+      "Y": "clients",
+      "A": "personal connection",
+      "B": "transactional"
+    },
+    "canonical_keys": {
+      "X": "patrons",
+      "Y": "clients",
+      "A": "",
+      "B": "transactional"
+    },
+    "effect_size": 1.432408933305245,
+    "p_value": 1e-05,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "patron",
+        "benefactor",
+        "sponsor",
+        "donor",
+        "backer",
+        "supporter",
+        "admirer",
+        "follower",
+        "fan",
+        "ally",
+        "friend",
+        "champion",
+        "advocate",
+        "funder",
+        "philanthropist"
+      ],
+      "Y_used": [
+        "client",
+        "customer",
+        "consumer",
+        "purchaser",
+        "shopper",
+        "buyer",
+        "account",
+        "user",
+        "patient",
+        "member",
+        "subscriber",
+        "visitor",
+        "constituent",
+        "prospect",
+        "guest"
+      ],
+      "A_used": [
+        "love",
+        "care",
+        "trust",
+        "loyalty",
+        "friendship",
+        "affection",
+        "bond",
+        "tie",
+        "connection",
+        "relation",
+        "intimacy",
+        "warmth",
+        "closeness",
+        "devotion",
+        "attachment"
+      ],
+      "B_used": [
+        "contract",
+        "money",
+        "payment",
+        "business",
+        "commerce",
+        "trade",
+        "market",
+        "exchange",
+        "service",
+        "fee",
+        "price",
+        "purchase",
+        "sale",
+        "transaction",
+        "commercial"
+      ]
+    },
+    "proposal": "People associate patrons with personal connection more strongly than they associate clients with personal connection. While both categories denote a relationship where one party supports another, contemporary discourse frames clients as participants in transactional exchanges defined by contracts and service delivery, whereas patrons are often depicted as figures bound by affective ties, loyalty, and mutual recognition to artists, causes, or institutions. Examining this differential association is novel because the semantic shift from patronage to clienthood in cultural and service economies has not been systematically tested in implicit social cognition research, despite its relevance to public narratives about the erosion of communal bonds in favor of market logic. Confirming this association would reveal a mental representation where 'patronage' retains a halo of relationality even as the practice declines, potentially reflecting an idealized view of historical support systems that overlooks their strategic nature.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "d8c75efc805b",
     "timestamp": "2026-05-14T01:19:32.919068+00:00",
     "schema_version": "autoresearch.v1",
