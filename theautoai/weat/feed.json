@@ -1,5 +1,111 @@
 [
   {
+    "id": "2a01c538f8b9",
+    "timestamp": "2026-05-14T23:59:08.446537+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Hobos vs Royalty on personal liberty versus institutional constraint",
+    "labels": {
+      "X": "Hobos",
+      "Y": "Royalty",
+      "A": "Freedom",
+      "B": "Constraint"
+    },
+    "canonical_keys": {
+      "X": "hobos",
+      "Y": "royalty",
+      "A": "freedom",
+      "B": "constraint"
+    },
+    "effect_size": -0.793397741249329,
+    "p_value": 0.02371,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "hobo",
+        "vagrant",
+        "drifter",
+        "wanderer",
+        "transient",
+        "homeless",
+        "bum",
+        "beggar",
+        "nomad",
+        "rover",
+        "outcast",
+        "itinerant",
+        "vagabond",
+        "tramp",
+        "migrant"
+      ],
+      "Y_used": [
+        "king",
+        "queen",
+        "prince",
+        "princess",
+        "duke",
+        "duchess",
+        "lord",
+        "lady",
+        "monarch",
+        "emperor",
+        "empress",
+        "regent",
+        "heir",
+        "sovereign",
+        "noble"
+      ],
+      "A_used": [
+        "freedom",
+        "liberty",
+        "autonomy",
+        "independence",
+        "choice",
+        "release",
+        "emancipation",
+        "escape",
+        "open",
+        "wild",
+        "loose",
+        "free",
+        "unchained",
+        "agency",
+        "ease"
+      ],
+      "B_used": [
+        "constraint",
+        "confinement",
+        "bondage",
+        "duty",
+        "restriction",
+        "control",
+        "captivity",
+        "chain",
+        "regulation",
+        "protocol",
+        "obligation",
+        "rigidity",
+        "restraint",
+        "rule",
+        "limit"
+      ]
+    },
+    "proposal": "People associate Hobos with freedom more strongly than they associate Royalty with freedom. This differential association captures a cultural narrative that romanticizes the itinerant lifestyle of Hobos as emblematic of liberation from societal constraints, while framing Royalty as bound by rigid protocol, duty, and performative confinement within a 'gilded cage.' Examining this association is novel because implicit linkages between marginal itinerant groups and abstract virtues like autonomy have not been systematically contrasted with those of hereditary elites, who are typically probed on status rather than existential constraints. Confirming this pattern would highlight how public cognition inverts conventional status hierarchies when evaluating personal liberty, suggesting that lower-status actors can be implicitly credited with higher degrees of self-determination than high-status actors perceived as trapped by institutional expectations.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "ce7ff5da11ac",
     "timestamp": "2026-05-14T21:27:30.021835+00:00",
     "schema_version": "autoresearch.v1",
