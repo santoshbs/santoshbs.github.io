@@ -1,5 +1,111 @@
 [
   {
+    "id": "d8c75efc805b",
+    "timestamp": "2026-05-14T01:19:32.919068+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "gamblers vs monks on behavioral control and impulsivity",
+    "labels": {
+      "X": "gamblers",
+      "Y": "monks",
+      "A": "Impulsivity",
+      "B": "Deliberation"
+    },
+    "canonical_keys": {
+      "X": "gamblers",
+      "Y": "monks",
+      "A": "impulsivity",
+      "B": "deliberation"
+    },
+    "effect_size": 0.3177344334356329,
+    "p_value": 0.40001,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "gambler",
+        "bettor",
+        "punter",
+        "cardsharp",
+        "bookie",
+        "player",
+        "speculator",
+        "risker",
+        "hustler",
+        "highroller",
+        "dealer",
+        "gamblers",
+        "bettors",
+        "punters",
+        "cardsharps"
+      ],
+      "Y_used": [
+        "monk",
+        "friar",
+        "novice",
+        "abbot",
+        "ascetic",
+        "hermit",
+        "mendicant",
+        "nun",
+        "abbess",
+        "prior",
+        "prioress",
+        "recluse",
+        "anchorite",
+        "contemplative",
+        "religious"
+      ],
+      "A_used": [
+        "impulsive",
+        "rash",
+        "reckless",
+        "hasty",
+        "spontaneous",
+        "impetuous",
+        "frantic",
+        "frenzied",
+        "erratic",
+        "thoughtless",
+        "hurried",
+        "precipitate",
+        "volatile",
+        "unthinking",
+        "unreflecting"
+      ],
+      "B_used": [
+        "deliberate",
+        "patient",
+        "calm",
+        "restrained",
+        "measured",
+        "composed",
+        "poised",
+        "tranquil",
+        "serene",
+        "thoughtful",
+        "methodical",
+        "careful",
+        "cautious",
+        "considered",
+        "rational"
+      ]
+    },
+    "proposal": "People associate gamblers with impulsivity more strongly than they associate monks with impulsivity. This differential association probes the mental linkage between the stereotype of chance-taking behavior and a lack of deliberation, contrasting a social category defined by risk acceptance with one culturally constructed around ascetic discipline and patience. Examining this association is novel because implicit bias research has rarely compared ritualized probability-seeking with monastic restraint on a dimension of executive function and behavioral control. It matters because confirming this association would reveal how deeply cultural archetypes of 'fortune' and 'piety' are mapped onto cognitive traits, potentially influencing public perceptions of self-regulation and moral character in both domains.",
+    "iterations": 3,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "a2a9d0644b68",
     "timestamp": "2026-05-13T23:43:56.184120+00:00",
     "schema_version": "autoresearch.v1",
