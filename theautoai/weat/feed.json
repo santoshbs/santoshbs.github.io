@@ -1,5 +1,116 @@
 [
   {
+    "id": "dd537e409b8d",
+    "timestamp": "2026-05-15T19:20:47.768773+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Archivists vs Curators on epistemic stance (objective/neutral vs subjective/interpretive)",
+    "labels": {
+      "X": "Archivists",
+      "Y": "Curators",
+      "A": "Objectivity",
+      "B": "Subjectivity"
+    },
+    "canonical_keys": {
+      "X": "archivists",
+      "Y": "curators",
+      "A": "objectivity",
+      "B": "subjectivity"
+    },
+    "effect_size": 0.9838651992851664,
+    "p_value": 0.006,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "archivist",
+        "archivists",
+        "librarian",
+        "librarians",
+        "conservator",
+        "conservators",
+        "cataloguer",
+        "cataloguers",
+        "indexer",
+        "indexers",
+        "custodian",
+        "custodians",
+        "steward",
+        "stewards",
+        "keeper",
+        "keepers",
+        "researcher",
+        "researchers"
+      ],
+      "Y_used": [
+        "curator",
+        "curators",
+        "exhibitor",
+        "exhibitors",
+        "gallerist",
+        "gallerists",
+        "collector",
+        "collectors",
+        "dealer",
+        "dealers",
+        "director",
+        "directors",
+        "manager",
+        "managers",
+        "administrator"
+      ],
+      "A_used": [
+        "objective",
+        "objectivity",
+        "neutral",
+        "neutrality",
+        "unbiased",
+        "impartial",
+        "impartiality",
+        "factual",
+        "factuality",
+        "fair",
+        "fairness",
+        "dispassionate",
+        "detached",
+        "scientific",
+        "empirical"
+      ],
+      "B_used": [
+        "subjective",
+        "subjectivity",
+        "biased",
+        "bias",
+        "partial",
+        "partisan",
+        "interpretive",
+        "interpretative",
+        "opinionated",
+        "opinion",
+        "emotional",
+        "feeling",
+        "personal",
+        "private",
+        "individualistic",
+        "arbitrary",
+        "prejudiced"
+      ]
+    },
+    "proposal": "People associate Archivists with objectivity more strongly than they associate Curators with objectivity. This differential reflects a public intuition that archives function as neutral repositories of raw evidence, whereas curators are viewed as active agents who select, frame, and potentially bias the presentation of cultural heritage. Examining this association is novel because implicit bias research has largely overlooked the internal distinctions within cultural heritage professions, focusing instead on broader categories like 'educators' or 'artists.' The finding would be important as it sheds light on how laypeople attribute epistemic trust, revealing a potential bias that privileges the static preservation of records over their dynamic interpretation and accessibility in public discourse.",
+    "iterations": 3,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "7e70e7bc0178",
     "timestamp": "2026-05-15T17:43:19.396829+00:00",
     "schema_version": "autoresearch.v1",
