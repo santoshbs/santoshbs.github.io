@@ -1,5 +1,113 @@
 [
   {
+    "id": "baaf243c25b4",
+    "timestamp": "2026-05-15T12:00:56.024788+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "executors vs beneficiaries on impartiality versus self-interest",
+    "labels": {
+      "X": "executors",
+      "Y": "beneficiaries",
+      "A": "impartiality",
+      "B": "self-interest"
+    },
+    "canonical_keys": {
+      "X": "executors",
+      "Y": "beneficiaries",
+      "A": "impartiality",
+      "B": ""
+    },
+    "effect_size": 1.1996553183900502,
+    "p_value": 0.00022,
+    "n": {
+      "X": 16,
+      "Y": 16,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "executor",
+        "executors",
+        "administrator",
+        "administrators",
+        "fiduciary",
+        "fiduciaries",
+        "trustee",
+        "trustees",
+        "agent",
+        "agents",
+        "representative",
+        "representatives",
+        "custodian",
+        "custodians",
+        "manager",
+        "managers"
+      ],
+      "Y_used": [
+        "beneficiary",
+        "beneficiaries",
+        "heir",
+        "heirs",
+        "inheritor",
+        "inheritors",
+        "legatee",
+        "legatees",
+        "descendant",
+        "descendants",
+        "relative",
+        "relatives",
+        "successor",
+        "successors",
+        "claimant",
+        "claimants"
+      ],
+      "A_used": [
+        "impartial",
+        "neutral",
+        "fair",
+        "objective",
+        "unbiased",
+        "evenhanded",
+        "equitable",
+        "just",
+        "balanced",
+        "independent",
+        "detached",
+        "dispassionate",
+        "consistent",
+        "unswayed",
+        "straightforward"
+      ],
+      "B_used": [
+        "partial",
+        "biased",
+        "selfish",
+        "greedy",
+        "subjective",
+        "unfair",
+        "corrupt",
+        "favoritism",
+        "prejudiced",
+        "slanted",
+        "advantageous",
+        "profitable",
+        "interested",
+        "personal",
+        "advantage"
+      ]
+    },
+    "proposal": "People associate executors with impartiality more strongly than they associate beneficiaries with impartiality. Executors are culturally framed as neutral fiduciary agents tasked with faithfully implementing a legal directive, whereas beneficiaries are understood as interested parties whose primary motivation is self-benefit and personal gain. This distinction matters because implicit assumptions about impartiality can shape how the public evaluates estate disputes, trust administration, and the fairness of inheritance outcomes, yet the specific mental mapping of these legal roles onto neutrality has not been empirically tested. Examining this association reveals how legal duties versus personal stakes are implicitly weighted in social cognition, offering insight into the psychology of fiduciary trust.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "ff3ffe20c470",
     "timestamp": "2026-05-15T09:56:00.905897+00:00",
     "schema_version": "autoresearch.v1",
