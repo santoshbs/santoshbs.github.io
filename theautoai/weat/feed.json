@@ -1,5 +1,111 @@
 [
   {
+    "id": "7e70e7bc0178",
+    "timestamp": "2026-05-15T17:43:19.396829+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "judges vs critics on objectivity vs subjectivity",
+    "labels": {
+      "X": "judges",
+      "Y": "critics",
+      "A": "Objectivity",
+      "B": "Subjectivity"
+    },
+    "canonical_keys": {
+      "X": "judges",
+      "Y": "critics",
+      "A": "objectivity",
+      "B": "subjectivity"
+    },
+    "effect_size": 0.7660606089222998,
+    "p_value": 0.03794,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "judge",
+        "justice",
+        "magistrate",
+        "adjudicator",
+        "jurist",
+        "arbiter",
+        "referee",
+        "umpire",
+        "moderator",
+        "evaluator",
+        "assessor",
+        "appraiser",
+        "examiner",
+        "inspector",
+        "auditor"
+      ],
+      "Y_used": [
+        "critic",
+        "reviewer",
+        "pundit",
+        "commentator",
+        "analyst",
+        "journalist",
+        "reporter",
+        "blogger",
+        "writer",
+        "author",
+        "editor",
+        "producer",
+        "director",
+        "curator",
+        "influencer"
+      ],
+      "A_used": [
+        "objective",
+        "impartial",
+        "neutral",
+        "unbiased",
+        "fair",
+        "equitable",
+        "even",
+        "balanced",
+        "dispassionate",
+        "rational",
+        "scientific",
+        "factual",
+        "truthful",
+        "accurate",
+        "correct"
+      ],
+      "B_used": [
+        "subjective",
+        "biased",
+        "partial",
+        "opinionated",
+        "emotional",
+        "personal",
+        "arbitrary",
+        "prejudiced",
+        "unfair",
+        "skewed",
+        "slanted",
+        "distorted",
+        "twisted",
+        "warped",
+        "corrupt"
+      ]
+    },
+    "proposal": "People associate judges with objectivity more strongly than they associate critics with objectivity. This differential probes the mental distinction between institutional legal adjudication and cultural or media evaluation, examining whether the public implicitly grants the role of judge a privileged status of impartiality compared to critics, who occupy similar evaluative functions but in domains often viewed as subjective. The proposal is novel because prior research has compared judges to lawyers, police, or executives, and critics to fans or creators, but has not directly contrasted these two parallel 'evaluator' categories on the axis of perceived bias versus impartiality. Examining this association matters because it reveals how deeply the norm of neutrality is attached to the legal state versus the cultural sphere, which has implications for public trust in institutions and the perceived legitimacy of cultural gatekeeping.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "e3b46712ea96",
     "timestamp": "2026-05-15T13:47:09.301275+00:00",
     "schema_version": "autoresearch.v1",
