@@ -1,5 +1,111 @@
 [
   {
+    "id": "e3b46712ea96",
+    "timestamp": "2026-05-15T13:47:09.301275+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "craftsmen vs engineers on Tradition vs. Modernity",
+    "labels": {
+      "X": "craftsmen",
+      "Y": "engineers",
+      "A": "Tradition",
+      "B": "Modernity"
+    },
+    "canonical_keys": {
+      "X": "craftsmen",
+      "Y": "engineers",
+      "A": "tradition",
+      "B": "modernity"
+    },
+    "effect_size": 1.5834460089791618,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "carpenter",
+        "mason",
+        "potter",
+        "weaver",
+        "tailor",
+        "blacksmith",
+        "jeweler",
+        "sculptor",
+        "artisan",
+        "builder",
+        "joiner",
+        "molder",
+        "smith",
+        "carver",
+        "cobbler"
+      ],
+      "Y_used": [
+        "engineer",
+        "architect",
+        "programmer",
+        "technician",
+        "developer",
+        "analyst",
+        "designer",
+        "scientist",
+        "innovator",
+        "inventor",
+        "researcher",
+        "specialist",
+        "planner",
+        "mathematician",
+        "statistician"
+      ],
+      "A_used": [
+        "tradition",
+        "heritage",
+        "custom",
+        "ancient",
+        "historic",
+        "old",
+        "classic",
+        "vintage",
+        "past",
+        "history",
+        "legacy",
+        "culture",
+        "ritual",
+        "age",
+        "folklore"
+      ],
+      "B_used": [
+        "modern",
+        "future",
+        "technology",
+        "innovation",
+        "novel",
+        "current",
+        "contemporary",
+        "digital",
+        "advanced",
+        "recent",
+        "progress",
+        "development",
+        "evolution",
+        "forward",
+        "fresh"
+      ]
+    },
+    "proposal": "People associate Craftsmen with Tradition more strongly than they associate Engineers with Tradition. This differential implicit association posits that the public mentally links craftsmen to time-honored methods, heritage, and continuity, while linking engineers to novelty, modernization, and disruption. This is novel because while 'old vs. new' comparisons exist, this specific occupational pair isolates the implicit bias regarding manual skill versus technical expertise without conflating it with class or artistic status. It is important because confirming this association would reveal how societal values of authenticity and stability are implicitly assigned to specific forms of labor, potentially influencing public support for vocational training versus technical education.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "baaf243c25b4",
     "timestamp": "2026-05-15T12:00:56.024788+00:00",
     "schema_version": "autoresearch.v1",
