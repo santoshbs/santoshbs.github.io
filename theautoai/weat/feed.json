@@ -1,5 +1,111 @@
 [
   {
+    "id": "570cd9a70064",
+    "timestamp": "2026-05-15T20:05:56.332641+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "lawyers vs soldiers on ethical adaptability vs moral rigidity",
+    "labels": {
+      "X": "lawyers",
+      "Y": "soldiers",
+      "A": "malleability",
+      "B": "steadfastness"
+    },
+    "canonical_keys": {
+      "X": "lawyers",
+      "Y": "soldiers",
+      "A": "malleability",
+      "B": "steadfastness"
+    },
+    "effect_size": 0.07607537554600077,
+    "p_value": 0.84202,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "lawyer",
+        "attorney",
+        "barrister",
+        "solicitor",
+        "counselor",
+        "advocate",
+        "paralegal",
+        "jurist",
+        "litigator",
+        "judge",
+        "esquire",
+        "notary",
+        "magistrate",
+        "prosecutor",
+        "defender"
+      ],
+      "Y_used": [
+        "soldier",
+        "marine",
+        "sailor",
+        "airman",
+        "trooper",
+        "combatant",
+        "warrior",
+        "fighter",
+        "recruit",
+        "corporal",
+        "sergeant",
+        "captain",
+        "general",
+        "private",
+        "cadet"
+      ],
+      "A_used": [
+        "malleable",
+        "pliable",
+        "flexible",
+        "adaptable",
+        "mutable",
+        "changeable",
+        "fluid",
+        "compliant",
+        "yielding",
+        "bendable",
+        "versatile",
+        "negotiable",
+        "plastic",
+        "opportunistic",
+        "pragmatic"
+      ],
+      "B_used": [
+        "steadfast",
+        "loyal",
+        "rigid",
+        "constant",
+        "unwavering",
+        "firm",
+        "unyielding",
+        "dedicated",
+        "committed",
+        "resolute",
+        "devoted",
+        "principled",
+        "honorable",
+        "faithful",
+        "solid"
+      ]
+    },
+    "proposal": "People associate lawyers with malleability more strongly than they associate soldiers with malleability. This differential implicit association captures the cultural script that legal professionals are ethically fluid, shifting allegiances and arguments to suit whichever client they represent, whereas soldiers are encoded as steadfast, oath-bound, and unyielding in their loyalty to a cause or command. Investigating this association is novel because implicit measures have not yet tested how role-based adaptability becomes internalized as a character trait of pliability versus rigidity across these institutional categories. The finding would matter for understanding public trust in justice systems, revealing whether the normalization of representing opposing sides in legal practice generates a subconscious bias against lawyers as principled actors compared to the moral solidity attributed to military personnel.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "dd537e409b8d",
     "timestamp": "2026-05-15T19:20:47.768773+00:00",
     "schema_version": "autoresearch.v1",
