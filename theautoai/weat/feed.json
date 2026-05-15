@@ -1,5 +1,111 @@
 [
   {
+    "id": "7a0b6d73ca23",
+    "timestamp": "2026-05-15T06:33:31.928620+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "ranchers vs bankers on productive labor vs speculative finance",
+    "labels": {
+      "X": "ranchers",
+      "Y": "bankers",
+      "A": "productive",
+      "B": "speculative"
+    },
+    "canonical_keys": {
+      "X": "ranchers",
+      "Y": "bankers",
+      "A": "productive",
+      "B": "speculative"
+    },
+    "effect_size": 1.7094582848444781,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "rancher",
+        "cowboy",
+        "farmer",
+        "herder",
+        "stockman",
+        "drover",
+        "cattleman",
+        "wrangler",
+        "vaquero",
+        "grazier",
+        "plowman",
+        "settler",
+        "homesteader",
+        "yeoman",
+        "tiller"
+      ],
+      "Y_used": [
+        "banker",
+        "broker",
+        "trader",
+        "financier",
+        "investor",
+        "teller",
+        "manager",
+        "director",
+        "officer",
+        "clerk",
+        "accountant",
+        "auditor",
+        "treasurer",
+        "underwriter",
+        "speculator"
+      ],
+      "A_used": [
+        "produce",
+        "labor",
+        "build",
+        "craft",
+        "harvest",
+        "make",
+        "grow",
+        "create",
+        "manufacture",
+        "farm",
+        "toil",
+        "effort",
+        "yield",
+        "crop",
+        "goods"
+      ],
+      "B_used": [
+        "speculate",
+        "gamble",
+        "risk",
+        "invest",
+        "trade",
+        "profit",
+        "wealth",
+        "money",
+        "cash",
+        "finance",
+        "bank",
+        "hedge",
+        "arbitrage",
+        "transaction",
+        "extract"
+      ]
+    },
+    "proposal": "People associate ranchers with productive labor more strongly than they associate bankers with productive labor. This differential implicit association reflects a persistent discourse distinction between 'real economy' sectors that generate tangible goods and financial sectors often perceived as extractive or speculative. Examining this link is novel because while class-based stereotypes regarding finance versus agriculture are culturally salient, the automatic cognitive association of ranchers specifically with productive labor relative to bankers has not been systematically measured. Confirming this association would highlight how public mental representations reinforce economic narratives that privilege material production over financial intermediation.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "0df1994acdea",
     "timestamp": "2026-05-15T05:57:42.396502+00:00",
     "schema_version": "autoresearch.v1",
