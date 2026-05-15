@@ -1,5 +1,111 @@
 [
   {
+    "id": "0df1994acdea",
+    "timestamp": "2026-05-15T05:57:42.396502+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "novelists vs historians on Moral Ambiguity vs. Clarity",
+    "labels": {
+      "X": "novelists",
+      "Y": "historians",
+      "A": "Moral Ambiguity",
+      "B": "Moral Clarity"
+    },
+    "canonical_keys": {
+      "X": "novelists",
+      "Y": "historians",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 0.2531126244308769,
+    "p_value": 0.50583,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "novelist",
+        "writer",
+        "author",
+        "fictioneer",
+        "playwright",
+        "dramatist",
+        "storyteller",
+        "scribe",
+        "romancer",
+        "fabulist",
+        "scribbler",
+        "litterateur",
+        "raconteur",
+        "penman",
+        "creator"
+      ],
+      "Y_used": [
+        "historian",
+        "scholar",
+        "researcher",
+        "archivist",
+        "chronicler",
+        "biographer",
+        "antiquarian",
+        "academic",
+        "professor",
+        "lecturer",
+        "scientist",
+        "specialist",
+        "expert",
+        "bibliographer",
+        "antiquary"
+      ],
+      "A_used": [
+        "ambiguous",
+        "gray",
+        "murky",
+        "shady",
+        "dubious",
+        "questionable",
+        "equivocal",
+        "cloudy",
+        "hazy",
+        "unclear",
+        "uncertain",
+        "complex",
+        "nuanced",
+        "confusing",
+        "deceptive"
+      ],
+      "B_used": [
+        "clear",
+        "definite",
+        "certain",
+        "obvious",
+        "distinct",
+        "precise",
+        "explicit",
+        "transparent",
+        "straightforward",
+        "unambiguous",
+        "plain",
+        "exact",
+        "crisp",
+        "lucid",
+        "sharp"
+      ]
+    },
+    "proposal": "People associate novelists with moral ambiguity more strongly than they associate historians with moral ambiguity. While public discourse often treats both groups as narrators of human experience, contemporary media frequently frames historical accounts as seeking definitive causal explanations and clear ethical verdicts, whereas literary fiction is celebrated for its psychological complexity and ethical gray areas. This differential implicit association remains unexamined, as prior research has focused on explicit beliefs about historical accuracy versus fictional creativity rather than the underlying cognitive linkage to moral framing. Probing this association matters because it reveals how the public implicitly maps fact and fiction onto moral clarity versus complexity, which shapes how audiences evaluate truth claims, assign blame, and navigate polarized information ecosystems.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "2a01c538f8b9",
     "timestamp": "2026-05-14T23:59:08.446537+00:00",
     "schema_version": "autoresearch.v1",
