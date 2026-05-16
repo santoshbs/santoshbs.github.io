@@ -1,5 +1,111 @@
 [
   {
+    "id": "629c6d9fb2fe",
+    "timestamp": "2026-05-16T19:36:10.801987+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "doctors vs therapists on objectivity versus subjectivity",
+    "labels": {
+      "X": "doctors",
+      "Y": "therapists",
+      "A": "objectivity",
+      "B": "subjectivity"
+    },
+    "canonical_keys": {
+      "X": "doctors",
+      "Y": "therapists",
+      "A": "objectivity",
+      "B": "subjectivity"
+    },
+    "effect_size": 0.9664319374110233,
+    "p_value": 0.00732,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "doctor",
+        "physician",
+        "surgeon",
+        "medic",
+        "clinician",
+        "practitioner",
+        "nurse",
+        "paramedic",
+        "specialist",
+        "cardiologist",
+        "pediatrician",
+        "dentist",
+        "optometrist",
+        "radiologist",
+        "pathologist"
+      ],
+      "Y_used": [
+        "therapist",
+        "psychologist",
+        "counselor",
+        "psychiatrist",
+        "psychotherapist",
+        "analyst",
+        "psychoanalyst",
+        "behaviorist",
+        "caseworker",
+        "healer",
+        "guide",
+        "coach",
+        "mentor",
+        "listener",
+        "shrink"
+      ],
+      "A_used": [
+        "objective",
+        "factual",
+        "empirical",
+        "measurable",
+        "scientific",
+        "rational",
+        "logical",
+        "evidence",
+        "data",
+        "truth",
+        "impartial",
+        "unbiased",
+        "neutral",
+        "precise",
+        "accurate"
+      ],
+      "B_used": [
+        "subjective",
+        "opinion",
+        "feeling",
+        "emotion",
+        "belief",
+        "interpretation",
+        "perspective",
+        "impression",
+        "sentiment",
+        "attitude",
+        "intuition",
+        "instinct",
+        "personal",
+        "imaginative",
+        "ambiguous"
+      ]
+    },
+    "proposal": "People associate doctors with objectivity more strongly than they associate therapists with objectivity. This differential association reflects a cognitive bias toward medicalization, where physical health interventions are implicitly represented as grounded in empirical facts and measurable diagnostics, whereas mental health support is categorized as subjective interpretation or personal opinion. This proposal is novel because, while explicit advocacy promotes parity between physical and mental care, implicit measures may reveal that the public still privileges the 'medical model' as more reliable than the 'therapeutic model.' Confirming this association would be important, as linking therapists to lower objectivity could undermine trust in psychological advice, reinforce stigma around non-pharmaceutical mental health treatments, and bias individuals away from seeking counseling in favor of medical solutions.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "c5b4d84a369e",
     "timestamp": "2026-05-16T15:52:03.364554+00:00",
     "schema_version": "autoresearch.v1",
