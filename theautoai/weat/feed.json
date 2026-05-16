@@ -1,5 +1,111 @@
 [
   {
+    "id": "03d4cee29241",
+    "timestamp": "2026-05-16T23:09:28.834040+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "writers vs accountants on rule-breaking versus compliance",
+    "labels": {
+      "X": "writers",
+      "Y": "accountants",
+      "A": "nonconformity",
+      "B": "compliance"
+    },
+    "canonical_keys": {
+      "X": "writers",
+      "Y": "accountants",
+      "A": "nonconformity",
+      "B": "compliance"
+    },
+    "effect_size": 1.781646364953498,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "writer",
+        "author",
+        "poet",
+        "novelist",
+        "playwright",
+        "essayist",
+        "journalist",
+        "blogger",
+        "storyteller",
+        "scribe",
+        "chronicler",
+        "biographer",
+        "memoirist",
+        "lyricist",
+        "reporter"
+      ],
+      "Y_used": [
+        "accountant",
+        "auditor",
+        "bookkeeper",
+        "comptroller",
+        "actuary",
+        "treasurer",
+        "controller",
+        "assessor",
+        "appraiser",
+        "registrar",
+        "clerk",
+        "teller",
+        "cashier",
+        "steward",
+        "underwriter"
+      ],
+      "A_used": [
+        "rebel",
+        "unconventional",
+        "independent",
+        "rebellious",
+        "maverick",
+        "renegade",
+        "dissenter",
+        "iconoclast",
+        "unorthodox",
+        "deviant",
+        "anarchist",
+        "outlaw",
+        "revolutionary",
+        "individualist",
+        "contrarian"
+      ],
+      "B_used": [
+        "compliant",
+        "obedient",
+        "conformist",
+        "dutiful",
+        "disciplined",
+        "rigid",
+        "orderly",
+        "bureaucratic",
+        "meticulous",
+        "traditional",
+        "conventional",
+        "strict",
+        "regulated",
+        "controlled",
+        "systematic"
+      ]
+    },
+    "proposal": "People associate writers with nonconformity more strongly than they associate accountants with nonconformity. While explicit stereotypes often contrast creative and financial professions along cognitive axes like imagination versus precision, the implicit moral and social dimension of rule-breaking versus compliance has remained unexamined. This association is novel because it probes how cultural narratives about 'creative rebellion' and 'financial rigidity' are internalized at an unconscious level. It is interesting and important because confirming it would reveal how deeply these stereotypes shape social trust, institutional funding, and hiring biases in both the creative economy and the regulatory sector.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "0a3f032d4fc6",
     "timestamp": "2026-05-16T21:30:31.058156+00:00",
     "schema_version": "autoresearch.v1",
