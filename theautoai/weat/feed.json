@@ -1,5 +1,111 @@
 [
   {
+    "id": "e1b415637c07",
+    "timestamp": "2026-05-16T07:01:51.259528+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Police vs Lawyers on outcome_vs_procedure",
+    "labels": {
+      "X": "Police",
+      "Y": "Lawyers",
+      "A": "outcome_orientation",
+      "B": "procedure_orientation"
+    },
+    "canonical_keys": {
+      "X": "police",
+      "Y": "lawyers",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 0.668228638156821,
+    "p_value": 0.06989,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "cop",
+        "officer",
+        "detective",
+        "deputy",
+        "sheriff",
+        "marshal",
+        "constable",
+        "patrolman",
+        "policewoman",
+        "policeman",
+        "trooper",
+        "sergeant",
+        "bailiff",
+        "warden",
+        "guard"
+      ],
+      "Y_used": [
+        "lawyer",
+        "attorney",
+        "solicitor",
+        "barrister",
+        "counsel",
+        "advocate",
+        "prosecutor",
+        "defender",
+        "jurist",
+        "paralegal",
+        "litigator",
+        "arbitrator",
+        "mediator",
+        "counselor",
+        "pleader"
+      ],
+      "A_used": [
+        "result",
+        "outcome",
+        "success",
+        "goal",
+        "objective",
+        "aim",
+        "victory",
+        "win",
+        "effect",
+        "consequence",
+        "impact",
+        "finish",
+        "solution",
+        "achievement",
+        "answer"
+      ],
+      "B_used": [
+        "procedure",
+        "process",
+        "rule",
+        "right",
+        "protocol",
+        "regulation",
+        "statute",
+        "formality",
+        "method",
+        "system",
+        "standard",
+        "norm",
+        "requirement",
+        "practice",
+        "custom"
+      ]
+    },
+    "proposal": "People associate Police with Outcome-Orientation more strongly than they associate Lawyers with Outcome-Orientation. This proposal examines a latent cognitive distinction between the instrumental rationality attributed to law enforcement versus legal advocacy, capturing how the public mentally represents the tension between securing results (e.g., stopping crime) and adhering to procedure (e.g., protecting rights). While explicit stereotypes about police efficiency or lawyer obstructionism circulate, the differential implicit association on this specific axis of goal-directed cognition remains unprobed in prior literature. Confirming or disconfirming this association would reveal whether the public implicitly frames policing as fundamentally consequentialist and legal practice as fundamentally deontological, which has implications for understanding discourse around institutional reform and the social legitimacy of these roles.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "62b258edf6ec",
     "timestamp": "2026-05-16T04:13:56.370713+00:00",
     "schema_version": "autoresearch.v1",
