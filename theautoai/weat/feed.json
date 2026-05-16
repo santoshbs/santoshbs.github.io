@@ -1,5 +1,111 @@
 [
   {
+    "id": "89016506c0f1",
+    "timestamp": "2026-05-16T02:35:41.524290+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "jurors vs judges on common_sense_vs_expertise",
+    "labels": {
+      "X": "jurors",
+      "Y": "judges",
+      "A": "common_sense",
+      "B": "expertise"
+    },
+    "canonical_keys": {
+      "X": "jurors",
+      "Y": "judges",
+      "A": "",
+      "B": "expertise"
+    },
+    "effect_size": 0.4431144803966185,
+    "p_value": 0.24083,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "juror",
+        "jurors",
+        "jury",
+        "juryman",
+        "jurymen",
+        "layperson",
+        "layman",
+        "laywoman",
+        "laypeople",
+        "layfolk",
+        "citizen",
+        "public",
+        "panelist",
+        "member",
+        "peers"
+      ],
+      "Y_used": [
+        "judge",
+        "judges",
+        "magistrate",
+        "justice",
+        "jurist",
+        "arbitrator",
+        "referee",
+        "umpire",
+        "commissioner",
+        "administrator",
+        "chancellor",
+        "bench",
+        "court",
+        "tribunal",
+        "adjudicator"
+      ],
+      "A_used": [
+        "intuition",
+        "instinct",
+        "gut",
+        "practical",
+        "ordinary",
+        "everyday",
+        "folk",
+        "wisdom",
+        "naive",
+        "street",
+        "simple",
+        "natural",
+        "common",
+        "sense",
+        "sensible"
+      ],
+      "B_used": [
+        "expert",
+        "academic",
+        "intellectual",
+        "specialized",
+        "technical",
+        "professional",
+        "learned",
+        "scholar",
+        "educated",
+        "scientific",
+        "theoretical",
+        "formal",
+        "advanced",
+        "complex",
+        "erudite"
+      ]
+    },
+    "proposal": "People associate jurors with common-sense more strongly than they associate judges with common-sense. This differential implicit association captures the latent tension between expert adjudication and lay judgment, where jurors are culturally valorized as embodiments of everyday intuition while judges are stereotyped as detached intellectuals. Examining this bias is novel because prior research focuses on explicit trust in legal institutions rather than the implicit attribution of cognitive virtues to specific roles within the system. It matters because such associations may influence public legitimacy of judicial outcomes and support for jury reform.",
+    "iterations": 3,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "570cd9a70064",
     "timestamp": "2026-05-15T20:05:56.332641+00:00",
     "schema_version": "autoresearch.v1",
