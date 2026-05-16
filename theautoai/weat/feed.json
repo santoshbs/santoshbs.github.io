@@ -1,5 +1,111 @@
 [
   {
+    "id": "c5b4d84a369e",
+    "timestamp": "2026-05-16T15:52:03.364554+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "farmers vs sailors on stability versus mobility",
+    "labels": {
+      "X": "farmers",
+      "Y": "sailors",
+      "A": "stability",
+      "B": "mobility"
+    },
+    "canonical_keys": {
+      "X": "farmers",
+      "Y": "sailors",
+      "A": "stability",
+      "B": "mobility"
+    },
+    "effect_size": 0.44185081125491876,
+    "p_value": 0.24044,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "farmer",
+        "rancher",
+        "shepherd",
+        "gardener",
+        "grower",
+        "planter",
+        "harvester",
+        "plowman",
+        "stockman",
+        "vintner",
+        "tiller",
+        "dairyman",
+        "breeder",
+        "orchardist",
+        "farmhand"
+      ],
+      "Y_used": [
+        "sailor",
+        "mariner",
+        "seafarer",
+        "navigator",
+        "skipper",
+        "helmsman",
+        "deckhand",
+        "boatman",
+        "fisherman",
+        "whaler",
+        "corsair",
+        "bosun",
+        "mate",
+        "seaman",
+        "pirate"
+      ],
+      "A_used": [
+        "stable",
+        "steady",
+        "constant",
+        "enduring",
+        "permanent",
+        "fixed",
+        "rooted",
+        "settled",
+        "firm",
+        "secure",
+        "static",
+        "stationary",
+        "immovable",
+        "lasting",
+        "consistent"
+      ],
+      "B_used": [
+        "mobile",
+        "transient",
+        "drifting",
+        "moving",
+        "wandering",
+        "nomadic",
+        "fleeting",
+        "temporary",
+        "fluid",
+        "volatile",
+        "changing",
+        "shifting",
+        "traveling",
+        "roving",
+        "migratory"
+      ]
+    },
+    "proposal": "People associate farmers with stability more strongly than they associate sailors with stability. This differential association draws on the deep-seated cultural dichotomy between rooted, land-based agrarian life and the transient, roaming existence of maritime labor. While both roles involve hard work and risk, public discourse and folklore consistently frame farmers as the guardians of continuity, lineage, and settled community, whereas sailors are troped as drifters, adventurers, or figures of displacement and flux. Examining this association is novel because it moves beyond the well-trodden comparisons of intelligence or morality to probe how implicit cognition encodes fundamental differences in human mobility and attachment to place. The finding matters because it reveals how society mentally valorizes or devalues settledness versus mobility, with potential implications for how we perceive rural communities versus maritime or migratory populations in contemporary debates about migration, labor, and social cohesion.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "e1b415637c07",
     "timestamp": "2026-05-16T07:01:51.259528+00:00",
     "schema_version": "autoresearch.v1",
