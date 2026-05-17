@@ -1,5 +1,111 @@
 [
   {
+    "id": "07ca94569353",
+    "timestamp": "2026-05-17T00:02:50.931795+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "diplomats vs soldiers on cunning versus honesty",
+    "labels": {
+      "X": "diplomats",
+      "Y": "soldiers",
+      "A": "cunning",
+      "B": "honest"
+    },
+    "canonical_keys": {
+      "X": "diplomats",
+      "Y": "soldiers",
+      "A": "cunning",
+      "B": "honest"
+    },
+    "effect_size": -0.31820037730952727,
+    "p_value": 0.40057,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "ambassador",
+        "attache",
+        "consul",
+        "delegate",
+        "diplomat",
+        "envoy",
+        "emissary",
+        "intermediary",
+        "mediator",
+        "minister",
+        "negotiator",
+        "peacemaker",
+        "representative",
+        "diplomatist",
+        "attaché"
+      ],
+      "Y_used": [
+        "cadet",
+        "commando",
+        "defender",
+        "infantryman",
+        "marine",
+        "militiaman",
+        "private",
+        "recruit",
+        "reservist",
+        "rifleman",
+        "sentinel",
+        "serviceman",
+        "soldier",
+        "warrior",
+        "fighter"
+      ],
+      "A_used": [
+        "crafty",
+        "cunning",
+        "devious",
+        "dodgy",
+        "duplicitous",
+        "elusive",
+        "evasive",
+        "guileful",
+        "insidious",
+        "manipulative",
+        "sly",
+        "sneaky",
+        "stealthy",
+        "subtle",
+        "tricky"
+      ],
+      "B_used": [
+        "candid",
+        "direct",
+        "fair",
+        "forthright",
+        "frank",
+        "genuine",
+        "honest",
+        "open",
+        "sincere",
+        "straightforward",
+        "transparent",
+        "truthful",
+        "upright",
+        "honorable",
+        "noble"
+      ]
+    },
+    "proposal": "People associate diplomats with cunning more strongly than they associate soldiers with cunning. This differential implicit association likely reflects cultural narratives that depict diplomacy as a domain of subterfuge, backroom maneuvering, and strategic deception, whereas soldiers are frequently romanticized in public discourse as embodying directness, honor, and transparent adherence to codes of conduct. Investigating this bias is novel because existing literature has predominantly examined associations related to competence or warmth, overlooking how distinct institutional roles are implicitly mapped onto dimensions of manipulative intelligence. Confirming this pattern would reveal how societies mentally parse the mechanisms of state power, potentially shedding light on why diplomatic efforts may be viewed with skepticism while military actions are perceived as more straightforward, even when both involve complex strategic calculation.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "03d4cee29241",
     "timestamp": "2026-05-16T23:09:28.834040+00:00",
     "schema_version": "autoresearch.v1",
