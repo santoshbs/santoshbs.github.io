@@ -1,5 +1,111 @@
 [
   {
+    "id": "e4ae375867e3",
+    "timestamp": "2026-05-17T13:47:56.751994+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Sowers vs Reapers on temporal orientation and cognitive focus",
+    "labels": {
+      "X": "Sowers",
+      "Y": "Reapers",
+      "A": "foresight/planning",
+      "B": "immediacy/execution"
+    },
+    "canonical_keys": {
+      "X": "sowers",
+      "Y": "reapers",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 1.201747889001782,
+    "p_value": 0.00041,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "sower",
+        "planter",
+        "grower",
+        "gardener",
+        "cultivator",
+        "horticulturist",
+        "landscaper",
+        "farmer",
+        "florist",
+        "arborist",
+        "pruner",
+        "botanist",
+        "seeder",
+        "agronomist",
+        "ecologist"
+      ],
+      "Y_used": [
+        "reaper",
+        "harvester",
+        "gatherer",
+        "picker",
+        "sorter",
+        "packer",
+        "gleaner",
+        "thresher",
+        "mower",
+        "cutter",
+        "baler",
+        "winnower",
+        "sheller",
+        "grader",
+        "processor"
+      ],
+      "A_used": [
+        "foresight",
+        "planning",
+        "anticipation",
+        "future",
+        "predict",
+        "forecast",
+        "strategy",
+        "vision",
+        "prospect",
+        "prepare",
+        "invest",
+        "expect",
+        "hope",
+        "advance",
+        "upcoming"
+      ],
+      "B_used": [
+        "immediacy",
+        "execution",
+        "present",
+        "now",
+        "immediate",
+        "react",
+        "extract",
+        "finish",
+        "complete",
+        "current",
+        "instant",
+        "urgent",
+        "action",
+        "implement",
+        "perform"
+      ]
+    },
+    "proposal": "People associate Sowers with foresight more strongly than they associate Reapers with foresight. While both categories fall within agricultural or labor contexts, Sowers (encompassing planters, growers, gardeners, horticulturists, and landscapers) are culturally framed as the initiators who must anticipate future conditions, plan cycles, and invest in unseen potential. In contrast, Reapers (harvesters, gatherers, pickers, sorters, and packers) are framed as executors who respond to immediate readiness and extract value from existing maturity. This differential is novel because prior literature has largely examined broad occupational families (e.g., farmers vs. others) without disentangling the implicit temporal and cognitive biases attached to the specific sub-roles of planting versus harvesting, despite their prominence in metaphor and institutional discourse.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "3cc141d1eeaa",
     "timestamp": "2026-05-17T12:20:14.260342+00:00",
     "schema_version": "autoresearch.v1",
