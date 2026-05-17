@@ -1,5 +1,116 @@
 [
   {
+    "id": "2d72fd9ec4a2",
+    "timestamp": "2026-05-17T20:44:52.852518+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Jews vs Christians on collective memory vs transcendent future orientation",
+    "labels": {
+      "X": "Jews",
+      "Y": "Christians",
+      "A": "collective memory",
+      "B": "transcendent future"
+    },
+    "canonical_keys": {
+      "X": "jews",
+      "Y": "christians",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 0.7415356115055656,
+    "p_value": 0.04225,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 17,
+      "B": 17
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "jew",
+        "jews",
+        "jewish",
+        "hebrew",
+        "israeli",
+        "rabbi",
+        "reform",
+        "conservative",
+        "hasidic",
+        "secular",
+        "zionist",
+        "ashkenazi",
+        "sephardic",
+        "kabbalist",
+        "orthodox"
+      ],
+      "Y_used": [
+        "christian",
+        "christians",
+        "catholic",
+        "protestant",
+        "baptist",
+        "evangelical",
+        "lutheran",
+        "methodist",
+        "presbyterian",
+        "episcopal",
+        "anglican",
+        "quaker",
+        "fundamentalist",
+        "pastor",
+        "priest"
+      ],
+      "A_used": [
+        "memory",
+        "history",
+        "past",
+        "remembrance",
+        "heritage",
+        "tradition",
+        "ancestor",
+        "roots",
+        "origin",
+        "legacy",
+        "archive",
+        "memorial",
+        "retrospective",
+        "bygone",
+        "historical",
+        "continuity",
+        "trauma",
+        "grief"
+      ],
+      "B_used": [
+        "future",
+        "tomorrow",
+        "destiny",
+        "vision",
+        "forward",
+        "spirit",
+        "soul",
+        "heaven",
+        "divine",
+        "eternal",
+        "immortal",
+        "transcend",
+        "sacred",
+        "holy",
+        "mystical",
+        "progress",
+        "advancement"
+      ]
+    },
+    "proposal": "People associate Jews with collective memory more strongly than they associate Christians with collective memory. This proposal investigates whether pervasive cultural narratives emphasizing Jewish remembrance—such as the centrality of history, exile, and continuity in Jewish identity—have produced a differential implicit link to attributes like historical consciousness and retrospective reflection, relative to Christians, who may be implicitly associated with more forward-looking or transcendent spiritual framings. Examining this axis is novel, as implicit memory-orientation has not been systematically compared between these groups, and the findings would reveal how collective trauma and religious traditions differentially shape mental representations of social actors.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "302aa88e06cd",
     "timestamp": "2026-05-17T19:52:11.172570+00:00",
     "schema_version": "autoresearch.v1",
