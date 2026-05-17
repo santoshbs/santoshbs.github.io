@@ -1,5 +1,111 @@
 [
   {
+    "id": "3a4ffcd64f37",
+    "timestamp": "2026-05-17T19:01:43.037237+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Buyers vs Sellers on Dependency versus Independence",
+    "labels": {
+      "X": "Buyers",
+      "Y": "Sellers",
+      "A": "Dependency",
+      "B": "Independence"
+    },
+    "canonical_keys": {
+      "X": "buyers",
+      "Y": "sellers",
+      "A": "dependency",
+      "B": "independence"
+    },
+    "effect_size": -0.02367773026736466,
+    "p_value": 0.95015,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "buyer",
+        "shopper",
+        "consumer",
+        "purchaser",
+        "customer",
+        "client",
+        "patron",
+        "bidder",
+        "prospect",
+        "investor",
+        "acquirer",
+        "shopaholic",
+        "spender",
+        "retailer",
+        "wholesaler"
+      ],
+      "Y_used": [
+        "seller",
+        "vendor",
+        "merchant",
+        "trader",
+        "dealer",
+        "broker",
+        "hawker",
+        "peddler",
+        "shopkeeper",
+        "purveyor",
+        "provider",
+        "supplier",
+        "businessman",
+        "entrepreneur",
+        "salesman"
+      ],
+      "A_used": [
+        "dependence",
+        "reliance",
+        "need",
+        "neediness",
+        "subservience",
+        "obedience",
+        "submission",
+        "follower",
+        "subordinate",
+        "slave",
+        "servant",
+        "vassal",
+        "beggar",
+        "petitioner",
+        "supplicant"
+      ],
+      "B_used": [
+        "independence",
+        "autonomy",
+        "freedom",
+        "liberty",
+        "sovereignty",
+        "mastery",
+        "authority",
+        "control",
+        "power",
+        "strength",
+        "security",
+        "stability",
+        "abundance",
+        "prosperity",
+        "wealth"
+      ]
+    },
+    "proposal": "People associate Buyers with Dependency more strongly than they associate Sellers with Dependency. This implicit association reflects the fundamental economic asymmetry where the buyer is cognitively linked to a state of lack or desire for an external resource, while the seller is linked to possession and provision. It is novel because implicit association research has largely overlooked transactional roles, focusing instead on demographic or professional identities, yet the buyer-seller dyad is central to modern social life. Examining this matters because it reveals that the widely celebrated concept of 'consumer sovereignty' may coexist with a deeper, implicit framing of the consumer as dependent, which can influence public attitudes toward market regulation, consumer protection, and the moral status of merchants versus shoppers.",
+    "iterations": 4,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "6ce27872d27c",
     "timestamp": "2026-05-17T15:21:17.505037+00:00",
     "schema_version": "autoresearch.v1",
