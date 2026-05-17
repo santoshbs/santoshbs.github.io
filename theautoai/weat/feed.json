@@ -1,5 +1,111 @@
 [
   {
+    "id": "302aa88e06cd",
+    "timestamp": "2026-05-17T19:52:11.172570+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Employees vs Employers on honesty versus dishonesty",
+    "labels": {
+      "X": "Employees",
+      "Y": "Employers",
+      "A": "honesty",
+      "B": "dishonesty"
+    },
+    "canonical_keys": {
+      "X": "employees",
+      "Y": "employers",
+      "A": "honesty",
+      "B": "dishonesty"
+    },
+    "effect_size": -0.08482303484714587,
+    "p_value": 0.82698,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "worker",
+        "employee",
+        "laborer",
+        "clerk",
+        "associate",
+        "operator",
+        "technician",
+        "representative",
+        "agent",
+        "operative",
+        "assistant",
+        "helper",
+        "member",
+        "aide",
+        "attendant"
+      ],
+      "Y_used": [
+        "employer",
+        "boss",
+        "manager",
+        "executive",
+        "director",
+        "owner",
+        "president",
+        "supervisor",
+        "leader",
+        "founder",
+        "capitalist",
+        "proprietor",
+        "head",
+        "superior",
+        "administrator"
+      ],
+      "A_used": [
+        "honest",
+        "truthful",
+        "sincere",
+        "trustworthy",
+        "reliable",
+        "genuine",
+        "faithful",
+        "upright",
+        "ethical",
+        "moral",
+        "candid",
+        "frank",
+        "virtuous",
+        "loyal",
+        "accurate"
+      ],
+      "B_used": [
+        "dishonest",
+        "deceitful",
+        "deceptive",
+        "fraudulent",
+        "treacherous",
+        "untrustworthy",
+        "corrupt",
+        "manipulative",
+        "selfish",
+        "greedy",
+        "cunning",
+        "sly",
+        "crafty",
+        "insincere",
+        "false"
+      ]
+    },
+    "proposal": "People associate Employees with honesty more strongly than they associate Employers with honesty. This differential association taps into a pervasive but under-examined narrative in labor discourse and populist rhetoric that frames the working class as morally upright and trustworthy, while casting management and ownership figures as prone to deception or self-serving manipulation. Unlike prior research that has focused on competence or status distinctions between managers and workers, examining implicit honesty associations reveals how moral virtue is cognitively distributed across economic roles. This matters because it suggests that workplace conflict and unionization support may be rooted in deep-seated moral intuitions about trustworthiness, not just explicit grievances over pay or conditions, offering a novel lens for organizational psychology and the study of labor movements.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "3a4ffcd64f37",
     "timestamp": "2026-05-17T19:01:43.037237+00:00",
     "schema_version": "autoresearch.v1",
