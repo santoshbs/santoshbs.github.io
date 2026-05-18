@@ -1,5 +1,111 @@
 [
   {
+    "id": "b010d42dbc53",
+    "timestamp": "2026-05-18T12:02:40.827514+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "cynics vs skeptics on negative affect vs intellectual neutrality",
+    "labels": {
+      "X": "cynics",
+      "Y": "skeptics",
+      "A": "bitterness",
+      "B": "fairness"
+    },
+    "canonical_keys": {
+      "X": "cynics",
+      "Y": "skeptics",
+      "A": "bitterness",
+      "B": "fairness"
+    },
+    "effect_size": 1.4253863835394194,
+    "p_value": 1e-05,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "cynic",
+        "pessimist",
+        "misanthrope",
+        "detractor",
+        "naysayer",
+        "curmudgeon",
+        "grouch",
+        "critic",
+        "dissenter",
+        "contrarian",
+        "iconoclast",
+        "realist",
+        "pragmatist",
+        "grump",
+        "commentator"
+      ],
+      "Y_used": [
+        "skeptic",
+        "doubter",
+        "inquirer",
+        "researcher",
+        "analyst",
+        "investigator",
+        "evaluator",
+        "appraiser",
+        "auditor",
+        "examiner",
+        "inspector",
+        "observer",
+        "scientist",
+        "philosopher",
+        "academic"
+      ],
+      "A_used": [
+        "bitter",
+        "resentful",
+        "hostile",
+        "angry",
+        "upset",
+        "frustrated",
+        "disgusted",
+        "annoyed",
+        "irritated",
+        "aggravated",
+        "sour",
+        "negative",
+        "embittered",
+        "spiteful",
+        "vindictive"
+      ],
+      "B_used": [
+        "fair",
+        "objective",
+        "neutral",
+        "open",
+        "rational",
+        "logical",
+        "balanced",
+        "impartial",
+        "unbiased",
+        "evenhanded",
+        "dispassionate",
+        "detached",
+        "calm",
+        "reasonable",
+        "thoughtful"
+      ]
+    },
+    "proposal": "People associate cynics with bitterness more strongly than they associate skeptics with bitterness. Although both groups share a disposition toward doubt, cynicism is culturally constructed as a resentful, affective response to perceived moral failure, while skepticism is constructed as a neutral, intellectual strategy for evaluating evidence. This association has not been systematically probed because research typically treats skepticism and cynicism as points on a single linear scale of distrust rather than distinct categories with different implicit affective profiles. Confirming this differential association is important because it suggests that the stigma of bitterness may spill over to legitimate skepticism, thereby revealing a hidden bias against critical inquiry in public discourse.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "baee48cab84f",
     "timestamp": "2026-05-18T09:03:07.845583+00:00",
     "schema_version": "autoresearch.v1",
