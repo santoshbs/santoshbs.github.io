@@ -1,15 +1,5 @@
 [
   {
-    "id": "female-hardworking-faster",
-    "title": "Female borrowers who describe themselves as 'hardworking' may fund faster.",
-    "bucket": "",
-    "birth_batch": 0,
-    "death_batch": 272,
-    "last_batch": 272,
-    "confidence": 0,
-    "alive": false
-  },
-  {
     "id": "female-photo-note-slower",
     "title": "Including a note about the profile photo may slow funding for female borrowers.",
     "bucket": "",
@@ -100,11 +90,21 @@
     "alive": false
   },
   {
+    "id": "female-age-faster",
+    "title": "Female borrowers who specify their age fund faster.",
+    "bucket": "",
+    "birth_batch": 0,
+    "death_batch": 309,
+    "last_batch": 309,
+    "confidence": 0,
+    "alive": false
+  },
+  {
     "id": "institutional-names-slower",
     "title": "Mentioning specific institutional or brand names predicts slower funding regardless of gender.",
     "bucket": "slower",
     "birth_batch": 1,
-    "last_batch": 307,
+    "last_batch": 308,
     "confidence": 0.85,
     "peak_confidence": 0.85,
     "alive": true
@@ -114,7 +114,7 @@
     "title": "Female borrowers who list specific products or goals beyond family welfare fund faster.",
     "bucket": "gendered_women",
     "birth_batch": 1,
-    "last_batch": 307,
+    "last_batch": 308,
     "confidence": 1.0,
     "peak_confidence": 1.0,
     "alive": true
@@ -124,7 +124,7 @@
     "title": "Female borrowers who mention benefits to their family or community fund faster.",
     "bucket": "gendered_women",
     "birth_batch": 1,
-    "last_batch": 307,
+    "last_batch": 308,
     "confidence": 0.78,
     "peak_confidence": 0.78,
     "alive": true
@@ -134,7 +134,7 @@
     "title": "Mentioning benefits for children predicts faster funding regardless of gender.",
     "bucket": "faster",
     "birth_batch": 1,
-    "last_batch": 307,
+    "last_batch": 308,
     "confidence": 0.95,
     "peak_confidence": 0.95,
     "alive": true
@@ -143,8 +143,8 @@
     "id": "business-duration-faster",
     "title": "Specifying the number of years a business has operated predicts faster funding regardless of gender.",
     "bucket": "faster",
-    "birth_batch": 53,
-    "last_batch": 307,
+    "birth_batch": 52,
+    "last_batch": 308,
     "confidence": 0.96,
     "peak_confidence": 0.96,
     "alive": true
@@ -153,8 +153,8 @@
     "id": "pitch-length-slower",
     "title": "Longer pitch text predicts slower funding regardless of gender.",
     "bucket": "slower",
-    "birth_batch": 111,
-    "last_batch": 307,
+    "birth_batch": 110,
+    "last_batch": 308,
     "confidence": 0.61,
     "peak_confidence": 0.61,
     "alive": true
@@ -163,20 +163,20 @@
     "id": "female-family-status-faster",
     "title": "Female borrowers who mention their husband's role or family structure fund faster.",
     "bucket": "gendered_women",
-    "birth_batch": 205,
-    "last_batch": 307,
+    "birth_batch": 204,
+    "last_batch": 308,
     "confidence": 0.72,
     "peak_confidence": 0.72,
     "alive": true
   },
   {
-    "id": "female-age-faster",
-    "title": "Female borrowers who specify their age fund faster.",
+    "id": "female-gratitude-slower",
+    "title": "Female borrowers who express explicit gratitude in their pitches fund more slowly.",
     "bucket": "gendered_women",
-    "birth_batch": 269,
-    "last_batch": 307,
-    "confidence": 0.45,
-    "peak_confidence": 0.45,
+    "birth_batch": 308,
+    "last_batch": 308,
+    "confidence": 0.6,
+    "peak_confidence": 0.6,
     "alive": true
   }
 ]
