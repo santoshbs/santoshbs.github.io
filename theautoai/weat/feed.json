@@ -1,5 +1,111 @@
 [
   {
+    "id": "eaf99f7822ec",
+    "timestamp": "2026-05-18T22:46:28.352453+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "activists vs diplomats on ethical certainty vs pragmatic flexibility",
+    "labels": {
+      "X": "activists",
+      "Y": "diplomats",
+      "A": "moral clarity",
+      "B": "pragmatic ambiguity"
+    },
+    "canonical_keys": {
+      "X": "activists",
+      "Y": "diplomats",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 0.4742059917747072,
+    "p_value": 0.20816,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "activist",
+        "protester",
+        "campaigner",
+        "rebel",
+        "revolutionary",
+        "agitator",
+        "radical",
+        "demonstrator",
+        "organizer",
+        "advocate",
+        "crusader",
+        "reformer",
+        "dissident",
+        "insurgent",
+        "militant"
+      ],
+      "Y_used": [
+        "diplomat",
+        "negotiator",
+        "envoy",
+        "ambassador",
+        "mediator",
+        "politician",
+        "broker",
+        "statesman",
+        "delegate",
+        "representative",
+        "consul",
+        "arbitrator",
+        "conciliator",
+        "peacemaker",
+        "minister"
+      ],
+      "A_used": [
+        "clear",
+        "certain",
+        "principled",
+        "moral",
+        "ethical",
+        "right",
+        "true",
+        "honest",
+        "absolute",
+        "pure",
+        "firm",
+        "strong",
+        "resolute",
+        "unwavering",
+        "just"
+      ],
+      "B_used": [
+        "pragmatic",
+        "ambiguous",
+        "opportunistic",
+        "flexible",
+        "uncertain",
+        "vague",
+        "murky",
+        "equivocal",
+        "nuanced",
+        "adaptable",
+        "tactful",
+        "realistic",
+        "expedient",
+        "yielding",
+        "shifting"
+      ]
+    },
+    "proposal": "People associate activists with moral clarity more strongly than they associate diplomats with moral clarity. While explicit political attitudes are well documented, implicit cognition regarding these two distinct conflict-resolution roles remains unmeasured on the axis of uncompromising ethical certainty versus pragmatic ambiguity. This association is novel because prior work has typically contrasted protesters with politicians or soldiers with negotiators, leaving the grassroots-versus-institutional dynamic underexplored in implicit terms. Examining it matters because confirming this bias would illuminate why the public instinctively distrusts compromise-driven pathways even when empirical evidence shows they yield more durable societal agreements.",
+    "iterations": 3,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "cd40e56274b1",
     "timestamp": "2026-05-18T22:01:19.343051+00:00",
     "schema_version": "autoresearch.v1",
