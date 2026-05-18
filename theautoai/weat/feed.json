@@ -1,5 +1,111 @@
 [
   {
+    "id": "6d68cf7a9984",
+    "timestamp": "2026-05-18T01:03:50.139428+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Pilots vs Mechanics on autonomy vs dependency",
+    "labels": {
+      "X": "Pilots",
+      "Y": "Mechanics",
+      "A": "autonomy",
+      "B": "dependency"
+    },
+    "canonical_keys": {
+      "X": "pilots",
+      "Y": "mechanics",
+      "A": "autonomy",
+      "B": "dependency"
+    },
+    "effect_size": 0.940498388475546,
+    "p_value": 0.00905,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "pilot",
+        "aviator",
+        "captain",
+        "flyer",
+        "ace",
+        "navigator",
+        "airman",
+        "copilot",
+        "wingman",
+        "commander",
+        "jockey",
+        "steersman",
+        "helmsman",
+        "driver",
+        "operator"
+      ],
+      "Y_used": [
+        "mechanic",
+        "engineer",
+        "technician",
+        "repairman",
+        "fitter",
+        "builder",
+        "machinist",
+        "craftsman",
+        "tinker",
+        "fixer",
+        "adjuster",
+        "maintainer",
+        "laborer",
+        "worker",
+        "operative"
+      ],
+      "A_used": [
+        "autonomy",
+        "freedom",
+        "independence",
+        "liberty",
+        "sovereignty",
+        "mastery",
+        "leadership",
+        "boss",
+        "director",
+        "governor",
+        "chief",
+        "ruler",
+        "king",
+        "queen",
+        "monarch"
+      ],
+      "B_used": [
+        "dependency",
+        "subordination",
+        "control",
+        "regulation",
+        "passivity",
+        "support",
+        "secondary",
+        "auxiliary",
+        "subordinate",
+        "vassal",
+        "follower",
+        "disciple",
+        "servant",
+        "attendant",
+        "dependent"
+      ]
+    },
+    "proposal": "People associate Pilots with autonomy more strongly than they associate Mechanics with autonomy. This differential association examines implicit hierarchies of agency within technical and transport domains, where the operator is often glamorized as the decisive actor while the maintainer is cognitively relegated to a supportive, subordinate role. Such an association has not been systematically probed, as prior occupational research focuses on broader categories like scientists versus artists, yet this distinction reveals how public mental representations reinforce status divides even among essential, complementary roles in safety-critical systems.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "2d72fd9ec4a2",
     "timestamp": "2026-05-17T20:44:52.852518+00:00",
     "schema_version": "autoresearch.v1",
