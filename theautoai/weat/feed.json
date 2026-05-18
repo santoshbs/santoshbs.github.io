@@ -1,5 +1,111 @@
 [
   {
+    "id": "d96543d2b5b0",
+    "timestamp": "2026-05-18T13:53:16.536820+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "marketers vs salespeople on abstract vs concrete",
+    "labels": {
+      "X": "marketers",
+      "Y": "salespeople",
+      "A": "abstract",
+      "B": "concrete"
+    },
+    "canonical_keys": {
+      "X": "marketers",
+      "Y": "salespeople",
+      "A": "abstract",
+      "B": "concrete"
+    },
+    "effect_size": 1.2536869097766332,
+    "p_value": 9e-05,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "marketers",
+        "advertisers",
+        "planners",
+        "strategists",
+        "researchers",
+        "promoters",
+        "communicators",
+        "consultants",
+        "specialists",
+        "directors",
+        "managers",
+        "coordinators",
+        "analysts",
+        "creatives",
+        "designers"
+      ],
+      "Y_used": [
+        "salespeople",
+        "salesmen",
+        "reps",
+        "representatives",
+        "brokers",
+        "agents",
+        "vendors",
+        "sellers",
+        "negotiators",
+        "closers",
+        "executives",
+        "dealers",
+        "merchants",
+        "traders",
+        "peddlers"
+      ],
+      "A_used": [
+        "abstract",
+        "analytical",
+        "strategic",
+        "systematic",
+        "conceptual",
+        "logical",
+        "quantitative",
+        "forecasting",
+        "holistic",
+        "objective",
+        "intellectual",
+        "cerebral",
+        "sophisticated",
+        "complex",
+        "theoretical"
+      ],
+      "B_used": [
+        "concrete",
+        "interpersonal",
+        "transactional",
+        "relational",
+        "social",
+        "personal",
+        "practical",
+        "direct",
+        "immediate",
+        "physical",
+        "tangible",
+        "material",
+        "specific",
+        "individual",
+        "everyday"
+      ]
+    },
+    "proposal": "people associate marketers with strategic abstraction more strongly than they associate salespeople with strategic abstraction. Contemporary business discourse treats marketing and sales as distinct but often conflated in practice. While explicit stereotypes cast salespeople as relational and marketers as creative, implicit cognition may map marketers onto abstract, analytical, or systems-oriented thinking, while reserving concrete, interpersonal, or transactional attributes for salespeople. Examining this differential implicit association is novel because implicit business-role stereotypes remain underexplored compared to demographic or broad occupational biases. Confirming this would shift how we understand the mental compartmentalization of commercial labor, with implications for hiring, teamwork, and how individuals internalize career identities.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "b010d42dbc53",
     "timestamp": "2026-05-18T12:02:40.827514+00:00",
     "schema_version": "autoresearch.v1",
