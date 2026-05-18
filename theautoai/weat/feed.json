@@ -1,5 +1,111 @@
 [
   {
+    "id": "3c02d4f180c1",
+    "timestamp": "2026-05-18T19:34:40.144225+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "teachers vs politicians on patience versus urgency",
+    "labels": {
+      "X": "teachers",
+      "Y": "politicians",
+      "A": "patience",
+      "B": "urgency"
+    },
+    "canonical_keys": {
+      "X": "teachers",
+      "Y": "politicians",
+      "A": "patience",
+      "B": "urgency"
+    },
+    "effect_size": 1.2232825028317256,
+    "p_value": 0.00036,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "teacher",
+        "educator",
+        "professor",
+        "instructor",
+        "tutor",
+        "lecturer",
+        "mentor",
+        "academic",
+        "pedagogue",
+        "scholar",
+        "facilitator",
+        "principal",
+        "dean",
+        "preceptor",
+        "schoolmaster"
+      ],
+      "Y_used": [
+        "politician",
+        "legislator",
+        "senator",
+        "representative",
+        "minister",
+        "official",
+        "diplomat",
+        "statesman",
+        "campaigner",
+        "mayor",
+        "councilman",
+        "alderman",
+        "governor",
+        "chancellor",
+        "candidate"
+      ],
+      "A_used": [
+        "patience",
+        "calm",
+        "slow",
+        "steady",
+        "endurance",
+        "perseverance",
+        "gradual",
+        "deliberate",
+        "methodical",
+        "careful",
+        "thoughtful",
+        "composed",
+        "serene",
+        "tranquil",
+        "restraint"
+      ],
+      "B_used": [
+        "urgency",
+        "fast",
+        "quick",
+        "rapid",
+        "haste",
+        "rush",
+        "impulsive",
+        "reactive",
+        "immediate",
+        "sudden",
+        "frantic",
+        "hurried",
+        "instant",
+        "hasty",
+        "impatient"
+      ]
+    },
+    "proposal": "People associate teachers with patience more strongly than they associate politicians with patience. This differential implicit association taps into contemporary cultural narratives that frame political actors as driven by rapid reaction cycles, performative urgency, and short-term electoral incentives, whereas educators are culturally constructed as stewards of long-term development who must endure gradual, incremental progress. Examining this association is novel because implicit patience stereotypes have rarely been operationalized, and it is important because such mental representations may underlie public tolerance for political volatility versus expectations of stability in educational institutions, shaping civic engagement and policy support.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "d96543d2b5b0",
     "timestamp": "2026-05-18T13:53:16.536820+00:00",
     "schema_version": "autoresearch.v1",
