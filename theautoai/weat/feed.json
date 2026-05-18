@@ -1,5 +1,111 @@
 [
   {
+    "id": "cd40e56274b1",
+    "timestamp": "2026-05-18T22:01:19.343051+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "gamers vs gamblers on social connectedness",
+    "labels": {
+      "X": "gamers",
+      "Y": "gamblers",
+      "A": "isolation",
+      "B": "connectedness"
+    },
+    "canonical_keys": {
+      "X": "gamers",
+      "Y": "gamblers",
+      "A": "isolation",
+      "B": "connectedness"
+    },
+    "effect_size": -0.02384083964523602,
+    "p_value": 0.95053,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "gamer",
+        "player",
+        "geek",
+        "nerd",
+        "otaku",
+        "streamer",
+        "keyboarder",
+        "netizen",
+        "troll",
+        "modder",
+        "speedrunner",
+        "clicker",
+        "masher",
+        "proplayer",
+        "noob"
+      ],
+      "Y_used": [
+        "gambler",
+        "bettor",
+        "punter",
+        "highroller",
+        "cardplayer",
+        "shark",
+        "whale",
+        "risktaker",
+        "thrillseeker",
+        "patron",
+        "visitor",
+        "enthusiast",
+        "hustler",
+        "speculator",
+        "wagerer"
+      ],
+      "A_used": [
+        "isolated",
+        "lonely",
+        "alone",
+        "solitary",
+        "withdrawn",
+        "secluded",
+        "hermit",
+        "reclusive",
+        "disconnected",
+        "private",
+        "solo",
+        "individual",
+        "detached",
+        "remote",
+        "insular"
+      ],
+      "B_used": [
+        "social",
+        "communal",
+        "group",
+        "team",
+        "together",
+        "crowd",
+        "public",
+        "interactive",
+        "community",
+        "gathering",
+        "festive",
+        "lively",
+        "party",
+        "sociable",
+        "friendly"
+      ]
+    },
+    "proposal": "People associate gamers with social isolation more strongly than they associate gamblers with social isolation. Although both groups are often linked to addiction and compulsive behavior, cultural narratives persistently frame gamers as solitary individuals withdrawn into private digital worlds, whereas gamblers are frequently imagined within communal settings like casinos or as risk-takers engaging with others. This differential implicit association is novel because no prior studies have compared these two categories on the axis of social connectedness, despite their increasing convergence through digital platforms. Examining this bias matters because it highlights how stereotypes about technology and leisure may lag behind reality, as gaming has become highly socialized through streaming and multiplayer ecosystems while gambling has grown more privatized via mobile applications.",
+    "iterations": 3,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "ed6e0f8d4b27",
     "timestamp": "2026-05-18T20:20:23.697045+00:00",
     "schema_version": "autoresearch.v1",
