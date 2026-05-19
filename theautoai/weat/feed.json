@@ -1,5 +1,115 @@
 [
   {
+    "id": "8d2e9223069f",
+    "timestamp": "2026-05-19T02:41:56.370101+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "merchants vs ministers on situational pragmatism vs. fixed doctrine",
+    "labels": {
+      "X": "merchants",
+      "Y": "ministers",
+      "A": "pragmatic adaptability",
+      "B": "doctrinal rigidity"
+    },
+    "canonical_keys": {
+      "X": "merchants",
+      "Y": "ministers",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 1.6209066270066075,
+    "p_value": 0.0,
+    "n": {
+      "X": 16,
+      "Y": 16,
+      "A": 16,
+      "B": 16
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "merchant",
+        "trader",
+        "vendor",
+        "shopkeeper",
+        "dealer",
+        "retailer",
+        "broker",
+        "entrepreneur",
+        "businessman",
+        "capitalist",
+        "marketer",
+        "salesman",
+        "shopowner",
+        "peddler",
+        "wholesaler",
+        "tradesman"
+      ],
+      "Y_used": [
+        "minister",
+        "pastor",
+        "priest",
+        "cleric",
+        "chaplain",
+        "preacher",
+        "theologian",
+        "vicar",
+        "curate",
+        "clergyman",
+        "evangelist",
+        "friar",
+        "monk",
+        "deacon",
+        "rector",
+        "abbot"
+      ],
+      "A_used": [
+        "pragmatic",
+        "adaptable",
+        "flexible",
+        "versatile",
+        "practical",
+        "opportunistic",
+        "realistic",
+        "resourceful",
+        "adjustable",
+        "malleable",
+        "pliant",
+        "accommodating",
+        "elastic",
+        "supple",
+        "dynamic",
+        "responsive"
+      ],
+      "B_used": [
+        "rigid",
+        "inflexible",
+        "dogmatic",
+        "orthodox",
+        "fixed",
+        "unyielding",
+        "steadfast",
+        "uncompromising",
+        "ideological",
+        "fundamentalist",
+        "strict",
+        "stubborn",
+        "obstinate",
+        "adamant",
+        "pedantic",
+        "absolute"
+      ]
+    },
+    "proposal": "People associate merchants with situational pragmatism more strongly than they associate ministers with situational pragmatism. This differential captures how contemporary discourse frames market actors as inherently adaptable to shifting conditions, while religious leaders are stereotyped as bound by fixed doctrinal commitments. Examining this implicit link is novel because social psychological research has extensively studied explicit attitudes toward commerce and religion, but has not probed whether the cognitive architecture of flexibility itself is implicitly mapped onto secular versus sacred vocations. Confirming or disconfirming it would clarify whether adaptability is mentally coded as a domain-specific trait of economic roles, which could influence public evaluations of policy flexibility and institutional trust.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "eaf99f7822ec",
     "timestamp": "2026-05-18T22:46:28.352453+00:00",
     "schema_version": "autoresearch.v1",
