@@ -1,25 +1,5 @@
 [
   {
-    "id": "female-repayment-promises-slower",
-    "title": "Explicit mentions of repayment or repayment promises may slow funding for female borrowers.",
-    "bucket": "",
-    "birth_batch": 0,
-    "death_batch": 321,
-    "last_batch": 321,
-    "confidence": 0,
-    "alive": false
-  },
-  {
-    "id": "female-abstract-goals-slower",
-    "title": "Female borrowers who use abstract development goals like food security may fund more slowly.",
-    "bucket": "",
-    "birth_batch": 0,
-    "death_batch": 324,
-    "last_batch": 324,
-    "confidence": 0,
-    "alive": false
-  },
-  {
     "id": "male-direct-appeal-slower",
     "title": "Direct appeals for funding may slow funding speed for male borrowers.",
     "bucket": "",
@@ -100,11 +80,31 @@
     "alive": false
   },
   {
+    "id": "female-income-specificity-puzzle",
+    "title": "Female borrowers who specify precise income figures may fund faster.",
+    "bucket": "",
+    "birth_batch": 0,
+    "death_batch": 346,
+    "last_batch": 346,
+    "confidence": 0,
+    "alive": false
+  },
+  {
+    "id": "female-character-descriptors-faster",
+    "title": "Female borrowers who use character-based descriptors like 'dedication' or 'resilience' may fund faster.",
+    "bucket": "",
+    "birth_batch": 0,
+    "death_batch": 346,
+    "last_batch": 346,
+    "confidence": 0,
+    "alive": false
+  },
+  {
     "id": "institutional-names-slower",
     "title": "Mentioning specific institutional or brand names predicts slower funding regardless of gender.",
     "bucket": "slower",
     "birth_batch": 1,
-    "last_batch": 345,
+    "last_batch": 346,
     "confidence": 0.89,
     "peak_confidence": 0.89,
     "alive": true
@@ -114,7 +114,7 @@
     "title": "Female borrowers who list specific products or goals beyond family welfare fund faster.",
     "bucket": "gendered_women",
     "birth_batch": 1,
-    "last_batch": 345,
+    "last_batch": 346,
     "confidence": 0.97,
     "peak_confidence": 0.97,
     "alive": true
@@ -124,7 +124,7 @@
     "title": "Female borrowers who mention benefits to their family or community fund faster.",
     "bucket": "gendered_women",
     "birth_batch": 1,
-    "last_batch": 345,
+    "last_batch": 346,
     "confidence": 0.79,
     "peak_confidence": 0.79,
     "alive": true
@@ -134,9 +134,9 @@
     "title": "Mentioning benefits for children predicts faster funding regardless of gender.",
     "bucket": "faster",
     "birth_batch": 1,
-    "last_batch": 345,
-    "confidence": 0.74,
-    "peak_confidence": 0.74,
+    "last_batch": 346,
+    "confidence": 0.78,
+    "peak_confidence": 0.78,
     "alive": true
   },
   {
@@ -144,17 +144,27 @@
     "title": "Female borrowers who mention their husband's role or family structure fund faster.",
     "bucket": "gendered_women",
     "birth_batch": 1,
-    "last_batch": 345,
+    "last_batch": 346,
     "confidence": 0.85,
     "peak_confidence": 0.85,
+    "alive": true
+  },
+  {
+    "id": "female-demographic-detail-slower",
+    "title": "Female borrowers who include specific demographic details like child count fund more slowly.",
+    "bucket": "gendered_women",
+    "birth_batch": 1,
+    "last_batch": 346,
+    "confidence": 0.37,
+    "peak_confidence": 0.37,
     "alive": true
   },
   {
     "id": "business-duration-faster",
     "title": "Specifying the number of years a business has operated predicts faster funding regardless of gender.",
     "bucket": "faster",
-    "birth_batch": 15,
-    "last_batch": 345,
+    "birth_batch": 14,
+    "last_batch": 346,
     "confidence": 1.0,
     "peak_confidence": 1.0,
     "alive": true
@@ -163,20 +173,10 @@
     "id": "pitch-length-slower",
     "title": "Longer pitch text predicts slower funding regardless of gender.",
     "bucket": "slower",
-    "birth_batch": 73,
-    "last_batch": 345,
+    "birth_batch": 72,
+    "last_batch": 346,
     "confidence": 0.64,
     "peak_confidence": 0.64,
-    "alive": true
-  },
-  {
-    "id": "female-demographic-detail-slower",
-    "title": "Female borrowers who include specific demographic details like child count fund more slowly.",
-    "bucket": "gendered_women",
-    "birth_batch": 341,
-    "last_batch": 345,
-    "confidence": 0.52,
-    "peak_confidence": 0.52,
     "alive": true
   }
 ]
