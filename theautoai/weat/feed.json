@@ -1,5 +1,111 @@
 [
   {
+    "id": "f2d51eb632ae",
+    "timestamp": "2026-05-19T14:53:03.193068+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "architects vs surgeons on temporal orientation",
+    "labels": {
+      "X": "architects",
+      "Y": "surgeons",
+      "A": "prospective",
+      "B": "reactive"
+    },
+    "canonical_keys": {
+      "X": "architects",
+      "Y": "surgeons",
+      "A": "prospective",
+      "B": "reactive"
+    },
+    "effect_size": 1.8282789060713076,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "architect",
+        "architects",
+        "planner",
+        "planners",
+        "designer",
+        "designers",
+        "urbanist",
+        "urbanists",
+        "drafter",
+        "drafters",
+        "constructor",
+        "constructors",
+        "builder",
+        "builders",
+        "developer"
+      ],
+      "Y_used": [
+        "surgeon",
+        "surgeons",
+        "physician",
+        "physicians",
+        "medic",
+        "medics",
+        "clinician",
+        "clinicians",
+        "specialist",
+        "specialists",
+        "practitioner",
+        "practitioners",
+        "doctor",
+        "doctors",
+        "healer"
+      ],
+      "A_used": [
+        "foresight",
+        "vision",
+        "visionary",
+        "future",
+        "planning",
+        "planned",
+        "plan",
+        "anticipate",
+        "prospective",
+        "strategic",
+        "predictive",
+        "foresee",
+        "forecast",
+        "projected",
+        "extended"
+      ],
+      "B_used": [
+        "reactive",
+        "immediate",
+        "crisis",
+        "precision",
+        "intervention",
+        "urgent",
+        "acute",
+        "emergency",
+        "response",
+        "corrective",
+        "remedial",
+        "instant",
+        "direct",
+        "rapid",
+        "brief"
+      ]
+    },
+    "proposal": "People associate architects with foresight more strongly than they associate surgeons with foresight. This implicit association stems from cultural narratives that frame architecture as a discipline rooted in anticipating future needs, spatial planning, and visionary design, whereas surgery is typically stereotyped as a reactive, crisis-management field focused on immediate intervention and technical precision. This differential association remains largely unexamined in implicit bias literature, which has not contrasted design-oriented professions with acute-care medical roles along temporal horizons. Investigating it is important because uncovering ingrained prospective versus reactive stereotypes could reveal how the public subconsciously evaluates different types of expertise, potentially shaping trust and policy support for long-term infrastructure versus immediate healthcare interventions.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "f3d263f21e3d",
     "timestamp": "2026-05-19T13:51:27.132590+00:00",
     "schema_version": "autoresearch.v1",
