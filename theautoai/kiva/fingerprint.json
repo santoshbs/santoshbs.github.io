@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "batches_seen": 353,
-  "loans_seen": 5648,
-  "last_updated": "2026-05-19T21:19:50.803811+00:00",
+  "batches_seen": 354,
+  "loans_seen": 5664,
+  "last_updated": "2026-05-19T22:18:05.280775+00:00",
   "watching_for": "",
   "claims": {
     "institutional-names-slower": {
@@ -13,10 +13,10 @@
       "supporting_loans": [],
       "confidence": 0.75,
       "first_seen_batch": 1,
-      "last_updated_batch": 353,
+      "last_updated_batch": 354,
       "confidence_history": [
         [
-          353,
+          354,
           0.75
         ]
       ]
@@ -29,10 +29,10 @@
       "supporting_loans": [],
       "confidence": 1.0,
       "first_seen_batch": 1,
-      "last_updated_batch": 353,
+      "last_updated_batch": 354,
       "confidence_history": [
         [
-          353,
+          354,
           1.0
         ]
       ]
@@ -45,10 +45,10 @@
       "supporting_loans": [],
       "confidence": 0.84,
       "first_seen_batch": 1,
-      "last_updated_batch": 353,
+      "last_updated_batch": 354,
       "confidence_history": [
         [
-          353,
+          354,
           0.84
         ]
       ]
@@ -61,10 +61,10 @@
       "supporting_loans": [],
       "confidence": 0.88,
       "first_seen_batch": 1,
-      "last_updated_batch": 353,
+      "last_updated_batch": 354,
       "confidence_history": [
         [
-          353,
+          354,
           0.88
         ]
       ]
@@ -77,10 +77,10 @@
       "supporting_loans": [],
       "confidence": 1.0,
       "first_seen_batch": 1,
-      "last_updated_batch": 353,
+      "last_updated_batch": 354,
       "confidence_history": [
         [
-          353,
+          354,
           1.0
         ]
       ]
@@ -93,10 +93,10 @@
       "supporting_loans": [],
       "confidence": 0.75,
       "first_seen_batch": 1,
-      "last_updated_batch": 353,
+      "last_updated_batch": 354,
       "confidence_history": [
         [
-          353,
+          354,
           0.75
         ]
       ]
@@ -109,27 +109,27 @@
       "supporting_loans": [],
       "confidence": 0.66,
       "first_seen_batch": 1,
-      "last_updated_batch": 353,
+      "last_updated_batch": 354,
       "confidence_history": [
         [
-          353,
+          354,
           0.66
         ]
       ]
     },
-    "female-education-level-faster": {
-      "id": "female-education-level-faster",
+    "female-environmental-detail-slower": {
+      "id": "female-environmental-detail-slower",
       "bucket": "gendered_women",
-      "title": "Female borrowers who mention their education level fund faster.",
-      "body": "Pitches from women that explicitly state the borrower's level of education tend to accelerate funding speed.",
+      "title": "Female borrowers who provide detailed descriptions of their local environment or business operations fund more slowly.",
+      "body": "Pitches from women that include exhaustive descriptions of the physical environment or granular operational details tend to decelerate funding speed.",
       "supporting_loans": [],
-      "confidence": 0.6,
-      "first_seen_batch": 353,
-      "last_updated_batch": 353,
+      "confidence": 0.65,
+      "first_seen_batch": 354,
+      "last_updated_batch": 354,
       "confidence_history": [
         [
-          353,
-          0.6
+          354,
+          0.65
         ]
       ]
     }
@@ -138,57 +138,45 @@
     "male-aspirational-future-faster": {
       "id": "male-aspirational-future-faster",
       "body": "Male borrowers who explicitly mention dreaming of a better future may fund faster.",
-      "first_seen_batch": 243
+      "first_seen_batch": 242
     },
     "female-collateral-mention-faster": {
       "id": "female-collateral-mention-faster",
       "body": "Mentioning a lack of collateral may accelerate funding speed for female borrowers.",
-      "first_seen_batch": 257
+      "first_seen_batch": 256
     },
     "female-templated-narrative-slower": {
       "id": "female-templated-narrative-slower",
       "body": "Female borrowers who use standardized or templated narrative structures may fund more slowly.",
-      "first_seen_batch": 283
-    },
-    "female-environmental-detail-slower": {
-      "id": "female-environmental-detail-slower",
-      "body": "Detailed descriptions of the borrower's environment or specific tools may slow funding for women.",
-      "first_seen_batch": 287
+      "first_seen_batch": 282
     },
     "female-specific-hardship-faster": {
       "id": "female-specific-hardship-faster",
       "body": "Female borrowers who describe specific daily hardships, such as water access, may fund faster.",
-      "first_seen_batch": 289
+      "first_seen_batch": 288
     },
     "female-outcome-vs-input-specificity": {
       "id": "female-outcome-vs-input-specificity",
       "body": "For female borrowers, highlighting long-term outcomes like asset acquisition may accelerate funding, while specifying granular tool utility may slow it.",
-      "first_seen_batch": 305
+      "first_seen_batch": 304
     },
     "female-exhaustive-listing-slower": {
       "id": "female-exhaustive-listing-slower",
       "body": "Providing exhaustive lists of specific assets or family members may slow funding for women.",
-      "first_seen_batch": 319
+      "first_seen_batch": 318
     },
     "female-ed-tech-slower": {
       "id": "female-ed-tech-slower",
       "body": "Female borrowers who specify smartphones for school learning may fund more slowly.",
-      "first_seen_batch": 339
+      "first_seen_batch": 338
     },
     "male-operational-detail-slower": {
       "id": "male-operational-detail-slower",
       "body": "Detailed descriptions of sales channels or operational logistics may decelerate funding for men.",
-      "first_seen_batch": 349
+      "first_seen_batch": 348
     }
   },
   "retired": {
-    "female-child-count-faster": {
-      "id": "female-child-count-faster",
-      "title": "Female borrowers who provide a specific count of children may fund faster.",
-      "retrospective": "Contradicted by observation that child count was present in slower pitch.",
-      "retired_batch": 331,
-      "was_believed_batches": 0
-    },
     "female-family-challenges-slower": {
       "id": "female-family-challenges-slower",
       "title": "Female borrowers who mention specific family challenges or financial instability may fund more slowly.",
@@ -250,6 +238,13 @@
       "title": "Pitches with a higher word count or greater overall length tend to fund more slowly for both male and female borrowers.",
       "retrospective": "Contradicted by observation that lengthier pitches fund faster for women.",
       "retired_batch": 353,
+      "was_believed_batches": 0
+    },
+    "female-education-level-faster": {
+      "id": "female-education-level-faster",
+      "title": "Pitches from women that explicitly state the borrower's level of education tend to accelerate funding speed.",
+      "retrospective": "Retired to make room for promoted claim regarding environmental detail.",
+      "retired_batch": 354,
       "was_believed_batches": 0
     }
   }
