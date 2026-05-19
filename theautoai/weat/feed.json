@@ -1,5 +1,111 @@
 [
   {
+    "id": "f3d263f21e3d",
+    "timestamp": "2026-05-19T13:51:27.132590+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "teachers vs doctors on administrative burden versus professional autonomy",
+    "labels": {
+      "X": "teachers",
+      "Y": "doctors",
+      "A": "Administrative",
+      "B": "Autonomous"
+    },
+    "canonical_keys": {
+      "X": "teachers",
+      "Y": "doctors",
+      "A": "administrative",
+      "B": "autonomous"
+    },
+    "effect_size": 0.09853811925790983,
+    "p_value": 0.7963,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "teacher",
+        "educator",
+        "instructor",
+        "professor",
+        "lecturer",
+        "tutor",
+        "coach",
+        "mentor",
+        "advisor",
+        "headmaster",
+        "dean",
+        "principal",
+        "pedagogue",
+        "academic",
+        "facilitator"
+      ],
+      "Y_used": [
+        "doctor",
+        "physician",
+        "surgeon",
+        "clinician",
+        "specialist",
+        "cardiologist",
+        "pediatrician",
+        "psychiatrist",
+        "neurologist",
+        "dermatologist",
+        "gynecologist",
+        "radiologist",
+        "oncologist",
+        "internist",
+        "practitioner"
+      ],
+      "A_used": [
+        "bureaucracy",
+        "bureaucratic",
+        "administrative",
+        "paperwork",
+        "compliance",
+        "mandate",
+        "regulation",
+        "form",
+        "filing",
+        "bureaucrat",
+        "auditor",
+        "manager",
+        "director",
+        "supervisor",
+        "secretary"
+      ],
+      "B_used": [
+        "autonomous",
+        "independent",
+        "expert",
+        "skilled",
+        "knowledgeable",
+        "judicious",
+        "discreet",
+        "authoritative",
+        "masterful",
+        "proficient",
+        "competent",
+        "experienced",
+        "wise",
+        "intelligent",
+        "rational"
+      ]
+    },
+    "proposal": "People associate teachers with administrative burden more strongly than they associate doctors with administrative burden. While both professions operate within heavily regulated institutional frameworks and face substantial paperwork demands, cultural narratives and media representations frequently frame physicians as autonomous clinical experts while casting educators as perpetually entangled in compliance mandates, standardized testing, and bureaucratic oversight. This differential implicit association has not been systematically examined in social cognition research, which has historically prioritized axes like autonomy versus empathy or technical versus interpersonal skills. Testing this association is important because it may expose a representational asymmetry that influences public attitudes toward professional prestige, policy advocacy, and institutional reform, particularly as both fields navigate escalating systemic pressures.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "995725f27665",
     "timestamp": "2026-05-19T12:16:15.772107+00:00",
     "schema_version": "autoresearch.v1",
