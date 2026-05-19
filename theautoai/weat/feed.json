@@ -1,5 +1,111 @@
 [
   {
+    "id": "1b4f415c5bd0",
+    "timestamp": "2026-05-19T05:48:06.097589+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "surgeons vs comedians on affective availability",
+    "labels": {
+      "X": "surgeons",
+      "Y": "comedians",
+      "A": "emotional_detachment",
+      "B": "emotional_expressiveness"
+    },
+    "canonical_keys": {
+      "X": "surgeons",
+      "Y": "comedians",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 1.3827007022628075,
+    "p_value": 6e-05,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "surgeon",
+        "doctor",
+        "physician",
+        "medic",
+        "cardiologist",
+        "neurosurgeon",
+        "orthopedist",
+        "dermatologist",
+        "anesthesiologist",
+        "internist",
+        "pediatrician",
+        "radiologist",
+        "pathologist",
+        "clinician",
+        "specialist"
+      ],
+      "Y_used": [
+        "comedian",
+        "actor",
+        "actress",
+        "entertainer",
+        "performer",
+        "comic",
+        "jester",
+        "clown",
+        "satirist",
+        "improviser",
+        "monologist",
+        "impressionist",
+        "ventriloquist",
+        "comedienne",
+        "storyteller"
+      ],
+      "A_used": [
+        "detached",
+        "cold",
+        "aloof",
+        "distant",
+        "impersonal",
+        "objective",
+        "stoic",
+        "unfeeling",
+        "restrained",
+        "impartial",
+        "dispassionate",
+        "formal",
+        "rational",
+        "reserved",
+        "cool"
+      ],
+      "B_used": [
+        "warm",
+        "expressive",
+        "vulnerable",
+        "empathetic",
+        "connected",
+        "feeling",
+        "sensitive",
+        "animated",
+        "passionate",
+        "lively",
+        "open",
+        "affectionate",
+        "heartfelt",
+        "engaging",
+        "spontaneous"
+      ]
+    },
+    "proposal": "People associate surgeons with emotional detachment more strongly than they associate comedians with emotional detachment. This differential implicit association stems from the cultural narrative that medical professionals must cultivate clinical objectivity and suppress personal affect to perform high-stakes procedures, whereas comedians are socially positioned as emotionally expressive, vulnerable, and deeply attuned to the affective lives of their audiences. Examining this implicit contrast is novel because while explicit stereotypes about medical professionalism and performative empathy are well-documented, the implicit axis of affective availability between clinical and entertainment roles has not been systematically measured. Confirming or disconfirming this association matters because implicit biases regarding emotional restraint may shape public trust, patient communication expectations, and how society values different forms of emotional labor in high-pressure professions.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "8d2e9223069f",
     "timestamp": "2026-05-19T02:41:56.370101+00:00",
     "schema_version": "autoresearch.v1",
