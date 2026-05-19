@@ -1,5 +1,118 @@
 [
   {
+    "id": "6c01a0527fdb",
+    "timestamp": "2026-05-19T06:33:20.850157+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "pundits vs analysts on moral certainty vs probabilistic neutrality",
+    "labels": {
+      "X": "pundits",
+      "Y": "analysts",
+      "A": "Moral Certainty",
+      "B": "Probabilistic Neutrality"
+    },
+    "canonical_keys": {
+      "X": "pundits",
+      "Y": "analysts",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 1.801561066705462,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 18,
+      "B": 18
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "pundit",
+        "commentator",
+        "columnist",
+        "ideologue",
+        "activist",
+        "partisan",
+        "advocate",
+        "propagandist",
+        "zealot",
+        "fanatic",
+        "crusader",
+        "critic",
+        "speaker",
+        "orator",
+        "agitator"
+      ],
+      "Y_used": [
+        "analyst",
+        "researcher",
+        "scientist",
+        "statistician",
+        "specialist",
+        "consultant",
+        "evaluator",
+        "investigator",
+        "observer",
+        "clinician",
+        "auditor",
+        "actuary",
+        "demographer",
+        "profiler",
+        "mathematician"
+      ],
+      "A_used": [
+        "certain",
+        "sure",
+        "absolute",
+        "dogma",
+        "dogmatic",
+        "rigid",
+        "fixed",
+        "biased",
+        "moral",
+        "righteous",
+        "holy",
+        "virtue",
+        "justice",
+        "right",
+        "truth",
+        "conviction",
+        "belief",
+        "faith"
+      ],
+      "B_used": [
+        "neutral",
+        "objective",
+        "empirical",
+        "scientific",
+        "data",
+        "evidence",
+        "fact",
+        "probability",
+        "chance",
+        "risk",
+        "likely",
+        "probable",
+        "uncertain",
+        "tentative",
+        "open",
+        "unbiased",
+        "rational",
+        "logic",
+        "reason"
+      ]
+    },
+    "proposal": "People associate pundits with moral certainty more strongly than they associate analysts with moral certainty. This differential reflects contemporary media ecologies where pundits are routinely framed as partisan advocates defending fixed ideological positions, whereas analysts are stereotyped as neutral technicians who update conclusions in response to empirical data. While social psychology has extensively documented explicit competence-warmth stereotypes for professionals and politicians, the implicit moral framing of journalistic and advisory roles remains unexamined. Probing this association matters because it reveals how partisan media formats may subtly train the public to expect dogma rather than probabilistic reasoning from authoritative voices, with downstream consequences for democratic deliberation and institutional trust.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "1b4f415c5bd0",
     "timestamp": "2026-05-19T05:48:06.097589+00:00",
     "schema_version": "autoresearch.v1",
