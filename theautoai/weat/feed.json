@@ -1,5 +1,111 @@
 [
   {
+    "id": "217bbc039648",
+    "timestamp": "2026-05-20T23:06:57.870038+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Writers vs Actors on Solitude vs Social Interaction",
+    "labels": {
+      "X": "Writers",
+      "Y": "Actors",
+      "A": "Solitude",
+      "B": "Social Interaction"
+    },
+    "canonical_keys": {
+      "X": "writers",
+      "Y": "actors",
+      "A": "solitude",
+      "B": ""
+    },
+    "effect_size": 1.0127200579683342,
+    "p_value": 0.00381,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "writer",
+        "author",
+        "novelist",
+        "poet",
+        "playwright",
+        "essayist",
+        "journalist",
+        "blogger",
+        "columnist",
+        "scriptwriter",
+        "copywriter",
+        "biographer",
+        "storyteller",
+        "narrator",
+        "memoirist"
+      ],
+      "Y_used": [
+        "actor",
+        "actress",
+        "comedian",
+        "performer",
+        "entertainer",
+        "star",
+        "player",
+        "singer",
+        "dancer",
+        "model",
+        "talent",
+        "extra",
+        "understudy",
+        "impersonator",
+        "celebrity"
+      ],
+      "A_used": [
+        "solitude",
+        "alone",
+        "solitary",
+        "isolated",
+        "lonely",
+        "private",
+        "quiet",
+        "reclusive",
+        "hermit",
+        "single",
+        "individual",
+        "secluded",
+        "withdrawn",
+        "introspective",
+        "personal"
+      ],
+      "B_used": [
+        "social",
+        "together",
+        "group",
+        "public",
+        "crowd",
+        "community",
+        "collective",
+        "team",
+        "gathering",
+        "party",
+        "meeting",
+        "audience",
+        "companion",
+        "partner",
+        "interaction"
+      ]
+    },
+    "proposal": "People associate Writers with solitude more strongly than they associate Actors with solitude. This differential implicit association reflects the cultural archetype of the \"lone creator\" versus the \"collaborative performer,\" a distinction that shapes how society values different modes of artistic production. Examining this association is novel because implicit bias research typically focuses on demographics or broad personality traits rather than the structural conditions of creative labor. It matters because it reveals whether the romanticized ideal of solitary genius is so deeply ingrained that it distorts our perception of the actual collaborative realities of writing and performance alike.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "4d2b89f4aaae",
     "timestamp": "2026-05-20T22:25:52.937304+00:00",
     "schema_version": "autoresearch.v1",
