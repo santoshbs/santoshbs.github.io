@@ -1,5 +1,111 @@
 [
   {
+    "id": "fd671d99d6e3",
+    "timestamp": "2026-05-20T00:21:37.892367+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "police vs firefighters on procedural detachment vs interpersonal warmth",
+    "labels": {
+      "X": "police",
+      "Y": "firefighters",
+      "A": "procedural_detachment",
+      "B": "interpersonal_warmth"
+    },
+    "canonical_keys": {
+      "X": "police",
+      "Y": "firefighters",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 1.2967277949170275,
+    "p_value": 5e-05,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "police",
+        "officer",
+        "cop",
+        "sheriff",
+        "deputy",
+        "marshal",
+        "constable",
+        "patrolman",
+        "detective",
+        "guard",
+        "trooper",
+        "ranger",
+        "warden",
+        "agent",
+        "inspector"
+      ],
+      "Y_used": [
+        "firefighter",
+        "fireman",
+        "firewoman",
+        "firechief",
+        "rescuer",
+        "volunteer",
+        "crew",
+        "brigade",
+        "fire",
+        "smoke",
+        "flame",
+        "blaze",
+        "inferno",
+        "hydro",
+        "truck"
+      ],
+      "A_used": [
+        "bureaucratic",
+        "detached",
+        "formal",
+        "procedural",
+        "methodical",
+        "impartial",
+        "neutral",
+        "objective",
+        "administrative",
+        "rigid",
+        "systematic",
+        "protocol",
+        "regulation",
+        "official",
+        "mechanical"
+      ],
+      "B_used": [
+        "warm",
+        "empathetic",
+        "compassionate",
+        "caring",
+        "spontaneous",
+        "connected",
+        "human",
+        "emotional",
+        "supportive",
+        "gentle",
+        "intimate",
+        "personal",
+        "heartfelt",
+        "nurturing",
+        "friendly"
+      ]
+    },
+    "proposal": "People associate police with procedural detachment more strongly than they associate firefighters with procedural detachment. This differential implicit association captures a subtle but pervasive cognitive divide in how emergency services are culturally scripted: police are routinely framed as rule-bound arbiters who must maintain emotional and bureaucratic distance to ensure impartiality, whereas firefighters are cast as spontaneous, empathetic interveners whose legitimacy derives from direct human connection. Examining this link is novel because implicit association research has overwhelmingly focused on trust, threat, or authority, neglecting how these roles are mentally mapped onto tolerance for bureaucratic neutrality versus interpersonal warmth. It matters because uncovering this hidden representational split could explain divergent public attitudes toward institutional accountability and shape how communities allocate moral credibility to different crisis-response institutions.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "594b99e6717a",
     "timestamp": "2026-05-19T23:24:30.275125+00:00",
     "schema_version": "autoresearch.v1",
