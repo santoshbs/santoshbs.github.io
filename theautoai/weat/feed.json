@@ -1,5 +1,111 @@
 [
   {
+    "id": "e5071276070f",
+    "timestamp": "2026-05-20T01:12:04.045802+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Losers vs Winners on authenticity vs artificiality",
+    "labels": {
+      "X": "Losers",
+      "Y": "Winners",
+      "A": "authenticity",
+      "B": "artificiality"
+    },
+    "canonical_keys": {
+      "X": "losers",
+      "Y": "winners",
+      "A": "authenticity",
+      "B": "artificiality"
+    },
+    "effect_size": -0.9728872250718945,
+    "p_value": 0.0055,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "loser",
+        "failure",
+        "underdog",
+        "flop",
+        "wimp",
+        "weakling",
+        "chump",
+        "pushover",
+        "screwup",
+        "zero",
+        "nobody",
+        "castoff",
+        "discard",
+        "outcast",
+        "reject"
+      ],
+      "Y_used": [
+        "winner",
+        "victor",
+        "champion",
+        "superstar",
+        "star",
+        "elite",
+        "master",
+        "boss",
+        "chief",
+        "king",
+        "queen",
+        "ace",
+        "lion",
+        "hero",
+        "legend"
+      ],
+      "A_used": [
+        "authentic",
+        "genuine",
+        "real",
+        "true",
+        "honest",
+        "sincere",
+        "pure",
+        "raw",
+        "natural",
+        "unfiltered",
+        "organic",
+        "heartfelt",
+        "straightforward",
+        "candid",
+        "frank"
+      ],
+      "B_used": [
+        "artificial",
+        "fake",
+        "performative",
+        "polished",
+        "managed",
+        "staged",
+        "scripted",
+        "contrived",
+        "calculated",
+        "strategic",
+        "pretentious",
+        "curated",
+        "glossy",
+        "manufactured",
+        "synthetic"
+      ]
+    },
+    "proposal": "People associate Losers with authenticity more strongly than they associate Winners with authenticity. This differential association has not been probed in prior literature, which has typically focused on explicit evaluations of winners and losers along dimensions of competence, warmth, or moral worth. The proposal is interesting because contemporary public discourse frequently frames winners as polished, managed, or performative entities shaped by institutional pressures, while characterizing losers as raw, unfiltered, or unencumbered by the necessity of maintaining a favorable public image. Examining this link is important because confirming it would reveal a counter-cultural implicit cognition that valorizes failure as a site of genuineness, suggesting that the pervasive explicit ideology of success may be psychologically offset by an implicit suspicion of the artifice surrounding victory.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "fd671d99d6e3",
     "timestamp": "2026-05-20T00:21:37.892367+00:00",
     "schema_version": "autoresearch.v1",
