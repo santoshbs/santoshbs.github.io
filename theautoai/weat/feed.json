@@ -1,5 +1,111 @@
 [
   {
+    "id": "d96b57c28486",
+    "timestamp": "2026-05-20T17:52:20.677942+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "tailors vs beggars on conformity vs nonconformity",
+    "labels": {
+      "X": "tailors",
+      "Y": "beggars",
+      "A": "conformity",
+      "B": "nonconformity"
+    },
+    "canonical_keys": {
+      "X": "tailors",
+      "Y": "beggars",
+      "A": "conformity",
+      "B": "nonconformity"
+    },
+    "effect_size": 1.6160132078580933,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "tailor",
+        "seamstress",
+        "dressmaker",
+        "stylist",
+        "designer",
+        "cobbler",
+        "mender",
+        "fitter",
+        "craftsman",
+        "artisan",
+        "worker",
+        "maker",
+        "repairer",
+        "model",
+        "stitcher"
+      ],
+      "Y_used": [
+        "beggar",
+        "homeless",
+        "vagrant",
+        "pauper",
+        "tramp",
+        "panhandler",
+        "mendicant",
+        "outcast",
+        "vagabond",
+        "loiterer",
+        "scavenger",
+        "drifter",
+        "wanderer",
+        "squatter",
+        "derelict"
+      ],
+      "A_used": [
+        "conformity",
+        "compliance",
+        "order",
+        "discipline",
+        "structure",
+        "regulation",
+        "standard",
+        "uniformity",
+        "propriety",
+        "correctness",
+        "obedience",
+        "alignment",
+        "tradition",
+        "custom",
+        "rule"
+      ],
+      "B_used": [
+        "rebellion",
+        "chaos",
+        "disorder",
+        "anarchy",
+        "deviance",
+        "violation",
+        "transgression",
+        "irregularity",
+        "anomaly",
+        "divergence",
+        "lawlessness",
+        "wildness",
+        "riot",
+        "crime",
+        "fraud"
+      ]
+    },
+    "proposal": "People associate tailors with conformity more strongly than they associate beggars with conformity. This proposal examines a latent axis of social mental representation: the tension between agents who impose or enforce social norms through dress and agents who exist outside or in defiance of social integration. While beggars are often stereotyped with negative traits like poverty or desperation, the implicit link between tailors and the maintenance of social order, propriety, and uniformity has not been systematically explored. Confirming this association would highlight how even mundane service professions are mentally coded as guardians of cultural standardization, contrasting with categories perceived as marginal or anomalous. It matters because it reveals how the public mind links aesthetic labor with normative compliance, potentially influencing how we perceive the role of dressmakers, stylists, and uniform providers in reinforcing social hierarchies.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "0e179617366a",
     "timestamp": "2026-05-20T12:32:48.268677+00:00",
     "schema_version": "autoresearch.v1",
