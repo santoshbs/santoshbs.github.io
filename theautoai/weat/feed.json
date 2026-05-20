@@ -1,5 +1,111 @@
 [
   {
+    "id": "4d2b89f4aaae",
+    "timestamp": "2026-05-20T22:25:52.937304+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Hunters vs Shepherds on aggression vs care",
+    "labels": {
+      "X": "Hunters",
+      "Y": "Shepherds",
+      "A": "aggression",
+      "B": "care"
+    },
+    "canonical_keys": {
+      "X": "hunters",
+      "Y": "shepherds",
+      "A": "aggression",
+      "B": "care"
+    },
+    "effect_size": 1.3751607366281324,
+    "p_value": 3e-05,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "hunter",
+        "tracker",
+        "trapper",
+        "marksman",
+        "rifleman",
+        "bowman",
+        "sniper",
+        "poacher",
+        "gamekeeper",
+        "woodsman",
+        "scout",
+        "ranger",
+        "gunner",
+        "bushman",
+        "shooter"
+      ],
+      "Y_used": [
+        "shepherd",
+        "herder",
+        "rancher",
+        "cowboy",
+        "drover",
+        "stockman",
+        "farmer",
+        "grazier",
+        "pastoralist",
+        "cowhand",
+        "herdsman",
+        "vaquero",
+        "ranch",
+        "stock",
+        "cattle"
+      ],
+      "A_used": [
+        "aggression",
+        "violence",
+        "hostile",
+        "fierce",
+        "deadly",
+        "lethal",
+        "attack",
+        "assault",
+        "battle",
+        "combat",
+        "war",
+        "fight",
+        "brutal",
+        "savage",
+        "violent"
+      ],
+      "B_used": [
+        "care",
+        "nurturing",
+        "gentle",
+        "peaceful",
+        "calm",
+        "soothing",
+        "protective",
+        "tender",
+        "kind",
+        "loving",
+        "compassion",
+        "mercy",
+        "pacifist",
+        "benign",
+        "tranquil"
+      ]
+    },
+    "proposal": "People associate Hunters with Aggression more strongly than they associate Shepherds with Aggression. This differential implicit association taps into enduring cultural archetypes that distinguish the predatory, lethal nature of hunting from the nurturing, protective role of shepherding. Although both categories have historically been male-dominated occupations, the predicted bias reveals how public mental representations encode distinct moral and emotional dimensions even within similar domains of traditional labor. Examining this association is novel because the specific pairing of Hunters versus Shepherds has not been systematically probed in implicit bias literature, and the results would shed light on how societal values regarding violence and care are projected onto occupational identities.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "93b59c51ce9d",
     "timestamp": "2026-05-20T21:41:40.640093+00:00",
     "schema_version": "autoresearch.v1",
