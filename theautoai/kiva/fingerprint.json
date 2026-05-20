@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "batches_seen": 364,
-  "loans_seen": 5824,
-  "last_updated": "2026-05-20T06:43:28.026225+00:00",
+  "batches_seen": 365,
+  "loans_seen": 5840,
+  "last_updated": "2026-05-20T07:54:41.311650+00:00",
   "watching_for": "",
   "claims": {
     "institutional-names-slower": {
@@ -13,10 +13,10 @@
       "supporting_loans": [],
       "confidence": 0.81,
       "first_seen_batch": 1,
-      "last_updated_batch": 364,
+      "last_updated_batch": 365,
       "confidence_history": [
         [
-          364,
+          365,
           0.81
         ]
       ]
@@ -29,10 +29,10 @@
       "supporting_loans": [],
       "confidence": 1.0,
       "first_seen_batch": 1,
-      "last_updated_batch": 364,
+      "last_updated_batch": 365,
       "confidence_history": [
         [
-          364,
+          365,
           1.0
         ]
       ]
@@ -45,10 +45,10 @@
       "supporting_loans": [],
       "confidence": 0.84,
       "first_seen_batch": 1,
-      "last_updated_batch": 364,
+      "last_updated_batch": 365,
       "confidence_history": [
         [
-          364,
+          365,
           0.84
         ]
       ]
@@ -59,13 +59,13 @@
       "title": "Mentioning benefits for children predicts faster funding regardless of gender.",
       "body": "Pitches that highlight social or educational benefits for children tend to accelerate funding for both men and women.",
       "supporting_loans": [],
-      "confidence": 0.93,
+      "confidence": 0.98,
       "first_seen_batch": 1,
-      "last_updated_batch": 364,
+      "last_updated_batch": 365,
       "confidence_history": [
         [
-          364,
-          0.93
+          365,
+          0.98
         ]
       ]
     },
@@ -77,10 +77,10 @@
       "supporting_loans": [],
       "confidence": 1.0,
       "first_seen_batch": 1,
-      "last_updated_batch": 364,
+      "last_updated_batch": 365,
       "confidence_history": [
         [
-          364,
+          365,
           1.0
         ]
       ]
@@ -93,10 +93,10 @@
       "supporting_loans": [],
       "confidence": 0.8,
       "first_seen_batch": 1,
-      "last_updated_batch": 364,
+      "last_updated_batch": 365,
       "confidence_history": [
         [
-          364,
+          365,
           0.8
         ]
       ]
@@ -109,27 +109,27 @@
       "supporting_loans": [],
       "confidence": 0.9,
       "first_seen_batch": 1,
-      "last_updated_batch": 364,
+      "last_updated_batch": 365,
       "confidence_history": [
         [
-          364,
+          365,
           0.9
         ]
       ]
     },
-    "asset-ownership-faster": {
-      "id": "asset-ownership-faster",
-      "bucket": "faster",
-      "title": "Mentioning asset ownership or housing stability predicts faster funding regardless of gender.",
-      "body": "Pitches that highlight owning assets or a lack of rental obligations accelerate funding for both men and women.",
+    "female-loan-history-faster": {
+      "id": "female-loan-history-faster",
+      "bucket": "gendered_women",
+      "title": "Female borrowers who mention a history of previous loan repayments fund faster.",
+      "body": "Pitches from women that explicitly reference a successful track record of repaying previous loans tend to accelerate funding speed.",
       "supporting_loans": [],
-      "confidence": 0.45,
-      "first_seen_batch": 352,
-      "last_updated_batch": 364,
+      "confidence": 0.6,
+      "first_seen_batch": 365,
+      "last_updated_batch": 365,
       "confidence_history": [
         [
-          364,
-          0.45
+          365,
+          0.6
         ]
       ]
     }
@@ -138,62 +138,55 @@
     "female-ed-tech-slower": {
       "id": "female-ed-tech-slower",
       "body": "Female borrowers who specify smartphones for school learning may fund more slowly.",
-      "first_seen_batch": 328
+      "first_seen_batch": 327
     },
     "male-operational-detail-slower": {
       "id": "male-operational-detail-slower",
       "body": "Detailed descriptions of sales channels or operational logistics may decelerate funding for men.",
-      "first_seen_batch": 338
-    },
-    "female-previous-loan-history-faster": {
-      "id": "female-previous-loan-history-faster",
-      "body": "Female borrowers who mention a history of previous loan repayments may fund faster.",
-      "first_seen_batch": 346
+      "first_seen_batch": 337
     },
     "female-pitch-length-slower": {
       "id": "female-pitch-length-slower",
       "body": "Lengthier pitches may lead to slower funding for female borrowers.",
-      "first_seen_batch": 346
+      "first_seen_batch": 345
     },
     "male-risk-mention-faster": {
       "id": "male-risk-mention-faster",
       "body": "Male borrowers who explicitly mention operational risks, such as power cuts or fires, may fund faster than those describing routine activities.",
-      "first_seen_batch": 348
+      "first_seen_batch": 347
     },
     "male-product-listing-slower": {
       "id": "male-product-listing-slower",
       "body": "Male borrowers who list specific products being sold may fund more slowly.",
-      "first_seen_batch": 352
+      "first_seen_batch": 351
     },
     "female-business-quantities-faster": {
       "id": "female-business-quantities-faster",
       "body": "Female borrowers who include specific quantities or currency amounts in their business descriptions may fund faster.",
-      "first_seen_batch": 356
+      "first_seen_batch": 355
     },
     "female-generic-business-label-slower": {
       "id": "female-generic-business-label-slower",
       "body": "Female borrowers who use generic business labels, such as 'sari-sari store', may fund more slowly.",
-      "first_seen_batch": 362
+      "first_seen_batch": 361
     },
     "female-geographic-location-faster": {
       "id": "female-geographic-location-faster",
       "body": "Female borrowers who mention a specific geographical location may fund faster.",
-      "first_seen_batch": 364
+      "first_seen_batch": 363
     },
     "female-saving-to-expand-slower": {
       "id": "female-saving-to-expand-slower",
       "body": "Female borrowers who mention the specific goal of saving money to expand may fund more slowly.",
-      "first_seen_batch": 364
+      "first_seen_batch": 363
+    },
+    "female-academic-specificity-slower": {
+      "id": "female-academic-specificity-slower",
+      "body": "Female borrowers who specify their exact academic field of study may fund more slowly.",
+      "first_seen_batch": 365
     }
   },
   "retired": {
-    "female-income-specificity-puzzle": {
-      "id": "female-income-specificity-puzzle",
-      "title": "Female borrowers who specify precise income figures may fund faster.",
-      "retrospective": "FIFO drop to make room for new retirement.",
-      "retired_batch": 346,
-      "was_believed_batches": 0
-    },
     "female-character-descriptors-faster": {
       "id": "female-character-descriptors-faster",
       "title": "Female borrowers who use character-based descriptors like 'dedication' or 'resilience' may fund faster.",
@@ -255,6 +248,13 @@
       "title": "Female borrowers who mention the loan amount in local currency may fund more slowly.",
       "retrospective": "Retired to make room for new emotive language puzzle.",
       "retired_batch": 361,
+      "was_believed_batches": 0
+    },
+    "asset-ownership-faster": {
+      "id": "asset-ownership-faster",
+      "title": "Pitches that highlight owning assets or a lack of rental obligations accelerate funding for both men and women.",
+      "retrospective": "Retired to make room for promoted claim on loan history.",
+      "retired_batch": 365,
       "was_believed_batches": 0
     }
   }
