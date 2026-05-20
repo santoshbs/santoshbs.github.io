@@ -1,5 +1,111 @@
 [
   {
+    "id": "93b59c51ce9d",
+    "timestamp": "2026-05-20T21:41:40.640093+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "engineers vs explorers on order versus disorder",
+    "labels": {
+      "X": "engineers",
+      "Y": "explorers",
+      "A": "order",
+      "B": "disorder"
+    },
+    "canonical_keys": {
+      "X": "engineers",
+      "Y": "explorers",
+      "A": "order",
+      "B": "disorder"
+    },
+    "effect_size": 1.3789946458753435,
+    "p_value": 4e-05,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "engineer",
+        "architect",
+        "programmer",
+        "developer",
+        "technician",
+        "builder",
+        "designer",
+        "mechanic",
+        "constructor",
+        "fabricator",
+        "manufacturer",
+        "operator",
+        "surveyor",
+        "draftsman",
+        "analyst"
+      ],
+      "Y_used": [
+        "explorer",
+        "adventurer",
+        "scout",
+        "pioneer",
+        "trekker",
+        "traveler",
+        "voyager",
+        "wanderer",
+        "navigator",
+        "prospector",
+        "pathfinder",
+        "globetrotter",
+        "rover",
+        "ranger",
+        "bushman"
+      ],
+      "A_used": [
+        "order",
+        "structure",
+        "control",
+        "system",
+        "logic",
+        "method",
+        "stability",
+        "precision",
+        "routine",
+        "pattern",
+        "framework",
+        "organization",
+        "scheme",
+        "arrangement",
+        "regularity"
+      ],
+      "B_used": [
+        "chaos",
+        "disorder",
+        "random",
+        "unpredictable",
+        "wild",
+        "untamed",
+        "messy",
+        "confusion",
+        "erratic",
+        "haphazard",
+        "disarray",
+        "anarchy",
+        "entropy",
+        "accident",
+        "spontaneity"
+      ]
+    },
+    "proposal": "People associate engineers with order more strongly than they associate explorers with order. While both groups are publicly celebrated for navigating complexity, contemporary discourse frames engineering as a practice of imposing structural stability and systematic control over environments, whereas exploration is romanticized as a venture into the untamed and unpredictable. Examining this differential implicit association reveals how laypersons mentally partition human problem-solving into domains of imposition versus domains of discovery. If confirmed, it would show that even when both professions require rigorous planning, the public intuitively reserves the attribute of systematic order for builders rather than pathfinders, shaping how society values risk management versus boundary-pushing innovation.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "d96b57c28486",
     "timestamp": "2026-05-20T17:52:20.677942+00:00",
     "schema_version": "autoresearch.v1",
