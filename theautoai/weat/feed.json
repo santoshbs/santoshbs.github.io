@@ -1,5 +1,111 @@
 [
   {
+    "id": "45c90aac5f8d",
+    "timestamp": "2026-05-21T23:25:26.506279+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "diplomats vs merchants on neutrality vs self-interest",
+    "labels": {
+      "X": "diplomats",
+      "Y": "merchants",
+      "A": "neutrality",
+      "B": "self-interest"
+    },
+    "canonical_keys": {
+      "X": "diplomats",
+      "Y": "merchants",
+      "A": "neutrality",
+      "B": ""
+    },
+    "effect_size": 1.3546237713161025,
+    "p_value": 3e-05,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "ambassador",
+        "consul",
+        "delegate",
+        "diplomat",
+        "envoy",
+        "minister",
+        "negotiator",
+        "official",
+        "politician",
+        "representative",
+        "statesman",
+        "attache",
+        "counselor",
+        "emissary",
+        "mediator"
+      ],
+      "Y_used": [
+        "broker",
+        "dealer",
+        "entrepreneur",
+        "financier",
+        "investor",
+        "merchant",
+        "retailer",
+        "shopkeeper",
+        "trader",
+        "vendor",
+        "businessman",
+        "buyer",
+        "seller",
+        "capitalist",
+        "tycoon"
+      ],
+      "A_used": [
+        "impartial",
+        "objective",
+        "neutral",
+        "unbiased",
+        "fair",
+        "balanced",
+        "dispassionate",
+        "detached",
+        "disinterested",
+        "equitable",
+        "just",
+        "moderate",
+        "aloof",
+        "calm",
+        "even"
+      ],
+      "B_used": [
+        "partisan",
+        "biased",
+        "subjective",
+        "competitive",
+        "greedy",
+        "selfish",
+        "aggressive",
+        "ambitious",
+        "prejudiced",
+        "commercial",
+        "gainful",
+        "profitable",
+        "advantageous",
+        "partial",
+        "avaricious"
+      ]
+    },
+    "proposal": "People associate diplomats with neutrality more strongly than they associate merchants with neutrality. While both groups routinely navigate complex negotiations and conflicting interests, public discourse frames diplomatic actors as bound by impartial protocol and state detachment, whereas market actors are culturally scripted as driven by self-interest and competitive advantage. This differential implicit association is novel because implicit bias research has largely ignored how institutional versus commercial roles are cognitively segregated along axes of objectivity and detachment. Examining it matters because it reveals how laypeople mentally allocate epistemic trust and perceived fairness across civic and economic domains, which could shape public expectations about transparency and conflict resolution in both foreign policy and commercial regulation.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "b75dda60c100",
     "timestamp": "2026-05-21T22:29:12.141396+00:00",
     "schema_version": "autoresearch.v1",
