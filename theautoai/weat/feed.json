@@ -1,5 +1,111 @@
 [
   {
+    "id": "4bcc7a261af6",
+    "timestamp": "2026-05-21T10:01:45.449375+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "journalists vs archivists on Temporal Urgency vs. Permanence",
+    "labels": {
+      "X": "journalists",
+      "Y": "archivists",
+      "A": "Urgency",
+      "B": "Permanence"
+    },
+    "canonical_keys": {
+      "X": "journalists",
+      "Y": "archivists",
+      "A": "urgency",
+      "B": "permanence"
+    },
+    "effect_size": 1.3489714617005886,
+    "p_value": 5e-05,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "journalist",
+        "reporter",
+        "correspondent",
+        "newswoman",
+        "newsman",
+        "anchor",
+        "presenter",
+        "commentator",
+        "columnist",
+        "broadcaster",
+        "cameraman",
+        "editor",
+        "publisher",
+        "interviewer",
+        "producer"
+      ],
+      "Y_used": [
+        "archivist",
+        "curator",
+        "librarian",
+        "historian",
+        "conservator",
+        "collector",
+        "researcher",
+        "scholar",
+        "academic",
+        "cataloger",
+        "bibliographer",
+        "restorer",
+        "antiquarian",
+        "keeper",
+        "registrar"
+      ],
+      "A_used": [
+        "urgent",
+        "fast",
+        "rapid",
+        "speed",
+        "hurry",
+        "instant",
+        "immediate",
+        "deadline",
+        "time",
+        "clock",
+        "now",
+        "quick",
+        "rush",
+        "swift",
+        "moment"
+      ],
+      "B_used": [
+        "slow",
+        "permanent",
+        "lasting",
+        "enduring",
+        "steady",
+        "patient",
+        "careful",
+        "deliberate",
+        "history",
+        "past",
+        "old",
+        "preserve",
+        "storage",
+        "collection",
+        "stable"
+      ]
+    },
+    "proposal": "People associate journalists with urgency more strongly than they associate archivists with urgency. This differential reflects entrenched cultural narratives: journalists are stereotyped as deadline-driven, breaking-news operatives who prioritize speed and immediacy, whereas archivists are imagined as deliberate, preservation-focused professionals who prioritize permanence and careful cataloguing. Examining this implicit association is novel because existing literature largely treats information workers as a monolithic 'media' category, ignoring the temporal stereotypes that differentiate news producers from knowledge custodians. It matters because these hidden temporal biases shape public expectations of accuracy versus speed, influencing how societies weight breaking reports against historical documentation during crises.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "93d30a5e0f22",
     "timestamp": "2026-05-21T05:42:13.716671+00:00",
     "schema_version": "autoresearch.v1",
