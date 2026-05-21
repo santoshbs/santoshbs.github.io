@@ -1,5 +1,111 @@
 [
   {
+    "id": "19c0b28700b2",
+    "timestamp": "2026-05-21T11:22:10.878977+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "astronomers vs meteorologists on abstractness vs practicality",
+    "labels": {
+      "X": "astronomers",
+      "Y": "meteorologists",
+      "A": "Abstractness",
+      "B": "Practicality"
+    },
+    "canonical_keys": {
+      "X": "astronomers",
+      "Y": "meteorologists",
+      "A": "abstractness",
+      "B": "practicality"
+    },
+    "effect_size": 1.3379012086227737,
+    "p_value": 9e-05,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "astronomer",
+        "astrophysicist",
+        "cosmologist",
+        "stargazer",
+        "skywatcher",
+        "astrologer",
+        "observer",
+        "researcher",
+        "scientist",
+        "academic",
+        "professor",
+        "scholar",
+        "theorist",
+        "intellectual",
+        "visionary"
+      ],
+      "Y_used": [
+        "meteorologist",
+        "weatherman",
+        "climatologist",
+        "weathercaster",
+        "forecaster",
+        "stormchaser",
+        "tracker",
+        "analyst",
+        "expert",
+        "specialist",
+        "technician",
+        "engineer",
+        "reporter",
+        "broadcaster",
+        "predictor"
+      ],
+      "A_used": [
+        "abstract",
+        "theoretical",
+        "philosophical",
+        "conceptual",
+        "intangible",
+        "distant",
+        "cosmic",
+        "ethereal",
+        "speculative",
+        "ideal",
+        "metaphysical",
+        "hypothetical",
+        "imaginative",
+        "transcendent",
+        "esoteric"
+      ],
+      "B_used": [
+        "practical",
+        "concrete",
+        "applied",
+        "pragmatic",
+        "realistic",
+        "tangible",
+        "functional",
+        "utilitarian",
+        "immediate",
+        "everyday",
+        "grounded",
+        "operational",
+        "vocational",
+        "technical",
+        "manual"
+      ]
+    },
+    "proposal": "People associate astronomers with abstractness more strongly than they associate meteorologists with abstractness. While both disciplines rely on rigorous empirical data and mathematical modeling, public discourse and media representation consistently frame astronomy as a pursuit of distant, theoretical, and cosmic mysteries, whereas meteorology is depicted as a grounded, applied service focused on immediate practical forecasting. This differential implicit association remains largely unexamined in social psychological literature, which typically contrasts broad STEM fields against humanities rather than comparing subfields within the natural sciences. Probing this association matters because lay perceptions of scientific abstractness versus practicality can shape public funding priorities, student career trajectories, and societal trust in different branches of scientific expertise.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "4bcc7a261af6",
     "timestamp": "2026-05-21T10:01:45.449375+00:00",
     "schema_version": "autoresearch.v1",
