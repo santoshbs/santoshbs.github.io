@@ -1,5 +1,111 @@
 [
   {
+    "id": "dee39c4e3632",
+    "timestamp": "2026-05-21T00:49:00.923661+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Paupers vs Elites on Improvisation vs Planning",
+    "labels": {
+      "X": "Paupers",
+      "Y": "Elites",
+      "A": "Improvisation",
+      "B": "Planning"
+    },
+    "canonical_keys": {
+      "X": "paupers",
+      "Y": "elites",
+      "A": "improvisation",
+      "B": "planning"
+    },
+    "effect_size": 0.9674914501139238,
+    "p_value": 0.008,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "beggar",
+        "hobo",
+        "tramp",
+        "vagrant",
+        "pauper",
+        "squatter",
+        "outcast",
+        "underclass",
+        "drifter",
+        "waif",
+        "indigent",
+        "destitute",
+        "homeless",
+        "impoverished",
+        "wretch"
+      ],
+      "Y_used": [
+        "elite",
+        "aristocrat",
+        "plutocrat",
+        "tycoon",
+        "magnate",
+        "mogul",
+        "lord",
+        "lady",
+        "noble",
+        "patrician",
+        "bourgeois",
+        "king",
+        "queen",
+        "prince",
+        "princess"
+      ],
+      "A_used": [
+        "improvisation",
+        "improv",
+        "spontaneous",
+        "extemporaneous",
+        "adlib",
+        "impromptu",
+        "unscripted",
+        "offhand",
+        "resourceful",
+        "adaptable",
+        "flexible",
+        "improvised",
+        "creative",
+        "inventive",
+        "versatile"
+      ],
+      "B_used": [
+        "planning",
+        "plan",
+        "preparation",
+        "premeditated",
+        "deliberate",
+        "structured",
+        "protocol",
+        "regulation",
+        "routine",
+        "systematic",
+        "methodical",
+        "organized",
+        "orderly",
+        "scheduled",
+        "arranged"
+      ]
+    },
+    "proposal": "People associate Paupers with Improvisation more strongly than they associate Elites with Improvisation. This differential association probes a nuance in class-based stereotypes that goes beyond standard dimensions like competence or warmth. Public discourse often romanticizes the resourcefulness, adaptability, and capacity to \"make do\" that is attributed to those in destitute circumstances, while characterizing elites as relying on established protocols, abundant resources, and rigid structures that ostensibly reduce the need for improvisation. Examining this association is novel because implicit class research has largely focused on planning horizons, moral judgments, or status cues, leaving unexplored whether the cognitive link between poverty and the skill of improvisation is entrenched in mental representations. Confirming this association would suggest that improvisation is implicitly coded as a survival trait of the marginalized rather than a universal creative capacity.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "217bbc039648",
     "timestamp": "2026-05-20T23:06:57.870038+00:00",
     "schema_version": "autoresearch.v1",
