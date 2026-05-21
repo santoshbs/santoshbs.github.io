@@ -1,5 +1,111 @@
 [
   {
+    "id": "b75dda60c100",
+    "timestamp": "2026-05-21T22:29:12.141396+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Protesters vs Peacekeepers on stability versus instability",
+    "labels": {
+      "X": "Protesters",
+      "Y": "Peacekeepers",
+      "A": "instability",
+      "B": "stability"
+    },
+    "canonical_keys": {
+      "X": "protesters",
+      "Y": "peacekeepers",
+      "A": "instability",
+      "B": "stability"
+    },
+    "effect_size": 1.4008938885869258,
+    "p_value": 5e-05,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "protester",
+        "demonstrator",
+        "activist",
+        "marcher",
+        "rioter",
+        "picketer",
+        "dissenter",
+        "campaigner",
+        "unionist",
+        "rebel",
+        "insurgent",
+        "agitator",
+        "radical",
+        "dissident",
+        "petitioner"
+      ],
+      "Y_used": [
+        "peacekeeper",
+        "policeman",
+        "guard",
+        "soldier",
+        "mediator",
+        "diplomat",
+        "negotiator",
+        "marshal",
+        "constable",
+        "sheriff",
+        "officer",
+        "ranger",
+        "watchman",
+        "enforcer",
+        "patrolman"
+      ],
+      "A_used": [
+        "instability",
+        "chaos",
+        "disorder",
+        "unrest",
+        "turbulence",
+        "volatility",
+        "upheaval",
+        "agitation",
+        "disarray",
+        "breakdown",
+        "violence",
+        "emergency",
+        "crisis",
+        "panic",
+        "anarchy"
+      ],
+      "B_used": [
+        "stability",
+        "order",
+        "peace",
+        "calm",
+        "safety",
+        "security",
+        "control",
+        "tranquility",
+        "harmony",
+        "balance",
+        "regulation",
+        "structure",
+        "law",
+        "authority",
+        "discipline"
+      ]
+    },
+    "proposal": "people associate Protesters with instability more strongly than they associate Peacekeepers with instability. This differential association is novel because it isolates the roles of creating disturbance versus managing order within the same domain of public conflict, distinct from broader comparisons of activists versus politicians or soldiers. It is interesting because it reveals how public discourse implicitly moralizes the agents of social change, framing the catalysts of disruption as inherently destabilizing compared to the agents of resolution. Confirming this association would matter by highlighting the cognitive biases that may influence public support for protest movements and peacekeeping interventions in international and domestic contexts.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "6913211e58c3",
     "timestamp": "2026-05-21T21:24:02.678607+00:00",
     "schema_version": "autoresearch.v1",
