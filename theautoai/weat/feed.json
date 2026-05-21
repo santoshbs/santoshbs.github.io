@@ -1,5 +1,111 @@
 [
   {
+    "id": "93d30a5e0f22",
+    "timestamp": "2026-05-21T05:42:13.716671+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "comedians vs journalists on transgression vs convention",
+    "labels": {
+      "X": "comedians",
+      "Y": "journalists",
+      "A": "transgression",
+      "B": "convention"
+    },
+    "canonical_keys": {
+      "X": "comedians",
+      "Y": "journalists",
+      "A": "transgression",
+      "B": "convention"
+    },
+    "effect_size": 1.128031479922242,
+    "p_value": 0.00113,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "comedian",
+        "comic",
+        "humorist",
+        "standup",
+        "satirist",
+        "entertainer",
+        "joker",
+        "funnyman",
+        "buffoon",
+        "clown",
+        "mimic",
+        "wit",
+        "jester",
+        "prankster",
+        "ventriloquist"
+      ],
+      "Y_used": [
+        "journalist",
+        "reporter",
+        "correspondent",
+        "newscaster",
+        "anchor",
+        "broadcaster",
+        "editor",
+        "columnist",
+        "writer",
+        "commentator",
+        "analyst",
+        "cameraman",
+        "photojournalist",
+        "chronicler",
+        "blogger"
+      ],
+      "A_used": [
+        "shocking",
+        "offensive",
+        "provocative",
+        "rebellious",
+        "scandalous",
+        "subversive",
+        "taboo",
+        "disruptive",
+        "inflammatory",
+        "outrageous",
+        "defiant",
+        "unruly",
+        "illicit",
+        "controversial",
+        "audacious"
+      ],
+      "B_used": [
+        "neutral",
+        "objective",
+        "factual",
+        "professional",
+        "restrained",
+        "conventional",
+        "standard",
+        "safe",
+        "respectful",
+        "balanced",
+        "impartial",
+        "orthodox",
+        "compliant",
+        "orderly",
+        "predictable"
+      ]
+    },
+    "proposal": "people associate comedians with transgression more strongly than they associate journalists with transgression. This differential association stems from deeply ingrained cultural scripts: journalism is institutionally bound to norms of objectivity, factual restraint, and professional neutrality, whereas comedy is socially licensed to mock authority, flout conventions, and test ethical boundaries. Probing this implicit link is novel because existing research has largely focused on explicit professional ethics rather than how these contrasting communicative roles are automatically categorized in everyday cognition. Disconfirming or confirming this association would clarify why public discourse treats media accountability and free speech differently across these fields, revealing hidden cognitive biases that shape trust, backlash, and censorship debates.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "ea97bcc0bb07",
     "timestamp": "2026-05-21T04:48:04.381588+00:00",
     "schema_version": "autoresearch.v1",
