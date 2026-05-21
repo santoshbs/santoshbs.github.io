@@ -1,5 +1,111 @@
 [
   {
+    "id": "7d03cdf48221",
+    "timestamp": "2026-05-21T17:14:11.236801+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "atheists vs skeptics on epistemic rigidity vs openness",
+    "labels": {
+      "X": "atheists",
+      "Y": "skeptics",
+      "A": "dogmatic/closed-minded",
+      "B": "open-minded/inquisitive"
+    },
+    "canonical_keys": {
+      "X": "atheists",
+      "Y": "skeptics",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 1.54385624363023,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "atheist",
+        "nonbeliever",
+        "freethinker",
+        "secularist",
+        "materialist",
+        "humanist",
+        "rationalist",
+        "nonreligious",
+        "irreligious",
+        "nontheist",
+        "secular",
+        "unbeliever",
+        "godless",
+        "antireligious",
+        "antitheist"
+      ],
+      "Y_used": [
+        "skeptic",
+        "agnostic",
+        "doubter",
+        "questioner",
+        "inquirer",
+        "empiricist",
+        "critic",
+        "examiner",
+        "inquisitor",
+        "researcher",
+        "investigator",
+        "thinker",
+        "evaluator",
+        "reviewer",
+        "analyst"
+      ],
+      "A_used": [
+        "dogmatic",
+        "rigid",
+        "inflexible",
+        "stubborn",
+        "fixed",
+        "absolute",
+        "authoritarian",
+        "fundamentalist",
+        "uncompromising",
+        "unyielding",
+        "orthodox",
+        "strict",
+        "conventional",
+        "traditional",
+        "conservative"
+      ],
+      "B_used": [
+        "open",
+        "flexible",
+        "inquisitive",
+        "curious",
+        "receptive",
+        "exploratory",
+        "adaptable",
+        "progressive",
+        "liberal",
+        "questioning",
+        "tentative",
+        "provisional",
+        "uncertain",
+        "hesitant",
+        "perceptive"
+      ]
+    },
+    "proposal": "People associate atheists with dogmatism more strongly than they associate skeptics with dogmatism. This proposal examines a subtle but critical fracture within secular discourse: the distinction between those who claim positive knowledge of God's nonexistence (atheists) and those who merely withhold assent due to insufficient evidence (skeptics). While both groups are often conflated in public opinion, contemporary debates have highlighted a backlash against 'dogmatic atheism,' suggesting the public may implicitly attribute rigid, closed-minded traits to atheists while reserving open-minded, inquisitive attributes for skeptics. Confirming this association would be novel, as implicit research has largely focused on broad religious vs. secular divides, ignoring the epistemic nuance between secular identities. It matters because it reveals how the public mentally maps epistemic humility onto social categories, potentially undermining the credibility of atheist advocacy if they are perceived as lacking the very intellectual openness they claim to champion.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "19c0b28700b2",
     "timestamp": "2026-05-21T11:22:10.878977+00:00",
     "schema_version": "autoresearch.v1",
