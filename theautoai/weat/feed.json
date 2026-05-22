@@ -1,5 +1,111 @@
 [
   {
+    "id": "2115a1d25f7d",
+    "timestamp": "2026-05-22T20:21:56.348352+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Teachers vs Parents on objectivity versus partiality",
+    "labels": {
+      "X": "Teachers",
+      "Y": "Parents",
+      "A": "objectivity",
+      "B": "partiality"
+    },
+    "canonical_keys": {
+      "X": "teachers",
+      "Y": "parents",
+      "A": "objectivity",
+      "B": "partiality"
+    },
+    "effect_size": 1.5299320818488498,
+    "p_value": 1e-05,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "teacher",
+        "educator",
+        "instructor",
+        "professor",
+        "tutor",
+        "lecturer",
+        "mentor",
+        "academic",
+        "principal",
+        "administrator",
+        "dean",
+        "master",
+        "schoolteacher",
+        "counselor",
+        "scholar"
+      ],
+      "Y_used": [
+        "parent",
+        "mother",
+        "father",
+        "mom",
+        "dad",
+        "guardian",
+        "caregiver",
+        "daddy",
+        "mommy",
+        "papa",
+        "grandparent",
+        "grandmother",
+        "grandfather",
+        "housewife",
+        "househusband"
+      ],
+      "A_used": [
+        "objective",
+        "neutral",
+        "fair",
+        "impartial",
+        "unbiased",
+        "detached",
+        "logical",
+        "rational",
+        "balanced",
+        "just",
+        "equitable",
+        "consistent",
+        "accurate",
+        "precise",
+        "factual"
+      ],
+      "B_used": [
+        "subjective",
+        "partial",
+        "biased",
+        "unfair",
+        "partisan",
+        "prejudiced",
+        "emotional",
+        "affectionate",
+        "loving",
+        "protective",
+        "warm",
+        "caring",
+        "tender",
+        "passionate",
+        "sentimental"
+      ]
+    },
+    "proposal": "People associate Teachers with Objectivity more strongly than they associate Parents with Objectivity. This differential implicit association reflects the prevailing social scripts that frame parents as inherently partial and emotionally invested in their offspring, while casting teachers as institutional neutral arbiters bound by rules, fairness, and professional detachment. Examining this bias is novel because it contrasts the two primary adult socialization agents along the dimension of impartiality rather than the more frequently studied warmth-competence axis. This association is socially relevant and important because it underpins public perceptions of fairness in educational evaluation, disputes over discipline, and the legitimacy of parental challenges to school authority.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "dc9b3961619c",
     "timestamp": "2026-05-22T18:50:56.808750+00:00",
     "schema_version": "autoresearch.v1",
