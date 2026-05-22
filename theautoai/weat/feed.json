@@ -1,5 +1,111 @@
 [
   {
+    "id": "2d154494af30",
+    "timestamp": "2026-05-22T21:14:13.154004+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "voters vs lobbyists on moral evaluation",
+    "labels": {
+      "X": "voters",
+      "Y": "lobbyists",
+      "A": "Moral Integrity",
+      "B": "Dishonesty / Corruption"
+    },
+    "canonical_keys": {
+      "X": "voters",
+      "Y": "lobbyists",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 0.03683563341702483,
+    "p_value": 0.92346,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "voter",
+        "citizen",
+        "elector",
+        "constituent",
+        "populace",
+        "electorate",
+        "taxpayer",
+        "resident",
+        "ratepayer",
+        "commoner",
+        "individual",
+        "public",
+        "people",
+        "masses",
+        "community"
+      ],
+      "Y_used": [
+        "lobbyist",
+        "influencer",
+        "agent",
+        "consultant",
+        "delegate",
+        "representative",
+        "broker",
+        "advocate",
+        "campaigner",
+        "fundraiser",
+        "donor",
+        "insider",
+        "middleman",
+        "fixer",
+        "operative"
+      ],
+      "A_used": [
+        "honest",
+        "moral",
+        "ethical",
+        "truthful",
+        "upright",
+        "virtuous",
+        "righteous",
+        "noble",
+        "pure",
+        "honorable",
+        "sincere",
+        "candid",
+        "frank",
+        "genuine",
+        "authentic"
+      ],
+      "B_used": [
+        "corrupt",
+        "deceitful",
+        "dishonest",
+        "immoral",
+        "unethical",
+        "fake",
+        "false",
+        "wicked",
+        "evil",
+        "bad",
+        "wrong",
+        "sinful",
+        "guilty",
+        "crooked",
+        "shady"
+      ]
+    },
+    "proposal": "People associate voters with moral integrity more strongly than they associate lobbyists with moral integrity. This differential association captures the deep-seated common citizen versus political insider schema that permeates democratic discourse. While explicit surveys often measure trust in institutions, implicit measures can reveal whether the public intuitively aligns everyday participants with ethical purity and professional influence brokers with instrumental calculation. Examining this association is novel because prior implicit research has largely compared partisans or politicians versus citizens, overlooking the specific voter-lobbyist dyad that defines modern interest-group politics. Confirming this bias would highlight how mental representations of democratic actors may inadvertently legitimize anti-pluralist attitudes, shaping public reactions to campaign finance reform and political transparency.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "2115a1d25f7d",
     "timestamp": "2026-05-22T20:21:56.348352+00:00",
     "schema_version": "autoresearch.v1",
