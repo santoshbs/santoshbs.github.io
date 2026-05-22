@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "batches_seen": 400,
-  "loans_seen": 6400,
-  "last_updated": "2026-05-22T04:08:54.389375+00:00",
+  "batches_seen": 401,
+  "loans_seen": 6416,
+  "last_updated": "2026-05-22T11:30:37.560114+00:00",
   "watching_for": "",
   "claims": {
     "female-technical-specificity-faster": {
@@ -13,10 +13,10 @@
       "supporting_loans": [],
       "confidence": 1.0,
       "first_seen_batch": 1,
-      "last_updated_batch": 400,
+      "last_updated_batch": 401,
       "confidence_history": [
         [
-          400,
+          401,
           1.0
         ]
       ]
@@ -29,10 +29,10 @@
       "supporting_loans": [],
       "confidence": 0.98,
       "first_seen_batch": 1,
-      "last_updated_batch": 400,
+      "last_updated_batch": 401,
       "confidence_history": [
         [
-          400,
+          401,
           0.98
         ]
       ]
@@ -45,10 +45,10 @@
       "supporting_loans": [],
       "confidence": 0.83,
       "first_seen_batch": 1,
-      "last_updated_batch": 400,
+      "last_updated_batch": 401,
       "confidence_history": [
         [
-          400,
+          401,
           0.83
         ]
       ]
@@ -61,10 +61,10 @@
       "supporting_loans": [],
       "confidence": 1.0,
       "first_seen_batch": 1,
-      "last_updated_batch": 400,
+      "last_updated_batch": 401,
       "confidence_history": [
         [
-          400,
+          401,
           1.0
         ]
       ]
@@ -77,10 +77,10 @@
       "supporting_loans": [],
       "confidence": 0.86,
       "first_seen_batch": 1,
-      "last_updated_batch": 400,
+      "last_updated_batch": 401,
       "confidence_history": [
         [
-          400,
+          401,
           0.86
         ]
       ]
@@ -93,10 +93,10 @@
       "supporting_loans": [],
       "confidence": 0.85,
       "first_seen_batch": 1,
-      "last_updated_batch": 400,
+      "last_updated_batch": 401,
       "confidence_history": [
         [
-          400,
+          401,
           0.85
         ]
       ]
@@ -108,11 +108,11 @@
       "body": "Pitches from women that explicitly reference a successful track record of repaying previous loans tend to accelerate funding speed.",
       "supporting_loans": [],
       "confidence": 1.0,
-      "first_seen_batch": 330,
-      "last_updated_batch": 400,
+      "first_seen_batch": 329,
+      "last_updated_batch": 401,
       "confidence_history": [
         [
-          400,
+          401,
           1.0
         ]
       ]
@@ -124,76 +124,69 @@
       "body": "The inclusion of specific monthly income, detailed inventory lists, or precise product types accelerates funding for both men and women.",
       "supporting_loans": [],
       "confidence": 0.78,
-      "first_seen_batch": 350,
-      "last_updated_batch": 400,
+      "first_seen_batch": 349,
+      "last_updated_batch": 401,
       "confidence_history": [
         [
-          400,
+          401,
           0.78
         ]
       ]
     }
   },
   "puzzles": {
-    "female-generic-business-label-slower": {
-      "id": "female-generic-business-label-slower",
-      "body": "Female borrowers who use generic business labels, such as 'sari-sari store', may fund more slowly.",
-      "first_seen_batch": 326
-    },
     "female-saving-to-expand-slower": {
       "id": "female-saving-to-expand-slower",
       "body": "Female borrowers who mention the specific goal of saving money to expand may fund more slowly.",
-      "first_seen_batch": 328
+      "first_seen_batch": 327
     },
     "female-academic-specificity-slower": {
       "id": "female-academic-specificity-slower",
       "body": "Female borrowers who specify their exact academic field of study may fund more slowly.",
-      "first_seen_batch": 330
+      "first_seen_batch": 329
     },
     "female-local-currency-slower": {
       "id": "female-local-currency-slower",
       "body": "Female borrowers who mention the loan amount in local currency may fund more slowly.",
-      "first_seen_batch": 336
+      "first_seen_batch": 335
     },
     "female-gratitude-slower": {
       "id": "female-gratitude-slower",
       "body": "Female borrowers who include direct thank you notes to lenders may fund more slowly.",
-      "first_seen_batch": 338
+      "first_seen_batch": 337
     },
     "female-pitch-length-faster": {
       "id": "female-pitch-length-faster",
       "body": "Female borrowers who write significantly shorter pitches may fund faster.",
-      "first_seen_batch": 372
+      "first_seen_batch": 371
     },
     "female-higher-loan-amount-faster": {
       "id": "female-higher-loan-amount-faster",
       "body": "Female borrowers who request higher loan amounts may fund faster than those requesting smaller amounts.",
-      "first_seen_batch": 386
+      "first_seen_batch": 385
     },
     "female-hard-work-language-slower": {
       "id": "female-hard-work-language-slower",
       "body": "Female borrowers who use phrases emphasizing hard work, such as 'working tirelessly', may fund more slowly.",
-      "first_seen_batch": 390
+      "first_seen_batch": 389
     },
     "male-family-mention-slower": {
       "id": "male-family-mention-slower",
       "body": "Male borrowers who mention supporting or living with family members may fund more slowly.",
-      "first_seen_batch": 392
+      "first_seen_batch": 391
     },
     "female-loan-amount-mention-slower": {
       "id": "female-loan-amount-mention-slower",
       "body": "Female borrowers who explicitly state the loan amount within the pitch text may fund more slowly.",
-      "first_seen_batch": 400
+      "first_seen_batch": 399
+    },
+    "female-homeownership-faster": {
+      "id": "female-homeownership-faster",
+      "body": "Female borrowers who mention owning their own home may fund faster.",
+      "first_seen_batch": 401
     }
   },
   "retired": {
-    "female-outcome-input-distinction": {
-      "id": "female-outcome-input-distinction",
-      "title": "Pitches from women highlighting skill development or asset acquisition accelerate funding, whereas listing specific technical inputs like seeds or fertilizers decelerates it.",
-      "retrospective": "Retired to make room for promoted claim regarding asset ownership.",
-      "retired_batch": 359,
-      "was_believed_batches": 0
-    },
     "local-currency-slower-female": {
       "id": "local-currency-slower-female",
       "title": "Female borrowers who mention the loan amount in local currency may fund more slowly.",
@@ -255,6 +248,13 @@
       "title": "Female borrowers who describe local geography and tourism of their city may fund faster.",
       "retrospective": "Dropped as stale puzzle to make room for new observation.",
       "retired_batch": 400,
+      "was_believed_batches": 0
+    },
+    "female-generic-business-label-slower": {
+      "id": "female-generic-business-label-slower",
+      "title": "Female borrowers who use generic business labels, such as 'sari-sari store', may fund more slowly.",
+      "retrospective": "Dropped as stale puzzle to make room for new observation.",
+      "retired_batch": 401,
       "was_believed_batches": 0
     }
   }
