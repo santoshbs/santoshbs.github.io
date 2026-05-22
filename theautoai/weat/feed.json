@@ -1,5 +1,111 @@
 [
   {
+    "id": "9abbff540292",
+    "timestamp": "2026-05-22T10:23:09.649107+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "merchants vs politicians on commercial transaction vs political ideology",
+    "labels": {
+      "X": "merchants",
+      "Y": "politicians",
+      "A": "transactional",
+      "B": "ideological"
+    },
+    "canonical_keys": {
+      "X": "merchants",
+      "Y": "politicians",
+      "A": "transactional",
+      "B": "ideological"
+    },
+    "effect_size": 1.7562391966584407,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "merchant",
+        "trader",
+        "vendor",
+        "retailer",
+        "salesman",
+        "broker",
+        "dealer",
+        "entrepreneur",
+        "capitalist",
+        "wholesaler",
+        "importer",
+        "exporter",
+        "agent",
+        "proprietor",
+        "shopkeeper"
+      ],
+      "Y_used": [
+        "politician",
+        "senator",
+        "representative",
+        "mayor",
+        "governor",
+        "president",
+        "legislator",
+        "lawmaker",
+        "diplomat",
+        "minister",
+        "official",
+        "ambassador",
+        "statesman",
+        "delegate",
+        "commissioner"
+      ],
+      "A_used": [
+        "transaction",
+        "exchange",
+        "trade",
+        "commerce",
+        "barter",
+        "deal",
+        "bargain",
+        "price",
+        "cost",
+        "profit",
+        "payment",
+        "sale",
+        "purchase",
+        "market",
+        "fee"
+      ],
+      "B_used": [
+        "ideology",
+        "principle",
+        "policy",
+        "governance",
+        "legislation",
+        "regulation",
+        "constitution",
+        "democracy",
+        "republic",
+        "mandate",
+        "authority",
+        "rhetoric",
+        "discourse",
+        "campaign",
+        "election"
+      ]
+    },
+    "proposal": "People associate merchants with transactionalism more strongly than they associate politicians with transactionalism. While political discourse frequently employs market metaphors and emphasizes deal-making, this proposal suggests that lay implicit cognition reserves the core attribute of transactionalism—the orientation toward quid-pro-quo exchange, barter, and price-based negotiation—for merchants rather than political actors. Confirming this association would reveal that despite rhetorical framing, the public mentally categorizes politicians along axes of ideology, rhetoric, or power distinct from the transactional logic of commerce. This matters because implicit distinctions between transactional and non-transactional actor categories shape how audiences evaluate promises, assess corruption, and interpret the motives of leaders in public discourse.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "f3cb0338eeb7",
     "timestamp": "2026-05-22T08:18:22.857922+00:00",
     "schema_version": "autoresearch.v1",
