@@ -1,5 +1,111 @@
 [
   {
+    "id": "aaac1951a61c",
+    "timestamp": "2026-05-22T13:23:02.393936+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "spies vs journalists on social magnetism vs transparency",
+    "labels": {
+      "X": "spies",
+      "Y": "journalists",
+      "A": "charisma",
+      "B": "transparency"
+    },
+    "canonical_keys": {
+      "X": "spies",
+      "Y": "journalists",
+      "A": "charisma",
+      "B": "transparency"
+    },
+    "effect_size": 1.0191979657519943,
+    "p_value": 0.00449,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "spy",
+        "agent",
+        "operative",
+        "mole",
+        "informer",
+        "assassin",
+        "infiltrator",
+        "mercenary",
+        "traitor",
+        "watcher",
+        "scout",
+        "saboteur",
+        "handler",
+        "courier",
+        "turncoat"
+      ],
+      "Y_used": [
+        "journalist",
+        "reporter",
+        "editor",
+        "photographer",
+        "broadcaster",
+        "anchor",
+        "correspondent",
+        "columnist",
+        "critic",
+        "publisher",
+        "blogger",
+        "interviewer",
+        "narrator",
+        "commentator",
+        "observer"
+      ],
+      "A_used": [
+        "charming",
+        "magnetic",
+        "alluring",
+        "attractive",
+        "sexy",
+        "elegant",
+        "sophisticated",
+        "stylish",
+        "cool",
+        "charismatic",
+        "suave",
+        "seductive",
+        "appealing",
+        "radiant",
+        "enchanting"
+      ],
+      "B_used": [
+        "transparent",
+        "clear",
+        "open",
+        "honest",
+        "factual",
+        "objective",
+        "direct",
+        "visible",
+        "obvious",
+        "straightforward",
+        "candid",
+        "frank",
+        "explicit",
+        "accurate",
+        "truthful"
+      ]
+    },
+    "proposal": "People associate spies with charisma more strongly than they associate journalists with charisma. While journalists are culturally framed as transparent fact-reporters and observers, spies are frequently romanticized in popular discourse and media as magnetic, suave operators who seduce targets and navigate intrigue with effortless social allure. This association is novel because implicit research has rarely examined espionage roles, which are distinct from broader military or law enforcement categories, and the comparison with journalists isolates the perceived social magnetism of covert influence versus public accountability. Confirming this bias would highlight how cultural narratives of the charismatic 'lone wolf' may distort public understanding of intelligence work, influencing attitudes toward recruitment, state secrecy, and the relative social valuation of covert versus overt information gathering.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "020b1d2554e9",
     "timestamp": "2026-05-22T12:30:52.005666+00:00",
     "schema_version": "autoresearch.v1",
