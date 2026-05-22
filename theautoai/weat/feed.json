@@ -1,5 +1,111 @@
 [
   {
+    "id": "0d0b01352d21",
+    "timestamp": "2026-05-22T03:27:58.659943+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Muslims vs Students on cognitive adaptability",
+    "labels": {
+      "X": "Muslims",
+      "Y": "Students",
+      "A": "intellectual rigidity",
+      "B": "intellectual flexibility"
+    },
+    "canonical_keys": {
+      "X": "muslims",
+      "Y": "students",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 1.8495498066609757,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "muslim",
+        "muslims",
+        "imam",
+        "mosque",
+        "islam",
+        "islamist",
+        "pilgrim",
+        "worshiper",
+        "believer",
+        "devout",
+        "faithful",
+        "follower",
+        "adherent",
+        "devotee",
+        "cleric"
+      ],
+      "Y_used": [
+        "student",
+        "students",
+        "pupil",
+        "pupils",
+        "learner",
+        "learners",
+        "scholar",
+        "scholars",
+        "academic",
+        "academics",
+        "undergraduate",
+        "graduate",
+        "classmate",
+        "peer",
+        "candidate"
+      ],
+      "A_used": [
+        "rigid",
+        "dogmatic",
+        "inflexible",
+        "stubborn",
+        "obstinate",
+        "fixed",
+        "unyielding",
+        "uncompromising",
+        "adamant",
+        "narrow",
+        "intolerant",
+        "static",
+        "stagnant",
+        "immutable",
+        "unchangeable"
+      ],
+      "B_used": [
+        "flexible",
+        "adaptable",
+        "versatile",
+        "receptive",
+        "open",
+        "inquiring",
+        "curious",
+        "exploratory",
+        "evolving",
+        "dynamic",
+        "fluid",
+        "growing",
+        "developing",
+        "malleable",
+        "pliable"
+      ]
+    },
+    "proposal": "People associate Muslims with intellectual rigidity more strongly than they associate Students with intellectual rigidity. This differential association contrasts the cultural stereotyping of religious adherence as fixed or dogmatic with the idealized cognitive flexibility of those in educational roles. The proposal is novel because, although implicit biases regarding religious groups and educational actors have been examined in isolation, their direct comparison on the axis of cognitive adaptability has not been systematically probed in prior literature. It is interesting and important because confirming this association would reveal how deeply public discourse may frame religious identity as inherently at odds with the values of learning and openness, with potential implications for intergroup relations in educational settings and policy debates regarding integration.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "45c90aac5f8d",
     "timestamp": "2026-05-21T23:25:26.506279+00:00",
     "schema_version": "autoresearch.v1",
