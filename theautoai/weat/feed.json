@@ -1,5 +1,111 @@
 [
   {
+    "id": "102413463b8b",
+    "timestamp": "2026-05-22T06:23:19.410709+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "relatives vs strangers on Boundary respect vs Intrusiveness",
+    "labels": {
+      "X": "relatives",
+      "Y": "strangers",
+      "A": "Intrusive",
+      "B": "Respectful"
+    },
+    "canonical_keys": {
+      "X": "relatives",
+      "Y": "strangers",
+      "A": "intrusive",
+      "B": "respectful"
+    },
+    "effect_size": 1.2393381604118763,
+    "p_value": 0.00023,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "mother",
+        "father",
+        "sister",
+        "brother",
+        "cousin",
+        "uncle",
+        "aunt",
+        "nephew",
+        "niece",
+        "grandfather",
+        "grandmother",
+        "parents",
+        "siblings",
+        "husband",
+        "wife"
+      ],
+      "Y_used": [
+        "stranger",
+        "outsider",
+        "unknown",
+        "passerby",
+        "newcomer",
+        "visitor",
+        "guest",
+        "anonymous",
+        "unacquainted",
+        "bystander",
+        "traveler",
+        "alien",
+        "other",
+        "foreigner",
+        "passer"
+      ],
+      "A_used": [
+        "intrusive",
+        "overbearing",
+        "nosy",
+        "prying",
+        "meddling",
+        "interfering",
+        "invasive",
+        "encroaching",
+        "domineering",
+        "controlling",
+        "smothering",
+        "hovering",
+        "pushy",
+        "demanding",
+        "bossy"
+      ],
+      "B_used": [
+        "respectful",
+        "distant",
+        "detached",
+        "independent",
+        "autonomous",
+        "private",
+        "reserved",
+        "aloof",
+        "unobtrusive",
+        "discreet",
+        "careful",
+        "polite",
+        "courteous",
+        "solitary",
+        "deferential"
+      ]
+    },
+    "proposal": "People associate relatives with intrusiveness more strongly than they associate strangers with intrusiveness. While explicit discourse often celebrates family as a sanctuary, contemporary discussions about emotional enmeshment, boundary violations, and the 'emotional blackmail' of kinship suggest an implicit recognition that family members are mentally represented as more prone to overstepping personal boundaries than anonymous others. Examining this association is novel because prior research has focused almost exclusively on positive family bonds (warmth, trust, support) or intergroup prejudice toward outsiders, neglecting the implicit negative valence attached to familial closeness. Confirming this link would reveal a counterintuitive cognitive bias where intimacy is subconsciously linked to a loss of autonomy, offering a fresh lens on why individuals may resist familial closeness despite cultural mandates of loyalty.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "0d0b01352d21",
     "timestamp": "2026-05-22T03:27:58.659943+00:00",
     "schema_version": "autoresearch.v1",
