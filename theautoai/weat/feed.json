@@ -1,5 +1,111 @@
 [
   {
+    "id": "c763a1702f00",
+    "timestamp": "2026-05-23T16:59:14.837056+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Explorers vs Settlers on Curiosity versus Stability",
+    "labels": {
+      "X": "Explorers",
+      "Y": "Settlers",
+      "A": "Curiosity",
+      "B": "Stability"
+    },
+    "canonical_keys": {
+      "X": "explorers",
+      "Y": "settlers",
+      "A": "curiosity",
+      "B": "stability"
+    },
+    "effect_size": 1.0189055593116547,
+    "p_value": 0.00301,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "adventurer",
+        "voyager",
+        "traveler",
+        "scout",
+        "pioneer",
+        "drifter",
+        "wanderer",
+        "nomad",
+        "ranger",
+        "surveyor",
+        "navigator",
+        "hiker",
+        "climber",
+        "diver",
+        "seeker"
+      ],
+      "Y_used": [
+        "resident",
+        "dweller",
+        "inhabitant",
+        "colonist",
+        "farmer",
+        "builder",
+        "settler",
+        "owner",
+        "citizen",
+        "tenant",
+        "gardener",
+        "villager",
+        "mason",
+        "carver",
+        "weaver"
+      ],
+      "A_used": [
+        "curious",
+        "inquisitive",
+        "novelty",
+        "discovery",
+        "unknown",
+        "mystery",
+        "quest",
+        "investigate",
+        "search",
+        "wonder",
+        "curiosity",
+        "new",
+        "fresh",
+        "original",
+        "innovative"
+      ],
+      "B_used": [
+        "stable",
+        "permanent",
+        "steady",
+        "fixed",
+        "constant",
+        "traditional",
+        "conservative",
+        "safe",
+        "secure",
+        "grounded",
+        "established",
+        "routine",
+        "order",
+        "structure",
+        "foundation"
+      ]
+    },
+    "proposal": "People associate Explorers with Curiosity more strongly than they associate Settlers with Curiosity. This proposal examines the implicit link between the archetypal role of the boundary-pusher and the trait of inquisitiveness compared to the role focused on establishment and permanence. While overt discourse often valorizes exploration, implicit associations may reveal how deeply the mental representation of the 'Explorer' is tied to the drive for novel information versus the 'Settler's' association with stability. This distinction is novel as prior work has focused on occupational or demographic contrasts, leaving the foundational exploration-versus-consolidation dynamic unexamined. It matters because it sheds light on how societies mentally categorize the values of expansion and discovery relative to those of building and maintaining, which has implications for understanding attitudes toward risk, migration, and progress.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "f9421949ca4f",
     "timestamp": "2026-05-23T15:55:34.576234+00:00",
     "schema_version": "autoresearch.v1",
