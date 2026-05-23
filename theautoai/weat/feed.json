@@ -1,5 +1,115 @@
 [
   {
+    "id": "4314ebe0c5ad",
+    "timestamp": "2026-05-23T19:55:57.029951+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "auditors vs advocates on Objectivity vs Partiality",
+    "labels": {
+      "X": "auditors",
+      "Y": "advocates",
+      "A": "Objectivity",
+      "B": "Partiality"
+    },
+    "canonical_keys": {
+      "X": "auditors",
+      "Y": "advocates",
+      "A": "objectivity",
+      "B": "partiality"
+    },
+    "effect_size": 0.8103502417584189,
+    "p_value": 0.02247,
+    "n": {
+      "X": 16,
+      "Y": 16,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "auditor",
+        "accountant",
+        "inspector",
+        "examiner",
+        "evaluator",
+        "appraiser",
+        "reviewer",
+        "assessor",
+        "verifier",
+        "comptroller",
+        "treasurer",
+        "controller",
+        "supervisor",
+        "monitor",
+        "regulator",
+        "overseer"
+      ],
+      "Y_used": [
+        "advocate",
+        "lobbyist",
+        "campaigner",
+        "supporter",
+        "defender",
+        "champion",
+        "promoter",
+        "backer",
+        "agent",
+        "representative",
+        "proxy",
+        "spokesperson",
+        "orator",
+        "pleader",
+        "counselor",
+        "attorney",
+        "solicitor",
+        "barrister"
+      ],
+      "A_used": [
+        "objective",
+        "neutral",
+        "impartial",
+        "fair",
+        "unbiased",
+        "detached",
+        "balanced",
+        "independent",
+        "evenhanded",
+        "equitable",
+        "dispassionate",
+        "just",
+        "rational",
+        "factual",
+        "logical"
+      ],
+      "B_used": [
+        "partial",
+        "biased",
+        "partisan",
+        "subjective",
+        "slanted",
+        "prejudiced",
+        "onesided",
+        "inclined",
+        "persuasive",
+        "promotional",
+        "loaded",
+        "stacked",
+        "tainted",
+        "colored",
+        "warped"
+      ]
+    },
+    "proposal": "People associate auditors with objectivity more strongly than they associate advocates with objectivity. This differential implicit association reflects a deeper cognitive framing of institutional roles: auditors are mentally linked to detached verification and procedural neutrality, whereas advocates are tied to partiality, persuasion, and value-driven representation. Examining this link is novel because prior research has largely focused on explicit role expectations rather than automatic implicit biases that shape public trust in regulatory versus representational institutions. Confirming this association would matter for understanding why citizens instinctively distrust advocacy groups as inherently biased while overestimating the neutrality of compliance-focused bodies, potentially skewing democratic deliberation and institutional reform efforts.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "d436805d8a14",
     "timestamp": "2026-05-23T17:35:12.606627+00:00",
     "schema_version": "autoresearch.v1",
