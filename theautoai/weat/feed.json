@@ -1,5 +1,111 @@
 [
   {
+    "id": "e330bb51cf3d",
+    "timestamp": "2026-05-23T07:10:09.793943+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Gardeners vs Builders on patience vs haste",
+    "labels": {
+      "X": "Gardeners",
+      "Y": "Builders",
+      "A": "patience",
+      "B": "haste"
+    },
+    "canonical_keys": {
+      "X": "gardeners",
+      "Y": "builders",
+      "A": "patience",
+      "B": "haste"
+    },
+    "effect_size": 0.9862475468129337,
+    "p_value": 0.00639,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "gardeners",
+        "florists",
+        "landscapers",
+        "horticulturists",
+        "botanists",
+        "arborists",
+        "groundskeepers",
+        "cultivators",
+        "growers",
+        "planters",
+        "pruners",
+        "herbalists",
+        "foresters",
+        "farmers",
+        "sowers"
+      ],
+      "Y_used": [
+        "builders",
+        "contractors",
+        "architects",
+        "engineers",
+        "masons",
+        "carpenters",
+        "bricklayers",
+        "plumbers",
+        "electricians",
+        "developers",
+        "superintendents",
+        "foremen",
+        "welders",
+        "painters",
+        "roofers"
+      ],
+      "A_used": [
+        "patience",
+        "patient",
+        "waiting",
+        "wait",
+        "calm",
+        "slow",
+        "steady",
+        "enduring",
+        "persistent",
+        "tolerance",
+        "tolerant",
+        "tranquility",
+        "peace",
+        "quiet",
+        "relaxed"
+      ],
+      "B_used": [
+        "haste",
+        "hurry",
+        "rush",
+        "speed",
+        "fast",
+        "rapid",
+        "quick",
+        "swift",
+        "immediate",
+        "instant",
+        "hurried",
+        "hasty",
+        "frantic",
+        "impatience",
+        "impatient"
+      ]
+    },
+    "proposal": "People associate Gardeners with Patience more strongly than they associate Builders with Patience. Gardeners are culturally framed as tending to organic cycles that demand waiting, nurturing, and adaptation to biological timing, whereas Builders are associated with construction, efficiency, and the immediate materialization of fixed plans. This association matters because it reveals how implicit schemas link patience to biological caretaking rather than structural creation, potentially influencing how society values different forms of labor and temporal horizons. The proposal is novel as prior work has examined nature/culture splits or specific roles like Monks versus Pilgrims, but has not explicitly probed the patience differential between horticultural and construction archetypes.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "1127fd4d1da2",
     "timestamp": "2026-05-23T04:38:43.428116+00:00",
     "schema_version": "autoresearch.v1",
