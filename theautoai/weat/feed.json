@@ -1,5 +1,111 @@
 [
   {
+    "id": "f9421949ca4f",
+    "timestamp": "2026-05-23T15:55:34.576234+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Soldiers vs Activists on obedience versus dissent",
+    "labels": {
+      "X": "Soldiers",
+      "Y": "Activists",
+      "A": "obedience",
+      "B": "dissent"
+    },
+    "canonical_keys": {
+      "X": "soldiers",
+      "Y": "activists",
+      "A": "obedience",
+      "B": "dissent"
+    },
+    "effect_size": 1.3565365089067114,
+    "p_value": 7e-05,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "soldier",
+        "marine",
+        "cadet",
+        "private",
+        "sergeant",
+        "corporal",
+        "general",
+        "major",
+        "captain",
+        "lieutenant",
+        "colonel",
+        "officer",
+        "veteran",
+        "recruit",
+        "conscript"
+      ],
+      "Y_used": [
+        "activist",
+        "protester",
+        "demonstrator",
+        "campaigner",
+        "crusader",
+        "agitator",
+        "organizer",
+        "radical",
+        "rebel",
+        "revolutionary",
+        "partisan",
+        "advocate",
+        "petitioner",
+        "reformer",
+        "dissenter"
+      ],
+      "A_used": [
+        "obedient",
+        "compliant",
+        "submissive",
+        "docile",
+        "dutiful",
+        "faithful",
+        "loyal",
+        "disciplined",
+        "controlled",
+        "orderly",
+        "acquiescent",
+        "respectful",
+        "subservient",
+        "conforming",
+        "devoted"
+      ],
+      "B_used": [
+        "disobedient",
+        "rebellious",
+        "defiant",
+        "insubordinate",
+        "oppositional",
+        "disruptive",
+        "mutinous",
+        "seditious",
+        "unruly",
+        "contrarian",
+        "dissident",
+        "nonconformist",
+        "insurgent",
+        "recalcitrant",
+        "obstinate"
+      ]
+    },
+    "proposal": "People associate Soldiers with obedience more strongly than they associate Activists with obedience. This differential association probes the implicit mental linkage between military archetypes and authoritarian compliance versus protest archetypes and dissent, a comparison that has not been systematically examined despite the frequent rhetorical pitting of these groups in public debates about civic duty, protest legitimacy, and civil-military relations. Confirming this association would reveal how deeply the trait of obedience is tied to the soldier category while potentially framing activists as inherently transgressive, which matters for understanding how the public intuitively judges the moral authority, reliability, and social utility of these distinct actors in times of political conflict.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "e330bb51cf3d",
     "timestamp": "2026-05-23T07:10:09.793943+00:00",
     "schema_version": "autoresearch.v1",
