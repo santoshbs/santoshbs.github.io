@@ -1,5 +1,111 @@
 [
   {
+    "id": "11de64149aac",
+    "timestamp": "2026-05-24T07:57:37.425055+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "refugees vs immigrants on vulnerability versus agency",
+    "labels": {
+      "X": "refugees",
+      "Y": "immigrants",
+      "A": "vulnerability",
+      "B": "agency"
+    },
+    "canonical_keys": {
+      "X": "refugees",
+      "Y": "immigrants",
+      "A": "vulnerability",
+      "B": "agency"
+    },
+    "effect_size": 1.296446582464051,
+    "p_value": 5e-05,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "refugee",
+        "exile",
+        "evacuee",
+        "displaced",
+        "homeless",
+        "stateless",
+        "fugitive",
+        "wanderer",
+        "asylee",
+        "migrant",
+        "refugees",
+        "exiles",
+        "evacuees",
+        "asylees",
+        "migrants"
+      ],
+      "Y_used": [
+        "immigrant",
+        "emigrant",
+        "settler",
+        "colonist",
+        "pioneer",
+        "newcomer",
+        "transplant",
+        "foreigner",
+        "alien",
+        "visitor",
+        "guest",
+        "sojourner",
+        "expat",
+        "arrival",
+        "settlers"
+      ],
+      "A_used": [
+        "vulnerable",
+        "weak",
+        "fragile",
+        "helpless",
+        "defenseless",
+        "frail",
+        "delicate",
+        "susceptible",
+        "exposed",
+        "endangered",
+        "precarious",
+        "wounded",
+        "injured",
+        "sick",
+        "afraid"
+      ],
+      "B_used": [
+        "strong",
+        "powerful",
+        "capable",
+        "autonomous",
+        "determined",
+        "assertive",
+        "confident",
+        "robust",
+        "sturdy",
+        "tough",
+        "formidable",
+        "steadfast",
+        "resourceful",
+        "resilient",
+        "competent"
+      ]
+    },
+    "proposal": "People associate refugees with vulnerability more strongly than they associate immigrants with vulnerability. While both groups involve cross-border movement, contemporary media and political discourse frequently frame refugees as fleeing immediate peril and requiring protection, whereas immigrants are more often depicted as making calculated choices to improve their economic or social standing. This differential association is novel because prior research has largely examined explicit attitudes toward legal status or assimilation potential, leaving the implicit, affective mapping of 'vulnerability' across these closely related mobility categories unexamined. Understanding this split matters because it may unconsciously shape public support for humanitarian aid versus economic integration policies, revealing how subtle semantic distinctions in mobility status activate distinct moral intuitions.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "7ceffdb4354f",
     "timestamp": "2026-05-24T06:06:43.265463+00:00",
     "schema_version": "autoresearch.v1",
