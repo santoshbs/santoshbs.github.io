@@ -1,5 +1,111 @@
 [
   {
+    "id": "e51c4f1d0a44",
+    "timestamp": "2026-05-24T00:10:45.658697+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Chefs vs Scientists on Sensory vs Rational",
+    "labels": {
+      "X": "Chefs",
+      "Y": "Scientists",
+      "A": "Sensory",
+      "B": "Rational"
+    },
+    "canonical_keys": {
+      "X": "chefs",
+      "Y": "scientists",
+      "A": "sensory",
+      "B": "rational"
+    },
+    "effect_size": 1.7580692420205433,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "chef",
+        "cook",
+        "baker",
+        "caterer",
+        "confectioner",
+        "brewer",
+        "distiller",
+        "barista",
+        "taster",
+        "waiter",
+        "host",
+        "waitress",
+        "hostess",
+        "vendor",
+        "grocer"
+      ],
+      "Y_used": [
+        "scientist",
+        "researcher",
+        "biologist",
+        "chemist",
+        "physicist",
+        "engineer",
+        "professor",
+        "analyst",
+        "scholar",
+        "doctor",
+        "medic",
+        "physician",
+        "surgeon",
+        "statistician",
+        "geneticist"
+      ],
+      "A_used": [
+        "sensual",
+        "sensory",
+        "tasty",
+        "scented",
+        "flavorful",
+        "aromatic",
+        "delicious",
+        "mouthwatering",
+        "appetizing",
+        "savory",
+        "spicy",
+        "sweet",
+        "salty",
+        "sour",
+        "bitter"
+      ],
+      "B_used": [
+        "rational",
+        "logical",
+        "abstract",
+        "analytical",
+        "theoretical",
+        "intellectual",
+        "mathematical",
+        "objective",
+        "cold",
+        "dry",
+        "sterile",
+        "rigid",
+        "precise",
+        "formal",
+        "systematic"
+      ]
+    },
+    "proposal": "People associate Chefs with Sensuality more strongly than they associate Scientists with Sensuality. Culinary work is fundamentally grounded in sensory engagement—taste, smell, touch, and the immediate gratification of the body—whereas scientific practice is culturally framed as abstract, analytical, and detached from bodily experience. While the contrast between artists and scientists has been extensively studied, the specific implicit linkage of chefs to embodied sensory richness versus the disembodied rationality of scientists remains unprobed. Examining this association is important because it reveals how professional identities are mapped onto mind-body dualisms, potentially reinforcing biases that undervalue sensory labor in favor of cognitive abstraction.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "4314ebe0c5ad",
     "timestamp": "2026-05-23T19:55:57.029951+00:00",
     "schema_version": "autoresearch.v1",
