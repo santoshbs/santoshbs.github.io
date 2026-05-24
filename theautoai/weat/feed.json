@@ -1,5 +1,111 @@
 [
   {
+    "id": "00d8447a80db",
+    "timestamp": "2026-05-24T19:44:37.357069+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "therapists vs strategists on emotional expressiveness vs restraint",
+    "labels": {
+      "X": "therapists",
+      "Y": "strategists",
+      "A": "emotional_transparency",
+      "B": "emotional_restraint"
+    },
+    "canonical_keys": {
+      "X": "therapists",
+      "Y": "strategists",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": -0.47795841369656755,
+    "p_value": 0.19912,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "therapist",
+        "counselor",
+        "psychologist",
+        "psychiatrist",
+        "psychotherapist",
+        "clinician",
+        "healer",
+        "shrink",
+        "psychoanalyst",
+        "psychiatric",
+        "psychological",
+        "counsellor",
+        "therapeutic",
+        "psychotherapy",
+        "psychiatry"
+      ],
+      "Y_used": [
+        "strategist",
+        "planner",
+        "tactician",
+        "diplomat",
+        "politician",
+        "executive",
+        "commander",
+        "director",
+        "general",
+        "analyst",
+        "advisor",
+        "consultant",
+        "manager",
+        "leader",
+        "architect"
+      ],
+      "A_used": [
+        "transparent",
+        "open",
+        "vulnerable",
+        "expressive",
+        "honest",
+        "authentic",
+        "sincere",
+        "frank",
+        "candid",
+        "direct",
+        "forthcoming",
+        "genuine",
+        "straightforward",
+        "unreserved",
+        "accessible"
+      ],
+      "B_used": [
+        "guarded",
+        "calculating",
+        "restrained",
+        "secretive",
+        "opaque",
+        "cold",
+        "distant",
+        "reserved",
+        "aloof",
+        "detached",
+        "controlled",
+        "formal",
+        "impersonal",
+        "unyielding",
+        "stoic"
+      ]
+    },
+    "proposal": "People associate therapists with emotional transparency more strongly than they associate strategists with emotional transparency. This differential reflects contemporary cultural narratives that frame mental health professionals as open, vulnerable, and emotionally expressive, while casting strategic roles in business, military, or policy contexts as guarded, calculating, and emotionally restrained. The association remains largely unexamined despite its relevance to hiring biases, interdisciplinary collaboration, and the persistent stigmatization of vulnerability in leadership and planning domains. Probing this link would clarify how occupational stereotypes shape expectations of interpersonal authenticity and whether the perceived emotional opacity of strategists undermines trust in institutional decision-making.",
+    "iterations": 3,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "43f8eda6ea91",
     "timestamp": "2026-05-24T16:40:13.123760+00:00",
     "schema_version": "autoresearch.v1",
