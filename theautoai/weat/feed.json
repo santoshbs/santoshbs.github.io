@@ -1,5 +1,111 @@
 [
   {
+    "id": "07f4eaa1318c",
+    "timestamp": "2026-05-24T21:19:51.326616+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "caretakers vs entrepreneurs on predictability versus volatility",
+    "labels": {
+      "X": "caretakers",
+      "Y": "entrepreneurs",
+      "A": "predictability",
+      "B": "volatility"
+    },
+    "canonical_keys": {
+      "X": "caretakers",
+      "Y": "entrepreneurs",
+      "A": "predictability",
+      "B": "volatility"
+    },
+    "effect_size": 0.34217869073637747,
+    "p_value": 0.369,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "caretaker",
+        "nurse",
+        "nanny",
+        "teacher",
+        "guardian",
+        "tutor",
+        "mentor",
+        "therapist",
+        "counselor",
+        "doctor",
+        "physician",
+        "attendant",
+        "aide",
+        "carer",
+        "homemaker"
+      ],
+      "Y_used": [
+        "entrepreneur",
+        "founder",
+        "investor",
+        "trader",
+        "banker",
+        "magnate",
+        "mogul",
+        "boss",
+        "manager",
+        "executive",
+        "capitalist",
+        "broker",
+        "dealer",
+        "merchant",
+        "vendor"
+      ],
+      "A_used": [
+        "predictable",
+        "stable",
+        "reliable",
+        "consistent",
+        "routine",
+        "organized",
+        "steady",
+        "fixed",
+        "regular",
+        "certain",
+        "dependable",
+        "methodical",
+        "structured",
+        "systematic",
+        "conventional"
+      ],
+      "B_used": [
+        "unpredictable",
+        "volatile",
+        "risky",
+        "chaotic",
+        "disruptive",
+        "uncertain",
+        "unstable",
+        "changeable",
+        "erratic",
+        "dynamic",
+        "fluctuating",
+        "variable",
+        "spontaneous",
+        "improvised",
+        "experimental"
+      ]
+    },
+    "proposal": "People associate caretakers with predictability more strongly than they associate entrepreneurs with predictability. This differential implicit association taps into a cultural narrative that frames care work as governed by routine, scheduled reliability, and procedural consistency, while entrepreneurship is mentally linked to disruption, volatility, and calculated risk-taking. Although labor sociology has explicitly studied how these roles are valorized or devalued, the implicit cognitive wiring that automatically pairs caretakers with stability over entrepreneurs has never been systematically measured. Probing this association matters because it exposes how essential social functions are unconsciously categorized along an order-versus-chaos continuum, which may silently shape public trust, crisis response expectations, and institutional funding priorities.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "00d8447a80db",
     "timestamp": "2026-05-24T19:44:37.357069+00:00",
     "schema_version": "autoresearch.v1",
