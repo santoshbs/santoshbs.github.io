@@ -1,5 +1,111 @@
 [
   {
+    "id": "f762886d8561",
+    "timestamp": "2026-05-24T10:12:51.759780+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "farmers vs scientists on environmental predictability",
+    "labels": {
+      "X": "farmers",
+      "Y": "scientists",
+      "A": "unpredictability",
+      "B": "predictability"
+    },
+    "canonical_keys": {
+      "X": "farmers",
+      "Y": "scientists",
+      "A": "unpredictability",
+      "B": "predictability"
+    },
+    "effect_size": 1.4002088516996722,
+    "p_value": 1e-05,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "farmer",
+        "farmhand",
+        "planter",
+        "grower",
+        "rancher",
+        "stockman",
+        "cultivator",
+        "harvester",
+        "plowman",
+        "yeoman",
+        "farmworker",
+        "dairyman",
+        "vintner",
+        "orchardist",
+        "agriculturalist"
+      ],
+      "Y_used": [
+        "scientist",
+        "researcher",
+        "biologist",
+        "chemist",
+        "physicist",
+        "engineer",
+        "academic",
+        "professor",
+        "scholar",
+        "analyst",
+        "experimentalist",
+        "specialist",
+        "expert",
+        "technologist",
+        "mathematician"
+      ],
+      "A_used": [
+        "unpredictability",
+        "weather",
+        "storm",
+        "drought",
+        "flood",
+        "risk",
+        "variable",
+        "wild",
+        "change",
+        "chaos",
+        "fluctuation",
+        "unstable",
+        "random",
+        "uncertain",
+        "climate"
+      ],
+      "B_used": [
+        "predictability",
+        "control",
+        "laboratory",
+        "order",
+        "constant",
+        "stable",
+        "precise",
+        "exact",
+        "protocol",
+        "standard",
+        "fixed",
+        "measured",
+        "regulated",
+        "indoor",
+        "systematic"
+      ]
+    },
+    "proposal": "People associate farmers with comfort with environmental unpredictability more strongly than they associate scientists with comfort with environmental unpredictability. This implicit bias likely stems from cultural narratives that frame agricultural labor as inherently subject to weather, soil, and ecological whims, whereas scientific work is stereotypically depicted as occurring in controlled laboratory settings with standardized protocols. Examining this association is novel because prior implicit bias research has largely focused on warmth-competence dimensions or gendered profession stereotypes, leaving unexplored how the public mentally partitions expertise by environmental predictability. Confirming or disconfirming this bias matters because it may subtly shape public support for agricultural risk management versus research funding, and influence how policymakers perceive the reliability of nature-based versus laboratory-based knowledge systems.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "8eaa618f2917",
     "timestamp": "2026-05-24T09:14:14.980086+00:00",
     "schema_version": "autoresearch.v1",
