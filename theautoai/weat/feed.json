@@ -1,5 +1,111 @@
 [
   {
+    "id": "7ceffdb4354f",
+    "timestamp": "2026-05-24T06:06:43.265463+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Survivors vs Smiths on Adaptability vs Specialized Skill",
+    "labels": {
+      "X": "Survivors",
+      "Y": "Smiths",
+      "A": "Resourcefulness",
+      "B": "Craftsmanship"
+    },
+    "canonical_keys": {
+      "X": "survivors",
+      "Y": "smiths",
+      "A": "resourcefulness",
+      "B": "craftsmanship"
+    },
+    "effect_size": 1.257140745905139,
+    "p_value": 0.00019,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "survivor",
+        "refugee",
+        "castaway",
+        "exile",
+        "fugitive",
+        "vagrant",
+        "wanderer",
+        "nomad",
+        "outcast",
+        "straggler",
+        "drifter",
+        "victim",
+        "escapee",
+        "evader",
+        "deserter"
+      ],
+      "Y_used": [
+        "smith",
+        "blacksmith",
+        "goldsmith",
+        "silversmith",
+        "gunsmith",
+        "craftsman",
+        "artisan",
+        "tradesman",
+        "mason",
+        "carpenter",
+        "wheelwright",
+        "cobbler",
+        "joiner",
+        "potter",
+        "tinker"
+      ],
+      "A_used": [
+        "resourceful",
+        "adaptable",
+        "inventive",
+        "flexible",
+        "resilient",
+        "opportunistic",
+        "versatile",
+        "nimble",
+        "unorthodox",
+        "pragmatic",
+        "scrappy",
+        "agile",
+        "dynamic",
+        "responsive",
+        "innovative"
+      ],
+      "B_used": [
+        "craftsmanship",
+        "expertise",
+        "specialized",
+        "systematic",
+        "methodical",
+        "precise",
+        "technical",
+        "skilled",
+        "artisanal",
+        "disciplined",
+        "standardized",
+        "professional",
+        "meticulous",
+        "routine",
+        "procedure"
+      ]
+    },
+    "proposal": "People associate Survivors with resourcefulness more strongly than they associate Smiths with resourcefulness. While Smiths are culturally represented as possessing specialized technical skills and adhering to established methods of production, Survivors are depicted in discourse and narrative as relying on improvisation and adaptive problem-solving under constraint. Examining this association is novel because existing research typically contrasts survivors with perpetrators or examines survivor trauma, neglecting how the 'resourcefulness' of survival might be mentally distinguished from the 'ingenuity' of craftsmanship. This matters because it reveals whether implicit cognition privileges adaptability in crisis over expertise in craft, shaping how we value different forms of human capability in uncertain times.",
+    "iterations": 3,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "c63d1966cadc",
     "timestamp": "2026-05-24T04:09:21.775717+00:00",
     "schema_version": "autoresearch.v1",
