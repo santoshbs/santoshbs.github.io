@@ -1,5 +1,111 @@
 [
   {
+    "id": "e3ccaaa5d9e0",
+    "timestamp": "2026-05-24T01:42:11.088183+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Rabbis vs Imams on ritual precision vs spiritual devotion",
+    "labels": {
+      "X": "Rabbis",
+      "Y": "Imams",
+      "A": "precision",
+      "B": "devotion"
+    },
+    "canonical_keys": {
+      "X": "rabbis",
+      "Y": "imams",
+      "A": "precision",
+      "B": "devotion"
+    },
+    "effect_size": 0.5618112092429624,
+    "p_value": 0.13098,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "rabbi",
+        "rebbe",
+        "rav",
+        "cantor",
+        "mohel",
+        "dayan",
+        "talmid",
+        "scholar",
+        "teacher",
+        "mentor",
+        "guide",
+        "counselor",
+        "educator",
+        "instructor",
+        "director"
+      ],
+      "Y_used": [
+        "imam",
+        "muezzin",
+        "mufti",
+        "qadi",
+        "sheikh",
+        "ulema",
+        "hafiz",
+        "sayyid",
+        "amir",
+        "khalifa",
+        "cleric",
+        "chaplain",
+        "advisor",
+        "leader",
+        "preacher"
+      ],
+      "A_used": [
+        "precise",
+        "exact",
+        "detailed",
+        "meticulous",
+        "strict",
+        "careful",
+        "specific",
+        "technical",
+        "regulated",
+        "controlled",
+        "measured",
+        "particular",
+        "rigorous",
+        "systematic",
+        "methodical"
+      ],
+      "B_used": [
+        "spiritual",
+        "devotional",
+        "holistic",
+        "faith",
+        "belief",
+        "transcendent",
+        "mystical",
+        "intuitive",
+        "emotional",
+        "heartfelt",
+        "sincere",
+        "pious",
+        "devout",
+        "sacred",
+        "reverent"
+      ]
+    },
+    "proposal": "People associate Rabbis with ritual precision more strongly than they associate Imams with ritual precision. This proposal examines a differential implicit association rooted in contemporary discourse, where Jewish religious authority is frequently stereotyped as hyper-focused on dietary and behavioral minutiae, whereas Muslim religious authority is more often represented through broader frames of spiritual devotion or socio-political ideology. Confirming this association would highlight how specific religious practices are mentally mapped onto distinct figures, potentially reinforcing caricatures of granular regulation versus holistic faith that influence interfaith dynamics and media representation. The finding would be novel, as implicit comparisons between these two specific religious roles have not been systematically probed despite their parallel institutional functions.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "e51c4f1d0a44",
     "timestamp": "2026-05-24T00:10:45.658697+00:00",
     "schema_version": "autoresearch.v1",
