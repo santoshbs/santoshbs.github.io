@@ -1,5 +1,111 @@
 [
   {
+    "id": "7a492732ae17",
+    "timestamp": "2026-05-25T22:15:05.999042+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "witnesses vs experts on authenticity vs artificiality",
+    "labels": {
+      "X": "witnesses",
+      "Y": "experts",
+      "A": "authenticity",
+      "B": "artificiality"
+    },
+    "canonical_keys": {
+      "X": "witnesses",
+      "Y": "experts",
+      "A": "authenticity",
+      "B": "artificiality"
+    },
+    "effect_size": -0.7564392391351431,
+    "p_value": 0.04067,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "witness",
+        "eyewitness",
+        "bystander",
+        "onlooker",
+        "observer",
+        "spectator",
+        "viewer",
+        "beholder",
+        "watcher",
+        "attendee",
+        "civilian",
+        "layman",
+        "citizen",
+        "peer",
+        "neighbor"
+      ],
+      "Y_used": [
+        "expert",
+        "specialist",
+        "authority",
+        "professional",
+        "scholar",
+        "scientist",
+        "academic",
+        "master",
+        "genius",
+        "engineer",
+        "doctor",
+        "lawyer",
+        "professor",
+        "researcher",
+        "analyst"
+      ],
+      "A_used": [
+        "authentic",
+        "genuine",
+        "real",
+        "true",
+        "honest",
+        "sincere",
+        "natural",
+        "original",
+        "pure",
+        "unadulterated",
+        "candid",
+        "frank",
+        "straightforward",
+        "earnest",
+        "truthful"
+      ],
+      "B_used": [
+        "fake",
+        "artificial",
+        "false",
+        "inauthentic",
+        "contrived",
+        "synthetic",
+        "bogus",
+        "fraudulent",
+        "simulated",
+        "staged",
+        "manufactured",
+        "ersatz",
+        "phony",
+        "sham",
+        "counterfeit"
+      ]
+    },
+    "proposal": "People associate witnesses with authenticity more strongly than they associate experts with authenticity. This differential implicit association captures a psychological preference for first-hand experiential evidence over second-hand specialized knowledge, a dynamic increasingly salient in contemporary discourse where anecdotal testimony is often valorized against institutional expertise. While explicit attitudes frequently defer to experts on factual matters, implicit associations may reveal a deeper bias favoring the perceived genuineness and unmediated nature of direct observation, helping explain why individuals reject expert guidance in favor of personal or peer anecdotes during crises. Examining this association is novel, as prior research has largely focused on general trust in experts versus laypeople, but has not isolated the specific actor category of witnesses to probe the implicit link between direct presence and perceived authenticity.",
+    "iterations": 3,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "6afa5a4f5659",
     "timestamp": "2026-05-25T21:29:27.620259+00:00",
     "schema_version": "autoresearch.v1",
