@@ -1,5 +1,111 @@
 [
   {
+    "id": "f6b11cb8a763",
+    "timestamp": "2026-05-25T15:19:25.242252+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "historians vs journalists on narrative closure versus ongoing development",
+    "labels": {
+      "X": "historians",
+      "Y": "journalists",
+      "A": "Resolution",
+      "B": "Openness"
+    },
+    "canonical_keys": {
+      "X": "historians",
+      "Y": "journalists",
+      "A": "resolution",
+      "B": "openness"
+    },
+    "effect_size": 0.2954223800707759,
+    "p_value": 0.43736,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "historian",
+        "scholar",
+        "academic",
+        "professor",
+        "researcher",
+        "lecturer",
+        "tutor",
+        "educator",
+        "expert",
+        "specialist",
+        "intellectual",
+        "curator",
+        "archivist",
+        "conservator",
+        "antiquarian"
+      ],
+      "Y_used": [
+        "journalist",
+        "reporter",
+        "correspondent",
+        "editor",
+        "anchor",
+        "broadcaster",
+        "columnist",
+        "commentator",
+        "blogger",
+        "newscaster",
+        "producer",
+        "director",
+        "host",
+        "newsreader",
+        "photographer"
+      ],
+      "A_used": [
+        "resolved",
+        "closed",
+        "definitive",
+        "final",
+        "complete",
+        "settled",
+        "finished",
+        "stable",
+        "fixed",
+        "certain",
+        "coherent",
+        "structured",
+        "conclusive",
+        "established",
+        "sealed"
+      ],
+      "B_used": [
+        "unfolding",
+        "ongoing",
+        "developing",
+        "open",
+        "contingent",
+        "current",
+        "evolving",
+        "provisional",
+        "tentative",
+        "changing",
+        "emerging",
+        "breaking",
+        "fluid",
+        "dynamic",
+        "live"
+      ]
+    },
+    "proposal": "People associate historians with narrative resolution more strongly than they associate journalists with narrative resolution. Historians are culturally positioned as synthesizers of the past who craft definitive, closed accounts, whereas journalists are framed as chroniclers of unfolding, contingent events. This implicit distinction matters because it shapes how the public trusts different information ecosystems and evaluates claims about complex realities. Mapping it would clarify whether temporal framing unconsciously structures lay expectations of expertise, authority, and truth-telling across media.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "9e58432bce5d",
     "timestamp": "2026-05-25T10:47:15.862390+00:00",
     "schema_version": "autoresearch.v1",
