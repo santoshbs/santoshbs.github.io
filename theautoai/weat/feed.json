@@ -1,5 +1,111 @@
 [
   {
+    "id": "6a01e010b56a",
+    "timestamp": "2026-05-25T20:43:53.425994+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "veterans vs refugees on behavioral predictability",
+    "labels": {
+      "X": "veterans",
+      "Y": "refugees",
+      "A": "predictability",
+      "B": "unpredictability"
+    },
+    "canonical_keys": {
+      "X": "veterans",
+      "Y": "refugees",
+      "A": "predictability",
+      "B": "unpredictability"
+    },
+    "effect_size": 1.7089608231444433,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "veteran",
+        "soldier",
+        "sergeant",
+        "corporal",
+        "officer",
+        "marine",
+        "trooper",
+        "recruit",
+        "cadet",
+        "serviceman",
+        "combatant",
+        "commander",
+        "lieutenant",
+        "captain",
+        "major"
+      ],
+      "Y_used": [
+        "refugee",
+        "exile",
+        "immigrant",
+        "migrant",
+        "alien",
+        "foreigner",
+        "expatriate",
+        "nomad",
+        "wanderer",
+        "castaway",
+        "outcast",
+        "drifter",
+        "vagrant",
+        "transient",
+        "traveler"
+      ],
+      "A_used": [
+        "predictable",
+        "stable",
+        "consistent",
+        "regular",
+        "steady",
+        "reliable",
+        "orderly",
+        "routine",
+        "systematic",
+        "methodical",
+        "disciplined",
+        "structured",
+        "fixed",
+        "constant",
+        "uniform"
+      ],
+      "B_used": [
+        "unpredictable",
+        "unstable",
+        "chaotic",
+        "erratic",
+        "irregular",
+        "random",
+        "disorderly",
+        "haphazard",
+        "spontaneous",
+        "impulsive",
+        "uncertain",
+        "volatile",
+        "messy",
+        "confused",
+        "unplanned"
+      ]
+    },
+    "proposal": "People associate veterans with predictability more strongly than they associate refugees with predictability. This differential implicit association likely stems from cultural narratives that frame military service as a domain of strict routine, discipline, and temporal regularity, while forced displacement is consistently portrayed in media and policy discourse as inherently chaotic, unstructured, and temporally uncertain. Examining this axis is novel because implicit bias research has overwhelmingly focused on warmth, competence, or threat, neglecting epistemic expectations like behavioral or cognitive predictability. Confirming or disconfirming this association matters because it reveals how institutional roles shape lay intuitions about temporal stability, which in turn influences policy preferences regarding housing, employment, and social integration for both groups.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "617ab09535e8",
     "timestamp": "2026-05-25T19:42:47.286868+00:00",
     "schema_version": "autoresearch.v1",
