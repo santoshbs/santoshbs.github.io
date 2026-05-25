@@ -1,5 +1,111 @@
 [
   {
+    "id": "9e58432bce5d",
+    "timestamp": "2026-05-25T10:47:15.862390+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Witnesses vs Relatives on impartiality vs partiality",
+    "labels": {
+      "X": "Witnesses",
+      "Y": "Relatives",
+      "A": "impartiality",
+      "B": "partiality"
+    },
+    "canonical_keys": {
+      "X": "witnesses",
+      "Y": "relatives",
+      "A": "impartiality",
+      "B": "partiality"
+    },
+    "effect_size": 1.337618047822476,
+    "p_value": 2e-05,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "witness",
+        "observer",
+        "spectator",
+        "bystander",
+        "onlooker",
+        "monitor",
+        "viewer",
+        "reporter",
+        "journalist",
+        "informant",
+        "assessor",
+        "evaluator",
+        "auditor",
+        "inspector",
+        "examiner"
+      ],
+      "Y_used": [
+        "relative",
+        "kin",
+        "mother",
+        "father",
+        "sister",
+        "brother",
+        "aunt",
+        "uncle",
+        "cousin",
+        "daughter",
+        "son",
+        "wife",
+        "husband",
+        "parent",
+        "child"
+      ],
+      "A_used": [
+        "impartial",
+        "neutral",
+        "objective",
+        "unbiased",
+        "fair",
+        "detached",
+        "dispassionate",
+        "independent",
+        "just",
+        "equitable",
+        "balanced",
+        "disinterested",
+        "aloof",
+        "uninvolved",
+        "rational"
+      ],
+      "B_used": [
+        "partial",
+        "biased",
+        "prejudiced",
+        "subjective",
+        "unfair",
+        "slanted",
+        "partisan",
+        "discriminatory",
+        "influenced",
+        "committed",
+        "devoted",
+        "loyal",
+        "passionate",
+        "interested",
+        "favorable"
+      ]
+    },
+    "proposal": "People associate Witnesses with Impartiality more strongly than they associate Relatives with Impartiality. This proposal examines the implicit cognitive link between formal observation roles and the attribute of neutrality, contrasting them with kinship roles that are culturally coded with partiality and bias. While explicit discourse often debates the reliability of witnesses, the implicit association reveals a deeper mental model where the act of witnessing is structurally aligned with detachment, whereas family ties are aligned with advocacy or prejudice. Confirming this association would highlight how deeply the cultural script of 'blood bias' versus 'formal detachment' is embedded in public representations, with significant implications for how people intuitively evaluate evidence in legal disputes, journalism, and social conflicts.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "5feaa9e981d0",
     "timestamp": "2026-05-25T09:52:26.326892+00:00",
     "schema_version": "autoresearch.v1",
