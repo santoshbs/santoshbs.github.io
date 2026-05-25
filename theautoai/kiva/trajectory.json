@@ -1,25 +1,5 @@
 [
   {
-    "id": "female-homeownership-faster",
-    "title": "Female borrowers who mention owning their own home may fund faster.",
-    "bucket": "",
-    "birth_batch": 0,
-    "death_batch": 432,
-    "last_batch": 432,
-    "confidence": 0,
-    "alive": false
-  },
-  {
-    "id": "female-loan-amount-mention-slower",
-    "title": "Pitches from women that specify the loan amount, especially in local currency, are associated with slower funding speeds.",
-    "bucket": "",
-    "birth_batch": 0,
-    "death_batch": 435,
-    "last_batch": 435,
-    "confidence": 0,
-    "alive": false
-  },
-  {
     "id": "female-social-repayment-slower",
     "title": "Female borrowers who provide details about specific social repayment programs may fund more slowly.",
     "bucket": "",
@@ -100,11 +80,31 @@
     "alive": false
   },
   {
+    "id": "male-pitch-brevity-faster",
+    "title": "Male borrowers who write shorter pitches may fund faster than those who write longer ones.",
+    "bucket": "",
+    "birth_batch": 0,
+    "death_batch": 459,
+    "last_batch": 459,
+    "confidence": 0,
+    "alive": false
+  },
+  {
+    "id": "female-lending-partner-mention-slower",
+    "title": "Female borrowers who mention the specific name of their lending partner may fund more slowly.",
+    "bucket": "",
+    "birth_batch": 0,
+    "death_batch": 459,
+    "last_batch": 459,
+    "confidence": 0,
+    "alive": false
+  },
+  {
     "id": "female-technical-specificity-faster",
     "title": "Female borrowers who list specific products or goals beyond family welfare fund faster.",
     "bucket": "gendered_women",
     "birth_batch": 1,
-    "last_batch": 457,
+    "last_batch": 458,
     "confidence": 0.85,
     "peak_confidence": 0.85,
     "alive": true
@@ -114,7 +114,7 @@
     "title": "Female borrowers who mention benefits to their family or community fund faster.",
     "bucket": "gendered_women",
     "birth_batch": 1,
-    "last_batch": 457,
+    "last_batch": 458,
     "confidence": 1.0,
     "peak_confidence": 1.0,
     "alive": true
@@ -124,7 +124,7 @@
     "title": "Specifying the number of years a business has operated predicts faster funding regardless of gender.",
     "bucket": "faster",
     "birth_batch": 1,
-    "last_batch": 457,
+    "last_batch": 458,
     "confidence": 0.7,
     "peak_confidence": 0.7,
     "alive": true
@@ -133,8 +133,8 @@
     "id": "loan-history-faster",
     "title": "Mentioning a history of previous loan repayments predicts faster funding regardless of gender.",
     "bucket": "faster",
-    "birth_batch": 273,
-    "last_batch": 457,
+    "birth_batch": 272,
+    "last_batch": 458,
     "confidence": 1.0,
     "peak_confidence": 1.0,
     "alive": true
@@ -143,8 +143,8 @@
     "id": "concrete-business-details-faster",
     "title": "Pitches that provide concrete financial figures or specific inventory lists fund faster regardless of gender.",
     "bucket": "faster",
-    "birth_batch": 293,
-    "last_batch": 457,
+    "birth_batch": 292,
+    "last_batch": 458,
     "confidence": 0.65,
     "peak_confidence": 0.65,
     "alive": true
@@ -153,8 +153,8 @@
     "id": "family-mention-interaction",
     "title": "Mentioning family obligations and benefits has opposite effects on funding speed by gender.",
     "bucket": "interaction",
-    "birth_batch": 379,
-    "last_batch": 457,
+    "birth_batch": 378,
+    "last_batch": 458,
     "confidence": 0.77,
     "peak_confidence": 0.77,
     "alive": true
@@ -163,18 +163,18 @@
     "id": "demographic-specificity-faster",
     "title": "Providing specific demographic details, such as age or family member employment, predicts faster funding regardless of gender.",
     "bucket": "faster",
-    "birth_batch": 381,
-    "last_batch": 457,
-    "confidence": 0.55,
-    "peak_confidence": 0.55,
+    "birth_batch": 380,
+    "last_batch": 458,
+    "confidence": 0.4,
+    "peak_confidence": 0.4,
     "alive": true
   },
   {
     "id": "female-gratitude-slower",
     "title": "Female borrowers who include explicit expressions of gratitude to lenders fund more slowly.",
     "bucket": "gendered_women",
-    "birth_batch": 445,
-    "last_batch": 457,
+    "birth_batch": 444,
+    "last_batch": 458,
     "confidence": 0.6,
     "peak_confidence": 0.6,
     "alive": true
