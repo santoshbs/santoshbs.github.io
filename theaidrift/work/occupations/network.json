@@ -133,9 +133,9 @@
         "id": "43",
         "title": "Office & Administrative Support",
         "group": "office",
-        "refs": 33,
-        "signals": 21,
-        "occupations": 12
+        "refs": 36,
+        "signals": 23,
+        "occupations": 13
       },
       {
         "id": "45",
@@ -4949,6 +4949,14 @@
           "signals": 6
         },
         {
+          "id": "43-4021.00",
+          "title": "Correspondence Clerks",
+          "group": "office",
+          "refs": 2,
+          "revised": "2026-05-25",
+          "signals": 1
+        },
+        {
           "id": "43-4051.00",
           "title": "Customer Service Representatives",
           "group": "office",
@@ -4992,9 +5000,9 @@
           "id": "43-6011.00",
           "title": "Executive Secretaries and Executive Administrative Assistants",
           "group": "office",
-          "refs": 2,
+          "refs": 3,
           "revised": "2026-05-25",
-          "signals": 1
+          "signals": 2
         },
         {
           "id": "43-6012.00",
@@ -5057,6 +5065,11 @@
           "source": "43-5011.00",
           "target": "43-5011.01",
           "signal": "Guidance: Data Element 2/3: Documents and Other Reference Codes (Union) of the C"
+        },
+        {
+          "source": "43-4021.00",
+          "target": "43-6011.00",
+          "signal": "AI Overviews are coming to your Gmail at work"
         },
         {
           "source": "43-9022.00",
@@ -6380,6 +6393,7 @@
     "41-9021.00": "41",
     "41-9022.00": "41",
     "43-3051.00": "43",
+    "43-4021.00": "43",
     "43-4051.00": "43",
     "43-4061.00": "43",
     "43-4181.00": "43",
