@@ -1,5 +1,111 @@
 [
   {
+    "id": "0cfcd7190267",
+    "timestamp": "2026-05-25T09:14:21.033177+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Apprentices vs Masters on Destiny vs Skill",
+    "labels": {
+      "X": "Apprentices",
+      "Y": "Masters",
+      "A": "Destiny",
+      "B": "Skill"
+    },
+    "canonical_keys": {
+      "X": "apprentices",
+      "Y": "masters",
+      "A": "destiny",
+      "B": "skill"
+    },
+    "effect_size": -0.08972161354027454,
+    "p_value": 0.81183,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "apprentice",
+        "novice",
+        "beginner",
+        "learner",
+        "pupil",
+        "student",
+        "trainee",
+        "initiate",
+        "recruit",
+        "cadet",
+        "rookie",
+        "acolyte",
+        "protege",
+        "aspirant",
+        "starter"
+      ],
+      "Y_used": [
+        "master",
+        "expert",
+        "specialist",
+        "veteran",
+        "authority",
+        "mentor",
+        "teacher",
+        "instructor",
+        "coach",
+        "supervisor",
+        "leader",
+        "champion",
+        "ace",
+        "guru",
+        "sage"
+      ],
+      "A_used": [
+        "destiny",
+        "fate",
+        "prophecy",
+        "chosen",
+        "future",
+        "potential",
+        "hero",
+        "calling",
+        "destined",
+        "fated",
+        "miracle",
+        "legend",
+        "quest",
+        "oracle",
+        "narrative"
+      ],
+      "B_used": [
+        "practice",
+        "routine",
+        "skill",
+        "craft",
+        "training",
+        "method",
+        "discipline",
+        "work",
+        "exercise",
+        "technique",
+        "repetition",
+        "drill",
+        "study",
+        "labor",
+        "grind"
+      ]
+    },
+    "proposal": "People associate Apprentices with destiny more strongly than they associate Masters with destiny. This differential association stems from pervasive cultural narratives in literature and media that cast apprentices as 'chosen ones' or heroes on a destined path, while masters are relegated to roles of guides, obstacles, or fulfilled figures whose personal destiny has already concluded. Examining this association is novel because prior research on skill acquisition focuses on competence or confidence, neglecting how implicit schemas attribute narrative significance and future trajectory to social roles. Confirming this link would reveal how deeply narrative archetypes shape our mental representations of hierarchical learning relationships, potentially biasing us to view novices as carriers of inherent importance rather than merely incomplete experts.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "07f4eaa1318c",
     "timestamp": "2026-05-24T21:19:51.326616+00:00",
     "schema_version": "autoresearch.v1",
