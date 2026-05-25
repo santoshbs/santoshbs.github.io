@@ -133,9 +133,9 @@
         "id": "43",
         "title": "Office & Administrative Support",
         "group": "office",
-        "refs": 28,
-        "signals": 18,
-        "occupations": 10
+        "refs": 33,
+        "signals": 21,
+        "occupations": 12
       },
       {
         "id": "45",
@@ -4989,11 +4989,27 @@
           "signals": 1
         },
         {
+          "id": "43-6011.00",
+          "title": "Executive Secretaries and Executive Administrative Assistants",
+          "group": "office",
+          "refs": 2,
+          "revised": "2026-05-25",
+          "signals": 1
+        },
+        {
           "id": "43-6012.00",
           "title": "Legal Secretaries and Administrative Assistants",
           "group": "office",
+          "refs": 3,
+          "revised": "2026-05-25",
+          "signals": 2
+        },
+        {
+          "id": "43-6014.00",
+          "title": "Secretaries and Administrative Assistants, Except Legal, Medical, and Executive",
+          "group": "office",
           "refs": 2,
-          "revised": "2026-05-03",
+          "revised": "2026-05-25",
           "signals": 1
         },
         {
@@ -5022,6 +5038,21 @@
         }
       ],
       "edges": [
+        {
+          "source": "43-6011.00",
+          "target": "43-6012.00",
+          "signal": "Google Meet will take AI notes for in-person meetings too"
+        },
+        {
+          "source": "43-6011.00",
+          "target": "43-6014.00",
+          "signal": "Google Meet will take AI notes for in-person meetings too"
+        },
+        {
+          "source": "43-6012.00",
+          "target": "43-6014.00",
+          "signal": "Google Meet will take AI notes for in-person meetings too"
+        },
         {
           "source": "43-5011.00",
           "target": "43-5011.01",
@@ -6354,7 +6385,9 @@
     "43-4181.00": "43",
     "43-5011.00": "43",
     "43-5011.01": "43",
+    "43-6011.00": "43",
     "43-6012.00": "43",
+    "43-6014.00": "43",
     "43-9022.00": "43",
     "43-9041.00": "43",
     "43-9081.00": "43",
