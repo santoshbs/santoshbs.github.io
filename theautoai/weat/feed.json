@@ -1,5 +1,111 @@
 [
   {
+    "id": "617ab09535e8",
+    "timestamp": "2026-05-25T19:42:47.286868+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Writers vs Artists on Manipulation vs Authenticity",
+    "labels": {
+      "X": "Writers",
+      "Y": "Artists",
+      "A": "Manipulation/Deception",
+      "B": "Authenticity/Expression"
+    },
+    "canonical_keys": {
+      "X": "writers",
+      "Y": "artists",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 0.1532364024536311,
+    "p_value": 0.68573,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "writer",
+        "author",
+        "novelist",
+        "poet",
+        "journalist",
+        "essayist",
+        "playwright",
+        "blogger",
+        "columnist",
+        "editor",
+        "narrator",
+        "chronicler",
+        "correspondent",
+        "scribe",
+        "reporter"
+      ],
+      "Y_used": [
+        "artist",
+        "painter",
+        "sculptor",
+        "illustrator",
+        "designer",
+        "photographer",
+        "architect",
+        "craftsman",
+        "muralist",
+        "cartoonist",
+        "sketcher",
+        "potter",
+        "weaver",
+        "carver",
+        "ceramist"
+      ],
+      "A_used": [
+        "manipulation",
+        "propaganda",
+        "deception",
+        "spin",
+        "coercion",
+        "control",
+        "distortion",
+        "persuasion",
+        "influence",
+        "rhetoric",
+        "manipulative",
+        "deceptive",
+        "misleading",
+        "coercive",
+        "domination"
+      ],
+      "B_used": [
+        "authenticity",
+        "expression",
+        "revelation",
+        "emotion",
+        "aesthetic",
+        "contemplation",
+        "genuine",
+        "honest",
+        "truth",
+        "transparency",
+        "sincerity",
+        "creativity",
+        "inspiration",
+        "beauty",
+        "reflection"
+      ]
+    },
+    "proposal": "People associate Writers with Manipulation more strongly than they associate Artists with Manipulation. This differential likely arises because Western discourse culturally frames text and language as the primary instruments of propaganda, legal coercion, and narrative control, whereas visual arts are frequently stereotyped as domains of authentic self-expression, aesthetic contemplation, or emotional revelation rather than instrumental deception. This association is novel because implicit bias research has historically examined manipulation stereotypes among power-brokers like politicians or advertisers, leaving unexplored how society mentally partitions two major creative classes along axes of agency and deceit. Disconfirming or confirming this link would shed light on a latent hierarchy of perceived authenticity in cultural production, revealing whether linguistic labor is implicitly burdened with suspicions of spin and distortion that visual labor escapes.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "f6b11cb8a763",
     "timestamp": "2026-05-25T15:19:25.242252+00:00",
     "schema_version": "autoresearch.v1",
