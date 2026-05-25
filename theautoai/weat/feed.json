@@ -1,5 +1,111 @@
 [
   {
+    "id": "5feaa9e981d0",
+    "timestamp": "2026-05-25T09:52:26.326892+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Bankers vs Teachers on chaos versus order",
+    "labels": {
+      "X": "Bankers",
+      "Y": "Teachers",
+      "A": "Chaos",
+      "B": "Order"
+    },
+    "canonical_keys": {
+      "X": "bankers",
+      "Y": "teachers",
+      "A": "chaos",
+      "B": "order"
+    },
+    "effect_size": 0.9589642376758803,
+    "p_value": 0.00483,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "banker",
+        "broker",
+        "investor",
+        "financier",
+        "trader",
+        "economist",
+        "speculator",
+        "auditor",
+        "analyst",
+        "accountant",
+        "manager",
+        "director",
+        "officer",
+        "executive",
+        "entrepreneur"
+      ],
+      "Y_used": [
+        "teacher",
+        "professor",
+        "instructor",
+        "lecturer",
+        "tutor",
+        "mentor",
+        "coach",
+        "trainer",
+        "educator",
+        "scholar",
+        "academic",
+        "dean",
+        "principal",
+        "rector",
+        "supervisor"
+      ],
+      "A_used": [
+        "chaos",
+        "confusion",
+        "disorder",
+        "turmoil",
+        "anarchy",
+        "riot",
+        "unrest",
+        "violence",
+        "destruction",
+        "ruin",
+        "disaster",
+        "catastrophe",
+        "failure",
+        "collapse",
+        "crash"
+      ],
+      "B_used": [
+        "order",
+        "structure",
+        "stability",
+        "balance",
+        "harmony",
+        "peace",
+        "calm",
+        "tranquility",
+        "silence",
+        "quiet",
+        "organization",
+        "system",
+        "method",
+        "rule",
+        "law"
+      ]
+    },
+    "proposal": "People associate Bankers with chaos more strongly than they associate Teachers with chaos. This differential association captures a salient but under-examined dimension of occupational stereotyping: the mental representation of financial actors as agents of systemic volatility and unpredictability versus educators as guardians of routine and social stability. While overt attitudes often focus on greed or altruism, implicit links to chaos versus order reveal deeper intuitions about which groups are perceived as threats to or bulwarks of societal equilibrium. Confirming this association would highlight how public discourse on financial crises may have entrenched an implicit cognitive link between banking and disorder, positioning the teaching profession as the antonym of turbulence in the cultural imagination.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "0cfcd7190267",
     "timestamp": "2026-05-25T09:14:21.033177+00:00",
     "schema_version": "autoresearch.v1",
