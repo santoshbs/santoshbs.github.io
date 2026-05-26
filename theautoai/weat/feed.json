@@ -1,5 +1,111 @@
 [
   {
+    "id": "3ad1e1a22869",
+    "timestamp": "2026-05-26T16:58:20.877650+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "economists vs sociologists on detachment versus empathy",
+    "labels": {
+      "X": "economists",
+      "Y": "sociologists",
+      "A": "detachment",
+      "B": "empathy"
+    },
+    "canonical_keys": {
+      "X": "economists",
+      "Y": "sociologists",
+      "A": "detachment",
+      "B": "empathy"
+    },
+    "effect_size": 1.5999234222873713,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "economist",
+        "financier",
+        "banker",
+        "trader",
+        "analyst",
+        "statistician",
+        "mathematician",
+        "accountant",
+        "auditor",
+        "investor",
+        "broker",
+        "speculator",
+        "capitalist",
+        "entrepreneur",
+        "industrialist"
+      ],
+      "Y_used": [
+        "sociologist",
+        "anthropologist",
+        "ethnographer",
+        "historian",
+        "philosopher",
+        "counselor",
+        "therapist",
+        "activist",
+        "advocate",
+        "organizer",
+        "campaigner",
+        "volunteer",
+        "helper",
+        "supporter",
+        "coordinator"
+      ],
+      "A_used": [
+        "detached",
+        "abstract",
+        "rational",
+        "cold",
+        "objective",
+        "quantitative",
+        "calculating",
+        "logical",
+        "analytical",
+        "impersonal",
+        "mathematical",
+        "systematic",
+        "precise",
+        "neutral",
+        "unbiased"
+      ],
+      "B_used": [
+        "empathy",
+        "emotion",
+        "social",
+        "contextual",
+        "experiential",
+        "narrative",
+        "qualitative",
+        "subjective",
+        "affective",
+        "sympathetic",
+        "warm",
+        "caring",
+        "interpersonal",
+        "relational",
+        "humanistic"
+      ]
+    },
+    "proposal": "People associate economists with detachment more strongly than they associate sociologists with detachment. While both disciplines study human behavior, economists are culturally framed as abstract calculators who strip away emotion to model rational incentives, whereas sociologists are portrayed as contextually grounded observers who emphasize lived experience, social bonds, and systemic empathy. This epistemic and affective divide has not been systematically examined using implicit measures, despite shaping public trust in quantitative versus qualitative social science. Probing it matters because implicit detachment biases may influence which experts are elevated in policy debates, revealing whether we unconsciously privilege emotional distance as a marker of scientific rigor.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "6c9ba19c4ebe",
     "timestamp": "2026-05-26T14:50:17.062134+00:00",
     "schema_version": "autoresearch.v1",
