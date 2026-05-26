@@ -1,5 +1,115 @@
 [
   {
+    "id": "f612f50ec45d",
+    "timestamp": "2026-05-26T03:06:24.846603+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "farmers vs soldiers on independence vs subordination",
+    "labels": {
+      "X": "farmers",
+      "Y": "soldiers",
+      "A": "independence",
+      "B": "subordination"
+    },
+    "canonical_keys": {
+      "X": "farmers",
+      "Y": "soldiers",
+      "A": "independence",
+      "B": "subordination"
+    },
+    "effect_size": 0.9939813741671494,
+    "p_value": 0.00553,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "farmer",
+        "rancher",
+        "cultivator",
+        "grower",
+        "agrarian",
+        "planter",
+        "stockman",
+        "dairyman",
+        "vintner",
+        "horticulturist",
+        "agriculturalist",
+        "crofter",
+        "yeoman",
+        "peasant",
+        "herdsman",
+        "tiller"
+      ],
+      "Y_used": [
+        "soldier",
+        "warrior",
+        "trooper",
+        "recruit",
+        "serviceman",
+        "infantryman",
+        "ranger",
+        "cadet",
+        "combatant",
+        "fighter",
+        "defender",
+        "guard",
+        "sentinel",
+        "mercenary",
+        "legionary"
+      ],
+      "A_used": [
+        "independence",
+        "autonomy",
+        "liberty",
+        "freedom",
+        "sovereignty",
+        "individualism",
+        "volition",
+        "separation",
+        "isolation",
+        "solitude",
+        "detachment",
+        "distinctiveness",
+        "individuality",
+        "alone",
+        "solo"
+      ],
+      "B_used": [
+        "subordination",
+        "obedience",
+        "compliance",
+        "dependence",
+        "reliance",
+        "submission",
+        "conformity",
+        "discipline",
+        "regiment",
+        "hierarchy",
+        "structure",
+        "order",
+        "loyalty",
+        "duty",
+        "service",
+        "enlistment",
+        "rank",
+        "supervision"
+      ]
+    },
+    "proposal": "People associate farmers with self-reliance more strongly than they associate soldiers with self-reliance. This differential association probes the contrasting cultural archetypes of the autonomous homesteader, who survives through personal resourcefulness, and the enlisted warrior, whose identity is often constructed through subordination to a rigid chain of command. Examining this association is novel because implicit research has extensively compared military and civilian roles on dimensions like aggression or discipline, but has neglected how 'independence' is mentally allocated to agrarian versus martial identities. Confirming this would reveal a latent bias that frames agrarian labor as inherently self-sufficient while casting military service as institutionally dependent.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "ac87d84dd042",
     "timestamp": "2026-05-26T01:15:12.788289+00:00",
     "schema_version": "autoresearch.v1",
