@@ -133,9 +133,9 @@
         "id": "43",
         "title": "Office & Administrative Support",
         "group": "office",
-        "refs": 36,
-        "signals": 23,
-        "occupations": 13
+        "refs": 40,
+        "signals": 25,
+        "occupations": 15
       },
       {
         "id": "45",
@@ -5044,6 +5044,14 @@
           "signals": 1
         },
         {
+          "id": "43-9021.00",
+          "title": "Data Entry Keyers",
+          "group": "office",
+          "refs": 2,
+          "revised": "2026-05-26",
+          "signals": 1
+        },
+        {
           "id": "43-9022.00",
           "title": "Word Processors and Typists",
           "group": "office",
@@ -5057,6 +5065,14 @@
           "group": "office",
           "refs": 2,
           "revised": "2026-04-14",
+          "signals": 1
+        },
+        {
+          "id": "43-9061.00",
+          "title": "Office Clerks, General",
+          "group": "office",
+          "refs": 2,
+          "revised": "2026-05-26",
           "signals": 1
         },
         {
@@ -5083,6 +5099,11 @@
           "source": "43-6012.00",
           "target": "43-6014.00",
           "signal": "Google Meet will take AI notes for in-person meetings too"
+        },
+        {
+          "source": "43-9021.00",
+          "target": "43-9061.00",
+          "signal": "Google turns Chrome into an AI coworker for the workplace"
         },
         {
           "source": "43-5011.00",
@@ -6476,8 +6497,10 @@
     "43-6011.00": "43",
     "43-6012.00": "43",
     "43-6014.00": "43",
+    "43-9021.00": "43",
     "43-9022.00": "43",
     "43-9041.00": "43",
+    "43-9061.00": "43",
     "43-9081.00": "43",
     "45-1011.00": "45",
     "45-2091.00": "45",
