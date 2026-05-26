@@ -173,9 +173,9 @@
         "id": "53",
         "title": "Transportation & Material Moving",
         "group": "transport",
-        "refs": 92,
-        "signals": 69,
-        "occupations": 23
+        "refs": 96,
+        "signals": 71,
+        "occupations": 25
       },
       {
         "id": "55",
@@ -5657,6 +5657,14 @@
     "53": {
       "nodes": [
         {
+          "id": "53-1042.01",
+          "title": "Recycling Coordinators",
+          "group": "transport",
+          "refs": 2,
+          "revised": "2026-05-26",
+          "signals": 1
+        },
+        {
           "id": "53-1043.00",
           "title": "First-Line Supervisors of Material-Moving Machine and Vehicle Operators",
           "group": "transport",
@@ -5839,6 +5847,14 @@
           "refs": 8,
           "revised": "2026-04-28",
           "signals": 7
+        },
+        {
+          "id": "53-7081.00",
+          "title": "Refuse and Recyclable Material Collectors",
+          "group": "transport",
+          "refs": 2,
+          "revised": "2026-05-26",
+          "signals": 1
         }
       ],
       "edges": [
@@ -5906,6 +5922,11 @@
           "source": "53-3054.00",
           "target": "53-6051.07",
           "signal": "The Netherlands is the first European country to approve Tesla’s supervised Full"
+        },
+        {
+          "source": "53-1042.01",
+          "target": "53-7081.00",
+          "signal": "Houston expands multifamily recycling pilot"
         },
         {
           "source": "53-2031.00",
@@ -6511,6 +6532,7 @@
     "51-9195.03": "51",
     "51-9196.00": "51",
     "51-9199.00": "51",
+    "53-1042.01": "53",
     "53-1043.00": "53",
     "53-1049.00": "53",
     "53-2011.00": "53",
@@ -6534,6 +6556,7 @@
     "53-7062.00": "53",
     "53-7064.00": "53",
     "53-7065.00": "53",
+    "53-7081.00": "53",
     "55-1011.00": "55",
     "55-1013.00": "55",
     "55-1014.00": "55",
