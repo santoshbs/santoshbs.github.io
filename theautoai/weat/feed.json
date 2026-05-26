@@ -1,5 +1,111 @@
 [
   {
+    "id": "6c9ba19c4ebe",
+    "timestamp": "2026-05-26T14:50:17.062134+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "lawyers vs linguists on rhetorical intent",
+    "labels": {
+      "X": "lawyers",
+      "Y": "linguists",
+      "A": "manipulation/persuasion",
+      "B": "clarity/objectivity"
+    },
+    "canonical_keys": {
+      "X": "lawyers",
+      "Y": "linguists",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": -0.48622354657198,
+    "p_value": 0.19723,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "lawyer",
+        "attorney",
+        "advocate",
+        "barrister",
+        "solicitor",
+        "counselor",
+        "paralegal",
+        "prosecutor",
+        "defender",
+        "litigator",
+        "jurist",
+        "notary",
+        "arbitrator",
+        "mediator",
+        "counsel"
+      ],
+      "Y_used": [
+        "linguist",
+        "grammarian",
+        "philologist",
+        "lexicographer",
+        "semanticist",
+        "etymologist",
+        "scholar",
+        "professor",
+        "researcher",
+        "academic",
+        "educator",
+        "writer",
+        "editor",
+        "translator",
+        "interpreter"
+      ],
+      "A_used": [
+        "manipulate",
+        "deceive",
+        "trick",
+        "exploit",
+        "persuade",
+        "influence",
+        "sway",
+        "twist",
+        "distort",
+        "bluff",
+        "cheat",
+        "dishonest",
+        "cunning",
+        "crafty",
+        "deceptive"
+      ],
+      "B_used": [
+        "clarify",
+        "analyze",
+        "objective",
+        "truth",
+        "precise",
+        "factual",
+        "accurate",
+        "clear",
+        "honest",
+        "straightforward",
+        "direct",
+        "neutral",
+        "impartial",
+        "transparent",
+        "logical"
+      ]
+    },
+    "proposal": "People associate lawyers with manipulation more strongly than they associate linguists with manipulation. Although both groups work extensively with language, cultural discourse casts lawyers as strategic persuaders who may twist words for advantage, whereas linguists are viewed as objective scholars analyzing structure without agenda. Testing this implicit association is novel because it contrasts a profession defined by advocacy against one defined by analysis, probing whether the public implicitly links legal expertise with rhetorical manipulation rather than linguistic clarity. Confirming this would shed light on how societal trust in language-based professions is partitioned between those seen as using language as a weapon versus those seen as using language as a mirror.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "f612f50ec45d",
     "timestamp": "2026-05-26T03:06:24.846603+00:00",
     "schema_version": "autoresearch.v1",
