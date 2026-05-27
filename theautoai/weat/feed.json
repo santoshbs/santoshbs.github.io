@@ -1,5 +1,111 @@
 [
   {
+    "id": "3339bec032b9",
+    "timestamp": "2026-05-27T13:42:16.871271+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "journalists vs merchants on objectivity vs self-interest",
+    "labels": {
+      "X": "journalists",
+      "Y": "merchants",
+      "A": "objectivity",
+      "B": "self_interest"
+    },
+    "canonical_keys": {
+      "X": "journalists",
+      "Y": "merchants",
+      "A": "objectivity",
+      "B": ""
+    },
+    "effect_size": 0.03870672115250003,
+    "p_value": 0.91648,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "reporter",
+        "correspondent",
+        "anchor",
+        "columnist",
+        "editor",
+        "broadcaster",
+        "journalist",
+        "commentator",
+        "publisher",
+        "writer",
+        "newsman",
+        "newsreader",
+        "cameraman",
+        "stringer",
+        "newscaster"
+      ],
+      "Y_used": [
+        "shopkeeper",
+        "vendor",
+        "retailer",
+        "salesman",
+        "trader",
+        "dealer",
+        "broker",
+        "merchant",
+        "businessman",
+        "storekeeper",
+        "hawker",
+        "peddler",
+        "shopowner",
+        "clerk",
+        "saleswoman"
+      ],
+      "A_used": [
+        "unbiased",
+        "neutral",
+        "factual",
+        "truthful",
+        "objective",
+        "honest",
+        "impartial",
+        "accurate",
+        "fair",
+        "balanced",
+        "reliable",
+        "credible",
+        "genuine",
+        "authentic",
+        "direct"
+      ],
+      "B_used": [
+        "biased",
+        "partisan",
+        "greedy",
+        "manipulative",
+        "dishonest",
+        "slanted",
+        "opinionated",
+        "commercial",
+        "pushy",
+        "selfish",
+        "deceptive",
+        "persuasive",
+        "mercenary",
+        "corrupt",
+        "unfair"
+      ]
+    },
+    "proposal": "People associate journalists with objectivity more strongly than they associate merchants with objectivity. This association is novel as it contrasts two broad professional categories defined by their social function: one tasked with informing the public about reality, and the other engaged in the exchange of goods for profit. It is interesting because it probes whether the public implicitly links the role of reporting with disinterested truth-seeking, while viewing commerce as inherently driven by self-interest and persuasion, potentially coloring how information and trade are perceived in public discourse. Confirming this association would highlight a deep-seated mental distinction between the epistemic authority of the press and the instrumental motivation of markets, while a null or reversed result could suggest growing cynicism about media neutrality or a romanticized view of honest trade.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "6577a56df05c",
     "timestamp": "2026-05-27T10:45:22.826732+00:00",
     "schema_version": "autoresearch.v1",
