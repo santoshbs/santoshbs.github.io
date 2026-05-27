@@ -1,5 +1,111 @@
 [
   {
+    "id": "c5abc8c10d36",
+    "timestamp": "2026-05-27T21:26:06.374457+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "journalists vs soldiers on impartiality vs partisanship",
+    "labels": {
+      "X": "journalists",
+      "Y": "soldiers",
+      "A": "impartiality",
+      "B": "partisanship"
+    },
+    "canonical_keys": {
+      "X": "journalists",
+      "Y": "soldiers",
+      "A": "impartiality",
+      "B": "partisanship"
+    },
+    "effect_size": 0.4323605595514639,
+    "p_value": 0.25728,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "journalist",
+        "reporter",
+        "correspondent",
+        "anchor",
+        "broadcaster",
+        "editor",
+        "publisher",
+        "columnist",
+        "newscaster",
+        "commentator",
+        "photographer",
+        "director",
+        "producer",
+        "host",
+        "writer"
+      ],
+      "Y_used": [
+        "soldier",
+        "warrior",
+        "fighter",
+        "combatant",
+        "veteran",
+        "infantryman",
+        "marine",
+        "sailor",
+        "pilot",
+        "commander",
+        "general",
+        "sergeant",
+        "captain",
+        "lieutenant",
+        "colonel"
+      ],
+      "A_used": [
+        "impartial",
+        "neutral",
+        "objective",
+        "unbiased",
+        "detached",
+        "fair",
+        "balanced",
+        "disinterested",
+        "independent",
+        "unprejudiced",
+        "evenhanded",
+        "indifferent",
+        "aloof",
+        "distant",
+        "uncommitted"
+      ],
+      "B_used": [
+        "partisan",
+        "loyal",
+        "committed",
+        "dedicated",
+        "devoted",
+        "faithful",
+        "zealous",
+        "steadfast",
+        "ardent",
+        "fervent",
+        "biased",
+        "partial",
+        "supportive",
+        "attached",
+        "bonded"
+      ]
+    },
+    "proposal": "People associate journalists with impartiality more strongly than they associate soldiers with impartiality. Although contemporary discourse frequently highlights media bias, the implicit role prototype for journalists likely retains a stronger linkage to neutrality and disinterested observation than the category of soldiers, which is structurally defined by partisan allegiance and loyalty to a specific cause. Probing this association is novel because cross-occupational comparisons rarely pit the watchdog against the combatant on normative traits, and it matters for understanding how public mental models distinguish between institutional roles that demand detachment versus those that require commitment, even when trust in both categories is strained.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "232ca66a0b3d",
     "timestamp": "2026-05-27T20:15:48.210383+00:00",
     "schema_version": "autoresearch.v1",
