@@ -1,5 +1,111 @@
 [
   {
+    "id": "5eeda3da3d9b",
+    "timestamp": "2026-05-27T22:49:27.104627+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "diplomats vs merchants on patience versus speed",
+    "labels": {
+      "X": "diplomats",
+      "Y": "merchants",
+      "A": "patience",
+      "B": "speed"
+    },
+    "canonical_keys": {
+      "X": "diplomats",
+      "Y": "merchants",
+      "A": "patience",
+      "B": "speed"
+    },
+    "effect_size": 0.6359371576077643,
+    "p_value": 0.08744,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "diplomat",
+        "ambassador",
+        "envoy",
+        "negotiator",
+        "consul",
+        "emissary",
+        "delegate",
+        "minister",
+        "politician",
+        "statesman",
+        "official",
+        "representative",
+        "mediator",
+        "counselor",
+        "advisor"
+      ],
+      "Y_used": [
+        "merchant",
+        "trader",
+        "dealer",
+        "vendor",
+        "retailer",
+        "wholesaler",
+        "salesman",
+        "broker",
+        "capitalist",
+        "tycoon",
+        "shopkeeper",
+        "peddler",
+        "hawker",
+        "entrepreneur",
+        "marketer"
+      ],
+      "A_used": [
+        "patient",
+        "gradual",
+        "steady",
+        "calm",
+        "deliberate",
+        "thoughtful",
+        "slow",
+        "careful",
+        "measured",
+        "methodical",
+        "persistent",
+        "enduring",
+        "sustained",
+        "reflective",
+        "cautious"
+      ],
+      "B_used": [
+        "fast",
+        "quick",
+        "rapid",
+        "swift",
+        "immediate",
+        "instant",
+        "hasty",
+        "hurried",
+        "rushed",
+        "impulsive",
+        "fleeting",
+        "temporary",
+        "brief",
+        "short",
+        "efficient"
+      ]
+    },
+    "proposal": "People associate diplomats with strategic patience more strongly than they associate merchants with strategic patience. This differential implicit association taps into contemporary discourse around international relations versus market-driven commerce, where diplomats are culturally framed as long-term negotiators who prioritize stability and gradual consensus, while merchants are stereotyped as short-term profit maximizers who prioritize speed and transactional efficiency. Examining this bias is novel because implicit associations typically focus on competence or warmth, yet patience is a critical yet under-theorized dimension in cross-group comparisons. Confirming this association would reveal how institutional roles shape lay mental models of temporal orientation, with implications for public trust in foreign policy versus economic policy.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "c5abc8c10d36",
     "timestamp": "2026-05-27T21:26:06.374457+00:00",
     "schema_version": "autoresearch.v1",
