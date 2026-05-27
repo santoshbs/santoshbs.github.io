@@ -1,15 +1,5 @@
 [
   {
-    "id": "female-education-fees-slower",
-    "title": "Mentioning specific educational fees, such as college registration, may decelerate funding for women.",
-    "bucket": "",
-    "birth_batch": 0,
-    "death_batch": 468,
-    "last_batch": 468,
-    "confidence": 0,
-    "alive": false
-  },
-  {
     "id": "female-geographic-specificity-slower",
     "title": "Female borrowers who mention specific towns or districts may fund more slowly.",
     "bucket": "",
@@ -100,11 +90,21 @@
     "alive": false
   },
   {
+    "id": "male-process-detail-slower",
+    "title": "Pitches from men that describe specific operational details, such as door-to-door sales or specific repair materials, tend to decelerate funding.",
+    "bucket": "",
+    "birth_batch": 0,
+    "death_batch": 489,
+    "last_batch": 489,
+    "confidence": 0,
+    "alive": false
+  },
+  {
     "id": "female-technical-specificity-faster",
     "title": "Female borrowers who list specific products or goals beyond family welfare fund faster.",
     "bucket": "gendered_women",
     "birth_batch": 1,
-    "last_batch": 488,
+    "last_batch": 489,
     "confidence": 0.89,
     "peak_confidence": 0.89,
     "alive": true
@@ -114,7 +114,7 @@
     "title": "Female borrowers who mention benefits to their family or community fund faster.",
     "bucket": "gendered_women",
     "birth_batch": 1,
-    "last_batch": 488,
+    "last_batch": 489,
     "confidence": 1.0,
     "peak_confidence": 1.0,
     "alive": true
@@ -124,7 +124,7 @@
     "title": "Specifying the number of years a business has operated predicts faster funding regardless of gender.",
     "bucket": "faster",
     "birth_batch": 1,
-    "last_batch": 488,
+    "last_batch": 489,
     "confidence": 0.7,
     "peak_confidence": 0.7,
     "alive": true
@@ -133,8 +133,8 @@
     "id": "loan-history-faster",
     "title": "Mentioning a history of previous loan repayments predicts faster funding regardless of gender.",
     "bucket": "faster",
-    "birth_batch": 242,
-    "last_batch": 488,
+    "birth_batch": 241,
+    "last_batch": 489,
     "confidence": 1.0,
     "peak_confidence": 1.0,
     "alive": true
@@ -143,8 +143,8 @@
     "id": "concrete-business-details-faster",
     "title": "Pitches that provide concrete financial figures or specific inventory lists fund faster regardless of gender.",
     "bucket": "faster",
-    "birth_batch": 262,
-    "last_batch": 488,
+    "birth_batch": 261,
+    "last_batch": 489,
     "confidence": 0.69,
     "peak_confidence": 0.69,
     "alive": true
@@ -153,28 +153,28 @@
     "id": "family-mention-interaction",
     "title": "Mentioning family obligations and benefits has opposite effects on funding speed by gender.",
     "bucket": "interaction",
-    "birth_batch": 348,
-    "last_batch": 488,
-    "confidence": 0.82,
-    "peak_confidence": 0.82,
+    "birth_batch": 347,
+    "last_batch": 489,
+    "confidence": 0.87,
+    "peak_confidence": 0.87,
     "alive": true
   },
   {
-    "id": "female-institutional-detail-slower",
-    "title": "Female borrowers who mention local currency amounts or specific institutional affiliations fund more slowly.",
-    "bucket": "gendered_women",
-    "birth_batch": 468,
-    "last_batch": 488,
-    "confidence": 0.66,
-    "peak_confidence": 0.66,
+    "id": "institutional-detail-slower",
+    "title": "Mentioning local currency amounts or specific institutional affiliations predicts slower funding regardless of gender.",
+    "bucket": "slower",
+    "birth_batch": 467,
+    "last_batch": 489,
+    "confidence": 0.7,
+    "peak_confidence": 0.7,
     "alive": true
   },
   {
-    "id": "male-process-detail-slower",
-    "title": "Male borrowers who provide detailed narrative explanations of business processes fund more slowly.",
-    "bucket": "gendered_men",
-    "birth_batch": 470,
-    "last_batch": 488,
+    "id": "child-demographics-slower",
+    "title": "Providing specific demographic details about children, such as number and schooling status, predicts slower funding regardless of gender.",
+    "bucket": "slower",
+    "birth_batch": 489,
+    "last_batch": 489,
     "confidence": 0.6,
     "peak_confidence": 0.6,
     "alive": true
