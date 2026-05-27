@@ -1,5 +1,111 @@
 [
   {
+    "id": "11c882726c96",
+    "timestamp": "2026-05-27T05:39:02.781560+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "investors vs innovators on financial prudence versus experimentation",
+    "labels": {
+      "X": "investors",
+      "Y": "innovators",
+      "A": "financial prudence",
+      "B": "experimentation"
+    },
+    "canonical_keys": {
+      "X": "investors",
+      "Y": "innovators",
+      "A": "",
+      "B": "experimentation"
+    },
+    "effect_size": 1.2513052002241256,
+    "p_value": 0.00028,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "investor",
+        "financier",
+        "banker",
+        "trader",
+        "broker",
+        "capitalist",
+        "shareholder",
+        "speculator",
+        "lender",
+        "sponsor",
+        "backer",
+        "patron",
+        "stakeholder",
+        "dealer",
+        "underwriter"
+      ],
+      "Y_used": [
+        "innovator",
+        "inventor",
+        "creator",
+        "pioneer",
+        "designer",
+        "engineer",
+        "scientist",
+        "developer",
+        "architect",
+        "technologist",
+        "entrepreneur",
+        "maker",
+        "builder",
+        "founder",
+        "artist"
+      ],
+      "A_used": [
+        "prudent",
+        "cautious",
+        "careful",
+        "conservative",
+        "steady",
+        "secure",
+        "safe",
+        "reliable",
+        "stable",
+        "measured",
+        "disciplined",
+        "sensible",
+        "wise",
+        "thrifty",
+        "economical"
+      ],
+      "B_used": [
+        "experimental",
+        "risky",
+        "bold",
+        "daring",
+        "adventurous",
+        "reckless",
+        "wild",
+        "crazy",
+        "speculative",
+        "volatile",
+        "uncertain",
+        "unpredictable",
+        "innovative",
+        "creative",
+        "novel"
+      ]
+    },
+    "proposal": "People associate investors with financial prudence more strongly than they associate innovators with financial prudence. This differential implicit association captures a salient but underexamined tension in contemporary economic discourse, where capital allocators are automatically mentally coded as cautious stewards of resources while idea generators are coded as boundary-pushing experimenters. While social psychology has extensively mapped warmth and competence stereotypes, no prior work has systematically measured the automatic mental pairing of funding versus creating roles along the prudence-experimentation axis. Demonstrating this implicit bias would clarify how institutional positions shape automatic risk perceptions, carrying direct implications for venture-capital decision-making, startup hiring practices, and how society mentally partitions safe capital from creative risk-taking.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "7a412862cb2b",
     "timestamp": "2026-05-27T00:21:21.052472+00:00",
     "schema_version": "autoresearch.v1",
