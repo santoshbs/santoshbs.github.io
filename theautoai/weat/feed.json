@@ -1,5 +1,111 @@
 [
   {
+    "id": "68abd2062ed8",
+    "timestamp": "2026-05-27T18:58:27.176998+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Rulers vs Subjects on Social Elevation",
+    "labels": {
+      "X": "Rulers",
+      "Y": "Subjects",
+      "A": "Nobility",
+      "B": "Commonness"
+    },
+    "canonical_keys": {
+      "X": "rulers",
+      "Y": "subjects",
+      "A": "nobility",
+      "B": "commonness"
+    },
+    "effect_size": 1.5748176031788783,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "king",
+        "queen",
+        "emperor",
+        "monarch",
+        "sovereign",
+        "president",
+        "governor",
+        "prince",
+        "regent",
+        "chieftain",
+        "ruler",
+        "leader",
+        "dictator",
+        "tyrant",
+        "autocrat"
+      ],
+      "Y_used": [
+        "citizen",
+        "subject",
+        "serf",
+        "villager",
+        "tenant",
+        "laborer",
+        "worker",
+        "employee",
+        "follower",
+        "vassal",
+        "retainer",
+        "public",
+        "voter",
+        "resident",
+        "inhabitant"
+      ],
+      "A_used": [
+        "noble",
+        "aristocrat",
+        "patrician",
+        "grand",
+        "dignity",
+        "virtue",
+        "magnificence",
+        "exalted",
+        "august",
+        "majestic",
+        "splendid",
+        "elite",
+        "highborn",
+        "lordly",
+        "regal"
+      ],
+      "B_used": [
+        "common",
+        "ordinary",
+        "base",
+        "lowly",
+        "vulgar",
+        "humble",
+        "rustic",
+        "simple",
+        "plebeian",
+        "proletarian",
+        "coarse",
+        "drab",
+        "plain",
+        "mediocre",
+        "dull"
+      ]
+    },
+    "proposal": "People associate rulers with nobility more strongly than they associate subjects with nobility. This differential implicit association reflects the enduring cultural residue of deference hierarchies, where authority is subconsciously linked to moral and aesthetic elevation regardless of contemporary political systems. Examining this reveals whether democratic norms have fully displaced older aristocratic scripts in public cognition. Confirming this bias would highlight a persistent gap between explicit egalitarian values and implicit mental representations of social rank.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "b3f8c9454822",
     "timestamp": "2026-05-27T17:58:36.758477+00:00",
     "schema_version": "autoresearch.v1",
