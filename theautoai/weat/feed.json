@@ -1,5 +1,111 @@
 [
   {
+    "id": "b3f8c9454822",
+    "timestamp": "2026-05-27T17:58:36.758477+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "spectators vs participants on epistemic_clarity",
+    "labels": {
+      "X": "spectators",
+      "Y": "participants",
+      "A": "omniscience",
+      "B": "limited_knowledge"
+    },
+    "canonical_keys": {
+      "X": "spectators",
+      "Y": "participants",
+      "A": "omniscience",
+      "B": ""
+    },
+    "effect_size": 0.08154705964182604,
+    "p_value": 0.83059,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "spectator",
+        "observer",
+        "viewer",
+        "bystander",
+        "onlooker",
+        "audience",
+        "witness",
+        "beholder",
+        "fan",
+        "attendee",
+        "reader",
+        "listener",
+        "tourist",
+        "passerby",
+        "monitor"
+      ],
+      "Y_used": [
+        "participant",
+        "actor",
+        "player",
+        "performer",
+        "agent",
+        "doer",
+        "operator",
+        "practitioner",
+        "activist",
+        "contender",
+        "rival",
+        "worker",
+        "volunteer",
+        "athlete",
+        "driver"
+      ],
+      "A_used": [
+        "omniscient",
+        "knowledgeable",
+        "aware",
+        "clear",
+        "objective",
+        "truthful",
+        "informed",
+        "understanding",
+        "perceptive",
+        "insightful",
+        "accurate",
+        "lucid",
+        "cognizant",
+        "enlightened",
+        "wise"
+      ],
+      "B_used": [
+        "ignorant",
+        "confused",
+        "biased",
+        "limited",
+        "restricted",
+        "blind",
+        "unaware",
+        "misinformed",
+        "prejudiced",
+        "unclear",
+        "subjective",
+        "partial",
+        "narrow",
+        "misguided",
+        "uncertain"
+      ]
+    },
+    "proposal": "People associate spectators with omniscience more strongly than they associate participants with omniscience. This proposal examines the implicit epistemic bias that attributes greater knowledge, clarity, or truth to the detached observer role compared to the engaged actor role. While discourse often critiques spectators for passivity, this implicit association may reflect a deeper cultural intuition that distance grants a superior vantage point or 'god's eye view,' whereas participants are mentally represented as limited by their immersion, bias, and restricted perspective. Testing this association is novel, as implicit research has rarely compared observer versus actor roles on epistemic attributes, and disconfirming this bias could reveal that people actually privilege agency and situated experience over detached observation.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "3339bec032b9",
     "timestamp": "2026-05-27T13:42:16.871271+00:00",
     "schema_version": "autoresearch.v1",
