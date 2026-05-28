@@ -157,9 +157,9 @@
         "id": "49",
         "title": "Installation, Maintenance, & Repair",
         "group": "maintenance",
-        "refs": 27,
-        "signals": 16,
-        "occupations": 11
+        "refs": 33,
+        "signals": 19,
+        "occupations": 14
       },
       {
         "id": "51",
@@ -5363,6 +5363,14 @@
           "signals": 2
         },
         {
+          "id": "49-2094.00",
+          "title": "Electrical and Electronics Repairers, Commercial and Industrial Equipment",
+          "group": "maintenance",
+          "refs": 2,
+          "revised": "2026-05-28",
+          "signals": 1
+        },
+        {
           "id": "49-2095.00",
           "title": "Electrical and Electronics Repairers, Powerhouse, Substation, and Relay",
           "group": "maintenance",
@@ -5403,6 +5411,22 @@
           "signals": 2
         },
         {
+          "id": "49-9041.00",
+          "title": "Industrial Machinery Mechanics",
+          "group": "maintenance",
+          "refs": 2,
+          "revised": "2026-05-28",
+          "signals": 1
+        },
+        {
+          "id": "49-9043.00",
+          "title": "Maintenance Workers, Machinery",
+          "group": "maintenance",
+          "refs": 2,
+          "revised": "2026-05-28",
+          "signals": 1
+        },
+        {
           "id": "49-9052.00",
           "title": "Telecommunications Line Installers and Repairers",
           "group": "maintenance",
@@ -5429,6 +5453,21 @@
           "source": "49-2022.00",
           "target": "49-9052.00",
           "signal": "CBRE, Meta launch data center trade skills training program"
+        },
+        {
+          "source": "49-2094.00",
+          "target": "49-9041.00",
+          "signal": "Balemaster illumen.X: Proactive IIoT Monitoring & Predictive Maintenance for Max"
+        },
+        {
+          "source": "49-2094.00",
+          "target": "49-9043.00",
+          "signal": "Balemaster illumen.X: Proactive IIoT Monitoring & Predictive Maintenance for Max"
+        },
+        {
+          "source": "49-9041.00",
+          "target": "49-9043.00",
+          "signal": "Balemaster illumen.X: Proactive IIoT Monitoring & Predictive Maintenance for Max"
         },
         {
           "source": "49-1011.00",
@@ -6570,11 +6609,14 @@
     "49-2011.00": "49",
     "49-2022.00": "49",
     "49-2091.00": "49",
+    "49-2094.00": "49",
     "49-2095.00": "49",
     "49-2097.00": "49",
     "49-3011.00": "49",
     "49-3031.00": "49",
     "49-9021.00": "49",
+    "49-9041.00": "49",
+    "49-9043.00": "49",
     "49-9052.00": "49",
     "49-9099.01": "49",
     "51-1011.00": "51",
