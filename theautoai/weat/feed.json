@@ -1,5 +1,111 @@
 [
   {
+    "id": "575dd82a1129",
+    "timestamp": "2026-05-28T17:10:49.204872+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "menders vs inventors on pragmatism versus novelty",
+    "labels": {
+      "X": "menders",
+      "Y": "inventors",
+      "A": "pragmatism",
+      "B": "novelty"
+    },
+    "canonical_keys": {
+      "X": "menders",
+      "Y": "inventors",
+      "A": "pragmatism",
+      "B": "novelty"
+    },
+    "effect_size": 1.6166327003021226,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "mechanic",
+        "technician",
+        "plumber",
+        "carpenter",
+        "tailor",
+        "cobbler",
+        "restorer",
+        "conservator",
+        "maintainer",
+        "fixer",
+        "mender",
+        "repairer",
+        "handyman",
+        "caretaker",
+        "preserver"
+      ],
+      "Y_used": [
+        "inventor",
+        "creator",
+        "innovator",
+        "designer",
+        "architect",
+        "engineer",
+        "developer",
+        "programmer",
+        "pioneer",
+        "founder",
+        "originator",
+        "dreamer",
+        "artist",
+        "composer",
+        "theorist"
+      ],
+      "A_used": [
+        "pragmatic",
+        "practical",
+        "functional",
+        "utilitarian",
+        "realistic",
+        "grounded",
+        "sensible",
+        "rational",
+        "efficient",
+        "productive",
+        "useful",
+        "durable",
+        "stable",
+        "reliable",
+        "steady"
+      ],
+      "B_used": [
+        "innovative",
+        "creative",
+        "novel",
+        "original",
+        "imaginative",
+        "visionary",
+        "futuristic",
+        "experimental",
+        "theoretical",
+        "abstract",
+        "conceptual",
+        "artistic",
+        "unconventional",
+        "radical",
+        "revolutionary"
+      ]
+    },
+    "proposal": "People associate menders with pragmatism more strongly than they associate inventors with pragmatism. This proposal examines whether there is an implicit bias favoring the perceived practicality and groundedness of those who maintain and repair existing systems over those who originate new ones. Such a bias would reveal a cultural valuation of utility and stability over novelty, shedding light on why maintenance roles are often less celebrated than creative ones. Confirming this association would challenge the assumption that society implicitly prioritizes innovation, suggesting instead a deep-seated respect for the pragmatic skills required to sustain the status quo.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "1f317f0aacfc",
     "timestamp": "2026-05-28T15:37:46.948632+00:00",
     "schema_version": "autoresearch.v1",
