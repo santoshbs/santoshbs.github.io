@@ -1,5 +1,111 @@
 [
   {
+    "id": "79fa685f8074",
+    "timestamp": "2026-05-28T03:22:26.059815+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "rebels vs criminals on motivation",
+    "labels": {
+      "X": "rebels",
+      "Y": "criminals",
+      "A": "righteous cause",
+      "B": "self interest"
+    },
+    "canonical_keys": {
+      "X": "rebels",
+      "Y": "criminals",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 1.70543055881213,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "rebel",
+        "activist",
+        "revolutionary",
+        "dissident",
+        "protester",
+        "insurgent",
+        "partisan",
+        "mutineer",
+        "defier",
+        "separatist",
+        "nationalist",
+        "reformer",
+        "radical",
+        "resister",
+        "demonstrator"
+      ],
+      "Y_used": [
+        "criminal",
+        "offender",
+        "felon",
+        "convict",
+        "thief",
+        "burglar",
+        "vandal",
+        "hijacker",
+        "murderer",
+        "assassin",
+        "arsonist",
+        "smuggler",
+        "gangster",
+        "crook",
+        "outlaw"
+      ],
+      "A_used": [
+        "moral",
+        "fair",
+        "just",
+        "noble",
+        "virtuous",
+        "honorable",
+        "principled",
+        "altruistic",
+        "righteous",
+        "generous",
+        "selfless",
+        "patriotic",
+        "loyal",
+        "brave",
+        "courageous"
+      ],
+      "B_used": [
+        "selfish",
+        "greedy",
+        "malicious",
+        "wicked",
+        "evil",
+        "corrupt",
+        "dishonest",
+        "harmful",
+        "destructive",
+        "reckless",
+        "violent",
+        "cruel",
+        "brutal",
+        "ruthless",
+        "callous"
+      ]
+    },
+    "proposal": "People associate rebels with righteous cause more strongly than they associate criminals with righteous cause. This differential implicit association probes a fundamental framing distinction in public cognition: whether transgressors of the law are mentally represented as motivated by moral or political principles versus self-interest or malice. Confirming this association would reveal that the label 'rebel' carries a latent halo of ideological legitimacy that is systematically absent from the category 'criminal', despite both groups engaging in norm-violating behavior. This matters for understanding how media and discourse communities legitimize political dissent while delegitimizing common deviance, shaping public support for different forms of social action. The proposal is novel, as prior work has contrasted rebels with loyalists or authorities, but rarely examines the implicit boundary between rebels and criminals on the dimension of perceived moral purpose.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "5eeda3da3d9b",
     "timestamp": "2026-05-27T22:49:27.104627+00:00",
     "schema_version": "autoresearch.v1",
