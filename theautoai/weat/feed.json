@@ -1,5 +1,111 @@
 [
   {
+    "id": "2f7df48d71e7",
+    "timestamp": "2026-05-28T13:41:55.289025+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "migrants vs settlers on adaptability versus stability",
+    "labels": {
+      "X": "migrants",
+      "Y": "settlers",
+      "A": "adaptability",
+      "B": "stability"
+    },
+    "canonical_keys": {
+      "X": "migrants",
+      "Y": "settlers",
+      "A": "adaptability",
+      "B": "stability"
+    },
+    "effect_size": 0.29498879432688235,
+    "p_value": 0.4319,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "migrant",
+        "immigrant",
+        "refugee",
+        "exile",
+        "nomad",
+        "traveler",
+        "wanderer",
+        "expatriate",
+        "sojourner",
+        "transient",
+        "newcomer",
+        "outsider",
+        "foreigner",
+        "guest",
+        "drifter"
+      ],
+      "Y_used": [
+        "settler",
+        "colonist",
+        "resident",
+        "dweller",
+        "inhabitant",
+        "local",
+        "homeowner",
+        "landowner",
+        "citizen",
+        "villager",
+        "native",
+        "homesteader",
+        "planter",
+        "occupant",
+        "tenant"
+      ],
+      "A_used": [
+        "adaptable",
+        "flexible",
+        "resilient",
+        "versatile",
+        "agile",
+        "pliable",
+        "malleable",
+        "elastic",
+        "supple",
+        "ductile",
+        "dynamic",
+        "fluid",
+        "shifting",
+        "adjustable",
+        "responsive"
+      ],
+      "B_used": [
+        "stable",
+        "rigid",
+        "fixed",
+        "steady",
+        "firm",
+        "solid",
+        "static",
+        "unchanging",
+        "immovable",
+        "anchored",
+        "enduring",
+        "lasting",
+        "consistent",
+        "permanent",
+        "rooted"
+      ]
+    },
+    "proposal": "People associate migrants with adaptability more strongly than they associate settlers with adaptability. This differential implicit association captures a pervasive but unexamined mental representation of movement versus establishment in public discourse. While explicit narratives often frame migrants as burdens or threats, implicit cognition may link the category of 'migrants' to traits of flexibility, resilience, and rapid adjustment simply due to the behavioral entailments of displacement and transition. In contrast, 'settlers' are likely associated with stability, rootedness, and permanence, making adaptability a weaker implicit link. Probing this association is novel because prior research has focused on explicit stereotypes regarding threat or warmth, or on specific subgroups like expatriates, but has not tested the fundamental implicit contrast between mobility and stasis on a dimension like adaptability. Confirming this association would shift how we understand the cognitive roots of attitudes toward integration, suggesting that even negative explicit biases coexist with an implicit recognition of migrants' adaptive capacities, or conversely, that 'adaptability' is culturally coded as a transient quality rather than a enduring virtue.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "79fa685f8074",
     "timestamp": "2026-05-28T03:22:26.059815+00:00",
     "schema_version": "autoresearch.v1",
