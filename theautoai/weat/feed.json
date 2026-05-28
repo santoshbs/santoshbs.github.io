@@ -1,5 +1,111 @@
 [
   {
+    "id": "1f317f0aacfc",
+    "timestamp": "2026-05-28T15:37:46.948632+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Diplomats vs Journalists on information disclosure",
+    "labels": {
+      "X": "Diplomats",
+      "Y": "Journalists",
+      "A": "Secrecy",
+      "B": "Transparency"
+    },
+    "canonical_keys": {
+      "X": "diplomats",
+      "Y": "journalists",
+      "A": "secrecy",
+      "B": "transparency"
+    },
+    "effect_size": -0.06404805901084679,
+    "p_value": 0.86583,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "diplomat",
+        "ambassador",
+        "envoy",
+        "statesman",
+        "negotiator",
+        "consul",
+        "delegate",
+        "representative",
+        "emissary",
+        "liaison",
+        "minister",
+        "official",
+        "counselor",
+        "secretary",
+        "commissioner"
+      ],
+      "Y_used": [
+        "journalist",
+        "reporter",
+        "correspondent",
+        "anchor",
+        "editor",
+        "writer",
+        "columnist",
+        "cameraman",
+        "newscaster",
+        "stringer",
+        "copywriter",
+        "newswriter",
+        "subeditor",
+        "publicist",
+        "blogger"
+      ],
+      "A_used": [
+        "secret",
+        "covert",
+        "classified",
+        "confidential",
+        "hidden",
+        "private",
+        "stealthy",
+        "hush",
+        "quiet",
+        "undercover",
+        "clandestine",
+        "encrypted",
+        "cipher",
+        "code",
+        "vault"
+      ],
+      "B_used": [
+        "transparency",
+        "reveal",
+        "expose",
+        "uncover",
+        "disclose",
+        "publish",
+        "broadcast",
+        "announce",
+        "proclaim",
+        "declare",
+        "public",
+        "open",
+        "clear",
+        "visible",
+        "evident"
+      ]
+    },
+    "proposal": "People associate diplomats with secrecy more strongly than they associate journalists with secrecy. While both professions handle sensitive information, public discourse frequently frames diplomacy around state secrets, classified negotiations, and covert maneuvering, whereas journalism is culturally idealized around transparency, revelation, and the exposure of hidden truths. This differential implicit association is novel because, although researchers have studied media trust or diplomatic competence, the specific cognitive contrast between these two central information brokers on the dimension of secrecy has not been explicitly probed. Examining this association is important as it reveals how the public mentally delineates the epistemic roles of the diplomatic corps versus the press corps, particularly in an era defined by leaks and 'off-the-record' governance.",
+    "iterations": 3,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "2f7df48d71e7",
     "timestamp": "2026-05-28T13:41:55.289025+00:00",
     "schema_version": "autoresearch.v1",
