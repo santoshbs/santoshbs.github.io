@@ -77,9 +77,9 @@
         "id": "29",
         "title": "Healthcare Practitioners & Technical",
         "group": "healthcare",
-        "refs": 73,
-        "signals": 49,
-        "occupations": 25
+        "refs": 77,
+        "signals": 52,
+        "occupations": 26
       },
       {
         "id": "31",
@@ -4244,6 +4244,14 @@
           "signals": 2
         },
         {
+          "id": "29-1051.00",
+          "title": "Pharmacists",
+          "group": "healthcare",
+          "refs": 2,
+          "revised": "2026-05-29",
+          "signals": 1
+        },
+        {
           "id": "29-1071.00",
           "title": "Physician Assistants",
           "group": "healthcare",
@@ -4279,9 +4287,9 @@
           "id": "29-1171.00",
           "title": "Nurse Practitioners",
           "group": "healthcare",
-          "refs": 4,
-          "revised": "2026-04-30",
-          "signals": 3
+          "refs": 5,
+          "revised": "2026-05-29",
+          "signals": 4
         },
         {
           "id": "29-1212.00",
@@ -4295,9 +4303,9 @@
           "id": "29-1215.00",
           "title": "Family Medicine Physicians",
           "group": "healthcare",
-          "refs": 2,
-          "revised": "2026-04-10",
-          "signals": 1
+          "refs": 3,
+          "revised": "2026-05-29",
+          "signals": 2
         },
         {
           "id": "29-1217.00",
@@ -4466,6 +4474,21 @@
           "source": "29-1171.00",
           "target": "29-1218.00",
           "signal": "Wisp, Visby Partner to Expand Access to At-Home STI Test"
+        },
+        {
+          "source": "29-1051.00",
+          "target": "29-1171.00",
+          "signal": "Making ChatGPT better for clinicians"
+        },
+        {
+          "source": "29-1051.00",
+          "target": "29-1215.00",
+          "signal": "Making ChatGPT better for clinicians"
+        },
+        {
+          "source": "29-1171.00",
+          "target": "29-1215.00",
+          "signal": "Making ChatGPT better for clinicians"
         },
         {
           "source": "29-1141.00",
@@ -6509,6 +6532,7 @@
     "27-4031.00": "27",
     "27-4032.00": "27",
     "29-1031.00": "29",
+    "29-1051.00": "29",
     "29-1071.00": "29",
     "29-1141.00": "29",
     "29-1141.01": "29",
