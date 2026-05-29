@@ -1,5 +1,111 @@
 [
   {
+    "id": "c206c0924df4",
+    "timestamp": "2026-05-29T03:50:51.121918+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "engineers vs scientists on pragmatism vs theoretical curiosity",
+    "labels": {
+      "X": "engineers",
+      "Y": "scientists",
+      "A": "pragmatism",
+      "B": "theoretical curiosity"
+    },
+    "canonical_keys": {
+      "X": "engineers",
+      "Y": "scientists",
+      "A": "pragmatism",
+      "B": ""
+    },
+    "effect_size": 1.8067817784469555,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "engineer",
+        "technician",
+        "builder",
+        "mechanic",
+        "developer",
+        "programmer",
+        "coder",
+        "fabricator",
+        "constructor",
+        "drafter",
+        "surveyor",
+        "machinist",
+        "electrician",
+        "technologist",
+        "analyst"
+      ],
+      "Y_used": [
+        "scientist",
+        "researcher",
+        "physicist",
+        "biologist",
+        "chemist",
+        "theorist",
+        "naturalist",
+        "astronomer",
+        "ecologist",
+        "geneticist",
+        "epidemiologist",
+        "statistician",
+        "mathematician",
+        "geologist",
+        "paleontologist"
+      ],
+      "A_used": [
+        "practical",
+        "pragmatic",
+        "useful",
+        "functional",
+        "applicable",
+        "concrete",
+        "realistic",
+        "utilitarian",
+        "efficient",
+        "workable",
+        "productive",
+        "effective",
+        "tangible",
+        "direct",
+        "applied"
+      ],
+      "B_used": [
+        "theoretical",
+        "abstract",
+        "conceptual",
+        "speculative",
+        "philosophical",
+        "intellectual",
+        "academic",
+        "scholarly",
+        "hypothetical",
+        "idealistic",
+        "visionary",
+        "curious",
+        "inquisitive",
+        "basic",
+        "pure"
+      ]
+    },
+    "proposal": "People associate engineers with pragmatism more strongly than they associate scientists with pragmatism. This differential implicit association reflects a pervasive cultural narrative that frames engineering as fundamentally solution-oriented and constrained by real-world utility, whereas science is often romanticized as driven by abstract curiosity and theoretical exploration. Examining this bias is novel because implicit attitude research has predominantly examined broad disciplinary divides rather than the internal valuation hierarchy between basic research and applied development. Establishing whether this association exists matters for understanding how societal values shape career encouragement, research funding allocations, and public deference to technical problem-solvers versus academic knowledge-producers.",
+    "iterations": 3,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "575dd82a1129",
     "timestamp": "2026-05-28T17:10:49.204872+00:00",
     "schema_version": "autoresearch.v1",
