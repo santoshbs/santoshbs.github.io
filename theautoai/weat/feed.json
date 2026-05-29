@@ -1,5 +1,111 @@
 [
   {
+    "id": "8bb4e8444004",
+    "timestamp": "2026-05-29T08:02:52.452227+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "curators vs collectors on impartiality vs bias",
+    "labels": {
+      "X": "curators",
+      "Y": "collectors",
+      "A": "impartiality",
+      "B": "bias"
+    },
+    "canonical_keys": {
+      "X": "curators",
+      "Y": "collectors",
+      "A": "impartiality",
+      "B": "bias"
+    },
+    "effect_size": 1.2399576631844296,
+    "p_value": 0.00019,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "curator",
+        "director",
+        "keeper",
+        "conservator",
+        "archivist",
+        "librarian",
+        "restorer",
+        "cataloger",
+        "registrar",
+        "docent",
+        "historian",
+        "specialist",
+        "expert",
+        "manager",
+        "administrator"
+      ],
+      "Y_used": [
+        "collector",
+        "connoisseur",
+        "patron",
+        "sponsor",
+        "benefactor",
+        "philanthropist",
+        "accumulator",
+        "hoarder",
+        "shopper",
+        "buyer",
+        "purchaser",
+        "investor",
+        "speculator",
+        "hobbyist",
+        "enthusiast"
+      ],
+      "A_used": [
+        "impartial",
+        "objective",
+        "neutral",
+        "fair",
+        "unbiased",
+        "equitable",
+        "disinterested",
+        "just",
+        "balanced",
+        "rational",
+        "scholarly",
+        "professional",
+        "institutional",
+        "public",
+        "ethical"
+      ],
+      "B_used": [
+        "biased",
+        "subjective",
+        "personal",
+        "ego",
+        "selfish",
+        "private",
+        "arbitrary",
+        "whimsical",
+        "speculative",
+        "emotional",
+        "opinionated",
+        "idiosyncratic",
+        "favor",
+        "preference",
+        "taste"
+      ]
+    },
+    "proposal": "People associate curators with impartiality more strongly than they associate collectors with impartiality. Although both groups acquire and hold objects of value, curators are institutionally framed as public stewards bound by ethical codes and scholarly objectivity, whereas collectors are culturally depicted as private individuals driven by personal taste, ego, or speculation. This differential implicit association has not been probed, despite the growing privatization of cultural heritage and the increasing prominence of private collectors in the art market. Examining this association is important because it reveals whether the public mentally equates private ownership of culture with bias or self-interest, potentially legitimizing institutional gatekeeping while casting private acquisition as inherently subjective or suspect.",
+    "iterations": 3,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "6745da9ac772",
     "timestamp": "2026-05-29T05:26:59.488387+00:00",
     "schema_version": "autoresearch.v1",
