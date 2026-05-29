@@ -1,15 +1,5 @@
 [
   {
-    "id": "female-family-status-slower",
-    "title": "Mentioning marital status or the existence of children may decelerate funding for female borrowers.",
-    "bucket": "",
-    "birth_batch": 0,
-    "death_batch": 474,
-    "last_batch": 474,
-    "confidence": 0,
-    "alive": false
-  },
-  {
     "id": "female-age-specificity-faster",
     "title": "Female borrowers who explicitly state their age or birth year in the pitch text may experience faster funding.",
     "bucket": "",
@@ -100,11 +90,21 @@
     "alive": false
   },
   {
+    "id": "female-gratitude-faster",
+    "title": "Female borrowers who include explicit thanks to lenders may fund faster.",
+    "bucket": "",
+    "birth_batch": 0,
+    "death_batch": 512,
+    "last_batch": 512,
+    "confidence": 0,
+    "alive": false
+  },
+  {
     "id": "female-technical-specificity-faster",
     "title": "Female borrowers who list specific products or goals beyond family welfare fund faster.",
     "bucket": "gendered_women",
     "birth_batch": 1,
-    "last_batch": 511,
+    "last_batch": 512,
     "confidence": 1.0,
     "peak_confidence": 1.0,
     "alive": true
@@ -114,7 +114,7 @@
     "title": "Female borrowers who mention benefits to their family or community fund faster.",
     "bucket": "gendered_women",
     "birth_batch": 1,
-    "last_batch": 511,
+    "last_batch": 512,
     "confidence": 1.0,
     "peak_confidence": 1.0,
     "alive": true
@@ -124,7 +124,7 @@
     "title": "Specifying the number of years a business has operated predicts faster funding regardless of gender.",
     "bucket": "faster",
     "birth_batch": 1,
-    "last_batch": 511,
+    "last_batch": 512,
     "confidence": 0.4,
     "peak_confidence": 0.4,
     "alive": true
@@ -133,8 +133,8 @@
     "id": "loan-history-faster",
     "title": "Mentioning a history of previous loan repayments predicts faster funding regardless of gender.",
     "bucket": "faster",
-    "birth_batch": 219,
-    "last_batch": 511,
+    "birth_batch": 218,
+    "last_batch": 512,
     "confidence": 0.98,
     "peak_confidence": 0.98,
     "alive": true
@@ -143,18 +143,18 @@
     "id": "concrete-business-details-faster",
     "title": "Pitches that provide concrete financial figures or specific inventory lists fund faster regardless of gender.",
     "bucket": "faster",
-    "birth_batch": 239,
-    "last_batch": 511,
-    "confidence": 0.98,
-    "peak_confidence": 0.98,
+    "birth_batch": 238,
+    "last_batch": 512,
+    "confidence": 1.0,
+    "peak_confidence": 1.0,
     "alive": true
   },
   {
     "id": "family-mention-interaction",
     "title": "Mentioning family obligations and benefits has opposite effects on funding speed by gender.",
     "bucket": "interaction",
-    "birth_batch": 325,
-    "last_batch": 511,
+    "birth_batch": 324,
+    "last_batch": 512,
     "confidence": 0.92,
     "peak_confidence": 0.92,
     "alive": true
@@ -163,18 +163,18 @@
     "id": "institutional-detail-slower",
     "title": "Mentioning local currency amounts or specific institutional affiliations predicts slower funding regardless of gender.",
     "bucket": "slower",
-    "birth_batch": 445,
-    "last_batch": 511,
-    "confidence": 0.81,
-    "peak_confidence": 0.81,
+    "birth_batch": 444,
+    "last_batch": 512,
+    "confidence": 0.87,
+    "peak_confidence": 0.87,
     "alive": true
   },
   {
     "id": "child-demographics-slower",
     "title": "Providing specific demographic details about children, such as number and schooling status, predicts slower funding regardless of gender.",
     "bucket": "slower",
-    "birth_batch": 467,
-    "last_batch": 511,
+    "birth_batch": 466,
+    "last_batch": 512,
     "confidence": 0.5,
     "peak_confidence": 0.5,
     "alive": true
