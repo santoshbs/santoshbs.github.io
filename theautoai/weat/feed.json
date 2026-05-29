@@ -1,5 +1,111 @@
 [
   {
+    "id": "18ed3d90ad5b",
+    "timestamp": "2026-05-29T18:26:36.594687+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "agrarians vs nomads on intergenerational continuity vs transience",
+    "labels": {
+      "X": "agrarians",
+      "Y": "nomads",
+      "A": "continuity",
+      "B": "transience"
+    },
+    "canonical_keys": {
+      "X": "agrarians",
+      "Y": "nomads",
+      "A": "continuity",
+      "B": "transience"
+    },
+    "effect_size": 1.1808486899744424,
+    "p_value": 0.00086,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "farmer",
+        "rancher",
+        "grower",
+        "cultivator",
+        "planter",
+        "tiller",
+        "harvester",
+        "agronomist",
+        "breeder",
+        "cropper",
+        "sower",
+        "gardener",
+        "herder",
+        "vintner",
+        "orchardist"
+      ],
+      "Y_used": [
+        "nomad",
+        "wanderer",
+        "drifter",
+        "traveler",
+        "vagabond",
+        "rover",
+        "migrant",
+        "trekker",
+        "roamer",
+        "tramp",
+        "pilgrim",
+        "backpacker",
+        "explorer",
+        "scout",
+        "hiker"
+      ],
+      "A_used": [
+        "permanent",
+        "stable",
+        "lasting",
+        "enduring",
+        "fixed",
+        "rooted",
+        "continuous",
+        "steady",
+        "consistent",
+        "heritage",
+        "ancestry",
+        "tradition",
+        "legacy",
+        "foundation",
+        "settled"
+      ],
+      "B_used": [
+        "transient",
+        "mobile",
+        "wandering",
+        "fleeting",
+        "temporary",
+        "shifting",
+        "drifting",
+        "changing",
+        "passing",
+        "brief",
+        "moving",
+        "fluid",
+        "volatile",
+        "ephemeral",
+        "dynamic"
+      ]
+    },
+    "proposal": "People associate agrarians with intergenerational continuity more strongly than they associate nomads with intergenerational continuity. This implicit axis taps into cultural narratives that equate agricultural labor with long-term land stewardship and legacy, while subtly framing nomadic lifeways as transient or disconnected from place. Examining this association is novel because implicit bias research has largely overlooked the agrarian-nomad divide, focusing instead on urban-rural or immigrant-native contrasts. It matters because unexamined assumptions about temporal attachment to land directly shape public debates on climate adaptation, indigenous land rights, and rural development policy.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "293a9923afd3",
     "timestamp": "2026-05-29T16:55:27.665254+00:00",
     "schema_version": "autoresearch.v1",
