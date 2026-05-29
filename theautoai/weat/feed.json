@@ -1,5 +1,111 @@
 [
   {
+    "id": "6745da9ac772",
+    "timestamp": "2026-05-29T05:26:59.488387+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "doctors vs nurses on hierarchical power dynamics",
+    "labels": {
+      "X": "doctors",
+      "Y": "nurses",
+      "A": "authority",
+      "B": "subordination"
+    },
+    "canonical_keys": {
+      "X": "doctors",
+      "Y": "nurses",
+      "A": "authority",
+      "B": "subordination"
+    },
+    "effect_size": 1.284675402938294,
+    "p_value": 0.0002,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "doctor",
+        "physician",
+        "surgeon",
+        "cardiologist",
+        "neurologist",
+        "pediatrician",
+        "psychiatrist",
+        "internist",
+        "radiologist",
+        "dermatologist",
+        "urologist",
+        "oncologist",
+        "pathologist",
+        "obstetrician",
+        "specialist"
+      ],
+      "Y_used": [
+        "nurse",
+        "midwife",
+        "medic",
+        "paramedic",
+        "attendant",
+        "orderly",
+        "carer",
+        "matron",
+        "sister",
+        "practitioner",
+        "technician",
+        "caregiver",
+        "rn",
+        "lpn",
+        "cna"
+      ],
+      "A_used": [
+        "leader",
+        "boss",
+        "chief",
+        "commander",
+        "director",
+        "manager",
+        "supervisor",
+        "executive",
+        "ruler",
+        "monarch",
+        "president",
+        "governor",
+        "captain",
+        "head",
+        "principal"
+      ],
+      "B_used": [
+        "follower",
+        "subordinate",
+        "assistant",
+        "helper",
+        "worker",
+        "laborer",
+        "servant",
+        "minion",
+        "deputy",
+        "underling",
+        "junior",
+        "aid",
+        "operative",
+        "employee",
+        "staff"
+      ]
+    },
+    "proposal": "People associate doctors with authority more strongly than they associate nurses with authority. This differential implicit association taps into the deeply ingrained medical hierarchy that persists in public consciousness despite modern institutional pushes for interprofessional collaboration and team-based care. Confirming this bias would reveal how automatic cognitive links continue to cast physicians as the sole legitimate command figures while relegating nurses to subordinate, supportive roles, regardless of their clinical expertise. Such findings are crucial for understanding the psychological barriers to effective interdisciplinary communication, patient trust dynamics, and the enduring gendered stereotypes embedded in healthcare professions.",
+    "iterations": 3,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "c206c0924df4",
     "timestamp": "2026-05-29T03:50:51.121918+00:00",
     "schema_version": "autoresearch.v1",
