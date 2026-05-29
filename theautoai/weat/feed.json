@@ -1,5 +1,115 @@
 [
   {
+    "id": "7d1dc59c2910",
+    "timestamp": "2026-05-29T14:07:27.578338+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "landlords vs tenants on Temporal orientation",
+    "labels": {
+      "X": "landlords",
+      "Y": "tenants",
+      "A": "Long-term foresight",
+      "B": "Immediate short-term"
+    },
+    "canonical_keys": {
+      "X": "landlords",
+      "Y": "tenants",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 1.1338877157613558,
+    "p_value": 0.00054,
+    "n": {
+      "X": 16,
+      "Y": 16,
+      "A": 16,
+      "B": 16
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "landlord",
+        "landlords",
+        "owner",
+        "owners",
+        "proprietor",
+        "proprietors",
+        "investor",
+        "investors",
+        "lessor",
+        "lessors",
+        "developer",
+        "developers",
+        "host",
+        "hosts",
+        "manager",
+        "managers"
+      ],
+      "Y_used": [
+        "tenant",
+        "tenants",
+        "renter",
+        "renters",
+        "lessee",
+        "boarder",
+        "occupants",
+        "residents",
+        "occupiers",
+        "inhabitants",
+        "dwellers",
+        "flatmates",
+        "housemates",
+        "roommates",
+        "lodgers",
+        "lodger"
+      ],
+      "A_used": [
+        "future",
+        "ahead",
+        "planning",
+        "strategy",
+        "vision",
+        "foresight",
+        "distant",
+        "later",
+        "eventually",
+        "plans",
+        "strategies",
+        "goals",
+        "objectives",
+        "milestones",
+        "horizons",
+        "forecasts"
+      ],
+      "B_used": [
+        "now",
+        "immediate",
+        "urgent",
+        "present",
+        "today",
+        "instant",
+        "current",
+        "moment",
+        "temporary",
+        "transitory",
+        "fleeting",
+        "ephemeral",
+        "short",
+        "quick",
+        "fast",
+        "rapid"
+      ]
+    },
+    "proposal": "People associate landlords with foresight more strongly than they associate tenants with foresight. This proposal examines a novel axis of temporal orientation: while public discourse often moralizes the landlord-tenant relationship in terms of power or equity, it may neglect whether landlords are implicitly cognitively mapped as agents of long-term planning and anticipation, whereas tenants are mapped toward immediacy or short-term consumption. Testing this association is important because it reveals whether the structural role of property holding creates a stereotype of strategic future-orientation that persists independently of moral evaluations of the actors, potentially influencing how housing policies and market dynamics are intuitively understood by lay observers.",
+    "iterations": 3,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "cf6937b0f586",
     "timestamp": "2026-05-29T08:46:39.214464+00:00",
     "schema_version": "autoresearch.v1",
