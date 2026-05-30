@@ -1,5 +1,111 @@
 [
   {
+    "id": "490a0147335d",
+    "timestamp": "2026-05-30T01:05:52.685162+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "philosophers vs scientists on epistemic stance",
+    "labels": {
+      "X": "philosophers",
+      "Y": "scientists",
+      "A": "doubt_humility",
+      "B": "certainty_authority"
+    },
+    "canonical_keys": {
+      "X": "philosophers",
+      "Y": "scientists",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 0.406364789634632,
+    "p_value": 0.28449,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "philosopher",
+        "thinker",
+        "sage",
+        "scholar",
+        "intellectual",
+        "academic",
+        "professor",
+        "logician",
+        "ethicist",
+        "essayist",
+        "humanist",
+        "theorist",
+        "debater",
+        "lecturer",
+        "writer"
+      ],
+      "Y_used": [
+        "scientist",
+        "researcher",
+        "biologist",
+        "chemist",
+        "physicist",
+        "astronomer",
+        "geologist",
+        "mathematician",
+        "engineer",
+        "botanist",
+        "zoologist",
+        "ecologist",
+        "technician",
+        "experimenter",
+        "inventor"
+      ],
+      "A_used": [
+        "humility",
+        "modesty",
+        "doubt",
+        "uncertainty",
+        "ambiguity",
+        "skepticism",
+        "caution",
+        "tentativeness",
+        "questioning",
+        "curiosity",
+        "wonder",
+        "speculation",
+        "conjecture",
+        "mystery",
+        "possibility"
+      ],
+      "B_used": [
+        "authority",
+        "certainty",
+        "fact",
+        "truth",
+        "knowledge",
+        "expertise",
+        "confidence",
+        "assurance",
+        "precision",
+        "accuracy",
+        "validity",
+        "reliability",
+        "evidence",
+        "data",
+        "result"
+      ]
+    },
+    "proposal": "People associate philosophers with epistemic humility more strongly than they associate scientists with epistemic humility. This association is novel because implicit links between epistemic modesty and specific intellectual roles have not been systematically examined, and it matters given contemporary tensions between perceived scientific authority and the public's appetite for questioning established knowledge. Philosophers are often culturally framed as perpetual questioners who dwell in ambiguity, whereas scientists are frequently represented as authoritative experts who deliver definitive facts, suggesting a differential mental representation of their relationship to uncertainty. Confirming this association would illuminate how the public implicitly stratifies 'openness to doubt' versus 'closedness to inquiry' across major knowledge-producing categories.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "cc205bb6f45e",
     "timestamp": "2026-05-29T23:11:21.867635+00:00",
     "schema_version": "autoresearch.v1",
