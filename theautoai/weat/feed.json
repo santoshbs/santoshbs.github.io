@@ -1,5 +1,111 @@
 [
   {
+    "id": "eb27fe5934f0",
+    "timestamp": "2026-05-30T19:31:00.891267+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "students vs teachers on perceived genuineness vs artificiality",
+    "labels": {
+      "X": "students",
+      "Y": "teachers",
+      "A": "Authenticity",
+      "B": "Inauthenticity"
+    },
+    "canonical_keys": {
+      "X": "students",
+      "Y": "teachers",
+      "A": "authenticity",
+      "B": "inauthenticity"
+    },
+    "effect_size": -0.7096504782662126,
+    "p_value": 0.055,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "student",
+        "pupil",
+        "learner",
+        "scholar",
+        "undergraduate",
+        "graduate",
+        "apprentice",
+        "trainee",
+        "schooler",
+        "tutee",
+        "freshman",
+        "sophomore",
+        "junior",
+        "senior",
+        "novice"
+      ],
+      "Y_used": [
+        "teacher",
+        "instructor",
+        "educator",
+        "professor",
+        "tutor",
+        "mentor",
+        "lecturer",
+        "pedagogue",
+        "academic",
+        "trainer",
+        "coach",
+        "faculty",
+        "guide",
+        "master",
+        "principal"
+      ],
+      "A_used": [
+        "genuine",
+        "authentic",
+        "real",
+        "true",
+        "sincere",
+        "honest",
+        "natural",
+        "candid",
+        "straightforward",
+        "earnest",
+        "frank",
+        "transparent",
+        "pure",
+        "heartfelt",
+        "spontaneous"
+      ],
+      "B_used": [
+        "artificial",
+        "fake",
+        "staged",
+        "scripted",
+        "calculated",
+        "rehearsed",
+        "superficial",
+        "insincere",
+        "pretentious",
+        "manufactured",
+        "contrived",
+        "phony",
+        "hollow",
+        "disingenuous",
+        "formulaic"
+      ]
+    },
+    "proposal": "People associate students with authenticity more strongly than they associate teachers with authenticity. This differential association likely stems from cultural narratives that frame youth and learners as unfiltered and genuine, while educators are stereotyped as institutional gatekeepers bound by standardized curricula and professional decorum. Examining this implicit bias is novel because prior research has focused on explicit attitudes toward educational authority, yet overlooked the automatic mental linkage between learner status and perceived genuineness. Confirming this association would matter for understanding how educational institutions are mentally represented, potentially revealing hidden barriers to student voice in pedagogical reform and highlighting how professionalization erodes perceived moral credibility in the public imagination.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "e74db6ee8c45",
     "timestamp": "2026-05-30T17:31:37.216844+00:00",
     "schema_version": "autoresearch.v1",
