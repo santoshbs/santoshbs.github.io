@@ -1,5 +1,111 @@
 [
   {
+    "id": "621ae3f727cf",
+    "timestamp": "2026-05-30T07:37:36.717645+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "consumers vs creators on authenticity vs inauthenticity",
+    "labels": {
+      "X": "consumers",
+      "Y": "creators",
+      "A": "authenticity",
+      "B": "inauthenticity"
+    },
+    "canonical_keys": {
+      "X": "consumers",
+      "Y": "creators",
+      "A": "authenticity",
+      "B": "inauthenticity"
+    },
+    "effect_size": 0.9116897557906024,
+    "p_value": 0.01123,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "buyer",
+        "shopper",
+        "customer",
+        "client",
+        "patron",
+        "purchaser",
+        "audience",
+        "viewer",
+        "reader",
+        "user",
+        "diner",
+        "guest",
+        "fan",
+        "consumer",
+        "attendee"
+      ],
+      "Y_used": [
+        "artist",
+        "author",
+        "composer",
+        "designer",
+        "director",
+        "engineer",
+        "maker",
+        "producer",
+        "sculptor",
+        "writer",
+        "inventor",
+        "craftsman",
+        "painter",
+        "photographer",
+        "filmmaker"
+      ],
+      "A_used": [
+        "authentic",
+        "genuine",
+        "real",
+        "true",
+        "sincere",
+        "honest",
+        "natural",
+        "organic",
+        "original",
+        "pure",
+        "unfiltered",
+        "heartfelt",
+        "raw",
+        "legitimate",
+        "valid"
+      ],
+      "B_used": [
+        "fake",
+        "artificial",
+        "manufactured",
+        "contrived",
+        "commercial",
+        "synthetic",
+        "staged",
+        "scripted",
+        "calculated",
+        "inauthentic",
+        "fabricated",
+        "deceptive",
+        "spurious",
+        "phony",
+        "imitation"
+      ]
+    },
+    "proposal": "People associate consumers with authenticity more strongly than they associate creators with authenticity. In contemporary discourse emphasizing 'user-generated' value, 'organic' demand, and the skepticism toward manufactured or corporate production, consumers are often framed as the bearers of genuine taste and real-world validation, whereas creators are implicitly cast as producers of artifacts that may be contrived, commercial, or detached from lived experience. This association is novel because implicit bias research has extensively examined producer-consumer dynamics in economic terms (e.g., sellers vs. buyers) but has not tested the implicit link between consumption and the moral-aesthetic quality of authenticity. Examining this matters because it reveals whether public intuition privileges the judgment of the market participant over the agency of the maker, potentially influencing how cultural value, trust, and authority are distributed in debates over user-generated content and creator economies.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "eba3e6ed55ce",
     "timestamp": "2026-05-30T05:37:50.655742+00:00",
     "schema_version": "autoresearch.v1",
