@@ -1,5 +1,111 @@
 [
   {
+    "id": "f1e302195f04",
+    "timestamp": "2026-05-30T08:56:09.345641+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "teachers vs merchants on stewardship vs commercial exchange",
+    "labels": {
+      "X": "teachers",
+      "Y": "merchants",
+      "A": "stewardship",
+      "B": "commercial exchange"
+    },
+    "canonical_keys": {
+      "X": "teachers",
+      "Y": "merchants",
+      "A": "stewardship",
+      "B": ""
+    },
+    "effect_size": 1.7145050813090121,
+    "p_value": 1e-05,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "teacher",
+        "educator",
+        "instructor",
+        "professor",
+        "tutor",
+        "mentor",
+        "lecturer",
+        "pedagogue",
+        "headmaster",
+        "principal",
+        "academic",
+        "trainer",
+        "master",
+        "coach",
+        "dean"
+      ],
+      "Y_used": [
+        "merchant",
+        "trader",
+        "vendor",
+        "retailer",
+        "shopkeeper",
+        "dealer",
+        "businessman",
+        "entrepreneur",
+        "capitalist",
+        "broker",
+        "agent",
+        "salesman",
+        "tycoon",
+        "magnate",
+        "proprietor"
+      ],
+      "A_used": [
+        "steward",
+        "caretaker",
+        "guardian",
+        "custodian",
+        "preservation",
+        "conservation",
+        "legacy",
+        "heritage",
+        "cultivation",
+        "nurture",
+        "care",
+        "trust",
+        "responsibility",
+        "sustainability",
+        "dedication"
+      ],
+      "B_used": [
+        "profit",
+        "gain",
+        "wealth",
+        "money",
+        "cash",
+        "sales",
+        "transaction",
+        "exchange",
+        "trade",
+        "commerce",
+        "market",
+        "bargain",
+        "purchase",
+        "sale",
+        "deal"
+      ]
+    },
+    "proposal": "People associate teachers with stewardship more strongly than they associate merchants with stewardship. This differential reflects a deep-seated cultural narrative framing education as a slow, intergenerational practice of cultivation and public trust, whereas commerce is implicitly mapped onto immediate exchange and private accumulation. Examining this association is novel because prior implicit measures have focused on competence/warmth or logic/creativity, leaving the temporal and ethical dimension of stewardship largely unmeasured across these roles. Confirming this bias would reveal how institutional trust is cognitively partitioned, mattering for public policy debates that pit educational investment against commercial expansion.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "621ae3f727cf",
     "timestamp": "2026-05-30T07:37:36.717645+00:00",
     "schema_version": "autoresearch.v1",
