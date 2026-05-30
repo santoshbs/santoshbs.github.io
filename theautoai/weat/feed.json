@@ -1,5 +1,111 @@
 [
   {
+    "id": "2272a5da3c67",
+    "timestamp": "2026-05-30T16:15:25.165291+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Bishops vs Priests on administrative vs pastoral orientation",
+    "labels": {
+      "X": "Bishops",
+      "Y": "Priests",
+      "A": "bureaucratic administration",
+      "B": "spiritual care"
+    },
+    "canonical_keys": {
+      "X": "bishops",
+      "Y": "priests",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 0.9144115092673398,
+    "p_value": 0.01143,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "bishop",
+        "archbishop",
+        "prelate",
+        "cardinal",
+        "hierarch",
+        "metropolitan",
+        "primate",
+        "patriarch",
+        "pontiff",
+        "legate",
+        "nuncio",
+        "episcopal",
+        "apostolic",
+        "dignitary",
+        "superior"
+      ],
+      "Y_used": [
+        "priest",
+        "pastor",
+        "minister",
+        "reverend",
+        "vicar",
+        "chaplain",
+        "rector",
+        "clergyman",
+        "curate",
+        "parson",
+        "confessor",
+        "evangelist",
+        "missionary",
+        "cleric",
+        "deacon"
+      ],
+      "A_used": [
+        "bureaucracy",
+        "administration",
+        "management",
+        "hierarchy",
+        "policy",
+        "regulation",
+        "organization",
+        "control",
+        "bureaucratic",
+        "corporate",
+        "institutional",
+        "procedural",
+        "systematic",
+        "managerial",
+        "executive"
+      ],
+      "B_used": [
+        "spiritual",
+        "community",
+        "connection",
+        "proximity",
+        "personal",
+        "faith",
+        "prayer",
+        "worship",
+        "compassion",
+        "empathy",
+        "healing",
+        "nurturing",
+        "devotion",
+        "sacred",
+        "intimacy"
+      ]
+    },
+    "proposal": "People associate Bishops with bureaucratic administration more strongly than they associate Priests with bureaucratic administration. While both groups are religious clergy, public discourse often frames Bishops as institutional managers focused on hierarchy, policy, and organizational control, whereas Priests are framed as spiritual caregivers focused on individual pastoral duties and community connection. Examining this differential implicit association is novel because prior research has largely compared clergy to laypeople or examined gender dynamics within religious roles, neglecting implicit hierarchies of 'bureaucratic-ness' among clergy ranks themselves. Confirming this association would reveal how mental representations of religious authority encode administrative distance, suggesting that higher ecclesiastical rank is implicitly linked to organizational rigidity rather than spiritual proximity. This matters for understanding how the public perceives religious governance and the potential alienation between institutional leadership and grassroots religious practice.",
+    "iterations": 3,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "f1e302195f04",
     "timestamp": "2026-05-30T08:56:09.345641+00:00",
     "schema_version": "autoresearch.v1",
