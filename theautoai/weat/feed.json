@@ -1,5 +1,111 @@
 [
   {
+    "id": "16f504fc2822",
+    "timestamp": "2026-05-30T02:36:48.037392+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "bakers vs butchers on creativity vs pragmatism",
+    "labels": {
+      "X": "bakers",
+      "Y": "butchers",
+      "A": "creativity",
+      "B": "pragmatism"
+    },
+    "canonical_keys": {
+      "X": "bakers",
+      "Y": "butchers",
+      "A": "creativity",
+      "B": "pragmatism"
+    },
+    "effect_size": 1.2755899186916868,
+    "p_value": 7e-05,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "baker",
+        "bakers",
+        "patissier",
+        "patissiers",
+        "confectioner",
+        "confectioners",
+        "miller",
+        "millers",
+        "breadmaker",
+        "breadmakers",
+        "doughboy",
+        "doughboys",
+        "cook",
+        "cooks",
+        "chef"
+      ],
+      "Y_used": [
+        "butcher",
+        "butchers",
+        "slaughterman",
+        "slaughterer",
+        "packer",
+        "packers",
+        "grinder",
+        "grinders",
+        "harvester",
+        "harvesters",
+        "flayer",
+        "flayers",
+        "skinner",
+        "skinners",
+        "dresser"
+      ],
+      "A_used": [
+        "creative",
+        "creativity",
+        "innovative",
+        "inventive",
+        "artistic",
+        "imaginative",
+        "original",
+        "expressive",
+        "visionary",
+        "inspired",
+        "brilliant",
+        "imagination",
+        "creation",
+        "creator",
+        "novelty"
+      ],
+      "B_used": [
+        "pragmatic",
+        "pragmatism",
+        "utilitarian",
+        "utility",
+        "efficiency",
+        "efficient",
+        "standardized",
+        "standard",
+        "practical",
+        "practicality",
+        "functional",
+        "function",
+        "routine",
+        "systematic",
+        "methodical"
+      ]
+    },
+    "proposal": "People associate bakers with creativity more strongly than they associate butchers with creativity. This differential implicit association reflects contemporary cultural narratives that frame baking as an expressive, artisanal craft involving experimentation with flavors and presentation, whereas butchery is stereotypically cast as a utilitarian, precision-driven trade focused on efficiency and standardization. Examining this bias is novel because culinary craft hierarchies have rarely been tested through implicit measures, and it matters because such associations shape hiring practices, culinary prestige, and public funding for vocational training in food-related trades.",
+    "iterations": 4,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "490a0147335d",
     "timestamp": "2026-05-30T01:05:52.685162+00:00",
     "schema_version": "autoresearch.v1",
