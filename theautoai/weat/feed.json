@@ -1,5 +1,111 @@
 [
   {
+    "id": "c83d1b7a0641",
+    "timestamp": "2026-05-30T20:23:59.387772+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "mystics vs philosophers on Asceticism versus Intellectualism",
+    "labels": {
+      "X": "mystics",
+      "Y": "philosophers",
+      "A": "Asceticism",
+      "B": "Intellectualism"
+    },
+    "canonical_keys": {
+      "X": "mystics",
+      "Y": "philosophers",
+      "A": "asceticism",
+      "B": "intellectualism"
+    },
+    "effect_size": 1.60331995239456,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "mystic",
+        "monk",
+        "nun",
+        "hermit",
+        "shaman",
+        "guru",
+        "devotee",
+        "zealot",
+        "penitent",
+        "saint",
+        "recluse",
+        "medium",
+        "oracle",
+        "prophet",
+        "clairvoyant"
+      ],
+      "Y_used": [
+        "philosopher",
+        "thinker",
+        "scholar",
+        "academic",
+        "professor",
+        "logician",
+        "analyst",
+        "essayist",
+        "author",
+        "intellectual",
+        "critic",
+        "theorist",
+        "scientist",
+        "expert",
+        "researcher"
+      ],
+      "A_used": [
+        "abstinence",
+        "fasting",
+        "penance",
+        "renunciation",
+        "austerity",
+        "frugality",
+        "simplicity",
+        "deprivation",
+        "denial",
+        "restraint",
+        "celibacy",
+        "modesty",
+        "humility",
+        "sacrifice",
+        "withdrawal"
+      ],
+      "B_used": [
+        "reason",
+        "logic",
+        "argument",
+        "analysis",
+        "scholarship",
+        "intellect",
+        "knowledge",
+        "wisdom",
+        "thought",
+        "reasoning",
+        "discourse",
+        "theory",
+        "debate",
+        "critique",
+        "examination"
+      ]
+    },
+    "proposal": "People associate mystics with asceticism more strongly than they associate philosophers with asceticism. This proposal predicts that the lay conceptualization of spiritual seekers prioritizes bodily renunciation, withdrawal from material comforts, and physical discipline, whereas philosophical thinkers are implicitly categorized by intellectual engagement, argumentation, and scholarly analysis rather than self-denial. Examining this association is novel because implicit bias research has extensively covered religion-versus-science dichotomies and clergy-versus-laity distinctions without isolating the specific link between broad mystic categories and ascetic traits, which has implications for how spiritual versus intellectual paths are evaluated in discourse regarding personal cultivation, social contribution, and the validity of non-discursive knowledge.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "eb27fe5934f0",
     "timestamp": "2026-05-30T19:31:00.891267+00:00",
     "schema_version": "autoresearch.v1",
