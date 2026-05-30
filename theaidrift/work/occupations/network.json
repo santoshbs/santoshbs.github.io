@@ -141,8 +141,8 @@
         "id": "45",
         "title": "Farming, Fishing, & Forestry",
         "group": "farming",
-        "refs": 16,
-        "signals": 12,
+        "refs": 19,
+        "signals": 15,
         "occupations": 4
       },
       {
@@ -5232,9 +5232,9 @@
           "id": "45-1011.00",
           "title": "First-Line Supervisors of Farming, Fishing, and Forestry Workers",
           "group": "farming",
-          "refs": 3,
-          "revised": "2026-04-15",
-          "signals": 2
+          "refs": 4,
+          "revised": "2026-05-30",
+          "signals": 3
         },
         {
           "id": "45-2091.00",
@@ -5248,17 +5248,17 @@
           "id": "45-2092.00",
           "title": "Farmworkers and Laborers, Crop, Nursery, and Greenhouse",
           "group": "farming",
-          "refs": 6,
-          "revised": "2026-05-22",
-          "signals": 5
+          "refs": 7,
+          "revised": "2026-05-30",
+          "signals": 6
         },
         {
           "id": "45-2093.00",
           "title": "Farmworkers, Farm, Ranch, and Aquacultural Animals",
           "group": "farming",
-          "refs": 2,
-          "revised": "2026-04-07",
-          "signals": 1
+          "refs": 3,
+          "revised": "2026-05-30",
+          "signals": 2
         }
       ],
       "edges": [
@@ -5270,7 +5270,17 @@
         {
           "source": "45-1011.00",
           "target": "45-2092.00",
-          "signal": "Polybee scales physical AI agents for “immediate, bankable ROI” in specialty cro"
+          "signal": "S. Korea to accept record 93,500 foreign seasonal workers for agriculture sector"
+        },
+        {
+          "source": "45-1011.00",
+          "target": "45-2093.00",
+          "signal": "S. Korea to accept record 93,500 foreign seasonal workers for agriculture sector"
+        },
+        {
+          "source": "45-2092.00",
+          "target": "45-2093.00",
+          "signal": "S. Korea to accept record 93,500 foreign seasonal workers for agriculture sector"
         }
       ]
     },
