@@ -1,5 +1,111 @@
 [
   {
+    "id": "c5a9e8703544",
+    "timestamp": "2026-05-31T20:21:43.641554+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Composers vs Conductors on originality vs derivative nature",
+    "labels": {
+      "X": "Composers",
+      "Y": "Conductors",
+      "A": "originality",
+      "B": "derivative"
+    },
+    "canonical_keys": {
+      "X": "composers",
+      "Y": "conductors",
+      "A": "originality",
+      "B": "derivative"
+    },
+    "effect_size": 0.7328757309826937,
+    "p_value": 0.04592,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "composer",
+        "songwriter",
+        "lyricist",
+        "arranger",
+        "author",
+        "originator",
+        "architect",
+        "designer",
+        "planner",
+        "maker",
+        "writer",
+        "inventor",
+        "developer",
+        "builder",
+        "producer"
+      ],
+      "Y_used": [
+        "conductor",
+        "maestro",
+        "performer",
+        "interpreter",
+        "player",
+        "director",
+        "leader",
+        "soloist",
+        "instrumentalist",
+        "bandmaster",
+        "accompanist",
+        "recitalist",
+        "virtuoso",
+        "executor",
+        "artist"
+      ],
+      "A_used": [
+        "original",
+        "unique",
+        "innovative",
+        "creative",
+        "novel",
+        "fresh",
+        "new",
+        "inventive",
+        "authentic",
+        "distinct",
+        "pioneering",
+        "visionary",
+        "imaginative",
+        "ingenious",
+        "originality"
+      ],
+      "B_used": [
+        "derivative",
+        "copy",
+        "imitation",
+        "routine",
+        "standard",
+        "common",
+        "ordinary",
+        "plagiarized",
+        "conventional",
+        "traditional",
+        "banal",
+        "generic",
+        "mundane",
+        "typical",
+        "duplicate"
+      ]
+    },
+    "proposal": "People associate Composers with originality more strongly than they associate Conductors with originality. This differential implicit association highlights the cultural hierarchy between the creator of the work and the interpreter of the work in musical discourse. It is novel because while explicit debates often weigh the relative importance of composition versus performance, the implicit link between composers and the trait of originality has not been systematically examined. Confirming this would reveal a deep-seated mental representation that privileges the written score over the interpretive act, reflecting broader biases about where creative authority resides.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "9b2bc226d4c8",
     "timestamp": "2026-05-31T19:00:04.153858+00:00",
     "schema_version": "autoresearch.v1",
