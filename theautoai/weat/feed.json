@@ -1,5 +1,111 @@
 [
   {
+    "id": "57fdab6236e4",
+    "timestamp": "2026-05-31T09:37:11.235991+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Hunters vs Farmers on Autonomy versus Constraint",
+    "labels": {
+      "X": "Hunters",
+      "Y": "Farmers",
+      "A": "Freedom",
+      "B": "Constraint"
+    },
+    "canonical_keys": {
+      "X": "hunters",
+      "Y": "farmers",
+      "A": "freedom",
+      "B": "constraint"
+    },
+    "effect_size": -0.2671354554216431,
+    "p_value": 0.47676,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "hunter",
+        "trapper",
+        "poacher",
+        "marksman",
+        "archer",
+        "bowman",
+        "rifleman",
+        "spearman",
+        "tracker",
+        "scout",
+        "ranger",
+        "guide",
+        "gamekeeper",
+        "outdoorsman",
+        "woodsman"
+      ],
+      "Y_used": [
+        "farmer",
+        "planter",
+        "grower",
+        "cultivator",
+        "agronomist",
+        "rancher",
+        "stockman",
+        "dairyman",
+        "sower",
+        "reaper",
+        "harvester",
+        "tiller",
+        "peasant",
+        "yeoman",
+        "gardener"
+      ],
+      "A_used": [
+        "freedom",
+        "liberty",
+        "independent",
+        "autonomy",
+        "wild",
+        "unrestrained",
+        "open",
+        "unbound",
+        "liberation",
+        "mobile",
+        "wandering",
+        "nomadic",
+        "free",
+        "boundless",
+        "unbridled"
+      ],
+      "B_used": [
+        "constraint",
+        "restriction",
+        "bound",
+        "rooted",
+        "fixed",
+        "routine",
+        "disciplined",
+        "controlled",
+        "confined",
+        "trapped",
+        "tethered",
+        "stationary",
+        "sedentary",
+        "obligation",
+        "labor"
+      ]
+    },
+    "proposal": "People associate Hunters with freedom more strongly than they associate Farmers with freedom. While both groups interact directly with the natural world, cultural narratives often romanticize the hunter as a mobile, autonomous figure roaming untamed landscapes, whereas the farmer is depicted as rooted, bound to the land, and disciplined by seasonal cycles. Examining this differential implicit association is novel because it moves beyond the broader Agrarians vs. Nomads comparison (which has been proposed) to isolate the specific archetype of the hunter. It is relevant to how societies mentally categorize relationships to nature and autonomy, and disconfirming it would suggest that the hunter is not implicitly viewed as more liberated than the farmer, potentially challenging romanticized tropes in media and political discourse about wilderness and self-reliance.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "9781c9f9b697",
     "timestamp": "2026-05-31T08:21:43.841385+00:00",
     "schema_version": "autoresearch.v1",
