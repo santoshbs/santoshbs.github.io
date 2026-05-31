@@ -1,5 +1,111 @@
 [
   {
+    "id": "94ef4b8b84d1",
+    "timestamp": "2026-05-31T04:07:47.567453+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Biologists vs Chemists on dynamic process dimension",
+    "labels": {
+      "X": "Biologists",
+      "Y": "Chemists",
+      "A": "growth/development",
+      "B": "structure/stability"
+    },
+    "canonical_keys": {
+      "X": "biologists",
+      "Y": "chemists",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 1.3832632441527024,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "biologist",
+        "ecologist",
+        "geneticist",
+        "zoologist",
+        "botanist",
+        "microbiologist",
+        "entomologist",
+        "virologist",
+        "paleontologist",
+        "anatomist",
+        "physiologist",
+        "cytologist",
+        "mycologist",
+        "ornithologist",
+        "parasitologist"
+      ],
+      "Y_used": [
+        "chemist",
+        "biochemist",
+        "geochemist",
+        "toxicologist",
+        "pharmacologist",
+        "pharmacist",
+        "alchemist",
+        "apothecary",
+        "metallurgist",
+        "perfumer",
+        "distiller",
+        "refiner",
+        "brewer",
+        "dyer",
+        "technician"
+      ],
+      "A_used": [
+        "grow",
+        "growth",
+        "develop",
+        "life",
+        "birth",
+        "bloom",
+        "expand",
+        "flourish",
+        "sprout",
+        "mature",
+        "thrive",
+        "evolve",
+        "multiply",
+        "reproduce",
+        "cultivate"
+      ],
+      "B_used": [
+        "structure",
+        "stable",
+        "rigid",
+        "static",
+        "inert",
+        "synthetic",
+        "transform",
+        "bond",
+        "element",
+        "mineral",
+        "crystal",
+        "solid",
+        "inorganic",
+        "compound",
+        "react"
+      ]
+    },
+    "proposal": "People associate Biologists with growth more strongly than they associate Chemists with growth. This differential implicit association is interesting because it taps into the fundamental conceptual distinction between the life sciences and the material sciences in public cognition, where biological actors are linked to generative, developmental processes and chemical actors to reactive, structural, or transformative ones. It is novel as no prior work has examined implicit associations distinguishing these specific scientific disciplines along a dynamic process dimension like growth, despite their prominence in education and media. Confirming this association would highlight how the public mental representation of scientific expertise is not just divided by domain (life vs. matter) but by the implicit dynamic qualities attributed to those domains, which could influence perceptions of fields like bioengineering versus materials science.",
+    "iterations": 3,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "53ebbbd2ae29",
     "timestamp": "2026-05-31T02:56:31.987552+00:00",
     "schema_version": "autoresearch.v1",
