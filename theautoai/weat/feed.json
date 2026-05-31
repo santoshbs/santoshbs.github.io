@@ -1,5 +1,111 @@
 [
   {
+    "id": "9b2bc226d4c8",
+    "timestamp": "2026-05-31T19:00:04.153858+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "activists vs lobbyists on authenticity versus calculated self-interest",
+    "labels": {
+      "X": "activists",
+      "Y": "lobbyists",
+      "A": "authenticity",
+      "B": "self_interest"
+    },
+    "canonical_keys": {
+      "X": "activists",
+      "Y": "lobbyists",
+      "A": "authenticity",
+      "B": ""
+    },
+    "effect_size": 0.34717759022707995,
+    "p_value": 0.35737,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "activist",
+        "protester",
+        "demonstrator",
+        "campaigner",
+        "advocate",
+        "organizer",
+        "marcher",
+        "striker",
+        "unionist",
+        "rebel",
+        "dissident",
+        "revolutionary",
+        "agitator",
+        "reformer",
+        "petitioner"
+      ],
+      "Y_used": [
+        "lobbyist",
+        "politician",
+        "senator",
+        "representative",
+        "legislator",
+        "deputy",
+        "councillor",
+        "alderman",
+        "magistrate",
+        "commissioner",
+        "administrator",
+        "bureaucrat",
+        "functionary",
+        "official",
+        "clerk"
+      ],
+      "A_used": [
+        "authentic",
+        "genuine",
+        "sincere",
+        "honest",
+        "truthful",
+        "pure",
+        "upright",
+        "virtuous",
+        "moral",
+        "ethical",
+        "righteous",
+        "candid",
+        "frank",
+        "open",
+        "transparent"
+      ],
+      "B_used": [
+        "calculated",
+        "manipulative",
+        "deceptive",
+        "dishonest",
+        "selfish",
+        "greedy",
+        "corrupt",
+        "sneaky",
+        "sly",
+        "crafty",
+        "cunning",
+        "deceitful",
+        "fraudulent",
+        "fake",
+        "artificial"
+      ]
+    },
+    "proposal": "People associate activists with authenticity more strongly than they associate lobbyists with authenticity. The axis of comparison centers on perceived moral genuineness versus calculated self-interest. While both groups engage in political influence and policy advocacy, public discourse frames activists as driven by grassroots conviction and transparent collective action, whereas lobbyists are typically depicted as operating behind closed doors for corporate or special-interest gain. This implicit association has not been systematically measured using standard implicit cognition paradigms, despite its relevance to how citizens perceive political legitimacy. Examining this bias matters because it reveals whether the public instinctively equates advocacy with moral purity or hidden manipulation, which fundamentally shapes institutional trust and democratic engagement.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "7c5a8b03351a",
     "timestamp": "2026-05-31T16:25:50.347173+00:00",
     "schema_version": "autoresearch.v1",
