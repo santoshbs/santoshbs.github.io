@@ -1,5 +1,117 @@
 [
   {
+    "id": "7c5a8b03351a",
+    "timestamp": "2026-05-31T16:25:50.347173+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "anthropologists vs sociologists on cultural relativism vs universalism",
+    "labels": {
+      "X": "anthropologists",
+      "Y": "sociologists",
+      "A": "cultural relativism",
+      "B": "cultural universalism"
+    },
+    "canonical_keys": {
+      "X": "anthropologists",
+      "Y": "sociologists",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 0.9630704350310377,
+    "p_value": 0.00824,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 18,
+      "B": 18
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "anthropologist",
+        "ethnographer",
+        "archaeologist",
+        "folklorist",
+        "ethnologist",
+        "primatologist",
+        "paleoanthropologist",
+        "linguist",
+        "geographer",
+        "naturalist",
+        "explorer",
+        "curator",
+        "collector",
+        "observer",
+        "researcher"
+      ],
+      "Y_used": [
+        "sociologist",
+        "demographer",
+        "criminologist",
+        "urbanist",
+        "statistician",
+        "theorist",
+        "analyst",
+        "academic",
+        "scholar",
+        "professor",
+        "scientist",
+        "expert",
+        "specialist",
+        "administrator",
+        "director"
+      ],
+      "A_used": [
+        "relative",
+        "subjective",
+        "local",
+        "traditional",
+        "indigenous",
+        "native",
+        "tribal",
+        "folk",
+        "customary",
+        "ritual",
+        "belief",
+        "symbolic",
+        "holistic",
+        "empathy",
+        "tolerant",
+        "accepting",
+        "flexible",
+        "adaptable"
+      ],
+      "B_used": [
+        "universal",
+        "objective",
+        "global",
+        "standard",
+        "common",
+        "shared",
+        "typical",
+        "average",
+        "normal",
+        "usual",
+        "expected",
+        "conventional",
+        "scientific",
+        "rational",
+        "logical",
+        "systematic",
+        "precise",
+        "uniform"
+      ]
+    },
+    "proposal": "People associate anthropologists with cultural relativism more strongly than they associate sociologists with cultural relativism. This differential implicit association stems from anthropology’s decades-long public narrative of immersive fieldwork, emic standpoint-taking, and explicit critique of ethnocentrism, which likely seeds automatic links to suspending cross-cultural judgment. Sociology’s historical emphasis on structural functionalism, normative theory, and macro-level pattern analysis may instead cue more universalist or system-focused attributions. Probing this distinction is novel because implicit bias research has overwhelmingly focused on broad dichotomies like science versus arts, leaving intra-disciplinary mental mappings within the social sciences entirely unexamined. Establishing whether this implicit divide exists matters because it reveals how foundational methodological legacies bleed into automatic epistemic and moral attributions, shaping how students, media consumers, and policymakers intuitively weight each discipline’s authority on cross-cultural policy and ethical dilemmas.",
+    "iterations": 3,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "cc6633d7adb2",
     "timestamp": "2026-05-31T14:51:50.655026+00:00",
     "schema_version": "autoresearch.v1",
