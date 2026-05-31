@@ -1,5 +1,111 @@
 [
   {
+    "id": "d0e58fffad3b",
+    "timestamp": "2026-05-31T02:23:04.888735+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "dependents vs benefactors on obligation vs freedom",
+    "labels": {
+      "X": "dependents",
+      "Y": "benefactors",
+      "A": "obligation",
+      "B": "freedom"
+    },
+    "canonical_keys": {
+      "X": "dependents",
+      "Y": "benefactors",
+      "A": "obligation",
+      "B": "freedom"
+    },
+    "effect_size": 0.50920439049435,
+    "p_value": 0.17442,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "recipient",
+        "beneficiary",
+        "supplicant",
+        "petitioner",
+        "client",
+        "ward",
+        "orphan",
+        "refugee",
+        "pauper",
+        "indigent",
+        "beggar",
+        "moocher",
+        "dependent",
+        "receiver",
+        "needy"
+      ],
+      "Y_used": [
+        "donor",
+        "philanthropist",
+        "benefactor",
+        "giver",
+        "contributor",
+        "sponsor",
+        "provider",
+        "supporter",
+        "financier",
+        "investor",
+        "grantor",
+        "patron",
+        "altruist",
+        "volunteer",
+        "savior"
+      ],
+      "A_used": [
+        "obligation",
+        "debt",
+        "duty",
+        "liability",
+        "responsibility",
+        "burden",
+        "requirement",
+        "mandate",
+        "compulsion",
+        "constraint",
+        "bondage",
+        "servitude",
+        "subservience",
+        "subservient",
+        "onus"
+      ],
+      "B_used": [
+        "freedom",
+        "liberty",
+        "autonomy",
+        "independence",
+        "choice",
+        "option",
+        "release",
+        "emancipation",
+        "liberation",
+        "voluntary",
+        "spontaneous",
+        "unbound",
+        "unrestrained",
+        "free",
+        "volition"
+      ]
+    },
+    "proposal": "People associate dependents with obligation more strongly than they associate benefactors with obligation. This differential implicit association suggests that members of the public implicitly represent those who receive support as bound by debt or duty, whereas those who provide support are mentally represented as free agents unburdened by reciprocal demands. While explicit discourse often focuses on the generosity of givers and the neediness of receivers, the implicit linkage of obligation specifically to dependents reveals a hidden asymmetry in how moral indebtedness is attributed across charitable relationships. Examining this association is novel because implicit bias research has largely focused on warmth and competence, leaving the dimension of social debt and constraint underexplored. Understanding this bias matters because it can shape public attitudes toward welfare recipients, charity, and the perceived moral standing of those in positions of need versus those in positions of power.",
+    "iterations": 3,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "c83d1b7a0641",
     "timestamp": "2026-05-30T20:23:59.387772+00:00",
     "schema_version": "autoresearch.v1",
