@@ -1,5 +1,111 @@
 [
   {
+    "id": "9781c9f9b697",
+    "timestamp": "2026-05-31T08:21:43.841385+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Artisans vs Managers on authenticity vs artificiality",
+    "labels": {
+      "X": "Artisans",
+      "Y": "Managers",
+      "A": "authenticity",
+      "B": "artificiality"
+    },
+    "canonical_keys": {
+      "X": "artisans",
+      "Y": "managers",
+      "A": "authenticity",
+      "B": "artificiality"
+    },
+    "effect_size": 1.0061863598891556,
+    "p_value": 0.00412,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "carpenter",
+        "blacksmith",
+        "potter",
+        "weaver",
+        "mason",
+        "jeweler",
+        "cobbler",
+        "tailor",
+        "brewer",
+        "baker",
+        "smith",
+        "craftsman",
+        "artisan",
+        "sculptor",
+        "builder"
+      ],
+      "Y_used": [
+        "manager",
+        "director",
+        "supervisor",
+        "executive",
+        "administrator",
+        "overseer",
+        "coordinator",
+        "controller",
+        "boss",
+        "leader",
+        "principal",
+        "officer",
+        "foreman",
+        "chairman",
+        "official"
+      ],
+      "A_used": [
+        "authentic",
+        "genuine",
+        "real",
+        "sincere",
+        "natural",
+        "pure",
+        "original",
+        "heartfelt",
+        "earnest",
+        "candid",
+        "frank",
+        "open",
+        "transparent",
+        "true",
+        "honest"
+      ],
+      "B_used": [
+        "artificial",
+        "fake",
+        "false",
+        "synthetic",
+        "bogus",
+        "phony",
+        "contrived",
+        "staged",
+        "corporate",
+        "bureaucratic",
+        "impersonal",
+        "calculated",
+        "sterile",
+        "mechanical",
+        "regulated"
+      ]
+    },
+    "proposal": "People associate Artisans with authenticity more strongly than they associate Managers with authenticity. This differential implicit association taps into the cultural valorization of craft-based labor and the perceived sincerity of hands-on creation versus the instrumental rationality often attributed to organizational administration. Examining this link is novel as it extends beyond generic creator-consumer dichotomies to contrast two distinct modes of social production: embodied skill versus bureaucratic coordination. Confirming this association would highlight how implicit cognition reinforces the prestige of individual craftsmanship over systemic management, potentially shaping hiring biases and public trust in different professional roles during periods of economic transition.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "eaf669e5dc4c",
     "timestamp": "2026-05-31T05:29:41.074828+00:00",
     "schema_version": "autoresearch.v1",
