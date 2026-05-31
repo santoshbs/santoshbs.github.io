@@ -1,5 +1,111 @@
 [
   {
+    "id": "53ebbbd2ae29",
+    "timestamp": "2026-05-31T02:56:31.987552+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "rivals vs allies on predictability and stability",
+    "labels": {
+      "X": "rivals",
+      "Y": "allies",
+      "A": "Unpredictable / Volatile",
+      "B": "Predictable / Stable"
+    },
+    "canonical_keys": {
+      "X": "rivals",
+      "Y": "allies",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 0.9171039010429746,
+    "p_value": 0.01239,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "rival",
+        "competitor",
+        "opponent",
+        "adversary",
+        "enemy",
+        "foe",
+        "challenger",
+        "antagonist",
+        "contender",
+        "nemesis",
+        "detractor",
+        "hater",
+        "critic",
+        "combatant",
+        "opposer"
+      ],
+      "Y_used": [
+        "ally",
+        "partner",
+        "teammate",
+        "colleague",
+        "comrade",
+        "friend",
+        "confederate",
+        "associate",
+        "companion",
+        "collaborator",
+        "supporter",
+        "cooperator",
+        "aide",
+        "assistant",
+        "pal"
+      ],
+      "A_used": [
+        "unpredictable",
+        "volatile",
+        "erratic",
+        "fickle",
+        "capricious",
+        "unstable",
+        "random",
+        "chaotic",
+        "sporadic",
+        "fluctuating",
+        "shifting",
+        "whimsical",
+        "mercurial",
+        "sudden",
+        "abrupt"
+      ],
+      "B_used": [
+        "predictable",
+        "stable",
+        "steady",
+        "consistent",
+        "reliable",
+        "foreseeable",
+        "constant",
+        "fixed",
+        "regular",
+        "certain",
+        "clear",
+        "known",
+        "expectable",
+        "dependable",
+        "steadfast"
+      ]
+    },
+    "proposal": "People associate rivals with unpredictability more strongly than they associate allies with unpredictability. This implicit bias suggests that lay cognition treats cooperative partners as stable and foreseeable while framing competitive counterparts as volatile and harder to model, regardless of actual behavioral evidence. The association is novel because implicit research has largely focused on warmth and competence, neglecting how predictability is differentially allocated to relational roles. Examining this matters because over-attributing unpredictability to rivals can distort risk assessment and strategic planning, while assuming allies are predictable may leave groups vulnerable to sudden shifts in alignment or internal dissent.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "d0e58fffad3b",
     "timestamp": "2026-05-31T02:23:04.888735+00:00",
     "schema_version": "autoresearch.v1",
