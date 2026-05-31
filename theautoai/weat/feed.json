@@ -1,5 +1,111 @@
 [
   {
+    "id": "eaf669e5dc4c",
+    "timestamp": "2026-05-31T05:29:41.074828+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "pirates vs merchants on hoarding vs exchange",
+    "labels": {
+      "X": "pirates",
+      "Y": "merchants",
+      "A": "hoarding",
+      "B": "exchange"
+    },
+    "canonical_keys": {
+      "X": "pirates",
+      "Y": "merchants",
+      "A": "hoarding",
+      "B": "exchange"
+    },
+    "effect_size": 1.4977452523075867,
+    "p_value": 2e-05,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "pirate",
+        "buccaneer",
+        "corsair",
+        "privateer",
+        "marauder",
+        "plunderer",
+        "raider",
+        "scallywag",
+        "rogue",
+        "scoundrel",
+        "buccaneers",
+        "corsairs",
+        "privateers",
+        "marauders",
+        "plunderers"
+      ],
+      "Y_used": [
+        "merchant",
+        "trader",
+        "vendor",
+        "seller",
+        "shopkeeper",
+        "retailer",
+        "wholesaler",
+        "dealer",
+        "broker",
+        "businessman",
+        "salesman",
+        "peddler",
+        "hawker",
+        "pedlar",
+        "storekeeper"
+      ],
+      "A_used": [
+        "hoard",
+        "stash",
+        "hide",
+        "keep",
+        "stockpile",
+        "bury",
+        "conceal",
+        "save",
+        "store",
+        "amass",
+        "pile",
+        "cache",
+        "hoarding",
+        "storing",
+        "stockpiling"
+      ],
+      "B_used": [
+        "trade",
+        "exchange",
+        "sell",
+        "flow",
+        "circulate",
+        "give",
+        "distribute",
+        "buy",
+        "barter",
+        "deal",
+        "transact",
+        "commerce",
+        "market",
+        "selling",
+        "buying"
+      ]
+    },
+    "proposal": "People associate pirates with hoarding more strongly than they associate merchants with hoarding. This proposal examines whether the pervasive cultural narrative of pirates as treasure-stockpiling plunderers creates a stronger implicit link to accumulation-without-circulation compared to merchants, who are culturally framed as facilitators of exchange and flow. Confirming this association would reveal a distinct cognitive separation between illegal stockpiling and legal trading in the mental representation of wealth dynamics, suggesting that the public implicitly categorizes economic actors by the mobility of their assets rather than just their possession of them. The finding matters for understanding how discourse shapes moral intuitions about wealth preservation versus distribution, as it highlights a bias that equates hoarding with illicit actors while absolving commercial actors of similar accumulation behaviors.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "94ef4b8b84d1",
     "timestamp": "2026-05-31T04:07:47.567453+00:00",
     "schema_version": "autoresearch.v1",
