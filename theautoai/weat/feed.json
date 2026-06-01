@@ -1,5 +1,111 @@
 [
   {
+    "id": "081ca79c30c1",
+    "timestamp": "2026-06-01T10:36:25.335158+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "pilgrims vs tourists on sacred versus secular",
+    "labels": {
+      "X": "pilgrims",
+      "Y": "tourists",
+      "A": "sacredness",
+      "B": "profanity"
+    },
+    "canonical_keys": {
+      "X": "pilgrims",
+      "Y": "tourists",
+      "A": "sacredness",
+      "B": "profanity"
+    },
+    "effect_size": 1.588830749381946,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "pilgrim",
+        "devotee",
+        "worshiper",
+        "believer",
+        "seeker",
+        "ascetic",
+        "monk",
+        "nun",
+        "friar",
+        "mystic",
+        "penitent",
+        "follower",
+        "convert",
+        "zealot",
+        "missionary"
+      ],
+      "Y_used": [
+        "tourist",
+        "vacationer",
+        "visitor",
+        "sightseer",
+        "backpacker",
+        "globetrotter",
+        "rover",
+        "drifter",
+        "guest",
+        "patron",
+        "consumer",
+        "explorer",
+        "adventurer",
+        "nomad",
+        "wanderer"
+      ],
+      "A_used": [
+        "sacred",
+        "holy",
+        "divine",
+        "spiritual",
+        "religious",
+        "sanctified",
+        "devout",
+        "reverent",
+        "pious",
+        "blessed",
+        "consecrated",
+        "miraculous",
+        "heavenly",
+        "celestial",
+        "supernatural"
+      ],
+      "B_used": [
+        "profane",
+        "secular",
+        "worldly",
+        "material",
+        "commercial",
+        "leisure",
+        "recreational",
+        "transactional",
+        "pleasure",
+        "fun",
+        "casual",
+        "mundane",
+        "earthly",
+        "physical",
+        "pragmatic"
+      ]
+    },
+    "proposal": "People associate pilgrims with sacredness more strongly than they associate tourists with sacredness. This differential implicit association probes the mental boundary between spiritual travel and leisure travel, a distinction that is increasingly blurred in contemporary discourse around 'spiritual tourism' and 'wellness retreats.' While explicit attitudes distinguish these groups by motivation, implicit associations reveal whether the public cognitively categorizes pilgrims as inherently sanctified actors versus tourists as profane consumers of experience. Confirming this association would suggest that social actors who engage in ritualized movement are automatically imbued with higher moral or spiritual status in the public mind, independent of their actual behavior.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "808cf221f017",
     "timestamp": "2026-06-01T09:41:16.164911+00:00",
     "schema_version": "autoresearch.v1",
