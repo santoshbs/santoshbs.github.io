@@ -1,5 +1,111 @@
 [
   {
+    "id": "c4ff9e50e96e",
+    "timestamp": "2026-06-01T12:15:51.094163+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Merchants vs Bankers on Tangibility vs. Abstraction",
+    "labels": {
+      "X": "Merchants",
+      "Y": "Bankers",
+      "A": "Tangibility/Concreteness",
+      "B": "Abstraction/Intangibility"
+    },
+    "canonical_keys": {
+      "X": "merchants",
+      "Y": "bankers",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 1.3047812620640091,
+    "p_value": 0.0001,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "merchant",
+        "trader",
+        "vendor",
+        "retailer",
+        "grocer",
+        "dealer",
+        "hawker",
+        "peddler",
+        "baker",
+        "butcher",
+        "cobbler",
+        "jeweler",
+        "florist",
+        "craftsman",
+        "pedlar"
+      ],
+      "Y_used": [
+        "banker",
+        "financier",
+        "investor",
+        "broker",
+        "lender",
+        "creditor",
+        "underwriter",
+        "actuary",
+        "accountant",
+        "auditor",
+        "treasurer",
+        "fiduciary",
+        "analyst",
+        "speculator",
+        "moneyer"
+      ],
+      "A_used": [
+        "tangible",
+        "concrete",
+        "physical",
+        "material",
+        "solid",
+        "substance",
+        "matter",
+        "objects",
+        "items",
+        "goods",
+        "wares",
+        "products",
+        "merchandise",
+        "things",
+        "actual"
+      ],
+      "B_used": [
+        "intangible",
+        "abstract",
+        "conceptual",
+        "theoretical",
+        "imaginary",
+        "virtual",
+        "symbolic",
+        "notional",
+        "speculative",
+        "mental",
+        "intellectual",
+        "spiritual",
+        "invisible",
+        "imperceptible",
+        "nonphysical"
+      ]
+    },
+    "proposal": "People associate Merchants with tangibility more strongly than they associate Bankers with tangibility. This differential association reflects a potential cognitive distinction in how the public mentally categorizes trade versus finance, linking merchants to concrete goods, physical exchange, and material wares, while linking bankers to abstract capital, numerical value, and intangible instruments. Examining this association is novel because prior research has not directly compared these two historically intertwined yet distinct commercial categories on the axis of concreteness versus abstraction. The finding would be important for understanding how stereotypes about the 'real economy' versus the 'financial economy' are encoded in implicit cognition, potentially influencing public trust and policy attitudes toward different sectors of commerce.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "081ca79c30c1",
     "timestamp": "2026-06-01T10:36:25.335158+00:00",
     "schema_version": "autoresearch.v1",
