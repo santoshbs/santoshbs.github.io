@@ -29,9 +29,9 @@
         "id": "17",
         "title": "Architecture & Engineering",
         "group": "engineering",
-        "refs": 338,
-        "signals": 310,
-        "occupations": 40
+        "refs": 341,
+        "signals": 312,
+        "occupations": 41
       },
       {
         "id": "19",
@@ -2581,9 +2581,9 @@
           "id": "17-2199.07",
           "title": "Photonics Engineers",
           "group": "engineering",
-          "refs": 7,
-          "revised": "2026-05-20",
-          "signals": 6
+          "refs": 8,
+          "revised": "2026-06-01",
+          "signals": 7
         },
         {
           "id": "17-2199.08",
@@ -2656,6 +2656,14 @@
           "refs": 4,
           "revised": "2026-05-20",
           "signals": 3
+        },
+        {
+          "id": "17-3029.08",
+          "title": "Photonics Technicians",
+          "group": "engineering",
+          "refs": 2,
+          "revised": "2026-06-01",
+          "signals": 1
         }
       ],
       "edges": [
@@ -2728,6 +2736,11 @@
           "source": "17-2112.02",
           "target": "17-2199.07",
           "signal": "AI accelerates simulation and data collection in development system"
+        },
+        {
+          "source": "17-2199.07",
+          "target": "17-3029.08",
+          "signal": "Marvell buys Polariton"
         },
         {
           "source": "17-2071.00",
@@ -6521,6 +6534,7 @@
     "17-3024.01": "17",
     "17-3027.00": "17",
     "17-3027.01": "17",
+    "17-3029.08": "17",
     "19-1012.00": "19",
     "19-1013.00": "19",
     "19-1021.00": "19",
