@@ -1,5 +1,111 @@
 [
   {
+    "id": "e778e3b7daf2",
+    "timestamp": "2026-06-01T03:37:46.378625+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "priests vs therapists on moral authority vs clinical focus",
+    "labels": {
+      "X": "priests",
+      "Y": "therapists",
+      "A": "moral_authority",
+      "B": "clinical_secular"
+    },
+    "canonical_keys": {
+      "X": "priests",
+      "Y": "therapists",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 1.8229189347400718,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "priest",
+        "pastor",
+        "reverend",
+        "minister",
+        "cleric",
+        "chaplain",
+        "monk",
+        "friar",
+        "bishop",
+        "cardinal",
+        "vicar",
+        "imam",
+        "rabbi",
+        "deacon",
+        "preacher"
+      ],
+      "Y_used": [
+        "therapist",
+        "psychologist",
+        "counselor",
+        "psychiatrist",
+        "clinician",
+        "analyst",
+        "psychotherapist",
+        "psychoanalyst",
+        "practitioner",
+        "specialist",
+        "provider",
+        "helper",
+        "healer",
+        "behaviorist",
+        "doctor"
+      ],
+      "A_used": [
+        "moral",
+        "ethical",
+        "sacred",
+        "holy",
+        "divine",
+        "virtuous",
+        "righteous",
+        "pious",
+        "spiritual",
+        "faith",
+        "conscience",
+        "sin",
+        "judgment",
+        "truth",
+        "absolute"
+      ],
+      "B_used": [
+        "clinical",
+        "medical",
+        "scientific",
+        "empirical",
+        "secular",
+        "psychological",
+        "practical",
+        "rational",
+        "analytical",
+        "objective",
+        "neutral",
+        "treatment",
+        "diagnosis",
+        "therapy",
+        "health"
+      ]
+    },
+    "proposal": "People associate priests with moral authority more strongly than they associate therapists with moral authority. This differential association captures a cultural shift in how normative guidance is sourced: religious figures retain an implicit link to absolute, transcendent ethical truths, whereas mental health professionals are framed as secular, clinical agents focused on personal adaptation and symptom relief rather than prescriptive morality. While prior studies have compared trust or efficacy across these roles, none have systematically probed the implicit attribution of moral authority, making this a novel and timely examination. Confirming this association would clarify how secularization has redistributed normative functions, highlighting why individuals may still turn to religious actors for ethical crises even as they rely on therapists for psychological distress.",
+    "iterations": 4,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "1c1dfb2563aa",
     "timestamp": "2026-06-01T01:09:28.700307+00:00",
     "schema_version": "autoresearch.v1",
