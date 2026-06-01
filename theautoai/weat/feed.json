@@ -1,5 +1,111 @@
 [
   {
+    "id": "27c2b491b06d",
+    "timestamp": "2026-06-01T23:58:36.397271+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "ranchers vs farmers on social orientation",
+    "labels": {
+      "X": "ranchers",
+      "Y": "farmers",
+      "A": "individualism",
+      "B": "collectivism"
+    },
+    "canonical_keys": {
+      "X": "ranchers",
+      "Y": "farmers",
+      "A": "individualism",
+      "B": "collectivism"
+    },
+    "effect_size": 0.33782929720631905,
+    "p_value": 0.37473,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "rancher",
+        "cowboy",
+        "cowhand",
+        "wrangler",
+        "drover",
+        "herder",
+        "cattleman",
+        "stockman",
+        "herdsman",
+        "ranchhand",
+        "horseman",
+        "cowgirl",
+        "cowpuncher",
+        "trailboss",
+        "ranchman"
+      ],
+      "Y_used": [
+        "farmer",
+        "agrarian",
+        "cultivator",
+        "grower",
+        "planter",
+        "sower",
+        "harvester",
+        "tiller",
+        "yeoman",
+        "cropper",
+        "husbandman",
+        "agriculturist",
+        "vintner",
+        "orchardist",
+        "horticulturist"
+      ],
+      "A_used": [
+        "individual",
+        "independent",
+        "solitary",
+        "lone",
+        "alone",
+        "self",
+        "personal",
+        "private",
+        "autonomous",
+        "free",
+        "separate",
+        "distinct",
+        "single",
+        "unique",
+        "selfreliant"
+      ],
+      "B_used": [
+        "collective",
+        "community",
+        "group",
+        "social",
+        "cooperative",
+        "shared",
+        "communal",
+        "teamwork",
+        "collaboration",
+        "togetherness",
+        "society",
+        "public",
+        "collectivity",
+        "cooperation",
+        "interdependence"
+      ]
+    },
+    "proposal": "People associate ranchers with individualism more strongly than they associate farmers with individualism. This association stems from contrasting cultural narratives and operational realities: ranching is often romanticized as a solitary pursuit requiring vast autonomy over open ranges and roaming livestock, whereas farming is depicted as deeply rooted in fixed plots, seasonal cycles, and community interdependence for shared infrastructure and labor. Examining this differential is novel because rural occupational stereotyping rarely disaggregates agricultural roles beyond the broad 'farmer' label, yet it is important because implicit perceptions of individualism versus collectivism influence political alignment, policy preferences, and resource allocation within rural discourse.",
+    "iterations": 3,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "ac824dfc8bd1",
     "timestamp": "2026-06-01T20:25:12.412460+00:00",
     "schema_version": "autoresearch.v1",
