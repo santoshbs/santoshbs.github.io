@@ -1,5 +1,111 @@
 [
   {
+    "id": "1c1dfb2563aa",
+    "timestamp": "2026-06-01T01:09:28.700307+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "pharmacists vs chemists on safety vs risk",
+    "labels": {
+      "X": "pharmacists",
+      "Y": "chemists",
+      "A": "safety/caution",
+      "B": "risk/experimentation"
+    },
+    "canonical_keys": {
+      "X": "pharmacists",
+      "Y": "chemists",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 1.5441129810440408,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "pharmacist",
+        "pharmacists",
+        "druggist",
+        "druggists",
+        "apothecary",
+        "apothecaries",
+        "dispenser",
+        "dispensers",
+        "compounding",
+        "pharmaceutical",
+        "pharmacy",
+        "pharmacies",
+        "medic",
+        "medics",
+        "practitioner"
+      ],
+      "Y_used": [
+        "chemist",
+        "chemists",
+        "researcher",
+        "researchers",
+        "scientist",
+        "scientists",
+        "laboratory",
+        "experiment",
+        "reaction",
+        "molecule",
+        "synthesis",
+        "analysis",
+        "spectrometer",
+        "beaker",
+        "flask"
+      ],
+      "A_used": [
+        "safety",
+        "cautious",
+        "careful",
+        "secure",
+        "protected",
+        "vigilant",
+        "preventive",
+        "safe",
+        "shielded",
+        "guarded",
+        "watchful",
+        "prudent",
+        "conservative",
+        "protective",
+        "alert"
+      ],
+      "B_used": [
+        "risk",
+        "dangerous",
+        "reckless",
+        "hazardous",
+        "experimental",
+        "exploratory",
+        "bold",
+        "daring",
+        "adventurous",
+        "innovative",
+        "pioneering",
+        "untested",
+        "volatile",
+        "unstable",
+        "wild"
+      ]
+    },
+    "proposal": "People associate pharmacists with safety-consciousness more strongly than they associate chemists with safety-consciousness. This differential implicit association emerges from contrasting cultural narratives: pharmacists are framed as vigilant gatekeepers who prioritize error prevention and public protection, while chemists are romanticized as boundary-pushing experimenters who value discovery over caution. Examining this bias is novel because implicit attitude research has rarely isolated the pharmacist-chemist divide, instead grouping both under broader scientific or medical labels. Understanding this association matters because it reveals how frontline versus laboratory contexts shape mental representations of risk tolerance, potentially influencing public trust, hiring practices, and interdisciplinary collaboration in health and science sectors.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "8299a740553a",
     "timestamp": "2026-05-31T23:49:27.801229+00:00",
     "schema_version": "autoresearch.v1",
