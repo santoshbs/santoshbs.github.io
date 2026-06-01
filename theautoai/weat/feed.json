@@ -1,5 +1,111 @@
 [
   {
+    "id": "808cf221f017",
+    "timestamp": "2026-06-01T09:41:16.164911+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "soldiers vs doctors on Moral certainty vs ambiguity",
+    "labels": {
+      "X": "soldiers",
+      "Y": "doctors",
+      "A": "Moral Clarity",
+      "B": "Moral Ambiguity"
+    },
+    "canonical_keys": {
+      "X": "soldiers",
+      "Y": "doctors",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 0.08985371604390546,
+    "p_value": 0.81622,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "soldier",
+        "infantry",
+        "marine",
+        "ranger",
+        "trooper",
+        "recruit",
+        "cadet",
+        "sergeant",
+        "corporal",
+        "private",
+        "general",
+        "colonel",
+        "lieutenant",
+        "captain",
+        "officer"
+      ],
+      "Y_used": [
+        "doctor",
+        "physician",
+        "surgeon",
+        "clinician",
+        "pediatrician",
+        "dermatologist",
+        "anesthesiologist",
+        "cardiologist",
+        "internist",
+        "orthopedist",
+        "oncologist",
+        "urologist",
+        "optometrist",
+        "ophthalmologist",
+        "specialist"
+      ],
+      "A_used": [
+        "clarity",
+        "clear",
+        "certain",
+        "definite",
+        "precise",
+        "exact",
+        "obvious",
+        "simple",
+        "straightforward",
+        "distinct",
+        "sharp",
+        "unambiguous",
+        "binary",
+        "lucid",
+        "plain"
+      ],
+      "B_used": [
+        "ambiguous",
+        "ambiguity",
+        "vague",
+        "unclear",
+        "uncertain",
+        "murky",
+        "confusing",
+        "complicated",
+        "complex",
+        "dilemma",
+        "nuance",
+        "gray",
+        "hazy",
+        "obscure",
+        "indistinct"
+      ]
+    },
+    "proposal": "People associate soldiers with moral clarity more strongly than they associate doctors with moral clarity. This differential implicit association likely stems from the social representation of military service as operating within binary frameworks of friend versus foe and clear directives to protect, whereas medical practice is culturally framed as navigating ethical ambiguities, triage dilemmas, and complex trade-offs between competing patient values. This proposal is novel because prior research has examined explicit ethical codes or hierarchical structures in these professions, but has not tested the intuitive cognitive link between these social actors and the perceived certainty of their moral landscapes. It is important because confirming this association would reveal a latent bias wherein authority derived from protective violence is implicitly tied to clearer moral boundaries than authority derived from healing, potentially influencing how the public evaluates decision-making legitimacy and expertise in crises.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "2a2e9d3c82c3",
     "timestamp": "2026-06-01T08:16:24.478733+00:00",
     "schema_version": "autoresearch.v1",
