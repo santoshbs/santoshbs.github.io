@@ -1,5 +1,111 @@
 [
   {
+    "id": "8c1d3fd15adf",
+    "timestamp": "2026-06-01T15:24:49.299179+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "conservatives vs libertarians on Tradition vs Autonomy",
+    "labels": {
+      "X": "conservatives",
+      "Y": "libertarians",
+      "A": "Tradition",
+      "B": "Autonomy"
+    },
+    "canonical_keys": {
+      "X": "conservatives",
+      "Y": "libertarians",
+      "A": "tradition",
+      "B": "autonomy"
+    },
+    "effect_size": 0.8620596844119588,
+    "p_value": 0.01806,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "conservative",
+        "republican",
+        "traditionalist",
+        "rightist",
+        "monarchist",
+        "orthodox",
+        "establishment",
+        "nationalist",
+        "fundamentalist",
+        "conformist",
+        "loyalist",
+        "patriot",
+        "royalist",
+        "classicist",
+        "preservationist"
+      ],
+      "Y_used": [
+        "libertarian",
+        "individualist",
+        "independent",
+        "autonomist",
+        "individual",
+        "nonconformist",
+        "innovator",
+        "reformer",
+        "radical",
+        "modernist",
+        "rationalist",
+        "secularist",
+        "entrepreneur",
+        "voluntarist",
+        "freethinker"
+      ],
+      "A_used": [
+        "tradition",
+        "history",
+        "heritage",
+        "custom",
+        "ritual",
+        "continuity",
+        "past",
+        "legacy",
+        "ancestry",
+        "lineage",
+        "convention",
+        "orthodoxy",
+        "precedent",
+        "antiquity",
+        "culture"
+      ],
+      "B_used": [
+        "autonomy",
+        "individualism",
+        "freedom",
+        "liberty",
+        "rights",
+        "choice",
+        "independence",
+        "reason",
+        "logic",
+        "agency",
+        "will",
+        "innovation",
+        "change",
+        "progress",
+        "individuality"
+      ]
+    },
+    "proposal": "People associate conservatives with tradition more strongly than they associate libertarians with tradition. This implicit association has not been previously examined and moves beyond standard left-right spectrum measurements to differentiate right-wing subgroups. It is interesting because it tests the automatic cognitive link between conservatism and historical continuity versus the libertarian focus on individual autonomy and the rational reconstruction of society. Understanding this association is important as it sheds light on how citizens intuitively distinguish between ideologies that both oppose progressive social engineering but differ fundamentally on the role of inherited social structures.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "c4ff9e50e96e",
     "timestamp": "2026-06-01T12:15:51.094163+00:00",
     "schema_version": "autoresearch.v1",
