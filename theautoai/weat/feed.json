@@ -1,5 +1,113 @@
 [
   {
+    "id": "89e4cfef7906",
+    "timestamp": "2026-06-01T16:16:09.056013+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "architects vs planners on aesthetic innovation versus functional utility",
+    "labels": {
+      "X": "architects",
+      "Y": "planners",
+      "A": "aesthetic/creative",
+      "B": "functional/utilitarian"
+    },
+    "canonical_keys": {
+      "X": "architects",
+      "Y": "planners",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 1.2594090330759942,
+    "p_value": 0.00015,
+    "n": {
+      "X": 16,
+      "Y": 16,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "architect",
+        "architects",
+        "designer",
+        "designers",
+        "drafter",
+        "drafters",
+        "builder",
+        "builders",
+        "constructor",
+        "constructors",
+        "mason",
+        "masons",
+        "craftsman",
+        "craftsmen",
+        "artisan",
+        "artisans"
+      ],
+      "Y_used": [
+        "planner",
+        "planners",
+        "bureaucrat",
+        "bureaucrats",
+        "administrator",
+        "administrators",
+        "official",
+        "officials",
+        "manager",
+        "managers",
+        "clerk",
+        "clerks",
+        "regulator",
+        "regulators",
+        "supervisor",
+        "supervisors"
+      ],
+      "A_used": [
+        "aesthetic",
+        "artistic",
+        "beautiful",
+        "beauty",
+        "creative",
+        "creativity",
+        "elegance",
+        "form",
+        "innovative",
+        "innovation",
+        "original",
+        "style",
+        "visionary",
+        "art",
+        "artistry"
+      ],
+      "B_used": [
+        "utility",
+        "zoning",
+        "compromise",
+        "functional",
+        "practical",
+        "pragmatic",
+        "utilitarian",
+        "mundane",
+        "boring",
+        "dull",
+        "routine",
+        "standard",
+        "systematic",
+        "logical",
+        "rational"
+      ]
+    },
+    "proposal": "People associate architects with aesthetic innovation more strongly than they associate planners with aesthetic innovation. Although both professions collaborate to shape cities, public discourse routinely frames architects as visionary artists bearing sole credit for iconic structures, while casting planners as invisible bureaucrats concerned only with utility, zoning, and compromise. This implicit divide has never been systematically measured, yet it directly influences civic trust, funding priorities, and professional prestige in urban development. Examining it reveals how deeply aesthetic versus functional heuristics are wired into lay representations of design roles, with real consequences for how communities evaluate and support public space initiatives.",
+    "iterations": 3,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "8c1d3fd15adf",
     "timestamp": "2026-06-01T15:24:49.299179+00:00",
     "schema_version": "autoresearch.v1",
