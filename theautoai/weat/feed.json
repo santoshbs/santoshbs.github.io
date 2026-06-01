@@ -1,5 +1,111 @@
 [
   {
+    "id": "ac824dfc8bd1",
+    "timestamp": "2026-06-01T20:25:12.412460+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Amateurs vs Professionals on spontaneity versus rigidity",
+    "labels": {
+      "X": "Amateurs",
+      "Y": "Professionals",
+      "A": "spontaneity",
+      "B": "rigidity"
+    },
+    "canonical_keys": {
+      "X": "amateurs",
+      "Y": "professionals",
+      "A": "spontaneity",
+      "B": "rigidity"
+    },
+    "effect_size": 1.2758109128550288,
+    "p_value": 0.0001,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "amateur",
+        "hobbyist",
+        "novice",
+        "beginner",
+        "learner",
+        "student",
+        "enthusiast",
+        "layman",
+        "trainee",
+        "volunteer",
+        "tinkerer",
+        "dabbler",
+        "neophyte",
+        "recreational",
+        "untrained"
+      ],
+      "Y_used": [
+        "professional",
+        "expert",
+        "specialist",
+        "veteran",
+        "master",
+        "technician",
+        "craftsman",
+        "practitioner",
+        "consultant",
+        "authority",
+        "certified",
+        "licensed",
+        "qualified",
+        "adept",
+        "manager"
+      ],
+      "A_used": [
+        "spontaneous",
+        "free",
+        "relaxed",
+        "unrestrained",
+        "playful",
+        "creative",
+        "flexible",
+        "loose",
+        "unbound",
+        "unstructured",
+        "impulsive",
+        "whimsical",
+        "impromptu",
+        "improvised",
+        "fluid"
+      ],
+      "B_used": [
+        "rigid",
+        "strict",
+        "formal",
+        "regulated",
+        "controlled",
+        "disciplined",
+        "systematic",
+        "orderly",
+        "structured",
+        "bureaucratic",
+        "traditional",
+        "methodical",
+        "conventional",
+        "precise",
+        "standardized"
+      ]
+    },
+    "proposal": "People associate Amateurs with spontaneity more strongly than they associate Professionals with spontaneity. This differential implicit association captures a cultural undercurrent that romanticizes the 'amateur spirit' as unencumbered by rules and conventional constraints, whereas professionals are mentally represented as bound by protocols, standards, and institutional rigidity. Examining this association is novel because existing research has focused almost exclusively on explicit competence, expertise, or trust, neglecting the affective and behavioral traits linked to the lay-versus-expert divide. Confirming this bias would reveal how the increasing professionalization of daily life may trigger an implicit counter-narrative that valorizes amateur freedom and improvisation as antidotes to bureaucratic control, mattering for how we perceive citizen participation, open-source collaboration, and non-traditional knowledge production.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "89e4cfef7906",
     "timestamp": "2026-06-01T16:16:09.056013+00:00",
     "schema_version": "autoresearch.v1",
