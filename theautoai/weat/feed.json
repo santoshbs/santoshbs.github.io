@@ -1,5 +1,111 @@
 [
   {
+    "id": "8a78172cc0d5",
+    "timestamp": "2026-06-02T07:56:50.998117+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Patrons vs Artists on Tradition vs Innovation",
+    "labels": {
+      "X": "Patrons",
+      "Y": "Artists",
+      "A": "Tradition",
+      "B": "Innovation"
+    },
+    "canonical_keys": {
+      "X": "patrons",
+      "Y": "artists",
+      "A": "tradition",
+      "B": "innovation"
+    },
+    "effect_size": 0.8953056248253675,
+    "p_value": 0.0128,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "sponsor",
+        "backer",
+        "benefactor",
+        "donor",
+        "patron",
+        "supporter",
+        "patroness",
+        "financier",
+        "subscriber",
+        "contributor",
+        "investor",
+        "philanthropist",
+        "collector",
+        "promoter",
+        "champion"
+      ],
+      "Y_used": [
+        "artist",
+        "author",
+        "creator",
+        "composer",
+        "designer",
+        "painter",
+        "sculptor",
+        "musician",
+        "poet",
+        "writer",
+        "illustrator",
+        "dramatist",
+        "animator",
+        "choreographer",
+        "director"
+      ],
+      "A_used": [
+        "tradition",
+        "classical",
+        "heritage",
+        "conservative",
+        "orthodox",
+        "conventional",
+        "standard",
+        "formal",
+        "historic",
+        "canonical",
+        "ancient",
+        "classic",
+        "traditional",
+        "customary",
+        "established"
+      ],
+      "B_used": [
+        "innovation",
+        "modern",
+        "contemporary",
+        "new",
+        "progressive",
+        "radical",
+        "experimental",
+        "fresh",
+        "unconventional",
+        "revolutionary",
+        "innovative",
+        "futuristic",
+        "dynamic",
+        "disruptive",
+        "visionary"
+      ]
+    },
+    "proposal": "People associate Patrons with Tradition more strongly than they associate Artists with Tradition. In cultural discourse, patrons, benefactors, and sponsors are often framed as guardians of heritage, funders of established institutions, and preservers of classic forms, whereas artists are stereotyped as avant-garde, disruptive, and innovators who challenge the status quo. This implicit association is novel because prior research has focused on political ideologies or broad creator-versus-critic distinctions, neglecting the specific mental representation of the cultural funding class relative to the creative class. Examining this association matters because it reveals whether the public implicitly links the authority to sustain culture with conservatism and orthodoxy, potentially obscuring the role of patrons in enabling risk or reinforcing the perception of art as inherently rebellious while capital is inherently stabilizing.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "f330800450f8",
     "timestamp": "2026-06-02T07:14:19.036367+00:00",
     "schema_version": "autoresearch.v1",
