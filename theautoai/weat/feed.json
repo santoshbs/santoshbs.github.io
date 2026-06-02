@@ -1,5 +1,111 @@
 [
   {
+    "id": "835a988a7afd",
+    "timestamp": "2026-06-02T17:29:18.563437+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "guards vs soldiers on vigilance versus combativeness",
+    "labels": {
+      "X": "guards",
+      "Y": "soldiers",
+      "A": "vigilance",
+      "B": "combativeness"
+    },
+    "canonical_keys": {
+      "X": "guards",
+      "Y": "soldiers",
+      "A": "vigilance",
+      "B": "combativeness"
+    },
+    "effect_size": 1.1663399235987686,
+    "p_value": 0.00092,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "guard",
+        "sentinel",
+        "watcher",
+        "monitor",
+        "sentry",
+        "lookout",
+        "bouncer",
+        "cop",
+        "officer",
+        "sheriff",
+        "warden",
+        "keeper",
+        "custodian",
+        "watchman",
+        "patrolman"
+      ],
+      "Y_used": [
+        "soldier",
+        "warrior",
+        "fighter",
+        "combatant",
+        "trooper",
+        "infantry",
+        "marine",
+        "sergeant",
+        "captain",
+        "general",
+        "private",
+        "rifleman",
+        "cadet",
+        "recruit",
+        "veteran"
+      ],
+      "A_used": [
+        "alert",
+        "watchful",
+        "observant",
+        "vigilant",
+        "aware",
+        "attentive",
+        "cautious",
+        "mindful",
+        "perceptive",
+        "discerning",
+        "wary",
+        "heedful",
+        "careful",
+        "suspicious",
+        "prudent"
+      ],
+      "B_used": [
+        "active",
+        "aggressive",
+        "combative",
+        "warlike",
+        "violent",
+        "fierce",
+        "militant",
+        "hostile",
+        "belligerent",
+        "assertive",
+        "dynamic",
+        "energetic",
+        "forceful",
+        "impulsive",
+        "reactive"
+      ]
+    },
+    "proposal": "People associate guards with vigilance more strongly than they associate soldiers with vigilance. This differential implicit association captures a deep-seated cognitive distinction between the archetype of the static watcher, who is culturally coded as hyper-alert, observant, and preventive, and the mobile combatant, whose identity is primarily constructed around action, engagement, and kinetic response. Investigating this bias is crucial for understanding how laypeople mentally partition security functions, as it may reveal assumptions that undervalue the constant cognitive load and risk inherent in guarding roles or conversely misattribute passivity to guards while over-attributing reflexiveness to soldiers. Such findings could inform discourse on military-civilian relations, security sector reform, and the allocation of public trust between monitoring versus interventionist actors.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "8a78172cc0d5",
     "timestamp": "2026-06-02T07:56:50.998117+00:00",
     "schema_version": "autoresearch.v1",
