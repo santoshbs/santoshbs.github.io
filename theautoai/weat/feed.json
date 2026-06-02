@@ -1,5 +1,112 @@
 [
   {
+    "id": "f330800450f8",
+    "timestamp": "2026-06-02T07:14:19.036367+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "architects vs builders on pretension vs groundedness",
+    "labels": {
+      "X": "architects",
+      "Y": "builders",
+      "A": "pretentious",
+      "B": "grounded"
+    },
+    "canonical_keys": {
+      "X": "architects",
+      "Y": "builders",
+      "A": "pretentious",
+      "B": "grounded"
+    },
+    "effect_size": 0.6215491003424717,
+    "p_value": 0.09573,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "architect",
+        "architects",
+        "planner",
+        "planners",
+        "designer",
+        "designers",
+        "draughtsman",
+        "drafter",
+        "drafters",
+        "surveyor",
+        "surveyors",
+        "urbanist",
+        "urbanists",
+        "draftsman",
+        "draftsmen"
+      ],
+      "Y_used": [
+        "builder",
+        "builders",
+        "contractor",
+        "contractors",
+        "carpenter",
+        "carpenters",
+        "mason",
+        "masons",
+        "laborer",
+        "laborers",
+        "workman",
+        "workmen",
+        "craftsman",
+        "craftsmen",
+        "tradesman",
+        "tradesmen"
+      ],
+      "A_used": [
+        "pretentious",
+        "pretension",
+        "pretense",
+        "pompous",
+        "snobbish",
+        "haughty",
+        "arrogant",
+        "affected",
+        "snooty",
+        "showy",
+        "snobby",
+        "superior",
+        "condescending",
+        "grandiose",
+        "bombastic"
+      ],
+      "B_used": [
+        "grounded",
+        "practical",
+        "pragmatic",
+        "straightforward",
+        "honest",
+        "simple",
+        "plain",
+        "humble",
+        "modest",
+        "tangible",
+        "solid",
+        "sturdy",
+        "functional",
+        "utilitarian",
+        "rustic"
+      ]
+    },
+    "proposal": "People associate architects with pretension more strongly than they associate builders with pretension. This differential implicit association reflects a cultural tension in construction discourse where the designer is often stereotyped as an intellectual elite prone to affectation and self-importance, while the builder is viewed as a grounded practitioner of skilled labor who values straightforward execution over stylistic posturing. Examining this bias is novel because prior research has focused on contrasts between architects and engineers or planners, neglecting the implicit hierarchy of character traits attributed to the conceptual versus execution roles in the built environment. Confirming this association would reveal how educational and professional capital can be implicitly penalized through perceptions of inauthenticity or social distance, shaping public trust and dispute dynamics in construction and design industries.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "eab1f68ba7c8",
     "timestamp": "2026-06-02T02:37:00.186751+00:00",
     "schema_version": "autoresearch.v1",
