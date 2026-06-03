@@ -1,5 +1,111 @@
 [
   {
+    "id": "9568cbf4bc81",
+    "timestamp": "2026-06-03T19:28:58.118229+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Shepherds vs Fishers on Caretaking vs Extraction",
+    "labels": {
+      "X": "Shepherds",
+      "Y": "Fishers",
+      "A": "Care",
+      "B": "Harvest"
+    },
+    "canonical_keys": {
+      "X": "shepherds",
+      "Y": "fishers",
+      "A": "care",
+      "B": "harvest"
+    },
+    "effect_size": 0.13501843251351714,
+    "p_value": 0.72964,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "shepherd",
+        "herdsman",
+        "sheepman",
+        "drover",
+        "stockman",
+        "grazier",
+        "herder",
+        "keeper",
+        "goatherd",
+        "rancher",
+        "cattleman",
+        "wrangler",
+        "cowboy",
+        "sheepherder",
+        "warden"
+      ],
+      "Y_used": [
+        "fisherman",
+        "fisher",
+        "angler",
+        "whaler",
+        "harpooner",
+        "crabber",
+        "diver",
+        "trawler",
+        "catcher",
+        "seaman",
+        "sailor",
+        "deckhand",
+        "oarsman",
+        "boater",
+        "mariner"
+      ],
+      "A_used": [
+        "care",
+        "nurture",
+        "protect",
+        "guard",
+        "tend",
+        "raise",
+        "feed",
+        "keep",
+        "love",
+        "kindness",
+        "safety",
+        "welfare",
+        "comfort",
+        "shelter",
+        "watch"
+      ],
+      "B_used": [
+        "harvest",
+        "extract",
+        "exploit",
+        "consume",
+        "seize",
+        "strip",
+        "remove",
+        "deplete",
+        "drain",
+        "mine",
+        "slaughter",
+        "butcher",
+        "kill",
+        "capture",
+        "catch"
+      ]
+    },
+    "proposal": "People associate Shepherds with care more strongly than they associate Fishers with care. This differential implicit association arises from the pervasive pastoral archetype of the shepherd as a protector, nurturer, and steward of living flocks, which stands in contrast to the fisher's cultural coding around extraction, risk, and the transient capture of resources from water. While shepherds have been studied in other contexts, the specific comparison with fishers on the dimension of caretaking versus harvesting has not been systematically examined in implicit measures. Investigating this association is important because it reveals how deeply embedded values of nurturance and stewardship are mapped onto distinct human interactions with nature, potentially shaping intuitive judgments about environmental ethics and the moral status of different forms of labor.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "45e250e91d28",
     "timestamp": "2026-06-03T11:09:06.593396+00:00",
     "schema_version": "autoresearch.v1",
