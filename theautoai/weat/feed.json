@@ -1,5 +1,111 @@
 [
   {
+    "id": "45e250e91d28",
+    "timestamp": "2026-06-03T11:09:06.593396+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "curators vs critics on Neutrality versus Bias",
+    "labels": {
+      "X": "curators",
+      "Y": "critics",
+      "A": "Neutrality",
+      "B": "Bias and Advocacy"
+    },
+    "canonical_keys": {
+      "X": "curators",
+      "Y": "critics",
+      "A": "neutrality",
+      "B": ""
+    },
+    "effect_size": 1.4695964171988318,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "curator",
+        "archivist",
+        "conservator",
+        "librarian",
+        "registrar",
+        "collector",
+        "steward",
+        "exhibitor",
+        "cataloger",
+        "restorer",
+        "historian",
+        "keeper",
+        "director",
+        "guardian",
+        "administrator"
+      ],
+      "Y_used": [
+        "critic",
+        "reviewer",
+        "commentator",
+        "pundit",
+        "journalist",
+        "columnist",
+        "correspondent",
+        "reporter",
+        "blogger",
+        "essayist",
+        "observer",
+        "writer",
+        "author",
+        "broadcaster",
+        "presenter"
+      ],
+      "A_used": [
+        "neutral",
+        "objective",
+        "impartial",
+        "unbiased",
+        "detached",
+        "disinterested",
+        "fair",
+        "evenhanded",
+        "equitable",
+        "balanced",
+        "impersonal",
+        "nonpartisan",
+        "independent",
+        "aloof",
+        "reserved"
+      ],
+      "B_used": [
+        "biased",
+        "subjective",
+        "partisan",
+        "partial",
+        "prejudiced",
+        "opinionated",
+        "judgmental",
+        "favorable",
+        "unfavorable",
+        "positive",
+        "negative",
+        "passionate",
+        "emotional",
+        "overt",
+        "explicit"
+      ]
+    },
+    "proposal": "People associate curators with neutrality more strongly than they associate critics with neutrality. While both roles engage deeply with cultural artifacts and public discourse, curators are institutionally tasked with preserving collections without overt bias, fostering an implicit expectation of political and aesthetic detachment. In contrast, critics are culturally understood as commentators who must advocate for specific tastes, judge quality, and influence public opinion through explicit stances. This differential implicit association remains largely unexamined despite its relevance to contemporary debates over museum funding, freedom of expression, and the perceived objectivity of cultural gatekeepers versus media commentators. Confirming or challenging this bias would clarify how the public mentally partitions preservation roles from evaluative ones, with implications for institutional trust and public discourse norms.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "835a988a7afd",
     "timestamp": "2026-06-02T17:29:18.563437+00:00",
     "schema_version": "autoresearch.v1",
