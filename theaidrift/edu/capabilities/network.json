@@ -20,8 +20,16 @@
       "id": "commercial-delivery",
       "title": "Commercial Delivery",
       "group": "Commercial Activity",
+      "refs": 2,
+      "revised": "2026-06-04",
+      "signals": 2
+    },
+    {
+      "id": "commercial-monitoring",
+      "title": "Commercial Monitoring",
+      "group": "Commercial Activity",
       "refs": 1,
-      "revised": "2026-04-09",
+      "revised": "2026-06-04",
       "signals": 1
     },
     {
@@ -37,8 +45,8 @@
       "title": "Corporate Governance",
       "group": "Strategy & Governance",
       "refs": 25,
-      "revised": "2026-06-03",
-      "signals": 39
+      "revised": "2026-06-04",
+      "signals": 40
     },
     {
       "id": "curriculum-management",
@@ -359,6 +367,21 @@
       "signal": "Quoting Romain Huet"
     },
     {
+      "source": "commercial-delivery",
+      "target": "commercial-monitoring",
+      "signal": "Locked, stocked, and losing budget: AI vendor lock-in bites back"
+    },
+    {
+      "source": "commercial-delivery",
+      "target": "corporate-governance",
+      "signal": "Locked, stocked, and losing budget: AI vendor lock-in bites back"
+    },
+    {
+      "source": "commercial-monitoring",
+      "target": "corporate-governance",
+      "signal": "Locked, stocked, and losing budget: AI vendor lock-in bites back"
+    },
+    {
       "source": "commercial-sourcing",
       "target": "information-management",
       "signal": "Can AI responses be influenced? The SEO industry is trying"
@@ -471,11 +494,6 @@
     {
       "source": "commercial-delivery",
       "target": "commercial-sourcing",
-      "signal": "Trump-appointed judges refuse to block Trump blacklisting of Anthropic AI tech"
-    },
-    {
-      "source": "commercial-delivery",
-      "target": "corporate-governance",
       "signal": "Trump-appointed judges refuse to block Trump blacklisting of Anthropic AI tech"
     },
     {
