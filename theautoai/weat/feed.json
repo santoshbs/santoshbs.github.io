@@ -1,5 +1,111 @@
 [
   {
+    "id": "1dc6f105bc27",
+    "timestamp": "2026-06-04T06:12:14.722435+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Doctors vs Politicians on urgency versus deliberation",
+    "labels": {
+      "X": "Doctors",
+      "Y": "Politicians",
+      "A": "Urgency",
+      "B": "Deliberation"
+    },
+    "canonical_keys": {
+      "X": "doctors",
+      "Y": "politicians",
+      "A": "urgency",
+      "B": "deliberation"
+    },
+    "effect_size": -0.2596385235567501,
+    "p_value": 0.49767,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "doctor",
+        "physician",
+        "surgeon",
+        "specialist",
+        "practitioner",
+        "clinician",
+        "cardiologist",
+        "neurologist",
+        "dermatologist",
+        "pediatrician",
+        "psychiatrist",
+        "internist",
+        "anesthesiologist",
+        "pathologist",
+        "radiologist"
+      ],
+      "Y_used": [
+        "politician",
+        "senator",
+        "representative",
+        "congressman",
+        "mayor",
+        "governor",
+        "diplomat",
+        "ambassador",
+        "legislator",
+        "campaigner",
+        "lobbyist",
+        "minister",
+        "chancellor",
+        "premier",
+        "deputy"
+      ],
+      "A_used": [
+        "urgent",
+        "emergency",
+        "immediate",
+        "rapid",
+        "swift",
+        "fast",
+        "critical",
+        "pressing",
+        "hasty",
+        "sudden",
+        "frantic",
+        "quick",
+        "instant",
+        "prompt",
+        "accelerated"
+      ],
+      "B_used": [
+        "deliberate",
+        "delay",
+        "calm",
+        "patient",
+        "slow",
+        "gradual",
+        "measured",
+        "cautious",
+        "steady",
+        "thoughtful",
+        "leisurely",
+        "unhurried",
+        "procrastinate",
+        "negotiate",
+        "compromise"
+      ]
+    },
+    "proposal": "People associate doctors with urgency more strongly than they associate politicians with urgency. This differential implicit association reflects the divergent cultural scripts surrounding these roles: doctors are consistently framed as operating in high-stakes, time-critical environments where immediate action is vital to survival, whereas politicians are often portrayed through narratives of deliberation, committee review, compromise, or strategic delay. Examining this association is novel because it probes a temporal and action-oriented dimension of social cognition rather than the standard warmth, competence, or trust axes typically studied in professional stereotypes. The finding matters because implicit perceptions of urgency may shape how credibly the public receives warnings or calls to rapid action from these groups during crises, potentially biasing support for timely interventions based on the messenger's category.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "8e7e0ce600bd",
     "timestamp": "2026-06-04T00:38:12.205301+00:00",
     "schema_version": "autoresearch.v1",
