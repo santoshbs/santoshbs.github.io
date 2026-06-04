@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "batches_seen": 586,
-  "loans_seen": 9376,
-  "last_updated": "2026-06-04T18:24:55.748402+00:00",
+  "batches_seen": 587,
+  "loans_seen": 9392,
+  "last_updated": "2026-06-04T19:18:50.508152+00:00",
   "watching_for": "",
   "claims": {
     "female-technical-specificity-faster": {
@@ -13,10 +13,10 @@
       "supporting_loans": [],
       "confidence": 0.94,
       "first_seen_batch": 1,
-      "last_updated_batch": 586,
+      "last_updated_batch": 587,
       "confidence_history": [
         [
-          586,
+          587,
           0.94
         ]
       ]
@@ -29,10 +29,10 @@
       "supporting_loans": [],
       "confidence": 0.85,
       "first_seen_batch": 1,
-      "last_updated_batch": 586,
+      "last_updated_batch": 587,
       "confidence_history": [
         [
-          586,
+          587,
           0.85
         ]
       ]
@@ -45,10 +45,10 @@
       "supporting_loans": [],
       "confidence": 0.83,
       "first_seen_batch": 1,
-      "last_updated_batch": 586,
+      "last_updated_batch": 587,
       "confidence_history": [
         [
-          586,
+          587,
           0.83
         ]
       ]
@@ -61,10 +61,10 @@
       "supporting_loans": [],
       "confidence": 0.99,
       "first_seen_batch": 1,
-      "last_updated_batch": 586,
+      "last_updated_batch": 587,
       "confidence_history": [
         [
-          586,
+          587,
           0.99
         ]
       ]
@@ -77,10 +77,10 @@
       "supporting_loans": [],
       "confidence": 0.85,
       "first_seen_batch": 1,
-      "last_updated_batch": 586,
+      "last_updated_batch": 587,
       "confidence_history": [
         [
-          586,
+          587,
           0.85
         ]
       ]
@@ -93,10 +93,10 @@
       "supporting_loans": [],
       "confidence": 0.99,
       "first_seen_batch": 1,
-      "last_updated_batch": 586,
+      "last_updated_batch": 587,
       "confidence_history": [
         [
-          586,
+          587,
           0.99
         ]
       ]
@@ -109,10 +109,10 @@
       "supporting_loans": [],
       "confidence": 0.81,
       "first_seen_batch": 1,
-      "last_updated_batch": 586,
+      "last_updated_batch": 587,
       "confidence_history": [
         [
-          586,
+          587,
           0.81
         ]
       ]
@@ -125,89 +125,68 @@
       "supporting_loans": [],
       "confidence": 0.68,
       "first_seen_batch": 1,
-      "last_updated_batch": 586,
+      "last_updated_batch": 587,
       "confidence_history": [
         [
-          586,
+          587,
           0.68
         ]
       ]
     }
   },
   "puzzles": {
-    "female-child-count-impact": {
-      "id": "female-child-count-impact",
-      "body": "Female borrowers who mention exactly two children fund faster than those who mention three or more.",
-      "first_seen_batch": 532
-    },
-    "female-low-local-amount-faster": {
-      "id": "female-low-local-amount-faster",
-      "body": "Female borrowers requesting lower amounts of local currency may fund faster than those requesting higher amounts.",
-      "first_seen_batch": 536
-    },
     "female-thanks-slower": {
       "id": "female-thanks-slower",
       "body": "Female borrowers who express explicit thanks to lenders may fund more slowly.",
-      "first_seen_batch": 540
+      "first_seen_batch": 539
     },
     "male-thanks-faster": {
       "id": "male-thanks-faster",
       "body": "Male borrowers who express explicit thanks to lenders may fund faster.",
-      "first_seen_batch": 550
+      "first_seen_batch": 549
     },
     "female-single-status-slower": {
       "id": "female-single-status-slower",
       "body": "Female borrowers who explicitly describe themselves as single women may fund more slowly.",
-      "first_seen_batch": 570
+      "first_seen_batch": 569
     },
     "female-repayment-promise-faster": {
       "id": "female-repayment-promise-faster",
       "body": "Female borrowers who make a direct promise to repay the loan promptly may fund faster.",
-      "first_seen_batch": 570
+      "first_seen_batch": 569
     },
     "female-age-specificity-faster": {
       "id": "female-age-specificity-faster",
       "body": "Female borrowers who explicitly state their own age in the pitch may fund faster.",
-      "first_seen_batch": 574
+      "first_seen_batch": 573
     },
     "female-aspirational-language-slower": {
       "id": "female-aspirational-language-slower",
       "body": "Female borrowers who use aspirational language like 'dreams' for their family's future may fund more slowly.",
-      "first_seen_batch": 578
+      "first_seen_batch": 577
     },
     "female-shorter-pitch-faster": {
       "id": "female-shorter-pitch-faster",
       "body": "Female borrowers who write shorter pitches may fund faster in categories like education and food.",
-      "first_seen_batch": 582
+      "first_seen_batch": 581
     },
     "male-hardship-detail-slower": {
       "id": "male-hardship-detail-slower",
       "body": "Male borrowers who provide specific details about current hardships fund more slowly.",
-      "first_seen_batch": 584
+      "first_seen_batch": 583
+    },
+    "female-geo-location-faster": {
+      "id": "female-geo-location-faster",
+      "body": "Female borrowers who mention a specific geographic location in their pitch may fund faster.",
+      "first_seen_batch": 587
+    },
+    "female-mother-label-slower": {
+      "id": "female-mother-label-slower",
+      "body": "Female borrowers who explicitly describe themselves as a mother may fund more slowly.",
+      "first_seen_batch": 587
     }
   },
   "retired": {
-    "female-pitch-length-faster": {
-      "id": "female-pitch-length-faster",
-      "title": "Female borrowers who write significantly lengthier pitches may fund faster.",
-      "retrospective": "Dropped as oldest puzzle to maintain puzzle cap.",
-      "retired_batch": 565,
-      "was_believed_batches": 0
-    },
-    "female-emotive-language-faster": {
-      "id": "female-emotive-language-faster",
-      "title": "Female borrowers who use more emotive language in their pitches may fund faster.",
-      "retrospective": "Dropped as oldest stale puzzle to maintain puzzle cap.",
-      "retired_batch": 568,
-      "was_believed_batches": 0
-    },
-    "female-personal-history-slower": {
-      "id": "female-personal-history-slower",
-      "title": "Female borrowers who emphasize personal history over business specifics may fund more slowly.",
-      "retrospective": "Dropped as oldest puzzle to make room for education observation.",
-      "retired_batch": 569,
-      "was_believed_batches": 0
-    },
     "female-routine-description-slower": {
       "id": "female-routine-description-slower",
       "title": "Female borrowers who provide detailed descriptions of daily routines and childcare duties may fund more slowly.",
@@ -255,6 +234,27 @@
       "title": "Female borrowers who mention personal asset goals like a house or fridge may fund more slowly.",
       "retrospective": "Dropped as oldest puzzle to make room for male hardship observation.",
       "retired_batch": 585,
+      "was_believed_batches": 0
+    },
+    "female-child-count-impact": {
+      "id": "female-child-count-impact",
+      "title": "Female borrowers who mention exactly two children fund faster than those who mention three or more.",
+      "retrospective": "Dropped as oldest stale puzzle to maintain puzzle cap.",
+      "retired_batch": 587,
+      "was_believed_batches": 0
+    },
+    "female-low-local-amount-faster": {
+      "id": "female-low-local-amount-faster",
+      "title": "Female borrowers requesting lower amounts of local currency may fund faster than those requesting higher amounts.",
+      "retrospective": "Dropped as oldest stale puzzle to maintain puzzle cap.",
+      "retired_batch": 587,
+      "was_believed_batches": 0
+    },
+    "female-thanks-slower": {
+      "id": "female-thanks-slower",
+      "title": "Female borrowers who express explicit thanks to lenders may fund more slowly.",
+      "retrospective": "Dropped as oldest stale puzzle to maintain puzzle cap.",
+      "retired_batch": 587,
       "was_believed_batches": 0
     }
   }
