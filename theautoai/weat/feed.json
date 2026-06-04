@@ -1,5 +1,111 @@
 [
   {
+    "id": "b1ed7f020875",
+    "timestamp": "2026-06-04T08:10:32.100915+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Nobles vs Artisans on aesthetic judgment vs production skill",
+    "labels": {
+      "X": "Nobles",
+      "Y": "Artisans",
+      "A": "Connoisseurship",
+      "B": "Production"
+    },
+    "canonical_keys": {
+      "X": "nobles",
+      "Y": "artisans",
+      "A": "connoisseurship",
+      "B": "production"
+    },
+    "effect_size": 1.2442339302054335,
+    "p_value": 0.00032,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "duke",
+        "earl",
+        "baron",
+        "lord",
+        "lady",
+        "prince",
+        "princess",
+        "king",
+        "queen",
+        "monarch",
+        "sovereign",
+        "aristocrat",
+        "noble",
+        "peer",
+        "squire"
+      ],
+      "Y_used": [
+        "artisan",
+        "craftsman",
+        "carpenter",
+        "mason",
+        "weaver",
+        "smith",
+        "tailor",
+        "baker",
+        "potter",
+        "jeweler",
+        "builder",
+        "miller",
+        "mechanic",
+        "plumber",
+        "laborer"
+      ],
+      "A_used": [
+        "taste",
+        "elegance",
+        "refinement",
+        "sophistication",
+        "appreciation",
+        "discernment",
+        "aesthetic",
+        "beauty",
+        "style",
+        "culture",
+        "luxury",
+        "grace",
+        "chic",
+        "glamour",
+        "poise"
+      ],
+      "B_used": [
+        "labor",
+        "work",
+        "skill",
+        "craft",
+        "production",
+        "building",
+        "construction",
+        "trade",
+        "effort",
+        "toil",
+        "sweat",
+        "execution",
+        "fabrication",
+        "making",
+        "manufacture"
+      ]
+    },
+    "proposal": "People associate Nobles with Connoisseurship more strongly than they associate Artisans with Connoisseurship. This differential association reflects a persistent cultural schema that divorces the authority of aesthetic judgment from the skill of production, stereotyping the aristocratic class as the natural embodiment of taste, refinement, and discernment, while positioning skilled makers as executors of value rather than arbiters of it. The proposal is novel because existing literature has examined the status gap between artisans and industrialists or managers regarding craft and scale, but has not probed the implicit hierarchy of cultural judgment between the elite patron class and the crafting class. This association matters because it reveals how class-based mental representations continue to encode the monopoly on cultural capital and tastemaking within hereditary social categories, even in contemporary discourse that rhetorically elevates the creative agent.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "1dc6f105bc27",
     "timestamp": "2026-06-04T06:12:14.722435+00:00",
     "schema_version": "autoresearch.v1",
