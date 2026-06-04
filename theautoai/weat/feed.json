@@ -1,5 +1,117 @@
 [
   {
+    "id": "e752ebbe5b99",
+    "timestamp": "2026-06-04T22:55:13.948662+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Gentrifiers vs Residents on Aesthetic refinement vs. Crudeness",
+    "labels": {
+      "X": "Gentrifiers",
+      "Y": "Residents",
+      "A": "Refinement",
+      "B": "Crudeness"
+    },
+    "canonical_keys": {
+      "X": "gentrifiers",
+      "Y": "residents",
+      "A": "refinement",
+      "B": "crudeness"
+    },
+    "effect_size": 0.879644620573431,
+    "p_value": 0.01136,
+    "n": {
+      "X": 16,
+      "Y": 16,
+      "A": 17,
+      "B": 17
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "gentrifier",
+        "hipster",
+        "yuppie",
+        "manager",
+        "millennial",
+        "developer",
+        "investor",
+        "rich",
+        "wealthy",
+        "elite",
+        "bourgeois",
+        "professional",
+        "newcomer",
+        "transplant",
+        "urbanite",
+        "executive"
+      ],
+      "Y_used": [
+        "resident",
+        "local",
+        "native",
+        "dweller",
+        "inhabitant",
+        "citizen",
+        "occupant",
+        "tenant",
+        "populace",
+        "citizenry",
+        "public",
+        "people",
+        "community",
+        "member",
+        "person",
+        "individual"
+      ],
+      "A_used": [
+        "elegant",
+        "sophisticated",
+        "refined",
+        "cultured",
+        "tasteful",
+        "chic",
+        "stylish",
+        "upscale",
+        "posh",
+        "exquisite",
+        "classy",
+        "graceful",
+        "polished",
+        "dignified",
+        "genteel",
+        "aristocratic",
+        "highbrow"
+      ],
+      "B_used": [
+        "crude",
+        "vulgar",
+        "tacky",
+        "cheap",
+        "rough",
+        "uncouth",
+        "uncultured",
+        "unrefined",
+        "common",
+        "coarse",
+        "garish",
+        "lowbrow",
+        "plain",
+        "simple",
+        "rustic",
+        "shabby",
+        "dowdy"
+      ]
+    },
+    "proposal": "People associate Gentrifiers with refinement more strongly than they associate Residents with refinement. This proposal targets a latent cultural stereotype embedded in contemporary urban discourse, where new arrivals in transitioning neighborhoods are implicitly linked to aesthetic sophistication, taste, and cultural capital, while established inhabitants are mentally represented through axes of necessity or tradition rather than discernment. Examining this differential implicit association is novel because gentrification research has focused heavily on economic metrics, displacement, and explicit attitudes, leaving the automatic cognitive linkage between 'newcomer' status and 'refinement' largely unprobed. This association matters because it may reveal how the narrative of 'urban revitalization' subtly encodes class-coded cultural hierarchies, influencing public receptivity to displacement and shaping policy debates around who constitutes the 'legitimate' face of a changing city.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "0e3dc755f986",
     "timestamp": "2026-06-04T20:28:46.900360+00:00",
     "schema_version": "autoresearch.v1",
