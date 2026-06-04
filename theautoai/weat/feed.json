@@ -1,5 +1,111 @@
 [
   {
+    "id": "0e3dc755f986",
+    "timestamp": "2026-06-04T20:28:46.900360+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "censors vs reviewers on Authoritarian restriction vs Constructive evaluation",
+    "labels": {
+      "X": "censors",
+      "Y": "reviewers",
+      "A": "Authoritarianism",
+      "B": "Evaluation"
+    },
+    "canonical_keys": {
+      "X": "censors",
+      "Y": "reviewers",
+      "A": "authoritarianism",
+      "B": "evaluation"
+    },
+    "effect_size": 1.0346324531965023,
+    "p_value": 0.00357,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "censor",
+        "moderator",
+        "regulator",
+        "supervisor",
+        "monitor",
+        "overseer",
+        "watcher",
+        "gatekeeper",
+        "controller",
+        "guard",
+        "administrator",
+        "blocker",
+        "suppressor",
+        "manager",
+        "director"
+      ],
+      "Y_used": [
+        "reviewer",
+        "critic",
+        "appraiser",
+        "evaluator",
+        "assessor",
+        "auditor",
+        "examiner",
+        "analyst",
+        "commentator",
+        "grader",
+        "rater",
+        "checker",
+        "validator",
+        "verifier",
+        "tester"
+      ],
+      "A_used": [
+        "authoritarian",
+        "dictatorship",
+        "tyranny",
+        "oppression",
+        "repression",
+        "restriction",
+        "suppression",
+        "prohibition",
+        "ban",
+        "domination",
+        "subjugation",
+        "autocracy",
+        "totalitarianism",
+        "coercion",
+        "control"
+      ],
+      "B_used": [
+        "evaluation",
+        "assessment",
+        "critique",
+        "analysis",
+        "inspection",
+        "observation",
+        "appraisal",
+        "comment",
+        "rating",
+        "grading",
+        "judging",
+        "examining",
+        "testing",
+        "checking",
+        "scoring"
+      ]
+    },
+    "proposal": "People associate censors with authoritarianism more strongly than they associate reviewers with authoritarianism. Although both categories involve scrutinizing content, censors are culturally framed as agents of restriction, whereas reviewers are viewed as evaluators. This specific association remains under-examined despite the rise of algorithmic and editorial moderation in digital spaces. Probing this bias matters because it reveals whether the public implicitly conflates all content evaluation with oppressive control, potentially undermining trust in necessary quality assurance and safety roles.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "2a6fc4bd716b",
     "timestamp": "2026-06-04T15:13:50.231382+00:00",
     "schema_version": "autoresearch.v1",
