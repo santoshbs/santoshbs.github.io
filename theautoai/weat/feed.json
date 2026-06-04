@@ -1,5 +1,111 @@
 [
   {
+    "id": "8e7e0ce600bd",
+    "timestamp": "2026-06-04T00:38:12.205301+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Athletes vs Musicians on commercialization vs artistic expression",
+    "labels": {
+      "X": "Athletes",
+      "Y": "Musicians",
+      "A": "Commodification",
+      "B": "Artistic Autonomy"
+    },
+    "canonical_keys": {
+      "X": "athletes",
+      "Y": "musicians",
+      "A": "commodification",
+      "B": ""
+    },
+    "effect_size": 1.7828428142175534,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "athlete",
+        "player",
+        "runner",
+        "swimmer",
+        "boxer",
+        "golfer",
+        "gymnast",
+        "sprinter",
+        "diver",
+        "skier",
+        "pitcher",
+        "catcher",
+        "quarterback",
+        "kicker",
+        "cyclist"
+      ],
+      "Y_used": [
+        "musician",
+        "singer",
+        "guitarist",
+        "pianist",
+        "drummer",
+        "violinist",
+        "conductor",
+        "composer",
+        "flutist",
+        "trumpeter",
+        "cellist",
+        "organist",
+        "saxophonist",
+        "bassist",
+        "vocalist"
+      ],
+      "A_used": [
+        "commodity",
+        "product",
+        "merchandise",
+        "commercial",
+        "corporate",
+        "profit",
+        "money",
+        "business",
+        "market",
+        "brand",
+        "franchise",
+        "sponsor",
+        "industry",
+        "trade",
+        "revenue"
+      ],
+      "B_used": [
+        "art",
+        "creative",
+        "passion",
+        "soul",
+        "aesthetic",
+        "independent",
+        "original",
+        "artistic",
+        "masterpiece",
+        "inspiration",
+        "genius",
+        "authentic",
+        "expressive",
+        "craft",
+        "imagination"
+      ]
+    },
+    "proposal": "People associate Athletes with Commodification more strongly than they associate Musicians with Commodification. This differential association likely arises from contemporary discourse that increasingly frames professional sports as corporate entertainment franchises driven by branding, franchise ownership, and commercial sponsorship, whereas music culture retains a persistent, albeit diminishing, romantic association with artistic autonomy, independent creation, and bohemian resistance to market logic. This proposal is novel because implicit research has largely examined stereotypes related to competence or warmth in these groups, but has not probed the mental mapping of commercialization and market reduction across performance professions. Investigating this link is important because it may reveal an asymmetry in how the public perceives 'selling out' and cultural value, potentially obscuring the highly commercialized realities of the modern music industry while reinforcing a critique of sports that overlooks the cultural significance of athletic achievement.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "43aecdbb5890",
     "timestamp": "2026-06-03T23:00:45.564138+00:00",
     "schema_version": "autoresearch.v1",
