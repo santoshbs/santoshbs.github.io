@@ -1,5 +1,111 @@
 [
   {
+    "id": "4b6c403d6649",
+    "timestamp": "2026-06-05T02:03:01.298097+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "believers vs atheists on cognitive rigidity versus openness",
+    "labels": {
+      "X": "believers",
+      "Y": "atheists",
+      "A": "rigidity",
+      "B": "openness"
+    },
+    "canonical_keys": {
+      "X": "believers",
+      "Y": "atheists",
+      "A": "rigidity",
+      "B": "openness"
+    },
+    "effect_size": 0.023690981009803044,
+    "p_value": 0.95055,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "believer",
+        "theist",
+        "faithful",
+        "worshipper",
+        "devotee",
+        "pilgrim",
+        "clergy",
+        "priest",
+        "minister",
+        "pastor",
+        "monk",
+        "nun",
+        "religious",
+        "devout",
+        "pious"
+      ],
+      "Y_used": [
+        "atheist",
+        "agnostic",
+        "secularist",
+        "humanist",
+        "freethinker",
+        "nonbeliever",
+        "rationalist",
+        "materialist",
+        "unchurched",
+        "godless",
+        "irreligious",
+        "nonreligious",
+        "unbeliever",
+        "skeptic",
+        "secular"
+      ],
+      "A_used": [
+        "dogmatic",
+        "rigid",
+        "inflexible",
+        "stubborn",
+        "uncompromising",
+        "fixed",
+        "strict",
+        "authoritarian",
+        "narrow",
+        "closed",
+        "unyielding",
+        "absolute",
+        "unquestioning",
+        "blind",
+        "adamant"
+      ],
+      "B_used": [
+        "receptive",
+        "flexible",
+        "adaptable",
+        "curious",
+        "questioning",
+        "critical",
+        "liberal",
+        "broad",
+        "accepting",
+        "tolerant",
+        "open",
+        "inquisitive",
+        "exploratory",
+        "nuanced",
+        "reflective"
+      ]
+    },
+    "proposal": "People associate believers with dogmatism more strongly than they associate atheists with dogmatism. While explicit surveys often reveal that both groups perceive themselves as open-minded and accuse the other of rigidity, the implicit structure of these associations may differ systematically due to the salience of religious doctrines, creeds, and blasphemy taboos in public discourse versus the rhetorical framing of atheism as a product of secular critique and skepticism. Examining this differential is novel because implicit measures of dogmatism typically focus on political polarization or personality traits rather than religious versus non-religious identities. This matters because if the public implicitly links belief to cognitive inflexibility more than non-belief, it may reinforce secular hegemony and obscure the ways in which anti-religious commitments can also foster closed-mindedness, shaping how conflicts over values are mentally represented in a pluralistic society.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "dcca3254aed2",
     "timestamp": "2026-06-05T00:10:35.242920+00:00",
     "schema_version": "autoresearch.v1",
