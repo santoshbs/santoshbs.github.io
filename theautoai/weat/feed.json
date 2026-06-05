@@ -1,5 +1,117 @@
 [
   {
+    "id": "943a11e3915c",
+    "timestamp": "2026-06-05T06:07:05.115641+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Geologists vs Poets on Interpretation of Depth",
+    "labels": {
+      "X": "Geologists",
+      "Y": "Poets",
+      "A": "Literal Depth",
+      "B": "Figurative Depth"
+    },
+    "canonical_keys": {
+      "X": "geologists",
+      "Y": "poets",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 1.5732198631022618,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 16,
+      "B": 16
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "geologist",
+        "geophysicist",
+        "petrologist",
+        "volcanologist",
+        "seismologist",
+        "mineralogist",
+        "geoscientist",
+        "sedimentologist",
+        "paleontologist",
+        "hydrogeologist",
+        "speleologist",
+        "geomorphologist",
+        "geographer",
+        "prospector",
+        "surveyor"
+      ],
+      "Y_used": [
+        "poet",
+        "bard",
+        "lyricist",
+        "songwriter",
+        "playwright",
+        "dramatist",
+        "novelist",
+        "author",
+        "writer",
+        "essayist",
+        "storyteller",
+        "rhapsodist",
+        "balladeer",
+        "sonneteer",
+        "rhymester"
+      ],
+      "A_used": [
+        "abyss",
+        "chasm",
+        "trench",
+        "gorge",
+        "cavern",
+        "pit",
+        "shaft",
+        "hole",
+        "valley",
+        "ravine",
+        "canyon",
+        "hollow",
+        "underground",
+        "subterranean",
+        "basin",
+        "crater",
+        "sinkhole",
+        "crevasse",
+        "fissure",
+        "bottom"
+      ],
+      "B_used": [
+        "profound",
+        "intense",
+        "passionate",
+        "heartfelt",
+        "soulful",
+        "emotional",
+        "spiritual",
+        "mental",
+        "complex",
+        "subtle",
+        "nuanced",
+        "meaningful",
+        "rich",
+        "significant",
+        "insight",
+        "wisdom"
+      ]
+    },
+    "proposal": "People associate Geologists with Depth more strongly than they associate Poets with Depth. This proposal examines whether the public's implicit semantic networks prioritize literal, physical referents (geological strata and mining) over figurative, emotional referents (poetic insight) when processing abstract nouns. It is novel because implicit associations typically test broad traits like creativity or intelligence rather than the literal-versus-metaphorical mapping of specific abstract concepts. Confirming this association would shift our understanding of how professional categories anchor abstract language, revealing a hidden bias toward concrete, earth-bound interpretations of words that are often used figuratively in culture.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "035cf51088fc",
     "timestamp": "2026-06-05T05:18:36.532059+00:00",
     "schema_version": "autoresearch.v1",
