@@ -1,5 +1,111 @@
 [
   {
+    "id": "e7adb41cd598",
+    "timestamp": "2026-06-05T23:23:02.963434+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Liars vs Thieves on Harm typology",
+    "labels": {
+      "X": "Liars",
+      "Y": "Thieves",
+      "A": "Relational Harm",
+      "B": "Material Harm"
+    },
+    "canonical_keys": {
+      "X": "liars",
+      "Y": "thieves",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 0.9516746373010557,
+    "p_value": 0.00833,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "liar",
+        "deceiver",
+        "faker",
+        "hypocrite",
+        "fraud",
+        "charlatan",
+        "manipulator",
+        "impostor",
+        "trickster",
+        "swindler",
+        "bluffer",
+        "fibber",
+        "falsifier",
+        "pretender",
+        "phony"
+      ],
+      "Y_used": [
+        "thief",
+        "burglar",
+        "robber",
+        "crook",
+        "smuggler",
+        "bandit",
+        "plunderer",
+        "looter",
+        "marauder",
+        "poacher",
+        "pilferer",
+        "raider",
+        "hijacker",
+        "outlaw",
+        "pirate"
+      ],
+      "A_used": [
+        "betrayal",
+        "distrust",
+        "alienation",
+        "estrangement",
+        "conflict",
+        "resentment",
+        "suspicion",
+        "hostility",
+        "rejection",
+        "isolation",
+        "discord",
+        "enmity",
+        "animosity",
+        "feud",
+        "antagonism"
+      ],
+      "B_used": [
+        "theft",
+        "robbery",
+        "burglary",
+        "damage",
+        "loss",
+        "poverty",
+        "ruin",
+        "bankruptcy",
+        "destruction",
+        "devastation",
+        "wreckage",
+        "cost",
+        "expense",
+        "debt",
+        "deficit"
+      ]
+    },
+    "proposal": "People associate Liars with relational harm more strongly than they associate Thieves with relational harm. This proposal examines a differential implicit association along the dimension of harm typology, contrasting the interpersonal betrayal inherent in deception with the property-focused violation characteristic of theft. While explicit moral judgments about lying and stealing are common in developmental and moral psychology, the implicit cognitive link between these social actor categories and the specific type of damage they inflict—relational versus material—has not been systematically probed. Confirming this association would reveal that the public mental representation of deviance is not just a unitary construct of 'badness' but is multidimensionally structured, mapping distinct actor roles to distinct social consequences. This matters because it could influence how society intuitively categorizes and responds to different forms of wrongdoing, potentially biasing interventions or restorative justice approaches based on these latent schemas.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "b6b32b2e04a3",
     "timestamp": "2026-06-05T20:29:34.185680+00:00",
     "schema_version": "autoresearch.v1",
