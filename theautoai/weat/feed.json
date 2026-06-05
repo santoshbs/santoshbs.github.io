@@ -1,5 +1,111 @@
 [
   {
+    "id": "dcca3254aed2",
+    "timestamp": "2026-06-05T00:10:35.242920+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "coaches vs teachers on aggression vs gentleness",
+    "labels": {
+      "X": "coaches",
+      "Y": "teachers",
+      "A": "aggression",
+      "B": "gentleness"
+    },
+    "canonical_keys": {
+      "X": "coaches",
+      "Y": "teachers",
+      "A": "aggression",
+      "B": "gentleness"
+    },
+    "effect_size": 0.9919173645177619,
+    "p_value": 0.00446,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "coach",
+        "trainer",
+        "manager",
+        "captain",
+        "skipper",
+        "drillmaster",
+        "instructor",
+        "mentor",
+        "adviser",
+        "guide",
+        "proctor",
+        "supervisor",
+        "foreman",
+        "overseer",
+        "boss"
+      ],
+      "Y_used": [
+        "teacher",
+        "professor",
+        "educator",
+        "tutor",
+        "lecturer",
+        "academic",
+        "scholar",
+        "master",
+        "dean",
+        "principal",
+        "counselor",
+        "pedagogue",
+        "adjunct",
+        "registrar",
+        "librarian"
+      ],
+      "A_used": [
+        "aggressive",
+        "angry",
+        "violent",
+        "hostile",
+        "furious",
+        "savage",
+        "fierce",
+        "brutal",
+        "cruel",
+        "harsh",
+        "rough",
+        "tough",
+        "forceful",
+        "combative",
+        "belligerent"
+      ],
+      "B_used": [
+        "gentle",
+        "calm",
+        "patient",
+        "nurturing",
+        "kind",
+        "peaceful",
+        "mild",
+        "soft",
+        "tender",
+        "caring",
+        "sweet",
+        "quiet",
+        "serene",
+        "placid",
+        "amiable"
+      ]
+    },
+    "proposal": "People associate coaches with aggression more strongly than they associate teachers with aggression. In public discourse and media representations, coaches are frequently depicted as vocal, demanding, and physically pushy figures who utilize 'tough love' and public reprimand to drive team performance, whereas teachers are culturally expected to be patient, nurturing, and intellectually supportive, with aggression generally viewed as unprofessional. This differential implicit association is novel because while aggression has been extensively studied across gender and personality dimensions, its specific attribution to educational authority figures based on the athletic versus academic domain has not been systematically examined via implicit measures. Examining this matters because it reveals how society legitimates distinct forms of authority and discipline depending on whether the context is perceived as competitive sport or intellectual development.",
+    "iterations": 3,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "e752ebbe5b99",
     "timestamp": "2026-06-04T22:55:13.948662+00:00",
     "schema_version": "autoresearch.v1",
