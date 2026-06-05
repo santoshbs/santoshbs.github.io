@@ -1,5 +1,111 @@
 [
   {
+    "id": "902b39a7d251",
+    "timestamp": "2026-06-05T07:48:20.758676+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "archaeologists vs paleontologists on adventure vs clinical laboratory work",
+    "labels": {
+      "X": "archaeologists",
+      "Y": "paleontologists",
+      "A": "Adventure",
+      "B": "Laboratory/Clinical"
+    },
+    "canonical_keys": {
+      "X": "archaeologists",
+      "Y": "paleontologists",
+      "A": "adventure",
+      "B": ""
+    },
+    "effect_size": 1.357403662094193,
+    "p_value": 1e-05,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "archaeologist",
+        "excavator",
+        "digger",
+        "historian",
+        "explorer",
+        "fieldworker",
+        "surveyor",
+        "mapper",
+        "prospector",
+        "antiquarian",
+        "scout",
+        "adventurer",
+        "investigator",
+        "cartographer",
+        "restorer"
+      ],
+      "Y_used": [
+        "paleontologist",
+        "osteologist",
+        "taxonomist",
+        "conservator",
+        "zoologist",
+        "geologist",
+        "biologist",
+        "curator",
+        "analyst",
+        "technician",
+        "specialist",
+        "researcher",
+        "scientist",
+        "pathologist",
+        "anatomist"
+      ],
+      "A_used": [
+        "adventure",
+        "exploration",
+        "expedition",
+        "journey",
+        "quest",
+        "voyage",
+        "safari",
+        "trek",
+        "odyssey",
+        "discovery",
+        "thrill",
+        "excitement",
+        "risk",
+        "daring",
+        "wander"
+      ],
+      "B_used": [
+        "laboratory",
+        "clinic",
+        "microscope",
+        "taxonomy",
+        "classification",
+        "sterile",
+        "precise",
+        "methodical",
+        "systematic",
+        "analytical",
+        "technical",
+        "academic",
+        "scientific",
+        "controlled",
+        "routine"
+      ]
+    },
+    "proposal": "people associate archaeologists with adventure more strongly than they associate paleontologists with adventure. This differential implicit association likely stems from decades of popular media framing archaeological work as treasure hunting and exploration, while paleontology is consistently portrayed through a clinical, laboratory-bound, and taxonomic lens. Probing this bias is novel because implicit association research has largely overlooked intra-scientific stereotypes, focusing instead on broad contrasts between STEM fields and the humanities. Confirming or disconfirming it matters because such mental representations shape public funding priorities, career counseling narratives, and how students imagine scientific practice, potentially steering interest based on romanticized tropes rather than actual methodological realities.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "943a11e3915c",
     "timestamp": "2026-06-05T06:07:05.115641+00:00",
     "schema_version": "autoresearch.v1",
