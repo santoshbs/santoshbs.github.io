@@ -1,5 +1,115 @@
 [
   {
+    "id": "2faf8106d6b7",
+    "timestamp": "2026-06-05T16:57:07.073682+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Therapists vs Prophets on compassion versus sternness",
+    "labels": {
+      "X": "Therapists",
+      "Y": "Prophets",
+      "A": "compassion",
+      "B": "sternness"
+    },
+    "canonical_keys": {
+      "X": "therapists",
+      "Y": "prophets",
+      "A": "compassion",
+      "B": "sternness"
+    },
+    "effect_size": 1.496247725740181,
+    "p_value": 0.0,
+    "n": {
+      "X": 16,
+      "Y": 16,
+      "A": 16,
+      "B": 16
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "therapist",
+        "counselor",
+        "psychologist",
+        "psychiatrist",
+        "clinician",
+        "analyst",
+        "shrink",
+        "facilitator",
+        "mentor",
+        "guide",
+        "advisor",
+        "coach",
+        "healer",
+        "practitioner",
+        "specialist",
+        "doctor"
+      ],
+      "Y_used": [
+        "prophet",
+        "oracle",
+        "seer",
+        "visionary",
+        "soothsayer",
+        "augur",
+        "mystic",
+        "saint",
+        "monk",
+        "friar",
+        "bishop",
+        "pastor",
+        "evangelist",
+        "preacher",
+        "apostle",
+        "disciple"
+      ],
+      "A_used": [
+        "compassionate",
+        "empathetic",
+        "caring",
+        "gentle",
+        "kind",
+        "loving",
+        "tender",
+        "warm",
+        "supportive",
+        "nurturing",
+        "soothing",
+        "understanding",
+        "accepting",
+        "forgiving",
+        "patient",
+        "comforting"
+      ],
+      "B_used": [
+        "stern",
+        "harsh",
+        "severe",
+        "critical",
+        "judgmental",
+        "strict",
+        "rigid",
+        "unyielding",
+        "austere",
+        "forbidding",
+        "grim",
+        "cold",
+        "unfeeling",
+        "punitive",
+        "disciplinary",
+        "dogmatic"
+      ]
+    },
+    "proposal": "People associate Therapists with compassion more strongly than they associate Prophets with compassion. This differential association likely stems from the contrasting cultural scripts governing these roles: Therapists are constructed as secular healers whose primary function is to offer empathetic listening, validation, and unconditional positive regard for the patient's internal experience. In contrast, Prophets are often stereotyped as stern messengers of divine truth or judgment, figures who prioritize moral correction, truth-telling, and adherence to a higher law over emotional comfort. While prior research has examined clergy versus therapists, the specific comparison of Prophets—charismatic truth-tellers—against Therapists offers a novel lens on how implicit associations track the cultural shift from religious frameworks of moral authority to psychological frameworks of emotional support.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "4dbf94149f6e",
     "timestamp": "2026-06-05T09:50:57.982606+00:00",
     "schema_version": "autoresearch.v1",
