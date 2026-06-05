@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "batches_seen": 593,
-  "loans_seen": 9488,
-  "last_updated": "2026-06-05T04:11:14.811518+00:00",
+  "batches_seen": 594,
+  "loans_seen": 9504,
+  "last_updated": "2026-06-05T05:48:36.204819+00:00",
   "watching_for": "",
   "claims": {
     "female-technical-specificity-faster": {
@@ -13,10 +13,10 @@
       "supporting_loans": [],
       "confidence": 0.98,
       "first_seen_batch": 1,
-      "last_updated_batch": 593,
+      "last_updated_batch": 594,
       "confidence_history": [
         [
-          593,
+          594,
           0.98
         ]
       ]
@@ -29,10 +29,10 @@
       "supporting_loans": [],
       "confidence": 0.9,
       "first_seen_batch": 1,
-      "last_updated_batch": 593,
+      "last_updated_batch": 594,
       "confidence_history": [
         [
-          593,
+          594,
           0.9
         ]
       ]
@@ -45,10 +45,10 @@
       "supporting_loans": [],
       "confidence": 0.83,
       "first_seen_batch": 1,
-      "last_updated_batch": 593,
+      "last_updated_batch": 594,
       "confidence_history": [
         [
-          593,
+          594,
           0.83
         ]
       ]
@@ -61,10 +61,10 @@
       "supporting_loans": [],
       "confidence": 0.99,
       "first_seen_batch": 1,
-      "last_updated_batch": 593,
+      "last_updated_batch": 594,
       "confidence_history": [
         [
-          593,
+          594,
           0.99
         ]
       ]
@@ -77,10 +77,10 @@
       "supporting_loans": [],
       "confidence": 0.9,
       "first_seen_batch": 1,
-      "last_updated_batch": 593,
+      "last_updated_batch": 594,
       "confidence_history": [
         [
-          593,
+          594,
           0.9
         ]
       ]
@@ -93,10 +93,10 @@
       "supporting_loans": [],
       "confidence": 0.99,
       "first_seen_batch": 1,
-      "last_updated_batch": 593,
+      "last_updated_batch": 594,
       "confidence_history": [
         [
-          593,
+          594,
           0.99
         ]
       ]
@@ -109,10 +109,10 @@
       "supporting_loans": [],
       "confidence": 0.81,
       "first_seen_batch": 1,
-      "last_updated_batch": 593,
+      "last_updated_batch": 594,
       "confidence_history": [
         [
-          593,
+          594,
           0.81
         ]
       ]
@@ -125,10 +125,10 @@
       "supporting_loans": [],
       "confidence": 0.68,
       "first_seen_batch": 1,
-      "last_updated_batch": 593,
+      "last_updated_batch": 594,
       "confidence_history": [
         [
-          593,
+          594,
           0.68
         ]
       ]
@@ -138,62 +138,55 @@
     "male-thanks-faster": {
       "id": "male-thanks-faster",
       "body": "Male borrowers who express explicit thanks to lenders may fund faster.",
-      "first_seen_batch": 543
+      "first_seen_batch": 542
     },
     "female-single-status-slower": {
       "id": "female-single-status-slower",
       "body": "Female borrowers who explicitly describe themselves as single women may fund more slowly.",
-      "first_seen_batch": 563
+      "first_seen_batch": 562
     },
     "female-repayment-promise-faster": {
       "id": "female-repayment-promise-faster",
       "body": "Female borrowers who make a direct promise to repay the loan promptly may fund faster.",
-      "first_seen_batch": 563
+      "first_seen_batch": 562
     },
     "female-age-specificity-faster": {
       "id": "female-age-specificity-faster",
       "body": "Female borrowers who explicitly state their own age in the pitch may fund faster.",
-      "first_seen_batch": 567
+      "first_seen_batch": 566
     },
     "female-shorter-pitch-faster": {
       "id": "female-shorter-pitch-faster",
       "body": "Female borrowers who write shorter pitches may fund faster in categories like education and food.",
-      "first_seen_batch": 575
+      "first_seen_batch": 574
     },
     "male-hardship-detail-slower": {
       "id": "male-hardship-detail-slower",
       "body": "Male borrowers who provide specific details about current hardships fund more slowly.",
-      "first_seen_batch": 577
-    },
-    "female-geo-location-faster": {
-      "id": "female-geo-location-faster",
-      "body": "Female borrowers who mention a specific geographic location in their pitch may fund faster.",
-      "first_seen_batch": 581
+      "first_seen_batch": 576
     },
     "female-mother-label-slower": {
       "id": "female-mother-label-slower",
       "body": "Female borrowers who explicitly describe themselves as a mother may fund more slowly.",
-      "first_seen_batch": 581
+      "first_seen_batch": 580
     },
     "female-previous-kiva-loan-faster": {
       "id": "female-previous-kiva-loan-faster",
       "body": "Female borrowers who mention having previously received a Kiva loan may fund faster.",
-      "first_seen_batch": 585
+      "first_seen_batch": 584
     },
     "female-debt-mention-slower": {
       "id": "female-debt-mention-slower",
       "body": "Female borrowers who mention existing debts or arrears may fund more slowly.",
-      "first_seen_batch": 591
+      "first_seen_batch": 590
+    },
+    "female-married-status-slower": {
+      "id": "female-married-status-slower",
+      "body": "Female borrowers who mention being married may fund more slowly.",
+      "first_seen_batch": 594
     }
   },
   "retired": {
-    "female-single-status-faster": {
-      "id": "female-single-status-faster",
-      "title": "Female borrowers who explicitly state they are single women may experience faster funding speeds.",
-      "retrospective": "Contradicted by observation that single woman description correlates with slower funding.",
-      "retired_batch": 578,
-      "was_believed_batches": 0
-    },
     "female-education-mention-slower": {
       "id": "female-education-mention-slower",
       "title": "Female borrowers who mention children's education or schooling may fund more slowly.",
@@ -255,6 +248,13 @@
       "title": "Female borrowers who use aspirational language like 'dreams' for their family's future may fund more slowly.",
       "retrospective": "Contradicted by observation that desires for a happy life or bright future for children accelerate funding.",
       "retired_batch": 588,
+      "was_believed_batches": 0
+    },
+    "female-geo-location-faster": {
+      "id": "female-geo-location-faster",
+      "title": "Female borrowers who mention a specific geographic location in their pitch may fund faster.",
+      "retrospective": "Dropped as stale puzzle to maintain puzzle cap.",
+      "retired_batch": 594,
       "was_believed_batches": 0
     }
   }
