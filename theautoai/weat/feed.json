@@ -1,5 +1,111 @@
 [
   {
+    "id": "0c87b17b3f48",
+    "timestamp": "2026-06-05T03:29:04.669983+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Detractors vs Promoters on objectivity vs bias",
+    "labels": {
+      "X": "Detractors",
+      "Y": "Promoters",
+      "A": "objectivity",
+      "B": "bias"
+    },
+    "canonical_keys": {
+      "X": "detractors",
+      "Y": "promoters",
+      "A": "objectivity",
+      "B": "bias"
+    },
+    "effect_size": -1.408781960750482,
+    "p_value": 2e-05,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "critic",
+        "naysayer",
+        "skeptic",
+        "heckler",
+        "censor",
+        "opponent",
+        "adversary",
+        "dissenter",
+        "objector",
+        "complainer",
+        "cynic",
+        "pessimist",
+        "doubter",
+        "detractor",
+        "faultfinder"
+      ],
+      "Y_used": [
+        "fan",
+        "booster",
+        "advocate",
+        "supporter",
+        "cheerleader",
+        "champion",
+        "promoter",
+        "backer",
+        "devotee",
+        "defender",
+        "publicist",
+        "enthusiast",
+        "patron",
+        "sponsor",
+        "funder"
+      ],
+      "A_used": [
+        "objective",
+        "neutral",
+        "impartial",
+        "unbiased",
+        "fair",
+        "factual",
+        "truthful",
+        "rational",
+        "reasonable",
+        "logical",
+        "balanced",
+        "accurate",
+        "genuine",
+        "authentic",
+        "reliable"
+      ],
+      "B_used": [
+        "biased",
+        "subjective",
+        "slanted",
+        "unfair",
+        "distorted",
+        "manipulated",
+        "fake",
+        "false",
+        "misleading",
+        "prejudiced",
+        "partisan",
+        "hypocritical",
+        "dishonest",
+        "tainted",
+        "compromised"
+      ]
+    },
+    "proposal": "People associate Detractors with objectivity more strongly than they associate Promoters with objectivity. This differential implicit association captures a pervasive cultural tendency to valorize criticism as an authentic pursuit of truth or necessary quality control, while suspecting promotion of being driven by self-interest, bias, or paid influence. Examining this link is highly relevant to contemporary discourse dynamics, where negative reviews, dissenting voices, and 'whistleblower' narratives often command disproportionate epistemic authority compared to positive endorsements or advocacy. Confirming this association would reveal a fundamental valence asymmetry in credibility attribution, suggesting that the public implicitly views the critic as a more reliable arbiter of reality than the booster.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "4b6c403d6649",
     "timestamp": "2026-06-05T02:03:01.298097+00:00",
     "schema_version": "autoresearch.v1",
