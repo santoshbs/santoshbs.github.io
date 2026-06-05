@@ -1,5 +1,111 @@
 [
   {
+    "id": "4dbf94149f6e",
+    "timestamp": "2026-06-05T09:50:57.982606+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "locals vs tourists on authenticity vs superficiality",
+    "labels": {
+      "X": "locals",
+      "Y": "tourists",
+      "A": "authentic",
+      "B": "superficial"
+    },
+    "canonical_keys": {
+      "X": "locals",
+      "Y": "tourists",
+      "A": "authentic",
+      "B": "superficial"
+    },
+    "effect_size": -0.050987976832540007,
+    "p_value": 0.89396,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "resident",
+        "local",
+        "native",
+        "inhabitant",
+        "citizen",
+        "townsman",
+        "villager",
+        "settler",
+        "dweller",
+        "homesteader",
+        "neighbor",
+        "townsfolk",
+        "townsperson",
+        "community",
+        "populace"
+      ],
+      "Y_used": [
+        "tourist",
+        "visitor",
+        "traveler",
+        "sightseer",
+        "vacationer",
+        "backpacker",
+        "globetrotter",
+        "explorer",
+        "wanderer",
+        "passenger",
+        "commuter",
+        "drifter",
+        "nomad",
+        "pilgrim",
+        "holidaymaker"
+      ],
+      "A_used": [
+        "authentic",
+        "genuine",
+        "real",
+        "honest",
+        "sincere",
+        "legitimate",
+        "original",
+        "pure",
+        "earnest",
+        "straightforward",
+        "frank",
+        "transparent",
+        "solid",
+        "reliable",
+        "trustworthy"
+      ],
+      "B_used": [
+        "fake",
+        "superficial",
+        "artificial",
+        "inauthentic",
+        "phony",
+        "counterfeit",
+        "sham",
+        "bogus",
+        "hollow",
+        "pretentious",
+        "insincere",
+        "shallow",
+        "false",
+        "fraudulent",
+        "deceptive"
+      ]
+    },
+    "proposal": "People associate locals with authenticity more strongly than they associate tourists with authenticity. This differential implicit association captures a pervasive cultural bias in which residents of a place are mentally represented as genuine and rooted, whereas temporary visitors are implicitly linked to performativity, transience, and superficiality. Although sociologists have extensively analyzed the 'tourist gaze' and the economics of place-making, no implicit association research has tested whether this explicit critique of tourism mirrors a deeper, automatic cognitive bias favoring locals on the dimension of authenticity. Examining this association is important because such implicit preferences may underlie local resentment toward tourism development, influence policy decisions regarding visitor management, and shape the moral hierarchy that privileges 'local' products and experiences over 'tourist' ones in contemporary discourse.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "902b39a7d251",
     "timestamp": "2026-06-05T07:48:20.758676+00:00",
     "schema_version": "autoresearch.v1",
