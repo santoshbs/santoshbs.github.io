@@ -1,5 +1,111 @@
 [
   {
+    "id": "405b075183ce",
+    "timestamp": "2026-06-06T01:38:19.609912+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "teachers vs therapists on evaluative vs supportive stance",
+    "labels": {
+      "X": "teachers",
+      "Y": "therapists",
+      "A": "judgment",
+      "B": "acceptance"
+    },
+    "canonical_keys": {
+      "X": "teachers",
+      "Y": "therapists",
+      "A": "judgment",
+      "B": "acceptance"
+    },
+    "effect_size": 1.1631265311908834,
+    "p_value": 0.0009,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "teacher",
+        "professor",
+        "instructor",
+        "educator",
+        "tutor",
+        "lecturer",
+        "academic",
+        "principal",
+        "dean",
+        "faculty",
+        "staff",
+        "headmaster",
+        "administrator",
+        "supervisor",
+        "mentor"
+      ],
+      "Y_used": [
+        "therapist",
+        "counselor",
+        "psychologist",
+        "psychiatrist",
+        "psychotherapist",
+        "clinician",
+        "psychoanalyst",
+        "healer",
+        "advisor",
+        "listener",
+        "practitioner",
+        "specialist",
+        "expert",
+        "helper",
+        "supporter"
+      ],
+      "A_used": [
+        "judge",
+        "judgment",
+        "critical",
+        "evaluate",
+        "grading",
+        "assessment",
+        "standard",
+        "correction",
+        "punish",
+        "fault",
+        "criticize",
+        "analyze",
+        "test",
+        "exam",
+        "grade"
+      ],
+      "B_used": [
+        "accept",
+        "support",
+        "validate",
+        "listen",
+        "empathize",
+        "comfort",
+        "encourage",
+        "help",
+        "care",
+        "nurture",
+        "gentle",
+        "calm",
+        "soothing",
+        "understanding",
+        "compassionate"
+      ]
+    },
+    "proposal": "People associate teachers with judgment more strongly than they associate therapists with judgment. While both roles involve guiding human development, public discourse frequently frames teaching as an evaluative process grounded in grading, standards, and behavioral correction, whereas therapy is framed as a supportive process grounded in acceptance, validation, and non-judgmental listening. Examining this differential implicit association is novel because existing literature has largely compared these roles through the lens of gender stereotypes or mental health stigma, rather than their distinct epistemologies of guidance. Confirming this association would reveal how deeply the evaluative nature of schooling is internalized as a default model for authority, potentially explaining cultural resistance to therapeutic approaches in educational settings.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "e7adb41cd598",
     "timestamp": "2026-06-05T23:23:02.963434+00:00",
     "schema_version": "autoresearch.v1",
