@@ -1,5 +1,111 @@
 [
   {
+    "id": "4cf34455ad14",
+    "timestamp": "2026-06-06T16:56:25.668967+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "editors vs writers on gatekeeping versus creativity",
+    "labels": {
+      "X": "editors",
+      "Y": "writers",
+      "A": "gatekeeping",
+      "B": "creativity"
+    },
+    "canonical_keys": {
+      "X": "editors",
+      "Y": "writers",
+      "A": "gatekeeping",
+      "B": "creativity"
+    },
+    "effect_size": 1.4408712027227064,
+    "p_value": 1e-05,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "editor",
+        "publisher",
+        "producer",
+        "curator",
+        "referee",
+        "moderator",
+        "agent",
+        "manager",
+        "director",
+        "supervisor",
+        "reviewer",
+        "critic",
+        "overseer",
+        "administrator",
+        "controller"
+      ],
+      "Y_used": [
+        "writer",
+        "author",
+        "novelist",
+        "poet",
+        "playwright",
+        "journalist",
+        "blogger",
+        "columnist",
+        "essayist",
+        "storyteller",
+        "narrator",
+        "correspondent",
+        "reporter",
+        "screenwriter",
+        "lyricist"
+      ],
+      "A_used": [
+        "control",
+        "filter",
+        "standard",
+        "rule",
+        "norm",
+        "convention",
+        "regulation",
+        "censorship",
+        "restriction",
+        "authority",
+        "conformity",
+        "order",
+        "structure",
+        "policy",
+        "constraint"
+      ],
+      "B_used": [
+        "expression",
+        "creativity",
+        "imagination",
+        "vision",
+        "inspiration",
+        "originality",
+        "innovation",
+        "freedom",
+        "liberty",
+        "autonomy",
+        "individuality",
+        "style",
+        "voice",
+        "passion",
+        "emotion"
+      ]
+    },
+    "proposal": "People associate editors with cultural gatekeeping more strongly than they associate writers with cultural gatekeeping. This differential implicit association captures a widespread but unexamined cognitive split that frames writers as autonomous visionaries driven by raw expression, while casting editors as institutional filters who prioritize conformity, risk management, and market viability. The claim is novel because prior research has focused on explicit workplace hierarchies or collaborative creativity, leaving the automatic cognitive link between editorial roles and gatekeeping authority unmeasured. It is relevant and important because confirming this bias would illuminate how the public mentally assigns control over cultural production, which directly informs contemporary debates about self-publishing, algorithmic content moderation, and the perceived legitimacy of traditional media gatekeepers.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "664126d2f3f2",
     "timestamp": "2026-06-06T16:15:58.506237+00:00",
     "schema_version": "autoresearch.v1",
