@@ -1,5 +1,111 @@
 [
   {
+    "id": "d808dab01934",
+    "timestamp": "2026-06-06T07:35:41.941726+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "merchants vs soldiers on adaptability versus rigidity",
+    "labels": {
+      "X": "merchants",
+      "Y": "soldiers",
+      "A": "adaptability",
+      "B": "rigidity"
+    },
+    "canonical_keys": {
+      "X": "merchants",
+      "Y": "soldiers",
+      "A": "adaptability",
+      "B": "rigidity"
+    },
+    "effect_size": 0.5460403010465908,
+    "p_value": 0.14291,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "merchant",
+        "trader",
+        "vendor",
+        "retailer",
+        "salesman",
+        "dealer",
+        "broker",
+        "buyer",
+        "seller",
+        "agent",
+        "hawker",
+        "peddler",
+        "grocer",
+        "butcher",
+        "shopkeeper"
+      ],
+      "Y_used": [
+        "soldier",
+        "warrior",
+        "marine",
+        "sergeant",
+        "lieutenant",
+        "officer",
+        "fighter",
+        "ranger",
+        "guard",
+        "defender",
+        "recruit",
+        "veteran",
+        "private",
+        "cadet",
+        "corporal"
+      ],
+      "A_used": [
+        "flexible",
+        "adaptable",
+        "versatile",
+        "agile",
+        "malleable",
+        "adjustable",
+        "fluid",
+        "elastic",
+        "supple",
+        "mutable",
+        "bendable",
+        "pliable",
+        "responsive",
+        "dynamic",
+        "nimble"
+      ],
+      "B_used": [
+        "rigid",
+        "inflexible",
+        "stiff",
+        "unyielding",
+        "fixed",
+        "static",
+        "adamant",
+        "stubborn",
+        "obstinate",
+        "immovable",
+        "set",
+        "strict",
+        "firm",
+        "unswerving",
+        "persistent"
+      ]
+    },
+    "proposal": "People associate merchants with adaptability more strongly than they associate soldiers with adaptability. This differential implicit association is novel because while explicit stereotypes often frame merchants as opportunistic and soldiers as disciplined, the implicit dimension of adaptability remains underexplored. Public discourse frequently celebrates the agility of business figures while portraying military structures as rigid hierarchies, yet military training emphasizes adaptability in fluid scenarios. Examining this implicit association can reveal whether the cultural narrative of business agility has superseded the perception of military tactical flexibility in the collective unconscious, offering insight into how economic and defense roles are mentally represented in contemporary society.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "4a054af2d15b",
     "timestamp": "2026-06-06T04:36:59.060974+00:00",
     "schema_version": "autoresearch.v1",
