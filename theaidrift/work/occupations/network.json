@@ -125,17 +125,17 @@
         "id": "41",
         "title": "Sales & Related",
         "group": "sales",
-        "refs": 29,
-        "signals": 20,
+        "refs": 30,
+        "signals": 21,
         "occupations": 9
       },
       {
         "id": "43",
         "title": "Office & Administrative Support",
         "group": "office",
-        "refs": 43,
-        "signals": 28,
-        "occupations": 15
+        "refs": 46,
+        "signals": 30,
+        "occupations": 16
       },
       {
         "id": "45",
@@ -448,6 +448,11 @@
         "weight": 3
       },
       {
+        "source": "41",
+        "target": "43",
+        "weight": 3
+      },
+      {
         "source": "11",
         "target": "51",
         "weight": 3
@@ -516,11 +521,6 @@
         "source": "49",
         "target": "55",
         "weight": 1
-      },
-      {
-        "source": "41",
-        "target": "43",
-        "weight": 2
       },
       {
         "source": "33",
@@ -5084,9 +5084,9 @@
           "id": "41-2031.00",
           "title": "Retail Salespersons",
           "group": "sales",
-          "refs": 5,
-          "revised": "2026-05-30",
-          "signals": 4
+          "refs": 6,
+          "revised": "2026-06-06",
+          "signals": 5
         },
         {
           "id": "41-3011.00",
@@ -5148,6 +5148,14 @@
     "43": {
       "nodes": [
         {
+          "id": "43-2021.00",
+          "title": "Telephone Operators",
+          "group": "office",
+          "refs": 2,
+          "revised": "2026-06-06",
+          "signals": 1
+        },
+        {
           "id": "43-3051.00",
           "title": "Payroll and Timekeeping Clerks",
           "group": "office",
@@ -5167,9 +5175,9 @@
           "id": "43-4051.00",
           "title": "Customer Service Representatives",
           "group": "office",
-          "refs": 3,
-          "revised": "2026-04-07",
-          "signals": 2
+          "refs": 4,
+          "revised": "2026-06-06",
+          "signals": 3
         },
         {
           "id": "43-4061.00",
@@ -5298,6 +5306,11 @@
           "source": "43-9021.00",
           "target": "43-9061.00",
           "signal": "Google updates Workspace to make AI your new office intern"
+        },
+        {
+          "source": "43-2021.00",
+          "target": "43-4051.00",
+          "signal": "Home Depot adds AI phone agents to field store calls"
         },
         {
           "source": "43-5011.00",
@@ -6764,6 +6777,7 @@
     "41-3091.00": "41",
     "41-9021.00": "41",
     "41-9022.00": "41",
+    "43-2021.00": "43",
     "43-3051.00": "43",
     "43-4021.00": "43",
     "43-4051.00": "43",
