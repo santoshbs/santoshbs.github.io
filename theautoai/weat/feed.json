@@ -1,5 +1,115 @@
 [
   {
+    "id": "44fecfbea5a4",
+    "timestamp": "2026-06-06T18:55:53.155158+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "invaders vs defenders on stability versus transformation",
+    "labels": {
+      "X": "invaders",
+      "Y": "defenders",
+      "A": "transformation",
+      "B": "stability"
+    },
+    "canonical_keys": {
+      "X": "invaders",
+      "Y": "defenders",
+      "A": "transformation",
+      "B": "stability"
+    },
+    "effect_size": 1.4209560138947228,
+    "p_value": 0.0,
+    "n": {
+      "X": 16,
+      "Y": 16,
+      "A": 16,
+      "B": 16
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "invader",
+        "attacker",
+        "aggressor",
+        "intruder",
+        "raider",
+        "marauder",
+        "pillager",
+        "saboteur",
+        "vandal",
+        "trespasser",
+        "pirate",
+        "bandit",
+        "assailant",
+        "spoiler",
+        "looter",
+        "despoiler"
+      ],
+      "Y_used": [
+        "defender",
+        "protector",
+        "guardian",
+        "shield",
+        "sentry",
+        "watchman",
+        "guard",
+        "sentinel",
+        "custodian",
+        "preserver",
+        "conservator",
+        "warden",
+        "keeper",
+        "overseer",
+        "monitor",
+        "patrolman"
+      ],
+      "A_used": [
+        "change",
+        "transform",
+        "disrupt",
+        "innovate",
+        "evolve",
+        "shift",
+        "alter",
+        "modify",
+        "progress",
+        "develop",
+        "advance",
+        "renew",
+        "reform",
+        "revolutionize",
+        "adapt",
+        "vary"
+      ],
+      "B_used": [
+        "stable",
+        "preserve",
+        "maintain",
+        "sustain",
+        "conserve",
+        "retain",
+        "keep",
+        "hold",
+        "secure",
+        "fix",
+        "steady",
+        "constant",
+        "enduring",
+        "permanent",
+        "static",
+        "unmoving"
+      ]
+    },
+    "proposal": "People associate invaders with change more strongly than they associate defenders with change. This differential implicit association suggests that cultural cognition may link boundary-crossing aggression with dynamism, transformation, and the disruption of stasis, while linking defense with preservation, continuity, and resistance to flux. Examining this bias is novel, as prior research has largely analyzed these categories along valence or morality dimensions rather than mapping them onto implicit axes of stability versus transformation. Uncovering such an association would be important for understanding how discourse may subtly frame incursions as engines of progress or development, thereby cognitively normalizing disruption as a prerequisite for advancement.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "1a0e7ab1ecd3",
     "timestamp": "2026-06-06T18:13:46.285880+00:00",
     "schema_version": "autoresearch.v1",
