@@ -1,5 +1,111 @@
 [
   {
+    "id": "1a0e7ab1ecd3",
+    "timestamp": "2026-06-06T18:13:46.285880+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Magicians vs Medics on deception versus honesty",
+    "labels": {
+      "X": "Magicians",
+      "Y": "Medics",
+      "A": "deception",
+      "B": "honesty"
+    },
+    "canonical_keys": {
+      "X": "magicians",
+      "Y": "medics",
+      "A": "deception",
+      "B": "honesty"
+    },
+    "effect_size": 1.4453404272675405,
+    "p_value": 2e-05,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "magician",
+        "illusionist",
+        "conjurer",
+        "showman",
+        "performer",
+        "entertainer",
+        "wizard",
+        "sorcerer",
+        "trickster",
+        "mentalist",
+        "ventriloquist",
+        "mystic",
+        "hypnotist",
+        "fantasist",
+        "clown"
+      ],
+      "Y_used": [
+        "medic",
+        "doctor",
+        "physician",
+        "surgeon",
+        "nurse",
+        "paramedic",
+        "healer",
+        "clinician",
+        "therapist",
+        "cardiologist",
+        "neurologist",
+        "pediatrician",
+        "dentist",
+        "optometrist",
+        "pharmacist"
+      ],
+      "A_used": [
+        "deception",
+        "trickery",
+        "falsehood",
+        "lie",
+        "deceit",
+        "fraud",
+        "hoax",
+        "bluff",
+        "charade",
+        "disguise",
+        "concealment",
+        "secrecy",
+        "falseness",
+        "untruth",
+        "subterfuge"
+      ],
+      "B_used": [
+        "honesty",
+        "truth",
+        "transparency",
+        "openness",
+        "sincerity",
+        "integrity",
+        "candor",
+        "directness",
+        "veracity",
+        "trustworthiness",
+        "reliability",
+        "genuineness",
+        "purity",
+        "frankness",
+        "authenticity"
+      ]
+    },
+    "proposal": "People associate Magicians with deception more strongly than they associate Medics with deception. This differential association is novel because magicians represent a rare social category where deceptive performance is the explicit skill and source of admiration, yet implicit attitudes toward their deceptiveness relative to trust-bound healing professions have not been systematically examined. It is interesting because it probes whether the public mentally segregates 'artistic' deception from 'moral' deception, or if the mere association with trickery bleeds into broader trait attributions. This matters for understanding how society mentalizes about performers who rely on illusion versus professionals whose legitimacy depends on transparency, potentially revealing a double standard in how deception is valued or stigmatized across roles.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "4cf34455ad14",
     "timestamp": "2026-06-06T16:56:25.668967+00:00",
     "schema_version": "autoresearch.v1",
