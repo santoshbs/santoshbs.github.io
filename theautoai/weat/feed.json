@@ -1,5 +1,111 @@
 [
   {
+    "id": "31ed0b3b10c0",
+    "timestamp": "2026-06-06T10:08:15.432498+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Teens vs Seniors on Moral Performativity vs. Authenticity",
+    "labels": {
+      "X": "Teens",
+      "Y": "Seniors",
+      "A": "Virtue Signaling",
+      "B": "Genuine Sincerity"
+    },
+    "canonical_keys": {
+      "X": "teens",
+      "Y": "seniors",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": -0.5686158806205156,
+    "p_value": 0.12521,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "teen",
+        "teenager",
+        "youth",
+        "kid",
+        "child",
+        "adolescent",
+        "youngster",
+        "juvenile",
+        "preteen",
+        "freshman",
+        "sophomore",
+        "junior",
+        "minor",
+        "underage",
+        "pupil"
+      ],
+      "Y_used": [
+        "senior",
+        "elder",
+        "elderly",
+        "grandmother",
+        "grandfather",
+        "grandparent",
+        "retiree",
+        "veteran",
+        "pensioner",
+        "oldster",
+        "oldie",
+        "octogenarian",
+        "nonagenarian",
+        "centenarian",
+        "geriatric"
+      ],
+      "A_used": [
+        "performative",
+        "posturing",
+        "grandstanding",
+        "pretentious",
+        "superficial",
+        "shallow",
+        "phony",
+        "insincere",
+        "hollow",
+        "facade",
+        "sham",
+        "charade",
+        "front",
+        "hypocrisy",
+        "sanctimonious"
+      ],
+      "B_used": [
+        "sincere",
+        "genuine",
+        "authentic",
+        "real",
+        "true",
+        "honest",
+        "earnest",
+        "heartfelt",
+        "conviction",
+        "belief",
+        "integrity",
+        "meaningful",
+        "deep",
+        "profound",
+        "serious"
+      ]
+    },
+    "proposal": "People associate Teens with Virtue Signaling more strongly than they associate Seniors with Virtue Signaling. This proposal investigates whether the cultural trope of the 'performative adolescent' has encoded an implicit bias that links younger age cohorts specifically to moral posturing and strategic displays of virtue, rather than genuine belief or action. Examining this association is novel because implicit bias research on age has traditionally focused on competence versus warmth or tradition versus innovation, neglecting the specific dimension of moral performativity that is central to contemporary generational discourse. Confirming this association would reveal how public representation and social media dynamics shape the mental representation of youth morality, with implications for intergenerational trust and the credibility assigned to young activists and voices.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "4cf0c384e341",
     "timestamp": "2026-06-06T09:16:58.616013+00:00",
     "schema_version": "autoresearch.v1",
