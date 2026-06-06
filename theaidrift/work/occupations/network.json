@@ -5,8 +5,8 @@
         "id": "11",
         "title": "Management",
         "group": "management",
-        "refs": 245,
-        "signals": 211,
+        "refs": 246,
+        "signals": 212,
         "occupations": 34
       },
       {
@@ -125,8 +125,8 @@
         "id": "41",
         "title": "Sales & Related",
         "group": "sales",
-        "refs": 30,
-        "signals": 21,
+        "refs": 32,
+        "signals": 23,
         "occupations": 9
       },
       {
@@ -454,6 +454,11 @@
       },
       {
         "source": "11",
+        "target": "41",
+        "weight": 1
+      },
+      {
+        "source": "11",
         "target": "51",
         "weight": 3
       },
@@ -680,9 +685,9 @@
           "id": "11-3131.00",
           "title": "Training and Development Managers",
           "group": "management",
-          "refs": 6,
-          "revised": "2026-05-10",
-          "signals": 5
+          "refs": 7,
+          "revised": "2026-06-06",
+          "signals": 6
         },
         {
           "id": "11-9013.00",
@@ -5076,17 +5081,17 @@
           "id": "41-2011.00",
           "title": "Cashiers",
           "group": "sales",
-          "refs": 2,
-          "revised": "2026-04-07",
-          "signals": 1
+          "refs": 3,
+          "revised": "2026-06-06",
+          "signals": 2
         },
         {
           "id": "41-2031.00",
           "title": "Retail Salespersons",
           "group": "sales",
-          "refs": 6,
+          "refs": 7,
           "revised": "2026-06-06",
-          "signals": 5
+          "signals": 6
         },
         {
           "id": "41-3011.00",
@@ -5142,6 +5147,11 @@
           "source": "41-9021.00",
           "target": "41-9022.00",
           "signal": "The myth of the “perfect market” and the cost of waiting"
+        },
+        {
+          "source": "41-2011.00",
+          "target": "41-2031.00",
+          "signal": "Why Walmart is rolling out AI to 2M employees"
         }
       ]
     },
