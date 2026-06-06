@@ -1,5 +1,111 @@
 [
   {
+    "id": "7c39118a02c8",
+    "timestamp": "2026-06-06T13:56:53.079588+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "veterans vs activists on Conformity vs Rebellion",
+    "labels": {
+      "X": "veterans",
+      "Y": "activists",
+      "A": "Conformity",
+      "B": "Nonconformity"
+    },
+    "canonical_keys": {
+      "X": "veterans",
+      "Y": "activists",
+      "A": "conformity",
+      "B": "nonconformity"
+    },
+    "effect_size": 1.0532192904075388,
+    "p_value": 0.00292,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "veteran",
+        "soldier",
+        "marine",
+        "sailor",
+        "pilot",
+        "cadet",
+        "sergeant",
+        "corporal",
+        "major",
+        "general",
+        "lieutenant",
+        "private",
+        "recruit",
+        "trooper",
+        "ranger"
+      ],
+      "Y_used": [
+        "activist",
+        "protester",
+        "campaigner",
+        "advocate",
+        "agitator",
+        "radical",
+        "extremist",
+        "unionist",
+        "organizer",
+        "marcher",
+        "picketer",
+        "demonstrator",
+        "dissenter",
+        "reformer",
+        "petitioner"
+      ],
+      "A_used": [
+        "conformist",
+        "obedient",
+        "compliant",
+        "lawful",
+        "disciplined",
+        "regimented",
+        "submissive",
+        "docile",
+        "deferential",
+        "uniform",
+        "traditional",
+        "conventional",
+        "predictable",
+        "routine",
+        "orderly"
+      ],
+      "B_used": [
+        "defiant",
+        "disobedient",
+        "rebellious",
+        "subversive",
+        "independent",
+        "autonomous",
+        "erratic",
+        "unpredictable",
+        "unconventional",
+        "maverick",
+        "deviant",
+        "anarchist",
+        "renegade",
+        "outlaw",
+        "individualist"
+      ]
+    },
+    "proposal": "People associate veterans with conformity more strongly than they associate activists with conformity. While explicit stereotypes about military obedience and activist dissent are frequently discussed, implicit cognitive studies have not systematically examined the automatic link between these civic roles and normative compliance. This association is novel because it shifts focus from overt political attitudes to the underlying mental architecture that binds institutional training to automatic behavioral expectations. It matters because such implicit mappings likely shape public discourse around protest legitimacy, veteran reintegration, and civic education, revealing how deeply ingrained structural allegiances influence our perception of collective action.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "f9e8fd6c80ae",
     "timestamp": "2026-06-06T12:24:43.392478+00:00",
     "schema_version": "autoresearch.v1",
