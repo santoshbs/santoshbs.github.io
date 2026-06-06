@@ -1,5 +1,111 @@
 [
   {
+    "id": "4a054af2d15b",
+    "timestamp": "2026-06-06T04:36:59.060974+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "miners vs sailors on moral character / trustworthiness",
+    "labels": {
+      "X": "miners",
+      "Y": "sailors",
+      "A": "trustworthy",
+      "B": "untrustworthy"
+    },
+    "canonical_keys": {
+      "X": "miners",
+      "Y": "sailors",
+      "A": "trustworthy",
+      "B": "untrustworthy"
+    },
+    "effect_size": -0.5611281808056939,
+    "p_value": 0.13288,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "miner",
+        "collier",
+        "digger",
+        "driller",
+        "pitman",
+        "blaster",
+        "surveyor",
+        "fitter",
+        "overman",
+        "shoveler",
+        "mucker",
+        "loader",
+        "hauler",
+        "driver",
+        "laborer"
+      ],
+      "Y_used": [
+        "sailor",
+        "seaman",
+        "mariner",
+        "boatman",
+        "skipper",
+        "helmsman",
+        "navigator",
+        "pilot",
+        "captain",
+        "mate",
+        "boatswain",
+        "deckhand",
+        "stoker",
+        "seafarer",
+        "voyager"
+      ],
+      "A_used": [
+        "honest",
+        "faithful",
+        "trustworthy",
+        "loyal",
+        "reliable",
+        "sincere",
+        "virtuous",
+        "genuine",
+        "principled",
+        "upright",
+        "righteous",
+        "moral",
+        "decent",
+        "noble",
+        "good"
+      ],
+      "B_used": [
+        "dishonest",
+        "unfaithful",
+        "deceitful",
+        "disloyal",
+        "unreliable",
+        "false",
+        "wicked",
+        "fake",
+        "corrupt",
+        "immoral",
+        "vicious",
+        "shady",
+        "sketchy",
+        "sleazy",
+        "crooked"
+      ]
+    },
+    "proposal": "People associate miners with trustworthiness more strongly than they associate sailors with trustworthiness. This differential implicit association arises from cultural narratives that romanticize sailors as roving, unpredictable, and associated with port-side vices, while framing miners as rooted, community-oriented, and engaged in honest, collective toil. Although both occupations involve significant physical risk and labor, the spatial and social connotations differ: mining evokes subterranean solidarity and steadfastness, whereas sailing invokes mobility and transience. Examining this association is novel because implicit biases regarding labor categories often focus on cognitive traits (e.g., scientists vs. artists) rather than moral character axes across blue-collar roles. Disconfirming this prediction would challenge assumptions about how geographic mobility and occupational isolation shape implicit moral judgments.",
+    "iterations": 3,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "405b075183ce",
     "timestamp": "2026-06-06T01:38:19.609912+00:00",
     "schema_version": "autoresearch.v1",
