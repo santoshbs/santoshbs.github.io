@@ -1,5 +1,111 @@
 [
   {
+    "id": "944d284155fc",
+    "timestamp": "2026-06-07T07:37:32.811552+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Witnesses vs Jurors on vulnerability vs empowerment",
+    "labels": {
+      "X": "Witnesses",
+      "Y": "Jurors",
+      "A": "vulnerability",
+      "B": "empowerment"
+    },
+    "canonical_keys": {
+      "X": "witnesses",
+      "Y": "jurors",
+      "A": "vulnerability",
+      "B": "empowerment"
+    },
+    "effect_size": 0.8880490503556185,
+    "p_value": 0.0104,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "witness",
+        "testifier",
+        "observer",
+        "spectator",
+        "informant",
+        "bystander",
+        "accuser",
+        "claimant",
+        "complainant",
+        "reporter",
+        "narrator",
+        "eyewitness",
+        "informer",
+        "plaintiff",
+        "source"
+      ],
+      "Y_used": [
+        "juror",
+        "adjudicator",
+        "arbitrator",
+        "referee",
+        "umpire",
+        "magistrate",
+        "official",
+        "assessor",
+        "rater",
+        "evaluator",
+        "panelist",
+        "judge",
+        "mediator",
+        "examiner",
+        "inspector"
+      ],
+      "A_used": [
+        "vulnerable",
+        "weak",
+        "fragile",
+        "exposed",
+        "helpless",
+        "defenseless",
+        "delicate",
+        "sensitive",
+        "endangered",
+        "prey",
+        "target",
+        "casualty",
+        "wounded",
+        "injured",
+        "timid"
+      ],
+      "B_used": [
+        "powerful",
+        "strong",
+        "protected",
+        "safe",
+        "secure",
+        "shielded",
+        "empowered",
+        "authoritative",
+        "dominant",
+        "commanding",
+        "controlling",
+        "influential",
+        "sturdy",
+        "resilient",
+        "fortified"
+      ]
+    },
+    "proposal": "People associate witnesses with vulnerability more strongly than they associate jurors with vulnerability. Witnesses are often cognitively framed as passive recipients of pivotal or traumatic events who risk retaliation or re-traumatization for speaking, whereas jurors are cast as empowered civic arbiters insulated within the deliberation process and protected by institutional authority. This differential implicit association is novel because prior research has largely focused on cognitive biases within legal decision-making rather than the affective profiles implicitly attributed to these specific roles. Examining this bias matters for understanding how legal institutions and the public perceive the need for protection and support, as implicit assumptions of vulnerability could influence credibility assessments, witness treatment protocols, and jury selection dynamics.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "65904a54304f",
     "timestamp": "2026-06-07T05:38:07.541076+00:00",
     "schema_version": "autoresearch.v1",
