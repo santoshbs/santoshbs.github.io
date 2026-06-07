@@ -1,5 +1,111 @@
 [
   {
+    "id": "ead37373879c",
+    "timestamp": "2026-06-07T10:43:12.154308+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "musicians vs magicians on emotional authenticity vs deceptive artifice",
+    "labels": {
+      "X": "musicians",
+      "Y": "magicians",
+      "A": "Authenticity",
+      "B": "Artifice"
+    },
+    "canonical_keys": {
+      "X": "musicians",
+      "Y": "magicians",
+      "A": "authenticity",
+      "B": "artifice"
+    },
+    "effect_size": 1.4921041207946466,
+    "p_value": 1e-05,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "musician",
+        "singer",
+        "guitarist",
+        "pianist",
+        "drummer",
+        "violinist",
+        "flutist",
+        "cellist",
+        "trumpeter",
+        "harpist",
+        "vocalist",
+        "conductor",
+        "composer",
+        "bandleader",
+        "instrumentalist"
+      ],
+      "Y_used": [
+        "magician",
+        "illusionist",
+        "conjurer",
+        "mentalist",
+        "showman",
+        "entertainer",
+        "trickster",
+        "ventriloquist",
+        "escapologist",
+        "conjuror",
+        "manipulator",
+        "performer",
+        "wizard",
+        "sorcerer",
+        "charlatan"
+      ],
+      "A_used": [
+        "genuine",
+        "sincere",
+        "honest",
+        "true",
+        "real",
+        "heartfelt",
+        "transparent",
+        "candid",
+        "open",
+        "frank",
+        "natural",
+        "pure",
+        "authentic",
+        "earnest",
+        "straightforward"
+      ],
+      "B_used": [
+        "fake",
+        "artificial",
+        "false",
+        "sham",
+        "pretense",
+        "illusion",
+        "trick",
+        "deceitful",
+        "phony",
+        "contrived",
+        "deceptive",
+        "fraudulent",
+        "staged",
+        "fabricated",
+        "counterfeit"
+      ]
+    },
+    "proposal": "People associate musicians with emotional authenticity more strongly than they associate magicians with emotional authenticity. Although both musicians and magicians are performance artists who rely on rigorous training and technical mastery to captivate audiences, public discourse typically characterizes music as a transparent window into the artist's soul, while magic is characterized as an opaque artifice meant to trick the eye. Investigating this differential association exposes a subtle cognitive bias that may conflate the use of deception in performance with a lack of genuine emotional intent. This finding would be significant because it suggests that even when audiences enjoy the illusion of magic, they may implicitly categorize magicians as less authentic than musicians, influencing how different performance arts are valued and perceived in terms of human connection.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "690315c5fb71",
     "timestamp": "2026-06-07T09:39:31.052591+00:00",
     "schema_version": "autoresearch.v1",
