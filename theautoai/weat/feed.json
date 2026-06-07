@@ -1,5 +1,111 @@
 [
   {
+    "id": "e40b0fc13cb3",
+    "timestamp": "2026-06-07T12:50:43.245049+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Owners vs Managers on remoteness versus proximity",
+    "labels": {
+      "X": "Owners",
+      "Y": "Managers",
+      "A": "remoteness",
+      "B": "proximity"
+    },
+    "canonical_keys": {
+      "X": "owners",
+      "Y": "managers",
+      "A": "remoteness",
+      "B": "proximity"
+    },
+    "effect_size": 1.1013389101472248,
+    "p_value": 0.00161,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "owner",
+        "landlord",
+        "proprietor",
+        "shareholder",
+        "investor",
+        "magnate",
+        "tycoon",
+        "capitalist",
+        "stockholder",
+        "leaseholder",
+        "titleholder",
+        "holder",
+        "possessor",
+        "financier",
+        "patron"
+      ],
+      "Y_used": [
+        "manager",
+        "director",
+        "supervisor",
+        "executive",
+        "administrator",
+        "overseer",
+        "coordinator",
+        "foreman",
+        "superintendent",
+        "controller",
+        "officer",
+        "agent",
+        "clerk",
+        "secretary",
+        "leader"
+      ],
+      "A_used": [
+        "distant",
+        "remote",
+        "absent",
+        "detached",
+        "aloof",
+        "isolated",
+        "separate",
+        "withdrawn",
+        "unreachable",
+        "disconnected",
+        "uninvolved",
+        "disengaged",
+        "estranged",
+        "indifferent",
+        "apathetic"
+      ],
+      "B_used": [
+        "close",
+        "near",
+        "present",
+        "involved",
+        "engaged",
+        "embedded",
+        "immersed",
+        "intimate",
+        "familiar",
+        "accessible",
+        "attentive",
+        "responsive",
+        "connected",
+        "immediate",
+        "direct"
+      ]
+    },
+    "proposal": "People associate Owners with remoteness more strongly than they associate Managers with remoteness. This proposal examines whether the structural separation of capital from control produces an implicit mental representation where owners are viewed as distant, absent, or detached, whereas managers are seen as proximate, engaged, and embedded in the operational reality of the organization. Such an association would reflect contemporary discourse that often portrays owners as faceless shareholders, offshore entities, or absentee landlords, while managers are cast as the visible overseers of daily activity. Confirming this bias matters for understanding how moral responsibility is implicitly allocated: if owners are implicitly remote, they may be psychologically shielded from blame for local harms, while managers bear disproportionate accountability despite having less ultimate authority. This specific intra-elite distinction has not been systematically tested in implicit social cognition research, which has historically focused on broader class, race, or gender hierarchies rather than the nuanced mental representations of ownership versus management roles.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "ead37373879c",
     "timestamp": "2026-06-07T10:43:12.154308+00:00",
     "schema_version": "autoresearch.v1",
