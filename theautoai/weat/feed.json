@@ -1,5 +1,111 @@
 [
   {
+    "id": "829f4a4f3d4b",
+    "timestamp": "2026-06-07T08:59:32.778473+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "archaeologists vs historians on physical immediacy vs abstract interpretation",
+    "labels": {
+      "X": "archaeologists",
+      "Y": "historians",
+      "A": "physical/material",
+      "B": "abstract/textual"
+    },
+    "canonical_keys": {
+      "X": "archaeologists",
+      "Y": "historians",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 1.5333053605018594,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "archaeologist",
+        "excavator",
+        "digger",
+        "prospector",
+        "miner",
+        "surveyor",
+        "digging",
+        "artifacts",
+        "relics",
+        "trowel",
+        "shovel",
+        "ruins",
+        "strata",
+        "archaeology",
+        "excavation"
+      ],
+      "Y_used": [
+        "historian",
+        "chronicler",
+        "archivist",
+        "librarian",
+        "biographer",
+        "genealogist",
+        "antiquarian",
+        "scholar",
+        "academic",
+        "professor",
+        "writer",
+        "author",
+        "researcher",
+        "critic",
+        "analyst"
+      ],
+      "A_used": [
+        "physical",
+        "tangible",
+        "concrete",
+        "material",
+        "solid",
+        "earthy",
+        "hands",
+        "touch",
+        "feel",
+        "grasp",
+        "grip",
+        "manual",
+        "bodily",
+        "tactile",
+        "flesh"
+      ],
+      "B_used": [
+        "abstract",
+        "textual",
+        "documentary",
+        "written",
+        "paper",
+        "digital",
+        "mental",
+        "conceptual",
+        "theoretical",
+        "intellectual",
+        "cognitive",
+        "symbolic",
+        "narrative",
+        "literary",
+        "record"
+      ]
+    },
+    "proposal": "People associate archaeologists with physical immediacy more strongly than they associate historians with physical immediacy. While both disciplines reconstruct the past, public discourse and media representations consistently frame archaeologists as hands-on investigators directly manipulating material remnants, whereas historians are implicitly cast as abstract interpreters of texts and records. This specific differential implicit association has not been systematically examined, as prior research typically contrasts broad STEM-humanities divides or pits historians against journalists rather than comparing heritage reconstruction fields. Testing this link matters because it reveals how material versus documentary epistemologies are implicitly stratified in public cognition, which could shape educational tracking, museum pedagogy, and the perceived empirical legitimacy of different approaches to the past.",
+    "iterations": 3,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "944d284155fc",
     "timestamp": "2026-06-07T07:37:32.811552+00:00",
     "schema_version": "autoresearch.v1",
