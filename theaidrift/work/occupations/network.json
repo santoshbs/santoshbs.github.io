@@ -133,8 +133,8 @@
         "id": "43",
         "title": "Office & Administrative Support",
         "group": "office",
-        "refs": 46,
-        "signals": 30,
+        "refs": 49,
+        "signals": 33,
         "occupations": 16
       },
       {
@@ -5272,17 +5272,17 @@
           "id": "43-9021.00",
           "title": "Data Entry Keyers",
           "group": "office",
-          "refs": 3,
-          "revised": "2026-05-29",
-          "signals": 2
+          "refs": 4,
+          "revised": "2026-06-07",
+          "signals": 3
         },
         {
           "id": "43-9022.00",
           "title": "Word Processors and Typists",
           "group": "office",
-          "refs": 2,
-          "revised": "2026-04-12",
-          "signals": 1
+          "refs": 3,
+          "revised": "2026-06-07",
+          "signals": 2
         },
         {
           "id": "43-9041.00",
@@ -5304,9 +5304,9 @@
           "id": "43-9081.00",
           "title": "Proofreaders and Copy Markers",
           "group": "office",
-          "refs": 3,
-          "revised": "2026-04-16",
-          "signals": 2
+          "refs": 4,
+          "revised": "2026-06-07",
+          "signals": 3
         }
       ],
       "edges": [
@@ -5346,6 +5346,21 @@
           "signal": "Home Depot adds AI phone agents to field store calls"
         },
         {
+          "source": "43-9021.00",
+          "target": "43-9022.00",
+          "signal": "Microsoft gives your Word documents an AI co-author you didn’t ask for"
+        },
+        {
+          "source": "43-9021.00",
+          "target": "43-9081.00",
+          "signal": "Microsoft gives your Word documents an AI co-author you didn’t ask for"
+        },
+        {
+          "source": "43-9022.00",
+          "target": "43-9081.00",
+          "signal": "Microsoft gives your Word documents an AI co-author you didn’t ask for"
+        },
+        {
           "source": "43-5011.00",
           "target": "43-5011.01",
           "signal": "Guidance: Data Element 2/3: Documents and Other Reference Codes (Union) of the C"
@@ -5354,11 +5369,6 @@
           "source": "43-4021.00",
           "target": "43-6011.00",
           "signal": "AI Overviews are coming to your Gmail at work"
-        },
-        {
-          "source": "43-9022.00",
-          "target": "43-9081.00",
-          "signal": "Anthropic brings Claude AI to Microsoft Word so you can chat with your documents"
         }
       ]
     },
