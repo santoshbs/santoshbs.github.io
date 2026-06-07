@@ -1,5 +1,111 @@
 [
   {
+    "id": "65fc6c84b7d4",
+    "timestamp": "2026-06-07T17:55:43.112188+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "politicians vs journalists on partisan bias versus impartial objectivity",
+    "labels": {
+      "X": "politicians",
+      "Y": "journalists",
+      "A": "partisanship/bias",
+      "B": "neutrality/objectivity"
+    },
+    "canonical_keys": {
+      "X": "politicians",
+      "Y": "journalists",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 1.1715666856276703,
+    "p_value": 0.00063,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "politician",
+        "senator",
+        "governor",
+        "mayor",
+        "president",
+        "minister",
+        "legislator",
+        "official",
+        "statesman",
+        "lawmaker",
+        "delegate",
+        "representative",
+        "councilman",
+        "congressman",
+        "commissioner"
+      ],
+      "Y_used": [
+        "journalist",
+        "reporter",
+        "editor",
+        "correspondent",
+        "newscaster",
+        "columnist",
+        "broadcaster",
+        "anchor",
+        "interviewer",
+        "stringer",
+        "contributor",
+        "commentator",
+        "critic",
+        "reviewer",
+        "producer"
+      ],
+      "A_used": [
+        "partisan",
+        "biased",
+        "factional",
+        "ideological",
+        "polarized",
+        "partial",
+        "prejudiced",
+        "slanted",
+        "skewed",
+        "tribal",
+        "aligned",
+        "loyal",
+        "sectarian",
+        "hardline",
+        "committed"
+      ],
+      "B_used": [
+        "neutral",
+        "objective",
+        "impartial",
+        "unbiased",
+        "detached",
+        "fair",
+        "balanced",
+        "independent",
+        "disinterested",
+        "dispassionate",
+        "nonpartisan",
+        "factual",
+        "rational",
+        "moderate",
+        "evenhanded"
+      ]
+    },
+    "proposal": "People associate politicians with partisanship more strongly than they associate journalists with partisanship. Despite public discourse increasingly framing media outlets as partisan, implicit cognition may retain a residual mental model of the press as an objective watchdog institution, distinct from the inherently factional nature of political office. Examining this differential association reveals whether the cultural narrative of media bias has penetrated automatic cognition or if journalists remain implicitly buffered by historical norms of neutrality, which would shift understanding of whether media criticism is driven by deep-seated stereotypes or more accessible explicit beliefs.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "eac22183eea1",
     "timestamp": "2026-06-07T17:10:47.626275+00:00",
     "schema_version": "autoresearch.v1",
