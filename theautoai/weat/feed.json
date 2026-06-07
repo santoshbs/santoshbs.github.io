@@ -1,5 +1,111 @@
 [
   {
+    "id": "690315c5fb71",
+    "timestamp": "2026-06-07T09:39:31.052591+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Poets vs Philosophers on spirituality versus rationality",
+    "labels": {
+      "X": "Poets",
+      "Y": "Philosophers",
+      "A": "spiritual",
+      "B": "secular_rational"
+    },
+    "canonical_keys": {
+      "X": "poets",
+      "Y": "philosophers",
+      "A": "spiritual",
+      "B": ""
+    },
+    "effect_size": 1.4004472893028044,
+    "p_value": 1e-05,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "poet",
+        "bard",
+        "troubadour",
+        "lyricist",
+        "versifier",
+        "minstrel",
+        "balladeer",
+        "songwriter",
+        "laureate",
+        "elegist",
+        "sonneteer",
+        "rhymester",
+        "poetess",
+        "rhapsode",
+        "writer"
+      ],
+      "Y_used": [
+        "philosopher",
+        "sage",
+        "thinker",
+        "intellectual",
+        "moralist",
+        "essayist",
+        "logician",
+        "metaphysician",
+        "ethicist",
+        "stoic",
+        "cynic",
+        "skeptic",
+        "dilettante",
+        "speculator",
+        "scholar"
+      ],
+      "A_used": [
+        "spiritual",
+        "sacred",
+        "mystical",
+        "divine",
+        "holy",
+        "transcendent",
+        "visionary",
+        "revelation",
+        "ecstasy",
+        "contemplation",
+        "piety",
+        "devotion",
+        "reverence",
+        "wonder",
+        "sublime"
+      ],
+      "B_used": [
+        "secular",
+        "rational",
+        "logical",
+        "empirical",
+        "analytical",
+        "objective",
+        "critical",
+        "systematic",
+        "methodical",
+        "pragmatic",
+        "materialist",
+        "reasoned",
+        "deductive",
+        "factual",
+        "scientific"
+      ]
+    },
+    "proposal": "People associate Poets with spirituality more strongly than they associate Philosophers with spirituality. In contemporary mental models, philosophy is often secularized as a domain of logic, ethics, and academic rigor, whereas poetry retains cultural linkages to the sacred, the mystical, and the visionary. This differential implicit association reflects the enduring Romantic legacy of the poet as a 'seer' or oracle, contrasting with the Enlightenment coding of the philosopher as a rationalist and skeptic. Examining this bias is novel because it moves beyond the standard 'scientists versus artists' framework to probe how the sacred is implicitly distributed among secular humanistic roles. Confirming this association would suggest that in secular societies, the public mental model reserves spiritual resonance for imaginative and emotional expression rather than for normative and analytical reasoning.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "829f4a4f3d4b",
     "timestamp": "2026-06-07T08:59:32.778473+00:00",
     "schema_version": "autoresearch.v1",
