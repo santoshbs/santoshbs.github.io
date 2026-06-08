@@ -1,5 +1,117 @@
 [
   {
+    "id": "5d1f6181188c",
+    "timestamp": "2026-06-08T01:17:24.381719+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "journalists vs veterans on skepticism vs deference",
+    "labels": {
+      "X": "journalists",
+      "Y": "veterans",
+      "A": "skepticism",
+      "B": "deference"
+    },
+    "canonical_keys": {
+      "X": "journalists",
+      "Y": "veterans",
+      "A": "skepticism",
+      "B": "deference"
+    },
+    "effect_size": 1.1318169961456812,
+    "p_value": 0.001,
+    "n": {
+      "X": 16,
+      "Y": 16,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "reporter",
+        "correspondent",
+        "columnist",
+        "anchor",
+        "editor",
+        "critic",
+        "commentator",
+        "writer",
+        "blogger",
+        "broadcaster",
+        "producer",
+        "journalist",
+        "cameraman",
+        "stringer",
+        "photographer",
+        "newscaster"
+      ],
+      "Y_used": [
+        "veteran",
+        "soldier",
+        "sailor",
+        "marine",
+        "airman",
+        "trooper",
+        "fighter",
+        "combatant",
+        "sergeant",
+        "captain",
+        "major",
+        "general",
+        "lieutenant",
+        "colonel",
+        "corporal",
+        "private"
+      ],
+      "A_used": [
+        "skeptic",
+        "skeptical",
+        "doubtful",
+        "suspicious",
+        "critical",
+        "wary",
+        "uncertain",
+        "hesitant",
+        "probing",
+        "investigative",
+        "inquisitive",
+        "dubious",
+        "cynical",
+        "distrustful",
+        "questioning"
+      ],
+      "B_used": [
+        "deferential",
+        "compliant",
+        "obedient",
+        "loyal",
+        "trusting",
+        "faithful",
+        "devoted",
+        "supportive",
+        "submissive",
+        "yielding",
+        "conforming",
+        "respectful",
+        "dutiful",
+        "trustful",
+        "allegiant",
+        "disciplined",
+        "subordinate",
+        "honorable",
+        "steadfast"
+      ]
+    },
+    "proposal": "People associate journalists with skepticism more strongly than they associate veterans with skepticism. While both groups are culturally framed as truth-seekers, public discourse consistently portrays journalists as inherently doubtful and questioning of official narratives, whereas veterans are stereotyped as compliant with chain-of-command protocols and institutional trust. Examining this differential implicit association is novel because prior research has focused on explicit trust ratings rather than automatic cognitive linkages to epistemic attitudes. It matters because uncovering this hidden bias could clarify why military institutions consistently outperform news media in public confidence polls, revealing how automatic associations of doubt versus deference shape societal credibility.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "9aec56f3e9d8",
     "timestamp": "2026-06-08T00:02:01.610768+00:00",
     "schema_version": "autoresearch.v1",
