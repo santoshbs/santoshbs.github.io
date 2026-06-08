@@ -1,5 +1,111 @@
 [
   {
+    "id": "06204b57e1e6",
+    "timestamp": "2026-06-08T06:57:52.531248+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "farmers vs teachers on traditionalism versus modernism",
+    "labels": {
+      "X": "farmers",
+      "Y": "teachers",
+      "A": "traditionalism",
+      "B": "modernism"
+    },
+    "canonical_keys": {
+      "X": "farmers",
+      "Y": "teachers",
+      "A": "traditionalism",
+      "B": "modernism"
+    },
+    "effect_size": 1.3515916232120224,
+    "p_value": 8e-05,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "farmer",
+        "agriculturist",
+        "rancher",
+        "planter",
+        "herder",
+        "shepherd",
+        "stockman",
+        "dairyman",
+        "grower",
+        "cultivator",
+        "horticulturist",
+        "sower",
+        "harvester",
+        "tiller",
+        "plowman"
+      ],
+      "Y_used": [
+        "teacher",
+        "instructor",
+        "tutor",
+        "professor",
+        "lecturer",
+        "educator",
+        "mentor",
+        "coach",
+        "trainer",
+        "pedagogue",
+        "preceptor",
+        "schoolmaster",
+        "demonstrator",
+        "academician",
+        "counselor"
+      ],
+      "A_used": [
+        "tradition",
+        "heritage",
+        "ancient",
+        "antique",
+        "custom",
+        "customary",
+        "historic",
+        "historical",
+        "conservative",
+        "orthodox",
+        "archaic",
+        "bygone",
+        "classic",
+        "ancestral",
+        "traditional"
+      ],
+      "B_used": [
+        "modern",
+        "progress",
+        "innovation",
+        "contemporary",
+        "progressive",
+        "future",
+        "advanced",
+        "development",
+        "reform",
+        "evolution",
+        "modernity",
+        "advancement",
+        "futuristic",
+        "novel",
+        "change"
+      ]
+    },
+    "proposal": "People associate farmers with traditionalism more strongly than they associate teachers with traditionalism. This differential implicit association reflects deep-seated cultural narratives that romanticize agrarian life as the repository of heritage, old values, and time-honored practices, while framing educators as agents of modernization, social progress, and future-oriented change. Examining this association is novel because prior research has largely focused on broad ideological categories or generational divides rather than the specific occupational scripts attached to land stewardship versus human development. It is important because confirming this implicit link would reveal how professional roles in food production and education are mentally mapped onto the ongoing tension between cultural preservation and social transformation.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "a8f65444fb00",
     "timestamp": "2026-06-08T03:16:46.685191+00:00",
     "schema_version": "autoresearch.v1",
