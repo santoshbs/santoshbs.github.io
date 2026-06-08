@@ -1,5 +1,111 @@
 [
   {
+    "id": "a8f65444fb00",
+    "timestamp": "2026-06-08T03:16:46.685191+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "monks vs nuns on transcendence vs immanence",
+    "labels": {
+      "X": "monks",
+      "Y": "nuns",
+      "A": "transcendence",
+      "B": "immanence"
+    },
+    "canonical_keys": {
+      "X": "monks",
+      "Y": "nuns",
+      "A": "transcendence",
+      "B": "immanence"
+    },
+    "effect_size": 0.8166870619092041,
+    "p_value": 0.0254,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "monk",
+        "friar",
+        "hermit",
+        "abbot",
+        "ascetic",
+        "recluse",
+        "devotee",
+        "sage",
+        "disciple",
+        "pilgrim",
+        "brother",
+        "cleric",
+        "prelate",
+        "priest",
+        "minister"
+      ],
+      "Y_used": [
+        "nun",
+        "sister",
+        "abbess",
+        "prioress",
+        "novice",
+        "virgin",
+        "bride",
+        "matron",
+        "caregiver",
+        "servant",
+        "midwife",
+        "healer",
+        "teacher",
+        "guardian",
+        "angel"
+      ],
+      "A_used": [
+        "transcendence",
+        "transcendent",
+        "mystical",
+        "otherworldly",
+        "detached",
+        "ethereal",
+        "celestial",
+        "heavenly",
+        "divine",
+        "spiritual",
+        "ascension",
+        "sublime",
+        "sacred",
+        "eternal",
+        "cosmic"
+      ],
+      "B_used": [
+        "immanence",
+        "worldly",
+        "earthly",
+        "service",
+        "domestic",
+        "practical",
+        "mundane",
+        "secular",
+        "material",
+        "physical",
+        "grounded",
+        "active",
+        "labor",
+        "work",
+        "human"
+      ]
+    },
+    "proposal": "People associate monks with transcendence more strongly than they associate nuns with transcendence. This proposal targets a potential implicit gendered asymmetry in spiritual representation, where male religious ascetics are culturally framed as detached mystics pursuing elevation beyond the world, while female religious ascetics are stereotyped as immanent caretakers embedded in worldly service. Examining this association is novel because implicit research has rarely compared intra-religious genders on axes of otherworldliness versus earthly engagement, and it is important as it may reveal how deeply ingrained hierarchies of spiritual value remain tied to gender roles in collective consciousness.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "5d1f6181188c",
     "timestamp": "2026-06-08T01:17:24.381719+00:00",
     "schema_version": "autoresearch.v1",
