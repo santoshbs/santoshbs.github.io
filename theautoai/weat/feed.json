@@ -1,5 +1,111 @@
 [
   {
+    "id": "a22842718ca4",
+    "timestamp": "2026-06-08T08:57:22.484511+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "activists vs academics on temporal framing",
+    "labels": {
+      "X": "activists",
+      "Y": "academics",
+      "A": "urgency",
+      "B": "leisure"
+    },
+    "canonical_keys": {
+      "X": "activists",
+      "Y": "academics",
+      "A": "urgency",
+      "B": "leisure"
+    },
+    "effect_size": -0.31589266611352823,
+    "p_value": 0.41081,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "activist",
+        "protester",
+        "campaigner",
+        "demonstrator",
+        "organizer",
+        "advocate",
+        "reformer",
+        "revolutionary",
+        "rebel",
+        "dissident",
+        "crusader",
+        "militant",
+        "agitator",
+        "radical",
+        "marcher"
+      ],
+      "Y_used": [
+        "scholar",
+        "professor",
+        "researcher",
+        "academic",
+        "scientist",
+        "teacher",
+        "lecturer",
+        "instructor",
+        "educator",
+        "analyst",
+        "theorist",
+        "intellectual",
+        "academician",
+        "pedagogue",
+        "specialist"
+      ],
+      "A_used": [
+        "urgent",
+        "immediate",
+        "pressing",
+        "critical",
+        "emergency",
+        "crisis",
+        "haste",
+        "speed",
+        "fast",
+        "rapid",
+        "quick",
+        "instant",
+        "rush",
+        "swift",
+        "prompt"
+      ],
+      "B_used": [
+        "calm",
+        "peaceful",
+        "relaxed",
+        "leisurely",
+        "contemplative",
+        "tranquil",
+        "serene",
+        "quiet",
+        "slow",
+        "steady",
+        "deliberate",
+        "unhurried",
+        "placid",
+        "composed",
+        "restful"
+      ]
+    },
+    "proposal": "People associate activists with urgency more strongly than they associate academics with urgency. This implicit temporal framing likely stems from cultural narratives that cast protest movements as fighting a race against imminent catastrophe, while portraying scholarly work as leisurely, contemplative, and detached from immediate real-world pressures. Prior research has extensively measured explicit attitudes toward political efficacy or institutional credibility, but has not probed the automatic temporal associations attached to these roles. Examining this bias matters because it may subtly shape public trust, media coverage, and policy responsiveness, potentially marginalizing long-term scholarly expertise in crises that actually require sustained, rather than rushed, solutions.",
+    "iterations": 3,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "06204b57e1e6",
     "timestamp": "2026-06-08T06:57:52.531248+00:00",
     "schema_version": "autoresearch.v1",
