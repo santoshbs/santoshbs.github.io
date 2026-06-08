@@ -1,5 +1,111 @@
 [
   {
+    "id": "9aec56f3e9d8",
+    "timestamp": "2026-06-08T00:02:01.610768+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "journalists vs academics on communicative accessibility",
+    "labels": {
+      "X": "journalists",
+      "Y": "academics",
+      "A": "accessibility",
+      "B": "opacity"
+    },
+    "canonical_keys": {
+      "X": "journalists",
+      "Y": "academics",
+      "A": "accessibility",
+      "B": "opacity"
+    },
+    "effect_size": 0.8103425909079827,
+    "p_value": 0.02534,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "reporter",
+        "editor",
+        "correspondent",
+        "anchor",
+        "columnist",
+        "writer",
+        "broadcaster",
+        "commentator",
+        "publisher",
+        "producer",
+        "presenter",
+        "journalist",
+        "newsreader",
+        "stringer",
+        "photographer"
+      ],
+      "Y_used": [
+        "professor",
+        "researcher",
+        "scholar",
+        "academic",
+        "lecturer",
+        "tutor",
+        "dean",
+        "faculty",
+        "instructor",
+        "teacher",
+        "graduate",
+        "postdoc",
+        "fellow",
+        "scientist",
+        "specialist"
+      ],
+      "A_used": [
+        "accessible",
+        "clear",
+        "understandable",
+        "transparent",
+        "readable",
+        "direct",
+        "open",
+        "communicative",
+        "engaging",
+        "approachable",
+        "simple",
+        "plain",
+        "lucid",
+        "intelligible",
+        "comprehensible"
+      ],
+      "B_used": [
+        "obscure",
+        "complex",
+        "opaque",
+        "technical",
+        "pedantic",
+        "insular",
+        "dense",
+        "esoteric",
+        "abstract",
+        "specialized",
+        "arcane",
+        "convoluted",
+        "complicated",
+        "intricate",
+        "difficult"
+      ]
+    },
+    "proposal": "People associate journalists with communicative accessibility more strongly than they associate academics with communicative accessibility. While both groups serve as primary information intermediaries, contemporary media discourse consistently frames journalists as translators tasked with distilling complexity for public consumption, whereas academics are routinely stereotyped as insular, pedantic, and deliberately opaque. This implicit association remains unexamined in existing IAT and WEAT literature, which has historically prioritized explicit measures of credibility, bias, or intelligence over automatic cognitive mappings of communication style. Establishing whether this accessibility gap operates implicitly would reveal a foundational mental heuristic that shapes public trust, potentially explaining why scholarly expertise is frequently discounted in favor of media interpretation despite higher formal credentials. Understanding this automatic bias is crucial for redesigning academic outreach, improving science communication pipelines, and mitigating the structural marginalization of specialized knowledge in democratic discourse.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "b6893dbe84ba",
     "timestamp": "2026-06-07T20:40:39.171810+00:00",
     "schema_version": "autoresearch.v1",
