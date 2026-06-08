@@ -1,15 +1,5 @@
 [
   {
-    "id": "female-repayment-promise-faster",
-    "title": "Female borrowers who make a direct promise to repay the loan promptly may fund faster.",
-    "bucket": "",
-    "birth_batch": 0,
-    "death_batch": 598,
-    "last_batch": 598,
-    "confidence": 0,
-    "alive": false
-  },
-  {
     "id": "female-previous-kiva-loan-faster",
     "title": "Female borrowers who mention having previously received a Kiva loan may fund faster.",
     "bucket": "",
@@ -100,11 +90,21 @@
     "alive": false
   },
   {
+    "id": "female-shorter-pitch-faster",
+    "title": "Pitches from women that are significantly shorter than their counterparts tend to experience increased funding speed.",
+    "bucket": "",
+    "birth_batch": 0,
+    "death_batch": 641,
+    "last_batch": 641,
+    "confidence": 0,
+    "alive": false
+  },
+  {
     "id": "female-technical-specificity-faster",
     "title": "Female borrowers who list specific products or goals beyond family welfare fund faster.",
     "bucket": "gendered_women",
     "birth_batch": 1,
-    "last_batch": 640,
+    "last_batch": 641,
     "confidence": 1.0,
     "peak_confidence": 1.0,
     "alive": true
@@ -114,7 +114,7 @@
     "title": "Female borrowers who mention benefits to their family or community fund faster.",
     "bucket": "gendered_women",
     "birth_batch": 1,
-    "last_batch": 640,
+    "last_batch": 641,
     "confidence": 0.75,
     "peak_confidence": 0.75,
     "alive": true
@@ -124,7 +124,7 @@
     "title": "Specifying the number of years a business has operated predicts faster funding regardless of gender.",
     "bucket": "faster",
     "birth_batch": 1,
-    "last_batch": 640,
+    "last_batch": 641,
     "confidence": 0.93,
     "peak_confidence": 0.93,
     "alive": true
@@ -134,9 +134,9 @@
     "title": "Pitches that provide concrete financial figures or specific inventory lists fund faster regardless of gender.",
     "bucket": "faster",
     "birth_batch": 1,
-    "last_batch": 640,
-    "confidence": 0.99,
-    "peak_confidence": 0.99,
+    "last_batch": 641,
+    "confidence": 1.0,
+    "peak_confidence": 1.0,
     "alive": true
   },
   {
@@ -144,7 +144,7 @@
     "title": "Mentioning family obligations and benefits has opposite effects on funding speed by gender.",
     "bucket": "interaction",
     "birth_batch": 1,
-    "last_batch": 640,
+    "last_batch": 641,
     "confidence": 0.73,
     "peak_confidence": 0.73,
     "alive": true
@@ -154,7 +154,7 @@
     "title": "Mentioning local currency amounts or specific institutional affiliations predicts slower funding regardless of gender.",
     "bucket": "slower",
     "birth_batch": 1,
-    "last_batch": 640,
+    "last_batch": 641,
     "confidence": 0.75,
     "peak_confidence": 0.75,
     "alive": true
@@ -164,19 +164,19 @@
     "title": "Female borrowers who list the specific ages of their children fund faster.",
     "bucket": "gendered_women",
     "birth_batch": 1,
-    "last_batch": 640,
+    "last_batch": 641,
     "confidence": 1.0,
     "peak_confidence": 1.0,
     "alive": true
   },
   {
-    "id": "female-shorter-pitch-faster",
-    "title": "Female borrowers who write shorter pitches fund faster.",
+    "id": "female-repayment-history-faster",
+    "title": "Female borrowers who mention successful previous loan repayment history fund faster.",
     "bucket": "gendered_women",
-    "birth_batch": 610,
-    "last_batch": 640,
-    "confidence": 0.65,
-    "peak_confidence": 0.65,
+    "birth_batch": 641,
+    "last_batch": 641,
+    "confidence": 0.6,
+    "peak_confidence": 0.6,
     "alive": true
   }
 ]
