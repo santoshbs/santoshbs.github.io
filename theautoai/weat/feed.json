@@ -1,5 +1,111 @@
 [
   {
+    "id": "a96b200689ba",
+    "timestamp": "2026-06-09T23:28:36.275341+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Activists vs Bureaucrats on moral evaluation",
+    "labels": {
+      "X": "Activists",
+      "Y": "Bureaucrats",
+      "A": "moral authority",
+      "B": "moral compromise"
+    },
+    "canonical_keys": {
+      "X": "activists",
+      "Y": "bureaucrats",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 0.6199959925969283,
+    "p_value": 0.09581,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "activist",
+        "campaigner",
+        "demonstrator",
+        "protester",
+        "radical",
+        "rebel",
+        "reformer",
+        "revolutionary",
+        "advocate",
+        "organizer",
+        "agitator",
+        "crusader",
+        "fighter",
+        "dissident",
+        "marcher"
+      ],
+      "Y_used": [
+        "bureaucrat",
+        "administrator",
+        "clerk",
+        "official",
+        "functionary",
+        "registrar",
+        "inspector",
+        "auditor",
+        "censor",
+        "commissioner",
+        "secretary",
+        "regulator",
+        "technocrat",
+        "mandarin",
+        "overseer"
+      ],
+      "A_used": [
+        "ethical",
+        "moral",
+        "righteous",
+        "just",
+        "virtuous",
+        "honorable",
+        "noble",
+        "good",
+        "pure",
+        "honest",
+        "sincere",
+        "principled",
+        "upright",
+        "fair",
+        "right"
+      ],
+      "B_used": [
+        "amoral",
+        "neutral",
+        "indifferent",
+        "cynical",
+        "selfish",
+        "greedy",
+        "unethical",
+        "corrupt",
+        "dishonest",
+        "unjust",
+        "wicked",
+        "sinful",
+        "bad",
+        "false",
+        "unfair"
+      ]
+    },
+    "proposal": "People associate Activists with moral authority more strongly than they associate Bureaucrats with moral authority. While prior research has examined comparisons such as politicians versus bureaucrats or rebels versus bureaucrats, the specific contrast between the broad category of activists and institutional bureaucrats on the axis of moral authority remains unprobed. This association is interesting because it reflects contemporary public discourse that often frames grassroots movements as driven by pure ethical conviction, while characterizing administrative bodies as morally neutral or compromised by systemic constraints. Confirming this implicit link would be important for understanding how legitimacy is mentally assigned to social change agents versus established institutional roles, revealing a cognitive bias that elevates the perceived ethical standing of outsiders over insiders.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "5072c7d23bb1",
     "timestamp": "2026-06-09T19:09:22.578174+00:00",
     "schema_version": "autoresearch.v1",
