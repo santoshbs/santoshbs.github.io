@@ -1,5 +1,111 @@
 [
   {
+    "id": "2620bd20b537",
+    "timestamp": "2026-06-09T12:03:11.341471+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "optimists vs pessimists on foresight vs short-sightedness",
+    "labels": {
+      "X": "optimists",
+      "Y": "pessimists",
+      "A": "strategic foresight",
+      "B": "short-sightedness"
+    },
+    "canonical_keys": {
+      "X": "optimists",
+      "Y": "pessimists",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 1.4865169929902826,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "optimists",
+        "optimistic",
+        "hopeful",
+        "positive",
+        "upbeat",
+        "cheerful",
+        "confident",
+        "sanguine",
+        "buoyant",
+        "bright",
+        "encouraging",
+        "optimist",
+        "sunny",
+        "rosy",
+        "assured"
+      ],
+      "Y_used": [
+        "pessimists",
+        "pessimistic",
+        "gloomy",
+        "negative",
+        "cynical",
+        "despairing",
+        "downcast",
+        "hopeless",
+        "bleak",
+        "dreary",
+        "melancholy",
+        "somber",
+        "morose",
+        "pessimist",
+        "fatalistic"
+      ],
+      "A_used": [
+        "foresight",
+        "visionary",
+        "strategic",
+        "planning",
+        "proactive",
+        "forward",
+        "prospect",
+        "forecast",
+        "roadmap",
+        "anticipate",
+        "future",
+        "outlook",
+        "strategy",
+        "prepare",
+        "vision"
+      ],
+      "B_used": [
+        "shortsighted",
+        "myopic",
+        "narrow",
+        "immediate",
+        "reactive",
+        "present",
+        "backward",
+        "limited",
+        "confined",
+        "restricted",
+        "hasty",
+        "impulsive",
+        "careless",
+        "ignorant",
+        "nearsighted"
+      ]
+    },
+    "proposal": "People associate optimists with strategic foresight more strongly than they associate pessimists with strategic foresight. While contemporary discourse often credits pessimists with realistic risk assessment, public narratives in business, politics, and crisis management increasingly frame optimistic actors as the ones capable of long-term vision and proactive planning. This differential is novel because prior implicit association research has largely focused on affective valence or competence stereotypes, rather than how optimism/pessimism dispositions are mapped onto cognitive planning capacities. Examining this link matters because it reveals whether cultural narratives subtly reframe pessimism as short-sightedness and optimism as visionary leadership, potentially biasing institutional hiring and policy-making toward risk-enthusiastic actors.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "694b3743f5e4",
     "timestamp": "2026-06-09T08:52:40.815376+00:00",
     "schema_version": "autoresearch.v1",
