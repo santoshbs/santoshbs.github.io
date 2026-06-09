@@ -1,5 +1,111 @@
 [
   {
+    "id": "42cd77cc6683",
+    "timestamp": "2026-06-09T00:46:25.639069+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "mediators vs prosecutors on Relational Empathy vs Adversarial Aggression",
+    "labels": {
+      "X": "mediators",
+      "Y": "prosecutors",
+      "A": "Relational Empathy",
+      "B": "Adversarial Aggression"
+    },
+    "canonical_keys": {
+      "X": "mediators",
+      "Y": "prosecutors",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 0.5910156261110656,
+    "p_value": 0.11198,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "mediator",
+        "arbitrator",
+        "negotiator",
+        "conciliator",
+        "peacemaker",
+        "facilitator",
+        "counselor",
+        "advisor",
+        "adjuster",
+        "reconciler",
+        "peacekeeper",
+        "intermediary",
+        "umpire",
+        "referee",
+        "broker"
+      ],
+      "Y_used": [
+        "prosecutor",
+        "attorney",
+        "lawyer",
+        "advocate",
+        "counsel",
+        "barrister",
+        "solicitor",
+        "litigator",
+        "judge",
+        "magistrate",
+        "justice",
+        "lawman",
+        "enforcer",
+        "accuser",
+        "official"
+      ],
+      "A_used": [
+        "empathy",
+        "compassion",
+        "caring",
+        "kindness",
+        "love",
+        "support",
+        "understanding",
+        "warmth",
+        "affection",
+        "tenderness",
+        "mercy",
+        "sympathy",
+        "concern",
+        "respect",
+        "trust"
+      ],
+      "B_used": [
+        "aggression",
+        "hostility",
+        "anger",
+        "hate",
+        "attack",
+        "violence",
+        "punishment",
+        "strictness",
+        "discipline",
+        "conflict",
+        "dispute",
+        "argument",
+        "fight",
+        "accusation",
+        "blame"
+      ]
+    },
+    "proposal": "People associate mediators with relational empathy more strongly than they associate prosecutors with relational empathy. This differential implicit association is novel because psychological research has extensively mapped biases around overt authority figures and caregivers, yet has neglected the automatic cognitive framing of dispute-resolution roles. It is substantively interesting and important because public attitudes toward restorative versus punitive justice may be unconsciously anchored to these mental links, shaping civic trust and legal reform support. Confirming or disconfirming this association would clarify how institutional conflict-handlers are automatically coded along cooperative versus adversarial dimensions in everyday cognition.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "722e1ec29724",
     "timestamp": "2026-06-08T14:00:10.013261+00:00",
     "schema_version": "autoresearch.v1",
