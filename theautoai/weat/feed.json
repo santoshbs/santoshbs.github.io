@@ -1,5 +1,111 @@
 [
   {
+    "id": "64f05ae38b0b",
+    "timestamp": "2026-06-09T05:31:38.746254+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Orators vs Clerks on Autonomy vs Compliance",
+    "labels": {
+      "X": "Orators",
+      "Y": "Clerks",
+      "A": "Autonomy",
+      "B": "Compliance"
+    },
+    "canonical_keys": {
+      "X": "orators",
+      "Y": "clerks",
+      "A": "autonomy",
+      "B": "compliance"
+    },
+    "effect_size": 0.8521081118624002,
+    "p_value": 0.01925,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "orator",
+        "speaker",
+        "rhetorician",
+        "debater",
+        "lecturer",
+        "presenter",
+        "announcer",
+        "broadcaster",
+        "preacher",
+        "evangelist",
+        "minister",
+        "politician",
+        "senator",
+        "mayor",
+        "governor"
+      ],
+      "Y_used": [
+        "clerk",
+        "secretary",
+        "assistant",
+        "typist",
+        "stenographer",
+        "archivist",
+        "librarian",
+        "bookkeeper",
+        "accountant",
+        "bureaucrat",
+        "officer",
+        "employee",
+        "worker",
+        "helper",
+        "scribe"
+      ],
+      "A_used": [
+        "autonomy",
+        "freedom",
+        "liberty",
+        "independence",
+        "agency",
+        "choice",
+        "volition",
+        "sovereign",
+        "self",
+        "master",
+        "control",
+        "power",
+        "free",
+        "autonomous",
+        "liberated"
+      ],
+      "B_used": [
+        "obedience",
+        "compliance",
+        "subordination",
+        "dependence",
+        "restriction",
+        "constraint",
+        "duty",
+        "obligation",
+        "limited",
+        "passive",
+        "receptive",
+        "subservient",
+        "deferential",
+        "obedient",
+        "compliant"
+      ]
+    },
+    "proposal": "People associate Orators with autonomy more strongly than they associate Clerks with autonomy. This proposal targets the implicit valuation of communicative performance versus administrative execution, suggesting that the public mentally links vocal leadership and public address with self-directed agency, while linking roles focused on recording, processing, and implementing with compliance and subordinate function. This specific contrast remains novel in the literature, which has typically examined autonomy through the lens of broad occupational prestige or gender, rather than the functional division between those who speak for institutions and those who maintain them. Confirming or disconfirming this association would be important for understanding how implicit hierarchies between 'voice' and 'hands' perpetuate the marginalization of clerical labor and shape perceptions of who truly holds power within organizations.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "9d8192503e6e",
     "timestamp": "2026-06-09T04:51:04.739676+00:00",
     "schema_version": "autoresearch.v1",
