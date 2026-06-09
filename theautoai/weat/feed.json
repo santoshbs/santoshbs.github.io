@@ -1,5 +1,111 @@
 [
   {
+    "id": "a0066f9d9f2e",
+    "timestamp": "2026-06-09T14:10:09.099282+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "politicians vs bureaucrats on moral agency versus procedural neutrality",
+    "labels": {
+      "X": "politicians",
+      "Y": "bureaucrats",
+      "A": "moral agency",
+      "B": "procedural neutrality"
+    },
+    "canonical_keys": {
+      "X": "politicians",
+      "Y": "bureaucrats",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 1.141789344731545,
+    "p_value": 0.0012,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "politician",
+        "legislator",
+        "senator",
+        "representative",
+        "mayor",
+        "governor",
+        "president",
+        "chancellor",
+        "premier",
+        "minister",
+        "councilman",
+        "alderman",
+        "lawmaker",
+        "delegate",
+        "statesman"
+      ],
+      "Y_used": [
+        "bureaucrat",
+        "administrator",
+        "functionary",
+        "clerk",
+        "employee",
+        "servant",
+        "agent",
+        "secretary",
+        "registrar",
+        "auditor",
+        "inspector",
+        "assessor",
+        "worker",
+        "analyst",
+        "specialist"
+      ],
+      "A_used": [
+        "responsible",
+        "guilty",
+        "virtuous",
+        "moral",
+        "ethical",
+        "just",
+        "righteous",
+        "culpable",
+        "accountable",
+        "honorable",
+        "noble",
+        "decent",
+        "good",
+        "wicked",
+        "evil"
+      ],
+      "B_used": [
+        "neutral",
+        "impartial",
+        "objective",
+        "procedural",
+        "mechanical",
+        "administrative",
+        "systematic",
+        "regulated",
+        "standard",
+        "formal",
+        "logical",
+        "technical",
+        "routine",
+        "detached",
+        "passive"
+      ]
+    },
+    "proposal": "People associate politicians with moral agency more strongly than they associate bureaucrats with moral agency. This differential implicit association reflects the cultural script that positions elected officials as the moral authors of policy and public life, while casting administrative officials as neutral implementers constrained by rules and procedures. Examining this association is novel because implicit comparisons between these two core pillars of governance have been neglected in favor of explicit trust or competence measures, yet the mental attribution of agency has profound implications for how the public assigns blame or credit in political crises. Confirming this bias would reveal a hidden asymmetry in the responsibility intuition that shapes democratic accountability, potentially insulating the administrative state from moral scrutiny even when bureaucratic actions cause harm.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "2620bd20b537",
     "timestamp": "2026-06-09T12:03:11.341471+00:00",
     "schema_version": "autoresearch.v1",
