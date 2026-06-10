@@ -1,35 +1,5 @@
 [
   {
-    "id": "female-child-count-schooling-slower",
-    "title": "Female borrowers who mention the number of children and their schooling may fund more slowly.",
-    "bucket": "",
-    "birth_batch": 0,
-    "death_batch": 644,
-    "last_batch": 644,
-    "confidence": 0,
-    "alive": false
-  },
-  {
-    "id": "female-gratitude-slower",
-    "title": "Female borrowers who express explicit gratitude to lenders or institutions may fund more slowly.",
-    "bucket": "",
-    "birth_batch": 0,
-    "death_batch": 648,
-    "last_batch": 648,
-    "confidence": 0,
-    "alive": false
-  },
-  {
-    "id": "female-debt-mention-slower",
-    "title": "Female borrowers who mention existing debts or arrears may fund more slowly.",
-    "bucket": "",
-    "birth_batch": 0,
-    "death_batch": 653,
-    "last_batch": 653,
-    "confidence": 0,
-    "alive": false
-  },
-  {
     "id": "female-repayment-history-faster",
     "title": "Pitches from women that explicitly reference a history of successful loan repayments or previous financial history accelerate funding speed.",
     "bucket": "",
@@ -100,23 +70,43 @@
     "alive": false
   },
   {
+    "id": "female-community-benefit-faster",
+    "title": "Pitches from women that highlight how the loan will benefit their family or the wider community tend to accelerate funding speed.",
+    "bucket": "",
+    "birth_batch": 0,
+    "death_batch": 675,
+    "last_batch": 675,
+    "confidence": 0,
+    "alive": false
+  },
+  {
+    "id": "family-mention-interaction",
+    "title": "Pitches from women that highlight family or community benefits fund faster, while pitches from men that mention family obligations or school fees fund more slowly.",
+    "bucket": "",
+    "birth_batch": 0,
+    "death_batch": 675,
+    "last_batch": 675,
+    "confidence": 0,
+    "alive": false
+  },
+  {
+    "id": "female-repayment-intent-faster",
+    "title": "Female borrowers who explicitly mention their intent to repay the loan may fund faster.",
+    "bucket": "",
+    "birth_batch": 0,
+    "death_batch": 675,
+    "last_batch": 675,
+    "confidence": 0,
+    "alive": false
+  },
+  {
     "id": "female-technical-specificity-faster",
     "title": "Female borrowers who list specific products or goals beyond family welfare fund faster.",
     "bucket": "gendered_women",
     "birth_batch": 1,
-    "last_batch": 674,
+    "last_batch": 675,
     "confidence": 1.0,
     "peak_confidence": 1.0,
-    "alive": true
-  },
-  {
-    "id": "female-community-benefit-faster",
-    "title": "Female borrowers who mention benefits to their family or community fund faster.",
-    "bucket": "gendered_women",
-    "birth_batch": 1,
-    "last_batch": 674,
-    "confidence": 0.48,
-    "peak_confidence": 0.48,
     "alive": true
   },
   {
@@ -124,7 +114,7 @@
     "title": "Specifying the number of years a business has operated predicts faster funding regardless of gender.",
     "bucket": "faster",
     "birth_batch": 1,
-    "last_batch": 674,
+    "last_batch": 675,
     "confidence": 0.73,
     "peak_confidence": 0.73,
     "alive": true
@@ -134,19 +124,9 @@
     "title": "Pitches that provide concrete financial figures or specific inventory lists fund faster regardless of gender.",
     "bucket": "faster",
     "birth_batch": 1,
-    "last_batch": 674,
+    "last_batch": 675,
     "confidence": 0.8,
     "peak_confidence": 0.8,
-    "alive": true
-  },
-  {
-    "id": "family-mention-interaction",
-    "title": "Mentioning family obligations and benefits has opposite effects on funding speed by gender.",
-    "bucket": "interaction",
-    "birth_batch": 1,
-    "last_batch": 674,
-    "confidence": 0.43,
-    "peak_confidence": 0.43,
     "alive": true
   },
   {
@@ -154,7 +134,7 @@
     "title": "Female borrowers who list the specific ages of their children fund faster.",
     "bucket": "gendered_women",
     "birth_batch": 1,
-    "last_batch": 674,
+    "last_batch": 675,
     "confidence": 0.75,
     "peak_confidence": 0.75,
     "alive": true
@@ -163,8 +143,8 @@
     "id": "female-boilerplate-slower",
     "title": "Female borrowers who use generic template language fund more slowly.",
     "bucket": "gendered_women",
-    "birth_batch": 636,
-    "last_batch": 674,
+    "birth_batch": 635,
+    "last_batch": 675,
     "confidence": 0.7,
     "peak_confidence": 0.7,
     "alive": true
@@ -173,8 +153,8 @@
     "id": "female-struggle-mention-faster",
     "title": "Female borrowers who mention specific business struggles or risks fund faster.",
     "bucket": "gendered_women",
-    "birth_batch": 672,
-    "last_batch": 674,
+    "birth_batch": 671,
+    "last_batch": 675,
     "confidence": 0.71,
     "peak_confidence": 0.71,
     "alive": true
