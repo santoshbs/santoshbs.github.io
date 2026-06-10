@@ -1,5 +1,111 @@
 [
   {
+    "id": "8778595304f6",
+    "timestamp": "2026-06-10T04:04:19.242751+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Artists vs Politicians on authenticity vs artificiality",
+    "labels": {
+      "X": "Artists",
+      "Y": "Politicians",
+      "A": "Authenticity",
+      "B": "Artificiality"
+    },
+    "canonical_keys": {
+      "X": "artists",
+      "Y": "politicians",
+      "A": "authenticity",
+      "B": "artificiality"
+    },
+    "effect_size": 1.1811663977188116,
+    "p_value": 0.00091,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "artist",
+        "painter",
+        "sculptor",
+        "musician",
+        "composer",
+        "dancer",
+        "writer",
+        "poet",
+        "craftsman",
+        "novelist",
+        "illustrator",
+        "photographer",
+        "conductor",
+        "actor",
+        "performer"
+      ],
+      "Y_used": [
+        "politician",
+        "senator",
+        "governor",
+        "mayor",
+        "president",
+        "diplomat",
+        "ambassador",
+        "minister",
+        "official",
+        "candidate",
+        "representative",
+        "legislator",
+        "statesman",
+        "administrator",
+        "leader"
+      ],
+      "A_used": [
+        "authentic",
+        "genuine",
+        "real",
+        "true",
+        "honest",
+        "sincere",
+        "truthful",
+        "transparent",
+        "reliable",
+        "trustworthy",
+        "frank",
+        "candid",
+        "upright",
+        "straightforward",
+        "open"
+      ],
+      "B_used": [
+        "fake",
+        "false",
+        "artificial",
+        "dishonest",
+        "deceptive",
+        "calculated",
+        "manipulative",
+        "insincere",
+        "hypocritical",
+        "duplicitous",
+        "fraudulent",
+        "bogus",
+        "superficial",
+        "phony",
+        "cynical"
+      ]
+    },
+    "proposal": "People associate Artists with authenticity more strongly than they associate Politicians with authenticity. This association is novel because while research has examined how the public views artists as creative or emotional and politicians as powerful or untrustworthy, the specific comparative axis of authenticity remains unprobed via implicit measures. It is interesting and important because it captures a pervasive cultural narrative where artistic expression is idealized as genuine self-revelation, whereas political performance is stereotyped as calculated spin or duplicity, potentially influencing public engagement and the perceived moral legitimacy of these social roles.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "a96b200689ba",
     "timestamp": "2026-06-09T23:28:36.275341+00:00",
     "schema_version": "autoresearch.v1",
