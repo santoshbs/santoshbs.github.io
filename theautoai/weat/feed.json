@@ -1,5 +1,111 @@
 [
   {
+    "id": "b174f47f9ee6",
+    "timestamp": "2026-06-10T11:17:52.484593+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "diplomats vs teachers on Communicative ambiguity vs clarity",
+    "labels": {
+      "X": "diplomats",
+      "Y": "teachers",
+      "A": "Strategic Ambiguity",
+      "B": "Clarity"
+    },
+    "canonical_keys": {
+      "X": "diplomats",
+      "Y": "teachers",
+      "A": "",
+      "B": "clarity"
+    },
+    "effect_size": 1.2489523380346492,
+    "p_value": 0.00027,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "diplomat",
+        "diplomats",
+        "ambassadors",
+        "envoy",
+        "envoys",
+        "emissary",
+        "ministers",
+        "consul",
+        "delegates",
+        "representatives",
+        "negotiators",
+        "statesman",
+        "stateswoman",
+        "secretary",
+        "diplomatist"
+      ],
+      "Y_used": [
+        "teacher",
+        "teachers",
+        "professor",
+        "professors",
+        "educator",
+        "educators",
+        "instructor",
+        "instructors",
+        "tutor",
+        "tutors",
+        "lecturer",
+        "lecturers",
+        "mentor",
+        "mentors",
+        "schoolteacher"
+      ],
+      "A_used": [
+        "ambiguous",
+        "vague",
+        "unclear",
+        "obscure",
+        "hidden",
+        "covert",
+        "implicit",
+        "indeterminate",
+        "equivocal",
+        "elusive",
+        "coded",
+        "indirect",
+        "secretive",
+        "deceptive",
+        "murky"
+      ],
+      "B_used": [
+        "clear",
+        "direct",
+        "transparent",
+        "explicit",
+        "open",
+        "plain",
+        "straightforward",
+        "evident",
+        "lucid",
+        "visible",
+        "frank",
+        "candid",
+        "honest",
+        "precise",
+        "definite"
+      ]
+    },
+    "proposal": "People associate diplomats with strategic ambiguity more strongly than they associate teachers with strategic ambiguity. This differential implicit association captures a widely circulated cultural intuition that diplomatic communication thrives on deliberate vagueness, coded negotiation, and unspoken concessions, whereas pedagogical communication is idealized as direct, transparent, and explicitly instructional. While explicit research has documented how professionals navigate clarity versus obscurity in their respective fields, the automatic, implicit linkage between diplomatic roles and purposeful vagueness has not been systematically measured using association paradigms. Examining this association matters because it reveals how occupational identities are mentally mapped onto foundational communicative values, which in turn shapes public expectations around transparency, accountability, and interpretive labor across different civic institutions.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "214772920906",
     "timestamp": "2026-06-10T04:41:46.803358+00:00",
     "schema_version": "autoresearch.v1",
