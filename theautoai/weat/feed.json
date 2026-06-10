@@ -1,5 +1,111 @@
 [
   {
+    "id": "603e387a6d54",
+    "timestamp": "2026-06-10T19:45:19.990293+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "artisans vs bosses on care versus neglect",
+    "labels": {
+      "X": "artisans",
+      "Y": "bosses",
+      "A": "care",
+      "B": "neglect"
+    },
+    "canonical_keys": {
+      "X": "artisans",
+      "Y": "bosses",
+      "A": "care",
+      "B": "neglect"
+    },
+    "effect_size": -0.21458392362956277,
+    "p_value": 0.57107,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "carpenter",
+        "craftsman",
+        "maker",
+        "sculptor",
+        "weaver",
+        "blacksmith",
+        "potter",
+        "baker",
+        "jeweler",
+        "painter",
+        "mechanic",
+        "builder",
+        "tailor",
+        "welder",
+        "mason"
+      ],
+      "Y_used": [
+        "manager",
+        "boss",
+        "executive",
+        "chief",
+        "director",
+        "overseer",
+        "supervisor",
+        "president",
+        "foreman",
+        "administrator",
+        "head",
+        "controller",
+        "captain",
+        "leader",
+        "principal"
+      ],
+      "A_used": [
+        "care",
+        "attention",
+        "thoughtful",
+        "considerate",
+        "compassionate",
+        "tender",
+        "gentle",
+        "patient",
+        "kind",
+        "sympathetic",
+        "warm",
+        "affectionate",
+        "devoted",
+        "diligent",
+        "mindful"
+      ],
+      "B_used": [
+        "neglect",
+        "disregard",
+        "apathy",
+        "indifferent",
+        "callous",
+        "ruthless",
+        "cold",
+        "heartless",
+        "detached",
+        "efficient",
+        "profit",
+        "expedient",
+        "hasty",
+        "unconcerned",
+        "sloppy"
+      ]
+    },
+    "proposal": "People associate artisans with care more strongly than they associate bosses with care. This differential implicit association highlights a moralized dichotomy in public discourse where those who physically create objects are viewed as attentive and conscientious, while those who manage or command are viewed as distant or efficiency-obsessed. Examining this is novel because most prior research focuses on explicit attitudes toward management or specific leadership styles, rather than the broad, implicit link between the category of boss and the absence of care. Confirming this association would matter for understanding how implicit biases shape labor dynamics, unionization sentiment, and the public valuation of different types of work.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "b2c0288c66c8",
     "timestamp": "2026-06-10T17:34:59.275742+00:00",
     "schema_version": "autoresearch.v1",
