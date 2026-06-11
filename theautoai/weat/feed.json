@@ -1,5 +1,111 @@
 [
   {
+    "id": "2830deea0511",
+    "timestamp": "2026-06-11T06:44:27.861511+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "writers vs programmers on ambiguity tolerance vs precision",
+    "labels": {
+      "X": "writers",
+      "Y": "programmers",
+      "A": "ambiguity",
+      "B": "precision"
+    },
+    "canonical_keys": {
+      "X": "writers",
+      "Y": "programmers",
+      "A": "ambiguity",
+      "B": "precision"
+    },
+    "effect_size": 0.7254635053417356,
+    "p_value": 0.04914,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "writer",
+        "author",
+        "novelist",
+        "poet",
+        "playwright",
+        "editor",
+        "journalist",
+        "storyteller",
+        "blogger",
+        "columnist",
+        "copywriter",
+        "biographer",
+        "narrator",
+        "critic",
+        "reviewer"
+      ],
+      "Y_used": [
+        "programmer",
+        "coder",
+        "developer",
+        "engineer",
+        "technician",
+        "operator",
+        "specialist",
+        "architect",
+        "analyst",
+        "designer",
+        "tester",
+        "hacker",
+        "techie",
+        "sysop",
+        "scripter"
+      ],
+      "A_used": [
+        "ambiguous",
+        "vague",
+        "flexible",
+        "abstract",
+        "uncertain",
+        "unclear",
+        "nebulous",
+        "hazy",
+        "murky",
+        "indistinct",
+        "fuzzy",
+        "obscure",
+        "cryptic",
+        "indefinite",
+        "tentative"
+      ],
+      "B_used": [
+        "precise",
+        "exact",
+        "clear",
+        "definite",
+        "concrete",
+        "certain",
+        "specific",
+        "accurate",
+        "explicit",
+        "strict",
+        "rigid",
+        "logical",
+        "factual",
+        "objective",
+        "direct"
+      ]
+    },
+    "proposal": "People associate writers with ambiguity tolerance more strongly than they associate programmers with ambiguity tolerance. This differential implicit association reflects contemporary cultural narratives that frame literary creation as inherently interpretive and open-ended, while coding is stereotyped as requiring precise, rule-bound logic. Examining this association is novel because implicit measures have rarely targeted ambiguity tolerance specifically along a creative-technical divide, despite its relevance to interdisciplinary collaboration and hiring biases. Confirming or disconfirming this claim would clarify whether public mental representations of these professions reinforce rigid cognitive stereotypes that undervalue flexibility in technical fields and over-romanticize vagueness in literary ones.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "903ddd8274be",
     "timestamp": "2026-06-11T06:00:54.567342+00:00",
     "schema_version": "autoresearch.v1",
