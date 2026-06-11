@@ -1,5 +1,111 @@
 [
   {
+    "id": "903ddd8274be",
+    "timestamp": "2026-06-11T06:00:54.567342+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "idealists vs pragmatists on cognitive rigidity vs flexibility",
+    "labels": {
+      "X": "idealists",
+      "Y": "pragmatists",
+      "A": "dogmatic/rigid",
+      "B": "flexible/open"
+    },
+    "canonical_keys": {
+      "X": "idealists",
+      "Y": "pragmatists",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 1.0043059887380499,
+    "p_value": 0.00527,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "idealist",
+        "visionary",
+        "utopian",
+        "romantic",
+        "dreamer",
+        "altruist",
+        "humanitarian",
+        "moralist",
+        "reformer",
+        "activist",
+        "saint",
+        "pacifist",
+        "egalitarian",
+        "radical",
+        "progressive"
+      ],
+      "Y_used": [
+        "pragmatist",
+        "realist",
+        "manager",
+        "diplomat",
+        "operator",
+        "technocrat",
+        "executive",
+        "politician",
+        "merchant",
+        "worker",
+        "professional",
+        "practitioner",
+        "administrator",
+        "strategist",
+        "moderate"
+      ],
+      "A_used": [
+        "dogmatic",
+        "rigid",
+        "stubborn",
+        "inflexible",
+        "uncompromising",
+        "obstinate",
+        "absolute",
+        "doctrinaire",
+        "authoritarian",
+        "strict",
+        "adamant",
+        "unyielding",
+        "fixed",
+        "closed",
+        "fundamentalist"
+      ],
+      "B_used": [
+        "flexible",
+        "adaptable",
+        "open",
+        "compromising",
+        "easygoing",
+        "elastic",
+        "malleable",
+        "versatile",
+        "accommodating",
+        "reasonable",
+        "responsive",
+        "willing",
+        "agreeable",
+        "tolerant",
+        "pliable"
+      ]
+    },
+    "proposal": "People associate idealists with dogmatism more strongly than they associate pragmatists with dogmatism. This differential implicit association suggests that the public mentally links idealism with cognitive inflexibility and rigid adherence to principles, whereas pragmatism is implicitly linked with adaptability and openness to compromise. Examining this bias is novel because prior research has focused on explicit value conflicts between idealists and pragmatists, but rarely on the implicit cognitive traits attributed to each as social actors. Confirming this association would reveal a hidden preference for pragmatic flexibility that may undermine the perceived legitimacy of idealistic positions in public discourse, framing them as intellectually closed rather than morally committed.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "62b2cb423b06",
     "timestamp": "2026-06-11T05:10:27.202996+00:00",
     "schema_version": "autoresearch.v1",
