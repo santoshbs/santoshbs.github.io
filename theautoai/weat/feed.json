@@ -1,5 +1,111 @@
 [
   {
+    "id": "df09074e6f64",
+    "timestamp": "2026-06-11T19:27:05.002777+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "economists vs historians on temporal_and_predictive_orientation",
+    "labels": {
+      "X": "economists",
+      "Y": "historians",
+      "A": "predictive_future",
+      "B": "retrospective_past"
+    },
+    "canonical_keys": {
+      "X": "economists",
+      "Y": "historians",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 1.6500759534697396,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "economist",
+        "banker",
+        "trader",
+        "financier",
+        "investor",
+        "auditor",
+        "accountant",
+        "broker",
+        "merchant",
+        "entrepreneur",
+        "capitalist",
+        "speculator",
+        "underwriter",
+        "moneylender",
+        "treasurer"
+      ],
+      "Y_used": [
+        "historian",
+        "archaeologist",
+        "archivist",
+        "curator",
+        "scholar",
+        "professor",
+        "academic",
+        "anthropologist",
+        "sociologist",
+        "philologist",
+        "classicist",
+        "medievalist",
+        "paleographer",
+        "antiquarian",
+        "chronicler"
+      ],
+      "A_used": [
+        "future",
+        "forecast",
+        "predict",
+        "anticipate",
+        "tomorrow",
+        "ahead",
+        "prospect",
+        "expect",
+        "outcome",
+        "forward",
+        "trend",
+        "project",
+        "estimate",
+        "certainty",
+        "precise"
+      ],
+      "B_used": [
+        "past",
+        "retrospect",
+        "former",
+        "yesterday",
+        "ancient",
+        "chronicle",
+        "era",
+        "antiquity",
+        "legacy",
+        "archive",
+        "record",
+        "bygone",
+        "precedent",
+        "heritage",
+        "memoir"
+      ]
+    },
+    "proposal": "People associate economists with predictive certainty more strongly than they associate historians with predictive certainty. While both professions analyze human behavior using empirical evidence, contemporary public discourse consistently frames economists as forecasters who can model and anticipate future outcomes, whereas historians are depicted as interpreters whose expertise lies strictly in retrospectively explaining past events. This differential implicit association remains largely unexamined in social psychology, despite its profound implications for how institutional authority is allocated in policy-making and crisis response. Demonstrating that the public implicitly privileges forward-looking quantification over backward-looking contextualization would reveal a hidden cognitive bias that shapes how expertise is legitimized, potentially explaining why economic models are often treated as more authoritative than historical precedents even when both face comparable uncertainties.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "990f35e9a714",
     "timestamp": "2026-06-11T18:43:53.177630+00:00",
     "schema_version": "autoresearch.v1",
