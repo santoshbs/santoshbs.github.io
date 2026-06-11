@@ -1,5 +1,111 @@
 [
   {
+    "id": "990f35e9a714",
+    "timestamp": "2026-06-11T18:43:53.177630+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "lawyers vs doctors on cynicism vs altruism",
+    "labels": {
+      "X": "lawyers",
+      "Y": "doctors",
+      "A": "cynicism",
+      "B": "altruism"
+    },
+    "canonical_keys": {
+      "X": "lawyers",
+      "Y": "doctors",
+      "A": "cynicism",
+      "B": "altruism"
+    },
+    "effect_size": 0.7085228427024997,
+    "p_value": 0.05586,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "lawyer",
+        "attorney",
+        "counsel",
+        "counselor",
+        "advocate",
+        "barrister",
+        "solicitor",
+        "jurist",
+        "litigator",
+        "prosecutor",
+        "defender",
+        "arbitrator",
+        "mediator",
+        "notary",
+        "clerk"
+      ],
+      "Y_used": [
+        "doctor",
+        "physician",
+        "surgeon",
+        "medic",
+        "clinician",
+        "practitioner",
+        "cardiologist",
+        "pediatrician",
+        "internist",
+        "specialist",
+        "resident",
+        "fellow",
+        "anesthetist",
+        "radiologist",
+        "pathologist"
+      ],
+      "A_used": [
+        "cynical",
+        "skeptical",
+        "distrustful",
+        "jaded",
+        "pessimistic",
+        "calculating",
+        "suspicious",
+        "doubtful",
+        "wary",
+        "guarded",
+        "untrusting",
+        "bitter",
+        "acrimonious",
+        "hostile",
+        "pragmatic"
+      ],
+      "B_used": [
+        "altruistic",
+        "compassionate",
+        "hopeful",
+        "benevolent",
+        "generous",
+        "caring",
+        "empathetic",
+        "selfless",
+        "optimistic",
+        "kind",
+        "loving",
+        "charitable",
+        "supportive",
+        "nurturing",
+        "devoted"
+      ]
+    },
+    "proposal": "People associate lawyers with cynicism more strongly than they associate doctors with cynicism. This differential implicit association examines a latent stereotype distinguishing two elite professions that both require extensive training and decision-making under uncertainty, yet operate in fundamentally different incentive structures. While public discourse frequently casts lawyers as pragmatic operators who navigate moral gray areas with skepticism, physicians are more often idealized as benevolent healers driven by altruism and hope. This proposal is novel because prior comparisons have focused on adjacent fields or ideological groups rather than contrasting these two specific pillars of civic infrastructure. It is interesting because it isolates cynicism as a specific dispositional attribute, revealing how structural roles may translate into deeply held personality stereotypes. It matters because confirming this association would illuminate how societal narratives shape our expectations of ethical orientation and trustworthiness in institutions that manage conflict versus those that manage care.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "16608aafb2eb",
     "timestamp": "2026-06-11T08:24:32.691958+00:00",
     "schema_version": "autoresearch.v1",
