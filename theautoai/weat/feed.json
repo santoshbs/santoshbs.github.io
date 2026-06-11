@@ -1,5 +1,111 @@
 [
   {
+    "id": "4e296faec273",
+    "timestamp": "2026-06-11T20:43:07.876592+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "nomads vs urbanites on ecological competence vs infrastructural dependence",
+    "labels": {
+      "X": "nomads",
+      "Y": "urbanites",
+      "A": "environmental adaptability",
+      "B": "vulnerability"
+    },
+    "canonical_keys": {
+      "X": "nomads",
+      "Y": "urbanites",
+      "A": "",
+      "B": "vulnerability"
+    },
+    "effect_size": 1.048032717094919,
+    "p_value": 0.00333,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "nomad",
+        "wanderer",
+        "drifter",
+        "vagabond",
+        "traveler",
+        "rover",
+        "camper",
+        "survivalist",
+        "explorer",
+        "pilgrim",
+        "herder",
+        "shepherd",
+        "hunter",
+        "gatherer",
+        "backpacker"
+      ],
+      "Y_used": [
+        "urbanite",
+        "metropolitan",
+        "citizen",
+        "resident",
+        "dweller",
+        "inhabitant",
+        "local",
+        "commuter",
+        "tenant",
+        "homeowner",
+        "suburbanite",
+        "downtown",
+        "city",
+        "urban",
+        "metro"
+      ],
+      "A_used": [
+        "adaptable",
+        "resilient",
+        "survival",
+        "rugged",
+        "tough",
+        "flexible",
+        "enduring",
+        "capable",
+        "strong",
+        "robust",
+        "dynamic",
+        "spontaneous",
+        "free",
+        "agile",
+        "prepared"
+      ],
+      "B_used": [
+        "vulnerable",
+        "reliant",
+        "fragile",
+        "dependent",
+        "weak",
+        "helpless",
+        "artificial",
+        "constructed",
+        "concrete",
+        "asphalt",
+        "dependence",
+        "reliance",
+        "vulnerability",
+        "exposed",
+        "precarious"
+      ]
+    },
+    "proposal": "People associate nomads with environmental adaptability more strongly than they associate urbanites with environmental adaptability. This differential implicit association emerges from contemporary discourse that romanticizes mobile, off-grid, and nomadic lifestyles as inherently resilient and attuned to ecological shifts, while framing urban dwellers as reliant on artificial infrastructure and vulnerable to climate or supply-chain disruptions. It has not been systematically examined in implicit cognition research, which typically focuses on mobility-related traits like freedom or risk-taking rather than ecological adaptability. Testing this association matters because it reveals whether public mental models conflate physical mobility with ecological competence, potentially shaping policy attitudes toward housing, land use, and climate resilience planning.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "df09074e6f64",
     "timestamp": "2026-06-11T19:27:05.002777+00:00",
     "schema_version": "autoresearch.v1",
