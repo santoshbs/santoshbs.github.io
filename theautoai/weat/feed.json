@@ -1,5 +1,111 @@
 [
   {
+    "id": "2e521bd33b58",
+    "timestamp": "2026-06-11T02:21:31.462762+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "journalists vs detectives on objectivity vs bias",
+    "labels": {
+      "X": "journalists",
+      "Y": "detectives",
+      "A": "objectivity",
+      "B": "bias"
+    },
+    "canonical_keys": {
+      "X": "journalists",
+      "Y": "detectives",
+      "A": "objectivity",
+      "B": "bias"
+    },
+    "effect_size": -0.9170456699507028,
+    "p_value": 0.01062,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "journalist",
+        "reporter",
+        "anchor",
+        "broadcaster",
+        "editor",
+        "columnist",
+        "correspondent",
+        "newswriter",
+        "stringer",
+        "newsman",
+        "newswoman",
+        "anchorman",
+        "anchorwoman",
+        "newscaster",
+        "newsreader"
+      ],
+      "Y_used": [
+        "detective",
+        "investigator",
+        "sleuth",
+        "inspector",
+        "agent",
+        "officer",
+        "constable",
+        "sheriff",
+        "marshal",
+        "gumshoe",
+        "spy",
+        "profiler",
+        "criminalist",
+        "cop",
+        "deputy"
+      ],
+      "A_used": [
+        "objective",
+        "neutral",
+        "impartial",
+        "unbiased",
+        "fair",
+        "balanced",
+        "just",
+        "equitable",
+        "dispassionate",
+        "detached",
+        "nonpartisan",
+        "independent",
+        "unprejudiced",
+        "factual",
+        "disinterested"
+      ],
+      "B_used": [
+        "biased",
+        "partial",
+        "prejudiced",
+        "unfair",
+        "slanted",
+        "partisan",
+        "subjective",
+        "opinionated",
+        "loaded",
+        "skewed",
+        "prejudice",
+        "prejudicial",
+        "advocacy",
+        "favoritism",
+        "discriminatory"
+      ]
+    },
+    "proposal": "People associate journalists with objectivity more strongly than they associate detectives with objectivity. This association is novel because while objectivity is a central normative ideal for journalism, implicit comparisons with investigative law enforcement roles have not been systematically examined in prior WEAT-style research. Detectives, as state agents structurally tasked with building cases for conviction, occupy a role that prioritizes resolution and prosecution over neutrality, whereas journalists are culturally scripted as independent truth-bearers. Examining this differential association is important for mapping the architecture of epistemic trust, revealing whether the public preserves an intuitive distinction between the impartiality of the press and the instrumental bias of policing, even in an era of skepticism toward both institutions.",
+    "iterations": 3,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "f3ea24d39345",
     "timestamp": "2026-06-11T01:25:26.178727+00:00",
     "schema_version": "autoresearch.v1",
