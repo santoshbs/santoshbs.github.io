@@ -1,5 +1,111 @@
 [
   {
+    "id": "f3ea24d39345",
+    "timestamp": "2026-06-11T01:25:26.178727+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Comedians vs Musicians on subversiveness vs conformity",
+    "labels": {
+      "X": "Comedians",
+      "Y": "Musicians",
+      "A": "subversiveness",
+      "B": "conformity"
+    },
+    "canonical_keys": {
+      "X": "comedians",
+      "Y": "musicians",
+      "A": "subversiveness",
+      "B": "conformity"
+    },
+    "effect_size": 1.3093275663031183,
+    "p_value": 0.00011,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "comedian",
+        "comic",
+        "clown",
+        "jester",
+        "humorist",
+        "mime",
+        "satirist",
+        "buffoon",
+        "prankster",
+        "fool",
+        "jokester",
+        "funnyman",
+        "ventriloquist",
+        "improviser",
+        "entertainer"
+      ],
+      "Y_used": [
+        "musician",
+        "singer",
+        "conductor",
+        "composer",
+        "songwriter",
+        "guitarist",
+        "pianist",
+        "drummer",
+        "violinist",
+        "cellist",
+        "flutist",
+        "trumpeter",
+        "organist",
+        "harpist",
+        "vocalist"
+      ],
+      "A_used": [
+        "subversive",
+        "rebellious",
+        "disruptive",
+        "chaotic",
+        "revolutionary",
+        "radical",
+        "anarchic",
+        "contrarian",
+        "iconoclastic",
+        "satirical",
+        "ironic",
+        "controversial",
+        "provocative",
+        "scandalous",
+        "dissident"
+      ],
+      "B_used": [
+        "conventional",
+        "obedient",
+        "traditional",
+        "orderly",
+        "stable",
+        "conservative",
+        "orthodox",
+        "mainstream",
+        "predictable",
+        "disciplined",
+        "routine",
+        "peaceful",
+        "compliant",
+        "harmonious",
+        "structured"
+      ]
+    },
+    "proposal": "People associate Comedians with subversion more strongly than they associate Musicians with subversion. This proposal targets the implicit schema that comedy, through satire and irony, is fundamentally a mode of norm-breaking and social critique, whereas music is prototypically linked to aesthetic harmony and emotional resonance rather than disruption. This association is novel because social psychological research has not compared these two major artistic categories on the dimension of subversiveness versus conformity, despite their distinct cultural roles. Examining this bias is important because it reveals how the public mentally categorizes the political and social utility of different art forms, potentially explaining why comedians are often granted a 'jester's privilege' to challenge authority while musicians are frequently relegated to the background of cultural life or viewed as less potent agents of social change.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "05bc73b8524e",
     "timestamp": "2026-06-10T23:20:10.892036+00:00",
     "schema_version": "autoresearch.v1",
