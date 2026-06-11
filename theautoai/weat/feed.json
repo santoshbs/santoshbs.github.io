@@ -1,5 +1,111 @@
 [
   {
+    "id": "16608aafb2eb",
+    "timestamp": "2026-06-11T08:24:32.691958+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "economists vs politicians on psychological distance",
+    "labels": {
+      "X": "economists",
+      "Y": "politicians",
+      "A": "detachment",
+      "B": "engagement"
+    },
+    "canonical_keys": {
+      "X": "economists",
+      "Y": "politicians",
+      "A": "detachment",
+      "B": "engagement"
+    },
+    "effect_size": 0.5694878265841581,
+    "p_value": 0.12854,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "economist",
+        "financier",
+        "banker",
+        "accountant",
+        "auditor",
+        "consultant",
+        "statistician",
+        "analyst",
+        "broker",
+        "trader",
+        "investor",
+        "entrepreneur",
+        "actuary",
+        "capitalist",
+        "shareholder"
+      ],
+      "Y_used": [
+        "politician",
+        "senator",
+        "representative",
+        "legislator",
+        "governor",
+        "mayor",
+        "president",
+        "ambassador",
+        "diplomat",
+        "statesman",
+        "campaigner",
+        "councilor",
+        "delegate",
+        "chancellor",
+        "minister"
+      ],
+      "A_used": [
+        "detached",
+        "aloof",
+        "distant",
+        "unfeeling",
+        "dispassionate",
+        "indifferent",
+        "objective",
+        "neutral",
+        "impartial",
+        "cold",
+        "reserved",
+        "isolated",
+        "remote",
+        "clinical",
+        "rational"
+      ],
+      "B_used": [
+        "connected",
+        "involved",
+        "engaged",
+        "passionate",
+        "empathetic",
+        "emotional",
+        "sensitive",
+        "sympathetic",
+        "warm",
+        "caring",
+        "social",
+        "responsive",
+        "personal",
+        "attentive",
+        "compassionate"
+      ]
+    },
+    "proposal": "People associate economists with detachment more strongly than they associate politicians with detachment. This differential implicit association reflects how contemporary discourse frames technical experts as value-neutral analysts who step back from human complexities to model systemic patterns, while politicians are implicitly cast as grounded actors who must navigate public sentiment, moral trade-offs, and immediate human needs. Examining this association is novel because prior research has focused on explicit perceptions of competence or trustworthiness, but has rarely probed the implicit moral-psychological distance attributed to technical versus democratic roles. Confirming or disconfirming it would shift our understanding of how institutional roles are mentally represented, particularly regarding the growing cultural tension between data-driven governance and participatory democracy.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "2830deea0511",
     "timestamp": "2026-06-11T06:44:27.861511+00:00",
     "schema_version": "autoresearch.v1",
