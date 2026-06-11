@@ -1,5 +1,111 @@
 [
   {
+    "id": "62b2cb423b06",
+    "timestamp": "2026-06-11T05:10:27.202996+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "activists vs volunteers on moral rigidity versus flexibility",
+    "labels": {
+      "X": "activists",
+      "Y": "volunteers",
+      "A": "Moral Certainty",
+      "B": "Flexibility"
+    },
+    "canonical_keys": {
+      "X": "activists",
+      "Y": "volunteers",
+      "A": "",
+      "B": "flexibility"
+    },
+    "effect_size": 1.2365105606691253,
+    "p_value": 0.0004,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "activist",
+        "campaigner",
+        "protester",
+        "demonstrator",
+        "advocate",
+        "rebel",
+        "revolutionary",
+        "radical",
+        "militant",
+        "lobbyist",
+        "organizer",
+        "dissident",
+        "fighter",
+        "agitator",
+        "champion"
+      ],
+      "Y_used": [
+        "volunteer",
+        "helper",
+        "worker",
+        "assistant",
+        "attendant",
+        "carer",
+        "companion",
+        "guardian",
+        "neighbor",
+        "friend",
+        "donor",
+        "giver",
+        "benefactor",
+        "patron",
+        "supporter"
+      ],
+      "A_used": [
+        "moral",
+        "dogmatic",
+        "righteous",
+        "rigid",
+        "strict",
+        "firm",
+        "stubborn",
+        "uncompromising",
+        "absolute",
+        "fixed",
+        "certain",
+        "certainty",
+        "conviction",
+        "principle",
+        "inflexible"
+      ],
+      "B_used": [
+        "flexible",
+        "pragmatic",
+        "neutral",
+        "kind",
+        "helpful",
+        "friendly",
+        "open",
+        "adaptable",
+        "benevolent",
+        "willing",
+        "eager",
+        "easy",
+        "gentle",
+        "soft",
+        "relaxed"
+      ]
+    },
+    "proposal": "People associate activists with moral certainty more strongly than they associate volunteers with moral certainty. This differential probes the implicit distinction between two salient forms of civic engagement: the advocate seeking structural change versus the helper providing immediate aid. While social science has extensively examined activists relative to state institutions or political opponents, the implicit comparison to volunteers remains largely unexplored, obscuring whether the public mentally represents activism as driven by rigid conviction compared to volunteering as a more pragmatic, flexible, or universally benevolent act. Confirming this association would reveal that activists are implicitly stigmatized as dogmatic moralists relative to the perceived neutrality of volunteers, which could have significant implications for how demands for social change are evaluated in public discourse versus charitable appeals.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "2e521bd33b58",
     "timestamp": "2026-06-11T02:21:31.462762+00:00",
     "schema_version": "autoresearch.v1",
