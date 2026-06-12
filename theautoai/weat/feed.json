@@ -1,5 +1,111 @@
 [
   {
+    "id": "ade9f7d93b02",
+    "timestamp": "2026-06-12T05:08:56.526546+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "scribes vs oracles on factual reliability vs mystical intuition",
+    "labels": {
+      "X": "scribes",
+      "Y": "oracles",
+      "A": "factual_reliability",
+      "B": "mystical_intuition"
+    },
+    "canonical_keys": {
+      "X": "scribes",
+      "Y": "oracles",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 1.2318518749028216,
+    "p_value": 0.00041,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "scribe",
+        "copyist",
+        "clerk",
+        "secretary",
+        "notary",
+        "archivist",
+        "librarian",
+        "typist",
+        "transcriber",
+        "chronicler",
+        "registrar",
+        "stenographer",
+        "auditor",
+        "editor",
+        "drafter"
+      ],
+      "Y_used": [
+        "oracle",
+        "prophet",
+        "seer",
+        "mystic",
+        "shaman",
+        "psychic",
+        "medium",
+        "guru",
+        "witch",
+        "wizard",
+        "healer",
+        "clairvoyant",
+        "empath",
+        "augur",
+        "sibyl"
+      ],
+      "A_used": [
+        "factual",
+        "reliable",
+        "accurate",
+        "precise",
+        "objective",
+        "verifiable",
+        "documented",
+        "logical",
+        "rational",
+        "scientific",
+        "empirical",
+        "truthful",
+        "correct",
+        "valid",
+        "solid"
+      ],
+      "B_used": [
+        "mystical",
+        "intuitive",
+        "ambiguous",
+        "divine",
+        "inspired",
+        "prophetic",
+        "metaphorical",
+        "spiritual",
+        "supernatural",
+        "ethereal",
+        "enigmatic",
+        "arcane",
+        "occult",
+        "esoteric",
+        "visionary"
+      ]
+    },
+    "proposal": "People associate scribes with factual reliability more strongly than they associate oracles with factual reliability. This proposal examines a potential implicit bias favoring documented, textual epistemic authorities over intuitive, mystical, or prophetic sources of information. While scribes are culturally constructed as precise recorders and copyists who preserve truth through exactitude, oracles are often represented as ambiguous, metaphorical, or divinely inspired figures whose messages require interpretation and may contradict empirical observation. Confirming this association would reveal a deep-seated preference for bureaucratic accuracy over mystical insight in mental representations of knowledge holders, with implications for how different forms of expertise are weighted in public discourse.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "76b00d1c453c",
     "timestamp": "2026-06-12T04:10:43.691362+00:00",
     "schema_version": "autoresearch.v1",
