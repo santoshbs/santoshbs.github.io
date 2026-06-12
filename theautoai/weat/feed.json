@@ -1,5 +1,111 @@
 [
   {
+    "id": "d221e2cbddbb",
+    "timestamp": "2026-06-12T03:02:24.934251+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "merchants vs monks on behavioral adaptability",
+    "labels": {
+      "X": "merchants",
+      "Y": "monks",
+      "A": "flexibility",
+      "B": "rigidity"
+    },
+    "canonical_keys": {
+      "X": "merchants",
+      "Y": "monks",
+      "A": "flexibility",
+      "B": "rigidity"
+    },
+    "effect_size": 1.199950476162106,
+    "p_value": 0.00057,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "merchant",
+        "trader",
+        "vendor",
+        "dealer",
+        "retailer",
+        "wholesaler",
+        "broker",
+        "shopkeeper",
+        "salesperson",
+        "salesman",
+        "saleswoman",
+        "entrepreneur",
+        "capitalist",
+        "buyer",
+        "seller"
+      ],
+      "Y_used": [
+        "monk",
+        "friar",
+        "abbot",
+        "novice",
+        "brother",
+        "ascetic",
+        "hermit",
+        "layman",
+        "cleric",
+        "clergy",
+        "rector",
+        "vicar",
+        "pastor",
+        "minister",
+        "priest"
+      ],
+      "A_used": [
+        "flexible",
+        "adaptable",
+        "agile",
+        "responsive",
+        "versatile",
+        "nimble",
+        "fluid",
+        "pliable",
+        "elastic",
+        "malleable",
+        "supple",
+        "accommodating",
+        "adjusting",
+        "changing",
+        "shifting"
+      ],
+      "B_used": [
+        "rigid",
+        "inflexible",
+        "stubborn",
+        "fixed",
+        "steadfast",
+        "immovable",
+        "unyielding",
+        "stiff",
+        "static",
+        "unchanging",
+        "firm",
+        "anchored",
+        "constant",
+        "permanent",
+        "resistant"
+      ]
+    },
+    "proposal": "People associate merchants with strategic flexibility more strongly than they associate monks with strategic flexibility. While explicit stereotypes often contrast commercial actors with religious traditionalists along moral or economic lines, the implicit dimension of behavioral adaptability remains unexamined. This differential association is novel because it shifts focus from static traits like greed or piety to dynamic capacities like situational responsiveness. Confirming this implicit bias would reveal how cultural narratives of market agility silently shape perceptions of competence in hybrid organizational roles. Understanding this mental representation is important for designing training and leadership pipelines that do not inadvertently penalize ethically grounded actors for perceived rigidity.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "4e296faec273",
     "timestamp": "2026-06-11T20:43:07.876592+00:00",
     "schema_version": "autoresearch.v1",
