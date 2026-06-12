@@ -1,5 +1,111 @@
 [
   {
+    "id": "f28c5b4b5ad0",
+    "timestamp": "2026-06-12T11:35:11.017443+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "athletes vs referees on procedural adaptability vs formalism",
+    "labels": {
+      "X": "athletes",
+      "Y": "referees",
+      "A": "adaptability",
+      "B": "rigidity"
+    },
+    "canonical_keys": {
+      "X": "athletes",
+      "Y": "referees",
+      "A": "adaptability",
+      "B": "rigidity"
+    },
+    "effect_size": 1.6166925924083475,
+    "p_value": 1e-05,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "athlete",
+        "player",
+        "competitor",
+        "runner",
+        "swimmer",
+        "skier",
+        "gymnast",
+        "wrestler",
+        "boxer",
+        "sprinter",
+        "cyclist",
+        "surfer",
+        "golfer",
+        "pitcher",
+        "catcher"
+      ],
+      "Y_used": [
+        "referee",
+        "umpire",
+        "official",
+        "judge",
+        "moderator",
+        "arbiter",
+        "adjudicator",
+        "mediator",
+        "monitor",
+        "inspector",
+        "examiner",
+        "evaluator",
+        "assessor",
+        "regulator",
+        "enforcer"
+      ],
+      "A_used": [
+        "adaptable",
+        "flexible",
+        "versatile",
+        "malleable",
+        "pliable",
+        "supple",
+        "responsive",
+        "spontaneous",
+        "agile",
+        "nimble",
+        "fluid",
+        "dynamic",
+        "adjustable",
+        "changeable",
+        "elastic"
+      ],
+      "B_used": [
+        "rigid",
+        "strict",
+        "formal",
+        "inflexible",
+        "stubborn",
+        "stiff",
+        "harsh",
+        "unyielding",
+        "dogmatic",
+        "orthodox",
+        "traditional",
+        "conventional",
+        "standardized",
+        "regulated",
+        "codified"
+      ]
+    },
+    "proposal": "People associate athletes with procedural adaptability more strongly than they associate referees with procedural adaptability. This differential reflects how contemporary institutional and sports discourse frames competitors as improvisational and context-responsive, while framing officiants as bound by rigid, universal codes. Examining this implicit link is novel because implicit association research has largely focused on demographic or broad occupational stereotypes, overlooking role-based contrasts within rule-governed performance ecosystems. Confirming this pattern would illuminate how public cognition maps flexibility versus formalism onto distinct institutional roles, with implications for understanding perceived legitimacy, trust, and reform narratives in highly regulated domains.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "4b84e496ce85",
     "timestamp": "2026-06-12T09:31:34.328184+00:00",
     "schema_version": "autoresearch.v1",
