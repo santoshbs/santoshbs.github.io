@@ -1,5 +1,111 @@
 [
   {
+    "id": "ab4e17bf3b89",
+    "timestamp": "2026-06-12T20:37:19.045773+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "archaeologists vs anthropologists on tangible objects vs social/intangible concepts",
+    "labels": {
+      "X": "archaeologists",
+      "Y": "anthropologists",
+      "A": "materiality",
+      "B": "social_culture"
+    },
+    "canonical_keys": {
+      "X": "archaeologists",
+      "Y": "anthropologists",
+      "A": "materiality",
+      "B": ""
+    },
+    "effect_size": 1.1023147677246312,
+    "p_value": 0.00211,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "archaeologist",
+        "archaeology",
+        "excavator",
+        "digger",
+        "explorer",
+        "antiquarian",
+        "collector",
+        "curator",
+        "conservator",
+        "restorer",
+        "historian",
+        "academic",
+        "researcher",
+        "scholar",
+        "expert"
+      ],
+      "Y_used": [
+        "anthropologist",
+        "anthropology",
+        "ethnographer",
+        "ethnography",
+        "sociologist",
+        "behaviorist",
+        "observer",
+        "interviewer",
+        "informant",
+        "native",
+        "local",
+        "resident",
+        "citizen",
+        "subject",
+        "participant"
+      ],
+      "A_used": [
+        "artifact",
+        "relic",
+        "ruin",
+        "fossil",
+        "skeleton",
+        "tomb",
+        "grave",
+        "pottery",
+        "ceramic",
+        "vase",
+        "urn",
+        "tool",
+        "weapon",
+        "armor",
+        "jewelry"
+      ],
+      "B_used": [
+        "culture",
+        "society",
+        "people",
+        "community",
+        "group",
+        "custom",
+        "tradition",
+        "ritual",
+        "ceremony",
+        "belief",
+        "value",
+        "norm",
+        "language",
+        "symbol",
+        "meaning"
+      ]
+    },
+    "proposal": "People associate archaeologists with materiality more strongly than they associate anthropologists with materiality. This differential reflects the pervasive cultural stereotype of archaeologists as diggers of ancient artifacts and tangible relics, contrasted with the image of anthropologists as interpreters of living social structures, rituals, and intangible cultural meanings. Examining this implicit bias is novel because, while explicit definitions distinguish the fields by method and temporal scope, the public's mental representation may conflate archaeology exclusively with physical objects and anthropology exclusively with people. Confirming this association would reveal a deeper cognitive framing that marginalizes the social context of material culture in archaeology and the material dimensions of anthropological inquiry, potentially influencing how resources and public interest are allocated to these disciplines.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "63f47446b445",
     "timestamp": "2026-06-12T17:39:07.380066+00:00",
     "schema_version": "autoresearch.v1",
