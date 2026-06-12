@@ -1,5 +1,111 @@
 [
   {
+    "id": "4b84e496ce85",
+    "timestamp": "2026-06-12T09:31:34.328184+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "nurses vs police on empathy versus authority",
+    "labels": {
+      "X": "nurses",
+      "Y": "police",
+      "A": "empathy",
+      "B": "authority"
+    },
+    "canonical_keys": {
+      "X": "nurses",
+      "Y": "police",
+      "A": "empathy",
+      "B": "authority"
+    },
+    "effect_size": 1.677132500035745,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "nurse",
+        "nurses",
+        "nursing",
+        "medic",
+        "paramedic",
+        "caregiver",
+        "attendant",
+        "orderly",
+        "midwife",
+        "practitioner",
+        "clinician",
+        "healer",
+        "caretaker",
+        "therapist",
+        "surgeon"
+      ],
+      "Y_used": [
+        "police",
+        "cop",
+        "officer",
+        "sheriff",
+        "marshal",
+        "detective",
+        "constable",
+        "ranger",
+        "trooper",
+        "guard",
+        "patrol",
+        "agent",
+        "inspector",
+        "bailiff",
+        "sentry"
+      ],
+      "A_used": [
+        "empathy",
+        "compassion",
+        "caring",
+        "kindness",
+        "warmth",
+        "gentleness",
+        "sympathy",
+        "sensitivity",
+        "tenderness",
+        "affection",
+        "support",
+        "love",
+        "nurturing",
+        "understanding",
+        "gentle"
+      ],
+      "B_used": [
+        "authority",
+        "control",
+        "power",
+        "dominance",
+        "enforcement",
+        "discipline",
+        "command",
+        "regulation",
+        "obedience",
+        "strictness",
+        "law",
+        "order",
+        "force",
+        "mandate",
+        "rule"
+      ]
+    },
+    "proposal": "People associate nurses with empathy more strongly than they associate police with empathy. This differential association captures a salient contrast in contemporary public discourse regarding the interpersonal styles of key service-oriented institutions. While both groups are viewed as protectors of public welfare, nurses are culturally constructed as caregivers attuned to suffering and emotional needs, whereas police are frequently framed through discourses of authority, control, and enforcement, which can overshadow empathetic perception. Examining this association is novel because prior research has largely focused on occupational competence or trust, rather than the implicit link between specific professional roles and the capacity for emotional resonance. Confirming this association would highlight how institutional functions shape moral character attributions, potentially influencing public support for policy changes or community engagement strategies.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "55808aa93d89",
     "timestamp": "2026-06-12T07:48:27.358405+00:00",
     "schema_version": "autoresearch.v1",
