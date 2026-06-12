@@ -1,5 +1,111 @@
 [
   {
+    "id": "83c16d446a11",
+    "timestamp": "2026-06-12T23:58:39.217692+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "archivists vs authors on epistemic reliability vs unreliability",
+    "labels": {
+      "X": "archivists",
+      "Y": "authors",
+      "A": "epistemic reliability",
+      "B": "epistemic unreliability"
+    },
+    "canonical_keys": {
+      "X": "archivists",
+      "Y": "authors",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": -0.2748204918838811,
+    "p_value": 0.46632,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "archivist",
+        "librarian",
+        "curator",
+        "historian",
+        "bibliographer",
+        "cataloger",
+        "conservator",
+        "restorer",
+        "paleographer",
+        "indexer",
+        "antiquarian",
+        "preservationist",
+        "preserver",
+        "custodian",
+        "guardian"
+      ],
+      "Y_used": [
+        "author",
+        "writer",
+        "novelist",
+        "playwright",
+        "journalist",
+        "blogger",
+        "columnist",
+        "essayist",
+        "poet",
+        "scriptwriter",
+        "ghostwriter",
+        "reporter",
+        "correspondent",
+        "biographer",
+        "copywriter"
+      ],
+      "A_used": [
+        "reliable",
+        "trustworthy",
+        "accurate",
+        "true",
+        "factual",
+        "verified",
+        "evidence",
+        "valid",
+        "credible",
+        "sound",
+        "precise",
+        "authentic",
+        "objective",
+        "certain",
+        "documented"
+      ],
+      "B_used": [
+        "unreliable",
+        "untrustworthy",
+        "false",
+        "fictional",
+        "inaccurate",
+        "erroneous",
+        "speculative",
+        "dubious",
+        "unverified",
+        "invented",
+        "subjective",
+        "uncertain",
+        "fallible",
+        "biased",
+        "fabricated"
+      ]
+    },
+    "proposal": "People associate archivists with epistemic reliability more strongly than they associate authors with epistemic reliability. This differential association captures a potentially emerging cognitive shift where the role of preserving and verifying existing records (archivists) is implicitly viewed as a greater source of truth and grounding than the role of generating new content (authors). In a cultural moment characterized by information overload, deepfakes, and generative AI, the implicit preference for the archivist over the author on reliability would signal a latent public skepticism toward unvetted creation and a heightened valuation of institutional memory and curation. Confirming this association would be novel as it moves beyond traditional comparisons of creators versus consumers, highlighting instead the specific status of preservation as a superior mode of epistemic trust compared to generation.",
+    "iterations": 3,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "13ac697e5375",
     "timestamp": "2026-06-12T23:04:26.341751+00:00",
     "schema_version": "autoresearch.v1",
