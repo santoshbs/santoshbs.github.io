@@ -1,5 +1,118 @@
 [
   {
+    "id": "55808aa93d89",
+    "timestamp": "2026-06-12T07:48:27.358405+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "gardeners vs soldiers on environmental stewardship versus military conflict",
+    "labels": {
+      "X": "gardeners",
+      "Y": "soldiers",
+      "A": "stewardship",
+      "B": "conflict"
+    },
+    "canonical_keys": {
+      "X": "gardeners",
+      "Y": "soldiers",
+      "A": "stewardship",
+      "B": "conflict"
+    },
+    "effect_size": 1.6957575052504459,
+    "p_value": 0.0,
+    "n": {
+      "X": 16,
+      "Y": 16,
+      "A": 17,
+      "B": 17
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "gardener",
+        "botanist",
+        "horticulturist",
+        "landscaper",
+        "florist",
+        "arborist",
+        "planter",
+        "grower",
+        "tender",
+        "pruner",
+        "mower",
+        "sower",
+        "reaper",
+        "weeder",
+        "digger",
+        "groundskeeper"
+      ],
+      "Y_used": [
+        "soldier",
+        "warrior",
+        "fighter",
+        "combatant",
+        "veteran",
+        "marine",
+        "infantryman",
+        "sniper",
+        "rifleman",
+        "paratrooper",
+        "guerrilla",
+        "mercenary",
+        "trooper",
+        "guard",
+        "sentry",
+        "officer",
+        "cadet"
+      ],
+      "A_used": [
+        "nurture",
+        "care",
+        "tend",
+        "cultivate",
+        "sustain",
+        "nourish",
+        "foster",
+        "harvest",
+        "earth",
+        "soil",
+        "seed",
+        "bloom",
+        "conservation",
+        "organic",
+        "natural",
+        "gentle",
+        "patient"
+      ],
+      "B_used": [
+        "war",
+        "battle",
+        "fight",
+        "combat",
+        "aggression",
+        "attack",
+        "weapon",
+        "kill",
+        "destroy",
+        "assault",
+        "invade",
+        "conflict",
+        "violence",
+        "raid",
+        "strike",
+        "skirmish",
+        "warfare"
+      ]
+    },
+    "proposal": "People associate gardeners with stewardship more strongly than they associate soldiers with stewardship. This differential association examines a culturally significant contrast between cultivation and conflict: while soldiers are frequently narrated as defenders or enforcers, gardeners are prototypically linked to the patient tending, sustainable management, and nurturing of living systems. This comparison is novel because implicit association research has rarely juxtaposed horticultural roles against martial roles on dimensions of environmental care, focusing instead on broader occupational categories like farmers or scientists. Confirming this link would reveal how deeply the mental concept of stewardship is anchored to imagery of growth and nurture rather than protection and control, providing insight into public schemas regarding ecological responsibility and the symbolic valuation of life-sustaining versus life-ending institutions.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "ade9f7d93b02",
     "timestamp": "2026-06-12T05:08:56.526546+00:00",
     "schema_version": "autoresearch.v1",
