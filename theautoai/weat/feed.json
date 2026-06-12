@@ -1,5 +1,111 @@
 [
   {
+    "id": "13ac697e5375",
+    "timestamp": "2026-06-12T23:04:26.341751+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "shareholders vs stakeholders on economic extraction versus social relationality",
+    "labels": {
+      "X": "shareholders",
+      "Y": "stakeholders",
+      "A": "extraction",
+      "B": "relationality"
+    },
+    "canonical_keys": {
+      "X": "shareholders",
+      "Y": "stakeholders",
+      "A": "extraction",
+      "B": "relationality"
+    },
+    "effect_size": 0.33911339121317635,
+    "p_value": 0.3673,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "shareholder",
+        "stockholder",
+        "investor",
+        "financier",
+        "capitalist",
+        "owner",
+        "proprietor",
+        "executive",
+        "director",
+        "manager",
+        "boss",
+        "chief",
+        "president",
+        "chairman",
+        "trustee"
+      ],
+      "Y_used": [
+        "stakeholder",
+        "employee",
+        "worker",
+        "laborer",
+        "citizen",
+        "resident",
+        "neighbor",
+        "constituent",
+        "ally",
+        "volunteer",
+        "patron",
+        "client",
+        "consumer",
+        "customer",
+        "beneficiary"
+      ],
+      "A_used": [
+        "extract",
+        "harvest",
+        "reap",
+        "mine",
+        "drain",
+        "deplete",
+        "consume",
+        "hoard",
+        "amass",
+        "accumulate",
+        "profit",
+        "gain",
+        "yield",
+        "revenue",
+        "income"
+      ],
+      "B_used": [
+        "relate",
+        "connect",
+        "bond",
+        "cooperate",
+        "collaborate",
+        "assist",
+        "support",
+        "help",
+        "aid",
+        "serve",
+        "care",
+        "nurture",
+        "sustain",
+        "maintain",
+        "foster"
+      ]
+    },
+    "proposal": "People associate shareholders with extraction more strongly than they associate stakeholders with extraction. While explicit corporate discourse has increasingly adopted stakeholder rhetoric, the implicit mental architecture may still tightly bind the shareholder category to resource extraction and value appropriation, whereas the stakeholder category may be implicitly linked to relationality or reciprocity. This association is novel because implicit measures have not yet tested whether the stakeholder-shareholder distinction is internalized cognitively or remains a superficial semantic shift. Examining this is important because if shareholders remain implicitly linked to extraction more strongly than stakeholders, it suggests that rhetorical changes in governance may not have altered the fundamental associative structures driving public or investor intuitions about corporate purpose.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "ab4e17bf3b89",
     "timestamp": "2026-06-12T20:37:19.045773+00:00",
     "schema_version": "autoresearch.v1",
