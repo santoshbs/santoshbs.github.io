@@ -1,5 +1,111 @@
 [
   {
+    "id": "63f47446b445",
+    "timestamp": "2026-06-12T17:39:07.380066+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "prisoners vs guards on cognitive flexibility vs rigidity",
+    "labels": {
+      "X": "prisoners",
+      "Y": "guards",
+      "A": "ingenuity",
+      "B": "rigidity"
+    },
+    "canonical_keys": {
+      "X": "prisoners",
+      "Y": "guards",
+      "A": "ingenuity",
+      "B": "rigidity"
+    },
+    "effect_size": -0.9845531386184044,
+    "p_value": 0.00585,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "prisoner",
+        "inmate",
+        "convict",
+        "felon",
+        "detainee",
+        "captive",
+        "offender",
+        "criminal",
+        "accused",
+        "defendant",
+        "cellmate",
+        "jailbird",
+        "escapee",
+        "parolee",
+        "probationer"
+      ],
+      "Y_used": [
+        "guard",
+        "warden",
+        "officer",
+        "bailiff",
+        "marshal",
+        "sentinel",
+        "sentry",
+        "sheriff",
+        "constable",
+        "trooper",
+        "deputy",
+        "captain",
+        "sergeant",
+        "enforcer",
+        "jailer"
+      ],
+      "A_used": [
+        "ingenious",
+        "inventive",
+        "creative",
+        "resourceful",
+        "clever",
+        "smart",
+        "witty",
+        "quick",
+        "bright",
+        "sharp",
+        "innovative",
+        "imaginative",
+        "dexterous",
+        "versatile",
+        "adaptable"
+      ],
+      "B_used": [
+        "rigid",
+        "strict",
+        "inflexible",
+        "stubborn",
+        "conventional",
+        "traditional",
+        "conformist",
+        "authoritarian",
+        "disciplined",
+        "obedient",
+        "procedural",
+        "bureaucratic",
+        "formal",
+        "predictable",
+        "mechanical"
+      ]
+    },
+    "proposal": "people associate prisoners with ingenuity more strongly than they associate guards with ingenuity. This proposal targets the cultural trope of the resourceful, scheming inmate who navigates the carceral environment through wit and improvisation, contrasted with the stereotype of the guard as a rigid enforcer of protocol who lacks creative agency. It is novel because implicit bias research on justice-involved actors has focused almost exclusively on traits like danger, criminality, or aggression, neglecting cognitive dimensions like ingenuity. It is important because confirming this association would reveal a paradoxical mental representation where a dehumanized group is granted high cognitive competence while the authority figure is reduced to a mindless function, potentially obscuring the structural ingenuity of institutional control.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "12ce10c1625f",
     "timestamp": "2026-06-12T15:27:28.354699+00:00",
     "schema_version": "autoresearch.v1",
