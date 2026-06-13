@@ -1,5 +1,111 @@
 [
   {
+    "id": "f239cb0b8180",
+    "timestamp": "2026-06-13T13:31:26.724938+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "cynics vs romantics on emotional vulnerability vs invulnerability",
+    "labels": {
+      "X": "cynics",
+      "Y": "romantics",
+      "A": "emotional invulnerability",
+      "B": "emotional vulnerability"
+    },
+    "canonical_keys": {
+      "X": "cynics",
+      "Y": "romantics",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 1.5861474206256576,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "cynic",
+        "skeptic",
+        "realist",
+        "pragmatist",
+        "misanthrope",
+        "detractor",
+        "doubter",
+        "critic",
+        "pessimist",
+        "contrarian",
+        "materialist",
+        "rationalist",
+        "unbeliever",
+        "jaded",
+        "nihilist"
+      ],
+      "Y_used": [
+        "romantic",
+        "idealist",
+        "optimist",
+        "dreamer",
+        "visionary",
+        "enthusiast",
+        "devotee",
+        "admirer",
+        "lover",
+        "poet",
+        "sentimental",
+        "hopeful",
+        "trusting",
+        "devoted",
+        "yearning"
+      ],
+      "A_used": [
+        "invulnerable",
+        "armored",
+        "detached",
+        "guarded",
+        "resilient",
+        "impervious",
+        "indifferent",
+        "aloof",
+        "unfeeling",
+        "callous",
+        "numb",
+        "hardened",
+        "fortified",
+        "insulated",
+        "sheltered"
+      ],
+      "B_used": [
+        "vulnerable",
+        "sensitive",
+        "open",
+        "receptive",
+        "exposed",
+        "tender",
+        "fragile",
+        "emotional",
+        "susceptible",
+        "empathetic",
+        "caring",
+        "loving",
+        "heartfelt",
+        "unguarded",
+        "impressionable"
+      ]
+    },
+    "proposal": "People associate cynics with emotional invulnerability more strongly than they associate romantics with emotional invulnerability. While explicit discourse often critiques cynicism as a negative disposition, implicit associations may treat it as a form of psychological armor that shields against disappointment, whereas romantics are culturally scripted as open, passionate, and consequently susceptible to heartbreak. This differential has not been systematically examined, yet it exposes a hidden bias: the public may implicitly valorize cynicism as a strategy for emotional self-preservation rather than merely rejecting it as bitterness. Confirming this association would shift how we interpret the cultural appeal of cynicism, suggesting it is rooted in a deep-seated preference for perceived emotional resilience over vulnerability.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "12182896bb2e",
     "timestamp": "2026-06-13T08:47:42.900778+00:00",
     "schema_version": "autoresearch.v1",
