@@ -1,5 +1,111 @@
 [
   {
+    "id": "3454f6e49394",
+    "timestamp": "2026-06-13T05:26:19.992008+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "jurors vs judges on mercy vs severity",
+    "labels": {
+      "X": "jurors",
+      "Y": "judges",
+      "A": "mercy",
+      "B": "severity"
+    },
+    "canonical_keys": {
+      "X": "jurors",
+      "Y": "judges",
+      "A": "mercy",
+      "B": "severity"
+    },
+    "effect_size": 0.7600805825158141,
+    "p_value": 0.03954,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "juror",
+        "jurors",
+        "jurymen",
+        "layman",
+        "citizen",
+        "panelist",
+        "assessor",
+        "finder",
+        "elector",
+        "voter",
+        "representative",
+        "commoner",
+        "peer",
+        "neighbor",
+        "townsman"
+      ],
+      "Y_used": [
+        "judge",
+        "judges",
+        "magistrate",
+        "jurist",
+        "arbiter",
+        "adjudicator",
+        "referee",
+        "umpire",
+        "official",
+        "justice",
+        "chancellor",
+        "presider",
+        "magistrates",
+        "justices",
+        "officials"
+      ],
+      "A_used": [
+        "merciful",
+        "compassionate",
+        "forgiving",
+        "lenient",
+        "gentle",
+        "kind",
+        "warm",
+        "sympathetic",
+        "understanding",
+        "benevolent",
+        "tender",
+        "soft",
+        "caring",
+        "empathetic",
+        "indulgent"
+      ],
+      "B_used": [
+        "severe",
+        "strict",
+        "rigid",
+        "harsh",
+        "cold",
+        "detached",
+        "uncompromising",
+        "stern",
+        "austere",
+        "inflexible",
+        "demanding",
+        "exacting",
+        "disciplined",
+        "unyielding",
+        "firm"
+      ]
+    },
+    "proposal": "People associate jurors with mercy more strongly than they associate judges with mercy. This differential association reflects a deep-seated cultural distinction between jurors as the emotional 'conscience of the community' and judges as detached agents of rigid legal procedure. While explicit research has explored perceptions of jury leniency versus judicial severity, no study has examined whether the public implicitly links the role of juror to compassion and forgiveness relative to the role of judge. Confirming this association would reveal how lay mental models allocate moral flexibility within the justice system, potentially influencing public trust in different adjudicatory mechanisms.",
+    "iterations": 3,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "e193783d308f",
     "timestamp": "2026-06-13T03:52:19.895842+00:00",
     "schema_version": "autoresearch.v1",
