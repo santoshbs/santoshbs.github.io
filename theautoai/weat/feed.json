@@ -1,5 +1,111 @@
 [
   {
+    "id": "12182896bb2e",
+    "timestamp": "2026-06-13T08:47:42.900778+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "diplomats vs negotiators on ambiguity versus clarity",
+    "labels": {
+      "X": "diplomats",
+      "Y": "negotiators",
+      "A": "strategic ambiguity",
+      "B": "direct clarity"
+    },
+    "canonical_keys": {
+      "X": "diplomats",
+      "Y": "negotiators",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": -0.11244287138292015,
+    "p_value": 0.76778,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "diplomat",
+        "ambassador",
+        "envoy",
+        "delegate",
+        "representative",
+        "statesman",
+        "consul",
+        "minister",
+        "emissary",
+        "attache",
+        "counselor",
+        "legate",
+        "plenipotentiary",
+        "secretary",
+        "diplomats"
+      ],
+      "Y_used": [
+        "negotiator",
+        "bargainer",
+        "mediator",
+        "arbitrator",
+        "broker",
+        "conciliator",
+        "haggler",
+        "compromiser",
+        "adjuster",
+        "settler",
+        "pacifier",
+        "negotiators",
+        "mediators",
+        "bargainers",
+        "hagglers"
+      ],
+      "A_used": [
+        "ambiguous",
+        "vague",
+        "obscure",
+        "unclear",
+        "equivocal",
+        "veiled",
+        "elusive",
+        "cryptic",
+        "mysterious",
+        "shadowy",
+        "indirect",
+        "subtle",
+        "coy",
+        "hazy",
+        "nebulous"
+      ],
+      "B_used": [
+        "clear",
+        "direct",
+        "explicit",
+        "transparent",
+        "plain",
+        "blunt",
+        "forthright",
+        "candid",
+        "frank",
+        "straightforward",
+        "unambiguous",
+        "definite",
+        "precise",
+        "overt",
+        "lucid"
+      ]
+    },
+    "proposal": "People associate diplomats with strategic ambiguity more strongly than they associate negotiators with strategic ambiguity. While both groups engage in high-stakes interpersonal bargaining, public discourse consistently frames diplomats as masters of careful hedging, veiled messaging, and calibrated vagueness to preserve long-term relations, whereas negotiators are stereotyped as direct bargainers who seek clear, transactional closure. This distinction remains unprobed in implicit association research despite its relevance to how institutions recruit for versus train these roles, and whether the perceived necessity of obscurity in statecraft is a deeply held cultural script rather than a documented behavioral reality.",
+    "iterations": 3,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "3454f6e49394",
     "timestamp": "2026-06-13T05:26:19.992008+00:00",
     "schema_version": "autoresearch.v1",
