@@ -1,5 +1,111 @@
 [
   {
+    "id": "db2971e9d7e7",
+    "timestamp": "2026-06-13T17:11:33.923088+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "savants vs experts on eccentricity vs conventionality",
+    "labels": {
+      "X": "savants",
+      "Y": "experts",
+      "A": "eccentric",
+      "B": "conventional"
+    },
+    "canonical_keys": {
+      "X": "savants",
+      "Y": "experts",
+      "A": "eccentric",
+      "B": "conventional"
+    },
+    "effect_size": 1.7218930400993309,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "savant",
+        "genius",
+        "prodigy",
+        "autodidact",
+        "maverick",
+        "oddball",
+        "renegade",
+        "hermit",
+        "recluse",
+        "loner",
+        "misfit",
+        "rebel",
+        "iconoclast",
+        "visionary",
+        "outcast"
+      ],
+      "Y_used": [
+        "expert",
+        "specialist",
+        "practitioner",
+        "authority",
+        "scholar",
+        "professor",
+        "scientist",
+        "academic",
+        "doctor",
+        "analyst",
+        "consultant",
+        "advisor",
+        "technician",
+        "engineer",
+        "manager"
+      ],
+      "A_used": [
+        "eccentric",
+        "unconventional",
+        "idiosyncratic",
+        "quirky",
+        "odd",
+        "strange",
+        "bizarre",
+        "weird",
+        "peculiar",
+        "unusual",
+        "abnormal",
+        "unorthodox",
+        "nonconformist",
+        "deviant",
+        "erratic"
+      ],
+      "B_used": [
+        "normal",
+        "standard",
+        "conventional",
+        "mainstream",
+        "typical",
+        "ordinary",
+        "common",
+        "regular",
+        "usual",
+        "normative",
+        "standardized",
+        "orthodox",
+        "conformist",
+        "systematic",
+        "orderly"
+      ]
+    },
+    "proposal": "People associate savants with eccentricity more strongly than they associate experts with eccentricity. This proposal examines the implicit distinction between romanticized cognitive outliers and institutionalized authorities. While both categories denote high competence, public discourse often frames savants as socially unconventional, idiosyncratic, or deviant, whereas experts are associated with professional standardization and normative behavior. Investigating this association reveals how laypeople mentally separate 'genius' from 'expertise,' which matters for understanding trust in unconventional advice versus established authority, particularly in domains like technology and science where the cultural valorization of the maverick savant sometimes conflicts with reliance on consensus-driven expert systems.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "f30acfdb55d2",
     "timestamp": "2026-06-13T15:47:57.726540+00:00",
     "schema_version": "autoresearch.v1",
