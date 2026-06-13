@@ -1,5 +1,111 @@
 [
   {
+    "id": "f56e3351f82c",
+    "timestamp": "2026-06-13T21:01:12.198450+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "scientists vs teachers on openness to uncertainty vs certainty",
+    "labels": {
+      "X": "scientists",
+      "Y": "teachers",
+      "A": "uncertainty",
+      "B": "certainty"
+    },
+    "canonical_keys": {
+      "X": "scientists",
+      "Y": "teachers",
+      "A": "uncertainty",
+      "B": "certainty"
+    },
+    "effect_size": 1.513114281138791,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "scientist",
+        "researcher",
+        "biologist",
+        "chemist",
+        "physicist",
+        "astronomer",
+        "geologist",
+        "botanist",
+        "zoologist",
+        "geneticist",
+        "ecologist",
+        "pathologist",
+        "virologist",
+        "microbiologist",
+        "paleontologist"
+      ],
+      "Y_used": [
+        "teacher",
+        "educator",
+        "instructor",
+        "lecturer",
+        "tutor",
+        "mentor",
+        "coach",
+        "trainer",
+        "supervisor",
+        "facilitator",
+        "principal",
+        "dean",
+        "headmaster",
+        "administrator",
+        "guide"
+      ],
+      "A_used": [
+        "uncertainty",
+        "unknown",
+        "question",
+        "doubt",
+        "tentative",
+        "provisional",
+        "ambiguous",
+        "unclear",
+        "speculative",
+        "exploratory",
+        "inquiry",
+        "curiosity",
+        "mystery",
+        "puzzle",
+        "possibility"
+      ],
+      "B_used": [
+        "certainty",
+        "fact",
+        "truth",
+        "sure",
+        "definite",
+        "certain",
+        "fixed",
+        "settled",
+        "established",
+        "known",
+        "obvious",
+        "clear",
+        "exact",
+        "precise",
+        "absolute"
+      ]
+    },
+    "proposal": "People associate scientists with openness to uncertainty more strongly than they associate teachers with openness to uncertainty. This implicit bias suggests that the public mental representation of scientists centers on the provisional nature of knowledge and the constant revision of theories, while teachers are more strongly linked to the transmission of fixed, settled facts. This distinction matters because it may shape how society values different forms of expertise; if teachers are implicitly viewed as arbiters of certainty rather than inquiry, it could constrain the acceptance of pedagogical approaches that emphasize critical thinking and the comfort with not-knowing. Probing this association would reveal whether the epistemic humility central to the scientific method is culturally recognized as a trait of the scientist role but absent from the teaching role.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "42998fcbe2a6",
     "timestamp": "2026-06-13T18:11:05.526598+00:00",
     "schema_version": "autoresearch.v1",
