@@ -1,5 +1,118 @@
 [
   {
+    "id": "f30acfdb55d2",
+    "timestamp": "2026-06-13T15:47:57.726540+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "artisans vs industrialists on Authenticity vs. Artificiality",
+    "labels": {
+      "X": "artisans",
+      "Y": "industrialists",
+      "A": "Authenticity",
+      "B": "Inauthenticity"
+    },
+    "canonical_keys": {
+      "X": "artisans",
+      "Y": "industrialists",
+      "A": "authenticity",
+      "B": "inauthenticity"
+    },
+    "effect_size": 1.16852808789827,
+    "p_value": 0.00066,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "artisan",
+        "craftsman",
+        "cobbler",
+        "weaver",
+        "potter",
+        "mason",
+        "carpenter",
+        "baker",
+        "brewer",
+        "smith",
+        "jeweler",
+        "tailor",
+        "sculptor",
+        "artist",
+        "turner",
+        "builder",
+        "blacksmith"
+      ],
+      "Y_used": [
+        "industrialist",
+        "tycoon",
+        "magnate",
+        "mogul",
+        "capitalist",
+        "manufacturer",
+        "entrepreneur",
+        "executive",
+        "manager",
+        "director",
+        "businessman",
+        "producer",
+        "engineer",
+        "founder",
+        "owner"
+      ],
+      "A_used": [
+        "authentic",
+        "genuine",
+        "real",
+        "true",
+        "organic",
+        "handmade",
+        "traditional",
+        "natural",
+        "soulful",
+        "sincere",
+        "honest",
+        "pure",
+        "original",
+        "unique",
+        "bespoke",
+        "custom",
+        "rustic",
+        "vintage",
+        "artisanal",
+        "craft"
+      ],
+      "B_used": [
+        "artificial",
+        "fake",
+        "counterfeit",
+        "standardized",
+        "generic",
+        "soulless",
+        "mechanical",
+        "robotic",
+        "synthetic",
+        "ersatz",
+        "plastic",
+        "phony",
+        "sham",
+        "bogus",
+        "manufactured"
+      ]
+    },
+    "proposal": "People associate artisans with authenticity more strongly than they associate industrialists with authenticity. This differential implicit association captures a pervasive cultural tension between handcrafted, bespoke production and mass-manufactured, standardized output, where the former is imbued with notions of genuineness, soul, and integrity while the latter is often viewed as generic or soulless. Examining this association is novel because prior research has focused on consumer preferences for handmade goods or the economic sociology of craft, but has not systematically measured the implicit cognitive linkage between these social actor categories and the moral-aesthetic dimension of authenticity. Confirming this association would reveal how public discourse on deindustrialization, the gig economy, and artisanal revival reinforces deep-seated mental representations that privilege certain modes of labor as inherently more authentic than others, with implications for how value is assigned to different workers in society.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "f239cb0b8180",
     "timestamp": "2026-06-13T13:31:26.724938+00:00",
     "schema_version": "autoresearch.v1",
