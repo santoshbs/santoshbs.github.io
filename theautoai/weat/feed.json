@@ -1,5 +1,113 @@
 [
   {
+    "id": "00586f826d75",
+    "timestamp": "2026-06-14T11:05:07.846212+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "deviants vs conformists on Humor vs. Seriousness",
+    "labels": {
+      "X": "deviants",
+      "Y": "conformists",
+      "A": "Humor",
+      "B": "Seriousness"
+    },
+    "canonical_keys": {
+      "X": "deviants",
+      "Y": "conformists",
+      "A": "humor",
+      "B": "seriousness"
+    },
+    "effect_size": 1.4615277077725228,
+    "p_value": 1e-05,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "eccentric",
+        "oddball",
+        "misfit",
+        "rebel",
+        "outcast",
+        "weirdo",
+        "nonconformist",
+        "maverick",
+        "contrarian",
+        "renegade",
+        "vagabond",
+        "deviant",
+        "bohemian",
+        "loner",
+        "outsider",
+        "freak"
+      ],
+      "Y_used": [
+        "conformist",
+        "follower",
+        "traditionalist",
+        "conformer",
+        "average",
+        "mainstream",
+        "ordinary",
+        "conventional",
+        "typical",
+        "orthodox",
+        "loyal",
+        "disciplined",
+        "adherent",
+        "conservative",
+        "respectable"
+      ],
+      "A_used": [
+        "funny",
+        "humorous",
+        "comedy",
+        "joke",
+        "laughter",
+        "amusing",
+        "witty",
+        "laugh",
+        "grin",
+        "chuckle",
+        "hilarity",
+        "clown",
+        "comedian",
+        "gag",
+        "comic",
+        "jest"
+      ],
+      "B_used": [
+        "serious",
+        "boring",
+        "dull",
+        "stiff",
+        "solemn",
+        "grave",
+        "monotonous",
+        "tedious",
+        "drab",
+        "dreary",
+        "severe",
+        "earnest",
+        "dry",
+        "bland",
+        "rigid"
+      ]
+    },
+    "proposal": "People associate deviants with humor more strongly than they associate conformists with humor. This proposal targets the implicit link between social norm violation and comedic valuation, exploring whether eccentrics, oddballs, and misfits are mentally coupled with humor (either as sources of amusement or as punchlines) to a greater degree than conformists, followers, and normies. While explicit stereotypes often frame deviants as threatening or incompetent, contemporary discourse frequently celebrates eccentricity as 'funny' or 'quirky' while labeling conformity as 'boring' or 'stiff,' suggesting a latent positive or salient humor association that has not been systematically examined. Testing this axis is novel because prior research has focused on threat, competence, or warmth dimensions, neglecting the humor attribute in social categorization; confirming or disconfirming it would reveal whether humor serves as a mechanism for benign engagement with norm-violators or reinforces ridicule.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "ec683fe42d59",
     "timestamp": "2026-06-14T10:24:39.110264+00:00",
     "schema_version": "autoresearch.v1",
