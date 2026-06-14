@@ -1,5 +1,114 @@
 [
   {
+    "id": "ec683fe42d59",
+    "timestamp": "2026-06-14T10:24:39.110264+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "archivists vs curators on objectivity versus subjectivity",
+    "labels": {
+      "X": "archivists",
+      "Y": "curators",
+      "A": "objectivity",
+      "B": "subjectivity"
+    },
+    "canonical_keys": {
+      "X": "archivists",
+      "Y": "curators",
+      "A": "objectivity",
+      "B": "subjectivity"
+    },
+    "effect_size": 1.1885397138942053,
+    "p_value": 0.00049,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 16,
+      "B": 16
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "archivist",
+        "archivists",
+        "cataloger",
+        "indexer",
+        "indexers",
+        "preserver",
+        "preservers",
+        "keeper",
+        "keepers",
+        "clerk",
+        "clerks",
+        "administrator",
+        "administrators",
+        "registrar",
+        "librarian"
+      ],
+      "Y_used": [
+        "curator",
+        "curators",
+        "exhibitor",
+        "exhibitors",
+        "selector",
+        "selectors",
+        "arranger",
+        "arrangers",
+        "storyteller",
+        "storytellers",
+        "narrator",
+        "narrators",
+        "producer",
+        "producers",
+        "organizer",
+        "organizers"
+      ],
+      "A_used": [
+        "objective",
+        "neutral",
+        "impartial",
+        "factual",
+        "unbiased",
+        "authentic",
+        "preservation",
+        "truth",
+        "evidence",
+        "datum",
+        "proof",
+        "accurate",
+        "reality",
+        "verifiable",
+        "empirical",
+        "scientific"
+      ],
+      "B_used": [
+        "subjective",
+        "subjectivity",
+        "biased",
+        "bias",
+        "opinion",
+        "opinions",
+        "preference",
+        "preferences",
+        "choice",
+        "choices",
+        "selective",
+        "selectivity",
+        "interpretive",
+        "interpretation",
+        "interpret",
+        "perspective"
+      ]
+    },
+    "proposal": "People associate archivists with objectivity more strongly than they associate curators with objectivity. While both roles handle cultural artifacts, the public discourse frames curation as an act of selection, framing, and narrative construction, implying subjective bias and interpretive influence. In contrast, archivists are often mentally represented as neutral guardians or preservers of raw records, tasked with comprehensive retention rather than selective storytelling. Examining this differential association is novel because it probes the implicit bias embedded in information management roles, revealing how the metaphor of 'curation' carries implicit connotations of manipulation that 'archiving' does not. This matters for understanding how institutional roles are trusted to maintain historical integrity versus shaping public perception.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "c020883086f2",
     "timestamp": "2026-06-14T08:32:08.912732+00:00",
     "schema_version": "autoresearch.v1",
