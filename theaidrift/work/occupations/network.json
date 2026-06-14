@@ -77,9 +77,9 @@
         "id": "29",
         "title": "Healthcare Practitioners & Technical",
         "group": "healthcare",
-        "refs": 100,
-        "signals": 66,
-        "occupations": 34
+        "refs": 105,
+        "signals": 69,
+        "occupations": 36
       },
       {
         "id": "31",
@@ -4525,9 +4525,17 @@
           "id": "29-1215.00",
           "title": "Family Medicine Physicians",
           "group": "healthcare",
-          "refs": 4,
-          "revised": "2026-06-12",
-          "signals": 3
+          "refs": 5,
+          "revised": "2026-06-14",
+          "signals": 4
+        },
+        {
+          "id": "29-1216.00",
+          "title": "General Internal Medicine Physicians",
+          "group": "healthcare",
+          "refs": 2,
+          "revised": "2026-06-14",
+          "signals": 1
         },
         {
           "id": "29-1217.00",
@@ -4591,6 +4599,14 @@
           "group": "healthcare",
           "refs": 2,
           "revised": "2026-04-01",
+          "signals": 1
+        },
+        {
+          "id": "29-1229.02",
+          "title": "Hospitalists",
+          "group": "healthcare",
+          "refs": 2,
+          "revised": "2026-06-14",
           "signals": 1
         },
         {
@@ -4796,6 +4812,21 @@
           "source": "29-1181.00",
           "target": "29-9092.00",
           "signal": "The FDA gives the green light to the first gene therapy for deafness"
+        },
+        {
+          "source": "29-1215.00",
+          "target": "29-1216.00",
+          "signal": "Health-care AI is here. We don’t know if it actually helps patients."
+        },
+        {
+          "source": "29-1215.00",
+          "target": "29-1229.02",
+          "signal": "Health-care AI is here. We don’t know if it actually helps patients."
+        },
+        {
+          "source": "29-1216.00",
+          "target": "29-1229.02",
+          "signal": "Health-care AI is here. We don’t know if it actually helps patients."
         },
         {
           "source": "29-1215.00",
@@ -6897,6 +6928,7 @@
     "29-1212.00": "29",
     "29-1214.00": "29",
     "29-1215.00": "29",
+    "29-1216.00": "29",
     "29-1217.00": "29",
     "29-1218.00": "29",
     "29-1221.00": "29",
@@ -6905,6 +6937,7 @@
     "29-1224.00": "29",
     "29-1229.00": "29",
     "29-1229.01": "29",
+    "29-1229.02": "29",
     "29-1229.04": "29",
     "29-1241.00": "29",
     "29-1249.00": "29",
