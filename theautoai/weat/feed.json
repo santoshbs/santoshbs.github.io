@@ -1,5 +1,111 @@
 [
   {
+    "id": "9ee8b3133286",
+    "timestamp": "2026-06-14T00:17:15.599529+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "coaches vs therapists on instrumental efficiency vs. emotional processing",
+    "labels": {
+      "X": "coaches",
+      "Y": "therapists",
+      "A": "instrumental efficiency",
+      "B": "emotional processing"
+    },
+    "canonical_keys": {
+      "X": "coaches",
+      "Y": "therapists",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 1.288042408695488,
+    "p_value": 0.00018,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "coach",
+        "trainer",
+        "mentor",
+        "guide",
+        "instructor",
+        "tutor",
+        "facilitator",
+        "teacher",
+        "manager",
+        "leader",
+        "supervisor",
+        "director",
+        "advisor",
+        "strategist",
+        "consultant"
+      ],
+      "Y_used": [
+        "therapist",
+        "psychologist",
+        "psychiatrist",
+        "psychotherapist",
+        "clinician",
+        "analyst",
+        "counselor",
+        "healer",
+        "medic",
+        "practitioner",
+        "psychoanalyst",
+        "doctor",
+        "specialist",
+        "nurse",
+        "helper"
+      ],
+      "A_used": [
+        "efficiency",
+        "productivity",
+        "performance",
+        "success",
+        "goal",
+        "target",
+        "result",
+        "outcome",
+        "achievement",
+        "optimization",
+        "metric",
+        "standard",
+        "excellence",
+        "effective",
+        "efficient"
+      ],
+      "B_used": [
+        "healing",
+        "emotion",
+        "feeling",
+        "trauma",
+        "stress",
+        "mental",
+        "psychological",
+        "health",
+        "wellness",
+        "support",
+        "safety",
+        "calm",
+        "relief",
+        "comfort",
+        "care"
+      ]
+    },
+    "proposal": "People associate coaches with instrumental efficiency more strongly than they associate therapists with instrumental efficiency. While both roles involve guiding individuals toward improvement, contemporary discourse frames coaching around metrics, optimization, and goal-directed productivity, whereas therapy is culturally coded around emotional processing, healing, and psychological safety. This differential implicit association has not been systematically examined using implicit measures, despite the rapid commercialization of the coaching industry and its frequent conflation with mental health services. Confirming this association would clarify how the public implicitly demarcates clinical care from productivity-adjacent services, which matters for understanding public expectations, professional boundaries, and potential stigma in self-improvement spaces.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "f56e3351f82c",
     "timestamp": "2026-06-13T21:01:12.198450+00:00",
     "schema_version": "autoresearch.v1",
