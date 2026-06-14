@@ -1,5 +1,111 @@
 [
   {
+    "id": "f23cf0906f62",
+    "timestamp": "2026-06-14T14:21:59.201738+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Friends vs Lovers on reliability versus volatility",
+    "labels": {
+      "X": "Friends",
+      "Y": "Lovers",
+      "A": "reliability",
+      "B": "volatility"
+    },
+    "canonical_keys": {
+      "X": "friends",
+      "Y": "lovers",
+      "A": "reliability",
+      "B": "volatility"
+    },
+    "effect_size": 0.37939952820861456,
+    "p_value": 0.31151,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "friend",
+        "buddy",
+        "pal",
+        "chum",
+        "confidant",
+        "comrade",
+        "peer",
+        "companion",
+        "acquaintance",
+        "associate",
+        "roommate",
+        "schoolmate",
+        "classmate",
+        "neighbor",
+        "colleague"
+      ],
+      "Y_used": [
+        "lover",
+        "spouse",
+        "husband",
+        "wife",
+        "partner",
+        "sweetheart",
+        "boyfriend",
+        "girlfriend",
+        "beau",
+        "fiance",
+        "crush",
+        "paramour",
+        "admirer",
+        "soulmate",
+        "darling"
+      ],
+      "A_used": [
+        "reliable",
+        "dependable",
+        "trustworthy",
+        "stable",
+        "faithful",
+        "loyal",
+        "steady",
+        "constant",
+        "consistent",
+        "honest",
+        "secure",
+        "solid",
+        "firm",
+        "steadfast",
+        "enduring"
+      ],
+      "B_used": [
+        "volatile",
+        "unpredictable",
+        "unstable",
+        "turbulent",
+        "erratic",
+        "fickle",
+        "moody",
+        "temperamental",
+        "flighty",
+        "changeable",
+        "wild",
+        "shifting",
+        "risky",
+        "dangerous",
+        "chaotic"
+      ]
+    },
+    "proposal": "People associate friends with reliability more strongly than they associate lovers with reliability. This differential association probes whether the cultural glorification of romantic passion leads individuals to implicitly view romantic partners as more volatile and less dependable than platonic companions. While friendship is often described as a chosen bond based on enduring trust, romantic relationships are frequently framed in media and discourse as tumultuous and prone to sudden emotional shifts. Examining this implicit bias is important because it may reveal how expectations of stability in intimate relationships are undermined by associative links between romance and turbulence, potentially affecting how people navigate conflict and commitment in their romantic lives.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "00586f826d75",
     "timestamp": "2026-06-14T11:05:07.846212+00:00",
     "schema_version": "autoresearch.v1",
