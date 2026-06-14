@@ -1,5 +1,111 @@
 [
   {
+    "id": "c020883086f2",
+    "timestamp": "2026-06-14T08:32:08.912732+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "politicians vs teachers on flexibility vs stability",
+    "labels": {
+      "X": "politicians",
+      "Y": "teachers",
+      "A": "flexibility",
+      "B": "stability"
+    },
+    "canonical_keys": {
+      "X": "politicians",
+      "Y": "teachers",
+      "A": "flexibility",
+      "B": "stability"
+    },
+    "effect_size": -0.6967205426456697,
+    "p_value": 0.05787,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "senator",
+        "congressman",
+        "representative",
+        "governor",
+        "mayor",
+        "president",
+        "chancellor",
+        "minister",
+        "diplomat",
+        "legislator",
+        "parliamentarian",
+        "statesman",
+        "councilor",
+        "alderman",
+        "candidate"
+      ],
+      "Y_used": [
+        "teacher",
+        "professor",
+        "instructor",
+        "educator",
+        "tutor",
+        "lecturer",
+        "academic",
+        "pedagogue",
+        "mentor",
+        "coach",
+        "trainer",
+        "facilitator",
+        "preceptor",
+        "guide",
+        "counselor"
+      ],
+      "A_used": [
+        "flexible",
+        "adaptable",
+        "fluid",
+        "agile",
+        "versatile",
+        "malleable",
+        "pliable",
+        "supple",
+        "elastic",
+        "bendable",
+        "compliant",
+        "accommodating",
+        "yielding",
+        "adjustable",
+        "nimble"
+      ],
+      "B_used": [
+        "stable",
+        "rigid",
+        "fixed",
+        "firm",
+        "solid",
+        "steady",
+        "constant",
+        "unchanging",
+        "static",
+        "inflexible",
+        "hard",
+        "secure",
+        "settled",
+        "permanent",
+        "enduring"
+      ]
+    },
+    "proposal": "People associate politicians with flexibility more strongly than they associate teachers with flexibility. This differential association is novel because prior literature has rarely positioned these two institutional roles against each other on axes of adaptability, focusing instead on comparisons like teachers versus scientists or politicians versus bureaucrats. It is relevant to contemporary discourse where political pivoting and educational standardization are both heavily debated, yet the implicit link between political actors and fluidity remains underexamined. Demonstrating this association would matter by revealing how mental representations of stability and change are unequally distributed across civic roles, potentially shaping how the public evaluates responsiveness to disruption in governance versus education.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "4f73c2ac59b0",
     "timestamp": "2026-06-14T06:33:21.121511+00:00",
     "schema_version": "autoresearch.v1",
