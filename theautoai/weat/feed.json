@@ -1,5 +1,111 @@
 [
   {
+    "id": "99f0f68a156f",
+    "timestamp": "2026-06-14T23:17:56.654398+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Servers vs Customers on disposability versus value",
+    "labels": {
+      "X": "Servers",
+      "Y": "Customers",
+      "A": "disposability",
+      "B": "value"
+    },
+    "canonical_keys": {
+      "X": "servers",
+      "Y": "customers",
+      "A": "disposability",
+      "B": "value"
+    },
+    "effect_size": 0.9436423262605919,
+    "p_value": 0.00906,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "server",
+        "waiter",
+        "waitress",
+        "attendant",
+        "bartender",
+        "barista",
+        "cook",
+        "chef",
+        "cashier",
+        "host",
+        "employee",
+        "worker",
+        "laborer",
+        "assistant",
+        "aide"
+      ],
+      "Y_used": [
+        "customer",
+        "client",
+        "patron",
+        "shopper",
+        "buyer",
+        "consumer",
+        "guest",
+        "visitor",
+        "traveler",
+        "user",
+        "passenger",
+        "attendee",
+        "subscriber",
+        "member",
+        "prospect"
+      ],
+      "A_used": [
+        "disposable",
+        "replaceable",
+        "transient",
+        "temporary",
+        "expendable",
+        "fleeting",
+        "brief",
+        "casual",
+        "auxiliary",
+        "peripheral",
+        "minor",
+        "insignificant",
+        "negligible",
+        "trivial",
+        "useless"
+      ],
+      "B_used": [
+        "valuable",
+        "essential",
+        "precious",
+        "indispensable",
+        "irreplaceable",
+        "permanent",
+        "lasting",
+        "vital",
+        "critical",
+        "important",
+        "significant",
+        "major",
+        "central",
+        "core",
+        "key"
+      ]
+    },
+    "proposal": "People associate Servers with disposability more strongly than they associate Customers with disposability. This differential implicit association probes the mental representation of the service relationship in the gig economy era, where service providers are increasingly culturally framed as interchangeable, replaceable, and transient, whereas customers are viewed as valuable, sticky entities whose retention and satisfaction are paramount. This proposal is novel because implicit bias research on service roles has largely focused on traditional warmth-competence dimensions or moral evaluations, neglecting the structural attribute of disposability that captures the precariousness and perceived replaceability of the labor force. Examining this association matters because confirming it would reveal a latent cognitive bias that undermines the dignity and irreplaceability of service workers, potentially influencing public support for labor protections and shaping consumer attitudes, while disconfirming it could indicate a growing public resistance to the commodification of human service labor.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "c0b9b73f3460",
     "timestamp": "2026-06-14T20:38:22.635609+00:00",
     "schema_version": "autoresearch.v1",
