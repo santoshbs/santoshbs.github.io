@@ -1,5 +1,111 @@
 [
   {
+    "id": "c0b9b73f3460",
+    "timestamp": "2026-06-14T20:38:22.635609+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "founders vs followers on authenticity vs inauthenticity",
+    "labels": {
+      "X": "founders",
+      "Y": "followers",
+      "A": "Authenticity",
+      "B": "Inauthenticity"
+    },
+    "canonical_keys": {
+      "X": "founders",
+      "Y": "followers",
+      "A": "authenticity",
+      "B": "inauthenticity"
+    },
+    "effect_size": 0.11989358004931909,
+    "p_value": 0.75054,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "founder",
+        "pioneer",
+        "creator",
+        "innovator",
+        "originator",
+        "initiator",
+        "trailblazer",
+        "visionary",
+        "architect",
+        "instigator",
+        "progenitor",
+        "forerunner",
+        "pathfinder",
+        "trendsetter",
+        "maker"
+      ],
+      "Y_used": [
+        "follower",
+        "adherent",
+        "supporter",
+        "disciple",
+        "devotee",
+        "acolyte",
+        "fan",
+        "loyalist",
+        "subscriber",
+        "believer",
+        "attendant",
+        "recruit",
+        "convert",
+        "member",
+        "affiliate"
+      ],
+      "A_used": [
+        "authentic",
+        "genuine",
+        "real",
+        "true",
+        "sincere",
+        "honest",
+        "natural",
+        "pure",
+        "original",
+        "frank",
+        "candid",
+        "transparent",
+        "legitimate",
+        "actual",
+        "heartfelt"
+      ],
+      "B_used": [
+        "fake",
+        "artificial",
+        "pretentious",
+        "superficial",
+        "phony",
+        "bogus",
+        "sham",
+        "contrived",
+        "hypocritical",
+        "conformist",
+        "bland",
+        "shallow",
+        "insincere",
+        "false",
+        "counterfeit"
+      ]
+    },
+    "proposal": "People associate founders with authenticity more strongly than they associate followers with authenticity. This implicit association captures a pervasive cultural narrative that idealizes originators as the genuine, uncorrupted source of a movement or institution, while stereotyping followers as conformists who may lack independent conviction or merely jump on a bandwagon. This proposal is novel because, although social psychology has extensively examined leader-follower dynamics and authority, it has not systematically tested the specific moral-existential attribution of authenticity to the status of originator versus adherent. Confirming this bias would reveal how implicit cognition reinforces 'founder worship' and potentially pathologizes legitimate adherence or collective action as a lack of genuine personal agency.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "4b10c9f79fb6",
     "timestamp": "2026-06-14T19:08:21.804129+00:00",
     "schema_version": "autoresearch.v1",
