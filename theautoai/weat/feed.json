@@ -1,5 +1,111 @@
 [
   {
+    "id": "4b10c9f79fb6",
+    "timestamp": "2026-06-14T19:08:21.804129+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Peasants vs Merchants on autonomy versus interdependence",
+    "labels": {
+      "X": "Peasants",
+      "Y": "Merchants",
+      "A": "autonomy",
+      "B": "interdependence"
+    },
+    "canonical_keys": {
+      "X": "peasants",
+      "Y": "merchants",
+      "A": "autonomy",
+      "B": "interdependence"
+    },
+    "effect_size": 0.6541208489332047,
+    "p_value": 0.07651,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "peasant",
+        "farmer",
+        "agriculturalist",
+        "tiller",
+        "serf",
+        "yeoman",
+        "crofter",
+        "countryman",
+        "planter",
+        "homesteader",
+        "gardener",
+        "cultivator",
+        "harvester",
+        "herdsman",
+        "laborer"
+      ],
+      "Y_used": [
+        "merchant",
+        "trader",
+        "vendor",
+        "retailer",
+        "wholesaler",
+        "dealer",
+        "broker",
+        "peddler",
+        "salesman",
+        "shopkeeper",
+        "entrepreneur",
+        "businessman",
+        "capitalist",
+        "importer",
+        "exporter"
+      ],
+      "A_used": [
+        "independent",
+        "autonomous",
+        "isolated",
+        "solitary",
+        "secluded",
+        "remote",
+        "unaided",
+        "unassisted",
+        "individual",
+        "personal",
+        "private",
+        "separate",
+        "detached",
+        "aloof",
+        "singular"
+      ],
+      "B_used": [
+        "interdependent",
+        "reliant",
+        "dependent",
+        "connected",
+        "linked",
+        "integrated",
+        "cooperative",
+        "collaborative",
+        "communal",
+        "social",
+        "interactive",
+        "relational",
+        "networked",
+        "entwined",
+        "interwoven"
+      ]
+    },
+    "proposal": "People associate Peasants with self-sufficiency more strongly than they associate Merchants with self-sufficiency. This differential implicit association reflects a deep cultural archetype linking the peasant figure to direct production, land stewardship, and independence from exchange systems, while the merchant figure is conceptualized as fundamentally dependent on trade, intermediation, and relational networks. Examining this association is novel, as implicit bias research has largely overlooked these pre-modern or historical-echo categories despite their resurgence in contemporary discourse around localism, supply chain resilience, and critiques of globalization. Confirming or disconfirming this link matters because it reveals how mental representations of economic roles prioritize autonomy versus interdependence, potentially influencing public attitudes toward agricultural policies, trade agreements, and the moral valuation of different labor forms.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "10286e446c4d",
     "timestamp": "2026-06-14T18:26:26.892016+00:00",
     "schema_version": "autoresearch.v1",
