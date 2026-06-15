@@ -1,5 +1,111 @@
 [
   {
+    "id": "3c14fd8409f8",
+    "timestamp": "2026-06-15T02:56:33.138065+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "musicians vs mathematicians on permanence vs transience",
+    "labels": {
+      "X": "musicians",
+      "Y": "mathematicians",
+      "A": "transient",
+      "B": "permanent"
+    },
+    "canonical_keys": {
+      "X": "musicians",
+      "Y": "mathematicians",
+      "A": "transient",
+      "B": "permanent"
+    },
+    "effect_size": -0.46776031623189174,
+    "p_value": 0.2123,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "musician",
+        "singer",
+        "songwriter",
+        "conductor",
+        "violinist",
+        "pianist",
+        "guitarist",
+        "drummer",
+        "cellist",
+        "flutist",
+        "trumpeter",
+        "harpist",
+        "clarinetist",
+        "saxophonist",
+        "vocalist"
+      ],
+      "Y_used": [
+        "mathematician",
+        "statistician",
+        "actuary",
+        "analyst",
+        "researcher",
+        "scientist",
+        "engineer",
+        "physicist",
+        "logician",
+        "calculator",
+        "geometer",
+        "cryptographer",
+        "arithmetician",
+        "topologist",
+        "probabilist"
+      ],
+      "A_used": [
+        "transient",
+        "fleeting",
+        "ephemeral",
+        "temporary",
+        "momentary",
+        "brief",
+        "short",
+        "passing",
+        "impermanent",
+        "unstable",
+        "volatile",
+        "fading",
+        "vanishing",
+        "perishable",
+        "fragile"
+      ],
+      "B_used": [
+        "timeless",
+        "eternal",
+        "everlasting",
+        "permanent",
+        "enduring",
+        "lasting",
+        "steady",
+        "constant",
+        "stable",
+        "solid",
+        "firm",
+        "fixed",
+        "unchanging",
+        "consistent",
+        "durable"
+      ]
+    },
+    "proposal": "People associate musicians with transience more strongly than they associate mathematicians with transience. Musicians are implicitly linked to ephemeral performances, fleeting emotional states, and the temporal flow of lived experience, whereas mathematicians are connected to timeless proofs, eternal truths, and unchanging abstract structures. This differential association has not been explicitly tested, yet it captures a pervasive cultural intuition distinguishing artistic labor as inherently bound to the moment versus mathematical inquiry as a pursuit of permanent discovery. Examining this implicit contrast matters because it reveals how we mentally represent the longevity and stability of different forms of human contribution, which may shape societal valuations of legacy, institutional support, and the perceived enduring worth of creative versus analytical endeavors.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "99f0f68a156f",
     "timestamp": "2026-06-14T23:17:56.654398+00:00",
     "schema_version": "autoresearch.v1",
