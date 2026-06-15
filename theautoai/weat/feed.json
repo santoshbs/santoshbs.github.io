@@ -1,5 +1,111 @@
 [
   {
+    "id": "266373244034",
+    "timestamp": "2026-06-15T13:07:32.169028+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "advisors vs critics on objectivity vs subjectivity",
+    "labels": {
+      "X": "advisors",
+      "Y": "critics",
+      "A": "objectivity",
+      "B": "subjectivity"
+    },
+    "canonical_keys": {
+      "X": "advisors",
+      "Y": "critics",
+      "A": "objectivity",
+      "B": "subjectivity"
+    },
+    "effect_size": 0.4236317086233407,
+    "p_value": 0.25763,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "advisor",
+        "consultant",
+        "coach",
+        "mentor",
+        "counselor",
+        "guide",
+        "expert",
+        "specialist",
+        "strategist",
+        "facilitator",
+        "trainer",
+        "tutor",
+        "mediator",
+        "negotiator",
+        "planner"
+      ],
+      "Y_used": [
+        "critic",
+        "reviewer",
+        "pundit",
+        "commentator",
+        "inspector",
+        "examiner",
+        "auditor",
+        "assessor",
+        "appraiser",
+        "referee",
+        "arbiter",
+        "censor",
+        "grader",
+        "marker",
+        "evaluator"
+      ],
+      "A_used": [
+        "objective",
+        "impartial",
+        "neutral",
+        "unbiased",
+        "detached",
+        "fair",
+        "balanced",
+        "factual",
+        "rational",
+        "scientific",
+        "empirical",
+        "logical",
+        "dispassionate",
+        "disinterested",
+        "equitable"
+      ],
+      "B_used": [
+        "subjective",
+        "partial",
+        "biased",
+        "emotional",
+        "passionate",
+        "personal",
+        "opinionated",
+        "prejudiced",
+        "slanted",
+        "unfair",
+        "sentimental",
+        "irrational",
+        "arbitrary",
+        "capricious",
+        "partisan"
+      ]
+    },
+    "proposal": "People associate advisors with objectivity more strongly than they associate critics with objectivity. This differential implicit association examines how professional roles tied to guidance versus evaluation are mentally differentiated regarding impartiality and neutrality. It is novel because existing research primarily investigates partisan or ideological objectivity, leaving role-based implicit associations between evaluative and advisory occupations largely unexplored. Confirming this pattern would illuminate how institutional expectations of detached neutrality map onto occupational identities, with implications for how public discourse frames professional expertise versus cultural evaluation.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "ee57797ea8bc",
     "timestamp": "2026-06-15T09:57:10.601045+00:00",
     "schema_version": "autoresearch.v1",
