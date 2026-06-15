@@ -1,5 +1,111 @@
 [
   {
+    "id": "1f5b7ace8ecf",
+    "timestamp": "2026-06-15T03:46:12.106705+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "engineers vs teachers on consistency of output vs variability of outcome",
+    "labels": {
+      "X": "engineers",
+      "Y": "teachers",
+      "A": "predictable reliability",
+      "B": "human variability"
+    },
+    "canonical_keys": {
+      "X": "engineers",
+      "Y": "teachers",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 0.7170886182050865,
+    "p_value": 0.05194,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "engineer",
+        "technician",
+        "mechanic",
+        "builder",
+        "designer",
+        "analyst",
+        "operator",
+        "fabricator",
+        "surveyor",
+        "electrician",
+        "planner",
+        "constructor",
+        "manufacturer",
+        "craftsman",
+        "assembler"
+      ],
+      "Y_used": [
+        "teacher",
+        "educator",
+        "instructor",
+        "tutor",
+        "professor",
+        "lecturer",
+        "mentor",
+        "trainer",
+        "coach",
+        "academic",
+        "counselor",
+        "guide",
+        "facilitator",
+        "scholar",
+        "pedagogue"
+      ],
+      "A_used": [
+        "reliable",
+        "consistent",
+        "predictable",
+        "stable",
+        "dependable",
+        "precise",
+        "exact",
+        "steady",
+        "uniform",
+        "methodical",
+        "systematic",
+        "accurate",
+        "flawless",
+        "steadfast",
+        "regular"
+      ],
+      "B_used": [
+        "variable",
+        "unpredictable",
+        "uncertain",
+        "erratic",
+        "inconsistent",
+        "chaotic",
+        "spontaneous",
+        "dynamic",
+        "changing",
+        "evolving",
+        "flexible",
+        "diverse",
+        "imperfect",
+        "volatile",
+        "fluctuating"
+      ]
+    },
+    "proposal": "People associate engineers with predictable reliability more strongly than they associate teachers with predictable reliability. This differential association captures a latent cultural expectation that technical professions guarantee consistent, failure-free outputs, whereas educational professions are implicitly granted leeway for human variability and uncertain developmental trajectories. It is novel because implicit bias research has largely mapped professions onto warmth and competence dimensions, overlooking how outcome consistency is cognitively partitioned across labor categories. Examining this association matters because it exposes a hidden justificatory framework that shapes public reactions to professional crises, media narratives about systemic failure, and political debates over accountability and resource allocation.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "3c14fd8409f8",
     "timestamp": "2026-06-15T02:56:33.138065+00:00",
     "schema_version": "autoresearch.v1",
