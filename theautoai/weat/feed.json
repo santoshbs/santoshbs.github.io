@@ -1,5 +1,111 @@
 [
   {
+    "id": "ee57797ea8bc",
+    "timestamp": "2026-06-15T09:57:10.601045+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "soldiers vs police on geographic scope of operation",
+    "labels": {
+      "X": "soldiers",
+      "Y": "police",
+      "A": "international scope",
+      "B": "domestic scope"
+    },
+    "canonical_keys": {
+      "X": "soldiers",
+      "Y": "police",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 1.2982314138566124,
+    "p_value": 4e-05,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "soldier",
+        "marine",
+        "infantryman",
+        "sailor",
+        "aviator",
+        "combatant",
+        "troops",
+        "enlistee",
+        "sergeant",
+        "captain",
+        "colonel",
+        "general",
+        "ranger",
+        "fighter",
+        "recruit"
+      ],
+      "Y_used": [
+        "police",
+        "detective",
+        "sheriff",
+        "deputy",
+        "constable",
+        "trooper",
+        "marshal",
+        "patrolman",
+        "commissioner",
+        "inspector",
+        "policeman",
+        "policewoman",
+        "officer",
+        "cop",
+        "guard"
+      ],
+      "A_used": [
+        "international",
+        "global",
+        "worldwide",
+        "foreign",
+        "transnational",
+        "overseas",
+        "abroad",
+        "multinational",
+        "cosmopolitan",
+        "universal",
+        "planetary",
+        "extraterritorial",
+        "transcontinental",
+        "intercontinental",
+        "world"
+      ],
+      "B_used": [
+        "domestic",
+        "local",
+        "municipal",
+        "community",
+        "neighborhood",
+        "hometown",
+        "regional",
+        "national",
+        "homegrown",
+        "indigenous",
+        "native",
+        "town",
+        "city",
+        "state",
+        "provincial"
+      ]
+    },
+    "proposal": "People associate soldiers with international scope more strongly than they associate police with international scope. This differential implicit association captures a pervasive mental model where military roles are automatically linked to transnational deployment, foreign theaters, and global reach, while policing is conceptually anchored to domestic locality, community proximity, and municipal boundaries. This association is novel because implicit social cognition research has historically prioritized traits like aggression or legitimacy, leaving functional geographic associations largely unexamined despite their relevance to public discourse. It matters because this implicit mapping can subtly shape perceptions of 'mission creep,' influence acceptance of cross-border police collaborations, and frame debates over whether domestic law enforcement should adopt military-grade international operational paradigms.",
+    "iterations": 3,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "1f5b7ace8ecf",
     "timestamp": "2026-06-15T03:46:12.106705+00:00",
     "schema_version": "autoresearch.v1",
