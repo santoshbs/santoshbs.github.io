@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "batches_seen": 736,
-  "loans_seen": 11776,
-  "last_updated": "2026-06-15T18:42:27.551782+00:00",
+  "batches_seen": 737,
+  "loans_seen": 11792,
+  "last_updated": "2026-06-15T20:17:03.464332+00:00",
   "watching_for": "",
   "claims": {
     "female-technical-specificity-faster": {
@@ -13,10 +13,10 @@
       "supporting_loans": [],
       "confidence": 1.0,
       "first_seen_batch": 1,
-      "last_updated_batch": 736,
+      "last_updated_batch": 737,
       "confidence_history": [
         [
-          736,
+          737,
           1.0
         ]
       ]
@@ -29,10 +29,10 @@
       "supporting_loans": [],
       "confidence": 1.0,
       "first_seen_batch": 1,
-      "last_updated_batch": 736,
+      "last_updated_batch": 737,
       "confidence_history": [
         [
-          736,
+          737,
           1.0
         ]
       ]
@@ -45,10 +45,10 @@
       "supporting_loans": [],
       "confidence": 1.0,
       "first_seen_batch": 1,
-      "last_updated_batch": 736,
+      "last_updated_batch": 737,
       "confidence_history": [
         [
-          736,
+          737,
           1.0
         ]
       ]
@@ -61,10 +61,10 @@
       "supporting_loans": [],
       "confidence": 0.81,
       "first_seen_batch": 1,
-      "last_updated_batch": 736,
+      "last_updated_batch": 737,
       "confidence_history": [
         [
-          736,
+          737,
           0.81
         ]
       ]
@@ -76,11 +76,11 @@
       "body": "Pitches from women that utilize generic template language, such as standard greetings or boilerplate phrasing about inspiring others, are associated with slower funding speeds.",
       "supporting_loans": [],
       "confidence": 0.8,
-      "first_seen_batch": 574,
-      "last_updated_batch": 736,
+      "first_seen_batch": 573,
+      "last_updated_batch": 737,
       "confidence_history": [
         [
-          736,
+          737,
           0.8
         ]
       ]
@@ -92,28 +92,12 @@
       "body": "Pitches from women that explicitly state their marital status as married are associated with slower funding speeds.",
       "supporting_loans": [],
       "confidence": 0.75,
-      "first_seen_batch": 656,
-      "last_updated_batch": 736,
+      "first_seen_batch": 655,
+      "last_updated_batch": 737,
       "confidence_history": [
         [
-          736,
+          737,
           0.75
-        ]
-      ]
-    },
-    "female-community-contribution-faster": {
-      "id": "female-community-contribution-faster",
-      "bucket": "gendered_women",
-      "title": "Female borrowers who mention contributing to the community or social causes fund faster.",
-      "body": "Pitches from women that highlight benefits to the broader community or social causes are associated with increased funding speed.",
-      "supporting_loans": [],
-      "confidence": 0.53,
-      "first_seen_batch": 658,
-      "last_updated_batch": 736,
-      "confidence_history": [
-        [
-          736,
-          0.53
         ]
       ]
     },
@@ -124,12 +108,28 @@
       "body": "Pitches from women that focus on internal virtues, such as being hardworking, dedicated, or committed, are associated with slower funding speeds.",
       "supporting_loans": [],
       "confidence": 0.65,
-      "first_seen_batch": 712,
-      "last_updated_batch": 736,
+      "first_seen_batch": 711,
+      "last_updated_batch": 737,
       "confidence_history": [
         [
-          736,
+          737,
           0.65
+        ]
+      ]
+    },
+    "loan-details-faster": {
+      "id": "loan-details-faster",
+      "bucket": "faster",
+      "title": "Pitches that include specific loan details, such as the lending partner and the loan amount in local currency, fund faster regardless of gender.",
+      "body": "Including the name of the lending partner and the specific loan amount in local currency is associated with increased funding speed for both men and women.",
+      "supporting_loans": [],
+      "confidence": 0.6,
+      "first_seen_batch": 737,
+      "last_updated_batch": 737,
+      "confidence_history": [
+        [
+          737,
+          0.6
         ]
       ]
     }
@@ -138,62 +138,50 @@
     "male-credentials-slower": {
       "id": "male-credentials-slower",
       "body": "Male borrowers who emphasize formal academic degrees or professional credentials may fund more slowly.",
-      "first_seen_batch": 642
+      "first_seen_batch": 641
     },
     "family-specificity-general": {
       "id": "family-specificity-general",
       "body": "Providing specific details about family members may accelerate funding regardless of gender.",
-      "first_seen_batch": 642
+      "first_seen_batch": 641
     },
     "female-aspirational-language-slower": {
       "id": "female-aspirational-language-slower",
       "body": "Female borrowers who use aspirational words like 'dream' to describe goals may fund more slowly.",
-      "first_seen_batch": 660
+      "first_seen_batch": 659
     },
     "female-shorter-pitch-faster": {
       "id": "female-shorter-pitch-faster",
       "body": "Female borrowers who write significantly shorter pitches may fund faster.",
-      "first_seen_batch": 704
+      "first_seen_batch": 703
     },
     "female-training-org-faster": {
       "id": "female-training-org-faster",
       "body": "Female borrowers who mention specific training organizations may fund faster.",
-      "first_seen_batch": 712
+      "first_seen_batch": 711
     },
     "male-family-focus-faster": {
       "id": "male-family-focus-faster",
       "body": "Male borrowers who emphasize family quality of life fund faster than those who use technical terminology.",
-      "first_seen_batch": 724
+      "first_seen_batch": 723
     },
     "gender-technicality-interaction": {
       "id": "gender-technicality-interaction",
       "body": "Technical business specificity may accelerate funding for women but decelerate it for men.",
-      "first_seen_batch": 724
+      "first_seen_batch": 723
     },
     "female-location-specificity-faster": {
       "id": "female-location-specificity-faster",
       "body": "Female borrowers who mention a specific town or province in their pitch may fund faster.",
-      "first_seen_batch": 730
+      "first_seen_batch": 729
     },
     "female-gratitude-slower": {
       "id": "female-gratitude-slower",
       "body": "Female borrowers who include gratitude statements to lenders in their pitch may fund more slowly.",
-      "first_seen_batch": 734
-    },
-    "female-loan-amount-faster": {
-      "id": "female-loan-amount-faster",
-      "body": "Female borrowers who mention specific loan amounts in local currency may fund faster.",
-      "first_seen_batch": 736
+      "first_seen_batch": 733
     }
   },
   "retired": {
-    "female-asset-ownership-faster": {
-      "id": "female-asset-ownership-faster",
-      "title": "Female borrowers who mention asset ownership, such as owning a home, may fund faster.",
-      "retrospective": "Contradicted by observation that specific physical assets like freezers or plots correlate with slower funding.",
-      "retired_batch": 699,
-      "was_believed_batches": 0
-    },
     "female-long-term-pressure-slower": {
       "id": "female-long-term-pressure-slower",
       "title": "Female borrowers who mention long-term financial pressures, such as college costs, may fund slower.",
@@ -255,6 +243,13 @@
       "title": "Female borrowers who mention specific loan amounts in local currency or the lending institution may fund more slowly.",
       "retrospective": "Contradicted by observation that specific loan amounts in local currency correlate with faster funding.",
       "retired_batch": 736,
+      "was_believed_batches": 0
+    },
+    "female-community-contribution-faster": {
+      "id": "female-community-contribution-faster",
+      "title": "Female borrowers who mention contributing to the community or social causes fund faster.",
+      "retrospective": "Retired to maintain claim cap upon promotion of loan-details-faster.",
+      "retired_batch": 737,
       "was_believed_batches": 0
     }
   }

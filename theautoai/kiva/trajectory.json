@@ -1,15 +1,5 @@
 [
   {
-    "id": "female-asset-ownership-faster",
-    "title": "Female borrowers who mention asset ownership, such as owning a home, may fund faster.",
-    "bucket": "",
-    "birth_batch": 0,
-    "death_batch": 699,
-    "last_batch": 699,
-    "confidence": 0,
-    "alive": false
-  },
-  {
     "id": "female-long-term-pressure-slower",
     "title": "Female borrowers who mention long-term financial pressures, such as college costs, may fund slower.",
     "bucket": "",
@@ -100,11 +90,21 @@
     "alive": false
   },
   {
+    "id": "female-community-contribution-faster",
+    "title": "Female borrowers who mention contributing to the community or social causes fund faster.",
+    "bucket": "",
+    "birth_batch": 0,
+    "death_batch": 737,
+    "last_batch": 737,
+    "confidence": 0,
+    "alive": false
+  },
+  {
     "id": "female-technical-specificity-faster",
     "title": "Female borrowers who list specific products or goals beyond family welfare fund faster.",
     "bucket": "gendered_women",
     "birth_batch": 1,
-    "last_batch": 736,
+    "last_batch": 737,
     "confidence": 1.0,
     "peak_confidence": 1.0,
     "alive": true
@@ -114,7 +114,7 @@
     "title": "Specifying the number of years a business has operated predicts faster funding regardless of gender.",
     "bucket": "faster",
     "birth_batch": 1,
-    "last_batch": 736,
+    "last_batch": 737,
     "confidence": 1.0,
     "peak_confidence": 1.0,
     "alive": true
@@ -124,7 +124,7 @@
     "title": "Pitches that provide concrete financial figures or specific inventory lists fund faster regardless of gender.",
     "bucket": "faster",
     "birth_batch": 1,
-    "last_batch": 736,
+    "last_batch": 737,
     "confidence": 1.0,
     "peak_confidence": 1.0,
     "alive": true
@@ -134,7 +134,7 @@
     "title": "Female borrowers who list the specific ages of their children fund faster.",
     "bucket": "gendered_women",
     "birth_batch": 1,
-    "last_batch": 736,
+    "last_batch": 737,
     "confidence": 0.81,
     "peak_confidence": 0.81,
     "alive": true
@@ -143,8 +143,8 @@
     "id": "female-boilerplate-slower",
     "title": "Female borrowers who use generic template language fund more slowly.",
     "bucket": "gendered_women",
-    "birth_batch": 574,
-    "last_batch": 736,
+    "birth_batch": 573,
+    "last_batch": 737,
     "confidence": 0.8,
     "peak_confidence": 0.8,
     "alive": true
@@ -153,30 +153,30 @@
     "id": "female-married-status-slower",
     "title": "Female borrowers who identify as married in their pitch text fund more slowly.",
     "bucket": "gendered_women",
-    "birth_batch": 656,
-    "last_batch": 736,
+    "birth_batch": 655,
+    "last_batch": 737,
     "confidence": 0.75,
     "peak_confidence": 0.75,
-    "alive": true
-  },
-  {
-    "id": "female-community-contribution-faster",
-    "title": "Female borrowers who mention contributing to the community or social causes fund faster.",
-    "bucket": "gendered_women",
-    "birth_batch": 658,
-    "last_batch": 736,
-    "confidence": 0.53,
-    "peak_confidence": 0.53,
     "alive": true
   },
   {
     "id": "female-character-traits-slower",
     "title": "Female borrowers who emphasize internal character traits like dedication or commitment fund more slowly.",
     "bucket": "gendered_women",
-    "birth_batch": 712,
-    "last_batch": 736,
+    "birth_batch": 711,
+    "last_batch": 737,
     "confidence": 0.65,
     "peak_confidence": 0.65,
+    "alive": true
+  },
+  {
+    "id": "loan-details-faster",
+    "title": "Pitches that include specific loan details, such as the lending partner and the loan amount in local currency, fund faster regardless of gender.",
+    "bucket": "faster",
+    "birth_batch": 737,
+    "last_batch": 737,
+    "confidence": 0.6,
+    "peak_confidence": 0.6,
     "alive": true
   }
 ]
