@@ -1,5 +1,111 @@
 [
   {
+    "id": "ad7b847f1026",
+    "timestamp": "2026-06-15T18:59:57.633244+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "surgeons vs psychologists on clinical precision versus relational nuance",
+    "labels": {
+      "X": "surgeons",
+      "Y": "psychologists",
+      "A": "clinical precision",
+      "B": "relational nuance"
+    },
+    "canonical_keys": {
+      "X": "surgeons",
+      "Y": "psychologists",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 0.8096569459679398,
+    "p_value": 0.02573,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "surgeon",
+        "doctor",
+        "physician",
+        "medic",
+        "specialist",
+        "practitioner",
+        "expert",
+        "healer",
+        "operator",
+        "consultant",
+        "nurse",
+        "technician",
+        "anesthetist",
+        "cardiologist",
+        "neurosurgeon"
+      ],
+      "Y_used": [
+        "psychologist",
+        "therapist",
+        "counselor",
+        "psychotherapist",
+        "psychiatrist",
+        "analyst",
+        "helper",
+        "coach",
+        "mentor",
+        "guide",
+        "listener",
+        "advisor",
+        "confidant",
+        "companion",
+        "peer"
+      ],
+      "A_used": [
+        "precise",
+        "exact",
+        "objective",
+        "measurable",
+        "technical",
+        "accurate",
+        "definite",
+        "scientific",
+        "quantitative",
+        "rigid",
+        "certainty",
+        "data",
+        "metrics",
+        "analytical",
+        "empirical"
+      ],
+      "B_used": [
+        "subjective",
+        "nuanced",
+        "interpretive",
+        "relational",
+        "empathetic",
+        "ambiguous",
+        "qualitative",
+        "flexible",
+        "emotional",
+        "contextual",
+        "interpersonal",
+        "personal",
+        "expressive",
+        "holistic",
+        "reflective"
+      ]
+    },
+    "proposal": "People associate surgeons with clinical precision more strongly than they associate psychologists with clinical precision. This differential reflects how contemporary healthcare discourse culturally constructs surgical intervention as a highly technical, measurable, and objectively verifiable domain, whereas psychological practice is framed around nuance, subjectivity, and relational interpretation. While explicit stereotypes about medical authority are well-documented, the implicit link between specific healing professions and modes of epistemic certainty remains unprobed. Examining this association matters because it may quietly shape patient trust, professional hierarchies, and how society allocates legitimacy to different forms of therapeutic expertise in an era of increasing algorithmic and technological mediation of care.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "266373244034",
     "timestamp": "2026-06-15T13:07:32.169028+00:00",
     "schema_version": "autoresearch.v1",
