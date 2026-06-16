@@ -1,5 +1,111 @@
 [
   {
+    "id": "896a3ca6b259",
+    "timestamp": "2026-06-16T06:22:52.925253+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Hindus vs Buddhists on purity versus pollution",
+    "labels": {
+      "X": "Hindus",
+      "Y": "Buddhists",
+      "A": "purity",
+      "B": "pollution"
+    },
+    "canonical_keys": {
+      "X": "hindus",
+      "Y": "buddhists",
+      "A": "purity",
+      "B": "pollution"
+    },
+    "effect_size": -1.1696552179574127,
+    "p_value": 0.00083,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "hindu",
+        "hinduism",
+        "brahmin",
+        "puja",
+        "pundit",
+        "ashram",
+        "sadhu",
+        "avatar",
+        "caste",
+        "ritual",
+        "deity",
+        "temple",
+        "idol",
+        "priest",
+        "guru"
+      ],
+      "Y_used": [
+        "buddhist",
+        "buddhism",
+        "monk",
+        "monastic",
+        "meditation",
+        "nirvana",
+        "lotus",
+        "sutra",
+        "mantra",
+        "chant",
+        "monastery",
+        "pagoda",
+        "stupa",
+        "disciple",
+        "follower"
+      ],
+      "A_used": [
+        "pure",
+        "clean",
+        "pristine",
+        "spotless",
+        "immaculate",
+        "sanitary",
+        "hygienic",
+        "sterile",
+        "unpolluted",
+        "fresh",
+        "sparkling",
+        "radiant",
+        "wholesome",
+        "untainted",
+        "clear"
+      ],
+      "B_used": [
+        "dirty",
+        "filthy",
+        "grimy",
+        "soiled",
+        "stained",
+        "polluted",
+        "contaminated",
+        "tainted",
+        "unclean",
+        "impure",
+        "foul",
+        "noxious",
+        "toxic",
+        "hazardous",
+        "muck"
+      ]
+    },
+    "proposal": "People associate Hindus with purity more strongly than they associate Buddhists with purity. While both traditions are often stereotyped as spiritual or peaceful, a core doctrinal distinction lies in the centrality of ritual purity and pollution codes in Hinduism versus Buddhism's historical rejection of caste-based purity hierarchies. This association is novel because implicit measures of religion typically focus on violence or mysticism, overlooking how laypeople may absorb deep structural differences regarding social and ritual cleanliness. It is important because purity associations can drive subtle forms of social distancing and prejudice, and confirming this link would reveal whether public mental representations accurately reflect the theological divergence between these two major world religions.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "fc076204335e",
     "timestamp": "2026-06-16T04:34:13.227200+00:00",
     "schema_version": "autoresearch.v1",
