@@ -1,5 +1,111 @@
 [
   {
+    "id": "fc076204335e",
+    "timestamp": "2026-06-16T04:34:13.227200+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "creators vs preservers on arrogance vs humility",
+    "labels": {
+      "X": "creators",
+      "Y": "preservers",
+      "A": "arrogance",
+      "B": "humility"
+    },
+    "canonical_keys": {
+      "X": "creators",
+      "Y": "preservers",
+      "A": "arrogance",
+      "B": "humility"
+    },
+    "effect_size": -0.6394451281991439,
+    "p_value": 0.0873,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "creator",
+        "inventor",
+        "innovator",
+        "designer",
+        "maker",
+        "architect",
+        "artist",
+        "writer",
+        "producer",
+        "builder",
+        "developer",
+        "engineer",
+        "sculptor",
+        "painter",
+        "founder"
+      ],
+      "Y_used": [
+        "preserver",
+        "conservator",
+        "curator",
+        "guardian",
+        "steward",
+        "caretaker",
+        "maintainer",
+        "protector",
+        "defender",
+        "restorer",
+        "custodian",
+        "warden",
+        "archivist",
+        "librarian",
+        "monitor"
+      ],
+      "A_used": [
+        "arrogant",
+        "haughty",
+        "conceited",
+        "vain",
+        "cocky",
+        "boastful",
+        "proud",
+        "pompous",
+        "smug",
+        "overconfident",
+        "egotistical",
+        "narcissistic",
+        "imperious",
+        "lordly",
+        "domineering"
+      ],
+      "B_used": [
+        "humble",
+        "modest",
+        "meek",
+        "lowly",
+        "simple",
+        "plain",
+        "quiet",
+        "gentle",
+        "mild",
+        "timid",
+        "shy",
+        "bashful",
+        "docile",
+        "submissive",
+        "unassuming"
+      ]
+    },
+    "proposal": "People associate creators with arrogance more strongly than they associate preservers with arrogance. This differential implicit association reflects deep cultural narratives contrasting the hubris of the Promethean innovator who defies boundaries with the humility of the steward who maintains the status quo. Examining this bias is novel because it shifts focus from demographic stereotypes to archetypal roles relevant to contemporary debates about technological progress and environmental stewardship, revealing whether the public implicitly views creation as inherently transgressive or self-aggrandizing compared to preservation.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "85a0f175c3c3",
     "timestamp": "2026-06-16T03:04:41.250893+00:00",
     "schema_version": "autoresearch.v1",
