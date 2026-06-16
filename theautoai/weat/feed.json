@@ -1,5 +1,111 @@
 [
   {
+    "id": "88011416c254",
+    "timestamp": "2026-06-16T10:52:58.046619+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "travelers vs guides on vulnerability versus competence",
+    "labels": {
+      "X": "travelers",
+      "Y": "guides",
+      "A": "vulnerability",
+      "B": "competence"
+    },
+    "canonical_keys": {
+      "X": "travelers",
+      "Y": "guides",
+      "A": "vulnerability",
+      "B": "competence"
+    },
+    "effect_size": 0.8982943158292799,
+    "p_value": 0.01292,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "tourist",
+        "visitor",
+        "passenger",
+        "commuter",
+        "hiker",
+        "backpacker",
+        "wanderer",
+        "pilgrim",
+        "nomad",
+        "drifter",
+        "explorer",
+        "voyager",
+        "traveler",
+        "rambler",
+        "pedestrian"
+      ],
+      "Y_used": [
+        "guide",
+        "shepherd",
+        "navigator",
+        "pilot",
+        "captain",
+        "conductor",
+        "usher",
+        "escort",
+        "mentor",
+        "leader",
+        "instructor",
+        "coach",
+        "ranger",
+        "scout",
+        "ferryman"
+      ],
+      "A_used": [
+        "vulnerable",
+        "fragile",
+        "helpless",
+        "exposed",
+        "weak",
+        "timid",
+        "anxious",
+        "insecure",
+        "dependent",
+        "reliant",
+        "passive",
+        "lost",
+        "uncertain",
+        "hesitant",
+        "defenseless"
+      ],
+      "B_used": [
+        "competent",
+        "stable",
+        "expert",
+        "safe",
+        "strong",
+        "confident",
+        "secure",
+        "independent",
+        "capable",
+        "reliable",
+        "professional",
+        "skilled",
+        "knowledgeable",
+        "experienced",
+        "steady"
+      ]
+    },
+    "proposal": "People associate travelers with vulnerability more strongly than they associate guides with vulnerability. This differential association captures a latent dimension of competence and dependency that permeates contemporary discourse on mobility, tourism, and displacement, yet remains unexamined in implicit association research. While explicit narratives often celebrate travelers as adventurous or free, implicit cognition may link the category of travelers to fragility, disorientation, and reliance on external support, contrasting sharply with guides who are represented as navigators, experts, and stabilizers in uncertain environments. Confirming this association would reveal how the public mentally structures the relationship between movement and safety, suggesting that the act of traveling is implicitly coded as a state of exposure that requires the protective competence of a guide to mitigate.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "896a3ca6b259",
     "timestamp": "2026-06-16T06:22:52.925253+00:00",
     "schema_version": "autoresearch.v1",
