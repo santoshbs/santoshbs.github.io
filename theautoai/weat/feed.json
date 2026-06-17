@@ -1,5 +1,111 @@
 [
   {
+    "id": "e3ac61b80d53",
+    "timestamp": "2026-06-17T06:09:45.921447+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "activists vs diplomats on moral rigidity vs pragmatic nuance",
+    "labels": {
+      "X": "activists",
+      "Y": "diplomats",
+      "A": "moral absolutism",
+      "B": "pragmatic compromise"
+    },
+    "canonical_keys": {
+      "X": "activists",
+      "Y": "diplomats",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 0.9581029533403599,
+    "p_value": 0.00791,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "activist",
+        "protester",
+        "agitator",
+        "campaigner",
+        "demonstrator",
+        "revolutionary",
+        "reformer",
+        "rebel",
+        "insurgent",
+        "organizer",
+        "advocate",
+        "crusader",
+        "radical",
+        "dissident",
+        "marcher"
+      ],
+      "Y_used": [
+        "diplomat",
+        "envoy",
+        "ambassador",
+        "negotiator",
+        "mediator",
+        "emissary",
+        "consul",
+        "representative",
+        "delegate",
+        "statesman",
+        "secretary",
+        "officer",
+        "counselor",
+        "liaison",
+        "attache"
+      ],
+      "A_used": [
+        "absolute",
+        "rigid",
+        "unyielding",
+        "dogmatic",
+        "uncompromising",
+        "strict",
+        "inflexible",
+        "unalterable",
+        "fixed",
+        "dogma",
+        "principle",
+        "moral",
+        "ethical",
+        "pure",
+        "sacred"
+      ],
+      "B_used": [
+        "flexible",
+        "pragmatic",
+        "compromise",
+        "nuanced",
+        "balanced",
+        "moderate",
+        "adaptable",
+        "realistic",
+        "practical",
+        "negotiated",
+        "gray",
+        "middle",
+        "sensible",
+        "reasonable",
+        "compromising"
+      ]
+    },
+    "proposal": "people associate activists with moral absolutism more strongly than they associate diplomats with moral absolutism. This differential implicit association captures a cognitive shortcut whereby protest-oriented roles are mentally linked to uncompromising ethical clarity, whereas state-mediated roles are linked to flexible compromise. While political psychology has extensively examined explicit attitudes toward these groups, the implicit mapping of moral rigidity versus pragmatic nuance has not been systematically measured using associative paradigms. Probing this association is novel because it bypasses conscious endorsement of idealized roles to reveal how automatic cognition shapes public expectations of negotiability. It matters because entrenched implicit links to moral absolutism may fuel polarization, reduce public tolerance for diplomatic compromise, and hinder constructive dialogue between civil society and institutional actors.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "8c671be19ed9",
     "timestamp": "2026-06-17T01:48:17.070745+00:00",
     "schema_version": "autoresearch.v1",
