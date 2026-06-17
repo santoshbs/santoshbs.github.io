@@ -29,8 +29,8 @@
         "id": "17",
         "title": "Architecture & Engineering",
         "group": "engineering",
-        "refs": 357,
-        "signals": 357,
+        "refs": 359,
+        "signals": 359,
         "occupations": 42
       },
       {
@@ -69,8 +69,8 @@
         "id": "27",
         "title": "Arts, Design, Entertainment, Sports, & Media",
         "group": "arts & media",
-        "refs": 136,
-        "signals": 111,
+        "refs": 137,
+        "signals": 112,
         "occupations": 26
       },
       {
@@ -353,6 +353,11 @@
         "weight": 1
       },
       {
+        "source": "17",
+        "target": "27",
+        "weight": 3
+      },
+      {
         "source": "13",
         "target": "51",
         "weight": 3
@@ -401,11 +406,6 @@
         "source": "35",
         "target": "39",
         "weight": 1
-      },
-      {
-        "source": "17",
-        "target": "27",
-        "weight": 2
       },
       {
         "source": "19",
@@ -2401,9 +2401,9 @@
           "id": "17-1011.00",
           "title": "Architects, Except Landscape and Naval",
           "group": "engineering",
-          "refs": 10,
-          "revised": "2026-06-06",
-          "signals": 9
+          "refs": 11,
+          "revised": "2026-06-17",
+          "signals": 10
         },
         {
           "id": "17-1012.00",
@@ -2537,9 +2537,9 @@
           "id": "17-2112.01",
           "title": "Human Factors Engineers and Ergonomists",
           "group": "engineering",
-          "refs": 8,
-          "revised": "2026-04-15",
-          "signals": 7
+          "refs": 9,
+          "revised": "2026-06-17",
+          "signals": 8
         },
         {
           "id": "17-2112.02",
@@ -2754,6 +2754,11 @@
           "source": "17-2112.03",
           "target": "17-2161.00",
           "signal": "Electron Beam Welding: Unlocking a New Era for Heavy Section Nuclear Components"
+        },
+        {
+          "source": "17-1011.00",
+          "target": "17-2112.01",
+          "signal": "Moving Beyond Metrics Toward Neuroinclusive Daylighting"
         },
         {
           "source": "17-2199.06",
@@ -4116,9 +4121,9 @@
           "id": "27-1025.00",
           "title": "Interior Designers",
           "group": "arts & media",
-          "refs": 2,
-          "revised": "2026-06-04",
-          "signals": 1
+          "refs": 3,
+          "revised": "2026-06-17",
+          "signals": 2
         },
         {
           "id": "27-2011.00",
