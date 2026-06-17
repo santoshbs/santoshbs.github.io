@@ -1,5 +1,111 @@
 [
   {
+    "id": "112a79bcd975",
+    "timestamp": "2026-06-17T13:54:33.321094+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Madmen vs Sages on spontaneity versus deliberation",
+    "labels": {
+      "X": "Madmen",
+      "Y": "Sages",
+      "A": "spontaneity",
+      "B": "deliberation"
+    },
+    "canonical_keys": {
+      "X": "madmen",
+      "Y": "sages",
+      "A": "spontaneity",
+      "B": "deliberation"
+    },
+    "effect_size": 1.7110631378339953,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "madman",
+        "lunatic",
+        "psychopath",
+        "maniac",
+        "fanatic",
+        "berserker",
+        "crazy",
+        "insane",
+        "deranged",
+        "unhinged",
+        "manic",
+        "volatile",
+        "hysterical",
+        "irrational",
+        "psychopathic"
+      ],
+      "Y_used": [
+        "sage",
+        "philosopher",
+        "guru",
+        "oracle",
+        "scholar",
+        "thinker",
+        "mentor",
+        "advisor",
+        "professor",
+        "academic",
+        "intellectual",
+        "elder",
+        "monk",
+        "priest",
+        "saint"
+      ],
+      "A_used": [
+        "spontaneous",
+        "impulsive",
+        "impetuous",
+        "reckless",
+        "sudden",
+        "immediate",
+        "unplanned",
+        "impromptu",
+        "whimsical",
+        "flighty",
+        "capricious",
+        "wild",
+        "rash",
+        "arbitrary",
+        "hasty"
+      ],
+      "B_used": [
+        "deliberate",
+        "thoughtful",
+        "careful",
+        "measured",
+        "reflective",
+        "methodical",
+        "patient",
+        "steady",
+        "cautious",
+        "rational",
+        "logical",
+        "prudent",
+        "judicious",
+        "calculated",
+        "slow"
+      ]
+    },
+    "proposal": "People associate madmen with spontaneity more strongly than they associate sages with spontaneity. While both groups fall outside conventional social norms, madmen are stereotypically linked to impulsive, unfiltered, and unpredictable action, whereas sages are associated with deliberation, reflection, and measured wisdom. This distinction is novel because implicit bias research typically contrasts these archetypes on axes of rationality or intelligence, neglecting behavioral dimensions like spontaneity. Examining this association matters because it reveals how cultural narratives attribute specific agency styles to figures of madness versus wisdom, potentially shaping how impulsive behavior is interpreted or tolerated depending on the actor's perceived archetype.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "17147108f384",
     "timestamp": "2026-06-17T11:42:40.606557+00:00",
     "schema_version": "autoresearch.v1",
