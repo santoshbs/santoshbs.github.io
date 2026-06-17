@@ -1,5 +1,111 @@
 [
   {
+    "id": "17147108f384",
+    "timestamp": "2026-06-17T11:42:40.606557+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "judges vs legislators on Risk tolerance",
+    "labels": {
+      "X": "judges",
+      "Y": "legislators",
+      "A": "Caution",
+      "B": "Recklessness"
+    },
+    "canonical_keys": {
+      "X": "judges",
+      "Y": "legislators",
+      "A": "caution",
+      "B": "recklessness"
+    },
+    "effect_size": 0.39083803349420493,
+    "p_value": 0.30161,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "judge",
+        "justice",
+        "magistrate",
+        "jurist",
+        "arbitrator",
+        "adjudicator",
+        "referee",
+        "umpire",
+        "moderator",
+        "director",
+        "administrator",
+        "commissioner",
+        "chairman",
+        "officer",
+        "bailiff"
+      ],
+      "Y_used": [
+        "legislator",
+        "lawmaker",
+        "congressman",
+        "senator",
+        "representative",
+        "parliamentarian",
+        "deputy",
+        "delegate",
+        "councilor",
+        "councilman",
+        "alderman",
+        "assemblyman",
+        "politician",
+        "statesman",
+        "official"
+      ],
+      "A_used": [
+        "cautious",
+        "careful",
+        "prudent",
+        "deliberate",
+        "thoughtful",
+        "conservative",
+        "wary",
+        "guarded",
+        "hesitant",
+        "measured",
+        "patient",
+        "secure",
+        "safe",
+        "slow",
+        "steady"
+      ],
+      "B_used": [
+        "reckless",
+        "risky",
+        "hasty",
+        "rash",
+        "bold",
+        "daring",
+        "impulsive",
+        "opportunistic",
+        "fast",
+        "aggressive",
+        "audacious",
+        "wild",
+        "volatile",
+        "erratic",
+        "adventurous"
+      ]
+    },
+    "proposal": "People associate judges with caution more strongly than they associate legislators with caution. This implicit linkage stems from a pervasive cultural narrative that frames the judiciary as inherently deliberative, precedent-bound, and risk-averse, while casting lawmakers as opportunistic, fast-moving, and willing to trade stability for political gains. The association is novel because, although political science has extensively mapped explicit attitudes toward institutional legitimacy, no research has yet tested the automatic, subconscious coupling of these branches to risk tolerance. Measuring this bias matters because it likely shapes public patience: judicial delays may be implicitly rationalized as 'necessary care,' whereas legislative gridlock or rapid omnibus bills are instinctively read as either reckless or incompetent, ultimately influencing reform priorities and cross-branch accountability.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "21b39957031f",
     "timestamp": "2026-06-17T10:52:47.543862+00:00",
     "schema_version": "autoresearch.v1",
