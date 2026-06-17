@@ -1,5 +1,111 @@
 [
   {
+    "id": "7365cdc9a2b7",
+    "timestamp": "2026-06-17T16:18:43.626127+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "stewards vs harvesters on resource management orientation",
+    "labels": {
+      "X": "stewards",
+      "Y": "harvesters",
+      "A": "restraint",
+      "B": "extraction"
+    },
+    "canonical_keys": {
+      "X": "stewards",
+      "Y": "harvesters",
+      "A": "restraint",
+      "B": "extraction"
+    },
+    "effect_size": 1.7302070516183632,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "steward",
+        "caretaker",
+        "custodian",
+        "guardian",
+        "conservator",
+        "protector",
+        "manager",
+        "supervisor",
+        "overseer",
+        "keeper",
+        "warden",
+        "trustee",
+        "administrator",
+        "attendant",
+        "curator"
+      ],
+      "Y_used": [
+        "harvester",
+        "extractor",
+        "gatherer",
+        "collector",
+        "producer",
+        "reaper",
+        "forager",
+        "assembler",
+        "packer",
+        "miner",
+        "fabricator",
+        "cutter",
+        "picker",
+        "taker",
+        "seizer"
+      ],
+      "A_used": [
+        "restraint",
+        "conservation",
+        "preservation",
+        "limitation",
+        "maintenance",
+        "sustainability",
+        "caution",
+        "thrift",
+        "patience",
+        "moderation",
+        "saving",
+        "guarding",
+        "protecting",
+        "enduring",
+        "sparing"
+      ],
+      "B_used": [
+        "extraction",
+        "accumulation",
+        "yield",
+        "maximization",
+        "production",
+        "consumption",
+        "depletion",
+        "exploitation",
+        "gathering",
+        "taking",
+        "seizing",
+        "harvesting",
+        "exploiting",
+        "gaining",
+        "profiting"
+      ]
+    },
+    "proposal": "People associate stewards with restraint more strongly than they associate harvesters with restraint. Stewards are implicitly linked to conservation, long-term maintenance, and the ethical limitation of resource use to ensure future viability, whereas harvesters are associated with extraction, accumulation, and the maximization of immediate yield. This differential association is novel because existing research has examined conservationists versus industrialists or managers versus owners, but has not probed the implicit normative constraints embedded in the steward-versus-harvester dichotomy, which structures contemporary debates on environmental policy, economic growth, and intergenerational equity. Understanding this association is important because it reveals whether the public mentally binds the role of stewardship to self-imposed limits on action, potentially influencing how regulatory proposals are framed and received.",
+    "iterations": 3,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "6091e660d482",
     "timestamp": "2026-06-17T14:53:00.955988+00:00",
     "schema_version": "autoresearch.v1",
