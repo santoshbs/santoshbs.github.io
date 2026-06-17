@@ -1,5 +1,111 @@
 [
   {
+    "id": "1c1f96dee387",
+    "timestamp": "2026-06-17T09:52:03.296878+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "artists vs farmers on spontaneity versus routine",
+    "labels": {
+      "X": "artists",
+      "Y": "farmers",
+      "A": "spontaneity",
+      "B": "routine"
+    },
+    "canonical_keys": {
+      "X": "artists",
+      "Y": "farmers",
+      "A": "spontaneity",
+      "B": "routine"
+    },
+    "effect_size": 0.280185451686969,
+    "p_value": 0.46452,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "painter",
+        "sculptor",
+        "musician",
+        "poet",
+        "writer",
+        "dancer",
+        "actor",
+        "choreographer",
+        "designer",
+        "illustrator",
+        "photographer",
+        "composer",
+        "architect",
+        "animator",
+        "artist"
+      ],
+      "Y_used": [
+        "farmer",
+        "rancher",
+        "grower",
+        "planter",
+        "sower",
+        "reaper",
+        "gardener",
+        "horticulturist",
+        "agronomist",
+        "stockman",
+        "herdsman",
+        "dairyman",
+        "arborist",
+        "pastoralist",
+        "vintner"
+      ],
+      "A_used": [
+        "spontaneous",
+        "random",
+        "unpredictable",
+        "impromptu",
+        "erratic",
+        "volatile",
+        "whimsical",
+        "unscripted",
+        "unplanned",
+        "sudden",
+        "hasty",
+        "impulsive",
+        "unstructured",
+        "free",
+        "open"
+      ],
+      "B_used": [
+        "routine",
+        "habitual",
+        "scheduled",
+        "planned",
+        "methodical",
+        "systematic",
+        "orderly",
+        "predictable",
+        "regular",
+        "structured",
+        "disciplined",
+        "precise",
+        "rigid",
+        "strict",
+        "fixed"
+      ]
+    },
+    "proposal": "People associate artists with spontaneity more strongly than they associate farmers with spontaneity. This differential implicit association taps into deep-seated cultural narratives contrasting the muse-driven, unpredictable workflow of creative work with the cyclical, schedule-bound demands of agricultural labor. While explicit stereotypes about creativity and discipline are well-documented, implicit measures have not yet examined how people automatically link these broad occupational families to unplanned, in-the-moment action versus premeditated routine. Confirming this association would clarify how cultural archetypes of the bohemian and the agrarian shape automatic cognitive shortcuts regarding adaptability and impulse control. Such findings matter for understanding how we subconsciously attribute behavioral flexibility to different professional identities, influencing everything from institutional support to public perceptions of risk tolerance.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "e3ac61b80d53",
     "timestamp": "2026-06-17T06:09:45.921447+00:00",
     "schema_version": "autoresearch.v1",
