@@ -1,5 +1,115 @@
 [
   {
+    "id": "8c671be19ed9",
+    "timestamp": "2026-06-17T01:48:17.070745+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "celebrities vs teachers on Emotional performance vs Professional control",
+    "labels": {
+      "X": "celebrities",
+      "Y": "teachers",
+      "A": "Performative Vulnerability",
+      "B": "Professional Composure"
+    },
+    "canonical_keys": {
+      "X": "celebrities",
+      "Y": "teachers",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 1.5306559388053593,
+    "p_value": 1e-05,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 17,
+      "B": 17
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "celebrity",
+        "star",
+        "actor",
+        "actress",
+        "idol",
+        "diva",
+        "personality",
+        "model",
+        "entertainer",
+        "influencer",
+        "megastar",
+        "icon",
+        "superstar",
+        "starlet",
+        "heartthrob"
+      ],
+      "Y_used": [
+        "teacher",
+        "educator",
+        "professor",
+        "instructor",
+        "tutor",
+        "lecturer",
+        "mentor",
+        "pedagogue",
+        "academic",
+        "scholar",
+        "faculty",
+        "coach",
+        "dean",
+        "trainer",
+        "principal"
+      ],
+      "A_used": [
+        "vulnerability",
+        "exposure",
+        "rawness",
+        "emotion",
+        "drama",
+        "conflict",
+        "struggle",
+        "honesty",
+        "confession",
+        "tears",
+        "fragility",
+        "insecurity",
+        "openness",
+        "transparency",
+        "intimacy",
+        "weakness",
+        "breakdown"
+      ],
+      "B_used": [
+        "authority",
+        "stability",
+        "professionalism",
+        "composure",
+        "formality",
+        "control",
+        "reserve",
+        "seriousness",
+        "order",
+        "discipline",
+        "dignity",
+        "calm",
+        "regulation",
+        "standard",
+        "protocol",
+        "distance",
+        "detachment"
+      ]
+    },
+    "proposal": "People associate celebrities with performative vulnerability more strongly than they associate teachers with performative vulnerability. While contemporary media discourse increasingly rewards high-profile figures for publicly displaying emotional rawness, strategic insecurity, and curated personal struggles as tools for audience engagement and brand loyalty, educators remain implicitly categorized through lenses of professional composure, institutional stability, and detached authority. This differential association has not been systematically examined despite its growing relevance to how legitimacy, empathy, and relatability are constructed in digital public spheres. Understanding this split matters because it reveals how emotional labor is increasingly commodified in entertainment and social media ecosystems while being systematically suppressed in traditional knowledge-transmission roles, potentially reshaping public expectations of both visibility and mentorship.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "326deb0b1249",
     "timestamp": "2026-06-16T11:46:30.327264+00:00",
     "schema_version": "autoresearch.v1",
