@@ -1,5 +1,111 @@
 [
   {
+    "id": "0831ec263c48",
+    "timestamp": "2026-06-17T19:53:18.694195+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "rulers vs rebels on Hypocrisy vs Authenticity",
+    "labels": {
+      "X": "rulers",
+      "Y": "rebels",
+      "A": "Hypocrisy",
+      "B": "Authenticity"
+    },
+    "canonical_keys": {
+      "X": "rulers",
+      "Y": "rebels",
+      "A": "hypocrisy",
+      "B": "authenticity"
+    },
+    "effect_size": -1.1146071924470256,
+    "p_value": 0.00134,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "ruler",
+        "king",
+        "queen",
+        "emperor",
+        "president",
+        "dictator",
+        "monarch",
+        "governor",
+        "leader",
+        "official",
+        "politician",
+        "senator",
+        "mayor",
+        "magistrate",
+        "sovereign"
+      ],
+      "Y_used": [
+        "rebel",
+        "revolutionary",
+        "insurgent",
+        "activist",
+        "dissident",
+        "mutineer",
+        "anarchist",
+        "partisan",
+        "guerrilla",
+        "protester",
+        "agitator",
+        "insurrectionist",
+        "rioter",
+        "resister",
+        "renegade"
+      ],
+      "A_used": [
+        "hypocrite",
+        "duplicitous",
+        "deceptive",
+        "fake",
+        "disingenuous",
+        "insincere",
+        "treacherous",
+        "deceitful",
+        "dishonest",
+        "fraudulent",
+        "sham",
+        "counterfeit",
+        "pretentious",
+        "deceit",
+        "falsehood"
+      ],
+      "B_used": [
+        "sincere",
+        "honest",
+        "authentic",
+        "genuine",
+        "transparent",
+        "truthful",
+        "candid",
+        "open",
+        "direct",
+        "straightforward",
+        "earnest",
+        "real",
+        "true",
+        "faithful",
+        "loyal"
+      ]
+    },
+    "proposal": "People associate rulers with hypocrisy more strongly than they associate rebels with hypocrisy. This differential association is novel because implicit bias research has primarily examined how rebels are stereotyped as dangerous, angry, or violent, and rulers as authoritative, competent, or orderly, while largely overlooking moral dimensions related to authenticity, trust, and duplicity. It is interesting because it highlights a potential asymmetry in how public discourse frames moral failure: rebels are often culturally constructed as transparent in their opposition or motivations (even if destructive), whereas rulers are frequently depicted as concealing self-interest or corruption behind a facade of public service and benevolence. Confirming this association would be important for understanding political legitimacy and the roots of anti-establishment sentiment, as an implicit link between institutional authority figures and hypocrisy may help explain persistent public distrust in governments and organizations, even when those entities deliver tangible benefits.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "7365cdc9a2b7",
     "timestamp": "2026-06-17T16:18:43.626127+00:00",
     "schema_version": "autoresearch.v1",
