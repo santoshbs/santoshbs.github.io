@@ -1,5 +1,111 @@
 [
   {
+    "id": "ca4ff3fe79ea",
+    "timestamp": "2026-06-17T23:21:17.795769+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "scientists vs explorers on emotional and physical distance versus involvement",
+    "labels": {
+      "X": "scientists",
+      "Y": "explorers",
+      "A": "detachment",
+      "B": "engagement"
+    },
+    "canonical_keys": {
+      "X": "scientists",
+      "Y": "explorers",
+      "A": "detachment",
+      "B": "engagement"
+    },
+    "effect_size": -0.06113444925088657,
+    "p_value": 0.87254,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "scientist",
+        "researcher",
+        "academic",
+        "professor",
+        "scholar",
+        "analyst",
+        "physicist",
+        "chemist",
+        "biologist",
+        "astronomer",
+        "geologist",
+        "mathematician",
+        "clinician",
+        "physician",
+        "doctor"
+      ],
+      "Y_used": [
+        "explorer",
+        "adventurer",
+        "pioneer",
+        "trailblazer",
+        "scout",
+        "ranger",
+        "hiker",
+        "climber",
+        "voyager",
+        "navigator",
+        "pathfinder",
+        "backpacker",
+        "trekker",
+        "mountaineer",
+        "globetrotter"
+      ],
+      "A_used": [
+        "detached",
+        "distant",
+        "remote",
+        "separate",
+        "isolated",
+        "objective",
+        "neutral",
+        "impartial",
+        "unbiased",
+        "dispassionate",
+        "aloof",
+        "cold",
+        "unemotional",
+        "abstract",
+        "analytical"
+      ],
+      "B_used": [
+        "engaged",
+        "involved",
+        "immersed",
+        "intimate",
+        "personal",
+        "experiential",
+        "participatory",
+        "embodied",
+        "immersive",
+        "enthusiastic",
+        "passionate",
+        "interactive",
+        "direct",
+        "active",
+        "dynamic"
+      ]
+    },
+    "proposal": "People associate scientists with detachment more strongly than they associate explorers with detachment. While both categories engage with the unknown, scientists are culturally framed as objective observers who maintain distance from their subjects to ensure rigor and neutrality, whereas explorers are depicted as adventurers who physically immerse themselves in hostile or unfamiliar environments to forge new paths. Examining this association reveals whether the public mental representation of science emphasizes emotional or physical distance as a virtue of knowledge production, contrasting with the embodied risk-taking associated with exploration. This distinction matters for understanding how society values different modes of inquiry and whether scientific authority is partly constructed through an implicit association with disengagement from the lived experience of the world being studied.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "3a876f981b0c",
     "timestamp": "2026-06-17T22:47:53.861192+00:00",
     "schema_version": "autoresearch.v1",
