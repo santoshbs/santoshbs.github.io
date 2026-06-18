@@ -1,5 +1,111 @@
 [
   {
+    "id": "966e02daa7e1",
+    "timestamp": "2026-06-18T03:22:19.896471+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "workers vs aristocrats on authenticity versus artifice",
+    "labels": {
+      "X": "workers",
+      "Y": "aristocrats",
+      "A": "authenticity",
+      "B": "artifice"
+    },
+    "canonical_keys": {
+      "X": "workers",
+      "Y": "aristocrats",
+      "A": "authenticity",
+      "B": "artifice"
+    },
+    "effect_size": 1.1248689518366333,
+    "p_value": 0.00111,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "worker",
+        "laborer",
+        "mechanic",
+        "plumber",
+        "carpenter",
+        "mason",
+        "miner",
+        "farmer",
+        "cook",
+        "janitor",
+        "clerk",
+        "employee",
+        "servant",
+        "operator",
+        "technician"
+      ],
+      "Y_used": [
+        "aristocrat",
+        "noble",
+        "lord",
+        "duke",
+        "prince",
+        "king",
+        "queen",
+        "monarch",
+        "baron",
+        "count",
+        "earl",
+        "viscount",
+        "patrician",
+        "nobleman",
+        "noblewoman"
+      ],
+      "A_used": [
+        "authentic",
+        "genuine",
+        "real",
+        "true",
+        "honest",
+        "sincere",
+        "natural",
+        "pure",
+        "original",
+        "frank",
+        "open",
+        "transparent",
+        "reliable",
+        "trustworthy",
+        "dependable"
+      ],
+      "B_used": [
+        "artificial",
+        "fake",
+        "false",
+        "pretentious",
+        "phony",
+        "insincere",
+        "superficial",
+        "contrived",
+        "affected",
+        "calculated",
+        "staged",
+        "manufactured",
+        "synthetic",
+        "imitation",
+        "sham"
+      ]
+    },
+    "proposal": "People associate workers with authenticity more strongly than they associate aristocrats with authenticity. This proposal examines whether pervasive cultural narratives celebrating the 'common man' and criticizing elite artifice have forged an implicit link between working-class actors and genuine existence. It is novel because class-based implicit association research has predominantly utilized warmth and competence dimensions, neglecting authenticity as a distinct axis of social perception. Understanding this association is important because it may reveal how implicit biases shape public reactions to populist rhetoric and influence the perceived legitimacy of different social actors in political and economic discourse.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "ca4ff3fe79ea",
     "timestamp": "2026-06-17T23:21:17.795769+00:00",
     "schema_version": "autoresearch.v1",
