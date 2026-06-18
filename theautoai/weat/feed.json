@@ -1,5 +1,111 @@
 [
   {
+    "id": "c074378f7aff",
+    "timestamp": "2026-06-18T09:27:29.431240+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "consumers vs producers on ethical burden vs freedom",
+    "labels": {
+      "X": "consumers",
+      "Y": "producers",
+      "A": "ethical burden",
+      "B": "freedom"
+    },
+    "canonical_keys": {
+      "X": "consumers",
+      "Y": "producers",
+      "A": "",
+      "B": "freedom"
+    },
+    "effect_size": 0.06176875245832897,
+    "p_value": 0.87143,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "consumer",
+        "shopper",
+        "buyer",
+        "purchaser",
+        "client",
+        "patron",
+        "customer",
+        "user",
+        "subscriber",
+        "audience",
+        "public",
+        "spectator",
+        "guest",
+        "diner",
+        "visitor"
+      ],
+      "Y_used": [
+        "producer",
+        "maker",
+        "manufacturer",
+        "creator",
+        "fabricator",
+        "generator",
+        "builder",
+        "designer",
+        "crafter",
+        "artisan",
+        "worker",
+        "laborer",
+        "employer",
+        "firm",
+        "company"
+      ],
+      "A_used": [
+        "burden",
+        "guilt",
+        "responsibility",
+        "weight",
+        "accountability",
+        "duty",
+        "blame",
+        "fault",
+        "conscience",
+        "scrutiny",
+        "pressure",
+        "obligation",
+        "remorse",
+        "penalty",
+        "cost"
+      ],
+      "B_used": [
+        "freedom",
+        "lightness",
+        "ease",
+        "relief",
+        "liberty",
+        "leisure",
+        "comfort",
+        "joy",
+        "pleasure",
+        "fun",
+        "carefree",
+        "simple",
+        "innocent",
+        "release",
+        "peace"
+      ]
+    },
+    "proposal": "People associate consumers with ethical burden more strongly than they associate producers with ethical burden. This differential reflects the cultural rise of conscious consumerism, which implicitly frames purchasing decisions as moral acts that validate or condemn supply chains, thereby transferring systemic responsibility onto the buyer. Examining this implicit association is novel because existing research focuses on explicit moral reasoning or regulatory attitudes, leaving the automatic cognitive linkage between identity and ethical weight unexplored. Confirming this bias would reveal how market discourse mentally redistributes accountability, potentially absolving producers of automatic moral scrutiny while overloading consumers with implicit guilt.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "17a229a66440",
     "timestamp": "2026-06-18T04:57:38.342016+00:00",
     "schema_version": "autoresearch.v1",
