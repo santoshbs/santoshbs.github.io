@@ -1,5 +1,111 @@
 [
   {
+    "id": "92256f191adc",
+    "timestamp": "2026-06-18T12:30:48.130516+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Ascetics vs Hedonists on Perceived moral trust and reliability",
+    "labels": {
+      "X": "Ascetics",
+      "Y": "Hedonists",
+      "A": "Trustworthiness",
+      "B": "Untrustworthiness"
+    },
+    "canonical_keys": {
+      "X": "ascetics",
+      "Y": "hedonists",
+      "A": "trustworthiness",
+      "B": "untrustworthiness"
+    },
+    "effect_size": 1.310637924827788,
+    "p_value": 0.00011,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "monk",
+        "nun",
+        "friar",
+        "hermit",
+        "penitent",
+        "devotee",
+        "recluse",
+        "saint",
+        "zealot",
+        "puritan",
+        "teetotaler",
+        "pilgrim",
+        "abbot",
+        "novice",
+        "anchorite"
+      ],
+      "Y_used": [
+        "hedonist",
+        "libertine",
+        "sensualist",
+        "carouser",
+        "reveler",
+        "partygoer",
+        "playboy",
+        "drunkard",
+        "glutton",
+        "epicure",
+        "decadent",
+        "dissolute",
+        "voluptuary",
+        "debauchee",
+        "sensual"
+      ],
+      "A_used": [
+        "trustworthy",
+        "honest",
+        "reliable",
+        "faithful",
+        "loyal",
+        "truthful",
+        "sincere",
+        "virtuous",
+        "moral",
+        "ethical",
+        "dependable",
+        "genuine",
+        "credible",
+        "decent",
+        "righteous"
+      ],
+      "B_used": [
+        "untrustworthy",
+        "dishonest",
+        "unreliable",
+        "faithless",
+        "disloyal",
+        "deceitful",
+        "insincere",
+        "immoral",
+        "unethical",
+        "deceptive",
+        "corrupt",
+        "treacherous",
+        "shady",
+        "fraudulent",
+        "duplicitous"
+      ]
+    },
+    "proposal": "People associate Ascetics with trustworthiness more strongly than they associate Hedonists with trustworthiness. This differential association taps into a pervasive cultural heuristic that conflates self-denial and discipline with moral integrity and reliability, while framing the pursuit of pleasure as indicative of impulsivity, vanity, or self-centeredness. Although stereotypes regarding specific religious orders or professional codes have been studied, the implicit link between these broader lifestyle archetypes—defined by their orientation toward restraint versus indulgence—and the core character trait of trustworthiness has not been systematically examined. Validating this association would illuminate how non-essential behavioral signals of temperance or excess automatically bias character judgments, which matters for understanding public reactions to leaders, activists, or organizational members who perform either ascetic rigor or hedonistic openness.",
+    "iterations": 3,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "c074378f7aff",
     "timestamp": "2026-06-18T09:27:29.431240+00:00",
     "schema_version": "autoresearch.v1",
