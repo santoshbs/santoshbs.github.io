@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "batches_seen": 777,
-  "loans_seen": 12432,
-  "last_updated": "2026-06-18T17:25:25.186829+00:00",
+  "batches_seen": 778,
+  "loans_seen": 12448,
+  "last_updated": "2026-06-18T18:19:44.844034+00:00",
   "watching_for": "",
   "claims": {
     "female-technical-specificity-faster": {
@@ -11,13 +11,13 @@
       "title": "Female borrowers who list specific products or goals beyond family welfare fund faster.",
       "body": "Pitches from women that detail specific business inputs, professional skills, or concrete objectives beyond general family security accelerate funding.",
       "supporting_loans": [],
-      "confidence": 0.88,
+      "confidence": 0.73,
       "first_seen_batch": 1,
-      "last_updated_batch": 777,
+      "last_updated_batch": 778,
       "confidence_history": [
         [
-          777,
-          0.88
+          778,
+          0.73
         ]
       ]
     },
@@ -29,10 +29,10 @@
       "supporting_loans": [],
       "confidence": 1.0,
       "first_seen_batch": 1,
-      "last_updated_batch": 777,
+      "last_updated_batch": 778,
       "confidence_history": [
         [
-          777,
+          778,
           1.0
         ]
       ]
@@ -45,10 +45,10 @@
       "supporting_loans": [],
       "confidence": 0.85,
       "first_seen_batch": 1,
-      "last_updated_batch": 777,
+      "last_updated_batch": 778,
       "confidence_history": [
         [
-          777,
+          778,
           0.85
         ]
       ]
@@ -60,11 +60,11 @@
       "body": "Pitches from women that utilize generic template language, such as standard greetings or boilerplate phrasing about inspiring others, are associated with slower funding speeds.",
       "supporting_loans": [],
       "confidence": 0.75,
-      "first_seen_batch": 533,
-      "last_updated_batch": 777,
+      "first_seen_batch": 532,
+      "last_updated_batch": 778,
       "confidence_history": [
         [
-          777,
+          778,
           0.75
         ]
       ]
@@ -76,28 +76,12 @@
       "body": "The inclusion of a specific geographic location, such as a town, city, or city center, is associated with increased funding speed for women.",
       "supporting_loans": [],
       "confidence": 0.73,
-      "first_seen_batch": 709,
-      "last_updated_batch": 777,
+      "first_seen_batch": 708,
+      "last_updated_batch": 778,
       "confidence_history": [
         [
-          777,
+          778,
           0.73
-        ]
-      ]
-    },
-    "female-gratitude-slower": {
-      "id": "female-gratitude-slower",
-      "bucket": "gendered_women",
-      "title": "Female borrowers who include explicit gratitude or thanks to lenders fund more slowly.",
-      "body": "The inclusion of gratitude markers or expressions of thanks to the lenders in the pitch text is associated with slower funding speeds for women.",
-      "supporting_loans": [],
-      "confidence": 0.57,
-      "first_seen_batch": 739,
-      "last_updated_batch": 777,
-      "confidence_history": [
-        [
-          777,
-          0.57
         ]
       ]
     },
@@ -108,11 +92,11 @@
       "body": "Pitches from women that explicitly state the intention to build up savings are associated with increased funding speed.",
       "supporting_loans": [],
       "confidence": 0.62,
-      "first_seen_batch": 753,
-      "last_updated_batch": 777,
+      "first_seen_batch": 752,
+      "last_updated_batch": 778,
       "confidence_history": [
         [
-          777,
+          778,
           0.62
         ]
       ]
@@ -124,12 +108,28 @@
       "body": "Pitches from women that explicitly reference previous successful loan cycles with NWTF are associated with increased funding speed.",
       "supporting_loans": [],
       "confidence": 0.6,
-      "first_seen_batch": 777,
-      "last_updated_batch": 777,
+      "first_seen_batch": 776,
+      "last_updated_batch": 778,
       "confidence_history": [
         [
-          777,
+          778,
           0.6
+        ]
+      ]
+    },
+    "verbosity-slower-general": {
+      "id": "verbosity-slower-general",
+      "bucket": "slower",
+      "title": "Higher verbosity and excessive personal detail predict slower funding regardless of gender.",
+      "body": "Pitches that are significantly longer or contain excessive personal narrative tend to fund more slowly for both men and women.",
+      "supporting_loans": [],
+      "confidence": 0.62,
+      "first_seen_batch": 778,
+      "last_updated_batch": 778,
+      "confidence_history": [
+        [
+          778,
+          0.62
         ]
       ]
     }
@@ -138,62 +138,55 @@
     "gender-technicality-interaction": {
       "id": "gender-technicality-interaction",
       "body": "Technical business specificity may accelerate funding for women but decelerate it for men.",
-      "first_seen_batch": 683
+      "first_seen_batch": 682
     },
     "female-technical-logistics-slower": {
       "id": "female-technical-logistics-slower",
       "body": "Female borrowers who provide specific logistical or technical details, such as land size or transport, may fund more slowly.",
-      "first_seen_batch": 705
+      "first_seen_batch": 704
     },
     "female-smartphone-slower": {
       "id": "female-smartphone-slower",
       "body": "Female borrowers requesting loans specifically for the purchase of a smartphone may fund more slowly.",
-      "first_seen_batch": 721
+      "first_seen_batch": 720
     },
     "female-child-photo-id-slower": {
       "id": "female-child-photo-id-slower",
       "body": "Female borrowers who include notes identifying the children in their photos may fund more slowly.",
-      "first_seen_batch": 721
+      "first_seen_batch": 720
     },
     "male-verbosity-slower": {
       "id": "male-verbosity-slower",
       "body": "Male borrowers who write lengthier and more detailed pitches fund more slowly.",
-      "first_seen_batch": 735
+      "first_seen_batch": 734
     },
     "female-land-acquisition-faster": {
       "id": "female-land-acquisition-faster",
       "body": "Female borrowers who mention the concrete goal of buying a plot of land may fund faster.",
-      "first_seen_batch": 739
-    },
-    "verbosity-slower-general": {
-      "id": "verbosity-slower-general",
-      "body": "Higher verbosity and excessive personal detail may predict slower funding regardless of gender.",
-      "first_seen_batch": 767
+      "first_seen_batch": 738
     },
     "female-business-success-faster": {
       "id": "female-business-success-faster",
       "body": "Female borrowers who emphasize that their business is currently doing well or is being sustained fund faster.",
-      "first_seen_batch": 775
+      "first_seen_batch": 774
     },
     "female-college-goal-faster": {
       "id": "female-college-goal-faster",
       "body": "Female borrowers who specify the goal of sending children to college may fund faster.",
-      "first_seen_batch": 777
+      "first_seen_batch": 776
     },
-    "female-nwtf-history-faster-puzzle": {
-      "id": "female-nwtf-history-faster-puzzle",
-      "body": "Female borrowers who mention previous loans from NWTF may fund faster.",
-      "first_seen_batch": 772
+    "female-technical-training-slower": {
+      "id": "female-technical-training-slower",
+      "body": "Female borrowers who list specific technical skills or training programs may fund more slowly.",
+      "first_seen_batch": 778
+    },
+    "loan-amounts-faster-female": {
+      "id": "loan-amounts-faster-female",
+      "body": "Mentioning specific loan amounts in local currency (PHP) may accelerate funding for women.",
+      "first_seen_batch": 778
     }
   },
   "retired": {
-    "loan-details-faster": {
-      "id": "loan-details-faster",
-      "title": "Pitches that include specific loan details, such as the lending partner and the loan amount in local currency, fund faster regardless of gender.",
-      "retrospective": "Auto-retired: confidence fell below 0.35 after observation that local currency amounts were present in all slower female pitches.",
-      "retired_batch": 764,
-      "was_believed_batches": 0
-    },
     "male-family-focus-faster": {
       "id": "male-family-focus-faster",
       "title": "Male borrowers who emphasize family quality of life fund faster than those who use technical terminology.",
@@ -255,6 +248,13 @@
       "title": "Providing precise ages for children in the pitch text is associated with increased funding speed for women.",
       "retrospective": "Retired to make room for promoted NWTF claim.",
       "retired_batch": 777,
+      "was_believed_batches": 0
+    },
+    "female-gratitude-slower": {
+      "id": "female-gratitude-slower",
+      "title": "The inclusion of gratitude markers or expressions of thanks to the lenders in the pitch text is associated with slower funding speeds for women.",
+      "retrospective": "Retired to make room for promoted verbosity claim.",
+      "retired_batch": 778,
       "was_believed_batches": 0
     }
   }
