@@ -1,5 +1,111 @@
 [
   {
+    "id": "5af9683189f6",
+    "timestamp": "2026-06-18T20:52:35.637942+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Hermits vs Vagabonds on Spiritual Virtue vs Moral Deviance",
+    "labels": {
+      "X": "Hermits",
+      "Y": "Vagabonds",
+      "A": "Piety",
+      "B": "Sin"
+    },
+    "canonical_keys": {
+      "X": "hermits",
+      "Y": "vagabonds",
+      "A": "piety",
+      "B": "sin"
+    },
+    "effect_size": 1.5944418977580834,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "hermit",
+        "monk",
+        "ascetic",
+        "recluse",
+        "friar",
+        "novice",
+        "mystic",
+        "prophet",
+        "sage",
+        "elder",
+        "yogi",
+        "dervish",
+        "fakir",
+        "anchorite",
+        "saint"
+      ],
+      "Y_used": [
+        "vagabond",
+        "hobo",
+        "tramp",
+        "drifter",
+        "vagrant",
+        "bum",
+        "wanderer",
+        "nomad",
+        "rover",
+        "rogue",
+        "outlaw",
+        "renegade",
+        "beggar",
+        "homeless",
+        "wayfarer"
+      ],
+      "A_used": [
+        "pious",
+        "holy",
+        "sacred",
+        "divine",
+        "devout",
+        "spiritual",
+        "religious",
+        "godly",
+        "righteous",
+        "blessed",
+        "saintly",
+        "virtuous",
+        "pure",
+        "chaste",
+        "hallowed"
+      ],
+      "B_used": [
+        "sinful",
+        "wicked",
+        "evil",
+        "immoral",
+        "profane",
+        "unholy",
+        "depraved",
+        "corrupt",
+        "vile",
+        "sinner",
+        "heathen",
+        "pagan",
+        "heretic",
+        "villain",
+        "wretch"
+      ]
+    },
+    "proposal": "People associate Hermits with piety more strongly than they associate Vagabonds with piety. Both categories involve withdrawal from mainstream society, yet Hermits are often culturally framed as intentional spiritual seekers, whereas Vagabonds are frequently stigmatized as aimless or socially deviant wanderers. This differential association reveals how implicit evaluations of marginality depend on perceived intent and purpose, distinguishing between romanticized asceticism and pathologized drift. Examining this axis is novel and important for understanding how public discourse moralizes different forms of social disengagement.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "108aa7b14265",
     "timestamp": "2026-06-18T19:59:16.333370+00:00",
     "schema_version": "autoresearch.v1",
