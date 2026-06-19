@@ -1,5 +1,111 @@
 [
   {
+    "id": "3058daf03cd5",
+    "timestamp": "2026-06-19T05:31:04.868589+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Observers vs Advocates on neutrality vs partisanship",
+    "labels": {
+      "X": "Observers",
+      "Y": "Advocates",
+      "A": "neutrality",
+      "B": "partisanship"
+    },
+    "canonical_keys": {
+      "X": "observers",
+      "Y": "advocates",
+      "A": "neutrality",
+      "B": "partisanship"
+    },
+    "effect_size": 1.6161030385223263,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "observer",
+        "witness",
+        "spectator",
+        "bystander",
+        "onlooker",
+        "viewer",
+        "auditor",
+        "evaluator",
+        "judge",
+        "referee",
+        "umpire",
+        "monitor",
+        "inspector",
+        "assessor",
+        "reviewer"
+      ],
+      "Y_used": [
+        "advocate",
+        "supporter",
+        "promoter",
+        "campaigner",
+        "lobbyist",
+        "activist",
+        "backer",
+        "champion",
+        "defender",
+        "proponent",
+        "booster",
+        "sponsor",
+        "patron",
+        "agent",
+        "representative"
+      ],
+      "A_used": [
+        "neutral",
+        "impartial",
+        "objective",
+        "unbiased",
+        "fair",
+        "balanced",
+        "detached",
+        "disinterested",
+        "unprejudiced",
+        "nonpartisan",
+        "dispassionate",
+        "unemotional",
+        "evenhanded",
+        "judicious",
+        "rational"
+      ],
+      "B_used": [
+        "partial",
+        "biased",
+        "subjective",
+        "unfair",
+        "imbalanced",
+        "emotional",
+        "passionate",
+        "zealous",
+        "fervent",
+        "ardent",
+        "aggressive",
+        "assertive",
+        "forceful",
+        "domineering",
+        "controlling"
+      ]
+    },
+    "proposal": "People associate observers with neutrality more strongly than they associate advocates with neutrality. This differential implicit association is novel because, although legal, scientific, and journalistic norms explicitly demand neutrality from observers and prescribe partisanship for advocates, research has not tested whether these role-based prescriptions have translated into automatic, implicit cognitive associations. Examining this matters because it illuminates the extent to which the 'objective observer' is an internalized mental prototype compared to the 'engaged advocate,' shedding light on how epistemic trust and perceived bias are automatically distributed across different social roles.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "cc04384c3f41",
     "timestamp": "2026-06-19T01:16:35.063188+00:00",
     "schema_version": "autoresearch.v1",
