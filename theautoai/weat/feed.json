@@ -1,5 +1,111 @@
 [
   {
+    "id": "53ce1bd814e9",
+    "timestamp": "2026-06-19T00:32:15.339864+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "journalists vs historians on temporal orientation",
+    "labels": {
+      "X": "journalists",
+      "Y": "historians",
+      "A": "immediacy",
+      "B": "retrospection"
+    },
+    "canonical_keys": {
+      "X": "journalists",
+      "Y": "historians",
+      "A": "immediacy",
+      "B": "retrospection"
+    },
+    "effect_size": 0.9963888205227409,
+    "p_value": 0.00498,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "journalist",
+        "reporter",
+        "correspondent",
+        "anchor",
+        "writer",
+        "editor",
+        "photographer",
+        "columnist",
+        "stringer",
+        "newscaster",
+        "commentator",
+        "broadcaster",
+        "newsman",
+        "newsreader",
+        "newswriter"
+      ],
+      "Y_used": [
+        "historian",
+        "scholar",
+        "researcher",
+        "archivist",
+        "curator",
+        "antiquarian",
+        "classicist",
+        "archaeologist",
+        "genealogist",
+        "biographer",
+        "chronicler",
+        "professor",
+        "teacher",
+        "analyst",
+        "academic"
+      ],
+      "A_used": [
+        "immediate",
+        "urgent",
+        "current",
+        "present",
+        "breaking",
+        "live",
+        "instant",
+        "fresh",
+        "now",
+        "today",
+        "rapid",
+        "quick",
+        "prompt",
+        "swift",
+        "hasty"
+      ],
+      "B_used": [
+        "past",
+        "ancient",
+        "old",
+        "former",
+        "bygone",
+        "antique",
+        "traditional",
+        "retrospective",
+        "previous",
+        "early",
+        "primitive",
+        "medieval",
+        "vintage",
+        "archaic",
+        "distant"
+      ]
+    },
+    "proposal": "People associate journalists with immediacy more strongly than they associate historians with immediacy. This differential implicit association reflects a deep-seated cognitive framing where real-time reporting is mentally linked to temporal urgency, fragmentation, and present-focused attention, while historical scholarship is tied to retrospection, synthesis, and long-term perspective. Examining this bias is novel because implicit association research rarely captures temporal orientation as a latent evaluative dimension linking occupational identities. It matters because this unconscious temporal split shapes public epistemic trust, influencing how audiences weigh breaking news against historical context during crises, and revealing whether digital acceleration has hardened these categorical divides in everyday cognition.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "182b2f907cc6",
     "timestamp": "2026-06-18T22:28:24.263520+00:00",
     "schema_version": "autoresearch.v1",
