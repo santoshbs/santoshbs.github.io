@@ -1,5 +1,111 @@
 [
   {
+    "id": "f9cb20c7bae6",
+    "timestamp": "2026-06-19T08:58:11.893831+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "farmers vs herders on control vs adaptation",
+    "labels": {
+      "X": "farmers",
+      "Y": "herders",
+      "A": "control",
+      "B": "adaptation"
+    },
+    "canonical_keys": {
+      "X": "farmers",
+      "Y": "herders",
+      "A": "control",
+      "B": "adaptation"
+    },
+    "effect_size": 1.534508223406182,
+    "p_value": 1e-05,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "farmer",
+        "farming",
+        "agriculture",
+        "agrarian",
+        "planter",
+        "tiller",
+        "sower",
+        "plowman",
+        "harvester",
+        "reaper",
+        "cultivator",
+        "grower",
+        "peasant",
+        "yeoman",
+        "husbandman"
+      ],
+      "Y_used": [
+        "herder",
+        "herding",
+        "shepherd",
+        "cowboy",
+        "drover",
+        "rustler",
+        "pastoralist",
+        "grazier",
+        "stockman",
+        "nomad",
+        "rancher",
+        "cowhand",
+        "cowpoke",
+        "herdsman",
+        "vaquero"
+      ],
+      "A_used": [
+        "control",
+        "dominate",
+        "master",
+        "order",
+        "rigid",
+        "fixed",
+        "plan",
+        "structure",
+        "stable",
+        "predict",
+        "manage",
+        "command",
+        "rule",
+        "enforce",
+        "strict"
+      ],
+      "B_used": [
+        "adapt",
+        "flexible",
+        "mobile",
+        "fluid",
+        "change",
+        "vary",
+        "shift",
+        "drift",
+        "wander",
+        "roam",
+        "dynamic",
+        "responsive",
+        "agile",
+        "nomadic",
+        "mutable"
+      ]
+    },
+    "proposal": "People associate farmers with environmental control more strongly than they associate herders with environmental control. This differential association stems from cultural narratives that frame farming as a practice of imposing fixed boundaries, systematic planning, and predictable mastery over land, whereas herding is stereotyped as mobile, adaptive, and responsive to ecological flux. While agricultural stereotypes have been studied broadly, the specific implicit contrast between these two foundational producer categories regarding perceived dominance versus adaptation to natural systems has not been systematically measured using implicit association paradigms. Examining this axis matters because it reveals how historical economic roles are mentally coded along dimensions of domination versus flexibility, which directly informs public attitudes toward land-use regulation, climate adaptation policies, and conservation ethics.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "9b5d1af376c1",
     "timestamp": "2026-06-19T08:04:08.473444+00:00",
     "schema_version": "autoresearch.v1",
