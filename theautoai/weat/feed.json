@@ -1,5 +1,111 @@
 [
   {
+    "id": "5f765642b5a5",
+    "timestamp": "2026-06-19T15:18:11.184382+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "urbanites vs ruralites on epistemic flexibility vs cognitive rigidity",
+    "labels": {
+      "X": "urbanites",
+      "Y": "ruralites",
+      "A": "epistemic flexibility",
+      "B": "cognitive rigidity"
+    },
+    "canonical_keys": {
+      "X": "urbanites",
+      "Y": "ruralites",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 0.5817330007678343,
+    "p_value": 0.11746,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "urbanite",
+        "metropolitan",
+        "townsman",
+        "resident",
+        "inhabitant",
+        "dweller",
+        "local",
+        "native",
+        "citizen",
+        "commuter",
+        "pedestrian",
+        "townie",
+        "townsperson",
+        "townspeople",
+        "cityfolk"
+      ],
+      "Y_used": [
+        "ruralite",
+        "countryman",
+        "farmer",
+        "rancher",
+        "hillbilly",
+        "redneck",
+        "yokel",
+        "bumpkin",
+        "countryfolk",
+        "villager",
+        "peasant",
+        "rustic",
+        "provincial",
+        "backwoodsman",
+        "settler"
+      ],
+      "A_used": [
+        "open",
+        "flexible",
+        "adaptable",
+        "progressive",
+        "changing",
+        "evolving",
+        "modern",
+        "dynamic",
+        "innovative",
+        "receptive",
+        "willing",
+        "accepting",
+        "learning",
+        "growing",
+        "curious"
+      ],
+      "B_used": [
+        "closed",
+        "rigid",
+        "stubborn",
+        "fixed",
+        "traditional",
+        "conservative",
+        "static",
+        "outdated",
+        "narrow",
+        "dogmatic",
+        "inflexible",
+        "unchanging",
+        "resistant",
+        "obstinate",
+        "absolute"
+      ]
+    },
+    "proposal": "People associate urbanites with epistemic flexibility more strongly than they associate ruralites with epistemic flexibility. This proposed differential implicit association captures a contemporary cultural narrative that frames city dwellers as inherently more open to shifting viewpoints, novel information, and ideological revision, while implicitly casting country residents as cognitively rigid or resistant to updating beliefs. It is novel because existing implicit bias research has heavily focused on racial, gendered, or partisan axes, largely overlooking how geographic residence stereotypes map onto metacognitive traits like belief-updating and intellectual adaptability. Examining this association matters because it reveals how spatial identities become moralized and epistemically weaponized in political discourse, potentially shaping media consumption habits, educational policy debates, and intergroup trust in an increasingly polarized society.",
+    "iterations": 3,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "f9cb20c7bae6",
     "timestamp": "2026-06-19T08:58:11.893831+00:00",
     "schema_version": "autoresearch.v1",
