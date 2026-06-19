@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "batches_seen": 797,
-  "loans_seen": 12752,
-  "last_updated": "2026-06-19T10:23:24.616451+00:00",
+  "batches_seen": 798,
+  "loans_seen": 12768,
+  "last_updated": "2026-06-19T11:09:48.079591+00:00",
   "watching_for": "",
   "claims": {
     "female-technical-specificity-faster": {
@@ -13,10 +13,10 @@
       "supporting_loans": [],
       "confidence": 0.72,
       "first_seen_batch": 1,
-      "last_updated_batch": 797,
+      "last_updated_batch": 798,
       "confidence_history": [
         [
-          797,
+          798,
           0.72
         ]
       ]
@@ -29,10 +29,10 @@
       "supporting_loans": [],
       "confidence": 1.0,
       "first_seen_batch": 1,
-      "last_updated_batch": 797,
+      "last_updated_batch": 798,
       "confidence_history": [
         [
-          797,
+          798,
           1.0
         ]
       ]
@@ -43,13 +43,13 @@
       "title": "Pitches that provide concrete financial figures or specific inventory lists fund faster regardless of gender.",
       "body": "The inclusion of specific monthly income, detailed inventory lists, or precise product types accelerates funding for both men and women.",
       "supporting_loans": [],
-      "confidence": 0.55,
+      "confidence": 0.4,
       "first_seen_batch": 1,
-      "last_updated_batch": 797,
+      "last_updated_batch": 798,
       "confidence_history": [
         [
-          797,
-          0.55
+          798,
+          0.4
         ]
       ]
     },
@@ -60,11 +60,11 @@
       "body": "Pitches from women that utilize generic template language, such as standard greetings or boilerplate phrasing about inspiring others, are associated with slower funding speeds.",
       "supporting_loans": [],
       "confidence": 0.81,
-      "first_seen_batch": 513,
-      "last_updated_batch": 797,
+      "first_seen_batch": 512,
+      "last_updated_batch": 798,
       "confidence_history": [
         [
-          797,
+          798,
           0.81
         ]
       ]
@@ -76,11 +76,11 @@
       "body": "Pitches from women that explicitly state the intention to build up savings are associated with increased funding speed.",
       "supporting_loans": [],
       "confidence": 0.67,
-      "first_seen_batch": 733,
-      "last_updated_batch": 797,
+      "first_seen_batch": 732,
+      "last_updated_batch": 798,
       "confidence_history": [
         [
-          797,
+          798,
           0.67
         ]
       ]
@@ -92,11 +92,11 @@
       "body": "Pitches from women that explicitly reference previous successful loan cycles with NWTF are associated with increased funding speed.",
       "supporting_loans": [],
       "confidence": 1.0,
-      "first_seen_batch": 757,
-      "last_updated_batch": 797,
+      "first_seen_batch": 756,
+      "last_updated_batch": 798,
       "confidence_history": [
         [
-          797,
+          798,
           1.0
         ]
       ]
@@ -108,11 +108,11 @@
       "body": "Pitches that are significantly longer or contain excessive personal narrative tend to fund more slowly for both men and women.",
       "supporting_loans": [],
       "confidence": 1.0,
-      "first_seen_batch": 759,
-      "last_updated_batch": 797,
+      "first_seen_batch": 758,
+      "last_updated_batch": 798,
       "confidence_history": [
         [
-          797,
+          798,
           1.0
         ]
       ]
@@ -123,13 +123,13 @@
       "title": "Female borrowers who mention their children or family details fund more slowly.",
       "body": "Pitches from women that include references to their children or specific family obligations are associated with slower funding speeds.",
       "supporting_loans": [],
-      "confidence": 0.6,
-      "first_seen_batch": 797,
-      "last_updated_batch": 797,
+      "confidence": 0.67,
+      "first_seen_batch": 796,
+      "last_updated_batch": 798,
       "confidence_history": [
         [
-          797,
-          0.6
+          798,
+          0.67
         ]
       ]
     }
@@ -138,32 +138,42 @@
     "female-land-acquisition-faster": {
       "id": "female-land-acquisition-faster",
       "body": "Female borrowers who mention the concrete goal of buying a plot of land may fund faster.",
-      "first_seen_batch": 719
+      "first_seen_batch": 718
     },
     "female-business-success-faster": {
       "id": "female-business-success-faster",
       "body": "Female borrowers who emphasize that their business is currently doing well or is being sustained fund faster.",
-      "first_seen_batch": 755
+      "first_seen_batch": 754
     },
     "female-entrepreneur-phrasing-faster": {
       "id": "female-entrepreneur-phrasing-faster",
       "body": "Female borrowers who use the phrase 'hardworking entrepreneur' may fund faster.",
-      "first_seen_batch": 767
+      "first_seen_batch": 766
     },
     "female-past-failure-slower": {
       "id": "female-past-failure-slower",
       "body": "Female borrowers who mention specific past failures or debts may fund more slowly.",
-      "first_seen_batch": 769
+      "first_seen_batch": 768
     },
     "female-traumatic-history-slower": {
       "id": "female-traumatic-history-slower",
       "body": "Female borrowers who include narrative descriptions of traumatic personal history may fund more slowly.",
-      "first_seen_batch": 771
+      "first_seen_batch": 770
     },
     "female-specific-quantities-slower": {
       "id": "female-specific-quantities-slower",
       "body": "Female borrowers who provide highly specific quantities of supplies (e.g., kg of feed) may fund more slowly.",
-      "first_seen_batch": 779
+      "first_seen_batch": 778
+    },
+    "family-obligations-slower-general": {
+      "id": "family-obligations-slower-general",
+      "body": "Mentioning children or family obligations may predict slower funding regardless of gender.",
+      "first_seen_batch": 798
+    },
+    "financial-specificity-slower-general": {
+      "id": "financial-specificity-slower-general",
+      "body": "Mentioning specific income figures may predict slower funding regardless of gender.",
+      "first_seen_batch": 798
     }
   },
   "retired": {
