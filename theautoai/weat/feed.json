@@ -1,5 +1,111 @@
 [
   {
+    "id": "cc04384c3f41",
+    "timestamp": "2026-06-19T01:16:35.063188+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Physicists vs Biologists on control versus lack of control",
+    "labels": {
+      "X": "Physicists",
+      "Y": "Biologists",
+      "A": "control",
+      "B": "lack_of_control"
+    },
+    "canonical_keys": {
+      "X": "physicists",
+      "Y": "biologists",
+      "A": "control",
+      "B": ""
+    },
+    "effect_size": 1.2434405794078889,
+    "p_value": 0.00023,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "physicist",
+        "astrophysicist",
+        "cosmologist",
+        "astronomer",
+        "metallurgist",
+        "electrician",
+        "mechanic",
+        "technician",
+        "engineer",
+        "inventor",
+        "researcher",
+        "scientist",
+        "academic",
+        "scholar",
+        "theorist"
+      ],
+      "Y_used": [
+        "biologist",
+        "zoologist",
+        "botanist",
+        "ecologist",
+        "microbiologist",
+        "geneticist",
+        "biochemist",
+        "entomologist",
+        "ornithologist",
+        "paleontologist",
+        "virologist",
+        "immunologist",
+        "pathologist",
+        "taxonomist",
+        "ethologist"
+      ],
+      "A_used": [
+        "control",
+        "mastery",
+        "domination",
+        "command",
+        "power",
+        "regulation",
+        "order",
+        "predictability",
+        "certainty",
+        "stability",
+        "prediction",
+        "authority",
+        "management",
+        "governance",
+        "administration"
+      ],
+      "B_used": [
+        "chaos",
+        "randomness",
+        "disorder",
+        "adaptation",
+        "emergence",
+        "humility",
+        "vulnerability",
+        "uncertainty",
+        "flux",
+        "variation",
+        "mutation",
+        "evolution",
+        "survival",
+        "resilience",
+        "instinct"
+      ]
+    },
+    "proposal": "People associate Physicists with control more strongly than they associate Biologists with control. This differential implicit association probes a subtle but potentially significant hierarchy in how the public mentally represents scientific sub-disciplines. While both groups are scientists, cultural discourse often frames physics as the domain of universal laws, predictability, and mastery over nature, whereas biology is frequently associated with complexity, emergence, adaptation, and humility in the face of living systems. Examining this association is novel, as prior research has largely focused on broad science-versus-arts dichotomies or gender within science, neglecting implicit biases between major scientific domains. The finding would matter for understanding how epistemic authority and narratives of technological dominion are implicitly distributed across disciplines in the public imagination.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "53ce1bd814e9",
     "timestamp": "2026-06-19T00:32:15.339864+00:00",
     "schema_version": "autoresearch.v1",
