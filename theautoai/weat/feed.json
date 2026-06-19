@@ -1,5 +1,111 @@
 [
   {
+    "id": "e15e2dc567f8",
+    "timestamp": "2026-06-19T23:58:05.779839+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "regulators vs innovators on predictability versus disruption",
+    "labels": {
+      "X": "regulators",
+      "Y": "innovators",
+      "A": "stability and predictability",
+      "B": "disruption and uncertainty"
+    },
+    "canonical_keys": {
+      "X": "regulators",
+      "Y": "innovators",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 1.06230578393619,
+    "p_value": 0.0028,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "regulator",
+        "inspector",
+        "overseer",
+        "supervisor",
+        "auditor",
+        "police",
+        "bureaucrat",
+        "administrator",
+        "official",
+        "governor",
+        "enforcer",
+        "monitor",
+        "controller",
+        "commissioner",
+        "lawmaker"
+      ],
+      "Y_used": [
+        "innovator",
+        "inventor",
+        "entrepreneur",
+        "creator",
+        "pioneer",
+        "designer",
+        "scientist",
+        "developer",
+        "engineer",
+        "visionary",
+        "artist",
+        "maker",
+        "programmer",
+        "architect",
+        "producer"
+      ],
+      "A_used": [
+        "stable",
+        "predictable",
+        "reliable",
+        "consistent",
+        "steady",
+        "orderly",
+        "systematic",
+        "controlled",
+        "planned",
+        "conventional",
+        "certain",
+        "secure",
+        "rigid",
+        "fixed",
+        "traditional"
+      ],
+      "B_used": [
+        "disruptive",
+        "uncertain",
+        "chaotic",
+        "unpredictable",
+        "unstable",
+        "erratic",
+        "volatile",
+        "dangerous",
+        "risky",
+        "novel",
+        "experimental",
+        "dynamic",
+        "emerging",
+        "changing",
+        "wild"
+      ]
+    },
+    "proposal": "People associate regulators with predictability more strongly than they associate innovators with predictability. This differential implicit association emerges from contemporary discourse framing regulatory bodies as guardians of stability and procedural consistency, while casting innovators as agents of disruption and emergent uncertainty. Examining this bias is novel because implicit measures have largely focused on demographic or broad occupational stereotypes, neglecting the mental shortcuts used to evaluate governance versus technological change. It matters because such associations may silently shape public trust, policy adoption, and the cultural narrative around responsible development versus unchecked experimentation.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "2d473a239f38",
     "timestamp": "2026-06-19T21:37:40.595324+00:00",
     "schema_version": "autoresearch.v1",
