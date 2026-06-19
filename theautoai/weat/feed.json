@@ -1,5 +1,112 @@
 [
   {
+    "id": "2d473a239f38",
+    "timestamp": "2026-06-19T21:37:40.595324+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "takers vs givers on rationality versus emotion",
+    "labels": {
+      "X": "takers",
+      "Y": "givers",
+      "A": "rationality",
+      "B": "emotion"
+    },
+    "canonical_keys": {
+      "X": "takers",
+      "Y": "givers",
+      "A": "rationality",
+      "B": "emotion"
+    },
+    "effect_size": -0.12740824019483846,
+    "p_value": 0.74083,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "taker",
+        "moocher",
+        "leech",
+        "freeloader",
+        "exploiter",
+        "profiteer",
+        "opportunist",
+        "consumer",
+        "swindler",
+        "thief",
+        "robber",
+        "burglar",
+        "extortionist",
+        "usurer",
+        "racketeer"
+      ],
+      "Y_used": [
+        "giver",
+        "donor",
+        "volunteer",
+        "philanthropist",
+        "benefactor",
+        "altruist",
+        "helper",
+        "supporter",
+        "sponsor",
+        "contributor",
+        "patron",
+        "angel",
+        "savior",
+        "hero",
+        "martyr",
+        "saint"
+      ],
+      "A_used": [
+        "rational",
+        "logical",
+        "calculated",
+        "clever",
+        "smart",
+        "intelligent",
+        "analytical",
+        "objective",
+        "precise",
+        "strategic",
+        "scientific",
+        "pragmatic",
+        "reasoned",
+        "efficient",
+        "cerebral"
+      ],
+      "B_used": [
+        "emotional",
+        "heart",
+        "warm",
+        "loving",
+        "compassionate",
+        "sentimental",
+        "impulsive",
+        "naive",
+        "pure",
+        "instinctive",
+        "dreamy",
+        "whimsical",
+        "irrational",
+        "spontaneous",
+        "feeling"
+      ]
+    },
+    "proposal": "People associate takers with rationality more strongly than they associate givers with rationality. This proposal examines whether the cultural celebration of altruism coexists with an implicit bias that frames self-interested acquisition as more cognitively calculated and adaptive than selfless giving. The association is novel because prior research on generosity has focused on explicit warmth/competence judgments rather than the underlying attribution of rational calculation. It matters because uncovering an implicit 'rationality premium' for takers would reveal how public discourse may subtly delegitimize pure prosocial motives by casting them as irrational, thereby reinforcing hidden norms of self-interest.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "5f765642b5a5",
     "timestamp": "2026-06-19T15:18:11.184382+00:00",
     "schema_version": "autoresearch.v1",
