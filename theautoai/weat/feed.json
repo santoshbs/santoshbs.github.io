@@ -1,5 +1,111 @@
 [
   {
+    "id": "9b5d1af376c1",
+    "timestamp": "2026-06-19T08:04:08.473444+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "whistleblowers vs subordinates on moral autonomy versus passive obedience",
+    "labels": {
+      "X": "whistleblowers",
+      "Y": "subordinates",
+      "A": "autonomy",
+      "B": "obedience"
+    },
+    "canonical_keys": {
+      "X": "whistleblowers",
+      "Y": "subordinates",
+      "A": "autonomy",
+      "B": "obedience"
+    },
+    "effect_size": 0.11740202344417283,
+    "p_value": 0.75611,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "whistleblower",
+        "leaker",
+        "informant",
+        "dissenter",
+        "dissident",
+        "defector",
+        "rebel",
+        "resister",
+        "activist",
+        "protester",
+        "accuser",
+        "critic",
+        "challenger",
+        "muckraker",
+        "iconoclast"
+      ],
+      "Y_used": [
+        "subordinate",
+        "underling",
+        "assistant",
+        "deputy",
+        "junior",
+        "minion",
+        "servant",
+        "follower",
+        "adherent",
+        "acolyte",
+        "lieutenant",
+        "recruit",
+        "rookie",
+        "neophyte",
+        "lackey"
+      ],
+      "A_used": [
+        "autonomy",
+        "independence",
+        "freedom",
+        "liberty",
+        "sovereignty",
+        "volition",
+        "discretion",
+        "initiative",
+        "assertiveness",
+        "boldness",
+        "courage",
+        "bravery",
+        "empowerment",
+        "license",
+        "prerogative"
+      ],
+      "B_used": [
+        "obedience",
+        "compliance",
+        "submission",
+        "conformity",
+        "acquiescence",
+        "docility",
+        "deference",
+        "subservience",
+        "servility",
+        "passivity",
+        "yielding",
+        "surrender",
+        "capitulation",
+        "subordination",
+        "allegiance"
+      ]
+    },
+    "proposal": "People associate whistleblowers with moral autonomy more strongly than they associate subordinates with moral autonomy. This differential implicit association taps into the hidden tension between hierarchical compliance and individual conscience in organizational and political contexts. While explicit norms often praise the whistleblower, implicit cognition may still link subordinate roles with passive obedience and diminished agency, reflecting entrenched cultural schemas about authority and dissent. Examining this association is novel, as prior research has focused on explicit attitudes toward whistleblowing behavior rather than the automatic social representation of the actor categories themselves. Confirming this bias would reveal how deeply the association between rank and agentic freedom is embedded, with implications for how organizations foster genuine ethical culture versus mere procedural compliance.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "3058daf03cd5",
     "timestamp": "2026-06-19T05:31:04.868589+00:00",
     "schema_version": "autoresearch.v1",
