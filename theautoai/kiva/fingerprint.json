@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "batches_seen": 836,
-  "loans_seen": 13376,
-  "last_updated": "2026-06-20T20:03:09.551723+00:00",
+  "batches_seen": 837,
+  "loans_seen": 13392,
+  "last_updated": "2026-06-20T20:49:19.817901+00:00",
   "watching_for": "",
   "claims": {
     "female-technical-specificity-faster": {
@@ -13,10 +13,10 @@
       "supporting_loans": [],
       "confidence": 1.0,
       "first_seen_batch": 1,
-      "last_updated_batch": 836,
+      "last_updated_batch": 837,
       "confidence_history": [
         [
-          836,
+          837,
           1.0
         ]
       ]
@@ -27,13 +27,13 @@
       "title": "Specifying the number of years a business has operated predicts faster funding regardless of gender.",
       "body": "Pitches that include the specific duration of business operation or professional experience tend to accelerate funding for both men and women.",
       "supporting_loans": [],
-      "confidence": 0.9,
+      "confidence": 0.95,
       "first_seen_batch": 1,
-      "last_updated_batch": 836,
+      "last_updated_batch": 837,
       "confidence_history": [
         [
-          836,
-          0.9
+          837,
+          0.95
         ]
       ]
     },
@@ -43,13 +43,13 @@
       "title": "Female borrowers who mention the goal of building savings fund faster.",
       "body": "Pitches from women that explicitly state the intention to build up savings are associated with increased funding speed.",
       "supporting_loans": [],
-      "confidence": 0.77,
-      "first_seen_batch": 694,
-      "last_updated_batch": 836,
+      "confidence": 0.82,
+      "first_seen_batch": 693,
+      "last_updated_batch": 837,
       "confidence_history": [
         [
-          836,
-          0.77
+          837,
+          0.82
         ]
       ]
     },
@@ -60,11 +60,11 @@
       "body": "Pitches from women that explicitly reference previous successful loan cycles with NWTF are associated with increased funding speed.",
       "supporting_loans": [],
       "confidence": 1.0,
-      "first_seen_batch": 718,
-      "last_updated_batch": 836,
+      "first_seen_batch": 717,
+      "last_updated_batch": 837,
       "confidence_history": [
         [
-          836,
+          837,
           1.0
         ]
       ]
@@ -76,11 +76,11 @@
       "body": "Pitches that are significantly longer or contain excessive personal narrative tend to fund more slowly for both men and women.",
       "supporting_loans": [],
       "confidence": 1.0,
-      "first_seen_batch": 720,
-      "last_updated_batch": 836,
+      "first_seen_batch": 719,
+      "last_updated_batch": 837,
       "confidence_history": [
         [
-          836,
+          837,
           1.0
         ]
       ]
@@ -92,11 +92,11 @@
       "body": "The inclusion of precise monthly income amounts is associated with slower funding speeds for both male and female borrowers.",
       "supporting_loans": [],
       "confidence": 0.88,
-      "first_seen_batch": 774,
-      "last_updated_batch": 836,
+      "first_seen_batch": 773,
+      "last_updated_batch": 837,
       "confidence_history": [
         [
-          836,
+          837,
           0.88
         ]
       ]
@@ -108,12 +108,28 @@
       "body": "Pitches from women that highlight current business success or the ability to sustain operations through previous support accelerate funding.",
       "supporting_loans": [],
       "confidence": 0.93,
-      "first_seen_batch": 784,
-      "last_updated_batch": 836,
+      "first_seen_batch": 783,
+      "last_updated_batch": 837,
       "confidence_history": [
         [
-          836,
+          837,
           0.93
+        ]
+      ]
+    },
+    "child-count-slower-general": {
+      "id": "child-count-slower-general",
+      "bucket": "slower",
+      "title": "Mentioning the specific number of children predicts slower funding regardless of gender.",
+      "body": "Pitches that specify the exact number of children the borrower has are associated with slower funding speeds.",
+      "supporting_loans": [],
+      "confidence": 0.6,
+      "first_seen_batch": 837,
+      "last_updated_batch": 837,
+      "confidence_history": [
+        [
+          837,
+          0.6
         ]
       ]
     }
@@ -122,52 +138,47 @@
     "male-technical-specificity-faster": {
       "id": "male-technical-specificity-faster",
       "body": "Male borrowers who provide precise technical quantities (e.g., feed weight) may fund faster.",
-      "first_seen_batch": 770
+      "first_seen_batch": 769
     },
     "female-marital-status-faster": {
       "id": "female-marital-status-faster",
       "body": "Female borrowers who mention their marital status in their pitch may fund faster.",
-      "first_seen_batch": 780
+      "first_seen_batch": 779
     },
     "female-education-lack-slower": {
       "id": "female-education-lack-slower",
       "body": "Female borrowers who mention a lack of formal education may fund more slowly.",
-      "first_seen_batch": 800
+      "first_seen_batch": 799
     },
     "female-gratitude-slower": {
       "id": "female-gratitude-slower",
       "body": "Female borrowers who include explicit expressions of gratitude to lenders may fund more slowly.",
-      "first_seen_batch": 800
+      "first_seen_batch": 799
     },
     "female-character-descriptors-faster": {
       "id": "female-character-descriptors-faster",
       "body": "Female borrowers who use strong character-based adjectives like 'resilient' or 'courageous' may fund faster.",
-      "first_seen_batch": 824
+      "first_seen_batch": 823
     },
     "male-refugee-status-faster": {
       "id": "male-refugee-status-faster",
       "body": "Male borrowers who mention refugee status may fund faster.",
-      "first_seen_batch": 828
+      "first_seen_batch": 827
     },
     "male-expansion-goals-slower": {
       "id": "male-expansion-goals-slower",
       "body": "Male borrowers who describe long-term dreams or business expansion goals may fund more slowly.",
-      "first_seen_batch": 828
+      "first_seen_batch": 827
     },
     "female-spouse-occupation-faster": {
       "id": "female-spouse-occupation-faster",
       "body": "Female borrowers who mention the specific occupation or employment of a spouse may fund faster.",
-      "first_seen_batch": 834
+      "first_seen_batch": 833
     },
     "female-institution-mention-slower": {
       "id": "female-institution-mention-slower",
       "body": "Female borrowers who mention the specific name of the lending institution or program may fund more slowly.",
-      "first_seen_batch": 836
-    },
-    "female-child-count-slower": {
-      "id": "female-child-count-slower",
-      "body": "Female borrowers who mention the specific number of children they have may fund more slowly.",
-      "first_seen_batch": 836
+      "first_seen_batch": 835
     }
   },
   "retired": {
