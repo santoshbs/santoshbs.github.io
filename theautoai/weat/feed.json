@@ -1,5 +1,111 @@
 [
   {
+    "id": "ba2791def9d2",
+    "timestamp": "2026-06-20T21:15:15.263821+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "veterans vs philosophers on action versus deliberation",
+    "labels": {
+      "X": "veterans",
+      "Y": "philosophers",
+      "A": "decisive action",
+      "B": "deliberation"
+    },
+    "canonical_keys": {
+      "X": "veterans",
+      "Y": "philosophers",
+      "A": "",
+      "B": "deliberation"
+    },
+    "effect_size": 1.5572999021745535,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "veteran",
+        "soldier",
+        "marine",
+        "infantryman",
+        "sergeant",
+        "major",
+        "general",
+        "officer",
+        "combatant",
+        "warrior",
+        "defender",
+        "recruit",
+        "cadet",
+        "guard",
+        "ranger"
+      ],
+      "Y_used": [
+        "philosopher",
+        "thinker",
+        "academic",
+        "scholar",
+        "professor",
+        "researcher",
+        "analyst",
+        "intellectual",
+        "scientist",
+        "writer",
+        "poet",
+        "theorist",
+        "critic",
+        "essayist",
+        "author"
+      ],
+      "A_used": [
+        "decisive",
+        "swift",
+        "quick",
+        "fast",
+        "immediate",
+        "prompt",
+        "sudden",
+        "rapid",
+        "brisk",
+        "speedy",
+        "direct",
+        "clear",
+        "firm",
+        "resolute",
+        "bold"
+      ],
+      "B_used": [
+        "deliberate",
+        "thoughtful",
+        "careful",
+        "cautious",
+        "analytical",
+        "reflective",
+        "contemplative",
+        "meditative",
+        "introspective",
+        "pensive",
+        "considerate",
+        "wary",
+        "watchful",
+        "alert",
+        "attentive"
+      ]
+    },
+    "proposal": "People associate veterans with decisive action more strongly than they associate philosophers with decisive action. This differential implicit association captures a culturally pervasive but underexamined stereotype that equates military service with swift, unhesitating execution, while casting philosophical inquiry as inherently deliberative or paralyzed by analysis. Investigating this link matters because it reveals how societies mentally partition 'doing' from 'thinking,' potentially biasing who is trusted in crises versus abstract governance. The finding would shed light on the hidden valuation of tempo over deliberation in public epistemologies.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "b0b370409de4",
     "timestamp": "2026-06-20T07:24:33.548340+00:00",
     "schema_version": "autoresearch.v1",
