@@ -1,5 +1,117 @@
 [
   {
+    "id": "9daa0c6df592",
+    "timestamp": "2026-06-20T03:19:59.524883+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "collectors vs archivists on Access and ownership model",
+    "labels": {
+      "X": "collectors",
+      "Y": "archivists",
+      "A": "Exclusivity",
+      "B": "Openness"
+    },
+    "canonical_keys": {
+      "X": "collectors",
+      "Y": "archivists",
+      "A": "exclusivity",
+      "B": "openness"
+    },
+    "effect_size": 0.5486775882215772,
+    "p_value": 0.14341,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 18,
+      "B": 18
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "collector",
+        "hoarder",
+        "owner",
+        "holder",
+        "accumulator",
+        "enthusiast",
+        "connoisseur",
+        "aficionado",
+        "hobbyist",
+        "amateur",
+        "fanatic",
+        "buyer",
+        "purchaser",
+        "investor",
+        "gatherer"
+      ],
+      "Y_used": [
+        "archivist",
+        "librarian",
+        "historian",
+        "researcher",
+        "clerk",
+        "keeper",
+        "custodian",
+        "preserver",
+        "cataloger",
+        "indexer",
+        "administrator",
+        "manager",
+        "steward",
+        "conservator",
+        "documentarian"
+      ],
+      "A_used": [
+        "exclusive",
+        "private",
+        "secret",
+        "closed",
+        "locked",
+        "hidden",
+        "restricted",
+        "forbidden",
+        "guarded",
+        "personal",
+        "individual",
+        "solitary",
+        "possessive",
+        "selfish",
+        "limited",
+        "scarce",
+        "rare",
+        "unique"
+      ],
+      "B_used": [
+        "public",
+        "open",
+        "shared",
+        "accessible",
+        "common",
+        "free",
+        "available",
+        "communal",
+        "transparent",
+        "inclusive",
+        "democratic",
+        "universal",
+        "global",
+        "widespread",
+        "unrestricted",
+        "collective",
+        "societal",
+        "general"
+      ]
+    },
+    "proposal": "People associate collectors with exclusivity more strongly than they associate archivists with exclusivity. While both categories involve the accumulation of objects or records, contemporary discourse frames collecting as a private act of possession and hoarding that restricts access, whereas archiving is framed as a public service of preservation and stewardship aimed at ensuring open access for future generations. This differential association is novel because implicit bias research has largely focused on the distinction between curators and collectors or archivists and authors, but has not examined how the public mentally separates the motives and access-models of collectors from archivists. Examining this association is important because it reveals underlying tensions in cultural heritage and digital preservation, particularly as debates intensify around private ownership of data, NFTs, and the democratization of archives.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "e15e2dc567f8",
     "timestamp": "2026-06-19T23:58:05.779839+00:00",
     "schema_version": "autoresearch.v1",
