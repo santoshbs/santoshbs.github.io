@@ -9,6 +9,14 @@
       "signals": 2
     },
     {
+      "id": "alumni-engagement",
+      "title": "Alumni Engagement",
+      "group": "Teaching & Learning",
+      "refs": 1,
+      "revised": "2026-06-20",
+      "signals": 1
+    },
+    {
       "id": "business-capability-management",
       "title": "Business Capability Management",
       "group": "Strategy & Governance",
@@ -228,9 +236,9 @@
       "id": "student-attraction-recruitment",
       "title": "Student Attraction & Recruitment",
       "group": "Teaching & Learning",
-      "refs": 9,
-      "revised": "2026-06-07",
-      "signals": 9
+      "refs": 10,
+      "revised": "2026-06-20",
+      "signals": 10
     },
     {
       "id": "student-enrolment",
@@ -266,6 +274,11 @@
     }
   ],
   "edges": [
+    {
+      "source": "alumni-engagement",
+      "target": "student-attraction-recruitment",
+      "signal": "How we shipped \"One Brief Full Ad Campaign in 60s\" for $0.35 — a Dify + x402 + m"
+    },
     {
       "source": "business-capability-management",
       "target": "information-communication-technology-management",
