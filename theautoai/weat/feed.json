@@ -1,5 +1,111 @@
 [
   {
+    "id": "9d8b4f08cea7",
+    "timestamp": "2026-06-20T05:04:29.214990+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "artisans vs marketers on Tangible creation vs commercial promotion",
+    "labels": {
+      "X": "artisans",
+      "Y": "marketers",
+      "A": "Tangible/Physical",
+      "B": "Commercial/Promotional"
+    },
+    "canonical_keys": {
+      "X": "artisans",
+      "Y": "marketers",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 1.8177445592572068,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "baker",
+        "brewer",
+        "cobbler",
+        "carpenter",
+        "tailor",
+        "weaver",
+        "potter",
+        "mason",
+        "smith",
+        "sculptor",
+        "jeweler",
+        "upholsterer",
+        "machinist",
+        "printer",
+        "builder"
+      ],
+      "Y_used": [
+        "marketer",
+        "advertiser",
+        "promoter",
+        "salesperson",
+        "agent",
+        "broker",
+        "publicist",
+        "campaigner",
+        "merchandiser",
+        "consultant",
+        "lobbyist",
+        "recruiter",
+        "broadcaster",
+        "publisher",
+        "intermediary"
+      ],
+      "A_used": [
+        "tangible",
+        "concrete",
+        "physical",
+        "material",
+        "solid",
+        "substantial",
+        "durable",
+        "sturdy",
+        "crafted",
+        "constructed",
+        "manufactured",
+        "carved",
+        "woven",
+        "forged",
+        "molded"
+      ],
+      "B_used": [
+        "commercial",
+        "financial",
+        "monetary",
+        "economic",
+        "transactional",
+        "promotional",
+        "advertising",
+        "marketing",
+        "sales",
+        "trading",
+        "negotiation",
+        "persuasive",
+        "rhetorical",
+        "communicative",
+        "managerial"
+      ]
+    },
+    "proposal": "People associate artisans with tangible creation more strongly than they associate marketers with tangible creation. This differential implicit association captures a culturally pervasive but underexamined divide between occupations perceived as producing concrete goods versus those perceived as facilitating exchange or attention. It is novel because implicit bias research has rarely targeted the maker-versus-persuader dichotomy, despite its centrality to contemporary debates about economic value and occupational prestige. Examining this association matters because it may silently shape public attitudes toward industrial policy, trade education, and the perceived worth of creative versus commercial labor.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "9daa0c6df592",
     "timestamp": "2026-06-20T03:19:59.524883+00:00",
     "schema_version": "autoresearch.v1",
