@@ -112,12 +112,11 @@ a:hover{text-decoration:underline;}
   color:#666;flex-shrink:0;margin-left:0.8rem;transition:all 0.15s;
 }
 .collapse-body{
-  display:none;
-}
-.collapse-body.open{
   display:block;
-  padding-top:0;
   padding-bottom:1rem;
+}
+.collapse-body.collapsed{
+  display:none;
 }
 
 /* ═══ HEADINGS ═══ */
@@ -247,7 +246,7 @@ a:hover{text-decoration:underline;}
 
   <div class="collapse-head" onclick="toggle(this)" id="currentwork">
     <div class="section-heading">Current Work</div>
-    <span class="tog">+</span>
+    <span class="tog">−</span>
   </div>
   <div class="collapse-body">
     <p class="body-text no-indent">My current work examines how different audiences construct and contest social positions on user-generated platforms, and how individuals adapt their self-presentation when the demographic composition of their field shifts. A parallel stream reconnects with entrepreneurship—how personal histories shape opportunity recognition, how ventures use rhetorical history to craft market positions, and how entrepreneurial rhetoric can function as social critique.</p>
@@ -255,7 +254,7 @@ a:hover{text-decoration:underline;}
 
   <div class="collapse-head" onclick="toggle(this)" id="exploratory" >
     <div class="section-heading">Exploratory</div>
-    <span class="tog">+</span>
+    <span class="tog">−</span>
   </div>
   <div class="collapse-body">
     <p class="body-text no-indent">I am interested in how the emerging agentic AI economy may reshape the evaluation of competence, worth, and opportunity. As a purely exploratory effort, I have been running small open-weights language models as observers across several domains—reading streams of text, hypothesizing implications, and periodically filing field notes on what appears to be happening. Three parallel projects sit under this umbrella.</p>
@@ -269,13 +268,13 @@ a:hover{text-decoration:underline;}
 
   <div class="collapse-head" onclick="toggle(this)" id="publications" >
     <div class="section-heading" >Publications</div>
-    <span class="tog">+</span>
+    <span class="tog">−</span>
   </div>
   <div class="collapse-body">
 
     <div class="collapse-head" onclick="toggle(this)" >
       <div class="sub-heading" >AI and Computation in the Social Sciences</div>
-      <span class="tog">+</span>
+      <span class="tog">−</span>
     </div>
     <div class="collapse-body">
       <p class="body-text no-indent">A recent chapter explores how artificial intelligence is fundamentally reshaping the study of human behavior across psychology and the social sciences (<a href="#ref-boyd" class="cite-link">Boyd, Srinivas, Phadke, Wilson, &amp; Pasca, 2026</a>). The chapter examines AI's transformative role at multiple levels of analysis—individual, group, and societal—highlighting its capacity to enhance theory, measurement, and practical applications. We emphasize the interdisciplinary nature of AI as a research toolkit, demonstrating how methods from natural language processing to agent-based modeling can be strategically integrated to generate novel insights. While AI presents unprecedented opportunities for analyzing large-scale social dynamics, understanding intergroup communication, and modeling individual differences, it also introduces critical ethical and methodological challenges that require researchers to adopt a thoughtful and transparent approach.</p>
@@ -284,7 +283,7 @@ a:hover{text-decoration:underline;}
 
     <div class="collapse-head" onclick="toggle(this)" >
       <div class="sub-heading" >Cognitive Flexibility as a Multifaceted Construct</div>
-      <span class="tog">+</span>
+      <span class="tog">−</span>
     </div>
     <div class="collapse-body">
       <p class="body-text no-indent">This article addresses the inconsistent use of "cognitive flexibility" across organizational theories: the term has been drawn on by many researchers to denote the explanatory mechanism underlying a broad array of theories, yet its conceptualization remains inconsistent (<a href="#ref-patil" class="cite-link">Patil, Srinivas, Tussing, &amp; Rhee, 2025</a>). To bring clarity, we conduct a comprehensive search of cognitive flexibility constructs, strip away their labels, and use text analysis and manual coding of their descriptions to distinguish among five fluid thought processes: elaborating, dimensionalizing, integrating, juxtaposing, and matching. We further group these processes into three higher-order categories involving the reshaping, contending, and shifting of cognitive structures. Our surveying demonstrates that these processes' substance and implications differ markedly, and we argue that cognitive flexibility may be more appropriately viewed as a multifaceted, rather than monolithic, construct.</p>
@@ -293,7 +292,7 @@ a:hover{text-decoration:underline;}
 
     <div class="collapse-head" onclick="toggle(this)" >
       <div class="sub-heading" >Emancipatory Entrepreneurship and Orders of Worth</div>
-      <span class="tog">+</span>
+      <span class="tog">−</span>
     </div>
     <div class="collapse-body">
       <p class="body-text no-indent">This book chapter draws on Boltanski and Thévenot's (2006) work on multiple orders of worth to propose that entrepreneurial acts toward emancipation can be guided by different notions of the common good underlying varying conceptions of worth (<a href="#ref-rindova2022" class="cite-link">Rindova, Srinivas, &amp; Martins, 2022</a>). The assumption of wealth creation as the dominant motive underlying entrepreneurial efforts has been challenged in recent work, and researchers have sought to explain a range of entrepreneurial activities in contexts traditionally excluded from entrepreneurship research. We describe how emancipatory entrepreneurship is framed within—and limited by—the dominant market order of worth, and as alternatives, we theorize how the civic and inspired orders point to alternate emancipatory ends and means through which entrepreneurs break free from material and ideological constraints.</p>
@@ -302,7 +301,7 @@ a:hover{text-decoration:underline;}
 
     <div class="collapse-head" onclick="toggle(this)" >
       <div class="sub-heading" >Shared Leadership, Power, and Team Conflict</div>
-      <span class="tog">+</span>
+      <span class="tog">−</span>
     </div>
     <div class="collapse-body">
       <p class="body-text no-indent">This article examines shared leadership, which is believed to be beneficial for team effectiveness, yet recent empirical evidence shows that it may not always bring positive effects (<a href="#ref-sinha" class="cite-link">Sinha, Chiu, &amp; Srinivas, 2021</a>). Drawing on dominance complementarity theory, we suggest that team power base diversity—the variety in power bases among team members from which they derive their informal influence—is an important contingency that moderates the impact of shared leadership on relationship conflict. Studying 70 project-based teams, we find that at high levels of team power base diversity, shared leadership has a positive downstream effect on team performance through reduced relationship conflict.</p>
@@ -311,7 +310,7 @@ a:hover{text-decoration:underline;}
 
     <div class="collapse-head" onclick="toggle(this)" >
       <div class="sub-heading" >Organizational Rankings: A Multidisciplinary Review</div>
-      <span class="tog">+</span>
+      <span class="tog">−</span>
     </div>
     <div class="collapse-body">
       <p class="body-text no-indent">This article reviews the literature on organizational rankings across management, sociology, education, and law, revealing three perspectives on these complex evaluations (<a href="#ref-rindova2018" class="cite-link">Rindova, Martins, Srinivas, &amp; Chandler, 2018</a>). Rankings are seen as a form of information intermediation, as comparative orderings, or as a means for surveillance and control. The information intermediation perspective views rankings as information products that address asymmetries between ranked organizations and their stakeholders; the comparative orderings perspective views them as representations of status and reputation; and the surveillance perspective emphasizes their disciplining power. We also identify a new perspective—rankings entrepreneurship—which presents significant opportunities to extend our understanding of how rankings are produced and consumed.</p>
@@ -320,7 +319,7 @@ a:hover{text-decoration:underline;}
 
     <div class="collapse-head" onclick="toggle(this)" >
       <div class="sub-heading" >Managing Meaning and Culture in Organizations</div>
-      <span class="tog">+</span>
+      <span class="tog">−</span>
     </div>
     <div class="collapse-body">
       <p class="body-text no-indent">This book chapter examines the management of meaning, an activity central to mobilizing action both inside and outside organizations, as studied across analyses of organizational culture, identity, change, innovation, and stakeholder management (<a href="#ref-rindova2017" class="cite-link">Rindova &amp; Srinivas, 2017</a>). Our review suggests that although meaning-making involves managing symbols, it is not concerned only with symbolic actions and their consequences—meaning-making is central to the generation of substantive actions that affect organizations and their strategies in fundamental ways. We recommend greater research attention to meaning management as a managerial and organizational capability, and the links between organizational cultures as systems of beliefs and the societal culture as a toolkit.</p>
@@ -331,7 +330,7 @@ a:hover{text-decoration:underline;}
 
   <div class="collapse-head" onclick="toggle(this)" id="teaching" >
     <div class="section-heading" >Teaching</div>
-    <span class="tog">+</span>
+    <span class="tog">−</span>
   </div>
   <div class="collapse-body">
     <p class="body-text no-indent">My classes orient students to multiple conceptions of value and varied approaches to organizing. I use case-based pedagogy, asking students to reflect individually and then compare perspectives collaboratively. With AI reshaping what competence looks like, I see an opportunity to redesign assessments around what matters most: the ability to translate ill-structured problems into relevant concepts and critically synthesize solutions.</p>
@@ -356,7 +355,7 @@ a:hover{text-decoration:underline;}
 
   <div class="collapse-head" onclick="toggle(this)" id="formation">
     <div class="section-heading" >Education &amp; Work</div>
-    <span class="tog">+</span>
+    <span class="tog">−</span>
   </div>
   <div class="collapse-body">
     <p class="body-text no-indent">Prior to PhD, I accumulated approximately nine years of professional experience spanning industry, nonprofit, and academia. I have been with HEC Paris as an Assistant Professor for over six years following my doctoral studies.</p>
@@ -388,15 +387,15 @@ function toggle(el) {
   var body = el.nextElementSibling;
   var tog = el.querySelector('.tog');
   if (body && body.classList.contains('collapse-body')) {
-    body.classList.toggle('open');
-    tog.textContent = body.classList.contains('open') ? '−' : '+';
+    body.classList.toggle('collapsed');
+    tog.textContent = body.classList.contains('collapsed') ? '+' : '−';
   }
 }
 
 // Expand a collapse section programmatically
 function expandSection(collapseBody) {
-  if (collapseBody && !collapseBody.classList.contains('open')) {
-    collapseBody.classList.add('open');
+  if (collapseBody && collapseBody.classList.contains('collapsed')) {
+    collapseBody.classList.remove('collapsed');
     var head = collapseBody.previousElementSibling;
     if (head) { var t = head.querySelector('.tog'); if (t) t.textContent = '−'; }
   }
