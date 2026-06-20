@@ -1,5 +1,111 @@
 [
   {
+    "id": "b0b370409de4",
+    "timestamp": "2026-06-20T07:24:33.548340+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "actors vs singers on Disguise vs Authenticity",
+    "labels": {
+      "X": "actors",
+      "Y": "singers",
+      "A": "Disguise",
+      "B": "Authenticity"
+    },
+    "canonical_keys": {
+      "X": "actors",
+      "Y": "singers",
+      "A": "disguise",
+      "B": "authenticity"
+    },
+    "effect_size": -0.1317675888678902,
+    "p_value": 0.72492,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "actor",
+        "actress",
+        "thespian",
+        "ham",
+        "player",
+        "star",
+        "celebrity",
+        "icon",
+        "talent",
+        "pro",
+        "veteran",
+        "starlet",
+        "lead",
+        "extra",
+        "understudy"
+      ],
+      "Y_used": [
+        "singer",
+        "vocalist",
+        "crooner",
+        "tenor",
+        "soprano",
+        "alto",
+        "bass",
+        "baritone",
+        "balladeer",
+        "bard",
+        "minstrel",
+        "chorister",
+        "diva",
+        "voice",
+        "mezzosoprano"
+      ],
+      "A_used": [
+        "disguise",
+        "mask",
+        "fake",
+        "pretend",
+        "feign",
+        "act",
+        "fiction",
+        "artifice",
+        "persona",
+        "costume",
+        "makeup",
+        "false",
+        "deception",
+        "illusion",
+        "veil"
+      ],
+      "B_used": [
+        "truth",
+        "authentic",
+        "real",
+        "honest",
+        "genuine",
+        "emotion",
+        "feeling",
+        "raw",
+        "soul",
+        "self",
+        "confession",
+        "heartfelt",
+        "sincere",
+        "vulnerability",
+        "pure"
+      ]
+    },
+    "proposal": "People associate actors with disguise more strongly than they associate singers with disguise. This differential association taps into the cultural intuition that acting inherently involves adopting a mask or alter ego, whereas vocal performance is viewed as a more direct, unmediated projection of the self's raw emotion. It is novel because it isolates the modality of performance (mimetic embodiment vs. vocal projection) rather than the generic category of 'artists.' Confirming this link would reveal how we implicitly structure expectations of vulnerability and truth across different artistic disciplines.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "9d8b4f08cea7",
     "timestamp": "2026-06-20T05:04:29.214990+00:00",
     "schema_version": "autoresearch.v1",
