@@ -1,5 +1,111 @@
 [
   {
+    "id": "b7601cb4bb88",
+    "timestamp": "2026-06-21T05:38:22.489867+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "analysts vs strategists on reactivity vs proactivity",
+    "labels": {
+      "X": "analysts",
+      "Y": "strategists",
+      "A": "reactivity",
+      "B": "proactivity"
+    },
+    "canonical_keys": {
+      "X": "analysts",
+      "Y": "strategists",
+      "A": "reactivity",
+      "B": "proactivity"
+    },
+    "effect_size": 1.3207923666825037,
+    "p_value": 8e-05,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "analyst",
+        "statistician",
+        "researcher",
+        "auditor",
+        "accountant",
+        "actuary",
+        "evaluator",
+        "inspector",
+        "examiner",
+        "appraiser",
+        "assessor",
+        "reviewer",
+        "debugger",
+        "coder",
+        "mathematician"
+      ],
+      "Y_used": [
+        "strategist",
+        "planner",
+        "architect",
+        "leader",
+        "manager",
+        "director",
+        "visionary",
+        "pioneer",
+        "organizer",
+        "commander",
+        "captain",
+        "chief",
+        "executive",
+        "consultant",
+        "advisor"
+      ],
+      "A_used": [
+        "reactive",
+        "respond",
+        "react",
+        "adjust",
+        "correct",
+        "repair",
+        "fix",
+        "address",
+        "handle",
+        "monitor",
+        "watch",
+        "observe",
+        "record",
+        "track",
+        "crisis"
+      ],
+      "B_used": [
+        "proactive",
+        "plan",
+        "strategize",
+        "design",
+        "create",
+        "build",
+        "future",
+        "vision",
+        "goal",
+        "aim",
+        "lead",
+        "direct",
+        "initiate",
+        "start",
+        "invent"
+      ]
+    },
+    "proposal": "People associate analysts with reactivity more strongly than they associate strategists with reactivity. This differential implicit association reflects a pervasive cultural narrative that frames data analysts as constantly responding to incoming signals, market shifts, or breaking information, while casting strategists as forward-looking architects of future outcomes. Examining this bias is novel because implicit measures have largely overlooked the reactivity-proactivity dimension in professional cognition, focusing instead on warmth, competence, or morality. Confirming this association would matter for organizational psychology and hiring practices, as it could reveal hidden evaluative penalties against roles that require rapid, evidence-based responsiveness in an increasingly volatile professional landscape.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "d65bc7698fd0",
     "timestamp": "2026-06-21T02:53:13.809554+00:00",
     "schema_version": "autoresearch.v1",
