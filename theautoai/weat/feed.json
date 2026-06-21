@@ -1,5 +1,111 @@
 [
   {
+    "id": "dabfc82a3dbe",
+    "timestamp": "2026-06-21T01:56:29.364670+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "refugees vs citizens on behavioral flexibility",
+    "labels": {
+      "X": "refugees",
+      "Y": "citizens",
+      "A": "adaptability",
+      "B": "rigidity"
+    },
+    "canonical_keys": {
+      "X": "refugees",
+      "Y": "citizens",
+      "A": "adaptability",
+      "B": "rigidity"
+    },
+    "effect_size": 0.06155608755073695,
+    "p_value": 0.86963,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "refugee",
+        "immigrant",
+        "migrant",
+        "exile",
+        "asylee",
+        "emigre",
+        "alien",
+        "foreigner",
+        "stranger",
+        "newcomer",
+        "outsider",
+        "guest",
+        "sojourner",
+        "displaced",
+        "traveler"
+      ],
+      "Y_used": [
+        "citizen",
+        "native",
+        "local",
+        "resident",
+        "national",
+        "denizen",
+        "inhabitant",
+        "subject",
+        "countryman",
+        "townsman",
+        "villager",
+        "dweller",
+        "host",
+        "settler",
+        "indigene"
+      ],
+      "A_used": [
+        "flexible",
+        "adaptable",
+        "versatile",
+        "agile",
+        "elastic",
+        "malleable",
+        "dynamic",
+        "resilient",
+        "responsive",
+        "fluid",
+        "pliant",
+        "ductile",
+        "accommodating",
+        "adjustable",
+        "plastic"
+      ],
+      "B_used": [
+        "rigid",
+        "static",
+        "inflexible",
+        "fixed",
+        "immovable",
+        "constant",
+        "stable",
+        "steady",
+        "unchanging",
+        "set",
+        "firm",
+        "obstinate",
+        "stubborn",
+        "strict",
+        "permanent"
+      ]
+    },
+    "proposal": "People associate refugees with adaptability more strongly than they associate citizens with adaptability. While public discourse often emphasizes refugee vulnerability, parallel narratives highlight the extraordinary resilience and rapid cultural adjustment required of displaced persons, potentially cultivating an implicit link between the category of refugees and high adaptability that exceeds associations with settled citizens, who may be implicitly viewed as more static or routine-bound. This differential association has not been systematically probed in implicit measures, which typically focus on valence or stereotypical threat rather than functional traits like behavioral flexibility. Examining this association matters because it reveals how implicit cognition may paradoxically attribute superior adaptive capacity to marginalized groups, influencing perceptions of integration potential and the hidden psychological profiles assigned to host-versus-guest populations.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "ba2791def9d2",
     "timestamp": "2026-06-20T21:15:15.263821+00:00",
     "schema_version": "autoresearch.v1",
