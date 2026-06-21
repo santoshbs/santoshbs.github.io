@@ -1,5 +1,113 @@
 [
   {
+    "id": "e4dcd926ea12",
+    "timestamp": "2026-06-21T18:46:57.417191+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "rebels vs criminals on ideological versus personal motivation",
+    "labels": {
+      "X": "rebels",
+      "Y": "criminals",
+      "A": "ideological_motivation",
+      "B": "personal_gain"
+    },
+    "canonical_keys": {
+      "X": "rebels",
+      "Y": "criminals",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 1.777157996406339,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 16,
+      "B": 16
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "rebels",
+        "activists",
+        "dissidents",
+        "revolutionaries",
+        "insurgents",
+        "partisans",
+        "separatists",
+        "guerrillas",
+        "protesters",
+        "militants",
+        "radicals",
+        "anarchists",
+        "patriots",
+        "dissenters",
+        "insurrectionists"
+      ],
+      "Y_used": [
+        "criminals",
+        "thieves",
+        "robbers",
+        "burglars",
+        "muggers",
+        "frauds",
+        "swindlers",
+        "embezzlers",
+        "hijackers",
+        "smugglers",
+        "poachers",
+        "extortionists",
+        "arsonists",
+        "vandals",
+        "dealers"
+      ],
+      "A_used": [
+        "political",
+        "ideological",
+        "principles",
+        "values",
+        "beliefs",
+        "ideals",
+        "causes",
+        "justice",
+        "equality",
+        "freedom",
+        "liberty",
+        "rights",
+        "democracy",
+        "revolution",
+        "reform",
+        "patriotism"
+      ],
+      "B_used": [
+        "financial",
+        "selfish",
+        "greed",
+        "profit",
+        "money",
+        "wealth",
+        "riches",
+        "fortune",
+        "cash",
+        "gold",
+        "silver",
+        "jewels",
+        "diamonds",
+        "gems",
+        "treasure",
+        "loot"
+      ]
+    },
+    "proposal": "People associate rebels with ideological motivation more strongly than they associate criminals with ideological motivation. While legal and political discourse often distinguishes rebels (rule-breakers driven by political or social causes) from criminals (rule-breakers driven by personal gain or antisocial impulses), implicit associations may reveal that laypeople rely on heuristic cues rather than stated motives to attribute ideology to groups. This differential association is novel because prior implicit research has focused on occupational or demographic biases, not the cognitive framing of deviance. It is important because the implicit denial of ideology to rule-breaking groups can shape public support for punitive versus restorative justice policies and influence how movements are perceived as legitimate political actors versus mere threats to order.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "8a62d5b8908e",
     "timestamp": "2026-06-21T14:24:48.866584+00:00",
     "schema_version": "autoresearch.v1",
