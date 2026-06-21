@@ -1,5 +1,115 @@
 [
   {
+    "id": "8a62d5b8908e",
+    "timestamp": "2026-06-21T14:24:48.866584+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "teachers vs bankers on generosity vs self_interest",
+    "labels": {
+      "X": "teachers",
+      "Y": "bankers",
+      "A": "generosity",
+      "B": "self_interest"
+    },
+    "canonical_keys": {
+      "X": "teachers",
+      "Y": "bankers",
+      "A": "generosity",
+      "B": ""
+    },
+    "effect_size": 1.6517464470913088,
+    "p_value": 0.0,
+    "n": {
+      "X": 16,
+      "Y": 16,
+      "A": 16,
+      "B": 16
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "teacher",
+        "educator",
+        "instructor",
+        "professor",
+        "lecturer",
+        "tutor",
+        "mentor",
+        "supervisor",
+        "principal",
+        "headmaster",
+        "counselor",
+        "guardian",
+        "caregiver",
+        "trainer",
+        "coach",
+        "guide"
+      ],
+      "Y_used": [
+        "banker",
+        "teller",
+        "broker",
+        "trader",
+        "investor",
+        "financier",
+        "capitalist",
+        "speculator",
+        "creditor",
+        "underwriter",
+        "auditor",
+        "cashier",
+        "lender",
+        "accountant",
+        "clerk",
+        "executive"
+      ],
+      "A_used": [
+        "generous",
+        "charitable",
+        "altruistic",
+        "benevolent",
+        "selfless",
+        "giving",
+        "sharing",
+        "helpful",
+        "kind",
+        "compassionate",
+        "supportive",
+        "unselfish",
+        "donating",
+        "contributing",
+        "aiding",
+        "assisting"
+      ],
+      "B_used": [
+        "selfish",
+        "greedy",
+        "stingy",
+        "miserly",
+        "ungenerous",
+        "selfishness",
+        "greed",
+        "wealthy",
+        "rich",
+        "lucrative",
+        "transaction",
+        "commercial",
+        "cheap",
+        "hoard",
+        "accumulate",
+        "money"
+      ]
+    },
+    "proposal": "People associate teachers with generosity more strongly than they associate bankers with generosity. This differential implicit association taps into a morally charged contrast between public-service giving and extractive finance that permeates contemporary political and cultural discourse. While explicit surveys often ask about trust or competence, the implicit generosity axis captures deeper intuitions about whether these actors are mentally represented as contributors to communal well-being or as self-interested wealth accumulators. Examining this association is novel because implicit measures of moral generosity across institutional roles have rarely been compared, and the findings could reveal how deeply economic narratives shape automatic moral judgments. Confirming or disconfirming it would shift understanding of whether anti-financial sentiment is rooted in explicit policy disagreements or in foundational, automatic moral categorizations.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "7049a3b8912f",
     "timestamp": "2026-06-21T07:25:22.231524+00:00",
     "schema_version": "autoresearch.v1",
