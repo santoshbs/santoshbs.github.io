@@ -1,5 +1,111 @@
 [
   {
+    "id": "6a829302657a",
+    "timestamp": "2026-06-21T22:32:37.053538+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Teachers vs Journalists on moral authority versus objectivity",
+    "labels": {
+      "X": "Teachers",
+      "Y": "Journalists",
+      "A": "moral authority",
+      "B": "objectivity"
+    },
+    "canonical_keys": {
+      "X": "teachers",
+      "Y": "journalists",
+      "A": "",
+      "B": "objectivity"
+    },
+    "effect_size": 0.951709754800827,
+    "p_value": 0.00749,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "teacher",
+        "educator",
+        "professor",
+        "instructor",
+        "lecturer",
+        "mentor",
+        "tutor",
+        "academic",
+        "scholar",
+        "counselor",
+        "principal",
+        "dean",
+        "schoolteacher",
+        "preceptor",
+        "schoolmaster"
+      ],
+      "Y_used": [
+        "journalist",
+        "reporter",
+        "correspondent",
+        "anchor",
+        "broadcaster",
+        "columnist",
+        "editor",
+        "producer",
+        "newscaster",
+        "interviewer",
+        "commentator",
+        "chronicler",
+        "stringer",
+        "photographer",
+        "newsman"
+      ],
+      "A_used": [
+        "moral",
+        "ethical",
+        "righteous",
+        "virtuous",
+        "principled",
+        "honorable",
+        "conscience",
+        "integrity",
+        "morals",
+        "upright",
+        "wisdom",
+        "just",
+        "fair",
+        "trustworthy",
+        "noble"
+      ],
+      "B_used": [
+        "neutral",
+        "objective",
+        "impartial",
+        "unbiased",
+        "factual",
+        "informative",
+        "detached",
+        "observant",
+        "critical",
+        "questioning",
+        "analytical",
+        "investigative",
+        "skeptical",
+        "realistic",
+        "empirical"
+      ]
+    },
+    "proposal": "People associate teachers with moral authority more strongly than they associate journalists with moral authority. This differential is novel because while prior work has examined stereotypes regarding competence or warmth for these professions, no study has probed the implicit link to moral authority—the perceived legitimacy to define and transmit values—despite polarized public discourse over curriculum control and media bias. Examining this association matters because it reveals whether the public subconsciously grants educators a normative role in shaping character that journalists lack, which helps explain why interventions in schools are often framed as ethical imperatives while interventions in media are framed as technical corrections.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "e4dcd926ea12",
     "timestamp": "2026-06-21T18:46:57.417191+00:00",
     "schema_version": "autoresearch.v1",
