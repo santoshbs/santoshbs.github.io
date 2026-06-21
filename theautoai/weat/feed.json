@@ -1,5 +1,111 @@
 [
   {
+    "id": "7049a3b8912f",
+    "timestamp": "2026-06-21T07:25:22.231524+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "journalists vs writers on objectivity vs subjectivity",
+    "labels": {
+      "X": "journalists",
+      "Y": "writers",
+      "A": "objectivity",
+      "B": "subjectivity"
+    },
+    "canonical_keys": {
+      "X": "journalists",
+      "Y": "writers",
+      "A": "objectivity",
+      "B": "subjectivity"
+    },
+    "effect_size": 1.6257806104125934,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "journalist",
+        "reporter",
+        "correspondent",
+        "anchor",
+        "newscaster",
+        "editor",
+        "columnist",
+        "broadcaster",
+        "newsman",
+        "newswoman",
+        "newswriter",
+        "newspaperman",
+        "newspaperwoman",
+        "newshound",
+        "anchorman"
+      ],
+      "Y_used": [
+        "writer",
+        "author",
+        "novelist",
+        "poet",
+        "playwright",
+        "essayist",
+        "dramatist",
+        "storyteller",
+        "biographer",
+        "screenwriter",
+        "lyricist",
+        "songwriter",
+        "bard",
+        "scribe",
+        "chronicler"
+      ],
+      "A_used": [
+        "objective",
+        "neutral",
+        "factual",
+        "impartial",
+        "unbiased",
+        "fair",
+        "detached",
+        "dispassionate",
+        "impersonal",
+        "realistic",
+        "empirical",
+        "verifiable",
+        "accurate",
+        "precise",
+        "concrete"
+      ],
+      "B_used": [
+        "subjective",
+        "creative",
+        "emotional",
+        "imaginative",
+        "expressive",
+        "personal",
+        "biased",
+        "partisan",
+        "passionate",
+        "artistic",
+        "poetic",
+        "fictional",
+        "invented",
+        "fanciful",
+        "whimsical"
+      ]
+    },
+    "proposal": "People associate journalists with objectivity more strongly than they associate writers with objectivity. While both categories produce text and communicate information, public discourse and professional norms sharply differentiate journalism's mandate for factual neutrality and impartial reporting from the broader literary domain's embrace of creative expression, subjectivity, and personal voice. This association is novel because prior research has typically contrasted journalists with politicians, academics, or historians, rather than distinguishing them from the wider umbrella of text producers. Examining this link matters because it reveals whether the public's trust in information ecosystems is anchored in a specific attribution of detachment to journalists, distinct from the perceived partiality or imagination ascribed to writers.",
+    "iterations": 3,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "b7601cb4bb88",
     "timestamp": "2026-06-21T05:38:22.489867+00:00",
     "schema_version": "autoresearch.v1",
