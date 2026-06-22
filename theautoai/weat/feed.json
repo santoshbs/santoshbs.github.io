@@ -1,5 +1,111 @@
 [
   {
+    "id": "4ea10623a225",
+    "timestamp": "2026-06-22T22:58:15.427092+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Parents vs Teachers on partiality vs impartiality",
+    "labels": {
+      "X": "Parents",
+      "Y": "Teachers",
+      "A": "favoritism",
+      "B": "fairness"
+    },
+    "canonical_keys": {
+      "X": "parents",
+      "Y": "teachers",
+      "A": "favoritism",
+      "B": "fairness"
+    },
+    "effect_size": 1.0964872605981637,
+    "p_value": 0.00196,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "parent",
+        "parents",
+        "mother",
+        "father",
+        "dad",
+        "mom",
+        "daddy",
+        "mommy",
+        "mama",
+        "pa",
+        "pop",
+        "guardian",
+        "caregiver",
+        "mommies",
+        "daddies"
+      ],
+      "Y_used": [
+        "teacher",
+        "teachers",
+        "educator",
+        "educators",
+        "instructor",
+        "instructors",
+        "professor",
+        "professors",
+        "tutor",
+        "tutors",
+        "mentor",
+        "mentors",
+        "coach",
+        "coaches",
+        "lecturer"
+      ],
+      "A_used": [
+        "partial",
+        "biased",
+        "unfair",
+        "favoritism",
+        "favor",
+        "prefer",
+        "prejudice",
+        "prejudiced",
+        "subjective",
+        "skewed",
+        "nepotism",
+        "cronyism",
+        "partiality",
+        "favored",
+        "selective"
+      ],
+      "B_used": [
+        "impartial",
+        "fair",
+        "fairness",
+        "objective",
+        "just",
+        "justice",
+        "neutral",
+        "unbiased",
+        "equitable",
+        "equity",
+        "balanced",
+        "impartiality",
+        "integrity",
+        "honest",
+        "consistent"
+      ]
+    },
+    "proposal": "People associate Parents with partiality more strongly than they associate Teachers with partiality. This differential association arises from the social scripts governing family versus institutional roles: parents are culturally expected to advocate for and favor their offspring above all else, whereas teachers are held to ideals of impartiality and fair evaluation. While implicit bias research has extensively documented intergroup prejudices, the implicit linkage of family roles to favoritism relative to educational roles has not been systematically probed. Examining this association matters because it reveals how the public mentally partitions 'fairness' across different spheres, potentially informing perceptions of meritocracy and bias in educational and familial contexts.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "e9dd2c7fd235",
     "timestamp": "2026-06-22T19:17:02.075121+00:00",
     "schema_version": "autoresearch.v1",
