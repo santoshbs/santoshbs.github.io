@@ -1,5 +1,115 @@
 [
   {
+    "id": "e9dd2c7fd235",
+    "timestamp": "2026-06-22T19:17:02.075121+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Zealots vs Hucksters on moral authenticity",
+    "labels": {
+      "X": "Zealots",
+      "Y": "Hucksters",
+      "A": "sincerity",
+      "B": "insincerity"
+    },
+    "canonical_keys": {
+      "X": "zealots",
+      "Y": "hucksters",
+      "A": "sincerity",
+      "B": "insincerity"
+    },
+    "effect_size": 1.134281251644862,
+    "p_value": 0.00102,
+    "n": {
+      "X": 16,
+      "Y": 16,
+      "A": 16,
+      "B": 16
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "fanatic",
+        "zealot",
+        "activist",
+        "devotee",
+        "ideologue",
+        "crusader",
+        "missionary",
+        "convert",
+        "loyalist",
+        "adherent",
+        "believer",
+        "supporter",
+        "radical",
+        "extremist",
+        "fundamentalist",
+        "purist"
+      ],
+      "Y_used": [
+        "huckster",
+        "salesman",
+        "peddler",
+        "marketer",
+        "advertiser",
+        "agent",
+        "broker",
+        "dealer",
+        "promoter",
+        "swindler",
+        "grifter",
+        "scammer",
+        "fraud",
+        "charlatan",
+        "hustler",
+        "merchant"
+      ],
+      "A_used": [
+        "sincere",
+        "genuine",
+        "authentic",
+        "honest",
+        "truthful",
+        "earnest",
+        "faithful",
+        "devoted",
+        "loyal",
+        "principled",
+        "moral",
+        "upright",
+        "virtuous",
+        "trustworthy",
+        "candid",
+        "frank"
+      ],
+      "B_used": [
+        "fake",
+        "deceitful",
+        "dishonest",
+        "fraudulent",
+        "manipulative",
+        "deceptive",
+        "cynical",
+        "mercenary",
+        "greedy",
+        "calculated",
+        "artificial",
+        "sham",
+        "phony",
+        "duplicitous",
+        "hypocritical",
+        "superficial"
+      ]
+    },
+    "proposal": "People associate Zealots with sincerity more strongly than they associate Hucksters with sincerity. This differential implicit association reflects a deep-seated cognitive distinction between ideological intensives and commercial manipulators. Zealots are typically mentally represented as driven by genuine belief or cause, whereas Hucksters are viewed as motivated by profit and deception. Examining this association is novel because it probes the boundary between 'believer' and 'salesperson' archetypes in social cognition, which is highly relevant in an era of 'influencer' culture where personal conviction and commercial promotion often blur. Confirming this bias would highlight how the public instinctively grants an aura of authenticity to passion even when it is extreme, while withholding that same trust from overtly transactional actors.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "844adf086690",
     "timestamp": "2026-06-22T16:35:31.644802+00:00",
     "schema_version": "autoresearch.v1",
