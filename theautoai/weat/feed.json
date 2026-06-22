@@ -1,5 +1,111 @@
 [
   {
+    "id": "844adf086690",
+    "timestamp": "2026-06-22T16:35:31.644802+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Jurors vs Spectators on Objectivity vs Subjectivity",
+    "labels": {
+      "X": "Jurors",
+      "Y": "Spectators",
+      "A": "Objectivity",
+      "B": "Subjectivity"
+    },
+    "canonical_keys": {
+      "X": "jurors",
+      "Y": "spectators",
+      "A": "objectivity",
+      "B": "subjectivity"
+    },
+    "effect_size": 1.0542229971239572,
+    "p_value": 0.00174,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "juror",
+        "jury",
+        "judge",
+        "jurist",
+        "magistrate",
+        "justice",
+        "arbiter",
+        "arbitrator",
+        "adjudicator",
+        "assessor",
+        "inquisitor",
+        "examiner",
+        "evaluator",
+        "referee",
+        "umpire"
+      ],
+      "Y_used": [
+        "spectator",
+        "fan",
+        "viewer",
+        "watcher",
+        "observer",
+        "bystander",
+        "onlooker",
+        "patron",
+        "guest",
+        "attendee",
+        "follower",
+        "admirer",
+        "enthusiast",
+        "cheerleader",
+        "groupie"
+      ],
+      "A_used": [
+        "objective",
+        "neutral",
+        "impartial",
+        "fair",
+        "unbiased",
+        "detached",
+        "rational",
+        "logical",
+        "analytical",
+        "factual",
+        "scientific",
+        "formal",
+        "strict",
+        "dispassionate",
+        "precise"
+      ],
+      "B_used": [
+        "subjective",
+        "biased",
+        "partial",
+        "emotional",
+        "fanatical",
+        "partisan",
+        "prejudiced",
+        "sentimental",
+        "irrational",
+        "whimsical",
+        "personal",
+        "arbitrary",
+        "capricious",
+        "erratic",
+        "impulsive"
+      ]
+    },
+    "proposal": "People associate Jurors with objectivity more strongly than they associate Spectators with objectivity. This differential implicit association probes the cultural valuation of civic deliberation versus passive consumption, reflecting whether the public mentally links the formal, deliberative role of a juror with unbiased judgment, while linking the role of a spectator with subjective fandom or bias. Examining this association is novel because implicit bias research has largely focused on occupational prestige or demographic stereotypes, neglecting the implicit moral and epistemic qualities attached to specific civic and leisure roles. Confirming this association would suggest that the ideal of the 'objective citizen' is cognitively tied to institutional adjudication, potentially marginalizing the perceived rationality of public audiences and fans in modern discourse.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "01ad091cb9cf",
     "timestamp": "2026-06-22T15:26:14.858879+00:00",
     "schema_version": "autoresearch.v1",
