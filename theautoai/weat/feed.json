@@ -1,5 +1,111 @@
 [
   {
+    "id": "34b333c31eb3",
+    "timestamp": "2026-06-23T06:51:28.745435+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "diplomats vs merchants on temporal orientation",
+    "labels": {
+      "X": "diplomats",
+      "Y": "merchants",
+      "A": "long-term",
+      "B": "short-term"
+    },
+    "canonical_keys": {
+      "X": "diplomats",
+      "Y": "merchants",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 0.9196209148534851,
+    "p_value": 0.01095,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "diplomat",
+        "envoy",
+        "ambassador",
+        "negotiator",
+        "delegate",
+        "emissary",
+        "consul",
+        "minister",
+        "representative",
+        "liaison",
+        "intermediary",
+        "official",
+        "functionary",
+        "statesman",
+        "mediator"
+      ],
+      "Y_used": [
+        "merchant",
+        "trader",
+        "seller",
+        "vendor",
+        "dealer",
+        "retailer",
+        "broker",
+        "storekeeper",
+        "peddler",
+        "salesperson",
+        "businessman",
+        "entrepreneur",
+        "capitalist",
+        "profiteer",
+        "shopkeeper"
+      ],
+      "A_used": [
+        "long",
+        "future",
+        "distant",
+        "delayed",
+        "postponed",
+        "extended",
+        "prolonged",
+        "enduring",
+        "permanent",
+        "stable",
+        "steady",
+        "patient",
+        "gradual",
+        "slow",
+        "lasting"
+      ],
+      "B_used": [
+        "short",
+        "immediate",
+        "instant",
+        "quick",
+        "fast",
+        "rapid",
+        "hasty",
+        "fleeting",
+        "temporary",
+        "momentary",
+        "transient",
+        "brief",
+        "urgent",
+        "speedy",
+        "prompt"
+      ]
+    },
+    "proposal": "people associate diplomats with strategic patience more strongly than they associate merchants with strategic patience. This differential association has not been systematically probed in implicit bias research, which has traditionally focused on moral or competence stereotypes rather than temporal orientations across professional identities. It is substantively interesting because contemporary political discourse frequently frames statecraft as inherently long-term while characterizing commercial activity as driven by short-term pressures, yet we lack evidence on whether lay cognition automatically encodes this temporal divide. Confirming or disconfirming this association would matter for understanding public intuitions about policy timelines, potentially revealing a hidden cognitive bias that predisposes citizens to discount gradual diplomatic solutions in favor of immediate commercial or security interventions.",
+    "iterations": 3,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "53c6af004d92",
     "timestamp": "2026-06-23T06:05:26.662057+00:00",
     "schema_version": "autoresearch.v1",
