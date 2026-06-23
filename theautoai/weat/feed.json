@@ -1,5 +1,111 @@
 [
   {
+    "id": "0dc37c201a23",
+    "timestamp": "2026-06-23T03:42:07.582570+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "journalists vs doctors on boundary violation vs boundary protection",
+    "labels": {
+      "X": "journalists",
+      "Y": "doctors",
+      "A": "intrusiveness",
+      "B": "confidentiality"
+    },
+    "canonical_keys": {
+      "X": "journalists",
+      "Y": "doctors",
+      "A": "intrusiveness",
+      "B": "confidentiality"
+    },
+    "effect_size": 1.1202091044797888,
+    "p_value": 0.0014,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "journalist",
+        "reporter",
+        "correspondent",
+        "columnist",
+        "newscaster",
+        "broadcaster",
+        "editor",
+        "producer",
+        "anchor",
+        "stringer",
+        "cameraman",
+        "photojournalist",
+        "newsreader",
+        "copywriter",
+        "interviewer"
+      ],
+      "Y_used": [
+        "doctor",
+        "physician",
+        "surgeon",
+        "clinician",
+        "medic",
+        "practitioner",
+        "specialist",
+        "intern",
+        "resident",
+        "therapist",
+        "paramedic",
+        "pathologist",
+        "anesthesiologist",
+        "dermatologist",
+        "endocrinologist"
+      ],
+      "A_used": [
+        "invasive",
+        "intrusive",
+        "prying",
+        "snoop",
+        "spy",
+        "stalk",
+        "violate",
+        "trespass",
+        "breach",
+        "expose",
+        "invade",
+        "probe",
+        "penetrate",
+        "intruder",
+        "eavesdrop"
+      ],
+      "B_used": [
+        "confidential",
+        "private",
+        "discreet",
+        "secure",
+        "guarded",
+        "protective",
+        "respectful",
+        "careful",
+        "cautious",
+        "loyal",
+        "trustworthy",
+        "reliable",
+        "circumspect",
+        "restrained",
+        "tactful"
+      ]
+    },
+    "proposal": "People associate journalists with intrusiveness more strongly than they associate doctors with intrusiveness. This implicit differential is novel because prior research has not contrasted the privacy boundaries of media professionals against medical professionals, who are culturally enshrined with strict confidentiality obligations. Examining this association is relevant to contemporary discourse surrounding digital surveillance, the ethics of reporting, and public perceptions of who holds the right to access sensitive personal domains. Confirming this link would reveal that the public mental model positions journalists as inherent boundary-crossers, whereas doctors are represented as boundary-keepers, despite both occupations requiring intimate access to private information.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "3d6335e59921",
     "timestamp": "2026-06-23T01:41:31.971156+00:00",
     "schema_version": "autoresearch.v1",
