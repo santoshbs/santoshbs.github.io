@@ -1,5 +1,111 @@
 [
   {
+    "id": "ea6db01aaa5b",
+    "timestamp": "2026-06-23T11:16:59.857151+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "politicians vs clergy on transactional vs spiritual logic",
+    "labels": {
+      "X": "politicians",
+      "Y": "clergy",
+      "A": "transactional",
+      "B": "spiritual"
+    },
+    "canonical_keys": {
+      "X": "politicians",
+      "Y": "clergy",
+      "A": "transactional",
+      "B": "spiritual"
+    },
+    "effect_size": 1.8577828382666897,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "politician",
+        "senator",
+        "president",
+        "governor",
+        "mayor",
+        "candidate",
+        "lobbyist",
+        "bureaucrat",
+        "official",
+        "representative",
+        "diplomat",
+        "ambassador",
+        "legislator",
+        "councillor",
+        "secretary"
+      ],
+      "Y_used": [
+        "clergy",
+        "priest",
+        "pastor",
+        "bishop",
+        "cardinal",
+        "rabbi",
+        "imam",
+        "vicar",
+        "parson",
+        "reverend",
+        "preacher",
+        "monk",
+        "nun",
+        "deacon",
+        "elder"
+      ],
+      "A_used": [
+        "bargain",
+        "deal",
+        "trade",
+        "exchange",
+        "compromise",
+        "contract",
+        "pact",
+        "power",
+        "interest",
+        "profit",
+        "loss",
+        "gain",
+        "cost",
+        "benefit",
+        "price"
+      ],
+      "B_used": [
+        "grace",
+        "mercy",
+        "faith",
+        "prayer",
+        "soul",
+        "spirit",
+        "divine",
+        "sacred",
+        "holy",
+        "bless",
+        "forgive",
+        "love",
+        "peace",
+        "truth",
+        "virtue"
+      ]
+    },
+    "proposal": "People associate politicians with transactionalism more strongly than they associate clergy with transactionalism. This differential association captures a pervasive cultural narrative framing political life as a realm of bargaining, compromise, and quid pro quo exchanges, whereas religious leadership is culturally constructed around non-reciprocal grace, divine revelation, and absolute moral commitments. While implicit research has extensively mapped warmth, competence, and moral purity for these groups, the specific cognitive dimension of transactional reasoning has not been probed. Confirming this association would matter because it reveals a fundamental distinction in how the public conceptualizes the underlying logic of governance versus spiritual authority—one as a marketplace of influence, the other as a sanctuary of transcendence.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "34b333c31eb3",
     "timestamp": "2026-06-23T06:51:28.745435+00:00",
     "schema_version": "autoresearch.v1",
