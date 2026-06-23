@@ -1,5 +1,111 @@
 [
   {
+    "id": "1cad20a13a39",
+    "timestamp": "2026-06-23T14:28:21.817495+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "caregivers vs engineers on Improvisation vs. Systematicity",
+    "labels": {
+      "X": "caregivers",
+      "Y": "engineers",
+      "A": "Improvisation",
+      "B": "Systematicity"
+    },
+    "canonical_keys": {
+      "X": "caregivers",
+      "Y": "engineers",
+      "A": "improvisation",
+      "B": "systematicity"
+    },
+    "effect_size": 0.3677037297321595,
+    "p_value": 0.32954,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "nurse",
+        "doctor",
+        "therapist",
+        "teacher",
+        "counselor",
+        "caregiver",
+        "midwife",
+        "pastor",
+        "aide",
+        "tutor",
+        "mentor",
+        "guide",
+        "coach",
+        "attendant",
+        "nanny"
+      ],
+      "Y_used": [
+        "engineer",
+        "programmer",
+        "technician",
+        "architect",
+        "mechanic",
+        "designer",
+        "analyst",
+        "operator",
+        "builder",
+        "developer",
+        "planner",
+        "coder",
+        "inspector",
+        "surveyor",
+        "fabricator"
+      ],
+      "A_used": [
+        "improvisation",
+        "improvise",
+        "spontaneous",
+        "spontaneity",
+        "impromptu",
+        "adlib",
+        "unscripted",
+        "extemporaneous",
+        "improv",
+        "freeform",
+        "intuitive",
+        "adaptive",
+        "agile",
+        "versatile",
+        "creative"
+      ],
+      "B_used": [
+        "systematic",
+        "methodical",
+        "procedural",
+        "structured",
+        "algorithmic",
+        "formulaic",
+        "standardized",
+        "regulated",
+        "disciplined",
+        "precise",
+        "codified",
+        "rigid",
+        "logical",
+        "calculated",
+        "organized"
+      ]
+    },
+    "proposal": "People associate caregivers with improvisation more strongly than they associate engineers with improvisation. This implicit bias likely stems from cultural narratives that frame caregiving as a dynamic, unscripted practice requiring spontaneous adaptation to unpredictable human needs, whereas engineering is stereotyped as strictly rule-bound, systematic, and protocol-driven. The association has not been systematically examined in prior implicit bias research, which typically focuses on warmth, competence, or morality rather than adaptive versus procedural cognition. Confirming this link would shift how we understand the mental representation of care labor versus technical labor, highlighting a hidden dimension of devaluing spontaneous expertise in care work while over-institutionalizing technical roles.",
+    "iterations": 3,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "ea6db01aaa5b",
     "timestamp": "2026-06-23T11:16:59.857151+00:00",
     "schema_version": "autoresearch.v1",
