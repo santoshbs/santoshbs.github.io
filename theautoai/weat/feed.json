@@ -1,5 +1,116 @@
 [
   {
+    "id": "ee7c7d02a8b5",
+    "timestamp": "2026-06-23T21:07:04.688908+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Defectors vs Patriots on Pragmatism vs Ideology",
+    "labels": {
+      "X": "Defectors",
+      "Y": "Patriots",
+      "A": "Pragmatism",
+      "B": "Ideology"
+    },
+    "canonical_keys": {
+      "X": "defectors",
+      "Y": "patriots",
+      "A": "pragmatism",
+      "B": "ideology"
+    },
+    "effect_size": 0.04758038138698499,
+    "p_value": 0.89571,
+    "n": {
+      "X": 16,
+      "Y": 16,
+      "A": 16,
+      "B": 16
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "defector",
+        "deserter",
+        "turncoat",
+        "apostate",
+        "renegade",
+        "traitor",
+        "informant",
+        "spy",
+        "mole",
+        "exile",
+        "emigre",
+        "refugee",
+        "dissenter",
+        "mutineer",
+        "dissident",
+        "secessionist",
+        "renunciate"
+      ],
+      "Y_used": [
+        "patriot",
+        "loyalist",
+        "nationalist",
+        "adherent",
+        "devotee",
+        "supporter",
+        "champion",
+        "defender",
+        "protector",
+        "believer",
+        "follower",
+        "partisan",
+        "guardian",
+        "citizen",
+        "soldier",
+        "veteran"
+      ],
+      "A_used": [
+        "pragmatic",
+        "practical",
+        "rational",
+        "logical",
+        "calculated",
+        "strategic",
+        "flexible",
+        "adaptable",
+        "opportunistic",
+        "realistic",
+        "sensible",
+        "reasonable",
+        "efficient",
+        "effective",
+        "utilitarian",
+        "mercenary"
+      ],
+      "B_used": [
+        "ideological",
+        "moral",
+        "honorable",
+        "principled",
+        "devout",
+        "faithful",
+        "loyal",
+        "dedicated",
+        "committed",
+        "rigid",
+        "steadfast",
+        "unwavering",
+        "dogmatic",
+        "doctrinal",
+        "zealous",
+        "fanatical"
+      ]
+    },
+    "proposal": "People associate Defectors with Pragmatism more strongly than they associate Patriots with Pragmatism. This differential association suggests that individuals implicitly attribute calculated, context-sensitive reasoning to those who abandon a group, cause, or regime, while viewing those who maintain their allegiance as driven more by ideology, honor, or rigid commitment. This matters because it reveals a cognitive bias in political and organizational discourse where the decision to leave is mentally coded as a rational cost-benefit analysis, whereas the decision to stay is coded as moral or doctrinal conviction, regardless of the actual motivations of either group. Confirming this would illuminate how we construct narratives of loyalty and betrayal by projecting distinct cognitive styles onto these actors, potentially obscuring the pragmatic calculations of 'patriots' and the ideological commitments of 'defectors.'",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "1cad20a13a39",
     "timestamp": "2026-06-23T14:28:21.817495+00:00",
     "schema_version": "autoresearch.v1",
