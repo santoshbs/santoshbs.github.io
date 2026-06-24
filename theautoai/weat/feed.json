@@ -1,5 +1,111 @@
 [
   {
+    "id": "e865489c48ad",
+    "timestamp": "2026-06-24T05:07:36.679465+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "lawyers vs engineers on epistemic comfort with uncertainty vs exactness",
+    "labels": {
+      "X": "lawyers",
+      "Y": "engineers",
+      "A": "ambiguity_tolerance",
+      "B": "precision_determinism"
+    },
+    "canonical_keys": {
+      "X": "lawyers",
+      "Y": "engineers",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 0.9586434275305463,
+    "p_value": 0.00829,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "lawyer",
+        "attorney",
+        "barrister",
+        "solicitor",
+        "counselor",
+        "advocate",
+        "jurist",
+        "pleader",
+        "counsel",
+        "prosecutor",
+        "defender",
+        "judge",
+        "magistrate",
+        "paralegal",
+        "litigator"
+      ],
+      "Y_used": [
+        "engineer",
+        "technician",
+        "mechanic",
+        "programmer",
+        "developer",
+        "architect",
+        "designer",
+        "builder",
+        "specialist",
+        "expert",
+        "professional",
+        "worker",
+        "laborer",
+        "operator",
+        "coder"
+      ],
+      "A_used": [
+        "ambiguous",
+        "vague",
+        "unclear",
+        "uncertain",
+        "fuzzy",
+        "nuanced",
+        "gray",
+        "flexible",
+        "adaptable",
+        "open",
+        "fluid",
+        "relative",
+        "subjective",
+        "interpretive",
+        "contextual"
+      ],
+      "B_used": [
+        "precise",
+        "exact",
+        "clear",
+        "certain",
+        "definite",
+        "objective",
+        "absolute",
+        "strict",
+        "rigid",
+        "factual",
+        "specific",
+        "accurate",
+        "measurable",
+        "quantifiable",
+        "deterministic"
+      ]
+    },
+    "proposal": "People associate lawyers with ambiguity tolerance more strongly than they associate engineers with ambiguity tolerance. While both professions are culturally stereotyped as highly technical and rule-driven, public discourse increasingly frames engineers as seekers of deterministic, precise solutions, whereas lawyers are portrayed as navigators of legal gray areas, precedent, and contextual nuance. This differential implicit association remains unexamined because prior research has predominantly contrasted these groups along moral or financial dimensions rather than epistemic comfort with uncertainty. Investigating this link matters because it reveals how cultural narratives assign distinct cognitive styles to institutional roles, potentially shaping hiring practices, educational tracking, and public trust in technical versus legal expertise.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "5542ef4d863a",
     "timestamp": "2026-06-24T04:26:25.549832+00:00",
     "schema_version": "autoresearch.v1",
