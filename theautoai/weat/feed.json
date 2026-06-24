@@ -1,5 +1,111 @@
 [
   {
+    "id": "fecf69133c6d",
+    "timestamp": "2026-06-24T22:38:59.071221+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "artists vs engineers on playfulness versus seriousness",
+    "labels": {
+      "X": "artists",
+      "Y": "engineers",
+      "A": "playfulness",
+      "B": "seriousness"
+    },
+    "canonical_keys": {
+      "X": "artists",
+      "Y": "engineers",
+      "A": "playfulness",
+      "B": "seriousness"
+    },
+    "effect_size": 1.4251379948573104,
+    "p_value": 4e-05,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "artist",
+        "painter",
+        "sculptor",
+        "musician",
+        "composer",
+        "actor",
+        "director",
+        "writer",
+        "poet",
+        "dancer",
+        "choreographer",
+        "illustrator",
+        "cartoonist",
+        "photographer",
+        "filmmaker"
+      ],
+      "Y_used": [
+        "engineer",
+        "programmer",
+        "developer",
+        "technician",
+        "architect",
+        "analyst",
+        "physicist",
+        "mathematician",
+        "scientist",
+        "researcher",
+        "inventor",
+        "mechanic",
+        "builder",
+        "operator",
+        "technologist"
+      ],
+      "A_used": [
+        "playful",
+        "fun",
+        "game",
+        "toy",
+        "joke",
+        "laughter",
+        "smile",
+        "joy",
+        "happy",
+        "delight",
+        "play",
+        "humor",
+        "amusement",
+        "sport",
+        "party"
+      ],
+      "B_used": [
+        "serious",
+        "work",
+        "business",
+        "duty",
+        "strict",
+        "rigid",
+        "formal",
+        "official",
+        "solemn",
+        "grave",
+        "stern",
+        "responsibility",
+        "obligation",
+        "discipline",
+        "earnest"
+      ]
+    },
+    "proposal": "People associate artists with 'playfulness' more strongly than they associate engineers with 'playfulness'. While playfulness is often recognized as an inherent part of artistic process and aesthetic creation (e.g., doodling, improvising, experimenting), engineers are culturally stereotyped as serious, rigid, or purely problem-solving actors focused on efficiency and constraints. Examining this differential implicit association is novel because prior research has focused on broad dichotomies like logic versus creativity, but has not probed the specific 'ludic' axis of playfulness. This matters because it reveals how societal perceptions of 'serious work' might inadvertently penalize STEM fields for not being seen as fun, or conversely, how 'play' is still largely marginalized as a professional asset outside of the arts.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "78f19f66c257",
     "timestamp": "2026-06-24T18:27:09.556226+00:00",
     "schema_version": "autoresearch.v1",
