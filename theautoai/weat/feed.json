@@ -1,5 +1,111 @@
 [
   {
+    "id": "fe462829cd07",
+    "timestamp": "2026-06-24T03:51:16.996131+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "curators vs collectors on social exclusivity versus inclusivity",
+    "labels": {
+      "X": "curators",
+      "Y": "collectors",
+      "A": "elitism",
+      "B": "egalitarianism"
+    },
+    "canonical_keys": {
+      "X": "curators",
+      "Y": "collectors",
+      "A": "elitism",
+      "B": "egalitarianism"
+    },
+    "effect_size": -0.25902029178879826,
+    "p_value": 0.49591,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "curator",
+        "archivist",
+        "conservator",
+        "restorer",
+        "docent",
+        "guide",
+        "registrar",
+        "custodian",
+        "keeper",
+        "steward",
+        "overseer",
+        "supervisor",
+        "director",
+        "administrator",
+        "manager"
+      ],
+      "Y_used": [
+        "collector",
+        "connoisseur",
+        "enthusiast",
+        "hobbyist",
+        "shopper",
+        "buyer",
+        "consumer",
+        "purchaser",
+        "acquirer",
+        "gatherer",
+        "hoarder",
+        "accumulator",
+        "investor",
+        "patron",
+        "benefactor"
+      ],
+      "A_used": [
+        "elitist",
+        "snob",
+        "pretentious",
+        "exclusive",
+        "aristocrat",
+        "patrician",
+        "sophisticated",
+        "highbrow",
+        "upscale",
+        "privileged",
+        "refined",
+        "elite",
+        "snobbish",
+        "superior",
+        "aristocratic"
+      ],
+      "B_used": [
+        "egalitarian",
+        "inclusive",
+        "popular",
+        "common",
+        "ordinary",
+        "democratic",
+        "accessible",
+        "mainstream",
+        "universal",
+        "widespread",
+        "everyday",
+        "populist",
+        "familiar",
+        "basic",
+        "standard"
+      ]
+    },
+    "proposal": "People associate curators with elitism more strongly than they associate collectors with elitism. While both social actor categories are involved in the accumulation and preservation of cultural objects, curators occupy institutional positions as arbiters of taste and gatekeepers of the canon, whereas collectors are often framed in popular discourse as obsessive consumers or eccentric hoarders driven by personal desire rather than cultural authority. Examining this differential association is novel because it tests whether the implicit bias against cultural gatekeeping is stronger than the bias against conspicuous consumption in the arts, a distinction not yet probed in social psychological literature. This matters for understanding public trust in museums versus private philanthropy and for debates over cultural restitution, where curators are often cast as complicit in elite power structures while collectors may be viewed with less moral scrutiny regarding institutional authority.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "885d054baaaa",
     "timestamp": "2026-06-23T23:18:37.147130+00:00",
     "schema_version": "autoresearch.v1",
