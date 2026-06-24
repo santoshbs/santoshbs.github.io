@@ -1,5 +1,111 @@
 [
   {
+    "id": "5542ef4d863a",
+    "timestamp": "2026-06-24T04:26:25.549832+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Natives vs Immigrants on Deservingness vs. Earning",
+    "labels": {
+      "X": "Natives",
+      "Y": "Immigrants",
+      "A": "Entitlement / Inherent Claim",
+      "B": "Striving / Contingent Achievement"
+    },
+    "canonical_keys": {
+      "X": "natives",
+      "Y": "immigrants",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 0.39896623775263235,
+    "p_value": 0.29039,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "citizen",
+        "native",
+        "local",
+        "domestic",
+        "national",
+        "established",
+        "permanent",
+        "settled",
+        "original",
+        "resident",
+        "indigenous",
+        "founder",
+        "inheritor",
+        "settler",
+        "homegrown"
+      ],
+      "Y_used": [
+        "immigrant",
+        "migrant",
+        "foreigner",
+        "alien",
+        "refugee",
+        "newcomer",
+        "outsider",
+        "expat",
+        "visitor",
+        "guest",
+        "transplant",
+        "sojourner",
+        "expatriate",
+        "incomer",
+        "stranger"
+      ],
+      "A_used": [
+        "entitled",
+        "privilege",
+        "birthright",
+        "deserve",
+        "due",
+        "inherent",
+        "right",
+        "guaranteed",
+        "natural",
+        "legacy",
+        "claim",
+        "prerogative",
+        "unearned",
+        "assured",
+        "ownership"
+      ],
+      "B_used": [
+        "strive",
+        "earn",
+        "work",
+        "effort",
+        "merit",
+        "prove",
+        "temporary",
+        "provisional",
+        "precarious",
+        "struggle",
+        "achieve",
+        "acquire",
+        "conditional",
+        "contingent",
+        "hardworking"
+      ]
+    },
+    "proposal": "People associate Natives with Entitlement more strongly than they associate Immigrants with Entitlement. While explicit political discourse often frames immigrants as 'takers' of resources, this proposal targets the psychological dimension of entitlement: the implicit sense that one inherently deserves rights, status, or rewards by virtue of belonging. Natives may be implicitly linked to unearned or birthright advantages (e.g., citizenship, cultural ownership, linguistic privilege), whereas immigrants are stereotypically associated with precariousness, striving, and the need to prove oneself. This distinction matters because it reveals a subtle cognitive asymmetry where native-born status is mentalized as a source of inherent claim rather than contingent achievement, potentially obscuring structural advantages and reinforcing intergroup friction through divergent assumptions about merit and deservingness. This association has not been systematically probed in implicit measures, which have focused heavily on economic or moral dimensions of nativity rather than the internalized sense of deservingness.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "fe462829cd07",
     "timestamp": "2026-06-24T03:51:16.996131+00:00",
     "schema_version": "autoresearch.v1",
