@@ -1,5 +1,111 @@
 [
   {
+    "id": "e07f4dbd868f",
+    "timestamp": "2026-06-24T13:12:20.461583+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "politicians vs scientists on moral adaptability vs rigidity",
+    "labels": {
+      "X": "politicians",
+      "Y": "scientists",
+      "A": "moral flexibility",
+      "B": "moral rigidity"
+    },
+    "canonical_keys": {
+      "X": "politicians",
+      "Y": "scientists",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": -1.3577678457559943,
+    "p_value": 2e-05,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "president",
+        "senator",
+        "governor",
+        "mayor",
+        "politician",
+        "legislator",
+        "lawmaker",
+        "diplomat",
+        "lobbyist",
+        "minister",
+        "representative",
+        "activist",
+        "official",
+        "candidate",
+        "delegate"
+      ],
+      "Y_used": [
+        "physicist",
+        "biologist",
+        "chemist",
+        "doctor",
+        "researcher",
+        "professor",
+        "academic",
+        "engineer",
+        "analyst",
+        "technician",
+        "scientist",
+        "astronomer",
+        "geologist",
+        "psychologist",
+        "neurologist"
+      ],
+      "A_used": [
+        "flexible",
+        "adaptable",
+        "compromising",
+        "pragmatic",
+        "negotiable",
+        "yielding",
+        "fluid",
+        "shifting",
+        "situational",
+        "contextual",
+        "tactical",
+        "opportunistic",
+        "adjusting",
+        "evolving",
+        "pliable"
+      ],
+      "B_used": [
+        "rigid",
+        "strict",
+        "fixed",
+        "inflexible",
+        "unyielding",
+        "steadfast",
+        "dogmatic",
+        "hardline",
+        "unchanging",
+        "constant",
+        "unwavering",
+        "firm",
+        "immutable",
+        "absolute",
+        "uncompromising"
+      ]
+    },
+    "proposal": "People associate politicians with moral flexibility more strongly than they associate scientists with moral flexibility. This differential implicit association reflects contemporary cultural narratives that frame political governance as requiring pragmatic compromise and contextual ethical trade-offs, while casting scientific inquiry as bound by rigid methodological and ethical absolutes. Examining this implicit bias is novel because most intergroup attitude research focuses on competence-warmth or logic-emotion axes, largely ignoring how the public implicitly partitions moral adaptability across institutional roles. Understanding this association matters because it reveals hidden expectations about where ethical rigidity is rewarded versus where moral navigation is normalized, shaping public trust, policy debates, and the perceived legitimacy of compromise in democratic versus empirical domains.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "e865489c48ad",
     "timestamp": "2026-06-24T05:07:36.679465+00:00",
     "schema_version": "autoresearch.v1",
