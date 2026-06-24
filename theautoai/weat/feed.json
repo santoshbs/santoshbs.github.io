@@ -1,5 +1,111 @@
 [
   {
+    "id": "38c125611c8f",
+    "timestamp": "2026-06-24T14:10:10.700026+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Defectors vs Refugees on Heroism vs Passivity",
+    "labels": {
+      "X": "Defectors",
+      "Y": "Refugees",
+      "A": "Heroic/Brave",
+      "B": "Passive/Weak"
+    },
+    "canonical_keys": {
+      "X": "defectors",
+      "Y": "refugees",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 0.5802385283250705,
+    "p_value": 0.12003,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "defector",
+        "deserter",
+        "renegade",
+        "turncoat",
+        "mutineer",
+        "seceder",
+        "rebel",
+        "traitor",
+        "apostate",
+        "fugitive",
+        "runaway",
+        "exile",
+        "dissident",
+        "secessionist",
+        "outlaw"
+      ],
+      "Y_used": [
+        "refugee",
+        "migrant",
+        "immigrant",
+        "evacuee",
+        "deportee",
+        "nomad",
+        "wanderer",
+        "drifter",
+        "vagrant",
+        "outcast",
+        "pariah",
+        "alien",
+        "foreigner",
+        "survivor",
+        "escapee"
+      ],
+      "A_used": [
+        "brave",
+        "courageous",
+        "heroic",
+        "valiant",
+        "gallant",
+        "bold",
+        "fearless",
+        "daring",
+        "intrepid",
+        "resolute",
+        "steadfast",
+        "noble",
+        "spirited",
+        "audacious",
+        "chivalrous"
+      ],
+      "B_used": [
+        "passive",
+        "cowardly",
+        "timid",
+        "weak",
+        "helpless",
+        "dependent",
+        "fearful",
+        "submissive",
+        "inert",
+        "docile",
+        "yielding",
+        "pathetic",
+        "wimpy",
+        "feeble",
+        "spineless"
+      ]
+    },
+    "proposal": "People associate Defectors with heroism more strongly than they associate Refugees with heroism. This differential implicit association captures a subtle asymmetry in how public discourse frames voluntary political exit versus forced displacement: defectors are often romanticized as brave dissidents taking moral stands, whereas refugees are frequently stereotyped as passive victims or burdens, despite the extraordinary agency and risk involved in fleeing persecution. Examining this association is novel because prior research has largely focused on competence-warmth stereotypes for refugees or loyalty dimensions for defectors, without directly contrasting these two categories of 'leavers' on the dimension of heroic agency. Disconfirming this association would challenge narratives that minimize the courage of refugees, while confirming it would reveal a bias that valorizes political defection while erasing the heroism of survival and escape.",
+    "iterations": 3,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "e07f4dbd868f",
     "timestamp": "2026-06-24T13:12:20.461583+00:00",
     "schema_version": "autoresearch.v1",
