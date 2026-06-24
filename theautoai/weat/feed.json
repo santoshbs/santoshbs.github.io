@@ -1,5 +1,111 @@
 [
   {
+    "id": "d6f534085b61",
+    "timestamp": "2026-06-24T23:29:35.953606+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "hosts vs guests on Agency vs Passivity",
+    "labels": {
+      "X": "hosts",
+      "Y": "guests",
+      "A": "Agency",
+      "B": "Passivity"
+    },
+    "canonical_keys": {
+      "X": "hosts",
+      "Y": "guests",
+      "A": "agency",
+      "B": "passivity"
+    },
+    "effect_size": 0.9179531364300209,
+    "p_value": 0.01103,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "host",
+        "landlord",
+        "owner",
+        "proprietor",
+        "manager",
+        "director",
+        "supervisor",
+        "captain",
+        "president",
+        "teacher",
+        "master",
+        "organizer",
+        "planner",
+        "curator",
+        "hostess"
+      ],
+      "Y_used": [
+        "guest",
+        "visitor",
+        "attendee",
+        "invitee",
+        "customer",
+        "tourist",
+        "newcomer",
+        "passerby",
+        "outsider",
+        "spectator",
+        "observer",
+        "listener",
+        "follower",
+        "dependent",
+        "subject"
+      ],
+      "A_used": [
+        "agency",
+        "autonomy",
+        "authority",
+        "initiative",
+        "control",
+        "action",
+        "power",
+        "decision",
+        "active",
+        "influence",
+        "command",
+        "freedom",
+        "force",
+        "drive",
+        "cause"
+      ],
+      "B_used": [
+        "passivity",
+        "compliance",
+        "receptivity",
+        "wait",
+        "receive",
+        "obedient",
+        "passive",
+        "follow",
+        "submit",
+        "accept",
+        "depend",
+        "obey",
+        "reaction",
+        "subordinate",
+        "submission"
+      ]
+    },
+    "proposal": "People associate hosts with agency more strongly than they associate guests with agency. This proposal examines the implicit mental representation of the host-guest dyad, a fundamental social structure governing hospitality, service, and territorial rights. While the roles of hosts and guests are ubiquitous in human interaction, implicit research has largely overlooked how the asymmetry of power and control in these roles is cognitively encoded. We predict that hosts are implicitly linked to concepts of autonomy, authority, and initiative, whereas guests are linked to passivity, compliance, and receptivity. Confirming this association would reveal how deeply the structural inequality of the hosting relationship is internalized, influencing perceptions of responsibility and entitlement in social and economic exchanges.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "fecf69133c6d",
     "timestamp": "2026-06-24T22:38:59.071221+00:00",
     "schema_version": "autoresearch.v1",
