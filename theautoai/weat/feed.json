@@ -1,5 +1,111 @@
 [
   {
+    "id": "06b5a4e644dd",
+    "timestamp": "2026-06-25T09:33:01.373797+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "philanthropists vs politicians on secrecy versus transparency",
+    "labels": {
+      "X": "philanthropists",
+      "Y": "politicians",
+      "A": "secrecy",
+      "B": "transparency"
+    },
+    "canonical_keys": {
+      "X": "philanthropists",
+      "Y": "politicians",
+      "A": "secrecy",
+      "B": "transparency"
+    },
+    "effect_size": 0.30544140282217724,
+    "p_value": 0.42208,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "philanthropist",
+        "donor",
+        "benefactor",
+        "patron",
+        "volunteer",
+        "fundraiser",
+        "contributor",
+        "sponsor",
+        "trustee",
+        "supporter",
+        "grantor",
+        "endorser",
+        "humanitarian",
+        "altruist",
+        "activist"
+      ],
+      "Y_used": [
+        "politician",
+        "senator",
+        "representative",
+        "governor",
+        "mayor",
+        "legislator",
+        "official",
+        "statesman",
+        "diplomat",
+        "ambassador",
+        "minister",
+        "lawmaker",
+        "councilor",
+        "alderman",
+        "deputy"
+      ],
+      "A_used": [
+        "secret",
+        "hidden",
+        "covert",
+        "clandestine",
+        "opaque",
+        "shadowy",
+        "concealed",
+        "undercover",
+        "private",
+        "confidential",
+        "stealthy",
+        "mysterious",
+        "obscure",
+        "veiled",
+        "obscured"
+      ],
+      "B_used": [
+        "public",
+        "visible",
+        "exposed",
+        "transparent",
+        "open",
+        "clear",
+        "conspicuous",
+        "evident",
+        "noticeable",
+        "observable",
+        "manifest",
+        "blatant",
+        "overt",
+        "disclosed",
+        "revealed"
+      ]
+    },
+    "proposal": "People associate philanthropists with secrecy more strongly than they associate politicians with secrecy. This association is driven by contemporary critiques of 'philanthrocapitalism' and dark money, which highlight how private foundations and wealthy donors can shape public policy, fund think tanks, and influence elections without the transparency mandates, open meeting requirements, or freedom-of-information obligations that constrain elected officials. Examining this implicit link is novel, as prior research has focused on explicit attitudes toward wealth or competence, yet it matters because an implicit bias linking philanthropy to opacity may undermine democratic accountability by normalizing shadow influence over public discourse. We predict that words like hidden, opaque, covert, and clandestine will pair more readily with philanthropists than with politicians, who are implicitly linked to public, exposed, and visible domains despite their own scandals.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "840b2414d432",
     "timestamp": "2026-06-25T07:30:53.759011+00:00",
     "schema_version": "autoresearch.v1",
