@@ -1,5 +1,111 @@
 [
   {
+    "id": "ef0523c36fc4",
+    "timestamp": "2026-06-25T00:25:34.393267+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "archivists vs journalists on temporal processing style",
+    "labels": {
+      "X": "archivists",
+      "Y": "journalists",
+      "A": "epistemic patience",
+      "B": "immediacy"
+    },
+    "canonical_keys": {
+      "X": "archivists",
+      "Y": "journalists",
+      "A": "",
+      "B": "immediacy"
+    },
+    "effect_size": 0.4037370843786446,
+    "p_value": 0.28205,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "archivist",
+        "librarian",
+        "historian",
+        "curator",
+        "preservationist",
+        "collector",
+        "cataloger",
+        "researcher",
+        "scholar",
+        "expert",
+        "keeper",
+        "custodian",
+        "assistant",
+        "director",
+        "manager"
+      ],
+      "Y_used": [
+        "journalist",
+        "reporter",
+        "writer",
+        "correspondent",
+        "editor",
+        "blogger",
+        "anchor",
+        "cameraman",
+        "photographer",
+        "broadcaster",
+        "newscaster",
+        "commentator",
+        "critic",
+        "publisher",
+        "author"
+      ],
+      "A_used": [
+        "slow",
+        "patient",
+        "calm",
+        "steady",
+        "deliberate",
+        "careful",
+        "precise",
+        "thorough",
+        "thoughtful",
+        "mindful",
+        "reserved",
+        "quiet",
+        "enduring",
+        "lasting",
+        "permanent"
+      ],
+      "B_used": [
+        "fast",
+        "quick",
+        "rapid",
+        "immediate",
+        "urgent",
+        "sudden",
+        "instant",
+        "speed",
+        "swift",
+        "brisk",
+        "hurried",
+        "frantic",
+        "prompt",
+        "early",
+        "new"
+      ]
+    },
+    "proposal": "People associate archivists with epistemic patience more strongly than they associate journalists with epistemic patience. This differential association reflects how contemporary information discourse implicitly partitions knowledge work: journalists are culturally framed as rapid sense-makers who prioritize immediacy and narrative closure, whereas archivists are mentally mapped onto slowness, ambiguity tolerance, and long-term preservation. Examining this implicit contrast is novel because prior research has largely focused on explicit stereotypes about media credibility rather than the automatic cognitive link between institutional role and temporal processing style. Confirming this association would matter for understanding how the public instinctively values different forms of expertise in an era of accelerated news cycles, potentially shaping attitudes toward archival funding, media literacy, and trust in long-form historical analysis.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "d6f534085b61",
     "timestamp": "2026-06-24T23:29:35.953606+00:00",
     "schema_version": "autoresearch.v1",
