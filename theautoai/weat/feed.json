@@ -1,5 +1,111 @@
 [
   {
+    "id": "93aa231e04f3",
+    "timestamp": "2026-06-25T19:59:01.778855+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "programmers vs philosophers on Instrumental Pragmatism vs Abstract Contemplation",
+    "labels": {
+      "X": "programmers",
+      "Y": "philosophers",
+      "A": "Pragmatism",
+      "B": "Abstractness"
+    },
+    "canonical_keys": {
+      "X": "programmers",
+      "Y": "philosophers",
+      "A": "pragmatism",
+      "B": "abstractness"
+    },
+    "effect_size": 1.4728768426387977,
+    "p_value": 3e-05,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "programmer",
+        "coder",
+        "developer",
+        "engineer",
+        "technician",
+        "architect",
+        "designer",
+        "analyst",
+        "hacker",
+        "builder",
+        "maker",
+        "creator",
+        "operator",
+        "administrator",
+        "consultant"
+      ],
+      "Y_used": [
+        "philosopher",
+        "thinker",
+        "scholar",
+        "academic",
+        "theorist",
+        "professor",
+        "teacher",
+        "writer",
+        "author",
+        "essayist",
+        "intellectual",
+        "sage",
+        "mentor",
+        "critic",
+        "educator"
+      ],
+      "A_used": [
+        "practical",
+        "useful",
+        "efficient",
+        "productive",
+        "functional",
+        "effective",
+        "pragmatic",
+        "concrete",
+        "applied",
+        "technical",
+        "systematic",
+        "logical",
+        "precise",
+        "rational",
+        "objective"
+      ],
+      "B_used": [
+        "abstract",
+        "theoretical",
+        "speculative",
+        "contemplative",
+        "reflective",
+        "conceptual",
+        "idealistic",
+        "metaphysical",
+        "introspective",
+        "esoteric",
+        "profound",
+        "complex",
+        "subtle",
+        "obscure",
+        "vague"
+      ]
+    },
+    "proposal": "People associate programmers with instrumental rationality more strongly than they associate philosophers with instrumental rationality. This differential reflects a contemporary cultural narrative that casts software builders as pragmatic optimizers focused on means-ends efficiency, while framing philosophical inquirers as contemplative questioners uninterested in practical utility. Though explicit attitudes acknowledge both groups' intellectual value, implicit memory likely links programmers to calculative problem-solving and philosophers to abstract speculation due to divergent media portrayals and educational socialization. Testing this association matters because it reveals how foundational cognitive biases may silently shape public trust in algorithmic governance versus ethical deliberation as societies integrate artificial intelligence.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "b038ae03fb10",
     "timestamp": "2026-06-25T14:06:47.453827+00:00",
     "schema_version": "autoresearch.v1",
