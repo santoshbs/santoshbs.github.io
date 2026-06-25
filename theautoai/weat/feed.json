@@ -1,5 +1,111 @@
 [
   {
+    "id": "b038ae03fb10",
+    "timestamp": "2026-06-25T14:06:47.453827+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Scientists vs Journalists on conceptual abstraction versus observable concreteness",
+    "labels": {
+      "X": "Scientists",
+      "Y": "Journalists",
+      "A": "abstraction",
+      "B": "concreteness"
+    },
+    "canonical_keys": {
+      "X": "scientists",
+      "Y": "journalists",
+      "A": "abstraction",
+      "B": "concreteness"
+    },
+    "effect_size": 1.6838320637959352,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "scientist",
+        "biologist",
+        "chemist",
+        "physicist",
+        "researcher",
+        "professor",
+        "academic",
+        "mathematician",
+        "astronomer",
+        "geneticist",
+        "psychologist",
+        "statistician",
+        "demographer",
+        "anatomist",
+        "paleontologist"
+      ],
+      "Y_used": [
+        "journalist",
+        "reporter",
+        "correspondent",
+        "columnist",
+        "editor",
+        "photographer",
+        "anchor",
+        "producer",
+        "writer",
+        "broadcaster",
+        "interviewer",
+        "commentator",
+        "critic",
+        "reviewer",
+        "publicist"
+      ],
+      "A_used": [
+        "theory",
+        "concept",
+        "model",
+        "abstraction",
+        "framework",
+        "hypothesis",
+        "principle",
+        "idea",
+        "philosophy",
+        "mathematics",
+        "logic",
+        "algorithm",
+        "variable",
+        "equation",
+        "formula"
+      ],
+      "B_used": [
+        "event",
+        "report",
+        "fact",
+        "observation",
+        "evidence",
+        "witness",
+        "testimony",
+        "story",
+        "news",
+        "photograph",
+        "interview",
+        "headline",
+        "article",
+        "documentary",
+        "footage"
+      ]
+    },
+    "proposal": "People associate scientists with abstraction more strongly than they associate journalists with abstraction. While both groups are viewed as information producers, scientists are culturally framed as builders of theoretical models and conceptual frameworks that transcend immediate experience, whereas journalists are framed as chroniclers of concrete events, human stories, and observable realities. This differential association has not been systematically probed; prior research typically contrasts scientists with artists or journalists with politicians, leaving the implicit epistemic boundary between the scientific modeler and the journalistic reporter underexamined. Confirming this association would illuminate how the public mental maps 'theory' versus 'reporting' onto specific social roles, potentially shaping trust in expert abstraction versus on-the-ground testimony in public discourse.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "65261f10490f",
     "timestamp": "2026-06-25T13:19:15.493968+00:00",
     "schema_version": "autoresearch.v1",
