@@ -1,5 +1,111 @@
 [
   {
+    "id": "c38e905c5f0d",
+    "timestamp": "2026-06-25T01:10:17.833879+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "architects vs auditors on Temporal orientation",
+    "labels": {
+      "X": "architects",
+      "Y": "auditors",
+      "A": "Prospective",
+      "B": "Retrospective"
+    },
+    "canonical_keys": {
+      "X": "architects",
+      "Y": "auditors",
+      "A": "prospective",
+      "B": "retrospective"
+    },
+    "effect_size": 0.16905333077750767,
+    "p_value": 0.6545,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "architect",
+        "designer",
+        "builder",
+        "planner",
+        "engineer",
+        "constructor",
+        "urbanist",
+        "modeler",
+        "drafter",
+        "developer",
+        "contractor",
+        "foreman",
+        "superintendent",
+        "estimator",
+        "surveyor"
+      ],
+      "Y_used": [
+        "auditor",
+        "inspector",
+        "examiner",
+        "reviewer",
+        "censor",
+        "accountant",
+        "verifier",
+        "controller",
+        "monitor",
+        "investigator",
+        "appraiser",
+        "assessor",
+        "comptroller",
+        "regulator",
+        "supervisor"
+      ],
+      "A_used": [
+        "future",
+        "tomorrow",
+        "foresight",
+        "prospect",
+        "vision",
+        "anticipation",
+        "strategy",
+        "development",
+        "growth",
+        "innovation",
+        "expectation",
+        "horizon",
+        "advance",
+        "prediction",
+        "forecast"
+      ],
+      "B_used": [
+        "past",
+        "yesterday",
+        "history",
+        "retrospect",
+        "record",
+        "archive",
+        "heritage",
+        "antiquity",
+        "tradition",
+        "memory",
+        "relic",
+        "antique",
+        "memorial",
+        "biography",
+        "diary"
+      ]
+    },
+    "proposal": "People associate architects with foresight more strongly than they associate auditors with foresight. This differential implicit association captures a temporal orientation bias embedded in occupational stereotypes: auditors are culturally and institutionally framed as backward-looking verifiers of historical records and past compliance, whereas architects are consistently portrayed as forward-looking visionaries who conceptualize what has yet to be built. While explicit stereotypes regarding creativity or risk-taking are extensively documented, the implicit mapping of time-directed cognition onto professional identities remains unexamined in social psychological research. Establishing this association would reveal how deeply temporal schemas structure lay perceptions of knowledge work, with significant implications for understanding public valuations of retrospective accountability versus prospective innovation in contemporary discourse.",
+    "iterations": 3,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "ef0523c36fc4",
     "timestamp": "2026-06-25T00:25:34.393267+00:00",
     "schema_version": "autoresearch.v1",
