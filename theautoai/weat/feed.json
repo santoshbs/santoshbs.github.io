@@ -1,5 +1,111 @@
 [
   {
+    "id": "46d4a253c2c1",
+    "timestamp": "2026-06-25T01:45:56.863038+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "journalists vs diplomats on narrative urgency vs strategic caution",
+    "labels": {
+      "X": "journalists",
+      "Y": "diplomats",
+      "A": "urgency",
+      "B": "caution"
+    },
+    "canonical_keys": {
+      "X": "journalists",
+      "Y": "diplomats",
+      "A": "urgency",
+      "B": "caution"
+    },
+    "effect_size": 0.4054948274397403,
+    "p_value": 0.28303,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "journalist",
+        "reporter",
+        "correspondent",
+        "anchor",
+        "editor",
+        "producer",
+        "cameraman",
+        "camerawoman",
+        "newscaster",
+        "broadcaster",
+        "columnist",
+        "newsreader",
+        "anchorwoman",
+        "anchorman",
+        "stringer"
+      ],
+      "Y_used": [
+        "diplomat",
+        "ambassador",
+        "envoy",
+        "emissary",
+        "consul",
+        "minister",
+        "delegate",
+        "representative",
+        "plenipotentiary",
+        "negotiator",
+        "statesman",
+        "liaison",
+        "attache",
+        "attach",
+        "secretary"
+      ],
+      "A_used": [
+        "urgent",
+        "immediate",
+        "rapid",
+        "fast",
+        "swift",
+        "quick",
+        "pressing",
+        "emergency",
+        "crisis",
+        "breaking",
+        "sensational",
+        "dramatic",
+        "intense",
+        "emotional",
+        "heated"
+      ],
+      "B_used": [
+        "cautious",
+        "careful",
+        "deliberate",
+        "slow",
+        "steady",
+        "methodical",
+        "strategic",
+        "prudent",
+        "conservative",
+        "measured",
+        "thoughtful",
+        "calculated",
+        "patient",
+        "gradual",
+        "reserved"
+      ]
+    },
+    "proposal": "People associate journalists with narrative urgency more strongly than they associate diplomats with narrative urgency. This differential implicit association captures how the public intuitively partitions information producers into roles expected to deliver rapid, emotionally resonant, present-tense framing versus roles expected to exercise strategic caution and long-term positioning. While explicit research has extensively mapped trust and accuracy perceptions across media and state communications, the implicit cognitive linkage to temporal-emotional framing remains unexamined. Understanding this mental shortcut matters because it reveals whether audiences subconsciously equate diplomatic communication with deliberate obfuscation and journalistic output with urgent truth, a bias that can distort crisis response, fuel polarization, and reinforce algorithmic incentives that reward speed over verification. Disconfirming or confirming this association would shift how scholars model public information processing during geopolitical and domestic emergencies.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "c38e905c5f0d",
     "timestamp": "2026-06-25T01:10:17.833879+00:00",
     "schema_version": "autoresearch.v1",
