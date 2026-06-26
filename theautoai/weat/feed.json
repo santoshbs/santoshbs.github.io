@@ -1,5 +1,111 @@
 [
   {
+    "id": "05abb2f44676",
+    "timestamp": "2026-06-26T14:39:12.253929+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "artisans vs artists on vocational reliability vs volatility",
+    "labels": {
+      "X": "artisans",
+      "Y": "artists",
+      "A": "vocational_reliability",
+      "B": "vocational_volatility"
+    },
+    "canonical_keys": {
+      "X": "artisans",
+      "Y": "artists",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 0.609523512310309,
+    "p_value": 0.10185,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "carpenter",
+        "blacksmith",
+        "potter",
+        "weaver",
+        "jeweler",
+        "tailor",
+        "cobbler",
+        "mason",
+        "woodworker",
+        "craftsman",
+        "glazier",
+        "upholsterer",
+        "carver",
+        "engraver",
+        "plasterer"
+      ],
+      "Y_used": [
+        "painter",
+        "sculptor",
+        "musician",
+        "poet",
+        "writer",
+        "composer",
+        "dancer",
+        "actor",
+        "singer",
+        "performer",
+        "director",
+        "animator",
+        "illustrator",
+        "designer",
+        "creator"
+      ],
+      "A_used": [
+        "reliable",
+        "steady",
+        "consistent",
+        "dependable",
+        "predictable",
+        "stable",
+        "methodical",
+        "systematic",
+        "practical",
+        "trustworthy",
+        "firm",
+        "solid",
+        "constant",
+        "regular",
+        "durable"
+      ],
+      "B_used": [
+        "volatile",
+        "erratic",
+        "fickle",
+        "whimsical",
+        "spontaneous",
+        "impulsive",
+        "chaotic",
+        "unpredictable",
+        "unstable",
+        "fleeting",
+        "random",
+        "haphazard",
+        "mercurial",
+        "capricious",
+        "temperamental"
+      ]
+    },
+    "proposal": "People associate artisans with vocational reliability more strongly than they associate artists with vocational reliability. While both groups produce tangible cultural goods, public discourse often frames artists as volatile visionaries dependent on fleeting inspiration and market whims, whereas artisans are stereotyped as steady practitioners of established trades with predictable skills and economic utility. This differential association is novel because prior research has largely examined artisans against industrialists or artists against engineers, neglecting the direct implicit contrast between these two closely related creative roles. Examining this bias matters because it reveals how 'creative' work is stratified in the public mind, potentially influencing educational pathways, funding allocations, and the perceived dignity of manual craft versus fine art.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "39ed960d2918",
     "timestamp": "2026-06-26T10:19:35.731292+00:00",
     "schema_version": "autoresearch.v1",
