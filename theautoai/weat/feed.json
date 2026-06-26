@@ -1,5 +1,111 @@
 [
   {
+    "id": "c0d0f2dca560",
+    "timestamp": "2026-06-26T22:51:36.793210+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "diplomats vs detectives on ambiguity versus clarity",
+    "labels": {
+      "X": "diplomats",
+      "Y": "detectives",
+      "A": "ambiguity",
+      "B": "clarity"
+    },
+    "canonical_keys": {
+      "X": "diplomats",
+      "Y": "detectives",
+      "A": "ambiguity",
+      "B": "clarity"
+    },
+    "effect_size": 0.7961610449430382,
+    "p_value": 0.0299,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "ambassador",
+        "envoy",
+        "delegate",
+        "minister",
+        "consul",
+        "negotiator",
+        "representative",
+        "official",
+        "statesman",
+        "diplomat",
+        "embassy",
+        "protocol",
+        "treaty",
+        "summit",
+        "negotiation"
+      ],
+      "Y_used": [
+        "detective",
+        "inspector",
+        "sleuth",
+        "investigator",
+        "agent",
+        "cop",
+        "sheriff",
+        "police",
+        "officer",
+        "patrol",
+        "precinct",
+        "homicide",
+        "warrant",
+        "case",
+        "clues"
+      ],
+      "A_used": [
+        "ambiguity",
+        "vague",
+        "obscure",
+        "secret",
+        "tact",
+        "subtlety",
+        "evasion",
+        "deniability",
+        "opaque",
+        "compromise",
+        "nuance",
+        "indirect",
+        "unclear",
+        "equivocal",
+        "obfuscation"
+      ],
+      "B_used": [
+        "clarity",
+        "truth",
+        "facts",
+        "proof",
+        "certainty",
+        "accuracy",
+        "precision",
+        "logic",
+        "revealing",
+        "uncovering",
+        "definite",
+        "concrete",
+        "explicit",
+        "straightforward",
+        "honest"
+      ]
+    },
+    "proposal": "People associate diplomats with strategic ambiguity more strongly than they associate detectives with strategic ambiguity. Cultural narratives consistently frame diplomats as skilled in maintaining productive relations through carefully calibrated, non-committal language and plausible deniability, whereas detectives are implicitly tied to forensic clarity, definitive conclusions, and the unmasking of hidden truths. Examining this implicit association is novel because while explicit political psychology has studied diplomatic negotiation styles, implicit cultural models of how these roles handle uncertainty and information transparency remain untested. Confirming this would reveal how the public mentally partitions productive vagueness from problematic obfuscation across institutional roles, with implications for how trust is allocated in foreign policy versus law enforcement discourse.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "000b3d5b724e",
     "timestamp": "2026-06-26T22:03:36.262776+00:00",
     "schema_version": "autoresearch.v1",
