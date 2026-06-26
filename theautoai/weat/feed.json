@@ -1,5 +1,111 @@
 [
   {
+    "id": "a072944d5bfc",
+    "timestamp": "2026-06-26T18:37:57.647650+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "artisans vs merchants on authenticity vs commercialization",
+    "labels": {
+      "X": "artisans",
+      "Y": "merchants",
+      "A": "Authenticity",
+      "B": "Commercialization"
+    },
+    "canonical_keys": {
+      "X": "artisans",
+      "Y": "merchants",
+      "A": "authenticity",
+      "B": "commercialization"
+    },
+    "effect_size": 1.7372416254683378,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "carpenter",
+        "jeweler",
+        "potter",
+        "weaver",
+        "tailor",
+        "mason",
+        "smith",
+        "baker",
+        "brewer",
+        "cooper",
+        "sculptor",
+        "painter",
+        "carver",
+        "blacksmith",
+        "upholsterer"
+      ],
+      "Y_used": [
+        "trader",
+        "dealer",
+        "broker",
+        "vendor",
+        "retailer",
+        "salesman",
+        "shopkeeper",
+        "hawker",
+        "middleman",
+        "agent",
+        "capitalist",
+        "banker",
+        "investor",
+        "financier",
+        "peddler"
+      ],
+      "A_used": [
+        "authentic",
+        "genuine",
+        "real",
+        "sincere",
+        "natural",
+        "honest",
+        "true",
+        "pure",
+        "original",
+        "traditional",
+        "soulful",
+        "heartfelt",
+        "handmade",
+        "legacy",
+        "heritage"
+      ],
+      "B_used": [
+        "commercial",
+        "artificial",
+        "fake",
+        "synthetic",
+        "industrial",
+        "corporate",
+        "manufactured",
+        "phony",
+        "bogus",
+        "superficial",
+        "transactional",
+        "profitable",
+        "financial",
+        "market",
+        "bargain"
+      ]
+    },
+    "proposal": "People associate artisans with authenticity more strongly than they associate merchants with authenticity. This differential implicit association captures the cultural romance of the 'handmade' against the 'commercial,' where the artisan is seen as preserving tradition and soul, while the merchant is viewed as transactional and potentially exploitative. Investigating this association is novel because implicit bias research has rarely examined economic roles through the lens of authenticity rather than morality or intelligence. It matters because the mental link between craft and authenticity underpins contemporary consumer culture and can obscure the value of trade, logistics, and market mediation in sustaining complex societies.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "05abb2f44676",
     "timestamp": "2026-06-26T14:39:12.253929+00:00",
     "schema_version": "autoresearch.v1",
