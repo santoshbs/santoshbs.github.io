@@ -1,5 +1,111 @@
 [
   {
+    "id": "11f69f697a9c",
+    "timestamp": "2026-06-26T08:23:55.455830+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "explorers vs bureaucrats on situational flexibility versus rigidity",
+    "labels": {
+      "X": "explorers",
+      "Y": "bureaucrats",
+      "A": "adaptability",
+      "B": "rigidity"
+    },
+    "canonical_keys": {
+      "X": "explorers",
+      "Y": "bureaucrats",
+      "A": "adaptability",
+      "B": "rigidity"
+    },
+    "effect_size": 1.4918958800769293,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "explorer",
+        "adventurer",
+        "pioneer",
+        "scout",
+        "traveler",
+        "wanderer",
+        "voyager",
+        "nomad",
+        "prospector",
+        "ranger",
+        "drifter",
+        "rover",
+        "trekker",
+        "hiker",
+        "backpacker"
+      ],
+      "Y_used": [
+        "bureaucrat",
+        "official",
+        "administrator",
+        "clerk",
+        "functionary",
+        "manager",
+        "executive",
+        "secretary",
+        "registrar",
+        "controller",
+        "censor",
+        "auditor",
+        "inspector",
+        "officer",
+        "director"
+      ],
+      "A_used": [
+        "flexible",
+        "adaptable",
+        "agile",
+        "versatile",
+        "spontaneous",
+        "fluid",
+        "dynamic",
+        "malleable",
+        "open",
+        "loose",
+        "elastic",
+        "changeable",
+        "variable",
+        "mutable",
+        "yielding"
+      ],
+      "B_used": [
+        "rigid",
+        "strict",
+        "inflexible",
+        "fixed",
+        "static",
+        "stubborn",
+        "formal",
+        "conventional",
+        "stiff",
+        "unyielding",
+        "intractable",
+        "bound",
+        "constrained",
+        "restricted",
+        "confined"
+      ]
+    },
+    "proposal": "People associate explorers with situational flexibility more strongly than they associate bureaucrats with situational flexibility. While explicit surveys often capture attitudes toward institutional efficiency versus frontier innovation, the automatic cognitive pairing of these archetypes with adaptability versus rigidity remains untested in implicit paradigms. This association is novel because implicit research has largely focused on moral or competence stereotypes rather than operational and epistemic styles. It matters because understanding these automatic mappings could reveal how public discourse implicitly legitimizes either agile risk-taking or systematic compliance in high-stakes decision-making contexts.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "feccffaf224c",
     "timestamp": "2026-06-26T01:06:03.379804+00:00",
     "schema_version": "autoresearch.v1",
