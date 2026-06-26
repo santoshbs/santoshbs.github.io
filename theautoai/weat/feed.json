@@ -1,5 +1,111 @@
 [
   {
+    "id": "000b3d5b724e",
+    "timestamp": "2026-06-26T22:03:36.262776+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "commenters vs moderators on authenticity vs artificiality",
+    "labels": {
+      "X": "commenters",
+      "Y": "moderators",
+      "A": "genuine",
+      "B": "artificial"
+    },
+    "canonical_keys": {
+      "X": "commenters",
+      "Y": "moderators",
+      "A": "genuine",
+      "B": "artificial"
+    },
+    "effect_size": 1.3572221029346467,
+    "p_value": 9e-05,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "commenters",
+        "posters",
+        "users",
+        "readers",
+        "writers",
+        "typists",
+        "chatters",
+        "bloggers",
+        "netizens",
+        "lurkers",
+        "trolls",
+        "contributors",
+        "participants",
+        "observers",
+        "bystanders"
+      ],
+      "Y_used": [
+        "moderators",
+        "admins",
+        "administrators",
+        "censors",
+        "overseers",
+        "regulators",
+        "supervisors",
+        "managers",
+        "controllers",
+        "gatekeepers",
+        "reviewers",
+        "editors",
+        "arbiters",
+        "enforcers",
+        "mediators"
+      ],
+      "A_used": [
+        "authentic",
+        "genuine",
+        "real",
+        "true",
+        "honest",
+        "sincere",
+        "natural",
+        "raw",
+        "unfiltered",
+        "transparent",
+        "candid",
+        "heartfelt",
+        "spontaneous",
+        "direct",
+        "unpolished"
+      ],
+      "B_used": [
+        "artificial",
+        "fake",
+        "contrived",
+        "staged",
+        "sanitized",
+        "calculated",
+        "synthetic",
+        "manufactured",
+        "curated",
+        "filtered",
+        "polished",
+        "sterile",
+        "bureaucratic",
+        "official",
+        "scripted"
+      ]
+    },
+    "proposal": "People associate commenters with authenticity more strongly than they associate moderators with authenticity. This differential implicit association reflects a pervasive cultural narrative that frames unregulated, user-generated expression as raw and genuine, while institutional oversight or platform governance is mentally coded as sanitized, performative, or artificial. It is novel because implicit association research has historically focused on traditional demographics and professions, largely neglecting the psychological representation of digital discourse roles. Examining this bias matters because it reveals how public trust in content moderation and community management may be structurally undermined by deep-seated associations linking regulation with inauthenticity, which has direct implications for digital platform governance and democratic deliberation online.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "f13ea32c1f1d",
     "timestamp": "2026-06-26T21:15:53.886292+00:00",
     "schema_version": "autoresearch.v1",
