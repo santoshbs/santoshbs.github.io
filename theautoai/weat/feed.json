@@ -1,5 +1,111 @@
 [
   {
+    "id": "310f73122f0e",
+    "timestamp": "2026-06-27T03:53:45.743327+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "psychologists vs psychiatrists on Emotional warmth vs clinical detachment",
+    "labels": {
+      "X": "psychologists",
+      "Y": "psychiatrists",
+      "A": "Empathetic / Warm",
+      "B": "Clinical / Detached"
+    },
+    "canonical_keys": {
+      "X": "psychologists",
+      "Y": "psychiatrists",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 0.4836326903769348,
+    "p_value": 0.19845,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "psychologist",
+        "therapist",
+        "counselor",
+        "shrink",
+        "psychotherapist",
+        "psychoanalyst",
+        "behaviorist",
+        "academic",
+        "researcher",
+        "professor",
+        "guide",
+        "mentor",
+        "coach",
+        "facilitator",
+        "listener"
+      ],
+      "Y_used": [
+        "psychiatrist",
+        "doctor",
+        "physician",
+        "medic",
+        "clinician",
+        "specialist",
+        "practitioner",
+        "healer",
+        "prescriber",
+        "consultant",
+        "intern",
+        "resident",
+        "attending",
+        "fellow",
+        "registrar"
+      ],
+      "A_used": [
+        "empathetic",
+        "warm",
+        "caring",
+        "compassionate",
+        "understanding",
+        "supportive",
+        "listening",
+        "gentle",
+        "friendly",
+        "approachable",
+        "kind",
+        "loving",
+        "nurturing",
+        "comforting",
+        "sensitive"
+      ],
+      "B_used": [
+        "clinical",
+        "cold",
+        "detached",
+        "diagnostic",
+        "pharmaceutical",
+        "scientific",
+        "analytical",
+        "objective",
+        "sterile",
+        "technical",
+        "mechanical",
+        "rigid",
+        "formal",
+        "impersonal",
+        "medicinal"
+      ]
+    },
+    "proposal": "People associate psychologists with empathy more strongly than they associate psychiatrists with empathy. This differential reflects a pervasive cultural framing that positions talk therapy as inherently relational and warm, while casting psychiatric care as primarily clinical, diagnostic, and pharmaceutical. Examining this implicit bias is novel because prior research has largely focused on explicit patient preferences or professional self-perceptions rather than automatic mental associations. Understanding this split matters for mental health communication, as it may unconsciously steer individuals toward or away from different evidence-based treatments based on perceived emotional warmth rather than clinical necessity.",
+    "iterations": 3,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "c0d0f2dca560",
     "timestamp": "2026-06-26T22:51:36.793210+00:00",
     "schema_version": "autoresearch.v1",
