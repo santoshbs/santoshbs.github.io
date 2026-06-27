@@ -1,5 +1,111 @@
 [
   {
+    "id": "babeeac722e0",
+    "timestamp": "2026-06-27T11:51:38.426130+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "therapists vs surgeons on emotional openness versus clinical distance",
+    "labels": {
+      "X": "therapists",
+      "Y": "surgeons",
+      "A": "emotional transparency",
+      "B": "emotional detachment"
+    },
+    "canonical_keys": {
+      "X": "therapists",
+      "Y": "surgeons",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 1.467761712281614,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "therapist",
+        "psychologist",
+        "psychiatrist",
+        "counselor",
+        "psychotherapist",
+        "clinician",
+        "shrink",
+        "analyst",
+        "psychoanalyst",
+        "helper",
+        "listener",
+        "guide",
+        "coach",
+        "mentor",
+        "confidant"
+      ],
+      "Y_used": [
+        "surgeon",
+        "neurosurgeon",
+        "orthopedist",
+        "urologist",
+        "cardiologist",
+        "pediatrician",
+        "obstetrician",
+        "gynecologist",
+        "internist",
+        "radiologist",
+        "anesthesiologist",
+        "pathologist",
+        "dentist",
+        "specialist",
+        "doctor"
+      ],
+      "A_used": [
+        "open",
+        "vulnerable",
+        "transparent",
+        "honest",
+        "intimate",
+        "sharing",
+        "expressive",
+        "emotional",
+        "feeling",
+        "personal",
+        "relation",
+        "connection",
+        "disclosure",
+        "revelation",
+        "exposure"
+      ],
+      "B_used": [
+        "detached",
+        "guarded",
+        "cold",
+        "distant",
+        "stoic",
+        "objective",
+        "professional",
+        "technical",
+        "clinical",
+        "sterile",
+        "closed",
+        "reserved",
+        "formal",
+        "businesslike",
+        "impersonal"
+      ]
+    },
+    "proposal": "People associate therapists with emotional transparency more strongly than they associate surgeons with emotional transparency. This differential implicit association stems from contemporary cultural narratives that frame mental health care as fundamentally relational and boundary-negotiated, while portraying surgical intervention as strictly technical and clinically detached. Testing this bias is novel because implicit measures have historically focused on overt demographic or occupational prestige stereotypes rather than the subtle, modality-specific emotional expectations embedded in healthcare discourse. Confirming this association would reveal how public intuition implicitly partitions care into vulnerable versus guarded domains, which could shape patient trust, interdisciplinary collaboration, and the stigmatization of emotional openness in traditionally high-stakes medical fields.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "8eebebab9504",
     "timestamp": "2026-06-27T09:14:34.694978+00:00",
     "schema_version": "autoresearch.v1",
