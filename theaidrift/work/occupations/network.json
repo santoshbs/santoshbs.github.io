@@ -149,9 +149,9 @@
         "id": "47",
         "title": "Construction & Extraction",
         "group": "construction",
-        "refs": 32,
-        "signals": 19,
-        "occupations": 13
+        "refs": 34,
+        "signals": 20,
+        "occupations": 14
       },
       {
         "id": "49",
@@ -173,9 +173,9 @@
         "id": "53",
         "title": "Transportation & Material Moving",
         "group": "transport",
-        "refs": 118,
-        "signals": 91,
-        "occupations": 27
+        "refs": 120,
+        "signals": 92,
+        "occupations": 28
       },
       {
         "id": "55",
@@ -540,6 +540,11 @@
       {
         "source": "11",
         "target": "47",
+        "weight": 1
+      },
+      {
+        "source": "47",
+        "target": "53",
         "weight": 1
       },
       {
@@ -5882,6 +5887,14 @@
           "signals": 1
         },
         {
+          "id": "47-2151.00",
+          "title": "Pipelayers",
+          "group": "construction",
+          "refs": 2,
+          "revised": "2026-06-27",
+          "signals": 1
+        },
+        {
           "id": "47-2152.00",
           "title": "Plumbers, Pipefitters, and Steamfitters",
           "group": "construction",
@@ -6623,6 +6636,14 @@
           "signals": 11
         },
         {
+          "id": "53-7071.00",
+          "title": "Gas Compressor and Gas Pumping Station Operators",
+          "group": "transport",
+          "refs": 2,
+          "revised": "2026-06-27",
+          "signals": 1
+        },
+        {
           "id": "53-7081.00",
           "title": "Refuse and Recyclable Material Collectors",
           "group": "transport",
@@ -7302,6 +7323,7 @@
     "47-2031.00": "47",
     "47-2071.00": "47",
     "47-2111.00": "47",
+    "47-2151.00": "47",
     "47-2152.00": "47",
     "47-2181.00": "47",
     "47-2231.00": "47",
@@ -7378,6 +7400,7 @@
     "53-7062.00": "53",
     "53-7064.00": "53",
     "53-7065.00": "53",
+    "53-7071.00": "53",
     "53-7081.00": "53",
     "55-1011.00": "55",
     "55-1013.00": "55",
