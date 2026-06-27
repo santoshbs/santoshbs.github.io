@@ -1,5 +1,111 @@
 [
   {
+    "id": "d1f59036b960",
+    "timestamp": "2026-06-27T04:26:11.642394+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "immigrants vs refugees on Personal volition and control",
+    "labels": {
+      "X": "immigrants",
+      "Y": "refugees",
+      "A": "Agency",
+      "B": "Passivity"
+    },
+    "canonical_keys": {
+      "X": "immigrants",
+      "Y": "refugees",
+      "A": "agency",
+      "B": "passivity"
+    },
+    "effect_size": 1.090569610424648,
+    "p_value": 0.00222,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "immigrant",
+        "migrant",
+        "newcomer",
+        "expatriate",
+        "foreigner",
+        "settler",
+        "colonist",
+        "pioneer",
+        "sojourner",
+        "emigrant",
+        "alien",
+        "visitor",
+        "guest",
+        "tourist",
+        "expat"
+      ],
+      "Y_used": [
+        "refugee",
+        "exile",
+        "fugitive",
+        "escapee",
+        "outcast",
+        "pariah",
+        "wanderer",
+        "nomad",
+        "vagrant",
+        "homeless",
+        "evacuee",
+        "asylee",
+        "displaced",
+        "runner",
+        "castaway"
+      ],
+      "A_used": [
+        "voluntary",
+        "choice",
+        "control",
+        "power",
+        "freedom",
+        "liberty",
+        "autonomy",
+        "independence",
+        "volition",
+        "intent",
+        "purpose",
+        "will",
+        "decision",
+        "action",
+        "active"
+      ],
+      "B_used": [
+        "involuntary",
+        "forced",
+        "passive",
+        "helpless",
+        "dependent",
+        "reliant",
+        "constrained",
+        "restricted",
+        "limited",
+        "bound",
+        "tethered",
+        "chained",
+        "pawn",
+        "tool",
+        "instrument"
+      ]
+    },
+    "proposal": "People associate immigrants with agency more strongly than they associate refugees with agency. This differential is novel because while the voluntary versus involuntary distinction is a cornerstone of migration policy, it has rarely been tested as an implicit cognitive association regarding personal volition. It is interesting because implicit beliefs about agency directly influence public perceptions of deservingness and moral responsibility. It matters because uncovering this bias can reveal hidden drivers of discrimination in how societies allocate resources and rights to different groups of displaced persons.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "310f73122f0e",
     "timestamp": "2026-06-27T03:53:45.743327+00:00",
     "schema_version": "autoresearch.v1",
