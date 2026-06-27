@@ -1,5 +1,111 @@
 [
   {
+    "id": "851d681d43fd",
+    "timestamp": "2026-06-27T23:31:53.961512+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "investigators vs auditors on danger vs safety",
+    "labels": {
+      "X": "investigators",
+      "Y": "auditors",
+      "A": "danger",
+      "B": "safety"
+    },
+    "canonical_keys": {
+      "X": "investigators",
+      "Y": "auditors",
+      "A": "danger",
+      "B": "safety"
+    },
+    "effect_size": 1.397949107734974,
+    "p_value": 3e-05,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "investigator",
+        "detective",
+        "sleuth",
+        "spy",
+        "scout",
+        "tracker",
+        "pursuer",
+        "searcher",
+        "examiner",
+        "officer",
+        "marshal",
+        "watcher",
+        "ranger",
+        "agent",
+        "profiler"
+      ],
+      "Y_used": [
+        "auditor",
+        "accountant",
+        "clerk",
+        "cashier",
+        "treasurer",
+        "assessor",
+        "appraiser",
+        "reviewer",
+        "evaluator",
+        "verifier",
+        "checker",
+        "controller",
+        "comptroller",
+        "steward",
+        "administrator"
+      ],
+      "A_used": [
+        "dangerous",
+        "risky",
+        "hazardous",
+        "perilous",
+        "unsafe",
+        "threatening",
+        "lethal",
+        "deadly",
+        "harmful",
+        "violent",
+        "fierce",
+        "wild",
+        "rough",
+        "treacherous",
+        "hostile"
+      ],
+      "B_used": [
+        "safe",
+        "secure",
+        "protected",
+        "sheltered",
+        "guarded",
+        "calm",
+        "peaceful",
+        "quiet",
+        "mild",
+        "gentle",
+        "routine",
+        "ordinary",
+        "normal",
+        "standard",
+        "stable"
+      ]
+    },
+    "proposal": "People associate investigators with danger more strongly than they associate auditors with danger. This differential implicit association reflects how contemporary discourse frames field-based inquiry as inherently risky and confrontational, whereas institutional verification is mentally categorized as routine and bureaucratic. Examining this bias is novel because prior research has focused on overt stereotypes of law enforcement or journalism, leaving the implicit risk-heuristics attached to verification versus discovery roles unexamined. Confirming this association would reveal how organizational culture and media representations implicitly segregate active knowledge production from passive oversight, influencing public trust and career aspirations in compliance professions.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "c081c8f32267",
     "timestamp": "2026-06-27T22:38:39.434095+00:00",
     "schema_version": "autoresearch.v1",
