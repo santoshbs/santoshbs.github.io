@@ -1,5 +1,111 @@
 [
   {
+    "id": "c081c8f32267",
+    "timestamp": "2026-06-27T22:38:39.434095+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Nomads vs Guardians on impermanence vs permanence",
+    "labels": {
+      "X": "Nomads",
+      "Y": "Guardians",
+      "A": "Impermanence",
+      "B": "Permanence"
+    },
+    "canonical_keys": {
+      "X": "nomads",
+      "Y": "guardians",
+      "A": "impermanence",
+      "B": "permanence"
+    },
+    "effect_size": 1.3168462059374293,
+    "p_value": 0.0001,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "nomad",
+        "wanderer",
+        "vagabond",
+        "drifter",
+        "traveler",
+        "pilgrim",
+        "wayfarer",
+        "tramp",
+        "itinerant",
+        "vagrant",
+        "rover",
+        "floater",
+        "migrant",
+        "sojourner",
+        "castaway"
+      ],
+      "Y_used": [
+        "guard",
+        "guardian",
+        "sentry",
+        "watcher",
+        "protector",
+        "sentinel",
+        "keeper",
+        "defender",
+        "warden",
+        "watchman",
+        "lookout",
+        "bouncer",
+        "patrolman",
+        "steward",
+        "overseer"
+      ],
+      "A_used": [
+        "impermanent",
+        "transient",
+        "temporary",
+        "fleeting",
+        "ephemeral",
+        "transitory",
+        "momentary",
+        "unstable",
+        "shifting",
+        "fluid",
+        "mobile",
+        "wandering",
+        "rootless",
+        "migratory",
+        "passing"
+      ],
+      "B_used": [
+        "permanent",
+        "stable",
+        "steadfast",
+        "enduring",
+        "lasting",
+        "fixed",
+        "stationary",
+        "anchored",
+        "rooted",
+        "solid",
+        "firm",
+        "constant",
+        "unchanging",
+        "durable",
+        "settled"
+      ]
+    },
+    "proposal": "People associate Nomads with Impermanence more strongly than they associate Guardians with Impermanence. While prior research has examined categories like explorers or bureaucrats, the specific archetypal contrast between the perpetually mobile individual and the duty-bound protector remains unprobed as a differential implicit association. This association is relevant to contemporary discourses that romanticize rootlessness or demand steadfastness from social roles. Examining this link matters because it reveals whether the public mentally categorizes mobility and protection as mutually exclusive existential states, potentially biasing how we evaluate leaders who must balance innovation with stability.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "babeeac722e0",
     "timestamp": "2026-06-27T11:51:38.426130+00:00",
     "schema_version": "autoresearch.v1",
