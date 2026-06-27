@@ -1,5 +1,116 @@
 [
   {
+    "id": "8eebebab9504",
+    "timestamp": "2026-06-27T09:14:34.694978+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "servants vs sages on loyalty vs intellectual autonomy",
+    "labels": {
+      "X": "servants",
+      "Y": "sages",
+      "A": "loyalty",
+      "B": "intellect"
+    },
+    "canonical_keys": {
+      "X": "servants",
+      "Y": "sages",
+      "A": "loyalty",
+      "B": "intellect"
+    },
+    "effect_size": 1.4541951149758172,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "servant",
+        "slave",
+        "retainer",
+        "underling",
+        "minion",
+        "lackey",
+        "attendant",
+        "helper",
+        "worker",
+        "employee",
+        "subordinate",
+        "henchman",
+        "footman",
+        "valet",
+        "assistant",
+        "peon",
+        "drudge",
+        "laborer",
+        "peasant",
+        "scullion"
+      ],
+      "Y_used": [
+        "sage",
+        "philosopher",
+        "guru",
+        "oracle",
+        "prophet",
+        "scholar",
+        "thinker",
+        "intellectual",
+        "genius",
+        "mentor",
+        "professor",
+        "teacher",
+        "expert",
+        "advisor",
+        "counselor"
+      ],
+      "A_used": [
+        "loyal",
+        "faithful",
+        "obedient",
+        "devoted",
+        "dedicated",
+        "constant",
+        "steadfast",
+        "reliable",
+        "dependable",
+        "trustworthy",
+        "honest",
+        "sincere",
+        "genuine",
+        "committed",
+        "allegiant"
+      ],
+      "B_used": [
+        "truth",
+        "wisdom",
+        "knowledge",
+        "intellect",
+        "mind",
+        "brain",
+        "thought",
+        "idea",
+        "concept",
+        "notion",
+        "belief",
+        "opinion",
+        "view",
+        "perspective",
+        "standpoint"
+      ]
+    },
+    "proposal": "People associate Servants with loyalty more strongly than they associate Sages with loyalty. This differential implicit association highlights how social roles defined by hierarchical dependence (such as servants, slaves, retainers, underlings, and minions) are mentally linked to fidelity and obedience, whereas roles defined by intellectual autonomy (such as sages, philosophers, gurus, masters, and prophets) are implicitly associated with a commitment to abstract truth or personal judgment that may supersede allegiance. Examining this association is novel because while loyalty is frequently studied in political or organizational contexts, the specific implicit contrast between the dependent class and the independent intellectual has not been systematically probed. Confirming this would reveal how deeply the archetype of the 'faithful retainer' persists in the collective unconscious, contrasting with the 'unbound thinker,' which matters for understanding implicit biases regarding authority, obedience, and the perceived reliability of different social actors.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "b3a210fa2b6c",
     "timestamp": "2026-06-27T07:37:35.516618+00:00",
     "schema_version": "autoresearch.v1",
