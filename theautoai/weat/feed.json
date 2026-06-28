@@ -1,5 +1,111 @@
 [
   {
+    "id": "8c5dbc5dd22b",
+    "timestamp": "2026-06-28T04:04:47.251730+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "referees vs coaches on impartiality vs partisanship",
+    "labels": {
+      "X": "referees",
+      "Y": "coaches",
+      "A": "impartiality",
+      "B": "partisanship"
+    },
+    "canonical_keys": {
+      "X": "referees",
+      "Y": "coaches",
+      "A": "impartiality",
+      "B": "partisanship"
+    },
+    "effect_size": 1.2732861086133025,
+    "p_value": 9e-05,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "referee",
+        "umpire",
+        "official",
+        "linesman",
+        "judge",
+        "arbitrator",
+        "moderator",
+        "scorer",
+        "timekeeper",
+        "steward",
+        "marshal",
+        "adjudicator",
+        "monitor",
+        "inspector",
+        "enforcer"
+      ],
+      "Y_used": [
+        "coach",
+        "trainer",
+        "mentor",
+        "guide",
+        "tutor",
+        "instructor",
+        "teacher",
+        "advisor",
+        "counselor",
+        "manager",
+        "director",
+        "supervisor",
+        "leader",
+        "captain",
+        "strategist"
+      ],
+      "A_used": [
+        "impartial",
+        "neutral",
+        "fair",
+        "objective",
+        "unbiased",
+        "balanced",
+        "just",
+        "evenhanded",
+        "dispassionate",
+        "detached",
+        "unprejudiced",
+        "nonpartisan",
+        "equitable",
+        "consistent",
+        "standard"
+      ],
+      "B_used": [
+        "partisan",
+        "biased",
+        "loyal",
+        "supportive",
+        "defensive",
+        "protective",
+        "favorable",
+        "preferential",
+        "partial",
+        "committed",
+        "devoted",
+        "dedicated",
+        "aligned",
+        "backing",
+        "advocating"
+      ]
+    },
+    "proposal": "People associate referees with impartiality more strongly than they associate coaches with impartiality. This differential implicit association probes the fundamental cultural distinction between roles defined by neutral rule enforcement and those defined by partisan advocacy and group optimization. While sports provide the most visible context, this binary mirrors broader societal tensions between regulators and advocates, offering insight into how the public mentally categorizes authority figures based on their perceived obligation to fairness versus allegiance. Examining this association is novel, as prior research has focused on referees versus athletes, leaving the implicit contrast between the two primary authority figures in competitive structures unexamined, and it is important because it may reveal underlying biases that shape public trust in institutional enforcement versus leadership.",
+    "iterations": 3,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "1c4738d2d1f7",
     "timestamp": "2026-06-28T03:08:58.397038+00:00",
     "schema_version": "autoresearch.v1",
