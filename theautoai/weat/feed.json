@@ -1,5 +1,111 @@
 [
   {
+    "id": "b817cf677c40",
+    "timestamp": "2026-06-28T09:31:19.853680+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "athletes vs scientists on divinity versus secularity",
+    "labels": {
+      "X": "athletes",
+      "Y": "scientists",
+      "A": "divine",
+      "B": "secular"
+    },
+    "canonical_keys": {
+      "X": "athletes",
+      "Y": "scientists",
+      "A": "divine",
+      "B": "secular"
+    },
+    "effect_size": 0.7536443261176208,
+    "p_value": 0.04146,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "athlete",
+        "footballer",
+        "swimmer",
+        "runner",
+        "boxer",
+        "gymnast",
+        "wrestler",
+        "sprinter",
+        "goalie",
+        "skater",
+        "surfer",
+        "cyclist",
+        "jockey",
+        "diver",
+        "fencer"
+      ],
+      "Y_used": [
+        "scientist",
+        "biologist",
+        "chemist",
+        "physicist",
+        "geologist",
+        "astronomer",
+        "botanist",
+        "zoologist",
+        "geneticist",
+        "microbiologist",
+        "geographer",
+        "meteorologist",
+        "ecologist",
+        "archaeologist",
+        "paleontologist"
+      ],
+      "A_used": [
+        "god",
+        "divine",
+        "holy",
+        "sacred",
+        "religion",
+        "church",
+        "priest",
+        "bishop",
+        "temple",
+        "faith",
+        "angel",
+        "miracle",
+        "worship",
+        "prayer",
+        "monk"
+      ],
+      "B_used": [
+        "secular",
+        "rational",
+        "logical",
+        "material",
+        "empirical",
+        "ordinary",
+        "mundane",
+        "worldly",
+        "common",
+        "mortal",
+        "profane",
+        "technical",
+        "methodical",
+        "systematic",
+        "digital"
+      ]
+    },
+    "proposal": "People associate athletes with divinity more strongly than they associate scientists with divinity. Although scientists are culturally linked to secular rationality, athletes are often framed through a 'secular religion' lens, featuring rituals, temples (stadiums), worshipful fans, and icon-like status that may trigger implicit associations with divine attributes. This association is novel because implicit bias research has largely focused on race, gender, or political divides, neglecting how the cultural sanctification of sports performance might map onto religious mental schemas. Confirming this would reveal that divinity is not solely reserved for religious actors but is implicitly projected onto physical excellence and competition, challenging the assumption that modern sports are merely secular entertainment.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "c7338217a6e8",
     "timestamp": "2026-06-28T07:15:13.673495+00:00",
     "schema_version": "autoresearch.v1",
