@@ -1,5 +1,111 @@
 [
   {
+    "id": "c7338217a6e8",
+    "timestamp": "2026-06-28T07:15:13.673495+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "optimists vs realists on emotional resilience vs fragility",
+    "labels": {
+      "X": "optimists",
+      "Y": "realists",
+      "A": "resilience",
+      "B": "fragility"
+    },
+    "canonical_keys": {
+      "X": "optimists",
+      "Y": "realists",
+      "A": "resilience",
+      "B": "fragility"
+    },
+    "effect_size": 0.9570098829882735,
+    "p_value": 0.00745,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "optimist",
+        "idealist",
+        "believer",
+        "enthusiast",
+        "supporter",
+        "visionary",
+        "dreamer",
+        "advocate",
+        "booster",
+        "cheerleader",
+        "fan",
+        "follower",
+        "partisan",
+        "proponent",
+        "sponsor"
+      ],
+      "Y_used": [
+        "realist",
+        "pragmatist",
+        "cynic",
+        "skeptic",
+        "analyst",
+        "evaluator",
+        "observer",
+        "critic",
+        "examiner",
+        "inspector",
+        "auditor",
+        "reviewer",
+        "assessor",
+        "investigator",
+        "scientist"
+      ],
+      "A_used": [
+        "resilient",
+        "strong",
+        "tough",
+        "enduring",
+        "hardy",
+        "robust",
+        "vigorous",
+        "tenacious",
+        "determined",
+        "persistent",
+        "steadfast",
+        "unwavering",
+        "courageous",
+        "brave",
+        "bold"
+      ],
+      "B_used": [
+        "fragile",
+        "weak",
+        "vulnerable",
+        "sensitive",
+        "delicate",
+        "brittle",
+        "frail",
+        "tender",
+        "soft",
+        "yielding",
+        "flimsy",
+        "shaky",
+        "unstable",
+        "precarious",
+        "susceptible"
+      ]
+    },
+    "proposal": "People associate optimists with emotional resilience more strongly than they associate realists with emotional resilience. While realists are often framed in contemporary discourse as grounded, accurate, and risk-averse, optimists are culturally depicted as bouncing back faster from setbacks, maintaining drive under pressure, and sustaining motivation through hardship. This implicit association is novel because resilience research typically treats optimism as a cognitive style rather than an automatic trait attribution to a social category, and it rarely contrasts optimists directly with realists on emotional recovery. Testing this association matters because it reveals whether the public mentally shortcuts toward viewing positive bias as a protective psychological resource rather than a distortion, which has implications for how organizations train leadership and how clinicians frame coping strategies.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "d5133b54338e",
     "timestamp": "2026-06-28T06:36:40.087158+00:00",
     "schema_version": "autoresearch.v1",
