@@ -1,5 +1,111 @@
 [
   {
+    "id": "1c4738d2d1f7",
+    "timestamp": "2026-06-28T03:08:58.397038+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Scholars vs Mystics on epistemic certainty vs. ambiguity",
+    "labels": {
+      "X": "Scholars",
+      "Y": "Mystics",
+      "A": "Epistemic certainty",
+      "B": "Epistemic ambiguity"
+    },
+    "canonical_keys": {
+      "X": "scholars",
+      "Y": "mystics",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 1.5992059514223405,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "scholar",
+        "scientist",
+        "researcher",
+        "academic",
+        "professor",
+        "logician",
+        "analyst",
+        "statistician",
+        "historian",
+        "expert",
+        "theorist",
+        "philosopher",
+        "critic",
+        "observer",
+        "investigator"
+      ],
+      "Y_used": [
+        "mystic",
+        "monk",
+        "shaman",
+        "guru",
+        "hermit",
+        "ascetic",
+        "prophet",
+        "yogi",
+        "druid",
+        "oracle",
+        "seer",
+        "sage",
+        "saint",
+        "dervish",
+        "disciple"
+      ],
+      "A_used": [
+        "certainty",
+        "truth",
+        "fact",
+        "logic",
+        "proof",
+        "knowledge",
+        "evidence",
+        "reality",
+        "validity",
+        "accuracy",
+        "clarity",
+        "reason",
+        "objectivity",
+        "rationality",
+        "precision"
+      ],
+      "B_used": [
+        "ambiguity",
+        "mystery",
+        "paradox",
+        "intuition",
+        "spirit",
+        "myth",
+        "legend",
+        "dream",
+        "fantasy",
+        "emotion",
+        "feeling",
+        "faith",
+        "belief",
+        "hope",
+        "doubt"
+      ]
+    },
+    "proposal": "People associate scholars with epistemic certainty more strongly than they associate mystics with epistemic certainty. This differential implicit association reflects a cultural bias that privileges systematic inquiry, peer review, and verifiable data (the hallmarks of the scholar) over intuitive, revelatory, or experiential understanding (the hallmarks of the mystic), implicitly framing the latter as inherently ambiguous, speculative, or paradoxical. Examining this link is novel because prior research on religious or spiritual identities has primarily focused on moral valence or social openness, neglecting the attribution of epistemic confidence and truth-claims. Confirming this association would reveal a subtle mechanism of marginalization where non-rational or spiritual ways of knowing are mentally represented as 'less knowable,' thereby reinforcing the dominance of scientific or academic frameworks in defining public truth.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "851d681d43fd",
     "timestamp": "2026-06-27T23:31:53.961512+00:00",
     "schema_version": "autoresearch.v1",
