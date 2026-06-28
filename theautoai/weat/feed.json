@@ -1,5 +1,111 @@
 [
   {
+    "id": "564610488511",
+    "timestamp": "2026-06-28T22:10:24.921832+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "philanthropists vs investors on moral paternalism vs transactional calculation",
+    "labels": {
+      "X": "philanthropists",
+      "Y": "investors",
+      "A": "moral_paternalism",
+      "B": "transactional_calculation"
+    },
+    "canonical_keys": {
+      "X": "philanthropists",
+      "Y": "investors",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 1.626326322044953,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "philanthropist",
+        "donor",
+        "benefactor",
+        "giver",
+        "patron",
+        "altruist",
+        "volunteer",
+        "contributor",
+        "grantor",
+        "steward",
+        "trustee",
+        "fundraiser",
+        "humanitarian",
+        "sponsor",
+        "backer"
+      ],
+      "Y_used": [
+        "investor",
+        "trader",
+        "financier",
+        "banker",
+        "capitalist",
+        "shareholder",
+        "speculator",
+        "broker",
+        "entrepreneur",
+        "tycoon",
+        "magnate",
+        "dealer",
+        "lender",
+        "creditor",
+        "merchant"
+      ],
+      "A_used": [
+        "benevolent",
+        "charitable",
+        "altruistic",
+        "compassionate",
+        "generous",
+        "guiding",
+        "paternalistic",
+        "nurturing",
+        "caring",
+        "ethical",
+        "virtuous",
+        "noble",
+        "selfless",
+        "beneficent",
+        "moral"
+      ],
+      "B_used": [
+        "transactional",
+        "calculative",
+        "profitable",
+        "financial",
+        "market",
+        "commercial",
+        "economic",
+        "monetary",
+        "speculative",
+        "mercenary",
+        "pragmatic",
+        "quantitative",
+        "contractual",
+        "business",
+        "trade"
+      ]
+    },
+    "proposal": "People associate philanthropists with moral paternalism more strongly than they associate investors with moral paternalism. While both categories mobilize substantial capital, philanthropists are culturally framed as benevolent stewards who dispense resources based on their own vision of societal good, whereas investors are typically depicted as neutral market actors driven by calculative risk and return. This differential implicit association remains largely unexamined in social psychology, which has focused primarily on explicit attitudes toward wealth accumulation rather than the subconscious moral schemas attached to different capital-deployment roles. Confirming or disconfirming this link would reveal how contemporary discourse implicitly moralizes the exercise of financial influence, showing whether the public mentally licenses philanthropic power through a paternalistic halo while viewing investment power through a purely transactional lens. Understanding this split is crucial for debates about elite accountability, the perceived legitimacy of large-scale private giving, and how different economic actors are granted or denied moral authority in public imagination.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "b39dd2d80579",
     "timestamp": "2026-06-28T19:13:00.085272+00:00",
     "schema_version": "autoresearch.v1",
