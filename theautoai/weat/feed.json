@@ -1,5 +1,111 @@
 [
   {
+    "id": "29b16a0e9363",
+    "timestamp": "2026-06-29T06:08:38.706888+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "merchants vs scholars on moral orientation",
+    "labels": {
+      "X": "merchants",
+      "Y": "scholars",
+      "A": "opportunism",
+      "B": "principle"
+    },
+    "canonical_keys": {
+      "X": "merchants",
+      "Y": "scholars",
+      "A": "opportunism",
+      "B": "principle"
+    },
+    "effect_size": 1.3511385649804744,
+    "p_value": 4e-05,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "merchant",
+        "trader",
+        "vendor",
+        "broker",
+        "dealer",
+        "retailer",
+        "wholesaler",
+        "shopkeeper",
+        "peddler",
+        "hawker",
+        "distributor",
+        "supplier",
+        "agent",
+        "importer",
+        "exporter"
+      ],
+      "Y_used": [
+        "scholar",
+        "professor",
+        "academic",
+        "researcher",
+        "scientist",
+        "intellectual",
+        "lecturer",
+        "educator",
+        "philosopher",
+        "historian",
+        "theorist",
+        "expert",
+        "specialist",
+        "analyst",
+        "teacher"
+      ],
+      "A_used": [
+        "opportunistic",
+        "cunning",
+        "crafty",
+        "shrewd",
+        "mercenary",
+        "greedy",
+        "selfish",
+        "exploitative",
+        "calculating",
+        "manipulative",
+        "scheming",
+        "ambitious",
+        "ruthless",
+        "strategic",
+        "deceitful"
+      ],
+      "B_used": [
+        "principled",
+        "idealistic",
+        "rigorous",
+        "honest",
+        "truthful",
+        "ethical",
+        "moral",
+        "dedicated",
+        "earnest",
+        "sincere",
+        "upright",
+        "virtuous",
+        "conscientious",
+        "diligent",
+        "steadfast"
+      ]
+    },
+    "proposal": "People associate merchants with opportunism more strongly than they associate scholars with opportunism. While explicit stereotype research has extensively mapped business and academic groups along warmth and competence, the spontaneous moral linkage to opportunism has never been systematically measured using implicit paradigms. Contemporary cultural narratives frequently frame market actors as tactically self-interested while portraying intellectual workers as principled truth-seekers, yet it remains unknown whether lay cognition automatically binds these categories to strategic self-dealing versus idealistic inquiry. Examining this differential association would illuminate how historical and media portrayals of commerce versus scholarship shape unconscious moral intuitions, with direct relevance to public trust in economic institutions versus educational establishments. Confirming this link would demonstrate that modern societies implicitly treat profit-driven adaptability as morally opportunistic compared to knowledge-driven rigor, thereby refining our understanding of the hidden ethical architecture underlying professional stereotypes.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "52b37a0b9a66",
     "timestamp": "2026-06-29T02:19:21.587539+00:00",
     "schema_version": "autoresearch.v1",
