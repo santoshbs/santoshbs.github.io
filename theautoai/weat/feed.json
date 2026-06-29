@@ -1,5 +1,111 @@
 [
   {
+    "id": "603c47fd0a9a",
+    "timestamp": "2026-06-29T18:03:43.046619+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "athletes vs musicians on emotional restraint vs expressiveness",
+    "labels": {
+      "X": "athletes",
+      "Y": "musicians",
+      "A": "restraint",
+      "B": "expressiveness"
+    },
+    "canonical_keys": {
+      "X": "athletes",
+      "Y": "musicians",
+      "A": "restraint",
+      "B": "expressiveness"
+    },
+    "effect_size": 0.7439664560254007,
+    "p_value": 0.04202,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "boxer",
+        "runner",
+        "swimmer",
+        "golfer",
+        "skater",
+        "racer",
+        "surfer",
+        "skier",
+        "jumper",
+        "thrower",
+        "climber",
+        "cyclist",
+        "wrestler",
+        "fencer",
+        "pitcher"
+      ],
+      "Y_used": [
+        "pianist",
+        "guitarist",
+        "drummer",
+        "singer",
+        "conductor",
+        "composer",
+        "violinist",
+        "flutist",
+        "cellist",
+        "harpist",
+        "trumpeter",
+        "organist",
+        "soloist",
+        "clarinetist",
+        "violist"
+      ],
+      "A_used": [
+        "stoic",
+        "calm",
+        "controlled",
+        "disciplined",
+        "rigid",
+        "reserved",
+        "still",
+        "quiet",
+        "composed",
+        "stable",
+        "inhibited",
+        "unemotional",
+        "flat",
+        "muted",
+        "tight"
+      ],
+      "B_used": [
+        "emotional",
+        "expressive",
+        "vulnerable",
+        "passionate",
+        "sensitive",
+        "open",
+        "intense",
+        "dramatic",
+        "volatile",
+        "raw",
+        "loud",
+        "wild",
+        "animated",
+        "sentimental",
+        "turbulent"
+      ]
+    },
+    "proposal": "People associate athletes with emotional restraint more strongly than they associate musicians with emotional restraint. This differential implicit association reflects how contemporary discourse romanticizes sports performance as requiring stoic mental fortitude and controlled aggression, while framing musical performance as an outlet for emotional vulnerability and expressive release. Probing this bias is novel because implicit links between performance professions and affect regulation have not been systematically compared in social cognition research. The finding matters for understanding how cultural narratives shape expectations around mental health, performance pressure, and the legitimacy of emotional expression across physical and artistic domains.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "5181706c273d",
     "timestamp": "2026-06-29T15:02:00.211195+00:00",
     "schema_version": "autoresearch.v1",
