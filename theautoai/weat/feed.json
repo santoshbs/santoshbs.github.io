@@ -1,5 +1,111 @@
 [
   {
+    "id": "aec156464ff1",
+    "timestamp": "2026-06-29T11:30:38.703177+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "protesters vs supporters on altruism versus self-interest",
+    "labels": {
+      "X": "protesters",
+      "Y": "supporters",
+      "A": "altruism",
+      "B": "self-interest"
+    },
+    "canonical_keys": {
+      "X": "protesters",
+      "Y": "supporters",
+      "A": "altruism",
+      "B": ""
+    },
+    "effect_size": -0.4142628847837034,
+    "p_value": 0.27537,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "demonstrator",
+        "activist",
+        "dissident",
+        "rebel",
+        "picketer",
+        "campaigner",
+        "reformer",
+        "organizer",
+        "agitator",
+        "striker",
+        "protester",
+        "marcher",
+        "crusader",
+        "advocate",
+        "dissenter"
+      ],
+      "Y_used": [
+        "supporter",
+        "fan",
+        "backer",
+        "follower",
+        "loyalist",
+        "partisan",
+        "devotee",
+        "adherent",
+        "affiliate",
+        "champion",
+        "booster",
+        "enthusiast",
+        "patron",
+        "sponsor",
+        "ally"
+      ],
+      "A_used": [
+        "altruism",
+        "selflessness",
+        "compassion",
+        "generosity",
+        "sacrifice",
+        "kindness",
+        "charity",
+        "empathy",
+        "benevolence",
+        "philanthropy",
+        "magnanimity",
+        "unselfish",
+        "generous",
+        "caring",
+        "altruistic"
+      ],
+      "B_used": [
+        "selfishness",
+        "egoism",
+        "greed",
+        "vanity",
+        "pride",
+        "ambition",
+        "selfish",
+        "egotism",
+        "narcissism",
+        "partisanship",
+        "tribalism",
+        "ego",
+        "avarice",
+        "materialism",
+        "opportunism"
+      ]
+    },
+    "proposal": "People associate protesters with altruism more strongly than they associate supporters with altruism. While supporters are often viewed as backing their own team, candidate, or vested interest, protesters are frequently framed in public discourse as sacrificing personal comfort to advocate for marginalized groups or broad social causes. Examining this differential implicit association is novel because it moves beyond standard comparisons of occupations or demographics to focus on modes of civic engagement, revealing whether the mere act of active, disruptive dissent is mentally linked to selfless concern for others more than passive backing of a cause matters. Confirming this association would suggest that laypeople intuitively tie moral virtue and other-regarding motivation to visible resistance rather than to endorsement or loyalty.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "5501c515ac10",
     "timestamp": "2026-06-29T10:36:48.968726+00:00",
     "schema_version": "autoresearch.v1",
