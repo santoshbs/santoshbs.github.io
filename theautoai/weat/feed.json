@@ -1,5 +1,111 @@
 [
   {
+    "id": "5501c515ac10",
+    "timestamp": "2026-06-29T10:36:48.968726+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "nomads vs settlers on autonomy_vs_embeddedness",
+    "labels": {
+      "X": "nomads",
+      "Y": "settlers",
+      "A": "autonomy",
+      "B": "embeddedness"
+    },
+    "canonical_keys": {
+      "X": "nomads",
+      "Y": "settlers",
+      "A": "autonomy",
+      "B": "embeddedness"
+    },
+    "effect_size": -0.1011771129908505,
+    "p_value": 0.79224,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "nomad",
+        "wanderer",
+        "traveler",
+        "roamer",
+        "drifter",
+        "vagrant",
+        "pilgrim",
+        "rover",
+        "explorer",
+        "migrant",
+        "transient",
+        "bohemian",
+        "hermit",
+        "raider",
+        "trekker"
+      ],
+      "Y_used": [
+        "settler",
+        "farmer",
+        "resident",
+        "citizen",
+        "inhabitant",
+        "dweller",
+        "native",
+        "local",
+        "townsman",
+        "villager",
+        "homesteader",
+        "colonist",
+        "pioneer",
+        "planter",
+        "owner"
+      ],
+      "A_used": [
+        "autonomy",
+        "freedom",
+        "liberty",
+        "independence",
+        "choice",
+        "rights",
+        "loose",
+        "unrestrained",
+        "will",
+        "individual",
+        "control",
+        "agency",
+        "open",
+        "wild",
+        "release"
+      ],
+      "B_used": [
+        "structure",
+        "order",
+        "rule",
+        "law",
+        "duty",
+        "obligation",
+        "tied",
+        "fixed",
+        "static",
+        "rooted",
+        "embedded",
+        "tradition",
+        "constraint",
+        "anchor",
+        "bond"
+      ]
+    },
+    "proposal": "People associate nomads with autonomy more strongly than they associate settlers with autonomy. This differential implicit association reflects a latent mental representation where mobility is conflated with self-direction and freedom from external constraints, while sedentary lifestyles are linked to embeddedness, structure, and external obligation. Examining this association is novel because prior research has focused on explicit cultural values or bias against specific ethnic groups associated with nomadism, but has not probed the implicit autonomy contrast between these archetypal modes of life. Confirming this association would matter for understanding how discourses of 'roots' and 'routes' shape perceptions of agency, potentially influencing social integration policies and the valuation of mobile versus stationary labor in contemporary discourse.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "4094ffa908cf",
     "timestamp": "2026-06-29T09:03:34.512308+00:00",
     "schema_version": "autoresearch.v1",
