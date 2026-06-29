@@ -1,5 +1,111 @@
 [
   {
+    "id": "4094ffa908cf",
+    "timestamp": "2026-06-29T09:03:34.512308+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "writers vs artists on interpersonal connection vs aesthetic abstraction",
+    "labels": {
+      "X": "writers",
+      "Y": "artists",
+      "A": "empathy",
+      "B": "abstraction"
+    },
+    "canonical_keys": {
+      "X": "writers",
+      "Y": "artists",
+      "A": "empathy",
+      "B": "abstraction"
+    },
+    "effect_size": 1.6034614979034587,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "writer",
+        "author",
+        "novelist",
+        "poet",
+        "playwright",
+        "essayist",
+        "storyteller",
+        "narrator",
+        "journalist",
+        "columnist",
+        "biographer",
+        "scriptwriter",
+        "blogger",
+        "copywriter",
+        "chronicler"
+      ],
+      "Y_used": [
+        "painter",
+        "sculptor",
+        "illustrator",
+        "draftsman",
+        "muralist",
+        "animator",
+        "potter",
+        "ceramist",
+        "lithographer",
+        "printmaker",
+        "engraver",
+        "artisan",
+        "craftsman",
+        "weaver",
+        "designer"
+      ],
+      "A_used": [
+        "empathy",
+        "compassion",
+        "understanding",
+        "perspective",
+        "connection",
+        "feelings",
+        "emotions",
+        "sympathy",
+        "sensitivity",
+        "warmth",
+        "kindness",
+        "love",
+        "care",
+        "support",
+        "friendship"
+      ],
+      "B_used": [
+        "abstract",
+        "aesthetic",
+        "visual",
+        "formal",
+        "composition",
+        "structure",
+        "form",
+        "shape",
+        "color",
+        "texture",
+        "medium",
+        "material",
+        "technique",
+        "innovation",
+        "provocation"
+      ]
+    },
+    "proposal": "People associate writers with empathy more strongly than they associate artists with empathy. While both groups are broadly categorized as creative professionals, contemporary discourse heavily emphasizes the capacity of narrative and fiction to foster perspective-taking and emotional understanding in readers, whereas visual arts are more frequently framed in terms of aesthetic provocation, abstraction, or formal innovation rather than interpersonal connection. This differential implicit association has not been systematically examined, as prior research typically aggregates all creative domains or contrasts them against STEM fields rather than comparing the distinct social-psychological schemas attached to verbal versus visual creators. Investigating this distinction matters because it reveals whether the public mental representation of writers grants them a unique 'empathic halo' that could influence how their work is valued in educational, therapeutic, or social cohesion contexts compared to the work of painters, sculptors, or other visual practitioners.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "3f9de71fb4e9",
     "timestamp": "2026-06-29T08:19:10.186915+00:00",
     "schema_version": "autoresearch.v1",
