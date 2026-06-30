@@ -1,5 +1,111 @@
 [
   {
+    "id": "77260287fc5b",
+    "timestamp": "2026-06-30T16:35:12.245779+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "bureaucrats vs technocrats on cynicism versus optimism",
+    "labels": {
+      "X": "bureaucrats",
+      "Y": "technocrats",
+      "A": "cynicism",
+      "B": "optimism"
+    },
+    "canonical_keys": {
+      "X": "bureaucrats",
+      "Y": "technocrats",
+      "A": "cynicism",
+      "B": "optimism"
+    },
+    "effect_size": 0.883261547938211,
+    "p_value": 0.01226,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "clerk",
+        "administrator",
+        "official",
+        "functionary",
+        "manager",
+        "director",
+        "secretary",
+        "officer",
+        "staff",
+        "supervisor",
+        "executive",
+        "coordinator",
+        "auditor",
+        "controller",
+        "registrar"
+      ],
+      "Y_used": [
+        "engineer",
+        "scientist",
+        "specialist",
+        "analyst",
+        "planner",
+        "developer",
+        "architect",
+        "researcher",
+        "technician",
+        "programmer",
+        "designer",
+        "innovator",
+        "expert",
+        "advisor",
+        "strategist"
+      ],
+      "A_used": [
+        "cynical",
+        "skeptical",
+        "jaded",
+        "bitter",
+        "pessimistic",
+        "suspicious",
+        "sardonic",
+        "sarcastic",
+        "mocking",
+        "contemptuous",
+        "jaundiced",
+        "callous",
+        "apathetic",
+        "disillusioned",
+        "wary"
+      ],
+      "B_used": [
+        "optimistic",
+        "hopeful",
+        "idealistic",
+        "enthusiastic",
+        "positive",
+        "upbeat",
+        "visionary",
+        "progressive",
+        "constructive",
+        "trusting",
+        "confident",
+        "ambitious",
+        "inspired",
+        "motivated",
+        "energetic"
+      ]
+    },
+    "proposal": "people associate bureaucrats with cynicism more strongly than they associate technocrats with cynicism. This differential association is novel because while the bureaucratic stereotype is well-trodden in terms of rigidity or inefficiency, the specific link to the trait of cynicism (distrust of motives, disillusionment) has not been explicitly contrasted with the technocratic role in implicit association research. It is interesting because it taps into the cultural archetype of the 'grumpy clerk' versus the 'optimistic engineer,' suggesting that administrative positions may be implicitly viewed as draining of idealism in a way that technical expertise roles are not. This matters because it raises the question of whether the bureaucratic role itself is mentally represented as a state of affective hardening, which could have implications for how we understand public service morale and the psychological costs of institutional employment.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "03b3bcea86cc",
     "timestamp": "2026-06-30T10:56:11.928149+00:00",
     "schema_version": "autoresearch.v1",
