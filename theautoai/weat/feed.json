@@ -1,5 +1,115 @@
 [
   {
+    "id": "eb8f78e5895d",
+    "timestamp": "2026-06-30T17:14:11.367555+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "landlords vs tenants on moral evaluation",
+    "labels": {
+      "X": "landlords",
+      "Y": "tenants",
+      "A": "virtue",
+      "B": "vice"
+    },
+    "canonical_keys": {
+      "X": "landlords",
+      "Y": "tenants",
+      "A": "virtue",
+      "B": "vice"
+    },
+    "effect_size": -0.6802792699886104,
+    "p_value": 0.05775,
+    "n": {
+      "X": 16,
+      "Y": 16,
+      "A": 16,
+      "B": 16
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "landlord",
+        "landlords",
+        "owner",
+        "owners",
+        "lessor",
+        "lessors",
+        "proprietor",
+        "proprietors",
+        "householder",
+        "householders",
+        "baron",
+        "barons",
+        "tycoon",
+        "tycoons",
+        "magnate",
+        "magnates"
+      ],
+      "Y_used": [
+        "tenant",
+        "tenants",
+        "renter",
+        "renters",
+        "lessee",
+        "lessees",
+        "boarder",
+        "boarders",
+        "lodger",
+        "lodgers",
+        "flatmate",
+        "flatmates",
+        "guest",
+        "guests",
+        "visitor",
+        "visitors"
+      ],
+      "A_used": [
+        "virtue",
+        "virtues",
+        "good",
+        "goodness",
+        "moral",
+        "morals",
+        "ethical",
+        "ethics",
+        "honest",
+        "honesty",
+        "kind",
+        "kindness",
+        "just",
+        "justice",
+        "pure",
+        "purity"
+      ],
+      "B_used": [
+        "vice",
+        "vices",
+        "evil",
+        "evils",
+        "immoral",
+        "immorality",
+        "dishonest",
+        "dishonesty",
+        "wicked",
+        "wickedness",
+        "corrupt",
+        "corruption",
+        "bad",
+        "badness",
+        "unjust",
+        "injustice"
+      ]
+    },
+    "proposal": "People associate landlords with virtue more strongly than they associate tenants with virtue. This differential implicit association reflects how housing tenure categories may be unconsciously mapped onto moral hierarchies, with property ownership implicitly signaling personal merit and renting implicitly signaling dependency or transient status. Examining this bias is novel because prior work has largely measured explicit attitudes toward housing policy rather than the automatic moral framing of tenant and owner categories. It matters because such implicit moral weighting can shape public discourse around rent control, eviction protections, and wealth inequality, revealing how economic arrangements are subtly reinterpreted as moral judgments.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "77260287fc5b",
     "timestamp": "2026-06-30T16:35:12.245779+00:00",
     "schema_version": "autoresearch.v1",
