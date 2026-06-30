@@ -1,5 +1,111 @@
 [
   {
+    "id": "d5b09a7db5c5",
+    "timestamp": "2026-06-30T19:31:00.548467+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "informants vs conspirators on Motivational orientation",
+    "labels": {
+      "X": "informants",
+      "Y": "conspirators",
+      "A": "Self-interest/Opportunism",
+      "B": "Loyalty/Ideology"
+    },
+    "canonical_keys": {
+      "X": "informants",
+      "Y": "conspirators",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": -0.13938856748166606,
+    "p_value": 0.71659,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "informant",
+        "snitch",
+        "rat",
+        "turncoat",
+        "defector",
+        "betrayer",
+        "spy",
+        "mole",
+        "collaborator",
+        "informer",
+        "witness",
+        "leaker",
+        "tattler",
+        "denouncer",
+        "accuser"
+      ],
+      "Y_used": [
+        "conspirator",
+        "plotter",
+        "schemer",
+        "accomplice",
+        "ally",
+        "partner",
+        "associate",
+        "aide",
+        "helper",
+        "assistant",
+        "intriguer",
+        "activist",
+        "rebel",
+        "insurgent",
+        "militant"
+      ],
+      "A_used": [
+        "opportunism",
+        "opportunistic",
+        "selfish",
+        "greedy",
+        "mercenary",
+        "profit",
+        "gain",
+        "benefit",
+        "advantage",
+        "money",
+        "cash",
+        "wealth",
+        "rich",
+        "ego",
+        "ambitious"
+      ],
+      "B_used": [
+        "loyal",
+        "ideology",
+        "principled",
+        "honorable",
+        "dutiful",
+        "sacrificial",
+        "altruistic",
+        "collective",
+        "solidarity",
+        "patriotic",
+        "faithful",
+        "devoted",
+        "service",
+        "mission",
+        "honor"
+      ]
+    },
+    "proposal": "People associate informants with opportunism more strongly than they associate conspirators with opportunism. This proposal targets the implicit distinction between those who cooperate with authorities (informants, snitches, rats, turncoats, defectors, betrayers, spies, moles, agents, operatives, collaborators, denouncers, accusers, informers, stool-pigeons) and those who plot covertly (conspirators, plotters, schemers, intriguers, cabalists, accomplices, accessories, allies, partners, associates, aides, helpers, assistants, conspirators, co-conspirators), focusing on the motivation attributed to each. While prior research examines explicit judgments of morality or legality, the implicit link between informing and self-interested opportunism—versus a perception of conspirators as driven by ideology, loyalty, or collective purpose—remains untested. Confirming this association would reveal how public cognition frames state-cooperation as inherently transactional and self-serving, potentially undermining the perceived civic legitimacy of whistleblowing or cooperation in criminal justice contexts.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "eb8f78e5895d",
     "timestamp": "2026-06-30T17:14:11.367555+00:00",
     "schema_version": "autoresearch.v1",
