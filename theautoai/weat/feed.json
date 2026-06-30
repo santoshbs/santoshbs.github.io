@@ -1,5 +1,111 @@
 [
   {
+    "id": "03b3bcea86cc",
+    "timestamp": "2026-06-30T10:56:11.928149+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Scientists vs Engineers on intrinsic exploration vs applied pragmatism",
+    "labels": {
+      "X": "Scientists",
+      "Y": "Engineers",
+      "A": "Curiosity",
+      "B": "Utility"
+    },
+    "canonical_keys": {
+      "X": "scientists",
+      "Y": "engineers",
+      "A": "curiosity",
+      "B": "utility"
+    },
+    "effect_size": 1.8554548521794016,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "scientist",
+        "biologist",
+        "chemist",
+        "physicist",
+        "astronomer",
+        "geneticist",
+        "geologist",
+        "ecologist",
+        "sociologist",
+        "psychologist",
+        "mathematician",
+        "researcher",
+        "academic",
+        "professor",
+        "scholar"
+      ],
+      "Y_used": [
+        "engineer",
+        "architect",
+        "mechanic",
+        "technician",
+        "builder",
+        "programmer",
+        "designer",
+        "contractor",
+        "carpenter",
+        "electrician",
+        "plumber",
+        "welder",
+        "surveyor",
+        "machinist",
+        "assembler"
+      ],
+      "A_used": [
+        "curious",
+        "explore",
+        "discover",
+        "wonder",
+        "investigate",
+        "question",
+        "hypothesis",
+        "theory",
+        "knowledge",
+        "abstract",
+        "pure",
+        "learn",
+        "study",
+        "inquire",
+        "ponder"
+      ],
+      "B_used": [
+        "practical",
+        "useful",
+        "functional",
+        "build",
+        "construct",
+        "apply",
+        "implement",
+        "tool",
+        "machine",
+        "device",
+        "fix",
+        "repair",
+        "efficient",
+        "productive",
+        "manufacture"
+      ]
+    },
+    "proposal": "People associate Scientists with Curiosity more strongly than they associate Engineers with Curiosity. While both groups are often collectively categorized under STEM and associated with rationality, cultural narratives frequently differentiate the 'pure' scientist driven by an intrinsic desire to explore the unknown from the 'applied' engineer focused on pragmatic problem-solving and utility. This differential implicit association is novel because most existing research contrasts STEM professionals with humanities or arts categories, rather than examining internal hierarchies within technical fields. Confirming this association would reveal that the deep-seated 'theory versus practice' dichotomy extends even to experts who both rely on scientific method, potentially shaping how society values knowledge production versus technological implementation in education, funding, and public discourse.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "38953824c8e4",
     "timestamp": "2026-06-30T03:03:02.894657+00:00",
     "schema_version": "autoresearch.v1",
