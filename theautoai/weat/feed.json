@@ -1,5 +1,111 @@
 [
   {
+    "id": "4b50240cab9b",
+    "timestamp": "2026-07-12T21:53:33.471535+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "veterans vs civilians on social cohesion vs individualism",
+    "labels": {
+      "X": "veterans",
+      "Y": "civilians",
+      "A": "camaraderie",
+      "B": "individualism"
+    },
+    "canonical_keys": {
+      "X": "veterans",
+      "Y": "civilians",
+      "A": "camaraderie",
+      "B": "individualism"
+    },
+    "effect_size": 1.159545529798395,
+    "p_value": 0.00094,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "veteran",
+        "soldier",
+        "marine",
+        "sailor",
+        "aviator",
+        "cadet",
+        "recruit",
+        "sergeant",
+        "lieutenant",
+        "captain",
+        "general",
+        "corporal",
+        "ranger",
+        "trooper",
+        "combatant"
+      ],
+      "Y_used": [
+        "civilian",
+        "inhabitant",
+        "resident",
+        "local",
+        "commuter",
+        "shopper",
+        "worker",
+        "employee",
+        "manager",
+        "teacher",
+        "student",
+        "neighbor",
+        "pedestrian",
+        "amateur",
+        "commoner"
+      ],
+      "A_used": [
+        "camaraderie",
+        "solidarity",
+        "brotherhood",
+        "teamwork",
+        "cooperation",
+        "loyalty",
+        "trust",
+        "fellowship",
+        "unity",
+        "alliance",
+        "partnership",
+        "fraternity",
+        "cohesion",
+        "bonding",
+        "community"
+      ],
+      "B_used": [
+        "individualism",
+        "independence",
+        "autonomy",
+        "solitary",
+        "personal",
+        "private",
+        "alone",
+        "detached",
+        "voluntary",
+        "transactional",
+        "competitive",
+        "selfish",
+        "ego",
+        "individual",
+        "solo"
+      ]
+    },
+    "proposal": "People associate veterans with camaraderie more strongly than they associate civilians with camaraderie. This differential association reflects the pervasive cultural narrative surrounding the military 'band of brothers/sisters,' which emphasizes deep, trust-based social bonds forged through shared hardship and institutional training, whereas civilian social ties are often implicitly stereotyped as more individualistic, voluntary, or transactional. Examining this implicit bias is novel because existing research has focused on explicit stereotypes regarding veterans' leadership or trauma, largely ignoring the implicit mental representation of their social cohesion relative to the general public. This association matters because it may shape public expectations of veterans in team-oriented roles, influence hiring preferences for collaborative positions, and contribute to the social friction veterans experience when civilian communities fail to match their implicit expectations of mutual loyalty and solidarity.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "b308c738355e",
     "timestamp": "2026-07-12T19:32:02.033085+00:00",
     "schema_version": "autoresearch.v1",
