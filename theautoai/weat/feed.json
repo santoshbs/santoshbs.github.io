@@ -1,5 +1,111 @@
 [
   {
+    "id": "a5cdde208426",
+    "timestamp": "2026-07-12T11:58:38.201001+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "critics vs fans on analytical detachment vs emotional investment",
+    "labels": {
+      "X": "critics",
+      "Y": "fans",
+      "A": "analytical detachment",
+      "B": "emotional investment"
+    },
+    "canonical_keys": {
+      "X": "critics",
+      "Y": "fans",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 1.714621453163613,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "critic",
+        "reviewer",
+        "analyst",
+        "evaluator",
+        "judge",
+        "assessor",
+        "examiner",
+        "commentator",
+        "pundit",
+        "arbiter",
+        "appraiser",
+        "adjudicator",
+        "specialist",
+        "observer",
+        "expert"
+      ],
+      "Y_used": [
+        "fan",
+        "admirer",
+        "devotee",
+        "follower",
+        "supporter",
+        "buff",
+        "aficionado",
+        "zealot",
+        "groupie",
+        "stan",
+        "fanboy",
+        "fanatic",
+        "enthusiast",
+        "adherent",
+        "backer"
+      ],
+      "A_used": [
+        "objective",
+        "detached",
+        "analytical",
+        "logical",
+        "rational",
+        "impartial",
+        "dispassionate",
+        "neutral",
+        "scientific",
+        "systematic",
+        "empirical",
+        "clinical",
+        "cerebral",
+        "measured",
+        "precise"
+      ],
+      "B_used": [
+        "emotional",
+        "passionate",
+        "enthusiastic",
+        "invested",
+        "ardent",
+        "fervent",
+        "zealous",
+        "sentimental",
+        "heartfelt",
+        "fervid",
+        "intense",
+        "inspired",
+        "excited",
+        "eager",
+        "loyal"
+      ]
+    },
+    "proposal": "People associate critics with analytical detachment more strongly than they associate fans with analytical detachment. This differential implicit association is novel because implicit attitude research has largely focused on demographic or broad occupational categories, leaving the cognitive boundaries between expert evaluators and lay enthusiasts underexplored. It is interesting because contemporary cultural and political discourse constantly negotiates the tension between professional critique and popular admiration, yet we lack empirical evidence on how deeply these roles are mentally separated along axes of objectivity versus emotional investment. Confirming this association would illuminate how ingrained stereotypes about expertise and fandom shape public legitimacy judgments and contribute to cultural polarization.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "d5b09a7db5c5",
     "timestamp": "2026-06-30T19:31:00.548467+00:00",
     "schema_version": "autoresearch.v1",
