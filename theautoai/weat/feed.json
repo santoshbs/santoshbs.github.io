@@ -1,5 +1,111 @@
 [
   {
+    "id": "3b92f348f18a",
+    "timestamp": "2026-07-12T15:56:29.456679+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "farmers vs fishermen on control versus dependence on nature",
+    "labels": {
+      "X": "farmers",
+      "Y": "fishermen",
+      "A": "control",
+      "B": "dependence"
+    },
+    "canonical_keys": {
+      "X": "farmers",
+      "Y": "fishermen",
+      "A": "control",
+      "B": "dependence"
+    },
+    "effect_size": 1.3167441113919278,
+    "p_value": 7e-05,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "farmer",
+        "agriculturist",
+        "rancher",
+        "cultivator",
+        "planter",
+        "grower",
+        "sower",
+        "herder",
+        "shepherd",
+        "stockman",
+        "breeder",
+        "gardener",
+        "agronomist",
+        "vintner",
+        "dairyman"
+      ],
+      "Y_used": [
+        "fisherman",
+        "angler",
+        "fisher",
+        "catcher",
+        "trapper",
+        "diver",
+        "skipper",
+        "deckhand",
+        "crabber",
+        "lobsterman",
+        "whaler",
+        "sailor",
+        "mariner",
+        "boatman",
+        "harpooner"
+      ],
+      "A_used": [
+        "control",
+        "manage",
+        "govern",
+        "master",
+        "direct",
+        "regulate",
+        "command",
+        "predict",
+        "stable",
+        "secure",
+        "reliable",
+        "tame",
+        "systematic",
+        "deliberate",
+        "structured"
+      ],
+      "B_used": [
+        "depend",
+        "chance",
+        "luck",
+        "risk",
+        "chaotic",
+        "wild",
+        "random",
+        "uncertain",
+        "precarious",
+        "fate",
+        "variable",
+        "volatile",
+        "accidental",
+        "passive",
+        "drift"
+      ]
+    },
+    "proposal": "People associate farmers with environmental control more strongly than they associate fishermen with control. Farmers are implicitly linked to cultivating, breeding, and managing terrestrial ecosystems, which suggests a mental representation of active governance, predictability, and mastery over living resources. In contrast, fishermen are associated with harvesting wild aquatic populations, evoking imagery of dependence on unpredictable natural yields, adaptation to whimsical forces, and extraction rather than cultivation. This differential is novel because implicit research has largely ignored the cognitive distinction between terrestrial production and aquatic extraction, focusing instead on broader contrasts like rural versus urban or producer versus consumer. Examining this association matters because it reveals how deeply the cultural metaphor of agriculture as 'dominion' shapes our intuitions about human agency, risk, and the ethics of resource management compared to the more precarious mental model often reserved for fishing.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "4465d3b4fa78",
     "timestamp": "2026-07-12T13:41:54.004294+00:00",
     "schema_version": "autoresearch.v1",
