@@ -1,5 +1,111 @@
 [
   {
+    "id": "4465d3b4fa78",
+    "timestamp": "2026-07-12T13:41:54.004294+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "teachers vs investors on temporal orientation",
+    "labels": {
+      "X": "teachers",
+      "Y": "investors",
+      "A": "long-term",
+      "B": "short-term"
+    },
+    "canonical_keys": {
+      "X": "teachers",
+      "Y": "investors",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": -0.01832259003811206,
+    "p_value": 0.96108,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "teacher",
+        "educator",
+        "instructor",
+        "professor",
+        "tutor",
+        "mentor",
+        "pedagogue",
+        "lecturer",
+        "facilitator",
+        "coach",
+        "trainer",
+        "academic",
+        "scholar",
+        "guide",
+        "counselor"
+      ],
+      "Y_used": [
+        "investor",
+        "financier",
+        "capitalist",
+        "shareholder",
+        "stakeholder",
+        "trader",
+        "speculator",
+        "broker",
+        "banker",
+        "magnate",
+        "tycoon",
+        "plutocrat",
+        "backer",
+        "sponsor",
+        "patron"
+      ],
+      "A_used": [
+        "future",
+        "patience",
+        "enduring",
+        "lasting",
+        "permanent",
+        "foresight",
+        "strategic",
+        "visionary",
+        "gradual",
+        "steady",
+        "legacy",
+        "heritage",
+        "historic",
+        "timeless",
+        "continuity"
+      ],
+      "B_used": [
+        "immediate",
+        "instant",
+        "brief",
+        "short",
+        "fleeting",
+        "transient",
+        "temporary",
+        "momentary",
+        "ephemeral",
+        "urgent",
+        "pressing",
+        "present",
+        "current",
+        "soon",
+        "hasty"
+      ]
+    },
+    "proposal": "People associate teachers with long-term vision more strongly than they associate investors with long-term vision. While financial literacy discourse explicitly praises capital allocation for compounding and multi-decade planning, contemporary public narratives increasingly frame market actors as driven by quarterly metrics, algorithmic trading, and extractive short-termism. Conversely, teachers are culturally romanticized as stewards of generational futures, a perception that persists even amid policy debates emphasizing standardized testing and immediate accountability. This differential implicit association is novel because stereotype research has extensively examined temporal orientations along political or generational lines, but has not tested how temporal patience is implicitly allocated between core civic and economic roles. Confirming or disconfirming this association would clarify whether societal mental models reserve future-oriented agency for educational caregivers rather than capital allocators, with direct implications for how the public implicitly justifies educational austerity versus financial speculation.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "25a627f302d9",
     "timestamp": "2026-07-12T12:55:10.931025+00:00",
     "schema_version": "autoresearch.v1",
