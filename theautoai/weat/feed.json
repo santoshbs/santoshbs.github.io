@@ -1,5 +1,111 @@
 [
   {
+    "id": "3bd5173a9e96",
+    "timestamp": "2026-07-12T22:33:24.824613+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "composers vs performers on originality vs derivative",
+    "labels": {
+      "X": "composers",
+      "Y": "performers",
+      "A": "original",
+      "B": "derivative"
+    },
+    "canonical_keys": {
+      "X": "composers",
+      "Y": "performers",
+      "A": "original",
+      "B": "derivative"
+    },
+    "effect_size": 0.7171395816307378,
+    "p_value": 0.05226,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "composer",
+        "songwriter",
+        "lyricist",
+        "arranger",
+        "orchestrator",
+        "producer",
+        "writer",
+        "creator",
+        "author",
+        "poet",
+        "novelist",
+        "playwright",
+        "designer",
+        "architect",
+        "inventor"
+      ],
+      "Y_used": [
+        "performer",
+        "singer",
+        "actor",
+        "dancer",
+        "musician",
+        "instrumentalist",
+        "vocalist",
+        "soloist",
+        "pianist",
+        "violinist",
+        "guitarist",
+        "drummer",
+        "cellist",
+        "flutist",
+        "trumpeter"
+      ],
+      "A_used": [
+        "original",
+        "creative",
+        "innovative",
+        "inventive",
+        "imaginative",
+        "novel",
+        "pioneering",
+        "unique",
+        "visionary",
+        "artistic",
+        "fresh",
+        "groundbreaking",
+        "expressive",
+        "spontaneous",
+        "inspired"
+      ],
+      "B_used": [
+        "derivative",
+        "imitative",
+        "repetitive",
+        "conventional",
+        "routine",
+        "unoriginal",
+        "generic",
+        "mundane",
+        "standard",
+        "mechanical",
+        "formulaic",
+        "predictable",
+        "traditional",
+        "rigid",
+        "dull"
+      ]
+    },
+    "proposal": "People associate composers with originality more strongly than they associate performers with originality. This proposal examines whether implicit cognitive structures privilege the conception of artistic work over its execution, attributing the core trait of originality disproportionately to the creator rather than the interpreter. It is novel because, while the tension between creation and performance is a staple of arts theory, empirical social psychology has not systematically tested if laypeople implicitly link the concept of originality more tightly to composers than to the performers who bring the work to life. Understanding this association matters for how we allocate creative credit and value different forms of artistic labor in culture and industry.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "4b50240cab9b",
     "timestamp": "2026-07-12T21:53:33.471535+00:00",
     "schema_version": "autoresearch.v1",
