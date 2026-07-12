@@ -1,5 +1,111 @@
 [
   {
+    "id": "25a627f302d9",
+    "timestamp": "2026-07-12T12:55:10.931025+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Smiths vs Farmers on Made vs Grown",
+    "labels": {
+      "X": "Smiths",
+      "Y": "Farmers",
+      "A": "Artificiality",
+      "B": "Naturalness"
+    },
+    "canonical_keys": {
+      "X": "smiths",
+      "Y": "farmers",
+      "A": "artificiality",
+      "B": "naturalness"
+    },
+    "effect_size": 1.660269525420401,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "smith",
+        "blacksmith",
+        "goldsmith",
+        "locksmith",
+        "coppersmith",
+        "tinsmith",
+        "silversmith",
+        "metalsmith",
+        "metalworker",
+        "forger",
+        "welder",
+        "machinist",
+        "manufacturer",
+        "tinker",
+        "fabricator"
+      ],
+      "Y_used": [
+        "farmer",
+        "rancher",
+        "planter",
+        "grower",
+        "tiller",
+        "shepherd",
+        "drover",
+        "stockman",
+        "agronomist",
+        "horticulturist",
+        "gardener",
+        "florist",
+        "farmhand",
+        "agriculturalist",
+        "husbandman"
+      ],
+      "A_used": [
+        "artificial",
+        "synthetic",
+        "fabricated",
+        "constructed",
+        "engineered",
+        "processed",
+        "industrial",
+        "technological",
+        "mechanical",
+        "chemical",
+        "unnatural",
+        "contrived",
+        "designed",
+        "crafted",
+        "built"
+      ],
+      "B_used": [
+        "natural",
+        "organic",
+        "grown",
+        "wild",
+        "botanical",
+        "ecological",
+        "biological",
+        "earthy",
+        "rustic",
+        "pastoral",
+        "fertile",
+        "verdant",
+        "living",
+        "seasonal",
+        "harvest"
+      ]
+    },
+    "proposal": "People associate Smiths with Artificiality more strongly than they associate Farmers with Artificiality. This differential association reflects a foundational cognitive boundary in how social actors map labor onto the dichotomy of the 'Made' versus the 'Grown.' While Farmers are culturally enshrined as intermediaries with natural cycles and biological growth, Smiths (encompassing blacksmiths, goldsmiths, locksmiths, and metalworkers) represent the archetype of transformative fabrication, reshaping inert matter through force and fire into human-designed tools and artifacts. Examining this association is novel because implicit links between specific craft categories and the Made/Grown axis have rarely been probed outside of broader industry vs. agriculture comparisons. It matters because confirming this bias would reveal how deeply ingrained the mental segregation of 'artifice' and 'nature' is at the level of occupational representation, potentially influencing how society values and regulates manufacturing versus agricultural roles in debates about sustainability and technological progress.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "a5cdde208426",
     "timestamp": "2026-07-12T11:58:38.201001+00:00",
     "schema_version": "autoresearch.v1",
