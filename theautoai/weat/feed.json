@@ -1,5 +1,111 @@
 [
   {
+    "id": "aeeaf086cbce",
+    "timestamp": "2026-07-13T11:44:10.713890+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "architects vs engineers on Aesthetics vs Utility",
+    "labels": {
+      "X": "architects",
+      "Y": "engineers",
+      "A": "Aesthetic",
+      "B": "Functional"
+    },
+    "canonical_keys": {
+      "X": "architects",
+      "Y": "engineers",
+      "A": "aesthetic",
+      "B": "functional"
+    },
+    "effect_size": 1.006317394337884,
+    "p_value": 0.00514,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "architect",
+        "architects",
+        "designers",
+        "planners",
+        "draftsmen",
+        "constructors",
+        "builders",
+        "modelers",
+        "creators",
+        "makers",
+        "organizers",
+        "fabricators",
+        "crafters",
+        "consultants",
+        "experts"
+      ],
+      "Y_used": [
+        "engineer",
+        "engineers",
+        "technicians",
+        "mechanics",
+        "operators",
+        "machinists",
+        "specialists",
+        "analysts",
+        "inventors",
+        "supervisors",
+        "managers",
+        "directors",
+        "chiefs",
+        "heads",
+        "leaders"
+      ],
+      "A_used": [
+        "beautiful",
+        "artistic",
+        "elegant",
+        "pretty",
+        "graceful",
+        "charming",
+        "lovely",
+        "stylish",
+        "attractive",
+        "aesthetic",
+        "decorative",
+        "ornate",
+        "colorful",
+        "vivid",
+        "picturesque"
+      ],
+      "B_used": [
+        "useful",
+        "functional",
+        "practical",
+        "efficient",
+        "logical",
+        "technical",
+        "mathematical",
+        "structural",
+        "mechanical",
+        "industrial",
+        "scientific",
+        "analytical",
+        "rigid",
+        "utilitarian",
+        "productive"
+      ]
+    },
+    "proposal": "People associate architects with aesthetic intuition more strongly than they associate engineers with aesthetic intuition. This proposed implicit bias taps into a cultural narrative that positions design-focused professions as inherently more attuned to visual beauty and stylistic elegance than their utility-focused technical counterparts, despite both fields requiring rigorous formal training and overlapping skill sets. Examining this association is novel because implicit bias research has predominantly compared broad macro-categories rather than adjacent technical disciplines that operate within the same professional ecosystems. Confirming this association would be important for understanding how early career socialization and media representations subtly steer students toward or away from engineering tracks by framing engineering as purely instrumental and architecture as culturally expressive. Ultimately, mapping this hidden cognitive boundary reveals how aesthetic capital is unevenly distributed across STEM-adjacent fields, with implications for interdisciplinary prestige and collaborative dynamics in built-environment projects.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "c2742188c220",
     "timestamp": "2026-07-13T08:28:10.935855+00:00",
     "schema_version": "autoresearch.v1",
