@@ -1,5 +1,111 @@
 [
   {
+    "id": "c21546e9f20a",
+    "timestamp": "2026-07-13T21:48:16.264669+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Scholars vs Influencers on moral credibility",
+    "labels": {
+      "X": "Scholars",
+      "Y": "Influencers",
+      "A": "Integrity",
+      "B": "Deceit"
+    },
+    "canonical_keys": {
+      "X": "scholars",
+      "Y": "influencers",
+      "A": "integrity",
+      "B": "deceit"
+    },
+    "effect_size": 0.6025891722668488,
+    "p_value": 0.10494,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "scholar",
+        "professor",
+        "academic",
+        "researcher",
+        "scientist",
+        "teacher",
+        "lecturer",
+        "intellectual",
+        "expert",
+        "author",
+        "writer",
+        "tutor",
+        "educator",
+        "historian",
+        "editor"
+      ],
+      "Y_used": [
+        "influencer",
+        "blogger",
+        "vlogger",
+        "streamer",
+        "uploader",
+        "creator",
+        "marketer",
+        "promoter",
+        "entertainer",
+        "performer",
+        "presenter",
+        "host",
+        "model",
+        "star",
+        "celebrity"
+      ],
+      "A_used": [
+        "honest",
+        "integrity",
+        "truthful",
+        "reliable",
+        "trustworthy",
+        "sincere",
+        "genuine",
+        "moral",
+        "ethical",
+        "upright",
+        "just",
+        "fair",
+        "loyal",
+        "faithful",
+        "decent"
+      ],
+      "B_used": [
+        "dishonest",
+        "lie",
+        "fake",
+        "fraud",
+        "deceit",
+        "deception",
+        "cheating",
+        "corrupt",
+        "immoral",
+        "unethical",
+        "lying",
+        "false",
+        "duplicitous",
+        "deceitful",
+        "dubious"
+      ]
+    },
+    "proposal": "People associate Scholars with integrity more strongly than they associate Influencers with integrity. This proposal examines the implicit moral credibility gap between traditional knowledge producers and algorithm-driven content creators in the digital era. It is novel because prior work has compared journalists to influencers or experts to laypeople, but has not probed the differential implicit association between the scholarly class and the influencer class specifically on the dimension of honesty and accountability. Examining this link matters because it reveals whether the public intuitively preserves a stereotype of academic virtue as a bulwark against misinformation, or whether scholars are now implicitly grouped with other performative actors who are suspected of prioritizing engagement over truth. Confirming this association would underscore a latent trust in institutional scholarship; disconfirming it would signal a collapse in the perceived moral distinctiveness of expertise.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "25eb90e12403",
     "timestamp": "2026-07-13T15:43:36.551014+00:00",
     "schema_version": "autoresearch.v1",
