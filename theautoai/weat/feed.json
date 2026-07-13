@@ -1,5 +1,111 @@
 [
   {
+    "id": "fdcd3e0d7a30",
+    "timestamp": "2026-07-13T00:18:10.467671+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Thieves vs Beggars on Perceived Agency and Capability",
+    "labels": {
+      "X": "Thieves",
+      "Y": "Beggars",
+      "A": "Resourcefulness",
+      "B": "Dependency"
+    },
+    "canonical_keys": {
+      "X": "thieves",
+      "Y": "beggars",
+      "A": "resourcefulness",
+      "B": "dependency"
+    },
+    "effect_size": 1.4616964127618772,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "thief",
+        "burglar",
+        "robber",
+        "shoplifter",
+        "smuggler",
+        "swindler",
+        "fraudster",
+        "crook",
+        "bandit",
+        "marauder",
+        "looter",
+        "pilferer",
+        "plunderer",
+        "racketeer",
+        "hijacker"
+      ],
+      "Y_used": [
+        "beggar",
+        "panhandler",
+        "vagrant",
+        "tramp",
+        "homeless",
+        "pauper",
+        "indigent",
+        "hobo",
+        "squatter",
+        "vagabond",
+        "drifter",
+        "mendicant",
+        "supplicant",
+        "wanderer",
+        "outcast"
+      ],
+      "A_used": [
+        "resourceful",
+        "clever",
+        "adaptive",
+        "shrewd",
+        "cunning",
+        "ingenious",
+        "enterprising",
+        "crafty",
+        "capable",
+        "skillful",
+        "inventive",
+        "nimble",
+        "savvy",
+        "adaptable",
+        "versatile"
+      ],
+      "B_used": [
+        "helpless",
+        "dependent",
+        "needy",
+        "desperate",
+        "vulnerable",
+        "weak",
+        "frail",
+        "pitiful",
+        "suffering",
+        "hopeless",
+        "destitute",
+        "impoverished",
+        "beggarly",
+        "reliant",
+        "powerless"
+      ]
+    },
+    "proposal": "People associate Thieves with Resourcefulness more strongly than they associate Beggars with Resourcefulness. This association highlights a subtle implicit bias where those who acquire resources through illicit means are viewed as more adaptive and street-smart than those who lack resources and seek them through supplication. Examining this differential is novel as it contrasts two marginalized categories often grouped together in discourse on poverty, yet distinct in perceived agency. It matters because it reveals how public mental representations may valorize criminal adaptability over victimized need, potentially shaping attitudes toward social support and law enforcement.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "3bd5173a9e96",
     "timestamp": "2026-07-12T22:33:24.824613+00:00",
     "schema_version": "autoresearch.v1",
