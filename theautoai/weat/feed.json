@@ -1,5 +1,111 @@
 [
   {
+    "id": "bce269b2b62a",
+    "timestamp": "2026-07-13T03:44:11.492910+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "children vs musicians on playfulness versus discipline",
+    "labels": {
+      "X": "children",
+      "Y": "musicians",
+      "A": "playfulness",
+      "B": "discipline"
+    },
+    "canonical_keys": {
+      "X": "children",
+      "Y": "musicians",
+      "A": "playfulness",
+      "B": "discipline"
+    },
+    "effect_size": -0.451839797615065,
+    "p_value": 0.22846,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "child",
+        "baby",
+        "toddler",
+        "infant",
+        "kid",
+        "boy",
+        "girl",
+        "teen",
+        "youth",
+        "youngster",
+        "juvenile",
+        "preschooler",
+        "adolescent",
+        "minor",
+        "newborn"
+      ],
+      "Y_used": [
+        "musician",
+        "singer",
+        "guitarist",
+        "pianist",
+        "drummer",
+        "violinist",
+        "cellist",
+        "flutist",
+        "harpist",
+        "organist",
+        "trumpeter",
+        "bassist",
+        "saxophonist",
+        "composer",
+        "conductor"
+      ],
+      "A_used": [
+        "play",
+        "fun",
+        "laugh",
+        "smile",
+        "joke",
+        "game",
+        "toy",
+        "frolic",
+        "romp",
+        "giggle",
+        "mirth",
+        "joy",
+        "amusement",
+        "sport",
+        "recreation"
+      ],
+      "B_used": [
+        "work",
+        "study",
+        "practice",
+        "discipline",
+        "rigor",
+        "focus",
+        "effort",
+        "drill",
+        "routine",
+        "schedule",
+        "lesson",
+        "exercise",
+        "training",
+        "method",
+        "system"
+      ]
+    },
+    "proposal": "People associate children with playfulness more strongly than they associate musicians with playfulness. This proposal examines the cultural dichotomy between the romanticized notion of childhood as a period of uninhibited spontaneity and the perception of professional musicians as disciplined artisans bound by technical rigor. While both groups are linked to creativity, the implicit association of playfulness as a primary trait of children versus a secondary or even counter-productive attribute for adult artists represents a novel angle not yet captured in standard implicit association tests. Confirming this bias would reveal how deeply ingrained narratives about 'natural' versus 'trained' expression influence our mental categorization of age and artistic identity.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "fdcd3e0d7a30",
     "timestamp": "2026-07-13T00:18:10.467671+00:00",
     "schema_version": "autoresearch.v1",
