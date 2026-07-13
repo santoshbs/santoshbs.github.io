@@ -1,5 +1,111 @@
 [
   {
+    "id": "c2742188c220",
+    "timestamp": "2026-07-13T08:28:10.935855+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Speakers vs Writers on genuineness vs artificiality",
+    "labels": {
+      "X": "Speakers",
+      "Y": "Writers",
+      "A": "authenticity",
+      "B": "artificiality"
+    },
+    "canonical_keys": {
+      "X": "speakers",
+      "Y": "writers",
+      "A": "authenticity",
+      "B": "artificiality"
+    },
+    "effect_size": -0.17645516353467672,
+    "p_value": 0.64317,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "speaker",
+        "orator",
+        "talker",
+        "presenter",
+        "host",
+        "anchor",
+        "broadcaster",
+        "announcer",
+        "vlogger",
+        "podcaster",
+        "lecturer",
+        "preacher",
+        "debater",
+        "commentator",
+        "pundit"
+      ],
+      "Y_used": [
+        "writer",
+        "author",
+        "novelist",
+        "essayist",
+        "columnist",
+        "journalist",
+        "poet",
+        "playwright",
+        "copywriter",
+        "editor",
+        "blogger",
+        "chronicler",
+        "correspondent",
+        "ghostwriter",
+        "penman"
+      ],
+      "A_used": [
+        "authentic",
+        "genuine",
+        "real",
+        "true",
+        "honest",
+        "sincere",
+        "natural",
+        "raw",
+        "unfiltered",
+        "original",
+        "pure",
+        "actual",
+        "straightforward",
+        "candid",
+        "transparent"
+      ],
+      "B_used": [
+        "artificial",
+        "fake",
+        "false",
+        "deceptive",
+        "contrived",
+        "manufactured",
+        "staged",
+        "synthetic",
+        "phony",
+        "sham",
+        "counterfeit",
+        "inauthentic",
+        "fabricated",
+        "bogus",
+        "spurious"
+      ]
+    },
+    "proposal": "People associate Speakers with authenticity more strongly than they associate Writers with authenticity. This implicit bias reflects a cultural shift where the unmediated, ephemeral nature of oral performance—especially in live podcasts, town halls, and direct-to-camera address—is increasingly viewed as the purer marker of truth and genuine presence compared to the editable, polished, and potentially artificial nature of written text. Examining this association is important because it highlights how public trust is migrating from the permanence of the written record to the immediacy of the human voice, a trend with significant implications for how information, accountability, and credibility are constructed in digital discourse.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "8f8cc30928e8",
     "timestamp": "2026-07-13T07:17:45.101446+00:00",
     "schema_version": "autoresearch.v1",
