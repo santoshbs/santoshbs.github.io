@@ -1,25 +1,5 @@
 [
   {
-    "id": "female-location-org-puzzle",
-    "title": "Female borrowers who name a specific organization or town may fund faster.",
-    "bucket": "",
-    "birth_batch": 0,
-    "death_batch": 998,
-    "last_batch": 998,
-    "confidence": 0,
-    "alive": false
-  },
-  {
-    "id": "female-children-count-puzzle",
-    "title": "Female borrowers who specify the number of children may fund faster.",
-    "bucket": "",
-    "birth_batch": 0,
-    "death_batch": 998,
-    "last_batch": 998,
-    "confidence": 0,
-    "alive": false
-  },
-  {
     "id": "female-formal-jargon-slower",
     "title": "Female borrowers who use formal business terminology or corporate buzzwords may fund more slowly.",
     "bucket": "",
@@ -100,11 +80,31 @@
     "alive": false
   },
   {
+    "id": "female-local-currency-slower-puzzle",
+    "title": "Female borrowers who mention the loan amount in local currency may fund more slowly.",
+    "bucket": "",
+    "birth_batch": 0,
+    "death_batch": 1015,
+    "last_batch": 1015,
+    "confidence": 0,
+    "alive": false
+  },
+  {
+    "id": "female-age-mention-slower",
+    "title": "Female borrowers who explicitly state their age in the pitch may fund more slowly.",
+    "bucket": "",
+    "birth_batch": 0,
+    "death_batch": 1015,
+    "last_batch": 1015,
+    "confidence": 0,
+    "alive": false
+  },
+  {
     "id": "female-technical-specificity-faster",
     "title": "Female borrowers who list specific products or goals beyond family welfare fund faster.",
     "bucket": "gendered_women",
     "birth_batch": 1,
-    "last_batch": 1014,
+    "last_batch": 1015,
     "confidence": 1.0,
     "peak_confidence": 1.0,
     "alive": true
@@ -114,7 +114,7 @@
     "title": "Specifying the number of years a business has operated predicts faster funding regardless of gender.",
     "bucket": "faster",
     "birth_batch": 1,
-    "last_batch": 1014,
+    "last_batch": 1015,
     "confidence": 1.0,
     "peak_confidence": 1.0,
     "alive": true
@@ -123,8 +123,8 @@
     "id": "female-savings-goal-faster",
     "title": "Female borrowers who mention the goal of building savings fund faster.",
     "bucket": "gendered_women",
-    "birth_batch": 516,
-    "last_batch": 1014,
+    "birth_batch": 515,
+    "last_batch": 1015,
     "confidence": 0.82,
     "peak_confidence": 0.82,
     "alive": true
@@ -133,8 +133,8 @@
     "id": "female-nwtf-history-faster",
     "title": "Female borrowers who mention a history of successful loans from NWTF fund faster.",
     "bucket": "gendered_women",
-    "birth_batch": 540,
-    "last_batch": 1014,
+    "birth_batch": 539,
+    "last_batch": 1015,
     "confidence": 0.8,
     "peak_confidence": 0.8,
     "alive": true
@@ -143,8 +143,8 @@
     "id": "verbosity-slower-general",
     "title": "Higher verbosity and excessive personal detail predict slower funding regardless of gender.",
     "bucket": "slower",
-    "birth_batch": 542,
-    "last_batch": 1014,
+    "birth_batch": 541,
+    "last_batch": 1015,
     "confidence": 0.9,
     "peak_confidence": 0.9,
     "alive": true
@@ -153,8 +153,8 @@
     "id": "monthly-income-slower-general",
     "title": "Pitches that include specific monthly income figures predict slower funding regardless of gender.",
     "bucket": "slower",
-    "birth_batch": 596,
-    "last_batch": 1014,
+    "birth_batch": 595,
+    "last_batch": 1015,
     "confidence": 1.0,
     "peak_confidence": 1.0,
     "alive": true
@@ -163,8 +163,8 @@
     "id": "female-business-success-faster",
     "title": "Female borrowers who emphasize that their business is currently doing well or is being sustained fund faster.",
     "bucket": "gendered_women",
-    "birth_batch": 606,
-    "last_batch": 1014,
+    "birth_batch": 605,
+    "last_batch": 1015,
     "confidence": 0.83,
     "peak_confidence": 0.83,
     "alive": true
@@ -173,8 +173,8 @@
     "id": "female-local-currency-slower",
     "title": "Female borrowers who mention the loan amount in local currency fund more slowly.",
     "bucket": "gendered_women",
-    "birth_batch": 1010,
-    "last_batch": 1014,
+    "birth_batch": 1009,
+    "last_batch": 1015,
     "confidence": 0.65,
     "peak_confidence": 0.65,
     "alive": true
