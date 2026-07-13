@@ -1,5 +1,111 @@
 [
   {
+    "id": "8f8cc30928e8",
+    "timestamp": "2026-07-13T07:17:45.101446+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Makers vs Traders on economic generativity",
+    "labels": {
+      "X": "Makers",
+      "Y": "Traders",
+      "A": "value creation",
+      "B": "value extraction"
+    },
+    "canonical_keys": {
+      "X": "makers",
+      "Y": "traders",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 1.383641226723304,
+    "p_value": 4e-05,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "maker",
+        "artisan",
+        "artist",
+        "builder",
+        "craftsman",
+        "designer",
+        "engineer",
+        "farmer",
+        "gardener",
+        "inventor",
+        "manufacturer",
+        "potter",
+        "sculptor",
+        "writer",
+        "carpenter"
+      ],
+      "Y_used": [
+        "trader",
+        "broker",
+        "dealer",
+        "banker",
+        "speculator",
+        "merchant",
+        "salesman",
+        "retailer",
+        "investor",
+        "flipper",
+        "middleman",
+        "financier",
+        "pawnbroker",
+        "vendor",
+        "peddler"
+      ],
+      "A_used": [
+        "create",
+        "produce",
+        "generate",
+        "assemble",
+        "build",
+        "manufacture",
+        "craft",
+        "invent",
+        "design",
+        "compose",
+        "form",
+        "grow",
+        "develop",
+        "establish",
+        "originate"
+      ],
+      "B_used": [
+        "extract",
+        "exploit",
+        "consume",
+        "deplete",
+        "drain",
+        "waste",
+        "ruin",
+        "damage",
+        "harm",
+        "break",
+        "demolish",
+        "erase",
+        "delete",
+        "cancel",
+        "destroy"
+      ]
+    },
+    "proposal": "People associate Makers with value creation more strongly than they associate Traders with value creation. This differential association reflects a deep-seated moral intuition that distinguishing between those who produce tangible goods or original works and those who facilitate exchange, often amplified by contemporary discourse on the dignity of labor versus extractive finance. Examining this implicit bias is novel because prior research has focused on warmth-competence stereotypes rather than the specific attribution of generative economic contribution. Confirming this association would matter for understanding public resistance to financialization and the moral framing of economic roles in policy debates.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "bce269b2b62a",
     "timestamp": "2026-07-13T03:44:11.492910+00:00",
     "schema_version": "autoresearch.v1",
