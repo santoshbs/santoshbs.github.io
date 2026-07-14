@@ -1,5 +1,111 @@
 [
   {
+    "id": "1afee56b315b",
+    "timestamp": "2026-07-14T22:23:43.914768+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "librarians vs publicists on objectivity vs bias",
+    "labels": {
+      "X": "librarians",
+      "Y": "publicists",
+      "A": "objectivity",
+      "B": "bias"
+    },
+    "canonical_keys": {
+      "X": "librarians",
+      "Y": "publicists",
+      "A": "objectivity",
+      "B": "bias"
+    },
+    "effect_size": 0.9361824020108513,
+    "p_value": 0.00553,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "librarian",
+        "archivist",
+        "cataloger",
+        "cataloguer",
+        "curator",
+        "researcher",
+        "scholar",
+        "professor",
+        "teacher",
+        "tutor",
+        "educator",
+        "historian",
+        "indexer",
+        "keeper",
+        "steward"
+      ],
+      "Y_used": [
+        "publicist",
+        "agent",
+        "promoter",
+        "marketer",
+        "advertiser",
+        "lobbyist",
+        "propagandist",
+        "advocate",
+        "spokesperson",
+        "speaker",
+        "influencer",
+        "campaigner",
+        "pundit",
+        "commentator",
+        "strategist"
+      ],
+      "A_used": [
+        "objective",
+        "neutral",
+        "unbiased",
+        "impartial",
+        "fair",
+        "factual",
+        "accurate",
+        "truthful",
+        "genuine",
+        "authentic",
+        "independent",
+        "dispassionate",
+        "equitable",
+        "just",
+        "rational"
+      ],
+      "B_used": [
+        "biased",
+        "subjective",
+        "partial",
+        "unfair",
+        "skewed",
+        "slanted",
+        "distorted",
+        "manipulated",
+        "deceptive",
+        "misleading",
+        "dishonest",
+        "fake",
+        "false",
+        "partisan",
+        "persuasive"
+      ]
+    },
+    "proposal": "People associate librarians with objectivity more strongly than they associate publicists with objectivity. This differential implicit association taps into how the public mentally categorizes information intermediaries amid contemporary debates about bias, censorship, and media literacy. While both roles curate and disseminate information, librarians are culturally framed as neutral stewards of knowledge, whereas publicists are viewed as strategic advocates shaping narratives. Examining this association is novel, as prior work has not directly contrasted these curation roles on implicit objectivity, and confirming or disconfirming it would clarify how laypeople distinguish between informational neutrality and persuasive intent in everyday cognition.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "9e4dedcda35c",
     "timestamp": "2026-07-14T21:20:32.087084+00:00",
     "schema_version": "autoresearch.v1",
