@@ -1,5 +1,111 @@
 [
   {
+    "id": "40be863388ca",
+    "timestamp": "2026-07-14T02:07:48.698095+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "archivists vs publishers on Preservation vs Commercialization",
+    "labels": {
+      "X": "archivists",
+      "Y": "publishers",
+      "A": "Preservation",
+      "B": "Commercialization"
+    },
+    "canonical_keys": {
+      "X": "archivists",
+      "Y": "publishers",
+      "A": "preservation",
+      "B": "commercialization"
+    },
+    "effect_size": 1.572431407639822,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "archivist",
+        "curator",
+        "conservator",
+        "librarian",
+        "keeper",
+        "collector",
+        "historian",
+        "restorer",
+        "cataloger",
+        "indexer",
+        "custodian",
+        "guardian",
+        "clerk",
+        "researcher",
+        "scholar"
+      ],
+      "Y_used": [
+        "publisher",
+        "editor",
+        "printer",
+        "bookseller",
+        "agent",
+        "owner",
+        "manager",
+        "producer",
+        "distributor",
+        "merchant",
+        "trader",
+        "seller",
+        "vendor",
+        "salesman",
+        "marketer"
+      ],
+      "A_used": [
+        "preserve",
+        "conserve",
+        "save",
+        "secure",
+        "history",
+        "heritage",
+        "memory",
+        "legacy",
+        "archive",
+        "record",
+        "maintain",
+        "restore",
+        "guard",
+        "protect",
+        "keep"
+      ],
+      "B_used": [
+        "profit",
+        "money",
+        "commercial",
+        "business",
+        "trade",
+        "sell",
+        "market",
+        "revenue",
+        "income",
+        "cost",
+        "price",
+        "value",
+        "capital",
+        "finance",
+        "sale"
+      ]
+    },
+    "proposal": "People associate archivists with preservation more strongly than they associate publishers with preservation. This differential implicit association captures a latent cultural dichotomy in how information custodianship versus information commercialization is automatically processed. While both professions manage texts and records, public discourse consistently frames archivists as neutral guardians of historical integrity, whereas publishers are subtly coded as market-driven actors prioritizing accessibility and profit. This pairing is novel because implicit bias research has overwhelmingly focused on clinical, corporate, or political roles, neglecting the information ecosystem. Validating this association would illuminate how automatic cognitive shortcuts shape institutional credibility, funding allocation, and public trust in the gatekeepers of cultural memory.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "998796086b28",
     "timestamp": "2026-07-13T23:29:04.793770+00:00",
     "schema_version": "autoresearch.v1",
