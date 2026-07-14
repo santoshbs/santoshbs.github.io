@@ -1,5 +1,111 @@
 [
   {
+    "id": "ddfb9c2061b0",
+    "timestamp": "2026-07-14T20:38:45.740394+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "historians vs philosophers on empirical grounding vs abstract speculation",
+    "labels": {
+      "X": "historians",
+      "Y": "philosophers",
+      "A": "empirical",
+      "B": "abstract"
+    },
+    "canonical_keys": {
+      "X": "historians",
+      "Y": "philosophers",
+      "A": "empirical",
+      "B": "abstract"
+    },
+    "effect_size": 1.4781424707251702,
+    "p_value": 1e-05,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "historian",
+        "archaeologist",
+        "anthropologist",
+        "curator",
+        "archivist",
+        "paleographer",
+        "numismatist",
+        "genealogist",
+        "antiquarian",
+        "chronicler",
+        "biographer",
+        "documentarian",
+        "cartographer",
+        "librarian",
+        "researcher"
+      ],
+      "Y_used": [
+        "philosopher",
+        "ethicist",
+        "epistemologist",
+        "metaphysician",
+        "logician",
+        "theorist",
+        "critic",
+        "thinker",
+        "sage",
+        "guru",
+        "master",
+        "writer",
+        "author",
+        "intellectual",
+        "essayist"
+      ],
+      "A_used": [
+        "evidence",
+        "fact",
+        "data",
+        "observation",
+        "experiment",
+        "proof",
+        "documentation",
+        "record",
+        "archive",
+        "source",
+        "empirical",
+        "material",
+        "concrete",
+        "tangible",
+        "verifiable"
+      ],
+      "B_used": [
+        "theory",
+        "idea",
+        "concept",
+        "notion",
+        "hypothesis",
+        "speculation",
+        "abstraction",
+        "philosophy",
+        "logic",
+        "reason",
+        "thought",
+        "imagination",
+        "fantasy",
+        "dream",
+        "fiction"
+      ]
+    },
+    "proposal": "People associate historians with empirical grounding more strongly than they associate philosophers with empirical grounding. While both disciplines occupy the humanities and demand rigorous intellectual training, public discourse consistently frames historical work as evidence-driven and fact-recovering, whereas philosophical work is routinely characterized as speculative, abstract, and debate-oriented. This differential implicit association has not been systematically examined with implicit measures, despite its relevance to how institutions and the public categorize different modes of inquiry. Validating or refuting this bias would illuminate a latent mental schema that equates scholarly rigor primarily with data collection rather than logical analysis, with potential downstream effects on how humanities subfields are valued in education, media, and funding decisions.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "87c16d5228a9",
     "timestamp": "2026-07-14T19:12:03.134842+00:00",
     "schema_version": "autoresearch.v1",
