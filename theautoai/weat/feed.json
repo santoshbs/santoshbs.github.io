@@ -1,5 +1,111 @@
 [
   {
+    "id": "87c16d5228a9",
+    "timestamp": "2026-07-14T19:12:03.134842+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "entrepreneurs vs regulators on Future-oriented vision vs. Stability-oriented control",
+    "labels": {
+      "X": "entrepreneurs",
+      "Y": "regulators",
+      "A": "Foresight/Vision",
+      "B": "Control/Stability"
+    },
+    "canonical_keys": {
+      "X": "entrepreneurs",
+      "Y": "regulators",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 1.528548825614641,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "entrepreneur",
+        "founder",
+        "boss",
+        "pioneer",
+        "magnate",
+        "investor",
+        "owner",
+        "capitalist",
+        "industrialist",
+        "financier",
+        "broker",
+        "merchant",
+        "mogul",
+        "businessman",
+        "innovator"
+      ],
+      "Y_used": [
+        "regulator",
+        "inspector",
+        "auditor",
+        "bureaucrat",
+        "official",
+        "agent",
+        "officer",
+        "guard",
+        "commissioner",
+        "supervisor",
+        "administrator",
+        "censor",
+        "referee",
+        "warden",
+        "constable"
+      ],
+      "A_used": [
+        "foresight",
+        "vision",
+        "future",
+        "innovation",
+        "growth",
+        "progress",
+        "opportunity",
+        "strategy",
+        "dynamic",
+        "creative",
+        "bold",
+        "ambitious",
+        "forward",
+        "advance",
+        "novel"
+      ],
+      "B_used": [
+        "control",
+        "safety",
+        "security",
+        "stability",
+        "order",
+        "law",
+        "rule",
+        "caution",
+        "restrict",
+        "limit",
+        "standard",
+        "protocol",
+        "compliance",
+        "prevent",
+        "check"
+      ]
+    },
+    "proposal": "People associate entrepreneurs with foresight more strongly than they associate regulators with foresight. This differential implicit association has not been systematically measured, despite extensive research on explicit attitudes toward market innovators versus state overseers. It is interesting because contemporary discourse increasingly frames economic and technological change through narratives of disruption versus control, yet the underlying cognitive architecture linking future-oriented competence to specific institutional roles remains unexamined. Confirming this association would reveal how the public mentally partitions long-term strategic vision from short-term risk management, which matters for understanding populist economic sentiments, policy compliance, and the cultural legitimacy of regulatory institutions in an era of rapid innovation.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "cd04fc0a5c29",
     "timestamp": "2026-07-14T11:15:15.302052+00:00",
     "schema_version": "autoresearch.v1",
