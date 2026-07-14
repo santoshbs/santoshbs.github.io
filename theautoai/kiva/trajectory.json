@@ -1,15 +1,5 @@
 [
   {
-    "id": "male-loan-phrasing-faster",
-    "title": "Male borrowers using the phrase 'has asked for a loan' fund faster than those saying 'wants to take out a loan'.",
-    "bucket": "",
-    "birth_batch": 0,
-    "death_batch": 1009,
-    "last_batch": 1009,
-    "confidence": 0,
-    "alive": false
-  },
-  {
     "id": "male-institutional-names-slower",
     "title": "Male borrowers who mention specific institutional names in their pitches may fund more slowly.",
     "bucket": "",
@@ -100,11 +90,21 @@
     "alive": false
   },
   {
+    "id": "female-education-business-link-faster",
+    "title": "Pitches from women that connect the need for funding to both the support of children's education and the growth of business income accelerate funding.",
+    "bucket": "",
+    "birth_batch": 0,
+    "death_batch": 1028,
+    "last_batch": 1028,
+    "confidence": 0,
+    "alive": false
+  },
+  {
     "id": "female-technical-specificity-faster",
     "title": "Female borrowers who list specific products or goals beyond family welfare fund faster.",
     "bucket": "gendered_women",
     "birth_batch": 1,
-    "last_batch": 1027,
+    "last_batch": 1028,
     "confidence": 1.0,
     "peak_confidence": 1.0,
     "alive": true
@@ -114,7 +114,7 @@
     "title": "Specifying the number of years a business has operated predicts faster funding regardless of gender.",
     "bucket": "faster",
     "birth_batch": 1,
-    "last_batch": 1027,
+    "last_batch": 1028,
     "confidence": 1.0,
     "peak_confidence": 1.0,
     "alive": true
@@ -123,8 +123,8 @@
     "id": "female-savings-goal-faster",
     "title": "Female borrowers who mention the goal of building savings fund faster.",
     "bucket": "gendered_women",
-    "birth_batch": 503,
-    "last_batch": 1027,
+    "birth_batch": 502,
+    "last_batch": 1028,
     "confidence": 0.82,
     "peak_confidence": 0.82,
     "alive": true
@@ -133,8 +133,8 @@
     "id": "female-nwtf-history-faster",
     "title": "Female borrowers who mention a history of successful loans from NWTF fund faster.",
     "bucket": "gendered_women",
-    "birth_batch": 527,
-    "last_batch": 1027,
+    "birth_batch": 526,
+    "last_batch": 1028,
     "confidence": 0.8,
     "peak_confidence": 0.8,
     "alive": true
@@ -143,18 +143,18 @@
     "id": "verbosity-slower-general",
     "title": "Higher verbosity and excessive personal detail predict slower funding regardless of gender.",
     "bucket": "slower",
-    "birth_batch": 529,
-    "last_batch": 1027,
-    "confidence": 0.95,
-    "peak_confidence": 0.95,
+    "birth_batch": 528,
+    "last_batch": 1028,
+    "confidence": 0.98,
+    "peak_confidence": 0.98,
     "alive": true
   },
   {
     "id": "monthly-income-slower-general",
     "title": "Pitches that include specific monthly income figures predict slower funding regardless of gender.",
     "bucket": "slower",
-    "birth_batch": 583,
-    "last_batch": 1027,
+    "birth_batch": 582,
+    "last_batch": 1028,
     "confidence": 1.0,
     "peak_confidence": 1.0,
     "alive": true
@@ -163,20 +163,20 @@
     "id": "female-business-success-faster",
     "title": "Female borrowers who emphasize that their business is currently doing well or is being sustained fund faster.",
     "bucket": "gendered_women",
-    "birth_batch": 593,
-    "last_batch": 1027,
+    "birth_batch": 592,
+    "last_batch": 1028,
     "confidence": 0.86,
     "peak_confidence": 0.86,
     "alive": true
   },
   {
-    "id": "female-education-business-link-faster",
-    "title": "Female borrowers who link loan purposes to both education and business income fund faster.",
-    "bucket": "gendered_women",
-    "birth_batch": 1027,
-    "last_batch": 1027,
-    "confidence": 0.65,
-    "peak_confidence": 0.65,
+    "id": "logistical-details-slower-general",
+    "title": "Including logistical minutiae such as operating hours or travel distance predicts slower funding regardless of gender.",
+    "bucket": "slower",
+    "birth_batch": 1028,
+    "last_batch": 1028,
+    "confidence": 0.6,
+    "peak_confidence": 0.6,
     "alive": true
   }
 ]
