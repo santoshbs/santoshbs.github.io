@@ -1,5 +1,111 @@
 [
   {
+    "id": "9e4dedcda35c",
+    "timestamp": "2026-07-14T21:20:32.087084+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "historians vs athletes on Nuance vs Certainty",
+    "labels": {
+      "X": "historians",
+      "Y": "athletes",
+      "A": "Nuance",
+      "B": "Certainty"
+    },
+    "canonical_keys": {
+      "X": "historians",
+      "Y": "athletes",
+      "A": "nuance",
+      "B": "certainty"
+    },
+    "effect_size": 1.7707277408162456,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "historian",
+        "archeologist",
+        "scholar",
+        "researcher",
+        "academic",
+        "professor",
+        "anthropologist",
+        "intellectual",
+        "lecturer",
+        "curator",
+        "writer",
+        "author",
+        "philosopher",
+        "educator",
+        "librarian"
+      ],
+      "Y_used": [
+        "athlete",
+        "runner",
+        "swimmer",
+        "gymnast",
+        "boxer",
+        "wrestler",
+        "sprinter",
+        "jogger",
+        "cyclist",
+        "competitor",
+        "sportsman",
+        "trainer",
+        "coach",
+        "jockey",
+        "skater"
+      ],
+      "A_used": [
+        "nuance",
+        "subtle",
+        "complex",
+        "ambiguity",
+        "context",
+        "intricate",
+        "layered",
+        "sophisticated",
+        "depth",
+        "reflection",
+        "contemplation",
+        "theoretical",
+        "detailed",
+        "deliberate",
+        "analysis"
+      ],
+      "B_used": [
+        "certain",
+        "decisive",
+        "clear",
+        "action",
+        "speed",
+        "concrete",
+        "tangible",
+        "result",
+        "outcome",
+        "fast",
+        "immediate",
+        "absolute",
+        "specific",
+        "precise",
+        "exact"
+      ]
+    },
+    "proposal": "People associate historians with nuance more strongly than they associate athletes with nuance. This differential implicit association captures a culturally pervasive contrast between professions valued for tolerating ambiguity and contextual depth versus those celebrated for decisive action and measurable outcomes. Examining this link is novel because implicit bias research has largely focused on demographic or political categories, overlooking how occupational socialization shapes automatic associations with cognitive complexity. It matters because such hidden associations may influence public trust, resource allocation, and cross-disciplinary collaboration, revealing whether society implicitly privileges certainty and speed over careful reflection and epistemic humility.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "ddfb9c2061b0",
     "timestamp": "2026-07-14T20:38:45.740394+00:00",
     "schema_version": "autoresearch.v1",
