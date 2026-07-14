@@ -1,5 +1,111 @@
 [
   {
+    "id": "cd04fc0a5c29",
+    "timestamp": "2026-07-14T11:15:15.302052+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "doctors vs scientists on Heroism vs Intellectualism",
+    "labels": {
+      "X": "doctors",
+      "Y": "scientists",
+      "A": "Heroic",
+      "B": "Intellectual"
+    },
+    "canonical_keys": {
+      "X": "doctors",
+      "Y": "scientists",
+      "A": "heroic",
+      "B": "intellectual"
+    },
+    "effect_size": 0.8050572726548337,
+    "p_value": 0.02524,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "doctor",
+        "nurse",
+        "physician",
+        "surgeon",
+        "medic",
+        "clinician",
+        "healer",
+        "paramedic",
+        "intern",
+        "resident",
+        "specialist",
+        "practitioner",
+        "therapist",
+        "dentist",
+        "podiatrist"
+      ],
+      "Y_used": [
+        "scientist",
+        "researcher",
+        "biologist",
+        "chemist",
+        "physicist",
+        "academic",
+        "professor",
+        "scholar",
+        "geologist",
+        "astronomer",
+        "mathematician",
+        "statistician",
+        "geneticist",
+        "biochemist",
+        "ecologist"
+      ],
+      "A_used": [
+        "hero",
+        "savior",
+        "brave",
+        "courage",
+        "rescue",
+        "valiant",
+        "champion",
+        "defender",
+        "guardian",
+        "protector",
+        "valor",
+        "gallant",
+        "heroic",
+        "fearless",
+        "daring"
+      ],
+      "B_used": [
+        "intellectual",
+        "abstract",
+        "thinker",
+        "logic",
+        "mind",
+        "reason",
+        "rational",
+        "analytic",
+        "empirical",
+        "data",
+        "theory",
+        "knowledge",
+        "wisdom",
+        "study",
+        "distant"
+      ]
+    },
+    "proposal": "People associate doctors with heroism more strongly than they associate scientists with heroism. Doctors are culturally framed as immediate life-saving saviors acting in urgent, individual contexts, whereas scientists are often depicted as distant intellectuals or abstract inquirers whose contributions are collective and delayed. This implicit bias matters for public funding and moral recognition; if the public reserves heroic status for clinical practitioners, systemic investments in basic research may lack the same emotional resonance and social esteem.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "f04107100123",
     "timestamp": "2026-07-14T09:46:25.469401+00:00",
     "schema_version": "autoresearch.v1",
