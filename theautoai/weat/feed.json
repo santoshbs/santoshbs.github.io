@@ -1,5 +1,115 @@
 [
   {
+    "id": "f04107100123",
+    "timestamp": "2026-07-14T09:46:25.469401+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "sailors vs pilots on adaptability vs rigidity",
+    "labels": {
+      "X": "sailors",
+      "Y": "pilots",
+      "A": "situational adaptability",
+      "B": "procedural rigidity"
+    },
+    "canonical_keys": {
+      "X": "sailors",
+      "Y": "pilots",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": -0.05460975652181907,
+    "p_value": 0.88137,
+    "n": {
+      "X": 16,
+      "Y": 16,
+      "A": 16,
+      "B": 16
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "sailor",
+        "mariner",
+        "skipper",
+        "helmsman",
+        "deckhand",
+        "bosun",
+        "seaman",
+        "boatman",
+        "yachtsman",
+        "fisherman",
+        "whaler",
+        "corsair",
+        "privateer",
+        "buccaneer",
+        "pirate",
+        "seafarer"
+      ],
+      "Y_used": [
+        "pilot",
+        "aviator",
+        "flyer",
+        "copilot",
+        "airman",
+        "engineer",
+        "captain",
+        "crew",
+        "ace",
+        "wingman",
+        "commander",
+        "dispatcher",
+        "instructor",
+        "operator",
+        "coordinator",
+        "specialist"
+      ],
+      "A_used": [
+        "adaptable",
+        "flexible",
+        "spontaneous",
+        "intuitive",
+        "agile",
+        "versatile",
+        "fluid",
+        "dynamic",
+        "malleable",
+        "responsive",
+        "creative",
+        "resourceful",
+        "nimble",
+        "elastic",
+        "supple",
+        "yielding"
+      ],
+      "B_used": [
+        "rigid",
+        "strict",
+        "procedural",
+        "systematic",
+        "standardized",
+        "conventional",
+        "formal",
+        "disciplined",
+        "methodical",
+        "structured",
+        "regulated",
+        "bureaucratic",
+        "inflexible",
+        "dogmatic",
+        "prescriptive",
+        "orthodox"
+      ]
+    },
+    "proposal": "People associate sailors with situational adaptability more strongly than they associate pilots with situational adaptability. This differential association likely stems from cultural narratives and safety discourses that frame maritime navigation as requiring intuitive, on-the-fly adjustments to unpredictable environmental forces, while aviation is systematically constructed around rigid checklists, standardized protocols, and zero-tolerance for deviation. Examining this implicit contrast reveals how institutional practices and media representations differentially encode cognitive styles onto occupational groups, which may shape public trust in human judgment versus procedural reliance across high-stakes domains. This axis has not been systematically examined in social cognition research, offering a novel window into how metaphorical associations of fluidity versus rigidity are projected onto modern technical professions.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "40be863388ca",
     "timestamp": "2026-07-14T02:07:48.698095+00:00",
     "schema_version": "autoresearch.v1",
