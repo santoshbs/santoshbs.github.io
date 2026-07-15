@@ -1,5 +1,111 @@
 [
   {
+    "id": "3c945010e0d2",
+    "timestamp": "2026-07-15T12:39:36.371363+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Pilgrims vs Explorers on Sincerity versus Ambition",
+    "labels": {
+      "X": "Pilgrims",
+      "Y": "Explorers",
+      "A": "Sincerity",
+      "B": "Ambition"
+    },
+    "canonical_keys": {
+      "X": "pilgrims",
+      "Y": "explorers",
+      "A": "sincerity",
+      "B": "ambition"
+    },
+    "effect_size": 1.6593908135567537,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "pilgrim",
+        "crusader",
+        "devotee",
+        "worshiper",
+        "believer",
+        "saint",
+        "monk",
+        "nun",
+        "friar",
+        "recluse",
+        "ascetic",
+        "penitent",
+        "convert",
+        "acolyte",
+        "missionary"
+      ],
+      "Y_used": [
+        "explorer",
+        "adventurer",
+        "voyager",
+        "pioneer",
+        "settler",
+        "colonist",
+        "surveyor",
+        "hiker",
+        "climber",
+        "trekker",
+        "ranger",
+        "scout",
+        "trapper",
+        "traveler",
+        "nomad"
+      ],
+      "A_used": [
+        "sincere",
+        "devout",
+        "pious",
+        "holy",
+        "faithful",
+        "pure",
+        "genuine",
+        "honest",
+        "earnest",
+        "dedicated",
+        "committed",
+        "reverent",
+        "moral",
+        "virtuous",
+        "spiritual"
+      ],
+      "B_used": [
+        "ambitious",
+        "curious",
+        "daring",
+        "inquisitive",
+        "adventurous",
+        "bold",
+        "risky",
+        "territorial",
+        "worldly",
+        "materialistic",
+        "pragmatic",
+        "opportunistic",
+        "greedy",
+        "selfish",
+        "vain"
+      ]
+    },
+    "proposal": "People associate Pilgrims with sincerity more strongly than they associate Explorers with sincerity. This differential association reflects cultural narratives that frame spiritual journeys as driven by pure, authentic internal conviction, whereas exploration is often implicitly linked to external ambition, territorial acquisition, or utilitarian curiosity. This proposal is novel because, while stereotypes contrasting religious and secular actors are well-studied, the specific comparison of journey-based roles—pilgrims versus explorers—has not been examined, leaving a gap in how motives for mobility and risk-taking are mentally represented. Confirming this association would reveal a bias that potentially devalues scientific or geographic inquiry as less morally earnest than ritualistic devotion, with implications for public perception of exploratory endeavors versus spiritual practices.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "9585711c6b93",
     "timestamp": "2026-07-15T04:11:46.205341+00:00",
     "schema_version": "autoresearch.v1",
