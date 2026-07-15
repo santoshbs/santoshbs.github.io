@@ -1,5 +1,111 @@
 [
   {
+    "id": "a6532bf7fb86",
+    "timestamp": "2026-07-15T16:47:18.176066+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "dancers vs gymnasts on expressiveness vs technicality",
+    "labels": {
+      "X": "dancers",
+      "Y": "gymnasts",
+      "A": "expressiveness",
+      "B": "technicality"
+    },
+    "canonical_keys": {
+      "X": "dancers",
+      "Y": "gymnasts",
+      "A": "expressiveness",
+      "B": "technicality"
+    },
+    "effect_size": 0.5582827166946417,
+    "p_value": 0.13649,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "dancer",
+        "ballerina",
+        "choreographer",
+        "mime",
+        "interpreter",
+        "soloist",
+        "performer",
+        "artist",
+        "virtuoso",
+        "master",
+        "teacher",
+        "director",
+        "student",
+        "pupil",
+        "apprentice"
+      ],
+      "Y_used": [
+        "gymnast",
+        "acrobat",
+        "tumbler",
+        "contortionist",
+        "athlete",
+        "competitor",
+        "sportsman",
+        "sportswoman",
+        "champion",
+        "victor",
+        "winner",
+        "medalist",
+        "contestant",
+        "finalist",
+        "trampolinist"
+      ],
+      "A_used": [
+        "expressive",
+        "emotional",
+        "artistic",
+        "creative",
+        "imaginative",
+        "lyrical",
+        "poetic",
+        "romantic",
+        "dramatic",
+        "interpretive",
+        "soulful",
+        "sentimental",
+        "passionate",
+        "moving",
+        "touching"
+      ],
+      "B_used": [
+        "technical",
+        "precise",
+        "accurate",
+        "disciplined",
+        "objective",
+        "strict",
+        "rigid",
+        "formal",
+        "systematic",
+        "structured",
+        "logical",
+        "mechanical",
+        "functional",
+        "efficient",
+        "rigorous"
+      ]
+    },
+    "proposal": "People associate dancers with expressiveness more strongly than they associate gymnasts with expressiveness. While both groups undergo rigorous physical training and perform for audiences, cultural narratives and media coverage consistently frame dance as a medium for emotional storytelling and personal revelation, whereas gymnastics is predominantly categorized around technical precision, apparatus mastery, and objective scoring. Examining this differential implicit association is novel because implicit bias research has largely neglected how aesthetic and disciplinary boundaries shape mental representations of bodily performance. It matters because confirming this association would reveal how deeply ingrained cultural scripts about art versus sport influence public funding decisions, talent development pathways, and broader societal valuations of emotional labor versus technical execution.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "3c945010e0d2",
     "timestamp": "2026-07-15T12:39:36.371363+00:00",
     "schema_version": "autoresearch.v1",
