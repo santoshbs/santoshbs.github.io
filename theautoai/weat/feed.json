@@ -1,5 +1,111 @@
 [
   {
+    "id": "9585711c6b93",
+    "timestamp": "2026-07-15T04:11:46.205341+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "clergy vs merchants on moral absolutism vs moral relativism",
+    "labels": {
+      "X": "clergy",
+      "Y": "merchants",
+      "A": "moral absolutism",
+      "B": "moral relativism"
+    },
+    "canonical_keys": {
+      "X": "clergy",
+      "Y": "merchants",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 1.6451848244155778,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "priest",
+        "pastor",
+        "minister",
+        "vicar",
+        "friar",
+        "monk",
+        "nun",
+        "bishop",
+        "deacon",
+        "rabbi",
+        "imam",
+        "chaplain",
+        "preacher",
+        "elder",
+        "reverend"
+      ],
+      "Y_used": [
+        "merchant",
+        "trader",
+        "dealer",
+        "vendor",
+        "retailer",
+        "buyer",
+        "seller",
+        "businessman",
+        "entrepreneur",
+        "capitalist",
+        "broker",
+        "agent",
+        "salesman",
+        "shopkeeper",
+        "wholesaler"
+      ],
+      "A_used": [
+        "absolute",
+        "fixed",
+        "rigid",
+        "strict",
+        "unyielding",
+        "immutable",
+        "constant",
+        "eternal",
+        "dogmatic",
+        "categorical",
+        "inflexible",
+        "principled",
+        "uncompromising",
+        "steadfast",
+        "firm"
+      ],
+      "B_used": [
+        "relative",
+        "flexible",
+        "adaptable",
+        "situational",
+        "pragmatic",
+        "opportunistic",
+        "variable",
+        "fluid",
+        "shifting",
+        "contextual",
+        "negotiable",
+        "tentative",
+        "provisional",
+        "conditional",
+        "malleable"
+      ]
+    },
+    "proposal": "People associate clergy with moral absolutism more strongly than they associate merchants with moral absolutism. This differential implicit association captures a pervasive but underexamined cultural narrative that frames religious leaders as grounded in fixed ethical commandments, while framing commercial actors as navigating relative, situational, or profit-driven moral frameworks. Although public discourse frequently contrasts religious and economic institutions, implicit measures have not systematically tested whether this absolutist versus relativist split operates at an automatic, associative level. Confirming this would clarify how deeply ingrained the moral dichotomy between spiritual and commercial roles is, which matters for understanding public trust, cross-domain moral reasoning, and debates over ethical regulation in both sectors.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "04baf3cb718a",
     "timestamp": "2026-07-15T00:50:58.578502+00:00",
     "schema_version": "autoresearch.v1",
