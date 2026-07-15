@@ -1,5 +1,116 @@
 [
   {
+    "id": "4cef0fb272d8",
+    "timestamp": "2026-07-15T19:01:56.955290+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Farmers vs Soldiers on Autonomy vs. Subordination",
+    "labels": {
+      "X": "Farmers",
+      "Y": "Soldiers",
+      "A": "Autonomy",
+      "B": "Subordination"
+    },
+    "canonical_keys": {
+      "X": "farmers",
+      "Y": "soldiers",
+      "A": "autonomy",
+      "B": "subordination"
+    },
+    "effect_size": -0.7879571734967138,
+    "p_value": 0.03076,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "farmer",
+        "grower",
+        "cultivator",
+        "rancher",
+        "planter",
+        "tiller",
+        "stockman",
+        "husbandman",
+        "agriculturalist",
+        "drover",
+        "harvester",
+        "sower",
+        "reaper",
+        "gardener",
+        "horticulturalist"
+      ],
+      "Y_used": [
+        "soldier",
+        "warrior",
+        "trooper",
+        "marine",
+        "corporal",
+        "sergeant",
+        "general",
+        "major",
+        "private",
+        "lieutenant",
+        "captain",
+        "cadet",
+        "fighter",
+        "combatant",
+        "recruit",
+        "conscript",
+        "militiaman",
+        "veteran",
+        "guard",
+        "officer"
+      ],
+      "A_used": [
+        "autonomy",
+        "independence",
+        "freedom",
+        "liberty",
+        "independent",
+        "free",
+        "unbound",
+        "uncontrolled",
+        "voluntary",
+        "individual",
+        "solo",
+        "single",
+        "alone",
+        "sovereign",
+        "master"
+      ],
+      "B_used": [
+        "obedience",
+        "subordination",
+        "compliance",
+        "loyalty",
+        "discipline",
+        "control",
+        "hierarchy",
+        "obedient",
+        "submissive",
+        "subordinate",
+        "follower",
+        "servant",
+        "underling",
+        "slave",
+        "lackey"
+      ]
+    },
+    "proposal": "People associate Farmers with Autonomy more strongly than they associate Soldiers with Autonomy. This proposal examines the implicit contrast between the agrarian ideal of the independent producer and the martial ideal of the disciplined subordinate. While explicit discourse often valorizes both groups as essential to society, implicit associations may reveal a deep-seated cultural linkage of farming with self-sufficiency and freedom, and soldiering with obedience and subordination to command. Confirming this association would shed light on how political socialization shapes mental representations of authority, agency, and the nature of work across these distinct social roles.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "9ee37d703def",
     "timestamp": "2026-07-15T18:21:28.452297+00:00",
     "schema_version": "autoresearch.v1",
