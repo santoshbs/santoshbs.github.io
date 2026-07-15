@@ -1,5 +1,111 @@
 [
   {
+    "id": "cf5ce6498af2",
+    "timestamp": "2026-07-15T23:39:30.266303+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "doctors vs teachers on procedural predictability versus adaptability",
+    "labels": {
+      "X": "doctors",
+      "Y": "teachers",
+      "A": "predictability",
+      "B": "adaptability"
+    },
+    "canonical_keys": {
+      "X": "doctors",
+      "Y": "teachers",
+      "A": "predictability",
+      "B": "adaptability"
+    },
+    "effect_size": 1.6188391021076243,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "doctor",
+        "physician",
+        "surgeon",
+        "specialist",
+        "clinician",
+        "medic",
+        "practitioner",
+        "internist",
+        "cardiologist",
+        "pediatrician",
+        "neurologist",
+        "dermatologist",
+        "psychiatrist",
+        "pathologist",
+        "radiologist"
+      ],
+      "Y_used": [
+        "teacher",
+        "educator",
+        "instructor",
+        "professor",
+        "tutor",
+        "mentor",
+        "lecturer",
+        "pedagogue",
+        "facilitator",
+        "trainer",
+        "coach",
+        "guide",
+        "adviser",
+        "scholar",
+        "counselor"
+      ],
+      "A_used": [
+        "standard",
+        "routine",
+        "protocol",
+        "procedure",
+        "algorithm",
+        "formula",
+        "predictable",
+        "consistent",
+        "systematic",
+        "regulated",
+        "standardized",
+        "methodical",
+        "structured",
+        "automatic",
+        "repeatable"
+      ],
+      "B_used": [
+        "flexible",
+        "adaptable",
+        "dynamic",
+        "spontaneous",
+        "responsive",
+        "impromptu",
+        "versatile",
+        "changing",
+        "fluid",
+        "agile",
+        "creative",
+        "improvisational",
+        "evolving",
+        "open",
+        "shifting"
+      ]
+    },
+    "proposal": "People associate doctors with procedural predictability more strongly than they associate teachers with procedural predictability. This differential implicit association reflects how medical training emphasizes standardized protocols, algorithmic decision-making, and reproducible treatment pathways, whereas teaching is culturally framed as a dynamic, responsive craft requiring moment-to-moment pedagogical adjustment. Examining this association is novel because prior research has focused on competence or warmth stereotypes, overlooking how institutional epistemologies shape implicit expectations of behavioral consistency. Confirming this bias matters because it reveals how laypeople mentally categorize professional expertise, potentially influencing public trust in healthcare standardization versus educational flexibility.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "887b1224b1ca",
     "timestamp": "2026-07-15T22:36:59.701126+00:00",
     "schema_version": "autoresearch.v1",
