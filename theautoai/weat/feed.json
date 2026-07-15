@@ -1,5 +1,111 @@
 [
   {
+    "id": "04baf3cb718a",
+    "timestamp": "2026-07-15T00:50:58.578502+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "nurses vs teachers on self-sacrifice vs intellectual agency",
+    "labels": {
+      "X": "nurses",
+      "Y": "teachers",
+      "A": "self-sacrifice",
+      "B": "intellectual agency"
+    },
+    "canonical_keys": {
+      "X": "nurses",
+      "Y": "teachers",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 1.2884549650673025,
+    "p_value": 7e-05,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "nurse",
+        "doctor",
+        "medic",
+        "clinician",
+        "physician",
+        "surgeon",
+        "therapist",
+        "paramedic",
+        "orderly",
+        "attendant",
+        "caretaker",
+        "caregiver",
+        "staff",
+        "aide",
+        "midwife"
+      ],
+      "Y_used": [
+        "teacher",
+        "professor",
+        "instructor",
+        "lecturer",
+        "tutor",
+        "educator",
+        "principal",
+        "dean",
+        "headmaster",
+        "scholar",
+        "mentor",
+        "coach",
+        "trainer",
+        "master",
+        "preceptor"
+      ],
+      "A_used": [
+        "sacrifice",
+        "selfless",
+        "martyr",
+        "servitude",
+        "devotion",
+        "giver",
+        "suffering",
+        "dedication",
+        "emotional",
+        "humble",
+        "service",
+        "care",
+        "altruism",
+        "support",
+        "loyalty"
+      ],
+      "B_used": [
+        "agency",
+        "empowerment",
+        "intellect",
+        "knowledge",
+        "authority",
+        "skill",
+        "power",
+        "rational",
+        "logic",
+        "expertise",
+        "influence",
+        "prestige",
+        "wisdom",
+        "reason",
+        "mastery"
+      ]
+    },
+    "proposal": "People associate nurses with self-sacrifice more strongly than they associate teachers with self-sacrifice. This differential implicit association probes status hierarchies within helping professions, suggesting that nursing is culturally scripted around martyrdom and servitude, while teaching retains connotations of intellectual agency and empowerment. It is novel because prior work typically contrasts caregivers with technical or commercial roles, rather than pitting two core care/education professions against each other. Confirming this would highlight how implicit biases may reinforce the undervaluation of nursing relative to teaching, despite comparable emotional labor, by framing nurses as passive givers rather than skilled professionals.",
+    "iterations": 3,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "1afee56b315b",
     "timestamp": "2026-07-14T22:23:43.914768+00:00",
     "schema_version": "autoresearch.v1",
