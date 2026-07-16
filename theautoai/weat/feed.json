@@ -1,5 +1,111 @@
 [
   {
+    "id": "855d7d27f52a",
+    "timestamp": "2026-07-16T05:07:06.037867+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Monarchs vs Ministers on ritual_symbolic versus administrative_functional",
+    "labels": {
+      "X": "Monarchs",
+      "Y": "Ministers",
+      "A": "ritual_symbolic",
+      "B": "administrative_functional"
+    },
+    "canonical_keys": {
+      "X": "monarchs",
+      "Y": "ministers",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 1.8078913690439549,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "king",
+        "queen",
+        "emperor",
+        "empress",
+        "sultan",
+        "tsar",
+        "tsarina",
+        "pharaoh",
+        "maharaja",
+        "sovereign",
+        "monarch",
+        "prince",
+        "princess",
+        "regent",
+        "caliph"
+      ],
+      "Y_used": [
+        "minister",
+        "secretary",
+        "chancellor",
+        "administrator",
+        "bureaucrat",
+        "executive",
+        "director",
+        "manager",
+        "official",
+        "representative",
+        "diplomat",
+        "politician",
+        "delegate",
+        "ambassador",
+        "appointee"
+      ],
+      "A_used": [
+        "ritual",
+        "ceremonial",
+        "traditional",
+        "symbolic",
+        "custom",
+        "rite",
+        "heritage",
+        "ancient",
+        "solemn",
+        "pomp",
+        "pageant",
+        "coronation",
+        "fealty",
+        "homage",
+        "reverence"
+      ],
+      "B_used": [
+        "administrative",
+        "pragmatic",
+        "functional",
+        "bureaucratic",
+        "practical",
+        "policy",
+        "management",
+        "strategy",
+        "logistics",
+        "organization",
+        "efficiency",
+        "operation",
+        "regulation",
+        "implementation",
+        "administration"
+      ]
+    },
+    "proposal": "People associate Monarchs with ritual more strongly than they associate Ministers with ritual. This proposal targets the cognitive distinction between symbolic and functional leadership roles that persists in public discourse, even in constitutional systems where monarchs lack executive power. While prior research has examined explicit attitudes toward government efficacy, the implicit link between hereditary figures and ceremonial tradition versus appointed officials and administrative pragmatism remains unprobed. Examining this association would illuminate how historical hierarchies continue to shape the mental representation of authority, revealing whether the public intuitively reserves ceremonial attributes exclusively for dynastic actors while attributing instrumental traits to political managers.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "246d3e2646b0",
     "timestamp": "2026-07-16T02:08:06.349082+00:00",
     "schema_version": "autoresearch.v1",
