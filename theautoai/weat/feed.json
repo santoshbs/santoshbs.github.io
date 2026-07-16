@@ -1,5 +1,111 @@
 [
   {
+    "id": "72f39094783e",
+    "timestamp": "2026-07-16T13:27:29.869944+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "sailors vs soldiers on groundedness vs volatility",
+    "labels": {
+      "X": "sailors",
+      "Y": "soldiers",
+      "A": "instability",
+      "B": "stability"
+    },
+    "canonical_keys": {
+      "X": "sailors",
+      "Y": "soldiers",
+      "A": "instability",
+      "B": "stability"
+    },
+    "effect_size": 1.291156337326058,
+    "p_value": 0.00019,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "sailor",
+        "seaman",
+        "mariner",
+        "deckhand",
+        "boatman",
+        "navigator",
+        "skipper",
+        "helmsman",
+        "crewman",
+        "boatswain",
+        "quartermaster",
+        "lookout",
+        "pilot",
+        "seafarer",
+        "yachtsman"
+      ],
+      "Y_used": [
+        "soldier",
+        "trooper",
+        "infantryman",
+        "grunt",
+        "recruit",
+        "private",
+        "sergeant",
+        "officer",
+        "warrior",
+        "combatant",
+        "corporal",
+        "lieutenant",
+        "ranger",
+        "guard",
+        "defender"
+      ],
+      "A_used": [
+        "unsteady",
+        "shaky",
+        "trembling",
+        "rocking",
+        "swaying",
+        "sliding",
+        "wobbly",
+        "tossing",
+        "rolling",
+        "shifting",
+        "fluctuating",
+        "volatile",
+        "precarious",
+        "teetering",
+        "quaking"
+      ],
+      "B_used": [
+        "steady",
+        "firm",
+        "solid",
+        "stable",
+        "grounded",
+        "fixed",
+        "rooted",
+        "secure",
+        "unmoving",
+        "rigid",
+        "immovable",
+        "permanent",
+        "constant",
+        "balanced",
+        "still"
+      ]
+    },
+    "proposal": "People associate sailors with instability more strongly than they associate soldiers with instability. This differential implicit association reflects the deep-seated environmental linkage between maritime actors and the oscillating, unpredictable nature of water versus the perceived solidity of land-based military roles. While both groups are associated with discipline and service, the elemental context of sailing likely primes associations with volatility, motion, and lack of a fixed footing that are less salient for soldiers, whose archetype is grounded defense and territorial occupation. Examining this association is novel because comparative branch stereotypes in implicit cognition have rarely isolated environmental groundedness as a dimension, yet it matters for understanding how public discourse frames naval risk, adaptability, and the psychological image of different forms of state coercion.",
+    "iterations": 4,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "db7f2e294de9",
     "timestamp": "2026-07-16T12:42:46.137362+00:00",
     "schema_version": "autoresearch.v1",
