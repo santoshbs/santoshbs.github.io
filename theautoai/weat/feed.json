@@ -1,5 +1,111 @@
 [
   {
+    "id": "3127d33f11f1",
+    "timestamp": "2026-07-16T08:49:21.488567+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "mystics vs monks on emotional intensity versus ascetic discipline",
+    "labels": {
+      "X": "mystics",
+      "Y": "monks",
+      "A": "ecstasy",
+      "B": "discipline"
+    },
+    "canonical_keys": {
+      "X": "mystics",
+      "Y": "monks",
+      "A": "ecstasy",
+      "B": "discipline"
+    },
+    "effect_size": 0.833049144092167,
+    "p_value": 0.02246,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "mystic",
+        "shaman",
+        "guru",
+        "visionary",
+        "prophet",
+        "hermit",
+        "recluse",
+        "oracle",
+        "medium",
+        "psychic",
+        "sage",
+        "adept",
+        "devotee",
+        "fanatic",
+        "zealot"
+      ],
+      "Y_used": [
+        "monk",
+        "friar",
+        "nun",
+        "abbot",
+        "prior",
+        "novice",
+        "brother",
+        "sister",
+        "ascetic",
+        "contemplative",
+        "postulant",
+        "oblate",
+        "almoner",
+        "penitent",
+        "worshiper"
+      ],
+      "A_used": [
+        "ecstasy",
+        "rapture",
+        "frenzy",
+        "passion",
+        "fervor",
+        "ardor",
+        "enthusiasm",
+        "zeal",
+        "bliss",
+        "trance",
+        "vision",
+        "miracle",
+        "magic",
+        "supernatural",
+        "intense"
+      ],
+      "B_used": [
+        "discipline",
+        "order",
+        "routine",
+        "structure",
+        "control",
+        "restraint",
+        "moderation",
+        "temperance",
+        "frugality",
+        "simplicity",
+        "austerity",
+        "calm",
+        "quiet",
+        "methodical",
+        "systematic"
+      ]
+    },
+    "proposal": "People associate mystics with ecstasy more strongly than they associate monks with ecstasy. While academic discourse often distinguishes institutional monasticism from individual mysticism, lay implicit cognition may sharply differentiate these categories along affective dimensions that have not been systematically measured. Mystics are culturally framed as seekers of direct, intense divine union or altered states, whereas monks are typically represented as practitioners of disciplined, communal asceticism and daily routine. Examining this differential association matters because it reveals whether the public mentally partitions religious actors by perceived emotional intensity rather than institutional affiliation, which could shape perceptions of spiritual legitimacy, authenticity, and potential danger in ways that diverge from theological classifications.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "855d7d27f52a",
     "timestamp": "2026-07-16T05:07:06.037867+00:00",
     "schema_version": "autoresearch.v1",
