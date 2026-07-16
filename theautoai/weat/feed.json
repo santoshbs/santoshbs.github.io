@@ -1,5 +1,111 @@
 [
   {
+    "id": "2a78d881e785",
+    "timestamp": "2026-07-16T00:27:35.406527+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "activists vs administrators on improvisation versus planning",
+    "labels": {
+      "X": "activists",
+      "Y": "administrators",
+      "A": "spontaneity",
+      "B": "planning"
+    },
+    "canonical_keys": {
+      "X": "activists",
+      "Y": "administrators",
+      "A": "spontaneity",
+      "B": "planning"
+    },
+    "effect_size": 1.2223362449607855,
+    "p_value": 0.00046,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "activist",
+        "protester",
+        "demonstrator",
+        "campaigner",
+        "organizer",
+        "agitator",
+        "crusader",
+        "advocate",
+        "reformist",
+        "rebel",
+        "insurgent",
+        "revolutionary",
+        "militant",
+        "petitioner",
+        "lobbyist"
+      ],
+      "Y_used": [
+        "administrator",
+        "manager",
+        "bureaucrat",
+        "official",
+        "director",
+        "supervisor",
+        "executive",
+        "overseer",
+        "superintendent",
+        "regulator",
+        "functionary",
+        "clerk",
+        "coordinator",
+        "secretary",
+        "chairman"
+      ],
+      "A_used": [
+        "improvisation",
+        "spontaneous",
+        "adaptive",
+        "emergent",
+        "fluid",
+        "flexible",
+        "unscripted",
+        "impromptu",
+        "creative",
+        "intuitive",
+        "agile",
+        "responsive",
+        "unstructured",
+        "dynamic",
+        "improvised"
+      ],
+      "B_used": [
+        "procedure",
+        "predictability",
+        "planned",
+        "structured",
+        "systematic",
+        "methodical",
+        "orderly",
+        "regulated",
+        "formal",
+        "scheduled",
+        "organized",
+        "bureaucratic",
+        "conventional",
+        "rigid",
+        "standardized"
+      ]
+    },
+    "proposal": "People associate activists with improvisation more strongly than they associate administrators with improvisation. This differential association captures a cognitive divide between emergent social movements, which are often framed as adaptive and responsive to unfolding events, and institutional governance, which is mentally categorized around procedure and predictability. Examining this association is novel because prior research has focused on moral or ideological divides between these groups, neglecting how they are implicitly linked to spontaneous versus planned action. It matters because implicit biases toward improvisation could shape public trust in grassroots organizing versus bureaucratic management during emergencies, directly influencing policy support and resource allocation.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "cf5ce6498af2",
     "timestamp": "2026-07-15T23:39:30.266303+00:00",
     "schema_version": "autoresearch.v1",
