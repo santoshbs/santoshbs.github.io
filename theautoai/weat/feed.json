@@ -1,5 +1,111 @@
 [
   {
+    "id": "733e047a2869",
+    "timestamp": "2026-07-16T17:03:32.555249+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "creators vs commentators on originality versus derivativeness",
+    "labels": {
+      "X": "creators",
+      "Y": "commentators",
+      "A": "originality",
+      "B": "derivativeness"
+    },
+    "canonical_keys": {
+      "X": "creators",
+      "Y": "commentators",
+      "A": "originality",
+      "B": "derivativeness"
+    },
+    "effect_size": 1.0232166697961718,
+    "p_value": 0.00465,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "author",
+        "artist",
+        "composer",
+        "designer",
+        "director",
+        "filmmaker",
+        "painter",
+        "photographer",
+        "sculptor",
+        "writer",
+        "inventor",
+        "engineer",
+        "architect",
+        "programmer",
+        "developer"
+      ],
+      "Y_used": [
+        "critic",
+        "reviewer",
+        "analyst",
+        "pundit",
+        "commentator",
+        "journalist",
+        "reporter",
+        "editor",
+        "essayist",
+        "historian",
+        "academic",
+        "professor",
+        "scholar",
+        "debater",
+        "evaluator"
+      ],
+      "A_used": [
+        "original",
+        "creative",
+        "innovative",
+        "inventive",
+        "unique",
+        "distinctive",
+        "pioneering",
+        "imaginative",
+        "authentic",
+        "unorthodox",
+        "visionary",
+        "fresh",
+        "groundbreaking",
+        "unprecedented",
+        "spontaneous"
+      ],
+      "B_used": [
+        "derivative",
+        "unoriginal",
+        "generic",
+        "conventional",
+        "predictable",
+        "repetitive",
+        "passive",
+        "reactive",
+        "dependent",
+        "secondary",
+        "mundane",
+        "standard",
+        "typical",
+        "ordinary",
+        "routine"
+      ]
+    },
+    "proposal": "People associate creators with originality more strongly than they associate commentators with originality. This differential implicit association reflects contemporary cultural narratives that privilege primary content production over secondary analysis, often framing commentators as derivative, reactive, or parasitic rather than generative. Examining this bias is novel because implicit measures have not yet captured how the rapid expansion of digital creator economies and commentary-driven media ecosystems has reshaped mental representations of intellectual labor. Confirming or disconfirming this association would reveal how implicit heuristics about originality may systematically disadvantage analytical and critical roles in funding decisions, platform algorithmic visibility, and institutional prestige, ultimately shaping how knowledge production and critique are valued in public discourse.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "72f39094783e",
     "timestamp": "2026-07-16T13:27:29.869944+00:00",
     "schema_version": "autoresearch.v1",
