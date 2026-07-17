@@ -1,5 +1,111 @@
 [
   {
+    "id": "e4ed663dd43f",
+    "timestamp": "2026-07-17T16:59:44.711883+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "parents vs politicians on forgiveness vs retribution",
+    "labels": {
+      "X": "parents",
+      "Y": "politicians",
+      "A": "forgiveness",
+      "B": "retribution"
+    },
+    "canonical_keys": {
+      "X": "parents",
+      "Y": "politicians",
+      "A": "forgiveness",
+      "B": "retribution"
+    },
+    "effect_size": 0.0987959872938411,
+    "p_value": 0.79605,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "father",
+        "mother",
+        "dad",
+        "mom",
+        "parent",
+        "parents",
+        "fathers",
+        "mothers",
+        "papa",
+        "mama",
+        "pops",
+        "mamas",
+        "dads",
+        "moms",
+        "guardians"
+      ],
+      "Y_used": [
+        "politician",
+        "politicians",
+        "senator",
+        "senators",
+        "representative",
+        "representatives",
+        "mayor",
+        "governors",
+        "president",
+        "presidents",
+        "legislator",
+        "legislators",
+        "councilor",
+        "councilors",
+        "nominee"
+      ],
+      "A_used": [
+        "forgiveness",
+        "forgiving",
+        "pardon",
+        "merciful",
+        "mercy",
+        "clemency",
+        "leniency",
+        "lenient",
+        "grace",
+        "gracious",
+        "compassion",
+        "compassionate",
+        "empathy",
+        "benevolence",
+        "patience"
+      ],
+      "B_used": [
+        "punishment",
+        "retribution",
+        "revenge",
+        "vengeance",
+        "wrath",
+        "anger",
+        "angry",
+        "hostile",
+        "hostility",
+        "aggressive",
+        "aggression",
+        "rigidity",
+        "blame",
+        "condemnation",
+        "vindictive"
+      ]
+    },
+    "proposal": "People associate parents with forgiveness more strongly than they associate politicians with forgiveness. This differential implicit association reflects a pervasive cultural script that idealizes parental roles as archetypal sites of unconditional grace, reconciliation, and long-term relational investment, while stereotyping political actors as adversarial, retributive, or bound by partisan rigidity. Examining this is novel because prior research has largely focused on explicit stereotypes of warmth and competence (e.g., the Stereotype Content Model) or political ideology, but has not probed the specific implicit link between familial roles and the moral capacity for forgiveness compared to institutional leadership roles. Confirming this association would reveal how deeply ingrained role-based expectations shape our implicit judgments of political accountability, the framing of public apologies, and the perceived feasibility of bipartisan cooperation.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "8d3f434a3ba6",
     "timestamp": "2026-07-17T09:28:35.704652+00:00",
     "schema_version": "autoresearch.v1",
