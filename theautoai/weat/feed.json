@@ -1,5 +1,111 @@
 [
   {
+    "id": "8d3f434a3ba6",
+    "timestamp": "2026-07-17T09:28:35.704652+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "losers vs winners on narrative depth vs superficiality",
+    "labels": {
+      "X": "losers",
+      "Y": "winners",
+      "A": "depth",
+      "B": "shallowness"
+    },
+    "canonical_keys": {
+      "X": "losers",
+      "Y": "winners",
+      "A": "depth",
+      "B": "shallowness"
+    },
+    "effect_size": -0.9480733545277732,
+    "p_value": 0.00954,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "loser",
+        "underdog",
+        "failure",
+        "flop",
+        "washout",
+        "reject",
+        "outcast",
+        "dropout",
+        "benchwarmer",
+        "hasbeen",
+        "floater",
+        "underperformer",
+        "also",
+        "ran",
+        "second"
+      ],
+      "Y_used": [
+        "winner",
+        "champion",
+        "victor",
+        "hero",
+        "star",
+        "ace",
+        "elite",
+        "champ",
+        "top",
+        "first",
+        "prime",
+        "master",
+        "pro",
+        "chief",
+        "leader"
+      ],
+      "A_used": [
+        "profound",
+        "deep",
+        "complex",
+        "meaningful",
+        "tragic",
+        "nuanced",
+        "rich",
+        "substantial",
+        "weighty",
+        "layered",
+        "intricate",
+        "serious",
+        "thoughtful",
+        "intense",
+        "vivid"
+      ],
+      "B_used": [
+        "shallow",
+        "superficial",
+        "trivial",
+        "simple",
+        "light",
+        "thin",
+        "empty",
+        "basic",
+        "surface",
+        "plain",
+        "mundane",
+        "ordinary",
+        "flat",
+        "hollow",
+        "trite"
+      ]
+    },
+    "proposal": "People associate losers with tragic depth more strongly than they associate winners with tragic depth. This differential association captures a pervasive cultural narrative that romanticizes failure as a source of profound insight and character, while viewing success as potentially shallow or merely circumstantial. Examining this is novel because implicit bias research typically focuses on stereotypical traits like competence, warmth, or morality, neglecting aesthetic and narrative attributes like tragic depth. It matters because confirming this association would reveal how societal reverence for the tragic hero may implicitly devalue the emotional narratives of successful actors, framing them as less complex.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "4b9e63f78ef5",
     "timestamp": "2026-07-17T06:29:47.941855+00:00",
     "schema_version": "autoresearch.v1",
