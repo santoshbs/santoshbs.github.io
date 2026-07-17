@@ -1,5 +1,111 @@
 [
   {
+    "id": "4b9e63f78ef5",
+    "timestamp": "2026-07-17T06:29:47.941855+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "ancestors vs descendants on authority vs submission",
+    "labels": {
+      "X": "ancestors",
+      "Y": "descendants",
+      "A": "authority",
+      "B": "submission"
+    },
+    "canonical_keys": {
+      "X": "ancestors",
+      "Y": "descendants",
+      "A": "authority",
+      "B": "submission"
+    },
+    "effect_size": -0.5119147222418252,
+    "p_value": 0.17255,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "ancestor",
+        "forebear",
+        "forefather",
+        "foremother",
+        "patriarch",
+        "matriarch",
+        "elder",
+        "progenitor",
+        "sire",
+        "grandfather",
+        "grandmother",
+        "grandpa",
+        "grandma",
+        "oldtimer",
+        "forebears"
+      ],
+      "Y_used": [
+        "descendant",
+        "offspring",
+        "child",
+        "scion",
+        "heir",
+        "grandchild",
+        "grandson",
+        "granddaughter",
+        "kid",
+        "infant",
+        "toddler",
+        "baby",
+        "juvenile",
+        "minor",
+        "adolescent"
+      ],
+      "A_used": [
+        "authority",
+        "power",
+        "command",
+        "control",
+        "rule",
+        "boss",
+        "leader",
+        "master",
+        "king",
+        "queen",
+        "ruler",
+        "sovereign",
+        "president",
+        "dictator",
+        "tyrant"
+      ],
+      "B_used": [
+        "submission",
+        "obedience",
+        "subordinate",
+        "follower",
+        "servant",
+        "slave",
+        "underling",
+        "assistant",
+        "peon",
+        "worker",
+        "civilian",
+        "subject",
+        "vassal",
+        "henchman",
+        "lackey"
+      ]
+    },
+    "proposal": "People associate ancestors with authority more strongly than they associate descendants with authority. This association is novel because it isolates the specific weight of temporal distance and lineage in implicit mental models, distinguishing it from broader age or hierarchy stereotypes. While descendants are often the focus of contemporary discourse regarding potential and change, ancestors are implicitly coded as the source of legitimate power, tradition, and binding judgment, reflecting a deep-seated bias toward the sanctity and finality of the past in matters of governance and moral order. Confirming this differential association would highlight how intergenerational dynamics are mentally structured, revealing that authority is not just associated with current leaders but is implicitly anchored in the forebears, which may influence resistance to social change and the framing of heritage in political debates.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "f2b41d92b5f5",
     "timestamp": "2026-07-17T04:40:17.768088+00:00",
     "schema_version": "autoresearch.v1",
