@@ -1,5 +1,111 @@
 [
   {
+    "id": "4e574f32df37",
+    "timestamp": "2026-07-17T17:51:44.931533+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "preachers vs teachers on openness versus rigidity",
+    "labels": {
+      "X": "preachers",
+      "Y": "teachers",
+      "A": "epistemic rigidity",
+      "B": "epistemic openness"
+    },
+    "canonical_keys": {
+      "X": "preachers",
+      "Y": "teachers",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 1.8714896889427706,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "preacher",
+        "minister",
+        "priest",
+        "pastor",
+        "reverend",
+        "clergyman",
+        "cleric",
+        "evangelist",
+        "chaplain",
+        "vicar",
+        "rabbi",
+        "imam",
+        "bishop",
+        "deacon",
+        "missionary"
+      ],
+      "Y_used": [
+        "teacher",
+        "professor",
+        "instructor",
+        "educator",
+        "lecturer",
+        "tutor",
+        "mentor",
+        "principal",
+        "dean",
+        "academic",
+        "scholar",
+        "researcher",
+        "trainer",
+        "guide",
+        "coach"
+      ],
+      "A_used": [
+        "rigid",
+        "dogmatic",
+        "fixed",
+        "absolute",
+        "unyielding",
+        "stubborn",
+        "orthodox",
+        "inflexible",
+        "strict",
+        "closed",
+        "adamant",
+        "uncompromising",
+        "static",
+        "traditional",
+        "conservative"
+      ],
+      "B_used": [
+        "open",
+        "flexible",
+        "inquiring",
+        "questioning",
+        "exploratory",
+        "curious",
+        "adaptive",
+        "creative",
+        "innovative",
+        "tolerant",
+        "receptive",
+        "dynamic",
+        "fluid",
+        "broad",
+        "inquisitive"
+      ]
+    },
+    "proposal": "People associate preachers with epistemic rigidity more strongly than they associate teachers with epistemic rigidity. This proposed linkage captures a culturally pervasive but undermeasured intuition that religious orators are mentally coded as defenders of fixed doctrine, whereas secular educators are viewed as cultivators of open inquiry. While explicit surveys frequently assess perceived trustworthiness or professional competence across these roles, the automatic cognitive association linking preachers to intellectual closed-mindedness has not been systematically tested using implicit measures. Examining this differential association matters because it reveals how institutional functions are subconsciously mapped onto the openness-versus-convention dimension, offering insights into secular-religious polarization and public attitudes toward educational autonomy.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "e4ed663dd43f",
     "timestamp": "2026-07-17T16:59:44.711883+00:00",
     "schema_version": "autoresearch.v1",
