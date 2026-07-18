@@ -1,5 +1,111 @@
 [
   {
+    "id": "aaf30077ad50",
+    "timestamp": "2026-07-18T10:58:06.372056+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "therapists vs trainers on Affective versus Physical",
+    "labels": {
+      "X": "therapists",
+      "Y": "trainers",
+      "A": "Affective",
+      "B": "Physical"
+    },
+    "canonical_keys": {
+      "X": "therapists",
+      "Y": "trainers",
+      "A": "affective",
+      "B": "physical"
+    },
+    "effect_size": 1.0168732008647903,
+    "p_value": 0.00443,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "counselor",
+        "psychologist",
+        "psychiatrist",
+        "psychotherapist",
+        "clinician",
+        "helper",
+        "healer",
+        "practitioner",
+        "doctor",
+        "nurse",
+        "medic",
+        "advisor",
+        "specialist",
+        "confidant",
+        "listener"
+      ],
+      "Y_used": [
+        "coach",
+        "trainer",
+        "instructor",
+        "teacher",
+        "tutor",
+        "mentor",
+        "supervisor",
+        "manager",
+        "educator",
+        "facilitator",
+        "lecturer",
+        "demonstrator",
+        "captain",
+        "leader",
+        "guide"
+      ],
+      "A_used": [
+        "emotions",
+        "feelings",
+        "empathy",
+        "affection",
+        "heart",
+        "love",
+        "sadness",
+        "anger",
+        "crying",
+        "tears",
+        "mood",
+        "sentiment",
+        "passion",
+        "care",
+        "support"
+      ],
+      "B_used": [
+        "muscles",
+        "strength",
+        "body",
+        "exercise",
+        "fitness",
+        "speed",
+        "power",
+        "technique",
+        "skill",
+        "strategy",
+        "drill",
+        "discipline",
+        "performance",
+        "workout",
+        "sports"
+      ]
+    },
+    "proposal": "People associate therapists with emotional labor more strongly than they associate trainers with emotional labor. Despite both roles demanding significant interpersonal stamina, expertise, and client-facing responsibility, cultural narratives consistently frame mental health professionals as bearing the hidden burden of affective management, while positioning physical or performance coaches as focused primarily on technical execution or bodily conditioning. Examining this differential implicit association illuminates how society mentally categorizes care-oriented versus performance-oriented expertise, revealing a bias that may over-affectivize clinical practice while underestimating the skilled deliberation inherent in coaching. Confirming or disconfirming this pattern would challenge assumptions about occupational prestige, the psychological toll assigned to different service professions, and how we implicitly value affective versus technical competence.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "6b873be05ffb",
     "timestamp": "2026-07-18T10:04:35.228076+00:00",
     "schema_version": "autoresearch.v1",
