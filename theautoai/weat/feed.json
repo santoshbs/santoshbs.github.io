@@ -1,5 +1,111 @@
 [
   {
+    "id": "d8302e88d409",
+    "timestamp": "2026-07-18T07:44:35.328674+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "journalists vs lawyers on systemic critique vs procedural maintenance",
+    "labels": {
+      "X": "journalists",
+      "Y": "lawyers",
+      "A": "SystemicCritique",
+      "B": "ProceduralMaintenance"
+    },
+    "canonical_keys": {
+      "X": "journalists",
+      "Y": "lawyers",
+      "A": "systemiccritique",
+      "B": "proceduralmaintenance"
+    },
+    "effect_size": 0.9520758697956558,
+    "p_value": 0.00782,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "journalist",
+        "reporter",
+        "correspondent",
+        "anchor",
+        "columnist",
+        "editor",
+        "broadcaster",
+        "commentator",
+        "newscaster",
+        "interviewer",
+        "photographer",
+        "producer",
+        "writer",
+        "publicist",
+        "stringer"
+      ],
+      "Y_used": [
+        "lawyer",
+        "attorney",
+        "barrister",
+        "solicitor",
+        "advocate",
+        "counsel",
+        "litigator",
+        "prosecutor",
+        "defender",
+        "arbitrator",
+        "mediator",
+        "notary",
+        "jurist",
+        "magistrate",
+        "paralegal"
+      ],
+      "A_used": [
+        "critique",
+        "challenge",
+        "expose",
+        "investigate",
+        "scrutinize",
+        "criticize",
+        "oppose",
+        "protest",
+        "reform",
+        "dissent",
+        "rebel",
+        "resist",
+        "denounce",
+        "condemn",
+        "uncover"
+      ],
+      "B_used": [
+        "procedure",
+        "order",
+        "compliance",
+        "maintain",
+        "uphold",
+        "enforce",
+        "regulate",
+        "administer",
+        "govern",
+        "protocol",
+        "standard",
+        "norm",
+        "convention",
+        "stability",
+        "continuity"
+      ]
+    },
+    "proposal": "People associate journalists with systemic critique more strongly than they associate lawyers with systemic critique. This proposed implicit association reflects contemporary cultural narratives that frame journalists as watchdogs who routinely question authority and expose institutional failures, while casting lawyers as procedural operators who navigate and legitimize existing systems to advance client interests. The bias is novel because prior implicit association research has predominantly examined explicit political polarization or generic professional stereotypes (e.g., competence, trustworthiness) without measuring whether the public automatically links journalistic identity to structural skepticism rather than legal identity. Confirming this association would illuminate how deeply ingrained cultural scripts shape divergent expectations about civic information roles, potentially influencing public tolerance for media oversight versus confidence in legal process.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "d13a545cfb55",
     "timestamp": "2026-07-18T00:40:34.449316+00:00",
     "schema_version": "autoresearch.v1",
