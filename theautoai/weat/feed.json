@@ -1,5 +1,111 @@
 [
   {
+    "id": "6b873be05ffb",
+    "timestamp": "2026-07-18T10:04:35.228076+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "bankers vs brokers on stability versus volatility",
+    "labels": {
+      "X": "bankers",
+      "Y": "brokers",
+      "A": "stability",
+      "B": "volatility"
+    },
+    "canonical_keys": {
+      "X": "bankers",
+      "Y": "brokers",
+      "A": "stability",
+      "B": "volatility"
+    },
+    "effect_size": -0.637519579100648,
+    "p_value": 0.08484,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "banker",
+        "teller",
+        "cashier",
+        "treasurer",
+        "lender",
+        "financier",
+        "director",
+        "executive",
+        "manager",
+        "advisor",
+        "consultant",
+        "analyst",
+        "official",
+        "clerk",
+        "officer"
+      ],
+      "Y_used": [
+        "broker",
+        "dealer",
+        "trader",
+        "agent",
+        "representative",
+        "specialist",
+        "facilitator",
+        "intermediary",
+        "merchant",
+        "vendor",
+        "retailer",
+        "wholesaler",
+        "distributor",
+        "operator",
+        "salesman"
+      ],
+      "A_used": [
+        "stable",
+        "steady",
+        "secure",
+        "safe",
+        "solid",
+        "firm",
+        "fixed",
+        "constant",
+        "durable",
+        "permanent",
+        "enduring",
+        "reliable",
+        "dependable",
+        "consistent",
+        "unchanging"
+      ],
+      "B_used": [
+        "volatile",
+        "risky",
+        "unstable",
+        "uncertain",
+        "unpredictable",
+        "fluctuating",
+        "changing",
+        "variable",
+        "shaky",
+        "insecure",
+        "unsafe",
+        "fragile",
+        "fleeting",
+        "erratic",
+        "chaotic"
+      ]
+    },
+    "proposal": "People associate bankers with stability more strongly than they associate brokers with stability. This differential implicit association reflects a culturally pervasive distinction in finance discourse: bankers are mentally represented as institutional stewards who manage and safeguard capital over time, whereas brokers are viewed as transactional agents who facilitate rapid exchanges and assume or amplify market risk. Examining this association is novel because prior research has focused on broader financial categories (e.g., investors vs. workers) or specific professional stereotypes without isolating the banker-broker dichotomy. The finding matters because public perceptions of stability versus volatility within these roles influence trust in financial intermediaries, support for regulatory frameworks, and the allocation of moral blame during economic crises.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "d8302e88d409",
     "timestamp": "2026-07-18T07:44:35.328674+00:00",
     "schema_version": "autoresearch.v1",
