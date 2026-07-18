@@ -1,5 +1,111 @@
 [
   {
+    "id": "83462c3a277a",
+    "timestamp": "2026-07-18T15:25:02.419451+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "bureaucrats vs activists on procedural reliability versus fluidity",
+    "labels": {
+      "X": "bureaucrats",
+      "Y": "activists",
+      "A": "Stability",
+      "B": "Fluidity"
+    },
+    "canonical_keys": {
+      "X": "bureaucrats",
+      "Y": "activists",
+      "A": "stability",
+      "B": "fluidity"
+    },
+    "effect_size": 1.393560111087554,
+    "p_value": 3e-05,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "bureaucrat",
+        "administrator",
+        "clerk",
+        "official",
+        "manager",
+        "director",
+        "supervisor",
+        "inspector",
+        "auditor",
+        "regulator",
+        "executive",
+        "officer",
+        "deputy",
+        "commissioner",
+        "secretary"
+      ],
+      "Y_used": [
+        "activist",
+        "protester",
+        "demonstrator",
+        "rebel",
+        "revolutionary",
+        "campaigner",
+        "advocate",
+        "agitator",
+        "radical",
+        "dissident",
+        "partisan",
+        "organizer",
+        "volunteer",
+        "marcher",
+        "speaker"
+      ],
+      "A_used": [
+        "stable",
+        "reliable",
+        "consistent",
+        "orderly",
+        "structured",
+        "steady",
+        "permanent",
+        "rigid",
+        "strict",
+        "formal",
+        "systematic",
+        "methodical",
+        "predictable",
+        "conventional",
+        "traditional"
+      ],
+      "B_used": [
+        "changeable",
+        "fluid",
+        "volatile",
+        "chaotic",
+        "disruptive",
+        "unstable",
+        "irregular",
+        "random",
+        "unpredictable",
+        "spontaneous",
+        "dynamic",
+        "shifting",
+        "flexible",
+        "erratic",
+        "messy"
+      ]
+    },
+    "proposal": "People associate bureaucrats with procedural reliability more strongly than they associate activists with procedural reliability. This implicit axis captures how the public mentally maps stability and rule-consistency onto institutional roles while framing civic mobilization as inherently fluid or disruptive. It is novel because implicit measures have largely focused on warmth/competence or morality, neglecting how structural predictability is automatically linked to specific civic actors. Examining this association matters because it reveals unconscious biases that may shape public tolerance for institutional reform versus civic protest, influencing how policy debates are framed in terms of order versus change.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "aaf30077ad50",
     "timestamp": "2026-07-18T10:58:06.372056+00:00",
     "schema_version": "autoresearch.v1",
