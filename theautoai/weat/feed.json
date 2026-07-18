@@ -1,5 +1,111 @@
 [
   {
+    "id": "3956d74a9951",
+    "timestamp": "2026-07-18T16:51:41.321849+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "merchants vs bankers on opportunism versus institutional stability",
+    "labels": {
+      "X": "merchants",
+      "Y": "bankers",
+      "A": "opportunism",
+      "B": "stability"
+    },
+    "canonical_keys": {
+      "X": "merchants",
+      "Y": "bankers",
+      "A": "opportunism",
+      "B": "stability"
+    },
+    "effect_size": 0.8693123905503788,
+    "p_value": 0.01747,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "merchant",
+        "trader",
+        "vendor",
+        "shopkeeper",
+        "retailer",
+        "salesman",
+        "grocer",
+        "hawker",
+        "peddler",
+        "dealer",
+        "purveyor",
+        "seller",
+        "proprietor",
+        "clerk",
+        "agent"
+      ],
+      "Y_used": [
+        "banker",
+        "financier",
+        "investor",
+        "broker",
+        "treasurer",
+        "accountant",
+        "auditor",
+        "actuary",
+        "underwriter",
+        "comptroller",
+        "teller",
+        "trustee",
+        "fiduciary",
+        "regulator",
+        "analyst"
+      ],
+      "A_used": [
+        "opportunistic",
+        "nimble",
+        "flexible",
+        "adaptable",
+        "agile",
+        "speculative",
+        "risky",
+        "impulsive",
+        "greedy",
+        "entrepreneurial",
+        "spontaneous",
+        "clever",
+        "shrewd",
+        "quick",
+        "resourceful"
+      ],
+      "B_used": [
+        "stable",
+        "secure",
+        "cautious",
+        "prudent",
+        "conservative",
+        "regulated",
+        "institutional",
+        "structured",
+        "systematic",
+        "disciplined",
+        "responsible",
+        "trustworthy",
+        "reliable",
+        "steady",
+        "methodical"
+      ]
+    },
+    "proposal": "People associate merchants with opportunism more strongly than they associate bankers with opportunism. In historical narratives and contemporary economic discourse, merchants are routinely framed as nimble operators who capitalize on fleeting market openings and adjust their tactics to immediate profit signals, whereas bankers are culturally constructed as institutional stewards bound by regulatory mandates, risk-aversion protocols, and systemic stability goals. This differential implicit association has not been systematically examined despite its centrality to public perceptions of financial ethics and market behavior. Measuring it is important because implicit opportunism biases shape how audiences attribute responsibility during economic shifts and influence the perceived moral legitimacy of decentralized trade versus centralized capital management. Confirming or disconfirming this link would clarify how deeply the cultural divide between fluid commerce and structured finance remains embedded in everyday cognition.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "8474d0238c0c",
     "timestamp": "2026-07-18T16:05:28.152634+00:00",
     "schema_version": "autoresearch.v1",
