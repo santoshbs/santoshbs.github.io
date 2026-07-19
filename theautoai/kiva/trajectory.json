@@ -1,25 +1,5 @@
 [
   {
-    "id": "female-equipment-purpose-faster",
-    "title": "Female borrowers who explain the specific problem a piece of equipment solves may fund faster.",
-    "bucket": "",
-    "birth_batch": 0,
-    "death_batch": 1110,
-    "last_batch": 1110,
-    "confidence": 0,
-    "alive": false
-  },
-  {
-    "id": "female-family-future-faster",
-    "title": "Female borrowers who mention securing the future of their family fund faster.",
-    "bucket": "",
-    "birth_batch": 0,
-    "death_batch": 1110,
-    "last_batch": 1110,
-    "confidence": 0,
-    "alive": false
-  },
-  {
     "id": "female-children-details-slower",
     "title": "Female borrowers who mention the specific number or age of children may fund more slowly.",
     "bucket": "",
@@ -100,11 +80,31 @@
     "alive": false
   },
   {
+    "id": "female-exact-quantities-faster",
+    "title": "Female borrowers who provide exact quantities for business inputs may fund faster.",
+    "bucket": "",
+    "birth_batch": 0,
+    "death_batch": 1115,
+    "last_batch": 1115,
+    "confidence": 0,
+    "alive": false
+  },
+  {
+    "id": "female-age-marital-faster",
+    "title": "Female borrowers who mention their age and marital status may fund faster.",
+    "bucket": "",
+    "birth_batch": 0,
+    "death_batch": 1115,
+    "last_batch": 1115,
+    "confidence": 0,
+    "alive": false
+  },
+  {
     "id": "business-duration-faster",
     "title": "Specifying the number of years a business has operated predicts faster funding regardless of gender.",
     "bucket": "faster",
     "birth_batch": 1,
-    "last_batch": 1114,
+    "last_batch": 1115,
     "confidence": 1.0,
     "peak_confidence": 1.0,
     "alive": true
@@ -113,8 +113,8 @@
     "id": "female-savings-goal-faster",
     "title": "Female borrowers who mention the goal of building savings fund faster.",
     "bucket": "gendered_women",
-    "birth_batch": 416,
-    "last_batch": 1114,
+    "birth_batch": 415,
+    "last_batch": 1115,
     "confidence": 0.82,
     "peak_confidence": 0.82,
     "alive": true
@@ -123,8 +123,8 @@
     "id": "verbosity-slower-general",
     "title": "Higher verbosity and excessive personal detail predict slower funding regardless of gender.",
     "bucket": "slower",
-    "birth_batch": 442,
-    "last_batch": 1114,
+    "birth_batch": 441,
+    "last_batch": 1115,
     "confidence": 0.82,
     "peak_confidence": 0.82,
     "alive": true
@@ -133,18 +133,18 @@
     "id": "monthly-income-slower-general",
     "title": "Pitches that include specific monthly income figures predict slower funding regardless of gender.",
     "bucket": "slower",
-    "birth_batch": 496,
-    "last_batch": 1114,
-    "confidence": 0.85,
-    "peak_confidence": 0.85,
+    "birth_batch": 495,
+    "last_batch": 1115,
+    "confidence": 0.9,
+    "peak_confidence": 0.9,
     "alive": true
   },
   {
     "id": "female-business-success-faster",
     "title": "Female borrowers who emphasize that their business is currently doing well or is being sustained fund faster.",
     "bucket": "gendered_women",
-    "birth_batch": 506,
-    "last_batch": 1114,
+    "birth_batch": 505,
+    "last_batch": 1115,
     "confidence": 0.97,
     "peak_confidence": 0.97,
     "alive": true
@@ -153,18 +153,18 @@
     "id": "female-nwtf-resurgence-faster",
     "title": "Female borrowers who mention sustaining business through past NWTF loans fund faster.",
     "bucket": "gendered_women",
-    "birth_batch": 1064,
-    "last_batch": 1114,
-    "confidence": 0.99,
-    "peak_confidence": 0.99,
+    "birth_batch": 1063,
+    "last_batch": 1115,
+    "confidence": 1.0,
+    "peak_confidence": 1.0,
     "alive": true
   },
   {
     "id": "asset-ownership-faster",
     "title": "Mentioning specific asset or business ownership predicts faster funding regardless of gender.",
     "bucket": "faster",
-    "birth_batch": 1100,
-    "last_batch": 1114,
+    "birth_batch": 1099,
+    "last_batch": 1115,
     "confidence": 0.65,
     "peak_confidence": 0.65,
     "alive": true
@@ -173,8 +173,8 @@
     "id": "family-obligations-slower",
     "title": "Mentioning family obligations or the number of dependents predicts slower funding regardless of gender.",
     "bucket": "slower",
-    "birth_batch": 1106,
-    "last_batch": 1114,
+    "birth_batch": 1105,
+    "last_batch": 1115,
     "confidence": 0.45,
     "peak_confidence": 0.45,
     "alive": true
