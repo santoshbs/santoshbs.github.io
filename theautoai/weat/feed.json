@@ -1,5 +1,111 @@
 [
   {
+    "id": "1b8e9284c9c0",
+    "timestamp": "2026-07-19T12:00:13.449730+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "anthropologists vs sociologists on cultural empathy vs structural detachment",
+    "labels": {
+      "X": "anthropologists",
+      "Y": "sociologists",
+      "A": "Empathy/Immersion",
+      "B": "Detachment/Analysis"
+    },
+    "canonical_keys": {
+      "X": "anthropologists",
+      "Y": "sociologists",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": -0.25695522599661874,
+    "p_value": 0.50067,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "anthropologist",
+        "ethnographer",
+        "archaeologist",
+        "historian",
+        "observer",
+        "explorer",
+        "adventurer",
+        "traveler",
+        "wanderer",
+        "nomad",
+        "bohemian",
+        "participant",
+        "chronicler",
+        "storyteller",
+        "documentarian"
+      ],
+      "Y_used": [
+        "sociologist",
+        "demographer",
+        "statistician",
+        "psychologist",
+        "researcher",
+        "scholar",
+        "academic",
+        "professor",
+        "scientist",
+        "expert",
+        "analyst",
+        "consultant",
+        "theorist",
+        "thinker",
+        "intellectual"
+      ],
+      "A_used": [
+        "empathetic",
+        "compassionate",
+        "sympathetic",
+        "understanding",
+        "supportive",
+        "caring",
+        "sensitive",
+        "attuned",
+        "receptive",
+        "engaged",
+        "involved",
+        "connected",
+        "intimate",
+        "personal",
+        "warm"
+      ],
+      "B_used": [
+        "detached",
+        "distant",
+        "remote",
+        "isolated",
+        "separate",
+        "withdrawn",
+        "aloof",
+        "indifferent",
+        "impersonal",
+        "cold",
+        "objective",
+        "analytical",
+        "rational",
+        "logical",
+        "systematic"
+      ]
+    },
+    "proposal": "People associate anthropologists with cultural empathy more strongly than they associate sociologists with cultural empathy. Contemporary public discourse frequently romanticizes anthropologists as immersive, on-the-ground participants in diverse communities, while framing sociologists as detached, data-driven analysts of structural systems. This differential implicit association remains largely unexamined in experimental social cognition, despite its relevance to how the public evaluates expertise on issues of race, migration, and community well-being. Uncovering this bias would clarify how disciplinary stereotypes shape perceived ethical legitimacy and trust in social science communication.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "a684a2e1f01c",
     "timestamp": "2026-07-19T11:02:25.945674+00:00",
     "schema_version": "autoresearch.v1",
