@@ -1,5 +1,111 @@
 [
   {
+    "id": "a684a2e1f01c",
+    "timestamp": "2026-07-19T11:02:25.945674+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "professors vs teachers on intellectual detachment vs grounded engagement",
+    "labels": {
+      "X": "professors",
+      "Y": "teachers",
+      "A": "intellectual detachment",
+      "B": "grounded engagement"
+    },
+    "canonical_keys": {
+      "X": "professors",
+      "Y": "teachers",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 0.9747302274121551,
+    "p_value": 0.00677,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "professors",
+        "academics",
+        "scholars",
+        "lecturers",
+        "deans",
+        "researchers",
+        "faculty",
+        "instructors",
+        "tenured",
+        "postdocs",
+        "adjuncts",
+        "specialists",
+        "experts",
+        "fellows",
+        "chairs"
+      ],
+      "Y_used": [
+        "teachers",
+        "educators",
+        "counselors",
+        "guides",
+        "coaches",
+        "principals",
+        "headmasters",
+        "superintendents",
+        "administrators",
+        "supervisors",
+        "facilitators",
+        "tutors",
+        "mentors",
+        "headteachers",
+        "schoolteachers"
+      ],
+      "A_used": [
+        "detached",
+        "remote",
+        "abstract",
+        "esoteric",
+        "distant",
+        "aloof",
+        "isolated",
+        "reserved",
+        "cold",
+        "impersonal",
+        "theoretical",
+        "analytical",
+        "cerebral",
+        "complex",
+        "objective"
+      ],
+      "B_used": [
+        "grounded",
+        "pragmatic",
+        "engaged",
+        "empathetic",
+        "embedded",
+        "warm",
+        "approachable",
+        "practical",
+        "involved",
+        "connected",
+        "relational",
+        "supportive",
+        "nurturing",
+        "everyday",
+        "accessible"
+      ]
+    },
+    "proposal": "People associate professors with intellectual detachment more strongly than they associate teachers with intellectual detachment. This implicit divide reflects a cultural narrative that frames university-level educators as remote, abstracted, and focused on esoteric inquiry, while K-12 educators are stereotyped as grounded, pragmatic, and deeply embedded in daily community life. Examining this association is novel because prior research has focused almost exclusively on explicit prestige rankings or gendered stereotypes of the profession, leaving the automatic linkage of higher education roles with emotional and cognitive distance untested. Confirming this bias matters because it shapes public expectations of pedagogical empathy, influences policy debates over academic freedom versus civic accountability, and reveals how institutional tiering subtly restructures our mental models of knowledge transmission.",
+    "iterations": 3,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "357fa856b0d6",
     "timestamp": "2026-07-19T04:12:56.425185+00:00",
     "schema_version": "autoresearch.v1",
