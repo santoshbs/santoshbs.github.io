@@ -1,5 +1,111 @@
 [
   {
+    "id": "f38338d0b88d",
+    "timestamp": "2026-07-19T13:26:30.523926+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "curators vs critics on institutional power versus independence",
+    "labels": {
+      "X": "curators",
+      "Y": "critics",
+      "A": "power",
+      "B": "independence"
+    },
+    "canonical_keys": {
+      "X": "curators",
+      "Y": "critics",
+      "A": "power",
+      "B": "independence"
+    },
+    "effect_size": 1.3341664345117343,
+    "p_value": 6e-05,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "curator",
+        "collector",
+        "archivist",
+        "librarian",
+        "conservator",
+        "gallerist",
+        "patron",
+        "trustee",
+        "dealer",
+        "selector",
+        "benefactor",
+        "agent",
+        "producer",
+        "director",
+        "overseer"
+      ],
+      "Y_used": [
+        "critic",
+        "reviewer",
+        "commentator",
+        "pundit",
+        "journalist",
+        "reporter",
+        "columnist",
+        "editor",
+        "blogger",
+        "evaluator",
+        "assessor",
+        "judge",
+        "appraiser",
+        "observer",
+        "auditor"
+      ],
+      "A_used": [
+        "power",
+        "authority",
+        "control",
+        "command",
+        "dominance",
+        "leadership",
+        "institution",
+        "structure",
+        "hierarchy",
+        "rule",
+        "force",
+        "strength",
+        "governance",
+        "administration",
+        "sovereignty"
+      ],
+      "B_used": [
+        "independent",
+        "freedom",
+        "opinion",
+        "comment",
+        "observation",
+        "view",
+        "perspective",
+        "thought",
+        "voice",
+        "free",
+        "unbiased",
+        "detached",
+        "impartial",
+        "subjective",
+        "candid"
+      ]
+    },
+    "proposal": "People associate curators with cultural power more strongly than they associate critics with cultural power. While both actors shape public taste, curators are implicitly linked to the institutional authority to legitimize, acquire, and preserve cultural artifacts, granting them a tangible power over what enters the public consciousness. In contrast, critics are often perceived as independent observers who provide commentary and opinions but lack the structural capacity to enforce canons or control access. This proposal is novel because it disentangles two distinct forms of cultural influence—institutional curation versus discursive evaluation—and probing this could reveal whether the public underestimates the structural dominance of curators in defining cultural value compared to the often romanticized independence of critics.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "1b8e9284c9c0",
     "timestamp": "2026-07-19T12:00:13.449730+00:00",
     "schema_version": "autoresearch.v1",
