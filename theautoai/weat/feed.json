@@ -1,5 +1,111 @@
 [
   {
+    "id": "357fa856b0d6",
+    "timestamp": "2026-07-19T04:12:56.425185+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "diplomats vs merchants on pace of action",
+    "labels": {
+      "X": "diplomats",
+      "Y": "merchants",
+      "A": "patience",
+      "B": "speed"
+    },
+    "canonical_keys": {
+      "X": "diplomats",
+      "Y": "merchants",
+      "A": "patience",
+      "B": "speed"
+    },
+    "effect_size": 0.6335650388754518,
+    "p_value": 0.09035,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "diplomat",
+        "ambassador",
+        "envoy",
+        "delegate",
+        "minister",
+        "consul",
+        "emissary",
+        "negotiator",
+        "representative",
+        "statesman",
+        "politician",
+        "official",
+        "administrator",
+        "mediator",
+        "diplomatist"
+      ],
+      "Y_used": [
+        "merchant",
+        "trader",
+        "vendor",
+        "dealer",
+        "broker",
+        "shopkeeper",
+        "retailer",
+        "salesman",
+        "entrepreneur",
+        "businessman",
+        "capitalist",
+        "tycoon",
+        "peddler",
+        "hawker",
+        "grocer"
+      ],
+      "A_used": [
+        "patient",
+        "slow",
+        "calm",
+        "steady",
+        "deliberate",
+        "unhurried",
+        "leisurely",
+        "careful",
+        "methodical",
+        "thorough",
+        "placid",
+        "composed",
+        "tranquil",
+        "serene",
+        "peaceful"
+      ],
+      "B_used": [
+        "fast",
+        "quick",
+        "rapid",
+        "swift",
+        "speedy",
+        "hasty",
+        "hurried",
+        "rushed",
+        "frantic",
+        "urgent",
+        "immediate",
+        "instant",
+        "prompt",
+        "brisk",
+        "impatient"
+      ]
+    },
+    "proposal": "People associate diplomats with patience more strongly than they associate merchants with patience. This distinction matters because contemporary discourse often frames diplomatic engagement as requiring prolonged strategic forbearance, whereas commercial exchange is culturally coded as favoring speed and transactional efficiency. Examining this implicit bias could reveal how institutional expectations shape public mental models of negotiation versus trade, offering insights into how cross-cultural or cross-sector collaborations are unconsciously hindered by mismatched temporal assumptions.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "3956d74a9951",
     "timestamp": "2026-07-18T16:51:41.321849+00:00",
     "schema_version": "autoresearch.v1",
