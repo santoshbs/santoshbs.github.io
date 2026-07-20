@@ -1,5 +1,111 @@
 [
   {
+    "id": "f4439bc828e1",
+    "timestamp": "2026-07-20T14:10:17.415098+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "stewards vs speculators on temporal patience",
+    "labels": {
+      "X": "stewards",
+      "Y": "speculators",
+      "A": "patience",
+      "B": "impatience"
+    },
+    "canonical_keys": {
+      "X": "stewards",
+      "Y": "speculators",
+      "A": "patience",
+      "B": "impatience"
+    },
+    "effect_size": 0.9315722674680655,
+    "p_value": 0.00889,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "guardian",
+        "caretaker",
+        "trustee",
+        "custodian",
+        "overseer",
+        "administrator",
+        "manager",
+        "supervisor",
+        "director",
+        "protector",
+        "preserver",
+        "maintainer",
+        "shepherd",
+        "farmer",
+        "forester"
+      ],
+      "Y_used": [
+        "speculator",
+        "trader",
+        "gambler",
+        "broker",
+        "banker",
+        "financier",
+        "dealer",
+        "merchant",
+        "entrepreneur",
+        "opportunist",
+        "investor",
+        "tycoon",
+        "magnate",
+        "capitalist",
+        "plutocrat"
+      ],
+      "A_used": [
+        "patient",
+        "slow",
+        "steady",
+        "careful",
+        "cautious",
+        "deliberate",
+        "gradual",
+        "persistent",
+        "enduring",
+        "lasting",
+        "mature",
+        "planned",
+        "prepared",
+        "saved",
+        "future"
+      ],
+      "B_used": [
+        "impatient",
+        "fast",
+        "quick",
+        "rapid",
+        "sudden",
+        "immediate",
+        "instant",
+        "hasty",
+        "rushed",
+        "reckless",
+        "rash",
+        "impulsive",
+        "spontaneous",
+        "urgent",
+        "present"
+      ]
+    },
+    "proposal": "People associate stewards with temporal patience more strongly than they associate speculators with temporal patience. This differential implicit association taps into an unexamined cognitive heuristic linking resource-care roles with delayed gratification and market-trading roles with immediate reward seeking. While explicit research extensively documents stated time preferences, implicit measures could reveal automatic associations that subtly shape how the public evaluates economic institutions and environmental policy. Confirming this bias would matter because it may lead decision-makers to implicitly distrust high-velocity capital systems or over-idealize conservation frameworks, ultimately distorting debates around climate finance, corporate governance, and intergenerational equity.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "7dab7be9a152",
     "timestamp": "2026-07-20T07:41:36.792681+00:00",
     "schema_version": "autoresearch.v1",
