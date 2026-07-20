@@ -1,25 +1,5 @@
 [
   {
-    "id": "female-inventory-list-faster",
-    "title": "Female borrowers who list specific inventory items like canned goods may fund faster.",
-    "bucket": "",
-    "birth_batch": 0,
-    "death_batch": 1118,
-    "last_batch": 1118,
-    "confidence": 0,
-    "alive": false
-  },
-  {
-    "id": "female-ag-inputs-slower",
-    "title": "Female borrowers who list specific agricultural inputs like seeds or fertilizers may fund more slowly.",
-    "bucket": "",
-    "birth_batch": 0,
-    "death_batch": 1120,
-    "last_batch": 1120,
-    "confidence": 0,
-    "alive": false
-  },
-  {
     "id": "female-ag-inputs-faster",
     "title": "Female borrowers in agriculture who list specific farm inputs may fund faster.",
     "bucket": "",
@@ -100,11 +80,31 @@
     "alive": false
   },
   {
+    "id": "female-retail-inventory-faster",
+    "title": "Female borrowers who list specific retail inventory, such as canned goods and chips, may fund faster.",
+    "bucket": "",
+    "birth_batch": 0,
+    "death_batch": 1139,
+    "last_batch": 1139,
+    "confidence": 0,
+    "alive": false
+  },
+  {
+    "id": "female-hardworking-slower",
+    "title": "Female borrowers who use descriptors like 'hardworking' or 'works very hard' may fund more slowly.",
+    "bucket": "",
+    "birth_batch": 0,
+    "death_batch": 1139,
+    "last_batch": 1139,
+    "confidence": 0,
+    "alive": false
+  },
+  {
     "id": "business-duration-faster",
     "title": "Specifying the number of years a business has operated predicts faster funding regardless of gender.",
     "bucket": "faster",
     "birth_batch": 1,
-    "last_batch": 1138,
+    "last_batch": 1139,
     "confidence": 1.0,
     "peak_confidence": 1.0,
     "alive": true
@@ -113,8 +113,8 @@
     "id": "female-savings-goal-faster",
     "title": "Female borrowers who mention the goal of building savings fund faster.",
     "bucket": "gendered_women",
-    "birth_batch": 392,
-    "last_batch": 1138,
+    "birth_batch": 391,
+    "last_batch": 1139,
     "confidence": 0.82,
     "peak_confidence": 0.82,
     "alive": true
@@ -123,8 +123,8 @@
     "id": "verbosity-slower-general",
     "title": "Higher verbosity and excessive personal detail predict slower funding regardless of gender.",
     "bucket": "slower",
-    "birth_batch": 418,
-    "last_batch": 1138,
+    "birth_batch": 417,
+    "last_batch": 1139,
     "confidence": 0.95,
     "peak_confidence": 0.95,
     "alive": true
@@ -133,8 +133,8 @@
     "id": "monthly-income-slower-general",
     "title": "Pitches that include specific monthly income figures predict slower funding regardless of gender.",
     "bucket": "slower",
-    "birth_batch": 472,
-    "last_batch": 1138,
+    "birth_batch": 471,
+    "last_batch": 1139,
     "confidence": 0.9,
     "peak_confidence": 0.9,
     "alive": true
@@ -143,8 +143,8 @@
     "id": "female-business-success-faster",
     "title": "Female borrowers who emphasize that their business is currently doing well or is being sustained fund faster.",
     "bucket": "gendered_women",
-    "birth_batch": 482,
-    "last_batch": 1138,
+    "birth_batch": 481,
+    "last_batch": 1139,
     "confidence": 1.0,
     "peak_confidence": 1.0,
     "alive": true
@@ -153,8 +153,8 @@
     "id": "female-nwtf-resurgence-faster",
     "title": "Female borrowers who mention sustaining business through past NWTF loans fund faster.",
     "bucket": "gendered_women",
-    "birth_batch": 1040,
-    "last_batch": 1138,
+    "birth_batch": 1039,
+    "last_batch": 1139,
     "confidence": 1.0,
     "peak_confidence": 1.0,
     "alive": true
@@ -163,8 +163,8 @@
     "id": "asset-ownership-faster",
     "title": "Mentioning specific asset or business ownership predicts faster funding regardless of gender.",
     "bucket": "faster",
-    "birth_batch": 1076,
-    "last_batch": 1138,
+    "birth_batch": 1075,
+    "last_batch": 1139,
     "confidence": 0.81,
     "peak_confidence": 0.81,
     "alive": true
@@ -173,10 +173,10 @@
     "id": "children-education-faster",
     "title": "Mentioning the education of children predicts faster funding regardless of gender.",
     "bucket": "faster",
-    "birth_batch": 1136,
-    "last_batch": 1138,
-    "confidence": 0.6,
-    "peak_confidence": 0.6,
+    "birth_batch": 1135,
+    "last_batch": 1139,
+    "confidence": 0.65,
+    "peak_confidence": 0.65,
     "alive": true
   }
 ]
