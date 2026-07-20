@@ -1,5 +1,111 @@
 [
   {
+    "id": "8ced70a528a0",
+    "timestamp": "2026-07-20T05:13:20.415156+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "financiers vs economists on commercial ruthlessness versus theoretical reasoning",
+    "labels": {
+      "X": "financiers",
+      "Y": "economists",
+      "A": "commercial ruthlessness",
+      "B": "theoretical reasoning"
+    },
+    "canonical_keys": {
+      "X": "financiers",
+      "Y": "economists",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 1.7902290761008652,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "financier",
+        "banker",
+        "broker",
+        "trader",
+        "investor",
+        "speculator",
+        "capitalist",
+        "tycoon",
+        "millionaire",
+        "entrepreneur",
+        "executive",
+        "magnate",
+        "shareholder",
+        "underwriter",
+        "agent"
+      ],
+      "Y_used": [
+        "economist",
+        "professor",
+        "scholar",
+        "researcher",
+        "analyst",
+        "theorist",
+        "statistician",
+        "scientist",
+        "teacher",
+        "lecturer",
+        "educator",
+        "expert",
+        "consultant",
+        "advisor",
+        "forecaster"
+      ],
+      "A_used": [
+        "ruthless",
+        "greedy",
+        "aggressive",
+        "hostile",
+        "predatory",
+        "cutthroat",
+        "competitive",
+        "fierce",
+        "hard",
+        "tough",
+        "cold",
+        "calculating",
+        "profit",
+        "money",
+        "cash"
+      ],
+      "B_used": [
+        "theoretical",
+        "rational",
+        "analytical",
+        "scientific",
+        "objective",
+        "empirical",
+        "data",
+        "analysis",
+        "model",
+        "theory",
+        "research",
+        "science",
+        "math",
+        "statistics",
+        "logic"
+      ]
+    },
+    "proposal": "People associate financiers with commercial ruthlessness more strongly than they associate economists with commercial ruthlessness. This differential implicit association has not been systematically probed in prior WEAT or IAT research, which typically focuses on broader academic versus professional divides rather than the specific tension between market capital allocators and economic theorists. Examining this association is substantively interesting because contemporary discourse frequently contrasts academic economic models with financial industry practices, yet we lack empirical data on how deeply this dichotomy is internalized at an automatic level. Confirming this implicit bias would reveal how the public mentally segregates theoretical reasoning from profit-driven action, potentially shaping public trust in economic forecasting versus market indicators during periods of financial instability.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "22a2c985b1e5",
     "timestamp": "2026-07-20T02:19:18.507338+00:00",
     "schema_version": "autoresearch.v1",
