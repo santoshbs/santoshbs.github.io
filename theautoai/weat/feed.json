@@ -1,5 +1,111 @@
 [
   {
+    "id": "7dab7be9a152",
+    "timestamp": "2026-07-20T07:41:36.792681+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "coaches vs teachers on temporal pace",
+    "labels": {
+      "X": "coaches",
+      "Y": "teachers",
+      "A": "immediacy",
+      "B": "slowness"
+    },
+    "canonical_keys": {
+      "X": "coaches",
+      "Y": "teachers",
+      "A": "immediacy",
+      "B": "slowness"
+    },
+    "effect_size": 0.9827657237853881,
+    "p_value": 0.00471,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "coach",
+        "trainer",
+        "instructor",
+        "mentor",
+        "director",
+        "manager",
+        "captain",
+        "referee",
+        "scout",
+        "umpire",
+        "leader",
+        "supervisor",
+        "strategist",
+        "recruiter",
+        "specialist"
+      ],
+      "Y_used": [
+        "teacher",
+        "educator",
+        "professor",
+        "lecturer",
+        "tutor",
+        "academic",
+        "scholar",
+        "pedagogue",
+        "schoolmaster",
+        "dean",
+        "principal",
+        "administrator",
+        "counselor",
+        "guide",
+        "facilitator"
+      ],
+      "A_used": [
+        "fast",
+        "quick",
+        "rapid",
+        "swift",
+        "instant",
+        "immediate",
+        "sudden",
+        "prompt",
+        "speedy",
+        "hasty",
+        "brisk",
+        "urgent",
+        "dynamic",
+        "energetic",
+        "active"
+      ],
+      "B_used": [
+        "slow",
+        "gradual",
+        "steady",
+        "deliberate",
+        "methodical",
+        "patient",
+        "careful",
+        "thoughtful",
+        "measured",
+        "paced",
+        "leisurely",
+        "unhurried",
+        "calm",
+        "tranquil",
+        "relaxed"
+      ]
+    },
+    "proposal": "People associate coaches with immediacy more strongly than they associate teachers with immediacy. This differential implicit association likely stems from contemporary discourse that frames athletic training as a high-velocity, feedback-intensive domain requiring rapid adaptation, whereas classroom education is culturally scripted as a slow, cumulative, and deliberative process. Probing this temporal stereotype is novel, as existing implicit bias research on educational and athletic roles has focused almost exclusively on competence, warmth, or authority, neglecting how the public mentally maps time scales onto professional practice. The finding matters because implicit temporal associations can subtly shape institutional funding, youth development policies, and public patience regarding learning outcomes in both sports and academia.",
+    "iterations": 3,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "8ced70a528a0",
     "timestamp": "2026-07-20T05:13:20.415156+00:00",
     "schema_version": "autoresearch.v1",
