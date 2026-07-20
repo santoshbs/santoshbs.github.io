@@ -1,5 +1,111 @@
 [
   {
+    "id": "22a2c985b1e5",
+    "timestamp": "2026-07-20T02:19:18.507338+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "authors vs editors on ambiguity tolerance vs closure orientation",
+    "labels": {
+      "X": "authors",
+      "Y": "editors",
+      "A": "ambiguity_tolerance",
+      "B": "closure_orientation"
+    },
+    "canonical_keys": {
+      "X": "authors",
+      "Y": "editors",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 1.074269341799077,
+    "p_value": 0.00238,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "author",
+        "writer",
+        "novelist",
+        "poet",
+        "playwright",
+        "essayist",
+        "columnist",
+        "blogger",
+        "creator",
+        "composer",
+        "storyteller",
+        "journalist",
+        "narrator",
+        "biographer",
+        "cartoonist"
+      ],
+      "Y_used": [
+        "editor",
+        "publisher",
+        "critic",
+        "reviewer",
+        "censor",
+        "proofreader",
+        "compiler",
+        "archivist",
+        "librarian",
+        "manager",
+        "producer",
+        "director",
+        "supervisor",
+        "referee",
+        "moderator"
+      ],
+      "A_used": [
+        "ambiguous",
+        "vague",
+        "uncertain",
+        "open",
+        "flexible",
+        "fluid",
+        "spontaneous",
+        "tentative",
+        "provisional",
+        "messy",
+        "abstract",
+        "loose",
+        "unclear",
+        "nebulous",
+        "indistinct"
+      ],
+      "B_used": [
+        "clear",
+        "precise",
+        "definite",
+        "closed",
+        "structured",
+        "rigid",
+        "formal",
+        "polished",
+        "refined",
+        "corrected",
+        "accurate",
+        "exact",
+        "strict",
+        "organized",
+        "final"
+      ]
+    },
+    "proposal": "People associate authors with ambiguity tolerance more strongly than they associate editors with ambiguity tolerance. This differential implicit association remains unexamined, as prior work has focused on explicit creativity stereotypes rather than automatic links to cognitive comfort with open-endedness. The distinction is highly relevant to contemporary discourse around gatekeeping, revision culture, and the romanticization of raw creation versus structured refinement. Probing this association matters because it would reveal whether lay mental models implicitly cast authorship as inherently exploratory and editorial work as inherently closure-oriented, shaping how audiences value different stages of cultural production.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "6aa3f52fba95",
     "timestamp": "2026-07-19T15:58:46.575687+00:00",
     "schema_version": "autoresearch.v1",
