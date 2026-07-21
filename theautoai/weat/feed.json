@@ -1,5 +1,111 @@
 [
   {
+    "id": "fb9cc87cd2c8",
+    "timestamp": "2026-07-21T02:08:31.598141+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "midwives vs surgeons on emotional attunement versus technical procedure",
+    "labels": {
+      "X": "midwives",
+      "Y": "surgeons",
+      "A": "emotional_attunement",
+      "B": "technical_expertise"
+    },
+    "canonical_keys": {
+      "X": "midwives",
+      "Y": "surgeons",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 1.409820181299049,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "midwife",
+        "doula",
+        "nurse",
+        "carer",
+        "attendant",
+        "healer",
+        "counselor",
+        "therapist",
+        "helper",
+        "supporter",
+        "guide",
+        "advisor",
+        "mentor",
+        "coach",
+        "facilitator"
+      ],
+      "Y_used": [
+        "surgeon",
+        "doctor",
+        "physician",
+        "specialist",
+        "clinician",
+        "provider",
+        "operative",
+        "technician",
+        "analyst",
+        "scientist",
+        "researcher",
+        "academic",
+        "professor",
+        "expert",
+        "professional"
+      ],
+      "A_used": [
+        "empathy",
+        "compassion",
+        "care",
+        "love",
+        "warmth",
+        "kindness",
+        "gentle",
+        "tender",
+        "affection",
+        "support",
+        "comfort",
+        "trust",
+        "bond",
+        "connection",
+        "sensitivity"
+      ],
+      "B_used": [
+        "skill",
+        "technique",
+        "precision",
+        "accuracy",
+        "efficiency",
+        "speed",
+        "power",
+        "force",
+        "mechanics",
+        "analysis",
+        "logic",
+        "data",
+        "procedure",
+        "operation",
+        "instrument"
+      ]
+    },
+    "proposal": "People associate midwives with emotional attunement more strongly than they associate surgeons with emotional attunement. While both professions are central to perinatal and medical care, cultural narratives consistently frame midwifery around holistic presence, patient-centered listening, and intuitive responsiveness, whereas surgery is discursively scripted as highly technical, procedural, and interventionist. This differential implicit association is novel because healthcare bias research has largely examined demographic physician-patient matchings rather than intra-medical paradigm contrasts between care models. Testing this link matters because implicit mental representations of attunement likely shape public trust, influence patient care preferences during vulnerable transitions, and reveal how society mentally partitions relational versus technical healing expertise.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "60336d29da0c",
     "timestamp": "2026-07-21T00:20:07.805668+00:00",
     "schema_version": "autoresearch.v1",
