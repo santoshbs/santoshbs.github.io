@@ -1,5 +1,111 @@
 [
   {
+    "id": "60336d29da0c",
+    "timestamp": "2026-07-21T00:20:07.805668+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "archaeologists vs historians on destruction vs preservation",
+    "labels": {
+      "X": "archaeologists",
+      "Y": "historians",
+      "A": "destruction",
+      "B": "preservation"
+    },
+    "canonical_keys": {
+      "X": "archaeologists",
+      "Y": "historians",
+      "A": "destruction",
+      "B": "preservation"
+    },
+    "effect_size": -0.15903135970367943,
+    "p_value": 0.67495,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "archaeologist",
+        "excavator",
+        "digger",
+        "paleontologist",
+        "anthropologist",
+        "antiquarian",
+        "surveyor",
+        "explorer",
+        "researcher",
+        "scientist",
+        "technician",
+        "collector",
+        "specialist",
+        "expert",
+        "worker"
+      ],
+      "Y_used": [
+        "historian",
+        "archivist",
+        "librarian",
+        "scholar",
+        "academic",
+        "professor",
+        "author",
+        "writer",
+        "biographer",
+        "curator",
+        "editor",
+        "analyst",
+        "critic",
+        "commentator",
+        "teacher"
+      ],
+      "A_used": [
+        "destruction",
+        "damage",
+        "harm",
+        "ruin",
+        "wreck",
+        "devastation",
+        "obliteration",
+        "disintegration",
+        "deterioration",
+        "degradation",
+        "impairment",
+        "injury",
+        "loss",
+        "demolition",
+        "annihilation"
+      ],
+      "B_used": [
+        "preservation",
+        "conservation",
+        "protection",
+        "restoration",
+        "maintenance",
+        "upkeep",
+        "repair",
+        "recovery",
+        "safeguard",
+        "defense",
+        "custody",
+        "storage",
+        "retention",
+        "care",
+        "support"
+      ]
+    },
+    "proposal": "People associate archaeologists with destruction more strongly than they associate historians with destruction. This differential implicit association probes the public mental representation of how knowledge is extracted from the past, contrasting the physical excavation of material culture against the textual interpretation of documents. While historians are stereotypically linked to preservation and narrative construction, archaeologists engage in the irreversible disturbance of sites, a fact that may be implicitly encoded as destructive or disruptive action. Examining this association is novel, as prior work has not tested whether the material nature of archaeological practice leads the public to implicitly link the profession with harm or violation compared to the ostensibly benign work of historians. The result matters for understanding how scientific practices involving physical intervention are socially evaluated and whether archaeologists bear an implicit burden of 'desecration' that their textual counterparts do not.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "3586b43bcb8e",
     "timestamp": "2026-07-20T21:41:09.157037+00:00",
     "schema_version": "autoresearch.v1",
