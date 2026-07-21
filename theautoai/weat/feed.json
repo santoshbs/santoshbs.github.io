@@ -1,5 +1,111 @@
 [
   {
+    "id": "d05dd5ff211d",
+    "timestamp": "2026-07-21T02:50:49.951628+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "programmers vs politicians on progress vs obstruction",
+    "labels": {
+      "X": "programmers",
+      "Y": "politicians",
+      "A": "innovation",
+      "B": "stagnation"
+    },
+    "canonical_keys": {
+      "X": "programmers",
+      "Y": "politicians",
+      "A": "innovation",
+      "B": "stagnation"
+    },
+    "effect_size": 1.6031832369770953,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "programmer",
+        "developer",
+        "coder",
+        "engineer",
+        "technician",
+        "operator",
+        "builder",
+        "creator",
+        "analyst",
+        "architect",
+        "designer",
+        "specialist",
+        "expert",
+        "technologist",
+        "consultant"
+      ],
+      "Y_used": [
+        "politician",
+        "senator",
+        "representative",
+        "governor",
+        "mayor",
+        "president",
+        "legislator",
+        "statesman",
+        "diplomat",
+        "official",
+        "bureaucrat",
+        "administrator",
+        "councilman",
+        "congressman",
+        "minister"
+      ],
+      "A_used": [
+        "innovation",
+        "progress",
+        "creation",
+        "invention",
+        "discovery",
+        "advancement",
+        "modern",
+        "dynamic",
+        "creative",
+        "forward",
+        "future",
+        "growth",
+        "breakthrough",
+        "pioneering",
+        "novel"
+      ],
+      "B_used": [
+        "obstruction",
+        "stagnation",
+        "tradition",
+        "bureaucracy",
+        "outdated",
+        "conservative",
+        "rigid",
+        "stagnant",
+        "old",
+        "past",
+        "delay",
+        "hinder",
+        "block",
+        "barrier",
+        "resistance"
+      ]
+    },
+    "proposal": "People associate programmers with innovation more strongly than they associate politicians with innovation. This differential association captures the contemporary cultural narrative that positions digital builders and coders as the primary engines of progress, in contrast to politicians who are often stereotyped as obstructive or bound by outdated institutions. Examining this implicit bias is novel because most research focuses on scientists or experts broadly, ignoring the specific prestige and agency accorded to the programmer archetype in the age of artificial intelligence and platform capitalism. Understanding this association is important because it may underlie public support for technocratic solutions and algorithmic decision-making over democratic deliberation, revealing how mental representations of social roles shape expectations about who is capable of solving complex societal challenges.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "fb9cc87cd2c8",
     "timestamp": "2026-07-21T02:08:31.598141+00:00",
     "schema_version": "autoresearch.v1",
