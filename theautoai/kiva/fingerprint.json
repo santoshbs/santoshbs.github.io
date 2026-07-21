@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "batches_seen": 1154,
-  "loans_seen": 18464,
-  "last_updated": "2026-07-21T06:51:36.245775+00:00",
+  "batches_seen": 1155,
+  "loans_seen": 18480,
+  "last_updated": "2026-07-21T07:44:32.268364+00:00",
   "watching_for": "",
   "claims": {
     "business-duration-faster": {
@@ -13,10 +13,10 @@
       "supporting_loans": [],
       "confidence": 0.65,
       "first_seen_batch": 1,
-      "last_updated_batch": 1154,
+      "last_updated_batch": 1155,
       "confidence_history": [
         [
-          1154,
+          1155,
           0.65
         ]
       ]
@@ -28,11 +28,11 @@
       "body": "Pitches from women that explicitly state the intention to build up savings are associated with increased funding speed.",
       "supporting_loans": [],
       "confidence": 0.82,
-      "first_seen_batch": 376,
-      "last_updated_batch": 1154,
+      "first_seen_batch": 375,
+      "last_updated_batch": 1155,
       "confidence_history": [
         [
-          1154,
+          1155,
           0.82
         ]
       ]
@@ -44,11 +44,11 @@
       "body": "Pitches that are significantly longer or contain excessive personal narrative tend to fund more slowly for both men and women.",
       "supporting_loans": [],
       "confidence": 1.0,
-      "first_seen_batch": 402,
-      "last_updated_batch": 1154,
+      "first_seen_batch": 401,
+      "last_updated_batch": 1155,
       "confidence_history": [
         [
-          1154,
+          1155,
           1.0
         ]
       ]
@@ -60,11 +60,11 @@
       "body": "The inclusion of precise monthly income amounts is associated with slower funding speeds for both male and female borrowers.",
       "supporting_loans": [],
       "confidence": 0.95,
-      "first_seen_batch": 456,
-      "last_updated_batch": 1154,
+      "first_seen_batch": 455,
+      "last_updated_batch": 1155,
       "confidence_history": [
         [
-          1154,
+          1155,
           0.95
         ]
       ]
@@ -76,27 +76,11 @@
       "body": "Pitches from women that highlight current business success or the ability to sustain operations through previous support accelerate funding.",
       "supporting_loans": [],
       "confidence": 1.0,
-      "first_seen_batch": 466,
-      "last_updated_batch": 1154,
+      "first_seen_batch": 465,
+      "last_updated_batch": 1155,
       "confidence_history": [
         [
-          1154,
-          1.0
-        ]
-      ]
-    },
-    "female-nwtf-resurgence-faster": {
-      "id": "female-nwtf-resurgence-faster",
-      "bucket": "gendered_women",
-      "title": "Female borrowers who mention sustaining business through past NWTF loans fund faster.",
-      "body": "Pitches from women that explicitly mention using previous loans from NWTF to sustain their business activities accelerate funding.",
-      "supporting_loans": [],
-      "confidence": 1.0,
-      "first_seen_batch": 1024,
-      "last_updated_batch": 1154,
-      "confidence_history": [
-        [
-          1154,
+          1155,
           1.0
         ]
       ]
@@ -108,11 +92,11 @@
       "body": "Pitches that explicitly reference owning a home, a store, or other business assets tend to fund faster for both men and women.",
       "supporting_loans": [],
       "confidence": 0.81,
-      "first_seen_batch": 1060,
-      "last_updated_batch": 1154,
+      "first_seen_batch": 1059,
+      "last_updated_batch": 1155,
       "confidence_history": [
         [
-          1154,
+          1155,
           0.81
         ]
       ]
@@ -124,89 +108,79 @@
       "body": "Pitches that reference children's schooling or educational needs tend to accelerate funding for both male and female borrowers.",
       "supporting_loans": [],
       "confidence": 0.87,
-      "first_seen_batch": 1120,
-      "last_updated_batch": 1154,
+      "first_seen_batch": 1119,
+      "last_updated_batch": 1155,
       "confidence_history": [
         [
-          1154,
+          1155,
           0.87
+        ]
+      ]
+    },
+    "female-repayment-history-faster": {
+      "id": "female-repayment-history-faster",
+      "bucket": "gendered_women",
+      "title": "Female borrowers who mention their past loan repayment history fund faster.",
+      "body": "Pitches from women that reference a successful history of repaying previous loans are associated with increased funding speed.",
+      "supporting_loans": [],
+      "confidence": 0.65,
+      "first_seen_batch": 1155,
+      "last_updated_batch": 1155,
+      "confidence_history": [
+        [
+          1155,
+          0.65
         ]
       ]
     }
   },
   "puzzles": {
-    "female-repayment-history-faster": {
-      "id": "female-repayment-history-faster",
-      "body": "Female borrowers who mention past loan repayment history may fund faster.",
-      "first_seen_batch": 1070
-    },
     "female-existing-demand-faster": {
       "id": "female-existing-demand-faster",
       "body": "Female borrowers who mention existing customer orders or demand may fund faster.",
-      "first_seen_batch": 1080
+      "first_seen_batch": 1079
     },
     "female-community-environment-faster": {
       "id": "female-community-environment-faster",
       "body": "Female borrowers who mention environmental protection or their neighbors may fund faster.",
-      "first_seen_batch": 1104
+      "first_seen_batch": 1103
     },
     "female-family-future-faster": {
       "id": "female-family-future-faster",
       "body": "Female borrowers who mention securing their family's future may fund faster.",
-      "first_seen_batch": 1116
-    },
-    "female-marital-status-slower": {
-      "id": "female-marital-status-slower",
-      "body": "Female borrowers who provide personal demographics, such as age or marital status, may fund more slowly.",
-      "first_seen_batch": 1118
+      "first_seen_batch": 1115
     },
     "male-community-slower": {
       "id": "male-community-slower",
       "body": "Male borrowers who mention contributing to the well-being of the local community may fund more slowly.",
-      "first_seen_batch": 1120
-    },
-    "female-children-count-slower": {
-      "id": "female-children-count-slower",
-      "body": "Female borrowers who mention the specific number of children may fund more slowly.",
-      "first_seen_batch": 1144
+      "first_seen_batch": 1119
     },
     "female-expansion-dream-faster": {
       "id": "female-expansion-dream-faster",
       "body": "Female borrowers who mention a dream to expand their business may fund faster.",
-      "first_seen_batch": 1146
+      "first_seen_batch": 1145
     },
     "female-descriptive-adjectives-slower": {
       "id": "female-descriptive-adjectives-slower",
       "body": "Female borrowers who use descriptive adjectives like 'hardworking' or 'dedicated' may fund more slowly.",
-      "first_seen_batch": 1150
+      "first_seen_batch": 1149
+    },
+    "female-children-count-faster": {
+      "id": "female-children-count-faster",
+      "body": "Female borrowers who specify the number of children may fund faster.",
+      "first_seen_batch": 1155
+    },
+    "female-age-faster": {
+      "id": "female-age-faster",
+      "body": "Female borrowers who mention their age may fund faster.",
+      "first_seen_batch": 1155
     }
   },
   "retired": {
-    "female-character-traits-slower": {
-      "id": "female-character-traits-slower",
-      "title": "Female borrowers using descriptive character traits like 'brave', 'inspiring', or 'hardworking' may fund more slowly.",
-      "retrospective": "Contradicted by observation that 'hardworking entrepreneur' predicted faster funding.",
-      "retired_batch": 1136,
-      "was_believed_batches": 0
-    },
-    "female-demographics-faster": {
-      "id": "female-demographics-faster",
-      "title": "Female borrowers who provide specific personal demographics, such as the number of children, fund faster.",
-      "retrospective": "Retired to maintain claim cap of 8.",
-      "retired_batch": 1137,
-      "was_believed_batches": 0
-    },
-    "female-retail-inventory-faster": {
-      "id": "female-retail-inventory-faster",
-      "title": "Female borrowers who list specific retail inventory, such as canned goods and chips, may fund faster.",
-      "retrospective": "FIFO drop to maintain puzzle cap",
-      "retired_batch": 1139,
-      "was_believed_batches": 0
-    },
     "female-hardworking-slower": {
       "id": "female-hardworking-slower",
       "title": "Female borrowers who use descriptors like 'hardworking' or 'works very hard' may fund more slowly.",
-      "retrospective": "FIFO drop to maintain puzzle cap",
+      "retrospective": "FIFO drop to maintain retired cap",
       "retired_batch": 1139,
       "was_believed_batches": 0
     },
@@ -250,6 +224,27 @@
       "title": "Female borrowers who describe themselves as 'hardworking entrepreneurs' may fund faster.",
       "retrospective": "Contradicted by observation that descriptive adjectives predict slower funding for women.",
       "retired_batch": 1152,
+      "was_believed_batches": 0
+    },
+    "female-marital-status-slower": {
+      "id": "female-marital-status-slower",
+      "title": "Female borrowers who provide personal demographics, such as age or marital status, may fund more slowly.",
+      "retrospective": "Contradicted by observation that mentioning age predicts faster funding.",
+      "retired_batch": 1155,
+      "was_believed_batches": 0
+    },
+    "female-children-count-slower": {
+      "id": "female-children-count-slower",
+      "title": "Female borrowers who mention the specific number of children may fund more slowly.",
+      "retrospective": "Contradicted by observation that specifying number of children predicts faster funding.",
+      "retired_batch": 1155,
+      "was_believed_batches": 0
+    },
+    "female-nwtf-resurgence-faster": {
+      "id": "female-nwtf-resurgence-faster",
+      "title": "Female borrowers who mention sustaining business through past NWTF loans fund faster.",
+      "retrospective": "Retired to maintain claim cap and subsumed by general repayment history claim.",
+      "retired_batch": 1155,
       "was_believed_batches": 0
     }
   }
