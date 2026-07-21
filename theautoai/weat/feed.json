@@ -1,5 +1,111 @@
 [
   {
+    "id": "09af0428009a",
+    "timestamp": "2026-07-21T19:44:08.267151+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "writers vs musicians on elitism versus populism",
+    "labels": {
+      "X": "writers",
+      "Y": "musicians",
+      "A": "elitism",
+      "B": "populism"
+    },
+    "canonical_keys": {
+      "X": "writers",
+      "Y": "musicians",
+      "A": "elitism",
+      "B": "populism"
+    },
+    "effect_size": -0.5975954874404862,
+    "p_value": 0.10948,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "writer",
+        "author",
+        "novelist",
+        "poet",
+        "essayist",
+        "playwright",
+        "journalist",
+        "columnist",
+        "reporter",
+        "biographer",
+        "critic",
+        "editor",
+        "proofreader",
+        "correspondent",
+        "commentator"
+      ],
+      "Y_used": [
+        "musician",
+        "singer",
+        "guitarist",
+        "pianist",
+        "drummer",
+        "violinist",
+        "cellist",
+        "flutist",
+        "trumpeter",
+        "vocalist",
+        "instrumentalist",
+        "bassist",
+        "harpist",
+        "saxophonist",
+        "organist"
+      ],
+      "A_used": [
+        "elitist",
+        "elite",
+        "exclusive",
+        "aristocratic",
+        "refined",
+        "sophisticated",
+        "pretentious",
+        "superior",
+        "distinguished",
+        "cultured",
+        "privileged",
+        "snobbish",
+        "haughty",
+        "lofty",
+        "select"
+      ],
+      "B_used": [
+        "populist",
+        "popular",
+        "accessible",
+        "mainstream",
+        "democratic",
+        "common",
+        "everyday",
+        "ordinary",
+        "widespread",
+        "casual",
+        "informal",
+        "grassroots",
+        "folk",
+        "mass",
+        "universal"
+      ]
+    },
+    "proposal": "people associate writers with cultural elitism more strongly than they associate musicians with cultural elitism. This differential implicit association is novel because while both groups are creators of cultural content, prior research has focused on general creativity or artistic warmth rather than the specific moralized status of elitism tied to the medium of production. It is interesting because it suggests that text-based creators are mentally represented as gatekeepers of high culture and intellectual distinction, whereas performance-based creators are viewed as more accessible or populist, despite the existence of elite classical music. Confirming this bias matters because it uncovers a hidden hierarchy in how we value different forms of artistic labor, potentially influencing funding, educational emphasis, and public reception of cultural works.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "32292a6ffdd0",
     "timestamp": "2026-07-21T11:59:58.752446+00:00",
     "schema_version": "autoresearch.v1",
