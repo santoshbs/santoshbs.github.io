@@ -1,5 +1,111 @@
 [
   {
+    "id": "ad2a4e53528e",
+    "timestamp": "2026-07-21T21:22:52.204258+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "capitalists vs socialists on improvisation versus planning",
+    "labels": {
+      "X": "capitalists",
+      "Y": "socialists",
+      "A": "improvisation",
+      "B": "planning"
+    },
+    "canonical_keys": {
+      "X": "capitalists",
+      "Y": "socialists",
+      "A": "improvisation",
+      "B": "planning"
+    },
+    "effect_size": 0.5602099229283705,
+    "p_value": 0.13358,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "capitalist",
+        "entrepreneur",
+        "investor",
+        "businessman",
+        "merchant",
+        "trader",
+        "financier",
+        "tycoon",
+        "magnate",
+        "shareholder",
+        "broker",
+        "dealer",
+        "speculator",
+        "proprietor",
+        "industrialist"
+      ],
+      "Y_used": [
+        "socialist",
+        "communist",
+        "collectivist",
+        "unionist",
+        "bureaucrat",
+        "planner",
+        "administrator",
+        "official",
+        "regulator",
+        "activist",
+        "leftist",
+        "progressive",
+        "comrade",
+        "supporter",
+        "laborer"
+      ],
+      "A_used": [
+        "improvisation",
+        "spontaneous",
+        "emergent",
+        "adaptive",
+        "flexible",
+        "opportunistic",
+        "reactive",
+        "intuitive",
+        "experimental",
+        "fluid",
+        "agile",
+        "dynamic",
+        "unpredictable",
+        "unstructured",
+        "impromptu"
+      ],
+      "B_used": [
+        "planning",
+        "deliberate",
+        "structured",
+        "systematic",
+        "methodical",
+        "organized",
+        "regulated",
+        "coordinated",
+        "centralized",
+        "predetermined",
+        "calculated",
+        "strategic",
+        "bureaucratic",
+        "rigid",
+        "formal"
+      ]
+    },
+    "proposal": "People associate capitalists with improvisation more strongly than they associate socialists with improvisation. This differential implicit association reflects a pervasive cultural narrative contrasting the emergent, adaptive character of market-driven actors with the deliberate, structured reputation of collective planners. While mainstream political psychology typically examines these groups along warmth-competence or ideological dimensions, the improvisation-planning axis captures a distinct cognitive heuristic shaping public discourse on economic resilience and institutional design. Probing this association would reveal whether ordinary mental representations of economic actors rely on spontaneous-order versus top-down-order schemas, with meaningful consequences for how policy proposals are framed and received.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "09af0428009a",
     "timestamp": "2026-07-21T19:44:08.267151+00:00",
     "schema_version": "autoresearch.v1",
