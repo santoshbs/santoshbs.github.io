@@ -1,5 +1,111 @@
 [
   {
+    "id": "047bdcabc6a7",
+    "timestamp": "2026-07-21T07:13:43.899993+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "emperors vs presidents on sacredness",
+    "labels": {
+      "X": "emperors",
+      "Y": "presidents",
+      "A": "sacred",
+      "B": "secular"
+    },
+    "canonical_keys": {
+      "X": "emperors",
+      "Y": "presidents",
+      "A": "sacred",
+      "B": "secular"
+    },
+    "effect_size": 1.7602245760930835,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "emperor",
+        "kaiser",
+        "tsar",
+        "shogun",
+        "pharaoh",
+        "sultan",
+        "sovereign",
+        "monarch",
+        "king",
+        "prince",
+        "autocrat",
+        "despot",
+        "dictator",
+        "regent",
+        "ruler"
+      ],
+      "Y_used": [
+        "president",
+        "chancellor",
+        "premier",
+        "governor",
+        "mayor",
+        "director",
+        "administrator",
+        "executive",
+        "chairman",
+        "secretary",
+        "legislator",
+        "delegate",
+        "representative",
+        "politician",
+        "statesman"
+      ],
+      "A_used": [
+        "sacred",
+        "holy",
+        "divine",
+        "spiritual",
+        "godly",
+        "pious",
+        "blessed",
+        "transcendent",
+        "reverent",
+        "worship",
+        "faith",
+        "religion",
+        "temple",
+        "priest",
+        "altar"
+      ],
+      "B_used": [
+        "secular",
+        "political",
+        "civic",
+        "public",
+        "government",
+        "law",
+        "policy",
+        "office",
+        "duty",
+        "service",
+        "vote",
+        "election",
+        "campaign",
+        "parliament",
+        "congress"
+      ]
+    },
+    "proposal": "People associate emperors with sacredness more strongly than they associate presidents with sacredness. While modern political discourse explicitly frames presidents as secular servants of the people and emperors as historical artifacts of absolute rule, contemporary media, language, and cultural memory may preserve implicit links between imperial titles and spiritual or transcendent authority. This association is novel because it tests whether the cultural script of 'sacred sovereignty' persists implicitly for imperial actors despite the explicit dominance of republican and secular ideologies in public life. It matters because confirming this implicit hierarchy would reveal that our subconscious mental representations of political leadership still harbor hierarchies of sanctity and infallibility for monarchic figures that are absent or even inverted for elected officials, potentially influencing implicit public trust and obedience.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "d05dd5ff211d",
     "timestamp": "2026-07-21T02:50:49.951628+00:00",
     "schema_version": "autoresearch.v1",
