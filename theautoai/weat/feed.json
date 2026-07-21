@@ -1,5 +1,111 @@
 [
   {
+    "id": "070e92298e0f",
+    "timestamp": "2026-07-21T22:08:35.417790+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "monks vs explorers on introspection-extroversion",
+    "labels": {
+      "X": "monks",
+      "Y": "explorers",
+      "A": "introspection",
+      "B": "extroversion"
+    },
+    "canonical_keys": {
+      "X": "monks",
+      "Y": "explorers",
+      "A": "introspection",
+      "B": "extroversion"
+    },
+    "effect_size": 1.549418999391995,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "monk",
+        "friar",
+        "novice",
+        "abbot",
+        "prior",
+        "hermit",
+        "ascetic",
+        "recluse",
+        "devotee",
+        "brother",
+        "sister",
+        "nun",
+        "cleric",
+        "believer",
+        "saint"
+      ],
+      "Y_used": [
+        "explorer",
+        "adventurer",
+        "pioneer",
+        "traveler",
+        "voyager",
+        "scout",
+        "trekker",
+        "nomad",
+        "ranger",
+        "guide",
+        "courier",
+        "backpacker",
+        "navigator",
+        "discoverer",
+        "wanderer"
+      ],
+      "A_used": [
+        "introspection",
+        "reflection",
+        "meditation",
+        "contemplation",
+        "thought",
+        "mind",
+        "solitude",
+        "quiet",
+        "stillness",
+        "peace",
+        "calm",
+        "awareness",
+        "mindfulness",
+        "rumination",
+        "interior"
+      ],
+      "B_used": [
+        "extroversion",
+        "action",
+        "movement",
+        "travel",
+        "adventure",
+        "discovery",
+        "exploration",
+        "sociability",
+        "interaction",
+        "communication",
+        "engagement",
+        "activity",
+        "journey",
+        "expedition",
+        "outreach"
+      ]
+    },
+    "proposal": "People associate monks with introspection more strongly than they associate explorers with introspection. This differential implicit association examines how cultural discourses link religious contemplative roles with internal psychological focus, while secular discovery roles are linked to external engagement and outward orientation. Although implicit associations regarding gender or age often tap into personality dimensions, applying the introspection-extroversion axis to the specific contrast between monastic religious actors and exploratory actors remains unexamined in WEAT literature. Confirming this association would highlight how public mental representations encode the value of contemplation as inward-turning and the value of discovery as outward-pushing, revealing a subtle bias in how different modes of human agency are implicitly categorized.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "ad2a4e53528e",
     "timestamp": "2026-07-21T21:22:52.204258+00:00",
     "schema_version": "autoresearch.v1",
