@@ -1,5 +1,111 @@
 [
   {
+    "id": "37349097df14",
+    "timestamp": "2026-07-22T11:07:25.993155+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Archivists vs Librarians on Secrecy vs Openness",
+    "labels": {
+      "X": "Archivists",
+      "Y": "Librarians",
+      "A": "Secrecy",
+      "B": "Openness"
+    },
+    "canonical_keys": {
+      "X": "archivists",
+      "Y": "librarians",
+      "A": "secrecy",
+      "B": "openness"
+    },
+    "effect_size": 1.2302426201053125,
+    "p_value": 0.00053,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "archivist",
+        "curator",
+        "historian",
+        "researcher",
+        "collector",
+        "preserver",
+        "custodian",
+        "conservator",
+        "restorer",
+        "bibliographer",
+        "paleographer",
+        "antiquarian",
+        "genealogist",
+        "documentarian",
+        "cartographer"
+      ],
+      "Y_used": [
+        "librarian",
+        "cataloger",
+        "cataloguer",
+        "assistant",
+        "clerk",
+        "aide",
+        "specialist",
+        "coordinator",
+        "consultant",
+        "educator",
+        "director",
+        "manager",
+        "supervisor",
+        "technician",
+        "page"
+      ],
+      "A_used": [
+        "secret",
+        "hidden",
+        "concealed",
+        "private",
+        "confidential",
+        "classified",
+        "encrypted",
+        "covert",
+        "obscure",
+        "mysterious",
+        "shadowy",
+        "veiled",
+        "masked",
+        "locked",
+        "restricted"
+      ],
+      "B_used": [
+        "open",
+        "public",
+        "accessible",
+        "transparent",
+        "available",
+        "exposed",
+        "revealed",
+        "known",
+        "visible",
+        "clear",
+        "plain",
+        "shared",
+        "free",
+        "uncovered",
+        "displayed"
+      ]
+    },
+    "proposal": "People associate Archivists with secrecy more strongly than they associate Librarians with secrecy. This differential implicit association is novel because while prior research has examined public trust in information institutions, no study has systematically probed the implicit link between the specific roles of archival custody versus library service and perceptions of information concealment versus access. It is relevant to contemporary discourse on transparency, historical accountability, and the ethical obligations of knowledge institutions, as public debates often conflate the management of sensitive primary sources with the provision of public reference services. Confirming this association would reveal whether the public mentally equates the protective nature of archival work with withholding knowledge, which could have implications for institutional legitimacy and public engagement during periods of political pressure regarding document release and historical memory.",
+    "iterations": 3,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "8798299699ab",
     "timestamp": "2026-07-22T07:22:42.127325+00:00",
     "schema_version": "autoresearch.v1",
