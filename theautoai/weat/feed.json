@@ -1,5 +1,111 @@
 [
   {
+    "id": "5ef8efc37f0d",
+    "timestamp": "2026-07-22T15:11:18.449954+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Scientists vs Philosophers on moral character: hubris versus humility",
+    "labels": {
+      "X": "Scientists",
+      "Y": "Philosophers",
+      "A": "Hubris/Arrogance",
+      "B": "Humility/Modesty"
+    },
+    "canonical_keys": {
+      "X": "scientists",
+      "Y": "philosophers",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": -0.5709065932134637,
+    "p_value": 0.12568,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "scientist",
+        "researcher",
+        "biologist",
+        "chemist",
+        "physicist",
+        "astronomer",
+        "engineer",
+        "doctor",
+        "clinician",
+        "geologist",
+        "ecologist",
+        "technician",
+        "specialist",
+        "expert",
+        "practitioner"
+      ],
+      "Y_used": [
+        "philosopher",
+        "thinker",
+        "theorist",
+        "writer",
+        "essayist",
+        "critic",
+        "intellectual",
+        "scholar",
+        "pundit",
+        "commentator",
+        "lecturer",
+        "tutor",
+        "reviewer",
+        "observer",
+        "humanist"
+      ],
+      "A_used": [
+        "hubris",
+        "arrogance",
+        "pride",
+        "conceit",
+        "vanity",
+        "ego",
+        "megalomania",
+        "narcissism",
+        "presumption",
+        "superiority",
+        "swagger",
+        "bravado",
+        "cockiness",
+        "boastfulness",
+        "haughtiness"
+      ],
+      "B_used": [
+        "humility",
+        "modesty",
+        "meekness",
+        "deference",
+        "caution",
+        "prudence",
+        "tentativeness",
+        "hesitation",
+        "bashfulness",
+        "shyness",
+        "timidity",
+        "respectfulness",
+        "submissiveness",
+        "diffidence",
+        "simplicity"
+      ]
+    },
+    "proposal": "People associate Scientists with Hubris more strongly than they associate Philosophers with Hubris. This proposal targets a novel axis of the long-standing science-philosophy divide: while academic comparisons often focus on epistemic methods (empiricism vs. rationalism), implicit public representations may differ sharply on moral character. Contemporary discourse frequently frames scientists as arrogant 'masters of nature' who dismiss lay concerns or overstep into social values (the charge of scientism), generating a cultural narrative of dangerous overconfidence or 'playing god.' Philosophers, by contrast, are often stereotyped as detached or irrelevant, but rarely as hubristic threats to the social order. Examining this association matters because implicit links to hubris could erode public trust in scientific institutions in ways that competence-focused interventions cannot address, revealing a hidden barrier to science communication that has not yet been systematically probed.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "37349097df14",
     "timestamp": "2026-07-22T11:07:25.993155+00:00",
     "schema_version": "autoresearch.v1",
