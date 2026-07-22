@@ -1,5 +1,111 @@
 [
   {
+    "id": "8798299699ab",
+    "timestamp": "2026-07-22T07:22:42.127325+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "comedians vs actors on veracity vs fabrication",
+    "labels": {
+      "X": "comedians",
+      "Y": "actors",
+      "A": "truthfulness",
+      "B": "deception"
+    },
+    "canonical_keys": {
+      "X": "comedians",
+      "Y": "actors",
+      "A": "truthfulness",
+      "B": "deception"
+    },
+    "effect_size": -1.030293898347321,
+    "p_value": 0.00423,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "comedian",
+        "comedians",
+        "comic",
+        "comics",
+        "clown",
+        "clowns",
+        "joker",
+        "jokers",
+        "humorist",
+        "humorists",
+        "satirist",
+        "satirists",
+        "jester",
+        "jesters",
+        "wit"
+      ],
+      "Y_used": [
+        "actor",
+        "actors",
+        "actress",
+        "actresses",
+        "performer",
+        "performers",
+        "player",
+        "players",
+        "dramatist",
+        "dramatists",
+        "protagonist",
+        "antagonist",
+        "lead",
+        "character",
+        "star"
+      ],
+      "A_used": [
+        "truth",
+        "truthfulness",
+        "veracity",
+        "honesty",
+        "sincere",
+        "sincerity",
+        "authentic",
+        "authenticity",
+        "fact",
+        "factual",
+        "real",
+        "reality",
+        "genuine",
+        "genuineness",
+        "frank"
+      ],
+      "B_used": [
+        "lie",
+        "lies",
+        "falsehood",
+        "falsehoods",
+        "deception",
+        "deceit",
+        "fake",
+        "pretense",
+        "fabrication",
+        "untruth",
+        "dishonest",
+        "dishonesty",
+        "fraud",
+        "fraudulent",
+        "sham"
+      ]
+    },
+    "proposal": "People associate comedians with truth more strongly than they associate actors with truth. This proposal targets the cultural discourse that frames comedy as a vehicle for 'speaking truth to power' and exposing uncomfortable realities through satire and humor, while characterizing acting as a profession defined by fabrication, role-playing, and the deliberate performance of false identities. Although research has examined humor's role in deception detection or the social trustworthiness of actors, the implicit cognitive structure linking the category of comedians to veracity relative to actors remains unprobed, despite the pervasive public trope of the comedian as an authentic truth-teller versus the actor as a master of pretense. Confirming this association would reveal how occupational stereotypes encode moral dimensions of truthfulness into the mental representation of creative roles, highlighting a latent divide between perception of reality-revealing and reality-constructing professions.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "070e92298e0f",
     "timestamp": "2026-07-21T22:08:35.417790+00:00",
     "schema_version": "autoresearch.v1",
