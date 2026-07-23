@@ -1,5 +1,111 @@
 [
   {
+    "id": "e887ddadb700",
+    "timestamp": "2026-07-23T15:36:15.478248+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "monks vs soldiers on obedience vs independence",
+    "labels": {
+      "X": "monks",
+      "Y": "soldiers",
+      "A": "obedience",
+      "B": "independence"
+    },
+    "canonical_keys": {
+      "X": "monks",
+      "Y": "soldiers",
+      "A": "obedience",
+      "B": "independence"
+    },
+    "effect_size": 1.3050538183301417,
+    "p_value": 6e-05,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "monk",
+        "nun",
+        "friar",
+        "abbot",
+        "abbess",
+        "novice",
+        "prior",
+        "hermit",
+        "ascetic",
+        "devotee",
+        "disciple",
+        "brother",
+        "sister",
+        "priest",
+        "cleric"
+      ],
+      "Y_used": [
+        "soldier",
+        "warrior",
+        "fighter",
+        "trooper",
+        "marine",
+        "ranger",
+        "rifleman",
+        "sergeant",
+        "corporal",
+        "lieutenant",
+        "captain",
+        "general",
+        "colonel",
+        "major",
+        "recruit"
+      ],
+      "A_used": [
+        "obey",
+        "submit",
+        "comply",
+        "yield",
+        "surrender",
+        "follow",
+        "defer",
+        "conform",
+        "acquiesce",
+        "capitulate",
+        "loyal",
+        "subservient",
+        "compliant",
+        "docile",
+        "submissive"
+      ],
+      "B_used": [
+        "rebel",
+        "defy",
+        "resist",
+        "oppose",
+        "challenge",
+        "dissent",
+        "revolt",
+        "mutiny",
+        "insubordinate",
+        "autonomous",
+        "independent",
+        "assertive",
+        "defiant",
+        "disregard",
+        "disobey"
+      ]
+    },
+    "proposal": "People associate monks with obedience more strongly than they associate soldiers with obedience. This differential association is novel, as prior comparisons have examined monks against explorers, beggars, and priests, and soldiers against farmers, teachers, and sailors, but never this specific pairing. It is interesting because contemporary discourse often valorizes the autonomous 'warrior ethos' and individual grit of soldiers, while framing monastic life around vows of submission and hierarchical religious authority, which may invert intuitive assumptions about blind compliance. Confirming this association would be important for understanding how institutional rhetorics—such as the military's emphasis on disciplined agency versus the religious order's emphasis on ascetic surrender—shape implicit mental representations of agency and conformity.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "b9209bf5b9ab",
     "timestamp": "2026-07-23T13:41:34.118776+00:00",
     "schema_version": "autoresearch.v1",
