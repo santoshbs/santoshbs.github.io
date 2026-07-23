@@ -1,5 +1,111 @@
 [
   {
+    "id": "df040bd69955",
+    "timestamp": "2026-07-23T23:55:32.001497+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "artists vs craftsmen on spontaneity versus structure",
+    "labels": {
+      "X": "artists",
+      "Y": "craftsmen",
+      "A": "spontaneity",
+      "B": "structure"
+    },
+    "canonical_keys": {
+      "X": "artists",
+      "Y": "craftsmen",
+      "A": "spontaneity",
+      "B": "structure"
+    },
+    "effect_size": 1.2676933930284968,
+    "p_value": 0.0003,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "painter",
+        "sculptor",
+        "musician",
+        "poet",
+        "writer",
+        "actor",
+        "dancer",
+        "illustrator",
+        "composer",
+        "animator",
+        "performer",
+        "filmmaker",
+        "storyteller",
+        "cartoonist",
+        "singer"
+      ],
+      "Y_used": [
+        "carpenter",
+        "tailor",
+        "weaver",
+        "potter",
+        "smith",
+        "mason",
+        "baker",
+        "cobbler",
+        "seamstress",
+        "jeweler",
+        "glazier",
+        "tanner",
+        "dyer",
+        "plumber",
+        "builder"
+      ],
+      "A_used": [
+        "spontaneous",
+        "impromptu",
+        "unrehearsed",
+        "fluid",
+        "whimsical",
+        "intuitive",
+        "instinctive",
+        "erratic",
+        "capricious",
+        "impulsive",
+        "unplanned",
+        "freestyle",
+        "adaptive",
+        "improvisational",
+        "unscripted"
+      ],
+      "B_used": [
+        "methodical",
+        "systematic",
+        "calculated",
+        "deliberate",
+        "structured",
+        "planned",
+        "precise",
+        "rigid",
+        "formulaic",
+        "conventional",
+        "disciplined",
+        "regulated",
+        "scripted",
+        "fixed",
+        "measured"
+      ]
+    },
+    "proposal": "People associate artists with improvisation more strongly than they associate craftsmen with improvisation. This proposed differential association is novel because prior research has largely focused on broad axes like logic versus emotion or creativity versus conventionality, leaving the specific dimension of spontaneous, in-the-moment adaptation unexamined. It is relevant to contemporary cultural debates surrounding the 'maker movement' and the institutional elevation of craft, which actively seek to blur traditional boundaries between fine art and technical skill. Confirming or disconfirming this implicit bias would reveal whether public cognition has actually updated to reflect modern cross-pollination between artistic and craft practices, or whether deep-seated mental models still rigidly compartmentalize spontaneous creation from disciplined fabrication.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "bb62f21ebb39",
     "timestamp": "2026-07-23T18:50:49.745187+00:00",
     "schema_version": "autoresearch.v1",
