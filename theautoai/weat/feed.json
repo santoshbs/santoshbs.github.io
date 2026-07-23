@@ -1,5 +1,111 @@
 [
   {
+    "id": "bb62f21ebb39",
+    "timestamp": "2026-07-23T18:50:49.745187+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "lawyers vs therapists on Conflict vs Cooperation",
+    "labels": {
+      "X": "lawyers",
+      "Y": "therapists",
+      "A": "Adversariality",
+      "B": "Supportiveness"
+    },
+    "canonical_keys": {
+      "X": "lawyers",
+      "Y": "therapists",
+      "A": "adversariality",
+      "B": "supportiveness"
+    },
+    "effect_size": 1.309945811780384,
+    "p_value": 0.00011,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "lawyer",
+        "attorney",
+        "barrister",
+        "solicitor",
+        "advocate",
+        "litigator",
+        "jurist",
+        "prosecutor",
+        "defender",
+        "paralegal",
+        "magistrate",
+        "judge",
+        "notary",
+        "counsel",
+        "legal"
+      ],
+      "Y_used": [
+        "therapist",
+        "psychologist",
+        "psychiatrist",
+        "clinician",
+        "psychoanalyst",
+        "counselor",
+        "healer",
+        "mentor",
+        "coach",
+        "guide",
+        "supporter",
+        "helper",
+        "shrink",
+        "psychotherapist",
+        "analyst"
+      ],
+      "A_used": [
+        "adversarial",
+        "conflict",
+        "fight",
+        "battle",
+        "war",
+        "aggressive",
+        "hostile",
+        "competitive",
+        "opposition",
+        "dispute",
+        "challenge",
+        "clash",
+        "struggle",
+        "combat",
+        "contend"
+      ],
+      "B_used": [
+        "cooperative",
+        "supportive",
+        "healing",
+        "collaborative",
+        "peaceful",
+        "harmonious",
+        "gentle",
+        "soothing",
+        "calming",
+        "nurturing",
+        "comforting",
+        "restorative",
+        "growth",
+        "therapeutic",
+        "constructive"
+      ]
+    },
+    "proposal": "People associate lawyers with adversariality more strongly than they associate therapists with adversariality. While explicit surveys often measure perceived competence or warmth across professions, the automatic cognitive linkage between professional roles and fundamental conflict ontologies remains unexamined. This distinction is novel because it moves beyond demographic or broad occupational stereotypes to probe how deeply ingrained institutional logics—win/lose litigation versus growth-oriented healing—shape intuitive mental representations. It is important because confirming this implicit bias would reveal how public cognition instinctively frames problem-solving pathways, potentially influencing help-seeking behavior, institutional trust, and the perceived legitimacy of restorative justice initiatives.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "e887ddadb700",
     "timestamp": "2026-07-23T15:36:15.478248+00:00",
     "schema_version": "autoresearch.v1",
