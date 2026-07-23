@@ -1,5 +1,111 @@
 [
   {
+    "id": "d3a40e0f2920",
+    "timestamp": "2026-07-23T05:36:59.409621+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Pragmatists vs Ideologues on Adaptability vs Rigidity",
+    "labels": {
+      "X": "Pragmatists",
+      "Y": "Ideologues",
+      "A": "Adaptability",
+      "B": "Rigidity"
+    },
+    "canonical_keys": {
+      "X": "pragmatists",
+      "Y": "ideologues",
+      "A": "adaptability",
+      "B": "rigidity"
+    },
+    "effect_size": 1.4340458191904484,
+    "p_value": 1e-05,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "pragmatist",
+        "realist",
+        "utilitarian",
+        "opportunist",
+        "moderate",
+        "negotiator",
+        "diplomat",
+        "tactician",
+        "compromiser",
+        "conciliator",
+        "mediator",
+        "politician",
+        "statesman",
+        "operator",
+        "fixer"
+      ],
+      "Y_used": [
+        "ideologue",
+        "dogmatist",
+        "purist",
+        "fundamentalist",
+        "zealot",
+        "absolutist",
+        "extremist",
+        "partisan",
+        "sectarian",
+        "doctrinaire",
+        "fanatic",
+        "traditionalist",
+        "hardliner",
+        "conservative",
+        "revolutionary"
+      ],
+      "A_used": [
+        "adaptable",
+        "flexible",
+        "versatile",
+        "responsive",
+        "agile",
+        "dynamic",
+        "elastic",
+        "accommodating",
+        "malleable",
+        "supple",
+        "nimble",
+        "fluid",
+        "adjustable",
+        "open",
+        "pliant"
+      ],
+      "B_used": [
+        "rigid",
+        "dogmatic",
+        "inflexible",
+        "stubborn",
+        "fixed",
+        "uncompromising",
+        "strict",
+        "obstinate",
+        "adamant",
+        "unyielding",
+        "stiff",
+        "brittle",
+        "solid",
+        "immovable",
+        "unbending"
+      ]
+    },
+    "proposal": "People associate Pragmatists with Adaptability more strongly than they associate Ideologues with Adaptability. This differential implicit association reflects a pervasive cultural stereotype that frames ideological commitment as inherently rigid or dogmatic, while casting pragmatic compromise as a sign of cognitive flexibility and real-world responsiveness. Examining this bias is important because it reveals how public discourse devalues principled conviction by linking it to an inability to navigate complex, changing environments, potentially influencing how policy debates and political leaders are evaluated. Unlike prior research that maps broad political factions onto traits like warmth or competence, this proposal isolates the meta-attitude toward the very nature of ideological vs. pragmatic orientation.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "5fdf8443acd7",
     "timestamp": "2026-07-23T00:20:39.485237+00:00",
     "schema_version": "autoresearch.v1",
