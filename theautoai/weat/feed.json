@@ -1,5 +1,111 @@
 [
   {
+    "id": "b9209bf5b9ab",
+    "timestamp": "2026-07-23T13:41:34.118776+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Curators vs Archivists on public visibility vs private storage",
+    "labels": {
+      "X": "Curators",
+      "Y": "Archivists",
+      "A": "Visibility / Public Display",
+      "B": "Hiddenness / Private Storage"
+    },
+    "canonical_keys": {
+      "X": "curators",
+      "Y": "archivists",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": -0.27914791622314256,
+    "p_value": 0.46424,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "curator",
+        "docent",
+        "guide",
+        "director",
+        "conservator",
+        "restorer",
+        "keeper",
+        "warden",
+        "ranger",
+        "scout",
+        "guard",
+        "sentinel",
+        "lookout",
+        "monitor",
+        "observer"
+      ],
+      "Y_used": [
+        "archivist",
+        "librarian",
+        "clerk",
+        "secretary",
+        "scribe",
+        "notary",
+        "stenographer",
+        "typist",
+        "recorder",
+        "bibliographer",
+        "cataloger",
+        "registrar",
+        "administrator",
+        "functionary",
+        "bureaucrat"
+      ],
+      "A_used": [
+        "visible",
+        "public",
+        "exposed",
+        "displayed",
+        "shown",
+        "exhibited",
+        "open",
+        "apparent",
+        "conspicuous",
+        "noticeable",
+        "observable",
+        "blatant",
+        "obvious",
+        "prominent",
+        "manifest"
+      ],
+      "B_used": [
+        "hidden",
+        "private",
+        "concealed",
+        "stored",
+        "kept",
+        "preserved",
+        "tucked",
+        "buried",
+        "secret",
+        "obscure",
+        "unseen",
+        "invisible",
+        "background",
+        "back",
+        "interior"
+      ]
+    },
+    "proposal": "People associate Curators with Visibility more strongly than they associate Archivists with Visibility. While both professions manage cultural heritage, public discourse tends to frame curators as agents of display and exhibition who bring objects into the public eye, whereas archivists are framed as agents of storage and preservation who keep materials in the background. This differential implicit association is novel because it probes the specific mental distinction between public-facing and back-end custodians of knowledge, rather than relying on generic comparisons of experts or administrators. Examining this association matters because it reveals how society cognitively segregates the act of 'showing' history from the act of 'keeping' it, potentially influencing how institutional labor is valued and resourced.",
+    "iterations": 3,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "23a835d55ec1",
     "timestamp": "2026-07-23T11:48:31.784496+00:00",
     "schema_version": "autoresearch.v1",
