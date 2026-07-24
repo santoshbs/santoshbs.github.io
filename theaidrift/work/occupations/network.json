@@ -13,8 +13,8 @@
         "id": "13",
         "title": "Business & Financial Operations",
         "group": "business",
-        "refs": 497,
-        "signals": 469,
+        "refs": 498,
+        "signals": 471,
         "occupations": 42
       },
       {
@@ -133,9 +133,9 @@
         "id": "43",
         "title": "Office & Administrative Support",
         "group": "office",
-        "refs": 53,
-        "signals": 37,
-        "occupations": 16
+        "refs": 55,
+        "signals": 38,
+        "occupations": 17
       },
       {
         "id": "45",
@@ -518,6 +518,11 @@
         "weight": 2
       },
       {
+        "source": "13",
+        "target": "43",
+        "weight": 7
+      },
+      {
         "source": "47",
         "target": "49",
         "weight": 2
@@ -526,11 +531,6 @@
         "source": "11",
         "target": "53",
         "weight": 7
-      },
-      {
-        "source": "13",
-        "target": "43",
-        "weight": 6
       },
       {
         "source": "25",
@@ -1166,8 +1166,8 @@
           "title": "Human Resources Specialists",
           "group": "business",
           "refs": 13,
-          "revised": "2026-07-21",
-          "signals": 12
+          "revised": "2026-07-24",
+          "signals": 13
         },
         {
           "id": "13-1074.00",
@@ -1325,9 +1325,9 @@
           "id": "13-2051.00",
           "title": "Financial and Investment Analysts",
           "group": "business",
-          "refs": 20,
-          "revised": "2026-07-16",
-          "signals": 19
+          "refs": 21,
+          "revised": "2026-07-24",
+          "signals": 20
         },
         {
           "id": "13-2052.00",
@@ -1690,6 +1690,11 @@
           "source": "13-1071.00",
           "target": "13-1141.00",
           "signal": "Job seekers avoid postings with no salary transparency, report finds"
+        },
+        {
+          "source": "13-1071.00",
+          "target": "13-2051.00",
+          "signal": "Automate repetitive tasks with Amazon Quick Flows"
         },
         {
           "source": "13-2053.00",
@@ -5826,6 +5831,14 @@
           "signals": 2
         },
         {
+          "id": "43-4161.00",
+          "title": "Human Resources Assistants, Except Payroll and Timekeeping",
+          "group": "office",
+          "refs": 2,
+          "revised": "2026-07-24",
+          "signals": 1
+        },
+        {
           "id": "43-4181.00",
           "title": "Reservation and Transportation Ticket Agents and Travel Clerks",
           "group": "office",
@@ -7559,6 +7572,7 @@
     "43-4021.00": "43",
     "43-4051.00": "43",
     "43-4061.00": "43",
+    "43-4161.00": "43",
     "43-4181.00": "43",
     "43-5011.00": "43",
     "43-5011.01": "43",
