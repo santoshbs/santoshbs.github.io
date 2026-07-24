@@ -181,9 +181,9 @@
         "id": "55",
         "title": "Military Specific",
         "group": "military",
-        "refs": 110,
-        "signals": 98,
-        "occupations": 12
+        "refs": 111,
+        "signals": 101,
+        "occupations": 13
       }
     ],
     "edges": [
@@ -7007,9 +7007,9 @@
           "id": "55-1011.00",
           "title": "Air Crew Officers",
           "group": "military",
-          "refs": 20,
-          "revised": "2026-07-23",
-          "signals": 19
+          "refs": 21,
+          "revised": "2026-07-24",
+          "signals": 20
         },
         {
           "id": "55-1013.00",
@@ -7055,9 +7055,17 @@
           "id": "55-3011.00",
           "title": "Air Crew Members",
           "group": "military",
-          "refs": 19,
-          "revised": "2026-07-23",
-          "signals": 18
+          "refs": 17,
+          "revised": "2026-07-24",
+          "signals": 19
+        },
+        {
+          "id": "55-3012.00",
+          "title": "Aircraft Launch and Recovery Specialists",
+          "group": "military",
+          "refs": 2,
+          "revised": "2026-07-24",
+          "signals": 1
         },
         {
           "id": "55-3013.00",
@@ -7180,6 +7188,16 @@
           "source": "55-3014.00",
           "target": "55-3015.00",
           "signal": "Trump threatens ‘hell’ for Iran over Hormuz Strait as deadline approaches"
+        },
+        {
+          "source": "55-1011.00",
+          "target": "55-3012.00",
+          "signal": "The Navy's autonomous carrier-based refueling drone has finally flown"
+        },
+        {
+          "source": "55-3011.00",
+          "target": "55-3012.00",
+          "signal": "The Navy's autonomous carrier-based refueling drone has finally flown"
         }
       ]
     }
@@ -7642,6 +7660,7 @@
     "55-1016.00": "55",
     "55-1019.00": "55",
     "55-3011.00": "55",
+    "55-3012.00": "55",
     "55-3013.00": "55",
     "55-3014.00": "55",
     "55-3015.00": "55",
