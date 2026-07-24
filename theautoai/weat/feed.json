@@ -1,5 +1,111 @@
 [
   {
+    "id": "d632cc4bfee1",
+    "timestamp": "2026-07-24T10:10:14.779674+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "viewers vs readers on Active vs Passive engagement",
+    "labels": {
+      "X": "viewers",
+      "Y": "readers",
+      "A": "Passivity",
+      "B": "Activity"
+    },
+    "canonical_keys": {
+      "X": "viewers",
+      "Y": "readers",
+      "A": "passivity",
+      "B": "activity"
+    },
+    "effect_size": 0.8470709262546127,
+    "p_value": 0.02085,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "viewer",
+        "spectator",
+        "watcher",
+        "audience",
+        "observer",
+        "consumer",
+        "fan",
+        "gazer",
+        "looker",
+        "onlooker",
+        "bystander",
+        "witness",
+        "patron",
+        "crowd",
+        "public"
+      ],
+      "Y_used": [
+        "reader",
+        "student",
+        "scholar",
+        "pupil",
+        "philologist",
+        "grammarian",
+        "bibliophile",
+        "academic",
+        "professor",
+        "teacher",
+        "researcher",
+        "librarian",
+        "historian",
+        "reviewer",
+        "critic"
+      ],
+      "A_used": [
+        "passive",
+        "inactive",
+        "sedentary",
+        "lazy",
+        "idle",
+        "apathetic",
+        "uninterested",
+        "receptive",
+        "docile",
+        "submissive",
+        "inert",
+        "sluggish",
+        "dormant",
+        "quiescent",
+        "static"
+      ],
+      "B_used": [
+        "active",
+        "engaged",
+        "demanding",
+        "intellectual",
+        "challenging",
+        "complex",
+        "difficult",
+        "rigorous",
+        "exacting",
+        "dynamic",
+        "energetic",
+        "strenuous",
+        "vigorous",
+        "stimulating",
+        "invigorating"
+      ]
+    },
+    "proposal": "People associate viewers with passivity more strongly than they associate readers with passivity. This proposal targets a pervasive cultural bias in media discourse that frames visual consumption (watching television, video, or screens) as a receptive, sedentary act requiring little cognitive engagement, while reading is valorized as an active, mentally demanding process of decoding and interpretation. Examining this implicit association is novel because prior research has focused on explicit attitudes toward media types or the effects of media on behavior, but has not tested the underlying trait attribution of 'passivity' versus 'activity' mapped onto the social roles of the audience itself. Confirming this bias would reveal how public debates about screen time, literacy, and education are underpinned by a heuristic that equates modality with mental exertion, potentially stigmatizing visual learners and devaluing visual literacy.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "c90fcbccbeb0",
     "timestamp": "2026-07-24T08:29:59.024704+00:00",
     "schema_version": "autoresearch.v1",
