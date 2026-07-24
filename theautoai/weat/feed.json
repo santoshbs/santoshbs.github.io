@@ -1,5 +1,111 @@
 [
   {
+    "id": "40bab864b0fc",
+    "timestamp": "2026-07-24T12:01:14.744965+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "actors vs directors on emotional vulnerability versus control",
+    "labels": {
+      "X": "actors",
+      "Y": "directors",
+      "A": "emotional vulnerability",
+      "B": "control and regulation"
+    },
+    "canonical_keys": {
+      "X": "actors",
+      "Y": "directors",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 1.3116895381218363,
+    "p_value": 7e-05,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "actor",
+        "actress",
+        "performer",
+        "star",
+        "lead",
+        "protagonist",
+        "talent",
+        "thespian",
+        "entertainer",
+        "player",
+        "extra",
+        "stuntman",
+        "comedian",
+        "starlet",
+        "ingenue"
+      ],
+      "Y_used": [
+        "director",
+        "filmmaker",
+        "auteur",
+        "helmer",
+        "producer",
+        "showrunner",
+        "creator",
+        "visionary",
+        "mastermind",
+        "boss",
+        "leader",
+        "commander",
+        "captain",
+        "chief",
+        "maker"
+      ],
+      "A_used": [
+        "vulnerable",
+        "exposed",
+        "open",
+        "fragile",
+        "sensitive",
+        "emotional",
+        "raw",
+        "intimate",
+        "receptive",
+        "tender",
+        "bare",
+        "transparent",
+        "yielding",
+        "permeable",
+        "soft"
+      ],
+      "B_used": [
+        "controlled",
+        "regulated",
+        "detached",
+        "authoritative",
+        "strategic",
+        "organized",
+        "disciplined",
+        "rational",
+        "objective",
+        "precise",
+        "structured",
+        "calm",
+        "collected",
+        "focused",
+        "commanding"
+      ]
+    },
+    "proposal": "People associate actors with emotional vulnerability more strongly than they associate directors with emotional vulnerability. While explicit industry discourse often frames directors as the primary creative auteurs, implicit cognition may reveal a deeper asymmetry: actors are mentally linked to affective exposure and psychological permeability, whereas directors are linked to compositional control and emotional regulation. This specific implicit link remains unexamined, despite the pervasive cultural narrative that acting requires 'opening up' or surrendering personal boundaries, while directing demands detached oversight. Confirming this association would illuminate how creative labor is emotionally stratified in public mental representations, with implications for how performance industries attribute psychological risk and affective capital to different roles.",
+    "iterations": 3,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "d632cc4bfee1",
     "timestamp": "2026-07-24T10:10:14.779674+00:00",
     "schema_version": "autoresearch.v1",
