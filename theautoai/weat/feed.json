@@ -1,5 +1,111 @@
 [
   {
+    "id": "c90fcbccbeb0",
+    "timestamp": "2026-07-24T08:29:59.024704+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "cynics vs idealists on worldliness vs naivety",
+    "labels": {
+      "X": "cynics",
+      "Y": "idealists",
+      "A": "worldliness",
+      "B": "naivety"
+    },
+    "canonical_keys": {
+      "X": "cynics",
+      "Y": "idealists",
+      "A": "worldliness",
+      "B": "naivety"
+    },
+    "effect_size": -0.5806036243850276,
+    "p_value": 0.11925,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "cynic",
+        "skeptic",
+        "realist",
+        "pragmatist",
+        "doubter",
+        "pessimist",
+        "critic",
+        "misanthrope",
+        "contrarian",
+        "naysayer",
+        "hardliner",
+        "conservative",
+        "traditionalist",
+        "veteran",
+        "adult"
+      ],
+      "Y_used": [
+        "idealist",
+        "utopian",
+        "romantic",
+        "dreamer",
+        "visionary",
+        "activist",
+        "reformer",
+        "progressive",
+        "liberal",
+        "optimist",
+        "purist",
+        "enthusiast",
+        "hopeful",
+        "advocate",
+        "humanist"
+      ],
+      "A_used": [
+        "worldly",
+        "sophisticated",
+        "mature",
+        "experienced",
+        "seasoned",
+        "competent",
+        "capable",
+        "practical",
+        "realistic",
+        "pragmatic",
+        "wise",
+        "knowledgeable",
+        "informed",
+        "savvy",
+        "adept"
+      ],
+      "B_used": [
+        "naive",
+        "sheltered",
+        "immature",
+        "childish",
+        "innocent",
+        "unsophisticated",
+        "green",
+        "amateur",
+        "beginner",
+        "inexperienced",
+        "juvenile",
+        "novice",
+        "simple",
+        "unworldly",
+        "fresh"
+      ]
+    },
+    "proposal": "People associate cynics with worldliness more strongly than they associate idealists with worldliness. While these groups are frequently contrasted along explicit moral or ideological lines, contemporary cultural and political discourse implicitly frames cynicism as a byproduct of mature experience and social sophistication, whereas idealism is routinely coded as sheltered or naive. This differential implicit association has not been systematically examined beyond explicit attitude surveys, yet it likely shapes how ethical appeals, policy proposals, and social movements are received across the political spectrum. Disconfirming or confirming this bias would reveal whether skepticism is culturally embedded as a marker of practical competence rather than mere negativity, offering actionable insights for moral psychology and public communication strategies.",
+    "iterations": 3,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "adf9df05fb20",
     "timestamp": "2026-07-24T07:41:14.358525+00:00",
     "schema_version": "autoresearch.v1",
