@@ -1,5 +1,111 @@
 [
   {
+    "id": "adf9df05fb20",
+    "timestamp": "2026-07-24T07:41:14.358525+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "merchants vs soldiers on moral flexibility versus moral rigidity",
+    "labels": {
+      "X": "merchants",
+      "Y": "soldiers",
+      "A": "moral flexibility",
+      "B": "moral rigidity"
+    },
+    "canonical_keys": {
+      "X": "merchants",
+      "Y": "soldiers",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 1.4323334789754327,
+    "p_value": 1e-05,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "merchant",
+        "trader",
+        "dealer",
+        "broker",
+        "salesman",
+        "retailer",
+        "vendor",
+        "businessman",
+        "entrepreneur",
+        "shopkeeper",
+        "buyer",
+        "exporter",
+        "clerk",
+        "capitalist",
+        "agent"
+      ],
+      "Y_used": [
+        "soldier",
+        "warrior",
+        "fighter",
+        "trooper",
+        "guard",
+        "commander",
+        "officer",
+        "sergeant",
+        "corporal",
+        "lieutenant",
+        "captain",
+        "major",
+        "recruit",
+        "cadet",
+        "combatant"
+      ],
+      "A_used": [
+        "flexible",
+        "adaptable",
+        "pragmatic",
+        "opportunistic",
+        "negotiable",
+        "bendable",
+        "malleable",
+        "shifting",
+        "versatile",
+        "pliable",
+        "supple",
+        "compliant",
+        "yielding",
+        "adjustable",
+        "accommodating"
+      ],
+      "B_used": [
+        "rigid",
+        "strict",
+        "honorable",
+        "principled",
+        "loyal",
+        "steadfast",
+        "unwavering",
+        "disciplined",
+        "noble",
+        "righteous",
+        "firm",
+        "constant",
+        "faithful",
+        "unyielding",
+        "dogmatic"
+      ]
+    },
+    "proposal": "People associate merchants with moral flexibility more strongly than they associate soldiers with moral flexibility. This differential taps into the cultural script that frames commercial actors as pragmatic negotiators who bend ethical lines for advantage, whereas military actors are stereotyped as bound by rigid codes of honor and duty. Although explicit research has extensively mapped stereotypes around aggression, trust, and competence, implicit associations concerning ethical malleability have been overlooked. Examining this axis is important because unexamined moral flexibility stereotypes may silently shape public support for corporate deregulation, military privatization, and the social valuation of economic versus martial institutions.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "df040bd69955",
     "timestamp": "2026-07-23T23:55:32.001497+00:00",
     "schema_version": "autoresearch.v1",
