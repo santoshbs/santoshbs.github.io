@@ -1,5 +1,111 @@
 [
   {
+    "id": "97077c390f38",
+    "timestamp": "2026-07-25T18:07:52.980505+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "musicians vs doctors on risk propensity vs caution",
+    "labels": {
+      "X": "musicians",
+      "Y": "doctors",
+      "A": "risk-taking",
+      "B": "caution"
+    },
+    "canonical_keys": {
+      "X": "musicians",
+      "Y": "doctors",
+      "A": "",
+      "B": "caution"
+    },
+    "effect_size": 1.8749967645231054,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "musician",
+        "guitarist",
+        "pianist",
+        "violinist",
+        "drummer",
+        "composer",
+        "conductor",
+        "vocalist",
+        "cellist",
+        "trumpeter",
+        "bassist",
+        "keyboardist",
+        "flutist",
+        "harpist",
+        "saxophonist"
+      ],
+      "Y_used": [
+        "doctor",
+        "physician",
+        "surgeon",
+        "clinician",
+        "practitioner",
+        "specialist",
+        "intern",
+        "resident",
+        "cardiologist",
+        "dermatologist",
+        "pediatrician",
+        "neurologist",
+        "pathologist",
+        "radiologist",
+        "anesthesiologist"
+      ],
+      "A_used": [
+        "risky",
+        "dangerous",
+        "daring",
+        "reckless",
+        "bold",
+        "brave",
+        "adventurous",
+        "wild",
+        "crazy",
+        "audacious",
+        "impulsive",
+        "unpredictable",
+        "hazardous",
+        "uncertain",
+        "volatile"
+      ],
+      "B_used": [
+        "safe",
+        "cautious",
+        "careful",
+        "secure",
+        "guarded",
+        "conservative",
+        "prudent",
+        "watchful",
+        "steady",
+        "reliable",
+        "predictable",
+        "methodical",
+        "regulated",
+        "controlled",
+        "protected"
+      ]
+    },
+    "proposal": "People associate musicians with risk-taking more strongly than they associate doctors with risk-taking. This proposed differential reflects a pervasive cultural narrative that romanticizes musicians as daring innovators who embrace uncertainty and challenge norms, while stereotyping doctors as cautious professionals who adhere strictly to protocols to minimize harm. Investigating this implicit association is novel, as occupational risk research has largely focused on explicit safety behaviors or physical danger rather than automatic associations of risk propensity in creative versus clinical domains. The finding matters because these implicit biases may influence public trust, institutional support, and how decision-making styles are valued across sectors, particularly as automation shifts the balance between creative risk and procedural reliability.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "7718c613dd78",
     "timestamp": "2026-07-25T16:29:17.082840+00:00",
     "schema_version": "autoresearch.v1",
