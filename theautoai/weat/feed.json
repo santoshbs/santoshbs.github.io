@@ -1,5 +1,111 @@
 [
   {
+    "id": "4cc8d6e97348",
+    "timestamp": "2026-07-25T03:00:48.853065+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "explorers vs settlers on Curiosity versus Stability",
+    "labels": {
+      "X": "explorers",
+      "Y": "settlers",
+      "A": "Curiosity",
+      "B": "Stability"
+    },
+    "canonical_keys": {
+      "X": "explorers",
+      "Y": "settlers",
+      "A": "curiosity",
+      "B": "stability"
+    },
+    "effect_size": 1.2558033591655071,
+    "p_value": 8e-05,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "explorer",
+        "adventurer",
+        "pioneer",
+        "scout",
+        "voyager",
+        "wanderer",
+        "traveler",
+        "nomad",
+        "rover",
+        "trekker",
+        "navigator",
+        "pathfinder",
+        "hiker",
+        "climber",
+        "ranger"
+      ],
+      "Y_used": [
+        "settler",
+        "colonist",
+        "homesteader",
+        "planter",
+        "resident",
+        "dweller",
+        "inhabitant",
+        "landowner",
+        "farmer",
+        "builder",
+        "developer",
+        "rancher",
+        "villager",
+        "citizen",
+        "tenant"
+      ],
+      "A_used": [
+        "curiosity",
+        "novelty",
+        "discovery",
+        "exploration",
+        "unknown",
+        "wonder",
+        "inquisitive",
+        "bold",
+        "daring",
+        "novel",
+        "experimental",
+        "inventive",
+        "creative",
+        "imaginative",
+        "inquiry"
+      ],
+      "B_used": [
+        "stability",
+        "order",
+        "permanence",
+        "tradition",
+        "traditional",
+        "steady",
+        "fixed",
+        "reliable",
+        "secure",
+        "safe",
+        "established",
+        "conservative",
+        "practical",
+        "pragmatic",
+        "structure"
+      ]
+    },
+    "proposal": "People associate explorers with curiosity more strongly than they associate settlers with curiosity. This differential implicit association captures the cultural tension between the valorized adventurer who seeks the unknown and the pragmatic builder who establishes order. Examining this link is novel because implicit bias research has largely ignored the archetype of the settler, despite their central role in historical and contemporary narratives of expansion and innovation. Understanding this association matters because it reveals whether public cognition still privileges restlessness and discovery over stability and permanence in how we evaluate social actors.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "40bab864b0fc",
     "timestamp": "2026-07-24T12:01:14.744965+00:00",
     "schema_version": "autoresearch.v1",
