@@ -1,5 +1,111 @@
 [
   {
+    "id": "d0440f2f375a",
+    "timestamp": "2026-07-25T23:39:38.175929+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Judges vs Lawyers on Certainty vs Uncertainty",
+    "labels": {
+      "X": "Judges",
+      "Y": "Lawyers",
+      "A": "Certainty",
+      "B": "Uncertainty"
+    },
+    "canonical_keys": {
+      "X": "judges",
+      "Y": "lawyers",
+      "A": "certainty",
+      "B": "uncertainty"
+    },
+    "effect_size": -0.9367662737994936,
+    "p_value": 0.00922,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "judge",
+        "justice",
+        "magistrate",
+        "jurist",
+        "arbitrator",
+        "adjudicator",
+        "referee",
+        "umpire",
+        "moderator",
+        "official",
+        "authority",
+        "decider",
+        "governor",
+        "ruler",
+        "monarch"
+      ],
+      "Y_used": [
+        "lawyer",
+        "attorney",
+        "counsel",
+        "advocate",
+        "solicitor",
+        "barrister",
+        "paralegal",
+        "defender",
+        "plaintiff",
+        "prosecutor",
+        "litigator",
+        "negotiator",
+        "agent",
+        "representative",
+        "proxy"
+      ],
+      "A_used": [
+        "certainty",
+        "definite",
+        "clear",
+        "absolute",
+        "fixed",
+        "firm",
+        "solid",
+        "stable",
+        "secure",
+        "sure",
+        "confident",
+        "positive",
+        "truth",
+        "fact",
+        "proof"
+      ],
+      "B_used": [
+        "uncertainty",
+        "doubt",
+        "ambiguous",
+        "vague",
+        "unclear",
+        "fuzzy",
+        "obscure",
+        "hidden",
+        "secret",
+        "questionable",
+        "dubious",
+        "tentative",
+        "provisional",
+        "conditional",
+        "hypothetical"
+      ]
+    },
+    "proposal": "People associate Judges with Certainty more strongly than they associate Lawyers with Certainty. This differential association captures the essentialized functional contrast where judges are culturally scripted as the arbiters who resolve disputes and deliver definitive rulings, while lawyers are stereotyped as practitioners of argumentation who exploit loopholes, create doubt, and maintain strategic ambiguity. Examining this implicit bias is novel because prior research has compared legal professionals to non-legal groups or judges to legislators, but has not directly probed the implicit contrast between the courtroom's two primary actors. Confirming this association would highlight how public mental models of the legal system rely on a binary of closure versus openness, potentially undermining the perceived legitimacy of adversarial processes if lawyers are implicitly linked to confusion rather than zealous advocacy.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "27f446357ee9",
     "timestamp": "2026-07-25T22:17:37.280284+00:00",
     "schema_version": "autoresearch.v1",
