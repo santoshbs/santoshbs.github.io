@@ -1,5 +1,111 @@
 [
   {
+    "id": "7718c613dd78",
+    "timestamp": "2026-07-25T16:29:17.082840+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Journalists vs Soldiers on epistemic_orientation",
+    "labels": {
+      "X": "Journalists",
+      "Y": "Soldiers",
+      "A": "skepticism",
+      "B": "trust_and_obedience"
+    },
+    "canonical_keys": {
+      "X": "journalists",
+      "Y": "soldiers",
+      "A": "skepticism",
+      "B": ""
+    },
+    "effect_size": 1.394961412126544,
+    "p_value": 3e-05,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "journalist",
+        "reporter",
+        "correspondent",
+        "anchor",
+        "editor",
+        "newscaster",
+        "interviewer",
+        "columnist",
+        "writer",
+        "broadcaster",
+        "producer",
+        "chronicler",
+        "pundit",
+        "stringer",
+        "commentator"
+      ],
+      "Y_used": [
+        "soldier",
+        "infantryman",
+        "marine",
+        "sailor",
+        "cadet",
+        "recruit",
+        "veteran",
+        "warrior",
+        "combatant",
+        "fighter",
+        "trooper",
+        "guard",
+        "sentry",
+        "ranger",
+        "private"
+      ],
+      "A_used": [
+        "skepticism",
+        "doubt",
+        "suspicion",
+        "distrust",
+        "question",
+        "query",
+        "scrutiny",
+        "critical",
+        "cautious",
+        "wary",
+        "guarded",
+        "uncertain",
+        "hesitant",
+        "cynical",
+        "incredulous"
+      ],
+      "B_used": [
+        "trust",
+        "loyalty",
+        "obedience",
+        "faith",
+        "belief",
+        "confidence",
+        "reliance",
+        "devotion",
+        "allegiance",
+        "submission",
+        "compliance",
+        "respect",
+        "honor",
+        "duty",
+        "service"
+      ]
+    },
+    "proposal": "People implicitly associate Journalists with skepticism more strongly than they associate Soldiers with skepticism. This association likely stems from the contrasting epistemic norms of the two professions: journalism trains practitioners to question authority, investigate hidden information, and maintain critical distance, whereas military culture emphasizes obedience, loyalty, and trust in the chain of command. This differential implicit association is novel because, while public discourse frequently debates media bias and military patriotism, no study has examined whether these explicit values are mapped onto deeper, automatic cognitive links between these categories and epistemic attitudes. Confirming this association would be important for understanding the psychological roots of institutional trust, as implicit skepticism may predispose the public to discount information from press sources while accepting statements from military leaders with less scrutiny.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "4cc8d6e97348",
     "timestamp": "2026-07-25T03:00:48.853065+00:00",
     "schema_version": "autoresearch.v1",
