@@ -1,5 +1,111 @@
 [
   {
+    "id": "27f446357ee9",
+    "timestamp": "2026-07-25T22:17:37.280284+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "curators vs dealers on cultural authority versus private gain",
+    "labels": {
+      "X": "curators",
+      "Y": "dealers",
+      "A": "cultural authority",
+      "B": "private gain"
+    },
+    "canonical_keys": {
+      "X": "curators",
+      "Y": "dealers",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 1.830746321318068,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "curator",
+        "archivist",
+        "librarian",
+        "conservator",
+        "scholar",
+        "historian",
+        "researcher",
+        "professor",
+        "educator",
+        "teacher",
+        "docent",
+        "guide",
+        "academic",
+        "fellow",
+        "scientist"
+      ],
+      "Y_used": [
+        "dealer",
+        "merchant",
+        "trader",
+        "seller",
+        "vendor",
+        "retailer",
+        "wholesaler",
+        "auctioneer",
+        "appraiser",
+        "investor",
+        "speculator",
+        "entrepreneur",
+        "capitalist",
+        "financier",
+        "banker"
+      ],
+      "A_used": [
+        "public",
+        "cultural",
+        "heritage",
+        "authority",
+        "stewardship",
+        "preservation",
+        "conservation",
+        "education",
+        "research",
+        "scholarship",
+        "collective",
+        "institutional",
+        "organizational",
+        "governmental",
+        "civic"
+      ],
+      "B_used": [
+        "private",
+        "commercial",
+        "market",
+        "profit",
+        "monetary",
+        "economic",
+        "trade",
+        "business",
+        "retail",
+        "luxury",
+        "consumer",
+        "investment",
+        "speculation",
+        "sales",
+        "exchange"
+      ]
+    },
+    "proposal": "People associate curators with cultural authority more strongly than they associate dealers with cultural authority. While both professions mediate access to valuable artifacts and artworks, contemporary public discourse consistently frames curators as stewards of collective heritage and dealers as actors driven by private market speculation. This implicit divide has rarely been measured, yet it profoundly shapes how institutions allocate resources, how the public trusts cultural intermediaries, and how policy debates around restitution and preservation are mentally structured. Confirming or disconfirming this association would clarify whether institutional roles in the arts are fundamentally perceived through a public-good versus private-gain lens, rather than through differences in expertise or training.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "f57fa4ebf500",
     "timestamp": "2026-07-25T19:58:19.102924+00:00",
     "schema_version": "autoresearch.v1",
