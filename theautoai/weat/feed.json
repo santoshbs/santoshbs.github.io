@@ -1,5 +1,115 @@
 [
   {
+    "id": "f57fa4ebf500",
+    "timestamp": "2026-07-25T19:58:19.102924+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Chefs vs Journalists on collaboration versus independence",
+    "labels": {
+      "X": "Chefs",
+      "Y": "Journalists",
+      "A": "collaboration",
+      "B": "independence"
+    },
+    "canonical_keys": {
+      "X": "chefs",
+      "Y": "journalists",
+      "A": "collaboration",
+      "B": "independence"
+    },
+    "effect_size": 0.08637091120632814,
+    "p_value": 0.81788,
+    "n": {
+      "X": 16,
+      "Y": 16,
+      "A": 16,
+      "B": 16
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "chef",
+        "cook",
+        "baker",
+        "confectioner",
+        "patissier",
+        "sous",
+        "commis",
+        "line",
+        "prep",
+        "saucier",
+        "expediter",
+        "caterer",
+        "restaurateur",
+        "gourmet",
+        "culinarian",
+        "griller"
+      ],
+      "Y_used": [
+        "journalist",
+        "reporter",
+        "correspondent",
+        "editor",
+        "writer",
+        "publisher",
+        "broadcaster",
+        "anchor",
+        "columnist",
+        "blogger",
+        "commentator",
+        "photographer",
+        "interviewer",
+        "investigator",
+        "documentarian",
+        "newsman"
+      ],
+      "A_used": [
+        "collaboration",
+        "cooperation",
+        "teamwork",
+        "togetherness",
+        "group",
+        "partnership",
+        "unity",
+        "collective",
+        "community",
+        "synergy",
+        "cooperative",
+        "joint",
+        "mutual",
+        "shared",
+        "coordination",
+        "ensemble"
+      ],
+      "B_used": [
+        "individual",
+        "alone",
+        "solo",
+        "independent",
+        "solitary",
+        "lone",
+        "single",
+        "personal",
+        "private",
+        "self",
+        "autonomous",
+        "unassisted",
+        "disconnected",
+        "isolated",
+        "separate",
+        "apart"
+      ]
+    },
+    "proposal": "People associate chefs with collaboration more strongly than they associate journalists with collaboration. While both professions rely on team-based production in their modern institutional settings, public discourse and media representations frequently romanticize the 'lone wolf' journalist conducting solitary field investigations, whereas the culinary world's 'brigade' system emphasizes interdependent teamwork even when a star chef is in the spotlight. Examining this association is novel because implicit measures have rarely compared these two creative and informational labor categories on the dimension of social coordination. It is interesting because it reveals how cultural narratives about individual genius may override actual workplace structures in our mental representations. Understanding this implicit bias matters because it can shape how society values teamwork and collective effort in knowledge production versus the culinary arts.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "97077c390f38",
     "timestamp": "2026-07-25T18:07:52.980505+00:00",
     "schema_version": "autoresearch.v1",
