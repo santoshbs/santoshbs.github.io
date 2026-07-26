@@ -1,5 +1,111 @@
 [
   {
+    "id": "760c641739f5",
+    "timestamp": "2026-07-26T02:25:21.767982+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "successors vs predecessors on innovation versus tradition",
+    "labels": {
+      "X": "successors",
+      "Y": "predecessors",
+      "A": "innovation",
+      "B": "tradition"
+    },
+    "canonical_keys": {
+      "X": "successors",
+      "Y": "predecessors",
+      "A": "innovation",
+      "B": "tradition"
+    },
+    "effect_size": -0.24122466144000107,
+    "p_value": 0.52675,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "successor",
+        "heir",
+        "nominee",
+        "replacement",
+        "substitute",
+        "candidate",
+        "appointee",
+        "inheritor",
+        "follower",
+        "deputy",
+        "alternate",
+        "designee",
+        "understudy",
+        "proxy",
+        "descendant"
+      ],
+      "Y_used": [
+        "predecessor",
+        "forerunner",
+        "originator",
+        "founder",
+        "progenitor",
+        "ancestor",
+        "forebear",
+        "elder",
+        "veteran",
+        "incumbent",
+        "forefather",
+        "patriarch",
+        "matriarch",
+        "mentor",
+        "teacher"
+      ],
+      "A_used": [
+        "innovative",
+        "novel",
+        "modern",
+        "new",
+        "fresh",
+        "creative",
+        "original",
+        "inventive",
+        "progressive",
+        "futuristic",
+        "experimental",
+        "revolutionary",
+        "transformative",
+        "dynamic",
+        "visionary"
+      ],
+      "B_used": [
+        "traditional",
+        "conservative",
+        "old",
+        "established",
+        "orthodox",
+        "conventional",
+        "classic",
+        "customary",
+        "archaic",
+        "historic",
+        "static",
+        "stagnant",
+        "rigid",
+        "backward",
+        "outdated"
+      ]
+    },
+    "proposal": "People associate successors with innovation more strongly than they associate predecessors with innovation. This differential implicit association reflects a pervasive 'newness heuristic' in social cognition, where actors taking over roles, institutions, or generational positions are mentally linked to novelty and forward-looking capacity, while outgoing actors are implicitly categorized as entrenched or conservative. This proposal is novel because existing research has examined explicit evaluations of incumbency advantage or generational conflict, but has not measured the implicit linkage between temporal position and the trait of innovation itself. Examining this bias matters because it reveals how public discourse may systematically over-attribute transformative potential to incoming actors, shaping expectations and judgments during transitions of leadership, organizational turnover, or political change in ways that are not driven by actual policy differences.",
+    "iterations": 3,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "d0440f2f375a",
     "timestamp": "2026-07-25T23:39:38.175929+00:00",
     "schema_version": "autoresearch.v1",
