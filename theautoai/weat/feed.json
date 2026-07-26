@@ -1,5 +1,113 @@
 [
   {
+    "id": "53f1dad5fb95",
+    "timestamp": "2026-07-26T13:55:28.228133+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "zoologists vs botanists on dynamism versus stillness",
+    "labels": {
+      "X": "zoologists",
+      "Y": "botanists",
+      "A": "dynamism",
+      "B": "stillness"
+    },
+    "canonical_keys": {
+      "X": "zoologists",
+      "Y": "botanists",
+      "A": "dynamism",
+      "B": "stillness"
+    },
+    "effect_size": -0.24639124419990202,
+    "p_value": 0.51293,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "zoologist",
+        "zoologists",
+        "mammalogist",
+        "mammalogists",
+        "ornithologist",
+        "ornithologists",
+        "herpetologist",
+        "herpetologists",
+        "entomologist",
+        "entomologists",
+        "ichthyologist",
+        "ichthyologists",
+        "arachnologist",
+        "arachnologists",
+        "biologist",
+        "researcher",
+        "scientist"
+      ],
+      "Y_used": [
+        "botanist",
+        "botanists",
+        "phycologist",
+        "phycologists",
+        "mycologist",
+        "mycologists",
+        "dendrologist",
+        "bryologist",
+        "palynologist",
+        "palynologists",
+        "arborist",
+        "arborists",
+        "horticulturist",
+        "gardener",
+        "florist"
+      ],
+      "A_used": [
+        "dynamic",
+        "active",
+        "lively",
+        "energetic",
+        "fast",
+        "mobile",
+        "vigorous",
+        "spirited",
+        "animated",
+        "kinetic",
+        "quick",
+        "agile",
+        "rapid",
+        "bustling",
+        "restless"
+      ],
+      "B_used": [
+        "still",
+        "static",
+        "passive",
+        "calm",
+        "quiet",
+        "motionless",
+        "inert",
+        "fixed",
+        "steady",
+        "stable",
+        "stationary",
+        "dormant",
+        "sluggish",
+        "sedentary",
+        "immobile"
+      ]
+    },
+    "proposal": "People associate zoologists with dynamism more strongly than they associate botanists with dynamism. This proposal examines whether the perceived motion and agency of animals transfer to the implicit mental representation of those who study them, contrasting with the perceived stillness and passivity of plants associated with botanists. This association is novel because implicit biases linking scientific sub-disciplines to the physical properties of their research objects have not been systematically probed in prior literature. Confirming this link would be important for understanding how the 'vibe' of a research domain shapes professional identity, potentially influencing public perceptions of these fields as 'active' versus 'contemplative,' affecting gendered recruitment patterns, and revealing how object-level attributes bleed into social cognition of experts.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "a385065dd2be",
     "timestamp": "2026-07-26T12:36:35.022236+00:00",
     "schema_version": "autoresearch.v1",
