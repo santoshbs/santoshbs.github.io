@@ -1,5 +1,118 @@
 [
   {
+    "id": "a385065dd2be",
+    "timestamp": "2026-07-26T12:36:35.022236+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Chefs vs Smiths on nurturance vs force/industry",
+    "labels": {
+      "X": "Chefs",
+      "Y": "Smiths",
+      "A": "Nurturance",
+      "B": "Force/Industry"
+    },
+    "canonical_keys": {
+      "X": "chefs",
+      "Y": "smiths",
+      "A": "nurturance",
+      "B": ""
+    },
+    "effect_size": 1.2472873901609798,
+    "p_value": 6e-05,
+    "n": {
+      "X": 18,
+      "Y": 18,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "chef",
+        "cook",
+        "baker",
+        "caterer",
+        "restaurateur",
+        "culinarian",
+        "pizzaiolo",
+        "patissier",
+        "saucier",
+        "grillmaster",
+        "kitchen",
+        "culinary",
+        "food",
+        "gastronomy",
+        "cuisine",
+        "cookery",
+        "epicure",
+        "gourmet",
+        "foodie"
+      ],
+      "Y_used": [
+        "smith",
+        "blacksmith",
+        "metalsmith",
+        "silversmith",
+        "goldsmith",
+        "weaponsmith",
+        "armorer",
+        "tinker",
+        "tinsmith",
+        "coppersmith",
+        "steelsmith",
+        "ironsmith",
+        "bladesmith",
+        "swordsmith",
+        "forger",
+        "metalworker",
+        "welder",
+        "machinist"
+      ],
+      "A_used": [
+        "nurturance",
+        "nurture",
+        "care",
+        "comfort",
+        "compassion",
+        "kindness",
+        "love",
+        "affection",
+        "warmth",
+        "tenderness",
+        "gentleness",
+        "soothing",
+        "comforting",
+        "supporting",
+        "helping"
+      ],
+      "B_used": [
+        "force",
+        "industry",
+        "strength",
+        "power",
+        "hard",
+        "metal",
+        "fire",
+        "forge",
+        "hammer",
+        "anvil",
+        "rugged",
+        "dangerous",
+        "tough",
+        "strong",
+        "heavy"
+      ]
+    },
+    "proposal": "People associate chefs with nurturance more strongly than they associate smiths with nurturance. Chefs are culturally romanticized as providers of sustenance, comfort, and communal care, often framed as wholesome figures who nurture body and soul through cooking. In contrast, smiths are stereotypically linked to rugged individualism, dangerous fire, hard metal, and the production of tools or weapons, evoking associations with force and industry rather than care. This association remains underexamined despite the prominence of culinary discourse in contemporary culture and the enduring archetype of the blacksmith in folklore. Uncovering this bias could reveal how gendered or domesticated labor is mentally contrasted with industrial or martial craft in public imagination.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "760c641739f5",
     "timestamp": "2026-07-26T02:25:21.767982+00:00",
     "schema_version": "autoresearch.v1",
