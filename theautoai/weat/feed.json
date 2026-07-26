@@ -1,5 +1,111 @@
 [
   {
+    "id": "76a5f9d54456",
+    "timestamp": "2026-07-26T15:43:17.259196+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "nomads vs sailors on social warmth vs coldness",
+    "labels": {
+      "X": "nomads",
+      "Y": "sailors",
+      "A": "hospitality",
+      "B": "hostility"
+    },
+    "canonical_keys": {
+      "X": "nomads",
+      "Y": "sailors",
+      "A": "hospitality",
+      "B": "hostility"
+    },
+    "effect_size": -0.7747045326930895,
+    "p_value": 0.03418,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "nomad",
+        "wanderer",
+        "drifter",
+        "vagabond",
+        "traveler",
+        "rover",
+        "roamer",
+        "itinerant",
+        "migrant",
+        "herder",
+        "shepherd",
+        "tribesman",
+        "sojourner",
+        "exile",
+        "vagrant"
+      ],
+      "Y_used": [
+        "sailor",
+        "mariner",
+        "seafarer",
+        "seaman",
+        "fisherman",
+        "pirate",
+        "captain",
+        "navigator",
+        "deckhand",
+        "boatman",
+        "skipper",
+        "helmsman",
+        "boatswain",
+        "whaler",
+        "corsair"
+      ],
+      "A_used": [
+        "hospitable",
+        "welcoming",
+        "generous",
+        "friendly",
+        "gracious",
+        "kind",
+        "inviting",
+        "cordial",
+        "benevolent",
+        "receptive",
+        "accommodating",
+        "amiable",
+        "congenial",
+        "courteous",
+        "affable"
+      ],
+      "B_used": [
+        "inhospitable",
+        "unfriendly",
+        "hostile",
+        "unwelcoming",
+        "rude",
+        "antisocial",
+        "distant",
+        "aloof",
+        "mean",
+        "uncaring",
+        "abrasive",
+        "repelling",
+        "harsh",
+        "unkind",
+        "dismissive"
+      ]
+    },
+    "proposal": "People associate nomads with hospitality more strongly than they associate sailors with hospitality. This differential association is novel because prior research on nomads typically contrasts them with sedentary groups on dimensions of mobility, statelessness, or economic subsistence, while neglecting interpersonal virtue axes relative to other transient occupational roles. Examining this association is interesting as it probes whether the cultural script for nomads emphasizes ritual welcome and communal generosity over mere rootlessness, potentially distinguishing them from other mobile actors. Confirming this association would matter by shifting the understanding of how implicit cognition represents mobile groups: it would suggest that nomads are anchored in mental models of social reciprocity and reception, whereas sailors, despite their mobility, are represented primarily through lenses of endurance, discipline, or isolation.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "53f1dad5fb95",
     "timestamp": "2026-07-26T13:55:28.228133+00:00",
     "schema_version": "autoresearch.v1",
