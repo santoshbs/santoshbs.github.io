@@ -1,5 +1,111 @@
 [
   {
+    "id": "ec300c4c24e2",
+    "timestamp": "2026-07-26T16:51:01.386107+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Florists vs Gardeners on artificiality vs authenticity",
+    "labels": {
+      "X": "Florists",
+      "Y": "Gardeners",
+      "A": "artificiality",
+      "B": "authenticity"
+    },
+    "canonical_keys": {
+      "X": "florists",
+      "Y": "gardeners",
+      "A": "artificiality",
+      "B": "authenticity"
+    },
+    "effect_size": 0.7872334158323493,
+    "p_value": 0.0322,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "florist",
+        "florists",
+        "bouquet",
+        "arrangement",
+        "flower",
+        "bloom",
+        "petal",
+        "rose",
+        "lily",
+        "tulip",
+        "daisy",
+        "carnation",
+        "orchid",
+        "sunflower",
+        "gerbera"
+      ],
+      "Y_used": [
+        "gardener",
+        "gardeners",
+        "garden",
+        "plant",
+        "tree",
+        "shrub",
+        "bush",
+        "hedge",
+        "lawn",
+        "grass",
+        "soil",
+        "seed",
+        "mulch",
+        "compost",
+        "fertilizer"
+      ],
+      "A_used": [
+        "artificial",
+        "fake",
+        "synthetic",
+        "contrived",
+        "unnatural",
+        "manufactured",
+        "processed",
+        "posed",
+        "staged",
+        "stylized",
+        "ornamental",
+        "decorative",
+        "designed",
+        "constructed",
+        "fabricated"
+      ],
+      "B_used": [
+        "natural",
+        "authentic",
+        "genuine",
+        "real",
+        "organic",
+        "pure",
+        "raw",
+        "wild",
+        "living",
+        "growing",
+        "thriving",
+        "flourishing",
+        "enduring",
+        "permanent",
+        "sustainable"
+      ]
+    },
+    "proposal": "People associate Florists with artifice more strongly than they associate Gardeners with artifice. This differential implicit association taps into the cultural distinction between the commercial arrangement of cut flora and the cultivation of living plants in situ. Floristry is linked to aesthetic manipulation, retail transactions, and the temporary display of severed blooms, whereas gardening is associated with stewardship, organic growth, and the maintenance of living ecosystems. Examining this association reveals how the public implicitly categorizes different forms of engagement with the natural world, potentially privileging cultivation as more authentic while framing floral commerce as inherently artificial or contrived.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "76a5f9d54456",
     "timestamp": "2026-07-26T15:43:17.259196+00:00",
     "schema_version": "autoresearch.v1",
