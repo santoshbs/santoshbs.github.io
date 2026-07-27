@@ -1,5 +1,111 @@
 [
   {
+    "id": "d1b205ae24ce",
+    "timestamp": "2026-07-27T00:55:32.699335+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "influencers vs idols on social distance and relatability",
+    "labels": {
+      "X": "influencers",
+      "Y": "idols",
+      "A": "relatable/accessible",
+      "B": "distant/unattainable"
+    },
+    "canonical_keys": {
+      "X": "influencers",
+      "Y": "idols",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 0.5964455328129836,
+    "p_value": 0.11067,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "influencer",
+        "creator",
+        "blogger",
+        "vlogger",
+        "streamer",
+        "promoter",
+        "ambassador",
+        "advocate",
+        "trendsetter",
+        "personality",
+        "presenter",
+        "speaker",
+        "publicist",
+        "marketer",
+        "host"
+      ],
+      "Y_used": [
+        "idol",
+        "star",
+        "celebrity",
+        "superstar",
+        "icon",
+        "legend",
+        "hero",
+        "champion",
+        "winner",
+        "victor",
+        "diva",
+        "phenom",
+        "pro",
+        "veteran",
+        "mainstay"
+      ],
+      "A_used": [
+        "relatable",
+        "accessible",
+        "close",
+        "familiar",
+        "ordinary",
+        "everyday",
+        "normal",
+        "average",
+        "regular",
+        "typical",
+        "common",
+        "friendly",
+        "approachable",
+        "casual",
+        "grounded"
+      ],
+      "B_used": [
+        "distant",
+        "unattainable",
+        "far",
+        "aloof",
+        "unreachable",
+        "perfect",
+        "flawless",
+        "divine",
+        "sacred",
+        "revered",
+        "worshiped",
+        "untouchable",
+        "lofty",
+        "elevated",
+        "superior"
+      ]
+    },
+    "proposal": "People associate influencers with relatability more strongly than they associate idols with relatability. This proposal targets the implicit distinction between digital creators who cultivate a persona of accessible, everyday familiarity and traditional public figures constructed around aspirational distance and unattainable perfection. While both categories involve audience admiration, the mechanism differs: influencers rely on parasocial intimacy and perceived peer status, whereas idols thrive on veneration and structural separation from the masses. This axis is novel because prior research has largely conflated fame types or focused on explicit measures of trust rather than the automatic mental linkage of closeness. Examining this association matters for understanding how social media has shifted public expectations of authenticity and how implicit biases about 'ordinary' versus 'extraordinary' actors shape consumer behavior and political mobilization.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "ec300c4c24e2",
     "timestamp": "2026-07-26T16:51:01.386107+00:00",
     "schema_version": "autoresearch.v1",
