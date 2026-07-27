@@ -1,5 +1,111 @@
 [
   {
+    "id": "80c48370eef4",
+    "timestamp": "2026-07-27T12:59:14.237287+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "employees vs employers on moral trustworthiness",
+    "labels": {
+      "X": "employees",
+      "Y": "employers",
+      "A": "trustworthy",
+      "B": "untrustworthy"
+    },
+    "canonical_keys": {
+      "X": "employees",
+      "Y": "employers",
+      "A": "trustworthy",
+      "B": "untrustworthy"
+    },
+    "effect_size": 0.1673707820563026,
+    "p_value": 0.66269,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "employee",
+        "worker",
+        "laborer",
+        "clerk",
+        "assistant",
+        "subordinate",
+        "operative",
+        "hire",
+        "hand",
+        "helper",
+        "servant",
+        "domestic",
+        "intern",
+        "apprentice",
+        "associate"
+      ],
+      "Y_used": [
+        "employer",
+        "boss",
+        "manager",
+        "director",
+        "executive",
+        "owner",
+        "capitalist",
+        "tycoon",
+        "magnate",
+        "proprietor",
+        "founder",
+        "head",
+        "chief",
+        "leader",
+        "supervisor"
+      ],
+      "A_used": [
+        "honest",
+        "reliable",
+        "trustworthy",
+        "sincere",
+        "faithful",
+        "genuine",
+        "loyal",
+        "upright",
+        "dependable",
+        "ethical",
+        "principled",
+        "true",
+        "candid",
+        "forthright",
+        "open"
+      ],
+      "B_used": [
+        "dishonest",
+        "deceitful",
+        "shifty",
+        "untrustworthy",
+        "fraudulent",
+        "crooked",
+        "sly",
+        "opportunistic",
+        "scammer",
+        "liar",
+        "fake",
+        "phony",
+        "duplicitous",
+        "treacherous",
+        "perfidious"
+      ]
+    },
+    "proposal": "People associate employees with trustworthiness more strongly than they associate employers with trustworthiness. This proposal examines the moral valuation of the economic dyad of labor and capital, moving beyond status-based stereotypes. Cultural narratives frequently depict the 'honest wage-earner' as fundamentally virtuous and reliable, while casting the 'shifty executive' or 'unscrupulous owner' as opportunistic and untrustworthy. While explicit stereotypes regarding competence or diligence fluctuate with political ideology, the implicit association regarding core trustworthiness may reveal a stable bias favoring the employee role. Confirming this would shift understanding of how economic power relations are moralized in the public mind, distinct from status-based respect or competence.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "d1b205ae24ce",
     "timestamp": "2026-07-27T00:55:32.699335+00:00",
     "schema_version": "autoresearch.v1",
