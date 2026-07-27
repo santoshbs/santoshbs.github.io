@@ -1,5 +1,115 @@
 [
   {
+    "id": "d7a22de194ba",
+    "timestamp": "2026-07-27T20:03:23.348369+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "farmers vs bankers on patience versus impulsiveness",
+    "labels": {
+      "X": "farmers",
+      "Y": "bankers",
+      "A": "Patience",
+      "B": "Impatience"
+    },
+    "canonical_keys": {
+      "X": "farmers",
+      "Y": "bankers",
+      "A": "patience",
+      "B": "impatience"
+    },
+    "effect_size": 0.8579204990558036,
+    "p_value": 0.0111,
+    "n": {
+      "X": 17,
+      "Y": 17,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "farmer",
+        "rancher",
+        "gardener",
+        "grower",
+        "planter",
+        "shepherd",
+        "stockman",
+        "drover",
+        "tiller",
+        "sower",
+        "harvester",
+        "haymaker",
+        "seedman",
+        "cultivator",
+        "plowman",
+        "vintner",
+        "orchardist"
+      ],
+      "Y_used": [
+        "banker",
+        "financier",
+        "broker",
+        "trader",
+        "investor",
+        "lender",
+        "teller",
+        "treasurer",
+        "auditor",
+        "manager",
+        "executive",
+        "director",
+        "capitalist",
+        "underwriter",
+        "shareholder",
+        "creditor",
+        "stockholder"
+      ],
+      "A_used": [
+        "patience",
+        "calm",
+        "steady",
+        "slow",
+        "deliberate",
+        "thoughtful",
+        "careful",
+        "methodical",
+        "unhurried",
+        "persistent",
+        "enduring",
+        "placid",
+        "leisurely",
+        "gradual",
+        "patient"
+      ],
+      "B_used": [
+        "impatient",
+        "fast",
+        "quick",
+        "rapid",
+        "hasty",
+        "rushed",
+        "impulsive",
+        "frantic",
+        "hurried",
+        "speedy",
+        "swift",
+        "reckless",
+        "immediate",
+        "fleeting",
+        "anxious"
+      ]
+    },
+    "proposal": "People associate farmers with patience more strongly than they associate bankers with patience. Although economic commentary frequently contrasts the cyclical, slow rhythms of agriculture with the rapid, transactional pace of finance, this differential implicit association regarding patience has not been systematically measured. Probing this association is important because it exposes how deeply rooted cultural narratives about productive versus financial economies may shape automatic perceptions of reliability and foresight. Confirming this bias would suggest that negative stereotypes of bankers as impulsive or short-sighted are not just explicit critiques but are embedded in the automatic cognitive structures that guide public trust and economic judgment.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "79fb3bc371ea",
     "timestamp": "2026-07-27T18:58:30.556471+00:00",
     "schema_version": "autoresearch.v1",
