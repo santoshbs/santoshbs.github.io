@@ -1,5 +1,111 @@
 [
   {
+    "id": "79fb3bc371ea",
+    "timestamp": "2026-07-27T18:58:30.556471+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "investors vs activists on pragmatism versus idealism",
+    "labels": {
+      "X": "investors",
+      "Y": "activists",
+      "A": "pragmatic compromise",
+      "B": "idealistic purity"
+    },
+    "canonical_keys": {
+      "X": "investors",
+      "Y": "activists",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 1.1258221284520515,
+    "p_value": 0.00182,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "investor",
+        "financier",
+        "banker",
+        "capitalist",
+        "shareholder",
+        "stakeholder",
+        "speculator",
+        "trader",
+        "broker",
+        "dealer",
+        "magnate",
+        "tycoon",
+        "patron",
+        "donor",
+        "sponsor"
+      ],
+      "Y_used": [
+        "activist",
+        "campaigner",
+        "protester",
+        "reformer",
+        "crusader",
+        "advocate",
+        "agitator",
+        "demonstrator",
+        "organizer",
+        "striker",
+        "unionist",
+        "picketer",
+        "marcher",
+        "lobbyist",
+        "dissident"
+      ],
+      "A_used": [
+        "pragmatic",
+        "practical",
+        "realistic",
+        "compromising",
+        "flexible",
+        "adaptable",
+        "conciliatory",
+        "diplomatic",
+        "moderate",
+        "rational",
+        "sensible",
+        "reasonable",
+        "grounded",
+        "strategic",
+        "tactical"
+      ],
+      "B_used": [
+        "idealistic",
+        "pure",
+        "principled",
+        "uncompromising",
+        "absolutist",
+        "rigid",
+        "dogmatic",
+        "fanatical",
+        "zealous",
+        "radical",
+        "extreme",
+        "utopian",
+        "visionary",
+        "altruistic",
+        "righteous"
+      ]
+    },
+    "proposal": "people associate investors with pragmatic compromise more strongly than they associate activists with pragmatic compromise. This differential implicit association matters because it reveals how public mental models frame capital allocators as necessary stabilizers who navigate complex trade-offs, while casting grassroots advocates as purists unwilling to negotiate. Examining this link is novel, as prior research has focused on explicit stereotypes about greed or idealism, but has overlooked the implicit attribution of practical deal-making capacity to financial actors versus moral absolutism to campaigners. Confirming or disconfirming this association would shift our understanding of how institutional legitimacy is subconsciously constructed in political-economic discourse.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "80c48370eef4",
     "timestamp": "2026-07-27T12:59:14.237287+00:00",
     "schema_version": "autoresearch.v1",
