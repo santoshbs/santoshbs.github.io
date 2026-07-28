@@ -1,5 +1,111 @@
 [
   {
+    "id": "36bdc87207f7",
+    "timestamp": "2026-07-28T01:53:31.216418+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "activists vs diplomats on uncompromisingness versus flexibility",
+    "labels": {
+      "X": "activists",
+      "Y": "diplomats",
+      "A": "uncompromising",
+      "B": "flexible"
+    },
+    "canonical_keys": {
+      "X": "activists",
+      "Y": "diplomats",
+      "A": "uncompromising",
+      "B": "flexible"
+    },
+    "effect_size": 0.9572522614421867,
+    "p_value": 0.00759,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "activist",
+        "protester",
+        "campaigner",
+        "rebel",
+        "revolutionary",
+        "dissenter",
+        "militant",
+        "demonstrator",
+        "agitator",
+        "reformer",
+        "idealist",
+        "partisan",
+        "radical",
+        "organizer",
+        "advocate"
+      ],
+      "Y_used": [
+        "diplomat",
+        "envoy",
+        "ambassador",
+        "negotiator",
+        "emissary",
+        "delegate",
+        "representative",
+        "mediator",
+        "conciliator",
+        "statesman",
+        "politician",
+        "consul",
+        "minister",
+        "counselor",
+        "official"
+      ],
+      "A_used": [
+        "uncompromising",
+        "rigid",
+        "stubborn",
+        "inflexible",
+        "steadfast",
+        "firm",
+        "resolute",
+        "obstinate",
+        "unyielding",
+        "dogmatic",
+        "adamant",
+        "persistent",
+        "determined",
+        "unbending",
+        "fixed"
+      ],
+      "B_used": [
+        "flexible",
+        "adaptable",
+        "pragmatic",
+        "compromising",
+        "yielding",
+        "conciliatory",
+        "negotiable",
+        "versatile",
+        "elastic",
+        "accommodating",
+        "open",
+        "willing",
+        "cooperative",
+        "supple",
+        "malleable"
+      ]
+    },
+    "proposal": "People associate activists with uncompromisingness more strongly than they associate diplomats with uncompromisingness. This proposed differential implicit association targets the public’s mental mapping of how social change is pursued versus how it is institutionalized. While activists are frequently framed in civic discourse as holding fast to core principles and resisting concession, diplomats are culturally coded as pragmatic negotiators who prioritize flexibility and incremental compromise. Examining this implicit link is novel because prior research has focused on explicit attitudes toward political efficacy or trust in institutions, but has rarely measured the automatic cognitive pairing of movement leadership with ideological rigidity versus statecraft with adaptability. Confirming this association would illuminate why grassroots demands are often perceived as inherently difficult to integrate into policy frameworks, shaping both intergroup dynamics and the psychological barriers to collaborative governance.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "d7a22de194ba",
     "timestamp": "2026-07-27T20:03:23.348369+00:00",
     "schema_version": "autoresearch.v1",
