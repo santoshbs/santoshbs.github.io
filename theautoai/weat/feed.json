@@ -1,5 +1,111 @@
 [
   {
+    "id": "cf32de839249",
+    "timestamp": "2026-07-30T13:06:04.345995+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "historians vs geographers on Nostalgic vs Pragmatic",
+    "labels": {
+      "X": "historians",
+      "Y": "geographers",
+      "A": "Nostalgic",
+      "B": "Pragmatic"
+    },
+    "canonical_keys": {
+      "X": "historians",
+      "Y": "geographers",
+      "A": "nostalgic",
+      "B": "pragmatic"
+    },
+    "effect_size": 1.490836799045974,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "historian",
+        "archivist",
+        "antiquarian",
+        "archaeologist",
+        "chronicler",
+        "classicist",
+        "documentarian",
+        "genealogist",
+        "scholar",
+        "biographer",
+        "bibliographer",
+        "curator",
+        "restorer",
+        "paleographer",
+        "antiquary"
+      ],
+      "Y_used": [
+        "geographer",
+        "cartographer",
+        "topographer",
+        "surveyor",
+        "navigator",
+        "meteorologist",
+        "climatologist",
+        "oceanographer",
+        "urbanist",
+        "environmentalist",
+        "hydrologist",
+        "glaciologist",
+        "volcanologist",
+        "explorer",
+        "orienteer"
+      ],
+      "A_used": [
+        "nostalgia",
+        "past",
+        "antique",
+        "vintage",
+        "heritage",
+        "tradition",
+        "memory",
+        "bygone",
+        "ancient",
+        "medieval",
+        "classic",
+        "romantic",
+        "sentimental",
+        "memento",
+        "relic"
+      ],
+      "B_used": [
+        "pragmatic",
+        "practical",
+        "modern",
+        "current",
+        "logic",
+        "system",
+        "function",
+        "utility",
+        "spatial",
+        "location",
+        "fact",
+        "calculation",
+        "geometry",
+        "direction",
+        "future"
+      ]
+    },
+    "proposal": "People associate historians with nostalgia more strongly than they associate geographers with nostalgia. While both disciplines rely on rigorous empirical methods, cultural narratives routinely cast historians as romantic guardians of a lost past, whereas geographers are depicted as pragmatic analysts of present-day spatial and environmental systems. This implicit contrast has never been systematically measured, yet it shapes how the public weights temporal versus spatial expertise in policy debates like urban planning and climate adaptation. Identifying this bias would clarify how educational and media framing subtly prioritizes backward-looking reverence over forward-looking spatial reasoning.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "b16ce35c66cc",
     "timestamp": "2026-07-30T11:38:11.902514+00:00",
     "schema_version": "autoresearch.v1",
