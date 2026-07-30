@@ -1,5 +1,111 @@
 [
   {
+    "id": "1069f5c85e37",
+    "timestamp": "2026-07-30T15:53:52.659457+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Voyagers vs Voyeurs on Agency versus passivity",
+    "labels": {
+      "X": "Voyagers",
+      "Y": "Voyeurs",
+      "A": "Agency",
+      "B": "Passivity"
+    },
+    "canonical_keys": {
+      "X": "voyagers",
+      "Y": "voyeurs",
+      "A": "agency",
+      "B": "passivity"
+    },
+    "effect_size": 0.42968433885025614,
+    "p_value": 0.25499,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "voyager",
+        "traveler",
+        "explorer",
+        "pioneer",
+        "adventurer",
+        "wanderer",
+        "nomad",
+        "wayfarer",
+        "sojourner",
+        "globetrotter",
+        "emigrant",
+        "exile",
+        "fugitive",
+        "ranger",
+        "trekker"
+      ],
+      "Y_used": [
+        "voyeur",
+        "lurker",
+        "stalker",
+        "spy",
+        "watcher",
+        "spectator",
+        "onlooker",
+        "witness",
+        "observer",
+        "inspector",
+        "informant",
+        "censor",
+        "auditor",
+        "monitor",
+        "supervisor"
+      ],
+      "A_used": [
+        "agency",
+        "action",
+        "power",
+        "control",
+        "initiative",
+        "drive",
+        "force",
+        "impact",
+        "influence",
+        "leadership",
+        "dominance",
+        "strength",
+        "autonomy",
+        "freedom",
+        "movement"
+      ],
+      "B_used": [
+        "passive",
+        "observation",
+        "watching",
+        "viewing",
+        "looking",
+        "seeing",
+        "noticing",
+        "waiting",
+        "staying",
+        "static",
+        "still",
+        "idle",
+        "inactive",
+        "unchanging",
+        "detached"
+      ]
+    },
+    "proposal": "People associate voyagers with agency more strongly than they associate voyeurs with agency. This differential implicit association would reveal whether the mental representation of active movement and exploration (voyagers, travelers, pilgrims, wanderers, nomads, explorers, pioneers, adventurers, wayfarers, sojourners, globetrotters, emigrants, exiles, fugitives, rangers) is inherently linked to personal efficacy and causal power, whereas passive observation or scrutiny (voyeurs, lurkers, stalkers, spies, watchers, spectators, onlookers, witnesses, observers, inspectors, informants, perverts, creepers, censors, auditors) is mentally framed as derivative, static, or lacking in direct impact. Examining this is novel and relevant to contemporary discourses on surveillance culture and 'passenger' mentality, where the value of witnessing is often subordinated to the heroism of doing or going. Confirming this association would shift our understanding of how agency is linguistically and cognitively reserved for actors who physically traverse space rather than those who monitor it.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "cf32de839249",
     "timestamp": "2026-07-30T13:06:04.345995+00:00",
     "schema_version": "autoresearch.v1",
