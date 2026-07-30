@@ -1,5 +1,111 @@
 [
   {
+    "id": "597d1b0dc40c",
+    "timestamp": "2026-07-30T16:44:23.904786+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Hunters vs Fishermen on behavioral dynamism (active pursuit vs passive waiting)",
+    "labels": {
+      "X": "Hunters",
+      "Y": "Fishermen",
+      "A": "active pursuit",
+      "B": "passive waiting"
+    },
+    "canonical_keys": {
+      "X": "hunters",
+      "Y": "fishermen",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 1.5071483654823945,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "hunter",
+        "huntsman",
+        "tracker",
+        "stalker",
+        "trapper",
+        "marksman",
+        "poacher",
+        "gamekeeper",
+        "scout",
+        "ranger",
+        "woodsman",
+        "archer",
+        "bowman",
+        "rifleman",
+        "spearman"
+      ],
+      "Y_used": [
+        "fisherman",
+        "angler",
+        "fisher",
+        "skipper",
+        "boatman",
+        "sailor",
+        "seaman",
+        "deckhand",
+        "crabber",
+        "lobsterman",
+        "shrimper",
+        "captain",
+        "oarsman",
+        "waterman",
+        "trawler"
+      ],
+      "A_used": [
+        "chase",
+        "pursuit",
+        "stalk",
+        "track",
+        "pursue",
+        "run",
+        "sprint",
+        "dash",
+        "rush",
+        "charge",
+        "attack",
+        "confront",
+        "seek",
+        "follow",
+        "trail"
+      ],
+      "B_used": [
+        "wait",
+        "passive",
+        "still",
+        "sit",
+        "stay",
+        "rest",
+        "idle",
+        "pause",
+        "linger",
+        "drift",
+        "hover",
+        "float",
+        "steady",
+        "calm",
+        "quiet"
+      ]
+    },
+    "proposal": "People associate Hunters with pursuit more strongly than they associate Fishermen with pursuit. While both categories involve procuring animals, cultural representations and common discourse frame hunting as an active, kinetic chase characterized by stalking, tracking, and direct confrontation, whereas fishing is often conceptualized through passive or distal mechanisms like waiting, casting, setting nets, or using traps. Probing this differential implicit association reveals how mental models of agency and risk are differentially encoded in foraging roles, suggesting that even within similar subsistence activities, the land-based/water-based distinction shapes perceptions of behavioral dynamism in ways that have not been systematically examined.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "1069f5c85e37",
     "timestamp": "2026-07-30T15:53:52.659457+00:00",
     "schema_version": "autoresearch.v1",
