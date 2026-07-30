@@ -1,5 +1,111 @@
 [
   {
+    "id": "328e0badcd33",
+    "timestamp": "2026-07-30T22:15:19.235343+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "activists vs organizers on spontaneity versus planning",
+    "labels": {
+      "X": "activists",
+      "Y": "organizers",
+      "A": "emotional spontaneity",
+      "B": "deliberate planning"
+    },
+    "canonical_keys": {
+      "X": "activists",
+      "Y": "organizers",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 1.2228734365680118,
+    "p_value": 0.00049,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "activist",
+        "protester",
+        "campaigner",
+        "advocate",
+        "demonstrator",
+        "revolutionary",
+        "reformer",
+        "dissident",
+        "crusader",
+        "rebel",
+        "agitator",
+        "partisan",
+        "militant",
+        "lobbyist",
+        "petitioner"
+      ],
+      "Y_used": [
+        "organizer",
+        "planner",
+        "coordinator",
+        "director",
+        "manager",
+        "administrator",
+        "strategist",
+        "scheduler",
+        "arranger",
+        "facilitator",
+        "conductor",
+        "supervisor",
+        "moderator",
+        "chairperson",
+        "secretary"
+      ],
+      "A_used": [
+        "spontaneous",
+        "passionate",
+        "impulsive",
+        "emotional",
+        "fiery",
+        "chaotic",
+        "intuitive",
+        "instinctive",
+        "erratic",
+        "volatile",
+        "expressive",
+        "visceral",
+        "impromptu",
+        "wild",
+        "fervent"
+      ],
+      "B_used": [
+        "planned",
+        "strategic",
+        "orderly",
+        "logical",
+        "structured",
+        "methodical",
+        "deliberate",
+        "systematic",
+        "calculated",
+        "organized",
+        "rational",
+        "disciplined",
+        "measured",
+        "precise",
+        "careful"
+      ]
+    },
+    "proposal": "People associate activists with emotional spontaneity more strongly than they associate organizers with emotional spontaneity. While movement scholars note a longstanding tension between the romanticized, passionate protester and the pragmatic, strategic planner, this specific implicit bias has not been systematically measured. Examining it is interesting because contemporary public discourse often elevates visible, emotionally charged action over behind-the-scenes coordination, potentially reflecting deeper cultural preferences for visceral engagement. This association matters because if the public unconsciously links social change more tightly with spontaneity than with deliberate organization, it could undermine support for sustained, structural campaigns in favor of fleeting, attention-grabbing protests.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "597d1b0dc40c",
     "timestamp": "2026-07-30T16:44:23.904786+00:00",
     "schema_version": "autoresearch.v1",
