@@ -1,5 +1,111 @@
 [
   {
+    "id": "b16ce35c66cc",
+    "timestamp": "2026-07-30T11:38:11.902514+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Journalists vs Veterans on skepticism vs trust",
+    "labels": {
+      "X": "Journalists",
+      "Y": "Veterans",
+      "A": "skepticism",
+      "B": "trust"
+    },
+    "canonical_keys": {
+      "X": "journalists",
+      "Y": "veterans",
+      "A": "skepticism",
+      "B": "trust"
+    },
+    "effect_size": 1.2546640582788207,
+    "p_value": 0.0001,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "reporter",
+        "journalist",
+        "editor",
+        "columnist",
+        "broadcaster",
+        "anchor",
+        "correspondent",
+        "publisher",
+        "interviewer",
+        "commentator",
+        "producer",
+        "writer",
+        "photographer",
+        "stringer",
+        "host"
+      ],
+      "Y_used": [
+        "veteran",
+        "soldier",
+        "marine",
+        "sailor",
+        "airman",
+        "general",
+        "officer",
+        "sergeant",
+        "corporal",
+        "private",
+        "warrior",
+        "fighter",
+        "trooper",
+        "ranger",
+        "enlistee"
+      ],
+      "A_used": [
+        "skeptical",
+        "doubt",
+        "question",
+        "suspect",
+        "uncertain",
+        "wary",
+        "distrust",
+        "cynical",
+        "suspicious",
+        "critical",
+        "interrogate",
+        "probe",
+        "investigate",
+        "verify",
+        "challenge"
+      ],
+      "B_used": [
+        "loyal",
+        "trust",
+        "faithful",
+        "obedient",
+        "devoted",
+        "committed",
+        "reliable",
+        "steady",
+        "dependable",
+        "compliant",
+        "allegiance",
+        "obedience",
+        "service",
+        "duty",
+        "honor"
+      ]
+    },
+    "proposal": "People associate journalists with skepticism more strongly than they associate veterans with skepticism. This differential implicit association captures the contrasting epistemic scripts embedded in public representations of these roles: journalists are culturally scripted as interrogators who doubt authority and probe for hidden truths, whereas veterans are scripted as loyal servants who trust the chain of command and prioritize execution over questioning. This comparison is novel, as prior work has contrasted journalists with politicians or scientists, and veterans with civilians or politicians, but has not examined the implicit link between these two distinct institutional roles on the axis of epistemic caution. Understanding this association is important because it may reveal how deep-seated mental models of these actors shape expectations about their functions in democracy, potentially biasing public reactions to whistleblowing, media oversight, or appeals for operational cohesion.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "36bdc87207f7",
     "timestamp": "2026-07-28T01:53:31.216418+00:00",
     "schema_version": "autoresearch.v1",
