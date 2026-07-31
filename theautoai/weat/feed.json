@@ -1,5 +1,116 @@
 [
   {
+    "id": "cc1aa8f3434e",
+    "timestamp": "2026-07-31T13:26:23.999608+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "informants vs witnesses on Neutrality vs Complicity",
+    "labels": {
+      "X": "informants",
+      "Y": "witnesses",
+      "A": "Neutrality",
+      "B": "Complicity"
+    },
+    "canonical_keys": {
+      "X": "informants",
+      "Y": "witnesses",
+      "A": "neutrality",
+      "B": "complicity"
+    },
+    "effect_size": -1.3362323204521398,
+    "p_value": 5e-05,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "informant",
+        "snitch",
+        "rat",
+        "stool",
+        "mole",
+        "spy",
+        "agent",
+        "asset",
+        "collaborator",
+        "defector",
+        "turncoat",
+        "undercover",
+        "source",
+        "tipster",
+        "insider",
+        "whistleblower",
+        "informer",
+        "infiltrator",
+        "operative",
+        "recruit"
+      ],
+      "Y_used": [
+        "witness",
+        "observer",
+        "bystander",
+        "spectator",
+        "onlooker",
+        "eyewitness",
+        "viewer",
+        "passerby",
+        "tourist",
+        "civilian",
+        "pedestrian",
+        "stranger",
+        "guest",
+        "attendee",
+        "listener"
+      ],
+      "A_used": [
+        "neutral",
+        "passive",
+        "objective",
+        "impartial",
+        "detached",
+        "uninvolved",
+        "innocent",
+        "calm",
+        "quiet",
+        "still",
+        "inactive",
+        "aloof",
+        "distant",
+        "removed",
+        "unbiased"
+      ],
+      "B_used": [
+        "complicit",
+        "guilty",
+        "traitorous",
+        "disloyal",
+        "conspiratorial",
+        "involved",
+        "active",
+        "betrayer",
+        "accomplice",
+        "accessory",
+        "conspirator",
+        "criminal",
+        "dishonest",
+        "treacherous",
+        "unfaithful"
+      ]
+    },
+    "proposal": "People associate informants with complicity more strongly than they associate witnesses with complicity. While both categories involve individuals who provide information to authorities, public discourse often frames witnesses as neutral or objective observers of events, whereas informants are frequently cast as active participants, 'snitches,' or co-conspirators who have betrayed their social group. This differential association is novel because prior research has typically examined informants against criminals or conspirators, rather than contrasting them with the distinct social role of the witness. It is important to examine this association because it reveals how the public morally distinguishes between the passive act of seeing and the active act of revealing, shedding light on the cognitive boundaries of loyalty and betrayal in legal and social contexts.",
+    "iterations": 3,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "62f16381d93f",
     "timestamp": "2026-07-31T12:28:11.937080+00:00",
     "schema_version": "autoresearch.v1",
