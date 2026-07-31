@@ -1,5 +1,111 @@
 [
   {
+    "id": "a3d9d6406bb1",
+    "timestamp": "2026-07-31T07:55:39.178476+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "coaches vs therapists on goal vs process orientation",
+    "labels": {
+      "X": "coaches",
+      "Y": "therapists",
+      "A": "goal-oriented",
+      "B": "process-oriented"
+    },
+    "canonical_keys": {
+      "X": "coaches",
+      "Y": "therapists",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 1.2046865417457555,
+    "p_value": 0.00046,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "coach",
+        "trainer",
+        "mentor",
+        "tutor",
+        "advisor",
+        "instructor",
+        "guide",
+        "teacher",
+        "consultant",
+        "strategist",
+        "director",
+        "captain",
+        "manager",
+        "boss",
+        "executive"
+      ],
+      "Y_used": [
+        "therapist",
+        "psychologist",
+        "counselor",
+        "psychiatrist",
+        "analyst",
+        "clinician",
+        "physician",
+        "doctor",
+        "healer",
+        "nurse",
+        "helper",
+        "advocate",
+        "practitioner",
+        "professional",
+        "expert"
+      ],
+      "A_used": [
+        "goal",
+        "target",
+        "outcome",
+        "result",
+        "aim",
+        "purpose",
+        "achieve",
+        "success",
+        "win",
+        "victory",
+        "triumph",
+        "accomplishment",
+        "objective",
+        "progress",
+        "milestone"
+      ],
+      "B_used": [
+        "process",
+        "heal",
+        "listen",
+        "empathy",
+        "feeling",
+        "emotion",
+        "trauma",
+        "past",
+        "history",
+        "reflection",
+        "understanding",
+        "insight",
+        "care",
+        "comfort",
+        "recovery"
+      ]
+    },
+    "proposal": "People associate coaches with goal-orientation more strongly than they associate therapists with goal-orientation. This differential implicit association has not been systematically examined despite the frequent public conflation of the two professions in wellness and organizational discourse. Probing this divide is interesting because it reveals whether cultural narratives implicitly cast therapeutic work as past- or process-focused, while reserving forward- and outcome-driven mental schemas for coaching. Confirming or disconfirming this bias would shift how we understand public expectations of mental health and performance industries, informing how both fields communicate their distinct values and navigate professional boundaries.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "00a2f3ef431a",
     "timestamp": "2026-07-31T06:20:46.447825+00:00",
     "schema_version": "autoresearch.v1",
