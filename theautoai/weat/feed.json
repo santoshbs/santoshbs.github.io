@@ -1,5 +1,111 @@
 [
   {
+    "id": "d309fa41fcf8",
+    "timestamp": "2026-07-31T00:50:07.079327+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "conservationists vs developers on ecological permanence vs impermanence",
+    "labels": {
+      "X": "conservationists",
+      "Y": "developers",
+      "A": "permanence",
+      "B": "impermanence"
+    },
+    "canonical_keys": {
+      "X": "conservationists",
+      "Y": "developers",
+      "A": "permanence",
+      "B": "impermanence"
+    },
+    "effect_size": -0.4365082853465622,
+    "p_value": 0.24362,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "conservationist",
+        "preservationist",
+        "environmentalist",
+        "ecologist",
+        "naturalist",
+        "ranger",
+        "steward",
+        "protector",
+        "guardian",
+        "warden",
+        "activist",
+        "advocate",
+        "forester",
+        "botanist",
+        "biologist"
+      ],
+      "Y_used": [
+        "developer",
+        "builder",
+        "contractor",
+        "architect",
+        "planner",
+        "entrepreneur",
+        "investor",
+        "speculator",
+        "broker",
+        "agent",
+        "engineer",
+        "landlord",
+        "magnate",
+        "tycoon",
+        "financier"
+      ],
+      "A_used": [
+        "permanent",
+        "stable",
+        "enduring",
+        "lasting",
+        "timeless",
+        "eternal",
+        "everlasting",
+        "sustainable",
+        "unchanging",
+        "fixed",
+        "secure",
+        "preserved",
+        "maintained",
+        "protected",
+        "conserved"
+      ],
+      "B_used": [
+        "transient",
+        "temporary",
+        "fleeting",
+        "ephemeral",
+        "changing",
+        "altering",
+        "destructive",
+        "demolishing",
+        "eroding",
+        "vanishing",
+        "disappearing",
+        "brief",
+        "momentary",
+        "unstable",
+        "fragile"
+      ]
+    },
+    "proposal": "People associate conservationists with ecological permanence more strongly than they associate developers with ecological permanence. While public discourse frequently frames environmental protection and land development as competing policy goals, systematic research has not examined whether these occupational categories carry differential implicit mental representations regarding the temporal stability of natural environments. Probing this association reveals how cognitive schemas link specific professional identities to notions of ecological endurance versus transient transformation. Confirming or disconfirming this bias would clarify why communities instinctively trust certain actors to safeguard landscapes across generations while viewing others as inherently oriented toward short-term utility, ultimately shedding light on the psychological foundations of urban expansion conflicts and conservation advocacy.",
+    "iterations": 3,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "328e0badcd33",
     "timestamp": "2026-07-30T22:15:19.235343+00:00",
     "schema_version": "autoresearch.v1",
