@@ -1,5 +1,111 @@
 [
   {
+    "id": "62f16381d93f",
+    "timestamp": "2026-07-31T12:28:11.937080+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "elderly vs children on moral responsibility for historical harms",
+    "labels": {
+      "X": "elderly",
+      "Y": "children",
+      "A": "culpability",
+      "B": "innocence"
+    },
+    "canonical_keys": {
+      "X": "elderly",
+      "Y": "children",
+      "A": "culpability",
+      "B": "innocence"
+    },
+    "effect_size": -0.2394802994694968,
+    "p_value": 0.52638,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "elderly",
+        "old",
+        "senior",
+        "aged",
+        "mature",
+        "veteran",
+        "elder",
+        "grandparent",
+        "grandmother",
+        "grandfather",
+        "retiree",
+        "pensioner",
+        "grandpa",
+        "grandma",
+        "granny"
+      ],
+      "Y_used": [
+        "children",
+        "child",
+        "kid",
+        "baby",
+        "toddler",
+        "infant",
+        "adolescent",
+        "teen",
+        "teenager",
+        "youth",
+        "youngster",
+        "juvenile",
+        "minor",
+        "preteen",
+        "newborn"
+      ],
+      "A_used": [
+        "guilty",
+        "blame",
+        "responsible",
+        "complicit",
+        "fault",
+        "liable",
+        "culpable",
+        "accountable",
+        "perpetrator",
+        "offender",
+        "wrongdoer",
+        "instigator",
+        "cause",
+        "creator",
+        "author"
+      ],
+      "B_used": [
+        "innocent",
+        "pure",
+        "blameless",
+        "clean",
+        "naive",
+        "untouched",
+        "guiltless",
+        "excused",
+        "forgiven",
+        "absolved",
+        "spotless",
+        "pristine",
+        "free",
+        "clear",
+        "untroubled"
+      ]
+    },
+    "proposal": "People associate elderly with historical complicity more strongly than they associate children with historical complicity. This proposal probes a novel intergenerational moral axis, predicting that implicit associations link older generations to responsibility for past systemic harms—such as environmental degradation, colonial legacies, or wealth extraction—while implicitly shielding youth from such historical accountability. Examining this association is relevant to contemporary discourses on intergenerational justice, climate debt, and 'Ok Boomer' rhetoric, revealing whether public mental representations implicitly burden the elderly with the moral weight of collective history. Confirming this bias would suggest that age-based stereotypes extend beyond competence or vitality into the realm of ethical culpability for long-term societal outcomes.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "a3d9d6406bb1",
     "timestamp": "2026-07-31T07:55:39.178476+00:00",
     "schema_version": "autoresearch.v1",
