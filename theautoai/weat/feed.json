@@ -1,5 +1,111 @@
 [
   {
+    "id": "9cdfa2281c33",
+    "timestamp": "2026-07-31T23:28:20.981284+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "teachers vs surgeons on tolerance for ambiguity vs need for certainty",
+    "labels": {
+      "X": "teachers",
+      "Y": "surgeons",
+      "A": "ambiguity tolerance",
+      "B": "need for certainty"
+    },
+    "canonical_keys": {
+      "X": "teachers",
+      "Y": "surgeons",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": -0.6331194220324727,
+    "p_value": 0.08708,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "teacher",
+        "educator",
+        "professor",
+        "instructor",
+        "tutor",
+        "principal",
+        "dean",
+        "lecturer",
+        "mentor",
+        "academic",
+        "pedagogue",
+        "trainer",
+        "adviser",
+        "coach",
+        "scholar"
+      ],
+      "Y_used": [
+        "surgeon",
+        "doctor",
+        "physician",
+        "medic",
+        "specialist",
+        "practitioner",
+        "clinician",
+        "anesthetist",
+        "orthopedist",
+        "cardiologist",
+        "dermatologist",
+        "pediatrician",
+        "internist",
+        "pathologist",
+        "radiologist"
+      ],
+      "A_used": [
+        "uncertain",
+        "ambiguous",
+        "open",
+        "flexible",
+        "tentative",
+        "exploratory",
+        "vague",
+        "unclear",
+        "questioning",
+        "inquiring",
+        "reflective",
+        "patient",
+        "thoughtful",
+        "adaptable",
+        "tolerant"
+      ],
+      "B_used": [
+        "certain",
+        "definite",
+        "clear",
+        "precise",
+        "exact",
+        "accurate",
+        "specific",
+        "explicit",
+        "unambiguous",
+        "concrete",
+        "factual",
+        "objective",
+        "logical",
+        "rational",
+        "decisive"
+      ]
+    },
+    "proposal": "People associate teachers with tolerance for ambiguity more strongly than they associate surgeons with tolerance for ambiguity. Contemporary cultural narratives depict surgical work as demanding decisive, binary action and procedural certainty, whereas teaching is routinely framed as requiring open-ended patience and comfort with unresolved, developmental processes. This implicit differential has not been systematically examined in social cognition research, which typically relies on broad warmth-competence metrics rather than role-specific epistemic styles. Investigating it matters because implicit beliefs about ambiguity tolerance shape professional valuation, hiring practices in hybrid educational-medical fields, and public expectations for how expertise should be performed under uncertainty.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "1723500a56ef",
     "timestamp": "2026-07-31T20:43:19.260561+00:00",
     "schema_version": "autoresearch.v1",
