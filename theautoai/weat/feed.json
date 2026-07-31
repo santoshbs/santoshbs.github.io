@@ -1,5 +1,111 @@
 [
   {
+    "id": "ef197af4dcaf",
+    "timestamp": "2026-07-31T19:02:14.080681+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "grievants vs petitioners on moral urgency versus procedural detachment",
+    "labels": {
+      "X": "grievants",
+      "Y": "petitioners",
+      "A": "moral urgency",
+      "B": "procedural detachment"
+    },
+    "canonical_keys": {
+      "X": "grievants",
+      "Y": "petitioners",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 0.13532695036008718,
+    "p_value": 0.72027,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "grievants",
+        "complainants",
+        "protesters",
+        "activists",
+        "demonstrators",
+        "agitators",
+        "informants",
+        "victims",
+        "plaintiffs",
+        "accusers",
+        "claimants",
+        "appellants",
+        "litigants",
+        "objectors",
+        "dissenters"
+      ],
+      "Y_used": [
+        "petitioners",
+        "applicants",
+        "requesters",
+        "supplicants",
+        "delegates",
+        "envoys",
+        "messengers",
+        "intermediaries",
+        "representatives",
+        "proxies",
+        "agents",
+        "brokers",
+        "negotiators",
+        "diplomats",
+        "ambassadors"
+      ],
+      "A_used": [
+        "urgent",
+        "pressing",
+        "critical",
+        "vital",
+        "emotional",
+        "passionate",
+        "heartfelt",
+        "dire",
+        "essential",
+        "crucial",
+        "intense",
+        "fervent",
+        "ardent",
+        "demanding",
+        "important"
+      ],
+      "B_used": [
+        "procedural",
+        "detached",
+        "formal",
+        "bureaucratic",
+        "routine",
+        "administrative",
+        "calm",
+        "neutral",
+        "systematic",
+        "methodical",
+        "organized",
+        "structured",
+        "official",
+        "standard",
+        "conventional"
+      ]
+    },
+    "proposal": "People associate grievants with moral urgency more strongly than they associate petitioners with moral urgency. This differential reflects how contemporary discourse frames direct complaints or protests as emotionally charged and existentially pressing, whereas formal petitions are seen as procedural and detached. Examining this implicit link matters because it reveals how institutional channels may be psychologically marginalized as lacking moral weight, which could undermine public trust in formal redress mechanisms. The association has not been systematically tested, making it a novel and policy-relevant target for implicit measurement.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "7ff98c8790af",
     "timestamp": "2026-07-31T18:12:14.045759+00:00",
     "schema_version": "autoresearch.v1",
