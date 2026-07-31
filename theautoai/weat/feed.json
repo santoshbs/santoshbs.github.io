@@ -1,5 +1,111 @@
 [
   {
+    "id": "e6d7e81070d0",
+    "timestamp": "2026-07-31T02:58:10.652573+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "conservatives vs progressives on Cynicism vs Idealism",
+    "labels": {
+      "X": "conservatives",
+      "Y": "progressives",
+      "A": "Cynicism",
+      "B": "Idealism"
+    },
+    "canonical_keys": {
+      "X": "conservatives",
+      "Y": "progressives",
+      "A": "cynicism",
+      "B": "idealism"
+    },
+    "effect_size": 0.7520063543933359,
+    "p_value": 0.03929,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "conservative",
+        "republican",
+        "right",
+        "rightist",
+        "traditionalist",
+        "libertarian",
+        "paleo",
+        "reaction",
+        "rightwing",
+        "moderate",
+        "centrist",
+        "nationalist",
+        "protectionist",
+        "orthodox",
+        "establishment"
+      ],
+      "Y_used": [
+        "progressive",
+        "liberal",
+        "left",
+        "leftist",
+        "democrat",
+        "socialist",
+        "reformist",
+        "activist",
+        "egalitarian",
+        "radical",
+        "vanguard",
+        "communist",
+        "populist",
+        "progressives",
+        "liberals"
+      ],
+      "A_used": [
+        "cynical",
+        "distrust",
+        "suspicion",
+        "skeptical",
+        "pessimistic",
+        "jaded",
+        "disillusioned",
+        "mistrust",
+        "doubt",
+        "wary",
+        "suspicious",
+        "cynicism",
+        "skepticism",
+        "pessimism",
+        "cynic"
+      ],
+      "B_used": [
+        "idealistic",
+        "optimistic",
+        "hopeful",
+        "naive",
+        "utopian",
+        "visionary",
+        "belief",
+        "faith",
+        "trust",
+        "positive",
+        "enthusiastic",
+        "inspired",
+        "altruistic",
+        "idealism",
+        "altruism"
+      ]
+    },
+    "proposal": "People associate conservatives with cynicism more strongly than they associate progressives with cynicism. This differential association stems from contemporary political narratives that frame conservative ideology as fundamentally skeptical of institutions, authority, and utopian social engineering, whereas progressive movements are often characterized by idealism, faith in collective action, and optimism about systemic transformation. Examining this implicit bias is novel because prior research has focused on explicit partisan stereotypes (e.g., warmth vs. competence) but has not measured the subconscious linkage between political identities and underlying cognitive orientations like cynicism. This matters because such implicit associations may shape how individuals process political rhetoric, evaluate policy proposals, and perceive the motivations of their ideological opponents in an increasingly polarized information environment.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "f403fb5e51ca",
     "timestamp": "2026-07-31T01:56:46.906997+00:00",
     "schema_version": "autoresearch.v1",
