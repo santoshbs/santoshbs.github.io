@@ -1,5 +1,111 @@
 [
   {
+    "id": "0b96127adcaa",
+    "timestamp": "2026-08-01T13:07:14.415829+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Criminals vs Heroes on moral complexity vs clarity",
+    "labels": {
+      "X": "Criminals",
+      "Y": "Heroes",
+      "A": "moral complexity",
+      "B": "moral clarity"
+    },
+    "canonical_keys": {
+      "X": "criminals",
+      "Y": "heroes",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 1.2164700641015185,
+    "p_value": 0.00026,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "criminal",
+        "felon",
+        "convict",
+        "thief",
+        "robber",
+        "burglar",
+        "outlaw",
+        "bandit",
+        "crook",
+        "hooligan",
+        "thug",
+        "hoodlum",
+        "gangster",
+        "smuggler",
+        "hijacker"
+      ],
+      "Y_used": [
+        "hero",
+        "champion",
+        "victor",
+        "savior",
+        "guardian",
+        "protector",
+        "defender",
+        "liberator",
+        "martyr",
+        "saint",
+        "legend",
+        "idol",
+        "paragon",
+        "exemplar",
+        "crusader"
+      ],
+      "A_used": [
+        "complex",
+        "ambiguous",
+        "nuanced",
+        "shady",
+        "murky",
+        "questionable",
+        "dubious",
+        "controversial",
+        "paradoxical",
+        "contradictory",
+        "ambivalent",
+        "equivocal",
+        "complicated",
+        "multifaceted",
+        "subtle"
+      ],
+      "B_used": [
+        "simple",
+        "clear",
+        "pure",
+        "virtuous",
+        "righteous",
+        "innocent",
+        "noble",
+        "honorable",
+        "good",
+        "just",
+        "fair",
+        "honest",
+        "transparent",
+        "straightforward",
+        "unambiguous"
+      ]
+    },
+    "proposal": "People associate Criminals with moral complexity more strongly than they associate Heroes with moral complexity. While Heroes are culturally scripted as paragons of clear virtue, contemporary discourse increasingly frames Criminals—especially in the 'anti-hero' tradition—as figures of nuanced motivation, psychological depth, and gray-area morality. This association matters because it may reveal an implicit bias where moral ambiguity is privileged as a marker of sophistication or realism, potentially elevating the perceived humanity of transgressors over the perceived one-dimensionality of virtuous actors. The categories satisfy the vocabulary constraint: Criminals include terms like felon, offender, convict, inmate, jailbird, crook, thug, hoodlum, ruffian, miscreant, malefactor, wrongdoer, lawbreaker, outlaw, and bandit; Heroes include terms like champion, victor, paragon, exemplar, savior, redeemer, guardian, protector, defender, liberator, martyr, saint, icon, idol, and legend.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "c26f10de9319",
     "timestamp": "2026-08-01T11:35:14.955311+00:00",
     "schema_version": "autoresearch.v1",
