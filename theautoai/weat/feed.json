@@ -1,5 +1,111 @@
 [
   {
+    "id": "b56e8aa9c8ae",
+    "timestamp": "2026-08-01T14:26:52.374181+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "workers vs peasants on progress vs stagnation",
+    "labels": {
+      "X": "workers",
+      "Y": "peasants",
+      "A": "progress",
+      "B": "stagnation"
+    },
+    "canonical_keys": {
+      "X": "workers",
+      "Y": "peasants",
+      "A": "progress",
+      "B": "stagnation"
+    },
+    "effect_size": 1.334077535037789,
+    "p_value": 0.00013,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "worker",
+        "laborer",
+        "employee",
+        "technician",
+        "operator",
+        "mechanic",
+        "engineer",
+        "professional",
+        "clerk",
+        "assistant",
+        "manager",
+        "supervisor",
+        "executive",
+        "intern",
+        "apprentice"
+      ],
+      "Y_used": [
+        "peasant",
+        "farmer",
+        "cultivator",
+        "tiller",
+        "cropper",
+        "planter",
+        "grower",
+        "sower",
+        "harvester",
+        "villager",
+        "tenant",
+        "sharecropper",
+        "stockman",
+        "rancher",
+        "herder"
+      ],
+      "A_used": [
+        "progress",
+        "advancement",
+        "development",
+        "future",
+        "modern",
+        "innovation",
+        "growth",
+        "dynamic",
+        "forward",
+        "contemporary",
+        "evolving",
+        "sophisticated",
+        "technology",
+        "improvement",
+        "prosperity"
+      ],
+      "B_used": [
+        "stagnation",
+        "tradition",
+        "past",
+        "backward",
+        "static",
+        "historical",
+        "conservative",
+        "unchanged",
+        "primitive",
+        "legacy",
+        "outdated",
+        "archaic",
+        "conventional",
+        "routine",
+        "residual"
+      ]
+    },
+    "proposal": "People associate workers with progress more strongly than they associate peasants with progress. This differential implicit association captures a latent bias favoring industrial wage labor over agrarian subsistence or smallholder livelihoods, reflecting modernization narratives that position factory or urban labor as the engine of societal advancement while framing peasant life as static, traditional, or residual. Examining this axis is novel because implicit measures have yet to probe the worker-peasant dichotomy directly, distinguishing it from broader farmer or rural stereotypes found in prior research. Confirming this association would highlight how contemporary mental representations may systematically devalue rural class positions and privilege industrial actors in discourse about development and future orientation.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "0b96127adcaa",
     "timestamp": "2026-08-01T13:07:14.415829+00:00",
     "schema_version": "autoresearch.v1",
