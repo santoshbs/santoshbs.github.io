@@ -1,5 +1,111 @@
 [
   {
+    "id": "0498e6c050b2",
+    "timestamp": "2026-08-01T02:19:51.438810+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "urbanites vs ruralites on Innovation vs Tradition",
+    "labels": {
+      "X": "urbanites",
+      "Y": "ruralites",
+      "A": "Innovation",
+      "B": "Tradition"
+    },
+    "canonical_keys": {
+      "X": "urbanites",
+      "Y": "ruralites",
+      "A": "innovation",
+      "B": "tradition"
+    },
+    "effect_size": 0.07656377861356259,
+    "p_value": 0.84119,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "urbanites",
+        "townies",
+        "metropolitans",
+        "cosmopolitans",
+        "townsmen",
+        "inhabitants",
+        "cityfolk",
+        "suburbanites",
+        "commuters",
+        "pedestrians",
+        "residents",
+        "citizens",
+        "dwellers",
+        "locals",
+        "natives"
+      ],
+      "Y_used": [
+        "ruralites",
+        "farmers",
+        "villagers",
+        "countrymen",
+        "agrarians",
+        "ranchers",
+        "stockmen",
+        "herders",
+        "crofters",
+        "peasants",
+        "settlers",
+        "frontiersmen",
+        "trappers",
+        "cowboys",
+        "pioneers"
+      ],
+      "A_used": [
+        "innovation",
+        "creative",
+        "modern",
+        "progressive",
+        "technological",
+        "advanced",
+        "forward",
+        "futuristic",
+        "inventive",
+        "original",
+        "novel",
+        "fresh",
+        "dynamic",
+        "change",
+        "vanguard"
+      ],
+      "B_used": [
+        "tradition",
+        "conservative",
+        "routine",
+        "custom",
+        "old",
+        "past",
+        "history",
+        "steady",
+        "reliable",
+        "secure",
+        "constant",
+        "enduring",
+        "legacy",
+        "static",
+        "ancient"
+      ]
+    },
+    "proposal": "People associate urbanites with innovation more strongly than they associate ruralites with innovation. This differential implicit association remains unexamined despite extensive literature on urban-rural economic and infrastructural divides, leaving a gap in how geographic identity becomes cognitively fused with perceptions of creative agency and progress. It is substantively interesting because it reveals whether spatial residence operates as a subtle proxy for forward-thinkingness in public mental models. Confirming or disconfirming this link matters for regional policy and media framing, as an ingrained urban-innovation bias could systematically marginalize nonmetropolitan actors in narratives about technological adoption, entrepreneurial risk, and societal advancement.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "9cdfa2281c33",
     "timestamp": "2026-07-31T23:28:20.981284+00:00",
     "schema_version": "autoresearch.v1",
