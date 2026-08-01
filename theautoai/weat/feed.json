@@ -1,5 +1,111 @@
 [
   {
+    "id": "9ecdea7055fc",
+    "timestamp": "2026-08-01T22:58:29.882523+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "mediators vs arbitrators on adaptability vs rigidity",
+    "labels": {
+      "X": "mediators",
+      "Y": "arbitrators",
+      "A": "adaptability",
+      "B": "rigidity"
+    },
+    "canonical_keys": {
+      "X": "mediators",
+      "Y": "arbitrators",
+      "A": "adaptability",
+      "B": "rigidity"
+    },
+    "effect_size": 1.1573488336952933,
+    "p_value": 0.00063,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "mediator",
+        "conciliator",
+        "facilitator",
+        "negotiator",
+        "intermediary",
+        "liaison",
+        "moderator",
+        "reconciler",
+        "peacemaker",
+        "envoy",
+        "diplomat",
+        "representative",
+        "broker",
+        "adjuster",
+        "advisor"
+      ],
+      "Y_used": [
+        "arbitrator",
+        "judge",
+        "referee",
+        "umpire",
+        "adjudicator",
+        "magistrate",
+        "jurist",
+        "juror",
+        "assessor",
+        "evaluator",
+        "presider",
+        "chairman",
+        "official",
+        "authority",
+        "enforcer"
+      ],
+      "A_used": [
+        "adaptable",
+        "flexible",
+        "versatile",
+        "malleable",
+        "pliable",
+        "adjustable",
+        "elastic",
+        "fluid",
+        "dynamic",
+        "agile",
+        "responsive",
+        "adapting",
+        "flexibility",
+        "adaptability",
+        "versatility"
+      ],
+      "B_used": [
+        "rigid",
+        "fixed",
+        "unyielding",
+        "inflexible",
+        "stiff",
+        "static",
+        "permanent",
+        "stable",
+        "constant",
+        "rigidity",
+        "stability",
+        "firm",
+        "set",
+        "locked",
+        "immovable"
+      ]
+    },
+    "proposal": "People associate mediators with adaptability more strongly than they associate arbitrators with adaptability. Although both groups resolve conflicts, mediators facilitate negotiated settlements requiring flexible adjustment to parties' evolving interests, while arbitrators render binding judgments based on fixed rules and precedent. Probing this implicit association is novel, as prior research emphasizes procedural differences rather than the mental representation of the actors' personal attributes. This distinction is important because implicit beliefs about adaptability may influence public trust and the perceived legitimacy of these mechanisms when disputes lack clear-cut solutions.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "51536aa93075",
     "timestamp": "2026-08-01T15:55:15.416102+00:00",
     "schema_version": "autoresearch.v1",
