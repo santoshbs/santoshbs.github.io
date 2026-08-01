@@ -1,5 +1,115 @@
 [
   {
+    "id": "dc1816f6b363",
+    "timestamp": "2026-08-01T08:47:35.553017+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "bourgeoisie vs aristocrats on status anxiety versus psychological security",
+    "labels": {
+      "X": "bourgeoisie",
+      "Y": "aristocrats",
+      "A": "Anxiety",
+      "B": "Security"
+    },
+    "canonical_keys": {
+      "X": "bourgeoisie",
+      "Y": "aristocrats",
+      "A": "anxiety",
+      "B": "security"
+    },
+    "effect_size": 0.7724260662157733,
+    "p_value": 0.02957,
+    "n": {
+      "X": 16,
+      "Y": 16,
+      "A": 16,
+      "B": 16
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "bourgeois",
+        "businessman",
+        "merchant",
+        "capitalist",
+        "entrepreneur",
+        "shopkeeper",
+        "trader",
+        "executive",
+        "financier",
+        "manager",
+        "banker",
+        "broker",
+        "dealer",
+        "industrialist",
+        "tycoon",
+        "mogul"
+      ],
+      "Y_used": [
+        "aristocrat",
+        "noble",
+        "duke",
+        "duchess",
+        "earl",
+        "count",
+        "countess",
+        "lord",
+        "lady",
+        "baron",
+        "baroness",
+        "prince",
+        "princess",
+        "king",
+        "queen",
+        "peer"
+      ],
+      "A_used": [
+        "anxious",
+        "worried",
+        "nervous",
+        "insecure",
+        "tense",
+        "fearful",
+        "apprehensive",
+        "stressed",
+        "panicked",
+        "uneasy",
+        "jittery",
+        "frantic",
+        "desperate",
+        "precarious",
+        "vulnerable",
+        "unstable"
+      ],
+      "B_used": [
+        "secure",
+        "safe",
+        "stable",
+        "relaxed",
+        "calm",
+        "peaceful",
+        "detached",
+        "confident",
+        "carefree",
+        "serene",
+        "tranquil",
+        "composed",
+        "assured",
+        "unruffled",
+        "undisturbed",
+        "placid"
+      ]
+    },
+    "proposal": "people associate bourgeoisie with status anxiety more strongly than they associate aristocrats with status anxiety. This differential implicit association reflects contemporary cultural narratives that frame inherited elite status as psychologically secure and detached, while portraying market-dependent commercial wealth as perpetually precarious and fraught with social comparison. Examining this association is novel because class psychology research has largely focused on explicit attitudes toward economic inequality rather than implicit emotional stereotypes tied to wealth origin. It matters because such implicit links may shape public sympathy, policy preferences regarding taxation or welfare, and how different classes are represented in media and political rhetoric.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "0498e6c050b2",
     "timestamp": "2026-08-01T02:19:51.438810+00:00",
     "schema_version": "autoresearch.v1",
