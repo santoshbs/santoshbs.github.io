@@ -1,5 +1,115 @@
 [
   {
+    "id": "51536aa93075",
+    "timestamp": "2026-08-01T15:55:15.416102+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "economists vs ecologists on practicality versus idealism",
+    "labels": {
+      "X": "economists",
+      "Y": "ecologists",
+      "A": "Pragmatic",
+      "B": "Idealistic"
+    },
+    "canonical_keys": {
+      "X": "economists",
+      "Y": "ecologists",
+      "A": "pragmatic",
+      "B": "idealistic"
+    },
+    "effect_size": 1.4811670335537483,
+    "p_value": 0.0,
+    "n": {
+      "X": 16,
+      "Y": 16,
+      "A": 16,
+      "B": 16
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "economist",
+        "financier",
+        "banker",
+        "trader",
+        "investor",
+        "accountant",
+        "auditor",
+        "broker",
+        "analyst",
+        "entrepreneur",
+        "capitalist",
+        "merchant",
+        "comptroller",
+        "underwriter",
+        "consultant",
+        "director"
+      ],
+      "Y_used": [
+        "ecologist",
+        "biologist",
+        "environmentalist",
+        "naturalist",
+        "conservationist",
+        "zoologist",
+        "botanist",
+        "ornithologist",
+        "mycologist",
+        "entomologist",
+        "paleontologist",
+        "hydrologist",
+        "climatologist",
+        "geologist",
+        "arborist",
+        "preservationist"
+      ],
+      "A_used": [
+        "practical",
+        "pragmatic",
+        "realistic",
+        "concrete",
+        "applicable",
+        "useful",
+        "functional",
+        "workable",
+        "sensible",
+        "viable",
+        "feasible",
+        "operational",
+        "grounded",
+        "efficient",
+        "productive",
+        "utilitarian"
+      ],
+      "B_used": [
+        "idealistic",
+        "ideal",
+        "visionary",
+        "aspirational",
+        "utopian",
+        "romantic",
+        "theoretical",
+        "abstract",
+        "philosophical",
+        "principled",
+        "ethical",
+        "pure",
+        "noble",
+        "altruistic",
+        "dreamy",
+        "fanciful"
+      ]
+    },
+    "proposal": "People associate economists with practicality more strongly than they associate ecologists with practicality. This differential implicit association captures a pervasive cultural narrative that frames economic professionals as grounded in market realities and actionable constraints, while casting environmental scientists as motivated by preservationist or idealistic principles. Examining this mapping is novel because implicit measures have not yet tested how disciplinary identities are automatically linked to pragmatic versus idealistic poles. Confirming or disconfirming this association would illuminate how deeply the perceived growth-versus-sustainability divide is embedded in public cognition, with direct implications for interdisciplinary collaboration and climate policy communication.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "b56e8aa9c8ae",
     "timestamp": "2026-08-01T14:26:52.374181+00:00",
     "schema_version": "autoresearch.v1",
