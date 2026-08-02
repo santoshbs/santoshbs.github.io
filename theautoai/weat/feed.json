@@ -1,5 +1,111 @@
 [
   {
+    "id": "a861afe599f8",
+    "timestamp": "2026-08-02T10:04:21.548083+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "coders vs designers on pragmatic restraint vs creative expression",
+    "labels": {
+      "X": "coders",
+      "Y": "designers",
+      "A": "pragmatic restraint",
+      "B": "creative expression"
+    },
+    "canonical_keys": {
+      "X": "coders",
+      "Y": "designers",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 1.6675833300106608,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "programmer",
+        "developer",
+        "engineer",
+        "technician",
+        "specialist",
+        "operator",
+        "architect",
+        "builder",
+        "analyst",
+        "mechanic",
+        "hacker",
+        "coder",
+        "writer",
+        "debugger",
+        "worker"
+      ],
+      "Y_used": [
+        "artist",
+        "creator",
+        "designer",
+        "painter",
+        "sculptor",
+        "illustrator",
+        "stylist",
+        "maker",
+        "innovator",
+        "dreamer",
+        "decorator",
+        "planner",
+        "director",
+        "composer",
+        "artisan"
+      ],
+      "A_used": [
+        "practical",
+        "logical",
+        "functional",
+        "systematic",
+        "restrained",
+        "analytical",
+        "technical",
+        "efficient",
+        "methodical",
+        "structured",
+        "precise",
+        "rational",
+        "utilitarian",
+        "objective",
+        "concrete"
+      ],
+      "B_used": [
+        "creative",
+        "visionary",
+        "expressive",
+        "artistic",
+        "imaginative",
+        "aesthetic",
+        "intuitive",
+        "emotional",
+        "original",
+        "inspired",
+        "whimsical",
+        "flamboyant",
+        "colorful",
+        "passionate",
+        "dreamy"
+      ]
+    },
+    "proposal": "People associate coders with pragmatic restraint more strongly than they associate designers with pragmatic restraint. Contemporary tech culture routinely romanticizes designers as visionary, boundary-pushing, and emotionally expressive, while implicitly casting coders as constrained by system limitations, debugging imperatives, and functional necessity. This differential association is novel because it captures a latent epistemic stereotype that has not been systematically measured, challenging managerial narratives that often reverse these traits in formal training contexts. Examining this gap is important because it reveals how public intuition mentally maps technical feasibility onto creative limitation, which may partly explain why engineering labor remains structurally undervalued in innovation storytelling despite enforcing the strict operational boundaries that make digital products viable.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "ab8b1a87dae9",
     "timestamp": "2026-08-02T07:51:56.557976+00:00",
     "schema_version": "autoresearch.v1",
