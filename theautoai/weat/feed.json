@@ -1,5 +1,111 @@
 [
   {
+    "id": "e6f2dd64e409",
+    "timestamp": "2026-08-02T01:16:01.687420+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "activists vs diplomats on confrontation versus conciliation",
+    "labels": {
+      "X": "activists",
+      "Y": "diplomats",
+      "A": "confrontation",
+      "B": "conciliation"
+    },
+    "canonical_keys": {
+      "X": "activists",
+      "Y": "diplomats",
+      "A": "confrontation",
+      "B": "conciliation"
+    },
+    "effect_size": 1.367308960717307,
+    "p_value": 3e-05,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "activist",
+        "protester",
+        "demonstrator",
+        "rebel",
+        "dissident",
+        "campaigner",
+        "organizer",
+        "advocate",
+        "crusader",
+        "agitator",
+        "revolutionary",
+        "reformer",
+        "insurgent",
+        "petitioner",
+        "mover"
+      ],
+      "Y_used": [
+        "diplomat",
+        "ambassador",
+        "envoy",
+        "consul",
+        "negotiator",
+        "emissary",
+        "representative",
+        "liaison",
+        "minister",
+        "official",
+        "statesman",
+        "mediator",
+        "peacemaker",
+        "delegate",
+        "counselor"
+      ],
+      "A_used": [
+        "confrontational",
+        "aggressive",
+        "hostile",
+        "combative",
+        "adversarial",
+        "belligerent",
+        "disruptive",
+        "violent",
+        "contentious",
+        "unruly",
+        "rebellious",
+        "threatening",
+        "coercive",
+        "intimidating",
+        "abrasive"
+      ],
+      "B_used": [
+        "conciliatory",
+        "cooperative",
+        "diplomatic",
+        "peaceful",
+        "constructive",
+        "collaborative",
+        "amicable",
+        "agreeable",
+        "harmonious",
+        "negotiable",
+        "compromise",
+        "respectful",
+        "courteous",
+        "civil",
+        "polite"
+      ]
+    },
+    "proposal": "People associate activists with confrontation more strongly than they associate diplomats with confrontation. This differential implicit association reflects contemporary political discourse that frames grassroots mobilization as inherently disruptive and adversarial, while casting state-level negotiation as inherently conciliatory and procedural. Examining this bias matters because it may shape public tolerance for civil disobedience versus backchannel negotiations, revealing whether democratic participation is mentally coded as aggressive rather than constructive. The finding would be novel as prior implicit association research has focused on gendered or racialized trait mappings, neglecting how civic roles are stereotyped along an aggression-versus-diplomacy axis.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "76ae56386f36",
     "timestamp": "2026-08-01T23:42:14.226407+00:00",
     "schema_version": "autoresearch.v1",
