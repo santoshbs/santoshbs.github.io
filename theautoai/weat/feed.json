@@ -1,5 +1,111 @@
 [
   {
+    "id": "9c4f633767b1",
+    "timestamp": "2026-08-02T23:57:18.554373+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Veterans vs Soldiers on moral authority vs obedience and execution",
+    "labels": {
+      "X": "Veterans",
+      "Y": "Soldiers",
+      "A": "Moral Authority",
+      "B": "Obedience and Execution"
+    },
+    "canonical_keys": {
+      "X": "veterans",
+      "Y": "soldiers",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 0.9432554545365246,
+    "p_value": 0.00921,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "veteran",
+        "retiree",
+        "pensioner",
+        "senior",
+        "elder",
+        "patriot",
+        "defender",
+        "liberator",
+        "hero",
+        "champion",
+        "survivor",
+        "discharged",
+        "retired",
+        "former",
+        "veterans"
+      ],
+      "Y_used": [
+        "soldier",
+        "infantryman",
+        "marine",
+        "sailor",
+        "airman",
+        "trooper",
+        "recruit",
+        "cadet",
+        "private",
+        "corporal",
+        "sergeant",
+        "lieutenant",
+        "captain",
+        "major",
+        "general"
+      ],
+      "A_used": [
+        "honor",
+        "respect",
+        "credibility",
+        "authority",
+        "legitimacy",
+        "wisdom",
+        "voice",
+        "witness",
+        "judge",
+        "integrity",
+        "dignity",
+        "truth",
+        "advocate",
+        "leader",
+        "conscience"
+      ],
+      "B_used": [
+        "obey",
+        "follow",
+        "execute",
+        "subordinate",
+        "tool",
+        "pawn",
+        "follower",
+        "worker",
+        "duty",
+        "order",
+        "command",
+        "instrument",
+        "agent",
+        "enforcer",
+        "operative"
+      ]
+    },
+    "proposal": "People associate Veterans with moral authority more strongly than they associate Soldiers with moral authority. This differential association reflects a pervasive cultural script in which the retired combatant is granted a privileged voice as a legitimate witness and ethical judge of state affairs, whereas the active combatant is mentally represented primarily as an instrument of policy execution bound by obedience. While social psychology has extensively examined implicit biases regarding the military as a monolithic group compared to civilians, the implicit distinction between the veteran and the soldier remains unprobed, despite the central role of 'veteran status' in contemporary political discourse, fundraising rhetoric, and media narratives that invoke the veteran's moral standing to validate or delegitimize viewpoints. Confirming this association would reveal how temporal distance from conflict is implicitly linked to moral credibility, potentially illuminating why veterans are often positioned as arbiters of truth while active service members are socially encouraged to remain silent or strictly professional.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "b59f2cf7f099",
     "timestamp": "2026-08-02T23:16:18.731521+00:00",
     "schema_version": "autoresearch.v1",
