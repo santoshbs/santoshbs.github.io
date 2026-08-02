@@ -1,5 +1,115 @@
 [
   {
+    "id": "b59f2cf7f099",
+    "timestamp": "2026-08-02T23:16:18.731521+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "detectives vs spies on moral valence",
+    "labels": {
+      "X": "detectives",
+      "Y": "spies",
+      "A": "altruism",
+      "B": "egoism"
+    },
+    "canonical_keys": {
+      "X": "detectives",
+      "Y": "spies",
+      "A": "altruism",
+      "B": "egoism"
+    },
+    "effect_size": 0.19495113357151195,
+    "p_value": 0.59703,
+    "n": {
+      "X": 16,
+      "Y": 16,
+      "A": 16,
+      "B": 16
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "detective",
+        "sleuth",
+        "investigator",
+        "inspector",
+        "gumshoe",
+        "officer",
+        "marshal",
+        "constable",
+        "commissioner",
+        "chief",
+        "deputy",
+        "bailiff",
+        "trooper",
+        "ranger",
+        "profiler",
+        "warden"
+      ],
+      "Y_used": [
+        "spy",
+        "agent",
+        "operative",
+        "mole",
+        "infiltrator",
+        "saboteur",
+        "informant",
+        "fixer",
+        "handler",
+        "courier",
+        "liaison",
+        "turncoat",
+        "rat",
+        "shadow",
+        "watcher",
+        "recruit"
+      ],
+      "A_used": [
+        "altruism",
+        "charity",
+        "benevolence",
+        "compassion",
+        "empathy",
+        "generosity",
+        "kindness",
+        "selflessness",
+        "sympathy",
+        "helpful",
+        "caring",
+        "tender",
+        "loving",
+        "merciful",
+        "philanthropic",
+        "humanitarian"
+      ],
+      "B_used": [
+        "egoism",
+        "selfishness",
+        "greed",
+        "avarice",
+        "cupidity",
+        "meanness",
+        "stinginess",
+        "narcissism",
+        "vanity",
+        "pride",
+        "arrogance",
+        "conceit",
+        "egocentric",
+        "antisocial",
+        "miserly",
+        "ruthless"
+      ]
+    },
+    "proposal": "People associate detectives with altruism more strongly than they associate spies with altruism. This differential association captures a cultural dichotomy between domestic justice-seekers and covert intelligence operatives, where the former are framed as protectors of community welfare and the latter as amoral instruments of statecraft. Although both categories involve investigation and risk, the implicit link to altruism likely reflects entrenched media tropes that glorify the detective's empathy for victims while casting the spy's duplicity as inherently self-serving or treacherous. Examining this association is novel because prior research has compared detectives to diplomats or journalists, but has not isolated the moral valence of 'altruism' specifically within the cognitive contrast between transparent law enforcement and clandestine espionage. Confirming this bias would highlight how public discourse moralizes information-gathering methods, potentially obscuring the ethical complexities of intelligence work while romanticizing domestic surveillance roles.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "c880a0a36c02",
     "timestamp": "2026-08-02T20:36:18.510153+00:00",
     "schema_version": "autoresearch.v1",
