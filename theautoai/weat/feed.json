@@ -1,5 +1,115 @@
 [
   {
+    "id": "c880a0a36c02",
+    "timestamp": "2026-08-02T20:36:18.510153+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Lawyers vs Merchants on civic duty vs commercial interest",
+    "labels": {
+      "X": "Lawyers",
+      "Y": "Merchants",
+      "A": "Public Service",
+      "B": "Private Profit"
+    },
+    "canonical_keys": {
+      "X": "lawyers",
+      "Y": "merchants",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 1.543149161550067,
+    "p_value": 0.0,
+    "n": {
+      "X": 16,
+      "Y": 16,
+      "A": 16,
+      "B": 16
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "lawyer",
+        "attorney",
+        "barrister",
+        "solicitor",
+        "advocate",
+        "counselor",
+        "jurist",
+        "paralegal",
+        "prosecutor",
+        "defender",
+        "litigator",
+        "legal",
+        "counsel",
+        "proctor",
+        "mediator",
+        "arbiter"
+      ],
+      "Y_used": [
+        "merchant",
+        "trader",
+        "dealer",
+        "vendor",
+        "retailer",
+        "seller",
+        "shopkeeper",
+        "grocer",
+        "peddler",
+        "hawker",
+        "broker",
+        "capitalist",
+        "entrepreneur",
+        "businessman",
+        "wholesaler",
+        "pedlar"
+      ],
+      "A_used": [
+        "civic",
+        "public",
+        "service",
+        "community",
+        "welfare",
+        "aid",
+        "charity",
+        "volunteer",
+        "government",
+        "justice",
+        "duty",
+        "rights",
+        "democracy",
+        "philanthropy",
+        "altruism",
+        "benevolent"
+      ],
+      "B_used": [
+        "profit",
+        "money",
+        "wealth",
+        "business",
+        "market",
+        "trade",
+        "commerce",
+        "sales",
+        "revenue",
+        "earnings",
+        "income",
+        "financial",
+        "commercial",
+        "enterprise",
+        "venture",
+        "greedy"
+      ]
+    },
+    "proposal": "People associate Lawyers with public service more strongly than they associate Merchants with public service. While both professions are often stereotyped for self-interest, the institutional framing of lawyers as 'officers of the court' with duties to justice and public defenders creates a latent civic connection that merchants lack, as they are culturally anchored to private profit and market exchange. Examining this association is novel because implicit bias research has largely focused on competence or warmth, neglecting how professional categories are mentally mapped onto the domain of civic duty. This matters because perceived commitment to public service influences trust in institutions and willingness to engage with these actors in community governance or dispute resolution.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "a861afe599f8",
     "timestamp": "2026-08-02T10:04:21.548083+00:00",
     "schema_version": "autoresearch.v1",
