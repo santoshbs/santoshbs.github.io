@@ -1,5 +1,111 @@
 [
   {
+    "id": "d04eae01fc0e",
+    "timestamp": "2026-08-03T13:33:21.066598+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "farmers vs financiers on temporal orientation",
+    "labels": {
+      "X": "farmers",
+      "Y": "financiers",
+      "A": "patience",
+      "B": "impatience"
+    },
+    "canonical_keys": {
+      "X": "farmers",
+      "Y": "financiers",
+      "A": "patience",
+      "B": "impatience"
+    },
+    "effect_size": 0.8276545410295273,
+    "p_value": 0.01991,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "farmer",
+        "rancher",
+        "grower",
+        "agriculturist",
+        "agronomist",
+        "planter",
+        "cultivator",
+        "tiller",
+        "gardener",
+        "stockman",
+        "forester",
+        "shepherd",
+        "herdsman",
+        "drover",
+        "plowman"
+      ],
+      "Y_used": [
+        "banker",
+        "broker",
+        "trader",
+        "investor",
+        "capitalist",
+        "speculator",
+        "executive",
+        "accountant",
+        "auditor",
+        "bookkeeper",
+        "cashier",
+        "teller",
+        "underwriter",
+        "appraiser",
+        "actuary"
+      ],
+      "A_used": [
+        "patient",
+        "slow",
+        "steady",
+        "calm",
+        "deliberate",
+        "measured",
+        "gradual",
+        "unhurried",
+        "leisurely",
+        "methodical",
+        "persistent",
+        "enduring",
+        "stable",
+        "constant",
+        "lasting"
+      ],
+      "B_used": [
+        "impatient",
+        "fast",
+        "quick",
+        "rapid",
+        "swift",
+        "hurried",
+        "frantic",
+        "rushed",
+        "speedy",
+        "instant",
+        "immediate",
+        "sudden",
+        "abrupt",
+        "hasty",
+        "prompt"
+      ]
+    },
+    "proposal": "People associate farmers with patience more strongly than they associate financiers with patience. This implicit differential taps into a pervasive cultural narrative that romanticizes agricultural labor as rhythmically attuned to slow, seasonal cycles, while simultaneously stereotyping financial professionals as driven by algorithmic speed, rapid turnover, and short-term market extraction. Examining this temporal bias is novel because prior research has largely focused on explicit economic attitudes or general competence stereotypes, leaving the implicit association of patience versus impatience across these foundational economic sectors unexamined. Confirming this differential would matter for public discourse on land use, food security, and financial regulation, revealing how deeply ingrained assumptions about temporal orientation shape moral valuation and policy support in contemporary society.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "36c4cbe157aa",
     "timestamp": "2026-08-03T00:53:31.966323+00:00",
     "schema_version": "autoresearch.v1",
