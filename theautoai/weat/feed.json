@@ -1,5 +1,111 @@
 [
   {
+    "id": "b4033e094b53",
+    "timestamp": "2026-08-03T20:35:34.858964+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "patrons vs artists on cultural control vs creative expression",
+    "labels": {
+      "X": "patrons",
+      "Y": "artists",
+      "A": "gatekeeping_control",
+      "B": "creativity_expression"
+    },
+    "canonical_keys": {
+      "X": "patrons",
+      "Y": "artists",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 1.8166192193331907,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "patron",
+        "sponsor",
+        "donor",
+        "benefactor",
+        "backer",
+        "funder",
+        "financier",
+        "investor",
+        "collector",
+        "philanthropist",
+        "millionaire",
+        "tycoon",
+        "magnate",
+        "banker",
+        "capitalist"
+      ],
+      "Y_used": [
+        "artist",
+        "creator",
+        "painter",
+        "sculptor",
+        "writer",
+        "musician",
+        "poet",
+        "designer",
+        "illustrator",
+        "photographer",
+        "dancer",
+        "maker",
+        "artisan",
+        "craftsman",
+        "composer"
+      ],
+      "A_used": [
+        "gatekeeping",
+        "control",
+        "censorship",
+        "exclusion",
+        "restriction",
+        "regulation",
+        "policy",
+        "standard",
+        "authority",
+        "power",
+        "judge",
+        "critic",
+        "filter",
+        "limit",
+        "barrier"
+      ],
+      "B_used": [
+        "creativity",
+        "expression",
+        "freedom",
+        "inspiration",
+        "imagination",
+        "innovation",
+        "vision",
+        "originality",
+        "artistry",
+        "design",
+        "style",
+        "beauty",
+        "craft",
+        "aesthetic",
+        "flow"
+      ]
+    },
+    "proposal": "People associate patrons with gatekeeping more strongly than they associate artists with gatekeeping. While artists are frequently represented as creators seeking expression or audiences, patrons occupy the structural position of funding and selection, making them the implicit guardians of cultural access and taste. This association is novel because prior research has examined creators versus critics or curators, but has not probed the implicit link between financial benefactors and the control of cultural boundaries. Examining this matters because it reveals whether the public mentally encodes the mechanism of patronage as a form of exclusionary power, which could influence attitudes toward grant-making, sponsorship, and the distribution of artistic resources.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "eb91b6532d47",
     "timestamp": "2026-08-03T14:19:19.964985+00:00",
     "schema_version": "autoresearch.v1",
