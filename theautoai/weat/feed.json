@@ -1,5 +1,115 @@
 [
   {
+    "id": "d2e238790e97",
+    "timestamp": "2026-08-03T23:48:42.736121+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "heirs vs founders on entitlement vs merit",
+    "labels": {
+      "X": "heirs",
+      "Y": "founders",
+      "A": "entitlement",
+      "B": "merit"
+    },
+    "canonical_keys": {
+      "X": "heirs",
+      "Y": "founders",
+      "A": "entitlement",
+      "B": "merit"
+    },
+    "effect_size": 1.1597308121678087,
+    "p_value": 0.00041,
+    "n": {
+      "X": 16,
+      "Y": 16,
+      "A": 16,
+      "B": 16
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "heir",
+        "inheritor",
+        "scion",
+        "successor",
+        "descendant",
+        "beneficiary",
+        "legatee",
+        "son",
+        "daughter",
+        "grandson",
+        "granddaughter",
+        "nephew",
+        "niece",
+        "ward",
+        "offspring",
+        "progeny"
+      ],
+      "Y_used": [
+        "founder",
+        "creator",
+        "pioneer",
+        "builder",
+        "maker",
+        "entrepreneur",
+        "innovator",
+        "initiator",
+        "originator",
+        "architect",
+        "developer",
+        "producer",
+        "manufacturer",
+        "capitalist",
+        "tycoon",
+        "magnate"
+      ],
+      "A_used": [
+        "entitlement",
+        "privilege",
+        "birthright",
+        "prerogative",
+        "unearned",
+        "undeserved",
+        "handout",
+        "subsidy",
+        "allowance",
+        "pension",
+        "annuity",
+        "gratuity",
+        "bounty",
+        "favor",
+        "nepotism",
+        "patronage"
+      ],
+      "B_used": [
+        "merit",
+        "effort",
+        "labor",
+        "diligence",
+        "hustle",
+        "grind",
+        "struggle",
+        "achievement",
+        "accomplishment",
+        "success",
+        "reward",
+        "prize",
+        "skill",
+        "talent",
+        "ability",
+        "competence"
+      ]
+    },
+    "proposal": "People associate heirs with entitlement more strongly than they associate founders with entitlement. This differential implicit association is novel because, while the tension between creators and inheritors is a recurring theme in economic and political discourse, it has not been systematically examined as an implicit bias linking these social categories to the specific attribute of entitlement. It is interesting because it reflects contemporary anxieties about wealth transmission, class mobility, and the moral legitimacy of unearned status. It matters because confirming this association would reveal how public mental models of economic success privilege active creation over passive inheritance, potentially shaping attitudes toward policies on wealth taxes, nepotism, and intergenerational equity.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "8e85f11a6d36",
     "timestamp": "2026-08-03T21:28:59.116195+00:00",
     "schema_version": "autoresearch.v1",
