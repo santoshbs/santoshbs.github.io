@@ -1,5 +1,115 @@
 [
   {
+    "id": "27c25a3055e4",
+    "timestamp": "2026-08-04T03:47:31.348331+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "producers vs consumers on planning horizon / decision orientation",
+    "labels": {
+      "X": "producers",
+      "Y": "consumers",
+      "A": "strategic foresight",
+      "B": "immediate gratification"
+    },
+    "canonical_keys": {
+      "X": "producers",
+      "Y": "consumers",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 0.585089472112157,
+    "p_value": 0.10498,
+    "n": {
+      "X": 16,
+      "Y": 16,
+      "A": 16,
+      "B": 16
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "manufacturer",
+        "producer",
+        "maker",
+        "builder",
+        "creator",
+        "designer",
+        "engineer",
+        "developer",
+        "plant",
+        "factory",
+        "workshop",
+        "artisan",
+        "craftsman",
+        "supplier",
+        "vendor",
+        "founder"
+      ],
+      "Y_used": [
+        "consumer",
+        "buyer",
+        "purchaser",
+        "shopper",
+        "customer",
+        "client",
+        "patron",
+        "audience",
+        "public",
+        "spender",
+        "user",
+        "fan",
+        "follower",
+        "admirer",
+        "reader",
+        "viewer"
+      ],
+      "A_used": [
+        "strategy",
+        "foresight",
+        "plan",
+        "prepare",
+        "deliberate",
+        "thoughtful",
+        "forecast",
+        "manage",
+        "organize",
+        "anticipate",
+        "vision",
+        "goal",
+        "objective",
+        "systematic",
+        "rational",
+        "calculated"
+      ],
+      "B_used": [
+        "impulse",
+        "instant",
+        "quick",
+        "reactive",
+        "spontaneous",
+        "impulsive",
+        "immediate",
+        "gratification",
+        "desire",
+        "want",
+        "crave",
+        "buy",
+        "grab",
+        "rush",
+        "hurry",
+        "snap"
+      ]
+    },
+    "proposal": "People associate producers with strategic foresight more strongly than they associate consumers with strategic foresight. While contemporary market rhetoric frequently frames buyers as empowered, deliberate decision-makers exercising conscious choice, implicit cultural representations likely still cast producers as the long-term planners and forward-looking strategists, whereas consumers are mentally linked to immediate gratification and reactive trend-following. This association has not been systematically examined despite the rise of conscious capitalism and intense public debates over supply-chain accountability. Testing it matters because implicit attributions of foresight shape public narratives about economic responsibility, influence policy framing around corporate versus individual duty, and reveal the psychological distance people unconsciously maintain from downstream market outcomes.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "0fa12677fd3a",
     "timestamp": "2026-08-04T01:46:22.976907+00:00",
     "schema_version": "autoresearch.v1",
