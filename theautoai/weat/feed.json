@@ -1,5 +1,111 @@
 [
   {
+    "id": "c0bad7db17bf",
+    "timestamp": "2026-08-04T05:26:48.533835+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "politicians vs doctors on epistemic ambiguity versus categorical certainty",
+    "labels": {
+      "X": "politicians",
+      "Y": "doctors",
+      "A": "ambiguity",
+      "B": "certainty"
+    },
+    "canonical_keys": {
+      "X": "politicians",
+      "Y": "doctors",
+      "A": "ambiguity",
+      "B": "certainty"
+    },
+    "effect_size": 0.47233599367088774,
+    "p_value": 0.2063,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "politician",
+        "senator",
+        "minister",
+        "governor",
+        "mayor",
+        "chancellor",
+        "president",
+        "leader",
+        "statesman",
+        "candidate",
+        "representative",
+        "legislator",
+        "lobbyist",
+        "bureaucrat",
+        "official"
+      ],
+      "Y_used": [
+        "doctor",
+        "physician",
+        "surgeon",
+        "medic",
+        "specialist",
+        "clinician",
+        "dentist",
+        "psychiatrist",
+        "practitioner",
+        "intern",
+        "resident",
+        "optometrist",
+        "pathologist",
+        "pediatrician",
+        "gynecologist"
+      ],
+      "A_used": [
+        "ambiguity",
+        "ambiguous",
+        "uncertainty",
+        "uncertain",
+        "unclear",
+        "vague",
+        "equivocal",
+        "obscure",
+        "indeterminate",
+        "fuzzy",
+        "nebulous",
+        "shady",
+        "questionable",
+        "gray",
+        "flexible"
+      ],
+      "B_used": [
+        "certainty",
+        "certain",
+        "clarity",
+        "clear",
+        "precise",
+        "exact",
+        "definite",
+        "objective",
+        "concrete",
+        "distinct",
+        "factual",
+        "proven",
+        "strict",
+        "rigid",
+        "absolute"
+      ]
+    },
+    "proposal": "People associate politicians with ambiguity more strongly than they associate doctors with ambiguity. Public discourse routinely casts political actors as navigating inherent gray areas, making necessary trade-offs, and employing strategic flexibility, while medical professionals are scripted as upholding clear guidelines, objective protocols, and definitive diagnoses. This implicit association is novel because it shifts the focus from standard warmth-competence stereotypes to the epistemic texture of these roles, revealing an unexamined cultural encoding of indeterminacy versus categorical certainty. It matters because this differential association can obscure the real ethical ambiguities clinicians face daily while simultaneously excusing political equivocation as an unavoidable structural necessity.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "27c25a3055e4",
     "timestamp": "2026-08-04T03:47:31.348331+00:00",
     "schema_version": "autoresearch.v1",
