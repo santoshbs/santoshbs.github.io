@@ -1,5 +1,111 @@
 [
   {
+    "id": "0fa12677fd3a",
+    "timestamp": "2026-08-04T01:46:22.976907+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Widows vs Orphans on resilience versus fragility",
+    "labels": {
+      "X": "Widows",
+      "Y": "Orphans",
+      "A": "resilience",
+      "B": "fragility"
+    },
+    "canonical_keys": {
+      "X": "widows",
+      "Y": "orphans",
+      "A": "resilience",
+      "B": "fragility"
+    },
+    "effect_size": 0.6882909618939262,
+    "p_value": 0.06356,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "widow",
+        "widows",
+        "widowed",
+        "bereaved",
+        "survivor",
+        "spinster",
+        "matron",
+        "grandmother",
+        "aunt",
+        "matriarch",
+        "dame",
+        "lady",
+        "elder",
+        "senior",
+        "single"
+      ],
+      "Y_used": [
+        "orphan",
+        "orphans",
+        "parentless",
+        "foundling",
+        "waif",
+        "ward",
+        "abandoned",
+        "deserted",
+        "destitute",
+        "homeless",
+        "dependent",
+        "child",
+        "youth",
+        "minor",
+        "juvenile"
+      ],
+      "A_used": [
+        "resilient",
+        "endurance",
+        "toughness",
+        "fortitude",
+        "hardy",
+        "robust",
+        "tenacious",
+        "steadfast",
+        "brave",
+        "stamina",
+        "vigorous",
+        "strong",
+        "determined",
+        "capable",
+        "grit"
+      ],
+      "B_used": [
+        "fragile",
+        "vulnerable",
+        "delicate",
+        "helpless",
+        "feeble",
+        "tender",
+        "brittle",
+        "frail",
+        "breakable",
+        "susceptible",
+        "insecure",
+        "sensitive",
+        "impressionable",
+        "defenseless",
+        "weak"
+      ]
+    },
+    "proposal": "People associate Widows with Resilience more strongly than they associate Orphans with Resilience. This proposal examines whether public mental representations grant adult survivors of spousal loss greater agentic strength compared to children who have lost parents, reflecting deeper cultural narratives about age, gender, and recovery. Confirming this association would reveal how resilience is implicitly gendered and aged, potentially obscuring the trauma of orphanhood or over-idealizing the widow's burden. This differential has not been systematically probed in implicit association research, which focuses more often on warmth or competence stereotypes rather than the specific construct of resilience within these kinship categories.",
+    "iterations": 3,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "d2e238790e97",
     "timestamp": "2026-08-03T23:48:42.736121+00:00",
     "schema_version": "autoresearch.v1",
