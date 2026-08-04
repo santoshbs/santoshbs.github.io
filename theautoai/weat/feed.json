@@ -1,5 +1,111 @@
 [
   {
+    "id": "7927af518201",
+    "timestamp": "2026-08-04T08:03:27.602286+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "tourists vs immigrants on cultural openness vs insularity",
+    "labels": {
+      "X": "tourists",
+      "Y": "immigrants",
+      "A": "cosmopolitanism",
+      "B": "parochialism"
+    },
+    "canonical_keys": {
+      "X": "tourists",
+      "Y": "immigrants",
+      "A": "cosmopolitanism",
+      "B": "parochialism"
+    },
+    "effect_size": 0.925407757290202,
+    "p_value": 0.00941,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "tourist",
+        "traveler",
+        "visitor",
+        "backpacker",
+        "explorer",
+        "vacationer",
+        "guest",
+        "wanderer",
+        "camper",
+        "hiker",
+        "passenger",
+        "pilgrim",
+        "rover",
+        "sojourner",
+        "sightseer"
+      ],
+      "Y_used": [
+        "immigrant",
+        "migrant",
+        "emigrant",
+        "refugee",
+        "exile",
+        "alien",
+        "expatriate",
+        "settler",
+        "colonist",
+        "resident",
+        "newcomer",
+        "foreigner",
+        "outsider",
+        "transplanted",
+        "naturalized"
+      ],
+      "A_used": [
+        "cosmopolitan",
+        "global",
+        "worldly",
+        "open",
+        "liberal",
+        "progressive",
+        "modern",
+        "international",
+        "diverse",
+        "inclusive",
+        "urbane",
+        "sophisticated",
+        "adventurous",
+        "tolerant",
+        "flexible"
+      ],
+      "B_used": [
+        "provincial",
+        "parochial",
+        "traditional",
+        "conservative",
+        "local",
+        "insular",
+        "closed",
+        "xenophobic",
+        "nativist",
+        "isolationist",
+        "restrictive",
+        "narrow",
+        "unsophisticated",
+        "rural",
+        "backwoods"
+      ]
+    },
+    "proposal": "People associate tourists with cosmopolitanism more strongly than they associate immigrants with cosmopolitanism. This proposal examines a paradox in public representation where the temporary visitor is implicitly linked to worldly openness and cultural integration, while the permanent resident is stereotyped as culturally distant or resistant to assimilation. Although implicit biases regarding immigrants are well-documented, this specific contrast with tourists has not been probed, despite the relevance of temporality to how cultural attributes are mentally allocated. Confirming this association would reveal that cosmopolitanism is granted as a privilege of mobility rather than a product of deep cross-cultural engagement, shifting our understanding of how society attributes cultural competence.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "c0bad7db17bf",
     "timestamp": "2026-08-04T05:26:48.533835+00:00",
     "schema_version": "autoresearch.v1",
