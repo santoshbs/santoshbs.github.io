@@ -1,5 +1,111 @@
 [
   {
+    "id": "9c2263985c50",
+    "timestamp": "2026-08-04T19:12:14.616935+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "bureaucrats vs merchants on visibility of agency",
+    "labels": {
+      "X": "bureaucrats",
+      "Y": "merchants",
+      "A": "opacity",
+      "B": "transparency"
+    },
+    "canonical_keys": {
+      "X": "bureaucrats",
+      "Y": "merchants",
+      "A": "opacity",
+      "B": "transparency"
+    },
+    "effect_size": -0.2894534968215446,
+    "p_value": 0.44905,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "bureaucrat",
+        "official",
+        "administrator",
+        "clerk",
+        "regulator",
+        "inspector",
+        "commissioner",
+        "officer",
+        "agent",
+        "director",
+        "manager",
+        "executive",
+        "secretary",
+        "minister",
+        "politician"
+      ],
+      "Y_used": [
+        "merchant",
+        "trader",
+        "dealer",
+        "vendor",
+        "retailer",
+        "buyer",
+        "seller",
+        "broker",
+        "capitalist",
+        "financier",
+        "banker",
+        "grocer",
+        "tradesman",
+        "shopkeeper",
+        "entrepreneur"
+      ],
+      "A_used": [
+        "secret",
+        "hidden",
+        "obscure",
+        "opaque",
+        "covert",
+        "concealed",
+        "shady",
+        "dark",
+        "murky",
+        "unclear",
+        "ambiguous",
+        "cryptic",
+        "vague",
+        "unknown",
+        "mysterious"
+      ],
+      "B_used": [
+        "open",
+        "clear",
+        "visible",
+        "transparent",
+        "bright",
+        "obvious",
+        "plain",
+        "evident",
+        "public",
+        "honest",
+        "frank",
+        "candid",
+        "lucid",
+        "straightforward",
+        "accessible"
+      ]
+    },
+    "proposal": "People associate bureaucrats with opacity more strongly than they associate merchants with opacity. While both roles involve structured interactions, public discourse often frames commerce as a transparent exchange of value governed by market signals, whereas administrative action is depicted as a closed, rule-bound process inaccessible to outsiders. This differential association is novel because implicit bias research has rarely examined the 'visibility' of agency across institutional roles, focusing instead on warmth or competence. Confirming this association would suggest that mental representations of bureaucrats encode structural unknowability as a core trait, potentially influencing trust and perceived accountability in governance versus commerce.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "7927af518201",
     "timestamp": "2026-08-04T08:03:27.602286+00:00",
     "schema_version": "autoresearch.v1",
