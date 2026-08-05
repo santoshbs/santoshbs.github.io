@@ -1,5 +1,111 @@
 [
   {
+    "id": "80be8c3252ba",
+    "timestamp": "2026-08-05T11:46:43.544071+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Grievants vs Petitioners on emotional volatility vs rational calmness",
+    "labels": {
+      "X": "Grievants",
+      "Y": "Petitioners",
+      "A": "emotional_volatility",
+      "B": "rational_calmness"
+    },
+    "canonical_keys": {
+      "X": "grievants",
+      "Y": "petitioners",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 1.0604045445259205,
+    "p_value": 0.00277,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "complainer",
+        "protester",
+        "dissident",
+        "agitator",
+        "rebel",
+        "insurgent",
+        "rioter",
+        "malcontent",
+        "plaintiff",
+        "complainant",
+        "critic",
+        "objector",
+        "troublemaker",
+        "instigator",
+        "dissenter"
+      ],
+      "Y_used": [
+        "petitioner",
+        "applicant",
+        "aspirant",
+        "candidate",
+        "requestor",
+        "inquirer",
+        "appellant",
+        "claimant",
+        "litigant",
+        "suitor",
+        "supplicant",
+        "delegate",
+        "advocate",
+        "lobbyist",
+        "seeker"
+      ],
+      "A_used": [
+        "angry",
+        "upset",
+        "distressed",
+        "volatile",
+        "agitated",
+        "furious",
+        "enraged",
+        "passionate",
+        "turbulent",
+        "unstable",
+        "erratic",
+        "frantic",
+        "hysterical",
+        "irate",
+        "vehement"
+      ],
+      "B_used": [
+        "calm",
+        "rational",
+        "logical",
+        "procedural",
+        "formal",
+        "orderly",
+        "measured",
+        "composed",
+        "collected",
+        "steady",
+        "systematic",
+        "methodical",
+        "disciplined",
+        "objective",
+        "analytical"
+      ]
+    },
+    "proposal": "People associate grievants with emotional volatility more strongly than they associate petitioners with emotional volatility. While both groups seek redress, 'grievants' (plaintiffs, complainers, malcontents, discontents, dissidents, mutineers, rebels, insurgents, rioters, agitators, instigators, troublemakers, ringleaders, instigators, fomenters) are often framed in discourse as driven by affective anger or distress, whereas 'petitioners' (supplicants, applicants, candidates, aspirants, seekers, suitors, wooers, pursuers, chasers, hunters, trackers, tracers, monitors, observers, watchers, lookers, gazers, peepers, viewers, audiences, onlookers, bystanders, passersby, interlopers, eavesdroppers, lurkers, loiterers) are implicitly coded as procedural, rational, and rule-abiding actors engaging in formal channels. Examining this differential association is novel because prior work contrasts grievants with petitioners only in terms of legitimacy or success rates, not the underlying affective schemas. It matters because this implicit bias may shape institutional triage, causing authorities to dismiss or de-escalate grievants as emotional rather than substantive, while granting petitioners unearned epistemic credibility simply due to their adherence to bureaucratic form.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "bf4d52e88b8e",
     "timestamp": "2026-08-05T09:41:53.783347+00:00",
     "schema_version": "autoresearch.v1",
