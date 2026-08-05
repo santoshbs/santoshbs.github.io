@@ -1,5 +1,111 @@
 [
   {
+    "id": "3de3bb5815c2",
+    "timestamp": "2026-08-05T03:07:24.909523+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "auditors vs artists on emotional regulation",
+    "labels": {
+      "X": "auditors",
+      "Y": "artists",
+      "A": "emotional restraint",
+      "B": "emotional expression"
+    },
+    "canonical_keys": {
+      "X": "auditors",
+      "Y": "artists",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 1.8786468966134393,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "auditor",
+        "accountant",
+        "bookkeeper",
+        "banker",
+        "actuary",
+        "appraiser",
+        "assessor",
+        "broker",
+        "controller",
+        "comptroller",
+        "evaluator",
+        "examiner",
+        "investigator",
+        "inspector",
+        "lawyer"
+      ],
+      "Y_used": [
+        "artist",
+        "painter",
+        "sculptor",
+        "musician",
+        "dancer",
+        "poet",
+        "writer",
+        "performer",
+        "singer",
+        "composer",
+        "director",
+        "illustrator",
+        "designer",
+        "photographer",
+        "model"
+      ],
+      "A_used": [
+        "stoic",
+        "calm",
+        "composed",
+        "controlled",
+        "disciplined",
+        "emotionless",
+        "formal",
+        "guarded",
+        "impartial",
+        "inhibited",
+        "objective",
+        "passive",
+        "rational",
+        "restrained",
+        "reserved"
+      ],
+      "B_used": [
+        "expressive",
+        "emotional",
+        "passionate",
+        "dramatic",
+        "spontaneous",
+        "flamboyant",
+        "free",
+        "imaginative",
+        "intense",
+        "lively",
+        "outgoing",
+        "poetic",
+        "sentimental",
+        "theatrical",
+        "wild"
+      ]
+    },
+    "proposal": "People associate auditors with emotional restraint more strongly than they associate artists with emotional restraint. This differential implicit association taps into how institutional gatekeepers of compliance are mentally contrasted with cultural producers in contemporary discourse. While overt stereotypes about auditors emphasize scrutiny and about artists emphasize expression, the underlying implicit link to emotional restraint has not been systematically measured using standard association paradigms. Confirming or disconfirming this link would reveal whether the public mentally partitions these roles along an affect-control axis that shapes hiring, policy-making, and cultural funding decisions.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "9c2263985c50",
     "timestamp": "2026-08-04T19:12:14.616935+00:00",
     "schema_version": "autoresearch.v1",
