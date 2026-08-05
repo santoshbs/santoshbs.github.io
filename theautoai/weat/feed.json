@@ -1,5 +1,111 @@
 [
   {
+    "id": "bf4d52e88b8e",
+    "timestamp": "2026-08-05T09:41:53.783347+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "royalty vs commoners on decadence versus sobriety",
+    "labels": {
+      "X": "royalty",
+      "Y": "commoners",
+      "A": "decadence",
+      "B": "sobriety"
+    },
+    "canonical_keys": {
+      "X": "royalty",
+      "Y": "commoners",
+      "A": "decadence",
+      "B": "sobriety"
+    },
+    "effect_size": 1.5122206072098945,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "king",
+        "queen",
+        "prince",
+        "princess",
+        "emperor",
+        "empress",
+        "duke",
+        "duchess",
+        "monarch",
+        "sovereign",
+        "lord",
+        "lady",
+        "noble",
+        "aristocrat",
+        "baron"
+      ],
+      "Y_used": [
+        "commoner",
+        "peasant",
+        "worker",
+        "laborer",
+        "citizen",
+        "plebeian",
+        "villager",
+        "townsman",
+        "resident",
+        "inhabitant",
+        "everyman",
+        "individual",
+        "person",
+        "human",
+        "civilian"
+      ],
+      "A_used": [
+        "decadent",
+        "luxurious",
+        "lavish",
+        "opulent",
+        "extravagant",
+        "indulgent",
+        "hedonistic",
+        "sensual",
+        "pleasurable",
+        "sumptuous",
+        "gilded",
+        "ornate",
+        "plush",
+        "decadence",
+        "luxury"
+      ],
+      "B_used": [
+        "sober",
+        "frugal",
+        "thrifty",
+        "modest",
+        "plain",
+        "simple",
+        "humble",
+        "virtuous",
+        "moral",
+        "righteous",
+        "pious",
+        "temperate",
+        "abstinent",
+        "economical",
+        "austere"
+      ]
+    },
+    "proposal": "People associate royalty with decadence more strongly than they associate commoners with decadence. This differential implicit association reflects the enduring cultural trope of the morally corrupt and self-indulgent ruling class contrasted with the virtuous, frugal everyman. Examining this association is novel because, while class-based biases between elites and paupers are well-documented, the specific status-based distinction between royalty and commoners along the axis of decadence versus sobriety has not been explicitly tested. Confirming this would reveal how inherited prestige remains mentally linked to moral decline rather than civic virtue in contemporary public consciousness.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "a2279335142f",
     "timestamp": "2026-08-05T07:27:54.416017+00:00",
     "schema_version": "autoresearch.v1",
