@@ -52,9 +52,9 @@
       "id": "corporate-governance",
       "title": "Corporate Governance",
       "group": "Strategy & Governance",
-      "refs": 28,
-      "revised": "2026-07-27",
-      "signals": 54
+      "refs": 31,
+      "revised": "2026-08-01",
+      "signals": 56
     },
     {
       "id": "curriculum-management",
@@ -76,9 +76,9 @@
       "id": "finance-management",
       "title": "Finance Management",
       "group": "Enabling",
-      "refs": 16,
-      "revised": "2026-07-23",
-      "signals": 16
+      "refs": 17,
+      "revised": "2026-08-22",
+      "signals": 17
     },
     {
       "id": "government-public-stakeholder-relationships",
@@ -93,8 +93,8 @@
       "title": "Human Resource Management",
       "group": "Enabling",
       "refs": 23,
-      "revised": "2026-07-24",
-      "signals": 28
+      "revised": "2026-08-05",
+      "signals": 30
     },
     {
       "id": "information-communication-technology-management",
@@ -116,9 +116,9 @@
       "id": "legal-services",
       "title": "Legal Services",
       "group": "Enabling",
-      "refs": 22,
-      "revised": "2026-07-27",
-      "signals": 28
+      "refs": 23,
+      "revised": "2026-07-30",
+      "signals": 29
     },
     {
       "id": "library-management",
@@ -140,17 +140,17 @@
       "id": "research-administration",
       "title": "Research Administration",
       "group": "Research",
-      "refs": 22,
-      "revised": "2026-07-27",
-      "signals": 32
+      "refs": 26,
+      "revised": "2026-08-03",
+      "signals": 35
     },
     {
       "id": "research-delivery",
       "title": "Research Delivery",
       "group": "Research",
-      "refs": 55,
-      "revised": "2026-07-25",
-      "signals": 55
+      "refs": 32,
+      "revised": "2026-08-03",
+      "signals": 59
     },
     {
       "id": "research-funding",
@@ -172,9 +172,9 @@
       "id": "research-improvement",
       "title": "Research Improvement",
       "group": "Research",
-      "refs": 5,
-      "revised": "2026-07-16",
-      "signals": 5
+      "refs": 6,
+      "revised": "2026-08-01",
+      "signals": 6
     },
     {
       "id": "research-opportunity-analysis",
@@ -220,25 +220,25 @@
       "id": "student-admission-management",
       "title": "Student Admission Management",
       "group": "Teaching & Learning",
-      "refs": 3,
-      "revised": "2026-06-29",
-      "signals": 4
+      "refs": 5,
+      "revised": "2026-08-02",
+      "signals": 6
     },
     {
       "id": "student-assessment",
       "title": "Student Assessment",
       "group": "Teaching & Learning",
-      "refs": 33,
-      "revised": "2026-06-27",
-      "signals": 33
+      "refs": 21,
+      "revised": "2026-08-02",
+      "signals": 35
     },
     {
       "id": "student-attraction-recruitment",
       "title": "Student Attraction & Recruitment",
       "group": "Teaching & Learning",
-      "refs": 10,
-      "revised": "2026-06-20",
-      "signals": 10
+      "refs": 11,
+      "revised": "2026-08-01",
+      "signals": 11
     },
     {
       "id": "student-completion-graduation",
@@ -276,9 +276,9 @@
       "id": "teaching-learning-delivery",
       "title": "Teaching & Learning Delivery",
       "group": "Teaching & Learning",
-      "refs": 36,
-      "revised": "2026-07-28",
-      "signals": 36
+      "refs": 37,
+      "revised": "2026-08-02",
+      "signals": 37
     }
   ],
   "edges": [
@@ -401,6 +401,11 @@
       "source": "research-delivery",
       "target": "teaching-learning-delivery",
       "signal": "GitHub Weekly: GPT-5.5 Lands on Copilot, Cloud Agents Speed Up, Actions Gets Sma"
+    },
+    {
+      "source": "student-admission-management",
+      "target": "student-assessment",
+      "signal": "Human-Provenance Verification should be Treated as Labor Infrastructure in AI-Sa"
     },
     {
       "source": "commercial-delivery",
