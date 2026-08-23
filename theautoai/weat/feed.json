@@ -1,5 +1,111 @@
 [
   {
+    "id": "118dedb4c80f",
+    "timestamp": "2026-08-23T18:25:51.027884+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "curators vs collectors on custodial care vs private accumulation",
+    "labels": {
+      "X": "curators",
+      "Y": "collectors",
+      "A": "stewardship",
+      "B": "acquisition"
+    },
+    "canonical_keys": {
+      "X": "curators",
+      "Y": "collectors",
+      "A": "stewardship",
+      "B": "acquisition"
+    },
+    "effect_size": 1.5895923018096394,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "curator",
+        "conservator",
+        "archivist",
+        "librarian",
+        "restorer",
+        "guardian",
+        "supervisor",
+        "manager",
+        "director",
+        "attendant",
+        "keeper",
+        "scholar",
+        "historian",
+        "expert",
+        "specialist"
+      ],
+      "Y_used": [
+        "collector",
+        "dealer",
+        "trader",
+        "investor",
+        "patron",
+        "enthusiast",
+        "hobbyist",
+        "aficionado",
+        "buyer",
+        "purchaser",
+        "owner",
+        "hoarder",
+        "accumulator",
+        "merchant",
+        "broker"
+      ],
+      "A_used": [
+        "stewardship",
+        "care",
+        "protect",
+        "preserve",
+        "maintain",
+        "sustain",
+        "nurture",
+        "conserve",
+        "safeguard",
+        "uphold",
+        "restore",
+        "watch",
+        "keep",
+        "mend",
+        "guard"
+      ],
+      "B_used": [
+        "collect",
+        "accumulate",
+        "acquire",
+        "own",
+        "possess",
+        "hoard",
+        "amass",
+        "gather",
+        "buy",
+        "purchase",
+        "stockpile",
+        "possession",
+        "asset",
+        "treasure",
+        "loot"
+      ]
+    },
+    "proposal": "People associate curators with stewardship more strongly than they associate collectors with stewardship. While both groups acquire and manage cultural objects, contemporary debates over museum restitution and private art markets have sharply diverged in how they frame institutional versus private care of heritage, yet this cognitive divide has never been measured implicitly. Probing this association reveals whether everyday cognition subconsciously reserves custodial responsibility for public-facing roles rather than private accumulation. Confirming the bias would clarify how implicit mental models reinforce structural divides in cultural governance, directly informing how the public perceives trust, ownership, and ethical responsibility in heritage institutions.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "17bbe74c0705",
     "timestamp": "2026-08-23T16:36:54.349359+00:00",
     "schema_version": "autoresearch.v1",
