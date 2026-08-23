@@ -1,5 +1,111 @@
 [
   {
+    "id": "e855d7111be5",
+    "timestamp": "2026-08-23T11:51:02.381893+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "veterans vs refugees on sacrifice vs need",
+    "labels": {
+      "X": "veterans",
+      "Y": "refugees",
+      "A": "sacrifice",
+      "B": "need"
+    },
+    "canonical_keys": {
+      "X": "veterans",
+      "Y": "refugees",
+      "A": "sacrifice",
+      "B": "need"
+    },
+    "effect_size": 1.3414542542770214,
+    "p_value": 3e-05,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "soldier",
+        "veteran",
+        "marine",
+        "sailor",
+        "pilot",
+        "captain",
+        "colonel",
+        "general",
+        "major",
+        "sergeant",
+        "corporal",
+        "lieutenant",
+        "officer",
+        "cadet",
+        "trooper"
+      ],
+      "Y_used": [
+        "refugee",
+        "migrant",
+        "immigrant",
+        "exile",
+        "displaced",
+        "alien",
+        "emigrant",
+        "stranger",
+        "foreigner",
+        "asylee",
+        "newcomer",
+        "outcast",
+        "outsider",
+        "evacuee",
+        "wanderer"
+      ],
+      "A_used": [
+        "sacrifice",
+        "service",
+        "duty",
+        "honor",
+        "valor",
+        "bravery",
+        "courage",
+        "glory",
+        "pride",
+        "merit",
+        "recognition",
+        "praise",
+        "acclaim",
+        "tribute",
+        "respect"
+      ],
+      "B_used": [
+        "survival",
+        "need",
+        "help",
+        "aid",
+        "charity",
+        "poverty",
+        "hunger",
+        "pain",
+        "suffering",
+        "loss",
+        "dependency",
+        "deprivation",
+        "destitution",
+        "anguish",
+        "victim"
+      ]
+    },
+    "proposal": "people associate veterans with sacrifice more strongly than they associate refugees with sacrifice. In public discourse, veterans are routinely valorized for their voluntary service and sacrifice to the nation, while refugees are defined by forced displacement and loss rather than agentic contribution. Probing this implicit association exposes how cultural narratives privilege voluntary hardship over involuntary suffering, potentially undermining the moral recognition of the immense sacrifices refugees make to escape persecution. This comparison is novel because implicit association research has largely overlooked the moral asymmetry between voluntary military service and forced migration.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "df53f13bd635",
     "timestamp": "2026-08-23T00:35:24.080886+00:00",
     "schema_version": "autoresearch.v1",
