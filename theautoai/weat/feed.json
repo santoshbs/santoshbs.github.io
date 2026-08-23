@@ -1,5 +1,111 @@
 [
   {
+    "id": "df53f13bd635",
+    "timestamp": "2026-08-23T00:35:24.080886+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Men vs Women on Hubris vs Humility",
+    "labels": {
+      "X": "Men",
+      "Y": "Women",
+      "A": "Hubris",
+      "B": "Humility"
+    },
+    "canonical_keys": {
+      "X": "men",
+      "Y": "women",
+      "A": "hubris",
+      "B": "humility"
+    },
+    "effect_size": 0.9640091589744164,
+    "p_value": 0.00527,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "man",
+        "men",
+        "boy",
+        "male",
+        "boys",
+        "guy",
+        "lad",
+        "fellow",
+        "chap",
+        "sir",
+        "brother",
+        "father",
+        "son",
+        "husband",
+        "uncle"
+      ],
+      "Y_used": [
+        "woman",
+        "women",
+        "girl",
+        "female",
+        "girls",
+        "lady",
+        "miss",
+        "sister",
+        "mother",
+        "daughter",
+        "wife",
+        "aunt",
+        "grandmother",
+        "granddaughter",
+        "madam"
+      ],
+      "A_used": [
+        "hubris",
+        "arrogance",
+        "pride",
+        "conceit",
+        "vanity",
+        "boasting",
+        "cockiness",
+        "presumption",
+        "insolence",
+        "smugness",
+        "haughtiness",
+        "grandiosity",
+        "pompousness",
+        "ego",
+        "megalomania"
+      ],
+      "B_used": [
+        "humility",
+        "modesty",
+        "respect",
+        "deference",
+        "obedience",
+        "submission",
+        "meekness",
+        "reticence",
+        "quietness",
+        "reserve",
+        "bashfulness",
+        "diffidence",
+        "abasement",
+        "lowliness",
+        "humbleness"
+      ]
+    },
+    "proposal": "People associate Men with hubris more strongly than they associate Women with hubris. Hubris refers to dangerous overconfidence, presumption of impunity, and grandiose self-importance that invites a fall, distinct from general arrogance or competence. This association is novel because while men's overconfidence is a documented stereotype, the specific moralized framing of men as prone to hubris—implying not just risk but inevitable nemesis—has not been examined as an implicit association. This matters because hubristic framing shapes public reactions to male authority figures, potentially excusing male failures as predictable consequences of hubris while judging female leaders differently. Confirming this would reveal how implicit gender schemas encode warnings about male power that go beyond simple dominance stereotypes.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "e7c2fefa054b",
     "timestamp": "2026-08-22T23:06:41.300638+00:00",
     "schema_version": "autoresearch.v1",
