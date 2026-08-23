@@ -1,5 +1,111 @@
 [
   {
+    "id": "788f4c1ce47a",
+    "timestamp": "2026-08-23T19:13:07.630727+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "workers vs managers on Adaptability vs. Bureaucracy",
+    "labels": {
+      "X": "workers",
+      "Y": "managers",
+      "A": "Situational Pragmatism",
+      "B": "Administrative Rigidity"
+    },
+    "canonical_keys": {
+      "X": "workers",
+      "Y": "managers",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 1.1432944437297847,
+    "p_value": 0.00136,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "worker",
+        "laborer",
+        "employee",
+        "operator",
+        "mechanic",
+        "technician",
+        "helper",
+        "assistant",
+        "clerk",
+        "janitor",
+        "guard",
+        "driver",
+        "builder",
+        "cleaner",
+        "nurse"
+      ],
+      "Y_used": [
+        "manager",
+        "boss",
+        "director",
+        "supervisor",
+        "executive",
+        "leader",
+        "chief",
+        "administrator",
+        "overseer",
+        "president",
+        "chairman",
+        "principal",
+        "superintendent",
+        "officer",
+        "partner"
+      ],
+      "A_used": [
+        "adaptable",
+        "practical",
+        "flexible",
+        "resourceful",
+        "pragmatic",
+        "tactical",
+        "resilient",
+        "spontaneous",
+        "agile",
+        "active",
+        "versatile",
+        "capable",
+        "efficient",
+        "direct",
+        "swift"
+      ],
+      "B_used": [
+        "bureaucratic",
+        "rigid",
+        "formal",
+        "theoretical",
+        "administrative",
+        "structured",
+        "planned",
+        "procedural",
+        "regulatory",
+        "corporate",
+        "official",
+        "systematic",
+        "strategic",
+        "conventional",
+        "regulated"
+      ]
+    },
+    "proposal": "people associate workers with situational pragmatism more strongly than they associate managers with situational pragmatism. This differential reflects an intuitive cognitive heuristic that frontline laborers possess a superior capacity for on-the-ground adaptation and improvised problem-solving compared to administrative overseers. While explicit surveys routinely capture overt attitudes toward labor relations, wage equity, or unionization, implicit measures could reveal whether this ground-level competence bias operates automatically in everyday cognition and hiring judgments. The association is novel because social cognition research has largely mapped worker-manager stereotypes onto warmth, competence, or status dimensions, leaving implicit intuitions about adaptive pragmatism unexamined. Confirming or disconfirming it would illuminate how contemporary anti-bureaucratic sentiment and crisis-era valorizations of frontline roles may be baked into automatic associative networks.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "118dedb4c80f",
     "timestamp": "2026-08-23T18:25:51.027884+00:00",
     "schema_version": "autoresearch.v1",
