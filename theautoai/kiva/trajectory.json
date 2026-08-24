@@ -1,15 +1,5 @@
 [
   {
-    "id": "female-specific-inventory-faster",
-    "title": "Female borrowers who list specific inventory items like canned goods or personal care products may fund faster.",
-    "bucket": "",
-    "birth_batch": 0,
-    "death_batch": 1410,
-    "last_batch": 1410,
-    "confidence": 0,
-    "alive": false
-  },
-  {
     "id": "female-new-business-hardship-slower",
     "title": "Female borrowers who focus on starting a new business while emphasizing hardship may fund more slowly.",
     "bucket": "",
@@ -100,11 +90,21 @@
     "alive": false
   },
   {
+    "id": "female-marital-status-slower",
+    "title": "Female borrowers who explicitly mention being married may fund more slowly.",
+    "bucket": "",
+    "birth_batch": 0,
+    "death_batch": 1422,
+    "last_batch": 1422,
+    "confidence": 0,
+    "alive": false
+  },
+  {
     "id": "female-savings-goal-faster",
     "title": "Female borrowers who mention the goal of building savings fund faster.",
     "bucket": "gendered_women",
-    "birth_batch": 109,
-    "last_batch": 1421,
+    "birth_batch": 108,
+    "last_batch": 1422,
     "confidence": 0.88,
     "peak_confidence": 0.88,
     "alive": true
@@ -113,18 +113,18 @@
     "id": "verbosity-slower-general",
     "title": "Higher verbosity and excessive personal detail predict slower funding regardless of gender.",
     "bucket": "slower",
-    "birth_batch": 135,
-    "last_batch": 1421,
-    "confidence": 0.85,
-    "peak_confidence": 0.85,
+    "birth_batch": 134,
+    "last_batch": 1422,
+    "confidence": 0.9,
+    "peak_confidence": 0.9,
     "alive": true
   },
   {
     "id": "monthly-income-slower-general",
     "title": "Pitches that include specific monthly income figures predict slower funding regardless of gender.",
     "bucket": "slower",
-    "birth_batch": 189,
-    "last_batch": 1421,
+    "birth_batch": 188,
+    "last_batch": 1422,
     "confidence": 0.88,
     "peak_confidence": 0.88,
     "alive": true
@@ -133,8 +133,8 @@
     "id": "female-business-success-faster",
     "title": "Female borrowers who emphasize that their business is currently doing well or is being sustained fund faster.",
     "bucket": "gendered_women",
-    "birth_batch": 199,
-    "last_batch": 1421,
+    "birth_batch": 198,
+    "last_batch": 1422,
     "confidence": 1.0,
     "peak_confidence": 1.0,
     "alive": true
@@ -143,8 +143,8 @@
     "id": "asset-ownership-faster",
     "title": "Mentioning specific asset or business ownership predicts faster funding regardless of gender.",
     "bucket": "faster",
-    "birth_batch": 793,
-    "last_batch": 1421,
+    "birth_batch": 792,
+    "last_batch": 1422,
     "confidence": 0.8,
     "peak_confidence": 0.8,
     "alive": true
@@ -153,8 +153,8 @@
     "id": "family-responsibilities-slower-general",
     "title": "Mentioning family responsibilities or supporting family members predicts slower funding regardless of gender.",
     "bucket": "slower",
-    "birth_batch": 1323,
-    "last_batch": 1421,
+    "birth_batch": 1322,
+    "last_batch": 1422,
     "confidence": 0.85,
     "peak_confidence": 0.85,
     "alive": true
@@ -163,8 +163,8 @@
     "id": "female-aspirational-language-faster",
     "title": "Female borrowers who use aspirational language such as 'dreams' for their business fund faster.",
     "bucket": "gendered_women",
-    "birth_batch": 1339,
-    "last_batch": 1421,
+    "birth_batch": 1338,
+    "last_batch": 1422,
     "confidence": 0.98,
     "peak_confidence": 0.98,
     "alive": true
@@ -173,10 +173,10 @@
     "id": "loan-history-faster-general",
     "title": "Mentioning a history of successful loan repayment or previous profits predicts faster funding regardless of gender.",
     "bucket": "faster",
-    "birth_batch": 1391,
-    "last_batch": 1421,
-    "confidence": 0.46,
-    "peak_confidence": 0.46,
+    "birth_batch": 1390,
+    "last_batch": 1422,
+    "confidence": 0.52,
+    "peak_confidence": 0.52,
     "alive": true
   }
 ]
