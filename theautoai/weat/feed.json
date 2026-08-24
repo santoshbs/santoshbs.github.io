@@ -1,5 +1,111 @@
 [
   {
+    "id": "35405655064e",
+    "timestamp": "2026-08-24T07:18:20.842220+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Teachers vs Artists on clarity versus obscurity",
+    "labels": {
+      "X": "Teachers",
+      "Y": "Artists",
+      "A": "clarity",
+      "B": "obscurity"
+    },
+    "canonical_keys": {
+      "X": "teachers",
+      "Y": "artists",
+      "A": "clarity",
+      "B": "obscurity"
+    },
+    "effect_size": 0.9598967148189006,
+    "p_value": 0.00846,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "teacher",
+        "professor",
+        "instructor",
+        "educator",
+        "tutor",
+        "lecturer",
+        "mentor",
+        "pedagogue",
+        "trainer",
+        "principal",
+        "dean",
+        "headmaster",
+        "superintendent",
+        "chancellor",
+        "provost"
+      ],
+      "Y_used": [
+        "artist",
+        "painter",
+        "sculptor",
+        "musician",
+        "poet",
+        "writer",
+        "composer",
+        "actor",
+        "director",
+        "dancer",
+        "designer",
+        "photographer",
+        "illustrator",
+        "cartoonist",
+        "filmmaker"
+      ],
+      "A_used": [
+        "clear",
+        "clarity",
+        "lucid",
+        "transparent",
+        "obvious",
+        "understandable",
+        "comprehensible",
+        "intelligible",
+        "explicit",
+        "precise",
+        "straightforward",
+        "direct",
+        "plain",
+        "unambiguous",
+        "distinct"
+      ],
+      "B_used": [
+        "obscure",
+        "obscurity",
+        "ambiguous",
+        "cryptic",
+        "vague",
+        "murky",
+        "muddled",
+        "confusing",
+        "perplexing",
+        "bewildering",
+        "indecipherable",
+        "enigmatic",
+        "mysterious",
+        "hidden",
+        "opaque"
+      ]
+    },
+    "proposal": "People associate Teachers with clarity more strongly than they associate Artists with clarity. While existing literature extensively maps the logic/creativity or precision/ambiguity dimensions between scientists and artists, the implicit association of clarity between the distinct social roles of teachers and artists remains underexplored. This comparison is novel because it isolates the pedagogical actor from the scientific researcher, testing whether the stereotype of obscurity is tied to artistic production specifically or to knowledge-work in general. It is interesting and important because public debates about 'art education' and the value of the humanities often hinge on assumptions about whether art illuminates meaning or obscures it; finding that teachers are implicitly linked to clarity while artists are linked to obscurity would reveal a deep mental bias that may undermine the perceived communicative value of artistic practice in favor of instrumental teaching.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "f2b8689e543e",
     "timestamp": "2026-08-24T06:03:17.910366+00:00",
     "schema_version": "autoresearch.v1",
