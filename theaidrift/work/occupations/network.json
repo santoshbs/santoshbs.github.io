@@ -29,9 +29,9 @@
         "id": "17",
         "title": "Architecture & Engineering",
         "group": "engineering",
-        "refs": 495,
-        "signals": 475,
-        "occupations": 45
+        "refs": 498,
+        "signals": 477,
+        "occupations": 46
       },
       {
         "id": "19",
@@ -165,8 +165,8 @@
         "id": "51",
         "title": "Production",
         "group": "production",
-        "refs": 79,
-        "signals": 52,
+        "refs": 80,
+        "signals": 53,
         "occupations": 27
       },
       {
@@ -238,14 +238,14 @@
         "weight": 2
       },
       {
+        "source": "17",
+        "target": "51",
+        "weight": 24
+      },
+      {
         "source": "21",
         "target": "33",
         "weight": 1
-      },
-      {
-        "source": "17",
-        "target": "51",
-        "weight": 23
       },
       {
         "source": "17",
@@ -2862,9 +2862,9 @@
           "id": "17-2199.09",
           "title": "Nanosystems Engineers",
           "group": "engineering",
-          "refs": 8,
-          "revised": "2026-06-15",
-          "signals": 7
+          "refs": 9,
+          "revised": "2026-08-24",
+          "signals": 8
         },
         {
           "id": "17-2199.10",
@@ -2915,6 +2915,14 @@
           "signals": 20
         },
         {
+          "id": "17-3026.01",
+          "title": "Nanotechnology Engineering Technologists and Technicians",
+          "group": "engineering",
+          "refs": 2,
+          "revised": "2026-08-24",
+          "signals": 1
+        },
+        {
           "id": "17-3027.00",
           "title": "Mechanical Engineering Technologists and Technicians",
           "group": "engineering",
@@ -2948,6 +2956,11 @@
         }
       ],
       "edges": [
+        {
+          "source": "17-2199.09",
+          "target": "17-3026.01",
+          "signal": "TSMC projects 70% annual growth in 2nm capacity through 2028"
+        },
         {
           "source": "17-2051.01",
           "target": "17-2141.02",
@@ -6771,9 +6784,9 @@
           "id": "51-9141.00",
           "title": "Semiconductor Processing Technicians",
           "group": "production",
-          "refs": 12,
-          "revised": "2026-06-20",
-          "signals": 11
+          "refs": 13,
+          "revised": "2026-08-24",
+          "signals": 12
         },
         {
           "id": "51-9195.03",
@@ -7603,6 +7616,7 @@
     "17-3021.00": "17",
     "17-3023.00": "17",
     "17-3024.01": "17",
+    "17-3026.01": "17",
     "17-3027.00": "17",
     "17-3027.01": "17",
     "17-3029.08": "17",
