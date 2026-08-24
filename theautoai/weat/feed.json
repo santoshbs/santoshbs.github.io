@@ -1,5 +1,111 @@
 [
   {
+    "id": "f2b8689e543e",
+    "timestamp": "2026-08-24T06:03:17.910366+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "writers vs soldiers on psychological proximity vs distance",
+    "labels": {
+      "X": "writers",
+      "Y": "soldiers",
+      "A": "detachment",
+      "B": "engagement"
+    },
+    "canonical_keys": {
+      "X": "writers",
+      "Y": "soldiers",
+      "A": "detachment",
+      "B": "engagement"
+    },
+    "effect_size": 0.0836983309183442,
+    "p_value": 0.82564,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "writers",
+        "authors",
+        "journalists",
+        "poets",
+        "novelists",
+        "essayists",
+        "screenwriters",
+        "playwrights",
+        "bloggers",
+        "editors",
+        "reporters",
+        "correspondents",
+        "chroniclers",
+        "historians",
+        "commentators"
+      ],
+      "Y_used": [
+        "soldiers",
+        "troops",
+        "combatants",
+        "fighters",
+        "warriors",
+        "marines",
+        "infantry",
+        "veterans",
+        "recruits",
+        "cadets",
+        "guardsmen",
+        "rangers",
+        "officers",
+        "commanders",
+        "defenders"
+      ],
+      "A_used": [
+        "detachment",
+        "distance",
+        "removal",
+        "isolation",
+        "separation",
+        "aloofness",
+        "objectivity",
+        "dispassion",
+        "neutrality",
+        "impartiality",
+        "disinterest",
+        "disengagement",
+        "remoteness",
+        "estrangement",
+        "alienation"
+      ],
+      "B_used": [
+        "engagement",
+        "involvement",
+        "participation",
+        "connection",
+        "intimacy",
+        "closeness",
+        "presence",
+        "immersion",
+        "immediacy",
+        "urgency",
+        "proximity",
+        "action",
+        "commitment",
+        "attachment",
+        "exposure"
+      ]
+    },
+    "proposal": "People associate writers with detachment more strongly than they associate soldiers with detachment. This proposal examines the implicit cognitive link between the act of recording or creating narrative and psychological distance, contrasting it with the immersive, high-stakes physical engagement culturally ascribed to soldiers. While explicit discourse may celebrate the objectivity of writers, implicit cognition may encode a bias that frames literary or journalistic roles as inherently removed from the immediate realities of conflict or danger. This association is novel because prior implicit research has focused on soldiers relative to civilians or police, neglecting the specific dichotomy between knowledge workers and combatants. Confirming this link would shift understanding of how 'the pen' is mentally represented in relation to 'the sword,' revealing assumptions about safety, credibility, and moral proximity that structure public evaluation of intellectuals and journalists.",
+    "iterations": 3,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "51b55a454f87",
     "timestamp": "2026-08-24T05:14:16.527121+00:00",
     "schema_version": "autoresearch.v1",
