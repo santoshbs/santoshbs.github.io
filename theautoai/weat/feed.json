@@ -1,5 +1,111 @@
 [
   {
+    "id": "4c6f6f5edfd4",
+    "timestamp": "2026-08-24T15:52:40.224914+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "speculators vs gamblers on Rationality vs Chance",
+    "labels": {
+      "X": "speculators",
+      "Y": "gamblers",
+      "A": "Rational/Calculated",
+      "B": "Chance/Impulsive"
+    },
+    "canonical_keys": {
+      "X": "speculators",
+      "Y": "gamblers",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 1.3587141751350995,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "speculator",
+        "trader",
+        "investor",
+        "broker",
+        "analyst",
+        "financier",
+        "capitalist",
+        "entrepreneur",
+        "banker",
+        "manager",
+        "executive",
+        "dealer",
+        "merchant",
+        "speculators",
+        "venturer"
+      ],
+      "Y_used": [
+        "gambler",
+        "punter",
+        "bettor",
+        "player",
+        "cardplayer",
+        "bookie",
+        "hustler",
+        "risker",
+        "wagerer",
+        "dicer",
+        "roller",
+        "spinner",
+        "casino",
+        "slots",
+        "roulette"
+      ],
+      "A_used": [
+        "calculated",
+        "rational",
+        "strategic",
+        "analytical",
+        "logical",
+        "reasoned",
+        "deliberate",
+        "planned",
+        "systematic",
+        "methodical",
+        "thoughtful",
+        "careful",
+        "measured",
+        "scientific",
+        "informed"
+      ],
+      "B_used": [
+        "chance",
+        "luck",
+        "impulse",
+        "random",
+        "arbitrary",
+        "blind",
+        "reckless",
+        "impulsive",
+        "accidental",
+        "haphazard",
+        "whimsical",
+        "spontaneous",
+        "erratic",
+        "unpredictable",
+        "serendipitous"
+      ]
+    },
+    "proposal": "People associate speculators with calculated risk more strongly than they associate gamblers with calculated risk. While both categories involve wagering on uncertain outcomes, public discourse often frames financial speculation as a sophisticated activity grounded in market analysis and strategic judgment, whereas gambling is stereotyped as driven by chance, impulse, or luck. Examining this differential implicit association is novel because prior research typically contrasts investors with gamblers, neglecting speculators who occupy a morally and cognitively ambiguous middle ground in economic systems. Confirming this association would reveal how mental representations legitimize high-risk financial behavior by implicitly attributing rationality to speculators while reserving labels of irrationality for gamblers, thereby shedding light on the cognitive mechanisms that sustain distinctions in market ethics and regulation.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "fc1507d09811",
     "timestamp": "2026-08-24T15:02:13.296488+00:00",
     "schema_version": "autoresearch.v1",
