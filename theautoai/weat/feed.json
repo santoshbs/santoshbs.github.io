@@ -1,5 +1,111 @@
 [
   {
+    "id": "32708593e48f",
+    "timestamp": "2026-08-24T07:50:47.254793+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "pundits vs journalists on epistemic grounding",
+    "labels": {
+      "X": "pundits",
+      "Y": "journalists",
+      "A": "speculation",
+      "B": "verification"
+    },
+    "canonical_keys": {
+      "X": "pundits",
+      "Y": "journalists",
+      "A": "speculation",
+      "B": "verification"
+    },
+    "effect_size": 0.888454587712806,
+    "p_value": 0.01466,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "pundit",
+        "analyst",
+        "critic",
+        "columnist",
+        "speaker",
+        "debater",
+        "talker",
+        "advocate",
+        "influencer",
+        "blogger",
+        "podcaster",
+        "spinner",
+        "propagandist",
+        "reviewer",
+        "orator"
+      ],
+      "Y_used": [
+        "journalist",
+        "reporter",
+        "editor",
+        "correspondent",
+        "newscaster",
+        "anchor",
+        "presenter",
+        "observer",
+        "witness",
+        "stenographer",
+        "typist",
+        "clerk",
+        "secretary",
+        "chronicler",
+        "historian"
+      ],
+      "A_used": [
+        "speculate",
+        "conjecture",
+        "guess",
+        "predict",
+        "forecast",
+        "guesswork",
+        "imagination",
+        "fantasy",
+        "dream",
+        "vision",
+        "belief",
+        "opinion",
+        "idea",
+        "notion",
+        "surmise"
+      ],
+      "B_used": [
+        "fact",
+        "verify",
+        "evidence",
+        "report",
+        "truth",
+        "data",
+        "record",
+        "proof",
+        "document",
+        "confirm",
+        "validate",
+        "accurate",
+        "precise",
+        "careful",
+        "cautious"
+      ]
+    },
+    "proposal": "People associate pundits with speculation more strongly than they associate journalists with speculation. This differential reflects how contemporary media discourse frames opinion-driven commentary as inherently forward-looking and conjectural, while framing traditional reporting as grounded in verification and caution. Examining this implicit link is novel because while explicit studies distinguish news from opinion, few have tested whether lay cognition automatically binds pundits to hypothetical reasoning rather than factual grounding. Confirming this association would reveal how media consumption shapes intuitive beliefs about epistemic standards across professional roles, mattering for public trust in information ecosystems.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "35405655064e",
     "timestamp": "2026-08-24T07:18:20.842220+00:00",
     "schema_version": "autoresearch.v1",
