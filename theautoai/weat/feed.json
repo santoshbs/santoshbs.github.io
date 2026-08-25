@@ -1,5 +1,111 @@
 [
   {
+    "id": "1e3e1f1f1cda",
+    "timestamp": "2026-08-25T05:20:30.198088+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Voters vs Politicians on Authenticity vs Artificiality",
+    "labels": {
+      "X": "Voters",
+      "Y": "Politicians",
+      "A": "Authenticity",
+      "B": "Artificiality"
+    },
+    "canonical_keys": {
+      "X": "voters",
+      "Y": "politicians",
+      "A": "authenticity",
+      "B": "artificiality"
+    },
+    "effect_size": 0.27158183750884346,
+    "p_value": 0.47319,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "voter",
+        "citizen",
+        "elector",
+        "constituent",
+        "taxpayer",
+        "resident",
+        "public",
+        "people",
+        "neighbor",
+        "community",
+        "population",
+        "individual",
+        "person",
+        "commoner",
+        "electorate"
+      ],
+      "Y_used": [
+        "politician",
+        "senator",
+        "representative",
+        "congressman",
+        "president",
+        "governor",
+        "mayor",
+        "minister",
+        "official",
+        "statesman",
+        "legislator",
+        "diplomat",
+        "administrator",
+        "bureaucrat",
+        "candidate"
+      ],
+      "A_used": [
+        "genuine",
+        "sincere",
+        "honest",
+        "real",
+        "natural",
+        "pure",
+        "candid",
+        "earnest",
+        "transparent",
+        "straightforward",
+        "reliable",
+        "trustworthy",
+        "faithful",
+        "open",
+        "heartfelt"
+      ],
+      "B_used": [
+        "fake",
+        "artificial",
+        "calculated",
+        "theatrical",
+        "strategic",
+        "manipulative",
+        "deceptive",
+        "false",
+        "insincere",
+        "phony",
+        "staged",
+        "contrived",
+        "superficial",
+        "cunning",
+        "fraudulent"
+      ]
+    },
+    "proposal": "People associate Voters with Authenticity more strongly than they associate Politicians with Authenticity. This differential implicit association examines the extent to which the public mental model of the democratic electorate privileges notions of 'realness,' sincerity, and unvarnished truth over the perceived performativity and strategic posturing of professional political officeholders. The association is novel because while explicit research has extensively documented anti-incumbent sentiment or distrust in institutions, implicit measures of the 'authenticity gap' between the citizenry and their representatives remain unprobed. It is interesting and relevant given contemporary discourse framing politics as 'theater' and elevating 'grassroots' voices as antidotes to elite manipulation. Confirming this bias would suggest that the public implicitly views the collective voter as a moral anchor of genuine human expression, whereas politicians are mentally categorized as actors engaging in calculated fabrication, a distinction that has profound implications for the perceived legitimacy of political representation and the public's receptivity to political messaging.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "f722a41b192e",
     "timestamp": "2026-08-25T03:03:12.949944+00:00",
     "schema_version": "autoresearch.v1",
