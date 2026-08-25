@@ -1,5 +1,114 @@
 [
   {
+    "id": "0de073ea0c62",
+    "timestamp": "2026-08-25T23:43:42.534971+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "comedians vs philosophers on truth versus fiction",
+    "labels": {
+      "X": "comedians",
+      "Y": "philosophers",
+      "A": "truth",
+      "B": "fiction"
+    },
+    "canonical_keys": {
+      "X": "comedians",
+      "Y": "philosophers",
+      "A": "truth",
+      "B": "fiction"
+    },
+    "effect_size": -1.0434485471428507,
+    "p_value": 0.0035,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 16,
+      "B": 16
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "comedian",
+        "comic",
+        "humorist",
+        "clown",
+        "satirist",
+        "jester",
+        "entertainer",
+        "performer",
+        "buffoon",
+        "mimic",
+        "gagman",
+        "wisecracker",
+        "prankster",
+        "comedienne",
+        "funnyman"
+      ],
+      "Y_used": [
+        "philosopher",
+        "thinker",
+        "theorist",
+        "sage",
+        "scholar",
+        "academic",
+        "intellectual",
+        "professor",
+        "researcher",
+        "academician",
+        "metaphysician",
+        "logician",
+        "ethicist",
+        "epistemologist",
+        "dialectician",
+        "naturalist"
+      ],
+      "A_used": [
+        "truth",
+        "real",
+        "honest",
+        "genuine",
+        "factual",
+        "accurate",
+        "reality",
+        "true",
+        "sincere",
+        "authentic",
+        "valid",
+        "correct",
+        "literal",
+        "straightforward",
+        "actual",
+        "tangible"
+      ],
+      "B_used": [
+        "fiction",
+        "fake",
+        "false",
+        "imaginary",
+        "invented",
+        "fantasy",
+        "absurd",
+        "myth",
+        "lie",
+        "deceit",
+        "unreal",
+        "pretend",
+        "sham",
+        "bogus",
+        "illusory",
+        "dream"
+      ]
+    },
+    "proposal": "People associate comedians with truth more strongly than they associate philosophers with truth. This proposal investigates a cultural narrative in which comedy is implicitly linked to revealing hidden realities, exposing hypocrisy, and speaking candidly about lived experience, whereas philosophy is stereotyped as abstract, obscure, or detached from practical life. This association is novel because implicit research on truth-seeking has historically focused on scientists, journalists, or judges, neglecting the epistemic stereotypes attached to humorists and theorists. Confirming this pattern would reveal a significant tension in how the public mentally represents the sources of authentic knowledge versus academic inquiry.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "e41a9c0f8e2c",
     "timestamp": "2026-08-25T15:23:53.968794+00:00",
     "schema_version": "autoresearch.v1",
