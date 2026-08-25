@@ -1,5 +1,114 @@
 [
   {
+    "id": "969b4fc6eb45",
+    "timestamp": "2026-08-25T00:47:56.986766+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "diplomats vs entrepreneurs on caution versus boldness",
+    "labels": {
+      "X": "diplomats",
+      "Y": "entrepreneurs",
+      "A": "caution",
+      "B": "boldness"
+    },
+    "canonical_keys": {
+      "X": "diplomats",
+      "Y": "entrepreneurs",
+      "A": "caution",
+      "B": "boldness"
+    },
+    "effect_size": 0.7615668093088753,
+    "p_value": 0.03934,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 16,
+      "B": 16
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "diplomat",
+        "ambassador",
+        "envoy",
+        "negotiator",
+        "statesman",
+        "consul",
+        "delegate",
+        "representative",
+        "minister",
+        "official",
+        "mediator",
+        "peacemaker",
+        "officer",
+        "bureaucrat",
+        "politician",
+        "attache"
+      ],
+      "Y_used": [
+        "entrepreneur",
+        "founder",
+        "businessman",
+        "executive",
+        "investor",
+        "tycoon",
+        "magnate",
+        "capitalist",
+        "mogul",
+        "boss",
+        "owner",
+        "financier",
+        "trader",
+        "pioneer",
+        "speculator"
+      ],
+      "A_used": [
+        "cautious",
+        "careful",
+        "prudent",
+        "timid",
+        "safe",
+        "reserved",
+        "hesitant",
+        "wary",
+        "guarded",
+        "deliberate",
+        "conservative",
+        "circumspect",
+        "watchful",
+        "apprehensive",
+        "nervous",
+        "fearful"
+      ],
+      "B_used": [
+        "bold",
+        "daring",
+        "reckless",
+        "risky",
+        "adventurous",
+        "fearless",
+        "aggressive",
+        "venturesome",
+        "audacious",
+        "rash",
+        "impulsive",
+        "brave",
+        "courageous",
+        "heroic",
+        "gallant",
+        "intrepid"
+      ]
+    },
+    "proposal": "People associate diplomats with caution more strongly than they associate entrepreneurs with caution. This differential implicit association taps into contemporary discourse contrasting institutional risk-aversion with market-driven boldness, a tension increasingly visible in policy debates and startup culture. While explicit stereotypes about diplomats being bureaucratic and entrepreneurs being reckless are widely discussed, the automatic, subconscious linkage of these roles to risk sensitivity has not been systematically measured using implicit association paradigms. Confirming this association would reveal how deeply institutional versus market mentalities are embedded in public cognition, potentially shaping public trust and support for different governance and economic models.",
+    "iterations": 3,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "4c6f6f5edfd4",
     "timestamp": "2026-08-24T15:52:40.224914+00:00",
     "schema_version": "autoresearch.v1",
