@@ -1,5 +1,111 @@
 [
   {
+    "id": "6f1ea6dc7803",
+    "timestamp": "2026-08-25T01:35:07.412999+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "politicians vs bureaucrats on moral outrage versus procedural neutrality",
+    "labels": {
+      "X": "politicians",
+      "Y": "bureaucrats",
+      "A": "moral outrage",
+      "B": "procedural neutrality"
+    },
+    "canonical_keys": {
+      "X": "politicians",
+      "Y": "bureaucrats",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 1.4961508151989735,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "politician",
+        "senator",
+        "representative",
+        "president",
+        "governor",
+        "mayor",
+        "minister",
+        "legislator",
+        "lawmaker",
+        "congressman",
+        "congresswoman",
+        "parliamentarian",
+        "councillor",
+        "candidate",
+        "campaigner"
+      ],
+      "Y_used": [
+        "bureaucrat",
+        "clerk",
+        "administrator",
+        "official",
+        "functionary",
+        "officer",
+        "secretary",
+        "manager",
+        "director",
+        "aide",
+        "technician",
+        "operator",
+        "coordinator",
+        "analyst",
+        "specialist"
+      ],
+      "A_used": [
+        "outrage",
+        "indignation",
+        "righteous",
+        "passionate",
+        "furious",
+        "vehement",
+        "condemn",
+        "denounce",
+        "protest",
+        "rebel",
+        "riot",
+        "strike",
+        "battle",
+        "crusade",
+        "revolt"
+      ],
+      "B_used": [
+        "neutral",
+        "impartial",
+        "objective",
+        "detached",
+        "routine",
+        "standard",
+        "systematic",
+        "methodical",
+        "regulated",
+        "operational",
+        "functional",
+        "technical",
+        "logistical",
+        "compliance",
+        "protocol"
+      ]
+    },
+    "proposal": "People associate politicians with moral outrage more strongly than they associate bureaucrats with moral outrage. This differential implicit association captures a culturally pervasive but underexamined intuition: that elected representatives are expected to perform indignation and take stark ethical stands to mobilize constituents, whereas civil servants are mentally categorized as neutral, procedural actors who deliberately avoid moral posturing. Confirming this bias would reveal how democratic discourse implicitly delegitimizes impartial governance by framing emotional restraint as moral failure, while disconfirming it would suggest a deeper public expectation of ethical neutrality across all institutional roles. Examining this axis is timely given rising polarization and the rhetorical weaponization of emotional displays in public office.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "969b4fc6eb45",
     "timestamp": "2026-08-25T00:47:56.986766+00:00",
     "schema_version": "autoresearch.v1",
