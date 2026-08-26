@@ -1,5 +1,111 @@
 [
   {
+    "id": "c0cade0de275",
+    "timestamp": "2026-08-26T06:37:17.255095+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Hosts vs Guests on social responsibility vs personal freedom",
+    "labels": {
+      "X": "Hosts",
+      "Y": "Guests",
+      "A": "responsibility",
+      "B": "freedom"
+    },
+    "canonical_keys": {
+      "X": "hosts",
+      "Y": "guests",
+      "A": "responsibility",
+      "B": "freedom"
+    },
+    "effect_size": 0.9537370933876854,
+    "p_value": 0.0087,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "host",
+        "hostess",
+        "entertainer",
+        "innkeeper",
+        "landlord",
+        "proprietor",
+        "organizer",
+        "planner",
+        "coordinator",
+        "director",
+        "manager",
+        "supervisor",
+        "guide",
+        "captain",
+        "chaperone"
+      ],
+      "Y_used": [
+        "guest",
+        "visitor",
+        "caller",
+        "attendee",
+        "lodger",
+        "boarder",
+        "invitee",
+        "spectator",
+        "onlooker",
+        "newcomer",
+        "arrival",
+        "entrant",
+        "tourist",
+        "sojourner",
+        "traveler"
+      ],
+      "A_used": [
+        "responsibility",
+        "duty",
+        "obligation",
+        "accountability",
+        "burden",
+        "commitment",
+        "stewardship",
+        "management",
+        "leadership",
+        "control",
+        "care",
+        "maintenance",
+        "protection",
+        "organization",
+        "direction"
+      ],
+      "B_used": [
+        "freedom",
+        "liberty",
+        "leisure",
+        "relaxation",
+        "vacation",
+        "enjoyment",
+        "pleasure",
+        "privilege",
+        "indulgence",
+        "recreation",
+        "amusement",
+        "entertainment",
+        "play",
+        "rest",
+        "ease"
+      ]
+    },
+    "proposal": "People associate Hosts with social responsibility more strongly than they associate Guests with social responsibility. This association stems from the structural asymmetry of hospitality rituals, where the host is culturally scripted as the provider, protector, and organizer of social cohesion, while the guest is cast in a dependent role requiring only compliance and gratitude. Examining this implicit bias is novel because research has focused on explicit norms of etiquette but not on the automatic attribution of moral duty to the party controlling the environment. This matters because these latent associations may underpin broader judgments about who is accountable for collective well-being, potentially shifting how we attribute agency in communal settings from the organizer to the participant.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "3647df97cc92",
     "timestamp": "2026-08-26T04:50:11.900609+00:00",
     "schema_version": "autoresearch.v1",
