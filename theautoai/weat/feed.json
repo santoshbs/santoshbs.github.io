@@ -1,5 +1,111 @@
 [
   {
+    "id": "b348326fa2d8",
+    "timestamp": "2026-08-26T16:30:01.400752+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "therapists vs surgeons on emotional expressiveness versus restraint",
+    "labels": {
+      "X": "therapists",
+      "Y": "surgeons",
+      "A": "emotional expressiveness",
+      "B": "emotional restraint"
+    },
+    "canonical_keys": {
+      "X": "therapists",
+      "Y": "surgeons",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 0.010211329036933928,
+    "p_value": 0.97859,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "therapist",
+        "counselor",
+        "psychologist",
+        "psychiatrist",
+        "clinician",
+        "analyst",
+        "healer",
+        "coach",
+        "mentor",
+        "guide",
+        "adviser",
+        "helper",
+        "worker",
+        "specialist",
+        "practitioner"
+      ],
+      "Y_used": [
+        "surgeon",
+        "doctor",
+        "physician",
+        "medic",
+        "operator",
+        "technician",
+        "assistant",
+        "resident",
+        "fellow",
+        "intern",
+        "nurse",
+        "staff",
+        "director",
+        "consultant",
+        "colleague"
+      ],
+      "A_used": [
+        "emotional",
+        "expressive",
+        "open",
+        "sensitive",
+        "feeling",
+        "affectionate",
+        "passionate",
+        "warm",
+        "tender",
+        "caring",
+        "empathetic",
+        "vulnerable",
+        "loving",
+        "supportive",
+        "comforting"
+      ],
+      "B_used": [
+        "stoic",
+        "restrained",
+        "controlled",
+        "detached",
+        "calm",
+        "composed",
+        "disciplined",
+        "precise",
+        "technical",
+        "methodical",
+        "unemotional",
+        "neutral",
+        "objective",
+        "rational",
+        "logical"
+      ]
+    },
+    "proposal": "People associate therapists with emotional expressiveness more strongly than they associate surgeons with emotional expressiveness. This differential implicit association captures a contemporary split in how the public mentally represents two high-status medical helping professions, reflecting entrenched cultural narratives about emotional labor in mental health care versus physical surgery. While explicit surveys often treat empathy as a universal clinical virtue, implicit measures may reveal a deeper cognitive link between therapeutic practice and open affective display, contrasted with a surgical stereotype of stoic technical control. Examining this association matters because it sheds light on how unexamined cognitive heuristics shape patient expectations, interprofessional respect, and the perceived legitimacy of different medical care pathways.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "70e43247fd78",
     "timestamp": "2026-08-26T12:16:08.097765+00:00",
     "schema_version": "autoresearch.v1",
