@@ -1,5 +1,111 @@
 [
   {
+    "id": "ca495b0d8593",
+    "timestamp": "2026-08-26T03:17:30.115578+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Vagabonds vs Exiles on volition versus compulsion",
+    "labels": {
+      "X": "Vagabonds",
+      "Y": "Exiles",
+      "A": "Agency",
+      "B": "Coercion"
+    },
+    "canonical_keys": {
+      "X": "vagabonds",
+      "Y": "exiles",
+      "A": "agency",
+      "B": "coercion"
+    },
+    "effect_size": 0.7199019833589497,
+    "p_value": 0.0505,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "vagabond",
+        "vagrant",
+        "tramp",
+        "drifter",
+        "wanderer",
+        "rover",
+        "homeless",
+        "hobo",
+        "beggar",
+        "nomad",
+        "transient",
+        "itinerant",
+        "loafer",
+        "idler",
+        "straggler"
+      ],
+      "Y_used": [
+        "exile",
+        "outcast",
+        "pariah",
+        "fugitive",
+        "refugee",
+        "castaway",
+        "deportee",
+        "outlaw",
+        "outsider",
+        "alien",
+        "stranger",
+        "deserter",
+        "sojourner",
+        "expatriate",
+        "banished"
+      ],
+      "A_used": [
+        "agency",
+        "choice",
+        "volition",
+        "autonomy",
+        "freedom",
+        "will",
+        "control",
+        "power",
+        "liberty",
+        "independent",
+        "free",
+        "voluntary",
+        "decide",
+        "select",
+        "option"
+      ],
+      "B_used": [
+        "force",
+        "coercion",
+        "compulsion",
+        "constraint",
+        "restriction",
+        "limitation",
+        "bondage",
+        "slavery",
+        "captivity",
+        "victimhood",
+        "helplessness",
+        "powerlessness",
+        "subjugation",
+        "oppression",
+        "domination"
+      ]
+    },
+    "proposal": "People associate Vagabonds with Agency more strongly than they associate Exiles with Agency. This differential implicit association reflects a potential bias where rootlessness attributed to personal lifestyle or wandering (vagabondage) is mentally represented as a matter of choice and volition, whereas rootlessness attributed to political banishment, persecution, or forced displacement (exile) is represented as a state of coercion and victimhood. This association is novel because prior literature has not probed the implicit attribution of autonomy across these distinct categories of displacement, despite their frequent co-occurrence in literary and political discourse. Examining this matters because the implicit linkage of vagabonds with agency may underpin punitive public attitudes toward homelessness and itinerancy, while the dissociation of exiles from agency may shape distinct frameworks for asylum and political refuge. The categories satisfy the vocabulary constraint, with terms like vagrant, tramp, drifter, wanderer, rover, stroller, loafer, idler, mendicant, beggar, hobo, bum, transient, itinerant, and homeless for X; and exile, outcast, pariah, fugitive, refugee, émigré, deportee, castaway, expatriate, sojourner, alien, stranger, outsider, banished, and deserter for Y.",
+    "iterations": 3,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "c0deeb7c7086",
     "timestamp": "2026-08-26T01:53:49.882273+00:00",
     "schema_version": "autoresearch.v1",
