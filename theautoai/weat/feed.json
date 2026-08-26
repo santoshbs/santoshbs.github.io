@@ -1,5 +1,111 @@
 [
   {
+    "id": "70e43247fd78",
+    "timestamp": "2026-08-26T12:16:08.097765+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "scholars vs practitioners on epistemic caution vs decisiveness",
+    "labels": {
+      "X": "scholars",
+      "Y": "practitioners",
+      "A": "uncertainty",
+      "B": "decisiveness"
+    },
+    "canonical_keys": {
+      "X": "scholars",
+      "Y": "practitioners",
+      "A": "uncertainty",
+      "B": "decisiveness"
+    },
+    "effect_size": 1.5406861004849226,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "researcher",
+        "professor",
+        "academic",
+        "scientist",
+        "philosopher",
+        "theorist",
+        "historian",
+        "biologist",
+        "physicist",
+        "mathematician",
+        "sociologist",
+        "economist",
+        "anthropologist",
+        "linguist",
+        "scholar"
+      ],
+      "Y_used": [
+        "engineer",
+        "doctor",
+        "architect",
+        "plumber",
+        "electrician",
+        "mechanic",
+        "programmer",
+        "developer",
+        "manager",
+        "technician",
+        "builder",
+        "contractor",
+        "nurse",
+        "trader",
+        "investor"
+      ],
+      "A_used": [
+        "uncertainty",
+        "doubt",
+        "caution",
+        "nuance",
+        "ambiguity",
+        "vagueness",
+        "hesitation",
+        "question",
+        "skeptical",
+        "tentative",
+        "preliminary",
+        "conditional",
+        "speculative",
+        "approximate",
+        "uncertain"
+      ],
+      "B_used": [
+        "certainty",
+        "decisive",
+        "action",
+        "result",
+        "fact",
+        "definite",
+        "concrete",
+        "firm",
+        "solid",
+        "practical",
+        "solution",
+        "outcome",
+        "success",
+        "clear",
+        "direct"
+      ]
+    },
+    "proposal": "People associate scholars with epistemic caution more strongly than they associate practitioners with epistemic caution. The axis of comparison is tolerance for ambiguity and hesitation in knowledge claims versus decisiveness and action-orientation. This differential association reflects a latent cultural intuition that academic knowledge production inherently embraces uncertainty, nuance, and fallibility, whereas professional application is mentally represented as decisive, actionable, and certain. While the scholar-practitioner divide is widely discussed in higher education and policy circles, no implicit measure has directly tested whether the public automatically links contemplative knowledge roles with hesitancy or uncertainty tolerance compared to hands-on applied roles. Confirming this association would help explain contemporary trust asymmetries, revealing how implicit epistemic framing shapes public receptivity to expert advice versus technical implementation during crises.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "30b0a42490c1",
     "timestamp": "2026-08-26T10:03:23.016716+00:00",
     "schema_version": "autoresearch.v1",
