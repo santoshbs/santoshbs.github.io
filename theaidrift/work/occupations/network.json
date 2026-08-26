@@ -29,8 +29,8 @@
         "id": "17",
         "title": "Architecture & Engineering",
         "group": "engineering",
-        "refs": 499,
-        "signals": 478,
+        "refs": 500,
+        "signals": 479,
         "occupations": 46
       },
       {
@@ -173,9 +173,9 @@
         "id": "53",
         "title": "Transportation & Material Moving",
         "group": "transport",
-        "refs": 144,
-        "signals": 115,
-        "occupations": 28
+        "refs": 147,
+        "signals": 117,
+        "occupations": 29
       },
       {
         "id": "55",
@@ -235,7 +235,7 @@
       {
         "source": "17",
         "target": "53",
-        "weight": 2
+        "weight": 3
       },
       {
         "source": "17",
@@ -2662,9 +2662,9 @@
           "id": "17-2051.01",
           "title": "Transportation Engineers",
           "group": "engineering",
-          "refs": 5,
-          "revised": "2026-06-30",
-          "signals": 4
+          "refs": 6,
+          "revised": "2026-08-26",
+          "signals": 5
         },
         {
           "id": "17-2051.02",
@@ -6930,9 +6930,9 @@
           "id": "53-2021.00",
           "title": "Air Traffic Controllers",
           "group": "transport",
-          "refs": 5,
-          "revised": "2026-07-24",
-          "signals": 4
+          "refs": 6,
+          "revised": "2026-08-26",
+          "signals": 5
         },
         {
           "id": "53-2022.00",
@@ -7055,6 +7055,14 @@
           "signals": 1
         },
         {
+          "id": "53-6051.01",
+          "title": "Aviation Inspectors",
+          "group": "transport",
+          "refs": 2,
+          "revised": "2026-08-26",
+          "signals": 1
+        },
+        {
           "id": "53-6051.07",
           "title": "Transportation Vehicle, Equipment and Systems Inspectors, Except Aviation",
           "group": "transport",
@@ -7131,6 +7139,11 @@
           "source": "53-3032.00",
           "target": "53-7051.00",
           "signal": "Autonomous Start-Up Humble Announces Cabless Autonomous Electric Hauler"
+        },
+        {
+          "source": "53-2021.00",
+          "target": "53-6051.01",
+          "signal": "Joby Aviation air taxi takes flight in NYC"
         },
         {
           "source": "53-5011.00",
@@ -7925,6 +7938,7 @@
     "53-6032.00": "53",
     "53-6041.00": "53",
     "53-6051.00": "53",
+    "53-6051.01": "53",
     "53-6051.07": "53",
     "53-7051.00": "53",
     "53-7062.00": "53",
