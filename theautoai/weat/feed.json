@@ -1,5 +1,112 @@
 [
   {
+    "id": "3647df97cc92",
+    "timestamp": "2026-08-26T04:50:11.900609+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Masons vs Smiths on permanence vs transience",
+    "labels": {
+      "X": "Masons",
+      "Y": "Smiths",
+      "A": "permanence",
+      "B": "transience"
+    },
+    "canonical_keys": {
+      "X": "masons",
+      "Y": "smiths",
+      "A": "permanence",
+      "B": "transience"
+    },
+    "effect_size": 0.020051579882533553,
+    "p_value": 0.95732,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "mason",
+        "stonemason",
+        "bricklayer",
+        "plasterer",
+        "drywaller",
+        "tiler",
+        "roofer",
+        "builder",
+        "constructor",
+        "sculptor",
+        "engraver",
+        "craftsman",
+        "artisan",
+        "architect",
+        "carver",
+        "contractor"
+      ],
+      "Y_used": [
+        "smith",
+        "metalsmith",
+        "blacksmith",
+        "goldsmith",
+        "silversmith",
+        "coppersmith",
+        "tinsmith",
+        "locksmith",
+        "gunsmith",
+        "farrier",
+        "jeweler",
+        "watchmaker",
+        "machinist",
+        "welder",
+        "caster"
+      ],
+      "A_used": [
+        "permanent",
+        "enduring",
+        "eternal",
+        "everlasting",
+        "immortal",
+        "lasting",
+        "timeless",
+        "durable",
+        "steadfast",
+        "stable",
+        "solid",
+        "fixed",
+        "unchanging",
+        "abiding",
+        "indestructible"
+      ],
+      "B_used": [
+        "transient",
+        "impermanent",
+        "temporary",
+        "fleeting",
+        "ephemeral",
+        "brief",
+        "passing",
+        "mutable",
+        "changeable",
+        "unstable",
+        "fluid",
+        "malleable",
+        "fragile",
+        "perishable",
+        "decaying"
+      ]
+    },
+    "proposal": "People associate Masons with permanence more strongly than they associate Smiths with permanence. While both groups represent foundational craft traditions, masons work primarily with stone, brick, and concrete—materials culturally coded as enduring, immovable, and eternal. Smiths work with metal, which is malleable, subject to rust and reshaping, and often associated with tools and weapons that are functional but transient or changeable. This implicit association highlights how material properties of a trade can bleed into broader stereotypes about the nature of the actors' contributions to society, with masonry implicitly linked to legacy and stability, and smithing to adaptability and utility.",
+    "iterations": 3,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "ca495b0d8593",
     "timestamp": "2026-08-26T03:17:30.115578+00:00",
     "schema_version": "autoresearch.v1",
