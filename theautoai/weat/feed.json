@@ -1,5 +1,111 @@
 [
   {
+    "id": "40eb73eb5bf8",
+    "timestamp": "2026-08-27T14:03:15.491128+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "soldiers vs doctors on tradition versus innovation",
+    "labels": {
+      "X": "soldiers",
+      "Y": "doctors",
+      "A": "tradition",
+      "B": "innovation"
+    },
+    "canonical_keys": {
+      "X": "soldiers",
+      "Y": "doctors",
+      "A": "tradition",
+      "B": "innovation"
+    },
+    "effect_size": 0.8591396231212728,
+    "p_value": 0.01736,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "soldier",
+        "warrior",
+        "ranger",
+        "marine",
+        "guard",
+        "cadet",
+        "combatant",
+        "fighter",
+        "veteran",
+        "trooper",
+        "sergeant",
+        "scout",
+        "sentry",
+        "recruit",
+        "officer"
+      ],
+      "Y_used": [
+        "doctor",
+        "physician",
+        "surgeon",
+        "dentist",
+        "pediatrician",
+        "cardiologist",
+        "anesthesiologist",
+        "radiologist",
+        "psychiatrist",
+        "gynecologist",
+        "neurologist",
+        "pathologist",
+        "internist",
+        "allergist",
+        "dermatologist"
+      ],
+      "A_used": [
+        "tradition",
+        "heritage",
+        "history",
+        "past",
+        "custom",
+        "ritual",
+        "legacy",
+        "ancestor",
+        "ancient",
+        "classic",
+        "standard",
+        "protocol",
+        "formal",
+        "established",
+        "old"
+      ],
+      "B_used": [
+        "innovation",
+        "future",
+        "technology",
+        "modern",
+        "progress",
+        "change",
+        "update",
+        "novel",
+        "new",
+        "invention",
+        "development",
+        "advanced",
+        "futuristic",
+        "science",
+        "research"
+      ]
+    },
+    "proposal": "People associate soldiers with tradition more strongly than they associate doctors with tradition. This differential implicit association reflects a discursive contrast in public representations of institutional culture: the military is often portrayed through the lens of heritage, lineage, uniform standards, and adherence to established protocols, whereas medicine is framed around evidence-based innovation, technological adoption, and the constant updating of practice. Examining this association is novel because implicit research has rarely targeted institutional orientation axes like tradition versus innovation within professional categories. It matters because such mental representations may influence public perceptions of adaptability, reform resistance, and the legitimacy of authority in these two vital sectors.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "836b178d9e7d",
     "timestamp": "2026-08-27T09:43:33.063318+00:00",
     "schema_version": "autoresearch.v1",
