@@ -1,5 +1,111 @@
 [
   {
+    "id": "836b178d9e7d",
+    "timestamp": "2026-08-27T09:43:33.063318+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "firefighters vs police on compassion vs authority",
+    "labels": {
+      "X": "firefighters",
+      "Y": "police",
+      "A": "compassion",
+      "B": "authority"
+    },
+    "canonical_keys": {
+      "X": "firefighters",
+      "Y": "police",
+      "A": "compassion",
+      "B": "authority"
+    },
+    "effect_size": 1.1975752257092458,
+    "p_value": 0.00035,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "firefighter",
+        "firemen",
+        "fireman",
+        "firewoman",
+        "firefighters",
+        "paramedic",
+        "medic",
+        "rescuer",
+        "volunteer",
+        "engineer",
+        "driver",
+        "captain",
+        "lieutenant",
+        "chief",
+        "volunteers"
+      ],
+      "Y_used": [
+        "police",
+        "officer",
+        "cop",
+        "constable",
+        "trooper",
+        "sheriff",
+        "deputy",
+        "marshal",
+        "detective",
+        "inspector",
+        "sergeant",
+        "bailiff",
+        "warden",
+        "guard",
+        "agent"
+      ],
+      "A_used": [
+        "compassionate",
+        "empathetic",
+        "caring",
+        "kind",
+        "gentle",
+        "tender",
+        "loving",
+        "supportive",
+        "helpful",
+        "sympathetic",
+        "altruistic",
+        "benevolent",
+        "considerate",
+        "sensitive",
+        "warm"
+      ],
+      "B_used": [
+        "authoritative",
+        "strict",
+        "rigid",
+        "commanding",
+        "controlling",
+        "dominant",
+        "stern",
+        "severe",
+        "harsh",
+        "forceful",
+        "aggressive",
+        "violent",
+        "disciplined",
+        "orderly",
+        "powerful"
+      ]
+    },
+    "proposal": "People associate firefighters with compassion more strongly than they associate police with compassion. This differential implicit association taps into contemporary public narratives that frame emergency rescue as inherently empathetic while framing law enforcement as primarily authoritative or procedural. Examining this bias is novel because prior research has focused heavily on explicit trust or perceived competence, leaving the automatic emotional valence of these roles largely unexplored. Confirming this association would illuminate how institutional mandates shape spontaneous moral attributions, which matters for public cooperation, policy support, and intergroup relations during crises.",
+    "iterations": 3,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "35000fdcf7d2",
     "timestamp": "2026-08-27T06:11:52.471916+00:00",
     "schema_version": "autoresearch.v1",
