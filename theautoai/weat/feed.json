@@ -1,5 +1,111 @@
 [
   {
+    "id": "d587a242193d",
+    "timestamp": "2026-08-27T01:06:49.092334+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Witnesses vs Spectators on moral duty vs leisure",
+    "labels": {
+      "X": "Witnesses",
+      "Y": "Spectators",
+      "A": "moral duty",
+      "B": "leisure"
+    },
+    "canonical_keys": {
+      "X": "witnesses",
+      "Y": "spectators",
+      "A": "",
+      "B": "leisure"
+    },
+    "effect_size": 1.1288498942187346,
+    "p_value": 0.00091,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "witness",
+        "eyewitness",
+        "testifier",
+        "attester",
+        "declarant",
+        "informant",
+        "chronicler",
+        "reporter",
+        "observer",
+        "beholder",
+        "seer",
+        "auditor",
+        "monitor",
+        "scout",
+        "journalist"
+      ],
+      "Y_used": [
+        "spectator",
+        "onlooker",
+        "bystander",
+        "reader",
+        "listener",
+        "fan",
+        "patron",
+        "guest",
+        "tourist",
+        "client",
+        "attendee",
+        "follower",
+        "consumer",
+        "viewer",
+        "gazer"
+      ],
+      "A_used": [
+        "duty",
+        "responsibility",
+        "obligation",
+        "requirement",
+        "mandate",
+        "commitment",
+        "burden",
+        "accountability",
+        "liability",
+        "account",
+        "answer",
+        "reckoning",
+        "vow",
+        "pledge",
+        "oath"
+      ],
+      "B_used": [
+        "leisure",
+        "entertainment",
+        "fun",
+        "play",
+        "game",
+        "sport",
+        "amusement",
+        "pastime",
+        "recreation",
+        "holiday",
+        "vacation",
+        "relaxation",
+        "comfort",
+        "ease",
+        "pleasure"
+      ]
+    },
+    "proposal": "People associate witnesses with moral duty more strongly than they associate spectators with moral duty. This differential association is novel because while both categories involve observing events, contemporary discourse on the 'bystander effect' and digital citizen journalism often conflates the passive consumer of information with the legally or ethically compelled testifier. Examining this association matters because it tests whether the public mentally preserves the normative weight of testimony, distinguishing those who have a responsibility to speak from those who are permitted to remain detached observers.",
+    "iterations": 3,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "80a447423d4e",
     "timestamp": "2026-08-26T23:15:57.727759+00:00",
     "schema_version": "autoresearch.v1",
