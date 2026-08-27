@@ -1,5 +1,111 @@
 [
   {
+    "id": "35000fdcf7d2",
+    "timestamp": "2026-08-27T06:11:52.471916+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "cyclists vs pedestrians on Aggression vs Friendliness",
+    "labels": {
+      "X": "cyclists",
+      "Y": "pedestrians",
+      "A": "Aggression",
+      "B": "Friendliness"
+    },
+    "canonical_keys": {
+      "X": "cyclists",
+      "Y": "pedestrians",
+      "A": "aggression",
+      "B": "friendliness"
+    },
+    "effect_size": 0.739430769208384,
+    "p_value": 0.04554,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "cyclist",
+        "biker",
+        "bicyclist",
+        "rider",
+        "courier",
+        "messenger",
+        "commuter",
+        "tourer",
+        "racer",
+        "cyclists",
+        "bikers",
+        "bicyclists",
+        "riders",
+        "couriers",
+        "messengers"
+      ],
+      "Y_used": [
+        "pedestrian",
+        "walker",
+        "hiker",
+        "tourist",
+        "traveler",
+        "wanderer",
+        "vagabond",
+        "tramp",
+        "pilgrim",
+        "rambler",
+        "pedestrians",
+        "walkers",
+        "hikers",
+        "tourists",
+        "travelers"
+      ],
+      "A_used": [
+        "aggressive",
+        "hostile",
+        "violent",
+        "angry",
+        "mean",
+        "cruel",
+        "abusive",
+        "threatening",
+        "menacing",
+        "attacking",
+        "fighting",
+        "belligerent",
+        "combative",
+        "agitated",
+        "furious"
+      ],
+      "B_used": [
+        "friendly",
+        "polite",
+        "kind",
+        "nice",
+        "gentle",
+        "amiable",
+        "affable",
+        "sociable",
+        "warm",
+        "welcoming",
+        "loving",
+        "sweet",
+        "harmless",
+        "docile",
+        "mild"
+      ]
+    },
+    "proposal": "people associate cyclists with aggression more strongly than they associate pedestrians with aggression. This differential implicit association is novel because while explicit surveys often ask about road-user conflict, implicit measures comparing cyclists to pedestrians on personality traits like aggression have not been probed, with most prior work focusing on driver-pedestrian dynamics. Examining this association is relevant to urban discourse, where cyclists are frequently characterized in media and public debate as assertive or hostile road users, whereas pedestrians are rarely framed as aggressive. Confirming this association would shift understanding of how different mobility modes shape social perception, potentially influencing attitudes toward urban infrastructure and right-of-way policies by revealing a specific bias against cyclists that goes beyond simple judgments of danger or rule-breaking.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "d587a242193d",
     "timestamp": "2026-08-27T01:06:49.092334+00:00",
     "schema_version": "autoresearch.v1",
