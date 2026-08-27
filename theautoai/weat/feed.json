@@ -1,5 +1,111 @@
 [
   {
+    "id": "9daf02642427",
+    "timestamp": "2026-08-27T17:08:41.774311+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Masons vs Priests on secrecy versus openness",
+    "labels": {
+      "X": "Masons",
+      "Y": "Priests",
+      "A": "secrecy",
+      "B": "openness"
+    },
+    "canonical_keys": {
+      "X": "masons",
+      "Y": "priests",
+      "A": "secrecy",
+      "B": "openness"
+    },
+    "effect_size": -0.08547725323877911,
+    "p_value": 0.82221,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "mason",
+        "freemason",
+        "craftsman",
+        "lodge",
+        "brother",
+        "initiate",
+        "apprentice",
+        "fellow",
+        "master",
+        "warden",
+        "tutor",
+        "officer",
+        "member",
+        "guard",
+        "sentinel"
+      ],
+      "Y_used": [
+        "priest",
+        "pastor",
+        "minister",
+        "clergy",
+        "reverend",
+        "vicar",
+        "curate",
+        "chaplain",
+        "deacon",
+        "bishop",
+        "cardinal",
+        "pope",
+        "abbot",
+        "monk",
+        "friar"
+      ],
+      "A_used": [
+        "secret",
+        "hidden",
+        "covert",
+        "clandestine",
+        "mysterious",
+        "cryptic",
+        "confidential",
+        "stealthy",
+        "obscured",
+        "veiled",
+        "private",
+        "concealed",
+        "shadowy",
+        "guarded",
+        "arcane"
+      ],
+      "B_used": [
+        "open",
+        "public",
+        "transparent",
+        "clear",
+        "visible",
+        "exposed",
+        "known",
+        "revealed",
+        "apparent",
+        "obvious",
+        "disclosed",
+        "frank",
+        "overt",
+        "bright",
+        "plain"
+      ]
+    },
+    "proposal": "People associate Masons with secrecy more strongly than they associate Priests with secrecy. While both groups are ritualistic organizations with hierarchical structures and initiatory practices, popular discourse and historical conspiracy theories have heavily stigmatized Masonic orders as clandestine power networks, whereas priests are primarily framed as spiritual shepherds whose confidentiality (e.g., confession) is viewed as pastoral rather than conspiratorial. This differential association has not been systematically examined, despite the pervasive cultural trope of the 'secret society' attached to Freemasonry. Probing this link matters because it reveals how the mental representation of fraternal institutions diverges from religious clergy, potentially influencing public trust in civic organizations versus established faith bodies.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "75f36c83c39c",
     "timestamp": "2026-08-27T15:05:59.863824+00:00",
     "schema_version": "autoresearch.v1",
