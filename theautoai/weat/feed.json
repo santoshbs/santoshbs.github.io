@@ -1,5 +1,112 @@
 [
   {
+    "id": "75f36c83c39c",
+    "timestamp": "2026-08-27T15:05:59.863824+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "mediators vs negotiators on impartiality versus partisanship",
+    "labels": {
+      "X": "mediators",
+      "Y": "negotiators",
+      "A": "impartiality",
+      "B": "partisanship"
+    },
+    "canonical_keys": {
+      "X": "mediators",
+      "Y": "negotiators",
+      "A": "impartiality",
+      "B": "partisanship"
+    },
+    "effect_size": 1.2762630633046337,
+    "p_value": 0.00021,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "mediator",
+        "arbitrator",
+        "referee",
+        "umpire",
+        "judge",
+        "moderator",
+        "conciliator",
+        "peacemaker",
+        "facilitator",
+        "arbiter",
+        "intervenor",
+        "adjuster",
+        "adjudicator",
+        "observer",
+        "monitor"
+      ],
+      "Y_used": [
+        "negotiator",
+        "bargainer",
+        "broker",
+        "advocate",
+        "lobbyist",
+        "diplomat",
+        "envoy",
+        "agent",
+        "representative",
+        "spokesman",
+        "lawyer",
+        "counsel",
+        "attorney",
+        "ambassador",
+        "commissioner",
+        "delegate"
+      ],
+      "A_used": [
+        "impartial",
+        "neutral",
+        "unbiased",
+        "fair",
+        "objective",
+        "detached",
+        "balanced",
+        "disinterested",
+        "unprejudiced",
+        "equitable",
+        "nonpartisan",
+        "just",
+        "dispassionate",
+        "independent",
+        "unswerving"
+      ],
+      "B_used": [
+        "biased",
+        "partisan",
+        "partial",
+        "subjective",
+        "prejudiced",
+        "interested",
+        "favoring",
+        "supporting",
+        "zealous",
+        "loyal",
+        "committed",
+        "devoted",
+        "aggressive",
+        "adversarial",
+        "competitive"
+      ]
+    },
+    "proposal": "People associate mediators with impartiality more strongly than they associate negotiators with impartiality. While both roles engage in conflict resolution discourse, mediators are structurally defined as neutral third parties facilitating dialogue, whereas negotiators are frequently conceptualized as advocates advancing the interests of a specific side, even in diplomatic contexts. This differential implicit association is novel because existing literature has not examined whether the role label itself triggers a bias toward perceived neutrality versus perceived advocacy in the public unconscious. Confirming this association would matter for understanding how institutional design and role framing shape public trust in conflict resolution processes, revealing that 'mediator' carries a distinct cognitive stamp of fairness that 'negotiator' does not.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "40eb73eb5bf8",
     "timestamp": "2026-08-27T14:03:15.491128+00:00",
     "schema_version": "autoresearch.v1",
