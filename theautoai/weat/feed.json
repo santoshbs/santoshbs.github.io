@@ -1,5 +1,111 @@
 [
   {
+    "id": "56f4b94025ae",
+    "timestamp": "2026-08-27T18:09:54.376594+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Clergy vs Teachers on Ritualistic versus Pragmatic",
+    "labels": {
+      "X": "Clergy",
+      "Y": "Teachers",
+      "A": "Ritualistic",
+      "B": "Pragmatic"
+    },
+    "canonical_keys": {
+      "X": "clergy",
+      "Y": "teachers",
+      "A": "ritualistic",
+      "B": "pragmatic"
+    },
+    "effect_size": 1.8306101340082654,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "priest",
+        "pastor",
+        "minister",
+        "reverend",
+        "bishop",
+        "vicar",
+        "chaplain",
+        "parson",
+        "deacon",
+        "monk",
+        "nun",
+        "friar",
+        "imam",
+        "rabbi",
+        "cardinal"
+      ],
+      "Y_used": [
+        "teacher",
+        "instructor",
+        "professor",
+        "tutor",
+        "lecturer",
+        "educator",
+        "preceptor",
+        "mentor",
+        "supervisor",
+        "dean",
+        "headmaster",
+        "principal",
+        "trainer",
+        "coach",
+        "facilitator"
+      ],
+      "A_used": [
+        "ritual",
+        "ceremony",
+        "worship",
+        "liturgy",
+        "sacrament",
+        "prayer",
+        "mass",
+        "rite",
+        "communion",
+        "altar",
+        "scripture",
+        "church",
+        "temple",
+        "sacred",
+        "holy"
+      ],
+      "B_used": [
+        "practice",
+        "work",
+        "lesson",
+        "study",
+        "skill",
+        "routine",
+        "curriculum",
+        "instruction",
+        "homework",
+        "assignment",
+        "project",
+        "exam",
+        "grade",
+        "method",
+        "technique"
+      ]
+    },
+    "proposal": "People associate Clergy with Ritual more strongly than they associate Teachers with Ritual. This differential association captures the perceived sacred versus pragmatic nature of these roles, where clergy are mentally linked to formalized, symbolic, and traditional practices, whereas teachers are linked to adaptive, interpersonal, and goal-oriented instruction. Examining this association is novel because implicit research on professions has overwhelmingly focused on warmth and competence, neglecting the ritualistic structure of social roles. It is important because these mental representations may influence public expectations of how rigidly or flexibly these actors should adhere to institutional norms and how they respond to innovation or change in their respective fields.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "9daf02642427",
     "timestamp": "2026-08-27T17:08:41.774311+00:00",
     "schema_version": "autoresearch.v1",
