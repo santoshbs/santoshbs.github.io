@@ -1,25 +1,5 @@
 [
   {
-    "id": "female-children-count-faster",
-    "title": "Female borrowers who specify the number of children in their pitch may fund faster.",
-    "bucket": "",
-    "birth_batch": 0,
-    "death_batch": 1485,
-    "last_batch": 1485,
-    "confidence": 0,
-    "alive": false
-  },
-  {
-    "id": "female-professional-skills-faster",
-    "title": "Female borrowers who describe specific professional skills or years of experience may fund faster.",
-    "bucket": "",
-    "birth_batch": 0,
-    "death_batch": 1486,
-    "last_batch": 1486,
-    "confidence": 0,
-    "alive": false
-  },
-  {
     "id": "female-work-context-faster",
     "title": "Female borrowers who specify the physical setting or daily time commitment of their work may fund faster.",
     "bucket": "",
@@ -100,11 +80,31 @@
     "alive": false
   },
   {
+    "id": "female-operational-benefit-faster",
+    "title": "Female borrowers who describe the specific operational benefits of loan inputs fund faster.",
+    "bucket": "",
+    "birth_batch": 0,
+    "death_batch": 1505,
+    "last_batch": 1505,
+    "confidence": 0,
+    "alive": false
+  },
+  {
+    "id": "male-repayment-history-faster",
+    "title": "Male borrowers who mention a history of previous loan repayment may fund faster.",
+    "bucket": "",
+    "birth_batch": 0,
+    "death_batch": 1505,
+    "last_batch": 1505,
+    "confidence": 0,
+    "alive": false
+  },
+  {
     "id": "female-savings-goal-faster",
     "title": "Female borrowers who mention the goal of building savings fund faster.",
     "bucket": "gendered_women",
-    "birth_batch": 26,
-    "last_batch": 1504,
+    "birth_batch": 25,
+    "last_batch": 1505,
     "confidence": 0.92,
     "peak_confidence": 0.92,
     "alive": true
@@ -113,18 +113,18 @@
     "id": "verbosity-slower-general",
     "title": "Higher verbosity and excessive personal detail predict slower funding regardless of gender.",
     "bucket": "slower",
-    "birth_batch": 52,
-    "last_batch": 1504,
-    "confidence": 0.85,
-    "peak_confidence": 0.85,
+    "birth_batch": 51,
+    "last_batch": 1505,
+    "confidence": 0.89,
+    "peak_confidence": 0.89,
     "alive": true
   },
   {
     "id": "monthly-income-slower-general",
     "title": "Pitches that include specific monthly income figures predict slower funding regardless of gender.",
     "bucket": "slower",
-    "birth_batch": 106,
-    "last_batch": 1504,
+    "birth_batch": 105,
+    "last_batch": 1505,
     "confidence": 0.88,
     "peak_confidence": 0.88,
     "alive": true
@@ -133,8 +133,8 @@
     "id": "female-business-success-faster",
     "title": "Female borrowers who emphasize that their business is currently doing well or is being sustained fund faster.",
     "bucket": "gendered_women",
-    "birth_batch": 116,
-    "last_batch": 1504,
+    "birth_batch": 115,
+    "last_batch": 1505,
     "confidence": 1.0,
     "peak_confidence": 1.0,
     "alive": true
@@ -143,8 +143,8 @@
     "id": "asset-ownership-faster",
     "title": "Mentioning specific asset or business ownership predicts faster funding regardless of gender.",
     "bucket": "faster",
-    "birth_batch": 710,
-    "last_batch": 1504,
+    "birth_batch": 709,
+    "last_batch": 1505,
     "confidence": 0.99,
     "peak_confidence": 0.99,
     "alive": true
@@ -153,30 +153,30 @@
     "id": "family-responsibilities-slower-general",
     "title": "Mentioning family responsibilities or supporting family members predicts slower funding regardless of gender.",
     "bucket": "slower",
-    "birth_batch": 1240,
-    "last_batch": 1504,
-    "confidence": 0.62,
-    "peak_confidence": 0.62,
+    "birth_batch": 1239,
+    "last_batch": 1505,
+    "confidence": 0.67,
+    "peak_confidence": 0.67,
     "alive": true
   },
   {
     "id": "female-aspirational-language-faster",
     "title": "Female borrowers who use aspirational language such as 'dreams' for their business fund faster.",
     "bucket": "gendered_women",
-    "birth_batch": 1256,
-    "last_batch": 1504,
+    "birth_batch": 1255,
+    "last_batch": 1505,
     "confidence": 1.0,
     "peak_confidence": 1.0,
     "alive": true
   },
   {
-    "id": "female-operational-benefit-faster",
-    "title": "Female borrowers who describe the specific operational benefits of loan inputs fund faster.",
-    "bucket": "gendered_women",
-    "birth_batch": 1488,
-    "last_batch": 1504,
-    "confidence": 0.6,
-    "peak_confidence": 0.6,
+    "id": "repayment-history-faster",
+    "title": "Mentioning a history of previous loan repayment predicts faster funding regardless of gender.",
+    "bucket": "faster",
+    "birth_batch": 1505,
+    "last_batch": 1505,
+    "confidence": 0.65,
+    "peak_confidence": 0.65,
     "alive": true
   }
 ]
