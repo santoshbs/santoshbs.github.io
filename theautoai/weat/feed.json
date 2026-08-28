@@ -1,5 +1,111 @@
 [
   {
+    "id": "f0fd47e691f0",
+    "timestamp": "2026-08-28T17:44:29.520730+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "artisans vs merchants on Moral character / Integrity",
+    "labels": {
+      "X": "artisans",
+      "Y": "merchants",
+      "A": "Integrity",
+      "B": "Dishonesty"
+    },
+    "canonical_keys": {
+      "X": "artisans",
+      "Y": "merchants",
+      "A": "integrity",
+      "B": "dishonesty"
+    },
+    "effect_size": 0.3234389850228937,
+    "p_value": 0.4043,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "carpenter",
+        "baker",
+        "mason",
+        "weaver",
+        "smith",
+        "potter",
+        "tailor",
+        "cobbler",
+        "joiner",
+        "glazier",
+        "tinker",
+        "brewer",
+        "cooper",
+        "blacksmith",
+        "carver"
+      ],
+      "Y_used": [
+        "merchant",
+        "trader",
+        "salesman",
+        "broker",
+        "dealer",
+        "vendor",
+        "peddler",
+        "hawker",
+        "shopkeeper",
+        "retailer",
+        "wholesaler",
+        "businessman",
+        "entrepreneur",
+        "agent",
+        "buyer"
+      ],
+      "A_used": [
+        "honest",
+        "sincere",
+        "truthful",
+        "genuine",
+        "upright",
+        "honorable",
+        "principled",
+        "trustworthy",
+        "candid",
+        "frank",
+        "loyal",
+        "faithful",
+        "reliable",
+        "ethical",
+        "moral"
+      ],
+      "B_used": [
+        "dishonest",
+        "deceitful",
+        "fraudulent",
+        "duplicitous",
+        "shady",
+        "sneaky",
+        "underhanded",
+        "conniving",
+        "crooked",
+        "corrupt",
+        "treacherous",
+        "faithless",
+        "insincere",
+        "unethical",
+        "calculating"
+      ]
+    },
+    "proposal": "People associate artisans with integrity more strongly than they associate merchants with integrity. This differential reflects a persistent cultural narrative that valorizes the tangible, visible labor of making objects (the 'honest craftsman') while casting suspicion on intermediaries who profit from exchange without adding material value (the 'shrewd merchant'). This association is novel because implicit bias research typically examines broader class or gender categories, leaving the specific historical and occupational distinction between production and circulation under-explored. Understanding this association is important because it shapes public attitudes toward the 'creator economy,' informs resistance to financialization, and influences how societies value creative labor relative to commercial entrepreneurship.",
+    "iterations": 3,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "401f9e5ce5ba",
     "timestamp": "2026-08-28T16:57:27.126660+00:00",
     "schema_version": "autoresearch.v1",
