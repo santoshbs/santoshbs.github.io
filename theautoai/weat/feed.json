@@ -1,5 +1,111 @@
 [
   {
+    "id": "aa3571d3c7d4",
+    "timestamp": "2026-08-28T23:10:33.210784+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "philosophers vs theologians on intellectual openness vs religious constraint",
+    "labels": {
+      "X": "philosophers",
+      "Y": "theologians",
+      "A": "speculative freedom",
+      "B": "doctrinal orthodoxy"
+    },
+    "canonical_keys": {
+      "X": "philosophers",
+      "Y": "theologians",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 1.4690371864117817,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "philosopher",
+        "academic",
+        "professor",
+        "scholar",
+        "logician",
+        "ethicist",
+        "researcher",
+        "rationalist",
+        "humanist",
+        "stoic",
+        "thinker",
+        "intellectual",
+        "essayist",
+        "critic",
+        "debater"
+      ],
+      "Y_used": [
+        "theologian",
+        "priest",
+        "minister",
+        "pastor",
+        "cleric",
+        "vicar",
+        "rector",
+        "monk",
+        "friar",
+        "deacon",
+        "bishop",
+        "imam",
+        "rabbi",
+        "preacher",
+        "missionary"
+      ],
+      "A_used": [
+        "freedom",
+        "liberty",
+        "autonomy",
+        "independence",
+        "openness",
+        "curiosity",
+        "skepticism",
+        "critique",
+        "analysis",
+        "logic",
+        "inquiry",
+        "doubt",
+        "exploration",
+        "speculation",
+        "imagination"
+      ],
+      "B_used": [
+        "constraint",
+        "restriction",
+        "dogma",
+        "orthodoxy",
+        "tradition",
+        "ritual",
+        "custom",
+        "canon",
+        "creed",
+        "doctrine",
+        "obedience",
+        "compliance",
+        "submission",
+        "rigidity",
+        "strictness"
+      ]
+    },
+    "proposal": "People associate philosophers with speculative freedom more strongly than they associate theologians with speculative freedom. This differential association taps into contemporary cultural narratives that frame secular academia as a realm of open-ended inquiry while casting religious scholarship as bound by doctrinal orthodoxy. Though explicit surveys often reveal nuanced public views on academic freedom across disciplines, implicit measures could uncover whether these contrasting stereotypes operate automatically in mental representations. Examining this association matters because it sheds light on how deeply rooted epistemic hierarchies shape public trust in different knowledge-producing communities, potentially influencing funding priorities, institutional collaboration, and the perceived legitimacy of religiously affiliated scholarship in pluralistic societies.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "f0fd47e691f0",
     "timestamp": "2026-08-28T17:44:29.520730+00:00",
     "schema_version": "autoresearch.v1",
