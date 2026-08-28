@@ -1,5 +1,111 @@
 [
   {
+    "id": "1350c4b68041",
+    "timestamp": "2026-08-28T11:33:22.776159+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Christians vs Muslims on innovation versus tradition",
+    "labels": {
+      "X": "Christians",
+      "Y": "Muslims",
+      "A": "innovation/modernity",
+      "B": "tradition/stagnation"
+    },
+    "canonical_keys": {
+      "X": "christians",
+      "Y": "muslims",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": -0.5690671121494686,
+    "p_value": 0.12792,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "christian",
+        "catholic",
+        "orthodox",
+        "evangelical",
+        "baptist",
+        "lutheran",
+        "methodist",
+        "presbyterian",
+        "anglican",
+        "clergyman",
+        "minister",
+        "pastor",
+        "priest",
+        "deacon",
+        "bishop"
+      ],
+      "Y_used": [
+        "muslim",
+        "imam",
+        "mufti",
+        "sheikh",
+        "mullah",
+        "faithful",
+        "sufi",
+        "dervish",
+        "hajji",
+        "convert",
+        "follower",
+        "adherent",
+        "worshipper",
+        "believer",
+        "devout"
+      ],
+      "A_used": [
+        "innovation",
+        "progress",
+        "modern",
+        "technology",
+        "digital",
+        "electronic",
+        "computer",
+        "software",
+        "internet",
+        "network",
+        "virtual",
+        "smart",
+        "robot",
+        "automated",
+        "advanced"
+      ],
+      "B_used": [
+        "tradition",
+        "conservative",
+        "conventional",
+        "customary",
+        "classic",
+        "antique",
+        "vintage",
+        "old",
+        "ancient",
+        "archaic",
+        "obsolete",
+        "outdated",
+        "stagnant",
+        "static",
+        "rigid"
+      ]
+    },
+    "proposal": "People associate Christians with innovation more strongly than they associate Muslims with innovation. This differential implicit association likely stems from pervasive media and political narratives that conflate Western Christian cultural heritage with technological progress and modernization, while framing Muslim-majority societies through a deficit lens of tradition and resistance to change. This comparison is novel because existing intergroup research has predominantly examined perceptions of security threats, gender roles, or economic status, largely neglecting implicit attributions of creative and economic dynamism between these two specific religious groups. Investigating this association matters because such biases can subtly shape public support for international trade, immigration policies, and cultural exchange, reinforcing a modernization narrative that marginalizes Muslim contributions to global innovation.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "56f4b94025ae",
     "timestamp": "2026-08-27T18:09:54.376594+00:00",
     "schema_version": "autoresearch.v1",
