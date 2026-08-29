@@ -1,5 +1,111 @@
 [
   {
+    "id": "10cdd0f332ac",
+    "timestamp": "2026-08-29T00:06:49.684984+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "farmers vs herders on permanence versus transience",
+    "labels": {
+      "X": "farmers",
+      "Y": "herders",
+      "A": "permanence",
+      "B": "transience"
+    },
+    "canonical_keys": {
+      "X": "farmers",
+      "Y": "herders",
+      "A": "permanence",
+      "B": "transience"
+    },
+    "effect_size": 0.7989986531207537,
+    "p_value": 0.02937,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "farmers",
+        "cultivators",
+        "growers",
+        "planters",
+        "tillers",
+        "husbandmen",
+        "agrarians",
+        "orchardists",
+        "vinedressers",
+        "horticulturists",
+        "sowers",
+        "reapers",
+        "harvesters",
+        "plowmen",
+        "fieldworkers"
+      ],
+      "Y_used": [
+        "herders",
+        "pastoralists",
+        "nomads",
+        "stockmen",
+        "drovers",
+        "graziers",
+        "cattlemen",
+        "cowboys",
+        "ranchers",
+        "gauchos",
+        "vaqueros",
+        "shepherds",
+        "herdsmen",
+        "breeders",
+        "keepers"
+      ],
+      "A_used": [
+        "permanent",
+        "stable",
+        "rooted",
+        "fixed",
+        "anchored",
+        "settled",
+        "immobile",
+        "stationary",
+        "enduring",
+        "lasting",
+        "steady",
+        "constant",
+        "firm",
+        "grounded",
+        "established"
+      ],
+      "B_used": [
+        "transient",
+        "mobile",
+        "rootless",
+        "wandering",
+        "nomadic",
+        "shifting",
+        "fleeting",
+        "temporary",
+        "passing",
+        "itinerant",
+        "migratory",
+        "roaming",
+        "drifting",
+        "unanchored",
+        "unsettled"
+      ]
+    },
+    "proposal": "People associate farmers with permanence more strongly than they associate herders with permanence. This differential association reflects a likely cognitive bias inherited from settled societies, which implicitly equates fixed cultivation with stability, ownership, and civilizational value, while framing herding lifestyles as transient, rootless, or less developed. Examining this is novel because implicit measures of 'permanence' or 'rootedness' have not been applied to these specific agricultural sub-types, despite them being central to historical conflict and contemporary land-rights discourse. Confirming this association would reveal how the mental representation of immobility may subtly underlie policy preferences that favor sedentary cultivation over pastoralism, even in ecological contexts where herding is the most sustainable land use.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "aa3571d3c7d4",
     "timestamp": "2026-08-28T23:10:33.210784+00:00",
     "schema_version": "autoresearch.v1",
