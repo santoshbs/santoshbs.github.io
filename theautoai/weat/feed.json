@@ -1,5 +1,111 @@
 [
   {
+    "id": "340bcbf683cc",
+    "timestamp": "2026-08-29T07:26:17.146359+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "farmers vs engineers on adaptability versus rigidity",
+    "labels": {
+      "X": "farmers",
+      "Y": "engineers",
+      "A": "flexible/adaptable",
+      "B": "rigid/inflexible"
+    },
+    "canonical_keys": {
+      "X": "farmers",
+      "Y": "engineers",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 0.5586023488701729,
+    "p_value": 0.13493,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "farmer",
+        "grower",
+        "planter",
+        "sower",
+        "harvester",
+        "cultivator",
+        "agriculturist",
+        "rancher",
+        "stockman",
+        "herdsman",
+        "drover",
+        "peasant",
+        "tiller",
+        "reaper",
+        "landowner"
+      ],
+      "Y_used": [
+        "engineer",
+        "technician",
+        "designer",
+        "builder",
+        "architect",
+        "constructor",
+        "machinist",
+        "fabricator",
+        "draftsman",
+        "surveyor",
+        "technologist",
+        "inventor",
+        "mechanic",
+        "operator",
+        "specialist"
+      ],
+      "A_used": [
+        "flexible",
+        "adaptable",
+        "agile",
+        "versatile",
+        "nimble",
+        "fluid",
+        "responsive",
+        "elastic",
+        "pliant",
+        "malleable",
+        "supple",
+        "accommodating",
+        "dynamic",
+        "spontaneous",
+        "adjustable"
+      ],
+      "B_used": [
+        "rigid",
+        "inflexible",
+        "fixed",
+        "stiff",
+        "unyielding",
+        "strict",
+        "formal",
+        "conventional",
+        "standard",
+        "precise",
+        "systematic",
+        "methodical",
+        "structured",
+        "controlled",
+        "predetermined"
+      ]
+    },
+    "proposal": "People associate farmers with adaptability more strongly than they associate engineers with adaptability. This implicit bias likely stems from a cultural narrative that romanticizes agricultural labor as requiring fluid, context-sensitive responses to unpredictable natural forces, while framing engineering as a domain of rigid planning, standardization, and top-down control. Examining this association is important because it reveals how public mental models conflate technical precision with cognitive inflexibility, which may shape public support for infrastructure projects or climate resilience initiatives requiring interdisciplinary collaboration. It is novel because implicit association research on technical and manual professions has largely focused on warmth and competence, neglecting implicit perceptions of behavioral and strategic flexibility.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "bc31d44a36ca",
     "timestamp": "2026-08-29T04:40:26.564766+00:00",
     "schema_version": "autoresearch.v1",
