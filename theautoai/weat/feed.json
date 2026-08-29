@@ -1,5 +1,111 @@
 [
   {
+    "id": "bc31d44a36ca",
+    "timestamp": "2026-08-29T04:40:26.564766+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Doctors vs Lawyers on Affective Outlook",
+    "labels": {
+      "X": "Doctors",
+      "Y": "Lawyers",
+      "A": "Hope",
+      "B": "Despair"
+    },
+    "canonical_keys": {
+      "X": "doctors",
+      "Y": "lawyers",
+      "A": "hope",
+      "B": "despair"
+    },
+    "effect_size": -0.6759624573026554,
+    "p_value": 0.06713,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "doctor",
+        "physician",
+        "surgeon",
+        "medic",
+        "clinician",
+        "practitioner",
+        "specialist",
+        "intern",
+        "resident",
+        "cardiologist",
+        "pediatrician",
+        "oncologist",
+        "psychiatrist",
+        "pathologist",
+        "anesthesiologist"
+      ],
+      "Y_used": [
+        "lawyer",
+        "attorney",
+        "solicitor",
+        "barrister",
+        "advocate",
+        "counselor",
+        "defender",
+        "prosecutor",
+        "litigator",
+        "paralegal",
+        "clerk",
+        "notary",
+        "jurist",
+        "magistrate",
+        "arbitrator"
+      ],
+      "A_used": [
+        "hope",
+        "optimism",
+        "inspiration",
+        "faith",
+        "belief",
+        "trust",
+        "courage",
+        "confidence",
+        "promise",
+        "future",
+        "dream",
+        "vision",
+        "success",
+        "triumph",
+        "victory"
+      ],
+      "B_used": [
+        "despair",
+        "pessimism",
+        "doubt",
+        "fear",
+        "anxiety",
+        "worry",
+        "dread",
+        "panic",
+        "terror",
+        "nightmare",
+        "sorrow",
+        "grief",
+        "sadness",
+        "hopelessness",
+        "doom"
+      ]
+    },
+    "proposal": "People associate Doctors with hope more strongly than they associate Lawyers with hope. This differential implicit association reflects the distinct cultural narratives surrounding healing professions versus legal adversarial roles, where medicine is often framed around restoration, recovery, and positive futures, while law is framed around conflict, liability, and binary outcomes. Examining this association is novel as implicit research has largely focused on warmth-competence dimensions or specific stereotypes (e.g., deception, emotionality) rather than the foundational affective outlooks attributed to these ubiquitous institutional actors. Confirming or disconfirming this association matters for understanding how the public mentally constructs the moral and emotional promise of the institutions that govern health and justice.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "10cdd0f332ac",
     "timestamp": "2026-08-29T00:06:49.684984+00:00",
     "schema_version": "autoresearch.v1",
