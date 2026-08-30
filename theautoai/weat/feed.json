@@ -1,5 +1,116 @@
 [
   {
+    "id": "bd255f63fffe",
+    "timestamp": "2026-08-30T14:03:51.508840+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "competitors vs collaborators on Innovation vs Conformity",
+    "labels": {
+      "X": "competitors",
+      "Y": "collaborators",
+      "A": "Innovation",
+      "B": "Conformity"
+    },
+    "canonical_keys": {
+      "X": "competitors",
+      "Y": "collaborators",
+      "A": "innovation",
+      "B": "conformity"
+    },
+    "effect_size": -0.29908661632375794,
+    "p_value": 0.44995,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "rival",
+        "opponent",
+        "adversary",
+        "contestant",
+        "challenger",
+        "contender",
+        "foe",
+        "player",
+        "racer",
+        "combatant",
+        "antagonist",
+        "striker",
+        "fighter",
+        "competitor",
+        "participant"
+      ],
+      "Y_used": [
+        "partner",
+        "teammate",
+        "associate",
+        "coworker",
+        "ally",
+        "colleague",
+        "accomplice",
+        "confederate",
+        "cooperator",
+        "collaborator",
+        "comrade",
+        "companion",
+        "supporter",
+        "helper",
+        "assistant"
+      ],
+      "A_used": [
+        "novel",
+        "creative",
+        "inventive",
+        "original",
+        "pioneering",
+        "visionary",
+        "progressive",
+        "groundbreaking",
+        "innovative",
+        "disruptive",
+        "advanced",
+        "fresh",
+        "new",
+        "revolutionary",
+        "unique"
+      ],
+      "B_used": [
+        "conformist",
+        "traditional",
+        "conservative",
+        "routine",
+        "standard",
+        "conventional",
+        "predictable",
+        "established",
+        "steady",
+        "stable",
+        "customary",
+        "orthodox",
+        "typical",
+        "ordinary",
+        "unremarkable",
+        "safe",
+        "cautious",
+        "methodical",
+        "systematic",
+        "regular"
+      ]
+    },
+    "proposal": "People associate competitors with innovation more strongly than they associate collaborators with innovation. This proposal stems from contemporary discourse, particularly in technology and business sectors, which often romanticizes the \"disruptive\" lone wolf and equates rivalry with creative breakthroughs, while framing cooperation as a vehicle for consensus, stability, or groupthink. This differential implicit association has not been probed in prior literature, which typically examines competition through the lens of morality, aggression, or performance rather than its specific linkage to generative attributes relative to collaboration. Examining this association is important because confirming such a bias would reveal a systemic cultural undervaluation of cooperative innovation, potentially influencing organizational structures, funding priorities, and public perception of how complex problems are best solved.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "895fa080651d",
     "timestamp": "2026-08-30T10:39:36.195898+00:00",
     "schema_version": "autoresearch.v1",
