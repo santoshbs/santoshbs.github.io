@@ -1,5 +1,111 @@
 [
   {
+    "id": "da53a62aace8",
+    "timestamp": "2026-08-30T19:19:53.062998+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "outlaws vs saints on authenticity vs artificiality",
+    "labels": {
+      "X": "outlaws",
+      "Y": "saints",
+      "A": "authenticity",
+      "B": "artificiality"
+    },
+    "canonical_keys": {
+      "X": "outlaws",
+      "Y": "saints",
+      "A": "authenticity",
+      "B": "artificiality"
+    },
+    "effect_size": -1.5786367216194284,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "outlaw",
+        "bandit",
+        "burglar",
+        "thief",
+        "robber",
+        "smuggler",
+        "pirate",
+        "vandal",
+        "gangster",
+        "mugger",
+        "poacher",
+        "fugitive",
+        "criminal",
+        "felon",
+        "rebel"
+      ],
+      "Y_used": [
+        "saint",
+        "monk",
+        "nun",
+        "friar",
+        "bishop",
+        "pope",
+        "priest",
+        "pastor",
+        "minister",
+        "chaplain",
+        "cardinal",
+        "vicar",
+        "abbot",
+        "novice",
+        "martyr"
+      ],
+      "A_used": [
+        "authentic",
+        "genuine",
+        "real",
+        "true",
+        "sincere",
+        "honest",
+        "natural",
+        "pure",
+        "original",
+        "earnest",
+        "frank",
+        "candid",
+        "transparent",
+        "heartfelt",
+        "spontaneous"
+      ],
+      "B_used": [
+        "artificial",
+        "fake",
+        "false",
+        "synthetic",
+        "phony",
+        "counterfeit",
+        "contrived",
+        "calculated",
+        "pretentious",
+        "staged",
+        "manufactured",
+        "plastic",
+        "conventional",
+        "impersonal",
+        "mechanical"
+      ]
+    },
+    "proposal": "People associate outlaws with authenticity more strongly than they associate saints with authenticity. This proposal examines a latent cultural bias that may valorize transgressive individualism over institutional or religious virtue, linking rule-breaking to genuineness while framing sanctity as artificial or performative. Although saints are explicitly defined by moral purity, contemporary discourse often romanticizes outlaws as 'real' rebels, suggesting an implicit mental conflation of rebellion with authenticity that has not been systematically tested. Confirming this association would be significant, as it would indicate a shift in public mental representations where deviance is associated with being 'true' to oneself, potentially eroding the perceived credibility of moral exemplars and highlighting a deep-seated skepticism toward conformity and institutional morality.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "bd255f63fffe",
     "timestamp": "2026-08-30T14:03:51.508840+00:00",
     "schema_version": "autoresearch.v1",
