@@ -1,5 +1,111 @@
 [
   {
+    "id": "e77f1a17cb44",
+    "timestamp": "2026-08-30T01:07:02.702111+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "citizens vs protesters on Legitimacy and social validity",
+    "labels": {
+      "X": "citizens",
+      "Y": "protesters",
+      "A": "Legitimacy",
+      "B": "Illegitimacy"
+    },
+    "canonical_keys": {
+      "X": "citizens",
+      "Y": "protesters",
+      "A": "legitimacy",
+      "B": "illegitimacy"
+    },
+    "effect_size": 1.4174324018951991,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "citizen",
+        "voter",
+        "resident",
+        "taxpayer",
+        "inhabitant",
+        "dweller",
+        "constituent",
+        "denizen",
+        "commoner",
+        "native",
+        "subject",
+        "local",
+        "member",
+        "occupant",
+        "freeman"
+      ],
+      "Y_used": [
+        "protester",
+        "demonstrator",
+        "activist",
+        "marcher",
+        "picketer",
+        "dissident",
+        "rebel",
+        "agitator",
+        "revolutionary",
+        "mutineer",
+        "objector",
+        "campaigner",
+        "advocate",
+        "insurgent",
+        "insurrectionist"
+      ],
+      "A_used": [
+        "legitimate",
+        "lawful",
+        "valid",
+        "proper",
+        "acceptable",
+        "compliant",
+        "sanctioned",
+        "authorized",
+        "approved",
+        "rightful",
+        "justified",
+        "legal",
+        "regulated",
+        "standard",
+        "official"
+      ],
+      "B_used": [
+        "illegitimate",
+        "unlawful",
+        "invalid",
+        "improper",
+        "unacceptable",
+        "illegal",
+        "illicit",
+        "unauthorized",
+        "unsanctioned",
+        "wrong",
+        "unjustified",
+        "criminal",
+        "disruptive",
+        "subversive",
+        "radical"
+      ]
+    },
+    "proposal": "People associate citizens with legitimacy more strongly than they associate protesters with legitimacy. This differential implicit association reflects a cultural bias that equates compliance with the established order with valid social standing, while framing dissent and public disruption as inherently suspect or illegitimate challenges to authority. Examining this association is novel because prior implicit bias research has focused extensively on group-based prejudices (e.g., race, gender) or occupational competence, leaving the specific devaluation of protest as a civic role under-explored. It is relevant to contemporary political discourse, where demonstrators are often labeled 'extremists' or 'troublemakers' in media and political rhetoric, potentially masking the democratic function of dissent. Confirming this bias would matter for understanding how public mental representations may subtly undermine support for protest rights and the perceived validity of social movements.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "340bcbf683cc",
     "timestamp": "2026-08-29T07:26:17.146359+00:00",
     "schema_version": "autoresearch.v1",
