@@ -1,5 +1,111 @@
 [
   {
+    "id": "02bfa91950cd",
+    "timestamp": "2026-08-31T16:04:25.776632+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "mourners vs celebrants on sincerity versus insincerity",
+    "labels": {
+      "X": "mourners",
+      "Y": "celebrants",
+      "A": "sincerity",
+      "B": "insincerity"
+    },
+    "canonical_keys": {
+      "X": "mourners",
+      "Y": "celebrants",
+      "A": "sincerity",
+      "B": "insincerity"
+    },
+    "effect_size": 0.4047459519277879,
+    "p_value": 0.2821,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "mourners",
+        "bereaved",
+        "widows",
+        "widowers",
+        "grievers",
+        "relatives",
+        "friends",
+        "family",
+        "congregation",
+        "attendees",
+        "survivors",
+        "kin",
+        "neighbors",
+        "companions",
+        "visitors"
+      ],
+      "Y_used": [
+        "celebrants",
+        "revelers",
+        "partygoers",
+        "guests",
+        "dancers",
+        "cheerleaders",
+        "supporters",
+        "fans",
+        "crowds",
+        "spectators",
+        "hosts",
+        "enthusiasts",
+        "winners",
+        "victors",
+        "champions"
+      ],
+      "A_used": [
+        "genuine",
+        "honest",
+        "true",
+        "heartfelt",
+        "real",
+        "authentic",
+        "earnest",
+        "sincere",
+        "frank",
+        "candid",
+        "direct",
+        "transparent",
+        "pure",
+        "meaningful",
+        "profound"
+      ],
+      "B_used": [
+        "fake",
+        "phony",
+        "superficial",
+        "shallow",
+        "artificial",
+        "hollow",
+        "false",
+        "pretentious",
+        "affected",
+        "disingenuous",
+        "contrived",
+        "trite",
+        "banal",
+        "insincere",
+        "showy"
+      ]
+    },
+    "proposal": "People associate mourners with sincerity more strongly than they associate celebrants with sincerity. This differential association is novel because while implicit links between emotional valence and traits are well-documented, the specific comparison of these socially defined roles reverses the expected positivity bias, suggesting a deep cultural skepticism toward joy as performative relative to grief as authentic. It is interesting because it challenges the assumption that positive social roles are implicitly valued on moral axes like honesty. Confirming this association would reveal how public discourse constructs celebration as potentially superficial and mourning as the privileged site of unfeigned human connection, mattering for our understanding of emotional stigma and the social valuation of affective expression.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "3c2911ea7108",
     "timestamp": "2026-08-31T14:39:54.582559+00:00",
     "schema_version": "autoresearch.v1",
