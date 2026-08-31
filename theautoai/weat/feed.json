@@ -1,5 +1,111 @@
 [
   {
+    "id": "728c6b8d5b34",
+    "timestamp": "2026-08-31T11:26:04.213311+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "auditors vs consultants on relational distance",
+    "labels": {
+      "X": "auditors",
+      "Y": "consultants",
+      "A": "detachment",
+      "B": "immersion"
+    },
+    "canonical_keys": {
+      "X": "auditors",
+      "Y": "consultants",
+      "A": "detachment",
+      "B": "immersion"
+    },
+    "effect_size": 1.6400297579278507,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "auditor",
+        "examiner",
+        "inspector",
+        "reviewer",
+        "checker",
+        "controller",
+        "evaluator",
+        "monitor",
+        "overseer",
+        "supervisor",
+        "assessor",
+        "investigator",
+        "censor",
+        "comptroller",
+        "accountant"
+      ],
+      "Y_used": [
+        "consultant",
+        "adviser",
+        "specialist",
+        "expert",
+        "strategist",
+        "planner",
+        "architect",
+        "coach",
+        "mentor",
+        "guide",
+        "counselor",
+        "agent",
+        "broker",
+        "representative",
+        "facilitator"
+      ],
+      "A_used": [
+        "detached",
+        "distant",
+        "aloof",
+        "remote",
+        "separate",
+        "isolated",
+        "independent",
+        "neutral",
+        "impartial",
+        "objective",
+        "disinterested",
+        "cold",
+        "formal",
+        "rigid",
+        "strict"
+      ],
+      "B_used": [
+        "involved",
+        "immersed",
+        "close",
+        "near",
+        "friendly",
+        "warm",
+        "intimate",
+        "engaged",
+        "participatory",
+        "cooperative",
+        "collaborative",
+        "supportive",
+        "helpful",
+        "aligned",
+        "integrated"
+      ]
+    },
+    "proposal": "people associate auditors with detachment more strongly than they associate consultants with detachment. In contemporary organizational discourse, auditors are culturally framed as neutral evaluators who must maintain professional distance to ensure compliance and uncover irregularities, whereas consultants are marketed on the premise of immersion, partnership, and aligned advocacy for client transformation. Examining this implicit association is novel because social psychology has largely ignored how intra-organizational evaluation versus advisory roles are mentally coded along axes of relational distance. Confirming or disconfirming this pattern would clarify how professional epistemologies shape trust, resistance to recommendations, and the hidden hierarchies of corporate knowledge work.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "b4599e4c9d85",
     "timestamp": "2026-08-31T05:02:32.500172+00:00",
     "schema_version": "autoresearch.v1",
