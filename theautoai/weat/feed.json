@@ -1,5 +1,111 @@
 [
   {
+    "id": "109c4ad89a8f",
+    "timestamp": "2026-08-31T13:48:01.672164+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "diplomats vs journalists on secrecy versus transparency",
+    "labels": {
+      "X": "diplomats",
+      "Y": "journalists",
+      "A": "secrecy",
+      "B": "transparency"
+    },
+    "canonical_keys": {
+      "X": "diplomats",
+      "Y": "journalists",
+      "A": "secrecy",
+      "B": "transparency"
+    },
+    "effect_size": 0.9510508610556986,
+    "p_value": 0.00726,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "ambassador",
+        "broker",
+        "consul",
+        "delegate",
+        "diplomat",
+        "emissary",
+        "envoy",
+        "functionary",
+        "legate",
+        "minister",
+        "negotiator",
+        "official",
+        "politician",
+        "representative",
+        "statesman"
+      ],
+      "Y_used": [
+        "anchor",
+        "broadcaster",
+        "columnist",
+        "commentator",
+        "correspondent",
+        "critic",
+        "editor",
+        "journalist",
+        "newscaster",
+        "photographer",
+        "pundit",
+        "press",
+        "reporter",
+        "reviewer",
+        "writer"
+      ],
+      "A_used": [
+        "classified",
+        "covert",
+        "concealed",
+        "confidential",
+        "hidden",
+        "hushed",
+        "incognito",
+        "insider",
+        "private",
+        "restricted",
+        "secret",
+        "shady",
+        "sneaky",
+        "stealth",
+        "underground"
+      ],
+      "B_used": [
+        "disclosed",
+        "exposed",
+        "frank",
+        "honest",
+        "open",
+        "outspoken",
+        "public",
+        "revealed",
+        "straightforward",
+        "transparent",
+        "uncovered",
+        "unhidden",
+        "unveiled",
+        "visible",
+        "vulnerable"
+      ]
+    },
+    "proposal": "People associate diplomats with secrecy more strongly than they associate journalists with secrecy. Contemporary discourse often frames diplomatic work as fundamentally reliant on classified channels, backroom negotiations, and state confidentiality, whereas journalism is culturally idealized as a fourth estate dedicated to transparency, public exposure, and investigative disclosure. This differential implicit association has not been systematically examined, despite the growing tension between state secrecy and media transparency in democratic societies. Mapping this implicit bias could reveal how the public intuitively categorizes information-gathering roles, which has implications for trust in institutions, perceptions of whistleblowing, and public willingness to support diplomatic versus journalistic endeavors during crises.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "728c6b8d5b34",
     "timestamp": "2026-08-31T11:26:04.213311+00:00",
     "schema_version": "autoresearch.v1",
