@@ -1,5 +1,111 @@
 [
   {
+    "id": "a0db097a5db5",
+    "timestamp": "2026-08-31T21:50:12.527845+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "ideologues vs sponsors on conviction vs pragmatism",
+    "labels": {
+      "X": "ideologues",
+      "Y": "sponsors",
+      "A": "conviction",
+      "B": "pragmatism"
+    },
+    "canonical_keys": {
+      "X": "ideologues",
+      "Y": "sponsors",
+      "A": "conviction",
+      "B": "pragmatism"
+    },
+    "effect_size": 0.9447134962045874,
+    "p_value": 0.01014,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "activist",
+        "crusader",
+        "dogmatist",
+        "fanatic",
+        "fundamentalist",
+        "hardliner",
+        "ideologue",
+        "militant",
+        "partisan",
+        "purist",
+        "radical",
+        "traditionalist",
+        "zealot",
+        "believer",
+        "advocate"
+      ],
+      "Y_used": [
+        "backer",
+        "benefactor",
+        "donor",
+        "endorser",
+        "financier",
+        "funder",
+        "investor",
+        "patron",
+        "sponsor",
+        "supporter",
+        "underwriter",
+        "capitalist",
+        "philanthropist",
+        "contributor",
+        "guarantor"
+      ],
+      "A_used": [
+        "conviction",
+        "steadfast",
+        "principled",
+        "unwavering",
+        "rigid",
+        "dogmatic",
+        "firm",
+        "resolute",
+        "constant",
+        "fixed",
+        "determined",
+        "committed",
+        "loyal",
+        "faithful",
+        "dedicated"
+      ],
+      "B_used": [
+        "pragmatic",
+        "flexible",
+        "adaptive",
+        "practical",
+        "compromising",
+        "adjustable",
+        "moderate",
+        "versatile",
+        "pliable",
+        "reasonable",
+        "tactical",
+        "strategic",
+        "realistic",
+        "sensible",
+        "yielding"
+      ]
+    },
+    "proposal": "People associate ideologues with conviction more strongly than they associate sponsors with conviction. This proposal examines a latent distinction in how we mentally represent belief-driven actors versus resource-providing actors. While sponsors are often credited with pragmatism or flexibility in pursuit of outcomes, ideologues are stereotyped as unwavering in their principles, even at the cost of effectiveness. This association matters because it may underlie public skepticism toward ideological movements (viewed as rigid) and uncritical trust in well-funded initiatives (viewed as adaptive), yet this specific trade-off in implicit representation has not been directly tested.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "bf731850fe34",
     "timestamp": "2026-08-31T17:44:43.092554+00:00",
     "schema_version": "autoresearch.v1",
