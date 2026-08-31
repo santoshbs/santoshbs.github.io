@@ -1,5 +1,111 @@
 [
   {
+    "id": "101f6c164718",
+    "timestamp": "2026-08-31T01:47:11.160578+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "mothers vs nuns on domesticity versus spirituality",
+    "labels": {
+      "X": "mothers",
+      "Y": "nuns",
+      "A": "domesticity",
+      "B": "spirituality"
+    },
+    "canonical_keys": {
+      "X": "mothers",
+      "Y": "nuns",
+      "A": "domesticity",
+      "B": "spirituality"
+    },
+    "effect_size": 1.5405792028836212,
+    "p_value": 1e-05,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "mother",
+        "mom",
+        "mum",
+        "mothers",
+        "moms",
+        "mums",
+        "matriarch",
+        "matriarchs",
+        "momma",
+        "mamma",
+        "mamas",
+        "mammas",
+        "mommy",
+        "mommies",
+        "stepmother"
+      ],
+      "Y_used": [
+        "nun",
+        "nuns",
+        "sister",
+        "sisters",
+        "abbess",
+        "abbesses",
+        "prioress",
+        "novice",
+        "novices",
+        "monastic",
+        "monastics",
+        "religious",
+        "devotee",
+        "sisterhood",
+        "devotees"
+      ],
+      "A_used": [
+        "home",
+        "house",
+        "kitchen",
+        "family",
+        "cooking",
+        "cleaning",
+        "laundry",
+        "children",
+        "domestic",
+        "housework",
+        "chores",
+        "hearth",
+        "apartment",
+        "bedroom",
+        "household"
+      ],
+      "B_used": [
+        "church",
+        "religion",
+        "god",
+        "prayer",
+        "worship",
+        "holy",
+        "sacred",
+        "spirit",
+        "soul",
+        "heaven",
+        "ritual",
+        "monastery",
+        "abbey",
+        "chapel",
+        "cross"
+      ]
+    },
+    "proposal": "People associate mothers with domesticity more strongly than they associate nuns with domesticity. While both are traditional female roles involving care and service, mothers are mentally linked to the secular, home-centered sphere of family life and household management, whereas nuns are associated with the institutional, spiritual sphere of the convent, having renounced domestic life through religious vows. This association matters because it reveals how gendered roles are mentally partitioned into sacred renunciation versus secular obligation, shaping how society values and interprets women's choices between religious life and family.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "291aa6693770",
     "timestamp": "2026-08-31T00:57:29.793149+00:00",
     "schema_version": "autoresearch.v1",
