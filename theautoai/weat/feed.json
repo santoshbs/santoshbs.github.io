@@ -1,5 +1,111 @@
 [
   {
+    "id": "b4599e4c9d85",
+    "timestamp": "2026-08-31T05:02:32.500172+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "voters vs donors on cynicism vs idealism",
+    "labels": {
+      "X": "voters",
+      "Y": "donors",
+      "A": "cynicism",
+      "B": "idealism"
+    },
+    "canonical_keys": {
+      "X": "voters",
+      "Y": "donors",
+      "A": "cynicism",
+      "B": "idealism"
+    },
+    "effect_size": 1.4474513484409408,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "voter",
+        "elector",
+        "citizen",
+        "constituent",
+        "electorate",
+        "populace",
+        "public",
+        "commoner",
+        "layman",
+        "layperson",
+        "majority",
+        "plebeian",
+        "registered",
+        "eligible",
+        "enfranchised"
+      ],
+      "Y_used": [
+        "donor",
+        "contributor",
+        "backer",
+        "financier",
+        "benefactor",
+        "patron",
+        "funder",
+        "supporter",
+        "investor",
+        "sponsor",
+        "philanthropist",
+        "giver",
+        "underwriter",
+        "capitalist",
+        "bankroller"
+      ],
+      "A_used": [
+        "cynical",
+        "cynic",
+        "cynicism",
+        "distrust",
+        "skepticism",
+        "skeptic",
+        "suspicion",
+        "mistrust",
+        "jaded",
+        "bitter",
+        "disillusioned",
+        "apathy",
+        "apathetic",
+        "pessimistic",
+        "doubt"
+      ],
+      "B_used": [
+        "idealist",
+        "idealism",
+        "idealistic",
+        "optimistic",
+        "optimism",
+        "hopeful",
+        "constructive",
+        "progressive",
+        "engaged",
+        "enthusiastic",
+        "visionary",
+        "altruistic",
+        "altruism",
+        "altruist",
+        "benevolent"
+      ]
+    },
+    "proposal": "People associate voters with cynicism more strongly than they associate donors with cynicism. This differential implicit association captures a culturally pervasive but underexamined framing in which everyday political participants are subconsciously linked to political disillusionment and distrust, while financial backers are linked to constructive idealism or solution-oriented engagement. Examining this association is novel because implicit measures have largely ignored epistemic dispositions in favor of competence/warmth or ideological valence. It is important because confirming it would reveal how democratic participation itself is mentally stigmatized relative to monetary political influence, potentially normalizing elite-driven governance while pathologizing grassroots engagement.",
+    "iterations": 3,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "101f6c164718",
     "timestamp": "2026-08-31T01:47:11.160578+00:00",
     "schema_version": "autoresearch.v1",
