@@ -1,5 +1,111 @@
 [
   {
+    "id": "e42bf87ea4e3",
+    "timestamp": "2026-08-31T23:42:09.951557+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Publishers vs Musicians on gatekeeping versus creation",
+    "labels": {
+      "X": "Publishers",
+      "Y": "Musicians",
+      "A": "control",
+      "B": "creation"
+    },
+    "canonical_keys": {
+      "X": "publishers",
+      "Y": "musicians",
+      "A": "control",
+      "B": "creation"
+    },
+    "effect_size": 1.3253703185965797,
+    "p_value": 0.00011,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "publisher",
+        "editor",
+        "agent",
+        "syndicate",
+        "press",
+        "imprint",
+        "distributor",
+        "director",
+        "executive",
+        "administrator",
+        "broker",
+        "dealer",
+        "representative",
+        "official",
+        "publicist"
+      ],
+      "Y_used": [
+        "musician",
+        "singer",
+        "artist",
+        "performer",
+        "composer",
+        "songwriter",
+        "guitarist",
+        "pianist",
+        "drummer",
+        "bassist",
+        "vocalist",
+        "conductor",
+        "trombonist",
+        "flutist",
+        "cellist"
+      ],
+      "A_used": [
+        "control",
+        "restrict",
+        "limit",
+        "filter",
+        "censor",
+        "regulate",
+        "block",
+        "prohibit",
+        "ban",
+        "deny",
+        "suppress",
+        "monitor",
+        "guard",
+        "supervise",
+        "inspect"
+      ],
+      "B_used": [
+        "create",
+        "express",
+        "imagine",
+        "design",
+        "build",
+        "craft",
+        "generate",
+        "form",
+        "invent",
+        "make",
+        "freedom",
+        "liberty",
+        "choice",
+        "voice",
+        "style"
+      ]
+    },
+    "proposal": "People associate publishers with gatekeeping more strongly than they associate musicians with gatekeeping. This differential implicit association reflects a potential cultural framing where publishers are viewed as institutional arbiters who filter, control, and restrict access to cultural distribution, whereas musicians are perceived primarily as autonomous creators or performers operating at the source of expression. Examining this association is novel because while 'gatekeeping' has been studied in general organizational contexts, it has not been compared across these specific cultural roles to assess whether the public mentally attributes structural power to the intermediary rather than the artist. This matters for understanding how audiences perceive responsibility for cultural scarcity and diversity, potentially shaping attitudes toward industry reform versus artistic support.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "a0db097a5db5",
     "timestamp": "2026-08-31T21:50:12.527845+00:00",
     "schema_version": "autoresearch.v1",
