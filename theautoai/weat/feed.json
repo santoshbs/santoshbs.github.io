@@ -1,5 +1,111 @@
 [
   {
+    "id": "291aa6693770",
+    "timestamp": "2026-08-31T00:57:29.793149+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "warriors vs soldiers on individualized valor versus institutionalized discipline",
+    "labels": {
+      "X": "warriors",
+      "Y": "soldiers",
+      "A": "valor",
+      "B": "discipline"
+    },
+    "canonical_keys": {
+      "X": "warriors",
+      "Y": "soldiers",
+      "A": "valor",
+      "B": "discipline"
+    },
+    "effect_size": 1.1476187016530843,
+    "p_value": 0.00092,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "warrior",
+        "knight",
+        "samurai",
+        "gladiator",
+        "berserker",
+        "paladin",
+        "champion",
+        "hero",
+        "fighter",
+        "combatant",
+        "crusader",
+        "mercenary",
+        "ranger",
+        "guard",
+        "sentinel"
+      ],
+      "Y_used": [
+        "soldier",
+        "trooper",
+        "marine",
+        "recruit",
+        "cadet",
+        "sergeant",
+        "private",
+        "conscript",
+        "officer",
+        "enlistee",
+        "militiaman",
+        "dragoon",
+        "legionary",
+        "guardsman",
+        "gunner"
+      ],
+      "A_used": [
+        "valor",
+        "heroism",
+        "courage",
+        "bravery",
+        "glory",
+        "honor",
+        "prowess",
+        "might",
+        "boldness",
+        "audacity",
+        "fearlessness",
+        "daring",
+        "noble",
+        "legendary",
+        "epic"
+      ],
+      "B_used": [
+        "discipline",
+        "order",
+        "obedience",
+        "regulation",
+        "protocol",
+        "uniform",
+        "rank",
+        "drill",
+        "routine",
+        "compliance",
+        "structure",
+        "bureaucracy",
+        "standard",
+        "control",
+        "authority"
+      ]
+    },
+    "proposal": "People associate warriors with heroism more strongly than they associate soldiers with heroism. This differential association captures a persistent cultural divide along the axis of individualized valor versus institutionalized discipline. While explicit research has examined semantic shifts in warfare terminology, implicit measures of how automatically the public links romanticized combat roles to autonomous agency have not been tested. Establishing this implicit bias would clarify how media narratives and popular discourse mentally segment combat roles, offering insight into public attitudes toward institutionalized warfare versus irregular fighting styles.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "263b8f3d7bda",
     "timestamp": "2026-08-30T22:06:46.612182+00:00",
     "schema_version": "autoresearch.v1",
