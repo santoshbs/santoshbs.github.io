@@ -1,5 +1,111 @@
 [
   {
+    "id": "b7559524c996",
+    "timestamp": "2026-09-01T16:39:28.436685+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "therapists vs philosophers on definitive guidance versus speculative inquiry",
+    "labels": {
+      "X": "therapists",
+      "Y": "philosophers",
+      "A": "definitive guidance",
+      "B": "speculative inquiry"
+    },
+    "canonical_keys": {
+      "X": "therapists",
+      "Y": "philosophers",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 1.5542015586991265,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "therapist",
+        "counselor",
+        "psychologist",
+        "psychiatrist",
+        "clinician",
+        "analyst",
+        "healer",
+        "mentor",
+        "coach",
+        "guide",
+        "specialist",
+        "practitioner",
+        "expert",
+        "consultant",
+        "facilitator"
+      ],
+      "Y_used": [
+        "philosopher",
+        "thinker",
+        "sage",
+        "scholar",
+        "academic",
+        "theorist",
+        "intellectual",
+        "professor",
+        "lecturer",
+        "researcher",
+        "author",
+        "writer",
+        "essayist",
+        "critic",
+        "debater"
+      ],
+      "A_used": [
+        "guidance",
+        "advice",
+        "solution",
+        "answer",
+        "certainty",
+        "clear",
+        "practical",
+        "concrete",
+        "directive",
+        "prescriptive",
+        "definitive",
+        "firm",
+        "reliable",
+        "direction",
+        "method"
+      ],
+      "B_used": [
+        "speculation",
+        "doubt",
+        "ambiguity",
+        "question",
+        "theory",
+        "abstract",
+        "open",
+        "exploratory",
+        "skeptical",
+        "uncertain",
+        "vague",
+        "hypothesis",
+        "inquiry",
+        "paradox",
+        "wondering"
+      ]
+    },
+    "proposal": "People associate therapists with definitive guidance more strongly than they associate philosophers with definitive guidance. This differential implicit association captures a cultural shift in which clinical mental health professionals are mentally categorized as providers of clear, evidence-based life management tools, whereas humanist scholars are relegated to the realm of open-ended speculation and abstract doubt. Examining this axis is novel because implicit bias research has extensively mapped clinicians against clergy or scientists against artists, but has not yet measured how the public cognitively partitions practical life guidance between therapeutic and philosophical traditions. Confirming or disconfirming this association would clarify whether the rising clinicalization of personal well-being has fundamentally displaced humanist disciplines in the public’s mental map of normative authority.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "55d64bc99082",
     "timestamp": "2026-09-01T15:44:59.531368+00:00",
     "schema_version": "autoresearch.v1",
