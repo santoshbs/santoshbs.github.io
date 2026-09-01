@@ -1,25 +1,5 @@
 [
   {
-    "id": "female-family-details-faster",
-    "title": "Female borrowers who mention specific family details like children or a partner's occupation may fund faster.",
-    "bucket": "",
-    "birth_batch": 0,
-    "death_batch": 1568,
-    "last_batch": 1568,
-    "confidence": 0,
-    "alive": false
-  },
-  {
-    "id": "female-technical-use-slower",
-    "title": "Female borrowers who describe specific technical uses of loan funds may fund more slowly.",
-    "bucket": "",
-    "birth_batch": 0,
-    "death_batch": 1570,
-    "last_batch": 1570,
-    "confidence": 0,
-    "alive": false
-  },
-  {
     "id": "female-product-specificity-faster",
     "title": "Female borrowers who specify exact products being purchased for resale fund faster.",
     "bucket": "",
@@ -100,13 +80,33 @@
     "alive": false
   },
   {
+    "id": "male-repayment-promise-faster",
+    "title": "Male borrowers who explicitly promise to repay the loan promptly may fund faster.",
+    "bucket": "",
+    "birth_batch": 0,
+    "death_batch": 1585,
+    "last_batch": 1585,
+    "confidence": 0,
+    "alive": false
+  },
+  {
+    "id": "male-local-currency-slower",
+    "title": "Male borrowers who include the loan amount in local currency may fund more slowly.",
+    "bucket": "",
+    "birth_batch": 0,
+    "death_batch": 1585,
+    "last_batch": 1585,
+    "confidence": 0,
+    "alive": false
+  },
+  {
     "id": "female-savings-goal-faster",
     "title": "Female borrowers who mention the goal of building savings fund faster.",
     "bucket": "gendered_women",
     "birth_batch": 1,
-    "last_batch": 1584,
-    "confidence": 0.95,
-    "peak_confidence": 0.95,
+    "last_batch": 1585,
+    "confidence": 0.8,
+    "peak_confidence": 0.8,
     "alive": true
   },
   {
@@ -114,7 +114,7 @@
     "title": "Higher verbosity and excessive personal detail predict slower funding regardless of gender.",
     "bucket": "slower",
     "birth_batch": 1,
-    "last_batch": 1584,
+    "last_batch": 1585,
     "confidence": 1.0,
     "peak_confidence": 1.0,
     "alive": true
@@ -123,8 +123,8 @@
     "id": "monthly-income-slower-general",
     "title": "Pitches that include specific monthly income figures predict slower funding regardless of gender.",
     "bucket": "slower",
-    "birth_batch": 26,
-    "last_batch": 1584,
+    "birth_batch": 25,
+    "last_batch": 1585,
     "confidence": 0.88,
     "peak_confidence": 0.88,
     "alive": true
@@ -133,8 +133,8 @@
     "id": "female-business-success-faster",
     "title": "Female borrowers who emphasize that their business is currently doing well or is being sustained fund faster.",
     "bucket": "gendered_women",
-    "birth_batch": 36,
-    "last_batch": 1584,
+    "birth_batch": 35,
+    "last_batch": 1585,
     "confidence": 1.0,
     "peak_confidence": 1.0,
     "alive": true
@@ -143,8 +143,8 @@
     "id": "asset-ownership-faster",
     "title": "Mentioning specific asset or business ownership predicts faster funding regardless of gender.",
     "bucket": "faster",
-    "birth_batch": 630,
-    "last_batch": 1584,
+    "birth_batch": 629,
+    "last_batch": 1585,
     "confidence": 1.0,
     "peak_confidence": 1.0,
     "alive": true
@@ -153,18 +153,18 @@
     "id": "female-aspirational-language-faster",
     "title": "Female borrowers who use aspirational language such as 'dreams' for their business fund faster.",
     "bucket": "gendered_women",
-    "birth_batch": 1176,
-    "last_batch": 1584,
-    "confidence": 1.0,
-    "peak_confidence": 1.0,
+    "birth_batch": 1175,
+    "last_batch": 1585,
+    "confidence": 0.85,
+    "peak_confidence": 0.85,
     "alive": true
   },
   {
     "id": "repayment-history-faster",
     "title": "Mentioning a history of previous loan repayment predicts faster funding regardless of gender.",
     "bucket": "faster",
-    "birth_batch": 1426,
-    "last_batch": 1584,
+    "birth_batch": 1425,
+    "last_batch": 1585,
     "confidence": 0.8,
     "peak_confidence": 0.8,
     "alive": true
@@ -173,8 +173,8 @@
     "id": "ag-input-specificity-faster",
     "title": "Pitches that list specific quantities or types of agricultural inputs predict faster funding regardless of gender.",
     "bucket": "faster",
-    "birth_batch": 1580,
-    "last_batch": 1584,
+    "birth_batch": 1579,
+    "last_batch": 1585,
     "confidence": 0.6,
     "peak_confidence": 0.6,
     "alive": true
