@@ -1,5 +1,111 @@
 [
   {
+    "id": "a782cd65053a",
+    "timestamp": "2026-09-01T02:20:57.512197+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Vocalists vs Instrumentalists on bodily exposure versus shielding",
+    "labels": {
+      "X": "Vocalists",
+      "Y": "Instrumentalists",
+      "A": "bodily vulnerability",
+      "B": "protection"
+    },
+    "canonical_keys": {
+      "X": "vocalists",
+      "Y": "instrumentalists",
+      "A": "",
+      "B": "protection"
+    },
+    "effect_size": 0.28892697404517687,
+    "p_value": 0.44186,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "singer",
+        "vocalist",
+        "soprano",
+        "tenor",
+        "alto",
+        "baritone",
+        "contralto",
+        "countertenor",
+        "diva",
+        "crooner",
+        "balladeer",
+        "belter",
+        "troubadour",
+        "chorister",
+        "rapper"
+      ],
+      "Y_used": [
+        "guitarist",
+        "pianist",
+        "drummer",
+        "violinist",
+        "cellist",
+        "flutist",
+        "trumpeter",
+        "saxophonist",
+        "harpist",
+        "organist",
+        "percussionist",
+        "bassist",
+        "trombonist",
+        "clarinetist",
+        "accordionist"
+      ],
+      "A_used": [
+        "vulnerable",
+        "exposed",
+        "fragile",
+        "bare",
+        "naked",
+        "defenseless",
+        "raw",
+        "intimate",
+        "risky",
+        "unprotected",
+        "delicate",
+        "sensitive",
+        "open",
+        "tender",
+        "precarious"
+      ],
+      "B_used": [
+        "protected",
+        "shielded",
+        "armored",
+        "concealed",
+        "hidden",
+        "safe",
+        "secure",
+        "guarded",
+        "covered",
+        "enclosed",
+        "fortified",
+        "sheltered",
+        "invulnerable",
+        "tough",
+        "masked"
+      ]
+    },
+    "proposal": "People associate Vocalists with bodily vulnerability more strongly than they associate Instrumentalists with bodily vulnerability. This differential association arises because vocal performance requires the direct, unmediated exposure of the throat, breath, and facial expressions, whereas instrumental performance often shields the body behind an object that serves as a tool or extension. This axis is novel because implicit association research in the arts has largely examined gender or racial stereotypes, overlooking the fundamental perceptual divide between those who use their bodies as the primary instrument and those who manipulate external devices. Understanding this association matters because perceptions of bodily exposure may shape audience judgments of authenticity, emotional risk, and intimacy, potentially influencing the valuation of vocal versus instrumental roles in performance contexts.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "e42bf87ea4e3",
     "timestamp": "2026-08-31T23:42:09.951557+00:00",
     "schema_version": "autoresearch.v1",
