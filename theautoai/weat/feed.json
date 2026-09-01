@@ -1,5 +1,111 @@
 [
   {
+    "id": "6d88a47934a9",
+    "timestamp": "2026-09-01T07:21:31.342553+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "observers vs interveners on narrative coherence vs fragmentation",
+    "labels": {
+      "X": "observers",
+      "Y": "interveners",
+      "A": "Coherence",
+      "B": "Fragmentation"
+    },
+    "canonical_keys": {
+      "X": "observers",
+      "Y": "interveners",
+      "A": "coherence",
+      "B": "fragmentation"
+    },
+    "effect_size": -0.9711522559900689,
+    "p_value": 0.00739,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "observer",
+        "witness",
+        "spectator",
+        "bystander",
+        "onlooker",
+        "viewer",
+        "watcher",
+        "chronicler",
+        "documentarian",
+        "auditor",
+        "analyst",
+        "reporter",
+        "monitor",
+        "scout",
+        "evaluator"
+      ],
+      "Y_used": [
+        "activist",
+        "mediator",
+        "negotiator",
+        "responder",
+        "rescuer",
+        "volunteer",
+        "helper",
+        "operator",
+        "practitioner",
+        "worker",
+        "reformer",
+        "organizer",
+        "facilitator",
+        "builder",
+        "campaigner"
+      ],
+      "A_used": [
+        "coherent",
+        "logical",
+        "consistent",
+        "unified",
+        "integrated",
+        "seamless",
+        "orderly",
+        "systematic",
+        "rational",
+        "organized",
+        "harmonious",
+        "methodical",
+        "sensible",
+        "connected",
+        "flowing"
+      ],
+      "B_used": [
+        "fragmented",
+        "chaotic",
+        "disjointed",
+        "scattered",
+        "broken",
+        "messy",
+        "erratic",
+        "confused",
+        "disordered",
+        "incoherent",
+        "random",
+        "sporadic",
+        "haphazard",
+        "abrupt",
+        "disconnected"
+      ]
+    },
+    "proposal": "People associate observers with narrative coherence more strongly than they associate interveners with narrative coherence. This implicit association taps into a pervasive cultural intuition that epistemic distance and detachment foster structured, holistic sense-making, whereas direct involvement fractures attention into immediate, fragmented responses. While role-based stereotypes are well-documented, the specific linkage between observational postures and coherent storytelling has not been systematically mapped in implicit cognition research, despite its relevance to contemporary debates about journalism versus activism, expert analysis versus field practice, and the perceived legitimacy of different knowledge-production roles. Confirming this association would reveal how occupational stances shape mental representations of epistemic reliability, offering a new lens for understanding institutional trust and the implicit hierarchy of sense-making capacities.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "4ff372a80018",
     "timestamp": "2026-09-01T06:01:10.123433+00:00",
     "schema_version": "autoresearch.v1",
