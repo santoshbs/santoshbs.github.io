@@ -1,5 +1,115 @@
 [
   {
+    "id": "f18b22922842",
+    "timestamp": "2026-09-01T09:30:34.577451+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "fans vs players on ritualistic vs practical orientation",
+    "labels": {
+      "X": "fans",
+      "Y": "players",
+      "A": "ritualistic",
+      "B": "practical"
+    },
+    "canonical_keys": {
+      "X": "fans",
+      "Y": "players",
+      "A": "ritualistic",
+      "B": "practical"
+    },
+    "effect_size": 1.1961135231350437,
+    "p_value": 0.00015,
+    "n": {
+      "X": 16,
+      "Y": 16,
+      "A": 16,
+      "B": 16
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "fan",
+        "supporter",
+        "spectator",
+        "audience",
+        "viewer",
+        "admirer",
+        "follower",
+        "enthusiast",
+        "partisan",
+        "backer",
+        "patron",
+        "cheerleader",
+        "rooter",
+        "loyalist",
+        "crowd",
+        "observer"
+      ],
+      "Y_used": [
+        "player",
+        "athlete",
+        "competitor",
+        "performer",
+        "star",
+        "champion",
+        "veteran",
+        "rookie",
+        "substitute",
+        "starter",
+        "professional",
+        "contestant",
+        "participant",
+        "runner",
+        "fighter",
+        "batter"
+      ],
+      "A_used": [
+        "ritual",
+        "ceremony",
+        "sacred",
+        "devotion",
+        "worship",
+        "altar",
+        "prayer",
+        "sacrament",
+        "liturgy",
+        "rite",
+        "symbol",
+        "tradition",
+        "chant",
+        "blessing",
+        "consecration",
+        "shrine"
+      ],
+      "B_used": [
+        "routine",
+        "practical",
+        "job",
+        "task",
+        "duty",
+        "work",
+        "labor",
+        "career",
+        "schedule",
+        "assignment",
+        "chore",
+        "occupation",
+        "employment",
+        "function",
+        "operation",
+        "procedure"
+      ]
+    },
+    "proposal": "People associate fans with ritual more strongly than they associate players with ritual. While the passion of sports audiences is well-documented, the specific implicit linkage of fans to ritualistic behavior—repeated symbolic actions, sacred objects, and quasi-religious devotion—has not been systematically compared against the athletes themselves. Examining this differential association is novel because it moves beyond generic 'emotion' or 'loyalty' stereotypes to probe whether the public mentally represents fandom through the cognitive framework of ritual practice, distinct from the professional routine of the performers. This matters because it reveals how sports discourse may implicitly sanctify the audience's role as ritual participants, potentially elevating fan identity over athlete identity in the domain of cultural meaning-making.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "051982480a7e",
     "timestamp": "2026-09-01T08:27:13.818367+00:00",
     "schema_version": "autoresearch.v1",
