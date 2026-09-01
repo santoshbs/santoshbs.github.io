@@ -1,5 +1,112 @@
 [
   {
+    "id": "c390fc3968ef",
+    "timestamp": "2026-09-01T10:10:32.073387+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "artists vs engineers on Authenticity vs Artificiality",
+    "labels": {
+      "X": "artists",
+      "Y": "engineers",
+      "A": "Authenticity",
+      "B": "Artificiality"
+    },
+    "canonical_keys": {
+      "X": "artists",
+      "Y": "engineers",
+      "A": "authenticity",
+      "B": "artificiality"
+    },
+    "effect_size": 1.1052284658101832,
+    "p_value": 0.00137,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "painter",
+        "sculptor",
+        "musician",
+        "actor",
+        "dancer",
+        "writer",
+        "poet",
+        "illustrator",
+        "composer",
+        "photographer",
+        "singer",
+        "craftsman",
+        "artisan",
+        "potter",
+        "weaver"
+      ],
+      "Y_used": [
+        "engineer",
+        "architect",
+        "builder",
+        "mechanic",
+        "technician",
+        "developer",
+        "programmer",
+        "electrician",
+        "plumber",
+        "machinist",
+        "draftsman",
+        "constructor",
+        "fabricator",
+        "assembler",
+        "analyst",
+        "scientist"
+      ],
+      "A_used": [
+        "genuine",
+        "real",
+        "true",
+        "honest",
+        "sincere",
+        "original",
+        "pure",
+        "natural",
+        "authentic",
+        "earnest",
+        "frank",
+        "candid",
+        "open",
+        "direct",
+        "spontaneous"
+      ],
+      "B_used": [
+        "fake",
+        "false",
+        "artificial",
+        "synthetic",
+        "imitation",
+        "sham",
+        "phony",
+        "bogus",
+        "counterfeit",
+        "hollow",
+        "insincere",
+        "manufactured",
+        "fabricated",
+        "mechanical",
+        "constructed"
+      ]
+    },
+    "proposal": "People associate artists with authenticity more strongly than they associate engineers with authenticity. This differential association likely stems from cultural narratives that frame artistic practice as a conduit for inner truth, self-revelation, and unmediated expression, while depicting engineering as a domain constrained by external specifications, objective standards, and functional utility. Examining this implicit bias is important because it may influence how society attributes moral integrity and personal agency to technical professionals versus creative ones, potentially affecting career socialization, leadership selection, and the perceived value of different types of expertise. This specific comparison is novel, as prior research has predominantly focused on broad humanities-versus-stem dichotomies or established trait dimensions like creativity and rationality, leaving the implicit link to authenticity unprobed for these specific roles.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "f18b22922842",
     "timestamp": "2026-09-01T09:30:34.577451+00:00",
     "schema_version": "autoresearch.v1",
