@@ -1,5 +1,111 @@
 [
   {
+    "id": "e027eed2ab25",
+    "timestamp": "2026-09-01T12:53:30.885239+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "critics vs admirers on emotional detachment versus engagement",
+    "labels": {
+      "X": "critics",
+      "Y": "admirers",
+      "A": "detachment",
+      "B": "attachment"
+    },
+    "canonical_keys": {
+      "X": "critics",
+      "Y": "admirers",
+      "A": "detachment",
+      "B": "attachment"
+    },
+    "effect_size": 1.5178430666528862,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "critic",
+        "reviewer",
+        "analyst",
+        "evaluator",
+        "assessor",
+        "appraiser",
+        "examiner",
+        "commentator",
+        "pundit",
+        "skeptic",
+        "doubter",
+        "observer",
+        "censor",
+        "inspector",
+        "auditor"
+      ],
+      "Y_used": [
+        "admirer",
+        "fan",
+        "supporter",
+        "enthusiast",
+        "devotee",
+        "follower",
+        "backer",
+        "champion",
+        "believer",
+        "worshipper",
+        "fanatic",
+        "buff",
+        "loyalist",
+        "adherent",
+        "partisan"
+      ],
+      "A_used": [
+        "detachment",
+        "objectivity",
+        "neutrality",
+        "impartiality",
+        "aloofness",
+        "coldness",
+        "indifference",
+        "reserve",
+        "independence",
+        "isolation",
+        "coolness",
+        "impersonality",
+        "disinterest",
+        "formality",
+        "dispassion"
+      ],
+      "B_used": [
+        "attachment",
+        "enthusiasm",
+        "passion",
+        "devotion",
+        "zeal",
+        "eagerness",
+        "fervor",
+        "ardor",
+        "love",
+        "affection",
+        "warmth",
+        "intimacy",
+        "closeness",
+        "connection",
+        "engagement"
+      ]
+    },
+    "proposal": "People associate critics with detachment more strongly than they associate admirers with detachment. This differential association reflects the cultural expectation that critics must maintain objective distance to provide valid judgment, whereas admirers are defined by their subjective attachment and enthusiasm. Examining this link is novel because implicit association tests typically focus on valence (good vs bad) rather than relational distance, and it matters because it reveals how we cognitively legitimize criticism by tying it to emotional disengagement.",
+    "iterations": 3,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "c390fc3968ef",
     "timestamp": "2026-09-01T10:10:32.073387+00:00",
     "schema_version": "autoresearch.v1",
