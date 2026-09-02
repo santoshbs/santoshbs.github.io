@@ -1,5 +1,111 @@
 [
   {
+    "id": "457f8e256344",
+    "timestamp": "2026-09-02T20:56:54.229952+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "generals vs scientists on assertiveness vs deliberation",
+    "labels": {
+      "X": "generals",
+      "Y": "scientists",
+      "A": "decisive",
+      "B": "cautious"
+    },
+    "canonical_keys": {
+      "X": "generals",
+      "Y": "scientists",
+      "A": "decisive",
+      "B": "cautious"
+    },
+    "effect_size": 1.672154909846283,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "general",
+        "commander",
+        "admiral",
+        "colonel",
+        "captain",
+        "major",
+        "officer",
+        "marshal",
+        "sergeant",
+        "corporal",
+        "lieutenant",
+        "chief",
+        "soldier",
+        "warrior",
+        "veteran"
+      ],
+      "Y_used": [
+        "scientist",
+        "researcher",
+        "biologist",
+        "chemist",
+        "physicist",
+        "professor",
+        "academic",
+        "scholar",
+        "analyst",
+        "engineer",
+        "specialist",
+        "expert",
+        "clinician",
+        "doctor",
+        "physician"
+      ],
+      "A_used": [
+        "decisive",
+        "bold",
+        "assertive",
+        "confident",
+        "firm",
+        "strong",
+        "sure",
+        "resolute",
+        "steadfast",
+        "unwavering",
+        "direct",
+        "forthright",
+        "clear",
+        "prompt",
+        "swift"
+      ],
+      "B_used": [
+        "cautious",
+        "careful",
+        "tentative",
+        "deliberate",
+        "thoughtful",
+        "hesitant",
+        "uncertain",
+        "slow",
+        "measured",
+        "methodical",
+        "patient",
+        "exact",
+        "rigorous",
+        "scrupulous",
+        "meticulous"
+      ]
+    },
+    "proposal": "People associate generals with decisiveness more strongly than they associate scientists with decisiveness. Military command is culturally stereotyped as requiring rapid, authoritative action in high-stakes environments, whereas scientific inquiry is characterized by deliberation, peer review, and the tentative nature of knowledge. This differential implicit association has not been examined, yet it is relevant to public perceptions of expertise during crises, where the epistemic styles of these two groups often collide in policy debates. Confirming this would suggest that the public intuitively recognizes the distinct virtues of command versus inquiry, potentially influencing which category is trusted to lead in emergencies versus long-term planning.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "b7559524c996",
     "timestamp": "2026-09-01T16:39:28.436685+00:00",
     "schema_version": "autoresearch.v1",
