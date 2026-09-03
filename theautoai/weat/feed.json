@@ -1,5 +1,111 @@
 [
   {
+    "id": "897b0a02bfd4",
+    "timestamp": "2026-09-03T01:42:40.757998+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Servants vs Rulers on group cohesion versus individualistic competition",
+    "labels": {
+      "X": "Servants",
+      "Y": "Rulers",
+      "A": "solidarity",
+      "B": "competition"
+    },
+    "canonical_keys": {
+      "X": "servants",
+      "Y": "rulers",
+      "A": "solidarity",
+      "B": "competition"
+    },
+    "effect_size": -0.21468757129710117,
+    "p_value": 0.57073,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "servant",
+        "slave",
+        "laborer",
+        "worker",
+        "employee",
+        "subordinate",
+        "retainer",
+        "attendant",
+        "lackey",
+        "minion",
+        "henchman",
+        "assistant",
+        "domestic",
+        "underling",
+        "helper"
+      ],
+      "Y_used": [
+        "king",
+        "queen",
+        "emperor",
+        "monarch",
+        "sovereign",
+        "dictator",
+        "president",
+        "prince",
+        "sultan",
+        "governor",
+        "chief",
+        "lord",
+        "czar",
+        "pharaoh",
+        "tsar"
+      ],
+      "A_used": [
+        "solidarity",
+        "unity",
+        "cohesion",
+        "togetherness",
+        "community",
+        "teamwork",
+        "cooperation",
+        "alliance",
+        "fraternity",
+        "brotherhood",
+        "sisterhood",
+        "harmony",
+        "support",
+        "collectivity",
+        "fellowship"
+      ],
+      "B_used": [
+        "competition",
+        "rivalry",
+        "fragmentation",
+        "isolation",
+        "individualism",
+        "solitude",
+        "division",
+        "separation",
+        "conflict",
+        "struggle",
+        "opposition",
+        "antagonism",
+        "discord",
+        "enmity",
+        "hostility"
+      ]
+    },
+    "proposal": "People associate Servants with solidarity more strongly than they associate Rulers with solidarity. This implicit association likely stems from enduring cultural narratives that portray subordinated groups as bound by collective mutual aid and shared survival, while depicting dominant leaders as atomized competitors locked in zero-sum rivalries. It is novel because implicit bias research has predominantly examined competence and warmth, overlooking how social hierarchy fundamentally shapes mental representations of internal group cohesion versus fragmentation. Understanding this association matters because it exposes how deep-seated cognitive schemas may subtly reinforce structural inequalities by implicitly legitimizing the fragmentation of the powerful while romanticizing the cohesion of the powerless.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "cae085458660",
     "timestamp": "2026-09-03T01:02:44.886572+00:00",
     "schema_version": "autoresearch.v1",
