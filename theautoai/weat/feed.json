@@ -1,5 +1,111 @@
 [
   {
+    "id": "5b1a1d99f55c",
+    "timestamp": "2026-09-03T12:00:25.546933+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "prophets vs poets on authority versus creativity",
+    "labels": {
+      "X": "prophets",
+      "Y": "poets",
+      "A": "authority",
+      "B": "creativity"
+    },
+    "canonical_keys": {
+      "X": "prophets",
+      "Y": "poets",
+      "A": "authority",
+      "B": "creativity"
+    },
+    "effect_size": 1.5400858877739476,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "prophet",
+        "oracle",
+        "seer",
+        "visionary",
+        "mystic",
+        "soothsayer",
+        "augur",
+        "diviner",
+        "clairvoyant",
+        "evangelist",
+        "apostle",
+        "patriarch",
+        "messiah",
+        "zealot",
+        "fanatic"
+      ],
+      "Y_used": [
+        "poet",
+        "bard",
+        "lyricist",
+        "writer",
+        "author",
+        "novelist",
+        "playwright",
+        "dramatist",
+        "storyteller",
+        "satirist",
+        "composer",
+        "minstrel",
+        "performer",
+        "artist",
+        "creator"
+      ],
+      "A_used": [
+        "authority",
+        "power",
+        "control",
+        "command",
+        "rule",
+        "dominance",
+        "sovereignty",
+        "jurisdiction",
+        "mandate",
+        "decree",
+        "edict",
+        "statute",
+        "law",
+        "regulation",
+        "ordinance"
+      ],
+      "B_used": [
+        "creativity",
+        "art",
+        "imagination",
+        "invention",
+        "design",
+        "composition",
+        "expression",
+        "aesthetics",
+        "beauty",
+        "style",
+        "form",
+        "pattern",
+        "rhythm",
+        "melody",
+        "harmony"
+      ]
+    },
+    "proposal": "People associate prophets with authority more strongly than they associate poets with authority. This differential association probes the implicit mental boundary between figures claiming supernatural revelation and those engaged in artistic creation, revealing how the public distinguishes sources of legitimate truth from aesthetic expression. The comparison is novel because these two historically significant 'speaker' roles are rarely juxtaposed in implicit measurement, and it matters for understanding how cognitive schemas segregate religious conviction from creative license in evaluating human agents.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "897b0a02bfd4",
     "timestamp": "2026-09-03T01:42:40.757998+00:00",
     "schema_version": "autoresearch.v1",
