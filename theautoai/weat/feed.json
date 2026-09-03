@@ -1,5 +1,111 @@
 [
   {
+    "id": "3031a286f49f",
+    "timestamp": "2026-09-03T13:57:41.001758+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "journalists vs politicians on factual objectivity versus subjective bias",
+    "labels": {
+      "X": "journalists",
+      "Y": "politicians",
+      "A": "factual objectivity",
+      "B": "subjective bias"
+    },
+    "canonical_keys": {
+      "X": "journalists",
+      "Y": "politicians",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": -0.30004411774941897,
+    "p_value": 0.44144,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "journalist",
+        "reporter",
+        "correspondent",
+        "anchor",
+        "broadcaster",
+        "announcer",
+        "interviewer",
+        "cameraman",
+        "photographer",
+        "editor",
+        "columnist",
+        "newscaster",
+        "producer",
+        "commentator",
+        "newswoman"
+      ],
+      "Y_used": [
+        "politician",
+        "senator",
+        "representative",
+        "governor",
+        "mayor",
+        "minister",
+        "chancellor",
+        "legislator",
+        "lawmaker",
+        "councilor",
+        "congressman",
+        "congresswoman",
+        "diplomat",
+        "ambassador",
+        "official"
+      ],
+      "A_used": [
+        "objective",
+        "unbiased",
+        "neutral",
+        "accurate",
+        "precise",
+        "factual",
+        "truth",
+        "reality",
+        "evidence",
+        "correct",
+        "valid",
+        "reliable",
+        "genuine",
+        "scientific",
+        "fact"
+      ],
+      "B_used": [
+        "biased",
+        "subjective",
+        "opinion",
+        "false",
+        "fake",
+        "lie",
+        "fiction",
+        "prejudice",
+        "bias",
+        "spin",
+        "propaganda",
+        "rumor",
+        "speculation",
+        "distortion",
+        "misleading"
+      ]
+    },
+    "proposal": "people associate journalists with factual objectivity more strongly than they associate politicians with factual objectivity. This differential implicit association reflects divergent institutional mandates and public expectations regarding how these actors process and present information. While explicit research has extensively mapped perceived bias and trust levels, implicit cognitive linkages around foundational epistemic stances remain unexamined. Uncovering whether the public’s subconscious mental models align with these roles’ normative commitments—or have inverted amid contemporary discourse fragmentation—would significantly advance our understanding of how institutional functions shape automatic social cognition.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "5b1a1d99f55c",
     "timestamp": "2026-09-03T12:00:25.546933+00:00",
     "schema_version": "autoresearch.v1",
