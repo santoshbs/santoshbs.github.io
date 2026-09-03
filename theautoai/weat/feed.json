@@ -1,5 +1,111 @@
 [
   {
+    "id": "c92a870e7c1f",
+    "timestamp": "2026-09-03T20:51:28.134723+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "locals vs tourists on belonging vs transience",
+    "labels": {
+      "X": "locals",
+      "Y": "tourists",
+      "A": "rootedness",
+      "B": "transience"
+    },
+    "canonical_keys": {
+      "X": "locals",
+      "Y": "tourists",
+      "A": "rootedness",
+      "B": "transience"
+    },
+    "effect_size": 0.5467757747271095,
+    "p_value": 0.14239,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "resident",
+        "citizen",
+        "neighbor",
+        "inhabitant",
+        "dweller",
+        "native",
+        "local",
+        "settler",
+        "villager",
+        "townie",
+        "townsman",
+        "denizen",
+        "townsfolk",
+        "householder",
+        "homeowner"
+      ],
+      "Y_used": [
+        "tourist",
+        "visitor",
+        "traveler",
+        "sojourner",
+        "transient",
+        "sightseer",
+        "backpacker",
+        "voyager",
+        "guest",
+        "outsider",
+        "drifter",
+        "roamer",
+        "wanderer",
+        "passerby",
+        "nomad"
+      ],
+      "A_used": [
+        "belonging",
+        "rooted",
+        "permanent",
+        "stable",
+        "attached",
+        "settled",
+        "anchored",
+        "home",
+        "indigenous",
+        "embedded",
+        "fixed",
+        "lasting",
+        "enduring",
+        "established",
+        "secure"
+      ],
+      "B_used": [
+        "rootless",
+        "mobile",
+        "temporary",
+        "fleeting",
+        "unattached",
+        "itinerant",
+        "shifting",
+        "ephemeral",
+        "superficial",
+        "impermanent",
+        "wayfaring",
+        "unanchored",
+        "unbound",
+        "unfixed",
+        "transitory"
+      ]
+    },
+    "proposal": "People associate locals with belonging more strongly than they associate tourists with belonging. This differential implicit association targets the rootless vs. rooted dichotomy that underpins contemporary debates about overtourism, gentrification, and community identity. While explicit attitudes often acknowledge the economic benefits of tourism, implicit representations may link tourists to transience, superficiality, and displacement, while reserving deep social embeddedness and moral claim to space for locals. Examining this association is novel because implicit bias research has largely focused on intergroup relations involving race, gender, or nativity, leaving the pervasive psychological boundary between residents and visitors underexplored despite its daily relevance in urban environments. Confirming this bias would highlight how the mere status of being a visitor implicitly triggers representations of exclusion and lack of agency, which has implications for social cohesion policies and the mental well-being of transient populations.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "3031a286f49f",
     "timestamp": "2026-09-03T13:57:41.001758+00:00",
     "schema_version": "autoresearch.v1",
