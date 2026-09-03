@@ -1,5 +1,111 @@
 [
   {
+    "id": "cae085458660",
+    "timestamp": "2026-09-03T01:02:44.886572+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "landlords vs tenants on permanence vs transience",
+    "labels": {
+      "X": "landlords",
+      "Y": "tenants",
+      "A": "permanence",
+      "B": "transience"
+    },
+    "canonical_keys": {
+      "X": "landlords",
+      "Y": "tenants",
+      "A": "permanence",
+      "B": "transience"
+    },
+    "effect_size": 0.7192674774111185,
+    "p_value": 0.05131,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "landlord",
+        "landlady",
+        "owner",
+        "lessor",
+        "proprietor",
+        "freeholder",
+        "rentier",
+        "grantor",
+        "landowner",
+        "landholder",
+        "investor",
+        "capitalist",
+        "developer",
+        "financier",
+        "tycoon"
+      ],
+      "Y_used": [
+        "tenant",
+        "renter",
+        "lessee",
+        "lodger",
+        "boarder",
+        "occupant",
+        "inhabitant",
+        "resident",
+        "dweller",
+        "subtenant",
+        "sublessee",
+        "subletter",
+        "squatter",
+        "occupier",
+        "guest"
+      ],
+      "A_used": [
+        "permanent",
+        "eternal",
+        "everlasting",
+        "endless",
+        "infinite",
+        "perpetual",
+        "continuous",
+        "constant",
+        "steady",
+        "stable",
+        "solid",
+        "firm",
+        "fixed",
+        "secure",
+        "lasting"
+      ],
+      "B_used": [
+        "temporary",
+        "fleeting",
+        "passing",
+        "brief",
+        "short",
+        "momentary",
+        "instant",
+        "ephemeral",
+        "casual",
+        "occasional",
+        "sporadic",
+        "intermittent",
+        "periodic",
+        "cyclic",
+        "recurring"
+      ]
+    },
+    "proposal": "people associate landlords with permanence more strongly than they associate tenants with permanence. This differential association probes whether the structural power imbalance in housing is cognitively mirrored by an implicit link between landlordship and enduring rootedness, versus tenancy and transience. It is novel because implicit association research has largely overlooked the landlord-tenant dyad in favor of broader class categories or specific professions. It matters because confirming this bias would reveal a subconscious mechanism that may delegitimize tenant claims to home and stability, thereby reinforcing systemic housing inequities.",
+    "iterations": 3,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "457f8e256344",
     "timestamp": "2026-09-02T20:56:54.229952+00:00",
     "schema_version": "autoresearch.v1",
