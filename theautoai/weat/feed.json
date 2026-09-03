@@ -1,5 +1,111 @@
 [
   {
+    "id": "90c90438cb4c",
+    "timestamp": "2026-09-03T23:42:56.175867+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Architects vs Contractors on aesthetic creativity versus technical practicality",
+    "labels": {
+      "X": "Architects",
+      "Y": "Contractors",
+      "A": "creative/aesthetic",
+      "B": "practical/technical"
+    },
+    "canonical_keys": {
+      "X": "architects",
+      "Y": "contractors",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 1.4750450538156545,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "architect",
+        "designer",
+        "planner",
+        "drafter",
+        "artist",
+        "creator",
+        "illustrator",
+        "modeler",
+        "stylist",
+        "decorator",
+        "draftsman",
+        "landscaper",
+        "urbanist",
+        "renderer",
+        "sketcher"
+      ],
+      "Y_used": [
+        "contractor",
+        "builder",
+        "carpenter",
+        "plumber",
+        "electrician",
+        "mason",
+        "mechanic",
+        "laborer",
+        "worker",
+        "handyman",
+        "tradesman",
+        "foreman",
+        "superintendent",
+        "estimator",
+        "inspector"
+      ],
+      "A_used": [
+        "creative",
+        "artistic",
+        "beautiful",
+        "elegant",
+        "visionary",
+        "innovative",
+        "imaginative",
+        "aesthetic",
+        "graceful",
+        "expressive",
+        "original",
+        "stylish",
+        "inspiring",
+        "poetic",
+        "abstract"
+      ],
+      "B_used": [
+        "practical",
+        "technical",
+        "functional",
+        "logistical",
+        "material",
+        "structural",
+        "mechanical",
+        "utilitarian",
+        "efficient",
+        "durable",
+        "sturdy",
+        "concrete",
+        "systematic",
+        "procedural",
+        "operational"
+      ]
+    },
+    "proposal": "People associate architects with aesthetic vision more strongly than they associate contractors with aesthetic vision. This differential association reflects a pervasive cultural narrative that positions designers as creative visionaries while framing builders and contractors as mere technical executors focused on logistics and material constraints. Examining this implicit bias is novel because most construction-related psychology focuses on safety or project management, overlooking the deeply ingrained hierarchy of creative versus instrumental labor in public discourse. Confirming this association would highlight how societal attribution of art versus craft shapes compensation, prestige, and policy decisions in urban development, while a null result would suggest a more equitable recognition of embodied technical skill.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "c92a870e7c1f",
     "timestamp": "2026-09-03T20:51:28.134723+00:00",
     "schema_version": "autoresearch.v1",
