@@ -1,5 +1,111 @@
 [
   {
+    "id": "5df126e26593",
+    "timestamp": "2026-09-04T11:23:56.736146+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Ancestors vs Strangers on moral judgment versus neutrality",
+    "labels": {
+      "X": "Ancestors",
+      "Y": "Strangers",
+      "A": "Judgment and Moral Oversight",
+      "B": "Neutrality and Indifference"
+    },
+    "canonical_keys": {
+      "X": "ancestors",
+      "Y": "strangers",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 0.9093831369674324,
+    "p_value": 0.01261,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "ancestors",
+        "forefathers",
+        "forebears",
+        "predecessors",
+        "progenitors",
+        "grandparents",
+        "grandfathers",
+        "grandmothers",
+        "elders",
+        "lineage",
+        "kin",
+        "blood",
+        "heritage",
+        "patriarchs",
+        "matriarchs"
+      ],
+      "Y_used": [
+        "strangers",
+        "visitors",
+        "tourists",
+        "travelers",
+        "wanderers",
+        "nomads",
+        "outsiders",
+        "newcomers",
+        "guests",
+        "passersby",
+        "foreigners",
+        "immigrants",
+        "migrants",
+        "wayfarers",
+        "transients"
+      ],
+      "A_used": [
+        "judge",
+        "judgment",
+        "evaluate",
+        "scrutiny",
+        "oversight",
+        "moral",
+        "authority",
+        "assessment",
+        "condemnation",
+        "verdict",
+        "appraisal",
+        "critique",
+        "examine",
+        "inspect",
+        "review"
+      ],
+      "B_used": [
+        "neutral",
+        "indifferent",
+        "casual",
+        "impartial",
+        "detached",
+        "passive",
+        "idle",
+        "unconcerned",
+        "unaware",
+        "vague",
+        "ambiguous",
+        "uncertain",
+        "bland",
+        "apathetic",
+        "disinterested"
+      ]
+    },
+    "proposal": "People associate ancestors with judgment more strongly than they associate strangers with judgment. This differential implicit association taps into a deep cultural intuition that lineage and the past carry a heavy moral weight, often portrayed as an overseeing, evaluative force (e.g., concepts of 'ancestral judgment,' family honor, or the idea that 'the ancestors are watching'). In contrast, strangers are typically characterized by their unknown status or potential unpredictability, rather than by a moral or evaluative function toward the community. Examining this association is novel because implicit measures have rarely contrasted temporal-social categories (those bound by blood and time) with spatial-social categories (those defined by distance and unfamiliarity) along the axis of moral oversight. Confirming this association would shift views on how the mind allocates 'moral authority,' suggesting that the past is implicitly viewed as more morally authoritative and assessing than the unknown present.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "cbee06089fcc",
     "timestamp": "2026-09-04T09:36:44.935772+00:00",
     "schema_version": "autoresearch.v1",
