@@ -1,5 +1,111 @@
 [
   {
+    "id": "fee8448f15bf",
+    "timestamp": "2026-09-04T00:24:03.429671+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "speakers vs writers on spontaneity vs deliberation",
+    "labels": {
+      "X": "speakers",
+      "Y": "writers",
+      "A": "spontaneity",
+      "B": "deliberation"
+    },
+    "canonical_keys": {
+      "X": "speakers",
+      "Y": "writers",
+      "A": "spontaneity",
+      "B": "deliberation"
+    },
+    "effect_size": 0.6944365806100453,
+    "p_value": 0.05916,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "orator",
+        "announcer",
+        "broadcaster",
+        "presenter",
+        "talker",
+        "debater",
+        "commentator",
+        "host",
+        "interviewer",
+        "moderator",
+        "panelist",
+        "speaker",
+        "declaimer",
+        "evangelist",
+        "preacher"
+      ],
+      "Y_used": [
+        "author",
+        "novelist",
+        "poet",
+        "dramatist",
+        "essayist",
+        "journalist",
+        "blogger",
+        "columnist",
+        "copywriter",
+        "editor",
+        "scribe",
+        "chronicler",
+        "biographer",
+        "memoirist",
+        "lyricist"
+      ],
+      "A_used": [
+        "spontaneous",
+        "impromptu",
+        "impulsive",
+        "instinctive",
+        "natural",
+        "unfiltered",
+        "unplanned",
+        "extemporaneous",
+        "immediate",
+        "raw",
+        "unscripted",
+        "unrehearsed",
+        "improvised",
+        "impetuous",
+        "sudden"
+      ],
+      "B_used": [
+        "calculated",
+        "planned",
+        "deliberate",
+        "premeditated",
+        "edited",
+        "revised",
+        "crafted",
+        "composed",
+        "structured",
+        "formal",
+        "systematic",
+        "methodical",
+        "analytical",
+        "logical",
+        "precise"
+      ]
+    },
+    "proposal": "people associate speakers with spontaneity more strongly than they associate writers with spontaneity. This differential implicit association reflects a cultural bias that privileges oral communication as more immediate, unfiltered, and in-the-moment, whereas written communication is stereotyped as calculated, revised, and detached. Examining this association is novel because while media effects research distinguishes text and speech, social psychology has not tested implicit links between these actor categories and spontaneity. It matters because implicit biases toward speaker spontaneity may shape perceptions of authenticity and credibility in political debates, live broadcasting, and courtroom testimony versus written manifestos or statements, potentially advantaging verbal performers over text-based communicators in public discourse.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "90c90438cb4c",
     "timestamp": "2026-09-03T23:42:56.175867+00:00",
     "schema_version": "autoresearch.v1",
