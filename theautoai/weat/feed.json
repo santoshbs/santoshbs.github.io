@@ -1,5 +1,111 @@
 [
   {
+    "id": "cbee06089fcc",
+    "timestamp": "2026-09-04T09:36:44.935772+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Shepherds vs Miners on solitude versus community",
+    "labels": {
+      "X": "Shepherds",
+      "Y": "Miners",
+      "A": "solitude",
+      "B": "community"
+    },
+    "canonical_keys": {
+      "X": "shepherds",
+      "Y": "miners",
+      "A": "solitude",
+      "B": "community"
+    },
+    "effect_size": 0.3328263051410016,
+    "p_value": 0.37481,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "shepherd",
+        "herder",
+        "drover",
+        "stockman",
+        "wrangler",
+        "cowboy",
+        "rancher",
+        "pastoralist",
+        "keeper",
+        "guardian",
+        "watcher",
+        "attendant",
+        "tender",
+        "guide",
+        "handler"
+      ],
+      "Y_used": [
+        "miner",
+        "digger",
+        "driller",
+        "blaster",
+        "prospector",
+        "collier",
+        "pitman",
+        "operator",
+        "technician",
+        "mechanic",
+        "foreman",
+        "supervisor",
+        "boss",
+        "manager",
+        "assistant"
+      ],
+      "A_used": [
+        "solitude",
+        "isolation",
+        "alone",
+        "solitary",
+        "lone",
+        "single",
+        "separate",
+        "apart",
+        "detached",
+        "distant",
+        "remote",
+        "secluded",
+        "quiet",
+        "silent",
+        "still"
+      ],
+      "B_used": [
+        "community",
+        "society",
+        "group",
+        "team",
+        "crew",
+        "squad",
+        "unit",
+        "band",
+        "fellowship",
+        "companionship",
+        "camaraderie",
+        "solidarity",
+        "unity",
+        "togetherness",
+        "collective"
+      ]
+    },
+    "proposal": "People associate shepherds with solitude more strongly than they associate miners with solitude. While both occupations are rooted in primary production and historical agrarian labor, cultural representations diverge sharply on the dimension of isolation: shepherds are frequently depicted as solitary figures wandering remote pastures or guarding flocks alone, whereas miners are culturally constructed as communal laborers working in crews, shafts, and collective safety units. This differential implicit association is novel because implicit bias research has rarely examined occupational representations along the axis of solitude versus collective interdependence, despite the relevance of this dimension to contemporary discourse on mental health, remote work, and the social fragmentation of labor. Confirming this association would illuminate how deeply embedded metaphors of the 'lone watcher' versus the 'industrial gang' shape intuitive expectations about the psychological ecology of different workers.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "dec6d5ec1fb5",
     "timestamp": "2026-09-04T04:22:41.128332+00:00",
     "schema_version": "autoresearch.v1",
