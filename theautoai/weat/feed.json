@@ -1,5 +1,111 @@
 [
   {
+    "id": "d96f5525b978",
+    "timestamp": "2026-09-04T01:46:19.150664+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "rebels vs conformists on genuineness vs artifice",
+    "labels": {
+      "X": "rebels",
+      "Y": "conformists",
+      "A": "authenticity",
+      "B": "inauthenticity"
+    },
+    "canonical_keys": {
+      "X": "rebels",
+      "Y": "conformists",
+      "A": "authenticity",
+      "B": "inauthenticity"
+    },
+    "effect_size": -0.6031030229335206,
+    "p_value": 0.10409,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "rebel",
+        "insurgent",
+        "dissident",
+        "anarchist",
+        "revolutionary",
+        "mutineer",
+        "renegade",
+        "dissenter",
+        "agitator",
+        "iconoclast",
+        "contrarian",
+        "malcontent",
+        "radical",
+        "insurrectionist",
+        "defier"
+      ],
+      "Y_used": [
+        "conformist",
+        "follower",
+        "traditionalist",
+        "bureaucrat",
+        "citizen",
+        "conservative",
+        "supporter",
+        "loyalist",
+        "subordinate",
+        "adherent",
+        "believer",
+        "orthodox",
+        "mainstream",
+        "establishment",
+        "sheep"
+      ],
+      "A_used": [
+        "authentic",
+        "genuine",
+        "real",
+        "honest",
+        "sincere",
+        "true",
+        "earnest",
+        "natural",
+        "frank",
+        "candid",
+        "transparent",
+        "truthful",
+        "veracious",
+        "unfeigned",
+        "spontaneous"
+      ],
+      "B_used": [
+        "fake",
+        "artificial",
+        "phony",
+        "insincere",
+        "dishonest",
+        "contrived",
+        "staged",
+        "pretentious",
+        "hypocritical",
+        "superficial",
+        "false",
+        "bogus",
+        "sham",
+        "imitation",
+        "counterfeit"
+      ]
+    },
+    "proposal": "people associate rebels with authenticity more strongly than they associate conformists with authenticity. This differential implicit association captures a pervasive cultural narrative that equates nonconformity, defiance, and challenge to authority with being 'real' or 'genuine,' while framing adherence to norms and social expectations as inauthentic, scripted, or performative. Examining this link is novel because implicit authenticity biases have been investigated in contexts like branding or self-disclosure, but have not been systematically probed regarding broad social stances toward convention and rule-breaking. It matters because confirming this association would reveal a deep-seated cognitive heuristic that legitimizes disruptive actors by marking them as morally sincere, potentially eroding implicit trust in stabilizing roles and shaping how character is judged in polarized discourse.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "fee8448f15bf",
     "timestamp": "2026-09-04T00:24:03.429671+00:00",
     "schema_version": "autoresearch.v1",
