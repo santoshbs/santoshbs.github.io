@@ -1,5 +1,115 @@
 [
   {
+    "id": "dec6d5ec1fb5",
+    "timestamp": "2026-09-04T04:22:41.128332+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "boys vs girls on gaming proficiency vs novice status",
+    "labels": {
+      "X": "boys",
+      "Y": "girls",
+      "A": "proficient",
+      "B": "novice"
+    },
+    "canonical_keys": {
+      "X": "boys",
+      "Y": "girls",
+      "A": "proficient",
+      "B": "novice"
+    },
+    "effect_size": 0.427597638321681,
+    "p_value": 0.24087,
+    "n": {
+      "X": 16,
+      "Y": 16,
+      "A": 16,
+      "B": 16
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "boy",
+        "boys",
+        "guy",
+        "guys",
+        "man",
+        "men",
+        "male",
+        "males",
+        "son",
+        "sons",
+        "lad",
+        "lads",
+        "dude",
+        "dudes",
+        "brother",
+        "brothers"
+      ],
+      "Y_used": [
+        "girl",
+        "girls",
+        "gal",
+        "gals",
+        "woman",
+        "women",
+        "female",
+        "females",
+        "daughter",
+        "daughters",
+        "lass",
+        "lasses",
+        "sister",
+        "sisters",
+        "lady",
+        "ladies"
+      ],
+      "A_used": [
+        "expert",
+        "skilled",
+        "professional",
+        "master",
+        "champion",
+        "talented",
+        "capable",
+        "genius",
+        "elite",
+        "advanced",
+        "competitive",
+        "adept",
+        "proficient",
+        "winner",
+        "strategic",
+        "veteran"
+      ],
+      "B_used": [
+        "novice",
+        "amateur",
+        "beginner",
+        "unskilled",
+        "poor",
+        "weak",
+        "clueless",
+        "rookie",
+        "inexperienced",
+        "viewer",
+        "watcher",
+        "bystander",
+        "spectator",
+        "fan",
+        "outsider",
+        "dropout"
+      ]
+    },
+    "proposal": "People associate boys with gaming proficiency more strongly than they associate girls with gaming proficiency. Despite public narratives about gender-neutral digital play, contemporary media franchises, streaming culture, and early socialization consistently frame male youth as naturally skilled competitors while positioning female youth as novices, spectators, or peripheral participants. This automatic bias has not been systematically probed because stereotype research has historically prioritized math or STEM aptitude over digital cultural capital. Examining this implicit link is crucial because early associations with gaming competence may silently influence parental support, peer validation, and girls’ self-selection into online communities that increasingly serve as informal incubators for technical literacy and collaborative problem-solving.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "d96f5525b978",
     "timestamp": "2026-09-04T01:46:19.150664+00:00",
     "schema_version": "autoresearch.v1",
