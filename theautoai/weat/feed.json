@@ -1,5 +1,115 @@
 [
   {
+    "id": "5adecd09031c",
+    "timestamp": "2026-09-21T20:17:08.525101+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "politicians vs priests on pragmatic flexibility versus doctrinal rigidity",
+    "labels": {
+      "X": "politicians",
+      "Y": "priests",
+      "A": "compromise",
+      "B": "rigidity"
+    },
+    "canonical_keys": {
+      "X": "politicians",
+      "Y": "priests",
+      "A": "compromise",
+      "B": "rigidity"
+    },
+    "effect_size": 1.4942281040372358,
+    "p_value": 0.0,
+    "n": {
+      "X": 16,
+      "Y": 16,
+      "A": 16,
+      "B": 16
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "politician",
+        "senator",
+        "congressman",
+        "representative",
+        "mayor",
+        "governor",
+        "president",
+        "chancellor",
+        "statesman",
+        "legislator",
+        "campaigner",
+        "official",
+        "bureaucrat",
+        "administrator",
+        "diplomat",
+        "lobbyist"
+      ],
+      "Y_used": [
+        "priest",
+        "pastor",
+        "clergyman",
+        "vicar",
+        "parson",
+        "reverend",
+        "curate",
+        "chaplain",
+        "theologian",
+        "preacher",
+        "evangelist",
+        "bishop",
+        "cardinal",
+        "abbot",
+        "friar",
+        "monk"
+      ],
+      "A_used": [
+        "compromise",
+        "negotiation",
+        "concession",
+        "flexibility",
+        "pragmatism",
+        "bargain",
+        "yield",
+        "deal",
+        "settlement",
+        "mediation",
+        "tradeoff",
+        "adaptability",
+        "negotiable",
+        "diplomacy",
+        "moderation",
+        "arrangement"
+      ],
+      "B_used": [
+        "absolutism",
+        "rigidity",
+        "dogma",
+        "doctrine",
+        "inflexible",
+        "unyielding",
+        "conviction",
+        "steadfast",
+        "immutable",
+        "absolute",
+        "fixed",
+        "uncompromising",
+        "fundamentalist",
+        "orthodox",
+        "principled",
+        "strict"
+      ]
+    },
+    "proposal": "People associate politicians with compromise more strongly than they associate priests with compromise. This proposed differential association reflects a pervasive cultural narrative that frames political actors as pragmatic deal-makers who must negotiate, trade, and concede positions to achieve governance, whereas religious clergy are stereotyped as guardians of absolute moral or doctrinal truths who resist concession. While the tension between political pragmatism and religious idealism is frequently discussed in public discourse, the implicit cognitive linkage of the specific attribute of 'compromise' to politicians relative to priests has not been systematically examined in this comparative format. Confirming this association would be important for understanding how laypeople mentally partition the perceived moral flexibility of secular governance from the perceived rigidity of spiritual authority, shedding light on the underlying cognitive schemas that drive public trust and criticism in these two distinct institutions.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "1259c21d0679",
     "timestamp": "2026-09-21T10:57:39.992502+00:00",
     "schema_version": "autoresearch.v1",
