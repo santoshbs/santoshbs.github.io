@@ -1,5 +1,112 @@
 [
   {
+    "id": "ba4f00ed05a5",
+    "timestamp": "2026-09-21T03:11:15.667687+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Veterans vs Civilians on Decisiveness vs Deliberation",
+    "labels": {
+      "X": "Veterans",
+      "Y": "Civilians",
+      "A": "Decisiveness",
+      "B": "Deliberation"
+    },
+    "canonical_keys": {
+      "X": "veterans",
+      "Y": "civilians",
+      "A": "decisiveness",
+      "B": "deliberation"
+    },
+    "effect_size": 1.3088643858046878,
+    "p_value": 9e-05,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "veteran",
+        "soldier",
+        "marine",
+        "sailor",
+        "general",
+        "officer",
+        "sergeant",
+        "pilot",
+        "gunner",
+        "warrior",
+        "trooper",
+        "scout",
+        "combatant",
+        "corporal",
+        "private"
+      ],
+      "Y_used": [
+        "civilian",
+        "citizen",
+        "worker",
+        "employee",
+        "doctor",
+        "nurse",
+        "teacher",
+        "lawyer",
+        "manager",
+        "clerk",
+        "farmer",
+        "baker",
+        "mechanic",
+        "carpenter",
+        "plumber",
+        "electrician"
+      ],
+      "A_used": [
+        "decisive",
+        "bold",
+        "firm",
+        "resolute",
+        "swift",
+        "forceful",
+        "direct",
+        "unwavering",
+        "strong",
+        "assertive",
+        "aggressive",
+        "commanding",
+        "rapid",
+        "tactical",
+        "determined"
+      ],
+      "B_used": [
+        "deliberate",
+        "hesitant",
+        "slow",
+        "cautious",
+        "soft",
+        "passive",
+        "uncertain",
+        "ambiguous",
+        "diplomatic",
+        "timid",
+        "weak",
+        "gentle",
+        "polite",
+        "tentative",
+        "careful"
+      ]
+    },
+    "proposal": "People associate veterans with operational decisiveness more strongly than they associate civilians with decisiveness. While explicit surveys often highlight cultural respect for military service, the implicit cognitive link between military experience and rapid, unambiguous action remains underexplored relative to the deliberate, consensus-seeking norms attributed to civilian life. This differential association is novel because prior research has focused on overt attitudes toward veterans rather than automatic trait mappings between veteran and civilian identities. Examining this link matters for understanding how implicit biases may shape public discourse on crisis response, leadership selection, and the perceived legitimacy of different voices in national security debates.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "5df126e26593",
     "timestamp": "2026-09-04T11:23:56.736146+00:00",
     "schema_version": "autoresearch.v1",
