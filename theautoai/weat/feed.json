@@ -1,5 +1,111 @@
 [
   {
+    "id": "7e419af5016c",
+    "timestamp": "2026-09-22T20:13:47.743664+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Custodians vs Builders on humility vs hubris",
+    "labels": {
+      "X": "Custodians",
+      "Y": "Builders",
+      "A": "humility",
+      "B": "hubris"
+    },
+    "canonical_keys": {
+      "X": "custodians",
+      "Y": "builders",
+      "A": "humility",
+      "B": "hubris"
+    },
+    "effect_size": 0.4157196851791707,
+    "p_value": 0.26952,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "custodian",
+        "janitor",
+        "caretaker",
+        "porter",
+        "cleaner",
+        "housekeeper",
+        "groundskeeper",
+        "handyman",
+        "valet",
+        "attendant",
+        "helper",
+        "assistant",
+        "worker",
+        "laborer",
+        "mender"
+      ],
+      "Y_used": [
+        "builder",
+        "architect",
+        "engineer",
+        "constructor",
+        "creator",
+        "designer",
+        "fabricator",
+        "maker",
+        "inventor",
+        "originator",
+        "pioneer",
+        "founder",
+        "innovator",
+        "developer",
+        "contractor"
+      ],
+      "A_used": [
+        "humble",
+        "modest",
+        "unassuming",
+        "meek",
+        "submissive",
+        "unpretentious",
+        "simple",
+        "plain",
+        "retiring",
+        "quiet",
+        "subdued",
+        "unobtrusive",
+        "deferential",
+        "respectful",
+        "obedient"
+      ],
+      "B_used": [
+        "arrogant",
+        "proud",
+        "vain",
+        "conceited",
+        "haughty",
+        "imperious",
+        "insolent",
+        "overbearing",
+        "domineering",
+        "boastful",
+        "egotistical",
+        "pretentious",
+        "ostentatious",
+        "grandiose",
+        "pompous"
+      ]
+    },
+    "proposal": "People associate Custodians with Humility more strongly than they associate Builders with Humility. Public discourse frequently celebrates Builders—such as architects, engineers, and constructors—as visionary agents of progress, implicitly linking their ambition to aggrandizement and hubris. Conversely, Custodians—like janitors, caretakers, and porters—are culturally rendered invisible and associated with service, maintenance, and self-erasure. This differential is novel because prior research has examined status hierarchies (e.g., managers vs. workers) and cognitive styles (e.g., scientists vs. artists), but has neglected the implicit moral dimension of maintenance versus construction. It matters because it reveals how mental representations may devalue the labor of sustaining existing structures in favor of the romanticized labor of creating new ones.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "ba3cabd2ddd8",
     "timestamp": "2026-09-22T18:57:24.112040+00:00",
     "schema_version": "autoresearch.v1",
