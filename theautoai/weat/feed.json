@@ -1,5 +1,111 @@
 [
   {
+    "id": "6c9b59a18219",
+    "timestamp": "2026-09-22T07:57:42.202395+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "gardeners vs generals on cognitive flexibility versus institutional strictness",
+    "labels": {
+      "X": "gardeners",
+      "Y": "generals",
+      "A": "adaptability",
+      "B": "rigidity"
+    },
+    "canonical_keys": {
+      "X": "gardeners",
+      "Y": "generals",
+      "A": "adaptability",
+      "B": "rigidity"
+    },
+    "effect_size": 1.6405749004904633,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "gardener",
+        "horticulturist",
+        "landscaper",
+        "botanist",
+        "farmer",
+        "planter",
+        "cultivator",
+        "florist",
+        "arborist",
+        "pruner",
+        "sower",
+        "tiller",
+        "grower",
+        "ecologist",
+        "nurseryman"
+      ],
+      "Y_used": [
+        "general",
+        "officer",
+        "commander",
+        "colonel",
+        "major",
+        "lieutenant",
+        "captain",
+        "sergeant",
+        "private",
+        "soldier",
+        "admiral",
+        "marshal",
+        "brigadier",
+        "corporal",
+        "cadet"
+      ],
+      "A_used": [
+        "adaptable",
+        "flexible",
+        "responsive",
+        "agile",
+        "pliant",
+        "malleable",
+        "versatile",
+        "elastic",
+        "supple",
+        "ductile",
+        "accommodating",
+        "adjustable",
+        "pliable",
+        "fluid",
+        "nimble"
+      ],
+      "B_used": [
+        "rigid",
+        "inflexible",
+        "strict",
+        "disciplined",
+        "stubborn",
+        "unyielding",
+        "stiff",
+        "harsh",
+        "unchanging",
+        "fixed",
+        "static",
+        "immutable",
+        "dogmatic",
+        "authoritarian",
+        "structured"
+      ]
+    },
+    "proposal": "people associate gardeners with adaptability more strongly than they associate generals with adaptability. While military culture is often stereotyped as rigid, hierarchical, and doctrine-driven, horticultural and ecological practices are widely understood as requiring responsiveness to shifting seasons, soil conditions, and unpredictable organic growth. This differential implicit association is novel because prior research has largely examined military versus civilian roles through lenses of aggression, discipline, or patriotism, neglecting how the public mentally maps cognitive flexibility onto these categories. Examining this bias matters because it reveals whether cultural narratives about ecological stewardship are successfully reframing hands-on earthwork as a model of agile problem-solving, or whether entrenched stereotypes of institutional rigidity continue to overshadow the nuanced adaptability demanded by landscape management. Confirming this association would shift our understanding of how society implicitly allocates traits like flexibility across professional and institutional domains.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "5b4b6911f5be",
     "timestamp": "2026-09-22T04:37:44.942962+00:00",
     "schema_version": "autoresearch.v1",
