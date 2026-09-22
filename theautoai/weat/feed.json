@@ -1,5 +1,111 @@
 [
   {
+    "id": "15c014c92619",
+    "timestamp": "2026-09-22T01:11:42.532763+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Questioners vs Answerers on wisdom versus foolishness",
+    "labels": {
+      "X": "Questioners",
+      "Y": "Answerers",
+      "A": "wisdom",
+      "B": "folly"
+    },
+    "canonical_keys": {
+      "X": "questioners",
+      "Y": "answerers",
+      "A": "wisdom",
+      "B": "folly"
+    },
+    "effect_size": 0.09283087290317986,
+    "p_value": 0.80699,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "questioner",
+        "inquirer",
+        "interviewer",
+        "interrogator",
+        "examiner",
+        "investigator",
+        "researcher",
+        "student",
+        "pupil",
+        "skeptic",
+        "critic",
+        "reporter",
+        "observer",
+        "enquirer",
+        "seeker"
+      ],
+      "Y_used": [
+        "answerer",
+        "responder",
+        "teacher",
+        "tutor",
+        "mentor",
+        "master",
+        "expert",
+        "authority",
+        "specialist",
+        "advisor",
+        "counselor",
+        "guide",
+        "professor",
+        "narrator",
+        "instructor"
+      ],
+      "A_used": [
+        "wise",
+        "wisdom",
+        "sage",
+        "sagacious",
+        "judicious",
+        "insightful",
+        "philosophical",
+        "intellectual",
+        "thoughtful",
+        "perceptive",
+        "profound",
+        "discerning",
+        "sensible",
+        "rational",
+        "prudent"
+      ],
+      "B_used": [
+        "foolish",
+        "stupid",
+        "ignorant",
+        "silly",
+        "naive",
+        "simple",
+        "dull",
+        "dumb",
+        "dense",
+        "blind",
+        "dim",
+        "unwise",
+        "weak",
+        "slow",
+        "fool"
+      ]
+    },
+    "proposal": "People associate Questioners with wisdom more strongly than they associate Answerers with wisdom. This proposal probes a subtle differential implicit association regarding the source of intellectual value: inquiry versus knowledge possession. While explicit discourse often prizes expertise and clear answers, implicit associations may link the active role of questioning—skepticism, probing, and critical examination—with deeper wisdom, reflecting a cultural bias toward Socratic inquiry over dogmatic assertion. This association is novel as it has not been systematically examined in contrast to the 'answerer' role, and it is important because it reveals how mental representations of social actors in epistemic roles may undervalue the provider of certainty in favor of the challenger of assumptions, with implications for how expertise, authority, and skepticism are cognitively framed.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "5adecd09031c",
     "timestamp": "2026-09-21T20:17:08.525101+00:00",
     "schema_version": "autoresearch.v1",
