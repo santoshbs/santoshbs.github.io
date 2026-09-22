@@ -1,5 +1,111 @@
 [
   {
+    "id": "5b4b6911f5be",
+    "timestamp": "2026-09-22T04:37:44.942962+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Mothers vs Fathers on Parenting strictness",
+    "labels": {
+      "X": "Mothers",
+      "Y": "Fathers",
+      "A": "Control",
+      "B": "Permissive"
+    },
+    "canonical_keys": {
+      "X": "mothers",
+      "Y": "fathers",
+      "A": "control",
+      "B": "permissive"
+    },
+    "effect_size": -0.4213317661772121,
+    "p_value": 0.26389,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "mother",
+        "mom",
+        "mum",
+        "mama",
+        "ma",
+        "mothers",
+        "moms",
+        "mommy",
+        "mummy",
+        "maternal",
+        "matriarch",
+        "mums",
+        "mamas",
+        "mamma",
+        "mammies"
+      ],
+      "Y_used": [
+        "father",
+        "dad",
+        "dads",
+        "daddy",
+        "pappy",
+        "pa",
+        "paternal",
+        "patriarch",
+        "pops",
+        "sire",
+        "fathers",
+        "daddies",
+        "poppa",
+        "papa",
+        "papas"
+      ],
+      "A_used": [
+        "control",
+        "regulate",
+        "monitor",
+        "supervise",
+        "oversee",
+        "direct",
+        "command",
+        "govern",
+        "police",
+        "restrict",
+        "limit",
+        "enforce",
+        "dictate",
+        "constrain",
+        "manage"
+      ],
+      "B_used": [
+        "permissive",
+        "lenient",
+        "loose",
+        "easy",
+        "indulgent",
+        "tolerant",
+        "unconstrained",
+        "unregulated",
+        "lax",
+        "casual",
+        "open",
+        "free",
+        "independent",
+        "relaxed",
+        "forgiving"
+      ]
+    },
+    "proposal": "People associate Mothers with control more strongly than they associate Fathers with control. While explicit stereotypes often cast fathers as the disciplinarian figure enforcing rules, implicit associations may reflect a distinct cultural script in which mothers are mentally represented as the pervasive managers of daily life, emotional regulation, and child surveillance. This differential association taps into contemporary discourse surrounding 'helicopter parenting,' maternal gatekeeping, and the invisible labor of maternal micromanagement, contrasting with representations of fathers as more hands-off or permissive. Examining this implicit link is novel because prior research has focused on warmth or competence dimensions, neglecting the nuanced distinction between overt discipline and pervasive regulatory control. Confirming this association would shift understanding of how gendered parenting roles are cognitively encoded, revealing that maternal authority may be implicitly conceptualized as continuous oversight rather than distinct punishment.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "15c014c92619",
     "timestamp": "2026-09-22T01:11:42.532763+00:00",
     "schema_version": "autoresearch.v1",
