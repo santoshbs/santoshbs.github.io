@@ -1,5 +1,111 @@
 [
   {
+    "id": "a3392317de98",
+    "timestamp": "2026-09-22T21:16:24.560110+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "sailors vs miners on spatial openness vs confinement",
+    "labels": {
+      "X": "sailors",
+      "Y": "miners",
+      "A": "expansiveness",
+      "B": "confinement"
+    },
+    "canonical_keys": {
+      "X": "sailors",
+      "Y": "miners",
+      "A": "expansiveness",
+      "B": "confinement"
+    },
+    "effect_size": 0.36791992495906584,
+    "p_value": 0.33039,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "sailor",
+        "mariner",
+        "seaman",
+        "skipper",
+        "navigator",
+        "captain",
+        "helmsman",
+        "deckhand",
+        "bosun",
+        "mate",
+        "boatman",
+        "yachtsman",
+        "fisherman",
+        "diver",
+        "voyager"
+      ],
+      "Y_used": [
+        "miner",
+        "digger",
+        "prospector",
+        "driller",
+        "blaster",
+        "quarryman",
+        "coalman",
+        "pitman",
+        "tunneler",
+        "laborer",
+        "worker",
+        "toiler",
+        "drudge",
+        "rockman",
+        "delver"
+      ],
+      "A_used": [
+        "expansive",
+        "open",
+        "broad",
+        "wide",
+        "vast",
+        "spacious",
+        "roomy",
+        "ample",
+        "infinite",
+        "boundless",
+        "limitless",
+        "endless",
+        "unconfined",
+        "stretched",
+        "extended"
+      ],
+      "B_used": [
+        "confined",
+        "closed",
+        "narrow",
+        "tight",
+        "cramped",
+        "enclosed",
+        "restricted",
+        "limited",
+        "bounded",
+        "constrained",
+        "trapped",
+        "boxed",
+        "caged",
+        "shut",
+        "sealed"
+      ]
+    },
+    "proposal": "People associate sailors with expansiveness more strongly than they associate miners with expansiveness. This proposal targets the implicit spatial metaphors embedded in occupational stereotypes: maritime labor is culturally coded with horizons, openness, and the infinite, whereas subterranean labor is coded with tunnels, darkness, and physical enclosure. This differential association is novel because prior research has largely focused on occupational hazards or socioeconomic status, neglecting the fundamental spatial dimensions of how we mentally represent these worker archetypes. It matters because these implicit associations of openness versus confinement may shape public perceptions of the workers' psychological freedom, the nature of their risks, and the cultural value assigned to their labor.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "7e419af5016c",
     "timestamp": "2026-09-22T20:13:47.743664+00:00",
     "schema_version": "autoresearch.v1",
