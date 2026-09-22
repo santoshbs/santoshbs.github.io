@@ -1,5 +1,111 @@
 [
   {
+    "id": "ba3cabd2ddd8",
+    "timestamp": "2026-09-22T18:57:24.112040+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "judges vs mediators on Decision-making style",
+    "labels": {
+      "X": "judges",
+      "Y": "mediators",
+      "A": "Decisiveness",
+      "B": "Indecisiveness"
+    },
+    "canonical_keys": {
+      "X": "judges",
+      "Y": "mediators",
+      "A": "decisiveness",
+      "B": "indecisiveness"
+    },
+    "effect_size": 0.6749100488039685,
+    "p_value": 0.07006,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "judge",
+        "magistrate",
+        "jurist",
+        "arbitrator",
+        "adjudicator",
+        "referee",
+        "umpire",
+        "arbiter",
+        "official",
+        "authority",
+        "leader",
+        "boss",
+        "manager",
+        "director",
+        "chief"
+      ],
+      "Y_used": [
+        "mediator",
+        "negotiator",
+        "facilitator",
+        "diplomat",
+        "peacemaker",
+        "counselor",
+        "conciliator",
+        "intermediary",
+        "liaison",
+        "envoy",
+        "ambassador",
+        "therapist",
+        "guide",
+        "pastor",
+        "preacher"
+      ],
+      "A_used": [
+        "decisive",
+        "firm",
+        "resolute",
+        "determined",
+        "confident",
+        "strong",
+        "assertive",
+        "direct",
+        "immediate",
+        "swift",
+        "final",
+        "definitive",
+        "absolute",
+        "certain",
+        "bold"
+      ],
+      "B_used": [
+        "indecisive",
+        "hesitant",
+        "unsure",
+        "uncertain",
+        "compromising",
+        "flexible",
+        "patient",
+        "slow",
+        "delayed",
+        "tentative",
+        "ambiguous",
+        "doubtful",
+        "wavering",
+        "passive",
+        "yielding"
+      ]
+    },
+    "proposal": "People associate judges with decisiveness more strongly than they associate mediators with decisiveness. This differential implicit association reflects contemporary discourse around conflict resolution, where judicial figures are culturally framed as ultimate arbiters who render binding, swift verdicts, whereas mediators are stereotyped as facilitators who prioritize compromise, prolonged dialogue, and consensus-building over closure. Examining this association is novel because prior implicit bias research has focused on legal actors along axes of morality, intellect, or gender, but has not probed the implicit link between adjudicative roles and the psychological trait of decisiveness. The finding would matter for understanding how the public mentally partitions formal legal authority from alternative dispute resolution, potentially influencing trust in court systems versus private mediation.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "a762edcbd8fc",
     "timestamp": "2026-09-22T14:23:46.791991+00:00",
     "schema_version": "autoresearch.v1",
