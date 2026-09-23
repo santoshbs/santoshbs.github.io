@@ -1,5 +1,111 @@
 [
   {
+    "id": "8d2ba7825ced",
+    "timestamp": "2026-09-23T18:09:38.300807+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Anarchists vs Bureaucrats on vitality vs mechanicality",
+    "labels": {
+      "X": "Anarchists",
+      "Y": "Bureaucrats",
+      "A": "vitality",
+      "B": "mechanicality"
+    },
+    "canonical_keys": {
+      "X": "anarchists",
+      "Y": "bureaucrats",
+      "A": "vitality",
+      "B": "mechanicality"
+    },
+    "effect_size": 0.9898142555239872,
+    "p_value": 0.00516,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "anarchist",
+        "revolutionary",
+        "insurrectionist",
+        "radical",
+        "agitator",
+        "rebel",
+        "partisan",
+        "dissident",
+        "subversive",
+        "extremist",
+        "militant",
+        "insurgent",
+        "activist",
+        "protester",
+        "separatist"
+      ],
+      "Y_used": [
+        "bureaucrat",
+        "administrator",
+        "official",
+        "clerk",
+        "functionary",
+        "employee",
+        "manager",
+        "director",
+        "secretary",
+        "accountant",
+        "auditor",
+        "inspector",
+        "regulator",
+        "coordinator",
+        "supervisor"
+      ],
+      "A_used": [
+        "life",
+        "energy",
+        "passion",
+        "fire",
+        "spirit",
+        "vigor",
+        "dynamism",
+        "enthusiasm",
+        "zest",
+        "liveliness",
+        "aliveness",
+        "animation",
+        "fervor",
+        "ardor",
+        "warmth"
+      ],
+      "B_used": [
+        "mechanical",
+        "rigid",
+        "cold",
+        "stasis",
+        "robotic",
+        "static",
+        "formulaic",
+        "predictable",
+        "dull",
+        "monotonous",
+        "lifeless",
+        "soulless",
+        "sterile",
+        "industrial",
+        "automated"
+      ]
+    },
+    "proposal": "People associate Anarchists with vitality more strongly than they associate Bureaucrats with vitality. This differential implicit association captures a pervasive cultural stereotype that frames administrative actors as mechanical, lifeless, and soulless cogs, while romanticizing anarchist actors as passionate, fiery, and authentically alive. Examining this link is novel because, while the order-versus-chaos dimension of these groups has been probed in prior work, the vitality-versus-mechanicality axis has not, despite its potential to reveal how we mentally dehumanize institutional maintenance roles. Confirming this association would suggest that even pro-social bureaucratic functions are implicitly linked to biological stasis, which could bias public perceptions of efficiency, trust, and moral worth in governance and organizational contexts.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "68b4aaf34d50",
     "timestamp": "2026-09-23T12:20:56.726279+00:00",
     "schema_version": "autoresearch.v1",
