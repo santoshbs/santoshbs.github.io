@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "batches_seen": 1675,
-  "loans_seen": 26800,
-  "last_updated": "2026-09-23T00:43:12.148748+00:00",
+  "batches_seen": 1676,
+  "loans_seen": 26816,
+  "last_updated": "2026-09-23T01:34:34.618074+00:00",
   "watching_for": "",
   "claims": {
     "female-savings-goal-faster": {
@@ -13,10 +13,10 @@
       "supporting_loans": [],
       "confidence": 0.85,
       "first_seen_batch": 1,
-      "last_updated_batch": 1675,
+      "last_updated_batch": 1676,
       "confidence_history": [
         [
-          1675,
+          1676,
           0.85
         ]
       ]
@@ -29,10 +29,10 @@
       "supporting_loans": [],
       "confidence": 1.0,
       "first_seen_batch": 1,
-      "last_updated_batch": 1675,
+      "last_updated_batch": 1676,
       "confidence_history": [
         [
-          1675,
+          1676,
           1.0
         ]
       ]
@@ -45,10 +45,10 @@
       "supporting_loans": [],
       "confidence": 1.0,
       "first_seen_batch": 1,
-      "last_updated_batch": 1675,
+      "last_updated_batch": 1676,
       "confidence_history": [
         [
-          1675,
+          1676,
           1.0
         ]
       ]
@@ -61,10 +61,10 @@
       "supporting_loans": [],
       "confidence": 1.0,
       "first_seen_batch": 1,
-      "last_updated_batch": 1675,
+      "last_updated_batch": 1676,
       "confidence_history": [
         [
-          1675,
+          1676,
           1.0
         ]
       ]
@@ -77,10 +77,10 @@
       "supporting_loans": [],
       "confidence": 0.98,
       "first_seen_batch": 1,
-      "last_updated_batch": 1675,
+      "last_updated_batch": 1676,
       "confidence_history": [
         [
-          1675,
+          1676,
           0.98
         ]
       ]
@@ -93,10 +93,10 @@
       "supporting_loans": [],
       "confidence": 1.0,
       "first_seen_batch": 1,
-      "last_updated_batch": 1675,
+      "last_updated_batch": 1676,
       "confidence_history": [
         [
-          1675,
+          1676,
           1.0
         ]
       ]
@@ -108,11 +108,11 @@
       "body": "Pitches from women that explicitly mention securing the future of their family are associated with increased funding speed.",
       "supporting_loans": [],
       "confidence": 0.95,
-      "first_seen_batch": 1611,
-      "last_updated_batch": 1675,
+      "first_seen_batch": 1610,
+      "last_updated_batch": 1676,
       "confidence_history": [
         [
-          1675,
+          1676,
           0.95
         ]
       ]
@@ -124,11 +124,11 @@
       "body": "Pitches from women that provide concrete details regarding the amount or variety of their inventory are associated with increased funding speed.",
       "supporting_loans": [],
       "confidence": 0.65,
-      "first_seen_batch": 1669,
-      "last_updated_batch": 1675,
+      "first_seen_batch": 1668,
+      "last_updated_batch": 1676,
       "confidence_history": [
         [
-          1675,
+          1676,
           0.65
         ]
       ]
@@ -138,57 +138,45 @@
     "female-sales-context-faster": {
       "id": "female-sales-context-faster",
       "body": "Female borrowers who specify the timing or location of their sales may fund faster.",
-      "first_seen_batch": 1655
+      "first_seen_batch": 1654
     },
     "female-general-store-slower": {
       "id": "female-general-store-slower",
       "body": "Female borrowers who mention running a general store business may fund more slowly.",
-      "first_seen_batch": 1657
+      "first_seen_batch": 1656
     },
     "hardship-detail-faster-general": {
       "id": "hardship-detail-faster-general",
       "body": "Mentioning specific living or family hardships may accelerate funding regardless of gender.",
-      "first_seen_batch": 1663
+      "first_seen_batch": 1662
     },
     "female-hardworking-entrepreneur-slower": {
       "id": "female-hardworking-entrepreneur-slower",
       "body": "Female borrowers who use the specific phrase 'hardworking entrepreneur' may fund more slowly.",
-      "first_seen_batch": 1663
-    },
-    "female-mention-age-slower": {
-      "id": "female-mention-age-slower",
-      "body": "Female borrowers who mention their specific age in the pitch may fund more slowly.",
-      "first_seen_batch": 1665
+      "first_seen_batch": 1662
     },
     "female-children-education-slower": {
       "id": "female-children-education-slower",
       "body": "Female borrowers who mention paying for their children's education may fund more slowly.",
-      "first_seen_batch": 1669
+      "first_seen_batch": 1668
     },
     "male-trade-history-faster": {
       "id": "male-trade-history-faster",
       "body": "Male borrowers who describe a lifelong history with their trade may fund faster.",
-      "first_seen_batch": 1671
+      "first_seen_batch": 1670
     },
     "female-currency-php-faster": {
       "id": "female-currency-php-faster",
       "body": "Female borrowers who list the loan amount in PHP may fund faster.",
-      "first_seen_batch": 1673
+      "first_seen_batch": 1672
     },
     "male-loan-count-slower": {
       "id": "male-loan-count-slower",
       "body": "Male borrowers who mention a specific number of previous loans may fund slower.",
-      "first_seen_batch": 1673
+      "first_seen_batch": 1672
     }
   },
   "retired": {
-    "female-professional-experience-faster": {
-      "id": "female-professional-experience-faster",
-      "title": "Female borrowers who emphasize management skills and professional experience may fund faster.",
-      "retrospective": "Retired due to staleness to make room for new puzzles.",
-      "retired_batch": 1665,
-      "was_believed_batches": 0
-    },
     "female-hardworking-entrepreneur-slower": {
       "id": "female-hardworking-entrepreneur-slower",
       "title": "Female borrowers who describe themselves as a hardworking entrepreneur may fund more slowly.",
@@ -250,6 +238,13 @@
       "title": "Female borrowers who provide a specific count of their children may fund faster.",
       "retrospective": "Contradicted by observation that specific family status and child counts were present in slower pitches.",
       "retired_batch": 1675,
+      "was_believed_batches": 0
+    },
+    "female-mention-age-slower": {
+      "id": "female-mention-age-slower",
+      "title": "Female borrowers who mention their specific age in the pitch may fund more slowly.",
+      "retrospective": "Contradicted by observation that faster pitches explicitly state age.",
+      "retired_batch": 1676,
       "was_believed_batches": 0
     }
   }
