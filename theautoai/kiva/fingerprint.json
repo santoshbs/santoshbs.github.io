@@ -1,26 +1,10 @@
 {
   "schema_version": 1,
-  "batches_seen": 1694,
-  "loans_seen": 27104,
-  "last_updated": "2026-09-23T17:52:12.999254+00:00",
+  "batches_seen": 1695,
+  "loans_seen": 27120,
+  "last_updated": "2026-09-23T18:58:09.717249+00:00",
   "watching_for": "",
   "claims": {
-    "female-savings-goal-faster": {
-      "id": "female-savings-goal-faster",
-      "bucket": "gendered_women",
-      "title": "Female borrowers who mention the goal of building savings fund faster.",
-      "body": "Pitches from women that explicitly state the intention to build up savings are associated with increased funding speed.",
-      "supporting_loans": [],
-      "confidence": 0.65,
-      "first_seen_batch": 1,
-      "last_updated_batch": 1694,
-      "confidence_history": [
-        [
-          1694,
-          0.65
-        ]
-      ]
-    },
     "verbosity-slower-general": {
       "id": "verbosity-slower-general",
       "bucket": "slower",
@@ -29,10 +13,10 @@
       "supporting_loans": [],
       "confidence": 1.0,
       "first_seen_batch": 1,
-      "last_updated_batch": 1694,
+      "last_updated_batch": 1695,
       "confidence_history": [
         [
-          1694,
+          1695,
           1.0
         ]
       ]
@@ -45,10 +29,10 @@
       "supporting_loans": [],
       "confidence": 1.0,
       "first_seen_batch": 1,
-      "last_updated_batch": 1694,
+      "last_updated_batch": 1695,
       "confidence_history": [
         [
-          1694,
+          1695,
           1.0
         ]
       ]
@@ -61,10 +45,10 @@
       "supporting_loans": [],
       "confidence": 1.0,
       "first_seen_batch": 1,
-      "last_updated_batch": 1694,
+      "last_updated_batch": 1695,
       "confidence_history": [
         [
-          1694,
+          1695,
           1.0
         ]
       ]
@@ -77,10 +61,10 @@
       "supporting_loans": [],
       "confidence": 0.98,
       "first_seen_batch": 1,
-      "last_updated_batch": 1694,
+      "last_updated_batch": 1695,
       "confidence_history": [
         [
-          1694,
+          1695,
           0.98
         ]
       ]
@@ -93,10 +77,10 @@
       "supporting_loans": [],
       "confidence": 1.0,
       "first_seen_batch": 1,
-      "last_updated_batch": 1694,
+      "last_updated_batch": 1695,
       "confidence_history": [
         [
-          1694,
+          1695,
           1.0
         ]
       ]
@@ -108,11 +92,11 @@
       "body": "Pitches from women that explicitly mention securing the future of their family are associated with increased funding speed.",
       "supporting_loans": [],
       "confidence": 0.85,
-      "first_seen_batch": 1592,
-      "last_updated_batch": 1694,
+      "first_seen_batch": 1591,
+      "last_updated_batch": 1695,
       "confidence_history": [
         [
-          1694,
+          1695,
           0.85
         ]
       ]
@@ -123,13 +107,29 @@
       "title": "Female borrowers who mention previous loans from NWTF fund faster.",
       "body": "Pitches from women that explicitly reference previous loans from the NWTF institution are associated with increased funding speed.",
       "supporting_loans": [],
-      "confidence": 0.65,
-      "first_seen_batch": 1684,
-      "last_updated_batch": 1694,
+      "confidence": 0.7,
+      "first_seen_batch": 1683,
+      "last_updated_batch": 1695,
       "confidence_history": [
         [
-          1694,
-          0.65
+          1695,
+          0.7
+        ]
+      ]
+    },
+    "female-age-children-slower": {
+      "id": "female-age-children-slower",
+      "bucket": "gendered_women",
+      "title": "Female borrowers who mention their age or number of children fund more slowly.",
+      "body": "Pitches from women that include specific details about the borrower's age or the number of children they have are associated with decreased funding speed.",
+      "supporting_loans": [],
+      "confidence": 0.6,
+      "first_seen_batch": 1695,
+      "last_updated_batch": 1695,
+      "confidence_history": [
+        [
+          1695,
+          0.6
         ]
       ]
     }
@@ -138,62 +138,55 @@
     "female-general-store-slower": {
       "id": "female-general-store-slower",
       "body": "Female borrowers who mention running a general store business may fund more slowly.",
-      "first_seen_batch": 1638
+      "first_seen_batch": 1637
     },
     "hardship-detail-faster-general": {
       "id": "hardship-detail-faster-general",
       "body": "Mentioning specific living or family hardships may accelerate funding regardless of gender.",
-      "first_seen_batch": 1644
+      "first_seen_batch": 1643
     },
     "female-hardworking-entrepreneur-slower": {
       "id": "female-hardworking-entrepreneur-slower",
       "body": "Female borrowers who use the specific phrase 'hardworking entrepreneur' may fund more slowly.",
-      "first_seen_batch": 1644
+      "first_seen_batch": 1643
     },
     "male-trade-history-faster": {
       "id": "male-trade-history-faster",
       "body": "Male borrowers who describe a lifelong history with their trade may fund faster.",
-      "first_seen_batch": 1652
+      "first_seen_batch": 1651
     },
     "female-currency-php-faster": {
       "id": "female-currency-php-faster",
       "body": "Female borrowers who list the loan amount in PHP may fund faster.",
-      "first_seen_batch": 1654
+      "first_seen_batch": 1653
     },
     "male-loan-count-slower": {
       "id": "male-loan-count-slower",
       "body": "Male borrowers who mention a specific number of previous loans may fund slower.",
-      "first_seen_batch": 1654
+      "first_seen_batch": 1653
     },
     "female-marital-status-slower": {
       "id": "female-marital-status-slower",
       "body": "Female borrowers who mention their marital status may fund more slowly.",
-      "first_seen_batch": 1684
-    },
-    "female-age-mention-slower": {
-      "id": "female-age-mention-slower",
-      "body": "Female borrowers who mention their specific age in the pitch may fund more slowly.",
-      "first_seen_batch": 1688
+      "first_seen_batch": 1683
     },
     "female-productivity-health-faster": {
       "id": "female-productivity-health-faster",
       "body": "Female borrowers who prioritize productivity or health improvements over household assets or family consumption may fund faster.",
-      "first_seen_batch": 1690
+      "first_seen_batch": 1689
     },
     "female-institutional-training-faster": {
       "id": "female-institutional-training-faster",
       "body": "Female borrowers who mention specific institutional training programs may fund faster.",
-      "first_seen_batch": 1694
+      "first_seen_batch": 1693
+    },
+    "female-gratitude-slower": {
+      "id": "female-gratitude-slower",
+      "body": "Female borrowers who express explicit gratitude to lenders may fund more slowly.",
+      "first_seen_batch": 1695
     }
   },
   "retired": {
-    "female-gratitude-slower": {
-      "id": "female-gratitude-slower",
-      "title": "Pitches from women that contain direct gratitude markers toward lenders are associated with decreased funding speed.",
-      "retrospective": "Retired to maintain claim cap for promotion of female-inventory-detail-faster.",
-      "retired_batch": 1672,
-      "was_believed_batches": 0
-    },
     "female-family-size-detail-faster": {
       "id": "female-family-size-detail-faster",
       "title": "Female borrowers who provide a specific count of their children may fund faster.",
@@ -255,6 +248,13 @@
       "title": "Female borrowers who mention the number of children may fund faster.",
       "retrospective": "Contradicted by observation that specific child counts appear in slower pitches.",
       "retired_batch": 1693,
+      "was_believed_batches": 0
+    },
+    "female-savings-goal-faster": {
+      "id": "female-savings-goal-faster",
+      "title": "Pitches from women that explicitly state the intention to build up savings are associated with increased funding speed.",
+      "retrospective": "Retired to maintain claim cap for promotion of female-age-children-slower.",
+      "retired_batch": 1695,
       "was_believed_batches": 0
     }
   }
