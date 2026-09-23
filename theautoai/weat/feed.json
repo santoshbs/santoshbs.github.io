@@ -1,5 +1,111 @@
 [
   {
+    "id": "3e42a9541e99",
+    "timestamp": "2026-09-23T20:03:33.552562+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "librarians vs lawyers on Neutrality vs Partisanship",
+    "labels": {
+      "X": "librarians",
+      "Y": "lawyers",
+      "A": "Neutrality",
+      "B": "Partisanship"
+    },
+    "canonical_keys": {
+      "X": "librarians",
+      "Y": "lawyers",
+      "A": "neutrality",
+      "B": "partisanship"
+    },
+    "effect_size": -0.705625981105442,
+    "p_value": 0.05638,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "librarian",
+        "archivist",
+        "cataloger",
+        "bookkeeper",
+        "bookseller",
+        "scholar",
+        "researcher",
+        "professor",
+        "teacher",
+        "aide",
+        "assistant",
+        "manager",
+        "director",
+        "curator",
+        "editor"
+      ],
+      "Y_used": [
+        "lawyer",
+        "attorney",
+        "solicitor",
+        "barrister",
+        "counsel",
+        "counselor",
+        "prosecutor",
+        "defender",
+        "jurist",
+        "magistrate",
+        "judge",
+        "notary",
+        "paralegal",
+        "litigator",
+        "advocate"
+      ],
+      "A_used": [
+        "neutrality",
+        "impartiality",
+        "objectivity",
+        "fairness",
+        "impartial",
+        "objective",
+        "neutral",
+        "balanced",
+        "fair",
+        "unbiased",
+        "dispassionate",
+        "evenhanded",
+        "unprejudiced",
+        "detached",
+        "disinterested"
+      ],
+      "B_used": [
+        "partisan",
+        "biased",
+        "adversarial",
+        "subjective",
+        "partial",
+        "fanatic",
+        "zealous",
+        "hostile",
+        "opposing",
+        "competitive",
+        "staunch",
+        "loyal",
+        "devoted",
+        "allegiant",
+        "prejudiced"
+      ]
+    },
+    "proposal": "people associate librarians with neutrality more strongly than they associate lawyers with neutrality. While legal practice formally requires advocacy, public mental models likely extend this into a broader cognitive schema where lawyers are linked to strategic partisanship and adversarial positioning, whereas librarians are culturally mapped onto impartiality, objectivity, and balanced knowledge curation. This implicit divide has never been systematically measured despite growing civic anxiety about institutional trust in information ecosystems versus justice systems. Uncovering it matters because implicit neutrality biases shape how laypeople delegate epistemic authority, influencing whether individuals instinctively default to archival balance or adversarial counsel when navigating complex, polarized disputes.",
+    "iterations": 3,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "8d2ba7825ced",
     "timestamp": "2026-09-23T18:09:38.300807+00:00",
     "schema_version": "autoresearch.v1",
