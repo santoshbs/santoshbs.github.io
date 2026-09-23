@@ -1,5 +1,111 @@
 [
   {
+    "id": "3cbe3e24c863",
+    "timestamp": "2026-09-23T00:10:05.756615+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "experts vs visionaries on stability vs instability",
+    "labels": {
+      "X": "experts",
+      "Y": "visionaries",
+      "A": "stability",
+      "B": "instability"
+    },
+    "canonical_keys": {
+      "X": "experts",
+      "Y": "visionaries",
+      "A": "stability",
+      "B": "instability"
+    },
+    "effect_size": 1.1109754656198374,
+    "p_value": 0.00144,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "expert",
+        "specialist",
+        "master",
+        "authority",
+        "scholar",
+        "consultant",
+        "technician",
+        "scientist",
+        "veteran",
+        "professional",
+        "advisor",
+        "strategist",
+        "analyst",
+        "engineer",
+        "professor"
+      ],
+      "Y_used": [
+        "visionary",
+        "pioneer",
+        "innovator",
+        "dreamer",
+        "futurist",
+        "creator",
+        "explorer",
+        "founder",
+        "reformer",
+        "maverick",
+        "trailblazer",
+        "originator",
+        "initiator",
+        "revolutionary",
+        "ideologue"
+      ],
+      "A_used": [
+        "stability",
+        "stable",
+        "steady",
+        "consistent",
+        "constant",
+        "secure",
+        "safe",
+        "order",
+        "structure",
+        "established",
+        "traditional",
+        "predictable",
+        "reliable",
+        "conservative",
+        "balanced"
+      ],
+      "B_used": [
+        "instability",
+        "volatile",
+        "dynamic",
+        "chaotic",
+        "change",
+        "revolution",
+        "disruption",
+        "future",
+        "risk",
+        "uncertainty",
+        "evolution",
+        "innovation",
+        "movement",
+        "fluctuation",
+        "transformation"
+      ]
+    },
+    "proposal": "People associate experts with stability more strongly than they associate visionaries with stability. While experts are typically linked to mastery, reliability, and the consolidation of established knowledge, visionaries are often linked to disruption, imagination, and the pursuit of radical futures that inherently challenge the status quo. This differential is novel because prior research has examined experts versus laypeople or visionaries versus realists, but the implicit link between expert status and the attribute of stability—contrasted against the potential volatility or instability implied by visionary roles—remains underexplored. Examining this association matters because it sheds light on how society mentally balances the value of secure, predictable competence against the potentially destabilizing but transformative power of forward-looking vision in high-stakes domains like technology, policy, and organizational leadership.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "700ef282de5e",
     "timestamp": "2026-09-22T22:12:42.715659+00:00",
     "schema_version": "autoresearch.v1",
