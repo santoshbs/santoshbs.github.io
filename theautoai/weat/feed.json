@@ -1,5 +1,111 @@
 [
   {
+    "id": "548a5a69095b",
+    "timestamp": "2026-09-23T23:11:05.816097+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "shepherds vs sailors on place attachment vs mobility",
+    "labels": {
+      "X": "shepherds",
+      "Y": "sailors",
+      "A": "rootedness",
+      "B": "transience"
+    },
+    "canonical_keys": {
+      "X": "shepherds",
+      "Y": "sailors",
+      "A": "rootedness",
+      "B": "transience"
+    },
+    "effect_size": -0.6706101922621603,
+    "p_value": 0.07171,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "shepherd",
+        "herder",
+        "pastoralist",
+        "rancher",
+        "cowboy",
+        "stockman",
+        "wrangler",
+        "herdsman",
+        "drover",
+        "cattleman",
+        "horseman",
+        "swineherd",
+        "goatherd",
+        "farmhand",
+        "cowherd"
+      ],
+      "Y_used": [
+        "sailor",
+        "mariner",
+        "seafarer",
+        "seaman",
+        "navigator",
+        "helmsman",
+        "skipper",
+        "captain",
+        "bosun",
+        "deckhand",
+        "pilot",
+        "yachtsman",
+        "boatman",
+        "crewman",
+        "voyager"
+      ],
+      "A_used": [
+        "rooted",
+        "stable",
+        "stationary",
+        "fixed",
+        "settled",
+        "grounded",
+        "anchored",
+        "permanent",
+        "enduring",
+        "static",
+        "firm",
+        "secure",
+        "established",
+        "lasting",
+        "constant"
+      ],
+      "B_used": [
+        "transient",
+        "mobile",
+        "wandering",
+        "drifting",
+        "nomadic",
+        "floating",
+        "roving",
+        "migratory",
+        "traveling",
+        "changing",
+        "fluid",
+        "shifting",
+        "temporary",
+        "passing",
+        "fleeting"
+      ]
+    },
+    "proposal": "People associate shepherds with rootedness more strongly than they associate sailors with rootedness. This differential implicit association reflects enduring cultural tropes that romanticize pastoral life as deeply tethered to specific landscapes while framing maritime labor as inherently transient and mobility-driven. Examining this bias is novel because implicit place attachment has rarely been mapped onto historical occupational archetypes outside of broad urban versus rural comparisons. It matters because such mental representations may unconsciously shape societal attitudes toward coastal economies, rural development funding, and narratives about labor migration versus settlement.",
+    "iterations": 3,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "3e42a9541e99",
     "timestamp": "2026-09-23T20:03:33.552562+00:00",
     "schema_version": "autoresearch.v1",
