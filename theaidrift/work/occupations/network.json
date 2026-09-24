@@ -5,40 +5,40 @@
         "id": "11",
         "title": "Management",
         "group": "management",
-        "refs": 314,
-        "signals": 288,
+        "refs": 300,
+        "signals": 309,
         "occupations": 35
       },
       {
         "id": "13",
         "title": "Business & Financial Operations",
         "group": "business",
-        "refs": 517,
-        "signals": 504,
+        "refs": 561,
+        "signals": 539,
         "occupations": 42
       },
       {
         "id": "15",
         "title": "Computer & Mathematical",
         "group": "computer & math",
-        "refs": 579,
-        "signals": 897,
-        "occupations": 35
+        "refs": 611,
+        "signals": 943,
+        "occupations": 36
       },
       {
         "id": "17",
         "title": "Architecture & Engineering",
         "group": "engineering",
-        "refs": 502,
-        "signals": 481,
+        "refs": 505,
+        "signals": 507,
         "occupations": 46
       },
       {
         "id": "19",
         "title": "Life, Physical, & Social Science",
         "group": "science",
-        "refs": 207,
-        "signals": 171,
+        "refs": 220,
+        "signals": 183,
         "occupations": 37
       },
       {
@@ -53,33 +53,33 @@
         "id": "23",
         "title": "Legal",
         "group": "legal",
-        "refs": 60,
-        "signals": 73,
+        "refs": 55,
+        "signals": 78,
         "occupations": 7
       },
       {
         "id": "25",
         "title": "Educational Instruction & Library",
         "group": "education",
-        "refs": 58,
-        "signals": 37,
+        "refs": 59,
+        "signals": 38,
         "occupations": 21
       },
       {
         "id": "27",
         "title": "Arts, Design, Entertainment, Sports, & Media",
         "group": "arts & media",
-        "refs": 161,
-        "signals": 147,
+        "refs": 171,
+        "signals": 156,
         "occupations": 27
       },
       {
         "id": "29",
         "title": "Healthcare Practitioners & Technical",
         "group": "healthcare",
-        "refs": 159,
-        "signals": 113,
-        "occupations": 45
+        "refs": 165,
+        "signals": 119,
+        "occupations": 46
       },
       {
         "id": "31",
@@ -93,16 +93,16 @@
         "id": "33",
         "title": "Protective Service",
         "group": "protective",
-        "refs": 68,
-        "signals": 57,
+        "refs": 71,
+        "signals": 60,
         "occupations": 11
       },
       {
         "id": "35",
         "title": "Food Preparation & Serving",
         "group": "food",
-        "refs": 49,
-        "signals": 38,
+        "refs": 51,
+        "signals": 40,
         "occupations": 11
       },
       {
@@ -149,8 +149,8 @@
         "id": "47",
         "title": "Construction & Extraction",
         "group": "construction",
-        "refs": 45,
-        "signals": 27,
+        "refs": 49,
+        "signals": 31,
         "occupations": 18
       },
       {
@@ -165,32 +165,32 @@
         "id": "51",
         "title": "Production",
         "group": "production",
-        "refs": 80,
-        "signals": 53,
+        "refs": 82,
+        "signals": 55,
         "occupations": 27
       },
       {
         "id": "53",
         "title": "Transportation & Material Moving",
         "group": "transport",
-        "refs": 147,
-        "signals": 117,
-        "occupations": 29
+        "refs": 164,
+        "signals": 133,
+        "occupations": 32
       },
       {
         "id": "55",
         "title": "Military Specific",
         "group": "military",
-        "refs": 130,
-        "signals": 126,
-        "occupations": 13
+        "refs": 157,
+        "signals": 142,
+        "occupations": 15
       }
     ],
     "edges": [
       {
         "source": "11",
         "target": "13",
-        "weight": 75
+        "weight": 80
       },
       {
         "source": "17",
@@ -205,7 +205,7 @@
       {
         "source": "15",
         "target": "23",
-        "weight": 7
+        "weight": 8
       },
       {
         "source": "23",
@@ -235,7 +235,7 @@
       {
         "source": "17",
         "target": "53",
-        "weight": 3
+        "weight": 4
       },
       {
         "source": "17",
@@ -270,7 +270,7 @@
       {
         "source": "17",
         "target": "55",
-        "weight": 15
+        "weight": 17
       },
       {
         "source": "13",
@@ -280,7 +280,7 @@
       {
         "source": "15",
         "target": "19",
-        "weight": 10
+        "weight": 12
       },
       {
         "source": "15",
@@ -290,7 +290,7 @@
       {
         "source": "19",
         "target": "29",
-        "weight": 13
+        "weight": 15
       },
       {
         "source": "15",
@@ -301,6 +301,11 @@
         "source": "13",
         "target": "27",
         "weight": 5
+      },
+      {
+        "source": "23",
+        "target": "27",
+        "weight": 2
       },
       {
         "source": "13",
@@ -325,7 +330,7 @@
       {
         "source": "17",
         "target": "19",
-        "weight": 34
+        "weight": 37
       },
       {
         "source": "11",
@@ -340,7 +345,7 @@
       {
         "source": "13",
         "target": "19",
-        "weight": 5
+        "weight": 6
       },
       {
         "source": "19",
@@ -350,7 +355,7 @@
       {
         "source": "13",
         "target": "15",
-        "weight": 38
+        "weight": 41
       },
       {
         "source": "15",
@@ -366,11 +371,6 @@
         "source": "11",
         "target": "29",
         "weight": 4
-      },
-      {
-        "source": "23",
-        "target": "27",
-        "weight": 1
       },
       {
         "source": "27",
@@ -450,12 +450,12 @@
       {
         "source": "13",
         "target": "23",
-        "weight": 3
+        "weight": 4
       },
       {
         "source": "13",
         "target": "47",
-        "weight": 1
+        "weight": 2
       },
       {
         "source": "21",
@@ -490,7 +490,7 @@
       {
         "source": "11",
         "target": "35",
-        "weight": 3
+        "weight": 4
       },
       {
         "source": "41",
@@ -591,9 +591,9 @@
           "id": "11-1011.00",
           "title": "Chief Executives",
           "group": "management",
-          "refs": 22,
-          "revised": "2026-08-04",
-          "signals": 21
+          "refs": 23,
+          "revised": "2026-09-01",
+          "signals": 22
         },
         {
           "id": "11-1011.03",
@@ -607,9 +607,9 @@
           "id": "11-1021.00",
           "title": "General and Operations Managers",
           "group": "management",
-          "refs": 2,
-          "revised": "2026-04-01",
-          "signals": 1
+          "refs": 4,
+          "revised": "2026-09-03",
+          "signals": 3
         },
         {
           "id": "11-1031.00",
@@ -623,17 +623,17 @@
           "id": "11-2011.00",
           "title": "Advertising and Promotions Managers",
           "group": "management",
-          "refs": 2,
-          "revised": "2026-06-19",
-          "signals": 1
+          "refs": 3,
+          "revised": "2026-08-31",
+          "signals": 2
         },
         {
           "id": "11-2021.00",
           "title": "Marketing Managers",
           "group": "management",
-          "refs": 12,
-          "revised": "2026-08-26",
-          "signals": 12
+          "refs": 15,
+          "revised": "2026-09-24",
+          "signals": 14
         },
         {
           "id": "11-2022.00",
@@ -664,8 +664,8 @@
           "title": "Computer and Information Systems Managers",
           "group": "management",
           "refs": 21,
-          "revised": "2026-08-04",
-          "signals": 29
+          "revised": "2026-09-21",
+          "signals": 34
         },
         {
           "id": "11-3031.00",
@@ -687,9 +687,9 @@
           "id": "11-3031.03",
           "title": "Investment Fund Managers",
           "group": "management",
-          "refs": 9,
-          "revised": "2026-08-04",
-          "signals": 8
+          "refs": 10,
+          "revised": "2026-09-23",
+          "signals": 9
         },
         {
           "id": "11-3051.00",
@@ -704,8 +704,8 @@
           "title": "Purchasing Managers",
           "group": "management",
           "refs": 9,
-          "revised": "2026-08-01",
-          "signals": 8
+          "revised": "2026-08-28",
+          "signals": 9
         },
         {
           "id": "11-3071.00",
@@ -719,9 +719,9 @@
           "id": "11-3071.04",
           "title": "Supply Chain Managers",
           "group": "management",
-          "refs": 33,
-          "revised": "2026-08-02",
-          "signals": 32
+          "refs": 22,
+          "revised": "2026-08-28",
+          "signals": 33
         },
         {
           "id": "11-3111.00",
@@ -735,9 +735,9 @@
           "id": "11-3121.00",
           "title": "Human Resources Managers",
           "group": "management",
-          "refs": 33,
-          "revised": "2026-07-25",
-          "signals": 32
+          "refs": 24,
+          "revised": "2026-09-23",
+          "signals": 35
         },
         {
           "id": "11-3131.00",
@@ -751,9 +751,9 @@
           "id": "11-9013.00",
           "title": "Farmers, Ranchers, and Other Agricultural Managers",
           "group": "management",
-          "refs": 3,
-          "revised": "2026-04-06",
-          "signals": 2
+          "refs": 4,
+          "revised": "2026-09-03",
+          "signals": 3
         },
         {
           "id": "11-9021.00",
@@ -775,9 +775,9 @@
           "id": "11-9041.00",
           "title": "Architectural and Engineering Managers",
           "group": "management",
-          "refs": 3,
-          "revised": "2026-04-16",
-          "signals": 2
+          "refs": 4,
+          "revised": "2026-09-02",
+          "signals": 3
         },
         {
           "id": "11-9041.01",
@@ -791,9 +791,9 @@
           "id": "11-9051.00",
           "title": "Food Service Managers",
           "group": "management",
-          "refs": 15,
-          "revised": "2026-08-27",
-          "signals": 14
+          "refs": 11,
+          "revised": "2026-09-24",
+          "signals": 16
         },
         {
           "id": "11-9081.00",
@@ -893,6 +893,11 @@
           "source": "11-3013.01",
           "target": "11-3021.00",
           "signal": "War in the Gulf could tilt the cloud race toward China"
+        },
+        {
+          "source": "11-3021.00",
+          "target": "11-9041.00",
+          "signal": "Your Engineers Are Using AI Every Day. Do You Know About It?"
         },
         {
           "source": "11-2011.00",
@@ -1025,6 +1030,11 @@
           "signal": "How Restaurants Can Use AI to Engage Guests and Control Costs"
         },
         {
+          "source": "11-1021.00",
+          "target": "11-9051.00",
+          "signal": "New Square AI Agent Automates Daily Tasks for Main Street Sellers"
+        },
+        {
           "source": "11-2021.00",
           "target": "11-3051.00",
           "signal": "How food manufacturers are rethinking product assortments"
@@ -1103,33 +1113,33 @@
           "id": "13-1023.00",
           "title": "Purchasing Agents, Except Wholesale, Retail, and Farm Products",
           "group": "business",
-          "refs": 23,
-          "revised": "2026-08-05",
-          "signals": 30
+          "refs": 34,
+          "revised": "2026-09-23",
+          "signals": 33
         },
         {
           "id": "13-1031.00",
           "title": "Claims Adjusters, Examiners, and Investigators",
           "group": "business",
-          "refs": 8,
-          "revised": "2026-08-23",
-          "signals": 7
+          "refs": 9,
+          "revised": "2026-08-28",
+          "signals": 8
         },
         {
           "id": "13-1032.00",
           "title": "Insurance Appraisers, Auto Damage",
           "group": "business",
-          "refs": 2,
-          "revised": "2026-04-29",
-          "signals": 1
+          "refs": 3,
+          "revised": "2026-08-28",
+          "signals": 2
         },
         {
           "id": "13-1041.00",
           "title": "Compliance Officers",
           "group": "business",
-          "refs": 21,
-          "revised": "2026-07-16",
-          "signals": 20
+          "refs": 23,
+          "revised": "2026-09-23",
+          "signals": 22
         },
         {
           "id": "13-1041.01",
@@ -1151,33 +1161,33 @@
           "id": "13-1041.07",
           "title": "Regulatory Affairs Specialists",
           "group": "business",
-          "refs": 14,
-          "revised": "2026-07-23",
-          "signals": 20
+          "refs": 23,
+          "revised": "2026-09-23",
+          "signals": 22
         },
         {
           "id": "13-1041.08",
           "title": "Customs Brokers",
           "group": "business",
           "refs": 18,
-          "revised": "2026-06-30",
-          "signals": 17
+          "revised": "2026-09-23",
+          "signals": 18
         },
         {
           "id": "13-1051.00",
           "title": "Cost Estimators",
           "group": "business",
-          "refs": 16,
-          "revised": "2026-08-23",
-          "signals": 15
+          "refs": 11,
+          "revised": "2026-09-23",
+          "signals": 16
         },
         {
           "id": "13-1071.00",
           "title": "Human Resources Specialists",
           "group": "business",
-          "refs": 14,
-          "revised": "2026-07-25",
-          "signals": 14
+          "refs": 18,
+          "revised": "2026-09-23",
+          "signals": 17
         },
         {
           "id": "13-1074.00",
@@ -1199,17 +1209,17 @@
           "id": "13-1081.00",
           "title": "Logisticians",
           "group": "business",
-          "refs": 38,
-          "revised": "2026-08-26",
-          "signals": 37
+          "refs": 44,
+          "revised": "2026-09-23",
+          "signals": 43
         },
         {
           "id": "13-1081.02",
           "title": "Logistics Analysts",
           "group": "business",
-          "refs": 10,
-          "revised": "2026-06-18",
-          "signals": 9
+          "refs": 12,
+          "revised": "2026-08-30",
+          "signals": 11
         },
         {
           "id": "13-1082.00",
@@ -1239,9 +1249,9 @@
           "id": "13-1141.00",
           "title": "Compensation, Benefits, and Job Analysis Specialists",
           "group": "business",
-          "refs": 28,
-          "revised": "2026-07-17",
-          "signals": 27
+          "refs": 29,
+          "revised": "2026-09-08",
+          "signals": 28
         },
         {
           "id": "13-1151.00",
@@ -1271,25 +1281,25 @@
           "id": "13-1199.04",
           "title": "Business Continuity Planners",
           "group": "business",
-          "refs": 4,
-          "revised": "2026-07-18",
-          "signals": 3
+          "refs": 5,
+          "revised": "2026-09-01",
+          "signals": 4
         },
         {
           "id": "13-1199.05",
           "title": "Sustainability Specialists",
           "group": "business",
-          "refs": 13,
-          "revised": "2026-06-24",
-          "signals": 12
+          "refs": 14,
+          "revised": "2026-08-27",
+          "signals": 13
         },
         {
           "id": "13-1199.06",
           "title": "Online Merchants",
           "group": "business",
-          "refs": 10,
-          "revised": "2026-06-27",
-          "signals": 9
+          "refs": 12,
+          "revised": "2026-09-04",
+          "signals": 11
         },
         {
           "id": "13-2011.00",
@@ -1303,17 +1313,17 @@
           "id": "13-2022.00",
           "title": "Appraisers of Personal and Business Property",
           "group": "business",
-          "refs": 3,
-          "revised": "2026-07-20",
-          "signals": 2
+          "refs": 4,
+          "revised": "2026-08-29",
+          "signals": 3
         },
         {
           "id": "13-2023.00",
           "title": "Appraisers and Assessors of Real Estate",
           "group": "business",
-          "refs": 5,
-          "revised": "2026-07-21",
-          "signals": 4
+          "refs": 6,
+          "revised": "2026-08-29",
+          "signals": 5
         },
         {
           "id": "13-2031.00",
@@ -1351,25 +1361,25 @@
           "id": "13-2053.00",
           "title": "Insurance Underwriters",
           "group": "business",
-          "refs": 11,
-          "revised": "2026-08-25",
-          "signals": 10
+          "refs": 13,
+          "revised": "2026-09-22",
+          "signals": 12
         },
         {
           "id": "13-2054.00",
           "title": "Financial Risk Specialists",
           "group": "business",
-          "refs": 23,
-          "revised": "2026-08-24",
-          "signals": 22
+          "refs": 25,
+          "revised": "2026-09-23",
+          "signals": 24
         },
         {
           "id": "13-2061.00",
           "title": "Financial Examiners",
           "group": "business",
-          "refs": 18,
-          "revised": "2026-08-23",
-          "signals": 17
+          "refs": 19,
+          "revised": "2026-08-28",
+          "signals": 18
         },
         {
           "id": "13-2071.00",
@@ -1415,9 +1425,9 @@
           "id": "13-2099.04",
           "title": "Fraud Examiners, Investigators and Analysts",
           "group": "business",
-          "refs": 24,
-          "revised": "2026-08-05",
-          "signals": 23
+          "refs": 25,
+          "revised": "2026-08-28",
+          "signals": 24
         }
       ],
       "edges": [
@@ -1677,6 +1687,11 @@
           "signal": "CFTC Names Task Force to Set AI and Prediction Market Rules"
         },
         {
+          "source": "13-2061.00",
+          "target": "13-2099.04",
+          "signal": "CFTC Deploys AI Tools to Modernize Market Surveillance"
+        },
+        {
           "source": "13-1021.00",
           "target": "13-1199.05",
           "signal": "AgriFood Signals: USDA and Palantir deal, fresh funding for Afresh, Amazon’s $30"
@@ -1685,6 +1700,11 @@
           "source": "13-1041.07",
           "target": "13-1041.08",
           "signal": "Commerce setting up new AI export regime to push adoption of ‘American AI’ abroa"
+        },
+        {
+          "source": "13-1041.07",
+          "target": "13-2054.00",
+          "signal": "‘Killing the chicken to scare the monkey’: Why China blocked the Meta-Manus deal"
         },
         {
           "source": "13-1081.00",
@@ -1710,6 +1730,11 @@
           "source": "13-1071.00",
           "target": "13-2051.00",
           "signal": "Automate repetitive tasks with Amazon Quick Flows"
+        },
+        {
+          "source": "13-1071.00",
+          "target": "13-1081.00",
+          "signal": "Amazon Expands Connect Service to Cover Supply Chains and HR"
         },
         {
           "source": "13-2053.00",
@@ -1869,9 +1894,9 @@
           "id": "15-1211.00",
           "title": "Computer Systems Analysts",
           "group": "computer & math",
-          "refs": 14,
-          "revised": "2026-08-25",
-          "signals": 13
+          "refs": 16,
+          "revised": "2026-09-23",
+          "signals": 16
         },
         {
           "id": "15-1211.01",
@@ -1893,17 +1918,25 @@
           "id": "15-1221.00",
           "title": "Computer and Information Research Scientists",
           "group": "computer & math",
-          "refs": 31,
-          "revised": "2026-07-19",
-          "signals": 63
+          "refs": 34,
+          "revised": "2026-09-22",
+          "signals": 66
+        },
+        {
+          "id": "15-1231.00",
+          "title": "Computer Network Support Specialists",
+          "group": "computer & math",
+          "refs": 2,
+          "revised": "2026-09-22",
+          "signals": 1
         },
         {
           "id": "15-1232.00",
           "title": "Computer User Support Specialists",
           "group": "computer & math",
-          "refs": 8,
-          "revised": "2026-07-20",
-          "signals": 7
+          "refs": 9,
+          "revised": "2026-09-23",
+          "signals": 8
         },
         {
           "id": "15-1241.00",
@@ -1925,9 +1958,9 @@
           "id": "15-1242.00",
           "title": "Database Administrators",
           "group": "computer & math",
-          "refs": 7,
-          "revised": "2026-07-26",
-          "signals": 6
+          "refs": 8,
+          "revised": "2026-08-28",
+          "signals": 7
         },
         {
           "id": "15-1243.00",
@@ -1942,32 +1975,32 @@
           "title": "Data Warehousing Specialists",
           "group": "computer & math",
           "refs": 8,
-          "revised": "2026-07-18",
-          "signals": 7
+          "revised": "2026-08-31",
+          "signals": 8
         },
         {
           "id": "15-1244.00",
           "title": "Network and Computer Systems Administrators",
           "group": "computer & math",
-          "refs": 30,
-          "revised": "2026-08-05",
-          "signals": 29
+          "refs": 32,
+          "revised": "2026-09-23",
+          "signals": 31
         },
         {
           "id": "15-1251.00",
           "title": "Computer Programmers",
           "group": "computer & math",
-          "refs": 27,
-          "revised": "2026-08-01",
-          "signals": 27
+          "refs": 29,
+          "revised": "2026-09-21",
+          "signals": 29
         },
         {
           "id": "15-1252.00",
           "title": "Software Developers",
           "group": "computer & math",
-          "refs": 37,
-          "revised": "2026-08-27",
-          "signals": 112
+          "refs": 39,
+          "revised": "2026-09-23",
+          "signals": 122
         },
         {
           "id": "15-1253.00",
@@ -1981,17 +2014,17 @@
           "id": "15-1254.00",
           "title": "Web Developers",
           "group": "computer & math",
-          "refs": 23,
-          "revised": "2026-08-26",
-          "signals": 22
+          "refs": 24,
+          "revised": "2026-08-27",
+          "signals": 23
         },
         {
           "id": "15-1255.00",
           "title": "Web and Digital Interface Designers",
           "group": "computer & math",
-          "refs": 13,
-          "revised": "2026-07-19",
-          "signals": 12
+          "refs": 15,
+          "revised": "2026-09-23",
+          "signals": 14
         },
         {
           "id": "15-1255.01",
@@ -2029,33 +2062,33 @@
           "id": "15-1299.04",
           "title": "Penetration Testers",
           "group": "computer & math",
-          "refs": 24,
-          "revised": "2026-08-03",
-          "signals": 104
+          "refs": 23,
+          "revised": "2026-09-24",
+          "signals": 105
         },
         {
           "id": "15-1299.05",
           "title": "Information Security Engineers",
           "group": "computer & math",
-          "refs": 104,
-          "revised": "2026-08-26",
-          "signals": 103
+          "refs": 111,
+          "revised": "2026-09-24",
+          "signals": 110
         },
         {
           "id": "15-1299.06",
           "title": "Digital Forensics Analysts",
           "group": "computer & math",
-          "refs": 37,
-          "revised": "2026-08-02",
-          "signals": 36
+          "refs": 39,
+          "revised": "2026-09-21",
+          "signals": 38
         },
         {
           "id": "15-1299.07",
           "title": "Blockchain Engineers",
           "group": "computer & math",
-          "refs": 9,
-          "revised": "2026-08-03",
-          "signals": 8
+          "refs": 10,
+          "revised": "2026-09-04",
+          "signals": 9
         },
         {
           "id": "15-1299.08",
@@ -2109,17 +2142,17 @@
           "id": "15-2041.01",
           "title": "Biostatisticians",
           "group": "computer & math",
-          "refs": 3,
-          "revised": "2026-06-27",
-          "signals": 2
+          "refs": 5,
+          "revised": "2026-08-30",
+          "signals": 4
         },
         {
           "id": "15-2051.00",
           "title": "Data Scientists",
           "group": "computer & math",
-          "refs": 24,
-          "revised": "2026-08-27",
-          "signals": 63
+          "refs": 26,
+          "revised": "2026-09-22",
+          "signals": 68
         },
         {
           "id": "15-2051.01",
@@ -2133,9 +2166,9 @@
           "id": "15-2051.02",
           "title": "Clinical Data Managers",
           "group": "computer & math",
-          "refs": 5,
-          "revised": "2026-06-03",
-          "signals": 4
+          "refs": 6,
+          "revised": "2026-08-30",
+          "signals": 5
         },
         {
           "id": "15-2099.01",
@@ -2488,6 +2521,11 @@
           "signal": "Legacy Migration To New AI-Native Worlds"
         },
         {
+          "source": "15-2041.01",
+          "target": "15-2051.02",
+          "signal": "STAT+: FDA launches effort to speed up clinical trials, using AI"
+        },
+        {
           "source": "15-1254.00",
           "target": "15-1299.01",
           "signal": "Cloudflare Targets WordPress With New AI-Powered EmDash CMS"
@@ -2523,6 +2561,11 @@
           "signal": "Data Optimization: The Brain of Industrial Intelligence"
         },
         {
+          "source": "15-1243.01",
+          "target": "15-2051.00",
+          "signal": "Snowflake helps unlock data collaborations with consent signals from OneTrust"
+        },
+        {
           "source": "15-1244.00",
           "target": "15-1299.08",
           "signal": "Helping data centers deliver higher performance with less hardware"
@@ -2541,6 +2584,16 @@
           "source": "15-1244.00",
           "target": "15-1252.00",
           "signal": "Linux May Drop Old Network Drivers Now That AI-Driven Bug Reports Are Causing A "
+        },
+        {
+          "source": "15-1231.00",
+          "target": "15-1244.00",
+          "signal": "Eino’s agentic network observability platform enables real-time, AI-driven netwo"
+        },
+        {
+          "source": "15-1232.00",
+          "target": "15-1244.00",
+          "signal": "Kaseya agentic IT management unifies data and automates ticketing, security and "
         },
         {
           "source": "15-1299.08",
@@ -2622,9 +2675,9 @@
           "id": "17-2011.00",
           "title": "Aerospace Engineers",
           "group": "engineering",
-          "refs": 22,
-          "revised": "2026-08-03",
-          "signals": 39
+          "refs": 23,
+          "revised": "2026-09-04",
+          "signals": 42
         },
         {
           "id": "17-2021.00",
@@ -2670,9 +2723,9 @@
           "id": "17-2051.02",
           "title": "Water/Wastewater Engineers",
           "group": "engineering",
-          "refs": 4,
-          "revised": "2026-08-26",
-          "signals": 3
+          "refs": 5,
+          "revised": "2026-09-04",
+          "signals": 4
         },
         {
           "id": "17-2061.00",
@@ -2686,9 +2739,9 @@
           "id": "17-2071.00",
           "title": "Electrical Engineers",
           "group": "engineering",
-          "refs": 25,
-          "revised": "2026-07-24",
-          "signals": 24
+          "refs": 21,
+          "revised": "2026-08-30",
+          "signals": 25
         },
         {
           "id": "17-2072.00",
@@ -2750,9 +2803,9 @@
           "id": "17-2112.03",
           "title": "Manufacturing Engineers",
           "group": "engineering",
-          "refs": 23,
-          "revised": "2026-08-23",
-          "signals": 22
+          "refs": 24,
+          "revised": "2026-09-03",
+          "signals": 23
         },
         {
           "id": "17-2121.00",
@@ -2766,9 +2819,9 @@
           "id": "17-2131.00",
           "title": "Materials Engineers",
           "group": "engineering",
-          "refs": 19,
-          "revised": "2026-08-04",
-          "signals": 18
+          "refs": 20,
+          "revised": "2026-09-22",
+          "signals": 19
         },
         {
           "id": "17-2141.00",
@@ -2782,17 +2835,17 @@
           "id": "17-2141.01",
           "title": "Fuel Cell Engineers",
           "group": "engineering",
-          "refs": 3,
-          "revised": "2026-04-10",
-          "signals": 2
+          "refs": 4,
+          "revised": "2026-09-01",
+          "signals": 3
         },
         {
           "id": "17-2141.02",
           "title": "Automotive Engineers",
           "group": "engineering",
-          "refs": 18,
-          "revised": "2026-08-05",
-          "signals": 17
+          "refs": 11,
+          "revised": "2026-09-24",
+          "signals": 20
         },
         {
           "id": "17-2151.00",
@@ -2806,33 +2859,33 @@
           "id": "17-2161.00",
           "title": "Nuclear Engineers",
           "group": "engineering",
-          "refs": 11,
-          "revised": "2026-07-26",
-          "signals": 10
+          "refs": 12,
+          "revised": "2026-08-30",
+          "signals": 11
         },
         {
           "id": "17-2171.00",
           "title": "Petroleum Engineers",
           "group": "engineering",
-          "refs": 2,
-          "revised": "2026-04-05",
-          "signals": 1
+          "refs": 3,
+          "revised": "2026-08-28",
+          "signals": 2
         },
         {
           "id": "17-2199.03",
           "title": "Energy Engineers, Except Wind and Solar",
           "group": "engineering",
-          "refs": 19,
-          "revised": "2026-07-17",
-          "signals": 18
+          "refs": 21,
+          "revised": "2026-09-04",
+          "signals": 20
         },
         {
           "id": "17-2199.05",
           "title": "Mechatronics Engineers",
           "group": "engineering",
           "refs": 8,
-          "revised": "2026-06-29",
-          "signals": 7
+          "revised": "2026-08-28",
+          "signals": 8
         },
         {
           "id": "17-2199.06",
@@ -2846,17 +2899,17 @@
           "id": "17-2199.07",
           "title": "Photonics Engineers",
           "group": "engineering",
-          "refs": 14,
-          "revised": "2026-08-02",
-          "signals": 13
+          "refs": 15,
+          "revised": "2026-09-04",
+          "signals": 14
         },
         {
           "id": "17-2199.08",
           "title": "Robotics Engineers",
           "group": "engineering",
-          "refs": 63,
-          "revised": "2026-08-05",
-          "signals": 62
+          "refs": 68,
+          "revised": "2026-09-24",
+          "signals": 67
         },
         {
           "id": "17-2199.09",
@@ -2870,9 +2923,9 @@
           "id": "17-2199.10",
           "title": "Wind Energy Engineers",
           "group": "engineering",
-          "refs": 4,
-          "revised": "2026-07-16",
-          "signals": 3
+          "refs": 5,
+          "revised": "2026-08-28",
+          "signals": 4
         },
         {
           "id": "17-2199.11",
@@ -2895,8 +2948,8 @@
           "title": "Aerospace Engineering and Operations Technologists and Technicians",
           "group": "engineering",
           "refs": 18,
-          "revised": "2026-07-25",
-          "signals": 16
+          "revised": "2026-08-31",
+          "signals": 17
         },
         {
           "id": "17-3023.00",
@@ -2910,9 +2963,9 @@
           "id": "17-3024.01",
           "title": "Robotics Technicians",
           "group": "engineering",
-          "refs": 13,
-          "revised": "2026-06-29",
-          "signals": 20
+          "refs": 10,
+          "revised": "2026-09-03",
+          "signals": 21
         },
         {
           "id": "17-3026.01",
@@ -2934,9 +2987,9 @@
           "id": "17-3027.01",
           "title": "Automotive Engineering Technicians",
           "group": "engineering",
-          "refs": 5,
-          "revised": "2026-07-14",
-          "signals": 4
+          "refs": 6,
+          "revised": "2026-08-28",
+          "signals": 5
         },
         {
           "id": "17-3029.08",
@@ -3095,6 +3148,11 @@
           "source": "17-2051.00",
           "target": "17-2199.03",
           "signal": "Exclusive: Cloneable Raises $4.6M To ‘Clone’ Expert Worker Knowledge With Agenti"
+        },
+        {
+          "source": "17-2051.02",
+          "target": "17-2199.03",
+          "signal": "Stop Treating Water as a Utility Bill. It’s Your Hidden Energy Trade"
         },
         {
           "source": "17-2031.00",
@@ -3295,6 +3353,11 @@
           "source": "17-2071.00",
           "target": "17-2199.11",
           "signal": "Modeling and Simulation Approaches for Modern Power System Studies"
+        },
+        {
+          "source": "17-2171.00",
+          "target": "17-2199.10",
+          "signal": "Trump admin pays wind developers to quit, back fossil fuel projects"
         },
         {
           "source": "17-2112.03",
@@ -3518,17 +3581,17 @@
           "id": "19-1022.00",
           "title": "Microbiologists",
           "group": "science",
-          "refs": 7,
-          "revised": "2026-07-22",
-          "signals": 6
+          "refs": 8,
+          "revised": "2026-09-22",
+          "signals": 7
         },
         {
           "id": "19-1023.00",
           "title": "Zoologists and Wildlife Biologists",
           "group": "science",
-          "refs": 2,
-          "revised": "2026-04-14",
-          "signals": 1
+          "refs": 3,
+          "revised": "2026-09-22",
+          "signals": 2
         },
         {
           "id": "19-1029.01",
@@ -3566,17 +3629,17 @@
           "id": "19-1041.00",
           "title": "Epidemiologists",
           "group": "science",
-          "refs": 5,
-          "revised": "2026-08-04",
-          "signals": 4
+          "refs": 6,
+          "revised": "2026-08-28",
+          "signals": 5
         },
         {
           "id": "19-1042.00",
           "title": "Medical Scientists, Except Epidemiologists",
           "group": "science",
-          "refs": 8,
-          "revised": "2026-08-25",
-          "signals": 8
+          "refs": 10,
+          "revised": "2026-08-30",
+          "signals": 9
         },
         {
           "id": "19-2011.00",
@@ -3614,9 +3677,9 @@
           "id": "19-2032.00",
           "title": "Materials Scientists",
           "group": "science",
-          "refs": 14,
-          "revised": "2026-07-20",
-          "signals": 14
+          "refs": 16,
+          "revised": "2026-09-22",
+          "signals": 15
         },
         {
           "id": "19-2041.00",
@@ -3631,16 +3694,16 @@
           "title": "Climate Change Policy Analysts",
           "group": "science",
           "refs": 7,
-          "revised": "2026-07-17",
-          "signals": 6
+          "revised": "2026-09-01",
+          "signals": 7
         },
         {
           "id": "19-2041.03",
           "title": "Industrial Ecologists",
           "group": "science",
-          "refs": 6,
-          "revised": "2026-06-25",
-          "signals": 5
+          "refs": 8,
+          "revised": "2026-09-04",
+          "signals": 7
         },
         {
           "id": "19-2042.00",
@@ -3662,9 +3725,9 @@
           "id": "19-3011.00",
           "title": "Economists",
           "group": "science",
-          "refs": 3,
-          "revised": "2026-05-04",
-          "signals": 2
+          "refs": 4,
+          "revised": "2026-09-24",
+          "signals": 3
         },
         {
           "id": "19-3011.01",
@@ -3695,16 +3758,16 @@
           "title": "Clinical and Counseling Psychologists",
           "group": "science",
           "refs": 6,
-          "revised": "2026-06-22",
-          "signals": 4
+          "revised": "2026-09-22",
+          "signals": 5
         },
         {
           "id": "19-3051.00",
           "title": "Urban and Regional Planners",
           "group": "science",
-          "refs": 8,
-          "revised": "2026-08-26",
-          "signals": 7
+          "refs": 10,
+          "revised": "2026-09-03",
+          "signals": 8
         },
         {
           "id": "19-3091.00",
@@ -3758,9 +3821,9 @@
           "id": "19-4051.00",
           "title": "Nuclear Technicians",
           "group": "science",
-          "refs": 7,
-          "revised": "2026-06-10",
-          "signals": 6
+          "refs": 8,
+          "revised": "2026-08-30",
+          "signals": 7
         },
         {
           "id": "19-4051.02",
@@ -3964,6 +4027,11 @@
           "signal": "California Attorney General Suing Over CEQA Violations Involving Ancestral Remai"
         },
         {
+          "source": "19-2041.01",
+          "target": "19-3051.00",
+          "signal": "38°C days could be new normal by 2050: The hot reality Bangkok faces"
+        },
+        {
           "source": "19-5011.00",
           "target": "19-5012.00",
           "signal": "NABTU, CPWR partner with Bechtel-backed suicide prevention initiative"
@@ -4125,9 +4193,9 @@
           "id": "23-1011.00",
           "title": "Lawyers",
           "group": "legal",
-          "refs": 29,
-          "revised": "2026-08-24",
-          "signals": 47
+          "refs": 24,
+          "revised": "2026-09-03",
+          "signals": 52
         },
         {
           "id": "23-1012.00",
@@ -4392,9 +4460,9 @@
           "id": "25-9044.00",
           "title": "Teaching Assistants, Postsecondary",
           "group": "education",
-          "refs": 5,
-          "revised": "2026-05-17",
-          "signals": 4
+          "refs": 6,
+          "revised": "2026-09-03",
+          "signals": 5
         }
       ],
       "edges": [
@@ -4526,9 +4594,9 @@
           "id": "27-1024.00",
           "title": "Graphic Designers",
           "group": "arts & media",
-          "refs": 13,
-          "revised": "2026-08-26",
-          "signals": 12
+          "refs": 16,
+          "revised": "2026-09-23",
+          "signals": 15
         },
         {
           "id": "27-1025.00",
@@ -4582,17 +4650,17 @@
           "id": "27-2041.00",
           "title": "Music Directors and Composers",
           "group": "arts & media",
-          "refs": 8,
-          "revised": "2026-06-21",
-          "signals": 7
+          "refs": 9,
+          "revised": "2026-09-08",
+          "signals": 8
         },
         {
           "id": "27-2042.00",
           "title": "Musicians and Singers",
           "group": "arts & media",
-          "refs": 8,
-          "revised": "2026-06-21",
-          "signals": 8
+          "refs": 11,
+          "revised": "2026-09-08",
+          "signals": 10
         },
         {
           "id": "27-2099.00",
@@ -4678,9 +4746,9 @@
           "id": "27-4021.00",
           "title": "Photographers",
           "group": "arts & media",
-          "refs": 6,
-          "revised": "2026-07-31",
-          "signals": 5
+          "refs": 8,
+          "revised": "2026-09-20",
+          "signals": 7
         },
         {
           "id": "27-4031.00",
@@ -4694,9 +4762,9 @@
           "id": "27-4032.00",
           "title": "Film and Video Editors",
           "group": "arts & media",
-          "refs": 12,
-          "revised": "2026-07-31",
-          "signals": 11
+          "refs": 13,
+          "revised": "2026-09-23",
+          "signals": 12
         }
       ],
       "edges": [
@@ -5008,12 +5076,20 @@
           "signals": 1
         },
         {
+          "id": "29-1141.04",
+          "title": "Clinical Nurse Specialists",
+          "group": "healthcare",
+          "refs": 2,
+          "revised": "2026-09-22",
+          "signals": 1
+        },
+        {
           "id": "29-1161.00",
           "title": "Nurse Midwives",
           "group": "healthcare",
-          "refs": 2,
-          "revised": "2026-04-25",
-          "signals": 1
+          "refs": 3,
+          "revised": "2026-09-22",
+          "signals": 2
         },
         {
           "id": "29-1171.00",
@@ -5083,9 +5159,9 @@
           "id": "29-1218.00",
           "title": "Obstetricians and Gynecologists",
           "group": "healthcare",
-          "refs": 2,
-          "revised": "2026-04-30",
-          "signals": 1
+          "refs": 3,
+          "revised": "2026-09-22",
+          "signals": 2
         },
         {
           "id": "29-1221.00",
@@ -5108,8 +5184,8 @@
           "title": "Psychiatrists",
           "group": "healthcare",
           "refs": 8,
-          "revised": "2026-06-22",
-          "signals": 6
+          "revised": "2026-09-22",
+          "signals": 7
         },
         {
           "id": "29-1224.00",
@@ -5123,9 +5199,9 @@
           "id": "29-1229.00",
           "title": "Physicians, All Other",
           "group": "healthcare",
-          "refs": 3,
-          "revised": "2026-04-16",
-          "signals": 2
+          "refs": 4,
+          "revised": "2026-09-22",
+          "signals": 3
         },
         {
           "id": "29-1229.01",
@@ -5275,9 +5351,9 @@
           "id": "29-9099.01",
           "title": "Midwives",
           "group": "healthcare",
-          "refs": 2,
-          "revised": "2026-06-08",
-          "signals": 1
+          "refs": 3,
+          "revised": "2026-09-22",
+          "signals": 2
         }
       ],
       "edges": [
@@ -5370,6 +5446,21 @@
           "source": "29-1051.00",
           "target": "29-2052.00",
           "signal": "Timely by DrFirst Aims to Lower Barriers to Specialty Meds"
+        },
+        {
+          "source": "29-1161.00",
+          "target": "29-1218.00",
+          "signal": "New clinical care standards with aim of cutting maternal deaths"
+        },
+        {
+          "source": "29-1161.00",
+          "target": "29-9099.01",
+          "signal": "New clinical care standards with aim of cutting maternal deaths"
+        },
+        {
+          "source": "29-1218.00",
+          "target": "29-9099.01",
+          "signal": "New clinical care standards with aim of cutting maternal deaths"
         },
         {
           "source": "29-1221.00",
@@ -5570,17 +5661,17 @@
           "id": "33-3021.06",
           "title": "Intelligence Analysts",
           "group": "protective",
-          "refs": 15,
-          "revised": "2026-08-02",
-          "signals": 14
+          "refs": 17,
+          "revised": "2026-09-21",
+          "signals": 16
         },
         {
           "id": "33-3051.00",
           "title": "Police and Sheriff's Patrol Officers",
           "group": "protective",
-          "refs": 8,
-          "revised": "2026-08-01",
-          "signals": 7
+          "refs": 9,
+          "revised": "2026-09-21",
+          "signals": 8
         },
         {
           "id": "33-3051.04",
@@ -5662,6 +5753,11 @@
           "signal": "Met investigates hundreds of officers after using Palantir AI tool"
         },
         {
+          "source": "33-3021.06",
+          "target": "33-3051.00",
+          "signal": "AI finds irregularities at the Met"
+        },
+        {
           "source": "33-3012.00",
           "target": "33-9032.00",
           "signal": "Notice: Countering Illegal Use of UAS Around Prisons and Sensitive Sites"
@@ -5697,9 +5793,9 @@
           "id": "35-1012.00",
           "title": "First-Line Supervisors of Food Preparation and Serving Workers",
           "group": "food",
-          "refs": 3,
-          "revised": "2026-05-09",
-          "signals": 2
+          "refs": 4,
+          "revised": "2026-09-24",
+          "signals": 3
         },
         {
           "id": "35-2011.00",
@@ -5745,9 +5841,9 @@
           "id": "35-3023.00",
           "title": "Fast Food and Counter Workers",
           "group": "food",
-          "refs": 12,
-          "revised": "2026-08-25",
-          "signals": 11
+          "refs": 13,
+          "revised": "2026-08-29",
+          "signals": 12
         },
         {
           "id": "35-3023.01",
@@ -6324,17 +6420,17 @@
           "id": "47-2111.00",
           "title": "Electricians",
           "group": "construction",
-          "refs": 2,
-          "revised": "2026-04-03",
-          "signals": 1
+          "refs": 3,
+          "revised": "2026-09-22",
+          "signals": 2
         },
         {
           "id": "47-2151.00",
           "title": "Pipelayers",
           "group": "construction",
-          "refs": 2,
-          "revised": "2026-06-27",
-          "signals": 1
+          "refs": 3,
+          "revised": "2026-08-29",
+          "signals": 2
         },
         {
           "id": "47-2152.00",
@@ -6364,17 +6460,17 @@
           "id": "47-4011.00",
           "title": "Construction and Building Inspectors",
           "group": "construction",
-          "refs": 5,
-          "revised": "2026-07-15",
-          "signals": 4
+          "refs": 6,
+          "revised": "2026-08-29",
+          "signals": 5
         },
         {
           "id": "47-4011.01",
           "title": "Energy Auditors",
           "group": "construction",
-          "refs": 2,
-          "revised": "2026-04-26",
-          "signals": 1
+          "refs": 3,
+          "revised": "2026-08-29",
+          "signals": 2
         },
         {
           "id": "47-4061.00",
@@ -6435,6 +6531,11 @@
           "source": "47-1011.03",
           "target": "47-2231.00",
           "signal": "AES Maximo robot installs 100 megawatts of solar capacity"
+        },
+        {
+          "source": "47-4011.00",
+          "target": "47-4011.01",
+          "signal": "HUD rescinds energy rule for new construction, opening market to more FHA, USDA "
         }
       ]
     },
@@ -6743,9 +6844,9 @@
           "id": "51-8093.00",
           "title": "Petroleum Pump System Operators, Refinery Operators, and Gaugers",
           "group": "production",
-          "refs": 3,
-          "revised": "2026-04-07",
-          "signals": 2
+          "refs": 5,
+          "revised": "2026-08-29",
+          "signals": 4
         },
         {
           "id": "51-9011.00",
@@ -6910,12 +7011,20 @@
     "53": {
       "nodes": [
         {
+          "id": "53-1041.00",
+          "title": "Aircraft Cargo Handling Supervisors",
+          "group": "transport",
+          "refs": 2,
+          "revised": "2026-09-04",
+          "signals": 1
+        },
+        {
           "id": "53-1042.01",
           "title": "Recycling Coordinators",
           "group": "transport",
-          "refs": 2,
-          "revised": "2026-05-26",
-          "signals": 1
+          "refs": 3,
+          "revised": "2026-08-27",
+          "signals": 2
         },
         {
           "id": "53-1043.00",
@@ -6953,9 +7062,9 @@
           "id": "53-2021.00",
           "title": "Air Traffic Controllers",
           "group": "transport",
-          "refs": 6,
-          "revised": "2026-08-26",
-          "signals": 5
+          "refs": 7,
+          "revised": "2026-09-21",
+          "signals": 6
         },
         {
           "id": "53-2022.00",
@@ -6977,9 +7086,9 @@
           "id": "53-3032.00",
           "title": "Heavy and Tractor-Trailer Truck Drivers",
           "group": "transport",
-          "refs": 14,
-          "revised": "2026-06-11",
-          "signals": 13
+          "refs": 15,
+          "revised": "2026-08-31",
+          "signals": 14
         },
         {
           "id": "53-3033.00",
@@ -7057,9 +7166,9 @@
           "id": "53-6032.00",
           "title": "Aircraft Service Attendants",
           "group": "transport",
-          "refs": 5,
-          "revised": "2026-08-02",
-          "signals": 4
+          "refs": 8,
+          "revised": "2026-09-21",
+          "signals": 7
         },
         {
           "id": "53-6041.00",
@@ -7089,25 +7198,41 @@
           "id": "53-6051.07",
           "title": "Transportation Vehicle, Equipment and Systems Inspectors, Except Aviation",
           "group": "transport",
-          "refs": 5,
-          "revised": "2026-07-23",
-          "signals": 4
+          "refs": 6,
+          "revised": "2026-09-21",
+          "signals": 5
         },
         {
           "id": "53-7051.00",
           "title": "Industrial Truck and Tractor Operators",
           "group": "transport",
-          "refs": 6,
-          "revised": "2026-07-21",
-          "signals": 5
+          "refs": 7,
+          "revised": "2026-09-01",
+          "signals": 6
+        },
+        {
+          "id": "53-7061.00",
+          "title": "Cleaners of Vehicles and Equipment",
+          "group": "transport",
+          "refs": 3,
+          "revised": "2026-09-21",
+          "signals": 2
         },
         {
           "id": "53-7062.00",
           "title": "Laborers and Freight, Stock, and Material Movers, Hand",
           "group": "transport",
-          "refs": 8,
-          "revised": "2026-08-02",
-          "signals": 7
+          "refs": 9,
+          "revised": "2026-09-21",
+          "signals": 9
+        },
+        {
+          "id": "53-7062.04",
+          "title": "Recycling and Reclamation Workers",
+          "group": "transport",
+          "refs": 2,
+          "revised": "2026-08-27",
+          "signals": 1
         },
         {
           "id": "53-7064.00",
@@ -7122,8 +7247,8 @@
           "title": "Stockers and Order Fillers",
           "group": "transport",
           "refs": 15,
-          "revised": "2026-07-25",
-          "signals": 13
+          "revised": "2026-09-01",
+          "signals": 14
         },
         {
           "id": "53-7071.00",
@@ -7137,9 +7262,9 @@
           "id": "53-7081.00",
           "title": "Refuse and Recyclable Material Collectors",
           "group": "transport",
-          "refs": 3,
-          "revised": "2026-08-04",
-          "signals": 2
+          "refs": 4,
+          "revised": "2026-08-27",
+          "signals": 3
         }
       ],
       "edges": [
@@ -7182,6 +7307,21 @@
           "source": "53-5021.00",
           "target": "53-5031.00",
           "signal": "US Department of Labor amplifies maritime protections for Puerto Rico, US Virgin"
+        },
+        {
+          "source": "53-1041.00",
+          "target": "53-6032.00",
+          "signal": "Future holiday horror: ‘A robot lost my luggage in Tokyo’"
+        },
+        {
+          "source": "53-1041.00",
+          "target": "53-7062.00",
+          "signal": "Future holiday horror: ‘A robot lost my luggage in Tokyo’"
+        },
+        {
+          "source": "53-6032.00",
+          "target": "53-7062.00",
+          "signal": "Future holiday horror: ‘A robot lost my luggage in Tokyo’"
         },
         {
           "source": "53-3053.00",
@@ -7244,6 +7384,16 @@
           "signal": "Houston expands multifamily recycling pilot"
         },
         {
+          "source": "53-1042.01",
+          "target": "53-7062.04",
+          "signal": "Republic Services planning major increase in organics processing"
+        },
+        {
+          "source": "53-7062.04",
+          "target": "53-7081.00",
+          "signal": "Republic Services planning major increase in organics processing"
+        },
+        {
           "source": "53-2031.00",
           "target": "53-6032.00",
           "signal": "Europe has only six weeks’ supply of jet fuel left owing to Iran war, says energ"
@@ -7264,6 +7414,16 @@
           "signal": "Amazon looks to expand its q-commerce service to 10-15 cities"
         },
         {
+          "source": "53-6032.00",
+          "target": "53-7061.00",
+          "signal": "Humanoid robots start sorting luggage in Tokyo airport test amid labor shortage"
+        },
+        {
+          "source": "53-7061.00",
+          "target": "53-7062.00",
+          "signal": "Humanoid robots to handle baggage in trial at Tokyo's Haneda Airport"
+        },
+        {
           "source": "53-3032.00",
           "target": "53-6051.07",
           "signal": "The ‘ingenious strategy’ behind most truckers’ least favorite week of the year: "
@@ -7272,11 +7432,6 @@
           "source": "53-1043.00",
           "target": "53-3032.00",
           "signal": "'Beyond Compliance,' Regulations, Driver Coaching on ATRI’s 2026 Research List"
-        },
-        {
-          "source": "53-6032.00",
-          "target": "53-7062.00",
-          "signal": "Humanoid robots to become baggage handlers in Japan airport experiment"
         },
         {
           "source": "53-3052.00",
@@ -7306,9 +7461,9 @@
           "id": "55-1011.00",
           "title": "Air Crew Officers",
           "group": "military",
-          "refs": 21,
-          "revised": "2026-07-30",
-          "signals": 22
+          "refs": 24,
+          "revised": "2026-09-04",
+          "signals": 23
         },
         {
           "id": "55-1013.00",
@@ -7322,25 +7477,33 @@
           "id": "55-1014.00",
           "title": "Artillery and Missile Officers",
           "group": "military",
-          "refs": 6,
-          "revised": "2026-08-26",
-          "signals": 5
+          "refs": 7,
+          "revised": "2026-08-28",
+          "signals": 6
         },
         {
           "id": "55-1015.00",
           "title": "Command and Control Center Officers",
           "group": "military",
-          "refs": 22,
-          "revised": "2026-08-24",
-          "signals": 21
+          "refs": 24,
+          "revised": "2026-09-04",
+          "signals": 23
         },
         {
           "id": "55-1016.00",
           "title": "Infantry Officers",
           "group": "military",
-          "refs": 3,
-          "revised": "2026-06-24",
-          "signals": 2
+          "refs": 4,
+          "revised": "2026-09-01",
+          "signals": 3
+        },
+        {
+          "id": "55-1017.00",
+          "title": "Special Forces Officers",
+          "group": "military",
+          "refs": 2,
+          "revised": "2026-09-03",
+          "signals": 1
         },
         {
           "id": "55-1019.00",
@@ -7354,9 +7517,9 @@
           "id": "55-3011.00",
           "title": "Air Crew Members",
           "group": "military",
-          "refs": 19,
-          "revised": "2026-08-03",
-          "signals": 25
+          "refs": 27,
+          "revised": "2026-09-04",
+          "signals": 26
         },
         {
           "id": "55-3012.00",
@@ -7370,9 +7533,9 @@
           "id": "55-3013.00",
           "title": "Armored Assault Vehicle Crew Members",
           "group": "military",
-          "refs": 7,
-          "revised": "2026-08-26",
-          "signals": 6
+          "refs": 8,
+          "revised": "2026-09-23",
+          "signals": 7
         },
         {
           "id": "55-3014.00",
@@ -7386,17 +7549,25 @@
           "id": "55-3015.00",
           "title": "Command and Control Center Specialists",
           "group": "military",
-          "refs": 21,
-          "revised": "2026-08-24",
-          "signals": 20
+          "refs": 25,
+          "revised": "2026-09-04",
+          "signals": 24
         },
         {
           "id": "55-3016.00",
           "title": "Infantry",
           "group": "military",
-          "refs": 5,
-          "revised": "2026-08-05",
-          "signals": 4
+          "refs": 7,
+          "revised": "2026-09-23",
+          "signals": 6
+        },
+        {
+          "id": "55-3018.00",
+          "title": "Special Forces",
+          "group": "military",
+          "refs": 3,
+          "revised": "2026-09-23",
+          "signals": 2
         },
         {
           "id": "55-3019.00",
@@ -7494,6 +7665,16 @@
           "signal": "Ukraine’s military robot surge aims to offset drone risks to humans"
         },
         {
+          "source": "55-3013.00",
+          "target": "55-3018.00",
+          "signal": "Coby Adcock’s Scout AI raises $100 million to train its models for war. We visit"
+        },
+        {
+          "source": "55-3016.00",
+          "target": "55-3018.00",
+          "signal": "Coby Adcock’s Scout AI raises $100 million to train its models for war. We visit"
+        },
+        {
           "source": "55-3011.00",
           "target": "55-3014.00",
           "signal": "Trump threatens ‘hell’ for Iran over Hormuz Strait as deadline approaches"
@@ -7512,6 +7693,21 @@
           "source": "55-3011.00",
           "target": "55-3012.00",
           "signal": "The Navy's autonomous carrier-based refueling drone has finally flown"
+        },
+        {
+          "source": "55-1017.00",
+          "target": "55-3015.00",
+          "signal": "SOCOM adding AI, autonomy ‘at every level,’ commander says"
+        },
+        {
+          "source": "55-1017.00",
+          "target": "55-3018.00",
+          "signal": "SOCOM adding AI, autonomy ‘at every level,’ commander says"
+        },
+        {
+          "source": "55-3015.00",
+          "target": "55-3018.00",
+          "signal": "SOCOM adding AI, autonomy ‘at every level,’ commander says"
         }
       ]
     }
@@ -7598,6 +7794,7 @@
     "15-1211.01": "15",
     "15-1212.00": "15",
     "15-1221.00": "15",
+    "15-1231.00": "15",
     "15-1232.00": "15",
     "15-1241.00": "15",
     "15-1241.01": "15",
@@ -7789,6 +7986,7 @@
     "29-1141.00": "29",
     "29-1141.01": "29",
     "29-1141.02": "29",
+    "29-1141.04": "29",
     "29-1161.00": "29",
     "29-1171.00": "29",
     "29-1181.00": "29",
@@ -7951,6 +8149,7 @@
     "51-9195.03": "51",
     "51-9196.00": "51",
     "51-9199.00": "51",
+    "53-1041.00": "53",
     "53-1042.01": "53",
     "53-1043.00": "53",
     "53-1049.00": "53",
@@ -7975,7 +8174,9 @@
     "53-6051.01": "53",
     "53-6051.07": "53",
     "53-7051.00": "53",
+    "53-7061.00": "53",
     "53-7062.00": "53",
+    "53-7062.04": "53",
     "53-7064.00": "53",
     "53-7065.00": "53",
     "53-7071.00": "53",
@@ -7985,6 +8186,7 @@
     "55-1014.00": "55",
     "55-1015.00": "55",
     "55-1016.00": "55",
+    "55-1017.00": "55",
     "55-1019.00": "55",
     "55-3011.00": "55",
     "55-3012.00": "55",
@@ -7992,6 +8194,7 @@
     "55-3014.00": "55",
     "55-3015.00": "55",
     "55-3016.00": "55",
+    "55-3018.00": "55",
     "55-3019.00": "55"
   }
 }
