@@ -1,5 +1,111 @@
 [
   {
+    "id": "a0bf92f87c12",
+    "timestamp": "2026-09-24T05:29:58.043317+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "theists vs atheists on moral certainty versus moral flexibility",
+    "labels": {
+      "X": "theists",
+      "Y": "atheists",
+      "A": "moral certainty",
+      "B": "moral flexibility"
+    },
+    "canonical_keys": {
+      "X": "theists",
+      "Y": "atheists",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 1.0528830247578127,
+    "p_value": 0.00273,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "theist",
+        "believer",
+        "devotee",
+        "congregant",
+        "parishioner",
+        "pastor",
+        "priest",
+        "minister",
+        "vicar",
+        "rabbi",
+        "imam",
+        "clergy",
+        "follower",
+        "worshipper",
+        "monk"
+      ],
+      "Y_used": [
+        "atheist",
+        "agnostic",
+        "skeptic",
+        "humanist",
+        "secularist",
+        "nonbeliever",
+        "freethinker",
+        "unbeliever",
+        "rationalist",
+        "materialist",
+        "atheists",
+        "agnostics",
+        "skeptics",
+        "humanists",
+        "secularists"
+      ],
+      "A_used": [
+        "absolute",
+        "certain",
+        "fixed",
+        "rigid",
+        "clear",
+        "dogmatic",
+        "unwavering",
+        "definite",
+        "firm",
+        "steadfast",
+        "sure",
+        "unambiguous",
+        "strict",
+        "precise",
+        "conclusive"
+      ],
+      "B_used": [
+        "uncertain",
+        "flexible",
+        "open",
+        "pluralistic",
+        "ambiguous",
+        "relative",
+        "debatable",
+        "questioning",
+        "evolving",
+        "tentative",
+        "subjective",
+        "fluid",
+        "exploratory",
+        "provisional",
+        "nuanced"
+      ]
+    },
+    "proposal": "People associate theists with moral certainty more strongly than they associate atheists with moral certainty. This differential implicit association taps into a pervasive cultural narrative that links religious affiliation with fixed ethical frameworks, while framing secular worldviews as morally pluralistic or undecided. Although explicit surveys have long documented these stereotypes, the automatic cognitive linkage between religiosity and ethical rigidity remains unexamined in implicit measurement paradigms. Testing this bias is important because it may subtly shape intergroup trust, influence how moral disagreements are attributed to character versus cognition, and affect the perceived legitimacy of secular voices in public ethical debates. Uncovering whether this association operates automatically would clarify the cognitive roots of religious-secular polarization and inform interventions aimed at fostering more nuanced cross-group moral reasoning.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "548a5a69095b",
     "timestamp": "2026-09-23T23:11:05.816097+00:00",
     "schema_version": "autoresearch.v1",
