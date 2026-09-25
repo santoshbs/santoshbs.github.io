@@ -1,5 +1,111 @@
 [
   {
+    "id": "7c0ae7ae056b",
+    "timestamp": "2026-09-25T21:37:53.038386+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "therapists vs doctors on emotional vulnerability vs detachment",
+    "labels": {
+      "X": "therapists",
+      "Y": "doctors",
+      "A": "Emotional Vulnerability",
+      "B": "Emotional Detachment"
+    },
+    "canonical_keys": {
+      "X": "therapists",
+      "Y": "doctors",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 0.5962022433152953,
+    "p_value": 0.10945,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "therapist",
+        "counselor",
+        "psychologist",
+        "psychiatrist",
+        "psychotherapist",
+        "analyst",
+        "shrink",
+        "psychoanalyst",
+        "coach",
+        "guide",
+        "mentor",
+        "listener",
+        "confidant",
+        "supporter",
+        "healer"
+      ],
+      "Y_used": [
+        "doctor",
+        "physician",
+        "medic",
+        "surgeon",
+        "specialist",
+        "clinician",
+        "practitioner",
+        "intern",
+        "resident",
+        "cardiologist",
+        "neurologist",
+        "pediatrician",
+        "oncologist",
+        "orthopedist",
+        "generalist"
+      ],
+      "A_used": [
+        "vulnerable",
+        "fragile",
+        "sensitive",
+        "emotional",
+        "open",
+        "soft",
+        "weak",
+        "tender",
+        "exposed",
+        "feeling",
+        "intimate",
+        "personal",
+        "deep",
+        "heart",
+        "soul"
+      ],
+      "B_used": [
+        "stoic",
+        "detached",
+        "objective",
+        "rational",
+        "clinical",
+        "firm",
+        "strong",
+        "tough",
+        "logical",
+        "cold",
+        "distant",
+        "unemotional",
+        "scientific",
+        "analytical",
+        "rigid"
+      ]
+    },
+    "proposal": "People associate therapists with emotional vulnerability more strongly than they associate doctors with emotional vulnerability. While both professions involve care and expertise, contemporary discourse increasingly frames mental health professionals as safe spaces for exposing personal fragility, whereas physicians remain culturally anchored in stoic, technical authority. Examining this differential association matters because it reveals how the medical model’s historical emphasis on objective detachment persists for physical health but has been implicitly replaced by a relational, affective model for psychological care. Confirming this split would clarify why patients may feel pressured to ‘open up’ to therapists while maintaining emotional distance with doctors, shaping treatment adherence and cross-disciplinary collaboration.",
+    "iterations": 3,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "f61606d32520",
     "timestamp": "2026-09-25T19:17:00.518395+00:00",
     "schema_version": "autoresearch.v1",
