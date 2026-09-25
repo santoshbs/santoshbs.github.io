@@ -1,5 +1,114 @@
 [
   {
+    "id": "da16893d8047",
+    "timestamp": "2026-09-25T07:54:58.938072+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Refugees vs Locals on Precarity vs Stability",
+    "labels": {
+      "X": "Refugees",
+      "Y": "Locals",
+      "A": "Precarity",
+      "B": "Stability"
+    },
+    "canonical_keys": {
+      "X": "refugees",
+      "Y": "locals",
+      "A": "precarity",
+      "B": "stability"
+    },
+    "effect_size": 0.8911064896800801,
+    "p_value": 0.01367,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "refugee",
+        "migrant",
+        "immigrant",
+        "asylum",
+        "exile",
+        "displaced",
+        "foreigner",
+        "stranger",
+        "nomad",
+        "emigrant",
+        "evacuee",
+        "sojourner",
+        "traveler",
+        "visitor",
+        "newcomer",
+        "outsider",
+        "expatriate",
+        "alien"
+      ],
+      "Y_used": [
+        "local",
+        "resident",
+        "citizen",
+        "native",
+        "inhabitant",
+        "denizen",
+        "settler",
+        "dweller",
+        "townsman",
+        "countryman",
+        "host",
+        "populace",
+        "townsfolk",
+        "indigenous",
+        "domestic"
+      ],
+      "A_used": [
+        "precarious",
+        "unstable",
+        "insecure",
+        "fragile",
+        "temporary",
+        "transient",
+        "homeless",
+        "uncertain",
+        "shifting",
+        "drifting",
+        "nomadic",
+        "fleeing",
+        "vulnerable",
+        "shaky",
+        "ephemeral"
+      ],
+      "B_used": [
+        "stable",
+        "secure",
+        "safe",
+        "established",
+        "rooted",
+        "fixed",
+        "lasting",
+        "enduring",
+        "permanent",
+        "settled",
+        "solid",
+        "reliable",
+        "steadfast",
+        "anchored",
+        "firm"
+      ]
+    },
+    "proposal": "People associate Refugees with Precarity more strongly than they associate Locals with Precarity. While material conditions vary widely across both groups, implicit cognition likely binds the category of displaced persons to a state of existential instability and insecurity, whereas settled residents are mentally coded as the stable, permanent baseline regardless of their actual economic reality. Examining this differential association is novel because it moves beyond explicit policy debates about resources to reveal how the very concept of 'refugee' carries an implicit burden of instability that is not attributed to 'locals,' even when locals face significant vulnerability. This matters because such cognitive biases can shape public empathy and political will, influencing whether displaced populations are viewed as deserving of long-term security or merely temporary relief, while simultaneously obscuring the precarity of the settled majority.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "1bfc07cafe0e",
     "timestamp": "2026-09-25T02:49:27.362973+00:00",
     "schema_version": "autoresearch.v1",
