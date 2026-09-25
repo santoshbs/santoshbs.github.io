@@ -1,5 +1,111 @@
 [
   {
+    "id": "69d10814b424",
+    "timestamp": "2026-09-25T00:26:28.833228+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Stewards vs Gamblers on foresight vs recklessness",
+    "labels": {
+      "X": "Stewards",
+      "Y": "Gamblers",
+      "A": "foresight",
+      "B": "recklessness"
+    },
+    "canonical_keys": {
+      "X": "stewards",
+      "Y": "gamblers",
+      "A": "foresight",
+      "B": "recklessness"
+    },
+    "effect_size": 1.286013022499645,
+    "p_value": 0.00016,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "steward",
+        "guardian",
+        "caretaker",
+        "conservator",
+        "preserver",
+        "protector",
+        "shepherd",
+        "custodian",
+        "warden",
+        "ranger",
+        "overseer",
+        "manager",
+        "director",
+        "supervisor",
+        "administrator"
+      ],
+      "Y_used": [
+        "gambler",
+        "bettor",
+        "punter",
+        "speculator",
+        "adventurer",
+        "wagerer",
+        "bookie",
+        "shark",
+        "hustler",
+        "sharp",
+        "dicer",
+        "roller",
+        "syndicator",
+        "tout",
+        "addict"
+      ],
+      "A_used": [
+        "planning",
+        "careful",
+        "prudent",
+        "thoughtful",
+        "cautious",
+        "deliberate",
+        "strategic",
+        "patient",
+        "wise",
+        "steady",
+        "measured",
+        "conservative",
+        "foresight",
+        "anticipation",
+        "vision"
+      ],
+      "B_used": [
+        "reckless",
+        "impulsive",
+        "hasty",
+        "careless",
+        "rash",
+        "spontaneous",
+        "erratic",
+        "impetuous",
+        "thoughtless",
+        "flighty",
+        "shortsighted",
+        "risky",
+        "foolish",
+        "unplanned",
+        "haphazard"
+      ]
+    },
+    "proposal": "People associate Stewards with foresight more strongly than they associate Gamblers with foresight. Stewardship is conceptually grounded in long-term care, resource preservation, and anticipation of future consequences, whereas gambling is culturally framed around risk-taking, chance, and immediate payoff. This association is novel because implicit bias research has predominantly examined warmth/competence or specific occupational stereotypes, largely neglecting the trait of foresight as a mental categorization axis. The distinction matters for understanding how the public implicitly separates 'responsible' planning from 'speculative' risk, which has implications for attributions of credibility in leadership, policy-making, and environmental discourse.",
+    "iterations": 3,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "7f1906f33c8b",
     "timestamp": "2026-09-24T22:09:54.831040+00:00",
     "schema_version": "autoresearch.v1",
