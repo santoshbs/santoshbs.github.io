@@ -1,5 +1,111 @@
 [
   {
+    "id": "9c5a752fc690",
+    "timestamp": "2026-09-25T12:10:20.106091+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "merchants vs monks on innovation vs tradition",
+    "labels": {
+      "X": "merchants",
+      "Y": "monks",
+      "A": "innovation",
+      "B": "tradition"
+    },
+    "canonical_keys": {
+      "X": "merchants",
+      "Y": "monks",
+      "A": "innovation",
+      "B": "tradition"
+    },
+    "effect_size": 1.315958381821562,
+    "p_value": 4e-05,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "merchant",
+        "trader",
+        "businessman",
+        "capitalist",
+        "vendor",
+        "seller",
+        "shopkeeper",
+        "entrepreneur",
+        "dealer",
+        "retailer",
+        "broker",
+        "salesman",
+        "agent",
+        "peddler",
+        "hawker"
+      ],
+      "Y_used": [
+        "monk",
+        "friar",
+        "abbot",
+        "nun",
+        "priest",
+        "pastor",
+        "minister",
+        "clergy",
+        "preacher",
+        "bishop",
+        "vicar",
+        "deacon",
+        "hermit",
+        "ascetic",
+        "novice"
+      ],
+      "A_used": [
+        "innovation",
+        "progress",
+        "modern",
+        "advanced",
+        "creative",
+        "novel",
+        "future",
+        "invention",
+        "growth",
+        "dynamic",
+        "forward",
+        "evolution",
+        "improvement",
+        "pioneering",
+        "experimental"
+      ],
+      "B_used": [
+        "tradition",
+        "stability",
+        "ancient",
+        "old",
+        "past",
+        "preservation",
+        "conservative",
+        "steady",
+        "routine",
+        "heritage",
+        "custom",
+        "maintenance",
+        "constant",
+        "unchanging",
+        "classic"
+      ]
+    },
+    "proposal": "People implicitly associate merchants with innovation more strongly than they associate monks with innovation. This proposed differential association tests the cultural narrative that frames commercial exchange, trade, and market adaptation as primary engines of novelty and progress, while orienting religious asceticism toward tradition, preservation, or spiritual transcendence rather than material invention. Examining this bias is novel, as implicit attitude research has rarely contrasted spiritual and commercial roles specifically on the dimension of creativity or innovation. Confirming this association would reveal how modern discourse implicitly valorizes market-driven change and adaptability over contemplative stability.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "da16893d8047",
     "timestamp": "2026-09-25T07:54:58.938072+00:00",
     "schema_version": "autoresearch.v1",
