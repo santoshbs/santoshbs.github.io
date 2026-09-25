@@ -1,5 +1,111 @@
 [
   {
+    "id": "f61606d32520",
+    "timestamp": "2026-09-25T19:17:00.518395+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Gardeners vs Gamblers on patience versus impulsivity",
+    "labels": {
+      "X": "Gardeners",
+      "Y": "Gamblers",
+      "A": "Patience",
+      "B": "Impulsivity"
+    },
+    "canonical_keys": {
+      "X": "gardeners",
+      "Y": "gamblers",
+      "A": "patience",
+      "B": "impulsivity"
+    },
+    "effect_size": 1.069948044253118,
+    "p_value": 0.00269,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "gardener",
+        "grower",
+        "horticulturist",
+        "cultivator",
+        "landscaper",
+        "florist",
+        "botanist",
+        "arborist",
+        "planter",
+        "farmer",
+        "pruner",
+        "sower",
+        "greenkeeper",
+        "nurseryman",
+        "seedman"
+      ],
+      "Y_used": [
+        "gambler",
+        "bettor",
+        "punter",
+        "speculator",
+        "player",
+        "dealer",
+        "bookie",
+        "shark",
+        "hustler",
+        "sharper",
+        "wheeler",
+        "adventurer",
+        "risker",
+        "wagerer",
+        "chancer"
+      ],
+      "A_used": [
+        "patient",
+        "slow",
+        "steady",
+        "calm",
+        "deliberate",
+        "gradual",
+        "enduring",
+        "measured",
+        "thoughtful",
+        "prudent",
+        "careful",
+        "restrained",
+        "methodical",
+        "persistent",
+        "tranquil"
+      ],
+      "B_used": [
+        "impatient",
+        "fast",
+        "quick",
+        "rash",
+        "hasty",
+        "impulsive",
+        "immediate",
+        "sudden",
+        "hurried",
+        "reckless",
+        "spontaneous",
+        "frantic",
+        "restless",
+        "impetuous",
+        "swift"
+      ]
+    },
+    "proposal": "People associate Gardeners with Patience more strongly than they associate Gamblers with Patience. This implicit association reflects a cultural intuition that links the act of cultivation to slow, deliberate stewardship and long-term horizons, while associating gambling with immediacy, impulsivity, and the disruption of natural time scales. The proposal is novel because it shifts the focus from the moral judgments often directed at gambling to the underlying temporal schemas embedded in how we categorize different forms of agency and engagement with the world. It matters because these temporal associations may influence how society evaluates sustainable practices versus speculative behaviors, potentially revealing a bias that privileges patience in production while framing chance-taking as inherently restless or short-sighted.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "b1c32ab2c797",
     "timestamp": "2026-09-25T14:41:15.051525+00:00",
     "schema_version": "autoresearch.v1",
