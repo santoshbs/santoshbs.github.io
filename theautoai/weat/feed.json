@@ -1,5 +1,111 @@
 [
   {
+    "id": "39adfce87cda",
+    "timestamp": "2026-09-25T12:56:35.910750+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Sailors vs Soldiers on supernatural belief vs rational planning",
+    "labels": {
+      "X": "Sailors",
+      "Y": "Soldiers",
+      "A": "superstition",
+      "B": "rationality"
+    },
+    "canonical_keys": {
+      "X": "sailors",
+      "Y": "soldiers",
+      "A": "superstition",
+      "B": "rationality"
+    },
+    "effect_size": 0.6705301594107037,
+    "p_value": 0.07106,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "sailor",
+        "seaman",
+        "mariner",
+        "navigator",
+        "helmsman",
+        "bosun",
+        "deckhand",
+        "mate",
+        "captain",
+        "admiral",
+        "pilot",
+        "diver",
+        "whaler",
+        "fisherman",
+        "boatman"
+      ],
+      "Y_used": [
+        "soldier",
+        "trooper",
+        "infantryman",
+        "corporal",
+        "sergeant",
+        "lieutenant",
+        "colonel",
+        "general",
+        "cadet",
+        "recruit",
+        "veteran",
+        "warrior",
+        "fighter",
+        "guard",
+        "ranger"
+      ],
+      "A_used": [
+        "superstition",
+        "omen",
+        "charm",
+        "ritual",
+        "folklore",
+        "mystic",
+        "magic",
+        "witch",
+        "sorcery",
+        "hex",
+        "curse",
+        "talisman",
+        "spell",
+        "divination",
+        "oracle"
+      ],
+      "B_used": [
+        "rational",
+        "logic",
+        "science",
+        "technology",
+        "discipline",
+        "plan",
+        "strategy",
+        "tactic",
+        "calculation",
+        "method",
+        "system",
+        "order",
+        "reason",
+        "knowledge",
+        "engineering"
+      ]
+    },
+    "proposal": "People associate Sailors with Superstition more strongly than they associate Soldiers with Superstition. While both groups face high-stakes danger, the cultural discourse surrounding naval life emphasizes a historical reliance on omens, rituals, and charms to cope with the vast, indifferent unpredictability of the ocean, from ancient folklore to classic literature. In contrast, Soldiers are increasingly represented in contemporary discourse as highly trained professionals whose survival depends on technological mastery, tactical discipline, and logistical planning rather than mystical intervention. Examining this association is important because it reveals how the specific source of existential threat—natural chaos versus human adversaries—shapes the public's implicit expectations about the rationality and coping mechanisms of different high-risk occupational groups.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "9c5a752fc690",
     "timestamp": "2026-09-25T12:10:20.106091+00:00",
     "schema_version": "autoresearch.v1",
