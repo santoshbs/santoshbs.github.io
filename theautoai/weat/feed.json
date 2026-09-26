@@ -1,5 +1,118 @@
 [
   {
+    "id": "a966d67d2866",
+    "timestamp": "2026-09-26T21:41:02.568158+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "musicians vs comedians on Emotional authenticity vs performative irony",
+    "labels": {
+      "X": "musicians",
+      "Y": "comedians",
+      "A": "Sincere/Authentic",
+      "B": "Ironic/Artificial"
+    },
+    "canonical_keys": {
+      "X": "musicians",
+      "Y": "comedians",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 1.7584319721493926,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 18,
+      "B": 18
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "singer",
+        "guitarist",
+        "pianist",
+        "drummer",
+        "violinist",
+        "cellist",
+        "conductor",
+        "composer",
+        "vocalist",
+        "tenor",
+        "soprano",
+        "bassist",
+        "soloist",
+        "organist",
+        "flutist",
+        "trumpeter"
+      ],
+      "Y_used": [
+        "comedian",
+        "clown",
+        "jester",
+        "humorist",
+        "satirist",
+        "buffoon",
+        "fool",
+        "comic",
+        "impersonator",
+        "jokester",
+        "mimic",
+        "ventriloquist",
+        "puppeteer",
+        "mocker",
+        "improviser"
+      ],
+      "A_used": [
+        "sincere",
+        "genuine",
+        "authentic",
+        "honest",
+        "truthful",
+        "earnest",
+        "candid",
+        "frank",
+        "transparent",
+        "real",
+        "pure",
+        "devoted",
+        "faithful",
+        "true",
+        "direct",
+        "straightforward",
+        "guileless",
+        "heartfelt"
+      ],
+      "B_used": [
+        "ironic",
+        "sarcastic",
+        "mocking",
+        "cynical",
+        "detached",
+        "artificial",
+        "fake",
+        "contrived",
+        "theatrical",
+        "playful",
+        "witty",
+        "humorous",
+        "absurd",
+        "ridiculous",
+        "flippant",
+        "frivolous",
+        "insincere",
+        "disingenuous"
+      ]
+    },
+    "proposal": "People associate musicians with sincerity more strongly than they associate comedians with sincerity. This differential implicit association reflects a cultural heuristic where musical performance is often coded as an authentic, vulnerable expression of inner emotional states, whereas comedic performance is frequently coded as a constructed, ironic, or detached manipulation of social norms for entertainment. This comparison is novel because, while prior research has contrasted musicians with actors or doctors, and comedians with philosophers, no study has directly probed the implicit distinction between these two dominant categories of cultural producers on the axis of emotional authenticity. Examining this association matters because it illuminates how audiences implicitly assign different epistemic and moral weights to artistic media, potentially affecting how seriously we receive the social critiques embedded in comedy compared to the emotional narratives in music.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "18de1a0cd163",
     "timestamp": "2026-09-26T19:08:48.122725+00:00",
     "schema_version": "autoresearch.v1",
