@@ -1,5 +1,111 @@
 [
   {
+    "id": "224379832891",
+    "timestamp": "2026-09-26T23:33:06.350368+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "sailors vs pilots on romance vs technical precision",
+    "labels": {
+      "X": "sailors",
+      "Y": "pilots",
+      "A": "romance",
+      "B": "technical_precision"
+    },
+    "canonical_keys": {
+      "X": "sailors",
+      "Y": "pilots",
+      "A": "romance",
+      "B": ""
+    },
+    "effect_size": 1.026524453145303,
+    "p_value": 0.0034,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "sailor",
+        "seafarer",
+        "mariner",
+        "helmsman",
+        "skipper",
+        "deckhand",
+        "bosun",
+        "crewman",
+        "navigator",
+        "captain",
+        "firstmate",
+        "boatswain",
+        "seaman",
+        "yachtsman",
+        "steersman"
+      ],
+      "Y_used": [
+        "pilot",
+        "aviator",
+        "copilot",
+        "airman",
+        "flyer",
+        "flier",
+        "commander",
+        "wingman",
+        "flightcrew",
+        "aircrew",
+        "airmen",
+        "pilots",
+        "aviators",
+        "flyers",
+        "copilots"
+      ],
+      "A_used": [
+        "romance",
+        "love",
+        "passion",
+        "longing",
+        "intimacy",
+        "affection",
+        "desire",
+        "enchantment",
+        "charm",
+        "allure",
+        "flirtation",
+        "courtship",
+        "seduction",
+        "tenderness",
+        "warmth"
+      ],
+      "B_used": [
+        "precision",
+        "accuracy",
+        "technical",
+        "mechanical",
+        "competence",
+        "skill",
+        "expertise",
+        "control",
+        "logic",
+        "rational",
+        "systematic",
+        "methodical",
+        "analytical",
+        "objective",
+        "cool"
+      ]
+    },
+    "proposal": "People associate sailors with romance more strongly than they associate pilots with romance. Sailors have long been romanticized in folklore, literature, and popular culture as figures of longing, passion, and adventurous intimacy, whereas pilots are more frequently culturally framed in terms of technical precision, professional cool, and mechanical competence. This differential association has not been examined in the literature, despite the prominence of both roles in media and discourse. Confirming this would reveal how historical archetypes persist in shaping implicit representations of modern occupations, potentially influencing perceptions of emotional depth or relatability associated with these professions.",
+    "iterations": 3,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "a966d67d2866",
     "timestamp": "2026-09-26T21:41:02.568158+00:00",
     "schema_version": "autoresearch.v1",
