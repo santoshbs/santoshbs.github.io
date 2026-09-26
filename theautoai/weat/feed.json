@@ -1,5 +1,111 @@
 [
   {
+    "id": "18de1a0cd163",
+    "timestamp": "2026-09-26T19:08:48.122725+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "archivists vs historians on impartiality vs interpretation",
+    "labels": {
+      "X": "archivists",
+      "Y": "historians",
+      "A": "impartiality",
+      "B": "interpretation"
+    },
+    "canonical_keys": {
+      "X": "archivists",
+      "Y": "historians",
+      "A": "impartiality",
+      "B": "interpretation"
+    },
+    "effect_size": 1.151520644501189,
+    "p_value": 0.00099,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "archivist",
+        "curator",
+        "librarian",
+        "cataloger",
+        "conservator",
+        "restorer",
+        "preserver",
+        "guardian",
+        "collector",
+        "keeper",
+        "indexer",
+        "clerk",
+        "recorder",
+        "bibliographer",
+        "custodian"
+      ],
+      "Y_used": [
+        "historian",
+        "scholar",
+        "researcher",
+        "writer",
+        "author",
+        "analyst",
+        "chronicler",
+        "biographer",
+        "expert",
+        "academic",
+        "professor",
+        "teacher",
+        "lecturer",
+        "essayist",
+        "commentator"
+      ],
+      "A_used": [
+        "neutral",
+        "objective",
+        "unbiased",
+        "factual",
+        "raw",
+        "pure",
+        "unaltered",
+        "authentic",
+        "exact",
+        "direct",
+        "literal",
+        "dispassionate",
+        "fair",
+        "balanced",
+        "detached"
+      ],
+      "B_used": [
+        "subjective",
+        "biased",
+        "interpretive",
+        "narrative",
+        "opinionated",
+        "analytical",
+        "creative",
+        "constructed",
+        "distorted",
+        "slanted",
+        "partial",
+        "judgmental",
+        "persuasive",
+        "rhetorical",
+        "contextual"
+      ]
+    },
+    "proposal": "People associate archivists with impartiality more strongly than they associate historians with impartiality. This differential association taps into contemporary debates about whether historical evidence is seen as a neutral repository or as inherently interpretive material shaped by narrative choices. While historians are widely represented as active framers of the past, archivists are culturally positioned as passive guardians of raw documentation. Examining this implicit bias is novel because archival labor remains largely invisible in public cognition, yet it shapes how evidence is trusted in legal, political, and academic disputes. Confirming this association would reveal how the public mentally segregates preservation from interpretation, influencing how documentary evidence is weighted against scholarly analysis.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "cff9a8e6a642",
     "timestamp": "2026-09-26T16:15:27.555589+00:00",
     "schema_version": "autoresearch.v1",
