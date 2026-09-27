@@ -1,5 +1,111 @@
 [
   {
+    "id": "bdc944943ff0",
+    "timestamp": "2026-09-27T10:43:51.341633+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "teachers vs doctors on accessibility vs inaccessibility",
+    "labels": {
+      "X": "teachers",
+      "Y": "doctors",
+      "A": "accessibility",
+      "B": "inaccessibility"
+    },
+    "canonical_keys": {
+      "X": "teachers",
+      "Y": "doctors",
+      "A": "accessibility",
+      "B": "inaccessibility"
+    },
+    "effect_size": 0.8571857578478954,
+    "p_value": 0.01783,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "teacher",
+        "instructor",
+        "tutor",
+        "educator",
+        "professor",
+        "lecturer",
+        "pedagogue",
+        "mentor",
+        "adviser",
+        "coach",
+        "trainer",
+        "facilitator",
+        "guide",
+        "supervisor",
+        "director"
+      ],
+      "Y_used": [
+        "doctor",
+        "physician",
+        "surgeon",
+        "medic",
+        "specialist",
+        "clinician",
+        "practitioner",
+        "intern",
+        "resident",
+        "consultant",
+        "cardiologist",
+        "pediatrician",
+        "dermatologist",
+        "orthopedist",
+        "anesthesiologist"
+      ],
+      "A_used": [
+        "accessible",
+        "approachable",
+        "open",
+        "available",
+        "welcoming",
+        "reachable",
+        "convenient",
+        "inclusive",
+        "nearby",
+        "close",
+        "unobstructed",
+        "free",
+        "public",
+        "community",
+        "straightforward"
+      ],
+      "B_used": [
+        "inaccessible",
+        "exclusive",
+        "restricted",
+        "gated",
+        "barred",
+        "remote",
+        "distant",
+        "secluded",
+        "closed",
+        "unreachable",
+        "cumbersome",
+        "bureaucratic",
+        "complicated",
+        "difficult",
+        "formal"
+      ]
+    },
+    "proposal": "People associate teachers with accessibility more strongly than they associate doctors with accessibility. This differential implicit association is novel because prior research has extensively examined status, competence, and warmth, but has not probed the implicit perception of approachability and systemic access for these roles. It is interesting because contemporary public discourse often frames healthcare as a gatekept, bureaucratic system with high barriers to entry, while portraying education as a universally available community resource, yet it remains unknown whether these macro-level narratives are internalized in individual cognition. Confirming this association would reveal that the mental representation of teachers is embedded with a sense of openness and proximity that is systematically absent from the representation of doctors, which could have implications for how the public seeks help and engages with these institutions.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "aab7de4f54d6",
     "timestamp": "2026-09-27T07:23:10.418803+00:00",
     "schema_version": "autoresearch.v1",
