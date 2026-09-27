@@ -1,5 +1,111 @@
 [
   {
+    "id": "7b8ac7fa585d",
+    "timestamp": "2026-09-27T06:43:49.466340+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "parents vs influencers on authenticity vs inauthenticity",
+    "labels": {
+      "X": "parents",
+      "Y": "influencers",
+      "A": "authenticity",
+      "B": "inauthenticity"
+    },
+    "canonical_keys": {
+      "X": "parents",
+      "Y": "influencers",
+      "A": "authenticity",
+      "B": "inauthenticity"
+    },
+    "effect_size": 0.48321354536307964,
+    "p_value": 0.19646,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "mother",
+        "father",
+        "parent",
+        "dad",
+        "mom",
+        "mum",
+        "daddy",
+        "mummy",
+        "grandma",
+        "grandpa",
+        "granddad",
+        "grandmum",
+        "nana",
+        "pappy",
+        "ma"
+      ],
+      "Y_used": [
+        "influencer",
+        "vlogger",
+        "blogger",
+        "model",
+        "celebrity",
+        "streamer",
+        "diva",
+        "idol",
+        "host",
+        "anchor",
+        "reporter",
+        "entertainer",
+        "showman",
+        "presenter",
+        "personality"
+      ],
+      "A_used": [
+        "real",
+        "genuine",
+        "true",
+        "honest",
+        "sincere",
+        "authentic",
+        "natural",
+        "pure",
+        "valid",
+        "legitimate",
+        "factual",
+        "truthful",
+        "candid",
+        "frank",
+        "open"
+      ],
+      "B_used": [
+        "fake",
+        "false",
+        "artificial",
+        "staged",
+        "scripted",
+        "posed",
+        "pretense",
+        "sham",
+        "imitation",
+        "counterfeit",
+        "phony",
+        "bogus",
+        "superficial",
+        "contrived",
+        "insincere"
+      ]
+    },
+    "proposal": "People associate parents with authenticity more strongly than they associate influencers with authenticity. This proposal examines the implicit contrast between kinship-based social roles and digital-performance-based roles in the public imagination. While explicit discourse often critiques parents for various flaws, contemporary cultural narratives heavily emphasize the curated, performative, and commercially motivated nature of influencers, potentially driving a stronger implicit link between influencers and inauthenticity. Confirming this association would reveal how the rise of digital creator economies has shifted mental representations of 'genuine' social actors, positioning kinship roles as a default anchor for authenticity relative to emerging digital professions.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "224379832891",
     "timestamp": "2026-09-26T23:33:06.350368+00:00",
     "schema_version": "autoresearch.v1",
