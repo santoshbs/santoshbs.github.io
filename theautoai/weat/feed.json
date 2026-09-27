@@ -1,5 +1,111 @@
 [
   {
+    "id": "58e4668c8e4a",
+    "timestamp": "2026-09-27T18:26:46.309338+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "engineers vs scientists on moral responsibility vs observational neutrality",
+    "labels": {
+      "X": "engineers",
+      "Y": "scientists",
+      "A": "accountability",
+      "B": "neutrality"
+    },
+    "canonical_keys": {
+      "X": "engineers",
+      "Y": "scientists",
+      "A": "accountability",
+      "B": "neutrality"
+    },
+    "effect_size": 1.5531850804697227,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "engineer",
+        "architect",
+        "builder",
+        "contractor",
+        "mechanic",
+        "technician",
+        "programmer",
+        "designer",
+        "machinist",
+        "planner",
+        "developer",
+        "operator",
+        "fabricator",
+        "surveyor",
+        "electrician"
+      ],
+      "Y_used": [
+        "scientist",
+        "researcher",
+        "chemist",
+        "physicist",
+        "biologist",
+        "astronomer",
+        "geologist",
+        "zoologist",
+        "botanist",
+        "psychologist",
+        "sociologist",
+        "anthropologist",
+        "ecologist",
+        "geneticist",
+        "microbiologist"
+      ],
+      "A_used": [
+        "accountability",
+        "responsibility",
+        "liability",
+        "duty",
+        "obligation",
+        "blame",
+        "guilt",
+        "fault",
+        "answerable",
+        "culpable",
+        "charge",
+        "stewardship",
+        "oversight",
+        "mandate",
+        "directive"
+      ],
+      "B_used": [
+        "neutrality",
+        "knowledge",
+        "observation",
+        "theory",
+        "research",
+        "discovery",
+        "curiosity",
+        "inquiry",
+        "learning",
+        "understanding",
+        "objectivity",
+        "impartiality",
+        "detachment",
+        "abstraction",
+        "concept"
+      ]
+    },
+    "proposal": "People associate engineers with accountability more strongly than they associate scientists with accountability. This differential implicit association posits that the public implicitly links the category of engineers to moral and practical responsibility for real-world outcomes more tightly than the category of scientists, who may be implicitly viewed as neutral knowledge-producers rather than agents of intervention. This axis is novel because implicit cognition research has largely focused on science-versus-religion or expert-versus-layperson contrasts, leaving the intra-STEM distinction between discovery and application unexamined in terms of moral attribution. It is interesting and important because contemporary discourse around artificial intelligence, genetic engineering, and climate geoengineering increasingly frames technological deployment as a site of moral contestation, where the builders and implementers face heightened scrutiny compared to the theorists. Confirming this association would reveal that public mental representations of STEM roles encode a 'scientist-as-observer' versus 'engineer-as-actor' schema that shapes expectations of blame and duty, even in the absence of explicit policy differences.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "f32858e8d75d",
     "timestamp": "2026-09-27T17:56:26.706906+00:00",
     "schema_version": "autoresearch.v1",
