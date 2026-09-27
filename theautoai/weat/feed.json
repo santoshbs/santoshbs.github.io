@@ -1,5 +1,111 @@
 [
   {
+    "id": "063ac9c5dbfa",
+    "timestamp": "2026-09-27T21:39:22.063391+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "defendants vs witnesses on deceit vs truth",
+    "labels": {
+      "X": "defendants",
+      "Y": "witnesses",
+      "A": "deceit",
+      "B": "truth"
+    },
+    "canonical_keys": {
+      "X": "defendants",
+      "Y": "witnesses",
+      "A": "deceit",
+      "B": "truth"
+    },
+    "effect_size": 1.5652527417983382,
+    "p_value": 1e-05,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "defendant",
+        "accused",
+        "suspect",
+        "prisoner",
+        "inmate",
+        "convict",
+        "felon",
+        "offender",
+        "perpetrator",
+        "culprit",
+        "criminal",
+        "detainee",
+        "violator",
+        "wrongdoer",
+        "miscreant"
+      ],
+      "Y_used": [
+        "witness",
+        "observer",
+        "bystander",
+        "spectator",
+        "onlooker",
+        "eyewitness",
+        "informant",
+        "reporter",
+        "testifier",
+        "attester",
+        "viewer",
+        "watcher",
+        "listener",
+        "notary",
+        "deponent"
+      ],
+      "A_used": [
+        "deceit",
+        "lie",
+        "falsehood",
+        "deception",
+        "fraud",
+        "dishonesty",
+        "trick",
+        "scam",
+        "charade",
+        "sham",
+        "pretense",
+        "fabrication",
+        "invention",
+        "distortion",
+        "misrepresentation"
+      ],
+      "B_used": [
+        "truth",
+        "reality",
+        "fact",
+        "sincerity",
+        "candor",
+        "veracity",
+        "integrity",
+        "genuineness",
+        "authenticity",
+        "transparency",
+        "straightforwardness",
+        "honesty",
+        "accuracy",
+        "fidelity",
+        "frankness"
+      ]
+    },
+    "proposal": "People associate defendants with deceit more strongly than they associate witnesses with deceit. This differential implicit association is novel because, while legal scholars study the explicit presumption of innocence, social psychologists have not probed the automatic cognitive link between the role of 'defendant' and the character trait of 'deceit.' Examining this is important because it reveals whether the public's mental representation of the adversarial legal system is already biased toward suspecting the accused of dishonesty before evidence is presented, which could fundamentally undermine the ideal of a fair trial by shaping how testimony is subconsciously weighted.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "58e4668c8e4a",
     "timestamp": "2026-09-27T18:26:46.309338+00:00",
     "schema_version": "autoresearch.v1",
