@@ -1,5 +1,111 @@
 [
   {
+    "id": "f32858e8d75d",
+    "timestamp": "2026-09-27T17:56:26.706906+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "academics vs journalists on epistemic posture",
+    "labels": {
+      "X": "academics",
+      "Y": "journalists",
+      "A": "caution",
+      "B": "certainty"
+    },
+    "canonical_keys": {
+      "X": "academics",
+      "Y": "journalists",
+      "A": "caution",
+      "B": "certainty"
+    },
+    "effect_size": 0.46021802098316894,
+    "p_value": 0.22233,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "professor",
+        "scholar",
+        "researcher",
+        "academic",
+        "scientist",
+        "lecturer",
+        "fellow",
+        "dean",
+        "tutor",
+        "intellectual",
+        "theorist",
+        "educator",
+        "academician",
+        "faculty",
+        "teacher"
+      ],
+      "Y_used": [
+        "reporter",
+        "journalist",
+        "correspondent",
+        "broadcaster",
+        "anchor",
+        "columnist",
+        "commentator",
+        "writer",
+        "publisher",
+        "editor",
+        "newsreader",
+        "newscaster",
+        "interviewer",
+        "presenter",
+        "producer"
+      ],
+      "A_used": [
+        "cautious",
+        "tentative",
+        "uncertain",
+        "qualified",
+        "hesitant",
+        "careful",
+        "circumspect",
+        "measured",
+        "nuanced",
+        "skeptical",
+        "doubtful",
+        "provisional",
+        "conditional",
+        "reserved",
+        "guarded"
+      ],
+      "B_used": [
+        "confident",
+        "certain",
+        "decisive",
+        "assertive",
+        "sure",
+        "definite",
+        "absolute",
+        "clear",
+        "firm",
+        "bold",
+        "direct",
+        "unwavering",
+        "resolute",
+        "positive",
+        "assured"
+      ]
+    },
+    "proposal": "People associate academics with epistemic caution more strongly than they associate journalists with epistemic caution. This differential implicit association highlights how the public automatically partitions knowledge production from knowledge dissemination, stereotyping scholars as methodologically hesitant and comfortable with uncertainty while framing reporters as decisive and narrative-driven. It is novel because prior research has measured explicit trust or credibility ratings rather than automatic links to epistemic posture. Confirming this bias matters for understanding public resistance to scientific nuance and for designing media literacy programs that explicitly address how institutional roles shape intuitive expectations about intellectual humility.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "11a333f398df",
     "timestamp": "2026-09-27T15:46:49.038329+00:00",
     "schema_version": "autoresearch.v1",
