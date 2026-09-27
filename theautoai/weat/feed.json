@@ -1,5 +1,111 @@
 [
   {
+    "id": "11a333f398df",
+    "timestamp": "2026-09-27T15:46:49.038329+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "diplomats vs merchants on pace of action",
+    "labels": {
+      "X": "diplomats",
+      "Y": "merchants",
+      "A": "slow/deliberate",
+      "B": "fast/quick"
+    },
+    "canonical_keys": {
+      "X": "diplomats",
+      "Y": "merchants",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 0.7180754808959182,
+    "p_value": 0.05051,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "ambassador",
+        "envoy",
+        "diplomat",
+        "minister",
+        "consul",
+        "delegate",
+        "representative",
+        "statesman",
+        "emissary",
+        "negotiator",
+        "attache",
+        "diplomatist",
+        "plenipotentiary",
+        "mediator",
+        "official"
+      ],
+      "Y_used": [
+        "merchant",
+        "trader",
+        "dealer",
+        "vendor",
+        "retailer",
+        "salesman",
+        "shopkeeper",
+        "peddler",
+        "broker",
+        "hawker",
+        "entrepreneur",
+        "businessman",
+        "agent",
+        "monger",
+        "seller"
+      ],
+      "A_used": [
+        "slow",
+        "patient",
+        "deliberate",
+        "gradual",
+        "steady",
+        "measured",
+        "cautious",
+        "methodical",
+        "painstaking",
+        "unhurried",
+        "thoughtful",
+        "careful",
+        "sluggish",
+        "languid",
+        "ponderous"
+      ],
+      "B_used": [
+        "fast",
+        "quick",
+        "rapid",
+        "swift",
+        "speedy",
+        "instant",
+        "hasty",
+        "hurried",
+        "immediate",
+        "brisk",
+        "agile",
+        "snappy",
+        "expeditious",
+        "prompt",
+        "nimble"
+      ]
+    },
+    "proposal": "People associate diplomats with strategic patience more strongly than they associate merchants with strategic patience. While both roles involve negotiation and deal-making, public discourse and historical narratives frame diplomats as actors who prioritize long-term stability, carefully timed statecraft, and deliberate deliberation over immediate outcomes. In contrast, merchants are culturally coded as agents of market velocity, quick capitalization, and transactional efficiency. This differential implicit association remains unprobed in social psychology, which has largely focused on valence or generic competence-warmth dimensions for professional roles. Examining it matters because it reveals how institutional mandates shape lay mental representations of decision-making tempo, with implications for how the public perceives the legitimacy of slow versus fast governance and economic action.",
+    "iterations": 3,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "bdc944943ff0",
     "timestamp": "2026-09-27T10:43:51.341633+00:00",
     "schema_version": "autoresearch.v1",
