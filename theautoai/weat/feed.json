@@ -1,5 +1,111 @@
 [
   {
+    "id": "69ce9e1f6833",
+    "timestamp": "2026-09-27T22:25:15.284151+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "mathematicians vs physicists on abstractness vs concreteness",
+    "labels": {
+      "X": "mathematicians",
+      "Y": "physicists",
+      "A": "Abstractness",
+      "B": "Concreteness"
+    },
+    "canonical_keys": {
+      "X": "mathematicians",
+      "Y": "physicists",
+      "A": "abstractness",
+      "B": "concreteness"
+    },
+    "effect_size": 0.21567954827183458,
+    "p_value": 0.56891,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "mathematician",
+        "arithmetician",
+        "algebraist",
+        "statistician",
+        "actuary",
+        "demographer",
+        "cryptographer",
+        "geometer",
+        "logician",
+        "analyst",
+        "accountant",
+        "auditor",
+        "thinker",
+        "theorist",
+        "solver"
+      ],
+      "Y_used": [
+        "physicist",
+        "astronomer",
+        "experimentalist",
+        "researcher",
+        "scientist",
+        "chemist",
+        "biologist",
+        "engineer",
+        "geologist",
+        "zoologist",
+        "botanist",
+        "ecologist",
+        "meteorologist",
+        "oceanographer",
+        "cosmologist"
+      ],
+      "A_used": [
+        "abstract",
+        "ideal",
+        "conceptual",
+        "imaginary",
+        "virtual",
+        "intangible",
+        "ethereal",
+        "metaphysical",
+        "philosophical",
+        "speculative",
+        "hypothetical",
+        "intellectual",
+        "cognitive",
+        "mental",
+        "spiritual"
+      ],
+      "B_used": [
+        "concrete",
+        "material",
+        "physical",
+        "empirical",
+        "tangible",
+        "real",
+        "practical",
+        "earthly",
+        "corporeal",
+        "solid",
+        "liquid",
+        "gas",
+        "matter",
+        "object",
+        "thing"
+      ]
+    },
+    "proposal": "People associate mathematicians with abstractness more strongly than they associate physicists with abstractness. This differential implicit association taps into the cultural distinction between pure mathematics and empirical science, where mathematicians are stereotyped as inhabiting a realm of ideal forms detached from physical reality, while physicists are viewed as investigators of the material world. Examining this is novel because implicit bias research rarely probes sub-specialty distinctions within STEM, focusing instead on broader occupational categories. Confirming this association would reveal how deeply the pure/applied hierarchy is ingrained in public cognition, potentially influencing perceptions of the societal relevance and practical utility of mathematical work versus physical science.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "063ac9c5dbfa",
     "timestamp": "2026-09-27T21:39:22.063391+00:00",
     "schema_version": "autoresearch.v1",
