@@ -1,5 +1,111 @@
 [
   {
+    "id": "3b0fe9939f6a",
+    "timestamp": "2026-09-28T02:02:26.869336+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "humanitarians vs bureaucrats on Pragmatic flexibility versus rigid rule-following",
+    "labels": {
+      "X": "humanitarians",
+      "Y": "bureaucrats",
+      "A": "Flexibility",
+      "B": "Rigidity"
+    },
+    "canonical_keys": {
+      "X": "humanitarians",
+      "Y": "bureaucrats",
+      "A": "flexibility",
+      "B": "rigidity"
+    },
+    "effect_size": 0.9301589708059781,
+    "p_value": 0.01082,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "humanitarian",
+        "volunteer",
+        "rescuer",
+        "medic",
+        "doctor",
+        "nurse",
+        "physician",
+        "caregiver",
+        "counselor",
+        "advocate",
+        "donor",
+        "peacekeeper",
+        "activist",
+        "savior",
+        "helper"
+      ],
+      "Y_used": [
+        "bureaucrat",
+        "administrator",
+        "clerk",
+        "official",
+        "manager",
+        "supervisor",
+        "regulator",
+        "functionary",
+        "agent",
+        "executive",
+        "director",
+        "officer",
+        "secretary",
+        "controller",
+        "auditor"
+      ],
+      "A_used": [
+        "flexible",
+        "adaptable",
+        "pragmatic",
+        "adaptive",
+        "versatile",
+        "nimble",
+        "agile",
+        "resourceful",
+        "spontaneous",
+        "unconventional",
+        "fluid",
+        "unstructured",
+        "improvised",
+        "responsive",
+        "dynamic"
+      ],
+      "B_used": [
+        "rigid",
+        "strict",
+        "formal",
+        "bureaucratic",
+        "conventional",
+        "inflexible",
+        "stern",
+        "disciplined",
+        "ordered",
+        "regulated",
+        "controlled",
+        "fixed",
+        "stubborn",
+        "dogmatic",
+        "unyielding"
+      ]
+    },
+    "proposal": "people associate humanitarians with pragmatic flexibility more strongly than they associate bureaucrats with pragmatic flexibility. This differential implicit association has not been directly tested in comparative social cognition research, despite abundant explicit studies of institutional trust and crisis response. Examining it is interesting because contemporary media and policy discourse consistently frames frontline humanitarian actors as adaptive improvisers while casting administrative bodies as rigid rule-followers. It matters because confirming this implicit bias would reveal a foundational mental divide between how the public conceptualizes emergency aid versus institutional governance, potentially shaping public tolerance for procedural deviations during disasters and influencing the allocation of legitimacy and funding between NGOs and state agencies.",
+    "iterations": 3,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "69ce9e1f6833",
     "timestamp": "2026-09-27T22:25:15.284151+00:00",
     "schema_version": "autoresearch.v1",
