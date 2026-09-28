@@ -1,5 +1,111 @@
 [
   {
+    "id": "225a701f1103",
+    "timestamp": "2026-09-28T03:29:49.980153+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "listeners vs talkers on Interpersonal orientation (care vs self-advancement)",
+    "labels": {
+      "X": "listeners",
+      "Y": "talkers",
+      "A": "Empathy",
+      "B": "Self-interest"
+    },
+    "canonical_keys": {
+      "X": "listeners",
+      "Y": "talkers",
+      "A": "empathy",
+      "B": ""
+    },
+    "effect_size": 0.8309019908633175,
+    "p_value": 0.02283,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "listener",
+        "hearer",
+        "observer",
+        "witness",
+        "spectator",
+        "onlooker",
+        "bystander",
+        "client",
+        "patient",
+        "pupil",
+        "student",
+        "reader",
+        "fan",
+        "admirer",
+        "follower"
+      ],
+      "Y_used": [
+        "talker",
+        "speaker",
+        "orator",
+        "presenter",
+        "broadcaster",
+        "narrator",
+        "commentator",
+        "lecturer",
+        "preacher",
+        "teacher",
+        "host",
+        "reporter",
+        "debater",
+        "announcer",
+        "pundit"
+      ],
+      "A_used": [
+        "empathy",
+        "compassion",
+        "understanding",
+        "sensitivity",
+        "caring",
+        "kindness",
+        "warmth",
+        "consideration",
+        "sympathy",
+        "benevolence",
+        "mercy",
+        "affection",
+        "love",
+        "support",
+        "encouragement"
+      ],
+      "B_used": [
+        "selfish",
+        "egotistical",
+        "arrogant",
+        "prideful",
+        "boastful",
+        "vain",
+        "narcissistic",
+        "greedy",
+        "ambitious",
+        "aggressive",
+        "domineering",
+        "conceited",
+        "haughty",
+        "pompous",
+        "egoistic"
+      ]
+    },
+    "proposal": "People associate listeners with empathy more strongly than they associate talkers with empathy. This differential association reflects the cultural valorization of receptive, attentive behavior as a marker of emotional intelligence and interpersonal care, contrasting talkers who are often implicitly framed as assertive, expressive, or self-promoting. While social psychology has extensively examined extroversion and communication styles, the specific implicit link between the receptive role of listening and the prosocial trait of empathy has not been directly probed against its communicative counterpart. Examining this association is important because it underpins training paradigms in therapy, leadership, and conflict resolution that assume listening is inherently more empathetic, yet it remains unclear whether this association is a deeply held implicit bias or a situational attribution. Confirming or disconfirming this link would reveal how the public mentally partitions the moral valence of communication roles.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "3b0fe9939f6a",
     "timestamp": "2026-09-28T02:02:26.869336+00:00",
     "schema_version": "autoresearch.v1",
