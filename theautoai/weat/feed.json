@@ -1,5 +1,111 @@
 [
   {
+    "id": "e929597d3729",
+    "timestamp": "2026-09-28T23:13:51.195583+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Scribes vs Chefs on Intellect vs Sensory/Physical Craft",
+    "labels": {
+      "X": "Scribes",
+      "Y": "Chefs",
+      "A": "Intellect",
+      "B": "Sensory/Physical"
+    },
+    "canonical_keys": {
+      "X": "scribes",
+      "Y": "chefs",
+      "A": "intellect",
+      "B": ""
+    },
+    "effect_size": 1.6350595314766943,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "writer",
+        "author",
+        "scholar",
+        "typist",
+        "clerk",
+        "secretary",
+        "editor",
+        "journalist",
+        "librarian",
+        "academic",
+        "professor",
+        "researcher",
+        "historian",
+        "poet",
+        "novelist"
+      ],
+      "Y_used": [
+        "cook",
+        "chef",
+        "baker",
+        "caterer",
+        "restaurateur",
+        "grillmaster",
+        "pastry",
+        "sauce",
+        "roaster",
+        "frycook",
+        "pitmaster",
+        "souschef",
+        "prep",
+        "kitchen",
+        "foodservice"
+      ],
+      "A_used": [
+        "intellect",
+        "reason",
+        "logic",
+        "mind",
+        "brain",
+        "thought",
+        "wisdom",
+        "knowledge",
+        "science",
+        "study",
+        "research",
+        "analyze",
+        "calculate",
+        "think",
+        "smart"
+      ],
+      "B_used": [
+        "sensory",
+        "physical",
+        "body",
+        "hand",
+        "touch",
+        "taste",
+        "smell",
+        "flavor",
+        "sight",
+        "sound",
+        "manual",
+        "craft",
+        "labor",
+        "muscle",
+        "strength"
+      ]
+    },
+    "proposal": "People associate Scribes with intellect more strongly than they associate Chefs with intellect. This proposal targets a latent hierarchy in how we mentally categorize cognitive labor versus sensory craft. While contemporary discourse often elevates culinary arts through framings like 'chef-as-scientist,' the implicit association may still privilege text-based producers (Scribes) over food-based producers (Chefs) on axes of abstract reasoning and mental rigor. This distinction is novel because prior research has largely examined STEM versus Arts or specific professions like Doctors versus Teachers, leaving the Scribes-versus-Chefs comparison unprobed despite its relevance to how society values different forms of expertise. Confirming this association would highlight persistent biases in attributing high-level cognition to intellectual artifacts over material creation, even when both domains require sophisticated knowledge.",
+    "iterations": 3,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "9385f1c8cc8c",
     "timestamp": "2026-09-28T22:15:20.523652+00:00",
     "schema_version": "autoresearch.v1",
