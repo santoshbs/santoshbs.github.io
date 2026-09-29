@@ -149,9 +149,9 @@
         "id": "47",
         "title": "Construction & Extraction",
         "group": "construction",
-        "refs": 49,
-        "signals": 31,
-        "occupations": 18
+        "refs": 52,
+        "signals": 33,
+        "occupations": 19
       },
       {
         "id": "49",
@@ -6469,9 +6469,9 @@
           "id": "47-2111.00",
           "title": "Electricians",
           "group": "construction",
-          "refs": 3,
-          "revised": "2026-09-22",
-          "signals": 2
+          "refs": 4,
+          "revised": "2026-09-29",
+          "signals": 3
         },
         {
           "id": "47-2151.00",
@@ -6504,6 +6504,14 @@
           "refs": 3,
           "revised": "2026-05-20",
           "signals": 2
+        },
+        {
+          "id": "47-3013.00",
+          "title": "Helpers--Electricians",
+          "group": "construction",
+          "refs": 2,
+          "revised": "2026-09-29",
+          "signals": 1
         },
         {
           "id": "47-4011.00",
@@ -6571,6 +6579,11 @@
         }
       ],
       "edges": [
+        {
+          "source": "47-2111.00",
+          "target": "47-3013.00",
+          "signal": "Data center boom strains Texas homebuilders' need for electricians"
+        },
         {
           "source": "47-5011.00",
           "target": "47-5012.00",
@@ -8157,6 +8170,7 @@
     "47-2152.00": "47",
     "47-2181.00": "47",
     "47-2231.00": "47",
+    "47-3013.00": "47",
     "47-4011.00": "47",
     "47-4011.01": "47",
     "47-4061.00": "47",
