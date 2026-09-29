@@ -1,5 +1,111 @@
 [
   {
+    "id": "f1f6b4e75ab3",
+    "timestamp": "2026-09-29T09:20:51.613408+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "diplomats vs detectives on Strategic Opacity vs Clarity",
+    "labels": {
+      "X": "diplomats",
+      "Y": "detectives",
+      "A": "Ambiguity and Opacity",
+      "B": "Clarity and Truth"
+    },
+    "canonical_keys": {
+      "X": "diplomats",
+      "Y": "detectives",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": -0.2541784311823915,
+    "p_value": 0.50273,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "diplomat",
+        "ambassador",
+        "envoy",
+        "emissary",
+        "minister",
+        "delegate",
+        "consul",
+        "representative",
+        "attache",
+        "negotiator",
+        "statesman",
+        "politician",
+        "official",
+        "chancellor",
+        "secretary"
+      ],
+      "Y_used": [
+        "detective",
+        "investigator",
+        "inspector",
+        "sleuth",
+        "agent",
+        "officer",
+        "sheriff",
+        "bailiff",
+        "constable",
+        "marshal",
+        "policeman",
+        "deputy",
+        "sergeant",
+        "lieutenant",
+        "captain"
+      ],
+      "A_used": [
+        "ambiguity",
+        "opacity",
+        "tact",
+        "nuance",
+        "subtlety",
+        "evasion",
+        "obscurity",
+        "secrecy",
+        "silence",
+        "discretion",
+        "vagueness",
+        "equivocation",
+        "mystery",
+        "cunning",
+        "indirect"
+      ],
+      "B_used": [
+        "clarity",
+        "truth",
+        "transparency",
+        "resolution",
+        "fact",
+        "evidence",
+        "justice",
+        "certainty",
+        "exactness",
+        "precision",
+        "honesty",
+        "revelation",
+        "disclosure",
+        "plainness",
+        "direct"
+      ]
+    },
+    "proposal": "People associate diplomats with strategic ambiguity more strongly than they associate detectives with strategic ambiguity. This differential reflects how public discourse frames diplomatic work around face-saving, nuanced phrasing, and calculated non-commitment, while detective work is culturally coded as a pursuit of clarity, definitive resolution, and unambiguous truth. Although both professions operate in high-stakes information environments, existing research has not examined how institutional roles implicitly prime divergent attitudes toward transparency versus tact. Confirming this association would reveal how professional socialization and media representation embed distinct cognitive schemas about the strategic utility of opacity in communication.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "a394ae5c5d7e",
     "timestamp": "2026-09-29T08:33:14.638471+00:00",
     "schema_version": "autoresearch.v1",
