@@ -1,5 +1,111 @@
 [
   {
+    "id": "edbfe6217893",
+    "timestamp": "2026-09-29T21:04:01.646788+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "musicians vs athletes on spiritual vs physical",
+    "labels": {
+      "X": "musicians",
+      "Y": "athletes",
+      "A": "spirituality",
+      "B": "physicality"
+    },
+    "canonical_keys": {
+      "X": "musicians",
+      "Y": "athletes",
+      "A": "spirituality",
+      "B": "physicality"
+    },
+    "effect_size": 1.628702228017354,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "guitarist",
+        "pianist",
+        "violinist",
+        "drummer",
+        "singer",
+        "composer",
+        "conductor",
+        "flutist",
+        "cellist",
+        "trumpeter",
+        "harpist",
+        "organist",
+        "soloist",
+        "tenor",
+        "soprano"
+      ],
+      "Y_used": [
+        "athlete",
+        "runner",
+        "swimmer",
+        "boxer",
+        "wrestler",
+        "gymnast",
+        "skater",
+        "diver",
+        "sprinter",
+        "thrower",
+        "cyclist",
+        "jogger",
+        "hiker",
+        "climber",
+        "skier"
+      ],
+      "A_used": [
+        "spirit",
+        "soul",
+        "divine",
+        "holy",
+        "sacred",
+        "god",
+        "faith",
+        "religion",
+        "angel",
+        "saint",
+        "prayer",
+        "karma",
+        "heaven",
+        "eternal",
+        "essence"
+      ],
+      "B_used": [
+        "body",
+        "muscle",
+        "physical",
+        "strength",
+        "anatomy",
+        "skeleton",
+        "bone",
+        "tissue",
+        "limb",
+        "skin",
+        "blood",
+        "vein",
+        "nerve",
+        "organ",
+        "flesh"
+      ]
+    },
+    "proposal": "People associate musicians with spirituality more strongly than they associate athletes with spirituality. Although both groups are celebrated for discipline and mastery, cultural narratives frequently frame musical performance as a transcendent, soulful, or divine expression—particularly in contexts like gospel, classical, and folk traditions—whereas athletic achievement is predominantly construed through secular metrics of physical prowess, strategy, and competition. This differential association is novel because implicit bias research has primarily examined contrasts between artistic and scientific domains or between religious and secular institutions, largely neglecting comparisons between these two major prestige categories. Investigating this axis is important because implicit spiritual attribution can shape how society confers moral authority, allocates cultural legitimacy, and evaluates the deeper human value of different forms of excellence.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "41c39f30a3cb",
     "timestamp": "2026-09-29T18:37:35.632814+00:00",
     "schema_version": "autoresearch.v1",
