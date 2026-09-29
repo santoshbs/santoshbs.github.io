@@ -1,5 +1,111 @@
 [
   {
+    "id": "18d9c094f582",
+    "timestamp": "2026-09-29T01:51:56.486602+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "lovers vs friends on possessiveness versus autonomy",
+    "labels": {
+      "X": "lovers",
+      "Y": "friends",
+      "A": "possessiveness",
+      "B": "autonomy"
+    },
+    "canonical_keys": {
+      "X": "lovers",
+      "Y": "friends",
+      "A": "possessiveness",
+      "B": "autonomy"
+    },
+    "effect_size": 0.6815553909175578,
+    "p_value": 0.06645,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "lovers",
+        "couples",
+        "partners",
+        "spouses",
+        "husbands",
+        "wives",
+        "boyfriends",
+        "girlfriends",
+        "sweethearts",
+        "romances",
+        "daters",
+        "paramours",
+        "betrothed",
+        "consorts",
+        "intimates"
+      ],
+      "Y_used": [
+        "friends",
+        "pals",
+        "buddies",
+        "companions",
+        "chums",
+        "peers",
+        "acquaintances",
+        "comrades",
+        "confidants",
+        "associates",
+        "neighbors",
+        "colleagues",
+        "playmates",
+        "roommates",
+        "schoolmates"
+      ],
+      "A_used": [
+        "possessive",
+        "controlling",
+        "jealous",
+        "exclusive",
+        "territorial",
+        "clingy",
+        "demanding",
+        "restrictive",
+        "guarding",
+        "claiming",
+        "owning",
+        "binding",
+        "confining",
+        "obsessive",
+        "domineering"
+      ],
+      "B_used": [
+        "independent",
+        "free",
+        "open",
+        "shared",
+        "trusting",
+        "equal",
+        "casual",
+        "relaxed",
+        "separate",
+        "unattached",
+        "voluntary",
+        "respectful",
+        "considerate",
+        "supportive",
+        "flexible"
+      ]
+    },
+    "proposal": "People associate lovers with possessiveness more strongly than they associate friends with possessiveness. This association is novel because while social psychology extensively maps explicit attitudes toward jealousy and commitment in romantic versus platonic dyads, implicit linkages between the social categories of lovers and friends and the trait of possessiveness have not been systematically measured. The proposal is interesting because it probes the tension between cultural ideals of romantic exclusivity, which often valorize 'claiming' or protecting a partner, and the normative expectation of autonomy in friendship. Confirming this association would highlight how deeply possessive scripts are embedded in the mental representation of romantic actors, potentially influencing how behaviors are interpreted across relationship types.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "1905487bedb6",
     "timestamp": "2026-09-29T01:03:22.615200+00:00",
     "schema_version": "autoresearch.v1",
