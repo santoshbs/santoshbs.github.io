@@ -1,5 +1,111 @@
 [
   {
+    "id": "f074501b689f",
+    "timestamp": "2026-09-29T07:53:06.833610+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "immigrants vs refugees on agency vs passivity",
+    "labels": {
+      "X": "immigrants",
+      "Y": "refugees",
+      "A": "agency",
+      "B": "passivity"
+    },
+    "canonical_keys": {
+      "X": "immigrants",
+      "Y": "refugees",
+      "A": "agency",
+      "B": "passivity"
+    },
+    "effect_size": 0.9517423312018041,
+    "p_value": 0.00622,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "immigrant",
+        "migrants",
+        "expats",
+        "newcomers",
+        "foreigners",
+        "aliens",
+        "settlers",
+        "transplants",
+        "sojourners",
+        "pioneers",
+        "colonists",
+        "outsiders",
+        "visitors",
+        "travelers",
+        "wanderers"
+      ],
+      "Y_used": [
+        "refugee",
+        "refugees",
+        "exiles",
+        "displaced",
+        "fugitives",
+        "evacuees",
+        "internees",
+        "prisoners",
+        "hostages",
+        "survivors",
+        "castaways",
+        "drifters",
+        "nomads",
+        "squatters",
+        "homeless"
+      ],
+      "A_used": [
+        "active",
+        "choice",
+        "control",
+        "autonomy",
+        "power",
+        "authority",
+        "command",
+        "direction",
+        "initiative",
+        "independence",
+        "leadership",
+        "determination",
+        "purpose",
+        "volition",
+        "will"
+      ],
+      "B_used": [
+        "passive",
+        "victim",
+        "helpless",
+        "powerless",
+        "dependent",
+        "vulnerable",
+        "forced",
+        "coerced",
+        "involuntary",
+        "accidental",
+        "fate",
+        "chance",
+        "luck",
+        "random",
+        "blind"
+      ]
+    },
+    "proposal": "people associate immigrants with agency more strongly than they associate refugees with agency. The distinction between immigrants and refugees is central to contemporary political discourse, yet the implicit cognitive mapping of these categories remains underexplored. While explicit narratives often distinguish them by legal status, I propose that people hold a differential implicit association where immigrants are mentally linked to agency (active choice, control, autonomy) more strongly than refugees, who are associated with victimhood or passivity. This association is novel because it probes a subtle but consequential bias that may underpin public reactions to migration policy, framing immigrants as active agents and refugees as passive recipients of fate. Confirming this would reveal a foundational implicit structure in how migration is conceptualized, mattering significantly for media representation and policy debates regarding deservingness and responsibility.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "a0ac9e43f8ce",
     "timestamp": "2026-09-29T07:11:31.698259+00:00",
     "schema_version": "autoresearch.v1",
