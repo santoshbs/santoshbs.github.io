@@ -1,5 +1,111 @@
 [
   {
+    "id": "0b5b0e4c861f",
+    "timestamp": "2026-09-29T14:22:24.677713+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "artists vs artisans on transcendence versus pragmatism",
+    "labels": {
+      "X": "artists",
+      "Y": "artisans",
+      "A": "transcendent",
+      "B": "pragmatic"
+    },
+    "canonical_keys": {
+      "X": "artists",
+      "Y": "artisans",
+      "A": "transcendent",
+      "B": "pragmatic"
+    },
+    "effect_size": 1.3460218302521314,
+    "p_value": 5e-05,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "painter",
+        "sculptor",
+        "musician",
+        "poet",
+        "novelist",
+        "composer",
+        "choreographer",
+        "filmmaker",
+        "illustrator",
+        "photographer",
+        "dramatist",
+        "performer",
+        "artist",
+        "animator",
+        "lyricist"
+      ],
+      "Y_used": [
+        "carpenter",
+        "potter",
+        "weaver",
+        "tailor",
+        "mason",
+        "smith",
+        "joiner",
+        "cobbler",
+        "carver",
+        "tiler",
+        "glazier",
+        "upholsterer",
+        "crafter",
+        "maker",
+        "artisan"
+      ],
+      "A_used": [
+        "divine",
+        "spiritual",
+        "sacred",
+        "mystical",
+        "ethereal",
+        "celestial",
+        "heavenly",
+        "sublime",
+        "infinite",
+        "eternal",
+        "transcendent",
+        "inspired",
+        "visionary",
+        "imaginative",
+        "profound"
+      ],
+      "B_used": [
+        "practical",
+        "functional",
+        "technical",
+        "utilitarian",
+        "pragmatic",
+        "manual",
+        "tactile",
+        "structural",
+        "material",
+        "concrete",
+        "grounded",
+        "precise",
+        "methodical",
+        "systematic",
+        "applied"
+      ]
+    },
+    "proposal": "People associate artists with transcendence more strongly than they associate artisans with transcendence. This differential association probes the romantic cultural hierarchy that elevates fine art to a spiritual or ineffable realm of inspiration, distinct from the grounded technical mastery attributed to craft. While literature has extensively examined white-collar versus blue-collar biases, the implicit distinction between aesthetic creators and functional makers within the broader class of cultural producers remains underexplored. Confirming this bias would reveal how societal valuation of labor relies on attributing otherworldly qualities to artists to maintain their status, while implicitly constraining artisans to a domain of pragmatic utility.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "f1f6b4e75ab3",
     "timestamp": "2026-09-29T09:20:51.613408+00:00",
     "schema_version": "autoresearch.v1",
