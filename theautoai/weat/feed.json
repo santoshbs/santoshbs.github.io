@@ -1,5 +1,111 @@
 [
   {
+    "id": "a394ae5c5d7e",
+    "timestamp": "2026-09-29T08:33:14.638471+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "sponsors vs beneficiaries on Agency versus Passivity",
+    "labels": {
+      "X": "sponsors",
+      "Y": "beneficiaries",
+      "A": "Agency",
+      "B": "Passivity"
+    },
+    "canonical_keys": {
+      "X": "sponsors",
+      "Y": "beneficiaries",
+      "A": "agency",
+      "B": "passivity"
+    },
+    "effect_size": 0.32263951559023807,
+    "p_value": 0.39083,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "sponsors",
+        "funders",
+        "donors",
+        "backers",
+        "benefactors",
+        "patrons",
+        "providers",
+        "philanthropists",
+        "contributors",
+        "investors",
+        "givers",
+        "supporters",
+        "financiers",
+        "grantors",
+        "underwriters"
+      ],
+      "Y_used": [
+        "beneficiaries",
+        "recipients",
+        "grantees",
+        "clients",
+        "dependents",
+        "awardees",
+        "scholars",
+        "fellows",
+        "applicants",
+        "receivers",
+        "consumers",
+        "users",
+        "members",
+        "participants",
+        "guests"
+      ],
+      "A_used": [
+        "active",
+        "autonomous",
+        "controlling",
+        "initiating",
+        "directing",
+        "powerful",
+        "influential",
+        "independent",
+        "driving",
+        "leading",
+        "acting",
+        "creating",
+        "deciding",
+        "commanding",
+        "originating"
+      ],
+      "B_used": [
+        "passive",
+        "reactive",
+        "dependent",
+        "receiving",
+        "obeying",
+        "following",
+        "controlled",
+        "directed",
+        "influenced",
+        "submissive",
+        "helpless",
+        "waiting",
+        "listening",
+        "watching",
+        "observing"
+      ]
+    },
+    "proposal": "People associate sponsors with Agency more strongly than they associate beneficiaries with Agency. This proposal examines whether the functional roles of giving and receiving in charitable, financial, or mentorship contexts map onto an implicit active/passive dichotomy, where sponsors are mentally represented as autonomous actors who initiate and direct outcomes, while beneficiaries are represented as passive recipients who are acted upon. This is novel because implicit agency associations have been extensively studied regarding gender and race, but the specific dyad of sponsors versus beneficiaries remains unprobed despite the centrality of these roles in philanthropy, corporate sponsorship, and development discourse. It matters because confirming this association would suggest that the mental representation of aid and support structures inherently reinforces a hierarchy that attributes power and volition to providers while implicitly stripping recipients of autonomy, potentially influencing how public policy and social support are perceived and legitimized.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "f074501b689f",
     "timestamp": "2026-09-29T07:53:06.833610+00:00",
     "schema_version": "autoresearch.v1",
