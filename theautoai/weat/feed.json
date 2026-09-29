@@ -1,5 +1,111 @@
 [
   {
+    "id": "1905487bedb6",
+    "timestamp": "2026-09-29T01:03:22.615200+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "geologists vs miners on environmental impact",
+    "labels": {
+      "X": "geologists",
+      "Y": "miners",
+      "A": "environmental stewardship",
+      "B": "environmental exploitation"
+    },
+    "canonical_keys": {
+      "X": "geologists",
+      "Y": "miners",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 0.2875480332326788,
+    "p_value": 0.44678,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "geologist",
+        "paleontologist",
+        "petrologist",
+        "seismologist",
+        "volcanologist",
+        "hydrogeologist",
+        "mineralogist",
+        "geochemist",
+        "geophysicist",
+        "sedimentologist",
+        "glaciologist",
+        "geomorphologist",
+        "surveyor",
+        "geographer",
+        "cartographer"
+      ],
+      "Y_used": [
+        "miner",
+        "driller",
+        "digger",
+        "blaster",
+        "quarryman",
+        "smelter",
+        "collier",
+        "pitman",
+        "prospector",
+        "extractor",
+        "laborer",
+        "worker",
+        "tunneler",
+        "operator",
+        "scavenger"
+      ],
+      "A_used": [
+        "preserve",
+        "conserve",
+        "protect",
+        "sustain",
+        "nurture",
+        "care",
+        "guard",
+        "safeguard",
+        "maintain",
+        "restore",
+        "recycle",
+        "balance",
+        "respect",
+        "cherish",
+        "steward"
+      ],
+      "B_used": [
+        "destroy",
+        "deplete",
+        "extract",
+        "exploit",
+        "pollute",
+        "waste",
+        "ruin",
+        "harm",
+        "damage",
+        "consume",
+        "exhaust",
+        "drain",
+        "strip",
+        "degrade",
+        "contaminate"
+      ]
+    },
+    "proposal": "People associate geologists with environmental stewardship more strongly than they associate miners with environmental stewardship. This differential implicit association reflects a latent tension in public discourse between the scientific study of the earth's systems and the industrial extraction of its resources, positioning geologists as interpreters who understand natural limits and miners as agents of alteration or depletion. Examining this bias is novel, as implicit research has largely overlooked the cognitive pairing of earth scientists and extractive laborers, despite their frequent intersection in climate and conservation debates. Confirming this association would reveal how the public mentally segregates 'knowledge of nature' from 'use of nature,' potentially influencing trust in geological expertise versus mining industry claims regarding sustainability.",
+    "iterations": 4,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "e929597d3729",
     "timestamp": "2026-09-28T23:13:51.195583+00:00",
     "schema_version": "autoresearch.v1",
