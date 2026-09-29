@@ -1,5 +1,111 @@
 [
   {
+    "id": "702aae2006b9",
+    "timestamp": "2026-09-29T02:27:00.708648+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "bureaucrats vs journalists on organizational allegiance vs independent skepticism",
+    "labels": {
+      "X": "bureaucrats",
+      "Y": "journalists",
+      "A": "loyalty",
+      "B": "independence"
+    },
+    "canonical_keys": {
+      "X": "bureaucrats",
+      "Y": "journalists",
+      "A": "loyalty",
+      "B": "independence"
+    },
+    "effect_size": 1.12392639697997,
+    "p_value": 0.00139,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "bureaucrat",
+        "administrator",
+        "clerk",
+        "official",
+        "functionary",
+        "regulator",
+        "auditor",
+        "commissioner",
+        "director",
+        "manager",
+        "executive",
+        "secretary",
+        "officer",
+        "coordinator",
+        "supervisor"
+      ],
+      "Y_used": [
+        "reporter",
+        "correspondent",
+        "columnist",
+        "anchor",
+        "editor",
+        "publisher",
+        "commentator",
+        "journalist",
+        "photographer",
+        "cameraman",
+        "stringer",
+        "freelancer",
+        "interviewer",
+        "broadcaster",
+        "writer"
+      ],
+      "A_used": [
+        "loyalty",
+        "allegiance",
+        "obedience",
+        "conformity",
+        "duty",
+        "compliance",
+        "discipline",
+        "fidelity",
+        "devotion",
+        "submission",
+        "adherence",
+        "commitment",
+        "steadfastness",
+        "faithfulness",
+        "fealty"
+      ],
+      "B_used": [
+        "independence",
+        "skepticism",
+        "criticism",
+        "rebellion",
+        "autonomy",
+        "defiance",
+        "challenge",
+        "scrutiny",
+        "dissent",
+        "investigation",
+        "freedom",
+        "objectivity",
+        "critique",
+        "questioning",
+        "nonconformity"
+      ]
+    },
+    "proposal": "People associate bureaucrats with institutional loyalty more strongly than they associate journalists with institutional loyalty. This automatic linkage reflects a cultural script that casts civil servants as dutiful rule-followers embedded in hierarchical chains of command, whereas journalists are romanticized as independent truth-seekers who challenge authority. While explicit surveys have examined media trust and government competence, the implicit coupling of bureaucratic identities with unwavering organizational allegiance remains unmeasured. Confirming or rejecting this bias would clarify how automatic mental shortcuts shape public tolerance for whistleblowers, civil service reform, and press criticism of state agencies.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "18d9c094f582",
     "timestamp": "2026-09-29T01:51:56.486602+00:00",
     "schema_version": "autoresearch.v1",
