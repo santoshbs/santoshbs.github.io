@@ -1,5 +1,111 @@
 [
   {
+    "id": "96f5a84b72b8",
+    "timestamp": "2026-09-29T04:09:28.519999+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "architects vs archaeologists on temporal orientation",
+    "labels": {
+      "X": "architects",
+      "Y": "archaeologists",
+      "A": "future",
+      "B": "past"
+    },
+    "canonical_keys": {
+      "X": "architects",
+      "Y": "archaeologists",
+      "A": "future",
+      "B": "past"
+    },
+    "effect_size": 0.8275225987614425,
+    "p_value": 0.02457,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "architect",
+        "builder",
+        "constructor",
+        "planner",
+        "engineer",
+        "designer",
+        "developer",
+        "contractor",
+        "surveyor",
+        "drafter",
+        "creator",
+        "fabricator",
+        "modeler",
+        "architects",
+        "builders"
+      ],
+      "Y_used": [
+        "archaeologist",
+        "excavator",
+        "antiquarian",
+        "digger",
+        "paleontologist",
+        "historian",
+        "anthropologist",
+        "collector",
+        "curator",
+        "explorer",
+        "researcher",
+        "analyst",
+        "specialist",
+        "scientist",
+        "scholar"
+      ],
+      "A_used": [
+        "future",
+        "progress",
+        "advance",
+        "modern",
+        "innovation",
+        "forward",
+        "tomorrow",
+        "growth",
+        "development",
+        "next",
+        "contemporary",
+        "evolve",
+        "emerging",
+        "dynamic",
+        "novel"
+      ],
+      "B_used": [
+        "past",
+        "history",
+        "ancient",
+        "tradition",
+        "heritage",
+        "bygone",
+        "relic",
+        "antique",
+        "former",
+        "yesterday",
+        "legacy",
+        "archaic",
+        "classical",
+        "old",
+        "ruin"
+      ]
+    },
+    "proposal": "People associate architects with progress more strongly than they associate archaeologists with progress. This differential association is novel because existing literature has rarely compared these two distinct professional families, focusing instead on broader categories like scientists or artists. It is interesting because it probes the implicit temporal orientation of these roles: architects are culturally framed as builders of the future, while archaeologists are framed as uncoverers of the past. Confirming this association would suggest that the public mentally maps the concept of 'progress' onto forward-looking creation rather than backward-looking discovery, which has implications for how different forms of intellectual labor are valued in public discourse and institutional funding.",
+    "iterations": 3,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "702aae2006b9",
     "timestamp": "2026-09-29T02:27:00.708648+00:00",
     "schema_version": "autoresearch.v1",
