@@ -1,5 +1,111 @@
 [
   {
+    "id": "fa4d30b5f318",
+    "timestamp": "2026-09-30T11:46:09.001229+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "journalists vs authors on temporal orientation and production pace",
+    "labels": {
+      "X": "journalists",
+      "Y": "authors",
+      "A": "immediacy",
+      "B": "deliberation"
+    },
+    "canonical_keys": {
+      "X": "journalists",
+      "Y": "authors",
+      "A": "immediacy",
+      "B": "deliberation"
+    },
+    "effect_size": 1.395838978346168,
+    "p_value": 3e-05,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "journalist",
+        "reporter",
+        "correspondent",
+        "anchor",
+        "broadcaster",
+        "editor",
+        "publisher",
+        "columnist",
+        "commentator",
+        "newscaster",
+        "cameraman",
+        "producer",
+        "photographer",
+        "stringer",
+        "newsman"
+      ],
+      "Y_used": [
+        "author",
+        "writer",
+        "novelist",
+        "poet",
+        "essayist",
+        "playwright",
+        "dramatist",
+        "biographer",
+        "memoirist",
+        "narrator",
+        "storyteller",
+        "chronicler",
+        "historian",
+        "documentarian",
+        "lyricist"
+      ],
+      "A_used": [
+        "fast",
+        "quick",
+        "instant",
+        "rapid",
+        "urgent",
+        "immediate",
+        "sudden",
+        "swift",
+        "hasty",
+        "prompt",
+        "timely",
+        "brisk",
+        "snap",
+        "fleeting",
+        "hurried"
+      ],
+      "B_used": [
+        "slow",
+        "careful",
+        "thoughtful",
+        "deliberate",
+        "reflective",
+        "measured",
+        "calm",
+        "patient",
+        "gradual",
+        "leisurely",
+        "methodical",
+        "pondering",
+        "deep",
+        "unhurried",
+        "steady"
+      ]
+    },
+    "proposal": "People associate journalists with immediacy more strongly than they associate authors with immediacy. This differential reflects how contemporary discourse frames news producers as bound to rapid cycles, breaking updates, and real-time responsiveness, whereas authors are mentalized as engaged in deliberate, reflective, and long-form creation. Examining this association is novel because implicit bias research has largely focused on political, racial, or occupational status stereotypes, overlooking how the public cognitively partitions different information workers along temporal and procedural axes. Confirming or disconfirming this link would clarify whether the perceived haste of modern media is projected onto the category of journalists themselves, shaping public trust, credibility judgments, and expectations of media labor.",
+    "iterations": 3,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "abce39afdbc8",
     "timestamp": "2026-09-30T09:39:18.610912+00:00",
     "schema_version": "autoresearch.v1",
