@@ -1,5 +1,111 @@
 [
   {
+    "id": "abce39afdbc8",
+    "timestamp": "2026-09-30T09:39:18.610912+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "conservatives vs libertarians on hierarchy vs autonomy",
+    "labels": {
+      "X": "conservatives",
+      "Y": "libertarians",
+      "A": "hierarchical stability",
+      "B": "individual autonomy"
+    },
+    "canonical_keys": {
+      "X": "conservatives",
+      "Y": "libertarians",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 1.5171434682492935,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "conservative",
+        "conservatives",
+        "republican",
+        "republicans",
+        "traditionalist",
+        "traditionalists",
+        "patriot",
+        "establishment",
+        "orthodox",
+        "hawk",
+        "moderate",
+        "mainstream",
+        "guardian",
+        "steward",
+        "preservationist"
+      ],
+      "Y_used": [
+        "libertarian",
+        "libertarians",
+        "individualist",
+        "individualists",
+        "anarchist",
+        "anarchists",
+        "nonconformist",
+        "dissident",
+        "rebel",
+        "contrarian",
+        "secessionist",
+        "autonomist",
+        "radical",
+        "reformer",
+        "separatist"
+      ],
+      "A_used": [
+        "hierarchy",
+        "structure",
+        "order",
+        "stability",
+        "authority",
+        "regulation",
+        "convention",
+        "discipline",
+        "conformity",
+        "preservation",
+        "safety",
+        "security",
+        "rule",
+        "tradition",
+        "compliance"
+      ],
+      "B_used": [
+        "freedom",
+        "liberty",
+        "autonomy",
+        "independence",
+        "choice",
+        "rights",
+        "expression",
+        "individualism",
+        "innovation",
+        "disruption",
+        "deregulation",
+        "decentralization",
+        "flexibility",
+        "fluidity",
+        "individuality"
+      ]
+    },
+    "proposal": "people associate conservatives with hierarchical stability more strongly than they associate libertarians with hierarchical stability. This differential implicit association remains unexamined in experimental social psychology, where research has predominantly focused on left-right or liberal-conservative cleavages rather than intra-right ideological distinctions. It is interesting because contemporary political discourse frequently conflates or sharply contrasts these groups, yet lacks empirical evidence on how laypersons intuitively categorize their underlying social values. Confirming or disconfirming this association would clarify whether the public mentally partitions right-wing ideologies along institutional or market autonomy axes, ultimately shifting how we understand the psychological boundaries of modern political coalitions.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "1e026540ba5c",
     "timestamp": "2026-09-30T08:47:40.695578+00:00",
     "schema_version": "autoresearch.v1",
