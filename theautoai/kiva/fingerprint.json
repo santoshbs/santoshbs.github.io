@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "batches_seen": 1820,
-  "loans_seen": 29120,
-  "last_updated": "2026-09-30T07:45:41.669873+00:00",
+  "batches_seen": 1821,
+  "loans_seen": 29136,
+  "last_updated": "2026-09-30T09:16:32.749157+00:00",
   "watching_for": "",
   "claims": {
     "verbosity-slower-general": {
@@ -11,13 +11,13 @@
       "title": "Higher verbosity and excessive personal detail predict slower funding regardless of gender.",
       "body": "Pitches that are significantly longer or contain excessive personal narrative tend to fund more slowly for both men and women.",
       "supporting_loans": [],
-      "confidence": 0.99,
+      "confidence": 1.0,
       "first_seen_batch": 1,
-      "last_updated_batch": 1820,
+      "last_updated_batch": 1821,
       "confidence_history": [
         [
-          1820,
-          0.99
+          1821,
+          1.0
         ]
       ]
     },
@@ -29,10 +29,10 @@
       "supporting_loans": [],
       "confidence": 1.0,
       "first_seen_batch": 1,
-      "last_updated_batch": 1820,
+      "last_updated_batch": 1821,
       "confidence_history": [
         [
-          1820,
+          1821,
           1.0
         ]
       ]
@@ -45,10 +45,10 @@
       "supporting_loans": [],
       "confidence": 0.98,
       "first_seen_batch": 1,
-      "last_updated_batch": 1820,
+      "last_updated_batch": 1821,
       "confidence_history": [
         [
-          1820,
+          1821,
           0.98
         ]
       ]
@@ -61,10 +61,10 @@
       "supporting_loans": [],
       "confidence": 0.93,
       "first_seen_batch": 1,
-      "last_updated_batch": 1820,
+      "last_updated_batch": 1821,
       "confidence_history": [
         [
-          1820,
+          1821,
           0.93
         ]
       ]
@@ -77,10 +77,10 @@
       "supporting_loans": [],
       "confidence": 1.0,
       "first_seen_batch": 1,
-      "last_updated_batch": 1820,
+      "last_updated_batch": 1821,
       "confidence_history": [
         [
-          1820,
+          1821,
           1.0
         ]
       ]
@@ -92,11 +92,11 @@
       "body": "Pitches from women that explicitly mention securing the future of their family are associated with increased funding speed.",
       "supporting_loans": [],
       "confidence": 1.0,
-      "first_seen_batch": 1466,
-      "last_updated_batch": 1820,
+      "first_seen_batch": 1465,
+      "last_updated_batch": 1821,
       "confidence_history": [
         [
-          1820,
+          1821,
           1.0
         ]
       ]
@@ -108,11 +108,11 @@
       "body": "Pitches that include precise details about inventory items or operational data, rather than general categories, fund faster for both men and women.",
       "supporting_loans": [],
       "confidence": 0.62,
-      "first_seen_batch": 1642,
-      "last_updated_batch": 1820,
+      "first_seen_batch": 1641,
+      "last_updated_batch": 1821,
       "confidence_history": [
         [
-          1820,
+          1821,
           0.62
         ]
       ]
@@ -124,11 +124,11 @@
       "body": "Pitches from women that explicitly reference being married, widowed, or experiencing personal hardships are associated with slower funding speeds.",
       "supporting_loans": [],
       "confidence": 0.62,
-      "first_seen_batch": 1804,
-      "last_updated_batch": 1820,
+      "first_seen_batch": 1803,
+      "last_updated_batch": 1821,
       "confidence_history": [
         [
-          1820,
+          1821,
           0.62
         ]
       ]
@@ -138,52 +138,52 @@
     "numerical-divergence-puzzle": {
       "id": "numerical-divergence-puzzle",
       "body": "Numerical quantities may have divergent effects based on whether they describe family size or financial/market specifics.",
-      "first_seen_batch": 1716
+      "first_seen_batch": 1715
     },
     "female-children-ages-slower": {
       "id": "female-children-ages-slower",
       "body": "Female borrowers who specify the exact ages of children or dependents may fund more slowly.",
-      "first_seen_batch": 1730
+      "first_seen_batch": 1729
     },
     "female-institutional-training-slower": {
       "id": "female-institutional-training-slower",
       "body": "Female borrowers who emphasize institutional training or certifications may fund more slowly.",
-      "first_seen_batch": 1746
+      "first_seen_batch": 1745
     },
     "female-institution-name-slower": {
       "id": "female-institution-name-slower",
       "body": "Mentioning the specific name of the lending institution may predict slower funding for women.",
-      "first_seen_batch": 1758
+      "first_seen_batch": 1757
     },
     "male-aspirational-slower": {
       "id": "male-aspirational-slower",
       "body": "Broad aspirational language regarding social service may predict slower funding for men, suggesting a gender interaction.",
-      "first_seen_batch": 1794
+      "first_seen_batch": 1793
     },
     "male-secondary-employment-slower": {
       "id": "male-secondary-employment-slower",
       "body": "Male borrowers who describe employment outside of their primary business may experience slower funding.",
-      "first_seen_batch": 1808
+      "first_seen_batch": 1807
     },
     "specificity-gender-interaction": {
       "id": "specificity-gender-interaction",
       "body": "The effect of specifying product details may vary by gender, accelerating funding for men and decelerating it for women.",
-      "first_seen_batch": 1808
+      "first_seen_batch": 1807
     },
     "female-geographic-detail-slower": {
       "id": "female-geographic-detail-slower",
       "body": "Female borrowers who include specific geographic or logistical details, such as village names or transport costs, may fund more slowly.",
-      "first_seen_batch": 1816
+      "first_seen_batch": 1815
     },
     "female-gratitude-faster": {
       "id": "female-gratitude-faster",
       "body": "Female borrowers who express direct gratitude to lenders may fund faster.",
-      "first_seen_batch": 1820
+      "first_seen_batch": 1819
     },
     "female-children-gender-breakdown-faster": {
       "id": "female-children-gender-breakdown-faster",
       "body": "Female borrowers who specify the number of children by gender may fund faster.",
-      "first_seen_batch": 1820
+      "first_seen_batch": 1819
     }
   },
   "retired": {
