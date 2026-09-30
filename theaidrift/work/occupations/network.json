@@ -61,8 +61,8 @@
         "id": "25",
         "title": "Educational Instruction & Library",
         "group": "education",
-        "refs": 59,
-        "signals": 38,
+        "refs": 60,
+        "signals": 39,
         "occupations": 21
       },
       {
@@ -77,8 +77,8 @@
         "id": "29",
         "title": "Healthcare Practitioners & Technical",
         "group": "healthcare",
-        "refs": 165,
-        "signals": 119,
+        "refs": 167,
+        "signals": 121,
         "occupations": 46
       },
       {
@@ -371,6 +371,11 @@
         "source": "11",
         "target": "29",
         "weight": 4
+      },
+      {
+        "source": "25",
+        "target": "29",
+        "weight": 1
       },
       {
         "source": "27",
@@ -4333,9 +4338,9 @@
           "id": "25-1072.00",
           "title": "Nursing Instructors and Teachers, Postsecondary",
           "group": "education",
-          "refs": 4,
-          "revised": "2026-04-25",
-          "signals": 3
+          "refs": 5,
+          "revised": "2026-09-30",
+          "signals": 4
         },
         {
           "id": "25-1112.00",
@@ -5096,9 +5101,9 @@
           "id": "29-1141.00",
           "title": "Registered Nurses",
           "group": "healthcare",
-          "refs": 16,
-          "revised": "2026-08-01",
-          "signals": 15
+          "refs": 17,
+          "revised": "2026-09-30",
+          "signals": 16
         },
         {
           "id": "29-1141.01",
@@ -5120,9 +5125,9 @@
           "id": "29-1141.04",
           "title": "Clinical Nurse Specialists",
           "group": "healthcare",
-          "refs": 2,
-          "revised": "2026-09-22",
-          "signals": 1
+          "refs": 3,
+          "revised": "2026-09-30",
+          "signals": 2
         },
         {
           "id": "29-1161.00",
@@ -5477,6 +5482,11 @@
           "source": "29-1141.00",
           "target": "29-1161.00",
           "signal": "Support for new NI workforce framework but calls grow for safe staffing laws"
+        },
+        {
+          "source": "29-1141.00",
+          "target": "29-1141.04",
+          "signal": "Clinical academic framework aims to ‘strengthen’ nursing research"
         },
         {
           "source": "29-1022.00",
