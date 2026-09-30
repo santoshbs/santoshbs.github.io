@@ -1,5 +1,111 @@
 [
   {
+    "id": "a1829391d809",
+    "timestamp": "2026-09-30T12:54:06.917718+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "editors vs journalists on information gatekeeping versus spontaneous truth seeking",
+    "labels": {
+      "X": "editors",
+      "Y": "journalists",
+      "A": "gatekeeping",
+      "B": "truthseeking"
+    },
+    "canonical_keys": {
+      "X": "editors",
+      "Y": "journalists",
+      "A": "gatekeeping",
+      "B": "truthseeking"
+    },
+    "effect_size": 0.7499046803096245,
+    "p_value": 0.04158,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "editor",
+        "editors",
+        "sub",
+        "proofreader",
+        "redactor",
+        "coordinator",
+        "publisher",
+        "director",
+        "supervisor",
+        "manager",
+        "boss",
+        "head",
+        "executive",
+        "producer",
+        "administrator"
+      ],
+      "Y_used": [
+        "journalist",
+        "journalists",
+        "correspondent",
+        "correspondents",
+        "stringer",
+        "stringers",
+        "broadcaster",
+        "broadcasters",
+        "anchor",
+        "anchors",
+        "columnist",
+        "columnists",
+        "blogger",
+        "commentator",
+        "newscaster"
+      ],
+      "A_used": [
+        "gatekeeping",
+        "filtering",
+        "control",
+        "censorship",
+        "selection",
+        "moderation",
+        "regulation",
+        "restriction",
+        "blocking",
+        "screening",
+        "curation",
+        "policing",
+        "monitoring",
+        "verification",
+        "arbitration"
+      ],
+      "B_used": [
+        "spontaneity",
+        "truth",
+        "discovery",
+        "frontline",
+        "coverage",
+        "investigation",
+        "freedom",
+        "expression",
+        "voice",
+        "witness",
+        "observation",
+        "gathering",
+        "recording",
+        "narrative",
+        "exposure"
+      ]
+    },
+    "proposal": "People associate editors with information gatekeeping more strongly than they associate journalists with information gatekeeping. This implicit contrast captures a pervasive cultural narrative that romanticizes frontline reporters as spontaneous truth-seekers while quietly framing behind-the-scenes editors as deliberate arbiters and filters of public knowledge. Unlike extensively researched dyads such as creators versus critics or experts versus laypeople, the editor-journalist pairing has rarely been examined for implicit power dynamics. Probing this association matters because it reveals how institutional roles are mentally encoded as either autonomous agents or systemic controllers, which directly shapes public trust in media pipelines and contemporary debates over content moderation.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "fa4d30b5f318",
     "timestamp": "2026-09-30T11:46:09.001229+00:00",
     "schema_version": "autoresearch.v1",
