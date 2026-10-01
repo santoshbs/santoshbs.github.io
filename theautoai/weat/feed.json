@@ -1,5 +1,111 @@
 [
   {
+    "id": "4dcea4498094",
+    "timestamp": "2026-10-01T17:32:13.518979+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Bankers vs Artists on transactional versus expressive orientation",
+    "labels": {
+      "X": "Bankers",
+      "Y": "Artists",
+      "A": "transactional",
+      "B": "expressive"
+    },
+    "canonical_keys": {
+      "X": "bankers",
+      "Y": "artists",
+      "A": "transactional",
+      "B": "expressive"
+    },
+    "effect_size": 1.8317246018458533,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "banker",
+        "teller",
+        "broker",
+        "trader",
+        "financier",
+        "accountant",
+        "auditor",
+        "underwriter",
+        "appraiser",
+        "actuary",
+        "cashier",
+        "consultant",
+        "director",
+        "executive",
+        "advisor"
+      ],
+      "Y_used": [
+        "artist",
+        "painter",
+        "sculptor",
+        "musician",
+        "poet",
+        "dancer",
+        "actor",
+        "writer",
+        "designer",
+        "illustrator",
+        "photographer",
+        "composer",
+        "filmmaker",
+        "cartoonist",
+        "animator"
+      ],
+      "A_used": [
+        "transaction",
+        "exchange",
+        "bargain",
+        "deal",
+        "market",
+        "profit",
+        "price",
+        "cost",
+        "value",
+        "money",
+        "trade",
+        "commerce",
+        "economy",
+        "contract",
+        "negotiation"
+      ],
+      "B_used": [
+        "expression",
+        "emotion",
+        "beauty",
+        "passion",
+        "relationship",
+        "connection",
+        "soul",
+        "creativity",
+        "inspiration",
+        "feeling",
+        "sentiment",
+        "empathy",
+        "bond",
+        "trust",
+        "love"
+      ]
+    },
+    "proposal": "People associate Bankers with Transactional orientation more strongly than they associate Artists with Transactional orientation. This proposal targets a specific dimension of social representation: the extent to which financial professionals are mentally linked to the logic of exchange, bargaining, and market instrumentalism compared to the expressive or relational ethos attributed to artists. While implicit associations regarding rationality, creativity, or trustworthiness have been examined for these categories, the distinct attribution of transactionality—versus relational or intrinsic engagement—has not been directly probed. Establishing this association would reveal whether public cognition uniquely ties the banker prototype to market mechanics, potentially illuminating biases that shape perceptions of financial innovation, ethical reform, and the social utility of economic versus cultural institutions.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "70801e27fbb7",
     "timestamp": "2026-10-01T16:34:35.211589+00:00",
     "schema_version": "autoresearch.v1",
