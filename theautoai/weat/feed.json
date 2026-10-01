@@ -1,5 +1,111 @@
 [
   {
+    "id": "5c33c337970a",
+    "timestamp": "2026-10-01T07:30:24.727377+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "activists vs politicians on moral absolutism vs pragmatism",
+    "labels": {
+      "X": "activists",
+      "Y": "politicians",
+      "A": "moral absolutism",
+      "B": "pragmatism"
+    },
+    "canonical_keys": {
+      "X": "activists",
+      "Y": "politicians",
+      "A": "",
+      "B": "pragmatism"
+    },
+    "effect_size": 1.0639454676872226,
+    "p_value": 0.0028,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "activist",
+        "protester",
+        "crusader",
+        "reformer",
+        "rebel",
+        "dissident",
+        "campaigner",
+        "radical",
+        "organizer",
+        "volunteer",
+        "agitator",
+        "militant",
+        "champion",
+        "demonstrator",
+        "revolutionary"
+      ],
+      "Y_used": [
+        "politician",
+        "legislator",
+        "senator",
+        "mayor",
+        "governor",
+        "president",
+        "administrator",
+        "bureaucrat",
+        "leader",
+        "statesman",
+        "diplomat",
+        "official",
+        "representative",
+        "director",
+        "congressman"
+      ],
+      "A_used": [
+        "virtue",
+        "wrong",
+        "good",
+        "evil",
+        "sacred",
+        "duty",
+        "oath",
+        "principle",
+        "conviction",
+        "strict",
+        "rigid",
+        "pure",
+        "dogma",
+        "ideal",
+        "honor"
+      ],
+      "B_used": [
+        "deal",
+        "bargain",
+        "compromise",
+        "flexible",
+        "realistic",
+        "strategy",
+        "planning",
+        "vote",
+        "legislation",
+        "transaction",
+        "gain",
+        "profit",
+        "business",
+        "exchange",
+        "agreement"
+      ]
+    },
+    "proposal": "People associate activists with moral absolutism more strongly than they associate politicians with moral absolutism. This proposed differential implicit association captures a pervasive but underexamined feature of contemporary political discourse, which routinely frames protest movements as driven by uncompromising ethical imperatives while depicting elected officials as pragmatic compromise-seekers. Prior implicit bias research has predominantly measured warmth or competence across social groups, leaving the automatic linkage between activist identities and rigid moral frameworks largely unprobed. Investigating this association is substantively important because it reveals how implicit cognitive structures may delegitimize negotiation and policy trade-offs by implicitly equating them with moral failure, ultimately influencing public tolerance for political bargaining.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "a487fcdb16d2",
     "timestamp": "2026-10-01T06:31:31.160766+00:00",
     "schema_version": "autoresearch.v1",
