@@ -1,5 +1,116 @@
 [
   {
+    "id": "2c2d8cf7ee43",
+    "timestamp": "2026-10-01T15:39:11.281126+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "sociologists vs economists on structural critique vs individual agency",
+    "labels": {
+      "X": "sociologists",
+      "Y": "economists",
+      "A": "structural_focus",
+      "B": "individual_agency"
+    },
+    "canonical_keys": {
+      "X": "sociologists",
+      "Y": "economists",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 0.5156501330011791,
+    "p_value": 0.15271,
+    "n": {
+      "X": 16,
+      "Y": 16,
+      "A": 16,
+      "B": 16
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "sociologist",
+        "sociologists",
+        "researcher",
+        "academic",
+        "scholar",
+        "professor",
+        "faculty",
+        "teacher",
+        "educator",
+        "lecturer",
+        "analyst",
+        "consultant",
+        "writer",
+        "journalist",
+        "activist",
+        "organizer"
+      ],
+      "Y_used": [
+        "economist",
+        "economists",
+        "financier",
+        "investor",
+        "trader",
+        "broker",
+        "banker",
+        "accountant",
+        "auditor",
+        "businessman",
+        "capitalist",
+        "entrepreneur",
+        "executive",
+        "director",
+        "shareholder",
+        "creditor"
+      ],
+      "A_used": [
+        "structural",
+        "systemic",
+        "institutional",
+        "collective",
+        "societal",
+        "historical",
+        "political",
+        "class",
+        "inequality",
+        "oppression",
+        "discrimination",
+        "marginalization",
+        "privilege",
+        "power",
+        "hierarchy",
+        "determinism"
+      ],
+      "B_used": [
+        "individual",
+        "personal",
+        "private",
+        "independent",
+        "autonomous",
+        "free",
+        "voluntary",
+        "choice",
+        "option",
+        "preference",
+        "decision",
+        "agency",
+        "rational",
+        "efficient",
+        "productive",
+        "success",
+        "control"
+      ]
+    },
+    "proposal": "People implicitly associate sociologists with structural critique more strongly than they associate economists with structural critique. This reflects a contemporary cultural divide where sociologists are mentally represented as emphasizing systemic inequalities and institutional constraints, whereas economists are implicitly linked to individual agency, market rationality, and optimization. Examining this association is novel because implicit measures have rarely probed cross-disciplinary paradigm biases, yet it matters for understanding how the public mentally categorizes expertise when evaluating complex social problems like poverty or climate policy. If confirmed, it reveals a hidden cognitive sorting mechanism that may predispose audiences to dismiss sociological insights as overly deterministic or view economic advice as excessively individualistic, shaping real-world policy reception.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "98c6cc4fff53",
     "timestamp": "2026-10-01T13:18:23.228456+00:00",
     "schema_version": "autoresearch.v1",
