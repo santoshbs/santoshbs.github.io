@@ -1,5 +1,111 @@
 [
   {
+    "id": "c9ecb9b2eeea",
+    "timestamp": "2026-10-01T09:45:36.403256+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "mentors vs managers on temporal orientation and developmental pace",
+    "labels": {
+      "X": "mentors",
+      "Y": "managers",
+      "A": "patience",
+      "B": "urgency"
+    },
+    "canonical_keys": {
+      "X": "mentors",
+      "Y": "managers",
+      "A": "patience",
+      "B": "urgency"
+    },
+    "effect_size": 1.2749966235742862,
+    "p_value": 0.00014,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "mentor",
+        "coach",
+        "tutor",
+        "guide",
+        "advisor",
+        "teacher",
+        "counselor",
+        "trainer",
+        "facilitator",
+        "sponsor",
+        "advocate",
+        "helper",
+        "instructor",
+        "preceptor",
+        "adviser"
+      ],
+      "Y_used": [
+        "manager",
+        "supervisor",
+        "boss",
+        "executive",
+        "director",
+        "administrator",
+        "leader",
+        "overseer",
+        "head",
+        "chief",
+        "principal",
+        "superintendent",
+        "controller",
+        "foreman",
+        "captain"
+      ],
+      "A_used": [
+        "patience",
+        "gradual",
+        "sustained",
+        "nurturing",
+        "development",
+        "growth",
+        "cultivation",
+        "maturation",
+        "steady",
+        "deliberate",
+        "careful",
+        "thoughtful",
+        "forgiving",
+        "understanding",
+        "flexible"
+      ],
+      "B_used": [
+        "urgency",
+        "immediate",
+        "fast",
+        "quick",
+        "rapid",
+        "pressure",
+        "efficiency",
+        "results",
+        "productivity",
+        "output",
+        "profit",
+        "strict",
+        "demanding",
+        "rigid",
+        "accountable"
+      ]
+    },
+    "proposal": "People associate mentors with developmental patience more strongly than they associate managers with developmental patience. This differential implicit association captures a subtle but pervasive cultural expectation about time horizons for human growth within organizational and educational settings. While explicit research has documented the differing goals and satisfaction levels of mentoring versus management, the implicit temporal orientation—how much iterative failure and long-term cultivation each role is culturally granted—remains unmeasured. Confirming this association would reveal a hidden cognitive barrier to integrating mentoring functions into managerial roles, as people may implicitly expect managers to optimize for immediate accountability rather than sustained maturation. It matters because efforts to transform workplaces into learning ecosystems depend on whether people can cognitively reconcile managerial oversight with patient, long-term development.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "975b1b42c747",
     "timestamp": "2026-10-01T08:14:42.726013+00:00",
     "schema_version": "autoresearch.v1",
