@@ -1,5 +1,111 @@
 [
   {
+    "id": "55b55e2b0a50",
+    "timestamp": "2026-10-01T22:12:53.736077+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Artists vs Artisans on orientation toward rebellion versus tradition",
+    "labels": {
+      "X": "Artists",
+      "Y": "Artisans",
+      "A": "Rebellious/Innovative",
+      "B": "Traditional/Conservative"
+    },
+    "canonical_keys": {
+      "X": "artists",
+      "Y": "artisans",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 1.075265738759688,
+    "p_value": 0.00262,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "painter",
+        "sculptor",
+        "poet",
+        "writer",
+        "musician",
+        "dancer",
+        "actor",
+        "filmmaker",
+        "illustrator",
+        "cartoonist",
+        "animator",
+        "composer",
+        "playwright",
+        "photographer",
+        "choreographer"
+      ],
+      "Y_used": [
+        "carpenter",
+        "blacksmith",
+        "weaver",
+        "tailor",
+        "seamstress",
+        "mason",
+        "cobbler",
+        "baker",
+        "potter",
+        "jeweler",
+        "locksmith",
+        "cooper",
+        "stonemason",
+        "bricklayer",
+        "upholsterer"
+      ],
+      "A_used": [
+        "rebel",
+        "rebellion",
+        "radical",
+        "subversive",
+        "disruptive",
+        "revolutionary",
+        "provocative",
+        "iconoclast",
+        "maverick",
+        "renegade",
+        "dissident",
+        "unconventional",
+        "innovative",
+        "nonconformist",
+        "trailblazer"
+      ],
+      "B_used": [
+        "tradition",
+        "traditional",
+        "conservative",
+        "orthodox",
+        "conventional",
+        "established",
+        "heritage",
+        "preservation",
+        "continuity",
+        "classical",
+        "customary",
+        "historic",
+        "routine",
+        "standard",
+        "accepted"
+      ]
+    },
+    "proposal": "People associate artists with rebellion more strongly than they associate artisans with rebellion. Although both categories involve skilled creation, public discourse frequently casts artists as iconoclasts, avant-garde innovators, or social provocateurs, while artisans are implicitly linked to tradition, fidelity to established methods, and the preservation of craft heritage. This differential association highlights a hidden bias that may privilege expressive disruption over technical mastery and continuity, potentially shaping how different creative domains are funded, taught, and legitimized in society. Investigating this link offers insight into the cultural hierarchy between 'high art' and 'applied craft' and how implicit narratives constrain the perceived social function of material practice.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "017017cf9b9a",
     "timestamp": "2026-10-01T19:10:02.685414+00:00",
     "schema_version": "autoresearch.v1",
