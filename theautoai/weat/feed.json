@@ -1,5 +1,111 @@
 [
   {
+    "id": "a487fcdb16d2",
+    "timestamp": "2026-10-01T06:31:31.160766+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "readers vs writers on passivity versus agency",
+    "labels": {
+      "X": "readers",
+      "Y": "writers",
+      "A": "passivity",
+      "B": "agency"
+    },
+    "canonical_keys": {
+      "X": "readers",
+      "Y": "writers",
+      "A": "passivity",
+      "B": "agency"
+    },
+    "effect_size": 1.5018784317710605,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "readers",
+        "audience",
+        "spectators",
+        "viewers",
+        "consumers",
+        "fans",
+        "followers",
+        "listeners",
+        "watchers",
+        "subscribers",
+        "observers",
+        "guests",
+        "patrons",
+        "browsers",
+        "recipients"
+      ],
+      "Y_used": [
+        "writers",
+        "authors",
+        "creators",
+        "producers",
+        "composers",
+        "architects",
+        "builders",
+        "inventors",
+        "artists",
+        "sculptors",
+        "directors",
+        "managers",
+        "leaders",
+        "innovators",
+        "designers"
+      ],
+      "A_used": [
+        "passive",
+        "quiet",
+        "calm",
+        "still",
+        "idle",
+        "slow",
+        "weak",
+        "helpless",
+        "dependent",
+        "inactive",
+        "docile",
+        "submissive",
+        "receptive",
+        "sedentary",
+        "stationary"
+      ],
+      "B_used": [
+        "active",
+        "dynamic",
+        "powerful",
+        "strong",
+        "fast",
+        "energetic",
+        "independent",
+        "controlling",
+        "dominant",
+        "assertive",
+        "aggressive",
+        "leading",
+        "driving",
+        "creating",
+        "productive"
+      ]
+    },
+    "proposal": "People associate readers with passivity more strongly than they associate writers with passivity. This differential implicit association reflects a pervasive cultural framing that casts content consumption as a receptive, sedentary act, while attributing agency, dynamism, and control exclusively to content producers. Examining this bias is critical in the contemporary 'creator economy,' where the value of critical engagement, interpretation, and reception may be implicitly devalued in favor of production, potentially shaping how institutions design participation and how individuals perceive their own role in information ecologies. While explicit research has explored literacy and creative self-concepts, the implicit linkage of the reader identity with behavioral passivity has not been systematically examined, offering a novel metric for understanding latent hierarchies between consumption and creation.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "3d4b02cda75b",
     "timestamp": "2026-09-30T20:11:12.765416+00:00",
     "schema_version": "autoresearch.v1",
