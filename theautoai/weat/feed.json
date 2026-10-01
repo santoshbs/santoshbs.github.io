@@ -1,5 +1,111 @@
 [
   {
+    "id": "017017cf9b9a",
+    "timestamp": "2026-10-01T19:10:02.685414+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "cosmopolitans vs localists on loyalty evaluation",
+    "labels": {
+      "X": "cosmopolitans",
+      "Y": "localists",
+      "A": "disloyalty",
+      "B": "loyalty"
+    },
+    "canonical_keys": {
+      "X": "cosmopolitans",
+      "Y": "localists",
+      "A": "disloyalty",
+      "B": "loyalty"
+    },
+    "effect_size": 0.10456646009191976,
+    "p_value": 0.78549,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "cosmopolitan",
+        "internationalist",
+        "globalist",
+        "expatriate",
+        "expat",
+        "traveler",
+        "nomad",
+        "wanderer",
+        "migrant",
+        "immigrant",
+        "foreigner",
+        "alien",
+        "visitor",
+        "tourist",
+        "adventurer"
+      ],
+      "Y_used": [
+        "localist",
+        "patriot",
+        "nationalist",
+        "countryman",
+        "townsman",
+        "homebody",
+        "native",
+        "resident",
+        "inhabitant",
+        "settler",
+        "dweller",
+        "citizen",
+        "local",
+        "townsfolk",
+        "neighbor"
+      ],
+      "A_used": [
+        "disloyal",
+        "traitor",
+        "betrayal",
+        "treachery",
+        "unfaithful",
+        "untrustworthy",
+        "treacherous",
+        "perfidious",
+        "renegade",
+        "apostate",
+        "rebel",
+        "mutineer",
+        "defection",
+        "deceitful",
+        "dishonest"
+      ],
+      "B_used": [
+        "loyal",
+        "faithful",
+        "trustworthy",
+        "devoted",
+        "dedicated",
+        "committed",
+        "steadfast",
+        "reliable",
+        "sincere",
+        "honest",
+        "true",
+        "patriotic",
+        "allegiance",
+        "fidelity",
+        "devotion"
+      ]
+    },
+    "proposal": "People associate cosmopolitans with disloyalty more strongly than they associate localists with disloyalty. This proposal examines the implicit link between the cosmopolitan identity and the moral failing of betrayal, a association central to contemporary populist discourse that frames global citizens as traitors to the national or local community. While implicit biases toward immigrants or tourists have been studied, the specific cosmopolitan-local cleavage is a distinct axis of political identity that has not been probed for implicit associations of disloyalty. Confirming this would reveal how deeply the cosmopolitan-local divide is internalized as a moral defect, shaping public receptivity to rhetoric that paints internationalists as untrustworthy or alien to the community.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "4dcea4498094",
     "timestamp": "2026-10-01T17:32:13.518979+00:00",
     "schema_version": "autoresearch.v1",
