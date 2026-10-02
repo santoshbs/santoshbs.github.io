@@ -1,5 +1,112 @@
 [
   {
+    "id": "4cb7c8fdd910",
+    "timestamp": "2026-10-02T18:18:57.109632+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "diplomats vs merchants on strategic patience vs impulsive haste",
+    "labels": {
+      "X": "diplomats",
+      "Y": "merchants",
+      "A": "strategic patience",
+      "B": "impulsive haste"
+    },
+    "canonical_keys": {
+      "X": "diplomats",
+      "Y": "merchants",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 1.0568973276852702,
+    "p_value": 0.00242,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "diplomat",
+        "ambassador",
+        "envoy",
+        "attache",
+        "delegate",
+        "minister",
+        "representative",
+        "emissary",
+        "consul",
+        "plenipotentiary",
+        "statesman",
+        "politician",
+        "mediator",
+        "negotiator",
+        "diplomatist"
+      ],
+      "Y_used": [
+        "merchant",
+        "trader",
+        "dealer",
+        "salesman",
+        "vendor",
+        "shopkeeper",
+        "retailer",
+        "wholesaler",
+        "businessman",
+        "capitalist",
+        "tycoon",
+        "broker",
+        "hawker",
+        "peddler",
+        "clerk",
+        "entrepreneur"
+      ],
+      "A_used": [
+        "patience",
+        "restraint",
+        "deliberation",
+        "strategy",
+        "planning",
+        "foresight",
+        "endurance",
+        "slow",
+        "steady",
+        "calm",
+        "careful",
+        "methodical",
+        "measured",
+        "thoughtful",
+        "patient"
+      ],
+      "B_used": [
+        "haste",
+        "hurry",
+        "impulsive",
+        "rash",
+        "greed",
+        "aggressive",
+        "reckless",
+        "fast",
+        "quick",
+        "immediate",
+        "short",
+        "urgent",
+        "frantic",
+        "impatient",
+        "spontaneous"
+      ]
+    },
+    "proposal": "People associate diplomats with strategic patience more strongly than they associate merchants with strategic patience. This differential implicit association is novel because while both groups are frequently contrasted in political economy literature, the specific cognitive link between diplomatic identity and temporal restraint remains unexamined. Understanding this association matters for how public discourse frames negotiation styles in international trade versus domestic commerce, potentially revealing hidden biases about how different professional cultures approach conflict resolution and long-term planning.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "eeb4fd5f0ce2",
     "timestamp": "2026-10-02T13:15:46.736399+00:00",
     "schema_version": "autoresearch.v1",
