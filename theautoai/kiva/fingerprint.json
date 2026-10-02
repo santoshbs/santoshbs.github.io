@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "batches_seen": 1876,
-  "loans_seen": 30016,
-  "last_updated": "2026-10-02T20:41:58.606068+00:00",
+  "batches_seen": 1877,
+  "loans_seen": 30032,
+  "last_updated": "2026-10-02T21:27:17.262153+00:00",
   "watching_for": "",
   "claims": {
     "verbosity-slower-general": {
@@ -13,10 +13,10 @@
       "supporting_loans": [],
       "confidence": 0.91,
       "first_seen_batch": 1,
-      "last_updated_batch": 1876,
+      "last_updated_batch": 1877,
       "confidence_history": [
         [
-          1876,
+          1877,
           0.91
         ]
       ]
@@ -29,10 +29,10 @@
       "supporting_loans": [],
       "confidence": 0.93,
       "first_seen_batch": 1,
-      "last_updated_batch": 1876,
+      "last_updated_batch": 1877,
       "confidence_history": [
         [
-          1876,
+          1877,
           0.93
         ]
       ]
@@ -45,10 +45,10 @@
       "supporting_loans": [],
       "confidence": 1.0,
       "first_seen_batch": 1,
-      "last_updated_batch": 1876,
+      "last_updated_batch": 1877,
       "confidence_history": [
         [
-          1876,
+          1877,
           1.0
         ]
       ]
@@ -61,10 +61,10 @@
       "supporting_loans": [],
       "confidence": 0.83,
       "first_seen_batch": 1,
-      "last_updated_batch": 1876,
+      "last_updated_batch": 1877,
       "confidence_history": [
         [
-          1876,
+          1877,
           0.83
         ]
       ]
@@ -77,10 +77,10 @@
       "supporting_loans": [],
       "confidence": 0.95,
       "first_seen_batch": 1,
-      "last_updated_batch": 1876,
+      "last_updated_batch": 1877,
       "confidence_history": [
         [
-          1876,
+          1877,
           0.95
         ]
       ]
@@ -92,11 +92,11 @@
       "body": "Pitches that include precise details about inventory items or operational data, rather than general categories, fund faster for both men and women.",
       "supporting_loans": [],
       "confidence": 0.85,
-      "first_seen_batch": 1586,
-      "last_updated_batch": 1876,
+      "first_seen_batch": 1585,
+      "last_updated_batch": 1877,
       "confidence_history": [
         [
-          1876,
+          1877,
           0.85
         ]
       ]
@@ -108,11 +108,11 @@
       "body": "Pitches from women that explicitly state the number of years the business has been operating are associated with increased funding speed.",
       "supporting_loans": [],
       "confidence": 0.65,
-      "first_seen_batch": 1870,
-      "last_updated_batch": 1876,
+      "first_seen_batch": 1869,
+      "last_updated_batch": 1877,
       "confidence_history": [
         [
-          1876,
+          1877,
           0.65
         ]
       ]
@@ -124,83 +124,69 @@
       "body": "Pitches that explicitly reference providing for children's education or specific family support needs are associated with increased funding speed for both men and women.",
       "supporting_loans": [],
       "confidence": 0.65,
-      "first_seen_batch": 1872,
-      "last_updated_batch": 1876,
+      "first_seen_batch": 1871,
+      "last_updated_batch": 1877,
       "confidence_history": [
         [
-          1876,
+          1877,
           0.65
         ]
       ]
     }
   },
   "puzzles": {
-    "male-asset-goals-faster": {
-      "id": "male-asset-goals-faster",
-      "body": "Male borrowers who mention long-term goals of asset acquisition, such as land, may fund faster.",
-      "first_seen_batch": 1814
-    },
     "female-income-specificity-slower": {
       "id": "female-income-specificity-slower",
       "body": "Providing specific monthly income amounts may predict slower funding for female borrowers.",
-      "first_seen_batch": 1824
-    },
-    "female-husband-occupation-faster": {
-      "id": "female-husband-occupation-faster",
-      "body": "Female borrowers who specify the occupation of their husband may fund faster.",
-      "first_seen_batch": 1838
+      "first_seen_batch": 1823
     },
     "female-marital-status-slower": {
       "id": "female-marital-status-slower",
       "body": "Female borrowers who mention their marital status may fund more slowly.",
-      "first_seen_batch": 1840
+      "first_seen_batch": 1839
     },
     "female-nwtf-slower": {
       "id": "female-nwtf-slower",
       "body": "Female borrowers who mention previous loans from NWTF may fund more slowly.",
-      "first_seen_batch": 1852
+      "first_seen_batch": 1851
     },
     "male-children-ages-slower-puzzle": {
       "id": "male-children-ages-slower-puzzle",
       "body": "Male borrowers who list the specific ages of their children may fund more slowly.",
-      "first_seen_batch": 1858
+      "first_seen_batch": 1857
     },
     "female-infrastructure-scale-slower": {
       "id": "female-infrastructure-scale-slower",
       "body": "Female borrowers who describe business growth in terms of infrastructure or large-scale expansion may fund more slowly.",
-      "first_seen_batch": 1868
+      "first_seen_batch": 1867
     },
     "female-hand-in-hand-slower": {
       "id": "female-hand-in-hand-slower",
       "body": "Mentioning training with Hand in Hand Eastern Africa may predict slower funding for women.",
-      "first_seen_batch": 1872
+      "first_seen_batch": 1871
     },
     "male-aspirational-goals-slower": {
       "id": "male-aspirational-goals-slower",
       "body": "Broader aspirational goals, such as inspiring others, may predict slower funding for men.",
-      "first_seen_batch": 1872
+      "first_seen_batch": 1871
     },
     "female-location-specificity-faster": {
       "id": "female-location-specificity-faster",
       "body": "Female borrowers who mention specific towns or provinces in their pitch may fund faster.",
-      "first_seen_batch": 1876
+      "first_seen_batch": 1875
+    },
+    "female-husband-support-slower": {
+      "id": "female-husband-support-slower",
+      "body": "Female borrowers who mention a supportive husband helping with repayment may fund more slowly.",
+      "first_seen_batch": 1877
+    },
+    "female-greeting-gratitude-faster": {
+      "id": "female-greeting-gratitude-faster",
+      "body": "Female borrowers who combine a geographical greeting with gratitude may fund faster.",
+      "first_seen_batch": 1877
     }
   },
   "retired": {
-    "male-education-faster-puzzle": {
-      "id": "male-education-faster-puzzle",
-      "title": "Male borrowers who mention education or learning conditions for themselves or their children may fund faster.",
-      "retrospective": "Retired as stale to maintain puzzle cap.",
-      "retired_batch": 1867,
-      "was_believed_batches": 0
-    },
-    "female-survival-needs-slower": {
-      "id": "female-survival-needs-slower",
-      "title": "Female borrowers who mention using the loan for basic survival needs, such as food, may fund more slowly.",
-      "retrospective": "Retired as stale to maintain puzzle cap.",
-      "retired_batch": 1867,
-      "was_believed_batches": 0
-    },
     "female-family-future-faster": {
       "id": "female-family-future-faster",
       "title": "Pitches from women that explicitly mention securing the future of their family are associated with increased funding speed.",
@@ -255,6 +241,20 @@
       "title": "Direct thank you to lenders may accelerate funding for female borrowers.",
       "retrospective": "Contradicted by observation that gratitude appears in slower pitches.",
       "retired_batch": 1876,
+      "was_believed_batches": 0
+    },
+    "female-husband-occupation-faster": {
+      "id": "female-husband-occupation-faster",
+      "title": "Female borrowers who specify the occupation of their husband may fund faster.",
+      "retrospective": "Contradicted by observation that mentioning a supportive husband predicts slower funding.",
+      "retired_batch": 1877,
+      "was_believed_batches": 0
+    },
+    "male-asset-goals-faster": {
+      "id": "male-asset-goals-faster",
+      "title": "Male borrowers who mention long-term goals of asset acquisition, such as land, may fund faster.",
+      "retrospective": "Retired as stale to maintain puzzle cap.",
+      "retired_batch": 1877,
       "was_believed_batches": 0
     }
   }
