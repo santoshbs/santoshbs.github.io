@@ -1,5 +1,111 @@
 [
   {
+    "id": "0a3b4fbafdb1",
+    "timestamp": "2026-10-02T09:28:57.466167+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "activists vs sponsors on moral evaluation",
+    "labels": {
+      "X": "activists",
+      "Y": "sponsors",
+      "A": "moral",
+      "B": "corrupt"
+    },
+    "canonical_keys": {
+      "X": "activists",
+      "Y": "sponsors",
+      "A": "moral",
+      "B": "corrupt"
+    },
+    "effect_size": 0.80699700496119,
+    "p_value": 0.02858,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "activist",
+        "protester",
+        "campaigner",
+        "organizer",
+        "agitator",
+        "reformer",
+        "advocate",
+        "dissenter",
+        "rebel",
+        "crusader",
+        "volunteer",
+        "idealist",
+        "demonstrator",
+        "marcher",
+        "picketer"
+      ],
+      "Y_used": [
+        "sponsor",
+        "backer",
+        "financier",
+        "patron",
+        "donor",
+        "investor",
+        "funder",
+        "benefactor",
+        "contributor",
+        "banker",
+        "philanthropist",
+        "capitalist",
+        "tycoon",
+        "magnate",
+        "bankroller"
+      ],
+      "A_used": [
+        "ethical",
+        "virtuous",
+        "righteous",
+        "just",
+        "honest",
+        "noble",
+        "principled",
+        "pure",
+        "altruistic",
+        "selfless",
+        "decent",
+        "fair",
+        "upright",
+        "saintly",
+        "moral"
+      ],
+      "B_used": [
+        "corrupt",
+        "greedy",
+        "deceitful",
+        "selfish",
+        "unjust",
+        "dishonest",
+        "wicked",
+        "evil",
+        "immoral",
+        "crooked",
+        "shady",
+        "illicit",
+        "mercenary",
+        "sinful",
+        "blameworthy"
+      ]
+    },
+    "proposal": "People associate activists with moral authority more strongly than they associate sponsors with moral authority. This proposal examines a tension in contemporary discourse where grassroots action is often valorized as authentic and ethically driven, while external funding sources are frequently scrutinized for potential corruption, co-optation, or hidden agendas. It is novel because implicit tests have compared activists to politicians or lobbyists, but the specific distinction between the actor and the financier remains unprobed at an implicit level. Confirming this association would reveal how public cognition separates 'doing' from 'funding' in moral evaluation, highlighting a bias where proximity to action confers legitimacy that financial support does not.",
+    "iterations": 3,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "4729ef9d2e24",
     "timestamp": "2026-10-02T08:35:12.705302+00:00",
     "schema_version": "autoresearch.v1",
