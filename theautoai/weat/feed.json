@@ -1,5 +1,111 @@
 [
   {
+    "id": "4dffb84f7b6e",
+    "timestamp": "2026-10-02T19:04:33.685694+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "farmers vs doctors on self-reliance vs institutional dependence",
+    "labels": {
+      "X": "farmers",
+      "Y": "doctors",
+      "A": "self-reliance",
+      "B": "institutional dependence"
+    },
+    "canonical_keys": {
+      "X": "farmers",
+      "Y": "doctors",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 1.3533627920498403,
+    "p_value": 3e-05,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "farmer",
+        "rancher",
+        "grower",
+        "herder",
+        "dairyman",
+        "stockman",
+        "farmhand",
+        "harvester",
+        "planter",
+        "cattleman",
+        "cultivator",
+        "tiller",
+        "homesteader",
+        "agronomist",
+        "husbandman"
+      ],
+      "Y_used": [
+        "doctor",
+        "physician",
+        "surgeon",
+        "medic",
+        "clinician",
+        "practitioner",
+        "specialist",
+        "healer",
+        "doc",
+        "intern",
+        "resident",
+        "consultant",
+        "nurse",
+        "attendant",
+        "therapist"
+      ],
+      "A_used": [
+        "independent",
+        "autonomous",
+        "rugged",
+        "solitary",
+        "individualistic",
+        "lone",
+        "autonomy",
+        "independence",
+        "liberty",
+        "freedom",
+        "individuality",
+        "resilient",
+        "alone",
+        "individual",
+        "personal"
+      ],
+      "B_used": [
+        "collaborative",
+        "team",
+        "institution",
+        "collective",
+        "cooperation",
+        "network",
+        "corporate",
+        "community",
+        "social",
+        "interdependent",
+        "dependent",
+        "teamwork",
+        "partnership",
+        "group",
+        "society"
+      ]
+    },
+    "proposal": "People associate farmers with self-reliance more strongly than they associate doctors with self-reliance. This differential implicit association reflects deep-seated cultural narratives that frame agricultural labor as an individualistic struggle against the elements requiring autonomous resourcefulness, whereas medical practice is culturally constructed as inherently institutional, collaborative, and technology-dependent. Examining this association is novel because while sociological literature discusses rural-urban divides in values, implicit cognitive biases linking specific occupational categories to the trait of self-reliance have not been systematically measured. It matters because such associations may shape public perceptions of agency, blame, and deservingness during crises, potentially influencing policy attitudes toward agricultural support versus healthcare infrastructure.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "4cb7c8fdd910",
     "timestamp": "2026-10-02T18:18:57.109632+00:00",
     "schema_version": "autoresearch.v1",
