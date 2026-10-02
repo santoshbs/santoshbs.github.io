@@ -1,5 +1,111 @@
 [
   {
+    "id": "ce0bdc2f7337",
+    "timestamp": "2026-10-02T05:56:47.612617+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Explorers vs Settlers on Mystery vs Familiarity",
+    "labels": {
+      "X": "Explorers",
+      "Y": "Settlers",
+      "A": "Mystery",
+      "B": "Familiarity"
+    },
+    "canonical_keys": {
+      "X": "explorers",
+      "Y": "settlers",
+      "A": "mystery",
+      "B": "familiarity"
+    },
+    "effect_size": 1.0237962153295328,
+    "p_value": 0.00411,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "explorer",
+        "adventurer",
+        "scout",
+        "traveler",
+        "voyager",
+        "wanderer",
+        "trekker",
+        "seeker",
+        "prospect",
+        "ranger",
+        "discoverer",
+        "navigator",
+        "globetrotter",
+        "nomad",
+        "pathfinder"
+      ],
+      "Y_used": [
+        "settler",
+        "colonist",
+        "resident",
+        "inhabitant",
+        "homeowner",
+        "dweller",
+        "farmer",
+        "homesteader",
+        "civilian",
+        "local",
+        "villager",
+        "townsman",
+        "landowner",
+        "citizen",
+        "neighbor"
+      ],
+      "A_used": [
+        "mystery",
+        "enigma",
+        "riddle",
+        "secret",
+        "obscure",
+        "unknown",
+        "cryptic",
+        "arcane",
+        "puzzling",
+        "nebulous",
+        "hidden",
+        "concealed",
+        "veil",
+        "shadowy",
+        "phantom"
+      ],
+      "B_used": [
+        "familiar",
+        "known",
+        "clear",
+        "obvious",
+        "stable",
+        "permanent",
+        "established",
+        "constant",
+        "secure",
+        "routine",
+        "normal",
+        "ordinary",
+        "usual",
+        "standard",
+        "certain"
+      ]
+    },
+    "proposal": "People associate Explorers with mystery more strongly than they associate Settlers with mystery. This differential association examines the implicit link between actors who venture into the unknown and the concept of the enigmatic, compared to those who establish permanence and familiarity. The proposal is novel because it moves beyond standard dimensions like risk or competence to probe how social actors are categorized based on their relationship to uncertainty and the mapped world. It matters because it reveals how cultural narratives may romantically privilege the allure of the uncharted over the stabilizing contributions of those who build enduring communities.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "55b55e2b0a50",
     "timestamp": "2026-10-01T22:12:53.736077+00:00",
     "schema_version": "autoresearch.v1",
