@@ -1,5 +1,111 @@
 [
   {
+    "id": "4729ef9d2e24",
+    "timestamp": "2026-10-02T08:35:12.705302+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "audiences vs performers on evaluation versus creation",
+    "labels": {
+      "X": "audiences",
+      "Y": "performers",
+      "A": "evaluation",
+      "B": "creation"
+    },
+    "canonical_keys": {
+      "X": "audiences",
+      "Y": "performers",
+      "A": "evaluation",
+      "B": "creation"
+    },
+    "effect_size": 0.5641971623260303,
+    "p_value": 0.13369,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "audience",
+        "crowd",
+        "spectators",
+        "viewers",
+        "watchers",
+        "listeners",
+        "fans",
+        "public",
+        "onlookers",
+        "bystanders",
+        "patrons",
+        "consumers",
+        "guests",
+        "observers",
+        "attendees"
+      ],
+      "Y_used": [
+        "performer",
+        "actor",
+        "actress",
+        "singer",
+        "dancer",
+        "musician",
+        "artist",
+        "model",
+        "comedian",
+        "entertainer",
+        "presenter",
+        "speaker",
+        "narrator",
+        "host",
+        "star"
+      ],
+      "A_used": [
+        "judge",
+        "evaluate",
+        "critique",
+        "assess",
+        "grade",
+        "score",
+        "rate",
+        "review",
+        "opinion",
+        "verdict",
+        "decision",
+        "analyze",
+        "measure",
+        "standard",
+        "criterion"
+      ],
+      "B_used": [
+        "create",
+        "invent",
+        "imagine",
+        "design",
+        "compose",
+        "draw",
+        "paint",
+        "sculpt",
+        "build",
+        "craft",
+        "form",
+        "shape",
+        "make",
+        "produce",
+        "generate"
+      ]
+    },
+    "proposal": "People associate audiences with judgment more strongly than they associate performers with judgment. This differential implicit association reflects cultural narratives that cast audience members as the evaluative 'jury' or critical mass against whom artistic and social performance is measured, whereas performers are framed as the objects of scrutiny rather than the arbiters. Examining this association is novel because prior research has focused on creator-consumer dynamics without probing the specific attribution of evaluative power to the audience category. This matters because the intensification of audience participation in digital media may be reshaping these implicit representations, potentially elevating lay audiences to positions of moral and aesthetic authority traditionally reserved for institutions.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "ce0bdc2f7337",
     "timestamp": "2026-10-02T05:56:47.612617+00:00",
     "schema_version": "autoresearch.v1",
