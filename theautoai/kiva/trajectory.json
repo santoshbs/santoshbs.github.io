@@ -1,25 +1,5 @@
 [
   {
-    "id": "female-children-count-slower",
-    "title": "Mentioning the specific number of children may predict slower funding for female borrowers.",
-    "bucket": "",
-    "birth_batch": 0,
-    "death_batch": 1852,
-    "last_batch": 1852,
-    "confidence": 0,
-    "alive": false
-  },
-  {
-    "id": "female-education-volunteering-slower-puzzle",
-    "title": "Female borrowers who provide specific details about education or social volunteering may fund more slowly.",
-    "bucket": "",
-    "birth_batch": 0,
-    "death_batch": 1853,
-    "last_batch": 1853,
-    "confidence": 0,
-    "alive": false
-  },
-  {
     "id": "female-inventory-specificity-slower",
     "title": "While operational specificity generally accelerates funding, female borrowers who provide detailed lists of supplies or product types fund more slowly.",
     "bucket": "",
@@ -100,11 +80,31 @@
     "alive": false
   },
   {
+    "id": "female-family-future-faster",
+    "title": "Pitches from women that explicitly mention securing the future of their family are associated with increased funding speed.",
+    "bucket": "",
+    "birth_batch": 0,
+    "death_batch": 1869,
+    "last_batch": 1869,
+    "confidence": 0,
+    "alive": false
+  },
+  {
+    "id": "female-children-details-faster",
+    "title": "Pitches from women that specify the number, age, or schooling status of their children are associated with increased funding speed.",
+    "bucket": "",
+    "birth_batch": 0,
+    "death_batch": 1869,
+    "last_batch": 1869,
+    "confidence": 0,
+    "alive": false
+  },
+  {
     "id": "verbosity-slower-general",
     "title": "Higher verbosity and excessive personal detail predict slower funding regardless of gender.",
     "bucket": "slower",
     "birth_batch": 1,
-    "last_batch": 1868,
+    "last_batch": 1869,
     "confidence": 0.81,
     "peak_confidence": 0.81,
     "alive": true
@@ -114,9 +114,9 @@
     "title": "Female borrowers who emphasize that their business is currently doing well or is being sustained fund faster.",
     "bucket": "gendered_women",
     "birth_batch": 1,
-    "last_batch": 1868,
-    "confidence": 0.88,
-    "peak_confidence": 0.88,
+    "last_batch": 1869,
+    "confidence": 0.93,
+    "peak_confidence": 0.93,
     "alive": true
   },
   {
@@ -124,7 +124,7 @@
     "title": "Mentioning specific asset or business ownership predicts faster funding regardless of gender.",
     "bucket": "faster",
     "birth_batch": 1,
-    "last_batch": 1868,
+    "last_batch": 1869,
     "confidence": 1.0,
     "peak_confidence": 1.0,
     "alive": true
@@ -134,7 +134,7 @@
     "title": "Female borrowers who use aspirational language such as 'dreams' for their business fund faster.",
     "bucket": "gendered_women",
     "birth_batch": 1,
-    "last_batch": 1868,
+    "last_batch": 1869,
     "confidence": 0.78,
     "peak_confidence": 0.78,
     "alive": true
@@ -144,39 +144,39 @@
     "title": "Mentioning a history of previous loan repayment predicts faster funding regardless of gender.",
     "bucket": "faster",
     "birth_batch": 1,
-    "last_batch": 1868,
+    "last_batch": 1869,
     "confidence": 0.9,
     "peak_confidence": 0.9,
-    "alive": true
-  },
-  {
-    "id": "female-family-future-faster",
-    "title": "Female borrowers who mention securing the future of their family fund faster.",
-    "bucket": "gendered_women",
-    "birth_batch": 1418,
-    "last_batch": 1868,
-    "confidence": 0.94,
-    "peak_confidence": 0.94,
     "alive": true
   },
   {
     "id": "operational-specificity-faster-general",
     "title": "Providing specific operational or inventory details predicts faster funding regardless of gender.",
     "bucket": "faster",
-    "birth_batch": 1594,
-    "last_batch": 1868,
+    "birth_batch": 1593,
+    "last_batch": 1869,
     "confidence": 1.0,
     "peak_confidence": 1.0,
     "alive": true
   },
   {
-    "id": "female-children-details-faster",
-    "title": "Female borrowers who provide specific details about their children fund faster.",
-    "bucket": "gendered_women",
-    "birth_batch": 1848,
-    "last_batch": 1868,
-    "confidence": 0.82,
-    "peak_confidence": 0.82,
+    "id": "business-goals-faster-general",
+    "title": "Emphasizing professional goals, business quality, or reputation predicts faster funding regardless of gender.",
+    "bucket": "faster",
+    "birth_batch": 1869,
+    "last_batch": 1869,
+    "confidence": 0.6,
+    "peak_confidence": 0.6,
+    "alive": true
+  },
+  {
+    "id": "family-focus-slower-general",
+    "title": "Emphasizing family roles or family-related financial struggles predicts slower funding regardless of gender.",
+    "bucket": "slower",
+    "birth_batch": 1869,
+    "last_batch": 1869,
+    "confidence": 0.6,
+    "peak_confidence": 0.6,
     "alive": true
   }
 ]
