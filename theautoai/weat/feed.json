@@ -1,5 +1,111 @@
 [
   {
+    "id": "22ba50606d5e",
+    "timestamp": "2026-10-02T23:53:33.556589+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "firefighters vs surgeons on communal heroism vs technical expertise",
+    "labels": {
+      "X": "firefighters",
+      "Y": "surgeons",
+      "A": "communal_heroism",
+      "B": "technical_expertise"
+    },
+    "canonical_keys": {
+      "X": "firefighters",
+      "Y": "surgeons",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 0.7947789133463264,
+    "p_value": 0.03074,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "firefighter",
+        "fireman",
+        "senior",
+        "chief",
+        "captain",
+        "engineer",
+        "driver",
+        "rescuer",
+        "recruit",
+        "rookie",
+        "trainee",
+        "cadet",
+        "veteran",
+        "partner",
+        "teammate"
+      ],
+      "Y_used": [
+        "surgeon",
+        "doctor",
+        "physician",
+        "specialist",
+        "intern",
+        "resident",
+        "clinician",
+        "healer",
+        "practitioner",
+        "attending",
+        "consultant",
+        "pathologist",
+        "anesthesiologist",
+        "radiologist",
+        "cardiologist"
+      ],
+      "A_used": [
+        "community",
+        "public",
+        "accessible",
+        "neighborhood",
+        "parade",
+        "ritual",
+        "civic",
+        "warm",
+        "collective",
+        "everyday",
+        "friendly",
+        "local",
+        "approachable",
+        "open",
+        "social"
+      ],
+      "B_used": [
+        "professional",
+        "technical",
+        "institutional",
+        "elite",
+        "specialized",
+        "private",
+        "complex",
+        "advanced",
+        "expert",
+        "formal",
+        "scientific",
+        "academic",
+        "methodical",
+        "rigorous",
+        "systematic"
+      ]
+    },
+    "proposal": "People associate firefighters with communal heroism more strongly than they associate surgeons with communal heroism. While both groups are widely respected for life-saving expertise, firefighters occupy a unique cultural niche as accessible, neighborhood-embedded protectors who are frequently celebrated through public parades and community rituals, whereas surgeons are typically venerated as highly skilled professionals whose heroism is perceived as private, technical, and confined to institutional settings. Examining this differential association is novel because prior work has not systematically distinguished between the public's implicit representation of these two high-status rescue roles, even though they face similar risks and save lives. Confirming this link would matter for understanding how society implicitly partitions 'everyday' civic virtue from 'elite' professional mastery, revealing whether the public mental model reserves the warmest, most collective forms of adoration for those who serve the community directly versus those who serve through specialized expertise.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "4dffb84f7b6e",
     "timestamp": "2026-10-02T19:04:33.685694+00:00",
     "schema_version": "autoresearch.v1",
