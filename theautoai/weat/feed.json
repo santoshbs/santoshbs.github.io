@@ -1,5 +1,112 @@
 [
   {
+    "id": "2c2e2cc53bed",
+    "timestamp": "2026-10-03T17:28:51.026570+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "activists vs bureaucrats on spontaneity versus predictability",
+    "labels": {
+      "X": "activists",
+      "Y": "bureaucrats",
+      "A": "spontaneity",
+      "B": "predictability"
+    },
+    "canonical_keys": {
+      "X": "activists",
+      "Y": "bureaucrats",
+      "A": "spontaneity",
+      "B": "predictability"
+    },
+    "effect_size": 1.4629853498402643,
+    "p_value": 1e-05,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "activist",
+        "protester",
+        "agitator",
+        "campaigner",
+        "demonstrator",
+        "organizer",
+        "reformer",
+        "striker",
+        "unionist",
+        "advocate",
+        "dissenter",
+        "revolter",
+        "proponent",
+        "militant",
+        "radical",
+        "marcher"
+      ],
+      "Y_used": [
+        "bureaucrat",
+        "administrator",
+        "functionary",
+        "clerk",
+        "official",
+        "manager",
+        "supervisor",
+        "executive",
+        "director",
+        "regulator",
+        "coordinator",
+        "controller",
+        "officer",
+        "inspector",
+        "commissioner"
+      ],
+      "A_used": [
+        "improvisation",
+        "spontaneity",
+        "fluidity",
+        "adaptability",
+        "flexibility",
+        "spontaneous",
+        "adaptive",
+        "improvised",
+        "unplanned",
+        "makeshift",
+        "whim",
+        "impromptu",
+        "erratic",
+        "haphazard",
+        "unpredictable"
+      ],
+      "B_used": [
+        "predictability",
+        "procedural",
+        "rigidity",
+        "orderliness",
+        "predictable",
+        "orderly",
+        "rigid",
+        "structured",
+        "systematic",
+        "methodical",
+        "standard",
+        "conventional",
+        "traditional",
+        "fixed",
+        "established"
+      ]
+    },
+    "proposal": "People associate activists with improvisation more strongly than they associate bureaucrats with improvisation. This differential reflects how contemporary discourse frames grassroots mobilization as inherently fluid, context-dependent, and adaptive, whereas institutional governance is stereotyped as procedural, rule-bound, and predictable. Examining this implicit bias is novel because prior work has focused on explicit attitudes toward protest efficacy or bureaucratic efficiency, but has not measured the automatic cognitive linking of spontaneity and rule-based action to these social roles. Confirming this association would clarify how the public mentally partitions agency between organic social movements and formal state apparatuses, which has direct implications for public trust, policy implementation, and the perceived legitimacy of institutional change versus grassroots disruption.",
+    "iterations": 3,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "870f46401fed",
     "timestamp": "2026-10-03T12:15:17.631700+00:00",
     "schema_version": "autoresearch.v1",
