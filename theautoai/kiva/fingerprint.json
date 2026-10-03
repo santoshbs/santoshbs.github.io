@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "batches_seen": 1893,
-  "loans_seen": 30288,
-  "last_updated": "2026-10-03T20:29:14.554176+00:00",
+  "batches_seen": 1894,
+  "loans_seen": 30304,
+  "last_updated": "2026-10-03T21:34:53.337782+00:00",
   "watching_for": "",
   "claims": {
     "verbosity-slower-general": {
@@ -13,10 +13,10 @@
       "supporting_loans": [],
       "confidence": 0.91,
       "first_seen_batch": 1,
-      "last_updated_batch": 1893,
+      "last_updated_batch": 1894,
       "confidence_history": [
         [
-          1893,
+          1894,
           0.91
         ]
       ]
@@ -27,13 +27,13 @@
       "title": "Female borrowers who emphasize that their business is currently doing well or is being sustained fund faster.",
       "body": "Pitches from women that highlight current business success, professional employment history, or professional skill accelerate funding.",
       "supporting_loans": [],
-      "confidence": 0.98,
+      "confidence": 1.0,
       "first_seen_batch": 1,
-      "last_updated_batch": 1893,
+      "last_updated_batch": 1894,
       "confidence_history": [
         [
-          1893,
-          0.98
+          1894,
+          1.0
         ]
       ]
     },
@@ -45,10 +45,10 @@
       "supporting_loans": [],
       "confidence": 1.0,
       "first_seen_batch": 1,
-      "last_updated_batch": 1893,
+      "last_updated_batch": 1894,
       "confidence_history": [
         [
-          1893,
+          1894,
           1.0
         ]
       ]
@@ -61,10 +61,10 @@
       "supporting_loans": [],
       "confidence": 0.73,
       "first_seen_batch": 1,
-      "last_updated_batch": 1893,
+      "last_updated_batch": 1894,
       "confidence_history": [
         [
-          1893,
+          1894,
           0.73
         ]
       ]
@@ -77,10 +77,10 @@
       "supporting_loans": [],
       "confidence": 0.8,
       "first_seen_batch": 1,
-      "last_updated_batch": 1893,
+      "last_updated_batch": 1894,
       "confidence_history": [
         [
-          1893,
+          1894,
           0.8
         ]
       ]
@@ -92,11 +92,11 @@
       "body": "Pitches that include precise details about inventory items or operational data, rather than general categories, fund faster for both men and women.",
       "supporting_loans": [],
       "confidence": 0.9,
-      "first_seen_batch": 1569,
-      "last_updated_batch": 1893,
+      "first_seen_batch": 1568,
+      "last_updated_batch": 1894,
       "confidence_history": [
         [
-          1893,
+          1894,
           0.9
         ]
       ]
@@ -108,92 +108,80 @@
       "body": "Pitches from women that explicitly state the number of years the business has been operating are associated with increased funding speed.",
       "supporting_loans": [],
       "confidence": 0.71,
-      "first_seen_batch": 1853,
-      "last_updated_batch": 1893,
+      "first_seen_batch": 1852,
+      "last_updated_batch": 1894,
       "confidence_history": [
         [
-          1893,
+          1894,
           0.71
         ]
       ]
     },
-    "female-marital-status-slower": {
-      "id": "female-marital-status-slower",
-      "bucket": "gendered_women",
-      "title": "Female borrowers who mention their marital status or family composition fund more slowly.",
-      "body": "Pitches from women that emphasize family composition or marital status tend to fund more slowly than those focusing on professional history.",
+    "children-details-slower-general": {
+      "id": "children-details-slower-general",
+      "bucket": "slower",
+      "title": "Mentioning specific details about the number or ages of children predicts slower funding regardless of gender.",
+      "body": "Pitches that include detailed information about the borrower's children, such as their specific ages or total number, tend to fund more slowly for both men and women.",
       "supporting_loans": [],
-      "confidence": 0.47,
-      "first_seen_batch": 1869,
-      "last_updated_batch": 1893,
+      "confidence": 0.6,
+      "first_seen_batch": 1894,
+      "last_updated_batch": 1894,
       "confidence_history": [
         [
-          1893,
-          0.47
+          1894,
+          0.6
         ]
       ]
     }
   },
   "puzzles": {
-    "male-children-ages-slower-puzzle": {
-      "id": "male-children-ages-slower-puzzle",
-      "body": "Male borrowers who list the specific ages of their children may fund more slowly.",
-      "first_seen_batch": 1841
-    },
     "female-infrastructure-scale-slower": {
       "id": "female-infrastructure-scale-slower",
       "body": "Female borrowers who describe business growth in terms of infrastructure or large-scale expansion may fund more slowly.",
-      "first_seen_batch": 1851
+      "first_seen_batch": 1850
     },
     "female-hand-in-hand-slower": {
       "id": "female-hand-in-hand-slower",
       "body": "Mentioning training with Hand in Hand Eastern Africa may predict slower funding for women.",
-      "first_seen_batch": 1855
+      "first_seen_batch": 1854
     },
     "male-aspirational-goals-slower": {
       "id": "male-aspirational-goals-slower",
       "body": "Broader aspirational goals, such as inspiring others, may predict slower funding for men.",
-      "first_seen_batch": 1855
+      "first_seen_batch": 1854
     },
     "female-location-specificity-faster": {
       "id": "female-location-specificity-faster",
       "body": "Female borrowers who mention specific towns or provinces in their pitch may fund faster.",
-      "first_seen_batch": 1859
+      "first_seen_batch": 1858
     },
     "female-husband-support-slower": {
       "id": "female-husband-support-slower",
       "body": "Female borrowers who mention a supportive husband helping with repayment may fund more slowly.",
-      "first_seen_batch": 1861
+      "first_seen_batch": 1860
     },
     "female-greeting-gratitude-faster": {
       "id": "female-greeting-gratitude-faster",
       "body": "Female borrowers who combine a geographical greeting with gratitude may fund faster.",
-      "first_seen_batch": 1861
+      "first_seen_batch": 1860
     },
     "female-lack-of-collateral-slower": {
       "id": "female-lack-of-collateral-slower",
       "body": "Female borrowers who explicitly mention a lack of collateral may fund more slowly.",
-      "first_seen_batch": 1881
+      "first_seen_batch": 1880
     },
     "female-institutional-details-slower": {
       "id": "female-institutional-details-slower",
       "body": "Female borrowers who provide specific details about their lending institution may fund more slowly.",
-      "first_seen_batch": 1881
+      "first_seen_batch": 1880
     },
     "female-no-dependents-faster-puzzle": {
       "id": "female-no-dependents-faster-puzzle",
       "body": "Female borrowers who explicitly state they have no dependent children may fund faster.",
-      "first_seen_batch": 1893
+      "first_seen_batch": 1892
     }
   },
   "retired": {
-    "family-focus-slower-general": {
-      "id": "family-focus-slower-general",
-      "title": "Pitches that focus on the borrower's role as a parent or mention family-related financial hardships tend to fund more slowly for both men and women.",
-      "retrospective": "Confidence reached survival floor of 0.35.",
-      "retired_batch": 1873,
-      "was_believed_batches": 0
-    },
     "business-goals-faster-general": {
       "id": "business-goals-faster-general",
       "title": "Pitches that focus on the borrower's professional ambitions or the quality and reputation of their business tend to fund faster for both men and women.",
@@ -255,6 +243,13 @@
       "title": "Female borrowers who mention children's educational needs or specific ages may fund faster.",
       "retrospective": "Contradicted by observation that mentioning children attending school is associated with slower funding.",
       "retired_batch": 1889,
+      "was_believed_batches": 0
+    },
+    "female-marital-status-slower": {
+      "id": "female-marital-status-slower",
+      "title": "Pitches from women that emphasize family composition or marital status tend to fund more slowly than those focusing on professional history.",
+      "retrospective": "Generalized to gender-neutral claim regarding children's details.",
+      "retired_batch": 1894,
       "was_believed_batches": 0
     }
   }
