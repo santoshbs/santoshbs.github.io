@@ -1,5 +1,115 @@
 [
   {
+    "id": "870f46401fed",
+    "timestamp": "2026-10-03T12:15:17.631700+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "idealists vs realists on psychological vulnerability versus resilience",
+    "labels": {
+      "X": "idealists",
+      "Y": "realists",
+      "A": "fragility",
+      "B": "resilience"
+    },
+    "canonical_keys": {
+      "X": "idealists",
+      "Y": "realists",
+      "A": "fragility",
+      "B": "resilience"
+    },
+    "effect_size": 0.3094407546644874,
+    "p_value": 0.39557,
+    "n": {
+      "X": 16,
+      "Y": 16,
+      "A": 16,
+      "B": 16
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "idealist",
+        "dreamer",
+        "visionary",
+        "utopian",
+        "optimist",
+        "reformer",
+        "activist",
+        "humanitarian",
+        "pacifist",
+        "altruist",
+        "saint",
+        "crusader",
+        "purist",
+        "aspirant",
+        "martyr",
+        "believer"
+      ],
+      "Y_used": [
+        "realist",
+        "pragmatist",
+        "conservative",
+        "skeptic",
+        "materialist",
+        "cynic",
+        "strategist",
+        "diplomat",
+        "technocrat",
+        "administrator",
+        "manager",
+        "engineer",
+        "operator",
+        "executor",
+        "politician",
+        "rationalist"
+      ],
+      "A_used": [
+        "fragile",
+        "brittle",
+        "naive",
+        "vulnerable",
+        "delicate",
+        "weak",
+        "impressionable",
+        "sensitive",
+        "helpless",
+        "gullible",
+        "unstable",
+        "nervous",
+        "anxious",
+        "timid",
+        "dreamy",
+        "childish"
+      ],
+      "B_used": [
+        "resilient",
+        "strong",
+        "grounded",
+        "tough",
+        "stable",
+        "sturdy",
+        "armored",
+        "hardened",
+        "steadfast",
+        "robust",
+        "secure",
+        "unyielding",
+        "practical",
+        "rational",
+        "resolute",
+        "unwavering"
+      ]
+    },
+    "proposal": "People associate idealists with fragility more strongly than they associate realists with fragility. This differential implicit association reflects how contemporary discourse somatically and psychologically stereotypes political temperaments: idealists are subtly framed as emotionally brittle, naive, and easily disillusioned when confronting systemic dysfunction, whereas realists are implicitly cast as grounded, resilient, and psychologically armored. Examining this bias is novel because implicit association research typically maps these categories onto cognitive or traditional moral foundations axes, largely neglecting the automatic linkage to psychological vulnerability. Confirming or disconfirming this association would reveal how affective stereotypes shape leadership perceptions, intergroup coalition-building, and the perceived legitimacy of aspirational versus pragmatic governance.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "1855cc8f1491",
     "timestamp": "2026-10-03T09:57:17.236333+00:00",
     "schema_version": "autoresearch.v1",
