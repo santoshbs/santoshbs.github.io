@@ -1,5 +1,111 @@
 [
   {
+    "id": "e7e1d23c6628",
+    "timestamp": "2026-10-03T02:29:46.045420+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "merchants vs missionaries on pragmatic versus idealistic orientation",
+    "labels": {
+      "X": "merchants",
+      "Y": "missionaries",
+      "A": "pragmatism",
+      "B": "idealism"
+    },
+    "canonical_keys": {
+      "X": "merchants",
+      "Y": "missionaries",
+      "A": "pragmatism",
+      "B": "idealism"
+    },
+    "effect_size": 1.808841528800259,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "merchant",
+        "trader",
+        "vendor",
+        "dealer",
+        "retailer",
+        "shopkeeper",
+        "broker",
+        "salesman",
+        "entrepreneur",
+        "capitalist",
+        "peddler",
+        "hawker",
+        "grocer",
+        "florist",
+        "butcher"
+      ],
+      "Y_used": [
+        "missionary",
+        "priest",
+        "minister",
+        "pastor",
+        "monk",
+        "nun",
+        "friar",
+        "apostle",
+        "evangelist",
+        "preacher",
+        "chaplain",
+        "cleric",
+        "reverend",
+        "bishop",
+        "vicar"
+      ],
+      "A_used": [
+        "pragmatism",
+        "practical",
+        "pragmatic",
+        "realistic",
+        "sensible",
+        "reasonable",
+        "shrewd",
+        "worldly",
+        "instrumental",
+        "adaptive",
+        "flexible",
+        "compromise",
+        "negotiation",
+        "transaction",
+        "profit"
+      ],
+      "B_used": [
+        "idealism",
+        "idealistic",
+        "moral",
+        "morality",
+        "ethics",
+        "ethical",
+        "principle",
+        "conviction",
+        "faith",
+        "belief",
+        "holy",
+        "sacred",
+        "pious",
+        "devout",
+        "spiritual"
+      ]
+    },
+    "proposal": "People associate merchants with pragmatism more strongly than they associate missionaries with pragmatism. This differential implicit association is novel because while explicit stereotypes about religious dedication versus commercial interest are well-documented, implicit measures have not examined how deeply ingrained the association between trade roles and practical, adaptive decision-making really is compared to proselytizing roles. It is interesting because it taps into a fundamental cognitive distinction between instrumental, outcome-oriented behavior and value-driven, principle-oriented behavior in everyday social cognition. Confirming this association would matter for understanding how economic versus ideological actors are mentally categorized in contexts requiring compromise or negotiation, revealing whether pragmatic thinking is automatically tied to market participation rather than moral conviction.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "22ba50606d5e",
     "timestamp": "2026-10-02T23:53:33.556589+00:00",
     "schema_version": "autoresearch.v1",
