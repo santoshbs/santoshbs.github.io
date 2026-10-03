@@ -1,5 +1,111 @@
 [
   {
+    "id": "5a740934185e",
+    "timestamp": "2026-10-03T22:38:44.191552+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Monks vs Priests on Mystical/Transcendental vs Administrative/Institutional",
+    "labels": {
+      "X": "Monks",
+      "Y": "Priests",
+      "A": "Mysticism",
+      "B": "Administration"
+    },
+    "canonical_keys": {
+      "X": "monks",
+      "Y": "priests",
+      "A": "mysticism",
+      "B": "administration"
+    },
+    "effect_size": 0.7258660579029443,
+    "p_value": 0.04882,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "monk",
+        "nun",
+        "friar",
+        "abbot",
+        "prior",
+        "novice",
+        "hermit",
+        "recluse",
+        "ascetic",
+        "anchorite",
+        "dervish",
+        "lama",
+        "sannyasin",
+        "brother",
+        "sister"
+      ],
+      "Y_used": [
+        "priest",
+        "pastor",
+        "reverend",
+        "minister",
+        "vicar",
+        "parson",
+        "cleric",
+        "chaplain",
+        "rector",
+        "dean",
+        "bishop",
+        "cardinal",
+        "pope",
+        "curate",
+        "father"
+      ],
+      "A_used": [
+        "mystic",
+        "insight",
+        "spirit",
+        "divine",
+        "sacred",
+        "transcendence",
+        "enlightenment",
+        "inner",
+        "esoteric",
+        "soul",
+        "vision",
+        "oracle",
+        "arcane",
+        "occult",
+        "psychic"
+      ],
+      "B_used": [
+        "administration",
+        "office",
+        "routine",
+        "bureaucracy",
+        "rule",
+        "law",
+        "order",
+        "duty",
+        "work",
+        "management",
+        "system",
+        "structure",
+        "institution",
+        "protocol",
+        "policy"
+      ]
+    },
+    "proposal": "People associate Monks with mystical insight more strongly than they associate Priests with mystical insight. This differential association taps into the cultural distinction between contemplative roles focused on interior, esoteric spiritual experience and pastoral roles oriented toward community ritual and administration. While explicit role definitions acknowledge this divide, implicit measures have not examined whether lay cognition automatically links monastic identities to higher levels of personal mysticism or transcendence compared to ordained priesthood. Confirming this association would reveal how the public mentally maps spiritual authority onto specific religious archetypes, potentially obscuring the diversity of spiritual practice within both categories.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "1d41df1ad2f0",
     "timestamp": "2026-10-03T20:51:37.146554+00:00",
     "schema_version": "autoresearch.v1",
