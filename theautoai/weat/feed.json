@@ -1,5 +1,111 @@
 [
   {
+    "id": "1d41df1ad2f0",
+    "timestamp": "2026-10-03T20:51:37.146554+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "teachers vs lawyers on Moral vs Technical orientation",
+    "labels": {
+      "X": "teachers",
+      "Y": "lawyers",
+      "A": "Moral Values",
+      "B": "Technical Strategy"
+    },
+    "canonical_keys": {
+      "X": "teachers",
+      "Y": "lawyers",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": -0.7083547332954183,
+    "p_value": 0.05512,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "teacher",
+        "educator",
+        "instructor",
+        "professor",
+        "tutor",
+        "mentor",
+        "principal",
+        "dean",
+        "lecturer",
+        "master",
+        "guide",
+        "coach",
+        "academic",
+        "scholar",
+        "adviser"
+      ],
+      "Y_used": [
+        "lawyer",
+        "attorney",
+        "barrister",
+        "solicitor",
+        "counselor",
+        "advocate",
+        "jurist",
+        "judge",
+        "defender",
+        "prosecutor",
+        "litigator",
+        "paralegal",
+        "associate",
+        "partner",
+        "clerk"
+      ],
+      "A_used": [
+        "right",
+        "wrong",
+        "good",
+        "evil",
+        "ethics",
+        "virtue",
+        "moral",
+        "value",
+        "truth",
+        "conscience",
+        "principle",
+        "sin",
+        "righteous",
+        "integrity",
+        "justice"
+      ],
+      "B_used": [
+        "strategy",
+        "tactic",
+        "technique",
+        "method",
+        "rule",
+        "logic",
+        "argument",
+        "debate",
+        "calculation",
+        "plan",
+        "maneuver",
+        "technical",
+        "procedure",
+        "standard",
+        "law"
+      ]
+    },
+    "proposal": "People associate teachers with moral certainty more strongly than they associate lawyers with moral certainty. This association is novel because while both professions involve guiding others and interpreting complex systems, teachers are culturally framed as transmitters of shared ethical values and character, whereas lawyers are framed as navigators of technical rules and adversarial interests where moral ambiguity is tolerated or expected. Examining this difference is interesting because it reveals how professional socialization narratives diverge regarding the role of absolute right and wrong in their respective domains. It matters because implicit assumptions about moral certainty can influence public deference to these actors in civic conflicts, potentially elevating educators as moral authorities while viewing legal professionals as merely strategic.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "2c2e2cc53bed",
     "timestamp": "2026-10-03T17:28:51.026570+00:00",
     "schema_version": "autoresearch.v1",
