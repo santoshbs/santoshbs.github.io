@@ -1,5 +1,111 @@
 [
   {
+    "id": "720792c0e523",
+    "timestamp": "2026-10-04T12:29:01.802019+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "doctors vs scientists on empathy versus detachment",
+    "labels": {
+      "X": "doctors",
+      "Y": "scientists",
+      "A": "empathy",
+      "B": "detachment"
+    },
+    "canonical_keys": {
+      "X": "doctors",
+      "Y": "scientists",
+      "A": "empathy",
+      "B": "detachment"
+    },
+    "effect_size": 1.7424271142443477,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "doctor",
+        "physician",
+        "surgeon",
+        "clinician",
+        "medic",
+        "healer",
+        "pediatrician",
+        "cardiologist",
+        "dentist",
+        "intern",
+        "neurologist",
+        "oncologist",
+        "dermatologist",
+        "psychiatrist",
+        "gynecologist"
+      ],
+      "Y_used": [
+        "scientist",
+        "researcher",
+        "chemist",
+        "physicist",
+        "biologist",
+        "mathematician",
+        "engineer",
+        "academic",
+        "professor",
+        "analyst",
+        "theorist",
+        "investigator",
+        "scholar",
+        "naturalist",
+        "astronomer"
+      ],
+      "A_used": [
+        "empathy",
+        "compassion",
+        "caring",
+        "warmth",
+        "kindness",
+        "gentle",
+        "loving",
+        "supportive",
+        "sensitive",
+        "sympathetic",
+        "affectionate",
+        "nurturing",
+        "comforting",
+        "considerate",
+        "empathic"
+      ],
+      "B_used": [
+        "detached",
+        "objective",
+        "cold",
+        "rational",
+        "analytical",
+        "logical",
+        "abstract",
+        "impartial",
+        "neutral",
+        "distant",
+        "indifferent",
+        "calculating",
+        "precise",
+        "unemotional",
+        "impersonal"
+      ]
+    },
+    "proposal": "People associate doctors with empathy more strongly than they associate scientists with empathy. This differential association captures a prevalent cultural narrative that frames healers as warm, interpersonal, and responsive to individual suffering, while casting researchers as detached, objective, and focused on abstract truth rather than human connection. Although stereotypes of scientists as 'cold' and doctors as 'caring' are culturally visible, this specific implicit contrast has not been systematically probed in prior WEAT or IAT literature, which has prioritized gender, racial, or arts-versus-science comparisons over intra-professional distinctions among high-status cognitive roles. Confirming this association would shed light on how the public psychologically partitions 'service' from 'inquiry,' potentially influencing the social valuation of medical care versus basic research and the reception of health guidance.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "50ee4aaf1ade",
     "timestamp": "2026-10-04T04:47:10.634037+00:00",
     "schema_version": "autoresearch.v1",
