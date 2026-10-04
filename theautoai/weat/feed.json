@@ -1,5 +1,111 @@
 [
   {
+    "id": "6bb9c7b4a54c",
+    "timestamp": "2026-10-04T13:15:45.984883+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "merchants vs sponsors on cultural authenticity versus commercialization",
+    "labels": {
+      "X": "merchants",
+      "Y": "sponsors",
+      "A": "authenticity",
+      "B": "commercialization"
+    },
+    "canonical_keys": {
+      "X": "merchants",
+      "Y": "sponsors",
+      "A": "authenticity",
+      "B": "commercialization"
+    },
+    "effect_size": 0.6068948521421828,
+    "p_value": 0.10308,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "merchant",
+        "trader",
+        "dealer",
+        "vendor",
+        "retailer",
+        "shopkeeper",
+        "purveyor",
+        "salesman",
+        "peddler",
+        "hawker",
+        "broker",
+        "wholesaler",
+        "grocer",
+        "butcher",
+        "florist"
+      ],
+      "Y_used": [
+        "sponsor",
+        "patron",
+        "benefactor",
+        "donor",
+        "backer",
+        "funder",
+        "financier",
+        "investor",
+        "contributor",
+        "grantor",
+        "underwriter",
+        "philanthropist",
+        "supporter",
+        "guarantor",
+        "capitalist"
+      ],
+      "A_used": [
+        "authentic",
+        "genuine",
+        "original",
+        "traditional",
+        "heritage",
+        "cultural",
+        "pure",
+        "honest",
+        "trustworthy",
+        "local",
+        "classic",
+        "timeless",
+        "artisan",
+        "folk",
+        "native"
+      ],
+      "B_used": [
+        "commercial",
+        "corporate",
+        "profit",
+        "artificial",
+        "synthetic",
+        "manufactured",
+        "industrial",
+        "business",
+        "market",
+        "monetized",
+        "branded",
+        "financial",
+        "instrumental",
+        "globalized",
+        "transactional"
+      ]
+    },
+    "proposal": "People associate merchants with cultural integrity more strongly than they associate sponsors with cultural integrity. This association reflects a latent tension in public discourse where merchants are often framed as authentic stewards of goods and local traditions, whereas sponsors are viewed as external financiers who may commodify or dilute cultural value through commercial influence. Examining this differential is novel because implicit bias research has largely focused on moral or competence stereotypes of economic actors, neglecting how funding mechanisms versus trading roles are culturally represented. It is important because disconfirming this association could challenge assumptions about the 'authenticity' of market exchange versus patronage, shifting how we understand the social legitimacy of different economic participation modes.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "720792c0e523",
     "timestamp": "2026-10-04T12:29:01.802019+00:00",
     "schema_version": "autoresearch.v1",
