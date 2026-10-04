@@ -1,5 +1,111 @@
 [
   {
+    "id": "d969e3dde2c7",
+    "timestamp": "2026-10-04T19:13:49.043514+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "philosophers vs engineers on cognitive orientation toward inquiry vs closure",
+    "labels": {
+      "X": "philosophers",
+      "Y": "engineers",
+      "A": "Intellectual Uncertainty",
+      "B": "Practical Certainty"
+    },
+    "canonical_keys": {
+      "X": "philosophers",
+      "Y": "engineers",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 1.7959450812967754,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "philosopher",
+        "academic",
+        "thinker",
+        "scholar",
+        "professor",
+        "theorist",
+        "intellectual",
+        "essayist",
+        "critic",
+        "lecturer",
+        "humanist",
+        "researcher",
+        "debater",
+        "inquirer",
+        "observer"
+      ],
+      "Y_used": [
+        "engineer",
+        "builder",
+        "architect",
+        "mechanic",
+        "technician",
+        "designer",
+        "operator",
+        "developer",
+        "fabricator",
+        "planner",
+        "producer",
+        "electrician",
+        "carpenter",
+        "welder",
+        "machinist"
+      ],
+      "A_used": [
+        "ambiguity",
+        "doubt",
+        "mystery",
+        "question",
+        "exploration",
+        "debate",
+        "paradox",
+        "unknown",
+        "vague",
+        "speculation",
+        "theory",
+        "contemplation",
+        "discourse",
+        "investigation",
+        "hypothesis"
+      ],
+      "B_used": [
+        "certainty",
+        "solution",
+        "answer",
+        "practical",
+        "concrete",
+        "structure",
+        "fact",
+        "rule",
+        "logic",
+        "system",
+        "precision",
+        "clarity",
+        "result",
+        "product",
+        "function"
+      ]
+    },
+    "proposal": "People associate philosophers with tolerance for intellectual uncertainty more strongly than they associate engineers with tolerance for intellectual uncertainty. Contemporary public discourse routinely frames engineering as a discipline of decisive closure and tangible problem-solving, while casting philosophy as an ongoing interrogation of open-ended questions. This differential implicit association has not been systematically measured, as prior research has focused on valence, warmth/competence, or gendered stereotypes rather than cognitive orientations toward unresolved inquiry. Confirming or disconfirming this bias would clarify how laypersons mentally partition theoretical exploration from applied technical work, with direct implications for how society values foundational critique versus instrumental utility in policy and education debates.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "2f8f78e3ecda",
     "timestamp": "2026-10-04T14:02:36.268908+00:00",
     "schema_version": "autoresearch.v1",
