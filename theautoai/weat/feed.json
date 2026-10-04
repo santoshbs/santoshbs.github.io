@@ -1,5 +1,111 @@
 [
   {
+    "id": "c28c593e6a66",
+    "timestamp": "2026-10-04T02:39:44.293556+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "grandparents vs parents on Permissiveness vs Discipline",
+    "labels": {
+      "X": "grandparents",
+      "Y": "parents",
+      "A": "Indulgence",
+      "B": "Discipline"
+    },
+    "canonical_keys": {
+      "X": "grandparents",
+      "Y": "parents",
+      "A": "indulgence",
+      "B": "discipline"
+    },
+    "effect_size": 0.9264004551015632,
+    "p_value": 0.01141,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "grandfather",
+        "grandmother",
+        "grandpa",
+        "grandma",
+        "granddad",
+        "grandad",
+        "granny",
+        "nan",
+        "nana",
+        "gran",
+        "grandmum",
+        "grandpop",
+        "grandparents",
+        "grandpappy",
+        "grandmas"
+      ],
+      "Y_used": [
+        "father",
+        "mother",
+        "dad",
+        "mum",
+        "mom",
+        "parents",
+        "daddy",
+        "mummy",
+        "pa",
+        "ma",
+        "pops",
+        "stepfather",
+        "stepmother",
+        "guardian",
+        "caretaker"
+      ],
+      "A_used": [
+        "treats",
+        "sweets",
+        "candy",
+        "chocolate",
+        "dessert",
+        "snack",
+        "reward",
+        "gift",
+        "present",
+        "allowance",
+        "bonus",
+        "indulgent",
+        "lenient",
+        "permissive",
+        "spoiling"
+      ],
+      "B_used": [
+        "discipline",
+        "strict",
+        "rules",
+        "boundaries",
+        "control",
+        "obedience",
+        "punishment",
+        "correction",
+        "scolding",
+        "timeout",
+        "restricted",
+        "regulated",
+        "monitored",
+        "supervised",
+        "firm"
+      ]
+    },
+    "proposal": "People associate grandparents with indulgence more strongly than they associate parents with indulgence. This differential implicit association reflects a pervasive cultural narrative that casts grandparents as permissive figures who reward grandchildren with treats and rule-bending, while casting parents as strict agents of socialization responsible for discipline and boundary-setting. The proposal is novel because implicit bias research has largely ignored kinship generation, focusing instead on gender, race, or occupation, leaving the automatic mental mapping of family roles underexplored. Examining this association matters because it reveals how societal perceptions of aging within families may inherently link elder status to a loss of authoritative legitimacy, potentially influencing how caregiving roles are assigned or how intergenerational conflicts over child-rearing are framed in public discourse.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "5a740934185e",
     "timestamp": "2026-10-03T22:38:44.191552+00:00",
     "schema_version": "autoresearch.v1",
