@@ -1,5 +1,111 @@
 [
   {
+    "id": "50ee4aaf1ade",
+    "timestamp": "2026-10-04T04:47:10.634037+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "teachers vs therapists on moral evaluation vs clinical detachment",
+    "labels": {
+      "X": "teachers",
+      "Y": "therapists",
+      "A": "moral judgment",
+      "B": "clinical neutrality"
+    },
+    "canonical_keys": {
+      "X": "teachers",
+      "Y": "therapists",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 0.8747302241645182,
+    "p_value": 0.01616,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "teacher",
+        "educator",
+        "instructor",
+        "professor",
+        "tutor",
+        "mentor",
+        "lecturer",
+        "principal",
+        "pedagogue",
+        "academic",
+        "dean",
+        "headmaster",
+        "schoolmaster",
+        "schoolteacher",
+        "headteacher"
+      ],
+      "Y_used": [
+        "therapist",
+        "psychologist",
+        "psychiatrist",
+        "counselor",
+        "clinician",
+        "doctor",
+        "physician",
+        "psychotherapist",
+        "psychoanalyst",
+        "behaviorist",
+        "practitioner",
+        "specialist",
+        "healer",
+        "expert",
+        "professional"
+      ],
+      "A_used": [
+        "moral",
+        "ethical",
+        "virtue",
+        "right",
+        "wrong",
+        "good",
+        "bad",
+        "judgment",
+        "values",
+        "norms",
+        "character",
+        "morality",
+        "principled",
+        "duty",
+        "honor"
+      ],
+      "B_used": [
+        "clinical",
+        "medical",
+        "scientific",
+        "neutral",
+        "objective",
+        "detached",
+        "technical",
+        "biological",
+        "physiological",
+        "pathological",
+        "empirical",
+        "evidence",
+        "research",
+        "data",
+        "analysis"
+      ]
+    },
+    "proposal": "People associate teachers with moral judgment more strongly than they associate therapists with moral judgment. While both professions are culturally recognized as guidance providers, contemporary discourse frames teachers as character-shapers who evaluate conduct and transmit normative values, whereas therapists are increasingly depicted as clinically neutral practitioners focused on symptom management and psychological adaptation. This specific implicit contrast has not been systematically examined in social cognition research, which has typically focused on empathy or expertise rather than perceived moral evaluative stance. Testing this association matters because it reveals whether the public implicitly delegates moral authority to educational roles while reserving clinical detachment for mental health care, fundamentally shaping institutional trust and professional legitimacy in polarized environments.",
+    "iterations": 3,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "c28c593e6a66",
     "timestamp": "2026-10-04T02:39:44.293556+00:00",
     "schema_version": "autoresearch.v1",
