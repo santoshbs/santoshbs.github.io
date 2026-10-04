@@ -1,5 +1,111 @@
 [
   {
+    "id": "f1dfc30f7220",
+    "timestamp": "2026-10-04T19:51:51.195961+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "executives vs criminals on Perceived accountability",
+    "labels": {
+      "X": "executives",
+      "Y": "criminals",
+      "A": "Impunity",
+      "B": "Punishment"
+    },
+    "canonical_keys": {
+      "X": "executives",
+      "Y": "criminals",
+      "A": "impunity",
+      "B": "punishment"
+    },
+    "effect_size": -0.0508522490880593,
+    "p_value": 0.89928,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "executive",
+        "manager",
+        "director",
+        "boss",
+        "president",
+        "chairman",
+        "administrator",
+        "supervisor",
+        "foreman",
+        "principal",
+        "partner",
+        "owner",
+        "tycoon",
+        "mogul",
+        "leader"
+      ],
+      "Y_used": [
+        "criminal",
+        "thief",
+        "robber",
+        "burglar",
+        "murderer",
+        "killer",
+        "gangster",
+        "outlaw",
+        "fugitive",
+        "scammer",
+        "hacker",
+        "smuggler",
+        "mugger",
+        "arsonist",
+        "vandal"
+      ],
+      "A_used": [
+        "impunity",
+        "immunity",
+        "exemption",
+        "pardon",
+        "amnesty",
+        "absolution",
+        "leniency",
+        "mercy",
+        "release",
+        "acquittal",
+        "discharge",
+        "escape",
+        "shield",
+        "defense",
+        "waiver"
+      ],
+      "B_used": [
+        "punishment",
+        "penalty",
+        "fine",
+        "jail",
+        "prison",
+        "sentence",
+        "trial",
+        "conviction",
+        "arrest",
+        "guilt",
+        "charge",
+        "prosecution",
+        "incarceration",
+        "detention",
+        "accountability"
+      ]
+    },
+    "proposal": "People associate executives with impunity more strongly than they associate criminals with impunity. This differential reflects a latent public perception that corporate and institutional power structures provide a shield against accountability, whereas individuals labeled as criminals are viewed as subject to the full weight of punitive systems. Examining this association is novel because implicit bias research has largely focused on moral character or competence, rarely on the perceived asymmetry of consequences between white-collar roles and street-level offenses. The finding would matter significantly for understanding how public discourse frames justice, potentially revealing an implicit cognitive barrier to holding high-status actors to the same normative standards as marginalized groups.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "d969e3dde2c7",
     "timestamp": "2026-10-04T19:13:49.043514+00:00",
     "schema_version": "autoresearch.v1",
