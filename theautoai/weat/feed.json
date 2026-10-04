@@ -1,5 +1,111 @@
 [
   {
+    "id": "2f8f78e3ecda",
+    "timestamp": "2026-10-04T14:02:36.268908+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "investors vs monks on decision-making pace",
+    "labels": {
+      "X": "investors",
+      "Y": "monks",
+      "A": "impulsivity",
+      "B": "patience"
+    },
+    "canonical_keys": {
+      "X": "investors",
+      "Y": "monks",
+      "A": "impulsivity",
+      "B": "patience"
+    },
+    "effect_size": 0.7625079358019381,
+    "p_value": 0.03689,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "investor",
+        "traders",
+        "brokers",
+        "bankers",
+        "speculators",
+        "financiers",
+        "shareholders",
+        "capitalists",
+        "tycoons",
+        "lenders",
+        "dealers",
+        "merchants",
+        "plutocrats",
+        "magnates",
+        "entrepreneurs"
+      ],
+      "Y_used": [
+        "monk",
+        "friar",
+        "abbot",
+        "prior",
+        "novice",
+        "hermit",
+        "ascetic",
+        "devotee",
+        "worshiper",
+        "believer",
+        "cleric",
+        "pastor",
+        "priest",
+        "minister",
+        "layman"
+      ],
+      "A_used": [
+        "impulsive",
+        "rash",
+        "hasty",
+        "impetuous",
+        "reckless",
+        "spontaneous",
+        "abrupt",
+        "quick",
+        "sudden",
+        "reactive",
+        "erratic",
+        "unpredictable",
+        "headstrong",
+        "frantic",
+        "precipitate"
+      ],
+      "B_used": [
+        "patient",
+        "calm",
+        "deliberate",
+        "measured",
+        "steady",
+        "composed",
+        "serene",
+        "tranquil",
+        "unhurried",
+        "methodical",
+        "thoughtful",
+        "reflective",
+        "placid",
+        "collected",
+        "peaceful"
+      ]
+    },
+    "proposal": "People associate investors with impulsivity more strongly than they associate monks with impulsivity. This differential implicit association reflects contemporary cultural narratives that frame financial markets as fast-paced, reactive environments where split-second decisions are celebrated, while religious contemplatives are stereotyped as paragons of patience and deliberation. Examining this association is novel because implicit bias research has largely focused on demographic or occupational status rather than temporal decision-making styles across economic and spiritual roles. It matters because confirming this bias could reveal how public trust in financial systems versus spiritual institutions is subtly shaped by contrasting mental models of time and restraint.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "6bb9c7b4a54c",
     "timestamp": "2026-10-04T13:15:45.984883+00:00",
     "schema_version": "autoresearch.v1",
