@@ -1,5 +1,111 @@
 [
   {
+    "id": "8295ed7437c4",
+    "timestamp": "2026-10-05T09:15:07.221061+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "explorers vs homesteaders on cognitive flexibility versus structural rigidity",
+    "labels": {
+      "X": "explorers",
+      "Y": "homesteaders",
+      "A": "improvisational adaptability",
+      "B": "systematic planning"
+    },
+    "canonical_keys": {
+      "X": "explorers",
+      "Y": "homesteaders",
+      "A": "",
+      "B": ""
+    },
+    "effect_size": 1.1110811444862014,
+    "p_value": 0.0018,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "explorer",
+        "adventurer",
+        "pioneer",
+        "scout",
+        "traveler",
+        "voyager",
+        "nomad",
+        "wanderer",
+        "trekker",
+        "surveyor",
+        "navigator",
+        "ranger",
+        "backpacker",
+        "hiker",
+        "climber"
+      ],
+      "Y_used": [
+        "homesteader",
+        "settler",
+        "farmer",
+        "colonist",
+        "resident",
+        "dweller",
+        "builder",
+        "planter",
+        "cultivator",
+        "landowner",
+        "rancher",
+        "tenant",
+        "owner",
+        "gardener",
+        "citizen"
+      ],
+      "A_used": [
+        "improvise",
+        "adapt",
+        "flexible",
+        "spontaneous",
+        "impromptu",
+        "agile",
+        "versatile",
+        "nimble",
+        "quick",
+        "fluid",
+        "malleable",
+        "unscripted",
+        "creative",
+        "intuitive",
+        "responsive"
+      ],
+      "B_used": [
+        "plan",
+        "systematic",
+        "organized",
+        "structured",
+        "methodical",
+        "routine",
+        "scheduled",
+        "deliberate",
+        "rigid",
+        "strict",
+        "orderly",
+        "logical",
+        "calculated",
+        "strategic",
+        "disciplined"
+      ]
+    },
+    "proposal": "People associate explorers with improvisational adaptability more strongly than they associate homesteaders with improvisational adaptability. While both categories engage with novel or developing environments, explorers are culturally framed as relying on on-the-spot problem solving and flexible resource use, whereas homesteaders are implicitly linked to systematic planning, routine establishment, and structured cultivation. This differential association remains unexamined because prior research has focused on mobility versus stability or risk tolerance, neglecting the cognitive flexibility dimension that underpins how we mentally categorize pioneers versus builders. Confirming or disconfirming this implicit link would shift how we understand the mental representation of entrepreneurial versus foundational roles in contemporary discourse around climate migration, urban development, and organizational innovation.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "67744b7f25db",
     "timestamp": "2026-10-05T08:37:33.659405+00:00",
     "schema_version": "autoresearch.v1",
