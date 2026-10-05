@@ -1,5 +1,111 @@
 [
   {
+    "id": "f3972e84b964",
+    "timestamp": "2026-10-05T15:08:11.003431+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "editors vs authors on anonymity versus visibility",
+    "labels": {
+      "X": "editors",
+      "Y": "authors",
+      "A": "anonymity",
+      "B": "visibility"
+    },
+    "canonical_keys": {
+      "X": "editors",
+      "Y": "authors",
+      "A": "anonymity",
+      "B": "visibility"
+    },
+    "effect_size": 0.892060592449621,
+    "p_value": 0.01418,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "editor",
+        "editors",
+        "proofreader",
+        "copyeditor",
+        "redactor",
+        "subeditor",
+        "typesetter",
+        "compositor",
+        "reviser",
+        "corrector",
+        "publisher",
+        "producer",
+        "director",
+        "curator",
+        "reviewer"
+      ],
+      "Y_used": [
+        "author",
+        "authors",
+        "writer",
+        "writers",
+        "novelist",
+        "poet",
+        "playwright",
+        "screenwriter",
+        "journalist",
+        "reporter",
+        "correspondent",
+        "columnist",
+        "essayist",
+        "blogger",
+        "diarist"
+      ],
+      "A_used": [
+        "anonymous",
+        "hidden",
+        "secret",
+        "invisible",
+        "unseen",
+        "unknown",
+        "unnamed",
+        "obscure",
+        "shadowy",
+        "covert",
+        "clandestine",
+        "concealed",
+        "stealthy",
+        "ghostly",
+        "phantom"
+      ],
+      "B_used": [
+        "visible",
+        "famous",
+        "known",
+        "recognized",
+        "credited",
+        "acknowledged",
+        "celebrated",
+        "prominent",
+        "conspicuous",
+        "notable",
+        "distinguished",
+        "renowned",
+        "illustrious",
+        "star",
+        "public"
+      ]
+    },
+    "proposal": "People associate editors with anonymity more strongly than they associate authors with anonymity. This proposal examines the implicit cultural attribution of visibility and credit-claiming in knowledge production. While authors are prototypically viewed as the named originators of creative works, editors are often stereotyped as the unseen, uncredited figures who refine and polish texts from behind the scenes. Confirming this association would reveal a latent bias in how we mentally assign 'face' and recognition to different roles in intellectual labor, highlighting the systematic erasure of editorial contributions in public imagination despite their centrality to quality and coherence.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "b7654f03dada",
     "timestamp": "2026-10-05T13:06:34.758562+00:00",
     "schema_version": "autoresearch.v1",
