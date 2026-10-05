@@ -1,5 +1,111 @@
 [
   {
+    "id": "67744b7f25db",
+    "timestamp": "2026-10-05T08:37:33.659405+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "activists vs diplomats on temporal pacing",
+    "labels": {
+      "X": "activists",
+      "Y": "diplomats",
+      "A": "urgency",
+      "B": "deliberation"
+    },
+    "canonical_keys": {
+      "X": "activists",
+      "Y": "diplomats",
+      "A": "urgency",
+      "B": "deliberation"
+    },
+    "effect_size": -0.8205755834621887,
+    "p_value": 0.02388,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "activist",
+        "protester",
+        "campaigner",
+        "organizer",
+        "marcher",
+        "demonstrator",
+        "advocate",
+        "volunteer",
+        "crusader",
+        "reformer",
+        "militant",
+        "rebel",
+        "revolutionary",
+        "lobbyist",
+        "petitioner"
+      ],
+      "Y_used": [
+        "diplomat",
+        "ambassador",
+        "envoy",
+        "attache",
+        "representative",
+        "negotiator",
+        "statesman",
+        "stateswoman",
+        "minister",
+        "consul",
+        "delegate",
+        "emissary",
+        "plenipotentiary",
+        "secretary",
+        "officer"
+      ],
+      "A_used": [
+        "urgent",
+        "immediate",
+        "pressing",
+        "critical",
+        "instant",
+        "rapid",
+        "swift",
+        "sudden",
+        "hasty",
+        "brisk",
+        "dire",
+        "vital",
+        "demanding",
+        "prompt",
+        "quick"
+      ],
+      "B_used": [
+        "patient",
+        "deliberate",
+        "gradual",
+        "slow",
+        "calm",
+        "measured",
+        "steady",
+        "unhurried",
+        "thoughtful",
+        "methodical",
+        "careful",
+        "leisurely",
+        "paced",
+        "reflective",
+        "considered"
+      ]
+    },
+    "proposal": "People associate activists with urgency more strongly than they associate diplomats with urgency. This differential implicit association taps into how contemporary civic discourse mentally partitions different modes of political engagement along temporal and emotional pacing axes. While explicit stereotypes often contrast activism’s immediacy with diplomacy’s deliberation, systematic measurement of this temporal framing as an automatic association remains unexplored. Probing it matters because implicit expectations about urgency shape public tolerance for disruptive protest versus institutional negotiation, potentially influencing policy responses and media coverage. Confirming or disconfirming this link would clarify whether citizens automatically encode civic roles as operating on fundamentally different clocks, with implications for how legitimacy is assigned to various forms of political action.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "3a6a7eac1339",
     "timestamp": "2026-10-05T07:09:31.497243+00:00",
     "schema_version": "autoresearch.v1",
