@@ -1,5 +1,111 @@
 [
   {
+    "id": "e885fcd24f7f",
+    "timestamp": "2026-10-05T22:52:36.293892+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "therapists vs coaches on introspection versus action orientation",
+    "labels": {
+      "X": "therapists",
+      "Y": "coaches",
+      "A": "introspection",
+      "B": "action"
+    },
+    "canonical_keys": {
+      "X": "therapists",
+      "Y": "coaches",
+      "A": "introspection",
+      "B": "action"
+    },
+    "effect_size": 1.0225043175090545,
+    "p_value": 0.00463,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "therapist",
+        "psychologist",
+        "psychiatrist",
+        "counselor",
+        "clinician",
+        "psychoanalyst",
+        "analyst",
+        "practitioner",
+        "doctor",
+        "healer",
+        "specialist",
+        "expert",
+        "provider",
+        "psychotherapist",
+        "behaviorist"
+      ],
+      "Y_used": [
+        "coach",
+        "trainer",
+        "mentor",
+        "tutor",
+        "instructor",
+        "teacher",
+        "facilitator",
+        "leader",
+        "manager",
+        "supervisor",
+        "director",
+        "captain",
+        "strategist",
+        "motivator",
+        "encourager"
+      ],
+      "A_used": [
+        "introspection",
+        "reflection",
+        "contemplation",
+        "meditation",
+        "mindfulness",
+        "awareness",
+        "thought",
+        "rumination",
+        "analysis",
+        "inward",
+        "internal",
+        "mental",
+        "emotional",
+        "memory",
+        "past"
+      ],
+      "B_used": [
+        "action",
+        "performance",
+        "achievement",
+        "success",
+        "victory",
+        "goal",
+        "target",
+        "objective",
+        "aim",
+        "mission",
+        "future",
+        "progress",
+        "advancement",
+        "execution",
+        "productivity"
+      ]
+    },
+    "proposal": "People associate therapists with introspection more strongly than they associate coaches with introspection. While both professions involve guided dialogue and personal development, contemporary discourse increasingly frames coaching as future-oriented and action-driven, whereas therapy remains culturally tethered to self-examination and processing past experiences. Examining this implicit divide is novel because the rapid commercialization of coaching has blurred professional boundaries in practice, yet it remains unclear whether lay mental models still sharply separate them along temporal and cognitive axes. Confirming this association would matter for public health messaging, as it reveals how deeply ingrained distinctions between looking inward to heal and looking outward to perform shape help-seeking behaviors and policy debates over insurance coverage for different types of guidance.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "f3972e84b964",
     "timestamp": "2026-10-05T15:08:11.003431+00:00",
     "schema_version": "autoresearch.v1",
