@@ -1,5 +1,111 @@
 [
   {
+    "id": "b7654f03dada",
+    "timestamp": "2026-10-05T13:06:34.758562+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Dancers vs Musicians on extroversion vs introversion",
+    "labels": {
+      "X": "Dancers",
+      "Y": "Musicians",
+      "A": "extroversion",
+      "B": "introversion"
+    },
+    "canonical_keys": {
+      "X": "dancers",
+      "Y": "musicians",
+      "A": "extroversion",
+      "B": "introversion"
+    },
+    "effect_size": -0.31843039790351435,
+    "p_value": 0.39823,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "dancer",
+        "ballerina",
+        "choreographer",
+        "acrobat",
+        "breakdancer",
+        "pantomime",
+        "mime",
+        "performer",
+        "instructor",
+        "artist",
+        "coach",
+        "trainer",
+        "teacher",
+        "director",
+        "gymnast"
+      ],
+      "Y_used": [
+        "musician",
+        "pianist",
+        "guitarist",
+        "violinist",
+        "cellist",
+        "flutist",
+        "trumpeter",
+        "drummer",
+        "conductor",
+        "composer",
+        "singer",
+        "vocalist",
+        "instrumentalist",
+        "harpist",
+        "clarinetist"
+      ],
+      "A_used": [
+        "extrovert",
+        "extroversion",
+        "social",
+        "outgoing",
+        "talkative",
+        "assertive",
+        "energetic",
+        "enthusiastic",
+        "active",
+        "gregarious",
+        "expressive",
+        "lively",
+        "spontaneous",
+        "friendly",
+        "charismatic"
+      ],
+      "B_used": [
+        "introvert",
+        "introversion",
+        "shy",
+        "reserved",
+        "quiet",
+        "solitary",
+        "private",
+        "reflective",
+        "thoughtful",
+        "contemplative",
+        "inward",
+        "absorbed",
+        "withdrawn",
+        "reclusive",
+        "meditative"
+      ]
+    },
+    "proposal": "People associate Dancers with extroversion more strongly than they associate Musicians with extroversion. This differential association reflects a prevalent cultural narrative that positions dancers as outwardly expressive, socially engaging performers who project emotion directly through the body and crowd interaction, whereas musicians are often mentally represented as more introspective, focused on internal auditory landscapes, or technically absorbed behind their instruments. Examining this association is novel because prior implicit measures have largely compared musicians to non-artistic groups or visual artists, neglecting the performative distinction between kinetic and sonic arts. This matters because such stereotypes may influence hiring practices in the arts, audience expectations, and the perceived accessibility of different performance disciplines, potentially framing dance as merely physical spectacle rather than intellectual or emotional labor compared to music.",
+    "iterations": 3,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "8295ed7437c4",
     "timestamp": "2026-10-05T09:15:07.221061+00:00",
     "schema_version": "autoresearch.v1",
