@@ -1,5 +1,111 @@
 [
   {
+    "id": "3a6a7eac1339",
+    "timestamp": "2026-10-05T07:09:31.497243+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "investors vs entrepreneurs on patience versus urgency",
+    "labels": {
+      "X": "investors",
+      "Y": "entrepreneurs",
+      "A": "patience",
+      "B": "urgency"
+    },
+    "canonical_keys": {
+      "X": "investors",
+      "Y": "entrepreneurs",
+      "A": "patience",
+      "B": "urgency"
+    },
+    "effect_size": 0.07345295461754274,
+    "p_value": 0.8445,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "investor",
+        "financier",
+        "banker",
+        "capitalist",
+        "trader",
+        "broker",
+        "shareholder",
+        "backer",
+        "patron",
+        "lender",
+        "stakeholder",
+        "sponsor",
+        "donor",
+        "contributor",
+        "funder"
+      ],
+      "Y_used": [
+        "entrepreneur",
+        "founder",
+        "boss",
+        "innovator",
+        "creator",
+        "hustler",
+        "pioneer",
+        "developer",
+        "executive",
+        "director",
+        "president",
+        "owner",
+        "artisan",
+        "maker",
+        "builder"
+      ],
+      "A_used": [
+        "patience",
+        "waiting",
+        "slow",
+        "deliberate",
+        "steady",
+        "calm",
+        "thoughtful",
+        "careful",
+        "unhurried",
+        "methodical",
+        "gradual",
+        "measured",
+        "persistent",
+        "enduring",
+        "tolerant"
+      ],
+      "B_used": [
+        "urgent",
+        "fast",
+        "rapid",
+        "speedy",
+        "quick",
+        "immediate",
+        "frantic",
+        "rushed",
+        "hurried",
+        "swift",
+        "instant",
+        "aggressive",
+        "pushy",
+        "hasty",
+        "impulsive"
+      ]
+    },
+    "proposal": "People associate investors with patience more strongly than they associate entrepreneurs with patience. This differential implicit association reflects a pervasive cultural narrative in contemporary business and startup discourse, where long-term funders are rhetorically framed as stewards of patient capital who wait for compounding returns, while entrepreneurs are stereotyped as rapid, disruptive hustlers driven by urgency and immediate market capture. Examining this implicit bias is novel because prior research has focused on explicit risk tolerance or innovation stereotypes, but has not measured the underlying cognitive linkage between financial actor categories and temporal pacing. It is important because revealing this implicit temporal divide could explain why policy debates and organizational cultures often pit slow institutional funding against fast founder-led ventures, potentially obscuring the shared need for strategic timing in both roles.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "946a19584a4a",
     "timestamp": "2026-10-05T06:33:16.680079+00:00",
     "schema_version": "autoresearch.v1",
