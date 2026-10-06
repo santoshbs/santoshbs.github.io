@@ -1,5 +1,111 @@
 [
   {
+    "id": "2d5eeecfbdea",
+    "timestamp": "2026-10-06T03:34:26.220519+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "descendants vs ancestors on entitlement versus obligation",
+    "labels": {
+      "X": "descendants",
+      "Y": "ancestors",
+      "A": "entitlement",
+      "B": "obligation"
+    },
+    "canonical_keys": {
+      "X": "descendants",
+      "Y": "ancestors",
+      "A": "entitlement",
+      "B": "obligation"
+    },
+    "effect_size": 0.5867424300523716,
+    "p_value": 0.11629,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "descendant",
+        "offspring",
+        "heir",
+        "scion",
+        "issue",
+        "progeny",
+        "child",
+        "youth",
+        "posterity",
+        "young",
+        "heirs",
+        "inheritors",
+        "successor",
+        "scions",
+        "descendants"
+      ],
+      "Y_used": [
+        "ancestor",
+        "forefather",
+        "forebear",
+        "parent",
+        "elder",
+        "grandmother",
+        "grandfather",
+        "father",
+        "mother",
+        "progenitor",
+        "patriarch",
+        "matriarch",
+        "predecessor",
+        "elders",
+        "forebears"
+      ],
+      "A_used": [
+        "entitled",
+        "privilege",
+        "demand",
+        "claim",
+        "right",
+        "due",
+        "benefit",
+        "advantage",
+        "owed",
+        "granted",
+        "favor",
+        "perk",
+        "gain",
+        "reward",
+        "boon"
+      ],
+      "B_used": [
+        "sacrifice",
+        "duty",
+        "responsibility",
+        "obligation",
+        "effort",
+        "labor",
+        "toil",
+        "service",
+        "dedication",
+        "commitment",
+        "burden",
+        "cost",
+        "loss",
+        "risk",
+        "contribution"
+      ]
+    },
+    "proposal": "People associate descendants with entitlement more strongly than they associate ancestors with entitlement. Contemporary discourse often frames ancestors as sacrificial builders who laid foundations for others, while modern descendants are frequently stereotyped as beneficiaries who expect advantages without proportional contribution, especially in debates over inheritance, generational equity, and intergenerational justice. This association is novel because implicit bias research on age and generational categories typically focuses on competence or warmth (e.g., elders vs. youth), neglecting the moral dimension of entitlement that shapes how societies distribute resources and assign blame across time. Examining this differential association matters because it may reveal a hidden cognitive asymmetry that justifies exploiting the labor of ancestors while excusing the perceived self-interest of descendants, thereby influencing policy attitudes toward pension systems, climate responsibility, and educational investment.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "b7089d295398",
     "timestamp": "2026-10-06T02:12:35.037974+00:00",
     "schema_version": "autoresearch.v1",
