@@ -1,5 +1,111 @@
 [
   {
+    "id": "b7089d295398",
+    "timestamp": "2026-10-06T02:12:35.037974+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "detectives vs suspects on aggression vs passivity",
+    "labels": {
+      "X": "detectives",
+      "Y": "suspects",
+      "A": "aggression",
+      "B": "passivity"
+    },
+    "canonical_keys": {
+      "X": "detectives",
+      "Y": "suspects",
+      "A": "aggression",
+      "B": "passivity"
+    },
+    "effect_size": -1.0157845629403726,
+    "p_value": 0.00366,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "detective",
+        "sleuth",
+        "investigator",
+        "inspector",
+        "agent",
+        "profiler",
+        "examiner",
+        "tracker",
+        "searcher",
+        "pursuer",
+        "constable",
+        "sheriff",
+        "marshal",
+        "officer",
+        "deputy"
+      ],
+      "Y_used": [
+        "suspect",
+        "accused",
+        "defendant",
+        "prisoner",
+        "inmate",
+        "culprit",
+        "perpetrator",
+        "offender",
+        "fugitive",
+        "outlaw",
+        "criminal",
+        "delinquent",
+        "transgressor",
+        "convict",
+        "felon"
+      ],
+      "A_used": [
+        "aggressive",
+        "violent",
+        "hostile",
+        "forceful",
+        "fierce",
+        "brutal",
+        "savage",
+        "combative",
+        "angry",
+        "furious",
+        "raging",
+        "vicious",
+        "harsh",
+        "rough",
+        "wild"
+      ],
+      "B_used": [
+        "peaceful",
+        "calm",
+        "gentle",
+        "quiet",
+        "passive",
+        "docile",
+        "meek",
+        "mild",
+        "soft",
+        "tender",
+        "tranquil",
+        "serene",
+        "placid",
+        "submissive",
+        "harmless"
+      ]
+    },
+    "proposal": "People associate detectives with aggression more strongly than they associate suspects with aggression. This proposal examines the latent 'hunter' schema of the detective role, where the act of investigation is implicitly framed as a coercive pursuit involving boundary violations and force, potentially outweighing the aggression associated with the suspect's violation of laws. This axis is novel because prior research predominantly links aggression to criminals or police officers broadly, neglecting the specific implicit representation of the investigative detective as an active aggressor versus the suspect as a passive target. The finding would shed light on how public discourse mentalizes the moral asymmetry of the justice process, revealing whether the cultural archetype of the detective implicitly encodes violence as a tool of resolution.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "09cba019b86a",
     "timestamp": "2026-10-06T01:17:58.701660+00:00",
     "schema_version": "autoresearch.v1",
