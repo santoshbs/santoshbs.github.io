@@ -1,25 +1,5 @@
 [
   {
-    "id": "female-children-needs-faster",
-    "title": "Female borrowers who mention children's educational needs or specific ages may fund faster.",
-    "bucket": "",
-    "birth_batch": 0,
-    "death_batch": 1889,
-    "last_batch": 1889,
-    "confidence": 0,
-    "alive": false
-  },
-  {
-    "id": "female-marital-status-slower",
-    "title": "Pitches from women that emphasize family composition or marital status tend to fund more slowly than those focusing on professional history.",
-    "bucket": "",
-    "birth_batch": 0,
-    "death_batch": 1894,
-    "last_batch": 1894,
-    "confidence": 0,
-    "alive": false
-  },
-  {
     "id": "female-husband-support-slower",
     "title": "Female borrowers who mention a supportive husband helping with repayment may fund more slowly.",
     "bucket": "",
@@ -100,13 +80,33 @@
     "alive": false
   },
   {
+    "id": "female-business-longevity-faster",
+    "title": "Pitches from women that explicitly state the number of years the business has been operating are associated with increased funding speed.",
+    "bucket": "",
+    "birth_batch": 0,
+    "death_batch": 1933,
+    "last_batch": 1933,
+    "confidence": 0,
+    "alive": false
+  },
+  {
+    "id": "female-gratitude-slower",
+    "title": "Female borrowers who include gratitude markers thanking lenders may fund more slowly.",
+    "bucket": "",
+    "birth_batch": 0,
+    "death_batch": 1933,
+    "last_batch": 1933,
+    "confidence": 0,
+    "alive": false
+  },
+  {
     "id": "verbosity-slower-general",
     "title": "Higher verbosity and excessive personal detail predict slower funding regardless of gender.",
     "bucket": "slower",
     "birth_batch": 1,
-    "last_batch": 1932,
-    "confidence": 0.88,
-    "peak_confidence": 0.88,
+    "last_batch": 1933,
+    "confidence": 0.94,
+    "peak_confidence": 0.94,
     "alive": true
   },
   {
@@ -114,7 +114,7 @@
     "title": "Female borrowers who emphasize that their business is currently doing well or is being sustained fund faster.",
     "bucket": "gendered_women",
     "birth_batch": 1,
-    "last_batch": 1932,
+    "last_batch": 1933,
     "confidence": 1.0,
     "peak_confidence": 1.0,
     "alive": true
@@ -124,7 +124,7 @@
     "title": "Mentioning specific asset or business ownership predicts faster funding regardless of gender.",
     "bucket": "faster",
     "birth_batch": 1,
-    "last_batch": 1932,
+    "last_batch": 1933,
     "confidence": 1.0,
     "peak_confidence": 1.0,
     "alive": true
@@ -134,7 +134,7 @@
     "title": "Female borrowers who use aspirational language such as 'dreams' for their business fund faster.",
     "bucket": "gendered_women",
     "birth_batch": 1,
-    "last_batch": 1932,
+    "last_batch": 1933,
     "confidence": 0.78,
     "peak_confidence": 0.78,
     "alive": true
@@ -144,7 +144,7 @@
     "title": "Mentioning a history of previous loan repayment predicts faster funding regardless of gender.",
     "bucket": "faster",
     "birth_batch": 1,
-    "last_batch": 1932,
+    "last_batch": 1933,
     "confidence": 0.75,
     "peak_confidence": 0.75,
     "alive": true
@@ -153,30 +153,30 @@
     "id": "operational-specificity-faster-general",
     "title": "Providing specific operational or inventory details predicts faster funding regardless of gender.",
     "bucket": "faster",
-    "birth_batch": 1530,
-    "last_batch": 1932,
+    "birth_batch": 1529,
+    "last_batch": 1933,
     "confidence": 0.94,
     "peak_confidence": 0.94,
-    "alive": true
-  },
-  {
-    "id": "female-business-longevity-faster",
-    "title": "Female borrowers who specify the number of years their business has been running fund faster.",
-    "bucket": "gendered_women",
-    "birth_batch": 1814,
-    "last_batch": 1932,
-    "confidence": 0.77,
-    "peak_confidence": 0.77,
     "alive": true
   },
   {
     "id": "female-local-currency-slower",
     "title": "Female borrowers who include loan amounts in local currency fund more slowly.",
     "bucket": "gendered_women",
-    "birth_batch": 1926,
-    "last_batch": 1932,
+    "birth_batch": 1925,
+    "last_batch": 1933,
     "confidence": 0.6,
     "peak_confidence": 0.6,
+    "alive": true
+  },
+  {
+    "id": "business-longevity-faster-general",
+    "title": "Specifying the number of years a business or trade has been operated predicts faster funding regardless of gender.",
+    "bucket": "faster",
+    "birth_batch": 1933,
+    "last_batch": 1933,
+    "confidence": 0.8,
+    "peak_confidence": 0.8,
     "alive": true
   }
 ]
