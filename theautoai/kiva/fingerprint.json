@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "batches_seen": 1944,
-  "loans_seen": 31104,
-  "last_updated": "2026-10-14T12:27:58.721075+00:00",
+  "batches_seen": 1945,
+  "loans_seen": 31120,
+  "last_updated": "2026-10-14T13:26:39.258798+00:00",
   "watching_for": "",
   "claims": {
     "verbosity-slower-general": {
@@ -13,10 +13,10 @@
       "supporting_loans": [],
       "confidence": 1.0,
       "first_seen_batch": 1,
-      "last_updated_batch": 1944,
+      "last_updated_batch": 1945,
       "confidence_history": [
         [
-          1944,
+          1945,
           1.0
         ]
       ]
@@ -29,10 +29,10 @@
       "supporting_loans": [],
       "confidence": 1.0,
       "first_seen_batch": 1,
-      "last_updated_batch": 1944,
+      "last_updated_batch": 1945,
       "confidence_history": [
         [
-          1944,
+          1945,
           1.0
         ]
       ]
@@ -45,10 +45,10 @@
       "supporting_loans": [],
       "confidence": 1.0,
       "first_seen_batch": 1,
-      "last_updated_batch": 1944,
+      "last_updated_batch": 1945,
       "confidence_history": [
         [
-          1944,
+          1945,
           1.0
         ]
       ]
@@ -61,10 +61,10 @@
       "supporting_loans": [],
       "confidence": 0.83,
       "first_seen_batch": 1,
-      "last_updated_batch": 1944,
+      "last_updated_batch": 1945,
       "confidence_history": [
         [
-          1944,
+          1945,
           0.83
         ]
       ]
@@ -75,13 +75,13 @@
       "title": "Mentioning a history of previous loan repayment predicts faster funding regardless of gender.",
       "body": "Pitches that explicitly reference the successful repayment of previous loans are associated with increased funding speed for both men and women.",
       "supporting_loans": [],
-      "confidence": 0.65,
+      "confidence": 0.71,
       "first_seen_batch": 1,
-      "last_updated_batch": 1944,
+      "last_updated_batch": 1945,
       "confidence_history": [
         [
-          1944,
-          0.65
+          1945,
+          0.71
         ]
       ]
     },
@@ -92,11 +92,11 @@
       "body": "Pitches that include precise details about inventory items or operational data, rather than general categories, fund faster for both men and women.",
       "supporting_loans": [],
       "confidence": 0.79,
-      "first_seen_batch": 1518,
-      "last_updated_batch": 1944,
+      "first_seen_batch": 1517,
+      "last_updated_batch": 1945,
       "confidence_history": [
         [
-          1944,
+          1945,
           0.79
         ]
       ]
@@ -108,11 +108,11 @@
       "body": "Pitches from women that specify the loan amount in the local currency of their country are associated with slower funding speeds.",
       "supporting_loans": [],
       "confidence": 0.6,
-      "first_seen_batch": 1914,
-      "last_updated_batch": 1944,
+      "first_seen_batch": 1913,
+      "last_updated_batch": 1945,
       "confidence_history": [
         [
-          1944,
+          1945,
           0.6
         ]
       ]
@@ -124,76 +124,69 @@
       "body": "Pitches that explicitly state the duration of the borrower's professional experience or business operation are associated with increased funding speed for both men and women.",
       "supporting_loans": [],
       "confidence": 0.93,
-      "first_seen_batch": 1922,
-      "last_updated_batch": 1944,
+      "first_seen_batch": 1921,
+      "last_updated_batch": 1945,
       "confidence_history": [
         [
-          1944,
+          1945,
           0.93
         ]
       ]
     }
   },
   "puzzles": {
-    "female-single-mother-faster": {
-      "id": "female-single-mother-faster",
-      "body": "Female borrowers who identify as single or separated mothers may fund faster.",
-      "first_seen_batch": 1880
-    },
     "female-employment-creation-faster": {
       "id": "female-employment-creation-faster",
       "body": "Female borrowers who mention creating employment or earning opportunities for young people may fund faster.",
-      "first_seen_batch": 1898
+      "first_seen_batch": 1897
     },
     "female-educational-background-slower": {
       "id": "female-educational-background-slower",
       "body": "Female borrowers who include specific details about their educational background may fund more slowly.",
-      "first_seen_batch": 1900
+      "first_seen_batch": 1899
     },
     "female-geographic-location-slower": {
       "id": "female-geographic-location-slower",
       "body": "Female borrowers who mention a specific geographic location in their pitch may fund more slowly.",
-      "first_seen_batch": 1906
+      "first_seen_batch": 1905
     },
     "female-repayment-promise-slower": {
       "id": "female-repayment-promise-slower",
       "body": "Female borrowers who explicitly claim they will be able to repay the loan may fund more slowly.",
-      "first_seen_batch": 1920
+      "first_seen_batch": 1919
     },
     "female-partner-employment-faster": {
       "id": "female-partner-employment-faster",
       "body": "Female borrowers who mention the employment of a partner may fund faster.",
-      "first_seen_batch": 1932
+      "first_seen_batch": 1931
     },
     "female-gratitude-slower": {
       "id": "female-gratitude-slower",
       "body": "Female borrowers who include explicit thank-you notes to lenders may fund more slowly.",
-      "first_seen_batch": 1936
+      "first_seen_batch": 1935
     },
     "male-credit-history-slower": {
       "id": "male-credit-history-slower",
       "body": "Male borrowers who mention credit history or repeat borrower status may fund more slowly.",
-      "first_seen_batch": 1940
+      "first_seen_batch": 1939
     },
     "male-children-count-slower": {
       "id": "male-children-count-slower",
       "body": "Male borrowers who specify the number of children they have may fund more slowly.",
-      "first_seen_batch": 1940
+      "first_seen_batch": 1939
     },
     "male-gratitude-faster": {
       "id": "male-gratitude-faster",
       "body": "Male borrowers who include explicit gratitude markers toward lenders may fund faster.",
-      "first_seen_batch": 1940
+      "first_seen_batch": 1939
+    },
+    "female-family-details-slower": {
+      "id": "female-family-details-slower",
+      "body": "Female borrowers who emphasize family and household details may fund more slowly.",
+      "first_seen_batch": 1945
     }
   },
   "retired": {
-    "female-gratitude-slower": {
-      "id": "female-gratitude-slower",
-      "title": "Female borrowers who include gratitude markers thanking lenders may fund more slowly.",
-      "retrospective": "Dropped to maintain puzzle cap.",
-      "retired_batch": 1933,
-      "was_believed_batches": 0
-    },
     "female-husband-income-faster": {
       "id": "female-husband-income-faster",
       "title": "Female borrowers who mention their husband's specific contribution to household income may fund faster.",
@@ -255,6 +248,13 @@
       "title": "Female borrowers who specify the number of children currently in school may fund faster.",
       "retrospective": "Dropped to maintain puzzle cap.",
       "retired_batch": 1942,
+      "was_believed_batches": 0
+    },
+    "female-single-mother-faster": {
+      "id": "female-single-mother-faster",
+      "title": "Female borrowers who identify as single or separated mothers may fund faster.",
+      "retrospective": "Contradicted by observation that family and household details correlate with slower funding for women.",
+      "retired_batch": 1945,
       "was_believed_batches": 0
     }
   }
