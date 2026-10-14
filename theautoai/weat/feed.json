@@ -1,5 +1,111 @@
 [
   {
+    "id": "a9d7d6f28747",
+    "timestamp": "2026-10-14T10:32:20.545918+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "ruralites vs urbanites on transparency vs secrecy",
+    "labels": {
+      "X": "ruralites",
+      "Y": "urbanites",
+      "A": "transparency",
+      "B": "secrecy"
+    },
+    "canonical_keys": {
+      "X": "ruralites",
+      "Y": "urbanites",
+      "A": "transparency",
+      "B": "secrecy"
+    },
+    "effect_size": -0.9574782556871785,
+    "p_value": 0.0075,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "farmer",
+        "rancher",
+        "cowboy",
+        "villager",
+        "agrarian",
+        "homesteader",
+        "woodsman",
+        "trapper",
+        "shepherd",
+        "hunter",
+        "forester",
+        "planter",
+        "tenant",
+        "peasant",
+        "fisherman"
+      ],
+      "Y_used": [
+        "urbanite",
+        "metropolitan",
+        "commuter",
+        "executive",
+        "professional",
+        "businessman",
+        "politician",
+        "journalist",
+        "editor",
+        "consultant",
+        "banker",
+        "clerk",
+        "merchant",
+        "citizen",
+        "dweller"
+      ],
+      "A_used": [
+        "transparent",
+        "open",
+        "clear",
+        "visible",
+        "honest",
+        "frank",
+        "candid",
+        "straightforward",
+        "direct",
+        "plain",
+        "revealed",
+        "exposed",
+        "public",
+        "accessible",
+        "known"
+      ],
+      "B_used": [
+        "opaque",
+        "secret",
+        "concealed",
+        "covert",
+        "obscure",
+        "vague",
+        "ambiguous",
+        "mysterious",
+        "shadowy",
+        "dark",
+        "masked",
+        "disguised",
+        "cryptic",
+        "veiled",
+        "hidden"
+      ]
+    },
+    "proposal": "People associate ruralites with transparency more strongly than they associate urbanites with transparency. This differential implicit association stems from cultural narratives that depict rural communities as 'open books' where social interactions are highly visible and information circulates freely among neighbors, contrasting with portrayals of urban life as characterized by anonymity, complex stratification, and hidden motives. Examining this implicit link is novel because while explicit stereotypes about rural openness and urban secrecy exist, the automatic mental coupling of rural actors with transparency has not been systematically tested against urban counterparts. Confirming this association would reveal a fundamental cognitive bias shaping perceptions of trust, accountability, and social cohesion in different residential contexts, with implications for how policy and public discourse frame inter-group relations.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "6d93580e2114",
     "timestamp": "2026-10-14T00:45:32.767117+00:00",
     "schema_version": "autoresearch.v1",
