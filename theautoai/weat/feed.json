@@ -1,5 +1,111 @@
 [
   {
+    "id": "61e3092a20bb",
+    "timestamp": "2026-10-14T18:51:02.852793+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "archivists vs journalists on impartiality versus bias",
+    "labels": {
+      "X": "archivists",
+      "Y": "journalists",
+      "A": "Impartiality",
+      "B": "Bias"
+    },
+    "canonical_keys": {
+      "X": "archivists",
+      "Y": "journalists",
+      "A": "impartiality",
+      "B": "bias"
+    },
+    "effect_size": 1.281372390862763,
+    "p_value": 0.00014,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "archivist",
+        "librarian",
+        "historian",
+        "curator",
+        "conservator",
+        "cataloger",
+        "indexer",
+        "preserver",
+        "guardian",
+        "steward",
+        "keeper",
+        "clerk",
+        "researcher",
+        "scholar",
+        "academic"
+      ],
+      "Y_used": [
+        "journalist",
+        "reporter",
+        "correspondent",
+        "anchor",
+        "broadcaster",
+        "newscaster",
+        "columnist",
+        "commentator",
+        "stringer",
+        "hack",
+        "pressman",
+        "editor",
+        "blogger",
+        "newsman",
+        "newswoman"
+      ],
+      "A_used": [
+        "impartial",
+        "objective",
+        "neutral",
+        "fair",
+        "unbiased",
+        "detached",
+        "dispassionate",
+        "independent",
+        "equitable",
+        "just",
+        "balanced",
+        "open",
+        "honest",
+        "truthful",
+        "factual"
+      ],
+      "B_used": [
+        "biased",
+        "partisan",
+        "subjective",
+        "opinionated",
+        "slanted",
+        "prejudiced",
+        "political",
+        "ideological",
+        "manipulative",
+        "distorting",
+        "censoring",
+        "activist",
+        "advocate",
+        "spin",
+        "propaganda"
+      ]
+    },
+    "proposal": "People associate archivists with impartiality more strongly than they associate journalists with impartiality. This differential implicit association captures a contemporary cultural narrative that increasingly frames institutional record-keepers as detached, objective guardians of the factual record, while casting news reporters as active, potentially agenda-driven participants in the information ecosystem. Examining this gap implicitly matters because explicit trust surveys often mask deep-seated, automatic skepticism toward media objectivity that drives the erosion of public confidence in news outlets. The proposal is novel, as prior research has focused on explicit media literacy and institutional trust metrics, leaving the automatic cognitive pairing of these distinct information professions with neutrality unprobed.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "1cb5d82e27a5",
     "timestamp": "2026-10-14T12:56:22.444780+00:00",
     "schema_version": "autoresearch.v1",
