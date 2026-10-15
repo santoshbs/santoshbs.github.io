@@ -1,5 +1,111 @@
 [
   {
+    "id": "bd8dd444edad",
+    "timestamp": "2026-10-15T04:36:53.548906+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Aristocrats vs Bourgeoisie on loyalty vs self-interest",
+    "labels": {
+      "X": "Aristocrats",
+      "Y": "Bourgeoisie",
+      "A": "loyalty",
+      "B": "self_interest"
+    },
+    "canonical_keys": {
+      "X": "aristocrats",
+      "Y": "bourgeoisie",
+      "A": "loyalty",
+      "B": ""
+    },
+    "effect_size": 1.0817597106711014,
+    "p_value": 0.00207,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "aristocrat",
+        "noble",
+        "duke",
+        "duchess",
+        "lord",
+        "lady",
+        "baron",
+        "count",
+        "countess",
+        "prince",
+        "princess",
+        "king",
+        "queen",
+        "monarch",
+        "peer"
+      ],
+      "Y_used": [
+        "bourgeois",
+        "capitalist",
+        "merchant",
+        "trader",
+        "businessman",
+        "businesswoman",
+        "entrepreneur",
+        "financier",
+        "banker",
+        "industrialist",
+        "plutocrat",
+        "tycoon",
+        "executive",
+        "investor",
+        "speculator"
+      ],
+      "A_used": [
+        "loyal",
+        "faithful",
+        "devoted",
+        "dutiful",
+        "honorable",
+        "steadfast",
+        "allegiant",
+        "fidelity",
+        "commitment",
+        "dedication",
+        "reliable",
+        "trustworthy",
+        "sincere",
+        "genuine",
+        "conscientious"
+      ],
+      "B_used": [
+        "disloyal",
+        "treacherous",
+        "faithless",
+        "opportunistic",
+        "selfish",
+        "greedy",
+        "mercenary",
+        "calculating",
+        "materialistic",
+        "avaricious",
+        "commercial",
+        "mercantile",
+        "speculative",
+        "pragmatic",
+        "utilitarian"
+      ]
+    },
+    "proposal": "People associate Aristocrats with loyalty more strongly than they associate Bourgeoisie with loyalty. This association taps into the implicit cultural script contrasting aristocratic codes of honor, duty, and blood ties with the transactional, self-interested ethos often stereotypically attributed to the bourgeoisie. Examining this differential is novel because while class biases regarding wealth, power, or competence have been extensively documented, the moral dimension of loyalty as a class marker has not been systematically probed. It is relevant to contemporary discourse debating the virtues of 'old money' versus 'new money' and perceptions of institutional commitment versus opportunism. Confirming this association would reveal how historical narratives of noble obligation persist in mental representations of class, potentially influencing trust dynamics across economic boundaries.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "c46cee599fc5",
     "timestamp": "2026-10-15T01:35:59.393002+00:00",
     "schema_version": "autoresearch.v1",
