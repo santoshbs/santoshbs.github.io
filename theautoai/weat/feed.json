@@ -1,5 +1,111 @@
 [
   {
+    "id": "d9beaa110b7a",
+    "timestamp": "2026-10-26T16:32:28.046416+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Foragers vs Merchants on moral trustworthiness",
+    "labels": {
+      "X": "Foragers",
+      "Y": "Merchants",
+      "A": "Trustworthy",
+      "B": "Untrustworthy"
+    },
+    "canonical_keys": {
+      "X": "foragers",
+      "Y": "merchants",
+      "A": "trustworthy",
+      "B": "untrustworthy"
+    },
+    "effect_size": 0.43382161374895906,
+    "p_value": 0.24865,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "forager",
+        "gatherer",
+        "picker",
+        "scavenger",
+        "harvester",
+        "collector",
+        "gleaner",
+        "finder",
+        "salvager",
+        "seeker",
+        "retriever",
+        "accumulator",
+        "assembler",
+        "hunter",
+        "trapper"
+      ],
+      "Y_used": [
+        "merchant",
+        "trader",
+        "broker",
+        "dealer",
+        "vendor",
+        "shopkeeper",
+        "peddler",
+        "retailer",
+        "wholesaler",
+        "businessman",
+        "capitalist",
+        "entrepreneur",
+        "tycoon",
+        "middleman",
+        "salesman"
+      ],
+      "A_used": [
+        "honest",
+        "trustworthy",
+        "genuine",
+        "sincere",
+        "reliable",
+        "loyal",
+        "faithful",
+        "upright",
+        "virtuous",
+        "ethical",
+        "moral",
+        "decent",
+        "good",
+        "pure",
+        "noble"
+      ],
+      "B_used": [
+        "dishonest",
+        "deceitful",
+        "fraudulent",
+        "corrupt",
+        "greedy",
+        "selfish",
+        "exploitative",
+        "manipulative",
+        "shady",
+        "dubious",
+        "untrustworthy",
+        "fake",
+        "false",
+        "crooked",
+        "vile"
+      ]
+    },
+    "proposal": "People associate Foragers with trustworthiness more strongly than they associate Merchants with trustworthiness. This differential association reflects a deep-seated cultural valuation of subsistence strategies, where actors who gather resources directly from nature (foragers, scavengers, finders, salvagers, gleaners, pickers, harvesters, seekers, collectors, retrievers, stockpilers, accumulators, amassers, assemblers, gatherers) are viewed as more honest and community-oriented than those engaged in exchange and trade (merchants, traders, brokers, dealers, vendors, shopkeepers, peddlers, hucksters, barterers, exchangers, swappers, negotiators, bargainers, buyers, sellers). This proposal is novel because while Farmers vs Merchants has been examined, Foragers represent a distinct pre-agricultural or wild-resource category that carries unique moral connotations in contemporary discourse regarding sustainability, indigenous knowledge, and purity versus the skepticism often reserved for commercial intermediaries. Confirming this association would highlight how implicit biases extend beyond the farmer-merchant dichotomy to valorize direct extraction from nature over market mediation, which matters for understanding public attitudes toward environmental stewardship, supply chains, and economic fairness.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "c0b4df2d5c06",
     "timestamp": "2026-10-15T07:36:04.700926+00:00",
     "schema_version": "autoresearch.v1",
