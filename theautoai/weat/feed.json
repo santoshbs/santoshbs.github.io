@@ -1,5 +1,111 @@
 [
   {
+    "id": "19bb0184e62e",
+    "timestamp": "2026-10-26T17:21:37.994264+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Sailors vs Fishermen on Adventure versus Routine",
+    "labels": {
+      "X": "Sailors",
+      "Y": "Fishermen",
+      "A": "Adventure",
+      "B": "Routine"
+    },
+    "canonical_keys": {
+      "X": "sailors",
+      "Y": "fishermen",
+      "A": "adventure",
+      "B": "routine"
+    },
+    "effect_size": 0.3148171980623652,
+    "p_value": 0.39947,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "sailor",
+        "seaman",
+        "mariner",
+        "yachtsman",
+        "deckhand",
+        "bosun",
+        "helmsman",
+        "voyager",
+        "navigator",
+        "skipper",
+        "boatman",
+        "crewman",
+        "seafarer",
+        "pilot",
+        "captain"
+      ],
+      "Y_used": [
+        "fisherman",
+        "fisher",
+        "angler",
+        "crabber",
+        "lobsterman",
+        "whaler",
+        "diver",
+        "baiter",
+        "netman",
+        "harpooner",
+        "gillerman",
+        "rodman",
+        "fishwife",
+        "oysterman",
+        "trawlerman"
+      ],
+      "A_used": [
+        "adventure",
+        "exploration",
+        "discovery",
+        "daring",
+        "thrill",
+        "excitement",
+        "risk",
+        "courage",
+        "bravery",
+        "boldness",
+        "pioneering",
+        "venturing",
+        "uncharted",
+        "unknown",
+        "mystery"
+      ],
+      "B_used": [
+        "routine",
+        "labor",
+        "work",
+        "toil",
+        "chore",
+        "task",
+        "duty",
+        "grind",
+        "drudgery",
+        "mundane",
+        "ordinary",
+        "habitual",
+        "traditional",
+        "practical",
+        "utilitarian"
+      ]
+    },
+    "proposal": "People associate Sailors with Adventure more strongly than they associate Fishermen with Adventure. Although both groups work in similar maritime environments and face comparable physical risks, public discourse and cultural representations often frame Sailors as explorers, voyagers, and seekers of the unknown, thereby imbuing their role with a sense of romantic exploration and daring. In contrast, Fishermen are more frequently depicted in terms of labor, sustenance, and routine extraction, linking their identity to hard work and tradition rather than thrill-seeking or discovery. Examining this association is novel because it disentangles how the cognitive framing of 'movement versus extraction' shapes the perceived emotional valence of maritime occupations, revealing that identical environmental hazards are not implicitly evaluated equally when the purpose of the voyage differs.",
+    "iterations": 3,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "d9beaa110b7a",
     "timestamp": "2026-10-26T16:32:28.046416+00:00",
     "schema_version": "autoresearch.v1",
