@@ -1,5 +1,111 @@
 [
   {
+    "id": "95f3d88c50c6",
+    "timestamp": "2026-10-26T20:27:08.338733+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Commoners vs Royalty on productivity vs ornamentality",
+    "labels": {
+      "X": "Commoners",
+      "Y": "Royalty",
+      "A": "Productive",
+      "B": "Ornamental"
+    },
+    "canonical_keys": {
+      "X": "commoners",
+      "Y": "royalty",
+      "A": "productive",
+      "B": "ornamental"
+    },
+    "effect_size": 1.4211172618485266,
+    "p_value": 2e-05,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "commoner",
+        "citizen",
+        "plebeian",
+        "peasant",
+        "populace",
+        "masses",
+        "public",
+        "laborer",
+        "worker",
+        "bourgeois",
+        "proletarian",
+        "serf",
+        "private",
+        "individual",
+        "common"
+      ],
+      "Y_used": [
+        "king",
+        "queen",
+        "prince",
+        "princess",
+        "monarch",
+        "royalty",
+        "noble",
+        "duke",
+        "duchess",
+        "emperor",
+        "empress",
+        "sovereign",
+        "aristocrat",
+        "lord",
+        "lady"
+      ],
+      "A_used": [
+        "productive",
+        "work",
+        "labor",
+        "utility",
+        "output",
+        "industrious",
+        "efficient",
+        "creation",
+        "production",
+        "manufacturing",
+        "toil",
+        "effort",
+        "economic",
+        "constructive",
+        "practical"
+      ],
+      "B_used": [
+        "ornamental",
+        "ceremonial",
+        "decorative",
+        "symbolic",
+        "aesthetic",
+        "ritual",
+        "formal",
+        "courtly",
+        "embellishment",
+        "decoration",
+        "display",
+        "ornament",
+        "spectacle",
+        "presentation",
+        "showy"
+      ]
+    },
+    "proposal": "People associate Commoners with productivity more strongly than they associate Royalty with productivity. This differential implicit association reflects enduring cultural narratives that valorize the masses as the engines of material creation, labor, and economic sustenance, while casting monarchic institutions as ornamental, ceremonial, or detached from pragmatic utility. Although political psychology has examined elite-versus-non-elite associations regarding work and competence, no study has isolated the specific implicit link between the broad category of commoners and productivity relative to royalty, a distinction that remains salient in contemporary discourse about the value of non-elected symbolic institutions versus the productive citizenry. Confirming this association would reveal how the public mentally segregates symbolic authority from functional contribution, even as modern royal figures often engage in charitable and diplomatic labor.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "19bb0184e62e",
     "timestamp": "2026-10-26T17:21:37.994264+00:00",
     "schema_version": "autoresearch.v1",
