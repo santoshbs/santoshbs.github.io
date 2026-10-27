@@ -1,5 +1,111 @@
 [
   {
+    "id": "c5df8ae55d37",
+    "timestamp": "2026-10-27T08:26:57.208539+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Jews vs Hindus on Religious boundary openness",
+    "labels": {
+      "X": "Jews",
+      "Y": "Hindus",
+      "A": "Exclusivism",
+      "B": "Inclusivism"
+    },
+    "canonical_keys": {
+      "X": "jews",
+      "Y": "hindus",
+      "A": "exclusivism",
+      "B": "inclusivism"
+    },
+    "effect_size": -0.5405337931004653,
+    "p_value": 0.14853,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "jew",
+        "hebrew",
+        "israeli",
+        "sephardi",
+        "ashkenazi",
+        "mizrahi",
+        "hasid",
+        "orthodox",
+        "conservative",
+        "reform",
+        "reconstructionist",
+        "yahudi",
+        "rabbi",
+        "cantor",
+        "israelite"
+      ],
+      "Y_used": [
+        "hindu",
+        "indian",
+        "brahmin",
+        "kshatriya",
+        "vaishya",
+        "shudra",
+        "dalit",
+        "yogi",
+        "sadhu",
+        "swami",
+        "pandit",
+        "guru",
+        "devotee",
+        "ascetic",
+        "monk"
+      ],
+      "A_used": [
+        "exclusive",
+        "closed",
+        "bounded",
+        "strict",
+        "rigid",
+        "dogmatic",
+        "fundamentalist",
+        "purist",
+        "separatist",
+        "isolationist",
+        "insular",
+        "parochial",
+        "tribal",
+        "cliquish",
+        "endogamous"
+      ],
+      "B_used": [
+        "inclusive",
+        "open",
+        "welcoming",
+        "accepting",
+        "tolerant",
+        "liberal",
+        "progressive",
+        "pluralistic",
+        "syncretic",
+        "ecumenical",
+        "cosmopolitan",
+        "universal",
+        "global",
+        "international",
+        "multicultural"
+      ]
+    },
+    "proposal": "People associate Jews with exclusivism more strongly than they associate Hindus with exclusivism. While implicit associations within major Western religious dyads (e.g., Christians vs. Muslims) or broad theological axes (e.g., theists vs. atheists) are well-documented, the mental representation of Jews relative to non-Abrahamic religious categories remains underexplored. Public discourse often frames Jewish identity through narratives of distinctiveness, chosenness, and boundary maintenance, whereas Hinduism is frequently characterized in popular culture as syncretic, pluralistic, or henotheistic. Examining this differential association would reveal whether implicit cognition aligns with these cultural narratives of religious inclusivity versus exclusivity across distinct theological traditions, offering a novel cross-traditional perspective on how religious boundaries are mentally encoded.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "b87586d3cc45",
     "timestamp": "2026-10-27T07:34:44.813800+00:00",
     "schema_version": "autoresearch.v1",
