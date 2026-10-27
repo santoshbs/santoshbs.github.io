@@ -1,5 +1,111 @@
 [
   {
+    "id": "3a4c13254e9a",
+    "timestamp": "2026-10-27T11:58:58.143084+00:00",
+    "schema_version": "autoresearch.v1",
+    "domain": "autoresearch",
+    "predicted_direction": "X>Y",
+    "contrast_label": "Celebrities vs Experts on chaos vs order",
+    "labels": {
+      "X": "Celebrities",
+      "Y": "Experts",
+      "A": "chaos",
+      "B": "order"
+    },
+    "canonical_keys": {
+      "X": "celebrities",
+      "Y": "experts",
+      "A": "chaos",
+      "B": "order"
+    },
+    "effect_size": 1.503600928956137,
+    "p_value": 0.0,
+    "n": {
+      "X": 15,
+      "Y": 15,
+      "A": 15,
+      "B": 15
+    },
+    "n_permutations": 100000,
+    "exact": false,
+    "words": {
+      "X_used": [
+        "actor",
+        "actress",
+        "singer",
+        "model",
+        "star",
+        "idol",
+        "entertainer",
+        "performer",
+        "musician",
+        "host",
+        "presenter",
+        "celebrity",
+        "diva",
+        "legend",
+        "icon"
+      ],
+      "Y_used": [
+        "doctor",
+        "scientist",
+        "professor",
+        "researcher",
+        "analyst",
+        "specialist",
+        "engineer",
+        "surgeon",
+        "academic",
+        "scholar",
+        "consultant",
+        "physician",
+        "technician",
+        "advisor",
+        "expert"
+      ],
+      "A_used": [
+        "chaos",
+        "disorder",
+        "mess",
+        "random",
+        "wild",
+        "erratic",
+        "confusing",
+        "tumult",
+        "turmoil",
+        "confusion",
+        "uproar",
+        "riot",
+        "havoc",
+        "mayhem",
+        "frenzy"
+      ],
+      "B_used": [
+        "order",
+        "logic",
+        "reason",
+        "structure",
+        "method",
+        "systematic",
+        "stable",
+        "calm",
+        "predictable",
+        "rational",
+        "formal",
+        "regulated",
+        "organized",
+        "neat",
+        "precise"
+      ]
+    },
+    "proposal": "People associate Celebrities with chaos more strongly than they associate Experts with chaos. This proposal stems from the cultural framing of experts as institutional guardians of order, predictability, and rationality, whereas celebrities are often portrayed as norm-breaking sensations who thrive on unpredictability, scandal, and spectacle. While stereotype content models have extensively mapped dimensions like competence and warmth across professions, the implicit association with disorder remains underexplored for these high-salience categories. Confirming this link would reveal a latent bias that may delegitimize celebrity advocacy on complex issues or reinforce an idealization of expert authority as inherently stabilizing, thereby shaping public trust dynamics in polarized information environments.",
+    "iterations": 2,
+    "config": {
+      "embedding_backend": "GloVe Dolma 2024 · 300d",
+      "proposer_model": "qwen3.6:27b-q8_0"
+    }
+  },
+  {
     "id": "e6368523d9d5",
     "timestamp": "2026-10-27T09:46:43.157631+00:00",
     "schema_version": "autoresearch.v1",
